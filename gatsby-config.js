@@ -33,12 +33,6 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-plugin-page-creator`,
-            options: {
-                path: path.join(__dirname, `src`, `pages`),
-            },
-        },
-        {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [`.mdx`, `.md`],
@@ -90,13 +84,6 @@ module.exports = {
                 theme_color: config.theme_color,
                 display: config.display,
                 icon: config.icon,
-            },
-        },
-        // https://www.gatsbyjs.org/docs/themes/converting-a-starter/#transpiling-your-theme-with-webpack
-        {
-            resolve: 'gatsby-plugin-compile-es6-packages',
-            options: {
-                modules: ['gatsby-starter-morning-dew'],
             },
         },
     ],
