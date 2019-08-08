@@ -1,6 +1,6 @@
+import { withPrefix } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
 import useSiteMetadata from '../hooks/use-site-config';
 
 const SEO = props => {
@@ -17,6 +17,8 @@ const SEO = props => {
 
     return (
         <Helmet title={title}>
+            {/* ToDo: remove this once we are ready to deploy*/}
+            <meta name="robots" content="noindex, noodp, noarchive" />
             {/* General tags */}
             <html lang={lang} />
             <meta name="description" content={description} />
