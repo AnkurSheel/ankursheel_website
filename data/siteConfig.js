@@ -27,12 +27,12 @@ module.exports = {
     headerLinksIcon: 'baymax.png', //  (leave empty to disable: '')
     headerLinks: [
         {
-            label: 'Blog',
+            label: 'About',
             url: '/',
         },
         {
-            label: 'About',
-            url: '/about-gatsby-starter-morning-dew',
+            label: 'Blog',
+            url: '/blog',
         },
         {
             label: 'Installation',
