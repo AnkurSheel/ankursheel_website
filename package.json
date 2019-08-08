@@ -19,7 +19,6 @@
     },
     "license": "MIT",
     "author": "Maxence Poutord <maxence.poutord@gmail.com>",
-    "main": "n/a",
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
@@ -30,7 +29,8 @@
         "start": "gatsby develop",
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
-        "lint:fix": "yarn lint --fix"
+        "lint:fix": "yarn lint --fix",
+        "generate-graphql": "graphql-codegen --config codegen.yml"
     },
     "dependencies": {
         "@mdx-js/mdx": "^1.0.23",
@@ -66,9 +66,9 @@
         "styled-components": "^4.3.2"
     },
     "devDependencies": {
-        "@graphql-codegen/cli": "^1.5.0",
-        "@graphql-codegen/typescript": "^1.5.0",
-        "@graphql-codegen/typescript-operations": "^1.5.0",
+        "@graphql-codegen/cli": "1.4.0",
+        "@graphql-codegen/typescript": "1.4.0",
+        "@graphql-codegen/typescript-operations": "1.4.0",
         "@types/react": "^16.8.25",
         "@typescript-eslint/eslint-plugin": "^1.13.0",
         "@typescript-eslint/parser": "^1.13.0",
@@ -76,6 +76,7 @@
         "eslint-config-prettier": "^6.0.0",
         "eslint-plugin-prettier": "^3.1.0",
         "eslint-plugin-react": "^7.14.3",
+        "graphql": "^14.4.2",
         "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
         "prettier": "^1.18.2",
         "puppeteer": "^1.17.0",
