@@ -18,4 +18,4 @@
  *
  * For a full list of tokens, see the `src/tokens/` directory in this theme.
  */
-export default {}
+export default {};
