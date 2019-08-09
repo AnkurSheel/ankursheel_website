@@ -8,7 +8,6 @@ module.exports = {
         description: config.siteDescription,
         ...config,
     },
-    pathPrefix: config.pathPrefix,
     plugins: [
         `gatsby-plugin-typescript`,
         {
@@ -79,7 +78,7 @@ module.exports = {
             options: {
                 name: config.siteTitle,
                 short_name: config.siteTitle,
-                start_url: config.pathPrefix,
+                start_url: '/',
                 background_color: config.backgroundColor,
                 theme_color: config.themeColor,
                 display: config.display,

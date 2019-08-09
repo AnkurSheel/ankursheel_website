@@ -29,7 +29,4 @@ export default {
     highlightCodeBackground: '#ffa7c4',
     highlightCodeMarker: '#ffa7c4',
     highlightCodeLineBackground: '#022a4b',
-    // testing
-    // primary: `#6556B3`,
-    // primaryAlpha: `#6556B3cc`,
 };

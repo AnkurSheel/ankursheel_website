@@ -1,10 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Flag from './Flag/Flag';
-import TagList from './TagList';
-import useSiteMetadata from '../hooks/use-site-config';
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
+import React from 'react';
 import { colors } from '../tokens';
+import TagList from './TagList';
 
 const Post = styled.article`
     border-bottom: 1px solid rgba(214, 209, 230, 0.5);
@@ -55,16 +53,12 @@ const PostTitleLink = styled(Link)`
 
 const PostsListItem = props => {
     const { title, excerpt, slug, date, language, tags } = props;
-    const { multilangPosts } = useSiteMetadata();
 
     return (
         <Post>
             <PostHeader>
                 <h2>
-                    <PostTitleLink to={`/${slug}`}>
-                        {multilangPosts && <Flag language={language} />}
-                        {title}
-                    </PostTitleLink>
+                    <PostTitleLink to={`/${slug}`}>{title}</PostTitleLink>
                 </h2>
             </PostHeader>
             <section>

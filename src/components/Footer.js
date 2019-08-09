@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
+import React from 'react';
 import useSiteMetadata from '../hooks/use-site-config';
 import { colors } from '../tokens';
 
@@ -76,7 +76,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const Footer = () => {
-    const { authorName, websiteHost, footerLinks } = useSiteMetadata();
+    const { authorName, footerLinks } = useSiteMetadata();
 
     const FooterItem = ({ item }) => {
         if (item.url.startsWith('/')) {
@@ -117,27 +117,6 @@ const Footer = () => {
                     <h5 className="footer-title">
                         {authorName} © {new Date().getFullYear()}
                     </h5>
-                    <p className="footer-item-text">
-                        Built with{' '}
-                        <a className="footer-link" href="https://www.gatsbyjs.org">
-                            Gatsby
-                        </a>
-                        .
-                    </p>
-                    <p className="footer-item-text">
-                        Theme using{' '}
-                        <a className="footer-link" href="https://github.com/maxpou/gatsby-starter-morning-dew">
-                            gatsby-starter-morning-dew
-                        </a>
-                        .
-                    </p>
-                    <p className="footer-item-text">
-                        Hosted with <span className="footer-heart">❤</span> by{' '}
-                        <a className="footer-link" href={websiteHost.url}>
-                            {websiteHost.name}
-                        </a>
-                        .
-                    </p>
                 </div>
                 {footerLinks.map((column, i) => {
                     return <FooterColumn column={column} key={`footer-column-${i}`} />;

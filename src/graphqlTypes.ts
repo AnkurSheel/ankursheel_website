@@ -736,7 +736,6 @@ export enum FileFieldsEnum {
     ChildMarkdownRemarkId = 'childMarkdownRemark___id',
     ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
     ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
-    ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
     ChildMarkdownRemarkFrontmatterCoverBirthtime = 'childMarkdownRemark___frontmatter___cover___birthtime',
     ChildMarkdownRemarkFrontmatterCoverBirthtimeMs = 'childMarkdownRemark___frontmatter___cover___birthtimeMs',
     ChildMarkdownRemarkFrontmatterCoverSourceInstanceName = 'childMarkdownRemark___frontmatter___cover___sourceInstanceName',
@@ -772,6 +771,7 @@ export enum FileFieldsEnum {
     ChildMarkdownRemarkFrontmatterCoverId = 'childMarkdownRemark___frontmatter___cover___id',
     ChildMarkdownRemarkFrontmatterCoverChildren = 'childMarkdownRemark___frontmatter___cover___children',
     ChildMarkdownRemarkFrontmatterGenerateCard = 'childMarkdownRemark___frontmatter___generate_card',
+    ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
     ChildMarkdownRemarkFrontmatterLanguage = 'childMarkdownRemark___frontmatter___language',
     ChildMarkdownRemarkFrontmatterTags = 'childMarkdownRemark___frontmatter___tags',
     ChildMarkdownRemarkFrontmatterImageTwBirthtime = 'childMarkdownRemark___frontmatter___imageTw___birthtime',
@@ -1700,7 +1700,6 @@ export enum MarkdownRemarkFieldsEnum {
     Id = 'id',
     FrontmatterTitle = 'frontmatter___title',
     FrontmatterSlug = 'frontmatter___slug',
-    FrontmatterDate = 'frontmatter___date',
     FrontmatterCoverBirthtime = 'frontmatter___cover___birthtime',
     FrontmatterCoverBirthtimeMs = 'frontmatter___cover___birthtimeMs',
     FrontmatterCoverSourceInstanceName = 'frontmatter___cover___sourceInstanceName',
@@ -1772,6 +1771,7 @@ export enum MarkdownRemarkFieldsEnum {
     FrontmatterCoverChildImageSharpId = 'frontmatter___cover___childImageSharp___id',
     FrontmatterCoverChildImageSharpChildren = 'frontmatter___cover___childImageSharp___children',
     FrontmatterGenerateCard = 'frontmatter___generate_card',
+    FrontmatterDate = 'frontmatter___date',
     FrontmatterLanguage = 'frontmatter___language',
     FrontmatterTags = 'frontmatter___tags',
     FrontmatterImageTwBirthtime = 'frontmatter___imageTw___birthtime',
@@ -2044,9 +2044,9 @@ export type MarkdownRemarkFrontmatter = {
     __typename?: 'MarkdownRemarkFrontmatter';
     title?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
-    date?: Maybe<Scalars['Date']>;
     cover?: Maybe<File>;
     generate_card?: Maybe<Scalars['Boolean']>;
+    date?: Maybe<Scalars['Date']>;
     language?: Maybe<Scalars['String']>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
     imageTw?: Maybe<File>;
@@ -2064,9 +2064,9 @@ export type MarkdownRemarkFrontmatterDateArgs = {
 export type MarkdownRemarkFrontmatterFilterInput = {
     title?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
-    date?: Maybe<DateQueryOperatorInput>;
     cover?: Maybe<FileFilterInput>;
     generate_card?: Maybe<BooleanQueryOperatorInput>;
+    date?: Maybe<DateQueryOperatorInput>;
     language?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
     imageTw?: Maybe<FileFilterInput>;
@@ -2819,8 +2819,8 @@ export type QuerySiteArgs = {
     siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
     port?: Maybe<IntQueryOperatorInput>;
     host?: Maybe<StringQueryOperatorInput>;
-    pathPrefix?: Maybe<StringQueryOperatorInput>;
     polyfill?: Maybe<BooleanQueryOperatorInput>;
+    pathPrefix?: Maybe<StringQueryOperatorInput>;
     buildTime?: Maybe<DateQueryOperatorInput>;
 };
 
@@ -2885,8 +2885,8 @@ export type Site = Node & {
     siteMetadata?: Maybe<SiteSiteMetadata>;
     port?: Maybe<Scalars['Int']>;
     host?: Maybe<Scalars['String']>;
-    pathPrefix?: Maybe<Scalars['String']>;
     polyfill?: Maybe<Scalars['Boolean']>;
+    pathPrefix?: Maybe<Scalars['String']>;
     buildTime?: Maybe<Scalars['Date']>;
 };
 
@@ -3019,26 +3019,20 @@ export enum SiteFieldsEnum {
     SiteMetadataAuthorName = 'siteMetadata___authorName',
     SiteMetadataTwitterUsername = 'siteMetadata___twitterUsername',
     SiteMetadataAuthorAvatar = 'siteMetadata___authorAvatar',
-    SiteMetadataMultilangPosts = 'siteMetadata___multilangPosts',
     SiteMetadataAuthorDescription = 'siteMetadata___authorDescription',
     SiteMetadataSiteUrl = 'siteMetadata___siteUrl',
-    SiteMetadataDisqusSiteUrl = 'siteMetadata___disqusSiteUrl',
-    SiteMetadataPathPrefix = 'siteMetadata___pathPrefix',
     SiteMetadataSiteCover = 'siteMetadata___siteCover',
     SiteMetadataGoogleAnalyticsId = 'siteMetadata___googleAnalyticsId',
-    SiteMetadataBackgroundColor = 'siteMetadata___background_color',
-    SiteMetadataThemeColor = 'siteMetadata___theme_color',
+    SiteMetadataBackgroundColor = 'siteMetadata___backgroundColor',
+    SiteMetadataThemeColor = 'siteMetadata___themeColor',
     SiteMetadataDisplay = 'siteMetadata___display',
     SiteMetadataIcon = 'siteMetadata___icon',
     SiteMetadataPostsPerPage = 'siteMetadata___postsPerPage',
-    SiteMetadataDisqusShortname = 'siteMetadata___disqusShortname',
     SiteMetadataHeaderTitle = 'siteMetadata___headerTitle',
     SiteMetadataHeaderLinksIcon = 'siteMetadata___headerLinksIcon',
     SiteMetadataHeaderLinks = 'siteMetadata___headerLinks',
     SiteMetadataHeaderLinksLabel = 'siteMetadata___headerLinks___label',
     SiteMetadataHeaderLinksUrl = 'siteMetadata___headerLinks___url',
-    SiteMetadataWebsiteHostName = 'siteMetadata___websiteHost___name',
-    SiteMetadataWebsiteHostUrl = 'siteMetadata___websiteHost___url',
     SiteMetadataFooterLinks = 'siteMetadata___footerLinks',
     SiteMetadataFooterLinksSectionName = 'siteMetadata___footerLinks___sectionName',
     SiteMetadataFooterLinksLinks = 'siteMetadata___footerLinks___links',
@@ -3046,8 +3040,8 @@ export enum SiteFieldsEnum {
     SiteMetadataFooterLinksLinksUrl = 'siteMetadata___footerLinks___links___url',
     Port = 'port',
     Host = 'host',
-    PathPrefix = 'pathPrefix',
     Polyfill = 'polyfill',
+    PathPrefix = 'pathPrefix',
     BuildTime = 'buildTime',
 }
 
@@ -3059,8 +3053,8 @@ export type SiteFilterInput = {
     siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
     port?: Maybe<IntQueryOperatorInput>;
     host?: Maybe<StringQueryOperatorInput>;
-    pathPrefix?: Maybe<StringQueryOperatorInput>;
     polyfill?: Maybe<BooleanQueryOperatorInput>;
+    pathPrefix?: Maybe<StringQueryOperatorInput>;
     buildTime?: Maybe<DateQueryOperatorInput>;
 };
 
@@ -3828,23 +3822,18 @@ export type SiteSiteMetadata = {
     authorName?: Maybe<Scalars['String']>;
     twitterUsername?: Maybe<Scalars['String']>;
     authorAvatar?: Maybe<Scalars['String']>;
-    multilangPosts?: Maybe<Scalars['Boolean']>;
     authorDescription?: Maybe<Scalars['String']>;
     siteUrl?: Maybe<Scalars['String']>;
-    disqusSiteUrl?: Maybe<Scalars['String']>;
-    pathPrefix?: Maybe<Scalars['String']>;
     siteCover?: Maybe<Scalars['String']>;
     googleAnalyticsId?: Maybe<Scalars['String']>;
-    background_color?: Maybe<Scalars['String']>;
-    theme_color?: Maybe<Scalars['String']>;
+    backgroundColor?: Maybe<Scalars['String']>;
+    themeColor?: Maybe<Scalars['String']>;
     display?: Maybe<Scalars['String']>;
     icon?: Maybe<Scalars['String']>;
     postsPerPage?: Maybe<Scalars['Int']>;
-    disqusShortname?: Maybe<Scalars['String']>;
     headerTitle?: Maybe<Scalars['String']>;
     headerLinksIcon?: Maybe<Scalars['String']>;
     headerLinks?: Maybe<Array<Maybe<SiteSiteMetadataHeaderLinks>>>;
-    websiteHost?: Maybe<SiteSiteMetadataWebsiteHost>;
     footerLinks?: Maybe<Array<Maybe<SiteSiteMetadataFooterLinks>>>;
 };
 
@@ -3857,23 +3846,18 @@ export type SiteSiteMetadataFilterInput = {
     authorName?: Maybe<StringQueryOperatorInput>;
     twitterUsername?: Maybe<StringQueryOperatorInput>;
     authorAvatar?: Maybe<StringQueryOperatorInput>;
-    multilangPosts?: Maybe<BooleanQueryOperatorInput>;
     authorDescription?: Maybe<StringQueryOperatorInput>;
     siteUrl?: Maybe<StringQueryOperatorInput>;
-    disqusSiteUrl?: Maybe<StringQueryOperatorInput>;
-    pathPrefix?: Maybe<StringQueryOperatorInput>;
     siteCover?: Maybe<StringQueryOperatorInput>;
     googleAnalyticsId?: Maybe<StringQueryOperatorInput>;
-    background_color?: Maybe<StringQueryOperatorInput>;
-    theme_color?: Maybe<StringQueryOperatorInput>;
+    backgroundColor?: Maybe<StringQueryOperatorInput>;
+    themeColor?: Maybe<StringQueryOperatorInput>;
     display?: Maybe<StringQueryOperatorInput>;
     icon?: Maybe<StringQueryOperatorInput>;
     postsPerPage?: Maybe<IntQueryOperatorInput>;
-    disqusShortname?: Maybe<StringQueryOperatorInput>;
     headerTitle?: Maybe<StringQueryOperatorInput>;
     headerLinksIcon?: Maybe<StringQueryOperatorInput>;
     headerLinks?: Maybe<SiteSiteMetadataHeaderLinksFilterListInput>;
-    websiteHost?: Maybe<SiteSiteMetadataWebsiteHostFilterInput>;
     footerLinks?: Maybe<SiteSiteMetadataFooterLinksFilterListInput>;
 };
 
@@ -3920,17 +3904,6 @@ export type SiteSiteMetadataHeaderLinksFilterInput = {
 
 export type SiteSiteMetadataHeaderLinksFilterListInput = {
     elemMatch?: Maybe<SiteSiteMetadataHeaderLinksFilterInput>;
-};
-
-export type SiteSiteMetadataWebsiteHost = {
-    __typename?: 'SiteSiteMetadataWebsiteHost';
-    name?: Maybe<Scalars['String']>;
-    url?: Maybe<Scalars['String']>;
-};
-
-export type SiteSiteMetadataWebsiteHostFilterInput = {
-    name?: Maybe<StringQueryOperatorInput>;
-    url?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SiteSortInput = {

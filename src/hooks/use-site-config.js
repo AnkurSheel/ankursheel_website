@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const useSiteMetadata = () => {
     const result = useStaticQuery(graphql`
@@ -13,17 +13,12 @@ const useSiteMetadata = () => {
                     authorDescription
                     siteDescription
                     twitterUsername
-                    disqusShortname
-                    disqusSiteUrl
-                    multilangPosts
+                    # disqusShortname
+                    # disqusSiteUrl
                     headerTitle
                     headerLinksIcon
                     headerLinks {
                         label
-                        url
-                    }
-                    websiteHost {
-                        name
                         url
                     }
                     footerLinks {

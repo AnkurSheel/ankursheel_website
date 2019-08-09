@@ -1,29 +1,26 @@
 module.exports = {
-    siteTitle: 'gatsby-starter-morning-dew',
-    siteDescription: 'A Gatsby theme/starter to build lightning-fast websites',
-    authorName: 'Maxence Poutord',
-    twitterUsername: '_maxpou',
+    siteTitle: 'Ankur Sheel',
+    siteDescription: 'A blog by Ankur Sheel',
+    authorName: 'AnkurSheel',
+    twitterUsername: 'ankur_sheel',
     authorAvatar: 'avatar.jpeg', // file in content/images
-    multilangPosts: true, // enable/disable flags in post lists
     authorDescription: `
   For the last decade, Maxence Poutord has worked with a variety of web technologies. He is currently focused on front-end development.
   On his day to day job, he is working as a senior front-end engineer at VSware. He is also a frequent tech speaker and a mentor.
   As a new digital nomad, he is living where the WIFI and sun is 😎 <br>
   Do you want to know more? <a href="https://www.maxpou.fr/about" target="_blank">Visit my website!</a>
   `,
-    siteUrl: 'https://maxpou.github.io/',
-    disqusSiteUrl: 'https://www.maxpou.fr/',
-    // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
-    pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
+    siteUrl: 'https://ankursheel.com/',
+    // disqusSiteUrl: 'https://www.maxpou.fr/',
     siteCover: 'cover-baymax.jpeg', // file in content/images
-    googleAnalyticsId: 'UA-67868977-1',
+    googleAnalyticsId: 'UA-45876690-1',
     backgroundColor: '#ffffff',
     themeColor: '#222222',
     display: 'standalone',
     icon: 'content/images/baymax.png',
     postsPerPage: 6,
-    disqusShortname: 'maxpou',
-    headerTitle: 'gatsby-starter-morning-dew',
+    // disqusShortname: 'maxpou',
+    headerTitle: 'Ankur Sheel',
     headerLinksIcon: 'baymax.png', //  (leave empty to disable: '')
     headerLinks: [
         {
@@ -34,48 +31,22 @@ module.exports = {
             label: 'Blog',
             url: '/blog',
         },
-        {
-            label: 'Installation',
-            url: '/how-to-install',
-        },
     ],
-    // Footer information (ex: Github, Netlify...)
-    websiteHost: {
-        name: 'GitHub',
-        url: 'https://github.com',
-    },
     footerLinks: [
-        {
-            sectionName: 'Explore',
-            links: [
-                {
-                    label: 'Blog',
-                    url: '/',
-                },
-                {
-                    label: 'About',
-                    url: '/about-gatsby-starter-morning-dew',
-                },
-                {
-                    label: 'Installation',
-                    url: '/how-to-install',
-                },
-            ],
-        },
         {
             sectionName: 'Follow the author',
             links: [
                 {
                     label: 'Github',
-                    url: 'https://github.com/maxpou/gatsby-starter-morning-dew',
-                },
-                {
-                    label: 'Website',
-                    url: 'https://www.maxpou.fr',
+                    url: 'https://github.com/AnkurSheel',
                 },
                 {
                     label: 'Twitter',
-                    url: 'https://twitter.com/_maxpou',
+                    url: 'https://twitter.com/ankur_sheel',
+                },
+                {
+                    label: 'LinkedIn',
+                    url: 'https://www.linkedin.com/in/ankursheel',
                 },
             ],
         },
