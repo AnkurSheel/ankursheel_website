@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { colors } from '../tokens';
 
 const ListContainer = styled.div`

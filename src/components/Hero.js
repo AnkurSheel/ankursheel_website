@@ -1,8 +1,5 @@
 import React from 'react';
-import { withPrefix } from 'gatsby';
-import styled from 'styled-components';
-import useSiteMetadata from '../hooks/use-site-config';
-import useSiteImages from '../hooks/use-site-images';
+import styled from '@emotion/styled';
 import { colors } from '../tokens';
 
 const HeroContainer = styled.div`
@@ -38,17 +35,19 @@ const HeroSubTitle = styled.h2`
 `;
 
 const Hero = props => {
-    const { siteCover } = useSiteMetadata();
-    const { fluid } = useSiteImages(siteCover);
-    const heroImg = props.heroImg || fluid.src;
+    const heroImg = props.heroImg;
 
     return (
-        <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
-            <TitleContainer>
-                <HeroTitle>{props.title}</HeroTitle>
-                {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
-            </TitleContainer>
-        </HeroContainer>
+        <>
+            {heroImg && (
+                <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
+                    <TitleContainer>
+                        <HeroTitle>{props.title}</HeroTitle>
+                        {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
+                    </TitleContainer>
+                </HeroContainer>
+            )}
+        </>
     );
 };
 

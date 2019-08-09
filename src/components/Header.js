@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import useSiteMetadata from '../hooks/use-site-config';
 import { colors, media } from '../tokens';
 import useSiteImages from '../hooks/use-site-images';

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import ukFlag from './uk-flag.png';
 import frFlag from './fr-flag.png';
 

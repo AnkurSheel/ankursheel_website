@@ -1,17 +1,13 @@
-import React from 'react';
+import styled from '@emotion/styled';
 import { graphql, withPrefix } from 'gatsby';
-import styled from 'styled-components';
+import React from 'react';
 import { GlobalStyle } from '../components/Commons';
 import useSiteMetadata from '../hooks/use-site-config';
 
-const Preview = styled.div.attrs({
-    width: props => props.width || 440,
-    height: props => props.height || 220,
-    hero: props => props.hero || withPrefix(props.siteCover),
-})`
-  width: ${props => props.width}px;
-  height: ${props => props.height}px;
-  background-image: url("${props => props.hero}");
+const Preview = styled.div`
+  width: ${props => props.width || 440}px;
+  height: ${props => props.height || 220}px;
+  background-image: url("${props => props.hero || withPrefix(props.siteCover)}");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -22,22 +18,18 @@ const Preview = styled.div.attrs({
   text-align: center;
 `;
 
-const Title = styled.h1.attrs({
-    fontSize: props => (props.type === 'twitter' ? '1.8rem' : '4.8rem'),
-})`
+const Title = styled.h1`
     font-weight: 700;
-    font-size: ${props => props.fontSize};
+    font-size: ${props => (props.type === 'twitter' ? '1.8rem' : '4.8rem')};
     margin: 10px 60px;
     color: #fff;
     text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
     text-align: center;
 `;
 
-const ReadTime = styled.h2.attrs({
-    fontSize: props => (props.type === 'twitter' ? '1.5rem' : '2rem'),
-})`
+const ReadTime = styled.h2`
     vertical-align: middle;
-    font-size: ${props => props.fontSize};
+    font-size: ${props => (props.type === 'twitter' ? '1.5rem' : '2rem')};
     text-align: center;
     color: #fff;
     ::before {

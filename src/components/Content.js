@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import ContentHeader from './ContentHeader';
 import { colors } from '../tokens';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
