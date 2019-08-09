@@ -1,31 +1,21 @@
 {
-    "name": "gatsby-starter-morning-dew",
-    "version": "0.0.0-development",
-    "description": "Starter Morning Dew Blog",
+    "name": "ankursheel_website",
+    "version": "1.0.0",
+    "description": "Blog for Ankur Sheel",
     "keywords": [
-        "blog",
-        "gatsby",
-        "gatsby-plugin",
-        "gatsby-theme",
-        "starter"
+        "blog"
     ],
-    "homepage": "https://github.com/maxpou/gatsby-starter-morning-dew#readme",
-    "bugs": {
-        "url": "https://github.com/maxpou/gatsby-starter-morning-dew/issues"
-    },
     "repository": {
         "type": "git",
-        "url": "https://github.com/maxpou/gatsby-starter-morning-dew.git"
+        "url": "https://github.com/AnkurSheel/ankursheel_website"
     },
     "license": "MIT",
-    "author": "Maxence Poutord <maxence.poutord@gmail.com>",
+    "author": "Ankur Sheel <ankur.sheel@gmail.com>",
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
         "format": "prettier --write src/**/*.{js,jsx,ts,tsx} data/siteConfig.js gatsby-*.js",
         "generatePostPreviewImages": "node ./scripts/generatePostPreviewImages.js",
-        "lh": "lighthousebot",
-        "semantic-release": "semantic-release",
         "start": "gatsby develop",
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
