@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { Text } from './Commons';
 import useSiteMetadata from '../hooks/use-site-config';
 import useSiteImages from '../hooks/use-site-images';

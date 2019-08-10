@@ -1,9 +1,12 @@
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+import { css, Global } from '@emotion/core';
+import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import React from 'react';
 import { colors } from '../tokens';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = () => (
+    <Global
+        styles={css(`
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,7 +36,10 @@ ol {
   padding-left: 2em;
   margin: 1em 0 0 0;
 }
-`;
+`)}
+    ></Global>
+);
+
 export const StyledLink = styled(Link)`
     border-bottom: 1px dotted ${colors.primary};
 

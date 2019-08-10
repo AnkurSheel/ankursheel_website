@@ -1,11 +1,8 @@
 import React from 'react';
 import { StyledLink } from './Commons';
-import Flag from './Flag/Flag';
-import useSiteMetadata from '../hooks/use-site-config';
 
 const RelatedPosts = props => {
     const { posts } = props;
-    const { multilangPosts } = useSiteMetadata();
 
     return (
         <ul>
@@ -15,10 +12,7 @@ const RelatedPosts = props => {
                 const language = post.node.frontmatter.language || 'en';
                 return (
                     <li key={slug}>
-                        <StyledLink to={`/${slug}`}>
-                            {multilangPosts && <Flag language={language} />}
-                            {title}
-                        </StyledLink>
+                        <StyledLink to={`/${slug}`}>{title}</StyledLink>
                     </li>
                 );
             })}

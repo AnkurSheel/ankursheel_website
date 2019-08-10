@@ -1,14 +1,13 @@
-import React from 'react';
 import { graphql } from 'gatsby';
-
-import Layout from '../components/layout';
+import React from 'react';
 import Content from '../components/Content';
-import Wrapper from '../components/Wrapper';
-import Hero from '../components/Hero';
-import SEO from '../components/SEO';
 import Disqus from '../components/Disqus';
+import Hero from '../components/Hero';
+import Layout from '../components/layout';
+import SEO from '../components/SEO';
+import Wrapper from '../components/Wrapper';
 
-export default props => {
+export const Page = props => {
     const page = props.data.page;
 
     return (
@@ -36,6 +35,8 @@ export default props => {
         </Layout>
     );
 };
+
+export default Page;
 
 export const pageQuery = graphql`
     query($slug: String!) {

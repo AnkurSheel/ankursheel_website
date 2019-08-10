@@ -8,8 +8,8 @@ module.exports = {
         description: config.siteDescription,
         ...config,
     },
-    pathPrefix: config.pathPrefix,
     plugins: [
+        `gatsby-plugin-typescript`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -29,12 +29,6 @@ module.exports = {
             options: {
                 name: 'images',
                 path: 'content/images',
-            },
-        },
-        {
-            resolve: `gatsby-plugin-page-creator`,
-            options: {
-                path: path.join(__dirname, `src`, `pages`),
             },
         },
         {
@@ -70,7 +64,7 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-offline`,
-        `gatsby-plugin-styled-components`,
+        `gatsby-plugin-emotion`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sharp`,
         {
@@ -84,18 +78,11 @@ module.exports = {
             options: {
                 name: config.siteTitle,
                 short_name: config.siteTitle,
-                start_url: config.pathPrefix,
-                background_color: config.background_color,
-                theme_color: config.theme_color,
+                start_url: '/',
+                background_color: config.backgroundColor,
+                theme_color: config.themeColor,
                 display: config.display,
                 icon: config.icon,
-            },
-        },
-        // https://www.gatsbyjs.org/docs/themes/converting-a-starter/#transpiling-your-theme-with-webpack
-        {
-            resolve: 'gatsby-plugin-compile-es6-packages',
-            options: {
-                modules: ['gatsby-starter-morning-dew'],
             },
         },
     ],

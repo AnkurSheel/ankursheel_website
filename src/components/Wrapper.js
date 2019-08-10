@@ -1,9 +1,7 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { colors } from '../tokens';
 
-const Wrapper = styled.main.attrs({
-    role: 'main',
-})`
+const Wrapper = styled.main`
     position: relative;
     border-radius: 5px;
     width: 80%;

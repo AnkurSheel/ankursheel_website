@@ -25,11 +25,8 @@ export default {
     background: '#f4f8fb',
     backgroundArticle: colors.white,
     heartFooter: 'red',
-    highlight_code_oneline: '#fff9d9',
-    highlight_code_bg: '#ffa7c4',
-    highlight_code_marker: '#ffa7c4',
-    highlight_code_linebg: '#022a4b',
-    // testing
-    // primary: `#6556B3`,
-    // primaryAlpha: `#6556B3cc`,
+    highlightCodeOneline: '#fff9d9',
+    highlightCodeBackground: '#ffa7c4',
+    highlightCodeMarker: '#ffa7c4',
+    highlightCodeLineBackground: '#022a4b',
 };

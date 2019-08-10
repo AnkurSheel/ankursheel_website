@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
 import 'prismjs/themes/prism-tomorrow.css';

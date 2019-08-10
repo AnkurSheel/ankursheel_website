@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import ContentHeader from './ContentHeader';
-import { colors } from '../tokens';
+import styled from '@emotion/styled';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
+import React from 'react';
+import { colors } from '../tokens';
+import ContentHeader from './ContentHeader';
 
 const ContentBody = styled.div`
     line-height: 1.6;
@@ -63,18 +63,18 @@ const ContentBody = styled.div`
     }
 
     & .gatsby-highlight-code-line {
-        background-color: ${colors.highlight_code_linebg};
+        background-color: ${colors.highlightCodeLineBackground};
         display: block;
         margin-right: -1em;
         margin-left: -1em;
         padding-right: 1em;
         padding-left: 0.75em;
-        border-left: 0.25em solid ${colors.highlight_code_bg};
+        border-left: 0.25em solid ${colors.highlightCodeBackground};
     }
 
     & p > code.language-text,
     & li > code.language-text {
-        background: ${colors.highlight_code_oneline};
+        background: ${colors.highlightCodeOneline};
         color: #222222cc;
         padding: 0 3px;
         font-size: 0.94em;

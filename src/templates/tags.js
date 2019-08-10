@@ -1,12 +1,11 @@
-import React from 'react';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
-
+import React from 'react';
+import Hero from '../components/Hero';
 import Layout from '../components/layout';
 import PostsList from '../components/PostsList';
-import Wrapper from '../components/Wrapper';
 import SEO from '../components/SEO';
-import Hero from '../components/Hero';
+import Wrapper from '../components/Wrapper';
 
 class Tags extends React.Component {
     render() {
@@ -19,7 +18,7 @@ class Tags extends React.Component {
                 <Hero title={pageTitle} />
 
                 <Wrapper>
-                    <h1>Posts tagged as "{this.props.pageContext.tag}"</h1>
+                    <h1>Posts tagged as &quot;{this.props.pageContext.tag}&quot;</h1>
                     <PostsList posts={posts} />
                 </Wrapper>
             </Layout>

@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from 'react';
+import styled from '@emotion/styled';
 import { colors } from '../tokens';
 
 const PaginationWrapper = styled.nav`
@@ -88,7 +88,7 @@ const PageInfo = styled.span`
 class Pagination extends React.Component {
     render() {
         const { currentPage, nbPages } = this.props;
-        const previousUrl = currentPage === 2 ? '/' : `/pages/${currentPage - 1}`;
+        const previousUrl = currentPage === 2 ? '/blog' : `/blog/pages/${currentPage - 1}`;
 
         return (
             <PaginationWrapper>
@@ -103,7 +103,7 @@ class Pagination extends React.Component {
                 </PageInfo>
 
                 {currentPage < nbPages ? (
-                    <NextBtn to={`/pages/${currentPage + 1}`}>Older posts ›</NextBtn>
+                    <NextBtn to={`/blog/pages/${currentPage + 1}`}>Older posts ›</NextBtn>
                 ) : (
                     <Spacer className="next" />
                 )}
