@@ -67,7 +67,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         const next = index === 0 ? null : posts[index - 1].node;
 
         createPage({
-            path: post.node.frontmatter.slug,
+            path: `/blog/${post.node.frontmatter.slug}`,
             component: BlogPostTemplate,
             context: {
                 slug: post.node.frontmatter.slug,
@@ -79,7 +79,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         // generate post share images (dev only)
         if (process.env.gatsby_executing_command.includes('develop')) {
             createPage({
-                path: `${post.node.frontmatter.slug}/image_tw`,
+                path: `/blog/${post.node.frontmatter.slug}/image_tw`,
                 component: BlogPostShareImage,
                 context: {
                     slug: post.node.frontmatter.slug,
@@ -89,7 +89,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 },
             });
             createPage({
-                path: `${post.node.frontmatter.slug}/image_fb`,
+                path: `blog/${post.node.frontmatter.slug}/image_fb`,
                 component: BlogPostShareImage,
                 context: {
                     slug: post.node.frontmatter.slug,

@@ -54,11 +54,12 @@ const PostTitleLink = styled(Link)`
 const PostsListItem = props => {
     const { title, excerpt, slug, date, language, tags } = props;
 
+    const articleLink = `/blog/${slug}`;
     return (
         <Post>
             <PostHeader>
                 <h2>
-                    <PostTitleLink to={`/${slug}`}>{title}</PostTitleLink>
+                    <PostTitleLink to={articleLink}>{title}</PostTitleLink>
                 </h2>
             </PostHeader>
             <section>
@@ -67,7 +68,7 @@ const PostsListItem = props => {
             <footer>
                 <TagList tags={tags} icon={true} />
                 <PostDate>{date}</PostDate>
-                <ReadPost to={`/${slug}`} aria-label={`View ${title} article`}>
+                <ReadPost to={articleLink} aria-label={`View ${title} article`}>
                     Read post ›
                 </ReadPost>
             </footer>

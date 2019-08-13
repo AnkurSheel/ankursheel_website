@@ -12,7 +12,7 @@ const RelatedPosts = props => {
                 const language = post.node.frontmatter.language || 'en';
                 return (
                     <li key={slug}>
-                        <StyledLink to={`/${slug}`}>{title}</StyledLink>
+                        <StyledLink to={`/blog/${slug}`}>{title}</StyledLink>
                     </li>
                 );
             })}
