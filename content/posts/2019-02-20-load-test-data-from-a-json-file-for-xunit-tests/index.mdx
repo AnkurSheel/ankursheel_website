@@ -19,7 +19,7 @@ tags:
 
 xUnit is a unit testing tool for the .Net framework. If you're new to testing with xUnit, I suggest reading the getting started [documentation.](https://xunit.github.io/docs/getting-started-dotnet-core.html)
 
-xUnit allows support for both parameterless and parameterised tests. There are 3 different ways to supply data to the parameterized tests
+xUnit allows support for both parameterless and parameterized tests. There are 3 different ways to supply data to the parameterized tests
 
 -   **Inline Data** is good when the method parameters are constant but it gets unwieldy pretty quickly when you have a lot of test cases. It also can't be used when the data is not constant.
 -   **Class Data** removes clutter from test files by moving the data to a separate class. It also allows you to pass non-constant data to the test. The downside is that you have to create a new class.
@@ -52,7 +52,7 @@ class TestObject<T1, T2>
 }
 ```
 
-Now, lwts modify our attribute class. _For brevity, I am just showing the relevant code here. For the whole file please see [here](https://github.com/AnkurSheel/AdventOfCode2018/blob/master/AdventOfCode2018.Tests/JsonFileDataAttribute.cs)_.
+Now, lets modify our attribute class. _For brevity, I am just showing the relevant code here. For the whole file please see [here](https://github.com/AnkurSheel/AdventOfCode2018/blob/master/AdventOfCode2018.Tests/JsonFileDataAttribute.cs)_.
 
 ```csharp
 public class JsonFileDataAttribute : DataAttribute
@@ -99,7 +99,7 @@ public void Test(List<string> data, int expectedResult)
 
 ## References
 
--   [xUnit documentationn](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+-   [xUnit documentation](https://xunit.github.io/docs/getting-started-dotnet-core.html)
 -   [Advent of Code](https://adventofcode.com)
 -   [Creating a custom xUnit theory test DataAttribute to load data from JSON files](https://andrewlock.net/creating-a-custom-xunit-theory-test-dataattribute-to-load-data-from-json-files/) by Andrew Lock
 -   [MakeGenericType](<https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&view=netframework-4.7.2>)
