@@ -1,12 +1,11 @@
-import React from 'react';
 import { graphql } from 'gatsby';
-
-import Layout from '../components/layout';
-import Wrapper from '../components/Wrapper';
+import React from 'react';
 import Hero from '../components/Hero';
-import PostsList from '../components/PostsList';
+import Layout from '../components/layout';
 import Pagination from '../components/Pagination';
+import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
+import Wrapper from '../components/Wrapper';
 
 class BlogList extends React.Component {
     render() {
@@ -52,7 +51,6 @@ export const pageQuery = graphql`
                         date(formatString: "DD MMMM, YYYY")
                         title
                         tags
-                        language
                         slug
                     }
                 }

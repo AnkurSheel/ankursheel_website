@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import styled from '@emotion/styled';
 import { Text } from '../components/Commons';
 import Layout from '../components/layout';
 import RelatedPosts from '../components/RelatedPosts';
@@ -41,7 +41,6 @@ const NotFoundPage = props => {
                             date(formatString: "DD MMMM, YYYY")
                             title
                             tags
-                            language
                             slug
                         }
                     }
