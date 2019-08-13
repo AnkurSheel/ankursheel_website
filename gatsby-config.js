@@ -90,5 +90,6 @@ module.exports = {
                 icon: config.icon,
             },
         },
+        { resolve: `gatsby-plugin-netlify` },
     ],
 };
