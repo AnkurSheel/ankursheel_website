@@ -56,15 +56,15 @@ export const pageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 slug
                 tags
-                cover {
-                    publicURL
-                }
-                imageTw {
-                    publicURL
-                }
-                imageFb {
-                    publicURL
-                }
+                # cover {
+                #     publicURL
+                # }
+                # imageTw {
+                #     publicURL
+                # }
+                # imageFb {
+                #     publicURL
+                # }
             }
         }
     }

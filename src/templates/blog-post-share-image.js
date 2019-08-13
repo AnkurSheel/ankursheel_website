@@ -64,9 +64,9 @@ export const pageQuery = graphql`
             timeToRead
             frontmatter {
                 title
-                cover {
-                    publicURL
-                }
+                # cover {
+                #     publicURL
+                # }
             }
         }
     }

@@ -40,9 +40,10 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "MMMM DD, YYYY")
                 slug
-                cover {
-                    publicURL
-                }
+                cover
+                #  {
+                #     publicURL
+                # }
             }
         }
     }
