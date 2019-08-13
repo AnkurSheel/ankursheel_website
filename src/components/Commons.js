@@ -41,7 +41,7 @@ ol {
 );
 
 export const StyledLink = styled(Link)`
-    border-bottom: 1px dotted ${colors.primary};
+    border-bottom: 1px dashed ${colors.primary};
 
     &:hover {
         border-bottom-style: solid;
