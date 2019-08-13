@@ -1,17 +1,36 @@
+import styled from '@emotion/styled';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import 'prismjs/themes/prism-tomorrow.css';
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from '@emotion/styled';
-import Header from './Header';
-import Footer from './Footer';
-import 'prismjs/themes/prism-tomorrow.css';
-import { GlobalStyle } from './Commons';
 import { media } from '../tokens';
+import { GlobalStyle } from './Commons';
+import Footer from './Footer';
+import Header from './Header';
 
 const SiteContent = styled.div`
     margin: 0 0;
 
     @media ${media.medium} {
         margin: 60px 0;
+    }
+    /**
+ * If you already use line highlighting
+ */
+
+    /* Adjust the position of the line numbers */
+    .gatsby-highlight pre[class*='language-'].line-numbers {
+        padding-left: 2.8em;
+    }
+
+    /**
+ * If you only want to use line numbering
+ */
+
+    .gatsby-highlight pre[class*='language-'].line-numbers {
+        padding: 0;
+        padding-left: 2.8em;
+        overflow: initial;
     }
 `;
 

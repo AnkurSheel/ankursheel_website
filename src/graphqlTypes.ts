@@ -682,7 +682,6 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterImageFbPublicUrl = 'childMdx___frontmatter___imageFb___publicURL',
     ChildMdxFrontmatterImageFbId = 'childMdx___frontmatter___imageFb___id',
     ChildMdxFrontmatterImageFbChildren = 'childMdx___frontmatter___imageFb___children',
-    ChildMdxFrontmatterDisqus = 'childMdx___frontmatter___disqus',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
     ChildMdxHeadings = 'childMdx___headings',
@@ -842,7 +841,6 @@ export enum FileFieldsEnum {
     ChildMarkdownRemarkFrontmatterImageFbPublicUrl = 'childMarkdownRemark___frontmatter___imageFb___publicURL',
     ChildMarkdownRemarkFrontmatterImageFbId = 'childMarkdownRemark___frontmatter___imageFb___id',
     ChildMarkdownRemarkFrontmatterImageFbChildren = 'childMarkdownRemark___frontmatter___imageFb___children',
-    ChildMarkdownRemarkFrontmatterDisqus = 'childMarkdownRemark___frontmatter___disqus',
     ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
     ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
     ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
@@ -1914,7 +1912,6 @@ export enum MarkdownRemarkFieldsEnum {
     FrontmatterImageFbChildMarkdownRemarkChildren = 'frontmatter___imageFb___childMarkdownRemark___children',
     FrontmatterImageFbChildImageSharpId = 'frontmatter___imageFb___childImageSharp___id',
     FrontmatterImageFbChildImageSharpChildren = 'frontmatter___imageFb___childImageSharp___children',
-    FrontmatterDisqus = 'frontmatter___disqus',
     Excerpt = 'excerpt',
     RawMarkdownBody = 'rawMarkdownBody',
     FileAbsolutePath = 'fileAbsolutePath',
@@ -2051,7 +2048,6 @@ export type MarkdownRemarkFrontmatter = {
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
     imageTw?: Maybe<File>;
     imageFb?: Maybe<File>;
-    disqus?: Maybe<Scalars['Boolean']>;
 };
 
 export type MarkdownRemarkFrontmatterDateArgs = {
@@ -2071,7 +2067,6 @@ export type MarkdownRemarkFrontmatterFilterInput = {
     tags?: Maybe<StringQueryOperatorInput>;
     imageTw?: Maybe<FileFilterInput>;
     imageFb?: Maybe<FileFilterInput>;
-    disqus?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -2379,7 +2374,6 @@ export enum MdxFieldsEnum {
     FrontmatterImageFbChildMarkdownRemarkChildren = 'frontmatter___imageFb___childMarkdownRemark___children',
     FrontmatterImageFbChildImageSharpId = 'frontmatter___imageFb___childImageSharp___id',
     FrontmatterImageFbChildImageSharpChildren = 'frontmatter___imageFb___childImageSharp___children',
-    FrontmatterDisqus = 'frontmatter___disqus',
     Body = 'body',
     Excerpt = 'excerpt',
     Headings = 'headings',
@@ -2509,7 +2503,6 @@ export type MdxFrontmatter = {
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
     imageTw?: Maybe<File>;
     imageFb?: Maybe<File>;
-    disqus?: Maybe<Scalars['Boolean']>;
 };
 
 export type MdxFrontmatterDateArgs = {
@@ -2529,7 +2522,6 @@ export type MdxFrontmatterFilterInput = {
     tags?: Maybe<StringQueryOperatorInput>;
     imageTw?: Maybe<FileFilterInput>;
     imageFb?: Maybe<FileFilterInput>;
-    disqus?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type MdxGroupConnection = {

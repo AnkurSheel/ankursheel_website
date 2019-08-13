@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import Bio from './Bio';
+import React from 'react';
 import Content from './Content';
 
 const ArticleWrapper = styled.article`
@@ -25,9 +24,9 @@ class Article extends React.Component {
         return (
             <ArticleWrapper>
                 <Content content={post.body} date={post.frontmatter.date} tags={post.frontmatter.tags} />
-                <ArticleFooter>
+                {/* <ArticleFooter>
                     <Bio />
-                </ArticleFooter>
+                </ArticleFooter> */}
             </ArticleWrapper>
         );
     }

@@ -18,7 +18,7 @@ const SEO = props => {
     return (
         <Helmet title={title}>
             {/* ToDo: remove this once we are ready to deploy*/}
-            <meta name="robots" content="noindex, noodp, noarchive" />
+            {/* <meta name="robots" content="noindex, noodp, noarchive" /> */}
             {/* General tags */}
             <html lang={lang} />
             <meta name="description" content={description} />

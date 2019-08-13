@@ -1,13 +1,12 @@
-import React from 'react';
 import { graphql } from 'gatsby';
-
-import Layout from '../components/layout';
-import Wrapper from '../components/Wrapper';
-import Hero from '../components/Hero';
+import React from 'react';
 import Article from '../components/Article';
+import Disqus from '../components/Disqus';
+import Hero from '../components/Hero';
+import Layout from '../components/layout';
 import PrevNextPost from '../components/PrevNextPost';
 import SEO from '../components/SEO';
-import Disqus from '../components/Disqus';
+import Wrapper from '../components/Wrapper';
 
 class BlogPostTemplate extends React.Component {
     render() {
@@ -54,19 +53,18 @@ export const pageQuery = graphql`
             body
             frontmatter {
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD MMMM, YYYY")
                 slug
-                language
                 tags
-                cover {
-                    publicURL
-                }
-                imageTw {
-                    publicURL
-                }
-                imageFb {
-                    publicURL
-                }
+                # cover {
+                #     publicURL
+                # }
+                # imageTw {
+                #     publicURL
+                # }
+                # imageFb {
+                #     publicURL
+                # }
             }
         }
     }
