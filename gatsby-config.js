@@ -47,7 +47,12 @@ module.exports = {
                             withWebp: true,
                         },
                     },
-                    { resolve: 'gatsby-remark-prismjs' },
+                    {
+                        resolve: 'gatsby-remark-prismjs',
+                        options: {
+                            showLineNumbers: true,
+                        },
+                    },
                     { resolve: 'gatsby-remark-responsive-iframe' },
                     { resolve: 'gatsby-remark-copy-linked-files' },
                     { resolve: 'gatsby-remark-smartypants' },
