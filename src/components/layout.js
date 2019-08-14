@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
-import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/themes/prism-okaidia.css';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { media } from '../tokens';
