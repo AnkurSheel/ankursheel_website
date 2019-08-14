@@ -1,15 +1,16 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import BackgroundImage from 'gatsby-background-image';
+import React from 'react';
 import { colors } from '../tokens';
 
-const HeroContainer = styled.div`
+const HeroContainer = styled(BackgroundImage)`
     position: relative;
     display: table;
     width: 100%;
-    height: 400px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 50vh;
+    // overflow: hidden;
+    // background-repeat: no-repeat;
+    background-position: bottom 20% center;
     background-size: cover;
 `;
 
@@ -35,17 +36,23 @@ const HeroSubTitle = styled.h2`
 `;
 
 const Hero = props => {
+    console.log(props);
     const heroImg = props.heroImg;
 
     return (
         <>
-            {heroImg && (
-                <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
+            {(heroImg && (
+                <HeroContainer Tag="section" fluid={heroImg} fadeIn="soft">
                     <TitleContainer>
                         <HeroTitle>{props.title}</HeroTitle>
                         {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
                     </TitleContainer>
                 </HeroContainer>
+            )) || (
+                <TitleContainer>
+                    <HeroTitle>{props.title}</HeroTitle>
+                    {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
+                </TitleContainer>
             )}
         </>
     );

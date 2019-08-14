@@ -41,7 +41,7 @@ const ReadTime = styled.h2`
 const BlogPostShareImage = props => {
     const post = props.data.post;
     const { width, height, type } = props.pageContext;
-    const heroImg = post.frontmatter.cover && post.frontmatter.cover.publicURL;
+    const heroImg = post.frontmatter.cover;
     const minute = post.timeToRead === 1 ? 'min' : 'mins';
     const { siteCover } = useSiteMetadata();
 

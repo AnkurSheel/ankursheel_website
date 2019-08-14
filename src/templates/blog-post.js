@@ -12,13 +12,15 @@ class BlogPostTemplate extends React.Component {
     render() {
         const post = this.props.data.post;
         const { previous, next } = this.props.pageContext;
-
+        const fluid =
+            (post.frontmatter.images && post.frontmatter.images.sharp && post.frontmatter.images.sharp.fluid) ||
+            undefined;
         return (
             <Layout location={this.props.location}>
                 <SEO
                     title={post.frontmatter.title}
                     description={post.excerpt}
-                    cover={post.frontmatter.cover && post.frontmatter.cover.publicURL}
+                    cover={post.frontmatter.cover}
                     imageFb={post.frontmatter.imageFb && post.frontmatter.imageFb.publicURL}
                     imageTw={post.frontmatter.imageTw && post.frontmatter.imageTw.publicURL}
                     lang={post.frontmatter.language}
@@ -26,10 +28,7 @@ class BlogPostTemplate extends React.Component {
                     isBlogPost
                 />
 
-                <Hero
-                    heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL}
-                    title={post.frontmatter.title}
-                />
+                <Hero heroImg={fluid} title={post.frontmatter.title} />
 
                 <Wrapper>
                     <Article post={post} />
@@ -56,15 +55,15 @@ export const pageQuery = graphql`
                 date(formatString: "DD MMMM, YYYY")
                 slug
                 tags
-                # cover {
-                #     publicURL
-                # }
-                # imageTw {
-                #     publicURL
-                # }
-                # imageFb {
-                #     publicURL
-                # }
+                images {
+                    sharp: childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
+                # imageTw
+                # imageFb
             }
         }
     }
