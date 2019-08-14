@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const BlogPostShareImage = require.resolve('./src/templates/blog-post-share-image.js');
     const PageTemplate = require.resolve('./src/templates/page.js');
     const PostsByTagTemplate = require.resolve('./src/templates/tags.js');
+    const PostsByCategoryTemplate = require.resolve('./src/templates/categories.js');
     const ListPostsTemplate = require.resolve('./src/templates/blog-list-template.js');
 
     const allMarkdownQuery = await graphql(`
@@ -18,6 +19,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                         frontmatter {
                             title
                             slug
+                            categories
                             tags
                         }
                     }
@@ -124,6 +126,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 component: PostsByTagTemplate,
                 context: {
                     tag: uniqTag,
+                },
+            });
+        });
+
+    markdownFiles
+        .filter(item => item.node.frontmatter.categories !== null)
+        .reduce((acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.categories])], [])
+        .forEach(uniqueCategory => {
+            createPage({
+                path: `category/${uniqueCategory}`,
+                component: PostsByCategoryTemplate,
+                context: {
+                    category: uniqueCategory,
                 },
             });
         });

@@ -10,6 +10,7 @@ import Wrapper from '../components/Wrapper';
 
 class BlogPostTemplate extends React.Component {
     render() {
+        console.log(this.props);
         const post = this.props.data.post;
         const { previous, next } = this.props.pageContext;
         const fluid =
@@ -55,6 +56,7 @@ export const pageQuery = graphql`
                 date(formatString: "DD MMMM, YYYY")
                 slug
                 tags
+                categories
                 images {
                     sharp: childImageSharp {
                         fluid {
