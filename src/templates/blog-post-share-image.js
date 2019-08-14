@@ -41,7 +41,7 @@ const ReadTime = styled.h2`
 const BlogPostShareImage = props => {
     const post = props.data.post;
     const { width, height, type } = props.pageContext;
-    const heroImg = post.frontmatter.cover;
+    const heroImg = post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL;
     const minute = post.timeToRead === 1 ? 'min' : 'mins';
     const { siteCover } = useSiteMetadata();
 
@@ -64,9 +64,9 @@ export const pageQuery = graphql`
             timeToRead
             frontmatter {
                 title
-                # cover {
-                #     publicURL
-                # }
+                featuredImage {
+                    publicURL
+                }
             }
         }
     }

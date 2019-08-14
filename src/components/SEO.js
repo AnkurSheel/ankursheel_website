@@ -9,8 +9,8 @@ const SEO = props => {
 
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
     const formatedSiteUrl = siteUrl.substring(0, siteUrl.length - 1);
-    const imagePath = props.imageFb || props.cover || withPrefix(siteCover);
-    const imagePathTwitter = props.imageTw || props.cover || withPrefix(siteCover);
+    const imagePath = props.imageFb || props.featuredImage || withPrefix(siteCover);
+    const imagePathTwitter = props.imageTw || props.featuredImage || withPrefix(siteCover);
     const image = `${formatedSiteUrl}${imagePath}`;
     const imageTwitter = `${formatedSiteUrl}${imagePathTwitter}`;
     const description = props.description || siteDescription;

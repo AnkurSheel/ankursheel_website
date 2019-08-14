@@ -14,14 +14,16 @@ class BlogPostTemplate extends React.Component {
         const post = this.props.data.post;
         const { previous, next } = this.props.pageContext;
         const fluid =
-            (post.frontmatter.images && post.frontmatter.images.sharp && post.frontmatter.images.sharp.fluid) ||
+            (post.frontmatter.featuredImage &&
+                post.frontmatter.featuredImage.sharp &&
+                post.frontmatter.featuredImage.sharp.fluid) ||
             undefined;
         return (
             <Layout location={this.props.location}>
                 <SEO
                     title={post.frontmatter.title}
                     description={post.excerpt}
-                    cover={post.frontmatter.cover}
+                    featuredImage={post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL}
                     imageFb={post.frontmatter.imageFb && post.frontmatter.imageFb.publicURL}
                     imageTw={post.frontmatter.imageTw && post.frontmatter.imageTw.publicURL}
                     lang={post.frontmatter.language}
@@ -57,7 +59,8 @@ export const pageQuery = graphql`
                 slug
                 tags
                 categories
-                images {
+                featuredImage {
+                    publicURL
                     sharp: childImageSharp {
                         fluid {
                             ...GatsbyImageSharpFluid_withWebp
