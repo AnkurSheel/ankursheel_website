@@ -8,9 +8,9 @@ const HeroContainer = styled(BackgroundImage)`
     display: table;
     width: 100%;
     height: 50vh;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
+    // overflow: hidden;
+    // background-repeat: no-repeat;
+    background-position: bottom 20% center;
     background-size: cover;
 `;
 
