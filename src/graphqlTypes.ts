@@ -373,7 +373,6 @@ export type File = Node & {
     children: Array<Node>;
     internal: Internal;
     childMdx?: Maybe<Mdx>;
-    childMarkdownRemark?: Maybe<MarkdownRemark>;
     childImageSharp?: Maybe<ImageSharp>;
 };
 
@@ -575,113 +574,46 @@ export enum FileFieldsEnum {
     ChildMdxRawBody = 'childMdx___rawBody',
     ChildMdxFileAbsolutePath = 'childMdx___fileAbsolutePath',
     ChildMdxFrontmatterTitle = 'childMdx___frontmatter___title',
-    ChildMdxFrontmatterSlug = 'childMdx___frontmatter___slug',
-    ChildMdxFrontmatterCoverBirthtime = 'childMdx___frontmatter___cover___birthtime',
-    ChildMdxFrontmatterCoverBirthtimeMs = 'childMdx___frontmatter___cover___birthtimeMs',
-    ChildMdxFrontmatterCoverSourceInstanceName = 'childMdx___frontmatter___cover___sourceInstanceName',
-    ChildMdxFrontmatterCoverAbsolutePath = 'childMdx___frontmatter___cover___absolutePath',
-    ChildMdxFrontmatterCoverRelativePath = 'childMdx___frontmatter___cover___relativePath',
-    ChildMdxFrontmatterCoverExtension = 'childMdx___frontmatter___cover___extension',
-    ChildMdxFrontmatterCoverSize = 'childMdx___frontmatter___cover___size',
-    ChildMdxFrontmatterCoverPrettySize = 'childMdx___frontmatter___cover___prettySize',
-    ChildMdxFrontmatterCoverModifiedTime = 'childMdx___frontmatter___cover___modifiedTime',
-    ChildMdxFrontmatterCoverAccessTime = 'childMdx___frontmatter___cover___accessTime',
-    ChildMdxFrontmatterCoverChangeTime = 'childMdx___frontmatter___cover___changeTime',
-    ChildMdxFrontmatterCoverBirthTime = 'childMdx___frontmatter___cover___birthTime',
-    ChildMdxFrontmatterCoverRoot = 'childMdx___frontmatter___cover___root',
-    ChildMdxFrontmatterCoverDir = 'childMdx___frontmatter___cover___dir',
-    ChildMdxFrontmatterCoverBase = 'childMdx___frontmatter___cover___base',
-    ChildMdxFrontmatterCoverExt = 'childMdx___frontmatter___cover___ext',
-    ChildMdxFrontmatterCoverName = 'childMdx___frontmatter___cover___name',
-    ChildMdxFrontmatterCoverRelativeDirectory = 'childMdx___frontmatter___cover___relativeDirectory',
-    ChildMdxFrontmatterCoverDev = 'childMdx___frontmatter___cover___dev',
-    ChildMdxFrontmatterCoverMode = 'childMdx___frontmatter___cover___mode',
-    ChildMdxFrontmatterCoverNlink = 'childMdx___frontmatter___cover___nlink',
-    ChildMdxFrontmatterCoverUid = 'childMdx___frontmatter___cover___uid',
-    ChildMdxFrontmatterCoverGid = 'childMdx___frontmatter___cover___gid',
-    ChildMdxFrontmatterCoverRdev = 'childMdx___frontmatter___cover___rdev',
-    ChildMdxFrontmatterCoverIno = 'childMdx___frontmatter___cover___ino',
-    ChildMdxFrontmatterCoverAtimeMs = 'childMdx___frontmatter___cover___atimeMs',
-    ChildMdxFrontmatterCoverMtimeMs = 'childMdx___frontmatter___cover___mtimeMs',
-    ChildMdxFrontmatterCoverCtimeMs = 'childMdx___frontmatter___cover___ctimeMs',
-    ChildMdxFrontmatterCoverAtime = 'childMdx___frontmatter___cover___atime',
-    ChildMdxFrontmatterCoverMtime = 'childMdx___frontmatter___cover___mtime',
-    ChildMdxFrontmatterCoverCtime = 'childMdx___frontmatter___cover___ctime',
-    ChildMdxFrontmatterCoverPublicUrl = 'childMdx___frontmatter___cover___publicURL',
-    ChildMdxFrontmatterCoverId = 'childMdx___frontmatter___cover___id',
-    ChildMdxFrontmatterCoverChildren = 'childMdx___frontmatter___cover___children',
-    ChildMdxFrontmatterGenerateCard = 'childMdx___frontmatter___generate_card',
+    ChildMdxFrontmatterAuthor = 'childMdx___frontmatter___author',
     ChildMdxFrontmatterDate = 'childMdx___frontmatter___date',
-    ChildMdxFrontmatterLanguage = 'childMdx___frontmatter___language',
+    ChildMdxFrontmatterExcerpt = 'childMdx___frontmatter___excerpt',
+    ChildMdxFrontmatterSlug = 'childMdx___frontmatter___slug',
+    ChildMdxFrontmatterFeaturedImageBirthtime = 'childMdx___frontmatter___featuredImage___birthtime',
+    ChildMdxFrontmatterFeaturedImageBirthtimeMs = 'childMdx___frontmatter___featuredImage___birthtimeMs',
+    ChildMdxFrontmatterFeaturedImageSourceInstanceName = 'childMdx___frontmatter___featuredImage___sourceInstanceName',
+    ChildMdxFrontmatterFeaturedImageAbsolutePath = 'childMdx___frontmatter___featuredImage___absolutePath',
+    ChildMdxFrontmatterFeaturedImageRelativePath = 'childMdx___frontmatter___featuredImage___relativePath',
+    ChildMdxFrontmatterFeaturedImageExtension = 'childMdx___frontmatter___featuredImage___extension',
+    ChildMdxFrontmatterFeaturedImageSize = 'childMdx___frontmatter___featuredImage___size',
+    ChildMdxFrontmatterFeaturedImagePrettySize = 'childMdx___frontmatter___featuredImage___prettySize',
+    ChildMdxFrontmatterFeaturedImageModifiedTime = 'childMdx___frontmatter___featuredImage___modifiedTime',
+    ChildMdxFrontmatterFeaturedImageAccessTime = 'childMdx___frontmatter___featuredImage___accessTime',
+    ChildMdxFrontmatterFeaturedImageChangeTime = 'childMdx___frontmatter___featuredImage___changeTime',
+    ChildMdxFrontmatterFeaturedImageBirthTime = 'childMdx___frontmatter___featuredImage___birthTime',
+    ChildMdxFrontmatterFeaturedImageRoot = 'childMdx___frontmatter___featuredImage___root',
+    ChildMdxFrontmatterFeaturedImageDir = 'childMdx___frontmatter___featuredImage___dir',
+    ChildMdxFrontmatterFeaturedImageBase = 'childMdx___frontmatter___featuredImage___base',
+    ChildMdxFrontmatterFeaturedImageExt = 'childMdx___frontmatter___featuredImage___ext',
+    ChildMdxFrontmatterFeaturedImageName = 'childMdx___frontmatter___featuredImage___name',
+    ChildMdxFrontmatterFeaturedImageRelativeDirectory = 'childMdx___frontmatter___featuredImage___relativeDirectory',
+    ChildMdxFrontmatterFeaturedImageDev = 'childMdx___frontmatter___featuredImage___dev',
+    ChildMdxFrontmatterFeaturedImageMode = 'childMdx___frontmatter___featuredImage___mode',
+    ChildMdxFrontmatterFeaturedImageNlink = 'childMdx___frontmatter___featuredImage___nlink',
+    ChildMdxFrontmatterFeaturedImageUid = 'childMdx___frontmatter___featuredImage___uid',
+    ChildMdxFrontmatterFeaturedImageGid = 'childMdx___frontmatter___featuredImage___gid',
+    ChildMdxFrontmatterFeaturedImageRdev = 'childMdx___frontmatter___featuredImage___rdev',
+    ChildMdxFrontmatterFeaturedImageIno = 'childMdx___frontmatter___featuredImage___ino',
+    ChildMdxFrontmatterFeaturedImageAtimeMs = 'childMdx___frontmatter___featuredImage___atimeMs',
+    ChildMdxFrontmatterFeaturedImageMtimeMs = 'childMdx___frontmatter___featuredImage___mtimeMs',
+    ChildMdxFrontmatterFeaturedImageCtimeMs = 'childMdx___frontmatter___featuredImage___ctimeMs',
+    ChildMdxFrontmatterFeaturedImageAtime = 'childMdx___frontmatter___featuredImage___atime',
+    ChildMdxFrontmatterFeaturedImageMtime = 'childMdx___frontmatter___featuredImage___mtime',
+    ChildMdxFrontmatterFeaturedImageCtime = 'childMdx___frontmatter___featuredImage___ctime',
+    ChildMdxFrontmatterFeaturedImagePublicUrl = 'childMdx___frontmatter___featuredImage___publicURL',
+    ChildMdxFrontmatterFeaturedImageId = 'childMdx___frontmatter___featuredImage___id',
+    ChildMdxFrontmatterFeaturedImageChildren = 'childMdx___frontmatter___featuredImage___children',
+    ChildMdxFrontmatterCategories = 'childMdx___frontmatter___categories',
     ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
-    ChildMdxFrontmatterImageTwBirthtime = 'childMdx___frontmatter___imageTw___birthtime',
-    ChildMdxFrontmatterImageTwBirthtimeMs = 'childMdx___frontmatter___imageTw___birthtimeMs',
-    ChildMdxFrontmatterImageTwSourceInstanceName = 'childMdx___frontmatter___imageTw___sourceInstanceName',
-    ChildMdxFrontmatterImageTwAbsolutePath = 'childMdx___frontmatter___imageTw___absolutePath',
-    ChildMdxFrontmatterImageTwRelativePath = 'childMdx___frontmatter___imageTw___relativePath',
-    ChildMdxFrontmatterImageTwExtension = 'childMdx___frontmatter___imageTw___extension',
-    ChildMdxFrontmatterImageTwSize = 'childMdx___frontmatter___imageTw___size',
-    ChildMdxFrontmatterImageTwPrettySize = 'childMdx___frontmatter___imageTw___prettySize',
-    ChildMdxFrontmatterImageTwModifiedTime = 'childMdx___frontmatter___imageTw___modifiedTime',
-    ChildMdxFrontmatterImageTwAccessTime = 'childMdx___frontmatter___imageTw___accessTime',
-    ChildMdxFrontmatterImageTwChangeTime = 'childMdx___frontmatter___imageTw___changeTime',
-    ChildMdxFrontmatterImageTwBirthTime = 'childMdx___frontmatter___imageTw___birthTime',
-    ChildMdxFrontmatterImageTwRoot = 'childMdx___frontmatter___imageTw___root',
-    ChildMdxFrontmatterImageTwDir = 'childMdx___frontmatter___imageTw___dir',
-    ChildMdxFrontmatterImageTwBase = 'childMdx___frontmatter___imageTw___base',
-    ChildMdxFrontmatterImageTwExt = 'childMdx___frontmatter___imageTw___ext',
-    ChildMdxFrontmatterImageTwName = 'childMdx___frontmatter___imageTw___name',
-    ChildMdxFrontmatterImageTwRelativeDirectory = 'childMdx___frontmatter___imageTw___relativeDirectory',
-    ChildMdxFrontmatterImageTwDev = 'childMdx___frontmatter___imageTw___dev',
-    ChildMdxFrontmatterImageTwMode = 'childMdx___frontmatter___imageTw___mode',
-    ChildMdxFrontmatterImageTwNlink = 'childMdx___frontmatter___imageTw___nlink',
-    ChildMdxFrontmatterImageTwUid = 'childMdx___frontmatter___imageTw___uid',
-    ChildMdxFrontmatterImageTwGid = 'childMdx___frontmatter___imageTw___gid',
-    ChildMdxFrontmatterImageTwRdev = 'childMdx___frontmatter___imageTw___rdev',
-    ChildMdxFrontmatterImageTwIno = 'childMdx___frontmatter___imageTw___ino',
-    ChildMdxFrontmatterImageTwAtimeMs = 'childMdx___frontmatter___imageTw___atimeMs',
-    ChildMdxFrontmatterImageTwMtimeMs = 'childMdx___frontmatter___imageTw___mtimeMs',
-    ChildMdxFrontmatterImageTwCtimeMs = 'childMdx___frontmatter___imageTw___ctimeMs',
-    ChildMdxFrontmatterImageTwAtime = 'childMdx___frontmatter___imageTw___atime',
-    ChildMdxFrontmatterImageTwMtime = 'childMdx___frontmatter___imageTw___mtime',
-    ChildMdxFrontmatterImageTwCtime = 'childMdx___frontmatter___imageTw___ctime',
-    ChildMdxFrontmatterImageTwPublicUrl = 'childMdx___frontmatter___imageTw___publicURL',
-    ChildMdxFrontmatterImageTwId = 'childMdx___frontmatter___imageTw___id',
-    ChildMdxFrontmatterImageTwChildren = 'childMdx___frontmatter___imageTw___children',
-    ChildMdxFrontmatterImageFbBirthtime = 'childMdx___frontmatter___imageFb___birthtime',
-    ChildMdxFrontmatterImageFbBirthtimeMs = 'childMdx___frontmatter___imageFb___birthtimeMs',
-    ChildMdxFrontmatterImageFbSourceInstanceName = 'childMdx___frontmatter___imageFb___sourceInstanceName',
-    ChildMdxFrontmatterImageFbAbsolutePath = 'childMdx___frontmatter___imageFb___absolutePath',
-    ChildMdxFrontmatterImageFbRelativePath = 'childMdx___frontmatter___imageFb___relativePath',
-    ChildMdxFrontmatterImageFbExtension = 'childMdx___frontmatter___imageFb___extension',
-    ChildMdxFrontmatterImageFbSize = 'childMdx___frontmatter___imageFb___size',
-    ChildMdxFrontmatterImageFbPrettySize = 'childMdx___frontmatter___imageFb___prettySize',
-    ChildMdxFrontmatterImageFbModifiedTime = 'childMdx___frontmatter___imageFb___modifiedTime',
-    ChildMdxFrontmatterImageFbAccessTime = 'childMdx___frontmatter___imageFb___accessTime',
-    ChildMdxFrontmatterImageFbChangeTime = 'childMdx___frontmatter___imageFb___changeTime',
-    ChildMdxFrontmatterImageFbBirthTime = 'childMdx___frontmatter___imageFb___birthTime',
-    ChildMdxFrontmatterImageFbRoot = 'childMdx___frontmatter___imageFb___root',
-    ChildMdxFrontmatterImageFbDir = 'childMdx___frontmatter___imageFb___dir',
-    ChildMdxFrontmatterImageFbBase = 'childMdx___frontmatter___imageFb___base',
-    ChildMdxFrontmatterImageFbExt = 'childMdx___frontmatter___imageFb___ext',
-    ChildMdxFrontmatterImageFbName = 'childMdx___frontmatter___imageFb___name',
-    ChildMdxFrontmatterImageFbRelativeDirectory = 'childMdx___frontmatter___imageFb___relativeDirectory',
-    ChildMdxFrontmatterImageFbDev = 'childMdx___frontmatter___imageFb___dev',
-    ChildMdxFrontmatterImageFbMode = 'childMdx___frontmatter___imageFb___mode',
-    ChildMdxFrontmatterImageFbNlink = 'childMdx___frontmatter___imageFb___nlink',
-    ChildMdxFrontmatterImageFbUid = 'childMdx___frontmatter___imageFb___uid',
-    ChildMdxFrontmatterImageFbGid = 'childMdx___frontmatter___imageFb___gid',
-    ChildMdxFrontmatterImageFbRdev = 'childMdx___frontmatter___imageFb___rdev',
-    ChildMdxFrontmatterImageFbIno = 'childMdx___frontmatter___imageFb___ino',
-    ChildMdxFrontmatterImageFbAtimeMs = 'childMdx___frontmatter___imageFb___atimeMs',
-    ChildMdxFrontmatterImageFbMtimeMs = 'childMdx___frontmatter___imageFb___mtimeMs',
-    ChildMdxFrontmatterImageFbCtimeMs = 'childMdx___frontmatter___imageFb___ctimeMs',
-    ChildMdxFrontmatterImageFbAtime = 'childMdx___frontmatter___imageFb___atime',
-    ChildMdxFrontmatterImageFbMtime = 'childMdx___frontmatter___imageFb___mtime',
-    ChildMdxFrontmatterImageFbCtime = 'childMdx___frontmatter___imageFb___ctime',
-    ChildMdxFrontmatterImageFbPublicUrl = 'childMdx___frontmatter___imageFb___publicURL',
-    ChildMdxFrontmatterImageFbId = 'childMdx___frontmatter___imageFb___id',
-    ChildMdxFrontmatterImageFbChildren = 'childMdx___frontmatter___imageFb___children',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
     ChildMdxHeadings = 'childMdx___headings',
@@ -732,167 +664,6 @@ export enum FileFieldsEnum {
     ChildMdxInternalMediaType = 'childMdx___internal___mediaType',
     ChildMdxInternalOwner = 'childMdx___internal___owner',
     ChildMdxInternalType = 'childMdx___internal___type',
-    ChildMarkdownRemarkId = 'childMarkdownRemark___id',
-    ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
-    ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
-    ChildMarkdownRemarkFrontmatterCoverBirthtime = 'childMarkdownRemark___frontmatter___cover___birthtime',
-    ChildMarkdownRemarkFrontmatterCoverBirthtimeMs = 'childMarkdownRemark___frontmatter___cover___birthtimeMs',
-    ChildMarkdownRemarkFrontmatterCoverSourceInstanceName = 'childMarkdownRemark___frontmatter___cover___sourceInstanceName',
-    ChildMarkdownRemarkFrontmatterCoverAbsolutePath = 'childMarkdownRemark___frontmatter___cover___absolutePath',
-    ChildMarkdownRemarkFrontmatterCoverRelativePath = 'childMarkdownRemark___frontmatter___cover___relativePath',
-    ChildMarkdownRemarkFrontmatterCoverExtension = 'childMarkdownRemark___frontmatter___cover___extension',
-    ChildMarkdownRemarkFrontmatterCoverSize = 'childMarkdownRemark___frontmatter___cover___size',
-    ChildMarkdownRemarkFrontmatterCoverPrettySize = 'childMarkdownRemark___frontmatter___cover___prettySize',
-    ChildMarkdownRemarkFrontmatterCoverModifiedTime = 'childMarkdownRemark___frontmatter___cover___modifiedTime',
-    ChildMarkdownRemarkFrontmatterCoverAccessTime = 'childMarkdownRemark___frontmatter___cover___accessTime',
-    ChildMarkdownRemarkFrontmatterCoverChangeTime = 'childMarkdownRemark___frontmatter___cover___changeTime',
-    ChildMarkdownRemarkFrontmatterCoverBirthTime = 'childMarkdownRemark___frontmatter___cover___birthTime',
-    ChildMarkdownRemarkFrontmatterCoverRoot = 'childMarkdownRemark___frontmatter___cover___root',
-    ChildMarkdownRemarkFrontmatterCoverDir = 'childMarkdownRemark___frontmatter___cover___dir',
-    ChildMarkdownRemarkFrontmatterCoverBase = 'childMarkdownRemark___frontmatter___cover___base',
-    ChildMarkdownRemarkFrontmatterCoverExt = 'childMarkdownRemark___frontmatter___cover___ext',
-    ChildMarkdownRemarkFrontmatterCoverName = 'childMarkdownRemark___frontmatter___cover___name',
-    ChildMarkdownRemarkFrontmatterCoverRelativeDirectory = 'childMarkdownRemark___frontmatter___cover___relativeDirectory',
-    ChildMarkdownRemarkFrontmatterCoverDev = 'childMarkdownRemark___frontmatter___cover___dev',
-    ChildMarkdownRemarkFrontmatterCoverMode = 'childMarkdownRemark___frontmatter___cover___mode',
-    ChildMarkdownRemarkFrontmatterCoverNlink = 'childMarkdownRemark___frontmatter___cover___nlink',
-    ChildMarkdownRemarkFrontmatterCoverUid = 'childMarkdownRemark___frontmatter___cover___uid',
-    ChildMarkdownRemarkFrontmatterCoverGid = 'childMarkdownRemark___frontmatter___cover___gid',
-    ChildMarkdownRemarkFrontmatterCoverRdev = 'childMarkdownRemark___frontmatter___cover___rdev',
-    ChildMarkdownRemarkFrontmatterCoverIno = 'childMarkdownRemark___frontmatter___cover___ino',
-    ChildMarkdownRemarkFrontmatterCoverAtimeMs = 'childMarkdownRemark___frontmatter___cover___atimeMs',
-    ChildMarkdownRemarkFrontmatterCoverMtimeMs = 'childMarkdownRemark___frontmatter___cover___mtimeMs',
-    ChildMarkdownRemarkFrontmatterCoverCtimeMs = 'childMarkdownRemark___frontmatter___cover___ctimeMs',
-    ChildMarkdownRemarkFrontmatterCoverAtime = 'childMarkdownRemark___frontmatter___cover___atime',
-    ChildMarkdownRemarkFrontmatterCoverMtime = 'childMarkdownRemark___frontmatter___cover___mtime',
-    ChildMarkdownRemarkFrontmatterCoverCtime = 'childMarkdownRemark___frontmatter___cover___ctime',
-    ChildMarkdownRemarkFrontmatterCoverPublicUrl = 'childMarkdownRemark___frontmatter___cover___publicURL',
-    ChildMarkdownRemarkFrontmatterCoverId = 'childMarkdownRemark___frontmatter___cover___id',
-    ChildMarkdownRemarkFrontmatterCoverChildren = 'childMarkdownRemark___frontmatter___cover___children',
-    ChildMarkdownRemarkFrontmatterGenerateCard = 'childMarkdownRemark___frontmatter___generate_card',
-    ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
-    ChildMarkdownRemarkFrontmatterLanguage = 'childMarkdownRemark___frontmatter___language',
-    ChildMarkdownRemarkFrontmatterTags = 'childMarkdownRemark___frontmatter___tags',
-    ChildMarkdownRemarkFrontmatterImageTwBirthtime = 'childMarkdownRemark___frontmatter___imageTw___birthtime',
-    ChildMarkdownRemarkFrontmatterImageTwBirthtimeMs = 'childMarkdownRemark___frontmatter___imageTw___birthtimeMs',
-    ChildMarkdownRemarkFrontmatterImageTwSourceInstanceName = 'childMarkdownRemark___frontmatter___imageTw___sourceInstanceName',
-    ChildMarkdownRemarkFrontmatterImageTwAbsolutePath = 'childMarkdownRemark___frontmatter___imageTw___absolutePath',
-    ChildMarkdownRemarkFrontmatterImageTwRelativePath = 'childMarkdownRemark___frontmatter___imageTw___relativePath',
-    ChildMarkdownRemarkFrontmatterImageTwExtension = 'childMarkdownRemark___frontmatter___imageTw___extension',
-    ChildMarkdownRemarkFrontmatterImageTwSize = 'childMarkdownRemark___frontmatter___imageTw___size',
-    ChildMarkdownRemarkFrontmatterImageTwPrettySize = 'childMarkdownRemark___frontmatter___imageTw___prettySize',
-    ChildMarkdownRemarkFrontmatterImageTwModifiedTime = 'childMarkdownRemark___frontmatter___imageTw___modifiedTime',
-    ChildMarkdownRemarkFrontmatterImageTwAccessTime = 'childMarkdownRemark___frontmatter___imageTw___accessTime',
-    ChildMarkdownRemarkFrontmatterImageTwChangeTime = 'childMarkdownRemark___frontmatter___imageTw___changeTime',
-    ChildMarkdownRemarkFrontmatterImageTwBirthTime = 'childMarkdownRemark___frontmatter___imageTw___birthTime',
-    ChildMarkdownRemarkFrontmatterImageTwRoot = 'childMarkdownRemark___frontmatter___imageTw___root',
-    ChildMarkdownRemarkFrontmatterImageTwDir = 'childMarkdownRemark___frontmatter___imageTw___dir',
-    ChildMarkdownRemarkFrontmatterImageTwBase = 'childMarkdownRemark___frontmatter___imageTw___base',
-    ChildMarkdownRemarkFrontmatterImageTwExt = 'childMarkdownRemark___frontmatter___imageTw___ext',
-    ChildMarkdownRemarkFrontmatterImageTwName = 'childMarkdownRemark___frontmatter___imageTw___name',
-    ChildMarkdownRemarkFrontmatterImageTwRelativeDirectory = 'childMarkdownRemark___frontmatter___imageTw___relativeDirectory',
-    ChildMarkdownRemarkFrontmatterImageTwDev = 'childMarkdownRemark___frontmatter___imageTw___dev',
-    ChildMarkdownRemarkFrontmatterImageTwMode = 'childMarkdownRemark___frontmatter___imageTw___mode',
-    ChildMarkdownRemarkFrontmatterImageTwNlink = 'childMarkdownRemark___frontmatter___imageTw___nlink',
-    ChildMarkdownRemarkFrontmatterImageTwUid = 'childMarkdownRemark___frontmatter___imageTw___uid',
-    ChildMarkdownRemarkFrontmatterImageTwGid = 'childMarkdownRemark___frontmatter___imageTw___gid',
-    ChildMarkdownRemarkFrontmatterImageTwRdev = 'childMarkdownRemark___frontmatter___imageTw___rdev',
-    ChildMarkdownRemarkFrontmatterImageTwIno = 'childMarkdownRemark___frontmatter___imageTw___ino',
-    ChildMarkdownRemarkFrontmatterImageTwAtimeMs = 'childMarkdownRemark___frontmatter___imageTw___atimeMs',
-    ChildMarkdownRemarkFrontmatterImageTwMtimeMs = 'childMarkdownRemark___frontmatter___imageTw___mtimeMs',
-    ChildMarkdownRemarkFrontmatterImageTwCtimeMs = 'childMarkdownRemark___frontmatter___imageTw___ctimeMs',
-    ChildMarkdownRemarkFrontmatterImageTwAtime = 'childMarkdownRemark___frontmatter___imageTw___atime',
-    ChildMarkdownRemarkFrontmatterImageTwMtime = 'childMarkdownRemark___frontmatter___imageTw___mtime',
-    ChildMarkdownRemarkFrontmatterImageTwCtime = 'childMarkdownRemark___frontmatter___imageTw___ctime',
-    ChildMarkdownRemarkFrontmatterImageTwPublicUrl = 'childMarkdownRemark___frontmatter___imageTw___publicURL',
-    ChildMarkdownRemarkFrontmatterImageTwId = 'childMarkdownRemark___frontmatter___imageTw___id',
-    ChildMarkdownRemarkFrontmatterImageTwChildren = 'childMarkdownRemark___frontmatter___imageTw___children',
-    ChildMarkdownRemarkFrontmatterImageFbBirthtime = 'childMarkdownRemark___frontmatter___imageFb___birthtime',
-    ChildMarkdownRemarkFrontmatterImageFbBirthtimeMs = 'childMarkdownRemark___frontmatter___imageFb___birthtimeMs',
-    ChildMarkdownRemarkFrontmatterImageFbSourceInstanceName = 'childMarkdownRemark___frontmatter___imageFb___sourceInstanceName',
-    ChildMarkdownRemarkFrontmatterImageFbAbsolutePath = 'childMarkdownRemark___frontmatter___imageFb___absolutePath',
-    ChildMarkdownRemarkFrontmatterImageFbRelativePath = 'childMarkdownRemark___frontmatter___imageFb___relativePath',
-    ChildMarkdownRemarkFrontmatterImageFbExtension = 'childMarkdownRemark___frontmatter___imageFb___extension',
-    ChildMarkdownRemarkFrontmatterImageFbSize = 'childMarkdownRemark___frontmatter___imageFb___size',
-    ChildMarkdownRemarkFrontmatterImageFbPrettySize = 'childMarkdownRemark___frontmatter___imageFb___prettySize',
-    ChildMarkdownRemarkFrontmatterImageFbModifiedTime = 'childMarkdownRemark___frontmatter___imageFb___modifiedTime',
-    ChildMarkdownRemarkFrontmatterImageFbAccessTime = 'childMarkdownRemark___frontmatter___imageFb___accessTime',
-    ChildMarkdownRemarkFrontmatterImageFbChangeTime = 'childMarkdownRemark___frontmatter___imageFb___changeTime',
-    ChildMarkdownRemarkFrontmatterImageFbBirthTime = 'childMarkdownRemark___frontmatter___imageFb___birthTime',
-    ChildMarkdownRemarkFrontmatterImageFbRoot = 'childMarkdownRemark___frontmatter___imageFb___root',
-    ChildMarkdownRemarkFrontmatterImageFbDir = 'childMarkdownRemark___frontmatter___imageFb___dir',
-    ChildMarkdownRemarkFrontmatterImageFbBase = 'childMarkdownRemark___frontmatter___imageFb___base',
-    ChildMarkdownRemarkFrontmatterImageFbExt = 'childMarkdownRemark___frontmatter___imageFb___ext',
-    ChildMarkdownRemarkFrontmatterImageFbName = 'childMarkdownRemark___frontmatter___imageFb___name',
-    ChildMarkdownRemarkFrontmatterImageFbRelativeDirectory = 'childMarkdownRemark___frontmatter___imageFb___relativeDirectory',
-    ChildMarkdownRemarkFrontmatterImageFbDev = 'childMarkdownRemark___frontmatter___imageFb___dev',
-    ChildMarkdownRemarkFrontmatterImageFbMode = 'childMarkdownRemark___frontmatter___imageFb___mode',
-    ChildMarkdownRemarkFrontmatterImageFbNlink = 'childMarkdownRemark___frontmatter___imageFb___nlink',
-    ChildMarkdownRemarkFrontmatterImageFbUid = 'childMarkdownRemark___frontmatter___imageFb___uid',
-    ChildMarkdownRemarkFrontmatterImageFbGid = 'childMarkdownRemark___frontmatter___imageFb___gid',
-    ChildMarkdownRemarkFrontmatterImageFbRdev = 'childMarkdownRemark___frontmatter___imageFb___rdev',
-    ChildMarkdownRemarkFrontmatterImageFbIno = 'childMarkdownRemark___frontmatter___imageFb___ino',
-    ChildMarkdownRemarkFrontmatterImageFbAtimeMs = 'childMarkdownRemark___frontmatter___imageFb___atimeMs',
-    ChildMarkdownRemarkFrontmatterImageFbMtimeMs = 'childMarkdownRemark___frontmatter___imageFb___mtimeMs',
-    ChildMarkdownRemarkFrontmatterImageFbCtimeMs = 'childMarkdownRemark___frontmatter___imageFb___ctimeMs',
-    ChildMarkdownRemarkFrontmatterImageFbAtime = 'childMarkdownRemark___frontmatter___imageFb___atime',
-    ChildMarkdownRemarkFrontmatterImageFbMtime = 'childMarkdownRemark___frontmatter___imageFb___mtime',
-    ChildMarkdownRemarkFrontmatterImageFbCtime = 'childMarkdownRemark___frontmatter___imageFb___ctime',
-    ChildMarkdownRemarkFrontmatterImageFbPublicUrl = 'childMarkdownRemark___frontmatter___imageFb___publicURL',
-    ChildMarkdownRemarkFrontmatterImageFbId = 'childMarkdownRemark___frontmatter___imageFb___id',
-    ChildMarkdownRemarkFrontmatterImageFbChildren = 'childMarkdownRemark___frontmatter___imageFb___children',
-    ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
-    ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
-    ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
-    ChildMarkdownRemarkFieldsSlug = 'childMarkdownRemark___fields___slug',
-    ChildMarkdownRemarkHtml = 'childMarkdownRemark___html',
-    ChildMarkdownRemarkHtmlAst = 'childMarkdownRemark___htmlAst',
-    ChildMarkdownRemarkExcerptAst = 'childMarkdownRemark___excerptAst',
-    ChildMarkdownRemarkHeadings = 'childMarkdownRemark___headings',
-    ChildMarkdownRemarkHeadingsValue = 'childMarkdownRemark___headings___value',
-    ChildMarkdownRemarkHeadingsDepth = 'childMarkdownRemark___headings___depth',
-    ChildMarkdownRemarkTimeToRead = 'childMarkdownRemark___timeToRead',
-    ChildMarkdownRemarkTableOfContents = 'childMarkdownRemark___tableOfContents',
-    ChildMarkdownRemarkWordCountParagraphs = 'childMarkdownRemark___wordCount___paragraphs',
-    ChildMarkdownRemarkWordCountSentences = 'childMarkdownRemark___wordCount___sentences',
-    ChildMarkdownRemarkWordCountWords = 'childMarkdownRemark___wordCount___words',
-    ChildMarkdownRemarkParentId = 'childMarkdownRemark___parent___id',
-    ChildMarkdownRemarkParentParentId = 'childMarkdownRemark___parent___parent___id',
-    ChildMarkdownRemarkParentParentChildren = 'childMarkdownRemark___parent___parent___children',
-    ChildMarkdownRemarkParentChildren = 'childMarkdownRemark___parent___children',
-    ChildMarkdownRemarkParentChildrenId = 'childMarkdownRemark___parent___children___id',
-    ChildMarkdownRemarkParentChildrenChildren = 'childMarkdownRemark___parent___children___children',
-    ChildMarkdownRemarkParentInternalContent = 'childMarkdownRemark___parent___internal___content',
-    ChildMarkdownRemarkParentInternalContentDigest = 'childMarkdownRemark___parent___internal___contentDigest',
-    ChildMarkdownRemarkParentInternalDescription = 'childMarkdownRemark___parent___internal___description',
-    ChildMarkdownRemarkParentInternalFieldOwners = 'childMarkdownRemark___parent___internal___fieldOwners',
-    ChildMarkdownRemarkParentInternalIgnoreType = 'childMarkdownRemark___parent___internal___ignoreType',
-    ChildMarkdownRemarkParentInternalMediaType = 'childMarkdownRemark___parent___internal___mediaType',
-    ChildMarkdownRemarkParentInternalOwner = 'childMarkdownRemark___parent___internal___owner',
-    ChildMarkdownRemarkParentInternalType = 'childMarkdownRemark___parent___internal___type',
-    ChildMarkdownRemarkChildren = 'childMarkdownRemark___children',
-    ChildMarkdownRemarkChildrenId = 'childMarkdownRemark___children___id',
-    ChildMarkdownRemarkChildrenParentId = 'childMarkdownRemark___children___parent___id',
-    ChildMarkdownRemarkChildrenParentChildren = 'childMarkdownRemark___children___parent___children',
-    ChildMarkdownRemarkChildrenChildren = 'childMarkdownRemark___children___children',
-    ChildMarkdownRemarkChildrenChildrenId = 'childMarkdownRemark___children___children___id',
-    ChildMarkdownRemarkChildrenChildrenChildren = 'childMarkdownRemark___children___children___children',
-    ChildMarkdownRemarkChildrenInternalContent = 'childMarkdownRemark___children___internal___content',
-    ChildMarkdownRemarkChildrenInternalContentDigest = 'childMarkdownRemark___children___internal___contentDigest',
-    ChildMarkdownRemarkChildrenInternalDescription = 'childMarkdownRemark___children___internal___description',
-    ChildMarkdownRemarkChildrenInternalFieldOwners = 'childMarkdownRemark___children___internal___fieldOwners',
-    ChildMarkdownRemarkChildrenInternalIgnoreType = 'childMarkdownRemark___children___internal___ignoreType',
-    ChildMarkdownRemarkChildrenInternalMediaType = 'childMarkdownRemark___children___internal___mediaType',
-    ChildMarkdownRemarkChildrenInternalOwner = 'childMarkdownRemark___children___internal___owner',
-    ChildMarkdownRemarkChildrenInternalType = 'childMarkdownRemark___children___internal___type',
-    ChildMarkdownRemarkInternalContent = 'childMarkdownRemark___internal___content',
-    ChildMarkdownRemarkInternalContentDigest = 'childMarkdownRemark___internal___contentDigest',
-    ChildMarkdownRemarkInternalDescription = 'childMarkdownRemark___internal___description',
-    ChildMarkdownRemarkInternalFieldOwners = 'childMarkdownRemark___internal___fieldOwners',
-    ChildMarkdownRemarkInternalIgnoreType = 'childMarkdownRemark___internal___ignoreType',
-    ChildMarkdownRemarkInternalMediaType = 'childMarkdownRemark___internal___mediaType',
-    ChildMarkdownRemarkInternalOwner = 'childMarkdownRemark___internal___owner',
-    ChildMarkdownRemarkInternalType = 'childMarkdownRemark___internal___type',
     ChildImageSharpId = 'childImageSharp___id',
     ChildImageSharpFixedBase64 = 'childImageSharp___fixed___base64',
     ChildImageSharpFixedTracedSvg = 'childImageSharp___fixed___tracedSVG',
@@ -1024,7 +795,6 @@ export type FileFilterInput = {
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
     childMdx?: Maybe<MdxFilterInput>;
-    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
     childImageSharp?: Maybe<ImageSharpFilterInput>;
 };
 
@@ -1624,13 +1394,9 @@ export enum MarkdownHeadingLevels {
 export type MarkdownRemark = Node & {
     __typename?: 'MarkdownRemark';
     id: Scalars['ID'];
-    frontmatter?: Maybe<MarkdownRemarkFrontmatter>;
-    excerpt?: Maybe<Scalars['String']>;
-    rawMarkdownBody?: Maybe<Scalars['String']>;
-    fileAbsolutePath?: Maybe<Scalars['String']>;
-    fields?: Maybe<MarkdownRemarkFields>;
     html?: Maybe<Scalars['String']>;
     htmlAst?: Maybe<Scalars['JSON']>;
+    excerpt?: Maybe<Scalars['String']>;
     excerptAst?: Maybe<Scalars['JSON']>;
     headings?: Maybe<Array<Maybe<MarkdownHeading>>>;
     timeToRead?: Maybe<Scalars['Int']>;
@@ -1689,235 +1455,11 @@ export type MarkdownRemarkEdge = {
     previous?: Maybe<MarkdownRemark>;
 };
 
-export type MarkdownRemarkFields = {
-    __typename?: 'MarkdownRemarkFields';
-    slug?: Maybe<Scalars['String']>;
-};
-
 export enum MarkdownRemarkFieldsEnum {
     Id = 'id',
-    FrontmatterTitle = 'frontmatter___title',
-    FrontmatterSlug = 'frontmatter___slug',
-    FrontmatterCoverBirthtime = 'frontmatter___cover___birthtime',
-    FrontmatterCoverBirthtimeMs = 'frontmatter___cover___birthtimeMs',
-    FrontmatterCoverSourceInstanceName = 'frontmatter___cover___sourceInstanceName',
-    FrontmatterCoverAbsolutePath = 'frontmatter___cover___absolutePath',
-    FrontmatterCoverRelativePath = 'frontmatter___cover___relativePath',
-    FrontmatterCoverExtension = 'frontmatter___cover___extension',
-    FrontmatterCoverSize = 'frontmatter___cover___size',
-    FrontmatterCoverPrettySize = 'frontmatter___cover___prettySize',
-    FrontmatterCoverModifiedTime = 'frontmatter___cover___modifiedTime',
-    FrontmatterCoverAccessTime = 'frontmatter___cover___accessTime',
-    FrontmatterCoverChangeTime = 'frontmatter___cover___changeTime',
-    FrontmatterCoverBirthTime = 'frontmatter___cover___birthTime',
-    FrontmatterCoverRoot = 'frontmatter___cover___root',
-    FrontmatterCoverDir = 'frontmatter___cover___dir',
-    FrontmatterCoverBase = 'frontmatter___cover___base',
-    FrontmatterCoverExt = 'frontmatter___cover___ext',
-    FrontmatterCoverName = 'frontmatter___cover___name',
-    FrontmatterCoverRelativeDirectory = 'frontmatter___cover___relativeDirectory',
-    FrontmatterCoverDev = 'frontmatter___cover___dev',
-    FrontmatterCoverMode = 'frontmatter___cover___mode',
-    FrontmatterCoverNlink = 'frontmatter___cover___nlink',
-    FrontmatterCoverUid = 'frontmatter___cover___uid',
-    FrontmatterCoverGid = 'frontmatter___cover___gid',
-    FrontmatterCoverRdev = 'frontmatter___cover___rdev',
-    FrontmatterCoverIno = 'frontmatter___cover___ino',
-    FrontmatterCoverAtimeMs = 'frontmatter___cover___atimeMs',
-    FrontmatterCoverMtimeMs = 'frontmatter___cover___mtimeMs',
-    FrontmatterCoverCtimeMs = 'frontmatter___cover___ctimeMs',
-    FrontmatterCoverAtime = 'frontmatter___cover___atime',
-    FrontmatterCoverMtime = 'frontmatter___cover___mtime',
-    FrontmatterCoverCtime = 'frontmatter___cover___ctime',
-    FrontmatterCoverPublicUrl = 'frontmatter___cover___publicURL',
-    FrontmatterCoverId = 'frontmatter___cover___id',
-    FrontmatterCoverParentId = 'frontmatter___cover___parent___id',
-    FrontmatterCoverParentChildren = 'frontmatter___cover___parent___children',
-    FrontmatterCoverChildren = 'frontmatter___cover___children',
-    FrontmatterCoverChildrenId = 'frontmatter___cover___children___id',
-    FrontmatterCoverChildrenChildren = 'frontmatter___cover___children___children',
-    FrontmatterCoverInternalContent = 'frontmatter___cover___internal___content',
-    FrontmatterCoverInternalContentDigest = 'frontmatter___cover___internal___contentDigest',
-    FrontmatterCoverInternalDescription = 'frontmatter___cover___internal___description',
-    FrontmatterCoverInternalFieldOwners = 'frontmatter___cover___internal___fieldOwners',
-    FrontmatterCoverInternalIgnoreType = 'frontmatter___cover___internal___ignoreType',
-    FrontmatterCoverInternalMediaType = 'frontmatter___cover___internal___mediaType',
-    FrontmatterCoverInternalOwner = 'frontmatter___cover___internal___owner',
-    FrontmatterCoverInternalType = 'frontmatter___cover___internal___type',
-    FrontmatterCoverChildMdxRawBody = 'frontmatter___cover___childMdx___rawBody',
-    FrontmatterCoverChildMdxFileAbsolutePath = 'frontmatter___cover___childMdx___fileAbsolutePath',
-    FrontmatterCoverChildMdxBody = 'frontmatter___cover___childMdx___body',
-    FrontmatterCoverChildMdxExcerpt = 'frontmatter___cover___childMdx___excerpt',
-    FrontmatterCoverChildMdxHeadings = 'frontmatter___cover___childMdx___headings',
-    FrontmatterCoverChildMdxHtml = 'frontmatter___cover___childMdx___html',
-    FrontmatterCoverChildMdxMdxAst = 'frontmatter___cover___childMdx___mdxAST',
-    FrontmatterCoverChildMdxTableOfContents = 'frontmatter___cover___childMdx___tableOfContents',
-    FrontmatterCoverChildMdxTimeToRead = 'frontmatter___cover___childMdx___timeToRead',
-    FrontmatterCoverChildMdxId = 'frontmatter___cover___childMdx___id',
-    FrontmatterCoverChildMdxChildren = 'frontmatter___cover___childMdx___children',
-    FrontmatterCoverChildMarkdownRemarkId = 'frontmatter___cover___childMarkdownRemark___id',
-    FrontmatterCoverChildMarkdownRemarkExcerpt = 'frontmatter___cover___childMarkdownRemark___excerpt',
-    FrontmatterCoverChildMarkdownRemarkRawMarkdownBody = 'frontmatter___cover___childMarkdownRemark___rawMarkdownBody',
-    FrontmatterCoverChildMarkdownRemarkFileAbsolutePath = 'frontmatter___cover___childMarkdownRemark___fileAbsolutePath',
-    FrontmatterCoverChildMarkdownRemarkHtml = 'frontmatter___cover___childMarkdownRemark___html',
-    FrontmatterCoverChildMarkdownRemarkHtmlAst = 'frontmatter___cover___childMarkdownRemark___htmlAst',
-    FrontmatterCoverChildMarkdownRemarkExcerptAst = 'frontmatter___cover___childMarkdownRemark___excerptAst',
-    FrontmatterCoverChildMarkdownRemarkHeadings = 'frontmatter___cover___childMarkdownRemark___headings',
-    FrontmatterCoverChildMarkdownRemarkTimeToRead = 'frontmatter___cover___childMarkdownRemark___timeToRead',
-    FrontmatterCoverChildMarkdownRemarkTableOfContents = 'frontmatter___cover___childMarkdownRemark___tableOfContents',
-    FrontmatterCoverChildMarkdownRemarkChildren = 'frontmatter___cover___childMarkdownRemark___children',
-    FrontmatterCoverChildImageSharpId = 'frontmatter___cover___childImageSharp___id',
-    FrontmatterCoverChildImageSharpChildren = 'frontmatter___cover___childImageSharp___children',
-    FrontmatterGenerateCard = 'frontmatter___generate_card',
-    FrontmatterDate = 'frontmatter___date',
-    FrontmatterLanguage = 'frontmatter___language',
-    FrontmatterTags = 'frontmatter___tags',
-    FrontmatterImageTwBirthtime = 'frontmatter___imageTw___birthtime',
-    FrontmatterImageTwBirthtimeMs = 'frontmatter___imageTw___birthtimeMs',
-    FrontmatterImageTwSourceInstanceName = 'frontmatter___imageTw___sourceInstanceName',
-    FrontmatterImageTwAbsolutePath = 'frontmatter___imageTw___absolutePath',
-    FrontmatterImageTwRelativePath = 'frontmatter___imageTw___relativePath',
-    FrontmatterImageTwExtension = 'frontmatter___imageTw___extension',
-    FrontmatterImageTwSize = 'frontmatter___imageTw___size',
-    FrontmatterImageTwPrettySize = 'frontmatter___imageTw___prettySize',
-    FrontmatterImageTwModifiedTime = 'frontmatter___imageTw___modifiedTime',
-    FrontmatterImageTwAccessTime = 'frontmatter___imageTw___accessTime',
-    FrontmatterImageTwChangeTime = 'frontmatter___imageTw___changeTime',
-    FrontmatterImageTwBirthTime = 'frontmatter___imageTw___birthTime',
-    FrontmatterImageTwRoot = 'frontmatter___imageTw___root',
-    FrontmatterImageTwDir = 'frontmatter___imageTw___dir',
-    FrontmatterImageTwBase = 'frontmatter___imageTw___base',
-    FrontmatterImageTwExt = 'frontmatter___imageTw___ext',
-    FrontmatterImageTwName = 'frontmatter___imageTw___name',
-    FrontmatterImageTwRelativeDirectory = 'frontmatter___imageTw___relativeDirectory',
-    FrontmatterImageTwDev = 'frontmatter___imageTw___dev',
-    FrontmatterImageTwMode = 'frontmatter___imageTw___mode',
-    FrontmatterImageTwNlink = 'frontmatter___imageTw___nlink',
-    FrontmatterImageTwUid = 'frontmatter___imageTw___uid',
-    FrontmatterImageTwGid = 'frontmatter___imageTw___gid',
-    FrontmatterImageTwRdev = 'frontmatter___imageTw___rdev',
-    FrontmatterImageTwIno = 'frontmatter___imageTw___ino',
-    FrontmatterImageTwAtimeMs = 'frontmatter___imageTw___atimeMs',
-    FrontmatterImageTwMtimeMs = 'frontmatter___imageTw___mtimeMs',
-    FrontmatterImageTwCtimeMs = 'frontmatter___imageTw___ctimeMs',
-    FrontmatterImageTwAtime = 'frontmatter___imageTw___atime',
-    FrontmatterImageTwMtime = 'frontmatter___imageTw___mtime',
-    FrontmatterImageTwCtime = 'frontmatter___imageTw___ctime',
-    FrontmatterImageTwPublicUrl = 'frontmatter___imageTw___publicURL',
-    FrontmatterImageTwId = 'frontmatter___imageTw___id',
-    FrontmatterImageTwParentId = 'frontmatter___imageTw___parent___id',
-    FrontmatterImageTwParentChildren = 'frontmatter___imageTw___parent___children',
-    FrontmatterImageTwChildren = 'frontmatter___imageTw___children',
-    FrontmatterImageTwChildrenId = 'frontmatter___imageTw___children___id',
-    FrontmatterImageTwChildrenChildren = 'frontmatter___imageTw___children___children',
-    FrontmatterImageTwInternalContent = 'frontmatter___imageTw___internal___content',
-    FrontmatterImageTwInternalContentDigest = 'frontmatter___imageTw___internal___contentDigest',
-    FrontmatterImageTwInternalDescription = 'frontmatter___imageTw___internal___description',
-    FrontmatterImageTwInternalFieldOwners = 'frontmatter___imageTw___internal___fieldOwners',
-    FrontmatterImageTwInternalIgnoreType = 'frontmatter___imageTw___internal___ignoreType',
-    FrontmatterImageTwInternalMediaType = 'frontmatter___imageTw___internal___mediaType',
-    FrontmatterImageTwInternalOwner = 'frontmatter___imageTw___internal___owner',
-    FrontmatterImageTwInternalType = 'frontmatter___imageTw___internal___type',
-    FrontmatterImageTwChildMdxRawBody = 'frontmatter___imageTw___childMdx___rawBody',
-    FrontmatterImageTwChildMdxFileAbsolutePath = 'frontmatter___imageTw___childMdx___fileAbsolutePath',
-    FrontmatterImageTwChildMdxBody = 'frontmatter___imageTw___childMdx___body',
-    FrontmatterImageTwChildMdxExcerpt = 'frontmatter___imageTw___childMdx___excerpt',
-    FrontmatterImageTwChildMdxHeadings = 'frontmatter___imageTw___childMdx___headings',
-    FrontmatterImageTwChildMdxHtml = 'frontmatter___imageTw___childMdx___html',
-    FrontmatterImageTwChildMdxMdxAst = 'frontmatter___imageTw___childMdx___mdxAST',
-    FrontmatterImageTwChildMdxTableOfContents = 'frontmatter___imageTw___childMdx___tableOfContents',
-    FrontmatterImageTwChildMdxTimeToRead = 'frontmatter___imageTw___childMdx___timeToRead',
-    FrontmatterImageTwChildMdxId = 'frontmatter___imageTw___childMdx___id',
-    FrontmatterImageTwChildMdxChildren = 'frontmatter___imageTw___childMdx___children',
-    FrontmatterImageTwChildMarkdownRemarkId = 'frontmatter___imageTw___childMarkdownRemark___id',
-    FrontmatterImageTwChildMarkdownRemarkExcerpt = 'frontmatter___imageTw___childMarkdownRemark___excerpt',
-    FrontmatterImageTwChildMarkdownRemarkRawMarkdownBody = 'frontmatter___imageTw___childMarkdownRemark___rawMarkdownBody',
-    FrontmatterImageTwChildMarkdownRemarkFileAbsolutePath = 'frontmatter___imageTw___childMarkdownRemark___fileAbsolutePath',
-    FrontmatterImageTwChildMarkdownRemarkHtml = 'frontmatter___imageTw___childMarkdownRemark___html',
-    FrontmatterImageTwChildMarkdownRemarkHtmlAst = 'frontmatter___imageTw___childMarkdownRemark___htmlAst',
-    FrontmatterImageTwChildMarkdownRemarkExcerptAst = 'frontmatter___imageTw___childMarkdownRemark___excerptAst',
-    FrontmatterImageTwChildMarkdownRemarkHeadings = 'frontmatter___imageTw___childMarkdownRemark___headings',
-    FrontmatterImageTwChildMarkdownRemarkTimeToRead = 'frontmatter___imageTw___childMarkdownRemark___timeToRead',
-    FrontmatterImageTwChildMarkdownRemarkTableOfContents = 'frontmatter___imageTw___childMarkdownRemark___tableOfContents',
-    FrontmatterImageTwChildMarkdownRemarkChildren = 'frontmatter___imageTw___childMarkdownRemark___children',
-    FrontmatterImageTwChildImageSharpId = 'frontmatter___imageTw___childImageSharp___id',
-    FrontmatterImageTwChildImageSharpChildren = 'frontmatter___imageTw___childImageSharp___children',
-    FrontmatterImageFbBirthtime = 'frontmatter___imageFb___birthtime',
-    FrontmatterImageFbBirthtimeMs = 'frontmatter___imageFb___birthtimeMs',
-    FrontmatterImageFbSourceInstanceName = 'frontmatter___imageFb___sourceInstanceName',
-    FrontmatterImageFbAbsolutePath = 'frontmatter___imageFb___absolutePath',
-    FrontmatterImageFbRelativePath = 'frontmatter___imageFb___relativePath',
-    FrontmatterImageFbExtension = 'frontmatter___imageFb___extension',
-    FrontmatterImageFbSize = 'frontmatter___imageFb___size',
-    FrontmatterImageFbPrettySize = 'frontmatter___imageFb___prettySize',
-    FrontmatterImageFbModifiedTime = 'frontmatter___imageFb___modifiedTime',
-    FrontmatterImageFbAccessTime = 'frontmatter___imageFb___accessTime',
-    FrontmatterImageFbChangeTime = 'frontmatter___imageFb___changeTime',
-    FrontmatterImageFbBirthTime = 'frontmatter___imageFb___birthTime',
-    FrontmatterImageFbRoot = 'frontmatter___imageFb___root',
-    FrontmatterImageFbDir = 'frontmatter___imageFb___dir',
-    FrontmatterImageFbBase = 'frontmatter___imageFb___base',
-    FrontmatterImageFbExt = 'frontmatter___imageFb___ext',
-    FrontmatterImageFbName = 'frontmatter___imageFb___name',
-    FrontmatterImageFbRelativeDirectory = 'frontmatter___imageFb___relativeDirectory',
-    FrontmatterImageFbDev = 'frontmatter___imageFb___dev',
-    FrontmatterImageFbMode = 'frontmatter___imageFb___mode',
-    FrontmatterImageFbNlink = 'frontmatter___imageFb___nlink',
-    FrontmatterImageFbUid = 'frontmatter___imageFb___uid',
-    FrontmatterImageFbGid = 'frontmatter___imageFb___gid',
-    FrontmatterImageFbRdev = 'frontmatter___imageFb___rdev',
-    FrontmatterImageFbIno = 'frontmatter___imageFb___ino',
-    FrontmatterImageFbAtimeMs = 'frontmatter___imageFb___atimeMs',
-    FrontmatterImageFbMtimeMs = 'frontmatter___imageFb___mtimeMs',
-    FrontmatterImageFbCtimeMs = 'frontmatter___imageFb___ctimeMs',
-    FrontmatterImageFbAtime = 'frontmatter___imageFb___atime',
-    FrontmatterImageFbMtime = 'frontmatter___imageFb___mtime',
-    FrontmatterImageFbCtime = 'frontmatter___imageFb___ctime',
-    FrontmatterImageFbPublicUrl = 'frontmatter___imageFb___publicURL',
-    FrontmatterImageFbId = 'frontmatter___imageFb___id',
-    FrontmatterImageFbParentId = 'frontmatter___imageFb___parent___id',
-    FrontmatterImageFbParentChildren = 'frontmatter___imageFb___parent___children',
-    FrontmatterImageFbChildren = 'frontmatter___imageFb___children',
-    FrontmatterImageFbChildrenId = 'frontmatter___imageFb___children___id',
-    FrontmatterImageFbChildrenChildren = 'frontmatter___imageFb___children___children',
-    FrontmatterImageFbInternalContent = 'frontmatter___imageFb___internal___content',
-    FrontmatterImageFbInternalContentDigest = 'frontmatter___imageFb___internal___contentDigest',
-    FrontmatterImageFbInternalDescription = 'frontmatter___imageFb___internal___description',
-    FrontmatterImageFbInternalFieldOwners = 'frontmatter___imageFb___internal___fieldOwners',
-    FrontmatterImageFbInternalIgnoreType = 'frontmatter___imageFb___internal___ignoreType',
-    FrontmatterImageFbInternalMediaType = 'frontmatter___imageFb___internal___mediaType',
-    FrontmatterImageFbInternalOwner = 'frontmatter___imageFb___internal___owner',
-    FrontmatterImageFbInternalType = 'frontmatter___imageFb___internal___type',
-    FrontmatterImageFbChildMdxRawBody = 'frontmatter___imageFb___childMdx___rawBody',
-    FrontmatterImageFbChildMdxFileAbsolutePath = 'frontmatter___imageFb___childMdx___fileAbsolutePath',
-    FrontmatterImageFbChildMdxBody = 'frontmatter___imageFb___childMdx___body',
-    FrontmatterImageFbChildMdxExcerpt = 'frontmatter___imageFb___childMdx___excerpt',
-    FrontmatterImageFbChildMdxHeadings = 'frontmatter___imageFb___childMdx___headings',
-    FrontmatterImageFbChildMdxHtml = 'frontmatter___imageFb___childMdx___html',
-    FrontmatterImageFbChildMdxMdxAst = 'frontmatter___imageFb___childMdx___mdxAST',
-    FrontmatterImageFbChildMdxTableOfContents = 'frontmatter___imageFb___childMdx___tableOfContents',
-    FrontmatterImageFbChildMdxTimeToRead = 'frontmatter___imageFb___childMdx___timeToRead',
-    FrontmatterImageFbChildMdxId = 'frontmatter___imageFb___childMdx___id',
-    FrontmatterImageFbChildMdxChildren = 'frontmatter___imageFb___childMdx___children',
-    FrontmatterImageFbChildMarkdownRemarkId = 'frontmatter___imageFb___childMarkdownRemark___id',
-    FrontmatterImageFbChildMarkdownRemarkExcerpt = 'frontmatter___imageFb___childMarkdownRemark___excerpt',
-    FrontmatterImageFbChildMarkdownRemarkRawMarkdownBody = 'frontmatter___imageFb___childMarkdownRemark___rawMarkdownBody',
-    FrontmatterImageFbChildMarkdownRemarkFileAbsolutePath = 'frontmatter___imageFb___childMarkdownRemark___fileAbsolutePath',
-    FrontmatterImageFbChildMarkdownRemarkHtml = 'frontmatter___imageFb___childMarkdownRemark___html',
-    FrontmatterImageFbChildMarkdownRemarkHtmlAst = 'frontmatter___imageFb___childMarkdownRemark___htmlAst',
-    FrontmatterImageFbChildMarkdownRemarkExcerptAst = 'frontmatter___imageFb___childMarkdownRemark___excerptAst',
-    FrontmatterImageFbChildMarkdownRemarkHeadings = 'frontmatter___imageFb___childMarkdownRemark___headings',
-    FrontmatterImageFbChildMarkdownRemarkTimeToRead = 'frontmatter___imageFb___childMarkdownRemark___timeToRead',
-    FrontmatterImageFbChildMarkdownRemarkTableOfContents = 'frontmatter___imageFb___childMarkdownRemark___tableOfContents',
-    FrontmatterImageFbChildMarkdownRemarkChildren = 'frontmatter___imageFb___childMarkdownRemark___children',
-    FrontmatterImageFbChildImageSharpId = 'frontmatter___imageFb___childImageSharp___id',
-    FrontmatterImageFbChildImageSharpChildren = 'frontmatter___imageFb___childImageSharp___children',
-    Excerpt = 'excerpt',
-    RawMarkdownBody = 'rawMarkdownBody',
-    FileAbsolutePath = 'fileAbsolutePath',
-    FieldsSlug = 'fields___slug',
     Html = 'html',
     HtmlAst = 'htmlAst',
+    Excerpt = 'excerpt',
     ExcerptAst = 'excerptAst',
     Headings = 'headings',
     HeadingsValue = 'headings___value',
@@ -2014,19 +1556,11 @@ export enum MarkdownRemarkFieldsEnum {
     InternalType = 'internal___type',
 }
 
-export type MarkdownRemarkFieldsFilterInput = {
-    slug?: Maybe<StringQueryOperatorInput>;
-};
-
 export type MarkdownRemarkFilterInput = {
     id?: Maybe<StringQueryOperatorInput>;
-    frontmatter?: Maybe<MarkdownRemarkFrontmatterFilterInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
-    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
-    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
-    fields?: Maybe<MarkdownRemarkFieldsFilterInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -2035,38 +1569,6 @@ export type MarkdownRemarkFilterInput = {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-};
-
-export type MarkdownRemarkFrontmatter = {
-    __typename?: 'MarkdownRemarkFrontmatter';
-    title?: Maybe<Scalars['String']>;
-    slug?: Maybe<Scalars['String']>;
-    cover?: Maybe<File>;
-    generate_card?: Maybe<Scalars['Boolean']>;
-    date?: Maybe<Scalars['Date']>;
-    language?: Maybe<Scalars['String']>;
-    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-    imageTw?: Maybe<File>;
-    imageFb?: Maybe<File>;
-};
-
-export type MarkdownRemarkFrontmatterDateArgs = {
-    formatString?: Maybe<Scalars['String']>;
-    fromNow?: Maybe<Scalars['Boolean']>;
-    difference?: Maybe<Scalars['String']>;
-    locale?: Maybe<Scalars['String']>;
-};
-
-export type MarkdownRemarkFrontmatterFilterInput = {
-    title?: Maybe<StringQueryOperatorInput>;
-    slug?: Maybe<StringQueryOperatorInput>;
-    cover?: Maybe<FileFilterInput>;
-    generate_card?: Maybe<BooleanQueryOperatorInput>;
-    date?: Maybe<DateQueryOperatorInput>;
-    language?: Maybe<StringQueryOperatorInput>;
-    tags?: Maybe<StringQueryOperatorInput>;
-    imageTw?: Maybe<FileFilterInput>;
-    imageFb?: Maybe<FileFilterInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -2159,221 +1661,71 @@ export enum MdxFieldsEnum {
     RawBody = 'rawBody',
     FileAbsolutePath = 'fileAbsolutePath',
     FrontmatterTitle = 'frontmatter___title',
-    FrontmatterSlug = 'frontmatter___slug',
-    FrontmatterCoverBirthtime = 'frontmatter___cover___birthtime',
-    FrontmatterCoverBirthtimeMs = 'frontmatter___cover___birthtimeMs',
-    FrontmatterCoverSourceInstanceName = 'frontmatter___cover___sourceInstanceName',
-    FrontmatterCoverAbsolutePath = 'frontmatter___cover___absolutePath',
-    FrontmatterCoverRelativePath = 'frontmatter___cover___relativePath',
-    FrontmatterCoverExtension = 'frontmatter___cover___extension',
-    FrontmatterCoverSize = 'frontmatter___cover___size',
-    FrontmatterCoverPrettySize = 'frontmatter___cover___prettySize',
-    FrontmatterCoverModifiedTime = 'frontmatter___cover___modifiedTime',
-    FrontmatterCoverAccessTime = 'frontmatter___cover___accessTime',
-    FrontmatterCoverChangeTime = 'frontmatter___cover___changeTime',
-    FrontmatterCoverBirthTime = 'frontmatter___cover___birthTime',
-    FrontmatterCoverRoot = 'frontmatter___cover___root',
-    FrontmatterCoverDir = 'frontmatter___cover___dir',
-    FrontmatterCoverBase = 'frontmatter___cover___base',
-    FrontmatterCoverExt = 'frontmatter___cover___ext',
-    FrontmatterCoverName = 'frontmatter___cover___name',
-    FrontmatterCoverRelativeDirectory = 'frontmatter___cover___relativeDirectory',
-    FrontmatterCoverDev = 'frontmatter___cover___dev',
-    FrontmatterCoverMode = 'frontmatter___cover___mode',
-    FrontmatterCoverNlink = 'frontmatter___cover___nlink',
-    FrontmatterCoverUid = 'frontmatter___cover___uid',
-    FrontmatterCoverGid = 'frontmatter___cover___gid',
-    FrontmatterCoverRdev = 'frontmatter___cover___rdev',
-    FrontmatterCoverIno = 'frontmatter___cover___ino',
-    FrontmatterCoverAtimeMs = 'frontmatter___cover___atimeMs',
-    FrontmatterCoverMtimeMs = 'frontmatter___cover___mtimeMs',
-    FrontmatterCoverCtimeMs = 'frontmatter___cover___ctimeMs',
-    FrontmatterCoverAtime = 'frontmatter___cover___atime',
-    FrontmatterCoverMtime = 'frontmatter___cover___mtime',
-    FrontmatterCoverCtime = 'frontmatter___cover___ctime',
-    FrontmatterCoverPublicUrl = 'frontmatter___cover___publicURL',
-    FrontmatterCoverId = 'frontmatter___cover___id',
-    FrontmatterCoverParentId = 'frontmatter___cover___parent___id',
-    FrontmatterCoverParentChildren = 'frontmatter___cover___parent___children',
-    FrontmatterCoverChildren = 'frontmatter___cover___children',
-    FrontmatterCoverChildrenId = 'frontmatter___cover___children___id',
-    FrontmatterCoverChildrenChildren = 'frontmatter___cover___children___children',
-    FrontmatterCoverInternalContent = 'frontmatter___cover___internal___content',
-    FrontmatterCoverInternalContentDigest = 'frontmatter___cover___internal___contentDigest',
-    FrontmatterCoverInternalDescription = 'frontmatter___cover___internal___description',
-    FrontmatterCoverInternalFieldOwners = 'frontmatter___cover___internal___fieldOwners',
-    FrontmatterCoverInternalIgnoreType = 'frontmatter___cover___internal___ignoreType',
-    FrontmatterCoverInternalMediaType = 'frontmatter___cover___internal___mediaType',
-    FrontmatterCoverInternalOwner = 'frontmatter___cover___internal___owner',
-    FrontmatterCoverInternalType = 'frontmatter___cover___internal___type',
-    FrontmatterCoverChildMdxRawBody = 'frontmatter___cover___childMdx___rawBody',
-    FrontmatterCoverChildMdxFileAbsolutePath = 'frontmatter___cover___childMdx___fileAbsolutePath',
-    FrontmatterCoverChildMdxBody = 'frontmatter___cover___childMdx___body',
-    FrontmatterCoverChildMdxExcerpt = 'frontmatter___cover___childMdx___excerpt',
-    FrontmatterCoverChildMdxHeadings = 'frontmatter___cover___childMdx___headings',
-    FrontmatterCoverChildMdxHtml = 'frontmatter___cover___childMdx___html',
-    FrontmatterCoverChildMdxMdxAst = 'frontmatter___cover___childMdx___mdxAST',
-    FrontmatterCoverChildMdxTableOfContents = 'frontmatter___cover___childMdx___tableOfContents',
-    FrontmatterCoverChildMdxTimeToRead = 'frontmatter___cover___childMdx___timeToRead',
-    FrontmatterCoverChildMdxId = 'frontmatter___cover___childMdx___id',
-    FrontmatterCoverChildMdxChildren = 'frontmatter___cover___childMdx___children',
-    FrontmatterCoverChildMarkdownRemarkId = 'frontmatter___cover___childMarkdownRemark___id',
-    FrontmatterCoverChildMarkdownRemarkExcerpt = 'frontmatter___cover___childMarkdownRemark___excerpt',
-    FrontmatterCoverChildMarkdownRemarkRawMarkdownBody = 'frontmatter___cover___childMarkdownRemark___rawMarkdownBody',
-    FrontmatterCoverChildMarkdownRemarkFileAbsolutePath = 'frontmatter___cover___childMarkdownRemark___fileAbsolutePath',
-    FrontmatterCoverChildMarkdownRemarkHtml = 'frontmatter___cover___childMarkdownRemark___html',
-    FrontmatterCoverChildMarkdownRemarkHtmlAst = 'frontmatter___cover___childMarkdownRemark___htmlAst',
-    FrontmatterCoverChildMarkdownRemarkExcerptAst = 'frontmatter___cover___childMarkdownRemark___excerptAst',
-    FrontmatterCoverChildMarkdownRemarkHeadings = 'frontmatter___cover___childMarkdownRemark___headings',
-    FrontmatterCoverChildMarkdownRemarkTimeToRead = 'frontmatter___cover___childMarkdownRemark___timeToRead',
-    FrontmatterCoverChildMarkdownRemarkTableOfContents = 'frontmatter___cover___childMarkdownRemark___tableOfContents',
-    FrontmatterCoverChildMarkdownRemarkChildren = 'frontmatter___cover___childMarkdownRemark___children',
-    FrontmatterCoverChildImageSharpId = 'frontmatter___cover___childImageSharp___id',
-    FrontmatterCoverChildImageSharpChildren = 'frontmatter___cover___childImageSharp___children',
-    FrontmatterGenerateCard = 'frontmatter___generate_card',
+    FrontmatterAuthor = 'frontmatter___author',
     FrontmatterDate = 'frontmatter___date',
-    FrontmatterLanguage = 'frontmatter___language',
+    FrontmatterExcerpt = 'frontmatter___excerpt',
+    FrontmatterSlug = 'frontmatter___slug',
+    FrontmatterFeaturedImageBirthtime = 'frontmatter___featuredImage___birthtime',
+    FrontmatterFeaturedImageBirthtimeMs = 'frontmatter___featuredImage___birthtimeMs',
+    FrontmatterFeaturedImageSourceInstanceName = 'frontmatter___featuredImage___sourceInstanceName',
+    FrontmatterFeaturedImageAbsolutePath = 'frontmatter___featuredImage___absolutePath',
+    FrontmatterFeaturedImageRelativePath = 'frontmatter___featuredImage___relativePath',
+    FrontmatterFeaturedImageExtension = 'frontmatter___featuredImage___extension',
+    FrontmatterFeaturedImageSize = 'frontmatter___featuredImage___size',
+    FrontmatterFeaturedImagePrettySize = 'frontmatter___featuredImage___prettySize',
+    FrontmatterFeaturedImageModifiedTime = 'frontmatter___featuredImage___modifiedTime',
+    FrontmatterFeaturedImageAccessTime = 'frontmatter___featuredImage___accessTime',
+    FrontmatterFeaturedImageChangeTime = 'frontmatter___featuredImage___changeTime',
+    FrontmatterFeaturedImageBirthTime = 'frontmatter___featuredImage___birthTime',
+    FrontmatterFeaturedImageRoot = 'frontmatter___featuredImage___root',
+    FrontmatterFeaturedImageDir = 'frontmatter___featuredImage___dir',
+    FrontmatterFeaturedImageBase = 'frontmatter___featuredImage___base',
+    FrontmatterFeaturedImageExt = 'frontmatter___featuredImage___ext',
+    FrontmatterFeaturedImageName = 'frontmatter___featuredImage___name',
+    FrontmatterFeaturedImageRelativeDirectory = 'frontmatter___featuredImage___relativeDirectory',
+    FrontmatterFeaturedImageDev = 'frontmatter___featuredImage___dev',
+    FrontmatterFeaturedImageMode = 'frontmatter___featuredImage___mode',
+    FrontmatterFeaturedImageNlink = 'frontmatter___featuredImage___nlink',
+    FrontmatterFeaturedImageUid = 'frontmatter___featuredImage___uid',
+    FrontmatterFeaturedImageGid = 'frontmatter___featuredImage___gid',
+    FrontmatterFeaturedImageRdev = 'frontmatter___featuredImage___rdev',
+    FrontmatterFeaturedImageIno = 'frontmatter___featuredImage___ino',
+    FrontmatterFeaturedImageAtimeMs = 'frontmatter___featuredImage___atimeMs',
+    FrontmatterFeaturedImageMtimeMs = 'frontmatter___featuredImage___mtimeMs',
+    FrontmatterFeaturedImageCtimeMs = 'frontmatter___featuredImage___ctimeMs',
+    FrontmatterFeaturedImageAtime = 'frontmatter___featuredImage___atime',
+    FrontmatterFeaturedImageMtime = 'frontmatter___featuredImage___mtime',
+    FrontmatterFeaturedImageCtime = 'frontmatter___featuredImage___ctime',
+    FrontmatterFeaturedImagePublicUrl = 'frontmatter___featuredImage___publicURL',
+    FrontmatterFeaturedImageId = 'frontmatter___featuredImage___id',
+    FrontmatterFeaturedImageParentId = 'frontmatter___featuredImage___parent___id',
+    FrontmatterFeaturedImageParentChildren = 'frontmatter___featuredImage___parent___children',
+    FrontmatterFeaturedImageChildren = 'frontmatter___featuredImage___children',
+    FrontmatterFeaturedImageChildrenId = 'frontmatter___featuredImage___children___id',
+    FrontmatterFeaturedImageChildrenChildren = 'frontmatter___featuredImage___children___children',
+    FrontmatterFeaturedImageInternalContent = 'frontmatter___featuredImage___internal___content',
+    FrontmatterFeaturedImageInternalContentDigest = 'frontmatter___featuredImage___internal___contentDigest',
+    FrontmatterFeaturedImageInternalDescription = 'frontmatter___featuredImage___internal___description',
+    FrontmatterFeaturedImageInternalFieldOwners = 'frontmatter___featuredImage___internal___fieldOwners',
+    FrontmatterFeaturedImageInternalIgnoreType = 'frontmatter___featuredImage___internal___ignoreType',
+    FrontmatterFeaturedImageInternalMediaType = 'frontmatter___featuredImage___internal___mediaType',
+    FrontmatterFeaturedImageInternalOwner = 'frontmatter___featuredImage___internal___owner',
+    FrontmatterFeaturedImageInternalType = 'frontmatter___featuredImage___internal___type',
+    FrontmatterFeaturedImageChildMdxRawBody = 'frontmatter___featuredImage___childMdx___rawBody',
+    FrontmatterFeaturedImageChildMdxFileAbsolutePath = 'frontmatter___featuredImage___childMdx___fileAbsolutePath',
+    FrontmatterFeaturedImageChildMdxBody = 'frontmatter___featuredImage___childMdx___body',
+    FrontmatterFeaturedImageChildMdxExcerpt = 'frontmatter___featuredImage___childMdx___excerpt',
+    FrontmatterFeaturedImageChildMdxHeadings = 'frontmatter___featuredImage___childMdx___headings',
+    FrontmatterFeaturedImageChildMdxHtml = 'frontmatter___featuredImage___childMdx___html',
+    FrontmatterFeaturedImageChildMdxMdxAst = 'frontmatter___featuredImage___childMdx___mdxAST',
+    FrontmatterFeaturedImageChildMdxTableOfContents = 'frontmatter___featuredImage___childMdx___tableOfContents',
+    FrontmatterFeaturedImageChildMdxTimeToRead = 'frontmatter___featuredImage___childMdx___timeToRead',
+    FrontmatterFeaturedImageChildMdxId = 'frontmatter___featuredImage___childMdx___id',
+    FrontmatterFeaturedImageChildMdxChildren = 'frontmatter___featuredImage___childMdx___children',
+    FrontmatterFeaturedImageChildImageSharpId = 'frontmatter___featuredImage___childImageSharp___id',
+    FrontmatterFeaturedImageChildImageSharpChildren = 'frontmatter___featuredImage___childImageSharp___children',
+    FrontmatterCategories = 'frontmatter___categories',
     FrontmatterTags = 'frontmatter___tags',
-    FrontmatterImageTwBirthtime = 'frontmatter___imageTw___birthtime',
-    FrontmatterImageTwBirthtimeMs = 'frontmatter___imageTw___birthtimeMs',
-    FrontmatterImageTwSourceInstanceName = 'frontmatter___imageTw___sourceInstanceName',
-    FrontmatterImageTwAbsolutePath = 'frontmatter___imageTw___absolutePath',
-    FrontmatterImageTwRelativePath = 'frontmatter___imageTw___relativePath',
-    FrontmatterImageTwExtension = 'frontmatter___imageTw___extension',
-    FrontmatterImageTwSize = 'frontmatter___imageTw___size',
-    FrontmatterImageTwPrettySize = 'frontmatter___imageTw___prettySize',
-    FrontmatterImageTwModifiedTime = 'frontmatter___imageTw___modifiedTime',
-    FrontmatterImageTwAccessTime = 'frontmatter___imageTw___accessTime',
-    FrontmatterImageTwChangeTime = 'frontmatter___imageTw___changeTime',
-    FrontmatterImageTwBirthTime = 'frontmatter___imageTw___birthTime',
-    FrontmatterImageTwRoot = 'frontmatter___imageTw___root',
-    FrontmatterImageTwDir = 'frontmatter___imageTw___dir',
-    FrontmatterImageTwBase = 'frontmatter___imageTw___base',
-    FrontmatterImageTwExt = 'frontmatter___imageTw___ext',
-    FrontmatterImageTwName = 'frontmatter___imageTw___name',
-    FrontmatterImageTwRelativeDirectory = 'frontmatter___imageTw___relativeDirectory',
-    FrontmatterImageTwDev = 'frontmatter___imageTw___dev',
-    FrontmatterImageTwMode = 'frontmatter___imageTw___mode',
-    FrontmatterImageTwNlink = 'frontmatter___imageTw___nlink',
-    FrontmatterImageTwUid = 'frontmatter___imageTw___uid',
-    FrontmatterImageTwGid = 'frontmatter___imageTw___gid',
-    FrontmatterImageTwRdev = 'frontmatter___imageTw___rdev',
-    FrontmatterImageTwIno = 'frontmatter___imageTw___ino',
-    FrontmatterImageTwAtimeMs = 'frontmatter___imageTw___atimeMs',
-    FrontmatterImageTwMtimeMs = 'frontmatter___imageTw___mtimeMs',
-    FrontmatterImageTwCtimeMs = 'frontmatter___imageTw___ctimeMs',
-    FrontmatterImageTwAtime = 'frontmatter___imageTw___atime',
-    FrontmatterImageTwMtime = 'frontmatter___imageTw___mtime',
-    FrontmatterImageTwCtime = 'frontmatter___imageTw___ctime',
-    FrontmatterImageTwPublicUrl = 'frontmatter___imageTw___publicURL',
-    FrontmatterImageTwId = 'frontmatter___imageTw___id',
-    FrontmatterImageTwParentId = 'frontmatter___imageTw___parent___id',
-    FrontmatterImageTwParentChildren = 'frontmatter___imageTw___parent___children',
-    FrontmatterImageTwChildren = 'frontmatter___imageTw___children',
-    FrontmatterImageTwChildrenId = 'frontmatter___imageTw___children___id',
-    FrontmatterImageTwChildrenChildren = 'frontmatter___imageTw___children___children',
-    FrontmatterImageTwInternalContent = 'frontmatter___imageTw___internal___content',
-    FrontmatterImageTwInternalContentDigest = 'frontmatter___imageTw___internal___contentDigest',
-    FrontmatterImageTwInternalDescription = 'frontmatter___imageTw___internal___description',
-    FrontmatterImageTwInternalFieldOwners = 'frontmatter___imageTw___internal___fieldOwners',
-    FrontmatterImageTwInternalIgnoreType = 'frontmatter___imageTw___internal___ignoreType',
-    FrontmatterImageTwInternalMediaType = 'frontmatter___imageTw___internal___mediaType',
-    FrontmatterImageTwInternalOwner = 'frontmatter___imageTw___internal___owner',
-    FrontmatterImageTwInternalType = 'frontmatter___imageTw___internal___type',
-    FrontmatterImageTwChildMdxRawBody = 'frontmatter___imageTw___childMdx___rawBody',
-    FrontmatterImageTwChildMdxFileAbsolutePath = 'frontmatter___imageTw___childMdx___fileAbsolutePath',
-    FrontmatterImageTwChildMdxBody = 'frontmatter___imageTw___childMdx___body',
-    FrontmatterImageTwChildMdxExcerpt = 'frontmatter___imageTw___childMdx___excerpt',
-    FrontmatterImageTwChildMdxHeadings = 'frontmatter___imageTw___childMdx___headings',
-    FrontmatterImageTwChildMdxHtml = 'frontmatter___imageTw___childMdx___html',
-    FrontmatterImageTwChildMdxMdxAst = 'frontmatter___imageTw___childMdx___mdxAST',
-    FrontmatterImageTwChildMdxTableOfContents = 'frontmatter___imageTw___childMdx___tableOfContents',
-    FrontmatterImageTwChildMdxTimeToRead = 'frontmatter___imageTw___childMdx___timeToRead',
-    FrontmatterImageTwChildMdxId = 'frontmatter___imageTw___childMdx___id',
-    FrontmatterImageTwChildMdxChildren = 'frontmatter___imageTw___childMdx___children',
-    FrontmatterImageTwChildMarkdownRemarkId = 'frontmatter___imageTw___childMarkdownRemark___id',
-    FrontmatterImageTwChildMarkdownRemarkExcerpt = 'frontmatter___imageTw___childMarkdownRemark___excerpt',
-    FrontmatterImageTwChildMarkdownRemarkRawMarkdownBody = 'frontmatter___imageTw___childMarkdownRemark___rawMarkdownBody',
-    FrontmatterImageTwChildMarkdownRemarkFileAbsolutePath = 'frontmatter___imageTw___childMarkdownRemark___fileAbsolutePath',
-    FrontmatterImageTwChildMarkdownRemarkHtml = 'frontmatter___imageTw___childMarkdownRemark___html',
-    FrontmatterImageTwChildMarkdownRemarkHtmlAst = 'frontmatter___imageTw___childMarkdownRemark___htmlAst',
-    FrontmatterImageTwChildMarkdownRemarkExcerptAst = 'frontmatter___imageTw___childMarkdownRemark___excerptAst',
-    FrontmatterImageTwChildMarkdownRemarkHeadings = 'frontmatter___imageTw___childMarkdownRemark___headings',
-    FrontmatterImageTwChildMarkdownRemarkTimeToRead = 'frontmatter___imageTw___childMarkdownRemark___timeToRead',
-    FrontmatterImageTwChildMarkdownRemarkTableOfContents = 'frontmatter___imageTw___childMarkdownRemark___tableOfContents',
-    FrontmatterImageTwChildMarkdownRemarkChildren = 'frontmatter___imageTw___childMarkdownRemark___children',
-    FrontmatterImageTwChildImageSharpId = 'frontmatter___imageTw___childImageSharp___id',
-    FrontmatterImageTwChildImageSharpChildren = 'frontmatter___imageTw___childImageSharp___children',
-    FrontmatterImageFbBirthtime = 'frontmatter___imageFb___birthtime',
-    FrontmatterImageFbBirthtimeMs = 'frontmatter___imageFb___birthtimeMs',
-    FrontmatterImageFbSourceInstanceName = 'frontmatter___imageFb___sourceInstanceName',
-    FrontmatterImageFbAbsolutePath = 'frontmatter___imageFb___absolutePath',
-    FrontmatterImageFbRelativePath = 'frontmatter___imageFb___relativePath',
-    FrontmatterImageFbExtension = 'frontmatter___imageFb___extension',
-    FrontmatterImageFbSize = 'frontmatter___imageFb___size',
-    FrontmatterImageFbPrettySize = 'frontmatter___imageFb___prettySize',
-    FrontmatterImageFbModifiedTime = 'frontmatter___imageFb___modifiedTime',
-    FrontmatterImageFbAccessTime = 'frontmatter___imageFb___accessTime',
-    FrontmatterImageFbChangeTime = 'frontmatter___imageFb___changeTime',
-    FrontmatterImageFbBirthTime = 'frontmatter___imageFb___birthTime',
-    FrontmatterImageFbRoot = 'frontmatter___imageFb___root',
-    FrontmatterImageFbDir = 'frontmatter___imageFb___dir',
-    FrontmatterImageFbBase = 'frontmatter___imageFb___base',
-    FrontmatterImageFbExt = 'frontmatter___imageFb___ext',
-    FrontmatterImageFbName = 'frontmatter___imageFb___name',
-    FrontmatterImageFbRelativeDirectory = 'frontmatter___imageFb___relativeDirectory',
-    FrontmatterImageFbDev = 'frontmatter___imageFb___dev',
-    FrontmatterImageFbMode = 'frontmatter___imageFb___mode',
-    FrontmatterImageFbNlink = 'frontmatter___imageFb___nlink',
-    FrontmatterImageFbUid = 'frontmatter___imageFb___uid',
-    FrontmatterImageFbGid = 'frontmatter___imageFb___gid',
-    FrontmatterImageFbRdev = 'frontmatter___imageFb___rdev',
-    FrontmatterImageFbIno = 'frontmatter___imageFb___ino',
-    FrontmatterImageFbAtimeMs = 'frontmatter___imageFb___atimeMs',
-    FrontmatterImageFbMtimeMs = 'frontmatter___imageFb___mtimeMs',
-    FrontmatterImageFbCtimeMs = 'frontmatter___imageFb___ctimeMs',
-    FrontmatterImageFbAtime = 'frontmatter___imageFb___atime',
-    FrontmatterImageFbMtime = 'frontmatter___imageFb___mtime',
-    FrontmatterImageFbCtime = 'frontmatter___imageFb___ctime',
-    FrontmatterImageFbPublicUrl = 'frontmatter___imageFb___publicURL',
-    FrontmatterImageFbId = 'frontmatter___imageFb___id',
-    FrontmatterImageFbParentId = 'frontmatter___imageFb___parent___id',
-    FrontmatterImageFbParentChildren = 'frontmatter___imageFb___parent___children',
-    FrontmatterImageFbChildren = 'frontmatter___imageFb___children',
-    FrontmatterImageFbChildrenId = 'frontmatter___imageFb___children___id',
-    FrontmatterImageFbChildrenChildren = 'frontmatter___imageFb___children___children',
-    FrontmatterImageFbInternalContent = 'frontmatter___imageFb___internal___content',
-    FrontmatterImageFbInternalContentDigest = 'frontmatter___imageFb___internal___contentDigest',
-    FrontmatterImageFbInternalDescription = 'frontmatter___imageFb___internal___description',
-    FrontmatterImageFbInternalFieldOwners = 'frontmatter___imageFb___internal___fieldOwners',
-    FrontmatterImageFbInternalIgnoreType = 'frontmatter___imageFb___internal___ignoreType',
-    FrontmatterImageFbInternalMediaType = 'frontmatter___imageFb___internal___mediaType',
-    FrontmatterImageFbInternalOwner = 'frontmatter___imageFb___internal___owner',
-    FrontmatterImageFbInternalType = 'frontmatter___imageFb___internal___type',
-    FrontmatterImageFbChildMdxRawBody = 'frontmatter___imageFb___childMdx___rawBody',
-    FrontmatterImageFbChildMdxFileAbsolutePath = 'frontmatter___imageFb___childMdx___fileAbsolutePath',
-    FrontmatterImageFbChildMdxBody = 'frontmatter___imageFb___childMdx___body',
-    FrontmatterImageFbChildMdxExcerpt = 'frontmatter___imageFb___childMdx___excerpt',
-    FrontmatterImageFbChildMdxHeadings = 'frontmatter___imageFb___childMdx___headings',
-    FrontmatterImageFbChildMdxHtml = 'frontmatter___imageFb___childMdx___html',
-    FrontmatterImageFbChildMdxMdxAst = 'frontmatter___imageFb___childMdx___mdxAST',
-    FrontmatterImageFbChildMdxTableOfContents = 'frontmatter___imageFb___childMdx___tableOfContents',
-    FrontmatterImageFbChildMdxTimeToRead = 'frontmatter___imageFb___childMdx___timeToRead',
-    FrontmatterImageFbChildMdxId = 'frontmatter___imageFb___childMdx___id',
-    FrontmatterImageFbChildMdxChildren = 'frontmatter___imageFb___childMdx___children',
-    FrontmatterImageFbChildMarkdownRemarkId = 'frontmatter___imageFb___childMarkdownRemark___id',
-    FrontmatterImageFbChildMarkdownRemarkExcerpt = 'frontmatter___imageFb___childMarkdownRemark___excerpt',
-    FrontmatterImageFbChildMarkdownRemarkRawMarkdownBody = 'frontmatter___imageFb___childMarkdownRemark___rawMarkdownBody',
-    FrontmatterImageFbChildMarkdownRemarkFileAbsolutePath = 'frontmatter___imageFb___childMarkdownRemark___fileAbsolutePath',
-    FrontmatterImageFbChildMarkdownRemarkHtml = 'frontmatter___imageFb___childMarkdownRemark___html',
-    FrontmatterImageFbChildMarkdownRemarkHtmlAst = 'frontmatter___imageFb___childMarkdownRemark___htmlAst',
-    FrontmatterImageFbChildMarkdownRemarkExcerptAst = 'frontmatter___imageFb___childMarkdownRemark___excerptAst',
-    FrontmatterImageFbChildMarkdownRemarkHeadings = 'frontmatter___imageFb___childMarkdownRemark___headings',
-    FrontmatterImageFbChildMarkdownRemarkTimeToRead = 'frontmatter___imageFb___childMarkdownRemark___timeToRead',
-    FrontmatterImageFbChildMarkdownRemarkTableOfContents = 'frontmatter___imageFb___childMarkdownRemark___tableOfContents',
-    FrontmatterImageFbChildMarkdownRemarkChildren = 'frontmatter___imageFb___childMarkdownRemark___children',
-    FrontmatterImageFbChildImageSharpId = 'frontmatter___imageFb___childImageSharp___id',
-    FrontmatterImageFbChildImageSharpChildren = 'frontmatter___imageFb___childImageSharp___children',
     Body = 'body',
     Excerpt = 'excerpt',
     Headings = 'headings',
@@ -2495,14 +1847,13 @@ export type MdxFilterInput = {
 export type MdxFrontmatter = {
     __typename?: 'MdxFrontmatter';
     title: Scalars['String'];
-    slug?: Maybe<Scalars['String']>;
-    cover?: Maybe<File>;
-    generate_card?: Maybe<Scalars['Boolean']>;
+    author?: Maybe<Scalars['String']>;
     date?: Maybe<Scalars['Date']>;
-    language?: Maybe<Scalars['String']>;
+    excerpt?: Maybe<Scalars['String']>;
+    slug?: Maybe<Scalars['String']>;
+    featuredImage?: Maybe<File>;
+    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-    imageTw?: Maybe<File>;
-    imageFb?: Maybe<File>;
 };
 
 export type MdxFrontmatterDateArgs = {
@@ -2514,14 +1865,13 @@ export type MdxFrontmatterDateArgs = {
 
 export type MdxFrontmatterFilterInput = {
     title?: Maybe<StringQueryOperatorInput>;
-    slug?: Maybe<StringQueryOperatorInput>;
-    cover?: Maybe<FileFilterInput>;
-    generate_card?: Maybe<BooleanQueryOperatorInput>;
+    author?: Maybe<StringQueryOperatorInput>;
     date?: Maybe<DateQueryOperatorInput>;
-    language?: Maybe<StringQueryOperatorInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    slug?: Maybe<StringQueryOperatorInput>;
+    featuredImage?: Maybe<FileFilterInput>;
+    categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
-    imageTw?: Maybe<FileFilterInput>;
-    imageFb?: Maybe<FileFilterInput>;
 };
 
 export type MdxGroupConnection = {
@@ -2675,7 +2025,6 @@ export type QueryFileArgs = {
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
     childMdx?: Maybe<MdxFilterInput>;
-    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
     childImageSharp?: Maybe<ImageSharpFilterInput>;
 };
 
@@ -2733,13 +2082,9 @@ export type QueryAllImageSharpArgs = {
 
 export type QueryMarkdownRemarkArgs = {
     id?: Maybe<StringQueryOperatorInput>;
-    frontmatter?: Maybe<MarkdownRemarkFrontmatterFilterInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
-    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
-    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
-    fields?: Maybe<MarkdownRemarkFieldsFilterInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -3110,6 +2455,7 @@ export type SitePageContext = {
     height?: Maybe<Scalars['Int']>;
     type?: Maybe<Scalars['String']>;
     tag?: Maybe<Scalars['String']>;
+    category?: Maybe<Scalars['String']>;
 };
 
 export type SitePageContextFilterInput = {
@@ -3124,6 +2470,7 @@ export type SitePageContextFilterInput = {
     height?: Maybe<IntQueryOperatorInput>;
     type?: Maybe<StringQueryOperatorInput>;
     tag?: Maybe<StringQueryOperatorInput>;
+    category?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageContextNext = {
@@ -3141,12 +2488,14 @@ export type SitePageContextNextFrontmatter = {
     __typename?: 'SitePageContextNextFrontmatter';
     title?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
+    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 export type SitePageContextNextFrontmatterFilterInput = {
     title?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
+    categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -3165,12 +2514,14 @@ export type SitePageContextPreviousFrontmatter = {
     __typename?: 'SitePageContextPreviousFrontmatter';
     title?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
+    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 export type SitePageContextPreviousFrontmatterFilterInput = {
     title?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
+    categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -3281,15 +2632,18 @@ export enum SitePageFieldsEnum {
     ContextPreviousFileAbsolutePath = 'context___previous___fileAbsolutePath',
     ContextPreviousFrontmatterTitle = 'context___previous___frontmatter___title',
     ContextPreviousFrontmatterSlug = 'context___previous___frontmatter___slug',
+    ContextPreviousFrontmatterCategories = 'context___previous___frontmatter___categories',
     ContextPreviousFrontmatterTags = 'context___previous___frontmatter___tags',
     ContextNextFileAbsolutePath = 'context___next___fileAbsolutePath',
     ContextNextFrontmatterTitle = 'context___next___frontmatter___title',
     ContextNextFrontmatterSlug = 'context___next___frontmatter___slug',
+    ContextNextFrontmatterCategories = 'context___next___frontmatter___categories',
     ContextNextFrontmatterTags = 'context___next___frontmatter___tags',
     ContextWidth = 'context___width',
     ContextHeight = 'context___height',
     ContextType = 'context___type',
     ContextTag = 'context___tag',
+    ContextCategory = 'context___category',
     PluginCreatorId = 'pluginCreator___id',
     PluginCreatorParentId = 'pluginCreator___parent___id',
     PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -3564,6 +2918,7 @@ export enum SitePluginFieldsEnum {
     PluginOptionsGatsbyRemarkPluginsOptionsBackgroundColor = 'pluginOptions___gatsbyRemarkPlugins___options___backgroundColor',
     PluginOptionsGatsbyRemarkPluginsOptionsShowCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___showCaptions',
     PluginOptionsGatsbyRemarkPluginsOptionsTracedSvg = 'pluginOptions___gatsbyRemarkPlugins___options___tracedSVG',
+    PluginOptionsGatsbyRemarkPluginsOptionsShowLineNumbers = 'pluginOptions___gatsbyRemarkPlugins___options___showLineNumbers',
     PluginOptionsTrackingId = 'pluginOptions___trackingId',
     PluginOptionsShortName = 'pluginOptions___short_name',
     PluginOptionsStartUrl = 'pluginOptions___start_url',
@@ -3761,6 +3116,7 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptions = {
     backgroundColor?: Maybe<Scalars['String']>;
     showCaptions?: Maybe<Scalars['Boolean']>;
     tracedSVG?: Maybe<Scalars['Boolean']>;
+    showLineNumbers?: Maybe<Scalars['Boolean']>;
 };
 
 export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
@@ -3772,6 +3128,7 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
     backgroundColor?: Maybe<StringQueryOperatorInput>;
     showCaptions?: Maybe<BooleanQueryOperatorInput>;
     tracedSVG?: Maybe<BooleanQueryOperatorInput>;
+    showLineNumbers?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPlugins = {
