@@ -27,6 +27,7 @@
         "@mdx-js/react": "^1.0.23",
         "disqus-react": "^1.0.6",
         "gatsby": "^2.13.7",
+        "gatsby-background-image": "^0.8.3",
         "gatsby-image": "^2.2.4",
         "gatsby-plugin-google-analytics": "^2.1.1",
         "gatsby-plugin-manifest": "^2.2.1",
@@ -66,6 +67,7 @@
         "gatsby-plugin-netlify": "^2.1.4",
         "graphql": "^14.4.2",
         "prettier": "^1.18.2",
+        "puppeteer": "^1.19.0",
         "typescript": "^3.5.3",
         "yaml": "^1.6.0"
     },
