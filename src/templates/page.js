@@ -8,6 +8,11 @@ import Wrapper from '../components/Wrapper';
 
 export const Page = props => {
     const page = props.data.page;
+    const fluid =
+        (page.frontmatter.featuredImage &&
+            page.frontmatter.featuredImage.sharp &&
+            page.frontmatter.featuredImage.sharp.fluid) ||
+        undefined;
 
     return (
         <Layout location={props.location}>
@@ -15,10 +20,10 @@ export const Page = props => {
                 title={page.frontmatter.title}
                 description={page.excerpt}
                 path={page.frontmatter.slug}
-                cover={page.frontmatter.cover && page.frontmatter.cover.publicURL}
+                featuredImage={page.frontmatter.featuredImage && page.frontmatter.featuredImage.publicURL}
             />
 
-            <Hero heroImg={page.frontmatter.cover && page.frontmatter.cover.publicURL} title={page.frontmatter.title} />
+            <Hero heroImg={fluid} title={page.frontmatter.title} />
 
             <Wrapper>
                 <article>
@@ -40,10 +45,14 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "DD MMMM, YYYY")
                 slug
-                cover
-                #  {
-                #     publicURL
-                # }
+                featuredImage {
+                    publicURL
+                    sharp: childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
             }
         }
     }

@@ -10,7 +10,7 @@ module.exports = {
   As a new digital nomad, he is living where the WIFI and sun is 😎 <br>
   Do you want to know more? <a href="https://www.maxpou.fr/about" target="_blank">Visit my website!</a>
   `,
-    siteUrl: 'https://ankursheel.com/',
+    siteUrl: 'https://www.ankursheel.com/',
     // disqusSiteUrl: 'https://www.maxpou.fr/',
     siteCover: 'cover-baymax.jpeg', // file in content/images
     googleAnalyticsId: 'UA-45876690-1',

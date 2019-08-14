@@ -8,11 +8,11 @@ const SEO = props => {
     const { siteTitle, siteUrl, siteCover, siteDescription, twitterUsername } = useSiteMetadata();
 
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
-    const formatedSiteUrl = siteUrl.substring(0, siteUrl.length - 1);
-    const imagePath = props.imageFb || props.cover || withPrefix(siteCover);
-    const imagePathTwitter = props.imageTw || props.cover || withPrefix(siteCover);
-    const image = `${formatedSiteUrl}${imagePath}`;
-    const imageTwitter = `${formatedSiteUrl}${imagePathTwitter}`;
+    const formattedSiteUrl = siteUrl;
+    const imagePath = props.imageFb || props.featuredImage || withPrefix(siteCover);
+    const imagePathTwitter = props.imageTw || props.featuredImage || withPrefix(siteCover);
+    const image = `${formattedSiteUrl}${imagePath}`;
+    const imageTwitter = `${formattedSiteUrl}${imagePathTwitter}`;
     const description = props.description || siteDescription;
 
     return (
@@ -22,10 +22,10 @@ const SEO = props => {
             {/* General tags */}
             <html lang={lang} />
             <meta name="description" content={description} />
-            <link rel="canonical" href={formatedSiteUrl + withPrefix(path)} />
+            <link rel="canonical" href={formattedSiteUrl + withPrefix(path)} />
 
             {/* OpenGraph tags */}
-            <meta property="og:url" content={formatedSiteUrl + withPrefix(path)} />
+            <meta property="og:url" content={formattedSiteUrl + withPrefix(path)} />
             <meta property="og:type" content={isBlogPost ? 'article' : 'website'} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />

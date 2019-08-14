@@ -5,7 +5,7 @@ const glob = require('glob');
 const YAML = require('yaml');
 const puppeteer = require('puppeteer');
 
-const baseUrl = process.argv[2] || 'http://localhost:8000/';
+const baseUrl = process.argv[2] || 'http://localhost:8000/blog/';
 
 const takeScreenshot = async (url, width, height, destination) => {
     const browser = await puppeteer.launch({
@@ -29,7 +29,7 @@ const takeScreenshot = async (url, width, height, destination) => {
 };
 
 const getArticleFiles = () => {
-    return glob.sync(join(__dirname, '..', 'content', 'posts', '**', '*.md'));
+    return glob.sync(join(__dirname, '..', 'content', 'posts', '**', '*.mdx'));
 };
 
 const parseFile = async file => {
