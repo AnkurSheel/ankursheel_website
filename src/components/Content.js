@@ -7,6 +7,11 @@ import ContentHeader from './ContentHeader';
 const ContentBody = styled.div`
     line-height: 1.6;
 
+    .gatsby-highlight pre[class*='language-'].line-numbers {
+        padding: 0;
+        padding-left: 2.8em;
+    }
+
     & > h2 {
         padding-top: 3rem;
         margin-top: 3rem;

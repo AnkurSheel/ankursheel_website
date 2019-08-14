@@ -14,24 +14,6 @@ const SiteContent = styled.div`
     @media ${media.medium} {
         margin: 60px 0;
     }
-    /**
- * If you already use line highlighting
- */
-
-    /* Adjust the position of the line numbers */
-    .gatsby-highlight pre[class*='language-'].line-numbers {
-        padding-left: 2.8em;
-    }
-
-    /**
- * If you only want to use line numbering
- */
-
-    .gatsby-highlight pre[class*='language-'].line-numbers {
-        padding: 0;
-        padding-left: 2.8em;
-        overflow: initial;
-    }
 `;
 
 class Template extends React.Component {
