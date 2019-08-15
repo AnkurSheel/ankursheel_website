@@ -1,19 +1,19 @@
-import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/themes/prism-okaidia.css';
 import React, { ReactNode } from 'react';
-import { media } from '../tokens';
 import { GlobalStyle } from './Commons';
 import Footer from './Footer';
 import Header from './Header';
 
-const SiteContent = styled.div`
-    margin: 0 0;
-
-    @media ${media.medium} {
-        margin: 60px 0;
-    }
-`;
+const styles = {
+    siteContent: css({
+        margin: 0,
+        '@media (min-width: 700px)': {
+            margin: '60px 0',
+        },
+    }),
+};
 
 interface LayoutProps {
     children: ReactNode;
@@ -24,7 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
         <>
             <GlobalStyle />
             <Header />
-            <SiteContent>{children}</SiteContent>
+            <div css={styles.siteContent}>{children}</div>
             <Footer />
         </>
     );
