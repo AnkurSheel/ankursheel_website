@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/themes/prism-okaidia.css';
 import React from 'react';
-import Helmet from 'react-helmet';
 import { media } from '../tokens';
 import { GlobalStyle } from './Commons';
 import Footer from './Footer';
@@ -16,22 +15,15 @@ const SiteContent = styled.div`
     }
 `;
 
-class Template extends React.Component {
-    render() {
-        const { children } = this.props;
+const Layout = ({ children }) => {
+    return (
+        <>
+            <GlobalStyle />
+            <Header />
+            <SiteContent>{children}</SiteContent>
+            <Footer />
+        </>
+    );
+};
 
-        return (
-            <>
-                <Helmet>
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
-                </Helmet>
-                <GlobalStyle />
-                <Header />
-                <SiteContent>{children}</SiteContent>
-                <Footer />
-            </>
-        );
-    }
-}
-
-export default Template;
+export default Layout;
