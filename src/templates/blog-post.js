@@ -30,14 +30,14 @@ const BlogPostTemplate = props => {
 
             <Hero heroImg={fluid} title={post.frontmatter.title} />
 
-            <Wrapper>
+            <main css={Wrapper}>
                 <Article post={post} />
-            </Wrapper>
+            </main>
 
-            <Wrapper>
+            <main css={Wrapper}>
                 <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
                 <PrevNextPost previous={previous} next={next} />
-            </Wrapper>
+            </main>
         </Layout>
     );
 };

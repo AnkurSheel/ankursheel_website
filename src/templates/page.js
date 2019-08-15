@@ -25,11 +25,11 @@ export const Page = props => {
 
             <Hero heroImg={fluid} title={page.frontmatter.title} />
 
-            <Wrapper>
+            <main css={Wrapper}>
                 <article>
                     <Content content={page.body} date={page.frontmatter.date} />
                 </article>
-            </Wrapper>
+            </main>
         </Layout>
     );
 };

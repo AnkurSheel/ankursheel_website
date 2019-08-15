@@ -54,7 +54,7 @@ const NotFoundPage = props => {
     return (
         <Layout location={props.location} noCover={true}>
             <SEO title="Page Not Found" />
-            <Wrapper>
+            <main css={Wrapper}>
                 <MainTitle>404 Page Not Found</MainTitle>
                 <Ghost>👻</Ghost>
                 <Text>
@@ -64,7 +64,7 @@ const NotFoundPage = props => {
                 <SubTitle>Recent Posts</SubTitle>
 
                 <RelatedPosts posts={posts} />
-            </Wrapper>
+            </main>
         </Layout>
     );
 };
