@@ -67,8 +67,12 @@ export const pageQuery = graphql`
                         }
                     }
                 }
-                # imageTw
-                # imageFb
+                imageTwitter {
+                    publicURL
+                }
+                imageFacebook {
+                    publicURL
+                }
             }
         }
     }
