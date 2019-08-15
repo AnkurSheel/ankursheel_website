@@ -56,9 +56,9 @@ const main = async () => {
 
     for (let i = 0; i < files.length; i++) {
         const file = files[i];
-        const destPrefix = join(file.directory, `${file.slug}-`);
-        const fbFile = `${destPrefix}fb.png`;
-        const twFile = `${destPrefix}tw.png`;
+        const destPrefix = join(file.directory, `image-`);
+        const fbFile = `${destPrefix}facebook.png`;
+        const twFile = `${destPrefix}twitter.png`;
 
         if (file['generate-card'] !== false) {
             await takeScreenshot(`${baseUrl}${file.slug}/image_fb`, 1200, 630, fbFile);

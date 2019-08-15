@@ -17,10 +17,10 @@ class Tags extends React.Component {
                 <SEO title={pageTitle} />
                 <Hero title={pageTitle} />
 
-                <Wrapper>
+                <main css={Wrapper}>
                     <h1>Posts tagged as &quot;{this.props.pageContext.tag}&quot;</h1>
                     <PostsList posts={posts} />
-                </Wrapper>
+                </main>
             </Layout>
         );
     }

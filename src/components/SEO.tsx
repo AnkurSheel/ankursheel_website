@@ -1,19 +1,24 @@
 import { withPrefix } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { MdxFrontmatter } from '../graphqlTypes';
 import useSiteMetadata from '../hooks/use-site-config';
 
-const SEO = props => {
-    const { isBlogPost, path = '', lang = 'en' } = props;
+type SEOProps = Pick<MdxFrontmatter, 'title' | 'excerpt' | 'imageFacebook' | 'imageTwitter' | 'featuredImage'> & {
+    path?: string;
+    isBlog: boolean;
+};
+const SEO = (props: SEOProps) => {
+    const { isBlog, path = '' } = props;
     const { siteTitle, siteUrl, siteCover, siteDescription, twitterUsername } = useSiteMetadata();
-
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
-    const formattedSiteUrl = siteUrl;
-    const imagePath = props.imageFb || props.featuredImage || withPrefix(siteCover);
-    const imagePathTwitter = props.imageTw || props.featuredImage || withPrefix(siteCover);
+    const formattedSiteUrl = isBlog ? `${siteUrl}/blog` : siteUrl;
+    const imagePath = props.imageFacebook || props.featuredImage || withPrefix(siteCover);
+    const imagePathTwitter = props.imageTwitter || props.featuredImage || withPrefix(siteCover);
     const image = `${formattedSiteUrl}${imagePath}`;
     const imageTwitter = `${formattedSiteUrl}${imagePathTwitter}`;
-    const description = props.description || siteDescription;
+    const description = props.excerpt || siteDescription;
+    const lang = 'en';
 
     return (
         <Helmet title={title}>
@@ -26,7 +31,7 @@ const SEO = props => {
 
             {/* OpenGraph tags */}
             <meta property="og:url" content={formattedSiteUrl + withPrefix(path)} />
-            <meta property="og:type" content={isBlogPost ? 'article' : 'website'} />
+            <meta property="og:type" content={isBlog ? 'article' : 'website'} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
