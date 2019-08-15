@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
 
-export const Page = props => {
+export const Page = (props: any) => {
     const page = props.data.page;
     const fluid =
         (page.frontmatter.featuredImage &&
@@ -15,10 +15,10 @@ export const Page = props => {
         undefined;
 
     return (
-        <Layout location={props.location}>
+        <Layout>
             <SEO
                 title={page.frontmatter.title}
-                description={page.excerpt}
+                excerpt={page.excerpt}
                 path={page.frontmatter.slug}
                 featuredImage={page.frontmatter.featuredImage && page.frontmatter.featuredImage.publicURL}
             />
@@ -37,7 +37,7 @@ export const Page = props => {
 export default Page;
 
 export const pageQuery = graphql`
-    query($slug: String!) {
+    query PageBySlug($slug: String!) {
         page: mdx(frontmatter: { slug: { eq: $slug } }) {
             body
             excerpt
