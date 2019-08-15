@@ -19,7 +19,7 @@ const Categories = (props: CategoriesProps) => {
     const posts = props.data.posts.edges;
 
     return (
-        <Layout title={pageTitle}>
+        <Layout>
             <SEO title={pageTitle} />
             <Hero title={pageTitle} />
 

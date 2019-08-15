@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/themes/prism-okaidia.css';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { media } from '../tokens';
 import { GlobalStyle } from './Commons';
 import Footer from './Footer';
@@ -15,7 +15,11 @@ const SiteContent = styled.div`
     }
 `;
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+    children: ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <GlobalStyle />
