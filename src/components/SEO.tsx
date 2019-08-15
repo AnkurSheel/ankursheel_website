@@ -9,7 +9,7 @@ type SEOProps = Pick<MdxFrontmatter, 'title' | 'excerpt' | 'imageFacebook' | 'im
     isBlog: boolean;
 };
 const SEO = (props: SEOProps) => {
-    const { isBlog, path = '' } = props;
+    const { isBlog = false, path = '' } = props;
     const { siteTitle, siteUrl, siteCover, siteDescription, twitterUsername } = useSiteMetadata();
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
     const formattedSiteUrl = isBlog ? `${siteUrl}/blog` : siteUrl;
@@ -44,6 +44,10 @@ const SEO = (props: SEOProps) => {
             <meta name="twitter:image" content={imageTwitter} />
         </Helmet>
     );
+};
+
+SEO.defaultProps = {
+    isBlog: false,
 };
 
 export default SEO;

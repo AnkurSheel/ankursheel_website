@@ -1,30 +1,35 @@
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 import React from 'react';
 import Hero from '../components/Hero';
 import Layout from '../components/layout';
 import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { PostsByCategoryQuery } from '../graphqlTypes';
 
-class Categories extends React.Component {
-    render() {
-        const pageTitle = this.props.pageContext.category;
-        const posts = get(this, 'props.data.posts.edges');
+type CategoriesProps = {
+    data: Pick<PostsByCategoryQuery, 'posts'>;
+    pageContext: {
+        category: string;
+    };
+};
 
-        return (
-            <Layout location={this.props.location} title={pageTitle}>
-                <SEO title={pageTitle} />
-                <Hero title={pageTitle} />
+const Categories = (props: CategoriesProps) => {
+    const pageTitle = props.pageContext.category;
+    const posts = props.data.posts.edges;
 
-                <main css={Wrapper}>
-                    <h1>Posts tagged as &quot;{pageTitle}&quot;</h1>
-                    <PostsList posts={posts} />
-                </main>
-            </Layout>
-        );
-    }
-}
+    return (
+        <Layout>
+            <SEO title={pageTitle} />
+            <Hero title={pageTitle} />
+
+            <main css={Wrapper}>
+                <h1>Posts tagged as &quot;{pageTitle}&quot;</h1>
+                <PostsList posts={posts} />
+            </main>
+        </Layout>
+    );
+};
 
 export default Categories;
 

@@ -1,30 +1,35 @@
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 import React from 'react';
 import Hero from '../components/Hero';
 import Layout from '../components/layout';
 import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { PostsByTagQuery } from '../graphqlTypes';
 
-class Tags extends React.Component {
-    render() {
-        const pageTitle = `#${this.props.pageContext.tag}`;
-        const posts = get(this, 'props.data.posts.edges');
+type TagsProps = {
+    data: Pick<PostsByTagQuery, 'posts'>;
+    pageContext: {
+        tag: string;
+    };
+};
 
-        return (
-            <Layout location={this.props.location} title={pageTitle}>
-                <SEO title={pageTitle} />
-                <Hero title={pageTitle} />
+const Tags = (props: TagsProps) => {
+    const pageTitle = `#${props.pageContext.tag}`;
+    const posts = props.data.posts.edges;
 
-                <main css={Wrapper}>
-                    <h1>Posts tagged as &quot;{this.props.pageContext.tag}&quot;</h1>
-                    <PostsList posts={posts} />
-                </main>
-            </Layout>
-        );
-    }
-}
+    return (
+        <Layout>
+            <SEO title={pageTitle} />
+            <Hero title={pageTitle} />
+
+            <main css={Wrapper}>
+                <h1>Posts tagged as &quot;{props.pageContext.tag}&quot;</h1>
+                <PostsList posts={posts} />
+            </main>
+        </Layout>
+    );
+};
 
 export default Tags;
 
