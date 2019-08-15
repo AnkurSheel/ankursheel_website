@@ -3490,6 +3490,24 @@ export type PostsByCategoryQuery = { __typename?: 'Query' } & {
     };
 };
 
+export type PostsByTagQueryVariables = {
+    tag: Scalars['String'];
+};
+
+export type PostsByTagQuery = { __typename?: 'Query' } & {
+    posts: { __typename?: 'MdxConnection' } & {
+        edges: Array<
+            { __typename?: 'MdxEdge' } & {
+                node: { __typename?: 'Mdx' } & Pick<Mdx, 'excerpt'> & {
+                        frontmatter: Maybe<
+                            { __typename?: 'MdxFrontmatter' } & Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'slug'>
+                        >;
+                    };
+            }
+        >;
+    };
+};
+
 export type GatsbyImageSharpFixedFragment = { __typename?: 'ImageSharpFixed' } & Pick<
     ImageSharpFixed,
     'base64' | 'width' | 'height' | 'src' | 'srcSet'

@@ -5,13 +5,21 @@ import Layout from '../components/layout';
 import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { PostsByTagQuery } from '../graphqlTypes';
 
-const Tags = props => {
+type TagsProps = {
+    data: Pick<PostsByTagQuery, 'posts'>;
+    pageContext: {
+        tag: string;
+    };
+};
+
+const Tags = (props: TagsProps) => {
     const pageTitle = `#${props.pageContext.tag}`;
     const posts = props.data.posts.edges;
 
     return (
-        <Layout location={props.location} title={pageTitle}>
+        <Layout title={pageTitle}>
             <SEO title={pageTitle} />
             <Hero title={pageTitle} />
 
