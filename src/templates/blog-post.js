@@ -8,43 +8,39 @@ import PrevNextPost from '../components/PrevNextPost';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
 
-class BlogPostTemplate extends React.Component {
-    render() {
-        console.log(this.props);
-        const post = this.props.data.post;
-        const { previous, next } = this.props.pageContext;
-        const fluid =
-            (post.frontmatter.featuredImage &&
-                post.frontmatter.featuredImage.sharp &&
-                post.frontmatter.featuredImage.sharp.fluid) ||
-            undefined;
-        return (
-            <Layout location={this.props.location}>
-                <SEO
-                    title={post.frontmatter.title}
-                    description={post.excerpt}
-                    featuredImage={post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL}
-                    imageFb={post.frontmatter.imageFb && post.frontmatter.imageFb.publicURL}
-                    imageTw={post.frontmatter.imageTw && post.frontmatter.imageTw.publicURL}
-                    lang={post.frontmatter.language}
-                    path={post.frontmatter.slug}
-                    isBlogPost
-                />
+const BlogPostTemplate = props => {
+    const post = props.data.post;
+    const { previous, next } = props.pageContext;
+    const fluid =
+        (post.frontmatter.featuredImage &&
+            post.frontmatter.featuredImage.sharp &&
+            post.frontmatter.featuredImage.sharp.fluid) ||
+        undefined;
+    return (
+        <Layout location={props.location}>
+            <SEO
+                title={post.frontmatter.title}
+                excerpt={post.excerpt}
+                featuredImage={post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL}
+                imageFacebook={post.frontmatter.imageFacebook && post.frontmatter.imageFacebook.publicURL}
+                imageTwitter={post.frontmatter.imageTwitter && post.frontmatter.imageTwitter.publicURL}
+                path={post.frontmatter.slug}
+                isBlog
+            />
 
-                <Hero heroImg={fluid} title={post.frontmatter.title} />
+            <Hero heroImg={fluid} title={post.frontmatter.title} />
 
-                <Wrapper>
-                    <Article post={post} />
-                </Wrapper>
+            <Wrapper>
+                <Article post={post} />
+            </Wrapper>
 
-                <Wrapper>
-                    <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
-                    <PrevNextPost previous={previous} next={next} />
-                </Wrapper>
-            </Layout>
-        );
-    }
-}
+            <Wrapper>
+                <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
+                <PrevNextPost previous={previous} next={next} />
+            </Wrapper>
+        </Layout>
+    );
+};
 
 export default BlogPostTemplate;
 

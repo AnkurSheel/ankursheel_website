@@ -6,13 +6,13 @@ import useSiteMetadata from '../hooks/use-site-config';
 
 type SEOProps = Pick<MdxFrontmatter, 'title' | 'excerpt' | 'imageFacebook' | 'imageTwitter' | 'featuredImage'> & {
     path?: string;
-    isBlogPost: boolean;
+    isBlog: boolean;
 };
 const SEO = (props: SEOProps) => {
-    const { isBlogPost, path = '' } = props;
+    const { isBlog, path = '' } = props;
     const { siteTitle, siteUrl, siteCover, siteDescription, twitterUsername } = useSiteMetadata();
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
-    const formattedSiteUrl = siteUrl;
+    const formattedSiteUrl = isBlog ? `${siteUrl}/blog` : siteUrl;
     const imagePath = props.imageFacebook || props.featuredImage || withPrefix(siteCover);
     const imagePathTwitter = props.imageTwitter || props.featuredImage || withPrefix(siteCover);
     const image = `${formattedSiteUrl}${imagePath}`;
@@ -31,7 +31,7 @@ const SEO = (props: SEOProps) => {
 
             {/* OpenGraph tags */}
             <meta property="og:url" content={formattedSiteUrl + withPrefix(path)} />
-            <meta property="og:type" content={isBlogPost ? 'article' : 'website'} />
+            <meta property="og:type" content={isBlog ? 'article' : 'website'} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
