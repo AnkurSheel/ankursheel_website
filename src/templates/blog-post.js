@@ -20,8 +20,8 @@ const BlogPostTemplate = props => {
         <Layout location={props.location}>
             <SEO
                 title={post.frontmatter.title}
-                excerpt={post.excerpt}
-                featuredImage={post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL}
+                description={post.excerpt}
+                featuredImageUrl={post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL}
                 imageFacebook={post.frontmatter.imageFacebook && post.frontmatter.imageFacebook.publicURL}
                 imageTwitter={post.frontmatter.imageTwitter && post.frontmatter.imageTwitter.publicURL}
                 path={post.frontmatter.slug}

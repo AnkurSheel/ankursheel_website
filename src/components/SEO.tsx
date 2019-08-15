@@ -1,23 +1,27 @@
 import { withPrefix } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { MdxFrontmatter } from '../graphqlTypes';
 import useSiteMetadata from '../hooks/use-site-config';
 
-type SEOProps = Pick<MdxFrontmatter, 'title' | 'excerpt' | 'imageFacebook' | 'imageTwitter' | 'featuredImage'> & {
+interface SEOProps {
     path?: string;
     isBlog: boolean;
-};
+    title?: string;
+    featuredImageUrl?: string;
+    imageFacebook?: string;
+    imageTwitter?: string;
+    description?: string;
+}
 const SEO = (props: SEOProps) => {
     const { isBlog = false, path = '' } = props;
     const { siteTitle, siteUrl, siteCover, siteDescription, twitterUsername } = useSiteMetadata();
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
     const formattedSiteUrl = isBlog ? `${siteUrl}/blog` : siteUrl;
-    const imagePath = props.imageFacebook || props.featuredImage || withPrefix(siteCover);
-    const imagePathTwitter = props.imageTwitter || props.featuredImage || withPrefix(siteCover);
+    const imagePath = props.imageFacebook || props.featuredImageUrl || withPrefix(siteCover);
+    const imagePathTwitter = props.imageTwitter || props.featuredImageUrl || withPrefix(siteCover);
     const image = `${formattedSiteUrl}${imagePath}`;
     const imageTwitter = `${formattedSiteUrl}${imagePathTwitter}`;
-    const description = props.excerpt || siteDescription;
+    const description = props.description || siteDescription;
     const lang = 'en';
 
     return (

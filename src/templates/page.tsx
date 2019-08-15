@@ -5,29 +5,32 @@ import Hero from '../components/Hero';
 import Layout from '../components/layout';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { PageBySlugQuery } from '../graphqlTypes';
 
-export const Page = (props: any) => {
-    const page = props.data.page;
-    const fluid =
-        (page.frontmatter.featuredImage &&
-            page.frontmatter.featuredImage.sharp &&
-            page.frontmatter.featuredImage.sharp.fluid) ||
-        undefined;
+interface PageProps {
+    data: Pick<PageBySlugQuery, 'page'>;
+}
+
+export const Page = ({ data }: PageProps) => {
+    const page = data.page;
+    const frontmatter = page && page.frontmatter;
+    const excerpt = (page && page.excerpt) || '';
+    const title = (frontmatter && frontmatter.title) || '';
+    const slug = (frontmatter && frontmatter.slug) || '';
+    const date = frontmatter && frontmatter.date;
+    const featuredImage = frontmatter && frontmatter.featuredImage;
+    const featuredImageUrl = (featuredImage && featuredImage.publicURL) || undefined;
+    const fluid = (featuredImage && featuredImage.sharp && featuredImage.sharp.fluid) || undefined;
 
     return (
         <Layout>
-            <SEO
-                title={page.frontmatter.title}
-                excerpt={page.excerpt}
-                path={page.frontmatter.slug}
-                featuredImage={page.frontmatter.featuredImage && page.frontmatter.featuredImage.publicURL}
-            />
+            <SEO title={title} description={excerpt} path={slug} featuredImageUrl={featuredImageUrl} />
 
-            <Hero heroImg={fluid} title={page.frontmatter.title} />
+            <Hero heroImg={fluid} title={title} />
 
             <main css={Wrapper}>
                 <article>
-                    <Content content={page.body} date={page.frontmatter.date} />
+                    <Content content={page && page.body} date={date} />
                 </article>
             </main>
         </Layout>
