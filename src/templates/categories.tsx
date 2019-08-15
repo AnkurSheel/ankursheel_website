@@ -5,13 +5,21 @@ import Layout from '../components/layout';
 import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { PostsByCategoryQuery } from '../graphqlTypes';
 
-const Categories = props => {
+type CategoriesProps = {
+    data: Pick<PostsByCategoryQuery, 'posts'>;
+    pageContext: {
+        category: string;
+    };
+};
+
+const Categories = (props: CategoriesProps) => {
     const pageTitle = props.pageContext.category;
     const posts = props.data.posts.edges;
 
     return (
-        <Layout location={props.location} title={pageTitle}>
+        <Layout title={pageTitle}>
             <SEO title={pageTitle} />
             <Hero title={pageTitle} />
 

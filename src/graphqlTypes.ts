@@ -578,8 +578,6 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterDate = 'childMdx___frontmatter___date',
     ChildMdxFrontmatterExcerpt = 'childMdx___frontmatter___excerpt',
     ChildMdxFrontmatterSlug = 'childMdx___frontmatter___slug',
-    ChildMdxFrontmatterCategories = 'childMdx___frontmatter___categories',
-    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
     ChildMdxFrontmatterFeaturedImageBirthtime = 'childMdx___frontmatter___featuredImage___birthtime',
     ChildMdxFrontmatterFeaturedImageBirthtimeMs = 'childMdx___frontmatter___featuredImage___birthtimeMs',
     ChildMdxFrontmatterFeaturedImageSourceInstanceName = 'childMdx___frontmatter___featuredImage___sourceInstanceName',
@@ -682,6 +680,8 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterImageTwitterPublicUrl = 'childMdx___frontmatter___imageTwitter___publicURL',
     ChildMdxFrontmatterImageTwitterId = 'childMdx___frontmatter___imageTwitter___id',
     ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
+    ChildMdxFrontmatterCategories = 'childMdx___frontmatter___categories',
+    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
     ChildMdxHeadings = 'childMdx___headings',
@@ -1733,8 +1733,6 @@ export enum MdxFieldsEnum {
     FrontmatterDate = 'frontmatter___date',
     FrontmatterExcerpt = 'frontmatter___excerpt',
     FrontmatterSlug = 'frontmatter___slug',
-    FrontmatterCategories = 'frontmatter___categories',
-    FrontmatterTags = 'frontmatter___tags',
     FrontmatterFeaturedImageBirthtime = 'frontmatter___featuredImage___birthtime',
     FrontmatterFeaturedImageBirthtimeMs = 'frontmatter___featuredImage___birthtimeMs',
     FrontmatterFeaturedImageSourceInstanceName = 'frontmatter___featuredImage___sourceInstanceName',
@@ -1912,6 +1910,8 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterChildMdxChildren = 'frontmatter___imageTwitter___childMdx___children',
     FrontmatterImageTwitterChildImageSharpId = 'frontmatter___imageTwitter___childImageSharp___id',
     FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
+    FrontmatterCategories = 'frontmatter___categories',
+    FrontmatterTags = 'frontmatter___tags',
     Body = 'body',
     Excerpt = 'excerpt',
     Headings = 'headings',
@@ -2037,11 +2037,11 @@ export type MdxFrontmatter = {
     date?: Maybe<Scalars['Date']>;
     excerpt?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
-    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
-    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
     featuredImage?: Maybe<File>;
     imageFacebook?: Maybe<File>;
     imageTwitter?: Maybe<File>;
+    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
+    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 export type MdxFrontmatterDateArgs = {
@@ -2057,11 +2057,11 @@ export type MdxFrontmatterFilterInput = {
     date?: Maybe<DateQueryOperatorInput>;
     excerpt?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
-    categories?: Maybe<StringQueryOperatorInput>;
-    tags?: Maybe<StringQueryOperatorInput>;
     featuredImage?: Maybe<FileFilterInput>;
     imageFacebook?: Maybe<FileFilterInput>;
     imageTwitter?: Maybe<FileFilterInput>;
+    categories?: Maybe<StringQueryOperatorInput>;
+    tags?: Maybe<StringQueryOperatorInput>;
 };
 
 export type MdxGroupConnection = {
@@ -2160,21 +2160,21 @@ export enum PotraceTurnPolicy {
 export type Query = {
     __typename?: 'Query';
     file?: Maybe<File>;
-    allFile?: Maybe<FileConnection>;
+    allFile: FileConnection;
     mdx?: Maybe<Mdx>;
-    allMdx?: Maybe<MdxConnection>;
+    allMdx: MdxConnection;
     imageSharp?: Maybe<ImageSharp>;
-    allImageSharp?: Maybe<ImageSharpConnection>;
+    allImageSharp: ImageSharpConnection;
     markdownRemark?: Maybe<MarkdownRemark>;
-    allMarkdownRemark?: Maybe<MarkdownRemarkConnection>;
+    allMarkdownRemark: MarkdownRemarkConnection;
     sitePage?: Maybe<SitePage>;
-    allSitePage?: Maybe<SitePageConnection>;
+    allSitePage: SitePageConnection;
     sitePlugin?: Maybe<SitePlugin>;
-    allSitePlugin?: Maybe<SitePluginConnection>;
+    allSitePlugin: SitePluginConnection;
     site?: Maybe<Site>;
-    allSite?: Maybe<SiteConnection>;
+    allSite: SiteConnection;
     directory?: Maybe<Directory>;
-    allDirectory?: Maybe<DirectoryConnection>;
+    allDirectory: DirectoryConnection;
 };
 
 export type QueryFileArgs = {
@@ -3107,7 +3107,9 @@ export enum SitePluginFieldsEnum {
     PluginOptionsGatsbyRemarkPluginsOptionsWrapperStyle = 'pluginOptions___gatsbyRemarkPlugins___options___wrapperStyle',
     PluginOptionsGatsbyRemarkPluginsOptionsBackgroundColor = 'pluginOptions___gatsbyRemarkPlugins___options___backgroundColor',
     PluginOptionsGatsbyRemarkPluginsOptionsShowCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___showCaptions',
+    PluginOptionsGatsbyRemarkPluginsOptionsMarkdownCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___markdownCaptions',
     PluginOptionsGatsbyRemarkPluginsOptionsTracedSvg = 'pluginOptions___gatsbyRemarkPlugins___options___tracedSVG',
+    PluginOptionsGatsbyRemarkPluginsOptionsLoading = 'pluginOptions___gatsbyRemarkPlugins___options___loading',
     PluginOptionsGatsbyRemarkPluginsOptionsShowLineNumbers = 'pluginOptions___gatsbyRemarkPlugins___options___showLineNumbers',
     PluginOptionsTrackingId = 'pluginOptions___trackingId',
     PluginOptionsShortName = 'pluginOptions___short_name',
@@ -3305,7 +3307,9 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptions = {
     wrapperStyle?: Maybe<Scalars['String']>;
     backgroundColor?: Maybe<Scalars['String']>;
     showCaptions?: Maybe<Scalars['Boolean']>;
+    markdownCaptions?: Maybe<Scalars['Boolean']>;
     tracedSVG?: Maybe<Scalars['Boolean']>;
+    loading?: Maybe<Scalars['String']>;
     showLineNumbers?: Maybe<Scalars['Boolean']>;
 };
 
@@ -3317,7 +3321,9 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
     wrapperStyle?: Maybe<StringQueryOperatorInput>;
     backgroundColor?: Maybe<StringQueryOperatorInput>;
     showCaptions?: Maybe<BooleanQueryOperatorInput>;
+    markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
     tracedSVG?: Maybe<BooleanQueryOperatorInput>;
+    loading?: Maybe<StringQueryOperatorInput>;
     showLineNumbers?: Maybe<BooleanQueryOperatorInput>;
 };
 
@@ -3463,6 +3469,27 @@ export type StringQueryOperatorInput = {
     regex?: Maybe<Scalars['String']>;
     glob?: Maybe<Scalars['String']>;
 };
+export type PostsByCategoryQueryVariables = {
+    category: Scalars['String'];
+};
+
+export type PostsByCategoryQuery = { __typename?: 'Query' } & {
+    posts: { __typename?: 'MdxConnection' } & {
+        edges: Array<
+            { __typename?: 'MdxEdge' } & {
+                node: { __typename?: 'Mdx' } & Pick<Mdx, 'excerpt'> & {
+                        frontmatter: Maybe<
+                            { __typename?: 'MdxFrontmatter' } & Pick<
+                                MdxFrontmatter,
+                                'date' | 'title' | 'categories' | 'tags' | 'slug'
+                            >
+                        >;
+                    };
+            }
+        >;
+    };
+};
+
 export type GatsbyImageSharpFixedFragment = { __typename?: 'ImageSharpFixed' } & Pick<
     ImageSharpFixed,
     'base64' | 'width' | 'height' | 'src' | 'srcSet'
