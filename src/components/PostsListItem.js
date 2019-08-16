@@ -52,7 +52,7 @@ const PostTitleLink = styled(Link)`
 `;
 
 const PostsListItem = props => {
-    const { title, excerpt, slug, date, language, tags } = props;
+    const { title, excerpt, slug, date, tags } = props;
 
     const articleLink = `/blog/${slug}`;
     return (

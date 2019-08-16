@@ -36,7 +36,6 @@ const HeroSubTitle = styled.h2`
 `;
 
 const Hero = props => {
-    console.log(props);
     const heroImg = props.heroImg;
 
     return (
