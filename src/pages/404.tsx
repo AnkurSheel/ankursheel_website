@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Text } from '../components/Commons';
@@ -7,26 +7,26 @@ import RelatedPosts from '../components/RelatedPosts';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
 
-const MainTitle = styled.h1`
-    line-height: 1.5;
-    text-align: center;
-    font-size: 3rem;
-`;
+const styles = {
+    mainTitle: css({
+        lineHeight: '1.5',
+        textAlign: 'center',
+        fontSize: '3rem',
+    }),
+    subTitle: css({
+        paddingTop: '2.5rem',
+        lineHeight: 1.2,
+        borderTop: '1px solid #ececec',
+        margin: '2.5rem',
+    }),
+    ghost: css({
+        lineHeight: 1.5,
+        textAlign: 'center',
+        fontSize: '7rem',
+    }),
+};
 
-const Ghost = styled.p`
-    line-height: 1.5;
-    text-align: center;
-    font-size: 7rem;
-`;
-
-const SubTitle = styled.h2`
-    padding-top: 40px;
-    line-height: 1.2;
-    border-top: 1px solid #ececec;
-    margin-top: 44px;
-`;
-
-const NotFoundPage = props => {
+const NotFoundPage = () => {
     const data = useStaticQuery(graphql`
         query {
             posts: allMdx(
@@ -52,16 +52,16 @@ const NotFoundPage = props => {
     const posts = data.posts.edges;
 
     return (
-        <Layout location={props.location} noCover={true}>
+        <Layout>
             <SEO title="Page Not Found" />
             <main css={Wrapper}>
-                <MainTitle>404 Page Not Found</MainTitle>
-                <Ghost>👻</Ghost>
+                <h1 css={styles.mainTitle}>404 Page Not Found</h1>
+                <p css={styles.ghost}>👻</p>
                 <Text>
                     Looks like you&apos;ve followed a broken link or entered a URL that doesn&apos;t exist on this site.
                 </Text>
 
-                <SubTitle>Recent Posts</SubTitle>
+                <h2 css={styles.subTitle}>Recent Posts</h2>
 
                 <RelatedPosts posts={posts} />
             </main>
