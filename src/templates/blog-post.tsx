@@ -18,8 +18,6 @@ interface BlogPostTemplateProps {
     };
 }
 const BlogPostTemplate = (props: BlogPostTemplateProps) => {
-    console.log(props);
-    console.log(props.pageContext);
     const post = props.data.post;
     const { previous, next } = props.pageContext;
     const excerpt = post && post.excerpt;
