@@ -18,8 +18,9 @@ interface BlogListProps {
 }
 
 const BlogList = (props: BlogListProps) => {
-    console.log(props);
-    const { title, description } = (props.data.site && props.data.site.siteMetadata) || { title: '', description: '' };
+    const siteMetaData = props.data.site && props.data.site.siteMetadata;
+    const title = (siteMetaData && siteMetaData.title) || '';
+    const description = siteMetaData && siteMetaData.description;
     const posts = props.data.posts.edges;
     const { pageContext } = props;
 

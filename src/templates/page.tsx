@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
 import Content from '../components/Content';
 import Hero from '../components/Hero';
@@ -20,13 +21,13 @@ export const Page = ({ data }: PageProps) => {
     const date = frontmatter && frontmatter.date;
     const featuredImage = frontmatter && frontmatter.featuredImage;
     const featuredImageUrl = featuredImage && featuredImage.publicURL;
-    const fluid = featuredImage && featuredImage.sharp && featuredImage.sharp.fluid;
+    const fluid = featuredImage && featuredImage.sharp && (featuredImage.sharp.fluid as IFluidObject);
 
     return (
         <Layout>
             <SEO title={title} description={excerpt} path={slug} featuredImageUrl={featuredImageUrl} />
 
-            <Hero heroImg={fluid} title={title} />
+            <Hero image={fluid} title={title} />
 
             <main css={Wrapper}>
                 <article>
