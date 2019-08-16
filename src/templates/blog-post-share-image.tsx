@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import { graphql } from 'gatsby';
 import React from 'react';
-import { GlobalStyle } from '../components/Commons';
+import { GlobalStyle } from '../components/GlobalStyles';
 import { BlogPostShareImageQuery } from '../graphqlTypes';
 
 const stylesWithProps = (props: BlogPostShareImageProps) => {

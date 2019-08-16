@@ -1,5 +1,5 @@
+import { Link } from 'gatsby';
 import React from 'react';
-import { StyledLink } from './Commons';
 
 const RelatedPosts = props => {
     const { posts } = props;
@@ -11,7 +11,7 @@ const RelatedPosts = props => {
                 const slug = post.node.frontmatter.slug;
                 return (
                     <li key={slug}>
-                        <StyledLink to={`/blog/${slug}`}>{title}</StyledLink>
+                        <Link to={`/blog/${slug}`}>{title}</Link>
                     </li>
                 );
             })}

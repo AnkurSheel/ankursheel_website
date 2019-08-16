@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import { Text } from './Commons';
+import React from 'react';
 import useSiteMetadata from '../hooks/use-site-config';
 import useSiteImages from '../hooks/use-site-images';
 import { colors } from '../tokens';
@@ -47,7 +46,7 @@ const BioWrapper = styled.div`
     }
 `;
 
-const BioText = styled(Text)`
+const BioText = styled.p`
     & a {
         border-bottom: 1px dotted #ececec;
     }
