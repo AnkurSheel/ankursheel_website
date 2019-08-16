@@ -21,9 +21,12 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
     const post = props.data.post;
     const { previous, next } = props.pageContext;
     const excerpt = post && post.excerpt;
+    const body = post && post.body;
     const frontMatter = post && post.frontmatter;
     const title = (frontMatter && frontMatter.title) || '';
     const slug = frontMatter && frontMatter.slug;
+    const tags = (frontMatter && (frontMatter.tags as string[])) || [];
+    const date = (frontMatter && frontMatter.date) || '';
     const featuredImage = frontMatter && frontMatter.featuredImage;
     const featuredImageUrl = featuredImage && featuredImage.publicURL;
     const fluid = featuredImage && featuredImage.sharp && (featuredImage.sharp.fluid as IFluidObject);
@@ -44,7 +47,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
             <Hero image={fluid} title={title} />
 
             <main css={Wrapper}>
-                <Article post={post} />
+                <Article body={body || ''} tags={tags} date={date} />
             </main>
 
             <main css={Wrapper}>
