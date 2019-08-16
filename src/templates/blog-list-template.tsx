@@ -6,32 +6,41 @@ import Pagination from '../components/Pagination';
 import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { BlogListQuery } from '../graphqlTypes';
 
-class BlogList extends React.Component {
-    render() {
-        const { title, description } = this.props.data.site.siteMetadata;
-        const posts = this.props.data.posts.edges;
-        const { pageContext } = this.props;
-
-        return (
-            <Layout location={this.props.location}>
-                <SEO isBlog />
-                <Hero title={title} subTitle={description} />
-
-                <main css={Wrapper}>
-                    <PostsList posts={posts} />
-                </main>
-
-                <Pagination nbPages={pageContext.nbPages} currentPage={pageContext.currentPage} />
-            </Layout>
-        );
-    }
+interface BlogListProps {
+    data: Pick<BlogListQuery, 'posts' | 'site'>;
+    pageContext: {
+        limit: number;
+        currentPage: number;
+        nbPages: number;
+    };
 }
+
+const BlogList = (props: BlogListProps) => {
+    console.log(props);
+    const { title, description } = (props.data.site && props.data.site.siteMetadata) || { title: '', description: '' };
+    const posts = props.data.posts.edges;
+    const { pageContext } = props;
+
+    return (
+        <Layout>
+            <SEO isBlog />
+            <Hero title={title} subTitle={description} />
+
+            <main css={Wrapper}>
+                <PostsList posts={posts} />
+            </main>
+
+            <Pagination nbPages={pageContext.nbPages} currentPage={pageContext.currentPage} />
+        </Layout>
+    );
+};
 
 export default BlogList;
 
 export const pageQuery = graphql`
-    query blogListQuery($skip: Int!, $limit: Int!) {
+    query BlogList($skip: Int!, $limit: Int!) {
         site {
             siteMetadata {
                 title

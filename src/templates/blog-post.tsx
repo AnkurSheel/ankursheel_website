@@ -7,35 +7,49 @@ import Layout from '../components/layout';
 import PrevNextPost from '../components/PrevNextPost';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
+import { BlogPostBySlugQuery, SitePageContextNext, SitePageContextPrevious } from '../graphqlTypes';
 
-const BlogPostTemplate = props => {
+interface BlogPostTemplateProps {
+    data: Pick<BlogPostBySlugQuery, 'post'>;
+    pageContext: {
+        next: SitePageContextNext;
+        previous: SitePageContextPrevious;
+    };
+}
+const BlogPostTemplate = (props: BlogPostTemplateProps) => {
+    console.log(props);
+    console.log(props.pageContext);
     const post = props.data.post;
     const { previous, next } = props.pageContext;
-    const fluid =
-        (post.frontmatter.featuredImage &&
-            post.frontmatter.featuredImage.sharp &&
-            post.frontmatter.featuredImage.sharp.fluid) ||
-        undefined;
+    const excerpt = post && post.excerpt;
+    const frontMatter = post && post.frontmatter;
+    const title = frontMatter && frontMatter.title;
+    const slug = frontMatter && frontMatter.slug;
+    const featuredImage = frontMatter && frontMatter.featuredImage;
+    const featuredImageUrl = featuredImage && featuredImage.publicURL;
+    const fluid = featuredImage && featuredImage.sharp && featuredImage.sharp.fluid;
+    const imageFacebookUrl = frontMatter && frontMatter.imageFacebook && frontMatter.imageFacebook.publicURL;
+    const imageTwitterUrl = frontMatter && frontMatter.imageTwitter && frontMatter.imageTwitter.publicURL;
     return (
-        <Layout location={props.location}>
+        <Layout>
             <SEO
-                title={post.frontmatter.title}
-                excerpt={post.excerpt}
-                featuredImage={post.frontmatter.featuredImage && post.frontmatter.featuredImage.publicURL}
-                imageFacebook={post.frontmatter.imageFacebook && post.frontmatter.imageFacebook.publicURL}
-                imageTwitter={post.frontmatter.imageTwitter && post.frontmatter.imageTwitter.publicURL}
-                path={post.frontmatter.slug}
+                title={title}
+                description={excerpt}
+                featuredImageUrl={featuredImageUrl}
+                imageFacebook={imageFacebookUrl}
+                imageTwitter={imageTwitterUrl}
+                path={slug}
                 isBlog
             />
 
-            <Hero heroImg={fluid} title={post.frontmatter.title} />
+            <Hero heroImg={fluid} title={title} />
 
             <main css={Wrapper}>
                 <Article post={post} />
             </main>
 
             <main css={Wrapper}>
-                <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
+                <Disqus slug={slug} title={title} />
                 <PrevNextPost previous={previous} next={next} />
             </main>
         </Layout>

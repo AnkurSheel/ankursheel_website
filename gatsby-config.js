@@ -1,4 +1,3 @@
-const path = require('path');
 const config = require('./data/siteConfig');
 
 module.exports = {
@@ -36,7 +35,7 @@ module.exports = {
             options: {
                 extensions: [`.mdx`, `.md`],
                 defaultLayouts: {
-                    default: require.resolve('./src/templates/page.js'),
+                    default: require.resolve('./src/templates/page.tsx'),
                 },
                 gatsbyRemarkPlugins: [
                     {

@@ -9,7 +9,6 @@ const RelatedPosts = props => {
             {posts.map(post => {
                 const title = post.node.frontmatter.title;
                 const slug = post.node.frontmatter.slug;
-                const language = post.node.frontmatter.language || 'en';
                 return (
                     <li key={slug}>
                         <StyledLink to={`/blog/${slug}`}>{title}</StyledLink>

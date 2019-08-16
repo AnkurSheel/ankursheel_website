@@ -7,12 +7,12 @@ import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
 import { PostsByCategoryQuery } from '../graphqlTypes';
 
-type CategoriesProps = {
+interface CategoriesProps {
     data: Pick<PostsByCategoryQuery, 'posts'>;
     pageContext: {
         category: string;
     };
-};
+}
 
 const Categories = (props: CategoriesProps) => {
     const pageTitle = props.pageContext.category;

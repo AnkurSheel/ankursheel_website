@@ -1,4 +1,4 @@
-export type Maybe<T> = T | null;
+export type Maybe<T> = T | undefined;
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
     ID: string;
@@ -3469,6 +3469,79 @@ export type StringQueryOperatorInput = {
     regex?: Maybe<Scalars['String']>;
     glob?: Maybe<Scalars['String']>;
 };
+export type BlogListQueryVariables = {
+    skip: Scalars['Int'];
+    limit: Scalars['Int'];
+};
+
+export type BlogListQuery = { __typename?: 'Query' } & {
+    site: Maybe<
+        { __typename?: 'Site' } & {
+            siteMetadata: Maybe<{ __typename?: 'SiteSiteMetadata' } & Pick<SiteSiteMetadata, 'title' | 'description'>>;
+        }
+    >;
+    posts: { __typename?: 'MdxConnection' } & {
+        edges: Array<
+            { __typename?: 'MdxEdge' } & {
+                node: { __typename?: 'Mdx' } & Pick<Mdx, 'excerpt'> & {
+                        frontmatter: Maybe<
+                            { __typename?: 'MdxFrontmatter' } & Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'slug'>
+                        >;
+                    };
+            }
+        >;
+    };
+};
+
+export type BlogPostShareImageQueryVariables = {
+    slug: Scalars['String'];
+};
+
+export type BlogPostShareImageQuery = { __typename?: 'Query' } & {
+    post: Maybe<
+        { __typename?: 'Mdx' } & Pick<Mdx, 'timeToRead'> & {
+                frontmatter: Maybe<
+                    { __typename?: 'MdxFrontmatter' } & Pick<MdxFrontmatter, 'title'> & {
+                            featuredImage: Maybe<{ __typename?: 'File' } & Pick<File, 'publicURL'>>;
+                        }
+                >;
+            }
+    >;
+};
+
+export type BlogPostBySlugQueryVariables = {
+    slug: Scalars['String'];
+};
+
+export type BlogPostBySlugQuery = { __typename?: 'Query' } & {
+    post: Maybe<
+        { __typename?: 'Mdx' } & Pick<Mdx, 'excerpt' | 'body'> & {
+                frontmatter: Maybe<
+                    { __typename?: 'MdxFrontmatter' } & Pick<
+                        MdxFrontmatter,
+                        'title' | 'date' | 'slug' | 'tags' | 'categories'
+                    > & {
+                            featuredImage: Maybe<
+                                { __typename?: 'File' } & Pick<File, 'publicURL'> & {
+                                        sharp: Maybe<
+                                            { __typename?: 'ImageSharp' } & {
+                                                fluid: Maybe<
+                                                    {
+                                                        __typename?: 'ImageSharpFluid';
+                                                    } & GatsbyImageSharpFluid_WithWebpFragment
+                                                >;
+                                            }
+                                        >;
+                                    }
+                            >;
+                            imageTwitter: Maybe<{ __typename?: 'File' } & Pick<File, 'publicURL'>>;
+                            imageFacebook: Maybe<{ __typename?: 'File' } & Pick<File, 'publicURL'>>;
+                        }
+                >;
+            }
+    >;
+};
+
 export type PostsByCategoryQueryVariables = {
     category: Scalars['String'];
 };
@@ -3488,6 +3561,34 @@ export type PostsByCategoryQuery = { __typename?: 'Query' } & {
             }
         >;
     };
+};
+
+export type PageBySlugQueryVariables = {
+    slug: Scalars['String'];
+};
+
+export type PageBySlugQuery = { __typename?: 'Query' } & {
+    page: Maybe<
+        { __typename?: 'Mdx' } & Pick<Mdx, 'body' | 'excerpt'> & {
+                frontmatter: Maybe<
+                    { __typename?: 'MdxFrontmatter' } & Pick<MdxFrontmatter, 'title' | 'date' | 'slug'> & {
+                            featuredImage: Maybe<
+                                { __typename?: 'File' } & Pick<File, 'publicURL'> & {
+                                        sharp: Maybe<
+                                            { __typename?: 'ImageSharp' } & {
+                                                fluid: Maybe<
+                                                    {
+                                                        __typename?: 'ImageSharpFluid';
+                                                    } & GatsbyImageSharpFluid_WithWebpFragment
+                                                >;
+                                            }
+                                        >;
+                                    }
+                            >;
+                        }
+                >;
+            }
+    >;
 };
 
 export type PostsByTagQueryVariables = {

@@ -7,12 +7,12 @@ import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
 import { PostsByTagQuery } from '../graphqlTypes';
 
-type TagsProps = {
+interface TagsProps {
     data: Pick<PostsByTagQuery, 'posts'>;
     pageContext: {
         tag: string;
     };
-};
+}
 
 const Tags = (props: TagsProps) => {
     const pageTitle = `#${props.pageContext.tag}`;

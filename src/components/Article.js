@@ -10,12 +10,12 @@ const ArticleWrapper = styled.article`
     }
 `;
 
-const ArticleFooter = styled.footer`
-    position: relative;
-    margin: 6rem 0 0;
-    padding: 3rem 0 0;
-    border-top: 1px solid #ececec;
-`;
+// const ArticleFooter = styled.footer`
+//     position: relative;
+//     margin: 6rem 0 0;
+//     padding: 3rem 0 0;
+//     border-top: 1px solid #ececec;
+// `;
 
 class Article extends React.Component {
     render() {
