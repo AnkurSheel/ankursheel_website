@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Text } from '../components/Commons';
+import { Cat } from 'react-kawaii';
 import Layout from '../components/layout';
 import RelatedPosts from '../components/RelatedPosts';
 import SEO from '../components/SEO';
@@ -16,13 +16,16 @@ const styles = {
     subTitle: css({
         paddingTop: '2.5rem',
         lineHeight: 1.2,
-        borderTop: '1px solid #ececec',
+        borderTop: '3px solid #ececec',
         margin: '2.5rem',
     }),
-    ghost: css({
-        lineHeight: 1.5,
+    cat: css({
+        margin: '2.5rem 0',
         textAlign: 'center',
-        fontSize: '7rem',
+    }),
+    text: css({
+        lineHeight: 1.6,
+        margin: '1em 0',
     }),
 };
 
@@ -55,11 +58,11 @@ const NotFoundPage = () => {
         <Layout>
             <SEO title="Page Not Found" />
             <main css={Wrapper}>
-                <h1 css={styles.mainTitle}>404 Page Not Found</h1>
-                <p css={styles.ghost}>👻</p>
-                <Text>
+                <h1 css={styles.mainTitle}>Oh No! Page Not Found</h1>
+                <Cat css={styles.cat} size={160} mood="ko" color="#596881" />
+                <p css={styles.text}>
                     Looks like you&apos;ve followed a broken link or entered a URL that doesn&apos;t exist on this site.
-                </Text>
+                </p>
 
                 <h2 css={styles.subTitle}>Recent Posts</h2>
 
