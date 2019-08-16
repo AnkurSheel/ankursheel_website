@@ -57,6 +57,7 @@
         "@graphql-codegen/typescript-operations": "1.4.0",
         "@types/react": "^16.8.25",
         "@types/react-helmet": "^5.0.9",
+        "@types/react-kawaii": "^0.11.0",
         "@typescript-eslint/eslint-plugin": "^1.13.0",
         "@typescript-eslint/parser": "^1.13.0",
         "eslint": "^6.1.0",
@@ -69,6 +70,7 @@
         "graphql": "^14.4.2",
         "prettier": "^1.18.2",
         "puppeteer": "^1.19.0",
+        "react-kawaii": "^0.14.4",
         "typescript": "^3.5.3",
         "yaml": "^1.6.0"
     },
