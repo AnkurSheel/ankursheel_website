@@ -3509,6 +3509,39 @@ export type BlogPostShareImageQuery = { __typename?: 'Query' } & {
     >;
 };
 
+export type BlogPostBySlugQueryVariables = {
+    slug: Scalars['String'];
+};
+
+export type BlogPostBySlugQuery = { __typename?: 'Query' } & {
+    post: Maybe<
+        { __typename?: 'Mdx' } & Pick<Mdx, 'excerpt' | 'body'> & {
+                frontmatter: Maybe<
+                    { __typename?: 'MdxFrontmatter' } & Pick<
+                        MdxFrontmatter,
+                        'title' | 'date' | 'slug' | 'tags' | 'categories'
+                    > & {
+                            featuredImage: Maybe<
+                                { __typename?: 'File' } & Pick<File, 'publicURL'> & {
+                                        sharp: Maybe<
+                                            { __typename?: 'ImageSharp' } & {
+                                                fluid: Maybe<
+                                                    {
+                                                        __typename?: 'ImageSharpFluid';
+                                                    } & GatsbyImageSharpFluid_WithWebpFragment
+                                                >;
+                                            }
+                                        >;
+                                    }
+                            >;
+                            imageTwitter: Maybe<{ __typename?: 'File' } & Pick<File, 'publicURL'>>;
+                            imageFacebook: Maybe<{ __typename?: 'File' } & Pick<File, 'publicURL'>>;
+                        }
+                >;
+            }
+    >;
+};
+
 export type PostsByCategoryQueryVariables = {
     category: Scalars['String'];
 };
