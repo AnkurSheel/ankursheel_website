@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
 import Article from '../components/Article';
 import Disqus from '../components/Disqus';
@@ -23,11 +24,11 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
     const { previous, next } = props.pageContext;
     const excerpt = post && post.excerpt;
     const frontMatter = post && post.frontmatter;
-    const title = frontMatter && frontMatter.title;
+    const title = (frontMatter && frontMatter.title) || '';
     const slug = frontMatter && frontMatter.slug;
     const featuredImage = frontMatter && frontMatter.featuredImage;
     const featuredImageUrl = featuredImage && featuredImage.publicURL;
-    const fluid = featuredImage && featuredImage.sharp && featuredImage.sharp.fluid;
+    const fluid = featuredImage && featuredImage.sharp && (featuredImage.sharp.fluid as IFluidObject);
     const imageFacebookUrl = frontMatter && frontMatter.imageFacebook && frontMatter.imageFacebook.publicURL;
     const imageTwitterUrl = frontMatter && frontMatter.imageTwitter && frontMatter.imageTwitter.publicURL;
     return (
@@ -42,7 +43,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
                 isBlog
             />
 
-            <Hero heroImg={fluid} title={title} />
+            <Hero image={fluid} title={title} />
 
             <main css={Wrapper}>
                 <Article post={post} />
