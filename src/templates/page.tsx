@@ -19,8 +19,8 @@ export const Page = ({ data }: PageProps) => {
     const slug = (frontmatter && frontmatter.slug) || '';
     const date = frontmatter && frontmatter.date;
     const featuredImage = frontmatter && frontmatter.featuredImage;
-    const featuredImageUrl = (featuredImage && featuredImage.publicURL) || undefined;
-    const fluid = (featuredImage && featuredImage.sharp && featuredImage.sharp.fluid) || undefined;
+    const featuredImageUrl = featuredImage && featuredImage.publicURL;
+    const fluid = featuredImage && featuredImage.sharp && featuredImage.sharp.fluid;
 
     return (
         <Layout>
