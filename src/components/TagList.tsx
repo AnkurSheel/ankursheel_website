@@ -28,7 +28,6 @@ const styles = {
 
 interface TagListProps {
     tags: string[];
-    icon: boolean;
 }
 
 const TagList = (props: TagListProps) => {

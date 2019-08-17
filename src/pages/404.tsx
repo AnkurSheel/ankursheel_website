@@ -31,7 +31,7 @@ const styles = {
 
 const NotFoundPage = () => {
     const data = useStaticQuery(graphql`
-        query {
+        query NotFound {
             posts: allMdx(
                 sort: { fields: [frontmatter___date], order: DESC }
                 filter: { fileAbsolutePath: { regex: "//content/posts//" } }

@@ -34,6 +34,12 @@ export const GlobalStyle = () => (
                     borderBottomStyle: 'solid',
                 },
             },
+            ul: {
+                paddingLeft: '2em',
+            },
+            ol: {
+                paddingLeft: '2em',
+            },
         })}
     ></Global>
 );
