@@ -3469,6 +3469,22 @@ export type StringQueryOperatorInput = {
     regex?: Maybe<Scalars['String']>;
     glob?: Maybe<Scalars['String']>;
 };
+export type NotFoundQueryVariables = {};
+
+export type NotFoundQuery = { __typename?: 'Query' } & {
+    posts: { __typename?: 'MdxConnection' } & {
+        edges: Array<
+            { __typename?: 'MdxEdge' } & {
+                node: { __typename?: 'Mdx' } & Pick<Mdx, 'excerpt'> & {
+                        frontmatter: Maybe<
+                            { __typename?: 'MdxFrontmatter' } & Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'slug'>
+                        >;
+                    };
+            }
+        >;
+    };
+};
+
 export type BlogListQueryVariables = {
     skip: Scalars['Int'];
     limit: Scalars['Int'];
