@@ -37,6 +37,8 @@ const NotFoundPage = () => {
                 <Cat css={styles.cat} size={160} mood="ko" color="#596881" />
                 <p css={styles.text}>
                     Looks like you&apos;ve followed a broken link or entered a URL that doesn&apos;t exist on this site.
+                    I am in the the process of migrating the website from Wordpress to Gatsby so its possible that the
+                    article has not yet been migrated.
                 </p>
 
                 <h2 css={styles.subTitle}>Recent Posts</h2>
