@@ -1,9 +1,8 @@
 import { css } from '@emotion/core';
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Cat } from 'react-kawaii';
 import Layout from '../components/layout';
-import RelatedPosts from '../components/RelatedPosts';
+import RecentPosts from '../components/RecentPosts';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
 
@@ -17,7 +16,7 @@ const styles = {
         paddingTop: '2.5rem',
         lineHeight: 1.2,
         borderTop: '3px solid #ececec',
-        margin: '2.5rem',
+        margin: '2.5rem 0 1rem 0',
     }),
     cat: css({
         margin: '2.5rem 0',
@@ -30,30 +29,6 @@ const styles = {
 };
 
 const NotFoundPage = () => {
-    const data = useStaticQuery(graphql`
-        query NotFound {
-            posts: allMdx(
-                sort: { fields: [frontmatter___date], order: DESC }
-                filter: { fileAbsolutePath: { regex: "//content/posts//" } }
-                limit: 5
-            ) {
-                edges {
-                    node {
-                        excerpt
-                        frontmatter {
-                            date(formatString: "DD MMMM, YYYY")
-                            title
-                            tags
-                            slug
-                        }
-                    }
-                }
-            }
-        }
-    `);
-
-    const posts = data.posts.edges;
-
     return (
         <Layout>
             <SEO title="Page Not Found" />
@@ -62,11 +37,13 @@ const NotFoundPage = () => {
                 <Cat css={styles.cat} size={160} mood="ko" color="#596881" />
                 <p css={styles.text}>
                     Looks like you&apos;ve followed a broken link or entered a URL that doesn&apos;t exist on this site.
+                    I am in the the process of migrating the website from Wordpress to Gatsby so its possible that the
+                    article has not yet been migrated.
                 </p>
 
                 <h2 css={styles.subTitle}>Recent Posts</h2>
 
-                <RelatedPosts posts={posts} />
+                <RecentPosts />
             </main>
         </Layout>
     );

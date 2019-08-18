@@ -27,10 +27,10 @@ const stylesWithProps = (props: HeroProps) => {
         title: css({
             fontWeight: 'bold',
             fontSize: '2.5rem',
-            textShadow: '1px 1px 4px rgba(34, 34, 34, 0.85)',
+            textShadow: '1px 2px 0px #BFBFBF',
         }),
         subTitle: css({
-            textShadow: '1px 1px 4px rgba(34, 34, 34, 0.85)',
+            textShadow: '1px 2px 0px #BFBFBF',
         }),
     };
 };
@@ -51,7 +51,7 @@ const Hero = (props: HeroProps) => {
             )}
             <div css={styles.textContainer}>
                 <h1 css={styles.title}>{props.title}</h1>
-                {props.subTitle && <h2>{props.subTitle}</h2>}
+                {props.subTitle && <h2 css={styles.subTitle}>{props.subTitle}</h2>}
             </div>
         </div>
     );

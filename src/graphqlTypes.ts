@@ -3405,16 +3405,10 @@ export type StringQueryOperatorInput = {
     regex?: Maybe<Scalars['String']>;
     glob?: Maybe<Scalars['String']>;
 };
-export type NotFoundQueryVariables = {};
+export type RecentPostsQueryVariables = {};
 
-export type NotFoundQuery = {
-    posts: {
-        edges: Array<{
-            node: Pick<Mdx, 'excerpt'> & {
-                frontmatter: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'slug'>>;
-            };
-        }>;
-    };
+export type RecentPostsQuery = {
+    posts: { edges: Array<{ node: { frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'slug'>> } }> };
 };
 
 export type BlogListQueryVariables = {
