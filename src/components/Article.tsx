@@ -24,7 +24,6 @@ interface ArticleProps {
 }
 
 const Article = (props: ArticleProps) => {
-
     return (
         <article css={styles.article}>
             <Content content={props.body} date={props.date} tags={props.tags} />

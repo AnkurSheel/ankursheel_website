@@ -6,15 +6,11 @@ import Pagination from '../components/Pagination';
 import PostsList from '../components/PostsList';
 import SEO from '../components/SEO';
 import Wrapper from '../components/Wrapper';
-import { BlogListQuery } from '../graphqlTypes';
+import { BlogListQuery, SitePageContext } from '../graphqlTypes';
 
 interface BlogListProps {
     data: Pick<BlogListQuery, 'posts' | 'site'>;
-    pageContext: {
-        limit: number;
-        currentPage: number;
-        nbPages: number;
-    };
+    pageContext: Pick<SitePageContext, 'limit' | 'currentPage' | 'nbPages'>;
 }
 
 const BlogList = (props: BlogListProps) => {
@@ -31,9 +27,8 @@ const BlogList = (props: BlogListProps) => {
 
             <main css={Wrapper}>
                 <PostsList posts={posts} />
+                <Pagination numberOfPages={pageContext.nbPages} currentPage={pageContext.currentPage} />
             </main>
-
-            <Pagination nbPages={pageContext.nbPages} currentPage={pageContext.currentPage} />
         </Layout>
     );
 };

@@ -7,6 +7,9 @@ const styles = {
     tagsList: css({
         color: `${colors.textLight}`,
         display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
     }),
     tag: css({
         margin: '1rem 1rem 0 0',
