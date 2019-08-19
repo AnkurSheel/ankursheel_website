@@ -23,7 +23,7 @@ const ContentIntro = (props: ContentIntroProps) => {
                 This entry was posted on <time>{date}</time>
                 {tags.length > 0 && (
                     <>
-                        <span>and tagged</span> <TagList tags={tags} />
+                        <span> and tagged</span> <TagList tags={tags} />
                     </>
                 )}
             </span>
