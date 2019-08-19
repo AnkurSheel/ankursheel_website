@@ -1,7 +1,7 @@
 module.exports = {
     siteTitle: 'Ankur Sheel',
-    siteDescription: 'A blog by Ankur Sheel',
-    authorName: 'AnkurSheel',
+    siteDescription: "Ankur Sheel's Rants and Ramblings",
+    authorName: 'Ankur Sheel',
     twitterUsername: 'ankur_sheel',
     authorAvatar: 'avatar.jpeg', // file in content/images
     authorDescription: `
