@@ -1,8 +1,9 @@
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import { SiteImagesQuery } from '../graphqlTypes';
 
-const useSiteImages = imageName => {
-    const result = useStaticQuery(graphql`
-        {
+const useSiteImages = (imageName: string) => {
+    const result: SiteImagesQuery = useStaticQuery(graphql`
+        query SiteImages {
             allFile(filter: { sourceInstanceName: { eq: "images" } }) {
                 edges {
                     node {
