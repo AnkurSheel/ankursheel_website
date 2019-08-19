@@ -3520,6 +3520,84 @@ export type RecentPostsQuery = {
     posts: { edges: Array<{ node: { frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'slug'>> } }> };
 };
 
+export type SiteMetaDataQueryVariables = {};
+
+export type SiteMetaDataQuery = {
+    site: Maybe<{
+        siteMetadata: Maybe<
+            Pick<
+                SiteSiteMetadata,
+                | 'siteTitle'
+                | 'siteUrl'
+                | 'siteCover'
+                | 'authorName'
+                | 'authorAvatar'
+                | 'authorDescription'
+                | 'siteDescription'
+                | 'twitterUsername'
+                | 'headerTitle'
+                | 'headerLinksIcon'
+            > & {
+                headerLinks: Maybe<Array<Maybe<Pick<SiteSiteMetadataHeaderLinks, 'label' | 'url'>>>>;
+                footerLinks: Maybe<
+                    Array<
+                        Maybe<
+                            Pick<SiteSiteMetadataFooterLinks, 'sectionName'> & {
+                                links: Maybe<Array<Maybe<Pick<SiteSiteMetadataFooterLinksLinks, 'label' | 'url'>>>>;
+                            }
+                        >
+                    >
+                >;
+            }
+        >;
+    }>;
+};
+
+export type SiteImagesQueryVariables = {};
+
+export type SiteImagesQuery = {
+    allFile: {
+        edges: Array<{
+            node: Pick<File, 'relativePath'> & {
+                childImageSharp: Maybe<{
+                    fixed: Maybe<
+                        Pick<
+                            ImageSharpFixed,
+                            | 'base64'
+                            | 'tracedSVG'
+                            | 'aspectRatio'
+                            | 'width'
+                            | 'height'
+                            | 'src'
+                            | 'srcSet'
+                            | 'srcWebp'
+                            | 'srcSetWebp'
+                            | 'originalName'
+                        >
+                    >;
+                    fluid: Maybe<
+                        Pick<
+                            ImageSharpFluid,
+                            | 'base64'
+                            | 'tracedSVG'
+                            | 'aspectRatio'
+                            | 'src'
+                            | 'srcSet'
+                            | 'srcWebp'
+                            | 'srcSetWebp'
+                            | 'sizes'
+                            | 'originalImg'
+                            | 'originalName'
+                            | 'presentationWidth'
+                            | 'presentationHeight'
+                        >
+                    >;
+                }>;
+            };
+        }>;
+    };
+};
+
 export type BlogListQueryVariables = {
     skip: Scalars['Int'];
     limit: Scalars['Int'];
