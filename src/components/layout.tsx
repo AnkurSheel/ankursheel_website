@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/themes/prism-okaidia.css';
 import React, { ReactNode } from 'react';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import { GlobalStyle } from './GlobalStyles';
 import Header from './header/Header';
 
