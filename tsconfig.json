@@ -9,7 +9,12 @@
         "esModuleInterop": true,
         "noUnusedLocals": true,
         "strictNullChecks": true,
-        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "resolveJsonModule": true,
         "typeRoots": ["node_modules/@types", "./src/typings.d.ts"]
     },
     "exclude": ["node_modules", "public", ".cache"]
