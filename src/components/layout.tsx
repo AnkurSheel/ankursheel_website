@@ -4,7 +4,7 @@ import 'prismjs/themes/prism-okaidia.css';
 import React, { ReactNode } from 'react';
 import Footer from './Footer';
 import { GlobalStyle } from './GlobalStyles';
-import Header from './Header';
+import Header from './header/Header';
 
 const styles = {
     siteContent: css({
