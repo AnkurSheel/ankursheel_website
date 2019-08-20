@@ -1,8 +1,6 @@
-interface DisqusWrapperProps {
-    title: string;
-    slug?: string;
-}
-const DisqusWrapper = (props: DisqusWrapperProps) => {
+import React from 'react';
+const DisqusWrapper = () => {
+    return <></>;
     // const { disqusShortname, disqusSiteUrl } = useSiteMetadata();
     // if (!disqusShortname || !props.slug) {
     //     return null;
