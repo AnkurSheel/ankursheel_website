@@ -2,9 +2,9 @@ import { css } from '@emotion/core';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/themes/prism-okaidia.css';
 import React, { ReactNode } from 'react';
-import Footer from './footer/Footer';
-import { GlobalStyle } from './GlobalStyles';
-import Header from './header/Header';
+import { GlobalStyle } from '../01-elements/GlobalStyles';
+import Footer from '../03-composites/Footer';
+import Header from '../03-composites/Header';
 
 const styles = {
     siteContent: css({

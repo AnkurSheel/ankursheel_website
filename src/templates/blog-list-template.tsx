@@ -1,11 +1,11 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Hero from '../components/Hero';
-import Layout from '../components/layout';
-import Pagination from '../components/Pagination';
-import PostsList from '../components/PostsList';
-import SEO from '../components/SEO';
-import Wrapper from '../components/Wrapper';
+import Wrapper from '../01-elements/Wrapper';
+import SEO from '../02-components/SEO';
+import Hero from '../03-composites/Hero';
+import Pagination from '../03-composites/Pagination';
+import PostsList from '../03-composites/PostsList';
+import Layout from '../04-layouts/layout';
 import { BlogListQuery, SitePageContext } from '../graphqlTypes';
 
 interface BlogListProps {

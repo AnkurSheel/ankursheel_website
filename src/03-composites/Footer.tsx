@@ -1,8 +1,8 @@
 import { css } from '@emotion/core';
 import React from 'react';
-import useSiteMetadata from '../../hooks/use-site-config';
-import colors from '../../tokens/colors';
-import FooterColumn, { FooterColumnData, FooterLinkData } from './FooterColumn';
+import FooterColumn, { FooterColumnData, FooterLinkData } from '../02-components/FooterColumn';
+import useSiteMetadata from '../hooks/use-site-config';
+import colors from '../tokens/colors';
 
 const styles = {
     footer: css({

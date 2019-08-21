@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 import React from 'react';
-import { colors } from '../../tokens';
+import { colors } from '../tokens';
 
 const styles = {
     home: css({

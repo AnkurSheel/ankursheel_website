@@ -1,10 +1,10 @@
 import { css } from '@emotion/core';
 import React from 'react';
 import { Cat } from 'react-kawaii';
-import Layout from '../components/layout';
-import RecentPosts from '../components/RecentPosts';
-import SEO from '../components/SEO';
-import Wrapper from '../components/Wrapper';
+import Wrapper from '../01-elements/Wrapper';
+import RecentPosts from '../02-components/RecentPosts';
+import SEO from '../02-components/SEO';
+import Layout from '../04-layouts/layout';
 
 const styles = {
     mainTitle: css({

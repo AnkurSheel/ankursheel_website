@@ -1,6 +1,6 @@
 import css from '@emotion/css';
 import React from 'react';
-import colors from '../tokens/colors';
+import { colors } from '../tokens';
 import TagList from './TagList';
 
 const styles = {

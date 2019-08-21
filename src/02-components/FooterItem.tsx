@@ -1,8 +1,8 @@
 import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 import React from 'react';
-import { SiteSiteMetadataFooterLinksLinks } from '../../graphqlTypes';
-import colors from '../../tokens/colors';
+import { SiteSiteMetadataFooterLinksLinks } from '../graphqlTypes';
+import colors from '../tokens/colors';
 
 const styles = {
     item: css({

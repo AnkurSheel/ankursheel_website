@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 import React from 'react';
-import { SiteSiteMetadataFooterLinks, SiteSiteMetadataFooterLinksLinks } from '../../graphqlTypes';
+import { SiteSiteMetadataFooterLinks, SiteSiteMetadataFooterLinksLinks } from '../graphqlTypes';
 import FooterItem from './FooterItem';
 
 const styles = {
