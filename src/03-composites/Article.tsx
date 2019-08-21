@@ -10,12 +10,6 @@ const styles = {
         },
     }),
 };
-// const ArticleFooter = styled.footer`
-//     position: relative;
-//     margin: 6rem 0 0;
-//     padding: 3rem 0 0;
-//     border-top: 1px solid #ececec;
-// `;
 
 interface ArticleProps {
     body: string;
@@ -27,9 +21,6 @@ const Article = (props: ArticleProps) => {
     return (
         <article css={styles.article}>
             <Content content={props.body} date={props.date} tags={props.tags} />
-            {/* <ArticleFooter>
-                    <Bio />
-                </ArticleFooter> */}
         </article>
     );
 };

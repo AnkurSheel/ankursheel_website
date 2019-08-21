@@ -1,11 +1,11 @@
 import { graphql } from 'gatsby';
 import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
-import Content from '../components/Content';
-import Hero from '../components/Hero';
-import Layout from '../components/layout';
-import SEO from '../components/SEO';
-import Wrapper from '../components/Wrapper';
+import Wrapper from '../01-elements/Wrapper';
+import SEO from '../02-components/SEO';
+import Content from '../03-composites/Content';
+import Hero from '../03-composites/Hero';
+import Layout from '../04-layouts/layout';
 import { PageBySlugQuery } from '../graphqlTypes';
 
 interface PageProps {

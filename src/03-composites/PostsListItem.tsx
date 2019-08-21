@@ -1,8 +1,8 @@
 import css from '@emotion/css';
 import { Link } from 'gatsby';
 import React from 'react';
+import TagList from '../02-components/TagList';
 import { colors } from '../tokens';
-import TagList from './TagList';
 
 const styles = {
     post: css({

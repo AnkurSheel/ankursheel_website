@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import { graphql } from 'gatsby';
 import React from 'react';
-import { GlobalStyle } from '../components/GlobalStyles';
+import { GlobalStyle } from '../01-elements/GlobalStyles';
 import { BlogPostShareImageQuery } from '../graphqlTypes';
 import colors from '../tokens/colors';
 

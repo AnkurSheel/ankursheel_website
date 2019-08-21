@@ -1,7 +1,7 @@
 import css from '@emotion/css';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
-import ContentHeader from './ContentHeader';
+import ContentHeader from '../02-components/ContentHeader';
 
 const styles = {
     body: css({

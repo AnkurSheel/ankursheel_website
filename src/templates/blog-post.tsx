@@ -1,13 +1,13 @@
 import { graphql } from 'gatsby';
 import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
-import Article from '../components/Article';
-import Disqus from '../components/Disqus';
-import Hero from '../components/Hero';
-import Layout from '../components/layout';
-import PrevNextPost from '../components/PrevNextPost';
-import SEO from '../components/SEO';
-import Wrapper from '../components/Wrapper';
+import Wrapper from '../01-elements/Wrapper';
+import Disqus from '../02-components/Disqus';
+import PrevNextPost from '../02-components/PrevNextPost';
+import SEO from '../02-components/SEO';
+import Article from '../03-composites/Article';
+import Hero from '../03-composites/Hero';
+import Layout from '../04-layouts/layout';
 import { BlogPostBySlugQuery, SitePageContextNext, SitePageContextPrevious } from '../graphqlTypes';
 
 interface BlogPostTemplateProps {

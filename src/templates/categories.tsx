@@ -1,10 +1,10 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Hero from '../components/Hero';
-import Layout from '../components/layout';
-import PostsList from '../components/PostsList';
-import SEO from '../components/SEO';
-import Wrapper from '../components/Wrapper';
+import Wrapper from '../01-elements/Wrapper';
+import SEO from '../02-components/SEO';
+import Hero from '../03-composites/Hero';
+import PostsList from '../03-composites/PostsList';
+import Layout from '../04-layouts/layout';
 import { PostsByCategoryQuery } from '../graphqlTypes';
 
 interface CategoriesProps {
