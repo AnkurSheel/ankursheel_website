@@ -15,7 +15,7 @@
         "noUnusedParameters": true,
         "pretty": true,
         "resolveJsonModule": true,
-        "typeRoots": ["node_modules/@types", "./src/typings.d.ts"]
+        "typeRoots": ["./types", "node_modules/@types"]
     },
-    "exclude": ["node_modules", "public", ".cache"]
+    "exclude": ["node_modules", "public", ".cache", "types"]
 }
