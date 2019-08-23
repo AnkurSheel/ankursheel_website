@@ -76,10 +76,11 @@
         "graphql": "^14.4.2",
         "inquirer": "^7.0.0",
         "json-to-pretty-yaml": "^1.2.2",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.3",
         "prettier": "^1.18.2",
         "puppeteer": "^1.19.0",
         "react-kawaii": "^0.14.4",
-        "ts-node": "^8.3.0",
         "typescript": "^3.5.3",
         "yaml": "^1.6.0"
     },
@@ -87,5 +88,10 @@
         "gatsby": "^2.13.7",
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     }
 }
