@@ -50,8 +50,6 @@ const generateBlogPost = async () => {
         },
     ]);
 
-    console.log({ featured_image });
-
     const date = new Date();
     const slug = slugify(title);
     const destination = fromRoot('content/posts', `${date.getFullYear().toString()}`, `${formatDate(date)}-${slug}`);
@@ -79,7 +77,6 @@ const generateBlogPost = async () => {
     });
 
     fs.writeFileSync(path.join(destination, 'index.mdx'), markdown);
-    console.log({ markdown });
     console.log(`${destination.replace(process.cwd(), '')} is all ready for you`);
 };
 

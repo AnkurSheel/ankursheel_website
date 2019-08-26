@@ -8,10 +8,7 @@ const useSiteMetadata = () => {
                 siteMetadata {
                     siteTitle
                     siteUrl
-                    siteCover
                     authorName
-                    authorAvatar
-                    authorDescription
                     siteDescription
                     twitterUsername
                     # disqusShortname
