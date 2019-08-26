@@ -27,7 +27,7 @@ But what if you not so lucky?
 
 ## Solution #1
 
-Now, you will only see this error if you have `_noImplicitAny: true_` in your _tsconfig.json_. So you could get around this error is by setting `_noImplicitAny_: _false_`.
+Now, you will only see this error if you have `noImplicitAny: true` in your _tsconfig.json_. So you could get around this error is by setting `noImplicitAny: false`.
 
 But, by doing this you lose type-safety, so let's rule this out as a viable option.
 
@@ -67,5 +67,4 @@ The only caveat is that you don't get any IntelliSense.
 
 ## Conclusion
 
-Hopefully, this post will help you and you won't have to resort to
-either removing Typescript from your project or losing type-safety by adding _noImplicitAny: false_ in your tsconfig.json.
+Hopefully, this post will help you and you won't have to resort to either removing Typescript from your project or losing type-safety by adding `noImplicitAny: false` in your tsconfig.json.
