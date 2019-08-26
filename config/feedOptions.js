@@ -31,7 +31,7 @@ module.exports = {
                 ) {
                   edges {
                     node {
-                      excerpt
+                      excerpt (pruneLength : 250)
                       html
                       frontmatter {
                         slug
@@ -43,8 +43,8 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
-            title: "Your Site's RSS Feed",
+            output: '/blog/rss.xml',
+            title: "Ankur Sheel's Blog RSS Feed",
         },
     ],
 };
