@@ -1,3 +1,5 @@
+const feedOptions = require('./config/feedOptions');
+
 const config = require('./data/siteConfig');
 
 module.exports = {
@@ -91,5 +93,9 @@ module.exports = {
         },
         { resolve: `gatsby-plugin-netlify` },
         { resolve: `gatsby-plugin-catch-links` },
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: feedOptions,
+        },
     ],
 };
