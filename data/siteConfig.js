@@ -17,11 +17,11 @@ module.exports = {
     backgroundColor: '#ffffff',
     themeColor: '#222222',
     display: 'standalone',
-    icon: 'content/images/baymax.png',
+    icon: 'content/images/avatar.png',
     postsPerPage: 6,
     // disqusShortname: 'maxpou',
     headerTitle: 'Ankur Sheel',
-    headerLinksIcon: 'baymax.png', //  (leave empty to disable: '')
+    headerLinksIcon: 'avatar.png',
     headerLinks: [
         {
             label: 'About',
