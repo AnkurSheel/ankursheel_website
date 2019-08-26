@@ -18,6 +18,9 @@ export const styles = {
         zIndex: 1000,
         backgroundColor: `${colors.primaryAlpha}`,
         fontWeight: 'bold',
+        a: {
+            borderBottom: 'none',
+        },
     }),
     nav: css({
         display: 'flex',
