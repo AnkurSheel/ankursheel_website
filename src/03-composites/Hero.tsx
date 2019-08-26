@@ -50,9 +50,9 @@ const Hero = (props: HeroProps) => {
             {props.image && (
                 <BackgroundImage
                     css={styles.image}
-                    Tag='section'
+                    Tag="section"
                     fluid={props.image}
-                    fadeIn='soft'
+                    fadeIn="soft"
                     preserveStackingContext={true}
                 ></BackgroundImage>
             )}
