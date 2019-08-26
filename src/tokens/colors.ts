@@ -22,7 +22,7 @@ export default {
     primary: colors.grey500,
     primaryAlpha: `rgba(32, 35, 42, 0.85)`,
     text: '#616161',
-    background: '#f4f8fb',
+    background: '#000000',
     backgroundArticle: colors.white,
     heartFooter: 'red',
     highlightCodeOneline: '#fff9d9',

@@ -10,13 +10,14 @@ const stylesWithProps = (props: HeroProps) => {
             width: '100vw',
             height: `${props.image ? '50vh' : '30vh'}`,
             textAlign: 'center',
-            color: `${colors.text}`,
+            color: `${colors.grey100}`,
         }),
         image: css({
             width: '100%',
             height: '100%',
             backgroundPosition: 'bottom 20% center',
             backgroundSize: 'cover',
+            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))',
         }),
         textContainer: css({
             position: 'absolute',
@@ -27,10 +28,10 @@ const stylesWithProps = (props: HeroProps) => {
         title: css({
             fontWeight: 'bold',
             fontSize: '2.5rem',
-            textShadow: '1px 2px 0px #BFBFBF',
+            textShadow: `1px 2px 0px ${colors.grey500}`,
         }),
         subTitle: css({
-            textShadow: '1px 2px 0px #BFBFBF',
+            textShadow: `1px 2px 0px ${colors.grey500}`,
         }),
     };
 };
@@ -47,7 +48,13 @@ const Hero = (props: HeroProps) => {
     return (
         <div css={styles.container}>
             {props.image && (
-                <BackgroundImage css={styles.image} Tag="section" fluid={props.image} fadeIn="soft"></BackgroundImage>
+                <BackgroundImage
+                    css={styles.image}
+                    Tag='section'
+                    fluid={props.image}
+                    fadeIn='soft'
+                    preserveStackingContext={true}
+                ></BackgroundImage>
             )}
             <div css={styles.textContainer}>
                 <h1 css={styles.title}>{props.title}</h1>

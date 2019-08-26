@@ -16,7 +16,7 @@ const stylesWithProps = (props: BlogPostShareImageProps) => {
         preview: css({
             width: `${props.pageContext.width}px`,
             height: `${props.pageContext.height}px`,
-            backgroundImage: `url(${image})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${image})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             display: 'flex',
@@ -29,15 +29,15 @@ const stylesWithProps = (props: BlogPostShareImageProps) => {
             fontWeight: 'bold',
             fontSize: `${props.pageContext.type === 'twitter' ? '1.8rem' : '4.8rem'}`,
             margin: '10px 60px',
-            color: `${colors.text}`,
-            textShadow: '1px 3px 1px #BFBFBF',
+            color: `${colors.grey100}`,
+            textShadow: `1px 2px 0px ${colors.grey500}`,
             textAlign: 'center',
         }),
         readTime: css({
             verticalAlign: 'center',
             fontSize: `${props.pageContext.type === 'twitter' ? '1.5rem' : '2rem'}`,
             textAlign: 'center',
-            color: `${colors.text}`,
+            color: `${colors.grey100}`,
             ':before': {
                 padding: '0.4em',
                 content: `'👁'`,
