@@ -1,3 +1,5 @@
+const feedOptions = require('./config/feedOptions');
+
 const config = require('./data/siteConfig');
 
 module.exports = {
@@ -93,60 +95,7 @@ module.exports = {
         { resolve: `gatsby-plugin-catch-links` },
         {
             resolve: `gatsby-plugin-feed`,
-            options: {
-                query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-                feeds: [
-                    {
-                        serialize: ({ query: { site, allMdx } }) => {
-                            return allMdx.edges.map(edge => {
-                                return Object.assign({}, edge.node.frontmatter, {
-                                    description: edge.node.excerpt,
-                                    date: edge.node.frontmatter.date,
-                                    url: `${site.siteMetadata.siteUrl}/blog/${edge.node.frontmatter.slug}`,
-                                    guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.frontmatter.slug}`,
-                                    custom_elements: [{ 'content:encoded': edge.node.html }],
-                                });
-                            });
-                        },
-                        query: `
-              {
-                allMdx(
-                    limit: 1000,
-                    filter: {
-                    fileAbsolutePath: {regex: "//content/posts//"}
-                    }
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      frontmatter {
-                        slug
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-                        output: '/rss.xml',
-                        title: "Your Site's RSS Feed",
-                    },
-                ],
-            },
+            options: feedOptions,
         },
     ],
 };
