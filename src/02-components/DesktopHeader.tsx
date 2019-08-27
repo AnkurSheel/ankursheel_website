@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 import React from 'react';
-import { SiteSiteMetadataHeaderLinks } from '../graphqlTypes';
+import { ImageSharpFluid, SiteSiteMetadataHeaderLinks } from '../graphqlTypes';
 import { colors } from '../tokens';
 import { HeaderLinks } from './HeaderLinks';
 import HomeLink from './HomeLink';
@@ -32,15 +32,15 @@ export const styles = {
 
 interface DesktopHeaderProps {
     headerLinks: Pick<SiteSiteMetadataHeaderLinks, 'label' | 'url'>[];
-    iconSrc?: string;
+    icon?: ImageSharpFluid;
     siteTitle?: string;
     headerTitle?: string;
 }
 
-export const DesktopHeader = ({ headerLinks, iconSrc, siteTitle, headerTitle }: DesktopHeaderProps) => {
+export const DesktopHeader = ({ headerLinks, icon, siteTitle, headerTitle }: DesktopHeaderProps) => {
     return (
         <>
-            <HomeLink iconSrc={iconSrc} iconTitle={siteTitle} headerTitle={headerTitle} />
+            <HomeLink icon={icon} iconTitle={siteTitle} headerTitle={headerTitle} />
             {headerLinks && (
                 <div css={styles.header}>
                     <HeaderLinks headerLinks={headerLinks} />

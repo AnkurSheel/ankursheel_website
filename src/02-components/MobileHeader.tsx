@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 import React, { useState } from 'react';
-import { SiteSiteMetadataHeaderLinks } from '../graphqlTypes';
+import { ImageSharpFluid, SiteSiteMetadataHeaderLinks } from '../graphqlTypes';
 import { colors } from '../tokens';
 import { HeaderLinks } from './HeaderLinks';
 import HomeLink from './HomeLink';
@@ -72,12 +72,12 @@ const stylesWithProps = (isToggledOn: boolean) => {
 
 interface MobileHeaderProps {
     headerLinks: Pick<SiteSiteMetadataHeaderLinks, 'label' | 'url'>[];
-    iconSrc?: string;
+    icon?: ImageSharpFluid;
     siteTitle?: string;
     headerTitle?: string;
 }
 
-export const MobileHeader = ({ headerLinks, iconSrc, siteTitle, headerTitle }: MobileHeaderProps) => {
+export const MobileHeader = ({ headerLinks, icon, siteTitle, headerTitle }: MobileHeaderProps) => {
     const [isToggledOn, setToggle] = useState(false);
     const toggle = () => setToggle(!isToggledOn);
     const mobileStyles = stylesWithProps(isToggledOn);
@@ -85,7 +85,7 @@ export const MobileHeader = ({ headerLinks, iconSrc, siteTitle, headerTitle }: M
         <>
             {!isToggledOn && (
                 <>
-                    <HomeLink iconSrc={iconSrc} iconTitle={siteTitle} headerTitle={headerTitle} />
+                    <HomeLink icon={icon} iconTitle={siteTitle} headerTitle={headerTitle} />
                     <button
                         css={mobileStyles.burgerButton}
                         onClick={toggle}

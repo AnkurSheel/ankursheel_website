@@ -87,7 +87,7 @@ module.exports = {
                 start_url: '/',
                 background_color: config.backgroundColor,
                 theme_color: config.themeColor,
-                display: config.display,
+                display: 'standalone',
                 icon: config.icon,
             },
         },
@@ -97,5 +97,6 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: feedOptions,
         },
+        { resolve: `gatsby-plugin-sitemap` },
     ],
 };
