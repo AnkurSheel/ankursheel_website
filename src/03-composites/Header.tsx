@@ -45,26 +45,16 @@ const Header = () => {
     }
 
     const { headerTitle, headerLinks, siteTitle } = siteMetadata;
-    const iconSrc = (image && image.fluid && image.fluid.src) || undefined;
+    const icon = image && image.fluid && image.fluid;
     const links = (headerLinks && (headerLinks.filter(h => h !== undefined) as HeaderLinkData[])) || [];
 
     return (
         <header css={styles.wrapper}>
             <nav css={styles.nav}>
                 {isMobile ? (
-                    <MobileHeader
-                        headerLinks={links}
-                        iconSrc={iconSrc}
-                        siteTitle={siteTitle}
-                        headerTitle={headerTitle}
-                    />
+                    <MobileHeader headerLinks={links} icon={icon} siteTitle={siteTitle} headerTitle={headerTitle} />
                 ) : (
-                    <DesktopHeader
-                        headerLinks={links}
-                        iconSrc={iconSrc}
-                        siteTitle={siteTitle}
-                        headerTitle={headerTitle}
-                    />
+                    <DesktopHeader headerLinks={links} icon={icon} siteTitle={siteTitle} headerTitle={headerTitle} />
                 )}
             </nav>
         </header>
