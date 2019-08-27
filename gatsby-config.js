@@ -97,5 +97,6 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: feedOptions,
         },
+        { resolve: `gatsby-plugin-sitemap` },
     ],
 };
