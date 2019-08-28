@@ -1,7 +1,7 @@
 module.exports = {
     extensions: [`.mdx`, `.md`],
     defaultLayouts: {
-        default: require.resolve('../src/templates/page.tsx'),
+        default: require.resolve('../../../src/templates/page.tsx'),
     },
     gatsbyRemarkPlugins: [
         {

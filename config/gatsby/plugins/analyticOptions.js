@@ -1,4 +1,4 @@
-const config = require('../../data/siteConfig');
+const config = require('../siteConfig');
 
 module.exports = {
     trackingId: config.googleAnalyticsId,
