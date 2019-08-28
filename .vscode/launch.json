@@ -8,7 +8,7 @@
             "name": "Launch localhost on Firefox",
             "url": "http://localhost:8000/",
             "webRoot": "${workspaceFolder}",
-            "firefoxExecutable": "D:\\Software\\Mozilla Firefox\\firefox.exe"
+            "firefoxExecutable": "D:\\Software\\Firefox Developer Edition\\firefox.exe"
         },
         {
             "name": "Gatsby develop",
