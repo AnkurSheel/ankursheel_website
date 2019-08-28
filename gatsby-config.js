@@ -60,5 +60,9 @@ module.exports = {
             options: pluginOptions.rssFeed,
         },
         { resolve: `gatsby-plugin-sitemap` },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: pluginOptions.robotsTxt,
+        },
     ],
 };
