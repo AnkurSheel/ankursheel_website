@@ -1,6 +1,5 @@
-const feedOptions = require('./config/feedOptions');
-
-const config = require('./data/siteConfig');
+const config = require('./config/gatsby/siteConfig');
+const pluginOptions = require('./config/gatsby/plugins');
 
 module.exports = {
     siteMetadata: {
@@ -34,39 +33,12 @@ module.exports = {
         },
         {
             resolve: `gatsby-plugin-mdx`,
-            options: {
-                extensions: [`.mdx`, `.md`],
-                defaultLayouts: {
-                    default: require.resolve('./src/templates/page.tsx'),
-                },
-                gatsbyRemarkPlugins: [
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            maxWidth: 590,
-                            linkImagesToOriginal: false,
-                            withWebp: true,
-                        },
-                    },
-                    {
-                        resolve: 'gatsby-remark-prismjs',
-                        options: {
-                            showLineNumbers: true,
-                        },
-                    },
-                    { resolve: 'gatsby-remark-responsive-iframe' },
-                    { resolve: 'gatsby-remark-copy-linked-files' },
-                    { resolve: 'gatsby-remark-smartypants' },
-                    // { resolve: 'gatsby-remark-autolink-headers' },
-                ],
-            },
+            options: pluginOptions.mdx,
         },
         // Reminder (https://github.com/gatsbyjs/gatsby/issues/15486#issuecomment-509405867)
         {
             resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [`gatsby-remark-images`],
-            },
+            options: pluginOptions.transformerRemark,
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-offline`,
@@ -75,28 +47,22 @@ module.exports = {
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: config.googleAnalyticsId,
-            },
+            options: pluginOptions.analytic,
         },
         {
             resolve: `gatsby-plugin-manifest`,
-            options: {
-                name: config.siteTitle,
-                short_name: config.siteTitle,
-                start_url: '/',
-                background_color: config.backgroundColor,
-                theme_color: config.themeColor,
-                display: 'standalone',
-                icon: config.icon,
-            },
+            options: pluginOptions.manifest,
         },
         { resolve: `gatsby-plugin-netlify` },
         { resolve: `gatsby-plugin-catch-links` },
         {
             resolve: `gatsby-plugin-feed`,
-            options: feedOptions,
+            options: pluginOptions.rssFeed,
         },
         { resolve: `gatsby-plugin-sitemap` },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: pluginOptions.robotsTxt,
+        },
     ],
 };

@@ -21,7 +21,7 @@ const removeEmpty = (obj: any) => {
 const listify = (a: string) => (a && a.trim().length ? a.split(',').map(s => s.trim()) : null);
 
 const generateBlogPost = async () => {
-    const { title, description, categories, tags, featured_image } = await inquirer.prompt([
+    const { title, description, categories, tags, featuredImage } = await inquirer.prompt([
         {
             type: 'input',
             name: 'title',
@@ -44,7 +44,7 @@ const generateBlogPost = async () => {
         },
         {
             type: 'list',
-            name: 'featured_image',
+            name: 'featuredImage',
             message: 'Add a featured image (yes/no)',
             choices: [{ name: 'Yes', value: 'Y' }, { name: 'No', value: 'N' }],
         },
@@ -65,10 +65,10 @@ const generateBlogPost = async () => {
             excerpt: description,
             categories: listify(categories),
             tags: listify(tags),
-            featuredImage: featured_image === 'Y' ? './cover.png' : null,
-            imageFacebook: featured_image === 'Y' ? './image-facebook.png' : null,
-            imageTwitter: featured_image === 'Y' ? './image-twitter.png' : null,
-            'generate-card': featured_image === 'N' ? 'false' : null,
+            featuredImage: featuredImage === 'Y' ? './cover.png' : null,
+            imageFacebook: featuredImage === 'Y' ? './image-facebook.png' : null,
+            imageTwitter: featuredImage === 'Y' ? './image-twitter.png' : null,
+            'generate-card': featuredImage === 'N' ? 'false' : null,
         })
     );
     const markdown = prettier.format(`---\n${yaml}\n---\n`, {
