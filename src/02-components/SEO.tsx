@@ -39,14 +39,20 @@ const SEO = (props: SEOProps) => {
             <meta property="og:type" content={isBlog ? 'article' : 'website'} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
-            {imagePathFacebook && <meta property="og:image" content={imageFacebook} />}
+            {imageFacebook && <meta property="og:image" content={imageFacebook} />}
+            {imageFacebook && imageFacebook.indexOf('https') > -1 && (
+                <meta property="og:image:secure_url" content={imageFacebook} />
+            )}
 
             {/* Twitter Card tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:creator" content={twitterUsername} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-            {imagePathTwitter && <meta name="twitter:image" content={imageTwitter} />}
+            {imageTwitter && <meta name="twitter:image" content={imageTwitter} />}
+            {imageTwitter && imageTwitter.indexOf('https') > -1 && (
+                <meta name="twitter:image:secure_url" content={imageTwitter} />
+            )}
         </Helmet>
     );
 };
