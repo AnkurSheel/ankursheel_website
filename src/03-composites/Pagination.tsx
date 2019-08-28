@@ -25,7 +25,7 @@ const styles = {
         alignItems: 'center',
         justifyItems: 'center',
     }),
-    previousButton: css(
+    nextButton: css(
         {
             gridColumnStart: 1,
         },
@@ -34,7 +34,7 @@ const styles = {
     pageInfo: css({
         gridColumnStart: 2,
     }),
-    nextButton: css(
+    previousButton: css(
         {
             gridColumnStart: 3,
         },
@@ -53,16 +53,16 @@ const Pagination = ({ currentPage = 1, numberOfPages = 1 }: PaginationProps) => 
     return (
         <nav css={styles.wrapper}>
             {currentPage !== 1 && (
-                <Link css={styles.previousButton} to={previousUrl}>
-                    &larr; Older posts
+                <Link css={styles.nextButton} to={previousUrl}>
+                    &larr; Newer posts
                 </Link>
             )}
             <span css={styles.pageInfo}>
                 Page {currentPage} of {numberOfPages}
             </span>
             {currentPage && currentPage < numberOfPages && (
-                <Link css={styles.nextButton} to={`/blog/pages/${currentPage + 1}`}>
-                    Newer posts &rarr;
+                <Link css={styles.previousButton} to={`/blog/pages/${currentPage + 1}`}>
+                    Older posts &rarr;
                 </Link>
             )}
         </nav>
