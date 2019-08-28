@@ -2,13 +2,31 @@ module.exports = {
     feeds: [
         {
             serialize: ({ query: { site, allMdx } }) => {
+                const {
+                    siteMetadata: { siteUrl },
+                } = site;
+
                 return allMdx.edges.map(edge => {
+                    const {
+                        node: {
+                            frontmatter: { title, date, slug, featuredImage },
+                            excerpt,
+                            html,
+                        },
+                    } = edge;
+
+                    const blogUrl = `${siteUrl}/blog/${slug}`;
+
                     return Object.assign({}, edge.node.frontmatter, {
-                        description: edge.node.excerpt,
-                        date: edge.node.frontmatter.date,
-                        url: `${site.siteMetadata.siteUrl}/blog/${edge.node.frontmatter.slug}`,
-                        guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.frontmatter.slug}`,
-                        custom_elements: [{ 'content:encoded': edge.node.html }],
+                        title,
+                        description: excerpt,
+                        date,
+                        url: blogUrl,
+                        guid: blogUrl,
+                        enclosure: featuredImage && {
+                            url: siteUrl + featuredImage.publicURL,
+                        },
+                        custom_elements: [{ 'content:encoded': html }],
                     });
                 });
             },
@@ -37,6 +55,9 @@ module.exports = {
                         slug
                         title
                         date
+                        featuredImage {
+                          publicURL
+                        }
                       }
                     }
                   }
