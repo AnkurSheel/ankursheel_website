@@ -22,7 +22,7 @@
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
         "lint:fix": "yarn lint --fix",
-        "generate-graphql": "graphql-codegen --config codegen.yml"
+        "generate-graphql": "graphql-codegen --config ./config/codegen.yml"
     },
     "dependencies": {
         "@mdx-js/mdx": "^1.0.23",
