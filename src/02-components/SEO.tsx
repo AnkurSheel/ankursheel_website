@@ -23,9 +23,9 @@ const SEO = (props: SEOProps) => {
     const description = props.description || siteDescription;
     const formattedSiteUrl = isBlog ? `${siteUrl}/blog` : siteUrl;
     const imagePathFacebook = props.imageFacebook || props.featuredImageUrl;
-    const imageFacebook = imagePathFacebook && `${formattedSiteUrl}${imagePathFacebook}`;
+    const imageFacebook = imagePathFacebook && `${siteUrl}${imagePathFacebook}`;
     const imagePathTwitter = props.imageTwitter || props.featuredImageUrl;
-    const imageTwitter = imagePathTwitter && `${formattedSiteUrl}${imagePathTwitter}`;
+    const imageTwitter = imagePathTwitter && `${siteUrl}${imagePathTwitter}`;
     const url = `${formattedSiteUrl}${path}`;
 
     return (
