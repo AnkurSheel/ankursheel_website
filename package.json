@@ -15,7 +15,7 @@
         "build": "gatsby build",
         "develop": "gatsby develop",
         "clean": "gatsby clean",
-        "format": "prettier --write src/**/*.{js,jsx,ts,tsx} data/siteConfig.js gatsby-*.js",
+        "format": "prettier --write src/**/*.{js,jsx,ts,tsx} config/gatsby/siteConfig.js gatsby-*.js",
         "generatePostPreviewImages": "node ./scripts/generatePostPreviewImages.js",
         "createBlogPost": "ts-node ./scripts/createNewBlogpost.ts",
         "start": "gatsby develop",
