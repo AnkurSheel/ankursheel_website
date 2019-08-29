@@ -676,6 +676,7 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
     ChildMdxFrontmatterCategories = 'childMdx___frontmatter___categories',
     ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
+    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
     ChildMdxHeadings = 'childMdx___headings',
@@ -1885,6 +1886,7 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
     FrontmatterCategories = 'frontmatter___categories',
     FrontmatterTags = 'frontmatter___tags',
+    FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
     Body = 'body',
     Excerpt = 'excerpt',
     Headings = 'headings',
@@ -2014,6 +2016,7 @@ export type MdxFrontmatter = {
     imageTwitter?: Maybe<File>;
     categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+    featuredImagePosition?: Maybe<Scalars['String']>;
 };
 
 export type MdxFrontmatterDateArgs = {
@@ -2034,6 +2037,7 @@ export type MdxFrontmatterFilterInput = {
     imageTwitter?: Maybe<FileFilterInput>;
     categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
+    featuredImagePosition?: Maybe<StringQueryOperatorInput>;
 };
 
 export type MdxGroupConnection = {
@@ -2841,12 +2845,20 @@ export enum SitePageFieldsEnum {
     PluginCreatorPluginOptionsGatsbyRemarkPlugins = 'pluginCreator___pluginOptions___gatsbyRemarkPlugins',
     PluginCreatorPluginOptionsGatsbyRemarkPluginsResolve = 'pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve',
     PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
-    PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
     PluginCreatorPluginOptionsShortName = 'pluginCreator___pluginOptions___short_name',
     PluginCreatorPluginOptionsStartUrl = 'pluginCreator___pluginOptions___start_url',
     PluginCreatorPluginOptionsBackgroundColor = 'pluginCreator___pluginOptions___background_color',
     PluginCreatorPluginOptionsThemeColor = 'pluginCreator___pluginOptions___theme_color',
+    PluginCreatorPluginOptionsDisplay = 'pluginCreator___pluginOptions___display',
     PluginCreatorPluginOptionsIcon = 'pluginCreator___pluginOptions___icon',
+    PluginCreatorPluginOptionsFeeds = 'pluginCreator___pluginOptions___feeds',
+    PluginCreatorPluginOptionsFeedsQuery = 'pluginCreator___pluginOptions___feeds___query',
+    PluginCreatorPluginOptionsFeedsOutput = 'pluginCreator___pluginOptions___feeds___output',
+    PluginCreatorPluginOptionsFeedsTitle = 'pluginCreator___pluginOptions___feeds___title',
+    PluginCreatorPluginOptionsPolicy = 'pluginCreator___pluginOptions___policy',
+    PluginCreatorPluginOptionsPolicyUserAgent = 'pluginCreator___pluginOptions___policy___userAgent',
+    PluginCreatorPluginOptionsPolicyAllow = 'pluginCreator___pluginOptions___policy___allow',
+    PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
     PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
     PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
     PluginCreatorSsrApIs = 'pluginCreator___ssrAPIs',
@@ -3058,12 +3070,20 @@ export enum SitePluginFieldsEnum {
     PluginOptionsGatsbyRemarkPluginsOptionsLoading = 'pluginOptions___gatsbyRemarkPlugins___options___loading',
     PluginOptionsGatsbyRemarkPluginsOptionsShowLineNumbers = 'pluginOptions___gatsbyRemarkPlugins___options___showLineNumbers',
     PluginOptionsTrackingId = 'pluginOptions___trackingId',
-    PluginOptionsPathCheck = 'pluginOptions___pathCheck',
     PluginOptionsShortName = 'pluginOptions___short_name',
     PluginOptionsStartUrl = 'pluginOptions___start_url',
     PluginOptionsBackgroundColor = 'pluginOptions___background_color',
     PluginOptionsThemeColor = 'pluginOptions___theme_color',
+    PluginOptionsDisplay = 'pluginOptions___display',
     PluginOptionsIcon = 'pluginOptions___icon',
+    PluginOptionsFeeds = 'pluginOptions___feeds',
+    PluginOptionsFeedsQuery = 'pluginOptions___feeds___query',
+    PluginOptionsFeedsOutput = 'pluginOptions___feeds___output',
+    PluginOptionsFeedsTitle = 'pluginOptions___feeds___title',
+    PluginOptionsPolicy = 'pluginOptions___policy',
+    PluginOptionsPolicyUserAgent = 'pluginOptions___policy___userAgent',
+    PluginOptionsPolicyAllow = 'pluginOptions___policy___allow',
+    PluginOptionsPathCheck = 'pluginOptions___pathCheck',
     NodeApIs = 'nodeAPIs',
     BrowserApIs = 'browserAPIs',
     SsrApIs = 'ssrAPIs',
@@ -3187,12 +3207,15 @@ export type SitePluginPluginOptions = {
     defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayouts>;
     gatsbyRemarkPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsGatsbyRemarkPlugins>>>;
     trackingId?: Maybe<Scalars['String']>;
-    pathCheck?: Maybe<Scalars['Boolean']>;
     short_name?: Maybe<Scalars['String']>;
     start_url?: Maybe<Scalars['String']>;
     background_color?: Maybe<Scalars['String']>;
     theme_color?: Maybe<Scalars['String']>;
+    display?: Maybe<Scalars['String']>;
     icon?: Maybe<Scalars['String']>;
+    feeds?: Maybe<Array<Maybe<SitePluginPluginOptionsFeeds>>>;
+    policy?: Maybe<Array<Maybe<SitePluginPluginOptionsPolicy>>>;
+    pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
 export type SitePluginPluginOptionsDefaultLayouts = {
@@ -3203,6 +3226,22 @@ export type SitePluginPluginOptionsDefaultLayoutsFilterInput = {
     default?: Maybe<StringQueryOperatorInput>;
 };
 
+export type SitePluginPluginOptionsFeeds = {
+    query?: Maybe<Scalars['String']>;
+    output?: Maybe<Scalars['String']>;
+    title?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsFeedsFilterInput = {
+    query?: Maybe<StringQueryOperatorInput>;
+    output?: Maybe<StringQueryOperatorInput>;
+    title?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsFeedsFilterListInput = {
+    elemMatch?: Maybe<SitePluginPluginOptionsFeedsFilterInput>;
+};
+
 export type SitePluginPluginOptionsFilterInput = {
     plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
     name?: Maybe<StringQueryOperatorInput>;
@@ -3211,12 +3250,15 @@ export type SitePluginPluginOptionsFilterInput = {
     defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayoutsFilterInput>;
     gatsbyRemarkPlugins?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput>;
     trackingId?: Maybe<StringQueryOperatorInput>;
-    pathCheck?: Maybe<BooleanQueryOperatorInput>;
     short_name?: Maybe<StringQueryOperatorInput>;
     start_url?: Maybe<StringQueryOperatorInput>;
     background_color?: Maybe<StringQueryOperatorInput>;
     theme_color?: Maybe<StringQueryOperatorInput>;
+    display?: Maybe<StringQueryOperatorInput>;
     icon?: Maybe<StringQueryOperatorInput>;
+    feeds?: Maybe<SitePluginPluginOptionsFeedsFilterListInput>;
+    policy?: Maybe<SitePluginPluginOptionsPolicyFilterListInput>;
+    pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsGatsbyRemarkPlugins = {
@@ -3283,6 +3325,20 @@ export type SitePluginPluginOptionsPluginsFilterInput = {
 
 export type SitePluginPluginOptionsPluginsFilterListInput = {
     elemMatch?: Maybe<SitePluginPluginOptionsPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsPolicy = {
+    userAgent?: Maybe<Scalars['String']>;
+    allow?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPolicyFilterInput = {
+    userAgent?: Maybe<StringQueryOperatorInput>;
+    allow?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPolicyFilterListInput = {
+    elemMatch?: Maybe<SitePluginPluginOptionsPolicyFilterInput>;
 };
 
 export type SitePluginSortInput = {
@@ -3615,7 +3671,7 @@ export type BlogPostBySlugQuery = {
     post: Maybe<
         Pick<Mdx, 'excerpt' | 'body'> & {
             frontmatter: Maybe<
-                Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'tags' | 'categories'> & {
+                Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'tags' | 'categories' | 'featuredImagePosition'> & {
                     featuredImage: Maybe<
                         Pick<File, 'publicURL'> & {
                             sharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }>;
