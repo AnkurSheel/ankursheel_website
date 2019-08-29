@@ -26,7 +26,7 @@ There were a few reasons that the Wordpress solution was not working for me anym
     -   Let's face it, shared hosting does not make for a fast site. Also, Wordpress is itself sluggish and the various plugins I had added were not helping.
 -   Cost
     -   Most hosting platforms have a heavily discounted first-year plan after which the price rises astronomically. This resulted in me having to migrate my site every year to a new platform. There were also a few providers that made it difficult to cancel the plan and get back the data unless you did it a month in advance. It was getting harder to justify the expense of 100+ USD. Even the cheapest option would easily set me back by 50-60 USD.
--   Degraded Experience for my style
+-   Degraded Experience of writing posts
     -   With the release of the new generation editor and having to do everything with content blocks, I felt like I was spending more time than what I felt was required to create a new post.
     -   I did not want to login to the site every time I wanted to create a new post or work on an existing draft.
 -   Programming Language that I don't use anywhere else
@@ -35,12 +35,13 @@ There were a few reasons that the Wordpress solution was not working for me anym
 ## Why Gatsby
 
 Recently, it has become easier to have a relatively cheap solution for hosting static content by using a static site generator. There are quite a few options out there. The first that comes to mind is [Github pages](https://pages.github.com/) which comes nicely integrated with [Jekyll](https://jekyllrb.com) which is a static website generator. Although it ticked 3 of the 4 boxes above, I did not feel it was the ideal solution for me mostly because the development language was Ruby, another language I couldn't see myself using anywhere else. It was a similar story with Hugo, which uses Go.
+
 Just when it seemed that I would have to resign myself to use Github Pages, I found out about [Gatsby](https://gatsbyjs.org) which is based on Javascript. I have been using Typescript increasingly at work so this seemed like the perfect solution. It's also not difficult to move your blog from Wordpress to Gatsby. I will give you the basics of what I did in case you also want to make the switch.
 
-But first, Let's see how it stacks up against my concerns from the previous section
+But first, Let's see how it stacks up against my concerns from the previous section.
 
 -   ~~Slow~~
-    -   Gatsby sites are fast. Blazingly fast
+    -   Gatsby sites are fast. Blazingly fast.
 -   ~~Cost~~
     -   It's free to host it on [Netlify](http://www.netlify.com). You can't beat free. Netlify is awesome. It requires almost no setup and every time I push to master, a new version of the site is deployed.
 -   ~~Degraded Experience of writing posts~~
@@ -72,14 +73,18 @@ I have taken this opportunity to revisit what content I want to show
 -   Use the [ExitWP](https://github.com/thomasf/exitwp) or [Wordpress-to-Hugo](https://github.com/SchumacherFM/wordpress-to-hugo-exporter) tool to convert the XML to markdown.
 -   Download all the images and other content from the server.
 -   Find a Gatsby start starter so that it's easy to to get started.
+-   Add Git LFS as some of my posts are image-heavy.
+-   Connect to Netlify and setup automatic deploys.
 -   The one I used was written in Javascript so I had to migrate the javascript to typescript and a few more plugins to enable typescript. Also, change styling options to use CSS-in-JS.
 -   Update styling, colours and layout.
 -   Update the starter so that all the blog content is under "/blog/".
--   Add a redirect rule as I decided to remove the date from the urls
+-   Add a redirect rule as I decided to remove the date from the URLs.
 -   Add the converted markdown.
-    -   Fix indent and other issues
-    -   Build missing react components depending on the post content
+    -   Fix indent and other issues.
+    -   Build missing react components depending on the post content.
 
 ## Conclusion
 
-Although its an ongoing process, I am happy with how the migration is progressing. [my blog](https://www.ankursheel.com) is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control so there is no need for tons of backups.
+Although it's an ongoing process, I am happy with how the migration is progressing. [my blog](https://www.ankursheel.com) is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control so there is no need for tons of backups.
+
+I will be adding more posts related to things I had to go hunting for on google. If you would like to know more about something specific, let me know in the comments.
