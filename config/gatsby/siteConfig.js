@@ -4,13 +4,11 @@ module.exports = {
     authorName: 'Ankur Sheel',
     twitterUsername: 'ankur_sheel',
     siteUrl: 'https://www.ankursheel.com/',
-    // disqusSiteUrl: 'https://www.maxpou.fr/',
     googleAnalyticsId: 'UA-45876690-1',
     backgroundColor: '#ffffff',
     themeColor: '#222222',
     icon: 'content/images/avatar.png',
     postsPerPage: 6,
-    // disqusShortname: 'maxpou',
     headerTitle: 'Ankur Sheel',
     headerLinksIcon: 'avatar.png',
     headerLinks: [

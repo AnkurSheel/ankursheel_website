@@ -11,8 +11,6 @@ const useSiteMetadata = () => {
                     authorName
                     siteDescription
                     twitterUsername
-                    # disqusShortname
-                    # disqusSiteUrl
                     headerTitle
                     headerLinksIcon
                     headerLinks {
