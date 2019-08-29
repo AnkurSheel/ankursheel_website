@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/core';
 import BackgroundImage, { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
 import colors from '../tokens/colors';
@@ -12,13 +12,16 @@ const stylesWithProps = (props: HeroProps) => {
             textAlign: 'center',
             color: `${colors.grey100}`,
         }),
-        image: css({
-            width: '100%',
-            height: '100%',
-            backgroundPosition: 'bottom 20% center',
-            backgroundSize: 'cover',
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))',
-        }),
+        image: css(
+            {
+                width: '100%',
+                height: '100%',
+                backgroundPosition: 'bottom 20% center',
+                backgroundSize: 'cover',
+                backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))',
+            },
+            props.imageStyles
+        ),
         textContainer: css({
             position: 'absolute',
             top: '50%',
@@ -41,6 +44,7 @@ interface HeroProps {
     subTitle?: string;
 
     image?: IFluidObject;
+    imageStyles?: SerializedStyles;
 }
 
 const Hero = (props: HeroProps) => {

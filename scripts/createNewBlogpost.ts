@@ -21,7 +21,7 @@ const removeEmpty = (obj: any) => {
 const listify = (a: string) => (a && a.trim().length ? a.split(',').map(s => s.trim()) : null);
 
 const generateBlogPost = async () => {
-    const { title, description, categories, tags, featuredImage } = await inquirer.prompt([
+    const prompt = await inquirer.prompt([
         {
             type: 'input',
             name: 'title',
@@ -50,11 +50,18 @@ const generateBlogPost = async () => {
         },
     ]);
 
+    const { title, description, tags, featuredImage } = prompt;
+    let { categories } = prompt;
+
     const date = new Date();
     const slug = slugify(title);
     const destination = fromRoot('content/posts', `${date.getFullYear().toString()}`, `${formatDate(date)}-${slug}`);
 
     mkdirp.sync(destination);
+
+    if (categories === '') {
+        categories = 'Uncategorized';
+    }
 
     const yaml = jsToYaml.stringify(
         removeEmpty({
@@ -71,8 +78,8 @@ const generateBlogPost = async () => {
             'generate-card': featuredImage === 'N' ? 'false' : null,
         })
     );
-    const markdown = prettier.format(`---\n${yaml}\n---\n`, {
-        ...require('../.prettier.config'),
+    const markdown = prettier.format(`---\r\n${yaml}\r\n---\r\n`, {
+        ...require('../.prettierrc'),
         parser: 'mdx',
     });
 

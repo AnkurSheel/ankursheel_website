@@ -1,3 +1,4 @@
+import css from '@emotion/css';
 import { graphql } from 'gatsby';
 import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
@@ -32,6 +33,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
     const fluid = featuredImage && featuredImage.sharp && (featuredImage.sharp.fluid as IFluidObject);
     const imageFacebookUrl = frontMatter && frontMatter.imageFacebook && frontMatter.imageFacebook.publicURL;
     const imageTwitterUrl = frontMatter && frontMatter.imageTwitter && frontMatter.imageTwitter.publicURL;
+    const featuredImagePosition = frontMatter && frontMatter.featuredImagePosition;
     return (
         <Layout>
             <SEO
@@ -44,7 +46,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
                 isBlog
             />
 
-            <Hero image={fluid} title={title} />
+            <Hero image={fluid} title={title} imageStyles={css({ backgroundPosition: featuredImagePosition })} />
 
             <main css={Wrapper}>
                 <Article body={body || ''} tags={tags} date={date} />
@@ -85,6 +87,7 @@ export const pageQuery = graphql`
                 imageFacebook {
                     publicURL
                 }
+                featuredImagePosition
             }
         }
     }
