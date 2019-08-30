@@ -15,15 +15,14 @@ interface BlogListProps {
 
 const BlogList = (props: BlogListProps) => {
     const siteMetaData = props.data.site && props.data.site.siteMetadata;
-    const title = (siteMetaData && siteMetaData.title) || '';
-    const description = siteMetaData && siteMetaData.description;
+    const description = (siteMetaData && siteMetaData.description) || '';
     const posts = props.data.posts.edges;
     const { pageContext } = props;
 
     return (
         <Layout>
             <SEO isBlog />
-            <Hero title={title} subTitle={description} />
+            <Hero title={description} />
 
             <main css={Wrapper}>
                 <PostsList posts={posts} />
