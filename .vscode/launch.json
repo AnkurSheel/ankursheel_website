@@ -37,7 +37,13 @@
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:8000",
-            "webRoot": "${workspaceFolder}/wwwroot"
+            "webRoot": "${workspaceFolder}/wwwroot",
+            "runtimeArgs": [
+                // this is version dependent
+                "--load-extension=${env:userprofile}/AppData/Local/Google/Chrome/User Data/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/4.0.6_0"
+            ],
+            "sourceMaps": true,
+            "trace": true
         }
     ]
 }
