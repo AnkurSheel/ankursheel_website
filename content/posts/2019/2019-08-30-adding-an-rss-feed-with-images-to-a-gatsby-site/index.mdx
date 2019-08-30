@@ -12,17 +12,13 @@ tags:
     - 'javascript'
 ---
 
-[GatsbyJs](https://www.gatsbyjs.org) has a good [article](https://www.gatsbyjs.org/docs/adding-an-rss-feed/) on how to add an RSS feed to your gatsby site. Although it will suffice in most cases and is a good starting point, it wasn't exactly working for me.
+[Gatsby](https://www.gatsbyjs.org) has a good [article](https://www.gatsbyjs.org/docs/adding-an-rss-feed/) on how to add an RSS feed to your gatsby site. Although it will suffice in most cases and is a good starting point, it wasn't exactly working for me.
 
--   My posts live under /blog/.
+-   My posts live under ["_/blog/_"](www.ankursheel.com/blog/) but the pages are under ["www.ankursheel.com/"](www.ankursheel.com).
 -   I am working with MDX but the document deals with markdown posts.
 -   It doesn't explain how to add the featured image.
 
-## Prerequisite
-
--   Install `gatsby-plugin-feed` using npm or yarn.
--   Add _gatsby-plugin-feed_ to your _gatsby-config.js_.
--   I would suggest reading the [gatsby article](https://www.gatsbyjs.org/docs/adding-an-rss-feed/) so that you have an idea of how to modify the options.
+Lets start modifying the options once we have the base from the gatsby article.
 
 ## Getting the data
 
@@ -42,7 +38,7 @@ query `
     ) {
         edges {
             node {
-                excerpt(pruneLength: 250)
+                excerpt(pruneLength: 140)
                 html
                 frontmatter {
                     slug
@@ -66,7 +62,7 @@ So what am I doing here
     -   **_Line 10_**: I limit it to 1000 records. I guess this could be a much smaller value but it's ok for the time being.
     -   **_Line 11_**: I want to build the feed only for my posts so I add a regex to get only those records that are present in _"content/posts"_.
     -   **_Line 12_**: I sort the records by date in descending order.
--   **_Lines 14-26_**: I get the _excerpt_ and _html_. I also get the _slug_, _title_, _date_ and the _featured image url_ from the frontmatter. The excerpt is also pruned to a maximum length of 250 characters.
+-   **_Lines 14-26_**: I get the _excerpt_ and _html_. I also get the _slug_, _title_, _date_ and the _featured image url_ from the frontmatter. The excerpt is also pruned to a maximum length of 140 characters.
 
 ## Build the feed object
 
@@ -106,7 +102,7 @@ feeds: [
         },
 
         output: '/blog/rss.xml',
-        title: "Ankur Sheel's Blog RSS Feed",
+        title: "Ankur Sheel's Ramblings",
     },
 ],
 ```
