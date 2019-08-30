@@ -3,7 +3,7 @@ author: 'Ankur Sheel'
 date: '2019-08-29'
 slug: 'migrating-from-wordpress-to-gatsby'
 title: 'Migrating from Wordpress to Gatsby'
-excerpt: "I have been blogging since 2013 and for most of the time I have been on WordPress. But, I am migrating my site over to Gatsby. What motivated the change and what has the migration process been so far. Let's find out."
+excerpt: "I have been blogging for a while now and for most of the time, I have been on WordPress. But, I am migrating my site over to Gatsby. What motivated the change and what has the migration process been so far. Let's find out."
 categories:
     - Uncategorized
 tags:
@@ -37,9 +37,9 @@ There were a few reasons that the Wordpress solution was not working for me anym
 
 Recently, it has become easier to have a relatively cheap solution for hosting static content by using a static site generator. There are quite a few options out there. The first that comes to mind is [Github pages](https://pages.github.com/) which comes nicely integrated with [Jekyll](https://jekyllrb.com) which is a static website generator. Although it ticked 3 of the 4 boxes above, I did not feel it was the ideal solution for me mostly because the development language was Ruby, another language I couldn't see myself using anywhere else. It was a similar story with Hugo, which uses Go.
 
-Just when it seemed that I would have to resign myself to use Github Pages, I found out about [Gatsby](https://gatsbyjs.org) which is based on Javascript. I have been using Typescript increasingly at work so this seemed like the perfect solution. It's also not difficult to move your blog from Wordpress to Gatsby. I will give you the basics of what I did in case you also want to make the switch.
+Just when it seemed that I would have to resign myself to use Github Pages, I found out about [Gatsby](https://gatsbyjs.org) which is based on Javascript. I have been using Typescript increasingly at work so this seemed like the perfect solution.
 
-But first, Let's see how it stacks up against my concerns from the previous section.
+Let's see how it stacks up against my concerns from the previous section.
 
 -   ~~Slow~~
     -   Gatsby sites are fast. Blazingly fast.
@@ -62,16 +62,12 @@ But first, Let's see how it stacks up against my concerns from the previous sect
 -   Gatsby detects what links are on the page and prefetches the content.
 -   Support for MDX which means I can embed React components into the posts.
 
-## You said it was easy to move from Wordpress to gatsby. But I don't see all of your posts. Did you lie?
-
-Depending on when you read this post, you might notice that a lot of the posts seem to be missing. At the very least it doesn't seem as if I have been blogging for so many years. the main reason for this is that the original blog had a lot of varied content. I have decided to move some of it away to a different blog. For example, I am moving the book reviews to [Discoveries in Bookland](https://www.discoveriesinbookland.com/). Some of it might not even make it to this blog because of the limited value it adds.
-
-I have taken this opportunity to revisit what content I want to show
-
 ## My migration process
 
+It's also not difficult to move your blog from Wordpress to Gatsby. I will give you the basics of what I did in case you also want to make the switch.
+
 -   Download the XML from Wordpress using the "Tools-> Export" section.
--   Use the [ExitWP](https://github.com/thomasf/exitwp) or [Wordpress-to-Hugo](https://github.com/SchumacherFM/wordpress-to-hugo-exporter) tool to convert the XML to markdown.
+-   Use the [ExitWP](https://github.com/thomasf/exitwp) or [Wordpress-to-Hugo](https://github.com/SchumacherFM/wordpress-to-hugo-exporter) tool to convert the posts to markdown.
 -   Download all the images and other content from the server.
 -   Find a Gatsby start starter so that it's easy to to get started.
 -   Add Git LFS as some of my posts are image-heavy.
@@ -83,6 +79,12 @@ I have taken this opportunity to revisit what content I want to show
 -   Add the converted markdown.
     -   Fix indent and other issues.
     -   Build missing react components depending on the post content.
+
+## You said it was easy to move from Wordpress to gatsby. But I don't see all of your posts. Did you lie?
+
+Depending on when you read this post, you might notice that a lot of the posts seem to be missing. At the very least it doesn't seem as if I have been blogging for so many years. the main reason for this is that the original blog had a lot of varied content. I have decided to move some of it away to a different blog. For example, I am moving the book reviews to [Discoveries in Bookland](https://www.discoveriesinbookland.com/). Some of it might not even make it to this blog because of the limited value it adds.
+
+I have taken this opportunity to revisit what content I want to show
 
 ## Conclusion
 
