@@ -7,8 +7,8 @@ const button = css({
     backgroundColor: `${colors.primary}`,
     border: `1px solid ${colors.primary}`,
     color: `${colors.textLightest}`,
-    padding: '1rem 1rem',
-    borderRadius: '20%',
+    padding: '0.5rem 0.5rem',
+    borderRadius: '10%',
     '&:hover': {
         backgroundColor: `${colors.textLightest}`,
         color: `${colors.primary}`,
@@ -19,24 +19,24 @@ const button = css({
 const styles = {
     wrapper: css({
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
         margin: '2em auto 0px auto',
-        gridColumnGap: '2rem',
+        gridGap: '1rem 2rem',
         alignItems: 'center',
         justifyItems: 'center',
     }),
     nextButton: css(
         {
-            gridColumnStart: 1,
+            // gridColumnStart: 1,
         },
         button
     ),
     pageInfo: css({
-        gridColumnStart: 2,
+        // gridColumnStart: 2,
     }),
     previousButton: css(
         {
-            gridColumnStart: 3,
+            // gridColumnStart: -1,
         },
         button
     ),

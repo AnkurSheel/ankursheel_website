@@ -34,10 +34,7 @@ module.exports = {
               {
                 site {
                 siteMetadata {
-                  title
-                  description
                   siteUrl
-                  site_url: siteUrl
                 }
               }
                 allMdx(
@@ -49,7 +46,7 @@ module.exports = {
                 ) {
                   edges {
                     node {
-                      excerpt (pruneLength : 250)
+                      excerpt (pruneLength : 140)
                       html
                       frontmatter {
                         slug
@@ -65,7 +62,7 @@ module.exports = {
               }
             `,
             output: '/blog/rss.xml',
-            title: "Ankur Sheel's Blog RSS Feed",
+            title: "Ankur Sheel's Rants and Ramblings",
         },
     ],
 };
