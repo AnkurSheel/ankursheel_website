@@ -21,7 +21,7 @@ const SEO = (props: SEOProps) => {
     const lang = 'en';
     const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
     const description = props.description || siteDescription;
-    const formattedSiteUrl = isBlog ? `${siteUrl}/blog` : siteUrl;
+    const formattedSiteUrl = isBlog ? `${siteUrl}/blog/` : siteUrl;
     const imagePathFacebook = props.imageFacebook || props.featuredImageUrl;
     const imageFacebook = imagePathFacebook && `${siteUrl}${imagePathFacebook}`;
     const imagePathTwitter = props.imageTwitter || props.featuredImageUrl;
