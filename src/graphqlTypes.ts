@@ -676,6 +676,7 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
     ChildMdxFrontmatterCategories = 'childMdx___frontmatter___categories',
     ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
+    ChildMdxFrontmatterImages = 'childMdx___frontmatter___images',
     ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
@@ -1886,6 +1887,7 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
     FrontmatterCategories = 'frontmatter___categories',
     FrontmatterTags = 'frontmatter___tags',
+    FrontmatterImages = 'frontmatter___images',
     FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
     Body = 'body',
     Excerpt = 'excerpt',
@@ -2016,6 +2018,7 @@ export type MdxFrontmatter = {
     imageTwitter?: Maybe<File>;
     categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+    images?: Maybe<Array<Maybe<Scalars['String']>>>;
     featuredImagePosition?: Maybe<Scalars['String']>;
 };
 
@@ -2037,6 +2040,7 @@ export type MdxFrontmatterFilterInput = {
     imageTwitter?: Maybe<FileFilterInput>;
     categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
+    images?: Maybe<StringQueryOperatorInput>;
     featuredImagePosition?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -3553,6 +3557,18 @@ export type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = Pick<
     ImageSharpSizes,
     'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
 >;
+
+export type GetImagesQueryVariables = {};
+
+export type GetImagesQuery = {
+    allFile: {
+        edges: Array<{
+            node: Pick<File, 'name' | 'relativeDirectory'> & {
+                childImageSharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }>;
+            };
+        }>;
+    };
+};
 
 export type RecentPostsQueryVariables = {};
 

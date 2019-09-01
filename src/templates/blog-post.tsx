@@ -49,7 +49,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
             <Hero image={fluid} title={title} imageStyles={css({ backgroundPosition: featuredImagePosition })} />
 
             <main css={Wrapper}>
-                <Article body={body || ''} tags={tags} date={date} />
+                <Article body={body || ''} tags={tags} date={date} path={slug} />
             </main>
 
             <main css={Wrapper}>
