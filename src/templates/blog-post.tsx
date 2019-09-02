@@ -72,7 +72,6 @@ export const pageQuery = graphql`
                 date(formatString: "DD MMMM, YYYY")
                 slug
                 tags
-                categories
                 featuredImage {
                     publicURL
                     sharp: childImageSharp {

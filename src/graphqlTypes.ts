@@ -606,6 +606,8 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterFeaturedImagePublicUrl = 'childMdx___frontmatter___featuredImage___publicURL',
     ChildMdxFrontmatterFeaturedImageId = 'childMdx___frontmatter___featuredImage___id',
     ChildMdxFrontmatterFeaturedImageChildren = 'childMdx___frontmatter___featuredImage___children',
+    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
+    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
     ChildMdxFrontmatterImageFacebookBirthtime = 'childMdx___frontmatter___imageFacebook___birthtime',
     ChildMdxFrontmatterImageFacebookBirthtimeMs = 'childMdx___frontmatter___imageFacebook___birthtimeMs',
     ChildMdxFrontmatterImageFacebookSourceInstanceName = 'childMdx___frontmatter___imageFacebook___sourceInstanceName',
@@ -674,10 +676,6 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterImageTwitterPublicUrl = 'childMdx___frontmatter___imageTwitter___publicURL',
     ChildMdxFrontmatterImageTwitterId = 'childMdx___frontmatter___imageTwitter___id',
     ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
-    ChildMdxFrontmatterCategories = 'childMdx___frontmatter___categories',
-    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
-    ChildMdxFrontmatterImages = 'childMdx___frontmatter___images',
-    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
     ChildMdxHeadings = 'childMdx___headings',
@@ -1767,6 +1765,8 @@ export enum MdxFieldsEnum {
     FrontmatterFeaturedImageChildMdxChildren = 'frontmatter___featuredImage___childMdx___children',
     FrontmatterFeaturedImageChildImageSharpId = 'frontmatter___featuredImage___childImageSharp___id',
     FrontmatterFeaturedImageChildImageSharpChildren = 'frontmatter___featuredImage___childImageSharp___children',
+    FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
+    FrontmatterTags = 'frontmatter___tags',
     FrontmatterImageFacebookBirthtime = 'frontmatter___imageFacebook___birthtime',
     FrontmatterImageFacebookBirthtimeMs = 'frontmatter___imageFacebook___birthtimeMs',
     FrontmatterImageFacebookSourceInstanceName = 'frontmatter___imageFacebook___sourceInstanceName',
@@ -1885,10 +1885,6 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterChildMdxChildren = 'frontmatter___imageTwitter___childMdx___children',
     FrontmatterImageTwitterChildImageSharpId = 'frontmatter___imageTwitter___childImageSharp___id',
     FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
-    FrontmatterCategories = 'frontmatter___categories',
-    FrontmatterTags = 'frontmatter___tags',
-    FrontmatterImages = 'frontmatter___images',
-    FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
     Body = 'body',
     Excerpt = 'excerpt',
     Headings = 'headings',
@@ -2014,12 +2010,10 @@ export type MdxFrontmatter = {
     excerpt?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
     featuredImage?: Maybe<File>;
+    featuredImagePosition?: Maybe<Scalars['String']>;
+    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
     imageFacebook?: Maybe<File>;
     imageTwitter?: Maybe<File>;
-    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
-    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-    images?: Maybe<Array<Maybe<Scalars['String']>>>;
-    featuredImagePosition?: Maybe<Scalars['String']>;
 };
 
 export type MdxFrontmatterDateArgs = {
@@ -2036,12 +2030,10 @@ export type MdxFrontmatterFilterInput = {
     excerpt?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
     featuredImage?: Maybe<FileFilterInput>;
+    featuredImagePosition?: Maybe<StringQueryOperatorInput>;
+    tags?: Maybe<StringQueryOperatorInput>;
     imageFacebook?: Maybe<FileFilterInput>;
     imageTwitter?: Maybe<FileFilterInput>;
-    categories?: Maybe<StringQueryOperatorInput>;
-    tags?: Maybe<StringQueryOperatorInput>;
-    images?: Maybe<StringQueryOperatorInput>;
-    featuredImagePosition?: Maybe<StringQueryOperatorInput>;
 };
 
 export type MdxGroupConnection = {
@@ -2609,7 +2601,6 @@ export type SitePageContext = {
     height?: Maybe<Scalars['Int']>;
     type?: Maybe<Scalars['String']>;
     tag?: Maybe<Scalars['String']>;
-    category?: Maybe<Scalars['String']>;
 };
 
 export type SitePageContextFilterInput = {
@@ -2624,7 +2615,6 @@ export type SitePageContextFilterInput = {
     height?: Maybe<IntQueryOperatorInput>;
     type?: Maybe<StringQueryOperatorInput>;
     tag?: Maybe<StringQueryOperatorInput>;
-    category?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageContextNext = {
@@ -2640,14 +2630,12 @@ export type SitePageContextNextFilterInput = {
 export type SitePageContextNextFrontmatter = {
     title?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
-    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 export type SitePageContextNextFrontmatterFilterInput = {
     title?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
-    categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2664,14 +2652,12 @@ export type SitePageContextPreviousFilterInput = {
 export type SitePageContextPreviousFrontmatter = {
     title?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
-    categories?: Maybe<Array<Maybe<Scalars['String']>>>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 export type SitePageContextPreviousFrontmatterFilterInput = {
     title?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
-    categories?: Maybe<StringQueryOperatorInput>;
     tags?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2781,18 +2767,15 @@ export enum SitePageFieldsEnum {
     ContextPreviousFileAbsolutePath = 'context___previous___fileAbsolutePath',
     ContextPreviousFrontmatterTitle = 'context___previous___frontmatter___title',
     ContextPreviousFrontmatterSlug = 'context___previous___frontmatter___slug',
-    ContextPreviousFrontmatterCategories = 'context___previous___frontmatter___categories',
     ContextPreviousFrontmatterTags = 'context___previous___frontmatter___tags',
     ContextNextFileAbsolutePath = 'context___next___fileAbsolutePath',
     ContextNextFrontmatterTitle = 'context___next___frontmatter___title',
     ContextNextFrontmatterSlug = 'context___next___frontmatter___slug',
-    ContextNextFrontmatterCategories = 'context___next___frontmatter___categories',
     ContextNextFrontmatterTags = 'context___next___frontmatter___tags',
     ContextWidth = 'context___width',
     ContextHeight = 'context___height',
     ContextType = 'context___type',
     ContextTag = 'context___tag',
-    ContextCategory = 'context___category',
     PluginCreatorId = 'pluginCreator___id',
     PluginCreatorParentId = 'pluginCreator___parent___id',
     PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -3687,7 +3670,7 @@ export type BlogPostBySlugQuery = {
     post: Maybe<
         Pick<Mdx, 'excerpt' | 'body'> & {
             frontmatter: Maybe<
-                Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'tags' | 'categories' | 'featuredImagePosition'> & {
+                Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'tags' | 'featuredImagePosition'> & {
                     featuredImage: Maybe<
                         Pick<File, 'publicURL'> & {
                             sharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }>;
@@ -3699,20 +3682,6 @@ export type BlogPostBySlugQuery = {
             >;
         }
     >;
-};
-
-export type PostsByCategoryQueryVariables = {
-    category: Scalars['String'];
-};
-
-export type PostsByCategoryQuery = {
-    posts: {
-        edges: Array<{
-            node: Pick<Mdx, 'excerpt'> & {
-                frontmatter: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'categories' | 'tags' | 'slug'>>;
-            };
-        }>;
-    };
 };
 
 export type PageBySlugQueryVariables = {

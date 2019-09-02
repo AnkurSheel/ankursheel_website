@@ -5,7 +5,7 @@ import PostsListItem from './PostsListItem';
 interface PostListProps {
     posts: Array<{
         node: Pick<Mdx, 'excerpt'> & {
-            frontmatter: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'categories' | 'tags' | 'slug'>>;
+            frontmatter: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'slug'>>;
         };
     }>;
 }
