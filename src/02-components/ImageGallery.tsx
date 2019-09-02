@@ -1,7 +1,18 @@
+import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 import { GetImagesQuery } from '../graphqlTypes';
+
+const styles = {
+    container: css({
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        gridAutoRows: 'minmax(auto, 200px)',
+        gridGap: '2rem',
+        marginTop: '3rem',
+    }),
+};
 
 interface ImageGalleryProps {
     path: string;
@@ -29,9 +40,8 @@ export const ImageGallery = (props: ImageGalleryProps) => {
             }
         `
     );
-    console.log({ edges });
     return (
-        <>
+        <div css={styles.container}>
             {edges
                 .filter(edge => edge.node.relativeDirectory && edge.node.relativeDirectory.includes(props.path))
                 .map(edge => {
@@ -49,6 +59,6 @@ export const ImageGallery = (props: ImageGalleryProps) => {
                     edge.node.childImageSharp && edge.node.childImageSharp.fluid;
                     return <Img key={name} fluid={fluid} alt={name} />;
                 })}
-        </>
+        </div>
     );
 };
