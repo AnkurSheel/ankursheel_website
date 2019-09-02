@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const posts = markdownFiles.filter(item => item.node.fileAbsolutePath.includes('/content/posts/'));
 
     // generate paginated post list
-    const postsPerPage = postPerPageQuery.data.site.siteMetadata.postsPerPage;
+    const { postsPerPage } = postPerPageQuery.data.site.siteMetadata;
     const nbPages = Math.ceil(posts.length / postsPerPage);
 
     Array.from({ length: nbPages }).forEach((_, i) => {
@@ -56,13 +56,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 limit: postsPerPage,
                 skip: i * postsPerPage,
                 currentPage: i + 1,
-                nbPages: nbPages,
+                nbPages,
             },
         });
     });
 
     // generate blog posts
-    posts.forEach((post, index, posts) => {
+    posts.forEach((post, index) => {
         const previous = index === posts.length - 1 ? null : posts[index + 1].node;
         const next = index === 0 ? null : posts[index - 1].node;
 

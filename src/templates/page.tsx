@@ -13,7 +13,7 @@ interface PageProps {
 }
 
 export const Page = ({ data }: PageProps) => {
-    const page = data.page;
+    const { page } = data;
     const frontmatter = page && page.frontmatter;
     const excerpt = (page && page.excerpt) || '';
     const title = (frontmatter && frontmatter.title) || '';

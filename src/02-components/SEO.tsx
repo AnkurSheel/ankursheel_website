@@ -11,21 +11,24 @@ interface SEOProps {
     imageTwitter?: string;
     description?: string;
 }
+
 const SEO = (props: SEOProps) => {
     const siteMetaData = useSiteMetadata();
     if (!siteMetaData) {
-        throw 'Site meta data is null';
+        throw new Error('Site meta data is null');
     }
-    const { isBlog = false, path = '' } = props;
-    const { siteTitle, siteUrl, siteDescription, twitterUsername } = siteMetaData;
     const lang = 'en';
-    const title = props.title ? `${props.title} | ${siteTitle}` : siteTitle;
-    const description = props.description || siteDescription;
+    const { siteTitle, siteUrl, siteDescription, twitterUsername } = siteMetaData;
+    const { isBlog = false, path = '', featuredImageUrl } = props;
+    let { title, description, imageFacebook, imageTwitter } = props;
+
+    title = title ? `${title} | ${siteTitle}` : siteTitle;
+    description = description || siteDescription;
     const formattedSiteUrl = isBlog ? `${siteUrl}/blog/` : siteUrl;
-    const imagePathFacebook = props.imageFacebook || props.featuredImageUrl;
-    const imageFacebook = imagePathFacebook && `${siteUrl}${imagePathFacebook}`;
-    const imagePathTwitter = props.imageTwitter || props.featuredImageUrl;
-    const imageTwitter = imagePathTwitter && `${siteUrl}${imagePathTwitter}`;
+    const imagePathFacebook = imageFacebook || featuredImageUrl;
+    imageFacebook = imagePathFacebook && `${siteUrl}${imagePathFacebook}`;
+    const imagePathTwitter = imageTwitter || featuredImageUrl;
+    imageTwitter = imagePathTwitter && `${siteUrl}${imagePathTwitter}`;
     const url = `${formattedSiteUrl}${path}`;
 
     return (

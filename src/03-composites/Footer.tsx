@@ -30,10 +30,16 @@ const Footer = () => {
         <footer css={styles.footer}>
             <nav css={styles.nav}>
                 <FooterColumn sectionName={`${authorName} © ${new Date().getFullYear()}`} />
-                {links.map((column: FooterColumnData, i: number) => {
+                {links.map((column: FooterColumnData) => {
                     const links1 =
                         (column.links && (column.links.filter(l => l !== undefined) as FooterLinkData[])) || [];
-                    return <FooterColumn sectionName={column.sectionName} links={links1} key={`footer-column-${i}`} />;
+                    return (
+                        <FooterColumn
+                            sectionName={column.sectionName}
+                            links={links1}
+                            key={`footer-column-${column.sectionName}`}
+                        />
+                    );
                 })}
             </nav>
         </footer>

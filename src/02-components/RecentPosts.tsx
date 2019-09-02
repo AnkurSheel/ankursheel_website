@@ -1,4 +1,4 @@
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { RecentPostsQuery } from '../graphqlTypes';
@@ -37,7 +37,7 @@ const RecentPosts = () => {
     return (
         <ul css={styles.recentPosts}>
             {posts.map(post => {
-                const frontmatter = post.node.frontmatter;
+                const { frontmatter } = post.node;
                 const title = frontmatter && frontmatter.title;
                 const slug = frontmatter && frontmatter.slug;
                 return (

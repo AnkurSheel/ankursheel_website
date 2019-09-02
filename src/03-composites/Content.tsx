@@ -1,4 +1,4 @@
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
 import ContentHeader from '../02-components/ContentHeader';

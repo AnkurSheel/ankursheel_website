@@ -18,7 +18,7 @@ interface ImageGalleryProps {
     path: string;
 }
 
-export const ImageGallery = (props: ImageGalleryProps) => {
+const ImageGallery = (props: ImageGalleryProps) => {
     const {
         allFile: { edges },
     }: GetImagesQuery = useStaticQuery(
@@ -45,7 +45,7 @@ export const ImageGallery = (props: ImageGalleryProps) => {
             {edges
                 .filter(edge => edge.node.relativeDirectory && edge.node.relativeDirectory.includes(props.path))
                 .map(edge => {
-                    const name = edge.node.name;
+                    const { name } = edge.node;
                     const image = edge.node.childImageSharp && edge.node.childImageSharp.fluid;
                     const fluid = {
                         aspectRatio: (image && image.aspectRatio) || 1,
@@ -56,9 +56,14 @@ export const ImageGallery = (props: ImageGalleryProps) => {
                         srcSetWebp: image && image.srcSetWebp,
                         srcWebp: image && image.srcWebp,
                     };
-                    edge.node.childImageSharp && edge.node.childImageSharp.fluid;
-                    return <Img key={name} fluid={fluid} alt={name} />;
+                    return edge.node.childImageSharp && edge.node.childImageSharp.fluid ? (
+                        <Img key={name} fluid={fluid} alt={name} />
+                    ) : (
+                        <></>
+                    );
                 })}
         </div>
     );
 };
+
+export default ImageGallery;

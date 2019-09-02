@@ -1,15 +1,22 @@
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     extends: [
-        'eslint:recommended',
+        'airbnb',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
+        'prettier/react',
     ],
     settings: {
         react: {
             version: 'detect',
+        },
+        'import/resolver': {
+            node: {
+                paths: ['src'],
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            },
         },
     },
     env: {
@@ -25,6 +32,12 @@ module.exports = {
     rules: {
         'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
         '@typescript-eslint/explicit-function-return-type': 'off',
+        'react/jsx-filename-extension': [
+            1,
+            {
+                extensions: ['jsx', 'tsx'],
+            },
+        ],
     },
     overrides: [
         // Override some TypeScript rules just for .js files

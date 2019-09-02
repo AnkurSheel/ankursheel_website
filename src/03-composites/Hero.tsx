@@ -49,20 +49,15 @@ interface HeroProps {
 
 const Hero = (props: HeroProps) => {
     const styles = stylesWithProps(props);
+    const { image, title, subTitle } = props;
     return (
         <div css={styles.container}>
-            {props.image && (
-                <BackgroundImage
-                    css={styles.image}
-                    Tag="section"
-                    fluid={props.image}
-                    fadeIn="soft"
-                    preserveStackingContext={true}
-                ></BackgroundImage>
+            {image && (
+                <BackgroundImage css={styles.image} Tag="section" fluid={image} fadeIn="soft" preserveStackingContext />
             )}
             <div css={styles.textContainer}>
-                <h1 css={styles.title}>{props.title}</h1>
-                {props.subTitle && <h2 css={styles.subTitle}>{props.subTitle}</h2>}
+                <h1 css={styles.title}>{title}</h1>
+                {subTitle && <h2 css={styles.subTitle}>{subTitle}</h2>}
             </div>
         </div>
     );

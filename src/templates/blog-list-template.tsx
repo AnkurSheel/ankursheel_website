@@ -14,9 +14,14 @@ interface BlogListProps {
 }
 
 const BlogList = (props: BlogListProps) => {
-    const siteMetaData = props.data.site && props.data.site.siteMetadata;
+    const {
+        data: {
+            site,
+            posts: { edges: posts },
+        },
+    } = props;
+    const siteMetaData = site && site.siteMetadata;
     const description = (siteMetaData && siteMetaData.description) || '';
-    const posts = props.data.posts.edges;
     const { pageContext } = props;
 
     return (

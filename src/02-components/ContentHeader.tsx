@@ -1,4 +1,4 @@
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import React from 'react';
 import { colors } from '../tokens';
 import TagList from './TagList';

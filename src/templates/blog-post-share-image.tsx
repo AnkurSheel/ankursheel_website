@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import { graphql } from 'gatsby';
 import React from 'react';
-import { GlobalStyle } from '../01-elements/GlobalStyles';
+import GlobalStyle from '../01-elements/GlobalStyles';
 import { BlogPostShareImageQuery } from '../graphqlTypes';
 import colors from '../tokens/colors';
 
@@ -57,7 +57,9 @@ interface BlogPostShareImageProps {
 
 const BlogPostShareImage = (props: BlogPostShareImageProps) => {
     const styles = stylesWithProps(props);
-    const post = props.data.post;
+    const {
+        data: { post },
+    } = props;
     const timeToRead = post && post.timeToRead && post.timeToRead;
     const minutes = timeToRead && timeToRead === 1 ? `${timeToRead} min` : `${timeToRead} mins`;
     const title = (post && post.frontmatter && post.frontmatter.title) || '';

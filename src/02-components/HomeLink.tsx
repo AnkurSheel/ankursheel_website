@@ -4,6 +4,7 @@ import Img, { FluidObject } from 'gatsby-image';
 import React from 'react';
 import { ImageSharpFluid } from '../graphqlTypes';
 import { colors } from '../tokens';
+
 const styles = {
     home: css({
         zIndex: 10,
@@ -28,7 +29,7 @@ interface HomeLinkProps {
 }
 
 const HomeLink = ({ icon, iconTitle, headerTitle }: HomeLinkProps) => {
-    let fluid: FluidObject | undefined = undefined;
+    let fluid: FluidObject | undefined;
     if (icon) {
         fluid = {
             aspectRatio: icon.aspectRatio || 1,
@@ -42,7 +43,7 @@ const HomeLink = ({ icon, iconTitle, headerTitle }: HomeLinkProps) => {
         };
     }
     return (
-        <Link css={styles.home} to={`/`} aria-label={`View home page`}>
+        <Link css={styles.home} to="/" aria-label="View home page">
             {fluid && <Img css={styles.icon} fluid={fluid} alt={iconTitle} />}
             {headerTitle && <span css={styles.title}>{headerTitle}</span>}
         </Link>
