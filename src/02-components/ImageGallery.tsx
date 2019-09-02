@@ -15,7 +15,7 @@ const styles = {
 };
 
 interface ImageGalleryProps {
-    path: string;
+    relativeDirectory: string;
 }
 
 const ImageGallery = (props: ImageGalleryProps) => {
@@ -43,10 +43,17 @@ const ImageGallery = (props: ImageGalleryProps) => {
     return (
         <div css={styles.container}>
             {edges
-                .filter(edge => edge.node.relativeDirectory && edge.node.relativeDirectory.includes(props.path))
+                .filter(edge => {
+                    const {
+                        node: { relativeDirectory },
+                    } = edge;
+                    return relativeDirectory && relativeDirectory.includes(props.relativeDirectory);
+                })
                 .map(edge => {
-                    const { name } = edge.node;
-                    const image = edge.node.childImageSharp && edge.node.childImageSharp.fluid;
+                    const {
+                        node: { name, childImageSharp },
+                    } = edge;
+                    const image = childImageSharp && childImageSharp.fluid;
                     const fluid = {
                         aspectRatio: (image && image.aspectRatio) || 1,
                         src: (image && image.src) || '',
@@ -56,7 +63,7 @@ const ImageGallery = (props: ImageGalleryProps) => {
                         srcSetWebp: image && image.srcSetWebp,
                         srcWebp: image && image.srcWebp,
                     };
-                    return edge.node.childImageSharp && edge.node.childImageSharp.fluid ? (
+                    return childImageSharp && childImageSharp.fluid ? (
                         <Img key={name} fluid={fluid} alt={name} />
                     ) : (
                         <></>
