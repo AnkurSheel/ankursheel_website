@@ -18,6 +18,16 @@ const styles = {
         gridRow: '1 / -1',
         background: '#ffc60032',
         cursor: 'pointer',
+        display: 'grid',
+        justifyItems: 'center',
+        alignItems: 'center',
+    }),
+    button: css({
+        background: 'rgba(0, 0, 0, 0.3)',
+        border: '2px solid white',
+        color: 'white',
+        textAlign: 'center',
+        padding: '0.5rem',
     }),
 };
 
@@ -43,7 +53,13 @@ const ImageWithOverlay = (props: ImageWithOverlayProps) => {
     return (
         <div css={styles.container}>
             <Img fluid={fluid} alt={altText} style={styles.image} />
-            {showOverlay && <div css={styles.overlay} />}
+            {showOverlay && (
+                <div css={styles.overlay}>
+                    <button type="button" css={styles.button}>
+                        View &rarr;
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
