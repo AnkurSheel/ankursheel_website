@@ -1,14 +1,15 @@
 import { css } from '@emotion/core';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const styles = {
     modal: css({
-        position: 'absolute',
+        background: 'rgba(255,0,0,0.5)',
+        height: '100vh',
+        position: 'fixed',
         top: 0,
         left: 0,
         bottom: 0,
         right: 0,
-        background: 'rgba(0,0,0,0.5)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'start',
@@ -20,6 +21,7 @@ const styles = {
         textAlign: 'center',
         padding: '1rem 2rem',
         cursor: 'pointer',
+        margin: '5rem',
     }),
 };
 
@@ -29,6 +31,13 @@ interface LightBoxModalProps {
 
 const LightBoxModal = (props: LightBoxModalProps) => {
     const { onClick } = props;
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, []);
     return (
         <div css={styles.modal}>
             <button type="button" css={styles.button} onClick={onClick}>

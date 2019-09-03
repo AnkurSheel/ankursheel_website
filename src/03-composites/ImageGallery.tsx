@@ -63,7 +63,9 @@ const ImageGallery = (props: ImageGalleryProps) => {
                             <div
                                 key={name}
                                 onMouseEnter={() => {
-                                    setActiveIndex(i);
+                                    if (!showModal) {
+                                        setActiveIndex(i);
+                                    }
                                 }}
                                 onMouseLeave={() => {
                                     setActiveIndex(-1);
@@ -75,7 +77,10 @@ const ImageGallery = (props: ImageGalleryProps) => {
                                     image={image}
                                     aspectRatio={1}
                                     showOverlay={i === activeIndex}
-                                    onClick={() => setShowModal(true)}
+                                    onClick={() => {
+                                        setActiveIndex(-1);
+                                        setShowModal(true);
+                                    }}
                                 />
                             </div>
                         ) : (
