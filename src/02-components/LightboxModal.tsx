@@ -21,6 +21,9 @@ const styles = {
         minWidth: '300px',
         width: '50vw',
         padding: '2rem',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
     }),
     button: css({
         background: 'none',

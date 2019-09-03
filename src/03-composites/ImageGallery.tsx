@@ -9,8 +9,7 @@ const styles = {
     container: css({
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-        gridAutoRows: 'minmax(auto, 200px)',
-        gridGap: '2rem',
+        gridGap: '1.5rem',
         margin: '3rem 0',
     }),
 };
