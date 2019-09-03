@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
 import ImageWithOverlay from '../02-components/ImageWithOverlay';
 import LightBoxModal from '../02-components/LightboxModal';
-import { GetImagesQuery } from '../graphqlTypes';
+import { GetImagesQuery, ImageSharpFluid } from '../graphqlTypes';
 
 const styles = {
     container: css({
@@ -22,7 +22,10 @@ interface ImageGalleryProps {
 const ImageGallery = (props: ImageGalleryProps) => {
     const [activeIndex, setActiveIndex] = useState(-1);
     const [showModal, setShowModal] = useState(false);
-
+    const [selectedImage, setSelectedImage] = useState<
+        | Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>
+        | undefined
+    >(undefined);
     const {
         allFile: { edges },
     }: GetImagesQuery = useStaticQuery(
@@ -80,6 +83,12 @@ const ImageGallery = (props: ImageGalleryProps) => {
                                     onClick={() => {
                                         setActiveIndex(-1);
                                         setShowModal(true);
+                                        setSelectedImage(image);
+                                    }}
+                                    onKeyUp={() => {
+                                        setActiveIndex(-1);
+                                        setShowModal(true);
+                                        setSelectedImage(image);
                                     }}
                                 />
                             </div>
@@ -87,8 +96,9 @@ const ImageGallery = (props: ImageGalleryProps) => {
                             <></>
                         );
                     })}
-                {showModal && (
+                {showModal && selectedImage && (
                     <LightBoxModal
+                        image={selectedImage}
                         onClick={() => {
                             setShowModal(false);
                         }}

@@ -36,11 +36,12 @@ interface ImageWithOverlayProps {
     image: Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
     aspectRatio?: number;
     showOverlay: boolean;
-    onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+    onKeyUp: (event: React.KeyboardEvent<HTMLDivElement>) => void;
 }
 
 const ImageWithOverlay = (props: ImageWithOverlayProps) => {
-    const { altText, image, aspectRatio, showOverlay, onClick } = props;
+    const { altText, image, aspectRatio, showOverlay, onClick, onKeyUp } = props;
     const fluid = {
         aspectRatio: aspectRatio || (image && image.aspectRatio) || 1,
         src: (image && image.src) || '',
@@ -55,11 +56,11 @@ const ImageWithOverlay = (props: ImageWithOverlayProps) => {
         <div css={styles.container}>
             <Img fluid={fluid} alt={altText} style={styles.image} />
             {showOverlay && (
-                <button type="button" css={styles.overlay} onClick={onClick}>
+                <div role="button" css={styles.overlay} onClick={onClick} tabIndex={0} onKeyUp={onKeyUp}>
                     <button type="button" css={styles.button}>
                         View &rarr;
                     </button>
-                </button>
+                </div>
             )}
         </div>
     );
