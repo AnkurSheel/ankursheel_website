@@ -2,6 +2,7 @@ import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
 import ImageWithOverlay from '../02-components/ImageWithOverlay';
+import LightBoxModal from '../02-components/LightboxModal';
 import { GetImagesQuery } from '../graphqlTypes';
 
 const styles = {
@@ -20,6 +21,7 @@ interface ImageGalleryProps {
 
 const ImageGallery = (props: ImageGalleryProps) => {
     const [activeIndex, setActiveIndex] = useState(-1);
+    const [showModal, setShowModal] = useState(false);
 
     const {
         allFile: { edges },
@@ -43,42 +45,52 @@ const ImageGallery = (props: ImageGalleryProps) => {
         `
     );
     return (
-        <div css={styles.container}>
-            {edges
-                .filter(edge => {
-                    const {
-                        node: { relativeDirectory },
-                    } = edge;
-                    return relativeDirectory && relativeDirectory.includes(props.relativeDirectory);
-                })
-                .map((edge, i) => {
-                    const {
-                        node: { name, childImageSharp },
-                    } = edge;
-                    const image = childImageSharp && childImageSharp.fluid;
-                    return image ? (
-                        <div
-                            key={name}
-                            onMouseEnter={() => {
-                                setActiveIndex(i);
-                            }}
-                            onMouseLeave={() => {
-                                setActiveIndex(-1);
-                            }}
-                        >
-                            <ImageWithOverlay
+        <>
+            <div css={styles.container}>
+                {edges
+                    .filter(edge => {
+                        const {
+                            node: { relativeDirectory },
+                        } = edge;
+                        return relativeDirectory && relativeDirectory.includes(props.relativeDirectory);
+                    })
+                    .map((edge, i) => {
+                        const {
+                            node: { name, childImageSharp },
+                        } = edge;
+                        const image = childImageSharp && childImageSharp.fluid;
+                        return image ? (
+                            <div
                                 key={name}
-                                altText={name}
-                                image={image}
-                                aspectRatio={1}
-                                showOverlay={i === activeIndex}
-                            />
-                        </div>
-                    ) : (
-                        <></>
-                    );
-                })}
-        </div>
+                                onMouseEnter={() => {
+                                    setActiveIndex(i);
+                                }}
+                                onMouseLeave={() => {
+                                    setActiveIndex(-1);
+                                }}
+                            >
+                                <ImageWithOverlay
+                                    key={name}
+                                    altText={name}
+                                    image={image}
+                                    aspectRatio={1}
+                                    showOverlay={i === activeIndex}
+                                    onClick={() => setShowModal(true)}
+                                />
+                            </div>
+                        ) : (
+                            <></>
+                        );
+                    })}
+                {showModal && (
+                    <LightBoxModal
+                        onClick={() => {
+                            setShowModal(false);
+                        }}
+                    />
+                )}
+            </div>
+        </>
     );
 };
 
