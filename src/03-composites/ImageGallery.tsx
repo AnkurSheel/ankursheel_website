@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-import React from 'react';
+import React, { useState } from 'react';
+import ImageWithOverlay from '../02-components/ImageWithOverlay';
 import { GetImagesQuery } from '../graphqlTypes';
 
 const styles = {
@@ -10,7 +10,7 @@ const styles = {
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
         gridAutoRows: 'minmax(auto, 200px)',
         gridGap: '2rem',
-        marginTop: '3rem',
+        margin: '3rem 0',
     }),
 };
 
@@ -19,6 +19,8 @@ interface ImageGalleryProps {
 }
 
 const ImageGallery = (props: ImageGalleryProps) => {
+    const [activeIndex, setActiveIndex] = useState(-1);
+
     const {
         allFile: { edges },
     }: GetImagesQuery = useStaticQuery(
@@ -49,22 +51,29 @@ const ImageGallery = (props: ImageGalleryProps) => {
                     } = edge;
                     return relativeDirectory && relativeDirectory.includes(props.relativeDirectory);
                 })
-                .map(edge => {
+                .map((edge, i) => {
                     const {
                         node: { name, childImageSharp },
                     } = edge;
                     const image = childImageSharp && childImageSharp.fluid;
-                    const fluid = {
-                        aspectRatio: (image && image.aspectRatio) || 1,
-                        src: (image && image.src) || '',
-                        srcSet: (image && image.srcSet) || '',
-                        base64: image && image.base64,
-                        sizes: (image && image.sizes) || '',
-                        srcSetWebp: image && image.srcSetWebp,
-                        srcWebp: image && image.srcWebp,
-                    };
-                    return childImageSharp && childImageSharp.fluid ? (
-                        <Img key={name} fluid={fluid} alt={name} />
+                    return image ? (
+                        <div
+                            key={name}
+                            onMouseEnter={() => {
+                                setActiveIndex(i);
+                            }}
+                            onMouseLeave={() => {
+                                setActiveIndex(-1);
+                            }}
+                        >
+                            <ImageWithOverlay
+                                key={name}
+                                altText={name}
+                                image={image}
+                                aspectRatio={1}
+                                showOverlay={i === activeIndex}
+                            />
+                        </div>
                     ) : (
                         <></>
                     );
