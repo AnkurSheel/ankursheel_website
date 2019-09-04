@@ -44,18 +44,18 @@ const PrevNextPost = (props: PrevNextPostProps) => {
     const nextTitle = next && next.frontmatter && next.frontmatter.title;
     return (
         <div css={styles.container}>
-            {previousSlug && previousTitle && (
-                <Link css={styles.link} to={`/blog/${previousSlug}`}>
-                    <div css={styles.linkText}>
-                        &larr;
-                        <div css={styles.title}> {previousTitle}</div>
-                    </div>
-                </Link>
-            )}
             {nextSlug && nextTitle && (
                 <Link css={styles.link} to={`/blog/${nextSlug}`}>
                     <div css={styles.linkText}>
+                        &larr;
                         <div css={styles.title}> {nextTitle}</div>
+                    </div>
+                </Link>
+            )}
+            {previousSlug && previousTitle && (
+                <Link css={styles.link} to={`/blog/${previousSlug}`}>
+                    <div css={styles.linkText}>
+                        <div css={styles.title}> {previousTitle}</div>
                         &rarr;
                     </div>
                 </Link>
