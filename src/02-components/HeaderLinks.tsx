@@ -16,17 +16,17 @@ interface HeaderLinkProps {
     headerLinks: HeaderLinkData[];
 }
 
-export const HeaderLinks = ({ headerLinks }: HeaderLinkProps) => {
+const HeaderLinks = ({ headerLinks }: HeaderLinkProps) => {
     return (
         <>
-            {headerLinks.map((headerLink, i: number) => {
+            {headerLinks.map(headerLink => {
                 return (
                     headerLink.url &&
                     headerLink.label && (
                         <Link
                             css={styles.link}
                             to={headerLink.url}
-                            key={`header-link-${i}`}
+                            key={`header-link-${headerLink.url}`}
                             aria-label={`View ${headerLink.label} page`}
                         >
                             {headerLink.label}
@@ -37,3 +37,5 @@ export const HeaderLinks = ({ headerLinks }: HeaderLinkProps) => {
         </>
     );
 };
+
+export default HeaderLinks;

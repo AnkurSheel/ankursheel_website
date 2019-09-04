@@ -1,4 +1,4 @@
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
 import ContentHeader from '../02-components/ContentHeader';
@@ -29,16 +29,18 @@ interface ContentProps {
     content: string;
     date: string;
     tags: string[];
+
+    path?: string | undefined;
 }
 
 const Content = (props: ContentProps) => {
-    const { content, date, tags } = props;
+    const { content, date, tags, path } = props;
 
     return (
         <section>
             {(tags || date) && <ContentHeader date={date} tags={tags} />}
             <div css={styles.body}>
-                <MDXRenderer>{content}</MDXRenderer>
+                <MDXRenderer path={path}>{content}</MDXRenderer>
             </div>
         </section>
     );

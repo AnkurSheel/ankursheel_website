@@ -17,7 +17,8 @@ module.exports = {
 
                     const blogUrl = `${siteUrl}/blog/${slug}`;
 
-                    return Object.assign({}, edge.node.frontmatter, {
+                    return {
+                        ...edge.node.frontmatter,
                         title,
                         description: excerpt,
                         date,
@@ -27,7 +28,7 @@ module.exports = {
                             url: siteUrl + featuredImage.publicURL,
                         },
                         custom_elements: [{ 'content:encoded': html }],
-                    });
+                    };
                 });
             },
             query: `

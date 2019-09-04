@@ -15,12 +15,15 @@ interface ArticleProps {
     body: string;
     date: string;
     tags: string[];
+
+    path?: string | undefined;
 }
 
 const Article = (props: ArticleProps) => {
+    const { body, date, tags, path } = props;
     return (
         <article css={styles.article}>
-            <Content content={props.body} date={props.date} tags={props.tags} />
+            <Content content={body} date={date} tags={tags} path={path} />
         </article>
     );
 };

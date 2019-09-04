@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import React, { useState } from 'react';
 import { ImageSharpFluid, SiteSiteMetadataHeaderLinks } from '../graphqlTypes';
 import { colors } from '../tokens';
-import { HeaderLinks } from './HeaderLinks';
+import HeaderLinks from './HeaderLinks';
 import HomeLink from './HomeLink';
 
 const stylesWithProps = (isToggledOn: boolean) => {
@@ -77,7 +77,7 @@ interface MobileHeaderProps {
     headerTitle?: string;
 }
 
-export const MobileHeader = ({ headerLinks, icon, siteTitle, headerTitle }: MobileHeaderProps) => {
+const MobileHeader = ({ headerLinks, icon, siteTitle, headerTitle }: MobileHeaderProps) => {
     const [isToggledOn, setToggle] = useState(false);
     const toggle = () => setToggle(!isToggledOn);
     const mobileStyles = stylesWithProps(isToggledOn);
@@ -90,6 +90,7 @@ export const MobileHeader = ({ headerLinks, icon, siteTitle, headerTitle }: Mobi
                         css={mobileStyles.burgerButton}
                         onClick={toggle}
                         aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}
+                        type="button"
                     >
                         <div css={mobileStyles.burger} />
                     </button>
@@ -104,6 +105,7 @@ export const MobileHeader = ({ headerLinks, icon, siteTitle, headerTitle }: Mobi
                         css={mobileStyles.closeButton}
                         onClick={toggle}
                         aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}
+                        type="button"
                     >
                         <div css={mobileStyles.burger} />
                     </button>
@@ -112,3 +114,5 @@ export const MobileHeader = ({ headerLinks, icon, siteTitle, headerTitle }: Mobi
         </>
     );
 };
+
+export default MobileHeader;

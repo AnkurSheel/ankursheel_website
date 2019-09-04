@@ -1,4 +1,4 @@
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 import React from 'react';
 import TagList from '../02-components/TagList';

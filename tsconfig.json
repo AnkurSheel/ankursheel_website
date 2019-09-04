@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "moduleResolution": "node",
         "target": "esnext",
         "jsx": "preserve",
         "lib": ["dom", "esnext"],
@@ -17,5 +17,6 @@
         "resolveJsonModule": true,
         "typeRoots": ["./types", "node_modules/@types"]
     },
+    "include": ["./src/**/*", "./*.ts"],
     "exclude": ["node_modules", "public", ".cache", "types"]
 }

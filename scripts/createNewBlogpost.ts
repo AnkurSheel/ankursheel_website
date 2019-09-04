@@ -34,11 +34,6 @@ const generateBlogPost = async () => {
         },
         {
             type: 'input',
-            name: 'categories',
-            message: 'Categories (comma separated)',
-        },
-        {
-            type: 'input',
             name: 'tags',
             message: 'Tags/Keywords (comma separated)',
         },
@@ -51,17 +46,12 @@ const generateBlogPost = async () => {
     ]);
 
     const { title, description, tags, featuredImage } = prompt;
-    let { categories } = prompt;
 
     const date = new Date();
     const slug = slugify(title);
     const destination = fromRoot('content/posts', `${date.getFullYear().toString()}`, `${formatDate(date)}-${slug}`);
 
     mkdirp.sync(destination);
-
-    if (categories === '') {
-        categories = 'Uncategorized';
-    }
 
     const yaml = jsToYaml.stringify(
         removeEmpty({
@@ -70,7 +60,6 @@ const generateBlogPost = async () => {
             slug,
             title,
             excerpt: description,
-            categories: listify(categories),
             tags: listify(tags),
             featuredImage: featuredImage === 'Y' ? './cover.png' : null,
             imageFacebook: featuredImage === 'Y' ? './image-facebook.png' : null,

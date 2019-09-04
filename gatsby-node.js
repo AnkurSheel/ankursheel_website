@@ -7,7 +7,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const BlogPostShareImage = require.resolve('./src/templates/blog-post-share-image.tsx');
     const PageTemplate = require.resolve('./src/templates/page.tsx');
     const PostsByTagTemplate = require.resolve('./src/templates/tags.tsx');
-    const PostsByCategoryTemplate = require.resolve('./src/templates/categories.tsx');
     const ListPostsTemplate = require.resolve('./src/templates/blog-list-template.tsx');
 
     const allMarkdownQuery = await graphql(`
@@ -19,7 +18,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                         frontmatter {
                             title
                             slug
-                            categories
                             tags
                         }
                     }
@@ -47,7 +45,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const posts = markdownFiles.filter(item => item.node.fileAbsolutePath.includes('/content/posts/'));
 
     // generate paginated post list
-    const postsPerPage = postPerPageQuery.data.site.siteMetadata.postsPerPage;
+    const { postsPerPage } = postPerPageQuery.data.site.siteMetadata;
     const nbPages = Math.ceil(posts.length / postsPerPage);
 
     Array.from({ length: nbPages }).forEach((_, i) => {
@@ -58,13 +56,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 limit: postsPerPage,
                 skip: i * postsPerPage,
                 currentPage: i + 1,
-                nbPages: nbPages,
+                nbPages,
             },
         });
     });
 
     // generate blog posts
-    posts.forEach((post, index, posts) => {
+    posts.forEach((post, index) => {
         const previous = index === posts.length - 1 ? null : posts[index + 1].node;
         const next = index === 0 ? null : posts[index - 1].node;
 
@@ -126,19 +124,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 component: PostsByTagTemplate,
                 context: {
                     tag: uniqTag,
-                },
-            });
-        });
-
-    markdownFiles
-        .filter(item => item.node.frontmatter.categories !== null)
-        .reduce((acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.categories])], [])
-        .forEach(uniqueCategory => {
-            createPage({
-                path: `category/${uniqueCategory}`,
-                component: PostsByCategoryTemplate,
-                context: {
-                    category: uniqueCategory,
                 },
             });
         });

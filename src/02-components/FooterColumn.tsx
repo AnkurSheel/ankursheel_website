@@ -35,8 +35,8 @@ const FooterColumn = ({ sectionName, links }: FooterColumnProps) => {
         <div css={styles.column}>
             {sectionName && <h5 css={styles.title}>{sectionName}</h5>}
             {links &&
-                links.map((item, i: number) => {
-                    return <FooterItem item={item} key={`footer-column-item-${i}`} />;
+                links.map(item => {
+                    return <FooterItem item={item} key={`footer-column-item-${item.label}`} />;
                 })}
         </div>
     );

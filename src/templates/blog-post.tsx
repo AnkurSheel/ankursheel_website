@@ -1,4 +1,4 @@
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import { graphql } from 'gatsby';
 import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
@@ -19,8 +19,10 @@ interface BlogPostTemplateProps {
     };
 }
 const BlogPostTemplate = (props: BlogPostTemplateProps) => {
-    const post = props.data.post;
-    const { previous, next } = props.pageContext;
+    const {
+        data: { post },
+        pageContext: { previous, next },
+    } = props;
     const excerpt = post && post.excerpt;
     const body = post && post.body;
     const frontMatter = post && post.frontmatter;
@@ -49,7 +51,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
             <Hero image={fluid} title={title} imageStyles={css({ backgroundPosition: featuredImagePosition })} />
 
             <main css={Wrapper}>
-                <Article body={body || ''} tags={tags} date={date} />
+                <Article body={body || ''} tags={tags} date={date} path={slug} />
             </main>
 
             <main css={Wrapper}>
@@ -72,7 +74,6 @@ export const pageQuery = graphql`
                 date(formatString: "DD MMMM, YYYY")
                 slug
                 tags
-                categories
                 featuredImage {
                     publicURL
                     sharp: childImageSharp {

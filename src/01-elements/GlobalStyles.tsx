@@ -2,7 +2,7 @@ import { css, Global } from '@emotion/core';
 import React from 'react';
 import { colors } from '../tokens';
 
-export const GlobalStyle = () => (
+const GlobalStyle = () => (
     <Global
         styles={css({
             '*, *:before, *:after': {
@@ -41,5 +41,7 @@ export const GlobalStyle = () => (
                 paddingLeft: '2em',
             },
         })}
-    ></Global>
+    />
 );
+
+export default GlobalStyle;

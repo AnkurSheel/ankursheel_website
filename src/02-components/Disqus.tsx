@@ -8,16 +8,22 @@ interface DisqusProps {
 }
 
 const DisqusWrapper = (props: DisqusProps) => {
-    const { siteUrl } = useSiteMetadata();
+    const siteMetaData = useSiteMetadata();
+    if (!siteMetaData) {
+        throw new Error('Site meta data is null');
+    }
+
+    const { siteUrl } = siteMetaData;
+    const { title, slug } = props;
     const disqusShortname = process.env.GATSBY_DISQUS_NAME;
 
-    if (!disqusShortname || !props.slug) {
+    if (!disqusShortname || !slug) {
         return null;
     }
     const disqusConfig = {
-        identifier: props.slug,
-        title: props.title || '',
-        url: `${siteUrl}/blog/${props.slug}`,
+        identifier: slug,
+        title: title || '',
+        url: `${siteUrl}/blog/${slug}`,
     };
 
     return <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />;

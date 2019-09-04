@@ -4,6 +4,7 @@ const analyticOptions = require('./analyticOptions');
 const manifestOptions = require('./manifestOptions');
 const feedOptions = require('./feedOptions');
 const robotsTxtOptions = require('./robotsTxtOptions');
+
 module.exports = {
     mdx: mdxOptions,
     transformerRemark: transformerRemarkOptions,

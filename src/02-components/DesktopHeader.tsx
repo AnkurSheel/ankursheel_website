@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import React from 'react';
 import { ImageSharpFluid, SiteSiteMetadataHeaderLinks } from '../graphqlTypes';
 import { colors } from '../tokens';
-import { HeaderLinks } from './HeaderLinks';
+import HeaderLinks from './HeaderLinks';
 import HomeLink from './HomeLink';
 
 export const styles = {

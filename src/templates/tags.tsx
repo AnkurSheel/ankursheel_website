@@ -15,8 +15,13 @@ interface TagsProps {
 }
 
 const Tags = (props: TagsProps) => {
-    const pageTitle = `#${props.pageContext.tag}`;
-    const posts = props.data.posts.edges;
+    const {
+        pageContext: { tag },
+        data: {
+            posts: { edges: posts },
+        },
+    } = props;
+    const pageTitle = `#${tag}`;
 
     return (
         <Layout>
@@ -24,7 +29,7 @@ const Tags = (props: TagsProps) => {
             <Hero title={pageTitle} />
 
             <main css={Wrapper}>
-                <h1>Posts tagged as &quot;{props.pageContext.tag}&quot;</h1>
+                <h1>Posts tagged as &quot;{tag}&quot;</h1>
                 <PostsList posts={posts} />
             </main>
         </Layout>

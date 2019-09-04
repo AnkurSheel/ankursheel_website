@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import React from 'react';
 import { DesktopHeader } from '../02-components/DesktopHeader';
 import { HeaderLinkData } from '../02-components/HeaderLinks';
-import { MobileHeader } from '../02-components/MobileHeader';
+import MobileHeader from '../02-components/MobileHeader';
 import useMedia from '../hooks/use-media';
 import useSiteMetadata from '../hooks/use-site-config';
 import useSiteImages from '../hooks/use-site-images';
