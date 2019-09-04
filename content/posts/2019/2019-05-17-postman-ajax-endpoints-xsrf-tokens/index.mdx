@@ -1,0 +1,133 @@
+---
+author: Speedrun
+comments: true
+date: 2019-05-17 20:00:27+00:00
+excerpt: How do you use Postman to test Ajax endpoints that are protected with an anti-forgery token? Let's find out
+layout: post
+link: https://ankursheel.com/blog/2019/05/postman-ajax-endpoints-xsrf-tokens/
+slug: postman-ajax-endpoints-xsrf-tokens
+title: Postman, Ajax endpoints and XSRF tokens
+wordpress_id: 4613
+categories:
+    - Tutorial
+tags:
+    - ajax
+    - anti-forgery
+    - csrf
+    - postman
+    - Testing
+    - tokens
+    - xsrf
+---
+
+Using an anti-forgery token is a pretty common way of securing your website from XSRF(Cross-Site Request Forgery) attacks. However, it does make it difficult to use Postman to test your ajax endpoints. Without the correct token in your request, you will get a _**401 Unauthorized**_ error.
+
+This is something I ran into recently. So, what did I do?
+
+## Preamble
+
+I guess I could disable the validation for testing purposes. For a long time, I did exactly that. My super-scientific process was comprised of the following steps.
+
+1. Disable the validation by commenting out the validating code.
+2. Rebuild solution.
+3. Start the local server.
+4. Test using Postman. Make fixes if required.
+5. Re-enable validation.
+6. Rebuild code.
+7. Ship.
+
+Now, I don't know about you, but just looking at that makes me sad and it's not just because it doesn't allow me to test the endpoints on the deployed code. And no, deploying code with validation turned off just for testing purposes is not something I want to do.
+
+I couldn't stop thinking that there has to be a better way to do this. Surely, I was not the only one who would want to do this.
+
+So, I did what any good engineer does - Open my browser and search stack overflow and google. I found a few articles but none of them really worked for me.
+
+Since I am writing this article, something obviously worked for me, but, before, we get into what worked, for the uninitiated, some background.
+
+## What is XSRF aka CSRF aka Sea Surf aka Cross-Site Request Forgery?
+
+XSRF vulnerabilities occur when a website allows an authenticated user to perform a sensitive action but does not verify that the user themselves is invoking that action. Instead, they verify only that the request came from the browser of an authorized user.
+
+This can open up the website to an attack where the user has a validated auth cookie already stored in their browser.
+
+The most common way to prevent CSRF attacks is to use a CSRF-token
+
+## What is an anti-forgery (XSRF) token?
+
+The anti-forgery token is a way to protect against Cross Site Scripting attacks. It is a unique random key that is generated for every single HTML form that is sent to the client.
+
+The way it works is
+
+1. Whenever a user requests a page with form data, the server generates an anti-forgery token which is unique and unpredictable.
+2. The client sends back the token when the form is submitted.
+3. The server validates the token and if the token does not match, the request is rejected.
+
+## What does the application look like?
+
+Our application is built in ASP.NET and uses Razor pages. One of the ways that we can add an anti-forgery token in a Razor page, is by using the `@Html.AntiForgeryToken()` helper function inside a form. All this does is add a hidden form field containing the token. The form field that is added is similar to
+
+    <input name="__RequestVerificationToken" type="hidden" value="HCT7cStZ5BVk3sFWdlYRsaPN2K2xUHwRc-AAEn1tIq02yWO1QSUuAiNuH4pCg6M7JgV3xZjysixJHhkqoGhOTTG8bgk0H3VWi5XpJgntnt2uc-xXwXwSOta9hBNMJQxo5JznbmiBtxPkwSx-GqxXsw2"/>
+
+Note the name of the hidden input - **_\_\_RequestVerificationToken_**. We will need it later.
+
+We are also going to assume that the URL with the form is _http://127.0.0.1/page_.
+
+We are also going to assume that the URL with the form is _http://127.0.0.1/page_.
+
+When the user presses the submit button it posts to _http://127.0.0.1/page-ajax-action_.
+
+The form on the page itself has two fields _FirstName_ and LastName
+
+## Yada Yada. But how do I test?
+
+Enough talk, let's start Postman and set it up so that we can test our ajax endpoints.
+
+## Create the environment
+
+![Postman environment](https://ankursheel.com/wp-content/uploads/2019/05/environment.png)Postman environment
+
+## Setup our request
+
+![](https://ankursheel.com/wp-content/uploads/2019/05/post-ajax.png)Postman Post request
+
+If you are wondering what _{{xsrf-token}}_ means, it's basically a way to tell Postman that this value will come the _xsrf-token_ variable.
+
+## Set the anti-forgery token variable
+
+Now since the anti-forgery token is generated for every request, we can use a Pre-request script to set the value of the _xsrf-token_ environment variable every time we want to hit the ajax endpoint.
+
+This is is what our pre-request script will look like
+
+    var url = pm.environment.get("baseurl");
+    pm.sendRequest(`${url}/login`, function(err, response) {
+        if (err) {
+            return console.error(err);
+        } else {
+            var body = response.text();
+            const html = cheerio(body);
+            var allInputs = html.find('input[name="__RequestVerificationToken"]');
+            var input = allInputs.first();
+            var token = input.val();
+            pm.environment.set("xsrf-token", token);
+         }
+    });
+
+Let's break this down one by one
+
+-   Line 1: We get the _baseurl_ from the environment variables and store it in _url_
+-   Line 2: We send a request to the login page and we designate the callback function which receives 2 arguments - an error(if any) and a response.
+-   Line 3-4: If there is an error, log the error to the console.
+-   Line 6: Get the body from the response object
+-   Line 7: Parse the body using Postman's inbuilt support for cheerio. To read more about cheerio visit [Cheerio](https://cheerio.js.org/)
+-   Line 8: Use cheerio to find all instances of `input[name="__RequestVerificationToken` in the body.
+-   Line 9: In case there are multiple instances on the page, take the 1st instance.
+-   Line 10: Get the value from the input
+-   Line 11. Set the _xsrf-token_ environment variable with the token value
+
+## And now we Test
+
+And now if we send a request, we can get a 200 response back from our ajax endpoint. We can also see what our environment looks like
+
+![Updated Environment Variable](https://ankursheel.com/wp-content/uploads/2019/05/updated-environment-1-1024x253.png)Updated Environment Variable
+
+Was this helpful? Did this work for you? Let me know in the comments.
