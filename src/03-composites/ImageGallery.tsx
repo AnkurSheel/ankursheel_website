@@ -16,6 +16,8 @@ const styles = {
 
 interface ImageGalleryProps {
     relativeDirectory: string;
+
+    subDirectory?: string;
 }
 
 const ImageGallery = (props: ImageGalleryProps) => {
@@ -54,7 +56,13 @@ const ImageGallery = (props: ImageGalleryProps) => {
                         const {
                             node: { relativeDirectory },
                         } = edge;
-                        return relativeDirectory && relativeDirectory.includes(props.relativeDirectory);
+                        if (!relativeDirectory) {
+                            return false;
+                        }
+                        const shouldShow = relativeDirectory.includes(props.relativeDirectory);
+                        return shouldShow && props.subDirectory
+                            ? relativeDirectory.includes(props.subDirectory)
+                            : shouldShow;
                     })
                     .map((edge, i) => {
                         const {
