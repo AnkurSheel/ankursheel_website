@@ -33,7 +33,7 @@ interface TagListProps {
     tags: string[];
 }
 
-const TagList = (props: TagListProps) => {
+export const TagList = (props: TagListProps) => {
     const { tags } = props;
 
     return (
