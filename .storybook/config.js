@@ -1,10 +1,7 @@
-import { configure } from '@storybook/react';
+// import { withInfo } from '@storybook/addon-info';
+import { withInfo } from '@storybook/addon-info';
+import { addDecorator, configure } from '@storybook/react';
 const req = require.context('../src', true, /.stories.tsx$/);
-
-// automatically import all files ending in *.stories.js
-function loadStories() {
-    req.keys().forEach(filename => req(filename));
-}
 
 // Gatsby's Link overrides:
 // Gatsby defines a global called ___loader to prevent its method calls from creating console errors you override it here
@@ -19,4 +16,11 @@ window.___navigate = pathname => {
     action('NavigateTo:')(pathname);
 };
 
+addDecorator(withInfo({ inline: true }));
+
+function loadStories() {
+    req.keys().forEach(filename => req(filename));
+}
+
+// automatically import all files ending in *.stories.js
 configure(loadStories, module);
