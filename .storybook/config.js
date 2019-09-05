@@ -16,11 +16,10 @@ window.___navigate = pathname => {
     action('NavigateTo:')(pathname);
 };
 
-addDecorator(withInfo({ inline: true }));
+addDecorator(withInfo({ inline: true, source: false }));
 
 function loadStories() {
     req.keys().forEach(filename => req(filename));
 }
 
-// automatically import all files ending in *.stories.js
 configure(loadStories, module);
