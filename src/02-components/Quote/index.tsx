@@ -40,7 +40,7 @@ const styles = {
 interface QuoteProps {
     quote: string;
 
-    author: string;
+    author?: string;
 }
 const Quote = (props: QuoteProps) => {
     const { quote, author } = props;
@@ -49,7 +49,7 @@ const Quote = (props: QuoteProps) => {
         <div css={styles.root}>
             <div css={styles.container}>
                 <blockquote css={styles.blockquote}>{quote}</blockquote>
-                <div css={styles.author}>- {author}</div>
+                {author && <div css={styles.author}>- {author}</div>}
             </div>
         </div>
     );
