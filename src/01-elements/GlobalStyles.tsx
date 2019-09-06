@@ -35,10 +35,18 @@ const GlobalStyle = () => (
                 },
             },
             ul: {
+                margin: '1em 0',
                 paddingLeft: '2em',
+                '& li': {
+                    margin: '0.5em 0',
+                },
             },
             ol: {
+                margin: '1em 0',
                 paddingLeft: '2em',
+                '& li': {
+                    margin: '0.5em 0',
+                },
             },
         })}
     />
