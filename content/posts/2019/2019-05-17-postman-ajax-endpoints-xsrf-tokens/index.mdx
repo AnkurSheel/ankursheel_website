@@ -115,8 +115,8 @@ pm.sendRequest(`${url}/login`, function(err, response) {
 
 Let's break this down one by one
 
--   **_Line 2_**: We send a request to the login page and we designate the callback function which receives 2 arguments - an error(if any) and a response.
 -   **_Line 1_**: We get the _baseurl_ from the environment variables and store it in _url_.
+-   **_Line 2_**: We send a request to the login page and we designate the callback function which receives 2 arguments - an error(if any) and a response.
 -   **_Line 3-4_**: If there is an error, log the error to the console.
 -   **_Line 6_**: Get the body from the response object.
 -   **_Line 7_**: Parse the body using Postman's inbuilt support for cheerio. To read more about cheerio visit [Cheerio](https://cheerio.js.org/)
