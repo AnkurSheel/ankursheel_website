@@ -1,6 +1,10 @@
 // import { withInfo } from '@storybook/addon-info';
 import { withInfo } from '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 import { addDecorator, configure } from '@storybook/react';
+import React from 'react';
+import GlobalStyle from '../src/01-elements/GlobalStyles';
+
 const req = require.context('../src', true, /.stories.tsx$/);
 
 // Gatsby's Link overrides:
@@ -21,5 +25,15 @@ addDecorator(withInfo({ inline: true, source: false }));
 function loadStories() {
     req.keys().forEach(filename => req(filename));
 }
+
+const withGlobal = cb => (
+    <>
+        <GlobalStyle />
+        {cb()}
+    </>
+);
+
+addDecorator(withGlobal);
+addDecorator(withKnobs);
 
 configure(loadStories, module);

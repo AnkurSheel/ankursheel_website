@@ -15,11 +15,13 @@ const styles = {
         display: 'grid',
         justifyItems: 'center',
         alignItems: 'center',
+        zIndex: 1,
     }),
     container: css({
         background: 'white',
         minWidth: '300px',
-        width: '50vw',
+        width: '70vw',
+        height: '70vh',
         padding: '2rem',
         display: 'flex',
         flexDirection: 'column',
@@ -63,7 +65,7 @@ const LightBoxModal = (props: LightBoxModalProps) => {
     return (
         <div css={styles.modal}>
             <div css={styles.container}>
-                <Img fluid={fluid} />
+                <Img fluid={fluid} imgStyle={{ objectFit: 'contain' }} />
                 <button type="button" css={styles.button} onClick={onClick}>
                     Close
                 </button>
