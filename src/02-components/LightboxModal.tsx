@@ -20,7 +20,7 @@ const styles = {
     container: css({
         background: 'white',
         minWidth: '300px',
-        width: '70vw',
+        width: '50vw',
         height: '70vh',
         padding: '2rem',
         display: 'flex',
