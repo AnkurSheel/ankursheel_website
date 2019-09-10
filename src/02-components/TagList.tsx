@@ -22,6 +22,8 @@ const styles = {
         },
     }),
     link: css({
+        textDecoration: 'none',
+        color: `${colors.primary}`,
         border: 'none',
         ':hover': {
             border: 'none',
@@ -38,7 +40,8 @@ export const TagList = (props: TagListProps) => {
 
     return (
         <ul css={styles.tagsList}>
-            {tags.map((tag: string) => {
+            {tags.map(t => {
+                const tag = t.toLowerCase();
                 return (
                     <li css={styles.tag} key={`tag-list-${tag}`}>
                         <Link css={styles.link} to={`/tags/${tag}`}>

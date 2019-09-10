@@ -117,13 +117,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // generate tags
     markdownFiles
         .filter(item => item.node.frontmatter.tags !== null)
-        .reduce((acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.tags])], [])
+        .reduce((acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.tags.map(t => t.toLowerCase())])], [])
         .forEach(uniqTag => {
+            const tag = uniqTag.toLowerCase();
             createPage({
-                path: `tags/${uniqTag}`,
+                path: `tags/${tag}`,
                 component: PostsByTagTemplate,
                 context: {
-                    tag: uniqTag,
+                    tagRegex: `/^${uniqTag.toLowerCase()}$/i`,
+                    tag,
                 },
             });
         });

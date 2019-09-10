@@ -39,10 +39,10 @@ const Tags = (props: TagsProps) => {
 export default Tags;
 
 export const pageQuery = graphql`
-    query PostsByTag($tag: String!) {
+    query PostsByTag($tagRegex: String!) {
         posts: allMdx(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { tags: { eq: $tag } } }
+            filter: { frontmatter: { tags: { regex: $tagRegex } } }
         ) {
             edges {
                 node {
