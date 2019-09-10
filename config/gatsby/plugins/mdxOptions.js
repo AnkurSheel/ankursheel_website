@@ -10,6 +10,8 @@ module.exports = {
                 maxWidth: 590,
                 linkImagesToOriginal: false,
                 withWebp: true,
+                markdownCaptions: true,
+                showCaptions: ['title', 'alt'],
             },
         },
         {
