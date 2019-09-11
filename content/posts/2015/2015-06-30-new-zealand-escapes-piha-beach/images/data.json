@@ -1,0 +1,16 @@
+{
+    "gallery": [
+        { "image": "./gallery1/PihaBeach-1.jpg", "title": "" },
+        { "image": "./gallery2/PihaBeach-2.jpg", "title": "" },
+        { "image": "./gallery4/PihaBeach-3.jpg", "title": "" },
+        { "image": "./gallery1/PihaBeach-4.jpg", "title": "" },
+        { "image": "./gallery2/PihaBeach-5.jpg", "title": "" },
+        { "image": "./gallery3/PihaBeach-6.jpg", "title": "" },
+        { "image": "./gallery1/PihaBeach-7.jpg", "title": "" },
+        { "image": "./gallery3/PihaBeach-8.jpg", "title": "" },
+        { "image": "./gallery3/PihaBeach-9.jpg", "title": "" },
+        { "image": "./gallery2/PihaBeach-10.jpg", "title": "" },
+        { "image": "./gallery4/PihaBeach-11.jpg", "title": "" },
+        { "image": "./gallery4/PihaBeach-12.jpg", "title": "" }
+    ]
+}
