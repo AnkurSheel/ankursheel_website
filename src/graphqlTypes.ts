@@ -370,6 +370,7 @@ export type File = Node & {
     internal: Internal;
     childMdx?: Maybe<Mdx>;
     childImageSharp?: Maybe<ImageSharp>;
+    childImagesJson?: Maybe<ImagesJson>;
 };
 
 export type FileModifiedTimeArgs = {
@@ -606,8 +607,6 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterFeaturedImagePublicUrl = 'childMdx___frontmatter___featuredImage___publicURL',
     ChildMdxFrontmatterFeaturedImageId = 'childMdx___frontmatter___featuredImage___id',
     ChildMdxFrontmatterFeaturedImageChildren = 'childMdx___frontmatter___featuredImage___children',
-    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
-    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
     ChildMdxFrontmatterImageFacebookBirthtime = 'childMdx___frontmatter___imageFacebook___birthtime',
     ChildMdxFrontmatterImageFacebookBirthtimeMs = 'childMdx___frontmatter___imageFacebook___birthtimeMs',
     ChildMdxFrontmatterImageFacebookSourceInstanceName = 'childMdx___frontmatter___imageFacebook___sourceInstanceName',
@@ -676,6 +675,8 @@ export enum FileFieldsEnum {
     ChildMdxFrontmatterImageTwitterPublicUrl = 'childMdx___frontmatter___imageTwitter___publicURL',
     ChildMdxFrontmatterImageTwitterId = 'childMdx___frontmatter___imageTwitter___id',
     ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
+    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
+    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
     ChildMdxBody = 'childMdx___body',
     ChildMdxExcerpt = 'childMdx___excerpt',
     ChildMdxHeadings = 'childMdx___headings',
@@ -817,6 +818,80 @@ export enum FileFieldsEnum {
     ChildImageSharpInternalMediaType = 'childImageSharp___internal___mediaType',
     ChildImageSharpInternalOwner = 'childImageSharp___internal___owner',
     ChildImageSharpInternalType = 'childImageSharp___internal___type',
+    ChildImagesJsonId = 'childImagesJson___id',
+    ChildImagesJsonParentId = 'childImagesJson___parent___id',
+    ChildImagesJsonParentParentId = 'childImagesJson___parent___parent___id',
+    ChildImagesJsonParentParentChildren = 'childImagesJson___parent___parent___children',
+    ChildImagesJsonParentChildren = 'childImagesJson___parent___children',
+    ChildImagesJsonParentChildrenId = 'childImagesJson___parent___children___id',
+    ChildImagesJsonParentChildrenChildren = 'childImagesJson___parent___children___children',
+    ChildImagesJsonParentInternalContent = 'childImagesJson___parent___internal___content',
+    ChildImagesJsonParentInternalContentDigest = 'childImagesJson___parent___internal___contentDigest',
+    ChildImagesJsonParentInternalDescription = 'childImagesJson___parent___internal___description',
+    ChildImagesJsonParentInternalFieldOwners = 'childImagesJson___parent___internal___fieldOwners',
+    ChildImagesJsonParentInternalIgnoreType = 'childImagesJson___parent___internal___ignoreType',
+    ChildImagesJsonParentInternalMediaType = 'childImagesJson___parent___internal___mediaType',
+    ChildImagesJsonParentInternalOwner = 'childImagesJson___parent___internal___owner',
+    ChildImagesJsonParentInternalType = 'childImagesJson___parent___internal___type',
+    ChildImagesJsonChildren = 'childImagesJson___children',
+    ChildImagesJsonChildrenId = 'childImagesJson___children___id',
+    ChildImagesJsonChildrenParentId = 'childImagesJson___children___parent___id',
+    ChildImagesJsonChildrenParentChildren = 'childImagesJson___children___parent___children',
+    ChildImagesJsonChildrenChildren = 'childImagesJson___children___children',
+    ChildImagesJsonChildrenChildrenId = 'childImagesJson___children___children___id',
+    ChildImagesJsonChildrenChildrenChildren = 'childImagesJson___children___children___children',
+    ChildImagesJsonChildrenInternalContent = 'childImagesJson___children___internal___content',
+    ChildImagesJsonChildrenInternalContentDigest = 'childImagesJson___children___internal___contentDigest',
+    ChildImagesJsonChildrenInternalDescription = 'childImagesJson___children___internal___description',
+    ChildImagesJsonChildrenInternalFieldOwners = 'childImagesJson___children___internal___fieldOwners',
+    ChildImagesJsonChildrenInternalIgnoreType = 'childImagesJson___children___internal___ignoreType',
+    ChildImagesJsonChildrenInternalMediaType = 'childImagesJson___children___internal___mediaType',
+    ChildImagesJsonChildrenInternalOwner = 'childImagesJson___children___internal___owner',
+    ChildImagesJsonChildrenInternalType = 'childImagesJson___children___internal___type',
+    ChildImagesJsonInternalContent = 'childImagesJson___internal___content',
+    ChildImagesJsonInternalContentDigest = 'childImagesJson___internal___contentDigest',
+    ChildImagesJsonInternalDescription = 'childImagesJson___internal___description',
+    ChildImagesJsonInternalFieldOwners = 'childImagesJson___internal___fieldOwners',
+    ChildImagesJsonInternalIgnoreType = 'childImagesJson___internal___ignoreType',
+    ChildImagesJsonInternalMediaType = 'childImagesJson___internal___mediaType',
+    ChildImagesJsonInternalOwner = 'childImagesJson___internal___owner',
+    ChildImagesJsonInternalType = 'childImagesJson___internal___type',
+    ChildImagesJsonGallery = 'childImagesJson___gallery',
+    ChildImagesJsonGalleryImageBirthtime = 'childImagesJson___gallery___image___birthtime',
+    ChildImagesJsonGalleryImageBirthtimeMs = 'childImagesJson___gallery___image___birthtimeMs',
+    ChildImagesJsonGalleryImageSourceInstanceName = 'childImagesJson___gallery___image___sourceInstanceName',
+    ChildImagesJsonGalleryImageAbsolutePath = 'childImagesJson___gallery___image___absolutePath',
+    ChildImagesJsonGalleryImageRelativePath = 'childImagesJson___gallery___image___relativePath',
+    ChildImagesJsonGalleryImageExtension = 'childImagesJson___gallery___image___extension',
+    ChildImagesJsonGalleryImageSize = 'childImagesJson___gallery___image___size',
+    ChildImagesJsonGalleryImagePrettySize = 'childImagesJson___gallery___image___prettySize',
+    ChildImagesJsonGalleryImageModifiedTime = 'childImagesJson___gallery___image___modifiedTime',
+    ChildImagesJsonGalleryImageAccessTime = 'childImagesJson___gallery___image___accessTime',
+    ChildImagesJsonGalleryImageChangeTime = 'childImagesJson___gallery___image___changeTime',
+    ChildImagesJsonGalleryImageBirthTime = 'childImagesJson___gallery___image___birthTime',
+    ChildImagesJsonGalleryImageRoot = 'childImagesJson___gallery___image___root',
+    ChildImagesJsonGalleryImageDir = 'childImagesJson___gallery___image___dir',
+    ChildImagesJsonGalleryImageBase = 'childImagesJson___gallery___image___base',
+    ChildImagesJsonGalleryImageExt = 'childImagesJson___gallery___image___ext',
+    ChildImagesJsonGalleryImageName = 'childImagesJson___gallery___image___name',
+    ChildImagesJsonGalleryImageRelativeDirectory = 'childImagesJson___gallery___image___relativeDirectory',
+    ChildImagesJsonGalleryImageDev = 'childImagesJson___gallery___image___dev',
+    ChildImagesJsonGalleryImageMode = 'childImagesJson___gallery___image___mode',
+    ChildImagesJsonGalleryImageNlink = 'childImagesJson___gallery___image___nlink',
+    ChildImagesJsonGalleryImageUid = 'childImagesJson___gallery___image___uid',
+    ChildImagesJsonGalleryImageGid = 'childImagesJson___gallery___image___gid',
+    ChildImagesJsonGalleryImageRdev = 'childImagesJson___gallery___image___rdev',
+    ChildImagesJsonGalleryImageIno = 'childImagesJson___gallery___image___ino',
+    ChildImagesJsonGalleryImageAtimeMs = 'childImagesJson___gallery___image___atimeMs',
+    ChildImagesJsonGalleryImageMtimeMs = 'childImagesJson___gallery___image___mtimeMs',
+    ChildImagesJsonGalleryImageCtimeMs = 'childImagesJson___gallery___image___ctimeMs',
+    ChildImagesJsonGalleryImageAtime = 'childImagesJson___gallery___image___atime',
+    ChildImagesJsonGalleryImageMtime = 'childImagesJson___gallery___image___mtime',
+    ChildImagesJsonGalleryImageCtime = 'childImagesJson___gallery___image___ctime',
+    ChildImagesJsonGalleryImagePublicUrl = 'childImagesJson___gallery___image___publicURL',
+    ChildImagesJsonGalleryImageId = 'childImagesJson___gallery___image___id',
+    ChildImagesJsonGalleryImageChildren = 'childImagesJson___gallery___image___children',
+    ChildImagesJsonGalleryTitle = 'childImagesJson___gallery___title',
 }
 
 export type FileFilterInput = {
@@ -858,6 +933,7 @@ export type FileFilterInput = {
     internal?: Maybe<InternalFilterInput>;
     childMdx?: Maybe<MdxFilterInput>;
     childImageSharp?: Maybe<ImageSharpFilterInput>;
+    childImagesJson?: Maybe<ImagesJsonFilterInput>;
 };
 
 export type FileGroupConnection = {
@@ -1369,6 +1445,228 @@ export type ImageSharpSortInput = {
     order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
+export type ImagesJson = Node & {
+    id: Scalars['ID'];
+    parent?: Maybe<Node>;
+    children: Array<Node>;
+    internal: Internal;
+    gallery?: Maybe<Array<Maybe<ImagesJsonGallery>>>;
+};
+
+export type ImagesJsonConnection = {
+    totalCount: Scalars['Int'];
+    edges: Array<ImagesJsonEdge>;
+    nodes: Array<ImagesJson>;
+    pageInfo: PageInfo;
+    distinct: Array<Scalars['String']>;
+    group: Array<ImagesJsonGroupConnection>;
+};
+
+export type ImagesJsonConnectionDistinctArgs = {
+    field: ImagesJsonFieldsEnum;
+};
+
+export type ImagesJsonConnectionGroupArgs = {
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+    field: ImagesJsonFieldsEnum;
+};
+
+export type ImagesJsonEdge = {
+    next?: Maybe<ImagesJson>;
+    node: ImagesJson;
+    previous?: Maybe<ImagesJson>;
+};
+
+export enum ImagesJsonFieldsEnum {
+    Id = 'id',
+    ParentId = 'parent___id',
+    ParentParentId = 'parent___parent___id',
+    ParentParentParentId = 'parent___parent___parent___id',
+    ParentParentParentChildren = 'parent___parent___parent___children',
+    ParentParentChildren = 'parent___parent___children',
+    ParentParentChildrenId = 'parent___parent___children___id',
+    ParentParentChildrenChildren = 'parent___parent___children___children',
+    ParentParentInternalContent = 'parent___parent___internal___content',
+    ParentParentInternalContentDigest = 'parent___parent___internal___contentDigest',
+    ParentParentInternalDescription = 'parent___parent___internal___description',
+    ParentParentInternalFieldOwners = 'parent___parent___internal___fieldOwners',
+    ParentParentInternalIgnoreType = 'parent___parent___internal___ignoreType',
+    ParentParentInternalMediaType = 'parent___parent___internal___mediaType',
+    ParentParentInternalOwner = 'parent___parent___internal___owner',
+    ParentParentInternalType = 'parent___parent___internal___type',
+    ParentChildren = 'parent___children',
+    ParentChildrenId = 'parent___children___id',
+    ParentChildrenParentId = 'parent___children___parent___id',
+    ParentChildrenParentChildren = 'parent___children___parent___children',
+    ParentChildrenChildren = 'parent___children___children',
+    ParentChildrenChildrenId = 'parent___children___children___id',
+    ParentChildrenChildrenChildren = 'parent___children___children___children',
+    ParentChildrenInternalContent = 'parent___children___internal___content',
+    ParentChildrenInternalContentDigest = 'parent___children___internal___contentDigest',
+    ParentChildrenInternalDescription = 'parent___children___internal___description',
+    ParentChildrenInternalFieldOwners = 'parent___children___internal___fieldOwners',
+    ParentChildrenInternalIgnoreType = 'parent___children___internal___ignoreType',
+    ParentChildrenInternalMediaType = 'parent___children___internal___mediaType',
+    ParentChildrenInternalOwner = 'parent___children___internal___owner',
+    ParentChildrenInternalType = 'parent___children___internal___type',
+    ParentInternalContent = 'parent___internal___content',
+    ParentInternalContentDigest = 'parent___internal___contentDigest',
+    ParentInternalDescription = 'parent___internal___description',
+    ParentInternalFieldOwners = 'parent___internal___fieldOwners',
+    ParentInternalIgnoreType = 'parent___internal___ignoreType',
+    ParentInternalMediaType = 'parent___internal___mediaType',
+    ParentInternalOwner = 'parent___internal___owner',
+    ParentInternalType = 'parent___internal___type',
+    Children = 'children',
+    ChildrenId = 'children___id',
+    ChildrenParentId = 'children___parent___id',
+    ChildrenParentParentId = 'children___parent___parent___id',
+    ChildrenParentParentChildren = 'children___parent___parent___children',
+    ChildrenParentChildren = 'children___parent___children',
+    ChildrenParentChildrenId = 'children___parent___children___id',
+    ChildrenParentChildrenChildren = 'children___parent___children___children',
+    ChildrenParentInternalContent = 'children___parent___internal___content',
+    ChildrenParentInternalContentDigest = 'children___parent___internal___contentDigest',
+    ChildrenParentInternalDescription = 'children___parent___internal___description',
+    ChildrenParentInternalFieldOwners = 'children___parent___internal___fieldOwners',
+    ChildrenParentInternalIgnoreType = 'children___parent___internal___ignoreType',
+    ChildrenParentInternalMediaType = 'children___parent___internal___mediaType',
+    ChildrenParentInternalOwner = 'children___parent___internal___owner',
+    ChildrenParentInternalType = 'children___parent___internal___type',
+    ChildrenChildren = 'children___children',
+    ChildrenChildrenId = 'children___children___id',
+    ChildrenChildrenParentId = 'children___children___parent___id',
+    ChildrenChildrenParentChildren = 'children___children___parent___children',
+    ChildrenChildrenChildren = 'children___children___children',
+    ChildrenChildrenChildrenId = 'children___children___children___id',
+    ChildrenChildrenChildrenChildren = 'children___children___children___children',
+    ChildrenChildrenInternalContent = 'children___children___internal___content',
+    ChildrenChildrenInternalContentDigest = 'children___children___internal___contentDigest',
+    ChildrenChildrenInternalDescription = 'children___children___internal___description',
+    ChildrenChildrenInternalFieldOwners = 'children___children___internal___fieldOwners',
+    ChildrenChildrenInternalIgnoreType = 'children___children___internal___ignoreType',
+    ChildrenChildrenInternalMediaType = 'children___children___internal___mediaType',
+    ChildrenChildrenInternalOwner = 'children___children___internal___owner',
+    ChildrenChildrenInternalType = 'children___children___internal___type',
+    ChildrenInternalContent = 'children___internal___content',
+    ChildrenInternalContentDigest = 'children___internal___contentDigest',
+    ChildrenInternalDescription = 'children___internal___description',
+    ChildrenInternalFieldOwners = 'children___internal___fieldOwners',
+    ChildrenInternalIgnoreType = 'children___internal___ignoreType',
+    ChildrenInternalMediaType = 'children___internal___mediaType',
+    ChildrenInternalOwner = 'children___internal___owner',
+    ChildrenInternalType = 'children___internal___type',
+    InternalContent = 'internal___content',
+    InternalContentDigest = 'internal___contentDigest',
+    InternalDescription = 'internal___description',
+    InternalFieldOwners = 'internal___fieldOwners',
+    InternalIgnoreType = 'internal___ignoreType',
+    InternalMediaType = 'internal___mediaType',
+    InternalOwner = 'internal___owner',
+    InternalType = 'internal___type',
+    Gallery = 'gallery',
+    GalleryImageBirthtime = 'gallery___image___birthtime',
+    GalleryImageBirthtimeMs = 'gallery___image___birthtimeMs',
+    GalleryImageSourceInstanceName = 'gallery___image___sourceInstanceName',
+    GalleryImageAbsolutePath = 'gallery___image___absolutePath',
+    GalleryImageRelativePath = 'gallery___image___relativePath',
+    GalleryImageExtension = 'gallery___image___extension',
+    GalleryImageSize = 'gallery___image___size',
+    GalleryImagePrettySize = 'gallery___image___prettySize',
+    GalleryImageModifiedTime = 'gallery___image___modifiedTime',
+    GalleryImageAccessTime = 'gallery___image___accessTime',
+    GalleryImageChangeTime = 'gallery___image___changeTime',
+    GalleryImageBirthTime = 'gallery___image___birthTime',
+    GalleryImageRoot = 'gallery___image___root',
+    GalleryImageDir = 'gallery___image___dir',
+    GalleryImageBase = 'gallery___image___base',
+    GalleryImageExt = 'gallery___image___ext',
+    GalleryImageName = 'gallery___image___name',
+    GalleryImageRelativeDirectory = 'gallery___image___relativeDirectory',
+    GalleryImageDev = 'gallery___image___dev',
+    GalleryImageMode = 'gallery___image___mode',
+    GalleryImageNlink = 'gallery___image___nlink',
+    GalleryImageUid = 'gallery___image___uid',
+    GalleryImageGid = 'gallery___image___gid',
+    GalleryImageRdev = 'gallery___image___rdev',
+    GalleryImageIno = 'gallery___image___ino',
+    GalleryImageAtimeMs = 'gallery___image___atimeMs',
+    GalleryImageMtimeMs = 'gallery___image___mtimeMs',
+    GalleryImageCtimeMs = 'gallery___image___ctimeMs',
+    GalleryImageAtime = 'gallery___image___atime',
+    GalleryImageMtime = 'gallery___image___mtime',
+    GalleryImageCtime = 'gallery___image___ctime',
+    GalleryImagePublicUrl = 'gallery___image___publicURL',
+    GalleryImageId = 'gallery___image___id',
+    GalleryImageParentId = 'gallery___image___parent___id',
+    GalleryImageParentChildren = 'gallery___image___parent___children',
+    GalleryImageChildren = 'gallery___image___children',
+    GalleryImageChildrenId = 'gallery___image___children___id',
+    GalleryImageChildrenChildren = 'gallery___image___children___children',
+    GalleryImageInternalContent = 'gallery___image___internal___content',
+    GalleryImageInternalContentDigest = 'gallery___image___internal___contentDigest',
+    GalleryImageInternalDescription = 'gallery___image___internal___description',
+    GalleryImageInternalFieldOwners = 'gallery___image___internal___fieldOwners',
+    GalleryImageInternalIgnoreType = 'gallery___image___internal___ignoreType',
+    GalleryImageInternalMediaType = 'gallery___image___internal___mediaType',
+    GalleryImageInternalOwner = 'gallery___image___internal___owner',
+    GalleryImageInternalType = 'gallery___image___internal___type',
+    GalleryImageChildMdxRawBody = 'gallery___image___childMdx___rawBody',
+    GalleryImageChildMdxFileAbsolutePath = 'gallery___image___childMdx___fileAbsolutePath',
+    GalleryImageChildMdxBody = 'gallery___image___childMdx___body',
+    GalleryImageChildMdxExcerpt = 'gallery___image___childMdx___excerpt',
+    GalleryImageChildMdxHeadings = 'gallery___image___childMdx___headings',
+    GalleryImageChildMdxHtml = 'gallery___image___childMdx___html',
+    GalleryImageChildMdxMdxAst = 'gallery___image___childMdx___mdxAST',
+    GalleryImageChildMdxTableOfContents = 'gallery___image___childMdx___tableOfContents',
+    GalleryImageChildMdxTimeToRead = 'gallery___image___childMdx___timeToRead',
+    GalleryImageChildMdxId = 'gallery___image___childMdx___id',
+    GalleryImageChildMdxChildren = 'gallery___image___childMdx___children',
+    GalleryImageChildImageSharpId = 'gallery___image___childImageSharp___id',
+    GalleryImageChildImageSharpChildren = 'gallery___image___childImageSharp___children',
+    GalleryImageChildImagesJsonId = 'gallery___image___childImagesJson___id',
+    GalleryImageChildImagesJsonChildren = 'gallery___image___childImagesJson___children',
+    GalleryImageChildImagesJsonGallery = 'gallery___image___childImagesJson___gallery',
+    GalleryTitle = 'gallery___title',
+}
+
+export type ImagesJsonFilterInput = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    gallery?: Maybe<ImagesJsonGalleryFilterListInput>;
+};
+
+export type ImagesJsonGallery = {
+    image?: Maybe<File>;
+    title?: Maybe<Scalars['String']>;
+};
+
+export type ImagesJsonGalleryFilterInput = {
+    image?: Maybe<FileFilterInput>;
+    title?: Maybe<StringQueryOperatorInput>;
+};
+
+export type ImagesJsonGalleryFilterListInput = {
+    elemMatch?: Maybe<ImagesJsonGalleryFilterInput>;
+};
+
+export type ImagesJsonGroupConnection = {
+    totalCount: Scalars['Int'];
+    edges: Array<ImagesJsonEdge>;
+    nodes: Array<ImagesJson>;
+    pageInfo: PageInfo;
+    field: Scalars['String'];
+    fieldValue?: Maybe<Scalars['String']>;
+};
+
+export type ImagesJsonSortInput = {
+    fields?: Maybe<Array<Maybe<ImagesJsonFieldsEnum>>>;
+    order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+};
+
 export type Internal = {
     content?: Maybe<Scalars['String']>;
     contentDigest: Scalars['String'];
@@ -1765,8 +2063,9 @@ export enum MdxFieldsEnum {
     FrontmatterFeaturedImageChildMdxChildren = 'frontmatter___featuredImage___childMdx___children',
     FrontmatterFeaturedImageChildImageSharpId = 'frontmatter___featuredImage___childImageSharp___id',
     FrontmatterFeaturedImageChildImageSharpChildren = 'frontmatter___featuredImage___childImageSharp___children',
-    FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
-    FrontmatterTags = 'frontmatter___tags',
+    FrontmatterFeaturedImageChildImagesJsonId = 'frontmatter___featuredImage___childImagesJson___id',
+    FrontmatterFeaturedImageChildImagesJsonChildren = 'frontmatter___featuredImage___childImagesJson___children',
+    FrontmatterFeaturedImageChildImagesJsonGallery = 'frontmatter___featuredImage___childImagesJson___gallery',
     FrontmatterImageFacebookBirthtime = 'frontmatter___imageFacebook___birthtime',
     FrontmatterImageFacebookBirthtimeMs = 'frontmatter___imageFacebook___birthtimeMs',
     FrontmatterImageFacebookSourceInstanceName = 'frontmatter___imageFacebook___sourceInstanceName',
@@ -1826,6 +2125,9 @@ export enum MdxFieldsEnum {
     FrontmatterImageFacebookChildMdxChildren = 'frontmatter___imageFacebook___childMdx___children',
     FrontmatterImageFacebookChildImageSharpId = 'frontmatter___imageFacebook___childImageSharp___id',
     FrontmatterImageFacebookChildImageSharpChildren = 'frontmatter___imageFacebook___childImageSharp___children',
+    FrontmatterImageFacebookChildImagesJsonId = 'frontmatter___imageFacebook___childImagesJson___id',
+    FrontmatterImageFacebookChildImagesJsonChildren = 'frontmatter___imageFacebook___childImagesJson___children',
+    FrontmatterImageFacebookChildImagesJsonGallery = 'frontmatter___imageFacebook___childImagesJson___gallery',
     FrontmatterImageTwitterBirthtime = 'frontmatter___imageTwitter___birthtime',
     FrontmatterImageTwitterBirthtimeMs = 'frontmatter___imageTwitter___birthtimeMs',
     FrontmatterImageTwitterSourceInstanceName = 'frontmatter___imageTwitter___sourceInstanceName',
@@ -1885,6 +2187,11 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterChildMdxChildren = 'frontmatter___imageTwitter___childMdx___children',
     FrontmatterImageTwitterChildImageSharpId = 'frontmatter___imageTwitter___childImageSharp___id',
     FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
+    FrontmatterImageTwitterChildImagesJsonId = 'frontmatter___imageTwitter___childImagesJson___id',
+    FrontmatterImageTwitterChildImagesJsonChildren = 'frontmatter___imageTwitter___childImagesJson___children',
+    FrontmatterImageTwitterChildImagesJsonGallery = 'frontmatter___imageTwitter___childImagesJson___gallery',
+    FrontmatterTags = 'frontmatter___tags',
+    FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
     Body = 'body',
     Excerpt = 'excerpt',
     Headings = 'headings',
@@ -2010,10 +2317,10 @@ export type MdxFrontmatter = {
     excerpt?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
     featuredImage?: Maybe<File>;
-    featuredImagePosition?: Maybe<Scalars['String']>;
-    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
     imageFacebook?: Maybe<File>;
     imageTwitter?: Maybe<File>;
+    tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+    featuredImagePosition?: Maybe<Scalars['String']>;
 };
 
 export type MdxFrontmatterDateArgs = {
@@ -2030,10 +2337,10 @@ export type MdxFrontmatterFilterInput = {
     excerpt?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
     featuredImage?: Maybe<FileFilterInput>;
-    featuredImagePosition?: Maybe<StringQueryOperatorInput>;
-    tags?: Maybe<StringQueryOperatorInput>;
     imageFacebook?: Maybe<FileFilterInput>;
     imageTwitter?: Maybe<FileFilterInput>;
+    tags?: Maybe<StringQueryOperatorInput>;
+    featuredImagePosition?: Maybe<StringQueryOperatorInput>;
 };
 
 export type MdxGroupConnection = {
@@ -2142,6 +2449,8 @@ export type Query = {
     allSite: SiteConnection;
     directory?: Maybe<Directory>;
     allDirectory: DirectoryConnection;
+    imagesJson?: Maybe<ImagesJson>;
+    allImagesJson: ImagesJsonConnection;
 };
 
 export type QueryFileArgs = {
@@ -2183,6 +2492,7 @@ export type QueryFileArgs = {
     internal?: Maybe<InternalFilterInput>;
     childMdx?: Maybe<MdxFilterInput>;
     childImageSharp?: Maybe<ImageSharpFilterInput>;
+    childImagesJson?: Maybe<ImagesJsonFilterInput>;
 };
 
 export type QueryAllFileArgs = {
@@ -2366,6 +2676,21 @@ export type QueryDirectoryArgs = {
 export type QueryAllDirectoryArgs = {
     filter?: Maybe<DirectoryFilterInput>;
     sort?: Maybe<DirectorySortInput>;
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+};
+
+export type QueryImagesJsonArgs = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    gallery?: Maybe<ImagesJsonGalleryFilterListInput>;
+};
+
+export type QueryAllImagesJsonArgs = {
+    filter?: Maybe<ImagesJsonFilterInput>;
+    sort?: Maybe<ImagesJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
 };
@@ -2600,6 +2925,7 @@ export type SitePageContext = {
     width?: Maybe<Scalars['Int']>;
     height?: Maybe<Scalars['Int']>;
     type?: Maybe<Scalars['String']>;
+    tagRegex?: Maybe<Scalars['String']>;
     tag?: Maybe<Scalars['String']>;
 };
 
@@ -2614,6 +2940,7 @@ export type SitePageContextFilterInput = {
     width?: Maybe<IntQueryOperatorInput>;
     height?: Maybe<IntQueryOperatorInput>;
     type?: Maybe<StringQueryOperatorInput>;
+    tagRegex?: Maybe<StringQueryOperatorInput>;
     tag?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2775,6 +3102,7 @@ export enum SitePageFieldsEnum {
     ContextWidth = 'context___width',
     ContextHeight = 'context___height',
     ContextType = 'context___type',
+    ContextTagRegex = 'context___tagRegex',
     ContextTag = 'context___tag',
     PluginCreatorId = 'pluginCreator___id',
     PluginCreatorParentId = 'pluginCreator___parent___id',
@@ -2845,6 +3173,8 @@ export enum SitePageFieldsEnum {
     PluginCreatorPluginOptionsPolicy = 'pluginCreator___pluginOptions___policy',
     PluginCreatorPluginOptionsPolicyUserAgent = 'pluginCreator___pluginOptions___policy___userAgent',
     PluginCreatorPluginOptionsPolicyAllow = 'pluginCreator___pluginOptions___policy___allow',
+    PluginCreatorPluginOptionsResolve = 'pluginCreator___pluginOptions___resolve',
+    PluginCreatorPluginOptionsOptionsPath = 'pluginCreator___pluginOptions___options___path',
     PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
     PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
     PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
@@ -3070,6 +3400,8 @@ export enum SitePluginFieldsEnum {
     PluginOptionsPolicy = 'pluginOptions___policy',
     PluginOptionsPolicyUserAgent = 'pluginOptions___policy___userAgent',
     PluginOptionsPolicyAllow = 'pluginOptions___policy___allow',
+    PluginOptionsResolve = 'pluginOptions___resolve',
+    PluginOptionsOptionsPath = 'pluginOptions___options___path',
     PluginOptionsPathCheck = 'pluginOptions___pathCheck',
     NodeApIs = 'nodeAPIs',
     BrowserApIs = 'browserAPIs',
@@ -3202,6 +3534,8 @@ export type SitePluginPluginOptions = {
     icon?: Maybe<Scalars['String']>;
     feeds?: Maybe<Array<Maybe<SitePluginPluginOptionsFeeds>>>;
     policy?: Maybe<Array<Maybe<SitePluginPluginOptionsPolicy>>>;
+    resolve?: Maybe<Scalars['String']>;
+    options?: Maybe<SitePluginPluginOptionsOptions>;
     pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
@@ -3245,6 +3579,8 @@ export type SitePluginPluginOptionsFilterInput = {
     icon?: Maybe<StringQueryOperatorInput>;
     feeds?: Maybe<SitePluginPluginOptionsFeedsFilterListInput>;
     policy?: Maybe<SitePluginPluginOptionsPolicyFilterListInput>;
+    resolve?: Maybe<StringQueryOperatorInput>;
+    options?: Maybe<SitePluginPluginOptionsOptionsFilterInput>;
     pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 
@@ -3288,6 +3624,14 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
     tracedSVG?: Maybe<BooleanQueryOperatorInput>;
     loading?: Maybe<StringQueryOperatorInput>;
     showLineNumbers?: Maybe<BooleanQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsOptions = {
+    path?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsOptionsFilterInput = {
+    path?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPlugins = {
@@ -3541,22 +3885,36 @@ export type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = Pick<
     'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
 >;
 
-export type GetImagesQueryVariables = {};
-
-export type GetImagesQuery = {
-    allFile: {
-        edges: Array<{
-            node: Pick<File, 'name' | 'relativeDirectory'> & {
-                childImageSharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }>;
-            };
-        }>;
-    };
-};
-
 export type RecentPostsQueryVariables = {};
 
 export type RecentPostsQuery = {
     posts: { edges: Array<{ node: { frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'slug'>> } }> };
+};
+
+export type GetImagesQueryVariables = {};
+
+export type GetImagesQuery = {
+    allImagesJson: {
+        edges: Array<{
+            node: {
+                gallery: Maybe<
+                    Array<
+                        Maybe<
+                            Pick<ImagesJsonGallery, 'title'> & {
+                                image: Maybe<
+                                    Pick<File, 'name' | 'relativeDirectory'> & {
+                                        childImageSharp: Maybe<{
+                                            fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment>;
+                                        }>;
+                                    }
+                                >;
+                            }
+                        >
+                    >
+                >;
+            };
+        }>;
+    };
 };
 
 export type SiteMetaDataQueryVariables = {};
@@ -3705,7 +4063,7 @@ export type PageBySlugQuery = {
 };
 
 export type PostsByTagQueryVariables = {
-    tag: Scalars['String'];
+    tagRegex: Scalars['String'];
 };
 
 export type PostsByTagQuery = {

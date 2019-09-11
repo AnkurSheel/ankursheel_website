@@ -28,18 +28,23 @@ const ImageGallery = (props: ImageGalleryProps) => {
         | undefined
     >(undefined);
     const {
-        allFile: { edges },
+        allImagesJson: { edges },
     }: GetImagesQuery = useStaticQuery(
         graphql`
             query GetImages {
-                allFile(sort: { fields: name, order: ASC }, filter: { relativeDirectory: { regex: "/images/" } }) {
+                allImagesJson {
                     edges {
                         node {
-                            name
-                            relativeDirectory
-                            childImageSharp {
-                                fluid(maxWidth: 600) {
-                                    ...GatsbyImageSharpFluid_withWebp
+                            gallery {
+                                title
+                                image {
+                                    name
+                                    relativeDirectory
+                                    childImageSharp {
+                                        fluid(maxWidth: 600) {
+                                            ...GatsbyImageSharpFluid_withWebp
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -48,61 +53,64 @@ const ImageGallery = (props: ImageGalleryProps) => {
             }
         `
     );
+    console.log({ edges });
     return (
         <>
             <div css={styles.container}>
-                {edges
-                    .filter(edge => {
-                        const {
-                            node: { relativeDirectory },
-                        } = edge;
-                        if (!relativeDirectory) {
-                            return false;
-                        }
-                        const shouldShow = relativeDirectory.includes(props.relativeDirectory);
-                        return shouldShow && props.subDirectory
-                            ? relativeDirectory.includes(props.subDirectory)
-                            : shouldShow;
-                    })
-                    .map((edge, i) => {
-                        const {
-                            node: { name, childImageSharp },
-                        } = edge;
-                        const image = childImageSharp && childImageSharp.fluid;
-                        return image ? (
-                            <div
-                                key={name}
-                                onMouseEnter={() => {
-                                    if (!showModal) {
-                                        setActiveIndex(i);
-                                    }
-                                }}
-                                onMouseLeave={() => {
-                                    setActiveIndex(-1);
-                                }}
-                            >
-                                <ImageWithOverlay
+                {edges.map(({ node: { gallery } }, i) => {
+                    if (!gallery) {
+                        return <></>;
+                    }
+                    return gallery
+                        .filter(g => {
+                            if (!g || !g.image || !g.image.relativeDirectory) {
+                                return false;
+                            }
+                            const relativeDirectory = g.image.relativeDirectory;
+                            const shouldShow = relativeDirectory.includes(props.relativeDirectory);
+                            return shouldShow && props.subDirectory
+                                ? relativeDirectory.includes(props.subDirectory)
+                                : shouldShow;
+                        })
+                        .map(g => {
+                            const image = g && g.image;
+                            const fluid = image && image.childImageSharp && image.childImageSharp.fluid;
+                            const name = image && image.name;
+                            return fluid && name ? (
+                                <div
                                     key={name}
-                                    altText={name}
-                                    image={image}
-                                    aspectRatio={1}
-                                    showOverlay={i === activeIndex}
-                                    onClick={() => {
-                                        setActiveIndex(-1);
-                                        setShowModal(true);
-                                        setSelectedImage(image);
+                                    onMouseEnter={() => {
+                                        if (!showModal) {
+                                            setActiveIndex(i);
+                                        }
                                     }}
-                                    onKeyUp={() => {
+                                    onMouseLeave={() => {
                                         setActiveIndex(-1);
-                                        setShowModal(true);
-                                        setSelectedImage(image);
                                     }}
-                                />
-                            </div>
-                        ) : (
-                            <></>
-                        );
-                    })}
+                                >
+                                    <ImageWithOverlay
+                                        key={name}
+                                        altText={name}
+                                        image={fluid}
+                                        aspectRatio={1}
+                                        showOverlay={i === activeIndex}
+                                        onClick={() => {
+                                            setActiveIndex(-1);
+                                            setShowModal(true);
+                                            setSelectedImage(fluid);
+                                        }}
+                                        onKeyUp={() => {
+                                            setActiveIndex(-1);
+                                            setShowModal(true);
+                                            setSelectedImage(fluid);
+                                        }}
+                                    />
+                                </div>
+                            ) : (
+                                <></>
+                            );
+                        });
+                })}
                 {showModal && selectedImage && (
                     <LightBoxModal
                         image={selectedImage}

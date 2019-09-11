@@ -64,5 +64,9 @@ module.exports = {
             resolve: 'gatsby-plugin-robots-txt',
             options: pluginOptions.robotsTxt,
         },
+        {
+            resolve: `gatsby-transformer-json`,
+            options: pluginOptions.transformerjson,
+        },
     ],
 };
