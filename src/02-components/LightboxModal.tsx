@@ -36,15 +36,28 @@ const styles = {
         marginTop: '0.5rem',
         cursor: 'pointer',
     }),
+    caption: css({
+        textAlign: 'center',
+        fontSize: '0.8em',
+        fontStyle: 'italic',
+    }),
+};
+
+export type LightBoxModalImage = {
+    image: Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+    caption: string | undefined;
 };
 
 interface LightBoxModalProps {
-    image: Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+    image: LightBoxModalImage;
     onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 const LightBoxModal = (props: LightBoxModalProps) => {
-    const { onClick, image } = props;
+    const {
+        onClick,
+        image: { image, caption },
+    } = props;
     useEffect(() => {
         document.body.style.overflow = 'hidden';
 
@@ -54,22 +67,23 @@ const LightBoxModal = (props: LightBoxModalProps) => {
     }, []);
 
     const fluid = {
-        aspectRatio: (image && image.aspectRatio) || 1,
-        src: (image && image.src) || '',
-        srcSet: (image && image.srcSet) || '',
-        base64: image && image.base64,
-        sizes: (image && image.sizes) || '',
-        srcSetWebp: image && image.srcSetWebp,
-        srcWebp: image && image.srcWebp,
+        aspectRatio: image.aspectRatio || 1,
+        src: image.src || '',
+        srcSet: image.srcSet || '',
+        base64: image.base64,
+        sizes: image.sizes || '',
+        srcSetWebp: image.srcSetWebp,
+        srcWebp: image.srcWebp,
     };
     return (
         <div css={styles.modal}>
-            <div css={styles.container}>
+            <figure css={styles.container}>
                 <Img fluid={fluid} imgStyle={{ objectFit: 'contain' }} />
+                <figcaption css={styles.caption}>{caption}</figcaption>
                 <button type="button" css={styles.button} onClick={onClick}>
                     Close
                 </button>
-            </div>
+            </figure>
         </div>
     );
 };

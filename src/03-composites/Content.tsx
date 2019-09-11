@@ -22,6 +22,11 @@ const styles = {
             padding: 0,
             paddingLeft: '2.8em',
         },
+        figcaption: {
+            textAlign: 'center',
+            fontSize: '0.8em',
+            fontStyle: 'italic',
+        },
     }),
 };
 
