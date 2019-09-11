@@ -1,0 +1,18 @@
+{
+    "gallery": [
+        { "image": "./CapeReinga-12.jpg", "title": "Sunset at Cape Reinga" },
+        { "image": "./gallery1/CapeReinga-14.jpg", "title": "The moon comes out to play" },
+        { "image": "./gallery2/CapeReinga-15.jpg", "title": "" },
+        { "image": "./gallery2/CapeReinga-16.jpg", "title": "" },
+        { "image": "./gallery1/CapeReinga-17.jpg", "title": "Keep the ships safe" },
+        { "image": "./gallery1/CapeReinga-13.jpg", "title": "The Lighthouse at Cape Reinga" },
+        { "image": "./CapeReinga-18.jpg", "title": "Beach driving anyone?" },
+        { "image": "./CapeReinga-19.jpg", "title": "Hundertwasser toilet block" },
+        { "image": "./gallery4/CapeReinga-20.jpg", "title": "Want to relax in the parking lot" },
+        { "image": "./gallery4/CapeReinga-21.jpg", "title": "Wall Art" },
+        { "image": "./gallery4/CapeReinga-22.jpg", "title": "Wall Art" },
+        { "image": "./gallery3/CapeReinga-23.jpg", "title": "Bay of Islands Vintage Railway" },
+        { "image": "./gallery3/CapeReinga-24.jpg", "title": "Trains run" },
+        { "image": "./gallery3/CapeReinga-25.jpg", "title": "TimeTable" }
+    ]
+}
