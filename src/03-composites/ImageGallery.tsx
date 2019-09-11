@@ -63,7 +63,7 @@ const ImageGallery = (props: ImageGalleryProps) => {
                             if (!g || !g.image || !g.image.relativeDirectory) {
                                 return false;
                             }
-                            const relativeDirectory = g.image.relativeDirectory;
+                            const { relativeDirectory } = g.image;
                             const shouldShow = relativeDirectory.includes(props.relativeDirectory);
                             return shouldShow && props.subDirectory
                                 ? relativeDirectory.includes(props.subDirectory)
