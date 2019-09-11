@@ -2,8 +2,8 @@ import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
 import ImageWithOverlay from '../02-components/ImageWithOverlay';
-import LightBoxModal from '../02-components/LightboxModal';
-import { GetImagesQuery, ImageSharpFluid } from '../graphqlTypes';
+import LightBoxModal, { LightBoxImage } from '../02-components/LightboxModal';
+import { GetImagesQuery } from '../graphqlTypes';
 
 const styles = {
     container: css({
@@ -23,10 +23,7 @@ interface ImageGalleryProps {
 const ImageGallery = (props: ImageGalleryProps) => {
     const [activeIndex, setActiveIndex] = useState(-1);
     const [showModal, setShowModal] = useState(false);
-    const [selectedImage, setSelectedImage] = useState<
-        | Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>
-        | undefined
-    >(undefined);
+    const [selectedImage, setSelectedImage] = useState<LightBoxImage | undefined>(undefined);
     const {
         allImagesJson: { edges },
     }: GetImagesQuery = useStaticQuery(
@@ -76,6 +73,7 @@ const ImageGallery = (props: ImageGalleryProps) => {
                             const image = g && g.image;
                             const fluid = image && image.childImageSharp && image.childImageSharp.fluid;
                             const name = image && image.name;
+                            const title = g && (g.title || name);
                             return fluid && name ? (
                                 <div
                                     key={name}
@@ -90,19 +88,19 @@ const ImageGallery = (props: ImageGalleryProps) => {
                                 >
                                     <ImageWithOverlay
                                         key={name}
-                                        altText={name}
+                                        altText={title}
                                         image={fluid}
                                         aspectRatio={1}
                                         showOverlay={i === activeIndex}
                                         onClick={() => {
                                             setActiveIndex(-1);
                                             setShowModal(true);
-                                            setSelectedImage(fluid);
+                                            setSelectedImage({ caption: title, image: fluid });
                                         }}
                                         onKeyUp={() => {
                                             setActiveIndex(-1);
                                             setShowModal(true);
-                                            setSelectedImage(fluid);
+                                            setSelectedImage({ caption: title, image: fluid });
                                         }}
                                     />
                                 </div>
