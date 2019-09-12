@@ -59,15 +59,11 @@ const main = async () => {
         const fbFile = `${destPrefix}facebook.png`;
         const twFile = `${destPrefix}twitter.png`;
 
-        if (file['generate-card'] !== false) {
-            await takeScreenshot(`${baseUrl}${file.slug}/image_fb`, 1200, 630, fbFile);
-            console.log(`Created ${fbFile}`);
-        }
+        await takeScreenshot(`${baseUrl}${file.slug}/image_fb`, 1200, 630, fbFile);
+        console.log(`Created ${fbFile}`);
 
-        if (file['generate-card'] !== false) {
-            await takeScreenshot(`${baseUrl}${file.slug}/image_tw`, 440, 220, twFile);
-            console.log(`Created ${twFile}`);
-        }
+        await takeScreenshot(`${baseUrl}${file.slug}/image_tw`, 440, 220, twFile);
+        console.log(`Created ${twFile}`);
     }
 };
 
