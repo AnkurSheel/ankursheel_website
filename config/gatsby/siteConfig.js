@@ -18,7 +18,7 @@ module.exports = {
         },
         {
             label: 'CV',
-            url: './cv',
+            url: '/cv',
         },
         {
             label: 'Blog',
