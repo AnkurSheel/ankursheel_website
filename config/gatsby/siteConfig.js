@@ -17,6 +17,10 @@ module.exports = {
             url: '/',
         },
         {
+            label: 'Personal Game Projects',
+            url: './personal-game-projects',
+        },
+        {
             label: 'Blog',
             url: '/blog',
         },
