@@ -9,16 +9,8 @@ import prettier from 'prettier';
 const padLeft0 = (n: number) => n.toString().padStart(2, '0');
 const fromRoot = (...p: string[]) => path.join(__dirname, '..', ...p);
 const formatDate = (d: Date) => `${d.getFullYear()}-${padLeft0(d.getMonth() + 1)}-${padLeft0(d.getDate())}`;
-const removeEmpty = (obj: any) => {
-    return Object.entries(obj).reduce((o: any, [key, value]) => {
-        if (value) {
-            o[key] = value;
-        }
-        return o;
-    }, {});
-};
 
-const listify = (a: string) => (a && a.trim().length ? a.split(',').map(s => s.trim()) : null);
+const listify = (a: string) => (a && a.trim().length ? a.split(',').map(s => s.trim()) : '');
 
 const generateBlogPost = async () => {
     const prompt = await inquirer.prompt([
@@ -39,13 +31,13 @@ const generateBlogPost = async () => {
         },
         {
             type: 'list',
-            name: 'featuredImage',
-            message: 'Add a featured image (yes/no)',
+            name: 'images',
+            message: 'Post has images (yes/no)',
             choices: [{ name: 'Yes', value: 'Y' }, { name: 'No', value: 'N' }],
         },
     ]);
 
-    const { title, description, tags, featuredImage } = prompt;
+    const { title, description, tags, images } = prompt;
 
     const date = new Date();
     const slug = slugify(title);
@@ -53,27 +45,44 @@ const generateBlogPost = async () => {
 
     mkdirp.sync(destination);
 
-    const yaml = jsToYaml.stringify(
-        removeEmpty({
-            author: 'Ankur Sheel',
-            date: formatDate(new Date()),
-            slug,
-            title,
-            excerpt: description,
-            tags: listify(tags),
-            featuredImage: featuredImage === 'Y' ? './cover.png' : null,
-            imageFacebook: featuredImage === 'Y' ? './image-facebook.png' : null,
-            imageTwitter: featuredImage === 'Y' ? './image-twitter.png' : null,
-            'generate-card': featuredImage === 'N' ? 'false' : null,
-        })
-    );
+    const yaml = jsToYaml.stringify({
+        author: 'Ankur Sheel',
+        date: formatDate(new Date()),
+        slug,
+        title,
+        excerpt: description,
+        tags: listify(tags),
+        featuredImage: '',
+        featuredImagePosition: '',
+        imageFacebook: './image-facebook.png',
+        imageTwitter: './image-twitter.png',
+    });
     const markdown = prettier.format(`---\r\n${yaml}\r\n---\r\n`, {
-        ...require('../.prettierrc'),
+        ...require('../.prettierrc'), // eslint-disable-line global-require
+        trailingComma: 'es5',
+        endOfLine: 'crlf',
         parser: 'mdx',
     });
 
     fs.writeFileSync(path.join(destination, 'index.mdx'), markdown);
-    console.log(`${destination.replace(process.cwd(), '')} is all ready for you`);
+
+    if (images === 'Y') {
+        const data = {
+            gallery: [{ image: `./${slug}-1.jpg`, title: '' }],
+        };
+
+        const json = prettier.format(JSON.stringify(data, null, 4), {
+            ...require('../.prettierrc'), // eslint-disable-line global-require
+            trailingComma: 'es5',
+            endOfLine: 'crlf',
+            parser: 'json',
+        });
+        const imagesDestination = path.join(destination, 'images');
+        mkdirp.sync(imagesDestination);
+        fs.writeFileSync(path.join(imagesDestination, 'data.json'), json);
+    }
+
+    console.log(`${destination.replace(process.cwd(), '')} is all ready for you`); // eslint-disable-line no-console
 };
 
 generateBlogPost();
