@@ -368,9 +368,10 @@ export type File = Node & {
     parent?: Maybe<Node>;
     children: Array<Node>;
     internal: Internal;
-    childMdx?: Maybe<Mdx>;
     childImageSharp?: Maybe<ImageSharp>;
+    childMdx?: Maybe<Mdx>;
     childImagesJson?: Maybe<ImagesJson>;
+    childMarkdownRemark?: Maybe<MarkdownRemark>;
 };
 
 export type FileModifiedTimeArgs = {
@@ -566,167 +567,6 @@ export enum FileFieldsEnum {
     InternalMediaType = 'internal___mediaType',
     InternalOwner = 'internal___owner',
     InternalType = 'internal___type',
-    ChildMdxRawBody = 'childMdx___rawBody',
-    ChildMdxFileAbsolutePath = 'childMdx___fileAbsolutePath',
-    ChildMdxFrontmatterTitle = 'childMdx___frontmatter___title',
-    ChildMdxFrontmatterAuthor = 'childMdx___frontmatter___author',
-    ChildMdxFrontmatterDate = 'childMdx___frontmatter___date',
-    ChildMdxFrontmatterExcerpt = 'childMdx___frontmatter___excerpt',
-    ChildMdxFrontmatterSlug = 'childMdx___frontmatter___slug',
-    ChildMdxFrontmatterFeaturedImageBirthtime = 'childMdx___frontmatter___featuredImage___birthtime',
-    ChildMdxFrontmatterFeaturedImageBirthtimeMs = 'childMdx___frontmatter___featuredImage___birthtimeMs',
-    ChildMdxFrontmatterFeaturedImageSourceInstanceName = 'childMdx___frontmatter___featuredImage___sourceInstanceName',
-    ChildMdxFrontmatterFeaturedImageAbsolutePath = 'childMdx___frontmatter___featuredImage___absolutePath',
-    ChildMdxFrontmatterFeaturedImageRelativePath = 'childMdx___frontmatter___featuredImage___relativePath',
-    ChildMdxFrontmatterFeaturedImageExtension = 'childMdx___frontmatter___featuredImage___extension',
-    ChildMdxFrontmatterFeaturedImageSize = 'childMdx___frontmatter___featuredImage___size',
-    ChildMdxFrontmatterFeaturedImagePrettySize = 'childMdx___frontmatter___featuredImage___prettySize',
-    ChildMdxFrontmatterFeaturedImageModifiedTime = 'childMdx___frontmatter___featuredImage___modifiedTime',
-    ChildMdxFrontmatterFeaturedImageAccessTime = 'childMdx___frontmatter___featuredImage___accessTime',
-    ChildMdxFrontmatterFeaturedImageChangeTime = 'childMdx___frontmatter___featuredImage___changeTime',
-    ChildMdxFrontmatterFeaturedImageBirthTime = 'childMdx___frontmatter___featuredImage___birthTime',
-    ChildMdxFrontmatterFeaturedImageRoot = 'childMdx___frontmatter___featuredImage___root',
-    ChildMdxFrontmatterFeaturedImageDir = 'childMdx___frontmatter___featuredImage___dir',
-    ChildMdxFrontmatterFeaturedImageBase = 'childMdx___frontmatter___featuredImage___base',
-    ChildMdxFrontmatterFeaturedImageExt = 'childMdx___frontmatter___featuredImage___ext',
-    ChildMdxFrontmatterFeaturedImageName = 'childMdx___frontmatter___featuredImage___name',
-    ChildMdxFrontmatterFeaturedImageRelativeDirectory = 'childMdx___frontmatter___featuredImage___relativeDirectory',
-    ChildMdxFrontmatterFeaturedImageDev = 'childMdx___frontmatter___featuredImage___dev',
-    ChildMdxFrontmatterFeaturedImageMode = 'childMdx___frontmatter___featuredImage___mode',
-    ChildMdxFrontmatterFeaturedImageNlink = 'childMdx___frontmatter___featuredImage___nlink',
-    ChildMdxFrontmatterFeaturedImageUid = 'childMdx___frontmatter___featuredImage___uid',
-    ChildMdxFrontmatterFeaturedImageGid = 'childMdx___frontmatter___featuredImage___gid',
-    ChildMdxFrontmatterFeaturedImageRdev = 'childMdx___frontmatter___featuredImage___rdev',
-    ChildMdxFrontmatterFeaturedImageIno = 'childMdx___frontmatter___featuredImage___ino',
-    ChildMdxFrontmatterFeaturedImageAtimeMs = 'childMdx___frontmatter___featuredImage___atimeMs',
-    ChildMdxFrontmatterFeaturedImageMtimeMs = 'childMdx___frontmatter___featuredImage___mtimeMs',
-    ChildMdxFrontmatterFeaturedImageCtimeMs = 'childMdx___frontmatter___featuredImage___ctimeMs',
-    ChildMdxFrontmatterFeaturedImageAtime = 'childMdx___frontmatter___featuredImage___atime',
-    ChildMdxFrontmatterFeaturedImageMtime = 'childMdx___frontmatter___featuredImage___mtime',
-    ChildMdxFrontmatterFeaturedImageCtime = 'childMdx___frontmatter___featuredImage___ctime',
-    ChildMdxFrontmatterFeaturedImagePublicUrl = 'childMdx___frontmatter___featuredImage___publicURL',
-    ChildMdxFrontmatterFeaturedImageId = 'childMdx___frontmatter___featuredImage___id',
-    ChildMdxFrontmatterFeaturedImageChildren = 'childMdx___frontmatter___featuredImage___children',
-    ChildMdxFrontmatterImageFacebookBirthtime = 'childMdx___frontmatter___imageFacebook___birthtime',
-    ChildMdxFrontmatterImageFacebookBirthtimeMs = 'childMdx___frontmatter___imageFacebook___birthtimeMs',
-    ChildMdxFrontmatterImageFacebookSourceInstanceName = 'childMdx___frontmatter___imageFacebook___sourceInstanceName',
-    ChildMdxFrontmatterImageFacebookAbsolutePath = 'childMdx___frontmatter___imageFacebook___absolutePath',
-    ChildMdxFrontmatterImageFacebookRelativePath = 'childMdx___frontmatter___imageFacebook___relativePath',
-    ChildMdxFrontmatterImageFacebookExtension = 'childMdx___frontmatter___imageFacebook___extension',
-    ChildMdxFrontmatterImageFacebookSize = 'childMdx___frontmatter___imageFacebook___size',
-    ChildMdxFrontmatterImageFacebookPrettySize = 'childMdx___frontmatter___imageFacebook___prettySize',
-    ChildMdxFrontmatterImageFacebookModifiedTime = 'childMdx___frontmatter___imageFacebook___modifiedTime',
-    ChildMdxFrontmatterImageFacebookAccessTime = 'childMdx___frontmatter___imageFacebook___accessTime',
-    ChildMdxFrontmatterImageFacebookChangeTime = 'childMdx___frontmatter___imageFacebook___changeTime',
-    ChildMdxFrontmatterImageFacebookBirthTime = 'childMdx___frontmatter___imageFacebook___birthTime',
-    ChildMdxFrontmatterImageFacebookRoot = 'childMdx___frontmatter___imageFacebook___root',
-    ChildMdxFrontmatterImageFacebookDir = 'childMdx___frontmatter___imageFacebook___dir',
-    ChildMdxFrontmatterImageFacebookBase = 'childMdx___frontmatter___imageFacebook___base',
-    ChildMdxFrontmatterImageFacebookExt = 'childMdx___frontmatter___imageFacebook___ext',
-    ChildMdxFrontmatterImageFacebookName = 'childMdx___frontmatter___imageFacebook___name',
-    ChildMdxFrontmatterImageFacebookRelativeDirectory = 'childMdx___frontmatter___imageFacebook___relativeDirectory',
-    ChildMdxFrontmatterImageFacebookDev = 'childMdx___frontmatter___imageFacebook___dev',
-    ChildMdxFrontmatterImageFacebookMode = 'childMdx___frontmatter___imageFacebook___mode',
-    ChildMdxFrontmatterImageFacebookNlink = 'childMdx___frontmatter___imageFacebook___nlink',
-    ChildMdxFrontmatterImageFacebookUid = 'childMdx___frontmatter___imageFacebook___uid',
-    ChildMdxFrontmatterImageFacebookGid = 'childMdx___frontmatter___imageFacebook___gid',
-    ChildMdxFrontmatterImageFacebookRdev = 'childMdx___frontmatter___imageFacebook___rdev',
-    ChildMdxFrontmatterImageFacebookIno = 'childMdx___frontmatter___imageFacebook___ino',
-    ChildMdxFrontmatterImageFacebookAtimeMs = 'childMdx___frontmatter___imageFacebook___atimeMs',
-    ChildMdxFrontmatterImageFacebookMtimeMs = 'childMdx___frontmatter___imageFacebook___mtimeMs',
-    ChildMdxFrontmatterImageFacebookCtimeMs = 'childMdx___frontmatter___imageFacebook___ctimeMs',
-    ChildMdxFrontmatterImageFacebookAtime = 'childMdx___frontmatter___imageFacebook___atime',
-    ChildMdxFrontmatterImageFacebookMtime = 'childMdx___frontmatter___imageFacebook___mtime',
-    ChildMdxFrontmatterImageFacebookCtime = 'childMdx___frontmatter___imageFacebook___ctime',
-    ChildMdxFrontmatterImageFacebookPublicUrl = 'childMdx___frontmatter___imageFacebook___publicURL',
-    ChildMdxFrontmatterImageFacebookId = 'childMdx___frontmatter___imageFacebook___id',
-    ChildMdxFrontmatterImageFacebookChildren = 'childMdx___frontmatter___imageFacebook___children',
-    ChildMdxFrontmatterImageTwitterBirthtime = 'childMdx___frontmatter___imageTwitter___birthtime',
-    ChildMdxFrontmatterImageTwitterBirthtimeMs = 'childMdx___frontmatter___imageTwitter___birthtimeMs',
-    ChildMdxFrontmatterImageTwitterSourceInstanceName = 'childMdx___frontmatter___imageTwitter___sourceInstanceName',
-    ChildMdxFrontmatterImageTwitterAbsolutePath = 'childMdx___frontmatter___imageTwitter___absolutePath',
-    ChildMdxFrontmatterImageTwitterRelativePath = 'childMdx___frontmatter___imageTwitter___relativePath',
-    ChildMdxFrontmatterImageTwitterExtension = 'childMdx___frontmatter___imageTwitter___extension',
-    ChildMdxFrontmatterImageTwitterSize = 'childMdx___frontmatter___imageTwitter___size',
-    ChildMdxFrontmatterImageTwitterPrettySize = 'childMdx___frontmatter___imageTwitter___prettySize',
-    ChildMdxFrontmatterImageTwitterModifiedTime = 'childMdx___frontmatter___imageTwitter___modifiedTime',
-    ChildMdxFrontmatterImageTwitterAccessTime = 'childMdx___frontmatter___imageTwitter___accessTime',
-    ChildMdxFrontmatterImageTwitterChangeTime = 'childMdx___frontmatter___imageTwitter___changeTime',
-    ChildMdxFrontmatterImageTwitterBirthTime = 'childMdx___frontmatter___imageTwitter___birthTime',
-    ChildMdxFrontmatterImageTwitterRoot = 'childMdx___frontmatter___imageTwitter___root',
-    ChildMdxFrontmatterImageTwitterDir = 'childMdx___frontmatter___imageTwitter___dir',
-    ChildMdxFrontmatterImageTwitterBase = 'childMdx___frontmatter___imageTwitter___base',
-    ChildMdxFrontmatterImageTwitterExt = 'childMdx___frontmatter___imageTwitter___ext',
-    ChildMdxFrontmatterImageTwitterName = 'childMdx___frontmatter___imageTwitter___name',
-    ChildMdxFrontmatterImageTwitterRelativeDirectory = 'childMdx___frontmatter___imageTwitter___relativeDirectory',
-    ChildMdxFrontmatterImageTwitterDev = 'childMdx___frontmatter___imageTwitter___dev',
-    ChildMdxFrontmatterImageTwitterMode = 'childMdx___frontmatter___imageTwitter___mode',
-    ChildMdxFrontmatterImageTwitterNlink = 'childMdx___frontmatter___imageTwitter___nlink',
-    ChildMdxFrontmatterImageTwitterUid = 'childMdx___frontmatter___imageTwitter___uid',
-    ChildMdxFrontmatterImageTwitterGid = 'childMdx___frontmatter___imageTwitter___gid',
-    ChildMdxFrontmatterImageTwitterRdev = 'childMdx___frontmatter___imageTwitter___rdev',
-    ChildMdxFrontmatterImageTwitterIno = 'childMdx___frontmatter___imageTwitter___ino',
-    ChildMdxFrontmatterImageTwitterAtimeMs = 'childMdx___frontmatter___imageTwitter___atimeMs',
-    ChildMdxFrontmatterImageTwitterMtimeMs = 'childMdx___frontmatter___imageTwitter___mtimeMs',
-    ChildMdxFrontmatterImageTwitterCtimeMs = 'childMdx___frontmatter___imageTwitter___ctimeMs',
-    ChildMdxFrontmatterImageTwitterAtime = 'childMdx___frontmatter___imageTwitter___atime',
-    ChildMdxFrontmatterImageTwitterMtime = 'childMdx___frontmatter___imageTwitter___mtime',
-    ChildMdxFrontmatterImageTwitterCtime = 'childMdx___frontmatter___imageTwitter___ctime',
-    ChildMdxFrontmatterImageTwitterPublicUrl = 'childMdx___frontmatter___imageTwitter___publicURL',
-    ChildMdxFrontmatterImageTwitterId = 'childMdx___frontmatter___imageTwitter___id',
-    ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
-    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
-    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
-    ChildMdxBody = 'childMdx___body',
-    ChildMdxExcerpt = 'childMdx___excerpt',
-    ChildMdxHeadings = 'childMdx___headings',
-    ChildMdxHeadingsValue = 'childMdx___headings___value',
-    ChildMdxHeadingsDepth = 'childMdx___headings___depth',
-    ChildMdxHtml = 'childMdx___html',
-    ChildMdxMdxAst = 'childMdx___mdxAST',
-    ChildMdxTableOfContents = 'childMdx___tableOfContents',
-    ChildMdxTimeToRead = 'childMdx___timeToRead',
-    ChildMdxWordCountParagraphs = 'childMdx___wordCount___paragraphs',
-    ChildMdxWordCountSentences = 'childMdx___wordCount___sentences',
-    ChildMdxWordCountWords = 'childMdx___wordCount___words',
-    ChildMdxId = 'childMdx___id',
-    ChildMdxParentId = 'childMdx___parent___id',
-    ChildMdxParentParentId = 'childMdx___parent___parent___id',
-    ChildMdxParentParentChildren = 'childMdx___parent___parent___children',
-    ChildMdxParentChildren = 'childMdx___parent___children',
-    ChildMdxParentChildrenId = 'childMdx___parent___children___id',
-    ChildMdxParentChildrenChildren = 'childMdx___parent___children___children',
-    ChildMdxParentInternalContent = 'childMdx___parent___internal___content',
-    ChildMdxParentInternalContentDigest = 'childMdx___parent___internal___contentDigest',
-    ChildMdxParentInternalDescription = 'childMdx___parent___internal___description',
-    ChildMdxParentInternalFieldOwners = 'childMdx___parent___internal___fieldOwners',
-    ChildMdxParentInternalIgnoreType = 'childMdx___parent___internal___ignoreType',
-    ChildMdxParentInternalMediaType = 'childMdx___parent___internal___mediaType',
-    ChildMdxParentInternalOwner = 'childMdx___parent___internal___owner',
-    ChildMdxParentInternalType = 'childMdx___parent___internal___type',
-    ChildMdxChildren = 'childMdx___children',
-    ChildMdxChildrenId = 'childMdx___children___id',
-    ChildMdxChildrenParentId = 'childMdx___children___parent___id',
-    ChildMdxChildrenParentChildren = 'childMdx___children___parent___children',
-    ChildMdxChildrenChildren = 'childMdx___children___children',
-    ChildMdxChildrenChildrenId = 'childMdx___children___children___id',
-    ChildMdxChildrenChildrenChildren = 'childMdx___children___children___children',
-    ChildMdxChildrenInternalContent = 'childMdx___children___internal___content',
-    ChildMdxChildrenInternalContentDigest = 'childMdx___children___internal___contentDigest',
-    ChildMdxChildrenInternalDescription = 'childMdx___children___internal___description',
-    ChildMdxChildrenInternalFieldOwners = 'childMdx___children___internal___fieldOwners',
-    ChildMdxChildrenInternalIgnoreType = 'childMdx___children___internal___ignoreType',
-    ChildMdxChildrenInternalMediaType = 'childMdx___children___internal___mediaType',
-    ChildMdxChildrenInternalOwner = 'childMdx___children___internal___owner',
-    ChildMdxChildrenInternalType = 'childMdx___children___internal___type',
-    ChildMdxInternalContent = 'childMdx___internal___content',
-    ChildMdxInternalContentDigest = 'childMdx___internal___contentDigest',
-    ChildMdxInternalDescription = 'childMdx___internal___description',
-    ChildMdxInternalFieldOwners = 'childMdx___internal___fieldOwners',
-    ChildMdxInternalIgnoreType = 'childMdx___internal___ignoreType',
-    ChildMdxInternalMediaType = 'childMdx___internal___mediaType',
-    ChildMdxInternalOwner = 'childMdx___internal___owner',
-    ChildMdxInternalType = 'childMdx___internal___type',
     ChildImageSharpId = 'childImageSharp___id',
     ChildImageSharpFixedBase64 = 'childImageSharp___fixed___base64',
     ChildImageSharpFixedTracedSvg = 'childImageSharp___fixed___tracedSVG',
@@ -818,6 +658,167 @@ export enum FileFieldsEnum {
     ChildImageSharpInternalMediaType = 'childImageSharp___internal___mediaType',
     ChildImageSharpInternalOwner = 'childImageSharp___internal___owner',
     ChildImageSharpInternalType = 'childImageSharp___internal___type',
+    ChildMdxRawBody = 'childMdx___rawBody',
+    ChildMdxFileAbsolutePath = 'childMdx___fileAbsolutePath',
+    ChildMdxFrontmatterTitle = 'childMdx___frontmatter___title',
+    ChildMdxFrontmatterAuthor = 'childMdx___frontmatter___author',
+    ChildMdxFrontmatterDate = 'childMdx___frontmatter___date',
+    ChildMdxFrontmatterExcerpt = 'childMdx___frontmatter___excerpt',
+    ChildMdxFrontmatterSlug = 'childMdx___frontmatter___slug',
+    ChildMdxFrontmatterImageFacebookBirthtime = 'childMdx___frontmatter___imageFacebook___birthtime',
+    ChildMdxFrontmatterImageFacebookBirthtimeMs = 'childMdx___frontmatter___imageFacebook___birthtimeMs',
+    ChildMdxFrontmatterImageFacebookSourceInstanceName = 'childMdx___frontmatter___imageFacebook___sourceInstanceName',
+    ChildMdxFrontmatterImageFacebookAbsolutePath = 'childMdx___frontmatter___imageFacebook___absolutePath',
+    ChildMdxFrontmatterImageFacebookRelativePath = 'childMdx___frontmatter___imageFacebook___relativePath',
+    ChildMdxFrontmatterImageFacebookExtension = 'childMdx___frontmatter___imageFacebook___extension',
+    ChildMdxFrontmatterImageFacebookSize = 'childMdx___frontmatter___imageFacebook___size',
+    ChildMdxFrontmatterImageFacebookPrettySize = 'childMdx___frontmatter___imageFacebook___prettySize',
+    ChildMdxFrontmatterImageFacebookModifiedTime = 'childMdx___frontmatter___imageFacebook___modifiedTime',
+    ChildMdxFrontmatterImageFacebookAccessTime = 'childMdx___frontmatter___imageFacebook___accessTime',
+    ChildMdxFrontmatterImageFacebookChangeTime = 'childMdx___frontmatter___imageFacebook___changeTime',
+    ChildMdxFrontmatterImageFacebookBirthTime = 'childMdx___frontmatter___imageFacebook___birthTime',
+    ChildMdxFrontmatterImageFacebookRoot = 'childMdx___frontmatter___imageFacebook___root',
+    ChildMdxFrontmatterImageFacebookDir = 'childMdx___frontmatter___imageFacebook___dir',
+    ChildMdxFrontmatterImageFacebookBase = 'childMdx___frontmatter___imageFacebook___base',
+    ChildMdxFrontmatterImageFacebookExt = 'childMdx___frontmatter___imageFacebook___ext',
+    ChildMdxFrontmatterImageFacebookName = 'childMdx___frontmatter___imageFacebook___name',
+    ChildMdxFrontmatterImageFacebookRelativeDirectory = 'childMdx___frontmatter___imageFacebook___relativeDirectory',
+    ChildMdxFrontmatterImageFacebookDev = 'childMdx___frontmatter___imageFacebook___dev',
+    ChildMdxFrontmatterImageFacebookMode = 'childMdx___frontmatter___imageFacebook___mode',
+    ChildMdxFrontmatterImageFacebookNlink = 'childMdx___frontmatter___imageFacebook___nlink',
+    ChildMdxFrontmatterImageFacebookUid = 'childMdx___frontmatter___imageFacebook___uid',
+    ChildMdxFrontmatterImageFacebookGid = 'childMdx___frontmatter___imageFacebook___gid',
+    ChildMdxFrontmatterImageFacebookRdev = 'childMdx___frontmatter___imageFacebook___rdev',
+    ChildMdxFrontmatterImageFacebookIno = 'childMdx___frontmatter___imageFacebook___ino',
+    ChildMdxFrontmatterImageFacebookAtimeMs = 'childMdx___frontmatter___imageFacebook___atimeMs',
+    ChildMdxFrontmatterImageFacebookMtimeMs = 'childMdx___frontmatter___imageFacebook___mtimeMs',
+    ChildMdxFrontmatterImageFacebookCtimeMs = 'childMdx___frontmatter___imageFacebook___ctimeMs',
+    ChildMdxFrontmatterImageFacebookAtime = 'childMdx___frontmatter___imageFacebook___atime',
+    ChildMdxFrontmatterImageFacebookMtime = 'childMdx___frontmatter___imageFacebook___mtime',
+    ChildMdxFrontmatterImageFacebookCtime = 'childMdx___frontmatter___imageFacebook___ctime',
+    ChildMdxFrontmatterImageFacebookPublicUrl = 'childMdx___frontmatter___imageFacebook___publicURL',
+    ChildMdxFrontmatterImageFacebookId = 'childMdx___frontmatter___imageFacebook___id',
+    ChildMdxFrontmatterImageFacebookChildren = 'childMdx___frontmatter___imageFacebook___children',
+    ChildMdxFrontmatterImageTwitterBirthtime = 'childMdx___frontmatter___imageTwitter___birthtime',
+    ChildMdxFrontmatterImageTwitterBirthtimeMs = 'childMdx___frontmatter___imageTwitter___birthtimeMs',
+    ChildMdxFrontmatterImageTwitterSourceInstanceName = 'childMdx___frontmatter___imageTwitter___sourceInstanceName',
+    ChildMdxFrontmatterImageTwitterAbsolutePath = 'childMdx___frontmatter___imageTwitter___absolutePath',
+    ChildMdxFrontmatterImageTwitterRelativePath = 'childMdx___frontmatter___imageTwitter___relativePath',
+    ChildMdxFrontmatterImageTwitterExtension = 'childMdx___frontmatter___imageTwitter___extension',
+    ChildMdxFrontmatterImageTwitterSize = 'childMdx___frontmatter___imageTwitter___size',
+    ChildMdxFrontmatterImageTwitterPrettySize = 'childMdx___frontmatter___imageTwitter___prettySize',
+    ChildMdxFrontmatterImageTwitterModifiedTime = 'childMdx___frontmatter___imageTwitter___modifiedTime',
+    ChildMdxFrontmatterImageTwitterAccessTime = 'childMdx___frontmatter___imageTwitter___accessTime',
+    ChildMdxFrontmatterImageTwitterChangeTime = 'childMdx___frontmatter___imageTwitter___changeTime',
+    ChildMdxFrontmatterImageTwitterBirthTime = 'childMdx___frontmatter___imageTwitter___birthTime',
+    ChildMdxFrontmatterImageTwitterRoot = 'childMdx___frontmatter___imageTwitter___root',
+    ChildMdxFrontmatterImageTwitterDir = 'childMdx___frontmatter___imageTwitter___dir',
+    ChildMdxFrontmatterImageTwitterBase = 'childMdx___frontmatter___imageTwitter___base',
+    ChildMdxFrontmatterImageTwitterExt = 'childMdx___frontmatter___imageTwitter___ext',
+    ChildMdxFrontmatterImageTwitterName = 'childMdx___frontmatter___imageTwitter___name',
+    ChildMdxFrontmatterImageTwitterRelativeDirectory = 'childMdx___frontmatter___imageTwitter___relativeDirectory',
+    ChildMdxFrontmatterImageTwitterDev = 'childMdx___frontmatter___imageTwitter___dev',
+    ChildMdxFrontmatterImageTwitterMode = 'childMdx___frontmatter___imageTwitter___mode',
+    ChildMdxFrontmatterImageTwitterNlink = 'childMdx___frontmatter___imageTwitter___nlink',
+    ChildMdxFrontmatterImageTwitterUid = 'childMdx___frontmatter___imageTwitter___uid',
+    ChildMdxFrontmatterImageTwitterGid = 'childMdx___frontmatter___imageTwitter___gid',
+    ChildMdxFrontmatterImageTwitterRdev = 'childMdx___frontmatter___imageTwitter___rdev',
+    ChildMdxFrontmatterImageTwitterIno = 'childMdx___frontmatter___imageTwitter___ino',
+    ChildMdxFrontmatterImageTwitterAtimeMs = 'childMdx___frontmatter___imageTwitter___atimeMs',
+    ChildMdxFrontmatterImageTwitterMtimeMs = 'childMdx___frontmatter___imageTwitter___mtimeMs',
+    ChildMdxFrontmatterImageTwitterCtimeMs = 'childMdx___frontmatter___imageTwitter___ctimeMs',
+    ChildMdxFrontmatterImageTwitterAtime = 'childMdx___frontmatter___imageTwitter___atime',
+    ChildMdxFrontmatterImageTwitterMtime = 'childMdx___frontmatter___imageTwitter___mtime',
+    ChildMdxFrontmatterImageTwitterCtime = 'childMdx___frontmatter___imageTwitter___ctime',
+    ChildMdxFrontmatterImageTwitterPublicUrl = 'childMdx___frontmatter___imageTwitter___publicURL',
+    ChildMdxFrontmatterImageTwitterId = 'childMdx___frontmatter___imageTwitter___id',
+    ChildMdxFrontmatterImageTwitterChildren = 'childMdx___frontmatter___imageTwitter___children',
+    ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
+    ChildMdxFrontmatterFeaturedImageBirthtime = 'childMdx___frontmatter___featuredImage___birthtime',
+    ChildMdxFrontmatterFeaturedImageBirthtimeMs = 'childMdx___frontmatter___featuredImage___birthtimeMs',
+    ChildMdxFrontmatterFeaturedImageSourceInstanceName = 'childMdx___frontmatter___featuredImage___sourceInstanceName',
+    ChildMdxFrontmatterFeaturedImageAbsolutePath = 'childMdx___frontmatter___featuredImage___absolutePath',
+    ChildMdxFrontmatterFeaturedImageRelativePath = 'childMdx___frontmatter___featuredImage___relativePath',
+    ChildMdxFrontmatterFeaturedImageExtension = 'childMdx___frontmatter___featuredImage___extension',
+    ChildMdxFrontmatterFeaturedImageSize = 'childMdx___frontmatter___featuredImage___size',
+    ChildMdxFrontmatterFeaturedImagePrettySize = 'childMdx___frontmatter___featuredImage___prettySize',
+    ChildMdxFrontmatterFeaturedImageModifiedTime = 'childMdx___frontmatter___featuredImage___modifiedTime',
+    ChildMdxFrontmatterFeaturedImageAccessTime = 'childMdx___frontmatter___featuredImage___accessTime',
+    ChildMdxFrontmatterFeaturedImageChangeTime = 'childMdx___frontmatter___featuredImage___changeTime',
+    ChildMdxFrontmatterFeaturedImageBirthTime = 'childMdx___frontmatter___featuredImage___birthTime',
+    ChildMdxFrontmatterFeaturedImageRoot = 'childMdx___frontmatter___featuredImage___root',
+    ChildMdxFrontmatterFeaturedImageDir = 'childMdx___frontmatter___featuredImage___dir',
+    ChildMdxFrontmatterFeaturedImageBase = 'childMdx___frontmatter___featuredImage___base',
+    ChildMdxFrontmatterFeaturedImageExt = 'childMdx___frontmatter___featuredImage___ext',
+    ChildMdxFrontmatterFeaturedImageName = 'childMdx___frontmatter___featuredImage___name',
+    ChildMdxFrontmatterFeaturedImageRelativeDirectory = 'childMdx___frontmatter___featuredImage___relativeDirectory',
+    ChildMdxFrontmatterFeaturedImageDev = 'childMdx___frontmatter___featuredImage___dev',
+    ChildMdxFrontmatterFeaturedImageMode = 'childMdx___frontmatter___featuredImage___mode',
+    ChildMdxFrontmatterFeaturedImageNlink = 'childMdx___frontmatter___featuredImage___nlink',
+    ChildMdxFrontmatterFeaturedImageUid = 'childMdx___frontmatter___featuredImage___uid',
+    ChildMdxFrontmatterFeaturedImageGid = 'childMdx___frontmatter___featuredImage___gid',
+    ChildMdxFrontmatterFeaturedImageRdev = 'childMdx___frontmatter___featuredImage___rdev',
+    ChildMdxFrontmatterFeaturedImageIno = 'childMdx___frontmatter___featuredImage___ino',
+    ChildMdxFrontmatterFeaturedImageAtimeMs = 'childMdx___frontmatter___featuredImage___atimeMs',
+    ChildMdxFrontmatterFeaturedImageMtimeMs = 'childMdx___frontmatter___featuredImage___mtimeMs',
+    ChildMdxFrontmatterFeaturedImageCtimeMs = 'childMdx___frontmatter___featuredImage___ctimeMs',
+    ChildMdxFrontmatterFeaturedImageAtime = 'childMdx___frontmatter___featuredImage___atime',
+    ChildMdxFrontmatterFeaturedImageMtime = 'childMdx___frontmatter___featuredImage___mtime',
+    ChildMdxFrontmatterFeaturedImageCtime = 'childMdx___frontmatter___featuredImage___ctime',
+    ChildMdxFrontmatterFeaturedImagePublicUrl = 'childMdx___frontmatter___featuredImage___publicURL',
+    ChildMdxFrontmatterFeaturedImageId = 'childMdx___frontmatter___featuredImage___id',
+    ChildMdxFrontmatterFeaturedImageChildren = 'childMdx___frontmatter___featuredImage___children',
+    ChildMdxFrontmatterFeaturedImagePosition = 'childMdx___frontmatter___featuredImagePosition',
+    ChildMdxBody = 'childMdx___body',
+    ChildMdxExcerpt = 'childMdx___excerpt',
+    ChildMdxHeadings = 'childMdx___headings',
+    ChildMdxHeadingsValue = 'childMdx___headings___value',
+    ChildMdxHeadingsDepth = 'childMdx___headings___depth',
+    ChildMdxHtml = 'childMdx___html',
+    ChildMdxMdxAst = 'childMdx___mdxAST',
+    ChildMdxTableOfContents = 'childMdx___tableOfContents',
+    ChildMdxTimeToRead = 'childMdx___timeToRead',
+    ChildMdxWordCountParagraphs = 'childMdx___wordCount___paragraphs',
+    ChildMdxWordCountSentences = 'childMdx___wordCount___sentences',
+    ChildMdxWordCountWords = 'childMdx___wordCount___words',
+    ChildMdxId = 'childMdx___id',
+    ChildMdxParentId = 'childMdx___parent___id',
+    ChildMdxParentParentId = 'childMdx___parent___parent___id',
+    ChildMdxParentParentChildren = 'childMdx___parent___parent___children',
+    ChildMdxParentChildren = 'childMdx___parent___children',
+    ChildMdxParentChildrenId = 'childMdx___parent___children___id',
+    ChildMdxParentChildrenChildren = 'childMdx___parent___children___children',
+    ChildMdxParentInternalContent = 'childMdx___parent___internal___content',
+    ChildMdxParentInternalContentDigest = 'childMdx___parent___internal___contentDigest',
+    ChildMdxParentInternalDescription = 'childMdx___parent___internal___description',
+    ChildMdxParentInternalFieldOwners = 'childMdx___parent___internal___fieldOwners',
+    ChildMdxParentInternalIgnoreType = 'childMdx___parent___internal___ignoreType',
+    ChildMdxParentInternalMediaType = 'childMdx___parent___internal___mediaType',
+    ChildMdxParentInternalOwner = 'childMdx___parent___internal___owner',
+    ChildMdxParentInternalType = 'childMdx___parent___internal___type',
+    ChildMdxChildren = 'childMdx___children',
+    ChildMdxChildrenId = 'childMdx___children___id',
+    ChildMdxChildrenParentId = 'childMdx___children___parent___id',
+    ChildMdxChildrenParentChildren = 'childMdx___children___parent___children',
+    ChildMdxChildrenChildren = 'childMdx___children___children',
+    ChildMdxChildrenChildrenId = 'childMdx___children___children___id',
+    ChildMdxChildrenChildrenChildren = 'childMdx___children___children___children',
+    ChildMdxChildrenInternalContent = 'childMdx___children___internal___content',
+    ChildMdxChildrenInternalContentDigest = 'childMdx___children___internal___contentDigest',
+    ChildMdxChildrenInternalDescription = 'childMdx___children___internal___description',
+    ChildMdxChildrenInternalFieldOwners = 'childMdx___children___internal___fieldOwners',
+    ChildMdxChildrenInternalIgnoreType = 'childMdx___children___internal___ignoreType',
+    ChildMdxChildrenInternalMediaType = 'childMdx___children___internal___mediaType',
+    ChildMdxChildrenInternalOwner = 'childMdx___children___internal___owner',
+    ChildMdxChildrenInternalType = 'childMdx___children___internal___type',
+    ChildMdxInternalContent = 'childMdx___internal___content',
+    ChildMdxInternalContentDigest = 'childMdx___internal___contentDigest',
+    ChildMdxInternalDescription = 'childMdx___internal___description',
+    ChildMdxInternalFieldOwners = 'childMdx___internal___fieldOwners',
+    ChildMdxInternalIgnoreType = 'childMdx___internal___ignoreType',
+    ChildMdxInternalMediaType = 'childMdx___internal___mediaType',
+    ChildMdxInternalOwner = 'childMdx___internal___owner',
+    ChildMdxInternalType = 'childMdx___internal___type',
     ChildImagesJsonId = 'childImagesJson___id',
     ChildImagesJsonParentId = 'childImagesJson___parent___id',
     ChildImagesJsonParentParentId = 'childImagesJson___parent___parent___id',
@@ -892,6 +893,68 @@ export enum FileFieldsEnum {
     ChildImagesJsonGalleryImageId = 'childImagesJson___gallery___image___id',
     ChildImagesJsonGalleryImageChildren = 'childImagesJson___gallery___image___children',
     ChildImagesJsonGalleryTitle = 'childImagesJson___gallery___title',
+    ChildMarkdownRemarkId = 'childMarkdownRemark___id',
+    ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
+    ChildMarkdownRemarkFrontmatterAuthor = 'childMarkdownRemark___frontmatter___author',
+    ChildMarkdownRemarkFrontmatterComments = 'childMarkdownRemark___frontmatter___comments',
+    ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
+    ChildMarkdownRemarkFrontmatterExcerpt = 'childMarkdownRemark___frontmatter___excerpt',
+    ChildMarkdownRemarkFrontmatterLayout = 'childMarkdownRemark___frontmatter___layout',
+    ChildMarkdownRemarkFrontmatterLink = 'childMarkdownRemark___frontmatter___link',
+    ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
+    ChildMarkdownRemarkFrontmatterWordpressId = 'childMarkdownRemark___frontmatter___wordpress_id',
+    ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
+    ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
+    ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
+    ChildMarkdownRemarkFieldsSlug = 'childMarkdownRemark___fields___slug',
+    ChildMarkdownRemarkHtml = 'childMarkdownRemark___html',
+    ChildMarkdownRemarkHtmlAst = 'childMarkdownRemark___htmlAst',
+    ChildMarkdownRemarkExcerptAst = 'childMarkdownRemark___excerptAst',
+    ChildMarkdownRemarkHeadings = 'childMarkdownRemark___headings',
+    ChildMarkdownRemarkHeadingsValue = 'childMarkdownRemark___headings___value',
+    ChildMarkdownRemarkHeadingsDepth = 'childMarkdownRemark___headings___depth',
+    ChildMarkdownRemarkTimeToRead = 'childMarkdownRemark___timeToRead',
+    ChildMarkdownRemarkTableOfContents = 'childMarkdownRemark___tableOfContents',
+    ChildMarkdownRemarkWordCountParagraphs = 'childMarkdownRemark___wordCount___paragraphs',
+    ChildMarkdownRemarkWordCountSentences = 'childMarkdownRemark___wordCount___sentences',
+    ChildMarkdownRemarkWordCountWords = 'childMarkdownRemark___wordCount___words',
+    ChildMarkdownRemarkParentId = 'childMarkdownRemark___parent___id',
+    ChildMarkdownRemarkParentParentId = 'childMarkdownRemark___parent___parent___id',
+    ChildMarkdownRemarkParentParentChildren = 'childMarkdownRemark___parent___parent___children',
+    ChildMarkdownRemarkParentChildren = 'childMarkdownRemark___parent___children',
+    ChildMarkdownRemarkParentChildrenId = 'childMarkdownRemark___parent___children___id',
+    ChildMarkdownRemarkParentChildrenChildren = 'childMarkdownRemark___parent___children___children',
+    ChildMarkdownRemarkParentInternalContent = 'childMarkdownRemark___parent___internal___content',
+    ChildMarkdownRemarkParentInternalContentDigest = 'childMarkdownRemark___parent___internal___contentDigest',
+    ChildMarkdownRemarkParentInternalDescription = 'childMarkdownRemark___parent___internal___description',
+    ChildMarkdownRemarkParentInternalFieldOwners = 'childMarkdownRemark___parent___internal___fieldOwners',
+    ChildMarkdownRemarkParentInternalIgnoreType = 'childMarkdownRemark___parent___internal___ignoreType',
+    ChildMarkdownRemarkParentInternalMediaType = 'childMarkdownRemark___parent___internal___mediaType',
+    ChildMarkdownRemarkParentInternalOwner = 'childMarkdownRemark___parent___internal___owner',
+    ChildMarkdownRemarkParentInternalType = 'childMarkdownRemark___parent___internal___type',
+    ChildMarkdownRemarkChildren = 'childMarkdownRemark___children',
+    ChildMarkdownRemarkChildrenId = 'childMarkdownRemark___children___id',
+    ChildMarkdownRemarkChildrenParentId = 'childMarkdownRemark___children___parent___id',
+    ChildMarkdownRemarkChildrenParentChildren = 'childMarkdownRemark___children___parent___children',
+    ChildMarkdownRemarkChildrenChildren = 'childMarkdownRemark___children___children',
+    ChildMarkdownRemarkChildrenChildrenId = 'childMarkdownRemark___children___children___id',
+    ChildMarkdownRemarkChildrenChildrenChildren = 'childMarkdownRemark___children___children___children',
+    ChildMarkdownRemarkChildrenInternalContent = 'childMarkdownRemark___children___internal___content',
+    ChildMarkdownRemarkChildrenInternalContentDigest = 'childMarkdownRemark___children___internal___contentDigest',
+    ChildMarkdownRemarkChildrenInternalDescription = 'childMarkdownRemark___children___internal___description',
+    ChildMarkdownRemarkChildrenInternalFieldOwners = 'childMarkdownRemark___children___internal___fieldOwners',
+    ChildMarkdownRemarkChildrenInternalIgnoreType = 'childMarkdownRemark___children___internal___ignoreType',
+    ChildMarkdownRemarkChildrenInternalMediaType = 'childMarkdownRemark___children___internal___mediaType',
+    ChildMarkdownRemarkChildrenInternalOwner = 'childMarkdownRemark___children___internal___owner',
+    ChildMarkdownRemarkChildrenInternalType = 'childMarkdownRemark___children___internal___type',
+    ChildMarkdownRemarkInternalContent = 'childMarkdownRemark___internal___content',
+    ChildMarkdownRemarkInternalContentDigest = 'childMarkdownRemark___internal___contentDigest',
+    ChildMarkdownRemarkInternalDescription = 'childMarkdownRemark___internal___description',
+    ChildMarkdownRemarkInternalFieldOwners = 'childMarkdownRemark___internal___fieldOwners',
+    ChildMarkdownRemarkInternalIgnoreType = 'childMarkdownRemark___internal___ignoreType',
+    ChildMarkdownRemarkInternalMediaType = 'childMarkdownRemark___internal___mediaType',
+    ChildMarkdownRemarkInternalOwner = 'childMarkdownRemark___internal___owner',
+    ChildMarkdownRemarkInternalType = 'childMarkdownRemark___internal___type',
 }
 
 export type FileFilterInput = {
@@ -931,9 +994,10 @@ export type FileFilterInput = {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    childMdx?: Maybe<MdxFilterInput>;
     childImageSharp?: Maybe<ImageSharpFilterInput>;
+    childMdx?: Maybe<MdxFilterInput>;
     childImagesJson?: Maybe<ImagesJsonFilterInput>;
+    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
 };
 
 export type FileGroupConnection = {
@@ -1612,6 +1676,8 @@ export enum ImagesJsonFieldsEnum {
     GalleryImageInternalMediaType = 'gallery___image___internal___mediaType',
     GalleryImageInternalOwner = 'gallery___image___internal___owner',
     GalleryImageInternalType = 'gallery___image___internal___type',
+    GalleryImageChildImageSharpId = 'gallery___image___childImageSharp___id',
+    GalleryImageChildImageSharpChildren = 'gallery___image___childImageSharp___children',
     GalleryImageChildMdxRawBody = 'gallery___image___childMdx___rawBody',
     GalleryImageChildMdxFileAbsolutePath = 'gallery___image___childMdx___fileAbsolutePath',
     GalleryImageChildMdxBody = 'gallery___image___childMdx___body',
@@ -1623,11 +1689,20 @@ export enum ImagesJsonFieldsEnum {
     GalleryImageChildMdxTimeToRead = 'gallery___image___childMdx___timeToRead',
     GalleryImageChildMdxId = 'gallery___image___childMdx___id',
     GalleryImageChildMdxChildren = 'gallery___image___childMdx___children',
-    GalleryImageChildImageSharpId = 'gallery___image___childImageSharp___id',
-    GalleryImageChildImageSharpChildren = 'gallery___image___childImageSharp___children',
     GalleryImageChildImagesJsonId = 'gallery___image___childImagesJson___id',
     GalleryImageChildImagesJsonChildren = 'gallery___image___childImagesJson___children',
     GalleryImageChildImagesJsonGallery = 'gallery___image___childImagesJson___gallery',
+    GalleryImageChildMarkdownRemarkId = 'gallery___image___childMarkdownRemark___id',
+    GalleryImageChildMarkdownRemarkExcerpt = 'gallery___image___childMarkdownRemark___excerpt',
+    GalleryImageChildMarkdownRemarkRawMarkdownBody = 'gallery___image___childMarkdownRemark___rawMarkdownBody',
+    GalleryImageChildMarkdownRemarkFileAbsolutePath = 'gallery___image___childMarkdownRemark___fileAbsolutePath',
+    GalleryImageChildMarkdownRemarkHtml = 'gallery___image___childMarkdownRemark___html',
+    GalleryImageChildMarkdownRemarkHtmlAst = 'gallery___image___childMarkdownRemark___htmlAst',
+    GalleryImageChildMarkdownRemarkExcerptAst = 'gallery___image___childMarkdownRemark___excerptAst',
+    GalleryImageChildMarkdownRemarkHeadings = 'gallery___image___childMarkdownRemark___headings',
+    GalleryImageChildMarkdownRemarkTimeToRead = 'gallery___image___childMarkdownRemark___timeToRead',
+    GalleryImageChildMarkdownRemarkTableOfContents = 'gallery___image___childMarkdownRemark___tableOfContents',
+    GalleryImageChildMarkdownRemarkChildren = 'gallery___image___childMarkdownRemark___children',
     GalleryTitle = 'gallery___title',
 }
 
@@ -1740,9 +1815,13 @@ export enum MarkdownHeadingLevels {
 
 export type MarkdownRemark = Node & {
     id: Scalars['ID'];
+    frontmatter?: Maybe<MarkdownRemarkFrontmatter>;
+    excerpt?: Maybe<Scalars['String']>;
+    rawMarkdownBody?: Maybe<Scalars['String']>;
+    fileAbsolutePath?: Maybe<Scalars['String']>;
+    fields?: Maybe<MarkdownRemarkFields>;
     html?: Maybe<Scalars['String']>;
     htmlAst?: Maybe<Scalars['JSON']>;
-    excerpt?: Maybe<Scalars['String']>;
     excerptAst?: Maybe<Scalars['JSON']>;
     headings?: Maybe<Array<Maybe<MarkdownHeading>>>;
     timeToRead?: Maybe<Scalars['Int']>;
@@ -1799,11 +1878,27 @@ export type MarkdownRemarkEdge = {
     previous?: Maybe<MarkdownRemark>;
 };
 
+export type MarkdownRemarkFields = {
+    slug?: Maybe<Scalars['String']>;
+};
+
 export enum MarkdownRemarkFieldsEnum {
     Id = 'id',
+    FrontmatterTitle = 'frontmatter___title',
+    FrontmatterAuthor = 'frontmatter___author',
+    FrontmatterComments = 'frontmatter___comments',
+    FrontmatterDate = 'frontmatter___date',
+    FrontmatterExcerpt = 'frontmatter___excerpt',
+    FrontmatterLayout = 'frontmatter___layout',
+    FrontmatterLink = 'frontmatter___link',
+    FrontmatterSlug = 'frontmatter___slug',
+    FrontmatterWordpressId = 'frontmatter___wordpress_id',
+    Excerpt = 'excerpt',
+    RawMarkdownBody = 'rawMarkdownBody',
+    FileAbsolutePath = 'fileAbsolutePath',
+    FieldsSlug = 'fields___slug',
     Html = 'html',
     HtmlAst = 'htmlAst',
-    Excerpt = 'excerpt',
     ExcerptAst = 'excerptAst',
     Headings = 'headings',
     HeadingsValue = 'headings___value',
@@ -1900,11 +1995,19 @@ export enum MarkdownRemarkFieldsEnum {
     InternalType = 'internal___type',
 }
 
+export type MarkdownRemarkFieldsFilterInput = {
+    slug?: Maybe<StringQueryOperatorInput>;
+};
+
 export type MarkdownRemarkFilterInput = {
     id?: Maybe<StringQueryOperatorInput>;
+    frontmatter?: Maybe<MarkdownRemarkFrontmatterFilterInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
+    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
+    fields?: Maybe<MarkdownRemarkFieldsFilterInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -1913,6 +2016,37 @@ export type MarkdownRemarkFilterInput = {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
+};
+
+export type MarkdownRemarkFrontmatter = {
+    title?: Maybe<Scalars['String']>;
+    author?: Maybe<Scalars['String']>;
+    comments?: Maybe<Scalars['Boolean']>;
+    date?: Maybe<Scalars['Date']>;
+    excerpt?: Maybe<Scalars['String']>;
+    layout?: Maybe<Scalars['String']>;
+    link?: Maybe<Scalars['String']>;
+    slug?: Maybe<Scalars['String']>;
+    wordpress_id?: Maybe<Scalars['Int']>;
+};
+
+export type MarkdownRemarkFrontmatterDateArgs = {
+    formatString?: Maybe<Scalars['String']>;
+    fromNow?: Maybe<Scalars['Boolean']>;
+    difference?: Maybe<Scalars['String']>;
+    locale?: Maybe<Scalars['String']>;
+};
+
+export type MarkdownRemarkFrontmatterFilterInput = {
+    title?: Maybe<StringQueryOperatorInput>;
+    author?: Maybe<StringQueryOperatorInput>;
+    comments?: Maybe<BooleanQueryOperatorInput>;
+    date?: Maybe<DateQueryOperatorInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    layout?: Maybe<StringQueryOperatorInput>;
+    link?: Maybe<StringQueryOperatorInput>;
+    slug?: Maybe<StringQueryOperatorInput>;
+    wordpress_id?: Maybe<IntQueryOperatorInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -2004,68 +2138,6 @@ export enum MdxFieldsEnum {
     FrontmatterDate = 'frontmatter___date',
     FrontmatterExcerpt = 'frontmatter___excerpt',
     FrontmatterSlug = 'frontmatter___slug',
-    FrontmatterFeaturedImageBirthtime = 'frontmatter___featuredImage___birthtime',
-    FrontmatterFeaturedImageBirthtimeMs = 'frontmatter___featuredImage___birthtimeMs',
-    FrontmatterFeaturedImageSourceInstanceName = 'frontmatter___featuredImage___sourceInstanceName',
-    FrontmatterFeaturedImageAbsolutePath = 'frontmatter___featuredImage___absolutePath',
-    FrontmatterFeaturedImageRelativePath = 'frontmatter___featuredImage___relativePath',
-    FrontmatterFeaturedImageExtension = 'frontmatter___featuredImage___extension',
-    FrontmatterFeaturedImageSize = 'frontmatter___featuredImage___size',
-    FrontmatterFeaturedImagePrettySize = 'frontmatter___featuredImage___prettySize',
-    FrontmatterFeaturedImageModifiedTime = 'frontmatter___featuredImage___modifiedTime',
-    FrontmatterFeaturedImageAccessTime = 'frontmatter___featuredImage___accessTime',
-    FrontmatterFeaturedImageChangeTime = 'frontmatter___featuredImage___changeTime',
-    FrontmatterFeaturedImageBirthTime = 'frontmatter___featuredImage___birthTime',
-    FrontmatterFeaturedImageRoot = 'frontmatter___featuredImage___root',
-    FrontmatterFeaturedImageDir = 'frontmatter___featuredImage___dir',
-    FrontmatterFeaturedImageBase = 'frontmatter___featuredImage___base',
-    FrontmatterFeaturedImageExt = 'frontmatter___featuredImage___ext',
-    FrontmatterFeaturedImageName = 'frontmatter___featuredImage___name',
-    FrontmatterFeaturedImageRelativeDirectory = 'frontmatter___featuredImage___relativeDirectory',
-    FrontmatterFeaturedImageDev = 'frontmatter___featuredImage___dev',
-    FrontmatterFeaturedImageMode = 'frontmatter___featuredImage___mode',
-    FrontmatterFeaturedImageNlink = 'frontmatter___featuredImage___nlink',
-    FrontmatterFeaturedImageUid = 'frontmatter___featuredImage___uid',
-    FrontmatterFeaturedImageGid = 'frontmatter___featuredImage___gid',
-    FrontmatterFeaturedImageRdev = 'frontmatter___featuredImage___rdev',
-    FrontmatterFeaturedImageIno = 'frontmatter___featuredImage___ino',
-    FrontmatterFeaturedImageAtimeMs = 'frontmatter___featuredImage___atimeMs',
-    FrontmatterFeaturedImageMtimeMs = 'frontmatter___featuredImage___mtimeMs',
-    FrontmatterFeaturedImageCtimeMs = 'frontmatter___featuredImage___ctimeMs',
-    FrontmatterFeaturedImageAtime = 'frontmatter___featuredImage___atime',
-    FrontmatterFeaturedImageMtime = 'frontmatter___featuredImage___mtime',
-    FrontmatterFeaturedImageCtime = 'frontmatter___featuredImage___ctime',
-    FrontmatterFeaturedImagePublicUrl = 'frontmatter___featuredImage___publicURL',
-    FrontmatterFeaturedImageId = 'frontmatter___featuredImage___id',
-    FrontmatterFeaturedImageParentId = 'frontmatter___featuredImage___parent___id',
-    FrontmatterFeaturedImageParentChildren = 'frontmatter___featuredImage___parent___children',
-    FrontmatterFeaturedImageChildren = 'frontmatter___featuredImage___children',
-    FrontmatterFeaturedImageChildrenId = 'frontmatter___featuredImage___children___id',
-    FrontmatterFeaturedImageChildrenChildren = 'frontmatter___featuredImage___children___children',
-    FrontmatterFeaturedImageInternalContent = 'frontmatter___featuredImage___internal___content',
-    FrontmatterFeaturedImageInternalContentDigest = 'frontmatter___featuredImage___internal___contentDigest',
-    FrontmatterFeaturedImageInternalDescription = 'frontmatter___featuredImage___internal___description',
-    FrontmatterFeaturedImageInternalFieldOwners = 'frontmatter___featuredImage___internal___fieldOwners',
-    FrontmatterFeaturedImageInternalIgnoreType = 'frontmatter___featuredImage___internal___ignoreType',
-    FrontmatterFeaturedImageInternalMediaType = 'frontmatter___featuredImage___internal___mediaType',
-    FrontmatterFeaturedImageInternalOwner = 'frontmatter___featuredImage___internal___owner',
-    FrontmatterFeaturedImageInternalType = 'frontmatter___featuredImage___internal___type',
-    FrontmatterFeaturedImageChildMdxRawBody = 'frontmatter___featuredImage___childMdx___rawBody',
-    FrontmatterFeaturedImageChildMdxFileAbsolutePath = 'frontmatter___featuredImage___childMdx___fileAbsolutePath',
-    FrontmatterFeaturedImageChildMdxBody = 'frontmatter___featuredImage___childMdx___body',
-    FrontmatterFeaturedImageChildMdxExcerpt = 'frontmatter___featuredImage___childMdx___excerpt',
-    FrontmatterFeaturedImageChildMdxHeadings = 'frontmatter___featuredImage___childMdx___headings',
-    FrontmatterFeaturedImageChildMdxHtml = 'frontmatter___featuredImage___childMdx___html',
-    FrontmatterFeaturedImageChildMdxMdxAst = 'frontmatter___featuredImage___childMdx___mdxAST',
-    FrontmatterFeaturedImageChildMdxTableOfContents = 'frontmatter___featuredImage___childMdx___tableOfContents',
-    FrontmatterFeaturedImageChildMdxTimeToRead = 'frontmatter___featuredImage___childMdx___timeToRead',
-    FrontmatterFeaturedImageChildMdxId = 'frontmatter___featuredImage___childMdx___id',
-    FrontmatterFeaturedImageChildMdxChildren = 'frontmatter___featuredImage___childMdx___children',
-    FrontmatterFeaturedImageChildImageSharpId = 'frontmatter___featuredImage___childImageSharp___id',
-    FrontmatterFeaturedImageChildImageSharpChildren = 'frontmatter___featuredImage___childImageSharp___children',
-    FrontmatterFeaturedImageChildImagesJsonId = 'frontmatter___featuredImage___childImagesJson___id',
-    FrontmatterFeaturedImageChildImagesJsonChildren = 'frontmatter___featuredImage___childImagesJson___children',
-    FrontmatterFeaturedImageChildImagesJsonGallery = 'frontmatter___featuredImage___childImagesJson___gallery',
     FrontmatterImageFacebookBirthtime = 'frontmatter___imageFacebook___birthtime',
     FrontmatterImageFacebookBirthtimeMs = 'frontmatter___imageFacebook___birthtimeMs',
     FrontmatterImageFacebookSourceInstanceName = 'frontmatter___imageFacebook___sourceInstanceName',
@@ -2112,6 +2184,8 @@ export enum MdxFieldsEnum {
     FrontmatterImageFacebookInternalMediaType = 'frontmatter___imageFacebook___internal___mediaType',
     FrontmatterImageFacebookInternalOwner = 'frontmatter___imageFacebook___internal___owner',
     FrontmatterImageFacebookInternalType = 'frontmatter___imageFacebook___internal___type',
+    FrontmatterImageFacebookChildImageSharpId = 'frontmatter___imageFacebook___childImageSharp___id',
+    FrontmatterImageFacebookChildImageSharpChildren = 'frontmatter___imageFacebook___childImageSharp___children',
     FrontmatterImageFacebookChildMdxRawBody = 'frontmatter___imageFacebook___childMdx___rawBody',
     FrontmatterImageFacebookChildMdxFileAbsolutePath = 'frontmatter___imageFacebook___childMdx___fileAbsolutePath',
     FrontmatterImageFacebookChildMdxBody = 'frontmatter___imageFacebook___childMdx___body',
@@ -2123,11 +2197,20 @@ export enum MdxFieldsEnum {
     FrontmatterImageFacebookChildMdxTimeToRead = 'frontmatter___imageFacebook___childMdx___timeToRead',
     FrontmatterImageFacebookChildMdxId = 'frontmatter___imageFacebook___childMdx___id',
     FrontmatterImageFacebookChildMdxChildren = 'frontmatter___imageFacebook___childMdx___children',
-    FrontmatterImageFacebookChildImageSharpId = 'frontmatter___imageFacebook___childImageSharp___id',
-    FrontmatterImageFacebookChildImageSharpChildren = 'frontmatter___imageFacebook___childImageSharp___children',
     FrontmatterImageFacebookChildImagesJsonId = 'frontmatter___imageFacebook___childImagesJson___id',
     FrontmatterImageFacebookChildImagesJsonChildren = 'frontmatter___imageFacebook___childImagesJson___children',
     FrontmatterImageFacebookChildImagesJsonGallery = 'frontmatter___imageFacebook___childImagesJson___gallery',
+    FrontmatterImageFacebookChildMarkdownRemarkId = 'frontmatter___imageFacebook___childMarkdownRemark___id',
+    FrontmatterImageFacebookChildMarkdownRemarkExcerpt = 'frontmatter___imageFacebook___childMarkdownRemark___excerpt',
+    FrontmatterImageFacebookChildMarkdownRemarkRawMarkdownBody = 'frontmatter___imageFacebook___childMarkdownRemark___rawMarkdownBody',
+    FrontmatterImageFacebookChildMarkdownRemarkFileAbsolutePath = 'frontmatter___imageFacebook___childMarkdownRemark___fileAbsolutePath',
+    FrontmatterImageFacebookChildMarkdownRemarkHtml = 'frontmatter___imageFacebook___childMarkdownRemark___html',
+    FrontmatterImageFacebookChildMarkdownRemarkHtmlAst = 'frontmatter___imageFacebook___childMarkdownRemark___htmlAst',
+    FrontmatterImageFacebookChildMarkdownRemarkExcerptAst = 'frontmatter___imageFacebook___childMarkdownRemark___excerptAst',
+    FrontmatterImageFacebookChildMarkdownRemarkHeadings = 'frontmatter___imageFacebook___childMarkdownRemark___headings',
+    FrontmatterImageFacebookChildMarkdownRemarkTimeToRead = 'frontmatter___imageFacebook___childMarkdownRemark___timeToRead',
+    FrontmatterImageFacebookChildMarkdownRemarkTableOfContents = 'frontmatter___imageFacebook___childMarkdownRemark___tableOfContents',
+    FrontmatterImageFacebookChildMarkdownRemarkChildren = 'frontmatter___imageFacebook___childMarkdownRemark___children',
     FrontmatterImageTwitterBirthtime = 'frontmatter___imageTwitter___birthtime',
     FrontmatterImageTwitterBirthtimeMs = 'frontmatter___imageTwitter___birthtimeMs',
     FrontmatterImageTwitterSourceInstanceName = 'frontmatter___imageTwitter___sourceInstanceName',
@@ -2174,6 +2257,8 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterInternalMediaType = 'frontmatter___imageTwitter___internal___mediaType',
     FrontmatterImageTwitterInternalOwner = 'frontmatter___imageTwitter___internal___owner',
     FrontmatterImageTwitterInternalType = 'frontmatter___imageTwitter___internal___type',
+    FrontmatterImageTwitterChildImageSharpId = 'frontmatter___imageTwitter___childImageSharp___id',
+    FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
     FrontmatterImageTwitterChildMdxRawBody = 'frontmatter___imageTwitter___childMdx___rawBody',
     FrontmatterImageTwitterChildMdxFileAbsolutePath = 'frontmatter___imageTwitter___childMdx___fileAbsolutePath',
     FrontmatterImageTwitterChildMdxBody = 'frontmatter___imageTwitter___childMdx___body',
@@ -2185,12 +2270,94 @@ export enum MdxFieldsEnum {
     FrontmatterImageTwitterChildMdxTimeToRead = 'frontmatter___imageTwitter___childMdx___timeToRead',
     FrontmatterImageTwitterChildMdxId = 'frontmatter___imageTwitter___childMdx___id',
     FrontmatterImageTwitterChildMdxChildren = 'frontmatter___imageTwitter___childMdx___children',
-    FrontmatterImageTwitterChildImageSharpId = 'frontmatter___imageTwitter___childImageSharp___id',
-    FrontmatterImageTwitterChildImageSharpChildren = 'frontmatter___imageTwitter___childImageSharp___children',
     FrontmatterImageTwitterChildImagesJsonId = 'frontmatter___imageTwitter___childImagesJson___id',
     FrontmatterImageTwitterChildImagesJsonChildren = 'frontmatter___imageTwitter___childImagesJson___children',
     FrontmatterImageTwitterChildImagesJsonGallery = 'frontmatter___imageTwitter___childImagesJson___gallery',
+    FrontmatterImageTwitterChildMarkdownRemarkId = 'frontmatter___imageTwitter___childMarkdownRemark___id',
+    FrontmatterImageTwitterChildMarkdownRemarkExcerpt = 'frontmatter___imageTwitter___childMarkdownRemark___excerpt',
+    FrontmatterImageTwitterChildMarkdownRemarkRawMarkdownBody = 'frontmatter___imageTwitter___childMarkdownRemark___rawMarkdownBody',
+    FrontmatterImageTwitterChildMarkdownRemarkFileAbsolutePath = 'frontmatter___imageTwitter___childMarkdownRemark___fileAbsolutePath',
+    FrontmatterImageTwitterChildMarkdownRemarkHtml = 'frontmatter___imageTwitter___childMarkdownRemark___html',
+    FrontmatterImageTwitterChildMarkdownRemarkHtmlAst = 'frontmatter___imageTwitter___childMarkdownRemark___htmlAst',
+    FrontmatterImageTwitterChildMarkdownRemarkExcerptAst = 'frontmatter___imageTwitter___childMarkdownRemark___excerptAst',
+    FrontmatterImageTwitterChildMarkdownRemarkHeadings = 'frontmatter___imageTwitter___childMarkdownRemark___headings',
+    FrontmatterImageTwitterChildMarkdownRemarkTimeToRead = 'frontmatter___imageTwitter___childMarkdownRemark___timeToRead',
+    FrontmatterImageTwitterChildMarkdownRemarkTableOfContents = 'frontmatter___imageTwitter___childMarkdownRemark___tableOfContents',
+    FrontmatterImageTwitterChildMarkdownRemarkChildren = 'frontmatter___imageTwitter___childMarkdownRemark___children',
     FrontmatterTags = 'frontmatter___tags',
+    FrontmatterFeaturedImageBirthtime = 'frontmatter___featuredImage___birthtime',
+    FrontmatterFeaturedImageBirthtimeMs = 'frontmatter___featuredImage___birthtimeMs',
+    FrontmatterFeaturedImageSourceInstanceName = 'frontmatter___featuredImage___sourceInstanceName',
+    FrontmatterFeaturedImageAbsolutePath = 'frontmatter___featuredImage___absolutePath',
+    FrontmatterFeaturedImageRelativePath = 'frontmatter___featuredImage___relativePath',
+    FrontmatterFeaturedImageExtension = 'frontmatter___featuredImage___extension',
+    FrontmatterFeaturedImageSize = 'frontmatter___featuredImage___size',
+    FrontmatterFeaturedImagePrettySize = 'frontmatter___featuredImage___prettySize',
+    FrontmatterFeaturedImageModifiedTime = 'frontmatter___featuredImage___modifiedTime',
+    FrontmatterFeaturedImageAccessTime = 'frontmatter___featuredImage___accessTime',
+    FrontmatterFeaturedImageChangeTime = 'frontmatter___featuredImage___changeTime',
+    FrontmatterFeaturedImageBirthTime = 'frontmatter___featuredImage___birthTime',
+    FrontmatterFeaturedImageRoot = 'frontmatter___featuredImage___root',
+    FrontmatterFeaturedImageDir = 'frontmatter___featuredImage___dir',
+    FrontmatterFeaturedImageBase = 'frontmatter___featuredImage___base',
+    FrontmatterFeaturedImageExt = 'frontmatter___featuredImage___ext',
+    FrontmatterFeaturedImageName = 'frontmatter___featuredImage___name',
+    FrontmatterFeaturedImageRelativeDirectory = 'frontmatter___featuredImage___relativeDirectory',
+    FrontmatterFeaturedImageDev = 'frontmatter___featuredImage___dev',
+    FrontmatterFeaturedImageMode = 'frontmatter___featuredImage___mode',
+    FrontmatterFeaturedImageNlink = 'frontmatter___featuredImage___nlink',
+    FrontmatterFeaturedImageUid = 'frontmatter___featuredImage___uid',
+    FrontmatterFeaturedImageGid = 'frontmatter___featuredImage___gid',
+    FrontmatterFeaturedImageRdev = 'frontmatter___featuredImage___rdev',
+    FrontmatterFeaturedImageIno = 'frontmatter___featuredImage___ino',
+    FrontmatterFeaturedImageAtimeMs = 'frontmatter___featuredImage___atimeMs',
+    FrontmatterFeaturedImageMtimeMs = 'frontmatter___featuredImage___mtimeMs',
+    FrontmatterFeaturedImageCtimeMs = 'frontmatter___featuredImage___ctimeMs',
+    FrontmatterFeaturedImageAtime = 'frontmatter___featuredImage___atime',
+    FrontmatterFeaturedImageMtime = 'frontmatter___featuredImage___mtime',
+    FrontmatterFeaturedImageCtime = 'frontmatter___featuredImage___ctime',
+    FrontmatterFeaturedImagePublicUrl = 'frontmatter___featuredImage___publicURL',
+    FrontmatterFeaturedImageId = 'frontmatter___featuredImage___id',
+    FrontmatterFeaturedImageParentId = 'frontmatter___featuredImage___parent___id',
+    FrontmatterFeaturedImageParentChildren = 'frontmatter___featuredImage___parent___children',
+    FrontmatterFeaturedImageChildren = 'frontmatter___featuredImage___children',
+    FrontmatterFeaturedImageChildrenId = 'frontmatter___featuredImage___children___id',
+    FrontmatterFeaturedImageChildrenChildren = 'frontmatter___featuredImage___children___children',
+    FrontmatterFeaturedImageInternalContent = 'frontmatter___featuredImage___internal___content',
+    FrontmatterFeaturedImageInternalContentDigest = 'frontmatter___featuredImage___internal___contentDigest',
+    FrontmatterFeaturedImageInternalDescription = 'frontmatter___featuredImage___internal___description',
+    FrontmatterFeaturedImageInternalFieldOwners = 'frontmatter___featuredImage___internal___fieldOwners',
+    FrontmatterFeaturedImageInternalIgnoreType = 'frontmatter___featuredImage___internal___ignoreType',
+    FrontmatterFeaturedImageInternalMediaType = 'frontmatter___featuredImage___internal___mediaType',
+    FrontmatterFeaturedImageInternalOwner = 'frontmatter___featuredImage___internal___owner',
+    FrontmatterFeaturedImageInternalType = 'frontmatter___featuredImage___internal___type',
+    FrontmatterFeaturedImageChildImageSharpId = 'frontmatter___featuredImage___childImageSharp___id',
+    FrontmatterFeaturedImageChildImageSharpChildren = 'frontmatter___featuredImage___childImageSharp___children',
+    FrontmatterFeaturedImageChildMdxRawBody = 'frontmatter___featuredImage___childMdx___rawBody',
+    FrontmatterFeaturedImageChildMdxFileAbsolutePath = 'frontmatter___featuredImage___childMdx___fileAbsolutePath',
+    FrontmatterFeaturedImageChildMdxBody = 'frontmatter___featuredImage___childMdx___body',
+    FrontmatterFeaturedImageChildMdxExcerpt = 'frontmatter___featuredImage___childMdx___excerpt',
+    FrontmatterFeaturedImageChildMdxHeadings = 'frontmatter___featuredImage___childMdx___headings',
+    FrontmatterFeaturedImageChildMdxHtml = 'frontmatter___featuredImage___childMdx___html',
+    FrontmatterFeaturedImageChildMdxMdxAst = 'frontmatter___featuredImage___childMdx___mdxAST',
+    FrontmatterFeaturedImageChildMdxTableOfContents = 'frontmatter___featuredImage___childMdx___tableOfContents',
+    FrontmatterFeaturedImageChildMdxTimeToRead = 'frontmatter___featuredImage___childMdx___timeToRead',
+    FrontmatterFeaturedImageChildMdxId = 'frontmatter___featuredImage___childMdx___id',
+    FrontmatterFeaturedImageChildMdxChildren = 'frontmatter___featuredImage___childMdx___children',
+    FrontmatterFeaturedImageChildImagesJsonId = 'frontmatter___featuredImage___childImagesJson___id',
+    FrontmatterFeaturedImageChildImagesJsonChildren = 'frontmatter___featuredImage___childImagesJson___children',
+    FrontmatterFeaturedImageChildImagesJsonGallery = 'frontmatter___featuredImage___childImagesJson___gallery',
+    FrontmatterFeaturedImageChildMarkdownRemarkId = 'frontmatter___featuredImage___childMarkdownRemark___id',
+    FrontmatterFeaturedImageChildMarkdownRemarkExcerpt = 'frontmatter___featuredImage___childMarkdownRemark___excerpt',
+    FrontmatterFeaturedImageChildMarkdownRemarkRawMarkdownBody = 'frontmatter___featuredImage___childMarkdownRemark___rawMarkdownBody',
+    FrontmatterFeaturedImageChildMarkdownRemarkFileAbsolutePath = 'frontmatter___featuredImage___childMarkdownRemark___fileAbsolutePath',
+    FrontmatterFeaturedImageChildMarkdownRemarkHtml = 'frontmatter___featuredImage___childMarkdownRemark___html',
+    FrontmatterFeaturedImageChildMarkdownRemarkHtmlAst = 'frontmatter___featuredImage___childMarkdownRemark___htmlAst',
+    FrontmatterFeaturedImageChildMarkdownRemarkExcerptAst = 'frontmatter___featuredImage___childMarkdownRemark___excerptAst',
+    FrontmatterFeaturedImageChildMarkdownRemarkHeadings = 'frontmatter___featuredImage___childMarkdownRemark___headings',
+    FrontmatterFeaturedImageChildMarkdownRemarkTimeToRead = 'frontmatter___featuredImage___childMarkdownRemark___timeToRead',
+    FrontmatterFeaturedImageChildMarkdownRemarkTableOfContents = 'frontmatter___featuredImage___childMarkdownRemark___tableOfContents',
+    FrontmatterFeaturedImageChildMarkdownRemarkChildren = 'frontmatter___featuredImage___childMarkdownRemark___children',
     FrontmatterFeaturedImagePosition = 'frontmatter___featuredImagePosition',
     Body = 'body',
     Excerpt = 'excerpt',
@@ -2316,10 +2483,10 @@ export type MdxFrontmatter = {
     date?: Maybe<Scalars['Date']>;
     excerpt?: Maybe<Scalars['String']>;
     slug?: Maybe<Scalars['String']>;
-    featuredImage?: Maybe<File>;
     imageFacebook?: Maybe<File>;
     imageTwitter?: Maybe<File>;
     tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+    featuredImage?: Maybe<File>;
     featuredImagePosition?: Maybe<Scalars['String']>;
 };
 
@@ -2336,10 +2503,10 @@ export type MdxFrontmatterFilterInput = {
     date?: Maybe<DateQueryOperatorInput>;
     excerpt?: Maybe<StringQueryOperatorInput>;
     slug?: Maybe<StringQueryOperatorInput>;
-    featuredImage?: Maybe<FileFilterInput>;
     imageFacebook?: Maybe<FileFilterInput>;
     imageTwitter?: Maybe<FileFilterInput>;
     tags?: Maybe<StringQueryOperatorInput>;
+    featuredImage?: Maybe<FileFilterInput>;
     featuredImagePosition?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2490,9 +2657,10 @@ export type QueryFileArgs = {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    childMdx?: Maybe<MdxFilterInput>;
     childImageSharp?: Maybe<ImageSharpFilterInput>;
+    childMdx?: Maybe<MdxFilterInput>;
     childImagesJson?: Maybe<ImagesJsonFilterInput>;
+    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
 };
 
 export type QueryAllFileArgs = {
@@ -2549,9 +2717,13 @@ export type QueryAllImageSharpArgs = {
 
 export type QueryMarkdownRemarkArgs = {
     id?: Maybe<StringQueryOperatorInput>;
+    frontmatter?: Maybe<MarkdownRemarkFrontmatterFilterInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
+    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
+    fields?: Maybe<MarkdownRemarkFieldsFilterInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -3159,6 +3331,7 @@ export enum SitePageFieldsEnum {
     PluginCreatorPluginOptionsDefaultLayoutsDefault = 'pluginCreator___pluginOptions___defaultLayouts___default',
     PluginCreatorPluginOptionsGatsbyRemarkPlugins = 'pluginCreator___pluginOptions___gatsbyRemarkPlugins',
     PluginCreatorPluginOptionsGatsbyRemarkPluginsResolve = 'pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve',
+    PluginCreatorPluginOptionsIgnoreFileExtensions = 'pluginCreator___pluginOptions___ignoreFileExtensions',
     PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
     PluginCreatorPluginOptionsShortName = 'pluginCreator___pluginOptions___short_name',
     PluginCreatorPluginOptionsStartUrl = 'pluginCreator___pluginOptions___start_url',
@@ -3366,6 +3539,7 @@ export enum SitePluginFieldsEnum {
     PluginOptionsPluginsId = 'pluginOptions___plugins___id',
     PluginOptionsPluginsName = 'pluginOptions___plugins___name',
     PluginOptionsPluginsVersion = 'pluginOptions___plugins___version',
+    PluginOptionsPluginsPluginOptionsIgnoreFileExtensions = 'pluginOptions___plugins___pluginOptions___ignoreFileExtensions',
     PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
     PluginOptionsPluginsSsrApIs = 'pluginOptions___plugins___ssrAPIs',
     PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
@@ -3378,14 +3552,15 @@ export enum SitePluginFieldsEnum {
     PluginOptionsGatsbyRemarkPluginsOptionsMaxWidth = 'pluginOptions___gatsbyRemarkPlugins___options___maxWidth',
     PluginOptionsGatsbyRemarkPluginsOptionsLinkImagesToOriginal = 'pluginOptions___gatsbyRemarkPlugins___options___linkImagesToOriginal',
     PluginOptionsGatsbyRemarkPluginsOptionsWithWebp = 'pluginOptions___gatsbyRemarkPlugins___options___withWebp',
+    PluginOptionsGatsbyRemarkPluginsOptionsMarkdownCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___markdownCaptions',
+    PluginOptionsGatsbyRemarkPluginsOptionsShowCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___showCaptions',
     PluginOptionsGatsbyRemarkPluginsOptionsPathPrefix = 'pluginOptions___gatsbyRemarkPlugins___options___pathPrefix',
     PluginOptionsGatsbyRemarkPluginsOptionsWrapperStyle = 'pluginOptions___gatsbyRemarkPlugins___options___wrapperStyle',
     PluginOptionsGatsbyRemarkPluginsOptionsBackgroundColor = 'pluginOptions___gatsbyRemarkPlugins___options___backgroundColor',
-    PluginOptionsGatsbyRemarkPluginsOptionsShowCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___showCaptions',
-    PluginOptionsGatsbyRemarkPluginsOptionsMarkdownCaptions = 'pluginOptions___gatsbyRemarkPlugins___options___markdownCaptions',
     PluginOptionsGatsbyRemarkPluginsOptionsTracedSvg = 'pluginOptions___gatsbyRemarkPlugins___options___tracedSVG',
     PluginOptionsGatsbyRemarkPluginsOptionsLoading = 'pluginOptions___gatsbyRemarkPlugins___options___loading',
     PluginOptionsGatsbyRemarkPluginsOptionsShowLineNumbers = 'pluginOptions___gatsbyRemarkPlugins___options___showLineNumbers',
+    PluginOptionsIgnoreFileExtensions = 'pluginOptions___ignoreFileExtensions',
     PluginOptionsTrackingId = 'pluginOptions___trackingId',
     PluginOptionsShortName = 'pluginOptions___short_name',
     PluginOptionsStartUrl = 'pluginOptions___start_url',
@@ -3525,6 +3700,7 @@ export type SitePluginPluginOptions = {
     extensions?: Maybe<Array<Maybe<Scalars['String']>>>;
     defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayouts>;
     gatsbyRemarkPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsGatsbyRemarkPlugins>>>;
+    ignoreFileExtensions?: Maybe<Array<Maybe<Scalars['String']>>>;
     trackingId?: Maybe<Scalars['String']>;
     short_name?: Maybe<Scalars['String']>;
     start_url?: Maybe<Scalars['String']>;
@@ -3570,6 +3746,7 @@ export type SitePluginPluginOptionsFilterInput = {
     extensions?: Maybe<StringQueryOperatorInput>;
     defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayoutsFilterInput>;
     gatsbyRemarkPlugins?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput>;
+    ignoreFileExtensions?: Maybe<StringQueryOperatorInput>;
     trackingId?: Maybe<StringQueryOperatorInput>;
     short_name?: Maybe<StringQueryOperatorInput>;
     start_url?: Maybe<StringQueryOperatorInput>;
@@ -3602,11 +3779,11 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptions = {
     maxWidth?: Maybe<Scalars['Int']>;
     linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
     withWebp?: Maybe<Scalars['Boolean']>;
+    markdownCaptions?: Maybe<Scalars['Boolean']>;
+    showCaptions?: Maybe<Array<Maybe<Scalars['String']>>>;
     pathPrefix?: Maybe<Scalars['String']>;
     wrapperStyle?: Maybe<Scalars['String']>;
     backgroundColor?: Maybe<Scalars['String']>;
-    showCaptions?: Maybe<Scalars['Boolean']>;
-    markdownCaptions?: Maybe<Scalars['Boolean']>;
     tracedSVG?: Maybe<Scalars['Boolean']>;
     loading?: Maybe<Scalars['String']>;
     showLineNumbers?: Maybe<Scalars['Boolean']>;
@@ -3616,11 +3793,11 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
     maxWidth?: Maybe<IntQueryOperatorInput>;
     linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
     withWebp?: Maybe<BooleanQueryOperatorInput>;
+    markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
+    showCaptions?: Maybe<StringQueryOperatorInput>;
     pathPrefix?: Maybe<StringQueryOperatorInput>;
     wrapperStyle?: Maybe<StringQueryOperatorInput>;
     backgroundColor?: Maybe<StringQueryOperatorInput>;
-    showCaptions?: Maybe<BooleanQueryOperatorInput>;
-    markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
     tracedSVG?: Maybe<BooleanQueryOperatorInput>;
     loading?: Maybe<StringQueryOperatorInput>;
     showLineNumbers?: Maybe<BooleanQueryOperatorInput>;
@@ -3639,6 +3816,7 @@ export type SitePluginPluginOptionsPlugins = {
     id?: Maybe<Scalars['String']>;
     name?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
+    pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptions>;
     browserAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
     ssrAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
     pluginFilepath?: Maybe<Scalars['String']>;
@@ -3649,6 +3827,7 @@ export type SitePluginPluginOptionsPluginsFilterInput = {
     id?: Maybe<StringQueryOperatorInput>;
     name?: Maybe<StringQueryOperatorInput>;
     version?: Maybe<StringQueryOperatorInput>;
+    pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsFilterInput>;
     browserAPIs?: Maybe<StringQueryOperatorInput>;
     ssrAPIs?: Maybe<StringQueryOperatorInput>;
     pluginFilepath?: Maybe<StringQueryOperatorInput>;
@@ -3656,6 +3835,14 @@ export type SitePluginPluginOptionsPluginsFilterInput = {
 
 export type SitePluginPluginOptionsPluginsFilterListInput = {
     elemMatch?: Maybe<SitePluginPluginOptionsPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptions = {
+    ignoreFileExtensions?: Maybe<Array<Maybe<Scalars['String']>>>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
+    ignoreFileExtensions?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPolicy = {
@@ -4050,7 +4237,7 @@ export type PageBySlugQuery = {
     page: Maybe<
         Pick<Mdx, 'body' | 'excerpt'> & {
             frontmatter: Maybe<
-                Pick<MdxFrontmatter, 'title' | 'date' | 'slug'> & {
+                Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'featuredImagePosition'> & {
                     featuredImage: Maybe<
                         Pick<File, 'publicURL'> & {
                             sharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }>;
