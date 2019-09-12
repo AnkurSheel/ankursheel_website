@@ -17,8 +17,8 @@ module.exports = {
             url: '/',
         },
         {
-            label: 'Personal Game Projects',
-            url: './personal-game-projects',
+            label: 'CV',
+            url: './cv',
         },
         {
             label: 'Blog',
