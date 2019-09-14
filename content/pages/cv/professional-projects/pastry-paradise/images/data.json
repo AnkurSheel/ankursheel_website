@@ -1,0 +1,8 @@
+{
+    "gallery": [
+        { "image": "./pp1.jpg", "title": "" },
+        { "image": "./pp2.jpg", "title": "" },
+        { "image": "./pp3.jpg", "title": "" },
+        { "image": "./pp4.jpg", "title": "" }
+    ]
+}

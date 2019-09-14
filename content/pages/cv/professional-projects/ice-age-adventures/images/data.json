@@ -1,0 +1,11 @@
+{
+    "gallery": [
+        { "image": "./adventures1.jpg", "title": "" },
+        { "image": "./adventures2.jpg", "title": "" },
+        { "image": "./adventures3.jpg", "title": "" },
+        { "image": "./adventures4.jpg", "title": "" },
+        { "image": "./adventures5.jpg", "title": "" },
+        { "image": "./adventures6.jpg", "title": "" },
+        { "image": "./adventures7.jpg", "title": "" }
+    ]
+}

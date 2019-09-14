@@ -17,6 +17,10 @@ module.exports = {
             url: '/',
         },
         {
+            label: 'CV',
+            url: '/cv',
+        },
+        {
             label: 'Blog',
             url: '/blog',
         },

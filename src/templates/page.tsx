@@ -1,6 +1,8 @@
+import { css } from '@emotion/core';
 import { graphql } from 'gatsby';
 import { IFluidObject } from 'gatsby-background-image';
 import React from 'react';
+import { oc } from 'ts-optchain';
 import Wrapper from '../01-elements/Wrapper';
 import SEO from '../02-components/SEO';
 import Content from '../03-composites/Content';
@@ -14,24 +16,23 @@ interface PageProps {
 
 export const Page = ({ data }: PageProps) => {
     const { page } = data;
-    const frontmatter = page && page.frontmatter;
-    const excerpt = (page && page.excerpt) || '';
-    const title = (frontmatter && frontmatter.title) || '';
-    const slug = (frontmatter && frontmatter.slug) || '';
-    const date = frontmatter && frontmatter.date;
-    const featuredImage = frontmatter && frontmatter.featuredImage;
-    const featuredImageUrl = featuredImage && featuredImage.publicURL;
-    const fluid = featuredImage && featuredImage.sharp && (featuredImage.sharp.fluid as IFluidObject);
+    const excerpt = oc(page).excerpt('');
+    const title = oc(page).frontmatter.title('');
+    const slug = oc(page).frontmatter.slug('');
+    const date = oc(page).frontmatter.date('');
+    const featuredImageUrl = oc(page).frontmatter.featuredImage.publicURL(undefined);
+    const fluid = oc(page).frontmatter.featuredImage.sharp.fluid(undefined) as IFluidObject | undefined;
+    const featuredImagePosition = oc(page).frontmatter.featuredImagePosition(undefined);
 
     return (
         <Layout>
             <SEO title={title} description={excerpt} path={slug} featuredImageUrl={featuredImageUrl} />
 
-            <Hero image={fluid} title={title} />
+            <Hero image={fluid} title={title} imageStyles={css({ backgroundPosition: `${featuredImagePosition}` })} />
 
             <main css={Wrapper}>
                 <article>
-                    <Content content={page && page.body} date={date} />
+                    <Content content={oc(page).body('')} date={date} path={slug} tags={[]} />
                 </article>
             </main>
         </Layout>
@@ -57,6 +58,7 @@ export const pageQuery = graphql`
                         }
                     }
                 }
+                featuredImagePosition
             }
         }
     }

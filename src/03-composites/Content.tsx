@@ -43,7 +43,7 @@ const Content = (props: ContentProps) => {
 
     return (
         <section>
-            {(tags || date) && <ContentHeader date={date} tags={tags} />}
+            {tags && date && <ContentHeader date={date} tags={tags} />}
             <div css={styles.body}>
                 <MDXRenderer path={path}>{content}</MDXRenderer>
             </div>

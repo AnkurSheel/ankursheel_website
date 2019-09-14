@@ -15,7 +15,8 @@
         "noUnusedParameters": true,
         "pretty": true,
         "resolveJsonModule": true,
-        "typeRoots": ["./types", "node_modules/@types"]
+        "typeRoots": ["./types", "node_modules/@types"],
+        "plugins": [{ "transform": "ts-optchain/transform" }]
     },
     "include": ["./src/**/*", "./*.ts"],
     "exclude": ["node_modules", "public", ".cache", "types"]

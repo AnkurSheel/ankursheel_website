@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
 import ImageWithOverlay from '../02-components/ImageWithOverlay';
-import LightBoxModal, { LightBoxImage } from '../02-components/LightboxModal';
+import LightBoxModal, { LightBoxModalImage } from '../02-components/LightboxModal';
 import { GetImagesQuery } from '../graphqlTypes';
 
 const styles = {
@@ -23,7 +23,7 @@ interface ImageGalleryProps {
 const ImageGallery = (props: ImageGalleryProps) => {
     const [activeIndex, setActiveIndex] = useState(-1);
     const [showModal, setShowModal] = useState(false);
-    const [selectedImage, setSelectedImage] = useState<LightBoxImage | undefined>(undefined);
+    const [selectedImage, setSelectedImage] = useState<LightBoxModalImage | undefined>(undefined);
     const {
         allImagesJson: { edges },
     }: GetImagesQuery = useStaticQuery(
@@ -50,7 +50,6 @@ const ImageGallery = (props: ImageGalleryProps) => {
             }
         `
     );
-    console.log({ edges });
     return (
         <>
             <div css={styles.container}>
