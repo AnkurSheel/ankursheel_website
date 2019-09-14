@@ -1,4 +1,5 @@
 import { css } from '@emotion/core';
+import slugify from '@sindresorhus/slugify';
 import { Link } from 'gatsby';
 import React from 'react';
 import { colors } from '../tokens';
@@ -41,11 +42,11 @@ export const TagList = (props: TagListProps) => {
     return (
         <ul css={styles.tagsList}>
             {tags.map(t => {
-                const tag = t.toLowerCase();
+                const tag = slugify(t);
                 return (
                     <li css={styles.tag} key={`tag-list-${tag}`}>
                         <Link css={styles.link} to={`/tags/${tag}`}>
-                            {tag}
+                            {t}
                         </Link>
                     </li>
                 );
