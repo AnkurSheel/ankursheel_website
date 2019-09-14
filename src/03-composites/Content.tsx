@@ -11,7 +11,7 @@ const styles = {
             borderTop: '2px solid #b1b1b1',
         },
         '& > h3': {
-            borderTop: '2px solid #ececec',
+            borderTop: '1px dashed #b1b1b1',
             marginTop: '1rem',
             paddingTop: '2rem',
         },

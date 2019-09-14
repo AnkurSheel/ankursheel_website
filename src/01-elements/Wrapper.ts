@@ -11,8 +11,9 @@ const Wrapper = css({
     margin: '0px auto 30px auto',
     top: '30px',
     padding: '50px',
-    boxShadow: '0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1)',
-
+    boxShadow:
+        'inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02)',
+    border: '1px solid #c3baaa',
     '@media (max-width:780px)': {
         width: '90%',
         padding: '25px',

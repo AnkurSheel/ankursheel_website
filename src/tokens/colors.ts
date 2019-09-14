@@ -23,7 +23,7 @@ export default {
     primaryAlpha: `rgba(32, 35, 42, 0.85)`,
     text: '#616161',
     background: '#000000',
-    backgroundArticle: colors.white,
+    backgroundArticle: '#f2f6c1',
     heartFooter: 'red',
     highlightCodeOneline: '#fff9d9',
     highlightCodeBackground: '#ffa7c4',
