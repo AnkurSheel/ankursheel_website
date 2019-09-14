@@ -20,12 +20,12 @@ const ContentIntro = (props: ContentIntroProps) => {
     return (
         <header css={styles.header}>
             <span>
-                This entry was posted on <time>{date}</time>
-                {tags.length > 0 && (
-                    <>
-                        <span> and tagged</span> <TagList tags={tags} />
-                    </>
+                {date && (
+                    <span>
+                        This entry was posted on <time>{date}</time>
+                    </span>
                 )}
+                {tags.length > 0 && <TagList tags={tags} />}
             </span>
         </header>
     );
