@@ -13,8 +13,8 @@ module.exports = {
     headerLinksIcon: 'avatar.png',
     headerLinks: [
         {
-            label: 'About',
-            url: '/',
+            label: 'Impossible List',
+            url: '/impossible-list',
         },
         {
             label: 'CV',
