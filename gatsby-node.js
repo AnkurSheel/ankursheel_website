@@ -1,4 +1,5 @@
 const { createFilePath } = require('gatsby-source-filesystem');
+const slugify = require('@sindresorhus/slugify');
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
@@ -119,7 +120,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         .filter(item => item.node.frontmatter.tags !== null)
         .reduce((acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.tags.map(t => t.toLowerCase())])], [])
         .forEach(uniqTag => {
-            const tag = uniqTag.toLowerCase();
+            const tag = slugify(uniqTag);
             createPage({
                 path: `tags/${tag}`,
                 component: PostsByTagTemplate,
