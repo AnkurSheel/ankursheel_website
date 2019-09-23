@@ -1,0 +1,135 @@
+---
+author: 'Ankur Sheel'
+date: '2019-09-23'
+slug: 'add-cursive-fonts-to-vs-code'
+title: 'Add cursive fonts to VS Code '
+excerpt: 'How to add ligatures and cursive fonts to VS Code'
+tags:
+    - 'vs code'
+    - 'dev tools'
+featuredImage: './cover.png'
+featuredImagePosition: ''
+imageFacebook: './image-facebook.png'
+imageTwitter: './image-twitter.png'
+---
+
+I have been using FiraCode as my font of choice in VS Code since I found about it. The use of ligatures while typing code is really useful and has been a game-changer. However, lately I have been seeing some VS code screenshots with cursive fonts in the text editor and I wanted some of that. But, I also wanted to keep the ligatures that FiraCode has already spoiled me with.
+
+Using my googling skills, I found a few articles and it seemed the easiest way was to install a theme which has a cursive font already built in such as [this](https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic). However, I like the flexibility of changing themes so this was not a viable option for me.
+
+## Final Output
+
+![Final Output Code Snippet](./cover.png)
+
+Now, that we know what we are looking to achieve, let's see how to make it happen.
+
+## Updating VS Code's settings
+
+My search for a font that encapsulates both ligatures and Cursive fonts led me to [Fira Code iScript](https://github.com/kencrocken/FiraCodeiScript) made by Ken Krocken. It combines 2 fonts - Fira Code as the regular font and Script12 as the italic font.
+
+After installing the font on my system, I changed the editor settings to use _Fira Code iScript_ as the first option for _font family_.
+
+```json
+"editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace",
+
+```
+
+VS Code uses the TextMate grammar syntax to define how it needs to render code. You can read more in the [official documentation](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide). In VS Code _settings.json_ you can override the font style for the current theme by modifying the _textMateRules_ under _editor.tokenColorCustomizations_.
+
+```json
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "", // optional name for the block
+                "scope": [], // array of Scopes to which the style should be applied to
+                "settings": {
+                    "fontStyle": "italic" // the font style that should be applied
+                }
+            }
+        ]
+    }
+}
+```
+
+You might be wondering how to get the scope to put in the above JSON. Luckily, VS code has a command that can help us with this - **Developer: Inspect TM Scopes**. You can trigger this by using the Command Palette (Ctrl + Shift + P) after ensuring that the active cursor is on the token that you want to inspect.
+
+The scope inspector displays the following information:
+
+-   The current token.
+-   Metadata about the token and information about its computed appearance.
+-   Theme rules that apply to the token.
+-   Complete scope list, with the most specific scope at the top.
+
+The one that we will use is _scope list_. Whichever token you want to make italic, add it to the scopes in the _scopes_ array. You can see my current config for an example
+
+## My current config
+
+```json
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "comment",
+                "scope": ["comment"],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Keyword Storage",
+                "scope": ["keyword", "storage", "keyword.control"],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Entity",
+                "scope": [
+                    "entity.name.type.class", //class names
+                    "entity.other.attribute-name",
+                    "entity.name.method",
+                    "entity.name.tag"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Variable",
+                "scope": [
+                    "variable.language",
+                    "meta.paragraph.markdown",
+                    "support.type.property-name.json",
+                    "string.other.link.title.markdown"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Markdown",
+                "scope": [
+                    "meta.paragraph.markdown",
+                    "string.other.link.title.markdown",
+                    "markup.underline.link.markdown"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Json",
+                "scope": ["support.type.property-name.json"],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
+}
+```
+
+## Conclusion
+
+After these steps, I have both ligatures and cursive fonts in my editor.
