@@ -1,4 +1,5 @@
 ---
+published: true
 author: Ankur Sheel
 date: 2018-09-10
 excerpt: Did you know that by default you can check in code as anyone in your git repository? This article shows you how to prevent this problem by using a GUI.
@@ -64,58 +65,4 @@ _This is D1E4471 in the screenshot above_
 
 12. Click on export and copy the public gpg key.
 
-_Make sure you copy everything including `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `-----END PGP PUBLIC KEY BLOCK-----`_
-
-![PGP public key](./images/secure_git_commits_9.png)
-
-## Configure Git to Sign Commits
-
-1. Update the global git config to use the signing key.
-   _Remember the Key-ID from above - You will need it here._
-
-2. Enter `git config user.signingkey D1E4471` in your git console
-
-If you want to set it on a global level, use `git config --global user.signingkey D1E4471`instead
-
-3. Instruct git to sign every commit automatically.
-
-4. Enter `git config commit.gpgsign true` in your git console. If you want to set it on a global level, use `git config --global commit.gpgsign true`instead.
-
-5. Instruct git to sign every tag automatically.
-
-6. Enter `git config tag.gpgsign true` in your git console. If you want to set it on a global level, use `git config --global tag.gpgsign true` instead
-
-7. Tell git use the gpg4win version of gpg.exe
-
-8. Enter `git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"` in your git console.
-
-You might need to tweak the location of the program if you installed it in a custom location
-
-To check that it works, commit some code to a repository which has been set up to use signing. You should be prompted for the passphrase you entered earlier.
-
-![Enter Passphrase](./images/secure_git_commits_10.png)
-
-## Configure Kleopatra to cache the passphrase for a longer time
-
-1. Run Kleopatra. Click on _Settings -> Configure Kleopatra_
-
-2. On the configure page click on _GnuPG System -> Private Keys_ and scroll down to the Options controlling the security section.
-
-3. Set the cache time. _86400 seconds is equal to 1 day._
-
-![Configure Kleopatra](./images/secure_git_commits_11.png)
-
-## Configure Github to show verified commits
-
-1. Follow the steps at [Adding a new GPG key to your GitHub account](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/) so that Github can show the verified commits.
-   _Use the public gpg_ key that you had copied earlier.
-
-To check if it works, push the signed commit. You should see the Verified tag in the commit history on Github.
-
-The commit should have a verified tag which you can click to see additional details
-
-![Verified Commits](./images/secure_git_commits_1.png)
-
-## Conclusion
-
-Now all the commits will have a verified tag. Do you sign your commits? Let me know in the comments
+\_Make sure you copy everything including `
