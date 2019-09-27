@@ -7,6 +7,10 @@ const getArticleFiles = () => {
     return glob.sync(join(__dirname, '..', 'content', 'posts', '**', '*.mdx'));
 };
 
+const getPagesFiles = () => {
+    return glob.sync(join(__dirname, '..', 'content', 'pages', '**', '*.mdx'));
+};
+
 const parseFile = async (fileName: string) => {
     let markdown = '';
 
@@ -26,6 +30,7 @@ const parseFile = async (fileName: string) => {
 
 const main = () => {
     getArticleFiles().map(parseFile);
+    getPagesFiles().map(parseFile);
 };
 
 main();
