@@ -2,7 +2,9 @@
 published: true
 author: Ankur Sheel
 date: 2018-09-10
-excerpt: Did you know that by default you can check in code as anyone in your git repository? This article shows you how to prevent this problem by using a GUI.
+excerpt:
+    Did you know that by default you can check in code as anyone in your git repository? This article shows you how to
+    prevent this problem by using a GUI.
 slug: securing-git-commits-windows
 title: Securing git commits from tricking you on Windows
 featuredImage: './cover.png'
@@ -15,9 +17,15 @@ tags:
     - tips and tricks
 ---
 
-Did you know that by default you can check in code as anyone in your git repository? All you need to do is run `git config.username = {username}` and `git config.email={email}`and you can trick git into thinking you are someone else. For a better understanding of what kinds of problems this can create, go and read Mike Gerwitz’s article, [A Git Horror Story](https://mikegerwitz.com/papers/git-horror-story). Luckily, Git allows you to resolve this issue pretty easily - by letting you sign commits using GPG(GNU Privacy Guard).
+Did you know that by default you can check in code as anyone in your git repository? All you need to do is run
+`git config.username = {username}` and `git config.email={email}`and you can trick git into thinking you are someone
+else. For a better understanding of what kinds of problems this can create, go and read Mike Gerwitz’s article,
+[A Git Horror Story](https://mikegerwitz.com/papers/git-horror-story). Luckily, Git allows you to resolve this issue
+pretty easily - by letting you sign commits using GPG(GNU Privacy Guard).
 
-The GitHub help article [Signing commits using GPG](https://help.github.com/articles/signing-commits-using-gpg/) is a pretty good guide on how to set it up. But, it requires you to use the git bash console. So, what do you do if like me you are on a Windows machine and would prefer to use a GUI? Don't fear this guide will tell you what you need to know.
+The GitHub help article [Signing commits using GPG](https://help.github.com/articles/signing-commits-using-gpg/) is a
+pretty good guide on how to set it up. But, it requires you to use the git bash console. So, what do you do if like me
+you are on a Windows machine and would prefer to use a GUI? Don't fear this guide will tell you what you need to know.
 
 Using Gpg4win with Git needs a little bit of configuration so let's start configuring it.
 

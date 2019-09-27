@@ -3,7 +3,9 @@ published: true
 author: Ankur Sheel
 # comments: true
 date: 2017-03-27
-excerpt: In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution.
+excerpt:
+    In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come
+    up with an approach to find a DP solution.
 slug: dynamic-programming-series-introduction
 title: Dynamic Programming Series - Introduction
 featuredImage: './cover.png'
@@ -21,17 +23,26 @@ This article is a part of series
 2. [Longest Common Subsequence](/blog/dynamic-programming-longest-common-subsequence/)
 3. [Edit(Levenshtein) distance](/blog/dynamic-programming-editlevenshtein-distance)
 
-Dynamic Programming is one of those techniques that every programmer should have in their toolbox. But, it is also confusing for a lot of people. For a long time, I struggled to get a grip on how to apply Dynamic Programming to problems. Most articles that I could find on the internet, gave the final dynamic programming solution without actually showing the approach taken to arrive at the final solution.
+Dynamic Programming is one of those techniques that every programmer should have in their toolbox. But, it is also
+confusing for a lot of people. For a long time, I struggled to get a grip on how to apply Dynamic Programming to
+problems. Most articles that I could find on the internet, gave the final dynamic programming solution without
+actually showing the approach taken to arrive at the final solution.
 
-In this article, I will show the benefits of using a Dynamic Programming approach to solving problems with an example. In the end, I will show some steps you can use to find a Dynamic Programming solution. Hopefully, after reading this article, you will find Dynamic Programming simple and intuitive.
+In this article, I will show the benefits of using a Dynamic Programming approach to solving problems with an example.
+In the end, I will show some steps you can use to find a Dynamic Programming solution. Hopefully, after reading this
+article, you will find Dynamic Programming simple and intuitive.
 
 ## What is Dynamic Programming?
 
-Dynamic programming is an efficient method for solving specific types of complicated computational problems. These problems are generally those that can be broken down into smaller overlapping sub-problems. It can be characterised basically as recursion along with memoization. Memoization is the ability to save the results of specific states to reuse later.
+Dynamic programming is an efficient method for solving specific types of complicated computational problems.
+These problems are generally those that can be broken down into smaller overlapping sub-problems. It can be
+characterised basically as recursion along with memoization. Memoization is the ability to save the results of specific
+states to reuse later.
 
 ## Profiling
 
-To prove that we are improving our solution, we need statistics that we can compare. I will be using [google benchmark](https://github.com/google/benchmark) to help profile our solutions. The benchmark will look like this
+To prove that we are improving our solution, we need statistics that we can compare. I will be using
+[google benchmark](https://github.com/google/benchmark) to help profile our solutions. The benchmark will look like this
 
 ```
 
