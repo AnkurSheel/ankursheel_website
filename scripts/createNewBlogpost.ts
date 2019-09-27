@@ -46,6 +46,7 @@ const generateBlogPost = async () => {
     mkdirp.sync(destination);
 
     const yaml = jsToYaml.stringify({
+        published: false,
         author: 'Ankur Sheel',
         date: formatDate(new Date()),
         slug,
