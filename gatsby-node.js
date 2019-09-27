@@ -12,7 +12,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     const allMarkdownQuery = await graphql(`
         {
-            allMarkdown: allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdown: allMdx(
+                sort: { fields: [frontmatter___date], order: DESC }
+                limit: 1000
+                filter: { frontmatter: { published: { eq: true } } }
+            ) {
                 edges {
                     node {
                         fileAbsolutePath
