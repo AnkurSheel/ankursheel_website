@@ -38,6 +38,7 @@ module.exports = {
                 extensions: ['jsx', 'tsx'],
             },
         ],
+        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/scripts/*.ts'] }],
     },
     overrides: [
         // Override some TypeScript rules just for .js files
