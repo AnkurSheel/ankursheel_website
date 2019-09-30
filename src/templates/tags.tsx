@@ -42,7 +42,7 @@ export const pageQuery = graphql`
     query PostsByTag($tagRegex: String!) {
         posts: allMdx(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { tags: { regex: $tagRegex } } }
+            filter: { frontmatter: { tags: { regex: $tagRegex }, published: { eq: true } } }
         ) {
             edges {
                 node {
