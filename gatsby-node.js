@@ -10,12 +10,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const PostsByTagTemplate = require.resolve('./src/templates/tags.tsx');
     const ListPostsTemplate = require.resolve('./src/templates/blog-list-template.tsx');
 
+    const isDevelop = process.env.gatsby_executing_command.includes('develop');
+
     const allMarkdownQuery = await graphql(`
         {
             allMarkdown: allMdx(
                 sort: { fields: [frontmatter___date], order: DESC }
                 limit: 1000
-                filter: { frontmatter: { published: { eq: true } } }
+                ${isDevelop ? '' : 'filter: { frontmatter: { published: { eq: true } } }'}
             ) {
                 edges {
                     node {
@@ -82,7 +84,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         });
 
         // generate post share images (dev only)
-        if (process.env.gatsby_executing_command.includes('develop')) {
+        if (isDevelop) {
             createPage({
                 path: `/blog/${post.node.frontmatter.slug}/image_tw`,
                 component: BlogPostShareImage,
