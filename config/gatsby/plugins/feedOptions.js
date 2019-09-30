@@ -40,10 +40,8 @@ module.exports = {
               }
                 allMdx(
                     limit: 1000,
-                    filter: {
-                    fileAbsolutePath: {regex: "//content/posts//"}
-                    }
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                    filter: { fileAbsolutePath: {regex: "//content/posts//"}, frontmatter: { published: { eq: true } } }
+                    sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   edges {
                     node {

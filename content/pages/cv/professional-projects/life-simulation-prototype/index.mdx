@@ -1,4 +1,5 @@
 ---
+published: true
 slug: 'cv/professional-projects/life-simulation-prototype'
 title: Life Simulation Prototype
 ---
@@ -21,9 +22,13 @@ C++
 
 -   Fixed the SConstruct script and got the project working on device.
 
--   Modified premake to reduce the time spent on static analysis and validation (in previous projects from upwards of 5-10  minutes to a few seconds) by adding lua script which generated a batch file to do a static analysis only on the modified file. This was then added as post build event removing the need to run a separate project which would validate all the files.
+-   Modified premake to reduce the time spent on static analysis and validation (in previous projects from upwards of
+    5-10  minutes to a few seconds) by adding lua script which generated a batch file to do a static analysis only on
+    the modified file. This was then added as post build event removing the need to run a separate project which would
+    validate all the files.
 
--   Modified premake so that the string hash table was generated as a pre-build event. This reduced the need to run premake to update the hash table when a new string(to be hashed) was added.
+-   Modified premake so that the string hash table was generated as a pre-build event. This reduced the need to run
+    premake to update the hash table when a new string(to be hashed) was added.
 
 -   Made walker tool run after it had been broken
 

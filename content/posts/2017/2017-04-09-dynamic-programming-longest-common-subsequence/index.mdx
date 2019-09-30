@@ -1,8 +1,11 @@
 ---
+published: true
 author: Ankur Sheel
 # comments: true
 date: 2017-04-09
-excerpt: In this article, we will look at using the above steps to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem.
+excerpt:
+    In this article, we will look at using the above steps to arrive at a Dynamic Programming solution to the Longest
+    Common Subsequence problem.
 slug: dynamic-programming-longest-common-subsequence
 title: Dynamic Programming - Longest Common Subsequence
 imageFacebook: './image-facebook.png'
@@ -19,11 +22,14 @@ This article is a part of series
 2. **Longest Common Subsequence**
 3. [Edit(Levenshtein) distance](/blog/dynamic-programming-editlevenshtein-distance)
 
-In this article, we will look at using the steps mentioned in the [introduction article](/blog/dynamic-programming-series-introduction) to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem.
+In this article, we will look at using the steps mentioned in the
+[introduction article](/blog/dynamic-programming-series-introduction) to arrive at a Dynamic Programming solution to the
+Longest Common Subsequence problem.
 
 ## Longest Common Subsequence (LCS)
 
-**Problem Statement:** Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.
+**Problem Statement:** Given two sequences, find the length of longest subsequence present in both of them. A
+subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.
 
 **Examples:**
 
@@ -35,19 +41,28 @@ The longest common subsequence is used to solve problems such as
 -   computing how similar two DNA sequences are; and
 -   comparing two different versions of the same file.
 
-You can read more about the Longest Common Subsequence [here](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem).
+You can read more about the Longest Common Subsequence
+[here](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem).
 
 ## Profiling
 
-As mentioned in the [introduction article](/blog/dynamic-programming-series-introduction), we will be using [google benchmark](https://github.com/google/benchmark) to help profile our solutions. If you want to know more about how we will be using google benchmark, you can read the [introduction article](/blog/dynamic-programming-series-introduction).
+As mentioned in the [introduction article](/blog/dynamic-programming-series-introduction), we will be using
+[google benchmark](https://github.com/google/benchmark) to help profile our solutions. If you want to know more about
+how we will be using google benchmark, you can read the
+[introduction article](/blog/dynamic-programming-series-introduction).
 
-For the LCS problem, the worst case occurs when there is no match between the sequences.  For the purposes of this article, we will profile against the worst case by creating 2 strings of length _**n**_ and fill one of them with _**'a'**_ and the other with **'b'**. We will then attempt to see how long it takes for the function to return. **_n_** will be part of the Benchmark name.
+For the LCS problem, the worst case occurs when there is no match between the sequences.  For the purposes of this
+article, we will profile against the worst case by creating 2 strings of length _**n**_ and fill one of them with
+_**'a'**_ and the other with **'b'**. We will then attempt to see how long it takes for the function to return.
+**_n_** will be part of the Benchmark name.
 
-If you want to see the benchmarks in action, you can find the code [here](https://github.com/AnkurSheel/DynamicProgramming).
+If you want to see the benchmarks in action, you can find the code
+[here](https://github.com/AnkurSheel/DynamicProgramming).
 
 ## Steps
 
-In the [introduction article](/blog/dynamic-programming-series-introduction), we came up with the following steps to find a dynamic programming approach to our problem
+In the [introduction article](/blog/dynamic-programming-series-introduction), we came up with the following steps to
+find a dynamic programming approach to our problem
 
 1. Find the overlapping subproblem.
 2. Start with a recursive solution
@@ -88,11 +103,13 @@ int cLCS::Recursive(const char* const first, const char* const second)
 }
 ```
 
-In the recursive approach, it is extremely hard to get the actual LCS string so we are just going to return the length of the LCS.
+In the recursive approach, it is extremely hard to get the actual LCS string so we are just going to return the length
+of the LCS.
 
 ### Top-Down Recursive approach with Memoization
 
-LCS subproblems consist of a pair of suffixes of the 2 input strings. To store and look up the subproblem solutions we can use a 2d array. We will use a _**-1**_ to tell the algorithm that nothing has been stored as yet.
+LCS subproblems consist of a pair of suffixes of the 2 input strings. To store and look up the subproblem solutions we
+can use a 2d array. We will use a _**-1**_ to tell the algorithm that nothing has been stored as yet.
 
 ```cpp
 string cLCS::Memonized(const string& first, const string& second)
@@ -130,7 +147,8 @@ int cLCS::Memonized(const char* const first, const char* const second, int i, in
 }
 ```
 
-In the above algorithm, _**m_results(0)**_, gives the length of the LCS. We will look at _**GetText()**_ in the next section to see how we can get the subsequence after computing the _**m_results**_ array.
+In the above algorithm, _**m_results(0)**_, gives the length of the LCS. We will look at _**GetText()**_ in the next
+section to see how we can get the subsequence after computing the _**m_results**_ array.
 
 ### Getting the subsequence
 
@@ -167,7 +185,12 @@ string cLCS::GetText(const string& first, const string& second)
 }
 ```
 
-To find the longest common subsequence,  we traverse through both the strings - _**first**_ and **_second_** using indexes **_i _** and **_j_** respectively. If \_**first[i] = second[j]**\_, then we add this character to the result string and increment both **_i_** and _**j**_. If there is no match, that means that the subsequence was formed either by deleting **_first[i]_** or **_second[j]_**. If **_m_results[i+1][j]_** >= **_m_results[i][j + 1]_**, this means that the subsequence was formed by deleting **_first[i]_**. Otherwise, it was formed by deleting **_second[j]_**. Continuing in this way, we can get the common subsequence.
+To find the longest common subsequence,  we traverse through both the strings - _**first**_ and **_second_** using
+indexes **_i _** and **_j_** respectively. If \_**first[i] = second[j]**\_, then we add this character to the result
+string and increment both **_i_** and _**j**_. If there is no match, that means that the subsequence was formed either
+by deleting **_first[i]_** or **_second[j]_**. If **_m_results[i+1][j]_** >= **_m_results[i][j + 1]_**, this means that
+the subsequence was formed by deleting **_first[i]_**. Otherwise, it was formed by deleting **_second[j]_**. Continuing
+in this way, we can get the common subsequence.
 
 ### Bottom Up Approach with Dynamic Programming
 
@@ -205,15 +228,19 @@ string cLCS::DP(const std::string& first, const std::string& second)
 }
 ```
 
-The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem could be solved by computing a fraction of the array.
+The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem
+could be solved by computing a fraction of the array.
 
 ### Bottom Up Approach with Dynamic Programming(optimised)
 
-We can optimise the above solution since once we have computed the row **_i_** of array **_m_results_**, we no longer need the values of **_i + 1_**. However, we cannot recreate the subsequence using this approach and hence I won't be showing it here.
+We can optimise the above solution since once we have computed the row **_i_** of array **_m_results_**, we no longer
+need the values of **_i + 1_**. However, we cannot recreate the subsequence using this approach and hence I won't be
+showing it here.
 
 ## Conclusion
 
-If you would like to look at the code or run the benchmarks or tests yourself, you can find the code [here ](https://github.com/AnkurSheel/DynamicProgramming)
+If you would like to look at the code or run the benchmarks or tests yourself, you can find the code
+[here ](https://github.com/AnkurSheel/DynamicProgramming)
 
 In the next article in the series, we will look at another problem that can be solved by Dynamic Programming.
 

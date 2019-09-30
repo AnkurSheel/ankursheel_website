@@ -1,4 +1,5 @@
 ---
+published: true
 author: Ankur Sheel
 # comments: true
 date: 2016-10-05
@@ -14,15 +15,20 @@ tags:
     - postmortem
 ---
 
-Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time around it was a multiplayer AI bot competition based on the Bomberman theme.
+Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time
+around it was a multiplayer AI bot competition based on the Bomberman theme.
 
 ![hypersonic](./cover.png)
 
-If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss seeing all the things I did wrong. 😊
+If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss
+seeing all the things I did wrong. 😊
 
 ## Preamble
 
-The game was turn based, where each turn consisted of you reading the world state information from _stdin_ and outputting your action to _stdout_. This would be repeated till either only 1 bot was alive or a fixed number of rounds had passed. If there was more than 1 bot alive at the end, the winner would be decided by the number of boxes that they had blown up. You also had a maximum of 100 ms to submit your action before you would timeout and die.
+The game was turn based, where each turn consisted of you reading the world state information from _stdin_ and
+outputting your action to _stdout_. This would be repeated till either only 1 bot was alive or a fixed number of rounds
+had passed. If there was more than 1 bot alive at the end, the winner would be decided by the number of boxes that they
+had blown up. You also had a maximum of 100 ms to submit your action before you would timeout and die.
 
 There are multiple leagues:
 
@@ -34,55 +40,93 @@ There are multiple leagues:
 -   Gold
 -   Legendary
 
-To pass each league, you need to beat the boss of that league. Everyone starts from Wood 3 and depending on how good their bot fares, they move to the higher leagues. Also, as you move to the higher leagues, extra rules might apply. For example, in wood 3 bombs did not hurt you and the goal was to blow up more boxes than your enemy. But, by the time you reached the bronze level, you could die from your own bombs and the main goal was to stay alive. Needless to say, this tripped up a lot of players who got stuck in bronze as the naive implementations were not good enough to go through.
+To pass each league, you need to beat the boss of that league. Everyone starts from Wood 3 and depending on how good
+their bot fares, they move to the higher leagues. Also, as you move to the higher leagues, extra rules might apply. For
+example, in wood 3 bombs did not hurt you and the goal was to blow up more boxes than your enemy. But, by the time you
+reached the bronze level, you could die from your own bombs and the main goal was to stay alive. Needless to say, this
+tripped up a lot of players who got stuck in bronze as the naive implementations were not good enough to go through.
 
 There are multiple languages that you can use to submit your bot but for obvious reasons C++ was what I went for.
 
 ## What Went Right
 
--   I had already spent a few days working on the puzzles at codingame which gave me a good idea of how the platform works. Working with web IDE (especially with C++)is a bit clunky but on the forums, I found a google chrome plugin that allowed my to sync a local file to the web IDE. This allowed me to work in Visual Studio which made for a much faster workflow.
+-   I had already spent a few days working on the puzzles at codingame which gave me a good idea of how the platform
+    works. Working with web IDE (especially with C++)is a bit clunky but on the forums, I found a google chrome plugin
+    that allowed my to sync a local file to the web IDE. This allowed me to work in Visual Studio which made for a much
+    faster workflow.
 
--   I also realized that one major limitation of codingame is that the whole solution has to be one file. Since , this is a major hindrance for readability and debugging, I created a utility in C# which ran through all the included files and combined them into 1 output file which was synced to the ide (using the plugin above).
+-   I also realized that one major limitation of codingame is that the whole solution has to be one file. Since , this
+    is a major hindrance for readability and debugging, I created a utility in C# which ran through all the included
+    files and combined them into 1 output file which was synced to the ide (using the plugin above).
 
--   I spent the first day setting up the framework for my Bot. This included classes to encapsulate the GameState and AI. This allowed me to quickly tweak my algorithms based on the new rules that were enabled as I moved through the leagues.
+-   I spent the first day setting up the framework for my Bot. This included classes to encapsulate the GameState and
+    AI. This allowed me to quickly tweak my algorithms based on the new rules that were enabled as I moved through the
+    leagues.
 
--   Since, the web IDE does not allow for any debugging except by using the stderr stream, I wrote a python script which would download the game data, parse it and put it into a txt file which would be consumed by my program. This allowed me to step through and debug the AI, when I could see that my AI was failing to win because of some bug.
+-   Since, the web IDE does not allow for any debugging except by using the stderr stream, I wrote a python script which
+    would download the game data, parse it and put it into a txt file which would be consumed by my program. This
+    allowed me to step through and debug the AI, when I could see that my AI was failing to win because of some bug.
 
--   I created a very simple algorithm to limit the amount of nodes available for pathfinding by using a variant of Navmeshes.
+-   I created a very simple algorithm to limit the amount of nodes available for pathfinding by using a variant of
+    Navmeshes.
 
--   Continuous refactoring after each league enabled me to tackle the new league without having to deal with a unreadable mess in the later stages.
+-   Continuous refactoring after each league enabled me to tackle the new league without having to deal with a
+    unreadable mess in the later stages.
 
--   Using source control to keep track of the AI. I cannot even stress how helpful it was to go back a version or two, because the new logic was performing even worse than the one a few iterations before.
+-   Using source control to keep track of the AI. I cannot even stress how helpful it was to go back a version or two,
+    because the new logic was performing even worse than the one a few iterations before.
 
 -   I made it to the Silver League, which was one of the goals I had set for myself.
 
 ## What Went Wrong
 
--   I missed one of the rules, where the bombs were blocked by items. It was by chance that I noticed this, because my bot started behaving unexpectedly when only a few boxes were left on the screen. This meant that the gamestate that my bot was evaluating was incorrect. This led to a multitude of problems some which are outlined below.
+-   I missed one of the rules, where the bombs were blocked by items. It was by chance that I noticed this, because my
+    bot started behaving unexpectedly when only a few boxes were left on the screen. This meant that the gamestate that
+    my bot was evaluating was incorrect. This led to a multitude of problems some which are outlined below.
 
--   I misjudged the scope of the problem and the sophistication of the other bots. My AI eventually turned to be a simple avoidance bot which blew up a few boxes. I think it would have been better if I had spent a little bit of time trying to kill other bots. In the same vein, my bot never actively tried to pick up the items to give itself more firepower. Most of the time it was lucky enough, that it would find a few of the items on its route.
+-   I misjudged the scope of the problem and the sophistication of the other bots. My AI eventually turned to be a
+    simple avoidance bot which blew up a few boxes. I think it would have been better if I had spent a little bit of
+    time trying to kill other bots. In the same vein, my bot never actively tried to pick up the items to give itself
+    more firepower. Most of the time it was lucky enough, that it would find a few of the items on its route.
 
--   I had a very basic scoring system to decide what action to perform. Unfortunately, the way I had set up the code meant that as the rules were enabled, it became harder to incorporate them into the scoring. I should have spent time refactoring so that I could easily score each move based on some heuristic and choose the best one.
+-   I had a very basic scoring system to decide what action to perform. Unfortunately, the way I had set up the code
+    meant that as the rules were enabled, it became harder to incorporate them into the scoring. I should have spent
+    time refactoring so that I could easily score each move based on some heuristic and choose the best one.
 
--   My bot started trapping itself or moving into unsafe areas after we were able to collect items to place multiple bombs or to increase the range of the bombs. This took me a long time to figure out.
+-   My bot started trapping itself or moving into unsafe areas after we were able to collect items to place multiple
+    bombs or to increase the range of the bombs. This took me a long time to figure out.
 
--   No look ahead. I did not spend any time setting up a look ahead mechanism which would have made for a more sophisticated bot. I assumed in the earlier stages that I would timeout with a look ahead logic. But, I should have added a timer to exit out before the timeout. I did add a timer eventually, but it was too late in the game
+-   No look ahead. I did not spend any time setting up a look ahead mechanism which would have made for a more
+    sophisticated bot. I assumed in the earlier stages that I would timeout with a look ahead logic. But, I should have
+    added a timer to exit out before the timeout. I did add a timer eventually, but it was too late in the game
 
--   I did not get to spend as much time as I would have liked on this. With work and other personal commitments, I was only able to spend a few hours on the problem. It was also very difficult to stay motivated and write/debug more code after having it done for the whole day at work.
+-   I did not get to spend as much time as I would have liked on this. With work and other personal commitments, I was
+    only able to spend a few hours on the problem. It was also very difficult to stay motivated and write/debug more
+    code after having it done for the whole day at work.
 
--   I was hoping to get a majority of it done over the weekend but, by then I had reached my goal of reaching the Silver league and could not see myself being able to get enough time to reach the Gold League. What can I say, laziness won the day.
+-   I was hoping to get a majority of it done over the weekend but, by then I had reached my goal of reaching the Silver
+    league and could not see myself being able to get enough time to reach the Gold League. What can I say, laziness won
+    the day.
 
--   I moved up the wood leagues before I had modified my AI to incorporate the new rules. This came to bite me in the ass once I reached Bronze and even more in the Silver league. In all fairness, I just resubmitted the previous bot with a minor tweak and the next thing I knew I had got promoted
+-   I moved up the wood leagues before I had modified my AI to incorporate the new rules. This came to bite me in the
+    ass once I reached Bronze and even more in the Silver league. In all fairness, I just resubmitted the previous bot
+    with a minor tweak and the next thing I knew I had got promoted
 
 ## What would I do differently
 
--   Adding a more robust scoring system to decide where to move. The current scoring system just avoided tiles that were unsafe and tried to blow up a box. With a more sophisticated scoring system, I could have got it to easily place bombs where it could have achieved multiple things.
+-   Adding a more robust scoring system to decide where to move. The current scoring system just avoided tiles that were
+    unsafe and tried to blow up a box. With a more sophisticated scoring system, I could have got it to easily place
+    bombs where it could have achieved multiple things.
 
--   Adding a timer earlier on for profiling. This would have given me the confidence to add more sophisticated techniques without being afraid to run into time out issues.
+-   Adding a timer earlier on for profiling. This would have given me the confidence to add more sophisticated
+    techniques without being afraid to run into time out issues.
 
--   Being better at deciding which feature to implement. By the time I reached the silver league, I had a huge scope of features that I wanted to implement but I got struck by paralysis analysis and I just couldn't decide which chunk would give me the most bang of the buck.
+-   Being better at deciding which feature to implement. By the time I reached the silver league, I had a huge scope of
+    features that I wanted to implement but I got struck by paralysis analysis and I just couldn't decide which chunk
+    would give me the most bang of the buck.
 
--   Once I realized, that I had missed the rule where items blocks bombs, I should have added it so that the bot was evaluating its moves on a correct game-state.
+-   Once I realized, that I had missed the rule where items blocks bombs, I should have added it so that the bot was
+    evaluating its moves on a correct game-state.
 
 -   Make sure I incorporate the rule as they became available instead of being in a rush to move up the leagues.
 
@@ -98,6 +142,7 @@ There are multiple languages that you can use to submit your bot but for obvious
 
 **India:** 5/38
 
-This was the first time I got a chance to participate in a codingame contest and although I did not do as well as I would have liked it was a lot of fun.
+This was the first time I got a chance to participate in a codingame contest and although I did not do as well as I
+would have liked it was a lot of fun.
 
 Feel free to follow me at codingame using this [url](https://www.codingame.com/servlet/urlinvite?u=1506970).
