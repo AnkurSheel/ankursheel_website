@@ -1,0 +1,24 @@
+{
+    "gallery": [
+        { "image": "./FileName-1.jpg", "title": "" },
+        { "image": "./FileName-2.jpg", "title": "" },
+        { "image": "./FileName-3.jpg", "title": "" },
+        { "image": "./FileName-4.jpg", "title": "" },
+        { "image": "./FileName-5.jpg", "title": "" },
+        { "image": "./FileName-6.jpg", "title": "" },
+        { "image": "./FileName-7.jpg", "title": "" },
+        { "image": "./FileName-8.jpg", "title": "" },
+        { "image": "./FileName-9.jpg", "title": "" },
+        { "image": "./FileName-10.jpg", "title": "" },
+        { "image": "./FileName-11.jpg", "title": "" },
+        { "image": "./FileName-12.jpg", "title": "" },
+        { "image": "./FileName-13.jpg", "title": "" },
+        { "image": "./FileName-14.jpg", "title": "" },
+        { "image": "./FileName-15.jpg", "title": "" },
+        { "image": "./FileName-16.jpg", "title": "" },
+        { "image": "./FileName-17.jpg", "title": "" },
+        { "image": "./FileName-18.jpg", "title": "" },
+        { "image": "./FileName-19.jpg", "title": "" },
+        { "image": "./FileName-20.jpg", "title": "" },
+    ]
+}
