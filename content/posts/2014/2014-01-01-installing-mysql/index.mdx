@@ -1,0 +1,67 @@
+---
+published: true
+author: Ankur Sheel
+date: 2014-01-01
+excerpt: The third post in the series Testing WordPress Locally deals with installing MySQL on windows.
+slug: installing-mysql
+title: 'Testing Wordpress Locally: Installing MySQL'
+featuredImage:
+featuredImagePosition:
+imageFacebook: './image-facebook.png'
+imageTwitter: './image-twitter.png'
+tags:
+    - Tutorial
+    - Wordpress
+---
+
+## The Series
+
+1. [Installing a Web Server (Apache)](./installing-apache)
+
+1. [Installing PHP](./installing-php)
+
+1. Installing MySQL
+
+1. [Installing phpMyAdmin](./installing-phpmyadmin)
+
+1. [Installing Wordpress](./installing-wordpress)
+
+## Installing MySQL on Windows
+
+-   Go to the MySQL Website and download the installer file from the windows section.
+
+-   Run the installer.
+
+-   Choose the Developer Default and click on Execute.
+
+-   On the MySQL Server Configuration Dialog, enter the password for the root/administrator access.
+
+## Testing MySQL on Windows
+
+-   Run the command prompt as **Adminstrator**.
+
+-   Navigate to the bin directory in the MySQL server install directory.
+
+-   Type _mysql -u root -p_.
+
+-   At the prompt enter the password.
+
+-   MySQL starts and you should see the MySQL prompt.
+
+-   Type _quit_ to exit.
+
+## Activating MySQL for PHP
+
+-   Open the _php.ini_ file for editing
+
+*   Remove the semicolon from the line _;extension_dir ="ext"_
+
+    -   If the line does not exist, add the line.
+
+-   Change ext to point to the ext folder in the PHP install directory.
+
+-   Remove the semicolon from the line _;extension=php_mysqli.dll_
+
+    -   If the line does not exist, add the line.
+
+-   Restart the APACHE server.
