@@ -1,0 +1,15 @@
+{
+    "gallery": [
+        { "image": "./gallery1/Maori_Village-2.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-3.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-4.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-5.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-6.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-7.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-8.jpg", "title": "" },
+        { "image": "./gallery1/Maori_Village-9.jpg", "title": "" },
+        { "image": "./gallery2/Maori_Village-11.jpg", "title": "" },
+        { "image": "./gallery2/Maori_Village-13.jpg", "title": "" },
+        { "image": "./gallery2/Maori_Village-14.jpg", "title": "" }
+    ]
+}
