@@ -31,7 +31,7 @@ export const Page = ({ path, data }: PageProps) => {
 
     return (
         <Layout>
-            <SEO title={title} description={excerpt} url={`${siteUrl}/${path}`} isBlog={false} />
+            <SEO title={title} description={excerpt} url={`${siteUrl}${path}`} isBlog={false} />
 
             <Hero image={fluid} title={title} imageStyles={css({ backgroundPosition: `${featuredImagePosition}` })} />
 

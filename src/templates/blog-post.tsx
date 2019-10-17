@@ -52,7 +52,7 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
                 description={excerpt}
                 imageFacebook={imageFacebookUrl}
                 imageTwitter={imageTwitterUrl}
-                url={`${siteUrl}/${path}`}
+                url={`${siteUrl}${path}`}
                 twitterUsername={twitterUserName}
                 isBlog
             />

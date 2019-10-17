@@ -36,7 +36,7 @@ const BlogList = (props: BlogListProps) => {
             <SEO
                 title={title}
                 description={`Blog Page ${pageContext.currentPage}`}
-                url={`${siteUrl}/${path}`}
+                url={`${siteUrl}${path}`}
                 isBlog={false}
             />
             <Hero title={description} />

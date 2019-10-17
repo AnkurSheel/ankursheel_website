@@ -33,7 +33,7 @@ const Tags = (props: TagsProps) => {
     const description = `Posts tagged as '${tag}'`;
     return (
         <Layout>
-            <SEO title={pageTitle} description={description} url={`${siteUrl}/${path}`} isBlog={false} />
+            <SEO title={pageTitle} description={description} url={`${siteUrl}${path}`} isBlog={false} />
             <Hero title={pageTitle} />
 
             <main css={Wrapper}>
