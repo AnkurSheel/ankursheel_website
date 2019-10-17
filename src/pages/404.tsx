@@ -1,10 +1,12 @@
 import { css } from '@emotion/core';
 import React from 'react';
 import { Cat } from 'react-kawaii';
+import { oc } from 'ts-optchain';
+import { SEO } from '@codinators/gatsby-shared-library';
 import Wrapper from '../01-elements/Wrapper';
 import RecentPosts from '../02-components/RecentPosts';
-import SEO from '../02-components/SEO';
 import Layout from '../04-layouts/layout';
+import useSiteMetadata from '../hooks/use-site-config';
 
 const styles = {
     mainTitle: css({
@@ -29,9 +31,11 @@ const styles = {
 };
 
 const NotFoundPage = () => {
+    const siteMetaData = useSiteMetadata();
+    const siteUrl = oc(siteMetaData).siteUrl('');
     return (
         <Layout>
-            <SEO title="Page Not Found" />
+            <SEO title="Page Not Found" description="Page Not Found" url={`${siteUrl}/404.html`} isBlog={false} />
             <main css={Wrapper}>
                 <h1 css={styles.mainTitle}>Oh No! Page Not Found</h1>
                 <Cat css={styles.cat} size={160} mood="ko" color="#596881" />

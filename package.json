@@ -12,6 +12,7 @@
     "license": "MIT",
     "author": "Ankur Sheel <ankur.sheel@gmail.com>",
     "scripts": {
+        "postinstall": "yarn deduplicate --list && yarn deduplicate",
         "build": "gatsby build",
         "develop": "gatsby develop",
         "clean": "gatsby clean",
