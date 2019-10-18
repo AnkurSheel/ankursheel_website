@@ -1,21 +1,38 @@
 import React from 'react';
+import { css } from '@emotion/core';
+
+const styles = {
+    wrapper: css({
+        position: 'relative',
+        width: '100%',
+        height: 0,
+        paddingBottom: '56%',
+    }),
+    iframe: css({
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        left: 0,
+        top: 0,
+    }),
+};
 
 interface VideoProps {
     src: string;
     title: string;
-    width?: number | string;
-    height?: number | string;
 }
-const Video = ({ src, title, width = 560, height = 400 }: VideoProps) => (
-    <iframe
-        src={src}
-        title={title}
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        frameBorder="0"
-        allowFullScreen
-        width={width}
-        height={height}
-    />
+
+const Video = ({ src, title }: VideoProps) => (
+    <div css={styles.wrapper}>
+        <iframe
+            css={styles.iframe}
+            src={src}
+            title={title}
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            frameBorder="0"
+            allowFullScreen
+        />
+    </div>
 );
 
 export default Video;
