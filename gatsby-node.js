@@ -1,6 +1,10 @@
 const { createFilePath } = require('gatsby-source-filesystem');
 const slugify = require('@sindresorhus/slugify');
 
+const padLeft0 = n => n.toString().padStart(2, '0');
+const formatDate = d => `${d.getFullYear()}-${padLeft0(d.getMonth() + 1)}-${padLeft0(d.getDate())}`;
+const date = formatDate(new Date());
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
 
@@ -17,7 +21,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             allMarkdown: allMdx(
                 sort: { fields: [frontmatter___date], order: DESC }
                 limit: 1000
-                ${isDevelop ? '' : 'filter: { frontmatter: { published: { eq: true } } }'}
+                ${isDevelop ? '' : `filter: { frontmatter: { published: { eq: true }, date: { lte: "${date}" } } }`}
             ) {
                 edges {
                     node {
@@ -86,6 +90,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 skip: i * postsPerPage,
                 currentPage: i + 1,
                 nbPages,
+                date,
             },
         });
     });

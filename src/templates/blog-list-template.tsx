@@ -52,10 +52,13 @@ const BlogList = (props: BlogListProps) => {
 export default BlogList;
 
 export const pageQuery = graphql`
-    query BlogList($skip: Int!, $limit: Int!) {
+    query BlogList($skip: Int!, $limit: Int!, $date: Date!) {
         posts: allMdx(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { fileAbsolutePath: { regex: "//content/posts//" }, frontmatter: { published: { eq: true } } }
+            filter: {
+                fileAbsolutePath: { regex: "//content/posts//" }
+                frontmatter: { published: { eq: true }, date: { lte: $date } }
+            }
             limit: $limit
             skip: $skip
         ) {
