@@ -25,7 +25,6 @@ export const Page = ({ path, data }: PageProps) => {
     const excerpt = oc(page).excerpt('');
     const title = oc(page).frontmatter.title('');
     const slug = oc(page).frontmatter.slug('');
-    const date = oc(page).frontmatter.date('');
     const fluid = oc(page).frontmatter.featuredImage.sharp.fluid(undefined) as IFluidObject | undefined;
     const featuredImagePosition = oc(page).frontmatter.featuredImagePosition(undefined);
 
@@ -37,7 +36,7 @@ export const Page = ({ path, data }: PageProps) => {
 
             <main css={Wrapper}>
                 <article>
-                    <Content content={oc(page).body('')} date={date} path={slug} tags={[]} />
+                    <Content content={oc(page).body('')} path={slug} />
                 </article>
             </main>
         </Layout>
@@ -53,7 +52,6 @@ export const pageQuery = graphql`
             excerpt
             frontmatter {
                 title
-                date(formatString: "DD MMMM, YYYY")
                 slug
                 featuredImage {
                     publicURL

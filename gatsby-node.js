@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     const isDevelop = process.env.gatsby_executing_command.includes('develop');
 
-    const allMarkdownQuery = await graphql(`
+    const allPostsQuery = await graphql(`
         {
             allMarkdown: allMdx(
                 sort: { fields: [frontmatter___date], order: DESC }
@@ -33,8 +33,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
     `);
 
-    if (allMarkdownQuery.errors) {
-        reporter.panic(allMarkdownQuery.errors);
+    if (allPostsQuery.errors) {
+        reporter.panic(allPostsQuery.errors);
+    }
+
+    const allPagesQuery = await graphql(`
+        {
+            allMarkdown: allMdx
+                ${isDevelop ? '' : '(filter: { frontmatter: { published: { eq: true } } })'}
+            {
+                edges {
+                    node {
+                        fileAbsolutePath
+                        frontmatter {
+                            title
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
+    if (allPagesQuery.errors) {
+        reporter.panic(allPagesQuery.errors);
     }
 
     const postPerPageQuery = await graphql(`
@@ -47,7 +69,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
     `);
 
-    const markdownFiles = allMarkdownQuery.data.allMarkdown.edges;
+    const markdownFiles = allPostsQuery.data.allMarkdown.edges;
 
     const posts = markdownFiles.filter(item => item.node.fileAbsolutePath.includes('/content/posts/'));
 
@@ -109,7 +131,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     });
 
     // generate pages
-    markdownFiles
+    allPagesQuery.data.allMarkdown.edges
         .filter(item => item.node.fileAbsolutePath.includes('/content/pages/'))
         .forEach(page => {
             createPage({

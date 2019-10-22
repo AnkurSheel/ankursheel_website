@@ -32,8 +32,8 @@ const styles = {
 
 interface ContentProps {
     content: string;
-    date: string;
-    tags: string[];
+    date?: string;
+    tags?: string[];
 
     path?: string | undefined;
 }
