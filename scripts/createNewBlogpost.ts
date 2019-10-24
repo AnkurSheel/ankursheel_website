@@ -26,6 +26,11 @@ const generateBlogPost = async () => {
         },
         {
             type: 'input',
+            name: 'date',
+            message: 'Enter date in the format (yyyy-mm-dd). Leave blank for today date',
+        },
+        {
+            type: 'input',
             name: 'tags',
             message: 'Tags/Keywords (comma separated)',
         },
@@ -37,18 +42,22 @@ const generateBlogPost = async () => {
         },
     ]);
 
-    const { title, description, tags, images } = prompt;
+    const { title, description, tags, images, date } = prompt;
 
-    const date = new Date();
+    const postDate = date ? new Date(date) : new Date();
     const slug = slugify(title);
-    const destination = fromRoot('content/posts', `${date.getFullYear().toString()}`, `${formatDate(date)}-${slug}`);
+    const destination = fromRoot(
+        'content/posts',
+        `${postDate.getFullYear().toString()}`,
+        `${formatDate(postDate)}-${slug}`
+    );
 
     mkdirp.sync(destination);
 
     const yaml = jsToYaml.stringify({
         published: false,
         author: 'Ankur Sheel',
-        date: formatDate(new Date()),
+        date: formatDate(postDate),
         slug,
         title,
         excerpt: description,
