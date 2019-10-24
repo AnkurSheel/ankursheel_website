@@ -37,7 +37,7 @@ const main = async () => {
         },
         {
             type: 'input',
-            name: 'properyValue',
+            name: 'propertyValue',
             message: 'Enter Property Value',
         },
         {
@@ -54,17 +54,17 @@ const main = async () => {
         },
     ]);
 
-    const { propertyName, properyValue, posts, pages } = prompt;
+    const { propertyName, propertyValue, posts, pages } = prompt;
 
     if (posts === 'Y') {
         getPostFiles().forEach(f => {
-            parseFile(f, propertyName, properyValue);
+            parseFile(f, propertyName, propertyValue);
         });
     }
 
     if (pages === 'Y') {
         getPagesFiles().forEach(f => {
-            parseFile(f, propertyName, properyValue);
+            parseFile(f, propertyName, propertyValue);
         });
     }
 };
