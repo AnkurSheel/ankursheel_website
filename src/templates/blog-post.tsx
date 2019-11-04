@@ -50,8 +50,8 @@ const BlogPostTemplate = (props: BlogPostTemplateProps) => {
             <SEO
                 title={title}
                 description={excerpt}
-                imageFacebook={imageFacebookUrl}
-                imageTwitter={imageTwitterUrl}
+                imageFacebook={`${siteUrl}${imageFacebookUrl}`}
+                imageTwitter={`${siteUrl}${imageTwitterUrl}`}
                 url={`${siteUrl}${path}`}
                 twitterUsername={twitterUserName}
                 isBlog
