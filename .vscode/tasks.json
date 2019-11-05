@@ -16,6 +16,38 @@
             "type": "shell",
             "command": "yarn createBlogPost",
             "group": "build"
+        },
+        {
+            "type": "npm",
+            "script": "lint:markdown",
+            "problemMatcher": [
+                {
+                    "fileLocation": ["relative", "${workspaceFolder}"],
+                    "pattern": {
+                        "regexp": "(.*):\\ (\\d+):\\ (\\S+)\\ (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "code": 3,
+                        "message": 4
+                    }
+                }
+            ]
+        },
+        {
+            "type": "npm",
+            "script": "lint:markdown:fix",
+            "problemMatcher": [
+                {
+                    "fileLocation": ["relative", "${workspaceFolder}"],
+                    "pattern": {
+                        "regexp": "(.*):\\ (\\d+):\\ (\\S+)\\ (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "code": 3,
+                        "message": 4
+                    }
+                }
+            ]
         }
     ]
 }
