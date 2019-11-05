@@ -1,5 +1,7 @@
 const config = require('../siteConfig');
 
 module.exports = {
-    trackingId: config.googleAnalyticsId,
+    trackingIds: [
+        config.googleTagManagerId, // Google Analytics / GA
+    ],
 };
