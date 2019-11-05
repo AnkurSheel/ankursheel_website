@@ -22,7 +22,7 @@ If you are not a big company, chances are you cannot afford the commercial progr
 program. This tutorial will give you a free alternative which you can add to your projects. The 1st thing that we need
 to do is to include _crtdbg.h_.
 
-#### Note: _crtdbg.h_ should be added after all the other header files
+**Note:** _crtdbg.h_ should be added after all the other header files.
 
 To make debugging easier, it would be nice if we could get the file and the line no which is causing the leak. Luckily,
 this can easily be done with some macro trickery
@@ -47,7 +47,8 @@ line number in the file respectively.
 Now, whenever we allocate memory using **DEBUG_NEW** (in Debug mode ) the **\__FILE_\_** and **\__LINE_\_** is
 automatically inserted by the pre-compiler into the _new operator_ call.
 
-#### Note: We can override the new and delete functions to add our custom tracking methods. We just need to make sure they at least do what the old new/delete operator functions did.
+**_Note: We can override the new and delete functions to add our custom tracking methods. We just need to make sure they
+at least do what the old new/delete operator functions did._**
 
 The only thing remaining is to set the debug flags to enable memory leak detection. Make sure you call this function at
 the start of your program
