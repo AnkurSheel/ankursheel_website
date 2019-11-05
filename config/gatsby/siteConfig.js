@@ -4,7 +4,7 @@ module.exports = {
     authorName: 'Ankur Sheel',
     twitterUsername: 'ankur_sheel',
     siteUrl: 'https://www.ankursheel.com/',
-    googleAnalyticsId: 'UA-45876690-1',
+    googleTagManagerId: 'GTM-MG9PGWH',
     backgroundColor: '#ffffff',
     themeColor: '#222222',
     icon: 'content/images/avatar.png',
