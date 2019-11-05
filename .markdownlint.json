@@ -1,3 +1,10 @@
 {
-    "default": true
+    "default": true,
+    "line-length": { "line_length": 120, "code_blocks": false },
+    "ul-indent": { "indent": 4 },
+    "list-marker-space": { "ul_single": 3, "ul_multi": 3 },
+    "no-trailing-punctuation": { "punctuation": ".,;:!。，；：！？" },
+    "no-hard-tabs": { "code_blocks": false },
+    "no-inline-html": { "allowed_elements": ["ImageGallery", "Video", "Quote"] },
+    "no-duplicate-header": { "siblings_only": true }
 }
