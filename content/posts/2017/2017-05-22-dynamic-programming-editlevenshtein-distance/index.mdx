@@ -79,7 +79,7 @@ Let the 2 strings be **X** of length **_m_** and **Y** of length **_n_**.
 
 Let **EditDistance(i,j)** be the number of operations. Then we can formalise the problem as follows
 
-```
+```markup
 EditDistance(i, j) = n - j : if i = 0;
 EditDistance(i, j) = m - i : if  j = 0;
 EditDistance(i, j) = EditDistance(i + 1, j + 1) if X[i] = Y[j]

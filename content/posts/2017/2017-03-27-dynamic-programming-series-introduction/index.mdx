@@ -44,7 +44,7 @@ states to reuse later.
 To prove that we are improving our solution, we need statistics that we can compare. I will be using
 [google benchmark](https://github.com/google/benchmark) to help profile our solutions. The benchmark will look like this
 
-```
+```markup
 -----------------------------------------------------------------
 Benchmark Name   Running Time   Iterations/sec        Items/sec
 -----------------------------------------------------------------
@@ -62,7 +62,7 @@ While 2 and 3 will give us an indication of the time complexity of the function
 The classic example to explain dynamic programming is the
 [Fibonacci computation](https://en.wikipedia.org/wiki/Fibonacci_number) which can be formalised as follows
 
-```
+```markup
 Fibonacci(n) = 0; if n = 0
 Fibonacci(n) = 1; if n = 1
 Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2) ; if n >=2
@@ -89,7 +89,7 @@ long Fibonacci(long n)
 
 On running the above code and profiling it on my machine, I get:
 
-```
+```markup
 -----------------------------------------------------------------------------
 Benchmark Name                 Running Time   Iterations/sec        Items/sec
 -----------------------------------------------------------------------------
@@ -150,7 +150,7 @@ value in our map.
 
 How better is this version? Let's look at the benchmark results
 
-```
+```markup
 -----------------------------------------------------------------------------
 Benchmark Name                 Running Time   Iterations/sec        Items/sec
 -----------------------------------------------------------------------------
@@ -211,7 +211,7 @@ values and finally return the result.
 
 Lets again look at the benchmark results to see how does this approach do?
 
-```
+```markup
 -----------------------------------------------------------------------------
 Benchmark Name                 Running Time   Iterations/sec        Items/sec
 -----------------------------------------------------------------------------
@@ -264,7 +264,7 @@ long FibonacciDPOptimized(long n)
 Although this algorithm is doing exactly the same thing as the previous one, we have reduced our space complexity to be
 constant since the amount of space needed is no longer dependent on **n**. Again the benchmark results for comparison
 
-```
+```markup
 ----------------------------------------------------------------------------------
 Benchmark Name                    Running Time   Iterations/sec        Items/sec
 ----------------------------------------------------------------------------------
@@ -293,7 +293,7 @@ To recap, we can use these steps to find a dynamic programming approach to our p
 5. If you don't need to keep all the previous results, keep only the ones that are required.
 
 If you would like to run the code yourself, you can find the code
-[here ](https://github.com/AnkurSheel/DynamicProgramming)
+[here](https://github.com/AnkurSheel/DynamicProgramming).
 
 Hopefully, this article has removed the mystery around Dynamic Programming. In the next few articles in the series, we
 will look at some of the more common problems that can be solved by Dynamic Programming.and use the above steps to come

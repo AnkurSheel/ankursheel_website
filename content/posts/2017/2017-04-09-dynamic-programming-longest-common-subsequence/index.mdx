@@ -76,7 +76,7 @@ Let the 2 strings be **X** of length _**m**_ and **Y** of length _**n**_
 
 Let **LCS(i,j)** be the length of the LCS. Then we can formalise the problem as follows
 
-```
+```markup
 LCS(i,j) = 0 if X[i] = '\0' || Y[j] = '\0'
 LCS(i,j) = 1 + LCS(i+1, j+1) if X[i] = Y[j]
 LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
