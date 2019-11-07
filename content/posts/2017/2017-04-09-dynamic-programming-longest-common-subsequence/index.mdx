@@ -76,7 +76,7 @@ Let the 2 strings be **X** of length _**m**_ and **Y** of length _**n**_
 
 Let **LCS(i,j)** be the length of the LCS. Then we can formalise the problem as follows
 
-```
+```markup
 LCS(i,j) = 0 if X[i] = '\0' || Y[j] = '\0'
 LCS(i,j) = 1 + LCS(i+1, j+1) if X[i] = Y[j]
 LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
@@ -186,7 +186,7 @@ string cLCS::GetText(const string& first, const string& second)
 ```
 
 To find the longest common subsequence,  we traverse through both the strings - _**first**_ and **_second_** using
-indexes **_i _** and **_j_** respectively. If \_**first[i] = second[j]**\_, then we add this character to the result
+indexes **_i_** and **_j_** respectively. If \_**first[i] = second[j]**\_, then we add this character to the result
 string and increment both **_i_** and _**j**_. If there is no match, that means that the subsequence was formed either
 by deleting **_first[i]_** or **_second[j]_**. If **_m_results[i+1][j]_** >= **_m_results[i][j + 1]_**, this means that
 the subsequence was formed by deleting **_first[i]_**. Otherwise, it was formed by deleting **_second[j]_**. Continuing
@@ -240,7 +240,7 @@ showing it here.
 ## Conclusion
 
 If you would like to look at the code or run the benchmarks or tests yourself, you can find the code
-[here ](https://github.com/AnkurSheel/DynamicProgramming)
+[here](https://github.com/AnkurSheel/DynamicProgramming).
 
 In the next article in the series, we will look at another problem that can be solved by Dynamic Programming.
 
