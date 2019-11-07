@@ -43,10 +43,10 @@ Add a local declaration file.
 
 So, how exactly do you do that?
 
-1. Create a **_types_** folder.
-2. Edit tsconfig.json to use the typeRoots property so that the compiler can find the local declaration files. You will
-   need it to include both your local folder as well as _node_modules/@types_. You will also want to check the local
-   folder before the _node_modules_ folder.
+-   Create a **_types_** folder.
+-   Edit tsconfig.json to use the typeRoots property so that the compiler can find the local declaration files. You will
+    need it to include both your local folder as well as _node_modules/@types_. You will also want to check the local
+    folder before the _node_modules_ folder.
 
 ```json
 "compilerOptions": {
@@ -55,16 +55,16 @@ So, how exactly do you do that?
     }
 ```
 
-3. Add the property to exclude property in tsconfig so that it does not get compiled.
+-   Add the property to exclude property in tsconfig so that it does not get compiled.
 
 ```json
 "exclude": [..., "types"]
 ```
 
-4. Add a **_third-party-library-name_** folder in the _types_ directory.
-5. Add an _index.d.ts_ in that folder.
-6. Add your TypeDefinitions. But if like me, you want to prototype things or do not want to write a full custom type,
-   you can declare the module by adding this to the _index.d.ts_ file.
+-   Add a **_third-party-library-name_** folder in the _types_ directory.
+-   Add an _index.d.ts_ in that folder.
+-   Add your TypeDefinitions. But if like me, you want to prototype things or do not want to write a full custom type,
+    you can declare the module by adding this to the _index.d.ts_ file.
 
 ```typescript
 declare module 'third-party-library-name';

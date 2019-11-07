@@ -31,47 +31,47 @@ Using Gpg4win with Git needs a little bit of configuration so let's start config
 
 ## Setup Kleopatra
 
-1. Download [Gpg4win](https://www.gpg4win.org/) and install it using the installer.
+-   Download [Gpg4win](https://www.gpg4win.org/) and install it using the installer.
 
-2. Go to the Start menu and start Kleopatra
+-   Go to the Start menu and start Kleopatra
 
-3. Click on File -> New Key Pair
+-   Click on File -> New Key Pair
 
 ![Kleopatra](./images/secure_git_commits_2.png)
 
-4. Click on Create a Personal OpenPGP key pair
+-   Click on Create a Personal OpenPGP key pair
 
 ![Key Pair Creation](./images/secure_git_commits_3.png)
 
-5. Enter details and click next.
+-   Enter details and click next.
 
 ![Enter details](./images/secure_git_commits_4.png)
 
-6. Review and Create the key. This will show a popup asking you to enter a passphrase to protect the key.
+-   Review and Create the key. This will show a popup asking you to enter a passphrase to protect the key.
 
-7. Enter a passphrase and click Ok
+-   Enter a passphrase and click Ok
 
 ![Enter Paraphrase](./images/secure_git_commits_5.png)
 
-8. At this point, the key pair should be created. Click on Finish.
+-   At this point, the key pair should be created. Click on Finish.
 
 _You can create a backup of the key and save it somewhere safe._
 
 ![Key pair Created](./images/secure_git_commits_6.png)
 
-9. You should now see the key in Kleopatra
+-   You should now see the key in Kleopatra
 
 ![Key in Kleopatra](./images/secure_git_commits_7.png)
 
-10. Keep a note of the Key-ID. We will need it in a minute.
+-   Keep a note of the Key-ID. We will need it in a minute.
 
-_This is D1E4471 in the screenshot above_
+_This is D1E4471 in the screenshot above._
 
-11. Double click the key to see the certificate details
+-   Double click the key to see the certificate details
 
 ![Key Details](./images/secure_git_commits_8.png)
 
-12. Click on export and copy the public gpg key.
+-   Click on export and copy the public gpg key.
 
 _Make sure you copy everything including `-----BEGIN PGP PUBLIC KEY BLOCK-----` and
 `-----END PGP PUBLIC KEY BLOCK-----`_
@@ -80,25 +80,25 @@ _Make sure you copy everything including `-----BEGIN PGP PUBLIC KEY BLOCK-----` 
 
 ## Configure Git to Sign Commits
 
-1. Update the global git config to use the signing key. _Remember the Key-ID from above - You will need it here._
+-   Update the global git config to use the signing key. _Remember the Key-ID from above - You will need it here._
 
-2. Enter `git config user.signingkey D1E4471` in your git console
+-   Enter `git config user.signingkey D1E4471` in your git console
 
 If you want to set it on a global level, use `git config --global user.signingkey D1E4471`instead
 
-3. Instruct git to sign every commit automatically.
+-   Instruct git to sign every commit automatically.
 
-4. Enter `git config commit.gpgsign true` in your git console. If you want to set it on a global level, use
-   `git config --global commit.gpgsign true`instead.
+-   Enter `git config commit.gpgsign true` in your git console. If you want to set it on a global level, use
+    `git config --global commit.gpgsign true` instead.
 
-5. Instruct git to sign every tag automatically.
+-   Instruct git to sign every tag automatically.
 
-6. Enter `git config tag.gpgsign true` in your git console. If you want to set it on a global level, use
-   `git config --global tag.gpgsign true` instead
+-   Enter `git config tag.gpgsign true` in your git console. If you want to set it on a global level, use
+    `git config --global tag.gpgsign true` instead
 
-7. Tell git use the gpg4win version of gpg.exe
+-   Tell git use the gpg4win version of gpg.exe
 
-8. Enter `git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"` in your git console.
+-   Enter `git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"` in your git console.
 
 You might need to tweak the location of the program if you installed it in a custom location
 
@@ -109,20 +109,20 @@ for the passphrase you entered earlier.
 
 ## Configure Kleopatra to cache the passphrase for a longer time
 
-1. Run Kleopatra. Click on _Settings -> Configure Kleopatra_
+-   Run Kleopatra. Click on _Settings -> Configure Kleopatra_
 
-2. On the configure page click on _GnuPG System -> Private Keys_ and scroll down to the Options controlling the security
-   section.
+-   On the configure page click on _GnuPG System -> Private Keys_ and scroll down to the Options controlling the
+    security section.
 
-3. Set the cache time. _86400 seconds is equal to 1 day._
+-   Set the cache time. _86400 seconds is equal to 1 day._
 
 ![Configure Kleopatra](./images/secure_git_commits_11.png)
 
 ## Configure Github to show verified commits
 
-1. Follow the steps at
-   [Adding a new GPG key to your GitHub account](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/)
-   so that Github can show the verified commits. _Use the public gpg_ key that you had copied earlier.
+-   Follow the steps at
+    [Adding a new GPG key to your GitHub account](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/)
+    so that Github can show the verified commits. _Use the public gpg_ key that you had copied earlier.
 
 To check if it works, push the signed commit. You should see the Verified tag in the commit history on Github.
 
