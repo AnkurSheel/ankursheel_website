@@ -74,5 +74,6 @@ module.exports = {
             resolve: `gatsby-transformer-json`,
             options: pluginOptions.transformerjson,
         },
+        `gatsby-plugin-netlify-cms`,
     ],
 };
