@@ -1,4 +1,5 @@
 const { createFilePath } = require('gatsby-source-filesystem');
+const path = require('path');
 const slugify = require('@sindresorhus/slugify');
 
 const padLeft0 = n => n.toString().padStart(2, '0');
@@ -8,11 +9,11 @@ const date = formatDate(new Date());
 exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
 
-    const BlogPostTemplate = require.resolve('./src/templates/blog-post.tsx');
-    const BlogPostShareImage = require.resolve('./src/templates/blog-post-share-image.tsx');
-    const PageTemplate = require.resolve('./src/templates/page.tsx');
-    const PostsByTagTemplate = require.resolve('./src/templates/tags.tsx');
-    const ListPostsTemplate = require.resolve('./src/templates/blog-list-template.tsx');
+    const BlogPostTemplate = path.resolve('./src/templates/blog-post.tsx');
+    const BlogPostShareImage = path.resolve('./src/templates/blog-post-share-image.tsx');
+    const PageTemplate = path.resolve('./src/templates/page.tsx');
+    const PostsByTagTemplate = path.resolve('./src/templates/tags.tsx');
+    const ListPostsTemplate = path.resolve('./src/templates/blog-list-template.tsx');
 
     const isDevelop = process.env.gatsby_executing_command.includes('develop');
 
