@@ -1,0 +1,33 @@
+{
+    "gallery": [
+        { "image": "./GrandCanyon-1.jpg", "title": "" },
+        { "image": "./GrandCanyon-2.jpg", "title": "" },
+        { "image": "./GrandCanyon-3.jpg", "title": "" },
+        { "image": "./GrandCanyon-4.jpg", "title": "" },
+        { "image": "./GrandCanyon-5.jpg", "title": "" },
+        { "image": "./GrandCanyon-6.jpg", "title": "" },
+        { "image": "./GrandCanyon-7.jpg", "title": "" },
+        { "image": "./GrandCanyon-8.jpg", "title": "" },
+        { "image": "./GrandCanyon-9.jpg", "title": "" },
+        { "image": "./GrandCanyon-10.jpg", "title": "" },
+        { "image": "./GrandCanyon-11.jpg", "title": "" },
+        { "image": "./GrandCanyon-12.jpg", "title": "" },
+        { "image": "./GrandCanyon-13.jpg", "title": "" },
+        { "image": "./GrandCanyon-14.jpg", "title": "" },
+        { "image": "./GrandCanyon-15.jpg", "title": "" },
+        { "image": "./GrandCanyon-16.jpg", "title": "" },
+        { "image": "./GrandCanyon-17.jpg", "title": "" },
+        { "image": "./GrandCanyon-18.jpg", "title": "" },
+        { "image": "./GrandCanyon-19.jpg", "title": "" },
+        { "image": "./GrandCanyon-20.jpg", "title": "" },
+        { "image": "./GrandCanyon-21.jpg", "title": "" },
+        { "image": "./GrandCanyon-22.jpg", "title": "" },
+        { "image": "./GrandCanyon-23.jpg", "title": "" },
+        { "image": "./GrandCanyon-24.jpg", "title": "" },
+        { "image": "./GrandCanyon-25.jpg", "title": "" },
+        { "image": "./GrandCanyon-27.jpg", "title": "" },
+        { "image": "./GrandCanyon-28.jpg", "title": "" },
+        { "image": "./GrandCanyon-29.jpg", "title": "" },
+        { "image": "./GrandCanyon-30.jpg", "title": "" }
+    ]
+}
