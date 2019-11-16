@@ -1,0 +1,14 @@
+{
+    "gallery": [
+        { "image": "./CornPalace-1.jpg", "title": "" },
+        { "image": "./CornPalace-2.jpg", "title": "" },
+        { "image": "./CornPalace-3.jpg", "title": "" },
+        { "image": "./CornPalace-4.jpg", "title": "" },
+        { "image": "./CornPalace-5.jpg", "title": "" },
+        { "image": "./CornPalace-6.jpg", "title": "" },
+        { "image": "./CornPalace-7.jpg", "title": "" },
+        { "image": "./CornPalace-8.jpg", "title": "" },
+        { "image": "./CornPalace-9.jpg", "title": "" },
+        { "image": "./CornPalace-10.jpg", "title": "" }
+    ]
+}
