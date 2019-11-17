@@ -39,6 +39,7 @@ module.exports = {
             },
         ],
         'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/scripts/*.ts'] }],
+        'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     },
     overrides: [
         // Override some TypeScript rules just for .js files

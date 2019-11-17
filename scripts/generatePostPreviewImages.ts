@@ -15,14 +15,12 @@ const takeScreenshot = async (url: string, width: number, height: number, destin
     await page.goto(url, {
         waitUntil: 'networkidle2',
     });
+    await page.setViewport({
+        width,
+        height,
+    });
     await page.screenshot({
         path: destination,
-        clip: {
-            x: 0,
-            y: 0,
-            width,
-            height,
-        },
     });
 
     await browser.close();
