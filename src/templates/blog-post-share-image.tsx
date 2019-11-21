@@ -27,8 +27,8 @@ const stylesWithProps = (props: BlogPostShareImageProps) => {
         }),
         title: css({
             fontWeight: 'bold',
-            fontSize: `${props.pageContext.type === 'twitter' ? '1.8rem' : '4.8rem'}`,
-            margin: '10px 60px',
+            fontSize: `${props.pageContext.type === 'twitter' ? '2rem' : '3rem'}`,
+            margin: '1rem 2rem',
             color: `${colors.grey100}`,
             textShadow: `1px 2px 0px ${colors.grey500}`,
             textAlign: 'center',
