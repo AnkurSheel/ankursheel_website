@@ -8,6 +8,9 @@ pool:
     vmImage: 'ubuntu-latest'
 
 steps:
+    - checkout: self
+      lfs: true
+
     - task: NodeTool@0
       inputs:
           versionSpec: '10.x'
