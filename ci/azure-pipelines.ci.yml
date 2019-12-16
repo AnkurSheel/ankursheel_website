@@ -1,0 +1,13 @@
+name: 'Release'
+
+trigger:
+    batch: false
+    branches:
+        include:
+            - master
+            - azure_pipelines
+
+pr: none
+
+jobs:
+    - template: azure-pipelines.common.yml

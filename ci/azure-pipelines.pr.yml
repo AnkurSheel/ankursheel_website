@@ -1,0 +1,12 @@
+name: 'PR $(System.PullRequest.PullRequestId)'
+
+trigger:
+    batch: false
+    branches:
+        exclude:
+            - '*'
+pr:
+    - master
+
+jobs:
+    - template: azure-pipelines.common.yml

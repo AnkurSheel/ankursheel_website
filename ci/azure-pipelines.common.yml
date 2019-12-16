@@ -1,0 +1,44 @@
+jobs:
+    - job: Build
+
+      pool:
+          vmImage: 'ubuntu-latest'
+
+      steps:
+          - checkout: self
+            lfs: true
+
+          - task: NodeTool@0
+            displayName: 'Install Node.js'
+            inputs:
+                versionSpec: '10.x'
+
+          - task: Cache@2
+            displayName: Cache Yarn packages
+            inputs:
+                key: 'yarn | "$(Agent.OS)" | yarn.lock'
+                path: 'node_modules'
+                restoreKeys: |
+                    yarn | "$(Agent.OS)"
+                    yarn
+
+          - script: yarn install
+            displayName: 'Install dependencies'
+
+          - script: yarn build
+            displayName: 'Build Gatsby'
+
+          - task: CopyFiles@2
+            inputs:
+                sourceFolder: '$(System.DefaultWorkingDirectory)'
+                contents: |
+                    public/**/*
+                targetFolder: '$(Build.ArtifactStagingDirectory)'
+                overWrite: true
+            displayName: 'Copying built static files'
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+                pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                artifactName: 'drop'
+                publishLocation: 'Container'
