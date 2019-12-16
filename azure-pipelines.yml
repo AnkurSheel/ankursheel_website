@@ -1,3 +1,4 @@
+name: 'Ankur Sheel Website'
 trigger:
     branches:
         include:
@@ -12,9 +13,18 @@ steps:
       lfs: true
 
     - task: NodeTool@0
+      displayName: 'Install Node.js'
       inputs:
           versionSpec: '10.x'
-      displayName: 'Install Node.js'
+
+    - task: Cache@2
+      displayName: Cache Yarn packages
+      inputs:
+          key: 'yarn | "$(Agent.OS)" | yarn.lock'
+          path: 'node_modules'
+          restoreKeys: |
+              yarn | "$(Agent.OS)"
+              yarn
 
     - script: yarn install
       displayName: 'Install dependencies'
