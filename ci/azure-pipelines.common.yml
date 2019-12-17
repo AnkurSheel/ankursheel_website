@@ -27,18 +27,3 @@ jobs:
 
           - script: yarn build
             displayName: 'Build Gatsby'
-
-          - task: CopyFiles@2
-            inputs:
-                sourceFolder: '$(System.DefaultWorkingDirectory)'
-                contents: |
-                    public/**/*
-                targetFolder: '$(Build.ArtifactStagingDirectory)'
-                overWrite: true
-            displayName: 'Copying built static files'
-
-          - task: PublishBuildArtifacts@1
-            inputs:
-                pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-                artifactName: 'drop'
-                publishLocation: 'Container'
