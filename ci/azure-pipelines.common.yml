@@ -1,3 +1,8 @@
+parameters:
+    deployScriptParams: '' # defaults for any parameters that aren't specified
+    netlifySiteId: ''
+    netlifyToken: ''
+
 jobs:
     - job: Build
 
@@ -45,3 +50,7 @@ jobs:
 
           - script: yarn build
             displayName: 'Build Gatsby'
+
+          # prettier-ignore
+          - script: yarn netlify deploy --site ${{parameters.netlifySiteId}} --auth ${{parameters.netlifyToken}} ${{parameters.deployScriptParams}} --dir=public
+            displayName: 'Deploy to Netlify'
