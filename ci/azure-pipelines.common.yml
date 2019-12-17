@@ -1,0 +1,56 @@
+parameters:
+    deployScriptParams: '' # defaults for any parameters that aren't specified
+    netlifySiteId: 'defaultID'
+    netlifyToken: 'defaultToken'
+
+jobs:
+    - job: Build
+
+      pool:
+          vmImage: 'ubuntu-latest'
+
+      steps:
+          - checkout: self
+            lfs: true
+
+          - task: NodeTool@0
+            displayName: 'Install Node.js'
+            inputs:
+                versionSpec: '10.x'
+
+          - task: Cache@2
+            displayName: Cache Yarn packages
+            inputs:
+                key: 'yarn | "$(Agent.OS)" | yarn.lock'
+                path: 'node_modules'
+                restoreKeys: |
+                    yarn | "$(Agent.OS)"
+                    yarn
+
+          - task: Cache@2
+            displayName: Cache Gatsby Cache folder
+            inputs:
+                key: 'gatsbycache | "$(Agent.OS)" | v1'
+                path: '.cache'
+                restoreKeys: |
+                    gatsbycache | "$(Agent.OS)"
+                    gatsbycache
+
+          - task: Cache@2
+            displayName: Cache Gatsby Public folder
+            inputs:
+                key: 'gatsbypublic | "$(Agent.OS)" | public | v1'
+                path: 'public'
+                restoreKeys: |
+                    gatsbypublic | "$(Agent.OS)"
+                    gatsbypublic
+
+          - script: yarn install
+            displayName: 'Install dependencies'
+
+          - script: yarn build
+            displayName: 'Build Gatsby'
+
+          # prettier-ignore
+          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{parameters.deployScriptParams}} --dir=public
+            displayName: 'Deploy to Netlify'

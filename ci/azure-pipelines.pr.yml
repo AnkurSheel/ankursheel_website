@@ -1,0 +1,21 @@
+name: 'PR $(System.PullRequest.PullRequestId)'
+
+trigger:
+    batch: false
+    branches:
+        exclude:
+            - '*'
+pr:
+    autoCancel: false
+    branches:
+        include:
+            - master
+
+variables:
+    - template: azure-pipelines.vars.yml
+
+jobs:
+    - template: azure-pipelines.common.yml
+      parameters:
+          netlifySiteId: $(netlify.siteId)
+          netlifyToken: $(netlify.token)
