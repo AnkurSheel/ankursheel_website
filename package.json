@@ -119,6 +119,7 @@
         "puppeteer": "^2.0.0",
         "react-docgen-typescript-loader": "^3.2.0",
         "typescript": "^3.6.3",
+        "webpack": "^4.41.3",
         "yalc": "^1.0.0-pre.34",
         "yaml": "^1.6.0",
         "yarn-deduplicate": "^1.1.1"
