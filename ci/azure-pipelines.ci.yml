@@ -8,9 +8,12 @@ trigger:
 
 pr: none
 
+variables:
+    - template: azure-pipelines.vars.yml
+
 jobs:
     - template: azure-pipelines.common.yml
       parameters:
           deployScriptParams: '--prod'
-          netlifySiteId: ${{variables.netlify.siteId}}
-          netlifyToken: ${{variables.netlify.token}}
+          netlifySiteId: $(netlify.siteId)
+          netlifyToken: $(netlify.token)

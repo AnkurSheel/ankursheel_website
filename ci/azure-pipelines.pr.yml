@@ -17,5 +17,5 @@ variables:
 jobs:
     - template: azure-pipelines.common.yml
       parameters:
-          netlifySiteId: ${{variables.netlify.siteId}}
-          netlifyToken: ${{variables.netlify.token}}
+          netlifySiteId: $(netlify.siteId)
+          netlifyToken: $(netlify.token)
