@@ -6,7 +6,10 @@ trigger:
         exclude:
             - '*'
 pr:
-    - master
+    autoCancel: false
+    branches:
+        include:
+            - master
 
 jobs:
     - template: azure-pipelines.common.yml
