@@ -19,3 +19,6 @@ jobs:
       parameters:
           netlifySiteId: $(netlify.siteId)
           netlifyToken: $(netlify.token)
+          message:
+              'PR $(System.PullRequest.PullRequestNumber) $(System.PullRequest.SourceBranch)
+              $(Build.SourceVersionMessage)'
