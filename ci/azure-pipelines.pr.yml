@@ -19,3 +19,4 @@ jobs:
       parameters:
           netlifySiteId: $(netlify.siteId)
           netlifyToken: $(netlify.token)
+          message: 'PR $(System.PullRequest.SourceBranch) $(Build.SourceVersion) $(Build.SourceVersionMessage)'
