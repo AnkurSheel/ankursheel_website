@@ -26,5 +26,5 @@ jobs:
             displayName: 'Build Gatsby'
 
           # prettier-ignore
-          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} --message ${{ parameters.message }} ${{ parameters.deployScriptParams }} --dir=public
+          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} --message '${{ parameters.message }}' ${{ parameters.deployScriptParams }} --dir=public
             displayName: 'Deploy to Netlify'
