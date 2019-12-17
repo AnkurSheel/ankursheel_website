@@ -22,6 +22,24 @@ jobs:
                     yarn | "$(Agent.OS)"
                     yarn
 
+          - task: Cache@2
+            displayName: Cache Gatsby Cache folder
+            inputs:
+                key: 'gatsbycache | "$(Agent.OS)" | v1'
+                path: '.cache'
+                restoreKeys: |
+                    gatsbycache | "$(Agent.OS)"
+                    gatsbycache
+
+          - task: Cache@2
+            displayName: Cache Gatsby Public folder
+            inputs:
+                key: 'gatsbypublic | "$(Agent.OS)" | public | v1'
+                path: 'public'
+                restoreKeys: |
+                    gatsbypublic | "$(Agent.OS)"
+                    gatsbypublic
+
           - script: yarn install
             displayName: 'Install dependencies'
 
