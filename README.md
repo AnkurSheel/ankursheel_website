@@ -1,1 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f593ffb1-821f-45cb-bacb-4a84adec6e65/deploy-status)](https://app.netlify.com/sites/ankursheel/deploys)
+[![Build Status](https://dev.azure.com/ankursheel/ankursheel_website/_apis/build/status/CI%20Builds?branchName=master&jobName=Build)](https://dev.azure.com/ankursheel/ankursheel_website/_build/latest?definitionId=10&branchName=master)
+
+[![Daily Build Status](https://dev.azure.com/ankursheel/ankursheel_website/_apis/build/status/Daily?branchName=master&jobName=Build)](https://dev.azure.com/ankursheel/ankursheel_website/_build/latest?definitionId=12&branchName=master)
