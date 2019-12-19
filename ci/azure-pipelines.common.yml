@@ -29,5 +29,5 @@ jobs:
             displayName: 'Build Gatsby'
 
           # prettier-ignore
-          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --raw-input '.'
+          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'
             displayName: 'Deploy to Netlify'
