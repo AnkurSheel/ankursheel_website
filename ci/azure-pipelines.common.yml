@@ -19,6 +19,9 @@ jobs:
             inputs:
                 versionSpec: '10.x'
 
+          - script: sudo apt-get -y install jq
+            displayName: Install jq
+
           - script: yarn install
             displayName: 'Install dependencies'
 
@@ -26,5 +29,5 @@ jobs:
             displayName: 'Build Gatsby'
 
           # prettier-ignore
-          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} --message '${{ parameters.message }}' ${{ parameters.deployScriptParams }} --dir=public --json
+          - script: yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --raw-input '.'
             displayName: 'Deploy to Netlify'
