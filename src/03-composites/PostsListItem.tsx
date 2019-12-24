@@ -12,6 +12,10 @@ const styles = {
     header: css({
         padding: '1em 0',
     }),
+    headerLink: css({
+        textDecoration: 'none',
+        color: `${colors.primary}`,
+    }),
     excerpt: css({
         paddingBottom: '0.5em',
     }),
@@ -25,6 +29,7 @@ const styles = {
         alignSelf: 'start',
     }),
     readPostLink: css({
+        color: `${colors.primary}`,
         width: '100%',
         marginTop: '1rem',
         lineHeight: 2,
@@ -32,6 +37,7 @@ const styles = {
         textAlign: 'center',
         textTransform: 'uppercase',
         letterSpacing: '0.05em',
+        textDecoration: 'none',
         border: 'none',
         '&:hover': {
             backgroundColor: `${colors.primaryAlpha}`,
@@ -56,7 +62,9 @@ const PostsListItem = (props: PostListItemProps) => {
         <article css={styles.post}>
             <header css={styles.header}>
                 <h2>
-                    <Link to={articleLink}>{title}</Link>
+                    <Link css={styles.headerLink} to={articleLink}>
+                        {title}
+                    </Link>
                 </h2>
             </header>
             <section>
