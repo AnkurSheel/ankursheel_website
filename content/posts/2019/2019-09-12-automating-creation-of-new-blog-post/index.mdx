@@ -15,8 +15,6 @@ imageFacebook: './image-facebook.png'
 imageTwitter: './image-twitter.png'
 ---
 
-import { Quote } from '@codinators/gatsby-shared-library';
-
 MDX and gatsby are great for building a blog. But, its a pain to create all the skeleton stuff every time I want to
 create a new blog post.
 
@@ -112,7 +110,10 @@ const prompt = await inquirer.prompt([
         type: 'list',
         name: 'images',
         message: 'Post has image gallery (yes/no)',
-        choices: [{ name: 'Yes', value: 'Y' }, { name: 'No', value: 'N' }],
+        choices: [
+            { name: 'Yes', value: 'Y' },
+            { name: 'No', value: 'N' },
+        ],
     },
 ]);
 
