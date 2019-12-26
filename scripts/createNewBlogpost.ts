@@ -38,7 +38,10 @@ const generateBlogPost = async () => {
             type: 'list',
             name: 'images',
             message: 'Post has images (yes/no)',
-            choices: [{ name: 'Yes', value: 'Y' }, { name: 'No', value: 'N' }],
+            choices: [
+                { name: 'Yes', value: 'Y' },
+                { name: 'No', value: 'N' },
+            ],
         },
     ]);
 

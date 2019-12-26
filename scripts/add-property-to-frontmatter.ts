@@ -44,13 +44,19 @@ const main = async () => {
             type: 'list',
             name: 'posts',
             message: 'Add to posts (yes/no)',
-            choices: [{ name: 'Yes', value: 'Y' }, { name: 'No', value: 'N' }],
+            choices: [
+                { name: 'Yes', value: 'Y' },
+                { name: 'No', value: 'N' },
+            ],
         },
         {
             type: 'list',
             name: 'pages',
             message: 'Add to pages (yes/no)',
-            choices: [{ name: 'Yes', value: 'Y' }, { name: 'No', value: 'N' }],
+            choices: [
+                { name: 'Yes', value: 'Y' },
+                { name: 'No', value: 'N' },
+            ],
         },
     ]);
 

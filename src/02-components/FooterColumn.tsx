@@ -22,7 +22,7 @@ type FooterSectionData = Pick<SiteSiteMetadataFooterLinks, 'sectionName'> | stri
 
 export type FooterColumnData = {
     sectionName: FooterSectionData;
-    links: ((FooterLinkData | undefined)[]) | undefined;
+    links: (FooterLinkData | undefined)[] | undefined;
 };
 
 interface FooterColumnProps {

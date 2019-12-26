@@ -6,7 +6,7 @@ import Wrapper from '../01-elements/Wrapper';
 import Hero from '../03-composites/Hero';
 import PostsList from '../03-composites/PostsList';
 import Layout from '../04-layouts/layout';
-import { PostsByTagQuery, QuerySitePageArgs } from '../graphqlTypes';
+import { PostsByTagQuery } from '../graphqlTypes';
 import useSiteMetadata from '../hooks/use-site-config';
 
 interface TagsProps {
