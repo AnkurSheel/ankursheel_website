@@ -886,7 +886,7 @@
     react-jss "^10.0.0"
     ts-optchain "^0.1.8"
 
-"@codinators/gatsby-theme-blog@0.0.4":
+"@codinators/gatsby-theme-blog@^0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-0.0.4.tgz#96bfb5f7af1fb8ad41714e1536a98ac9e745344f"
   integrity sha512-kM/eVBEZwu2sdBaWrNZZMSJL1zaeUa/wFRyr5nw0sBnSe3EIKQxD8Ey9cmo2ABSdmIAK/Jma7xdWF9M4GyC2eQ==
