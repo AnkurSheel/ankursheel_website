@@ -5,7 +5,7 @@ parameters:
     message: ''
 
 jobs:
-    - job: Build
+    - job: Build_And_Deploy
 
       pool:
           vmImage: 'ubuntu-latest'
