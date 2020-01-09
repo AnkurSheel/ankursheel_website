@@ -19,9 +19,6 @@ jobs:
             inputs:
                 versionSpec: '10.x'
 
-          - script: sudo apt-get -y install jq
-            displayName: Install jq
-
           - script: yarn install
             displayName: 'Install dependencies'
 
@@ -31,5 +28,11 @@ jobs:
           # prettier-ignore
           - script: |
               DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
-              echo "DEPLOY $DEPLOY_URL"
+              echo "##vso[task.setvariable variable=DEPLOY_URL]$DEPLOY_URL"
             displayName: 'Deploy to Netlify'
+
+          - task: GitHubComment@0
+            inputs:
+                gitHubConnection: 'AnkurSheel'
+                repositoryName: '$(Build.Repository.Name)'
+                comment: 'Netlify Preview Url: $(DEPLOY_URL)'
