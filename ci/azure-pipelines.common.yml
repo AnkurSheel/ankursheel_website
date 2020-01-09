@@ -32,6 +32,7 @@ jobs:
             displayName: 'Deploy to Netlify'
 
           - task: GitHubComment@0
+            displayName: 'Comment Netlify Preview Url'
             inputs:
                 gitHubConnection: 'AnkurSheel'
                 repositoryName: '$(Build.Repository.Name)'
