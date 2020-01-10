@@ -1,5 +1,4 @@
 /blog/:year/:month/:slug /blog/:slug
-/blog/*/:slug /blog/:slug
 /cv/professional-projects/professional-projects/:slug /cv/professional-projects/:slug
 /professional-projects /cv/professional-projects
 /professional-projects/:slug /cv/professional-projects/:slug
