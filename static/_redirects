@@ -4,3 +4,4 @@
 /professional-projects/:slug /cv/professional-projects/:slug
 /category/Codingame /tags/codingame
 /tags/x-unit /tags/xunit
+/blog/pages/* /blog/articles 410
