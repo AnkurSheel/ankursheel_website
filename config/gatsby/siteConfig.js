@@ -8,7 +8,6 @@ module.exports = {
     backgroundColor: '#ffffff',
     themeColor: '#222222',
     icon: 'content/images/avatar.png',
-    postsPerPage: 6,
     headerTitle: 'Ankur Sheel',
     headerLinksIcon: 'avatar.png',
     headerLinks: [
