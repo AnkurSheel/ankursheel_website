@@ -23,6 +23,10 @@ module.exports = {
             label: 'Blog',
             url: '/blog',
         },
+        {
+            label: 'Tags',
+            url: '/tags',
+        },
     ],
     footerLinks: [
         {
