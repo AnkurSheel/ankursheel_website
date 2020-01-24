@@ -29,7 +29,7 @@
         "deduplicate": "yarn-deduplicate"
     },
     "dependencies": {
-        "@codinators/gatsby-theme-blog": "^1.5.1",
+        "@codinators/gatsby-theme-blog": "^1.5.3",
         "@sindresorhus/slugify": "^0.9.1",
         "gatsby": "^2.18.12",
         "gatsby-plugin-google-tagmanager": "^2.1.20",
