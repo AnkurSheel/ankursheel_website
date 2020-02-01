@@ -1,13 +1,8 @@
 ---
-published: false
-author: Ankur Sheel
-date:
-excerpt:
-slug:
+draft: true
 title:
+excerpt:
 featuredImage:
 featuredImagePosition:
-imageFacebook: './image-facebook.png'
-imageTwitter: './image-twitter.png'
 tags:
 ---
