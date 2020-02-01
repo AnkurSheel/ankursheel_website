@@ -33,7 +33,7 @@
         "@sindresorhus/slugify": "^0.9.1",
         "gatsby": "^2.18.12",
         "gatsby-plugin-google-tagmanager": "^2.1.20",
-        "gatsby-plugin-manifest": "^2.2.33",
+        "gatsby-plugin-manifest": "^2.2.40",
         "gatsby-plugin-offline": "^3.0.29",
         "inquirer": "^7.0.0",
         "json-to-pretty-yaml": "^1.2.2",
