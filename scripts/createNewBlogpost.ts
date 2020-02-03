@@ -58,17 +58,10 @@ const generateBlogPost = async () => {
     mkdirp.sync(destination);
 
     const yaml = jsToYaml.stringify({
-        published: false,
-        author: 'Ankur Sheel',
-        date: formatDate(postDate),
-        slug,
+        draft: true,
         title,
         excerpt: description,
         tags: listify(tags),
-        featuredImage: '',
-        featuredImagePosition: '',
-        imageFacebook: './image-facebook.png',
-        imageTwitter: './image-twitter.png',
     });
     const markdown = prettier.format(`---\r\n${yaml}\r\n---\r\n`, {
         ...require('../.prettierrc'), // eslint-disable-line global-require

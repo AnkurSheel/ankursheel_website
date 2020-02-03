@@ -29,7 +29,7 @@
         "deduplicate": "yarn-deduplicate"
     },
     "dependencies": {
-        "@codinators/gatsby-theme-blog": "^1.5.3",
+        "@codinators/gatsby-theme-blog": "^2.0.3",
         "@sindresorhus/slugify": "^0.9.1",
         "gatsby": "^2.18.12",
         "gatsby-plugin-google-tagmanager": "^2.1.20",
@@ -50,7 +50,6 @@
         "@types/prettier": "^1.18.2",
         "@types/puppeteer": "^2.0.0",
         "@types/react": "^16.9.17",
-        "@types/yaml": "^1.2.0",
         "@typescript-eslint/eslint-plugin": "^2.12.0",
         "@typescript-eslint/parser": "^2.12.0",
         "eslint": "^6.3.0",
@@ -72,7 +71,6 @@
         "typescript": "^3.6.3",
         "webpack": "^4.41.4",
         "yalc": "^1.0.0-pre.34",
-        "yaml": "^1.6.0",
         "yarn-deduplicate": "^1.1.1"
     },
     "peerDependencies": {

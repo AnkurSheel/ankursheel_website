@@ -1,17 +1,17 @@
-import { readFile } from 'fs';
-import { join, dirname } from 'path';
 import glob from 'glob';
-import YAML from 'yaml';
-import puppeteer from 'puppeteer';
 import inquirer from 'inquirer';
+import { join, relative } from 'path';
+import puppeteer from 'puppeteer';
 
 const baseUrl = process.argv[2] || 'http://localhost:8000/blog/';
 
-const takeScreenshot = async (url: string, width: number, height: number, destination: string) => {
-    const browser = await puppeteer.launch({
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
-    const page = await browser.newPage();
+const takeScreenshot = async (
+    page: puppeteer.Page,
+    url: string,
+    width: number,
+    height: number,
+    destination: string
+) => {
     await page.goto(url, {
         waitUntil: 'networkidle2',
     });
@@ -22,34 +22,24 @@ const takeScreenshot = async (url: string, width: number, height: number, destin
     await page.screenshot({
         path: destination,
     });
-
-    await browser.close();
 };
+
+const baseDir = join(__dirname, '..', 'content', 'posts');
 
 const getArticleFiles = () => {
-    return glob.sync(join(__dirname, '..', 'content', 'posts', '**', '*.mdx'));
+    return glob.sync(join(baseDir, '**', '*.mdx'));
 };
 
-type FileProperties = {
-    directory: string;
-    slug: string;
+const getPostDetailsFromDir = (postName: any) => {
+    const [, year, date, path] = postName.match(/^([\d]{4})\\([\d]{4}-[\d]{2}-[\d]{2})-(.+)\\index.mdx$/);
+
+    return { year, date, path };
 };
-const parseFile = async (file: string): Promise<FileProperties> => {
-    return new Promise((resolve, reject) => {
-        readFile(file, 'utf8', (err, content) => {
-            if (err) {
-                return reject(err);
-            }
 
-            const frontmatter = content.split('---')[1];
-            const data = YAML.parse(frontmatter);
+const getYearFromFolderName = (folderName: any): string => {
+    const [, year] = folderName.match(/^([\d]{4})(.+)$/);
 
-            return resolve({
-                directory: dirname(file),
-                slug: data.slug,
-            });
-        });
-    });
+    return year;
 };
 
 const main = async () => {
@@ -59,36 +49,39 @@ const main = async () => {
             name: 'folderName',
             message: 'Enter Folder name to generate images for (leave empty to generate for all folders)',
         },
-        {
-            type: 'input',
-            name: 'year',
-            message: 'Enter year (required if you entered a folder name)',
-        },
     ]);
 
-    const { folderName, year } = prompt;
+    const { folderName } = prompt;
 
-    let files: FileProperties[] = [];
+    let files: string[] = [];
     if (folderName) {
-        const articleFile = join(__dirname, '..', 'content', 'posts', year, folderName, 'index.mdx');
-        const parsedFile = await parseFile(articleFile);
-        files.push(parsedFile);
+        const year = getYearFromFolderName(folderName);
+        const articleFile = join(baseDir, year, folderName, 'index.mdx');
+        files.push(articleFile);
     } else {
-        files = await Promise.all(getArticleFiles().map(parseFile));
+        files = await Promise.all(getArticleFiles());
     }
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+    const page = await browser.newPage();
 
     for (let i = 0; i < files.length; i++) {
         const file = files[i];
-        const destPrefix = join(file.directory, `image-`);
+        const dir = relative(baseDir, file);
+        const postDetails = getPostDetailsFromDir(dir);
+        const destPrefix = join(baseDir, postDetails.year, `${postDetails.date}-${postDetails.path}`, `image-`);
         const fbFile = `${destPrefix}facebook.png`;
         const twFile = `${destPrefix}twitter.png`;
 
-        await takeScreenshot(`${baseUrl}${file.slug}/image_fb`, 1200, 630, fbFile); // eslint-disable-line no-await-in-loop
+        await takeScreenshot(page, `${baseUrl}${postDetails.path}/image_fb`, 1200, 630, fbFile); // eslint-disable-line no-await-in-loop
         console.log(`Created ${fbFile}`); // eslint-disable-line no-console
 
-        await takeScreenshot(`${baseUrl}${file.slug}/image_tw`, 440, 220, twFile); // eslint-disable-line no-await-in-loop
+        await takeScreenshot(page, `${baseUrl}${postDetails.path}/image_tw`, 440, 220, twFile); // eslint-disable-line no-await-in-loop
         console.log(`Created ${twFile}`); // eslint-disable-line no-console
     }
+
+    await browser.close();
 };
 
 main();
