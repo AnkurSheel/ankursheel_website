@@ -50,7 +50,6 @@
         "@types/prettier": "^1.18.2",
         "@types/puppeteer": "^2.0.0",
         "@types/react": "^16.9.17",
-        "@types/yaml": "^1.2.0",
         "@typescript-eslint/eslint-plugin": "^2.12.0",
         "@typescript-eslint/parser": "^2.12.0",
         "eslint": "^6.3.0",
@@ -72,7 +71,6 @@
         "typescript": "^3.6.3",
         "webpack": "^4.41.4",
         "yalc": "^1.0.0-pre.34",
-        "yaml": "^1.6.0",
         "yarn-deduplicate": "^1.1.1"
     },
     "peerDependencies": {
