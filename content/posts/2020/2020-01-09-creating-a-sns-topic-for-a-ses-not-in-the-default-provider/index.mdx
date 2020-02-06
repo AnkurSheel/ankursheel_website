@@ -1,5 +1,5 @@
 ---
-title: 'Creating a SNS topic for a SES not in the default provider'
+title: 'How to create an AWS SNS topic for an AWS SES not in the default provider'
 excerpt:
     'How can you access resources created in a different AWS region with terraform? I ran into this when trying to
     access SES created in a different region to the rest of our infrastructure.'
@@ -9,10 +9,10 @@ tags:
     - 'AWS'
 ---
 
-Lets assume that most of our infrastructure is in _ap-southeast-2 (Sydney)_. But, our SES is setup in _us-west-2
-(Oregon)_. We also want to create SNS topics and SQS queues so that we can handle bounce notifications. Now since SES is
-in a different region our SNS topics also need to be in that region. So how do we tell terraform to create the topics in
-the SES region?
+Lets assume that most of our infrastructure is in _ap-southeast-2 (Sydney)_. But, our Amazon Simple Email Service(SES)
+is setup in _us-west-2 (Oregon)_. We also want to create an Amazon Simple Notification Service(SNS) topics and Amazon
+Simple Queue Service (SQS) queues so that we can handle bounce notifications. Now since SES is in a different region our
+SNS topics also need to be in that region. So how do we tell terraform to create the topics in the SES region?
 
 ## Solution
 
