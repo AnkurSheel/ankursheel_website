@@ -24,6 +24,10 @@ module.exports = {
             url: '/blog',
         },
         {
+            label: 'Random Post',
+            url: '/random-post',
+        },
+        {
             label: 'Tags',
             url: '/tags',
         },
