@@ -9,6 +9,10 @@ module.exports = {
     themeColor: '#222222',
     icon: 'content/images/avatar.png',
     headerTitle: 'Ankur Sheel',
+    buyMeACoffee: {
+        link: 'https://www.buymeacoffee.com/ankursheel',
+        altText: 'Buy Me A Coffee',
+    },
     headerLinksIcon: 'avatar.png',
     headerLinks: [
         {
