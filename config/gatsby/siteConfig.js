@@ -8,7 +8,7 @@ module.exports = {
     backgroundColor: '#ffffff',
     themeColor: '#222222',
     icon: 'content/images/avatar.png',
-    headerTitle: 'Ankur Sheel',
+    headerTitle: 'Home',
     buyMeACoffee: {
         link: 'https://www.buymeacoffee.com/ankursheel',
         altText: 'Buy Me A Coffee',
