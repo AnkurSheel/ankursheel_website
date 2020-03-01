@@ -65,7 +65,7 @@
         "husky": "^4.2.1",
         "lint-staged": "^10.0.7",
         "markdownlint-cli": "^0.21.0",
-        "netlify-cli": "^2.25.0",
+        "netlify-cli": "^2.36.0",
         "npm-normalize-package-bin": "^1.0.1",
         "puppeteer": "^2.0.0",
         "typescript": "^3.6.3",
