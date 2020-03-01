@@ -35,7 +35,7 @@
         "gatsby-plugin-google-tagmanager": "^2.1.20",
         "gatsby-plugin-manifest": "^2.2.33",
         "gatsby-plugin-offline": "^3.0.29",
-        "inquirer": "^7.0.0",
+        "inquirer": "^7.0.5",
         "json-to-pretty-yaml": "^1.2.2",
         "mkdirp": "^1.0.3",
         "prettier": "^1.18.2",
