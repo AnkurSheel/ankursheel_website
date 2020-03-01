@@ -69,7 +69,7 @@
         "npm-normalize-package-bin": "^1.0.1",
         "puppeteer": "^2.0.0",
         "typescript": "^3.6.3",
-        "webpack": "^4.41.4",
+        "webpack": "^4.41.6",
         "yalc": "^1.0.0-pre.34",
         "yarn-deduplicate": "^1.1.1"
     },
