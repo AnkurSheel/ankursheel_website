@@ -62,7 +62,7 @@
         "eslint-plugin-react-hooks": "^2.0.1",
         "gatsby-plugin-netlify": "^2.1.30",
         "glob": "^7.1.4",
-        "husky": "^4.2.1",
+        "husky": "^4.2.3",
         "lint-staged": "^10.0.7",
         "markdownlint-cli": "^0.21.0",
         "netlify-cli": "^2.25.0",
