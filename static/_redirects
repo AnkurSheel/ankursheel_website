@@ -5,3 +5,4 @@
 /category/Codingame /tags/codingame
 /tags/x-unit /tags/xunit
 /blog/pages/* /blog 410
+/blog/:year/:month/:date /blog 410
