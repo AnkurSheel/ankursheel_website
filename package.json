@@ -13,7 +13,6 @@
     "author": "Ankur Sheel <ankur.sheel@gmail.com>",
     "scripts": {
         "echo": "echo \"Dummy command for netlify\"",
-        "postinstall": "yarn deduplicate --list && yarn deduplicate",
         "build": "gatsby build",
         "develop": "gatsby develop",
         "clean": "gatsby clean",
@@ -26,7 +25,7 @@
         "lint:markdown": "markdownlint **/*.mdx --ignore node_modules/**",
         "lint:markdown:fix": "markdownlint **/*.mdx --ignore node_modules/** --fix",
         "generate-graphql": "graphql-codegen --config ./config/codegen.yml",
-        "deduplicate": "yarn-deduplicate"
+        "deduplicate": "yarn-deduplicate --list && yarn-deduplicate"
     },
     "dependencies": {
         "@codinators/gatsby-theme-blog": "^2.0.3",
