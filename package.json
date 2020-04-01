@@ -33,7 +33,7 @@
         "gatsby": "^2.19.23",
         "gatsby-plugin-google-tagmanager": "^2.1.20",
         "gatsby-plugin-manifest": "^2.2.42",
-        "gatsby-plugin-offline": "^3.0.35",
+        "gatsby-plugin-offline": "^3.1.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
     },
