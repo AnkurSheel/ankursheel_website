@@ -62,7 +62,7 @@
         "lint-staged": "^10.0.8",
         "markdownlint-cli": "^0.22.0",
         "mkdirp": "^1.0.3",
-        "netlify-cli": "^2.36.0",
+        "netlify-cli": "^2.40.0",
         "npm-normalize-package-bin": "^1.0.1",
         "prettier": "^1.18.2",
         "puppeteer": "^2.0.0",
