@@ -1,8 +1,0 @@
-/blog/:year/:month/:slug /blog/:slug
-/cv/professional-projects/professional-projects/:slug /cv/professional-projects/:slug
-/professional-projects /cv/professional-projects
-/professional-projects/:slug /cv/professional-projects/:slug
-/category/Codingame /tags/codingame
-/tags/x-unit /tags/xunit
-/blog/pages/* /blog 410
-/blog/:year/:month/:date /blog 410
