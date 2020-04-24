@@ -1,0 +1,47 @@
+[[redirects]]
+from = "/blog/:year/:month/:slug"
+to = "/blog/:slug"
+status = 301
+force = false
+
+[[redirects]]
+from = "/cv/professional-projects/professional-projects/:slug"
+to = "/cv/professional-projects/:slug"
+status = 301
+force = false
+
+[[redirects]]
+from = "/professional-projects"
+to = "/cv/professional-projects"
+status = 301
+force = false
+
+[[redirects]]
+from = "/professional-projects/:slug"
+to = "/cv/professional-projects/:slug"
+status = 301
+force = false
+
+[[redirects]]
+from = "/category/Codingame"
+to = "/tags/codingame"
+status = 301
+force = false
+
+[[redirects]]
+from = "/tags/x-unit"
+to = "/tags/xunit"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/pages/*"
+to = "/blog"
+status = 410
+force = false
+
+[[redirects]]
+from = "/blog/:year/:month/:date"
+to = "/blog"
+status = 410
+force = false
