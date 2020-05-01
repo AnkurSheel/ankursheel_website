@@ -38,7 +38,7 @@
         "react-dom": "^16.8.6"
     },
     "devDependencies": {
-        "@babel/core": "^7.7.7",
+        "@babel/core": "^7.9.6",
         "@codinators/eslint-config": "^1.0.0",
         "@types/inquirer": "^6.5.0",
         "@types/prettier": "^1.18.2",
