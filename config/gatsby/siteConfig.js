@@ -9,7 +9,7 @@ module.exports = {
     themeColor: '#222222',
     icon: 'content/images/avatar.png',
     headerTitle: 'Home',
-    donateText: 'Found this aricle helpful?',
+    donateText: 'Did you learn something or find this article interesting?',
     buyMeACoffee: {
         link: 'https://www.buymeacoffee.com/ankursheel',
         altText: 'Buy Me A Coffee',
