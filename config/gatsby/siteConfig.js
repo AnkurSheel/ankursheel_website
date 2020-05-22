@@ -37,6 +37,20 @@ module.exports = {
             url: '/tags',
         },
     ],
+    socialLinks: {
+        twitter: {
+            url: 'https://twitter.com/ankur_sheel',
+            text: 'Follow me',
+        },
+        github: {
+            url: 'https://github.com/AnkurSheel',
+            text: 'Check out my work on Github',
+        },
+        linkedin: {
+            url: 'https://www.linkedin.com/in/ankursheel',
+            text: 'Connect on LinkedIn',
+        },
+    },
     footerLinks: [
         {
             sectionName: 'Follow the author',
