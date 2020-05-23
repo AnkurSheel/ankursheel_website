@@ -948,10 +948,10 @@
     react-jss "^10.1.1"
     ts-optchain "^0.1.8"
 
-"@codinators/gatsby-theme-blog@^2.0.3":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-2.11.0.tgz#13bdb68138dc00301c0c4f62ec902262561afdb8"
-  integrity sha512-9FvPhU3R77ZohuwJergqoC2P0CeMU4H5Ds/mtKTX4Ug2L9clZh224OtZh052b2ugebGCvy3ZOwscUl4DTitjRQ==
+"@codinators/gatsby-theme-blog@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.0.1.tgz#abc0c6fd46d232d4afb5c64798177f5248ec11a0"
+  integrity sha512-dfh3//spO0bSsmZan99U3V8y7WzAEl5WAEXjME2cVhGEC5IUFuln2yipX5eLzmTRl5LkteXy4KHMkxNCVI8jng==
   dependencies:
     "@codinators/gatsby-shared-library" "^1.1.3"
     "@emotion/babel-preset-css-prop" "^10.0.23"
@@ -971,6 +971,7 @@
     gatsby-plugin-robots-txt "^1.5.0"
     gatsby-plugin-sharp "^2.5.3"
     gatsby-plugin-sitemap "^2.3.1"
+    gatsby-plugin-twitter "^2.3.2"
     gatsby-plugin-typescript "^2.3.1"
     gatsby-remark-autolink-headers "^2.2.1"
     gatsby-remark-copy-linked-files "^2.2.1"
@@ -7533,6 +7534,13 @@ gatsby-plugin-sitemap@^2.3.1:
     minimatch "^3.0.4"
     pify "^3.0.0"
     sitemap "^1.13.0"
+
+gatsby-plugin-twitter@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.3.2.tgz#e93ba08a71290d215059bac4d2392f2c6ef45e7e"
+  integrity sha512-whMD8gu3qpn3Kdb1OP9oPtJa8wVG0IP2ViA0nvmB6KBakLXmzo48KQQ1Z4P06i3hAt2KeVO9iJAEDnaWQxhVOg==
+  dependencies:
+    "@babel/runtime" "^7.9.6"
 
 gatsby-plugin-typescript@^2.3.1, gatsby-plugin-typescript@^2.4.2:
   version "2.4.3"
