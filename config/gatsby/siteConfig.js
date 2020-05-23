@@ -53,7 +53,7 @@ module.exports = {
     },
     footerLinks: [
         {
-            sectionName: 'Follow the author',
+            sectionName: 'Connect with me',
             links: [
                 {
                     label: 'Github',
