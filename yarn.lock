@@ -948,10 +948,10 @@
     react-jss "^10.1.1"
     ts-optchain "^0.1.8"
 
-"@codinators/gatsby-theme-blog@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.0.0.tgz#cd5b7c039db38d96aa554aa451b2f72cb157898b"
-  integrity sha512-7kuDOfkNPevkG3xdjKOZ/ni2MPjaKZQlv4+X1nkihOsOM4pww0j/jky5biOY0wclWhBRDeKu/9g0MTzwkL2Vig==
+"@codinators/gatsby-theme-blog@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.0.1.tgz#abc0c6fd46d232d4afb5c64798177f5248ec11a0"
+  integrity sha512-dfh3//spO0bSsmZan99U3V8y7WzAEl5WAEXjME2cVhGEC5IUFuln2yipX5eLzmTRl5LkteXy4KHMkxNCVI8jng==
   dependencies:
     "@codinators/gatsby-shared-library" "^1.1.3"
     "@emotion/babel-preset-css-prop" "^10.0.23"
