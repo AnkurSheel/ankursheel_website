@@ -24,7 +24,6 @@
         "lint:fix": "lint --fix",
         "lint:markdown": "markdownlint **/*.mdx --ignore node_modules/**",
         "lint:markdown:fix": "markdownlint **/*.mdx --ignore node_modules/** --fix",
-        "generate-graphql": "graphql-codegen --config ./config/codegen.yml",
         "deduplicate": "yarn-deduplicate --list && yarn-deduplicate"
     },
     "dependencies": {
