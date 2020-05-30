@@ -50,6 +50,10 @@ module.exports = {
             url: 'https://www.linkedin.com/in/ankursheel',
             text: 'Connect on LinkedIn',
         },
+        rss: {
+            url: '/blog/rss.xml',
+            text: 'Subsribe on RSS',
+        },
     },
     footerLinks: [
         {
