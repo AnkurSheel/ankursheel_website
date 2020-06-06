@@ -35,6 +35,14 @@ jobs:
                 path: $(GASTBY_CACHE_FOLDER)
             displayName: Cache Gatsby Cache Folder
 
+          - task: Cache@2
+            inputs:
+                key: 'gatsby | "$(Agent.OS) | public"'
+                restoreKeys: |
+                    gatsby | "$(Agent.OS)"
+                path: $(GASTBY_PUBLIC_FOLDER)
+            displayName: Cache Gatsby Public Folder
+
           - script: yarn install --frozen-lockfile
             displayName: 'Install dependencies'
 
