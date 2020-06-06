@@ -27,6 +27,14 @@ jobs:
                 path: $(YARN_CACHE_FOLDER)
             displayName: Cache Yarn packages
 
+          - task: Cache@2
+            inputs:
+                key: 'gatsby | "$(Agent.OS)" | cache'
+                restoreKeys: |
+                    gatsby | "$(Agent.OS)"
+                path: $(GASTBY_CACHE_FOLDER)
+            displayName: Cache Gatsby Cache Folder
+
           - script: yarn install --frozen-lockfile
             displayName: 'Install dependencies'
 
