@@ -19,7 +19,15 @@ jobs:
             inputs:
                 versionSpec: '12.x'
 
-          - script: yarn install
+          - task: Cache@2
+            inputs:
+                key: 'yarn | "$(Agent.OS)" | yarn.lock'
+                restoreKeys: |
+                    yarn | "$(Agent.OS)"
+                path: $(YARN_CACHE_FOLDER)
+            displayName: Cache Yarn packages
+
+          - script: yarn install --frozen-lockfile
             displayName: 'Install dependencies'
 
           - script: yarn build

@@ -1,2 +1,4 @@
 variables:
     - group: netlify-variables
+    - name: 'YARN_CACHE_FOLDER'
+      value: '$(Pipeline.Workspace)/.yarn'
