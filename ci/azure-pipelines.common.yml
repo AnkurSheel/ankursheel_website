@@ -11,8 +11,8 @@ jobs:
           vmImage: 'ubuntu-latest'
 
       steps:
-          - checkout: self
-            lfs: true
+          # - checkout: self
+          #   lfs: true
 
           - task: NodeTool@0
             displayName: 'Install Node.js'
