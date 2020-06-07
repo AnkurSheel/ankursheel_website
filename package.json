@@ -27,7 +27,7 @@
         "deduplicate": "yarn-deduplicate --list && yarn-deduplicate"
     },
     "dependencies": {
-        "@codinators/gatsby-theme-blog": "^3.1.1",
+        "@codinators/gatsby-theme-blog": "^3.2.0",
         "@sindresorhus/slugify": "^1.0.0",
         "gatsby": "^2.23.1",
         "gatsby-plugin-google-tagmanager": "^2.3.4",
@@ -40,8 +40,8 @@
         "@babel/core": "^7.10.2",
         "@codinators/eslint-config": "^1.0.0",
         "@types/inquirer": "^6.5.0",
-        "@types/prettier": "^1.18.2",
-        "@types/puppeteer": "^2.0.1",
+        "@types/prettier": "^2.0.1",
+        "@types/puppeteer": "^3.0.0",
         "@types/react": "^16.9.31",
         "@typescript-eslint/eslint-plugin": "^3.1.0",
         "@typescript-eslint/parser": "^3.1.0",
