@@ -14,20 +14,41 @@ jobs:
           - checkout: self
             lfs: true
 
+          - script: git config --list
+            displayName: Git Config
+
           - task: NodeTool@0
             displayName: 'Install Node.js'
             inputs:
                 versionSpec: '12.x'
-
-          - script: yarn install
-            displayName: 'Install dependencies'
-
-          - script: yarn build
-            displayName: 'Build Gatsby'
-
-          # prettier-ignore
-          - script: |
-              DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
-              echo "##vso[task.setvariable variable=DEPLOY_URL;isOutput=true]$DEPLOY_URL"
-            displayName: 'Deploy to Netlify'
-            name: deployToNetlify
+          # - task: Cache@2
+          #   inputs:
+          #       key: 'yarn | "$(Agent.OS)" | yarn.lock'
+          #       restoreKeys: |
+          #           yarn | "$(Agent.OS)"
+          #       path: $(YARN_CACHE_FOLDER)
+          #   displayName: Cache Yarn packages
+          # - task: Cache@2
+          #   inputs:
+          #       key: 'gatsby | "$(Agent.OS)" | cache'
+          #       restoreKeys: |
+          #           gatsby | "$(Agent.OS)"
+          #       path: $(GASTBY_CACHE_FOLDER)
+          #   displayName: Cache Gatsby Cache Folder
+          # - task: Cache@2
+          #   inputs:
+          #       key: 'gatsby | "$(Agent.OS) | public"'
+          #       restoreKeys: |
+          #           gatsby | "$(Agent.OS)"
+          #       path: $(GASTBY_PUBLIC_FOLDER)
+          #   displayName: Cache Gatsby Public Folder
+          # - script: yarn install --frozen-lockfile
+          #   displayName: 'Install dependencies'
+          # - script: yarn build
+          #   displayName: 'Build Gatsby'
+          # # prettier-ignore
+          # - script: |
+          #     DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
+          #     echo "##vso[task.setvariable variable=DEPLOY_URL;isOutput=true]$DEPLOY_URL"
+          #   displayName: 'Deploy to Netlify'
+          #   name: deployToNetlify
