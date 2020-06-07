@@ -23,10 +23,6 @@ module.exports = {
             resolve: `gatsby-plugin-google-tagmanager`,
             options: pluginOptions.analytic,
         },
-        {
-            resolve: `gatsby-plugin-manifest`,
-            options: pluginOptions.manifest,
-        },
         { resolve: `gatsby-plugin-netlify` },
     ],
 };

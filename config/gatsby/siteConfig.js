@@ -5,8 +5,6 @@ module.exports = {
     twitterUsername: 'ankur_sheel',
     siteUrl: 'https://www.ankursheel.com/',
     googleTagManagerId: 'GTM-MG9PGWH',
-    backgroundColor: '#ffffff',
-    themeColor: '#222222',
     icon: 'content/images/avatar.png',
     headerTitle: 'Home',
     donateText: 'Did you learn something or find this article interesting?',
