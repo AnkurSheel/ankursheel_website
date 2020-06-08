@@ -51,7 +51,8 @@ jobs:
 
           # prettier-ignore
           - script: |
-              DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
+              DEPLOY_ID=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
+              DEPLOY_URL="https://$DEPLOY_ID--ankursheel.netlify.com/"
               echo "##vso[task.setvariable variable=DEPLOY_URL;isOutput=true]$DEPLOY_URL"
             displayName: 'Deploy to Netlify'
             name: deployToNetlify
