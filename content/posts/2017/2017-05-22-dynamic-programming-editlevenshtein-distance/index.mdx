@@ -284,12 +284,12 @@ second.length_** as at that point either all the remaining characters need to be
 match, then
 
 -   If the element at **m_operations** indicates a **match**, we increment **index1** and **index2**.
--   If the element at **m_operations** indicates an **Insert, **then we insert the character at **second[index2]** and
-    increment **index2.**
--   If the element at **m_operations** indicates a **Delete, **we delete the character at **first[index1]** and
-    increment **index1.**
+-   If the element at **m_operations** indicates an **Insert**, then we insert the character at **second[index2]** and
+    increment **index2**.
+-   If the element at **m_operations** indicates a **Delete**, we delete the character at **first[index1]** and
+    increment **index1**.
 -   If the element at **m_operations** indicates a **Replace**, we replace the character at **first[index1]** with
-    **second[index2] **and increment **index1** and **index2.**
+    **second[index2]** and increment **index1** and **index2**.
 
 Continuing in this way, we can get the operations.
 

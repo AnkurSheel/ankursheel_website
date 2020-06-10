@@ -26,8 +26,8 @@ I prefer to have a header file which can encapsulate the above function calls. I
 #endif
 ```
 
-For the project from which we want to export functions, _project_EXPORTS_ macro will be defined so that _project_API_
-automatically map to _\_\_declspec(dllexport)_. For all other projects, _project_API_ will map to
+For the project from which we want to export functions, _project_\__EXPORTS_ macro will be defined so that
+_project_\__API_ automatically map to _\_\_declspec(dllexport)_. For all other projects, _project_\__API_ will map to
 _\_\_declspec(dllimport)_
 
 Now for whichever interface, we need to export all/the functions all we need to do is include the above header and add
