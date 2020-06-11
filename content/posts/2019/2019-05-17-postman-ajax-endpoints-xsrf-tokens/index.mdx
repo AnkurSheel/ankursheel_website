@@ -80,8 +80,8 @@ field containing the token. The form field that is added is similar to
 
 Note the name of the hidden input - **_\_\_RequestVerificationToken_**. We will need it later.
 
-We are also going to assume that the URL with the form is _<http://127.0.0.1/page>_. When the user presses the submit
-button it posts to _<http://127.0.0.1/page-ajax-action>_. The form on the page itself has two fields _FirstName_ and
+We are also going to assume that the URL with the form is _http://localhost/page_. When the user presses the submit
+button it posts to _http://localhost/page-ajax-action_. The form on the page itself has two fields _FirstName_ and
 _LastName_
 
 ## Yada Yada. But how do I test?
@@ -108,7 +108,7 @@ This is is what our pre-request script will look like
 
 ```javascript
 var url = pm.environment.get('baseurl');
-pm.sendRequest(`${url}/login`, function(err, response) {
+pm.sendRequest(`${url}/login`, function (err, response) {
     if (err) {
         return console.error(err);
     } else {

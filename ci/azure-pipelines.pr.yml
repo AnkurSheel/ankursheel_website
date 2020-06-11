@@ -35,4 +35,4 @@ jobs:
             inputs:
                 gitHubConnection: 'AnkurSheel'
                 repositoryName: '$(Build.Repository.Name)'
-                comment: 'Netlify Preview Url: https://$(DEPLOY_URL)--ankursheel.netlify.com/'
+                comment: 'Netlify Preview Url: $(DEPLOY_URL)'
