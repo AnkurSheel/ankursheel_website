@@ -7,6 +7,7 @@ module.exports = {
     googleTagManagerId: 'GTM-MG9PGWH',
     icon: 'content/images/avatar.png',
     headerTitle: 'Home',
+    webMonetization: '$ilp.uphold.com/FpRgJHkQhkhb',
     donateText: 'Did you learn something or find this article interesting?',
     buyMeACoffee: {
         link: 'https://www.buymeacoffee.com/ankursheel',
