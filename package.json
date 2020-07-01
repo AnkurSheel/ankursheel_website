@@ -64,7 +64,7 @@
         "inquirer": "^7.0.5",
         "json-to-pretty-yaml": "^1.2.2",
         "lint-staged": "^10.2.9",
-        "markdownlint-cli": "^0.23.1",
+        "markdownlint-cli": "^0.23.2",
         "mkdirp": "^1.0.3",
         "netlify-cli": "^2.53.0",
         "npm-normalize-package-bin": "^1.0.1",
