@@ -41,7 +41,7 @@ var s3Response = await s3Client.PutObjectAsync(s3Request);
 
 -   **_Line 1_**: Setup the S3 client with the region we want to connect to
 -   **_Line 2_**: Create a new `PutObjectRequest` because we want to upload a file to S3.
--   **_Line 4_**: **_BucketName_**: Set the bucket name in which the PDF needs to be put.
+-   **_Line 4_**: **_BucketName_**: Set the bucket name to which the PDF needs to be uploaded.
 -   **_Line 5_**: **_Key_**: Create an unique key to identify the object in S3.
 -   **_Line 6_**: **_InputStream_**: Set the the inputStream to the PDF stream that we received from the API.
 -   **_Line 7_**: **_ServerSideEncryptionMethod_**: Use the AWS Key Management Service to encrypt the PDF.
