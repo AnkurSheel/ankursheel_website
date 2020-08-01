@@ -42,7 +42,7 @@
     "devDependencies": {
         "@babel/core": "^7.10.2",
         "@codinators/eslint-config": "^1.0.0",
-        "@sindresorhus/slugify": "^1.0.0",
+        "@sindresorhus/slugify": "^1.1.0",
         "@types/inquirer": "^6.5.0",
         "@types/prettier": "^2.0.1",
         "@types/puppeteer": "^3.0.0",
