@@ -74,7 +74,7 @@
         "typescript": "^3.9.5",
         "webpack": "^4.42.1",
         "yalc": "^1.0.0-pre.34",
-        "yarn-deduplicate": "^2.0.0"
+        "yarn-deduplicate": "^2.1.1"
     },
     "peerDependencies": {
         "gatsby": "^2.13.7",
