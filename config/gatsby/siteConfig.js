@@ -39,7 +39,7 @@ module.exports = {
     socialLinks: {
         twitter: {
             url: 'https://twitter.com/ankur_sheel',
-            text: 'Follow me',
+            text: 'Connect on Twitter',
         },
         github: {
             url: 'https://github.com/AnkurSheel',
@@ -51,7 +51,7 @@ module.exports = {
         },
         rss: {
             url: '/blog/rss.xml',
-            text: 'Subsribe on RSS',
+            text: 'Subscribe on RSS',
         },
     },
     footerLinks: [
