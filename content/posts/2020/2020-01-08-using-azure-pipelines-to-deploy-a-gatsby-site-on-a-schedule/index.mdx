@@ -1,8 +1,6 @@
 ---
 title: 'How to deploy a Gatsby site on a schedule with Azure Pipelines'
-excerpt:
-    "Azure pipelines can be triggered on a schedule. Let's see how we can use this feature to deploy our gatsby site to
-    netlify on a daily basis and have scheduled posts automatically go live."
+excerpt: "Azure pipelines can be triggered on a schedule. Let's see how we can use this feature to deploy our gatsby site to netlify on a daily basis and have scheduled posts automatically go live."
 featuredImage: './cover.jpg'
 featuredImagePosition: ' top left'
 tags:
@@ -12,21 +10,16 @@ tags:
     - 'Azure pipelines'
 ---
 
-In an [earlier post](./deploying-a-gatsby-site-to-netlify-using-azure-pipelines), I showed how to use azure pipelines to
-build a gatsby site and deploy to netlify. But it was slightly limited. A live build was deployed only when a push was
-made to _master_. There was no way to have scheduled posts go live automatically.
+In an [earlier post](./deploying-a-gatsby-site-to-netlify-using-azure-pipelines), I showed how to use azure pipelines to build a gatsby site and deploy to netlify. But it was slightly limited. A live build was deployed only when a push was made to _master_. There was no way to have scheduled posts go live automatically.
 
 There are 2 ways to approach this problem.
 
-1. By using an AWS Lambda or Azure Functions. This is what I had initially and you can see the code
-   [here](https://github.com/AnkurSheel/BlogFunctions).
+1. By using an AWS Lambda or Azure Functions. This is what I had initially and you can see the code [here](https://github.com/AnkurSheel/BlogFunctions).
 1. By adding a new azure pipeline which runs on a schedule.
 
 In this post, I will be using azure pipelines to deploy the site daily.
 
-_Note: We will be using the template files created in the
-[Deploying a Gatsby site to Netlify using Azure Pipelines](./deploying-a-gatsby-site-to-netlify-using-azure-pipelines)
-so I would suggest reading that first. Go on, I will wait._
+_Note: We will be using the template files created in the [Deploying a Gatsby site to Netlify using Azure Pipelines](./deploying-a-gatsby-site-to-netlify-using-azure-pipelines) so I would suggest reading that first. Go on, I will wait._
 
 ## Adding a new pipeline to schedule posts
 
@@ -72,8 +65,7 @@ jobs:
     1. **_branches_**: Include only the _master_ branch so that only the _master_ branch is built and deployed.
     1. **_always: true_**: Always run the pipeline.
 1. **_trigger_**: Conditions for running the pipeline for when a push is made.
-    1. **_branches_**: Exclude all branches so that the build is not triggered for commits on any branch including
-       _master_.
+    1. **_branches_**: Exclude all branches so that the build is not triggered for commits on any branch including _master_.
 1. **_pr: none_**: Disable triggering the pipeline for when a PR is opened or changes pushed to an open PR. _master_.
 1. **_variables_**: We set a template file to get the environment variables.
 1. **_jobs_**: The jobs to run.
@@ -85,11 +77,9 @@ jobs:
 
 ## Gotchas
 
-1. The cron syntax is mm HH DD MM DW. You can find more details about the supported syntax
-   [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml#supported-cron-syntax)
+1. The cron syntax is mm HH DD MM DW. You can find more details about the supported syntax [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml#supported-cron-syntax)
 1. The timezone for schedules is UTC so the build times need to be adjusted accordingly.
-1. Don't forget to set `always: true`. If you have it set to false, a build might not be triggered if you are scheduling
-   posts a few days in advance.
+1. Don't forget to set `always: true`. If you have it set to false, a build might not be triggered if you are scheduling posts a few days in advance.
 
 ## Conclusion
 

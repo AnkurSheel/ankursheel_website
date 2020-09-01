@@ -8,22 +8,17 @@ tags:
     - 'post-mortem'
 ---
 
-Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time it
-was based on **Pacman**.
+Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time it was based on **Pacman**.
 
-If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss
-seeing all the things I did wrong. 😊
+If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss seeing all the things I did wrong. 😊
 
 ![Spring Challenge 2020](./cover.jpg)
 
 ## Preamble
 
-For the contest, you were in command of 2 to 5 pacs on a grid and the goal was to eat more pellets without getting
-killed by the end of the game. There was a fog of war and the attack mechanism was based on Rock, Paper, Scissors.
+For the contest, you were in command of 2 to 5 pacs on a grid and the goal was to eat more pellets without getting killed by the end of the game. There was a fog of war and the attack mechanism was based on Rock, Paper, Scissors.
 
-Like all other codingame contest, the game was turn-based, where each turn consisted of you reading the world state
-information from _stdin_ and outputting your action to _stdout_. This would be repeated till either only 1 bot was alive
-or a fixed number of rounds had passed.
+Like all other codingame contest, the game was turn-based, where each turn consisted of you reading the world state information from _stdin_ and outputting your action to _stdout_. This would be repeated till either only 1 bot was alive or a fixed number of rounds had passed.
 
 You also had a maximum of 50 ms to submit your action before you would timeout and die.
 
@@ -36,65 +31,46 @@ There were multiple leagues
 -   Gold
 -   Legend
 
-To pass each league, you need to beat the boss of that league. Everyone starts from Wood 2 and depending on how good
-their bot fares, they move to the higher leagues. Also, as you move to the higher leagues, extra rules might apply.
+To pass each league, you need to beat the boss of that league. Everyone starts from Wood 2 and depending on how good their bot fares, they move to the higher leagues. Also, as you move to the higher leagues, extra rules might apply.
 
 For this contest, I decided to use C#.
 
 ## What Went Right
 
--   I had already participated in a previous contest at codingame which gave me a base to start from. For other
-    postmortems click [here](/tags/codingame).
+-   I had already participated in a previous contest at codingame which gave me a base to start from. For other postmortems click [here](/tags/codingame).
 
 -   **Tools from previous contests:**
 
-    -   CGSync: A google chrome plugin that allowed me to sync a local file to the web IDE. This allowed me to work in
-        Visual Studio which made for much faster workflow. The plugin can be found
-        [here](https://www.codingame.com/forum/t/codingame-sync-beta/614/65).
+    -   CGSync: A google chrome plugin that allowed me to sync a local file to the web IDE. This allowed me to work in Visual Studio which made for much faster workflow. The plugin can be found [here](https://www.codingame.com/forum/t/codingame-sync-beta/614/65).
 
-    -   I had already built a utility program which allowed me to combine multiple files into a single c# file which
-        codingame requires. This enabled me to split my code across different files while developing.
+    -   I had already built a utility program which allowed me to combine multiple files into a single c# file which codingame requires. This enabled me to split my code across different files while developing.
 
-    -   I had a python script to help download the game data, parse it and put it into a text file which would be
-        consumed by my program. This allowed me to step through and debug the AI when I could see that my AI was failing
-        to win because of some bug instead of just relying on the stderr stream.
+    -   I had a python script to help download the game data, parse it and put it into a text file which would be consumed by my program. This allowed me to step through and debug the AI when I could see that my AI was failing to win because of some bug instead of just relying on the stderr stream.
 
-    -   I isolated the IO into a separate class and made it so that every time I was reading anything from _stdin_ it
-        was outputted to the error stream.
+    -   I isolated the IO into a separate class and made it so that every time I was reading anything from _stdin_ it was outputted to the error stream.
 
-    -   I had a few global constants which allowed me to do things like enabling/disabling logging with a single line
-        change.
+    -   I had a few global constants which allowed me to do things like enabling/disabling logging with a single line change.
 
--   **Using C#**: It is much faster to write code in C# than C++, especially since its what I am primarily using in my
-    day job.
+-   **Using C#**: It is much faster to write code in C# than C++, especially since its what I am primarily using in my day job.
 
 -   **Continuous refactoring** enabled me to keep my code readable and isolated the areas that I had to work on.
 
--   **Using Source Control**: I cannot even stress how helpful it was to go back a version or two because the new logic
-    was performing even worse than the one a few iterations before. This was especially true when I tried to switch to
-    attack the opponent.
+-   **Using Source Control**: I cannot even stress how helpful it was to go back a version or two because the new logic was performing even worse than the one a few iterations before. This was especially true when I tried to switch to attack the opponent.
 
--   **Iterative development**: I was able to reach Silver just by concentrating on the movement rather than the pac
-    types.
+-   **Iterative development**: I was able to reach Silver just by concentrating on the movement rather than the pac types.
 
 -   **Precomputing** the neighbour and visible cells in the 1st turn made it easier to calculate the move.
 -   I was in the top 400 for some time.
 
 ## What went wrong
 
--   I did not write any tests which made it difficult to have confidence that I was not breaking things as I was
-    refactoring and modifying the algorithm. There were a few times where I introduced a bug after refactoring and did
-    not realise till my rank dropped and I watched a replay.
+-   I did not write any tests which made it difficult to have confidence that I was not breaking things as I was refactoring and modifying the algorithm. There were a few times where I introduced a bug after refactoring and did not realise till my rank dropped and I watched a replay.
 
--   I did not get to spend as much time as I would have liked on this. With work and other personal commitments, I was
-    only able to spend a few hours on the problem. I was also unable to work on the weekend just before the contest
-    ended which dropped my rank from the early 400's to below 600 by the time I ended the contest.
+-   I did not get to spend as much time as I would have liked on this. With work and other personal commitments, I was only able to spend a few hours on the problem. I was also unable to work on the weekend just before the contest ended which dropped my rank from the early 400's to below 600 by the time I ended the contest.
 
--   I wanted to Livestream/record my development but I was not able to Livestream every time I worked on this. I could
-    only Livestream early morning before starting work.
+-   I wanted to Livestream/record my development but I was not able to Livestream every time I worked on this. I could only Livestream early morning before starting work.
 
--   I was almost able to beat the Siver league Boss. In fact I was ranked 2 at some point in the league but I just
-    couldn't get that slight improvement to move to the Gold league.
+-   I was almost able to beat the Siver league Boss. In fact I was ranked 2 at some point in the league but I just couldn't get that slight improvement to move to the Gold league.
 
 -   Quite a few times, the tweaks that I made, made my bot perform worse. This was especially true in the Silver League.
 
@@ -106,24 +82,19 @@ For this contest, I decided to use C#.
 
 -   Precomputing all the paths in the 1st turn would have made it faster to tweak the algorithm
 
--   Adding a timer for profiling. Some of the tweaks I made resulted in timeouts which could have been optimized if I
-    was profiling.
+-   Adding a timer for profiling. Some of the tweaks I made resulted in timeouts which could have been optimized if I was profiling.
 
 ## Other Notes
 
 -   This was a fun contest but the fog of war and partial information was a little annoying.
 
--   If you want a copy of any of my tools, let me know on
-    [twitter](https://twitter.com/ankur_sheel/status/1263342317894656000) and I can make it available.
+-   If you want a copy of any of my tools, let me know on [twitter](https://twitter.com/ankur_sheel/status/1263342317894656000) and I can make it available.
 
--   It would be great if once the contest has ended, links could be provided to tutorials for the various AI techniques
-    that were successful.
+-   It would be great if once the contest has ended, links could be provided to tutorials for the various AI techniques that were successful.
 
--   If you want to look at the commit history and get a sense of how I approached the contest you can find the
-    [code here](https://github.com/AnkurSheel/codingame/tree/JoinThePac).
+-   If you want to look at the commit history and get a sense of how I approached the contest you can find the [code here](https://github.com/AnkurSheel/codingame/tree/JoinThePac).
 
--   If you are interested in watching me code parts of the contest you can find the
-    [playlist here](https://www.youtube.com/playlist?list=PLyHMMEg7mqQ5IDIgrxixQwdOD5JjcjmuC).
+-   If you are interested in watching me code parts of the contest you can find the [playlist here](https://www.youtube.com/playlist?list=PLyHMMEg7mqQ5IDIgrxixQwdOD5JjcjmuC).
 
 ## Ranking
 

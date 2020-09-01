@@ -1,18 +1,13 @@
 ---
 title: 'How to create an AWS SNS topic for an AWS SES not in the default provider using terraform'
-excerpt:
-    'How can you access resources created in a different AWS region with terraform? I ran into this when trying to
-    access SES created in a different region to the rest of our infrastructure.'
+excerpt: 'How can you access resources created in a different AWS region with terraform? I ran into this when trying to access SES created in a different region to the rest of our infrastructure.'
 tags:
     - 'terraform'
     - 'devops'
     - 'AWS'
 ---
 
-Lets assume that most of our infrastructure is in _ap-southeast-2 (Sydney)_. But, our Amazon Simple Email Service(SES)
-is setup in _us-west-2 (Oregon)_. We also want to create an Amazon Simple Notification Service(SNS) topics and Amazon
-Simple Queue Service (SQS) queues so that we can handle bounce notifications. Now since SES is in a different region our
-SNS topics also need to be in that region. So how do we tell terraform to create the topics in the SES region?
+Lets assume that most of our infrastructure is in _ap-southeast-2 (Sydney)_. But, our Amazon Simple Email Service(SES) is setup in _us-west-2 (Oregon)_. We also want to create an Amazon Simple Notification Service(SNS) topics and Amazon Simple Queue Service (SQS) queues so that we can handle bounce notifications. Now since SES is in a different region our SNS topics also need to be in that region. So how do we tell terraform to create the topics in the SES region?
 
 ## Solution
 
@@ -32,14 +27,11 @@ provider "aws" {
 ```
 
 -   **ap-southeast-2**: The default provider configuration.
--   **us-west-2**: This is the additional provider configuration. Setting the **_Alias_** allows us to create more than
-    1 providers.
+-   **us-west-2**: This is the additional provider configuration. Setting the **_Alias_** allows us to create more than 1 providers.
 
 ## Step 2
 
-For the resources, we want to use the _us-west-2_ region we specify the _provider_ parameter and set it to be equal to
-the _alias_. If a _provider_ parameter is not specified, it will fall back to using the provider that doesn't have an
-alias.
+For the resources, we want to use the _us-west-2_ region we specify the _provider_ parameter and set it to be equal to the _alias_. If a _provider_ parameter is not specified, it will fall back to using the provider that doesn't have an alias.
 
 ```hcl{7,14}
 resource "aws_sqs_queue" "example-queue" {
@@ -52,8 +44,7 @@ resource "aws_sns_topic" "example-topic" {
 }
 ```
 
-In the above snippet, _example-queue_ will be created in _ap-southeast-2_ but, _example-topic_ will be created in
-_us-west-2_.
+In the above snippet, _example-queue_ will be created in _ap-southeast-2_ but, _example-topic_ will be created in _us-west-2_.
 
 ## Conclusion
 

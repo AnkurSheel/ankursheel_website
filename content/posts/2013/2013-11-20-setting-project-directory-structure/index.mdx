@@ -1,15 +1,12 @@
 ---
 title: 'How I structure my Game Engine project'
-excerpt:
-    In this post, I am going to cover the third party libraries, project breakup, and current directory structure that I
-    follow.
+excerpt: In this post, I am going to cover the third party libraries, project breakup, and current directory structure that I follow.
 tags:
     - tutorial
     - game engine
 ---
 
-In this post, I am going to cover the third party libraries, project breakup, and current directory structure that I
-follow. Even though it's not perfect, it has served me well so far
+In this post, I am going to cover the third party libraries, project breakup, and current directory structure that I follow. Even though it's not perfect, it has served me well so far
 
 ## Third-Party Tools
 
@@ -119,18 +116,14 @@ For each project, I maintain 2 folders
 
 -   Include
 
-    -   This folder contains all the interfaces for the respective project. This folder will be included in the all
-        projects that are dependent on it. This way, the underlying implementations need not be released. It also
-        reduces the compile-time, if I change the implementation
+    -   This folder contains all the interfaces for the respective project. This folder will be included in the all projects that are dependent on it. This way, the underlying implementations need not be released. It also reduces the compile-time, if I change the implementation
 
 -   Src
 
-    -   This folder contains all files for the actual implementation. Most of the classes would be inheriting from one
-        of the interfaces in the Include folder
+    -   This folder contains all files for the actual implementation. Most of the classes would be inheriting from one of the interfaces in the Include folder
 
 ## Final Thoughts
 
-Now that we have the basic directory structure mapped out, the next tutorial will deal with actually setting up the
-project for the Visual Studio environment.
+Now that we have the basic directory structure mapped out, the next tutorial will deal with actually setting up the project for the Visual Studio environment.
 
 Till Next Time

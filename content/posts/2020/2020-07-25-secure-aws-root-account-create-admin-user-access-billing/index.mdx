@@ -1,8 +1,6 @@
 ---
 title: 'How to secure an AWS Root account and create an admin user with access to Billing Information'
-excerpt:
-    'A root user on AWS can access everything that AWS offers. Let us see how we can create a user with administrator
-    and Billing Access rights so that we can reduce the number of reasons of why we would need to login as a root user'
+excerpt: 'A root user on AWS can access everything that AWS offers. Let us see how we can create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to login as a root user'
 featuredImage: './images/IAM.png'
 featuredImagePosition: 'top left'
 tags:
@@ -12,13 +10,9 @@ tags:
     - security
 ---
 
-When you first create your AWS account, you create a root user. A root user can access everything that AWS offers and
-you cannot reduce the permissions associated with it. Amazon best practices recommend that you can create an admin group
-for administrative tasks. However, IAM users do not have access to the _AWS Billing and Cost Management Console_ by
-default so we need to explicitly enable access.
+When you first create your AWS account, you create a root user. A root user can access everything that AWS offers and you cannot reduce the permissions associated with it. Amazon best practices recommend that you can create an admin group for administrative tasks. However, IAM users do not have access to the _AWS Billing and Cost Management Console_ by default so we need to explicitly enable access.
 
-Let's see how we can create a user with administrator and Billing Access rights so that we can reduce the number of
-reasons of why we would need to login as a root user.
+Let's see how we can create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to login as a root user.
 
 First login as the root user
 
@@ -32,8 +26,7 @@ On the navigation bar, choose the account name and click on _My Account_.
 
 ![Activate IAM Access](./images/activate_iam_access.png)
 
-In the _IAM User and Role Access to Billing Information_ section select the _Activate IAM Access_ checkbox and click on
-the _Update_ button.
+In the _IAM User and Role Access to Billing Information_ section select the _Activate IAM Access_ checkbox and click on the _Update_ button.
 
 ## Secure root user
 
@@ -43,8 +36,7 @@ Navigate to the IAM(Identity and Access Management) console.
 
 -   Activate MFA on the root account to secure it.
 
--   Change the sign-in link to be more friendly by clicking on the _Customize_ button.
-    ![Customize Sign-in Link](./images/sign_in_link.png)
+-   Change the sign-in link to be more friendly by clicking on the _Customize_ button. ![Customize Sign-in Link](./images/sign_in_link.png)
 
 ## Add User with Administrator Rights
 
@@ -102,13 +94,11 @@ Review the settings and if everything is correct, press the _Create user_ button
 
 ![User Access Keys](./images/user_access_keys.png)
 
-Once the user has been created, you can download the credential information. Remember, that this will be the only time
-you can access this information.
+Once the user has been created, you can download the credential information. Remember, that this will be the only time you can access this information.
 
 ## Create a group and policy for accessing Billing Service
 
-Click on the _Policies_ item in the navigation pane and then click the _Create Policy_ button
-![Create Policy](./images/add_policy.png)
+Click on the _Policies_ item in the navigation pane and then click the _Create Policy_ button ![Create Policy](./images/add_policy.png)
 
 ### Add Billing Service
 
@@ -184,5 +174,4 @@ Click on the _Add User to Group Button_.
 
 ## Conclusion
 
-We now have an IAM user that has administrator rights for our AWS account and also has full access to the AWS Billing
-and Cost Management Console. Its also easy to give other users access to either Administrator rights or Billing rights.
+We now have an IAM user that has administrator rights for our AWS account and also has full access to the AWS Billing and Cost Management Console. Its also easy to give other users access to either Administrator rights or Billing rights.
