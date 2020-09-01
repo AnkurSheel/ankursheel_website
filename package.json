@@ -63,7 +63,7 @@
         "husky": "^4.2.3",
         "inquirer": "^7.0.5",
         "json-to-pretty-yaml": "^1.2.2",
-        "lint-staged": "^10.2.9",
+        "lint-staged": "^10.2.13",
         "markdownlint-cli": "^0.23.1",
         "mkdirp": "^1.0.3",
         "netlify-cli": "^2.53.0",
