@@ -1,8 +1,6 @@
 ---
 title: How to solve Edit(Levenshtein) distance with Dynamic Programming
-excerpt:
-    In this article, we will look at using the above steps to arrive at a Dynamic Programming solution to the Edit
-    Distance problem.
+excerpt: In this article, we will look at using the above steps to arrive at a Dynamic Programming solution to the Edit Distance problem.
 featuredImage: './cover.jpg'
 tags:
     - cpp
@@ -16,25 +14,16 @@ This article is a part of series
 2. [Longest Common Subsequence](/blog/dynamic-programming-longest-common-subsequence/)
 3. **Edit(Levenshtein) distance**
 
-In this article, we will look at using the steps mentioned in the
-[introduction article](/blog/dynamic-programming-series-introduction) to arrive at a Dynamic Programming solution to the
-Edit Distance problem.
+In this article, we will look at using the steps mentioned in the [introduction article](/blog/dynamic-programming-series-introduction) to arrive at a Dynamic Programming solution to the Edit Distance problem.
 
 ## Edit Distance
 
-**Problem Statement:** Given two input strings (S1, S2) of different lengths (m, n), we need to convert the first string
-into the second string using a minimum number (or minimum cost) of edit operations. One can replace existing characters
-in the first string with characters from the second string, delete existing characters or insert new characters into the
-first string.
+**Problem Statement:** Given two input strings (S1, S2) of different lengths (m, n), we need to convert the first string into the second string using a minimum number (or minimum cost) of edit operations. One can replace existing characters in the first string with characters from the second string, delete existing characters or insert new characters into the first string.
 
 **Examples:**
 
-1. Edit Distance for input sequences _"sunday"_ and _"saturday"_ is 3. Last three and first characters are same. We need
-   to convert _'un'_ to _'atur'_.  This can be achieved by inserting character _'a'_, inserting character 't' and
-   replacing character _'n'_ with character _'r'_
-2. Edit Distance for input sequences _"cat"_ and _"cars"_ is 2. The first 2 characters are the same. We need to convert
-   _'t'_ to _'rs'_. This can be achieved by inserting character *'r'* and replacing character *'t'* with character
-   _'s'_.
+1. Edit Distance for input sequences _"sunday"_ and _"saturday"_ is 3. Last three and first characters are same. We need to convert _'un'_ to _'atur'_.  This can be achieved by inserting character _'a'_, inserting character 't' and replacing character _'n'_ with character _'r'_
+2. Edit Distance for input sequences _"cat"_ and _"cars"_ is 2. The first 2 characters are the same. We need to convert _'t'_ to _'rs'_. This can be achieved by inserting character *'r'* and replacing character *'t'* with character _'s'_.
 
 The edit distance can be used in spell checkers and correction systems for optical character recognition.
 
@@ -42,23 +31,15 @@ You can read more about the Edit Distance [here](https://en.wikipedia.org/wiki/
 
 ## Profiling
 
-As mentioned in the [introduction article](/blog/dynamic-programming-series-introduction), we will be using
-[google benchmark](https://github.com/google/benchmark) to help profile our solutions. If you want to know more about
-how we will be using google benchmark, you can read the
-[introduction article](/blog/dynamic-programming-series-introduction).
+As mentioned in the [introduction article](/blog/dynamic-programming-series-introduction), we will be using [google benchmark](https://github.com/google/benchmark) to help profile our solutions. If you want to know more about how we will be using google benchmark, you can read the [introduction article](/blog/dynamic-programming-series-introduction).
 
-For the Edit Distance problem, the worst case occurs when there is no match between the sequences. For the purposes of
-this article, we will profile against the worst case by creating 2 strings of length **_n_** and fill one of them with
-**_'a'_** and the other with **_'b'_**. We will then attempt to see how long it takes for the function to return.
-**_n_** will be part of the Benchmark name.
+For the Edit Distance problem, the worst case occurs when there is no match between the sequences. For the purposes of this article, we will profile against the worst case by creating 2 strings of length **_n_** and fill one of them with **_'a'_** and the other with **_'b'_**. We will then attempt to see how long it takes for the function to return. **_n_** will be part of the Benchmark name.
 
-If you want to see the benchmarks in action, you can find the code
-[here](https://github.com/AnkurSheel/DynamicProgramming).
+If you want to see the benchmarks in action, you can find the code [here](https://github.com/AnkurSheel/DynamicProgramming).
 
 ## Steps
 
-In the [introduction article](/blog/dynamic-programming-series-introduction), we came up with the following steps to
-find a dynamic programming approach to our problem
+In the [introduction article](/blog/dynamic-programming-series-introduction), we came up with the following steps to find a dynamic programming approach to our problem
 
 1. Find the overlapping subproblem.
 2. Start with a recursive solution
@@ -131,15 +112,11 @@ int cEditDistance::Recursive(const string& first, const string& second, int inde
 }
 ```
 
-In the recursive approach, it is extremely hard to get the operations string so we are just going to return the number
-of operations.
+In the recursive approach, it is extremely hard to get the operations string so we are just going to return the number of operations.
 
 ### Top-Down Recursive approach with Memoization
 
-Edit distance subproblems consist of a pair of suffixes of the 2 input strings. To store and look up the subproblem
-solutions we can use a 2d array. We will use a _**-1**_ to tell the algorithm that nothing has been stored as yet. To
-get the actual operations we will use another 2D array which will store the operation that we are performing at that
-stage.
+Edit distance subproblems consist of a pair of suffixes of the 2 input strings. To store and look up the subproblem solutions we can use a 2d array. We will use a _**-1**_ to tell the algorithm that nothing has been stored as yet. To get the actual operations we will use another 2D array which will store the operation that we are performing at that stage.
 
 ```cpp
 string cEditDistance::Memonized(const string& first, const string& second)
@@ -201,8 +178,7 @@ int cEditDistance::Memonized(const string& first, const string& second, int inde
 }
 ```
 
-In the above algorithm, **_m_results(0)_**, gives the number of operations. We will look at **_GetSteps()_** in the next
-section to see how we can get the subsequence after computing the **_m_operations_** array.
+In the above algorithm, **_m_results(0)_**, gives the number of operations. We will look at **_GetSteps()_** in the next section to see how we can get the subsequence after computing the **_m_operations_** array.
 
 ### Getting the subsequence
 
@@ -279,17 +255,12 @@ string cEditDistance::GetSteps(const std::string& first, const std::string& seco
 }
 ```
 
-To find the operations,  we traverse through **m_operations** till either **_index1 >= first.length_** or  **_index2 >=
-second.length_** as at that point either all the remaining characters need to be inserted or deleted. If there is a
-match, then
+To find the operations,  we traverse through **m_operations** till either **_index1 >= first.length_** or  **_index2 >= second.length_** as at that point either all the remaining characters need to be inserted or deleted. If there is a match, then
 
 -   If the element at **m_operations** indicates a **match**, we increment **index1** and **index2**.
--   If the element at **m_operations** indicates an **Insert**, then we insert the character at **second[index2]** and
-    increment **index2**.
--   If the element at **m_operations** indicates a **Delete**, we delete the character at **first[index1]** and
-    increment **index1**.
--   If the element at **m_operations** indicates a **Replace**, we replace the character at **first[index1]** with
-    **second[index2]** and increment **index1** and **index2**.
+-   If the element at **m_operations** indicates an **Insert**, then we insert the character at **second[index2]** and increment **index2**.
+-   If the element at **m_operations** indicates a **Delete**, we delete the character at **first[index1]** and increment **index1**.
+-   If the element at **m_operations** indicates a **Replace**, we replace the character at **first[index1]** with **second[index2]** and increment **index1** and **index2**.
 
 Continuing in this way, we can get the operations.
 
@@ -353,8 +324,7 @@ string cEditDistance::DP(const std::string& first, const std::string& second)
 }
 ```
 
-The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem
-could be solved by computing a fraction of the array.
+The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem could be solved by computing a fraction of the array.
 
 ## Conclusion
 
@@ -362,8 +332,7 @@ The benchmark results on my machine
 
 ![Edit distance benchmarks](./cover.jpg)
 
-If you would like to look at the code or run the benchmarks or tests yourself, you can find the code
-[here](https://github.com/AnkurSheel/DynamicProgramming).
+If you would like to look at the code or run the benchmarks or tests yourself, you can find the code [here](https://github.com/AnkurSheel/DynamicProgramming).
 
 In the next article in the series, we will look at another problem that can be solved by Dynamic Programming.
 

@@ -8,17 +8,13 @@ tags:
 
 [Previous Post in Series: Directory Structure](./setting-project-directory-structure)
 
-Now that we have decided the basic directory structure and dependencies that each project will have, we will now set the
-project properties. I prefer to do this at the project level so that the properties are persistent and I don't have to
-set them every time I download the project. The steps are based on Visual Studio 2010, but you should be able to adapt
-them to a different IDE as well.
+Now that we have decided the basic directory structure and dependencies that each project will have, we will now set the project properties. I prefer to do this at the project level so that the properties are persistent and I don't have to set them every time I download the project. The steps are based on Visual Studio 2010, but you should be able to adapt them to a different IDE as well.
 
 ## Setting up the Main Exe Project
 
 -   Create a Win 32 Project and delete all the files except for stdafx.h, stdafx.cpp.
 
--   Create a new folder called Source and move the above files in there (I prefer all my source files in one main
-    directory.
+-   Create a new folder called Source and move the above files in there (I prefer all my source files in one main directory.
 
 -   In the property settings for the project perform the following steps
 
@@ -76,12 +72,9 @@ them to a different IDE as well.
 
 ## Setting up the DLL's
 
-I will explain how to set up one of the lib projects which links to an extern library. Properties for all the other
-projects can be set in the same way by looking at the dependencies from the
-[previous tutorial](./setting-project-directory-structure)
+I will explain how to set up one of the lib projects which links to an extern library. Properties for all the other projects can be set in the same way by looking at the dependencies from the [previous tutorial](./setting-project-directory-structure)
 
--   Create a Win 32 Project but change the Application Type to DLL and delete all the files except for stdafx.h,
-    stdafx.cpp _(For tutorial purposes we will be setting up the Utilities project)._
+-   Create a Win 32 Project but change the Application Type to DLL and delete all the files except for stdafx.h, stdafx.cpp _(For tutorial purposes we will be setting up the Utilities project)._
 
 -   Create a new folder called Source and move the above files in there.
 
@@ -145,5 +138,4 @@ projects can be set in the same way by looking at the dependencies from the
 
 ## Final Thoughts
 
-This finishes the initial setup. Since I am not sure, how much detail I should get into of why I set up my projects this
-way, I will be happy to answer any questions in the comments.
+This finishes the initial setup. Since I am not sure, how much detail I should get into of why I set up my projects this way, I will be happy to answer any questions in the comments.

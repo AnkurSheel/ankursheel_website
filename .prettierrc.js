@@ -6,5 +6,5 @@ module.exports = {
     trailingComma: 'es5',
     printWidth: 120,
     useTabs: false,
-    proseWrap: 'always',
+    proseWrap: 'never',
 };
