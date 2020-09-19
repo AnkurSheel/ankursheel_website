@@ -1,5 +1,5 @@
 ---
-title: 'How to handle Bounces in AWS SES using terraform'
+title: 'How to handle Bounces in AWS SES using terraform: Part 1'
 excerpt: 'In this post, I configure AWS to publish email bounce notifications to an SQS queue using terraform'
 featuredImage: './cover.jpg'
 featuredImagePosition: 'top 20% center'
@@ -122,4 +122,8 @@ resource "aws_sqs_queue_policy" "ses_queue_policy" {
 
 ## Next Steps
 
+You can see the [code here](https://github.com/AnkurSheel/ses-bounces).
+
 So far, we have configured AWS to publish bounce notifications to an SQS queue. In the next post(s) we will see how we can configure an AWS Lambda to process the messages in the queue and send a custom message to a Slack channel.
+
+Read [Part2](./handle-bounces-aws-ses-terraform-2)
