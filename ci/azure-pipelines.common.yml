@@ -21,25 +21,25 @@ jobs:
 
           - task: Cache@2
             inputs:
-                key: '2Sep20 | yarn | "$(Agent.OS)" | yarn.lock'
+                key: '9Oct20 | yarn | "$(Agent.OS)" | yarn.lock'
                 restoreKeys: |
-                    2Sep20 | yarn | "$(Agent.OS)" | yarn.lock
+                    9Oct20 | yarn | "$(Agent.OS)" | yarn.lock
                 path: $(YARN_CACHE_FOLDER)
             displayName: Cache Yarn packages
 
           - task: Cache@2
             inputs:
-                key: '2Sep20 | gatsby | "$(Agent.OS)" | cache'
+                key: '9Oct20 | gatsby | "$(Agent.OS)" | cache'
                 restoreKeys: |
-                    2Sep20 | gatsby | "$(Agent.OS)" | cache
+                    9Oct20 | gatsby | "$(Agent.OS)" | cache
                 path: $(GASTBY_CACHE_FOLDER)
             displayName: Cache Gatsby Cache Folder
 
           - task: Cache@2
             inputs:
-                key: '2Sep20 | gatsby | "$(Agent.OS)" | public'
+                key: '9Oct20 | gatsby | "$(Agent.OS)" | public'
                 restoreKeys: |
-                    2Sep20 | gatsby | "$(Agent.OS)" | public
+                    9Oct20 | gatsby | "$(Agent.OS)" | public
                 path: $(GASTBY_PUBLIC_FOLDER)
             displayName: Cache Gatsby Public Folder
 
@@ -51,8 +51,8 @@ jobs:
 
           # prettier-ignore
           - script: |
-              DEPLOY_ID=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
-              DEPLOY_URL="https://$DEPLOY_ID--ankursheel.netlify.com/"
+              DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
+              # DEPLOY_URL="https://$DEPLOY_ID--ankursheel.netlify.com/"
               echo "##vso[task.setvariable variable=DEPLOY_URL;isOutput=true]$DEPLOY_URL"
             displayName: 'Deploy to Netlify'
             name: deployToNetlify
