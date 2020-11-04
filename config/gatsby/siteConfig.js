@@ -47,7 +47,7 @@ module.exports = {
         },
         linkedin: {
             url: 'https://www.linkedin.com/in/ankursheel',
-            text: 'Connect on LinkedIn',
+            text: 'View my LinkedIn profile',
         },
         rss: {
             url: '/blog/rss.xml',
