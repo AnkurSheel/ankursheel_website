@@ -35,6 +35,10 @@ module.exports = {
             label: 'Tags',
             url: '/tags',
         },
+        {
+            label: 'Contact Me',
+            url: '/contact',
+        },
     ],
     socialLinks: {
         twitter: {
