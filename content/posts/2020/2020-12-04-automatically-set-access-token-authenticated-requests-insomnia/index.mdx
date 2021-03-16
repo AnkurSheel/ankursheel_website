@@ -1,6 +1,6 @@
 ---
 title: 'How to automatically set the access token for authenticated requests in Insomnia'
-excerpt: "Making your GraphQl endpoint accessible only to authorised user is a common way of securing your website. However, it does make it difficult to use Insomnia to test your requests. How do you make this lets tedious? Let's find out'"
+excerpt: "Making your GraphQl endpoint accessible only to authorised users is a common way of securing your website. However, it makes it difficult to use Insomnia to test your requests. How do you make this less tedious? Let's find out"
 featuredImagePosition: 'top center'
 featuredImage: './images/request_success.png'
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ## Problem
 
-The Graphql endpoint for the API is accessible only to authorised users. Although it is required from a security perspective, it makes testing the API through [Insomnia](https://insomnia.rest/) a little tedious. What if we could automatically insert the bearer token every time we made a request using Insomnia?
+The Graphql endpoint for the API is accessible only to authorised users. Although it is required from a security perspective, it makes testing the API through [Insomnia](https://insomnia.rest/) a little tedious. What if we could automatically insert the bearer token every time we made a request using Insomnia?
 
 ## Solution
 
@@ -38,11 +38,11 @@ _Remember the environment variables from earlier. We can use them so that no mat
 
 ![Get token](./images/get_token.png)
 
-Let's add a new Graphql query and try to send the request. We get a **401 Unauthorized** error because we haven't passed in the bearer token.
+Let's add a new Graphql query and try to send the request. We get a **401 Unauthorized** error because we haven't passed in the bearer token.
 
 ![Graphql request without bearer token](./images/unauthorised.png)
 
-To set the bearer token, we can click on the **Bearer** tab and enter *Response ⇒ Body Attribute* for the token.
+To set the bearer token, we can click on the **Bearer** tab and enter _Response ⇒ Body Attribute_ for the token.
 
 ![Set the bearer token](./images/set_token.png)
 
@@ -50,11 +50,11 @@ To edit the tag, click on it.
 
 ![Edit the tag](./images/edit_tag.png)
 
-In the **Edit Tag** screen select *Post GetAccessToken* for the request
+In the **Edit Tag** screen select _Post GetAccessToken_ for the request
 
 ![Set the request on the tag screen](./images/set_tag_request.png)
 
-Set the trigger behaviour to **Always** so that the request is made every time and you get a new token
+Set the trigger behaviour to **Always** so that the request is made every time and you get a new token
 
 ![Set the trigger behavior](./images/trigger.png)
 
@@ -62,7 +62,7 @@ For the filter, enter `$.accessToken.value`. The value will be dependent on the 
 
 ![Set the filter](./images/filter.png)
 
-Now, if you try to resend the request, you should get back a **200 OK** response.
+Now, if you try to resend the request, you should get back a **200 OK** response.
 
 ![Send a successful request](./images/request_success.png)
 
