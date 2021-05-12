@@ -41,6 +41,12 @@ status = 410
 force = false
 
 [[redirects]]
+from = "/?cat"
+to = "/blog"
+status = 410
+force = false
+
+[[redirects]]
 from = "/blog/:year/:month/:date"
 to = "/blog"
 status = 410
