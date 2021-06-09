@@ -35,6 +35,7 @@ const takeScreenshot = async (url: string, width: number, height: number, destin
 };
 
 const baseDir = join(__dirname, '..', 'content', 'posts');
+const imageDir = join(__dirname, '..', 'content', 'images', 'social');
 
 const getArticleFiles = () => {
     return glob.sync(join(baseDir, '**', '*.mdx'));
@@ -75,7 +76,7 @@ const main = async () => {
         const file = files[i];
         const dir = relative(baseDir, file);
         const postDetails = getPostDetailsFromDir(dir);
-        const destPrefix = join(baseDir, postDetails.year, `${postDetails.date}-${postDetails.path}`, `image-`);
+        const destPrefix = join(imageDir, `${postDetails.path}-image-`);
         const fbFile = `${destPrefix}facebook.png`;
         const twFile = `${destPrefix}twitter.png`;
 
