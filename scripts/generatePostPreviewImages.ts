@@ -5,23 +5,33 @@ import puppeteer from 'puppeteer';
 
 const baseUrl = process.argv[2] || 'http://localhost:8000/blog/';
 
-const takeScreenshot = async (
-    page: puppeteer.Page,
-    url: string,
-    width: number,
-    height: number,
-    destination: string
-) => {
+const takeScreenshot = async (url: string, width: number, height: number, destination: string) => {
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+
+    const page = await browser.newPage();
+
     await page.goto(url, {
         waitUntil: 'networkidle2',
     });
+
     await page.setViewport({
         width,
         height,
     });
+
     await page.screenshot({
         path: destination,
+        clip: {
+            x: 0,
+            y: 0,
+            width,
+            height,
+        },
     });
+
+    await browser.close();
 };
 
 const baseDir = join(__dirname, '..', 'content', 'posts');
@@ -61,11 +71,6 @@ const main = async () => {
     } else {
         files = await Promise.all(getArticleFiles());
     }
-    const browser = await puppeteer.launch({
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
-    const page = await browser.newPage();
-
     for (let i = 0; i < files.length; i++) {
         const file = files[i];
         const dir = relative(baseDir, file);
@@ -74,14 +79,12 @@ const main = async () => {
         const fbFile = `${destPrefix}facebook.png`;
         const twFile = `${destPrefix}twitter.png`;
 
-        await takeScreenshot(page, `${baseUrl}${postDetails.path}/image_fb`, 1200, 630, fbFile); // eslint-disable-line no-await-in-loop
+        await takeScreenshot(`${baseUrl}${postDetails.path}/image_fb`, 1200, 630, fbFile); // eslint-disable-line no-await-in-loop
         console.log(`Created ${fbFile}`); // eslint-disable-line no-console
 
-        await takeScreenshot(page, `${baseUrl}${postDetails.path}/image_tw`, 440, 220, twFile); // eslint-disable-line no-await-in-loop
+        await takeScreenshot(`${baseUrl}${postDetails.path}/image_tw`, 440, 220, twFile); // eslint-disable-line no-await-in-loop
         console.log(`Created ${twFile}`); // eslint-disable-line no-console
     }
-
-    await browser.close();
 };
 
 main();
