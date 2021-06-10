@@ -32,7 +32,7 @@
         "cy:run": "yarn cypress run"
     },
     "dependencies": {
-        "@codinators/gatsby-theme-blog": "^3.2.0",
+        "@codinators/gatsby-theme-blog": "^3.11.0",
         "gatsby": "^2.23.1",
         "gatsby-plugin-google-tagmanager": "^2.3.4",
         "gatsby-plugin-offline": "^3.2.8",
