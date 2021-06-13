@@ -13,7 +13,7 @@ tags:
 
 ## Scenario
 
-We want to get details of users which match a given list of ids.
+We want to get details of users that match a given list of ids.
 
 ### The SQL
 
@@ -55,7 +55,7 @@ _Notes:_
 
 ## Problem #1
 
-On running this, we get an error
+On running this, we get an error.
 
 ```csharp
 System.NotSupportedException: Npgsql 3.x removed support for writing
@@ -63,7 +63,7 @@ System.NotSupportedException: Npgsql 3.x removed support for writing
     instead.
 ```
 
-Luckily, the error message is telling us what we need to do. So let's make userIds an Array
+Luckily, the error message is telling us what we need to do. So let's make userIds an Array.
 
 ```csharp{7}
 void GetUsers(IReadOnlyCollection<int> userIds)
@@ -81,7 +81,7 @@ void GetUsers(IReadOnlyCollection<int> userIds)
 
 ## Problem #2
 
-We now get the error
+We now get the error.
 
 ```csharp
 Npgsql.PostgresException : 42601: syntax error at or near "$2"
@@ -128,4 +128,4 @@ void GetUsers(IReadOnlyCollection<int> userIds)
 }
 ```
 
-This allows us to get details of users which match a given list of ids.
+This allows us to get details of users that match a given list of ids.

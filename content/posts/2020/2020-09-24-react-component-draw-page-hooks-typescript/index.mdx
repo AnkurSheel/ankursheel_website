@@ -8,13 +8,13 @@ tags:
     - 'tutorial'
 ---
 
-Recently, [How to Create the Drawing Interaction on DEV's Offline Page](https://dev.to/aspittel/how-to-create-the-drawing-interaction-on-dev-s-offline-page-1mbe) by [Ali Spittel](https://dev.to/aspittel) showed up in my feed and it looked quite cool. This got me wondering if I could create the same thing as a react component using hooks and typescript. Well, the fact that I am writing this post means I was able to recreate it. So let's see how I did it.
+Recently, [How to Create the Drawing Interaction on DEV's Offline Page](https://dev.to/aspittel/how-to-create-the-drawing-interaction-on-dev-s-offline-page-1mbe) by [Ali Spittel](https://dev.to/aspittel) showed up in my feed, and it looked pretty cool. This got me wondering if I could create the same thing as a react component using hooks and typescript. Well, the fact that I am writing this post means I was able to recreate it. So let's see how I did it.
 
 If you are interested in the final product, you can check out the [Github repository](https://github.com/AnkurSheel/react-drawing-interaction) or the [code sandbox](https://codesandbox.io/s/react-drawing-interaction-bo1ph?from-embed).
 
 ## Creating the Component
 
-The first thing we need to do is to create a **Canvas** component. The canvas needs to take up some space which we will want any parent component to be able to override so we will add `width` and `height` as props. But, we want sensible defaults so that we don't have to add these props every time we want to use this component. We will add some _defaultProps_ to set these values to _window.innerWidth_ and _window.innerHeight_ respectively.
+The first thing we need to do is to create a **Canvas** component. The canvas needs to take up some space that we will want any parent component to override, so we will add `width` and `height` as props. But, we want sensible defaults so that we don't have to add these props every time we want to use this component. So, we will add some _defaultProps_ to set these values to _window.innerWidth_ and _window.innerHeight_ respectively.
 
 ```tsx
 import React from 'react';
@@ -38,7 +38,7 @@ export default Canvas;
 
 ## Lets Draw
 
-Since we need to modify the canvas element, we will need to add a ref to it. We can do this by using `useRef` hook and modifying our _canvas_ element to set the ref.
+Since we need to modify the canvas element, we will need to add a ref to it. We can do this using the `useRef` hook and changing our _canvas_ element to set the ref.
 
 ```tsx
 const canvasRef = useRef < HTMLCanvasElement > null;
@@ -47,7 +47,7 @@ return <canvas ref={canvasRef} height={height} width={width} />;
 
 ### Set state
 
-We need to keep track of some variables
+We need to keep track of some variables.
 
 -   the mouse position.
 -   whether we are painting or not.
@@ -83,7 +83,7 @@ useEffect(() => {
 }, [startPaint]);
 ```
 
-_startPaint_ needs to get the current coordinates of the mouse and set `isPainting` to true. We will also wrap it in a `useCallback` hook so that we can use it inside the `useEffect` hook.
+_startPaint_ needs to get the current coordinates of the mouse and set `isPainting` to true. We will also wrap it in a `useCallback` hook to use it inside the `useEffect` hook.
 
 ```tsx
  const startPaint = useCallback((event: MouseEvent) => {
@@ -108,7 +108,7 @@ const getCoordinates = (event: MouseEvent): Coordinate | undefined => {
 
 ### Draw the line on mouse move
 
-Similar to the _mouseDown_ event listener we will use the `useEffect` hook to add the _mousemove_ event.
+Like the _mouseDown_ event listener, we will use the _ useEffect` hook to add the \_mousemove_ event.
 
 ```tsx
 useEffect(() => {
@@ -169,7 +169,7 @@ const drawLine = (originalMousePosition: Coordinate, newMousePosition: Coordinat
 
 ### Stop drawing on mouse release
 
-We want to stop drawing when either the user releases the mouse or they move the mouse out of the canvas area
+We want to stop drawing when either the user releases the mouse or moves the mouse out of the canvas area.
 
 ```tsx
 useEffect(() => {
@@ -186,7 +186,7 @@ useEffect(() => {
 }, [exitPaint]);
 ```
 
-In _exitPaint_ we just set the `isPainting` to `false`
+In _exitPaint_, we just set the `isPainting` to `false`.
 
 ```tsx
 const exitPaint = useCallback(() => {
@@ -196,4 +196,4 @@ const exitPaint = useCallback(() => {
 
 ## Conclusion
 
-And, we have a React component that we can reuse. You can see the final code in either the [Github repository](https://github.com/AnkurSheel/react-drawing-interaction) or play with the [code sandbox](https://codesandbox.io/s/react-drawing-interaction-bo1ph?from-embed).
+And we have a React component that we can reuse. You can see the final code in either the [Github repository](https://github.com/AnkurSheel/react-drawing-interaction) or play with the [code sandbox](https://codesandbox.io/s/react-drawing-interaction-bo1ph?from-embed).

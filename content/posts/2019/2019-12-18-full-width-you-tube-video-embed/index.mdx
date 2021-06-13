@@ -1,6 +1,6 @@
 ---
 title: 'How to embed a YouTube video with a 16:9 aspect ratio and full-width'
-excerpt: 'I struggled for a long time to get my YouTube videos to be full-width with a 16:9 aspect ratio. But, there is a neat CSS trick to make iframes responsive. So lets how we can use CSS to display an iframe with 100% width and 16:9 aspect ratio.'
+excerpt: 'I struggled for a long time to get my YouTube videos to be full-width with a 16:9 aspect ratio. But, there is a neat CSS trick to make iframes responsive. So let us how we can use CSS to display an iframe with 100% width and 16:9 aspect ratio.'
 tags:
     - 'tutorial'
     - 'web development'
@@ -10,9 +10,9 @@ featuredImage: './images/after.jpg'
 featuredImagePosition: 'center center'
 ---
 
-I struggled for a long time to get my YouTube videos to be full-width with a 16:9 aspect ratio. Then I found a neat CSS trick to make iframes responsive.
+I struggled for a long time to get my YouTube videos full-width with a 16:9 aspect ratio. Then I found a neat CSS trick to make iframes responsive.
 
-But before, we look at the code, let's look at the before and after screenshots
+But before we look at the code, let's look at the before and after screenshots.
 
 ![Before](./images/before.jpg)
 
@@ -20,7 +20,7 @@ But before, we look at the code, let's look at the before and after screenshots
 
 ## Steps
 
-Let's how we can use CSS to display an iframe with 100% width and 16:9 aspect ratio.
+Let's use CSS to display an iframe with 100% width and 16:9 aspect ratio.
 
 When embedding a video from YouTube, we get a snippet of code similar to
 
@@ -37,7 +37,7 @@ When embedding a video from YouTube, we get a snippet of code similar to
 
 ### Step 1
 
-Remove all unnecessary properties including _**width**_ and _**height**_. Our snippet now becomes
+Remove all unnecessary properties, including _**width**_ and _**height**_. Our snippet now becomes
 
 ```html
 <iframe src="https://www.youtube.com/embed/RcnksOUugcA" allowfullscreen></iframe>
@@ -56,7 +56,7 @@ Remove all unnecessary properties including _**width**_ and _**height**_. Our sn
 
 ### Step 3
 
-Add CSS to the container
+Add CSS to the container.
 
 ```CSS
 .video-container {
@@ -70,13 +70,13 @@ Add CSS to the container
 
 -   **_position: relative_**: Lets us use absolute positioning for the iframe.
 -   **_width: 100%_**: Make the width 100% of its parent container.
--   **_padding-bottom: 56.25%_**: The 16:9 aspect ratio corresponds to a height which is 56.25% of the width.
+-   **_padding-bottom: 56.25%_**: The 16:9 aspect ratio corresponds to a height that is 56.25% of the width.
 
 **_Note_**: To find the aspect ratio of a container, use this formula: _height ÷ width = aspect ratio_.
 
 ### Step 4
 
-Add CSS to the iframe
+Add CSS to the iframe.
 
 ```CSS
 .video {

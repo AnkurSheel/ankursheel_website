@@ -9,7 +9,7 @@ tags:
 
 ## Problem
 
-Occasionally, I have needed to stop and remove all the docker containers I am running locally. I got tired of googling for the commands all the time and decided to write a snippet that I could access easily.
+Occasionally, I have needed to stop and remove all the docker containers I am running locally. I got tired of googling for the commands and decided to write a snippet that I could access easily.
 
 ## Solution
 
@@ -19,7 +19,7 @@ Before we see how to stop and remove all containers, we need to list all the con
 
 The command to [lists all containers](https://docs.docker.com/engine/reference/commandline/container_ls/) is `docker container ls [OPTIONS]`.
 
-By default, it shows just the running containers and a lot of information that we won't need. So let's pass in some options
+By default, it shows just the running containers and a lot of information that we won't need. So let's pass in some options.
 
 -   **_-a_**: Show all the containers.
 -   **_-q_**: Only display the numeric ids.
@@ -32,7 +32,7 @@ docker container ls -aq
 
 The command to [stop docker containers](https://docs.docker.com/engine/reference/commandline/container_stop/) is `docker container stop [OPTIONS] CONTAINER [CONTAINER...]`
 
-We can see it takes a space-delimited list of container ids/names to stop. We already have the list of container id's from the previous step. All we need to do now is use a shell expansion trick to pass in the list of all containers.
+We can see it takes a space-delimited list of container ids/names to stop. We already have the list of container id's from the previous step. We need to use a shell expansion trick to pass in the list of all containers.
 
 ```bash
 docker container stop $(docker container ls -aq)

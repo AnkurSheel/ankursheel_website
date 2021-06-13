@@ -8,13 +8,13 @@ tags:
     - 'web development'
 ---
 
-If you are importing a javascript dependency into your typescript app, you might run into this error
+If you are importing a javascript dependency into your typescript app, you might run into this error.
 
 **_"Could not find a declaration file for module ‘third-party-library-name’. ‘third-party-library-name.js’ has an ‘any’ type. Try npm install @types/third-party-library-name if it exists or add a new declaration (.d.ts) file containing declare module 'third-party-library-name';"_**
 
-If you read the error message, you can see that it's suggesting to check the DefinitelyTyped repository.
+If you read the error message, you can see that it suggests checking the DefinitelyTyped repository.
 
-If you are lucky you will find it the repository and can install it using _npm_ or _yarn_.
+If you are lucky, you will find the repository and install it using _npm_ or _yarn_.
 
 But what if you not so lucky?
 
@@ -22,7 +22,7 @@ But what if you not so lucky?
 
 Now, you will only see this error if you have `noImplicitAny: true` in your _tsconfig.json_. So you could get around this error is by setting `noImplicitAny: false`.
 
-But, by doing this you lose type-safety, so let's rule this out as a viable option.
+But, by doing this, you lose type-safety, so let's rule this out as a viable option.
 
 ## Solution #2
 
@@ -50,7 +50,7 @@ So, how exactly do you do that?
 
 -   Add a **_third-party-library-name_** folder in the _types_ directory.
 -   Add an _index.d.ts_ in that folder.
--   Add your TypeDefinitions. But if like me, you want to prototype things or do not want to write a full custom type, you can declare the module by adding this to the _index.d.ts_ file.
+-   Add your TypeDefinitions. But if, like me, you want to prototype things or do not want to write a full custom type, you can declare the module by adding this to the _index.d.ts_ file.
 
 ```typescript
 declare module 'third-party-library-name';
@@ -60,4 +60,4 @@ The only caveat is that you don't get any IntelliSense.
 
 ## Conclusion
 
-Hopefully, this post will help you and you won't have to resort to either removing Typescript from your project or losing type-safety by adding `noImplicitAny: false` in your tsconfig.json.
+Hopefully, this post will help you. You won't have to resort to either removing Typescript from your project or losing type-safety by adding `noImplicitAny: false` in your tsconfig.json.
