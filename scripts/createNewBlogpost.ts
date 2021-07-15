@@ -10,7 +10,7 @@ const padLeft0 = (n: number) => n.toString().padStart(2, '0');
 const fromRoot = (...p: string[]) => path.join(__dirname, '..', ...p);
 const formatDate = (d: Date) => `${d.getFullYear()}-${padLeft0(d.getMonth() + 1)}-${padLeft0(d.getDate())}`;
 
-const listify = (a: string) => (a && a.trim().length ? a.split(',').map(s => s.trim()) : '');
+const listify = (a: string) => (a && a.trim().length ? a.split(',').map((s) => s.trim()) : '');
 
 const generateBlogPost = async () => {
     const prompt = await inquirer.prompt([
@@ -39,8 +39,8 @@ const generateBlogPost = async () => {
             name: 'images',
             message: 'Post has images (yes/no)',
             choices: [
-                { name: 'Yes', value: 'Y' },
                 { name: 'No', value: 'N' },
+                { name: 'Yes', value: 'Y' },
             ],
         },
     ]);
