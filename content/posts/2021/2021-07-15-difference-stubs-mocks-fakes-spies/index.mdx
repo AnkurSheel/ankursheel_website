@@ -9,6 +9,16 @@ The lines between the different test doubles are blurred when using a Mocking li
 
 I use mocks for almost everything, but I think it's still worthwhile to know the difference between Stubs, Mocks, Fakes and Spies. If nothing else, we will know what people are talking about when they use the different terms.
 
+Before we look at all the different test doubles, let's look at the interface that we are mocking for the examples.
+
+```csharp
+public interface IRepository
+{
+     bool IsValid(int id);
+     void Add(int id, bool valid);
+}
+```
+
 ## Stub
 
 A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.
@@ -16,25 +26,59 @@ A stub is an object that provides (canned) hardcoded values to method calls. It 
 Below is the stubbed version using Moq of a service where the OnPing() function always returns "pong" regardless of the input.
 
 ```csharp
-_service.Setup(x => x.OnPing(It.IsAny<int>())).Returns("pong");
+var mock = new Mock<IRepository>();
+mock.Setup(x => x.IsValid(It.IsAny<int>())).Returns(true);
 ```
 
 An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.
 
-## Mock
+## Spy
 
-A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It also lets you set expectations on scenarios like how often a method was called and with what arguments. In the test assertion, we can verify that all expected actions were performed.
+A spy allows us to verify what functions were called, with what arguments, when, and how often.
 
-Below is the mocked version using Moq of a service where the OnPing() function behaves differently for different inputs. We also verify that the correct calls were received.
+For example, let's take a repository class, which does not have an interface associated with it.
 
 ```csharp
-_service.Setup(x => x.OnPing(1)).Returns("pong1");
-_service.Setup(x => x.OnPing(2)).Returns("pong2");
-_service.Verify(x => x.OnPong(1)), Times.Once);
-_service.Verify(x => x.OnPing(It.IsAny<int>())), Times(2));
+public class RepositorySpy : IRepository
+{
+    public boolean IsValidWasCalled = false;
+
+    public Boolean bool IsValid(int id)
+    {
+        IsValidWasCalled = true;
+        return true;
+    }
+}
 ```
 
-A mock can be used anywhere where we would use a stub, but we need to verify multiple more specific behaviours. An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.
+In the test, we will assert that `IsValidWasCalled` was _true_.
+
+```csharp
+var spy = new RepositorySpy();
+Assert.True(spy.IsValidWasCalled);
+```
+
+We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.
+
+An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.
+
+I rarely use Spies, and it will become clear why once we look at Mocks.
+
+## Mock
+
+A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, unlike a spy, which has the assertion in the test, the assertion is in the verify method in a mock.
+
+Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verify that the correct calls were received.
+
+```csharp
+var mock = new Mock<IRepository>();
+mock.Setup(x => x.IsValid(1)).Returns(true);
+mock.Setup(x => x.IsValid(2)).Returns(false);
+mock.Verify(x => x.Add(1), Times.Once);
+mock.Verify(x => x.IsValid(It.IsAny<int>())), Times(2));
+```
+
+A mock can be used anywhere where we would use a stub, but we need to verify multiple more specific behaviours.
 
 ## Fake
 
@@ -61,12 +105,16 @@ public class FakeRepository : IRepository
 }
 ```
 
-An example could be using AWS S3 in production, but adding a fake that saves files to disk for testing purposes.
-
-## Spy
-
-A spy allows us to verify that a method was called rather than setting an expectation that it should be called. Unlike a mock, it executes the original code rather than a mocked or stubbed instance.
+An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.
 
 ## Conclusion
 
 Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.
+
+### Thanks
+
+-   Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.
+
+### Edits
+
+-   _Updated 17th July 2021 with an example for Spies_
