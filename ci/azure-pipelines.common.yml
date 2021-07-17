@@ -21,25 +21,25 @@ jobs:
 
           - task: Cache@2
             inputs:
-                key: '17Jul21 | yarn | "$(Agent.OS)" | yarn.lock'
+                key: '18Jul21 | yarn | "$(Agent.OS)" | yarn.lock'
                 restoreKeys: |
-                    17Jul21 | yarn | "$(Agent.OS)" | yarn.lock
+                    18Jul21 | yarn | "$(Agent.OS)" | yarn.lock
                 path: $(YARN_CACHE_FOLDER)
             displayName: Cache Yarn packages
 
           - task: Cache@2
             inputs:
-                key: '17Jul21 | gatsby | "$(Agent.OS)" | cache'
+                key: '18Jul21 | gatsby | "$(Agent.OS)" | cache'
                 restoreKeys: |
-                    17Jul21 | gatsby | "$(Agent.OS)" | cache
+                    18Jul21 | gatsby | "$(Agent.OS)" | cache
                 path: $(GASTBY_CACHE_FOLDER)
             displayName: Cache Gatsby Cache Folder
 
           - task: Cache@2
             inputs:
-                key: '17Jul21 | gatsby | "$(Agent.OS)" | public'
+                key: '18Jul21 | gatsby | "$(Agent.OS)" | public'
                 restoreKeys: |
-                    17Jul21 | gatsby | "$(Agent.OS)" | public
+                    18Jul21 | gatsby | "$(Agent.OS)" | public
                 path: $(GASTBY_PUBLIC_FOLDER)
             displayName: Cache Gatsby Public Folder
 

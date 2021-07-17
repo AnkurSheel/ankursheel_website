@@ -1119,9 +1119,9 @@
   integrity sha512-n+fZxIOH2t23vQFqQb87S+k5C65QL7voY4fCHhYXgz2DIy3F4zZPExTgmulZ5yJZnmkEzIlMCFJioukPEg0jow==
 
 "@codinators/gatsby-theme-blog@^3.11.0":
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.11.1.tgz#668c54cab3d608f29a1076d9bae14bf1361a4235"
-  integrity sha512-XagHyxOvrgG0QT+hoZdA0heSuDFPNEiAE23C2VKYRLPI/p5aT3SxLGeBsl/AAkl1J3VMSryutsRGtfyYexcfAA==
+  version "3.11.3"
+  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.11.3.tgz#b518c3073cb96c006fc4987c97065aa465e97e44"
+  integrity sha512-pxDYv+eqBNg9r8R4lXBFqkHM/LPe01Tx5X/gPe6vxj0743QNlU3qjPHsr9vwsE+XPNtxoFO0FyEi+eLIWQ1eRg==
   dependencies:
     "@emotion/babel-preset-css-prop" "^10.0.23"
     "@emotion/core" "^10.0.28"
@@ -5119,10 +5119,10 @@ color-name@^1.0.0, color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-color-string@^1.5.2, color-string@^1.5.4:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.5.tgz#65474a8f0e7439625f3d27a6a19d89fc45223014"
-  integrity sha512-jgIoum0OfQfq9Whcfc2z/VhCNcmQjWbey6qBX0vqt7YICflUmBCh9E9CiQD5GSJ+Uehixm3NUwHVhqUAWRivZg==
+color-string@^1.5.2, color-string@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.6.0.tgz#c3915f61fe267672cb7e1e064c9d692219f6c312"
+  integrity sha512-c/hGS+kRWJutUBEngKKmk4iH3sD59MBkoxVapS/0wgpCz2u7XsNloxknyvBhzwEs1IbV36D9PwqLPJ2DTu3vMA==
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -5136,12 +5136,12 @@ color@3.0.x:
     color-string "^1.5.2"
 
 color@^3.0.0, color@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/color/-/color-3.1.3.tgz#ca67fb4e7b97d611dcde39eceed422067d91596e"
-  integrity sha512-xgXAcTHa2HeFCGLE9Xs/R82hujGtu9Jd9x4NW3T34+OMs7VoPsjwzRczKHvTAHeJwWFwX5j15+MgAppE8ztObQ==
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/color/-/color-3.1.4.tgz#8135092b1654abab663277265fb1df071ba99751"
+  integrity sha512-2fNuKrJPqa7+eBKhBqUjNZGmpf3wCdYiPCA0Dt+cVt8mf3tBleMiKf+Zgt6o/21Q6uOd5MqQc21wllmh1b1b9A==
   dependencies:
     color-convert "^1.9.1"
-    color-string "^1.5.4"
+    color-string "^1.6.0"
 
 colorette@^1.2.1, colorette@^1.2.2:
   version "1.2.2"
