@@ -17,29 +17,29 @@ jobs:
           - task: NodeTool@0
             displayName: 'Install Node.js'
             inputs:
-                versionSpec: '12.x'
+                versionSpec: '14.x'
 
           - task: Cache@2
             inputs:
-                key: '28Jun21 | yarn | "$(Agent.OS)" | yarn.lock'
+                key: '17Jul21 | yarn | "$(Agent.OS)" | yarn.lock'
                 restoreKeys: |
-                    28Jun21 | yarn | "$(Agent.OS)" | yarn.lock
+                    17Jul21 | yarn | "$(Agent.OS)" | yarn.lock
                 path: $(YARN_CACHE_FOLDER)
             displayName: Cache Yarn packages
 
           - task: Cache@2
             inputs:
-                key: '28Jun21 | gatsby | "$(Agent.OS)" | cache'
+                key: '17Jul21 | gatsby | "$(Agent.OS)" | cache'
                 restoreKeys: |
-                    28Jun21 | gatsby | "$(Agent.OS)" | cache
+                    17Jul21 | gatsby | "$(Agent.OS)" | cache
                 path: $(GASTBY_CACHE_FOLDER)
             displayName: Cache Gatsby Cache Folder
 
           - task: Cache@2
             inputs:
-                key: '28Jun21 | gatsby | "$(Agent.OS)" | public'
+                key: '17Jul21 | gatsby | "$(Agent.OS)" | public'
                 restoreKeys: |
-                    28Jun21 | gatsby | "$(Agent.OS)" | public
+                    17Jul21 | gatsby | "$(Agent.OS)" | public
                 path: $(GASTBY_PUBLIC_FOLDER)
             displayName: Cache Gatsby Public Folder
 
