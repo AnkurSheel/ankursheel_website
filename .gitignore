@@ -11,3 +11,4 @@ yalc.lock
 /cypress/videos/
 /.idea/
 /.netlify/state.json
+/cypress/screenshots/
