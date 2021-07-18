@@ -9,3 +9,5 @@ package-lock.json
 .yalc/
 yalc.lock
 /cypress/videos/
+/.idea/
+/.netlify/state.json
