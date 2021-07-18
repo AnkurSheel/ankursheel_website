@@ -1,0 +1,1452 @@
+[
+	{
+		"title": "Ankur Sheel's Rants and Ramblings",
+		"excerpt": null,
+		"path": "/"
+	},
+	{
+		"title": "AI Projects",
+		"excerpt": null,
+		"path": "/cv/ai-projects"
+	},
+	{
+		"title": "Country Visit List",
+		"excerpt": null,
+		"path": "/impossible-list/country-visit-list"
+	},
+	{
+		"title": "Memberships",
+		"excerpt": null,
+		"path": "/cv/memberships"
+	},
+	{
+		"title": "CV",
+		"excerpt": null,
+		"path": "/cv"
+	},
+	{
+		"title": "Impossible list :  My ever-growing bucket list",
+		"excerpt": null,
+		"path": "/impossible-list"
+	},
+	{
+		"title": "Personal Game Projects",
+		"excerpt": null,
+		"path": "/cv/personal-game-projects"
+	},
+	{
+		"title": "Other Projects",
+		"excerpt": null,
+		"path": "/cv/other-projects"
+	},
+	{
+		"title": "Professional Projects",
+		"excerpt": null,
+		"path": "/cv/professional-projects"
+	},
+	{
+		"title": "Professional Experience",
+		"excerpt": null,
+		"path": "/cv/professional-experience"
+	},
+	{
+		"title": "Apox",
+		"excerpt": null,
+		"path": "/cv/professional-projects/apox"
+	},
+	{
+		"title": "Ice Age Adventures",
+		"excerpt": null,
+		"path": "/cv/professional-projects/ice-age-adventures"
+	},
+	{
+		"title": "Procedural Minecraft Terrain Generator",
+		"excerpt": null,
+		"path": "/cv/ai-projects/procedural-minecraft-terrain-generator"
+	},
+	{
+		"title": "Route Planner: Travelling Salesman Problem",
+		"excerpt": null,
+		"path": "/cv/ai-projects/route-planner-travelling-salesman-problem"
+	},
+	{
+		"title": "First Person Shooter Prototype",
+		"excerpt": null,
+		"path": "/cv/professional-projects/first-person-shooter-prototype"
+	},
+	{
+		"title": "Ice Age Avalanche",
+		"excerpt": null,
+		"path": "/cv/professional-projects/ice-age-avalanche"
+	},
+	{
+		"title": "Jumpstart",
+		"excerpt": null,
+		"path": "/cv/professional-projects/jumpstart"
+	},
+	{
+		"title": "Cricket game (unpublished)",
+		"excerpt": null,
+		"path": "/cv/professional-projects/cricket-game-unpublished"
+	},
+	{
+		"title": "Mathblaster",
+		"excerpt": null,
+		"path": "/cv/professional-projects/mathblaster"
+	},
+	{
+		"title": "Point of Sale System",
+		"excerpt": null,
+		"path": "/cv/professional-projects/merchant-portal-pushpay"
+	},
+	{
+		"title": "McKesson Corporation: CMS Enhancements",
+		"excerpt": null,
+		"path": "/cv/professional-projects/mckesson-corporation-cms-enhancements"
+	},
+	{
+		"title": "Pastry Paradise",
+		"excerpt": null,
+		"path": "/cv/professional-projects/pastry-paradise"
+	},
+	{
+		"title": "Point of Sale System",
+		"excerpt": null,
+		"path": "/cv/professional-projects/point-of-sale-system"
+	},
+	{
+		"title": "Mobile Strategy Game (unpublished)",
+		"excerpt": null,
+		"path": "/cv/professional-projects/mobile-strategy-game-unpublished"
+	},
+	{
+		"title": "Life Simulation Prototype",
+		"excerpt": null,
+		"path": "/cv/professional-projects/life-simulation-prototype"
+	},
+	{
+		"title": "School of Dragons",
+		"excerpt": null,
+		"path": "/cv/professional-projects/schoolofdragons"
+	},
+	{
+		"title": "Wings of Control(unpublished)",
+		"excerpt": null,
+		"path": "/cv/professional-projects/wingsofcontrolunpublished"
+	},
+	{
+		"title": "Pound for Pound",
+		"excerpt": null,
+		"path": "/cv/professional-projects/pound-pound"
+	},
+	{
+		"title": "Pool on the Net",
+		"excerpt": null,
+		"path": "/cv/professional-projects/pool-net"
+	},
+	{
+		"title": "Snakes and Frogs (unpublished)",
+		"excerpt": null,
+		"path": "/cv/professional-projects/snakes-frogs-unpublished"
+	},
+	{
+		"title": "Route Planner: Travelling Salesman Problem: Europe Waypoints",
+		"excerpt": null,
+		"path": "/cv/ai-projects/route-planner-travelling-salesman-problem/europe-waypoints"
+	},
+	{
+		"title": "Route Planner: Travelling Salesman Problem: US Cities Waypoints",
+		"excerpt": null,
+		"path": "/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints"
+	},
+	{
+		"title": "Route Planner: Travelling Salesman Problem: US Cities Waypoints",
+		"excerpt": null,
+		"path": "/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints"
+	},
+	{
+		"title": "What is the difference between Stubs, Mocks, Fakes and Spies?",
+		"excerpt": "The lines between the different test doubles are blurred when you use a Mocking library like MOQ. We can use Mocks for almost everything, but whats the difference between Stubs, Mocks, Fakes and Spies",
+		"path": "/blog/difference-stubs-mocks-fakes-spies"
+	},
+	{
+		"title": "How to run SQL Server in a Docker container",
+		"excerpt": "In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file",
+		"path": "/blog/run-sql-server-docker-container"
+	},
+	{
+		"title": "How to set up the project properties for Source Generators",
+		"excerpt": "C# Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. Let us look at the project properties that we need to set to create and use source generators",
+		"path": "/blog/setup-project-properties-source-generators"
+	},
+	{
+		"title": "Reader Question: How would you apply Storybrand to how you communicate at work?",
+		"excerpt": "A reader asked me if we can apply the StoryBrand framework to communicate at work, even though it seems to be oriented towards marketing messaging. What do I think? Lets find out",
+		"path": "/blog/reader-question-apply-storybrand-communicate-work"
+	},
+	{
+		"title": "How to reset the primary key sequence when it falls out of sync in Postgres?",
+		"excerpt": "In this post, I look at how we can fix the \"duplicate key value violates unique constraint\" error because the sequence is out of sync from the records in the table.",
+		"path": "/blog/reset-primary-key-sequence-out-of-sync-postgres"
+	},
+	{
+		"title": "Building a Storybrand",
+		"excerpt": "How can we use key elements that make a compelling story to create effective marketing messages? This book gives us actionable steps to stop bombarding our prospective customers with noise.",
+		"path": "/blog/building-a-storybrand"
+	},
+	{
+		"title": "The Motive",
+		"excerpt": "What is your motive to take a leadership position? Is it because it’s the next step on the organizational ladder or is it to get the opportunity to serve?  This book challenges us to look at our motivations for leading.",
+		"path": "/blog/the-motive"
+	},
+	{
+		"title": "The Art of Learning",
+		"excerpt": "The Art Of Learning is Josh Waitzkin’s autobiography dealing with his rise to the top of the chess and martial arts world. It gives an insight into the mindset and training of a world champion.",
+		"path": "/blog/the-art-of-learning"
+	},
+	{
+		"title": "\"Don't come with a problem without a solution\" is harmful",
+		"excerpt": "I have had a few managers who live by the saying \"\"Don't bring up problems unless you have a solution\". Although they probably mean well, I don't think it has the outcome that they expect.",
+		"path": "/blog/problem-without-solution-harmful"
+	},
+	{
+		"title": "How to automatically set the access token for authenticated requests in Insomnia",
+		"excerpt": "Making your GraphQl endpoint accessible only to authorised users is a common way of securing your website. However, it makes it difficult to use Insomnia to test your requests. How do you make this less tedious? Let's find out",
+		"path": "/blog/automatically-set-access-token-authenticated-requests-insomnia"
+	},
+	{
+		"title": "Weekly Roundup 43",
+		"excerpt": "This weeks roundup contains articles from Shawn Wang, Richard Boehmcke, Kealan Parr, Adam Davis, Facundo Gauna and Jens Neuse",
+		"path": "/blog/weekly-roundup-43"
+	},
+	{
+		"title": "Reader Question: How long did it take to migrate from WordPress to Gatsby?",
+		"excerpt": "A reader asked me how long it took me to migrate from WordPress to Gatsby. Let's find out",
+		"path": "/blog/reader-question-how-long-migrate-wordpress-gatsby"
+	},
+	{
+		"title": "Weekly Roundup 42",
+		"excerpt": "This weeks roundup contains articles from Harry Dry, Marquette Carney, Josh Comeau, Alexey Guzey, Ben Stokes and Cathryn",
+		"path": "/blog/weekly-roundup-42"
+	},
+	{
+		"title": "Weekly Roundup 41",
+		"excerpt": "This weeks roundup contains articles from Harry Dry, Charity Majors, Mike Crittenden, Josh Comeau, Padmini Pyapali and Rex Woodbury",
+		"path": "/blog/weekly-roundup-41"
+	},
+	{
+		"title": "Codinators.XunitHelpers Nuget Package: Update 2",
+		"excerpt": "This release adds an auto approver to automatically update the approval files generated by ApprovalTests.Net",
+		"path": "/blog/codinators-xunit-helpers-nuget-package-update-2"
+	},
+	{
+		"title": "Death by Meeting",
+		"excerpt": "Meetings are critical for making decisions. But we dread meetings because most of them are bad. In \"Death by Meeting\", Patrick Lencioni shows us how we can change the bad meeting culture and make our meetings both interesting and effective.",
+		"path": "/blog/death-meeting"
+	},
+	{
+		"title": "Weekly Roundup 40",
+		"excerpt": "This weeks roundup contains articles from Shawn Wang, David Perrel, Jamie Wong, Kyle Gawley, Catalin Pit, Morgan Housel and Jason Lengstorf",
+		"path": "/blog/weekly-roundup-40"
+	},
+	{
+		"title": "Why I interview even when I am happy at my job?",
+		"excerpt": "Every year I dust off my resume and apply for a couple of jobs that look interesting. Why do I put myself through this ordeal?",
+		"path": "/blog/interview-happy-job"
+	},
+	{
+		"title": "Weekly Roundup 39",
+		"excerpt": "This weeks roundup contains articles from Charity Majors, Alex, Jared Palmer, Sarah Hum, Tim Urban and Andrew Wilkinson",
+		"path": "/blog/weekly-roundup-39"
+	},
+	{
+		"title": "Weekly Roundup 38",
+		"excerpt": "This weeks roundup contains articles from David Sheff, Dan Emmons, Viktor Slavchev, Matt Anderson, Jason Lengstorf and Robert Heaton",
+		"path": "/blog/weekly-roundup-38"
+	},
+	{
+		"title": "How to create a react component to draw on a page using hooks and typescript",
+		"excerpt": "Can we recreate the drawing interaction on DEV's offline page as a React Component using Hooks and Typescript? Let's find out.",
+		"path": "/blog/react-component-draw-page-hooks-typescript"
+	},
+	{
+		"title": "Weekly Roundup 37",
+		"excerpt": "This weeks roundup contains articles/tools from Julia Evans, Blake Boles, Mike Crittenden, Charity Majors, Robert Heaton and Michael Natkin",
+		"path": "/blog/weekly-roundup-37"
+	},
+	{
+		"title": "How to set up a lambda to process messages on a SQS queue using Terraform",
+		"excerpt": "In this post, we will set up a lambda to process the messages that are available on the queue",
+		"path": "/blog/handle-bounces-aws-ses-terraform-2"
+	},
+	{
+		"title": "Weekly Roundup 36",
+		"excerpt": "This weeks roundup contains articles/tools from Maxwell Forbes, Charity Majors, Chelsea Troy, Mario Fernandez, Robert Heaton and Prasanjit Singh",
+		"path": "/blog/weekly-roundup-36"
+	},
+	{
+		"title": "Weekly Roundup 35",
+		"excerpt": "This weeks roundup contains articles/tools from Tiago Forte, Julia Evans, Blake Boles, Mike Crittenden, David Clear and Kent Dodds",
+		"path": "/blog/weekly-roundup-35"
+	},
+	{
+		"title": "The One Page Financial Plan",
+		"excerpt": "A one-page financial plan represents only 3-4 things that are most important to us along with some action items to achieve our goals.In his book The One Page Financial Plan, Carl Richards shares the steps to make a good one-page financial plan that is customised for us.",
+		"path": "/blog/one-page-financial-plan"
+	},
+	{
+		"title": "Profit First",
+		"excerpt": "This book is a step by step guide to implement the profit first technique - a strategy to divide your income into different buckets and taking a profit before paying your expenses to run an efficient and profitable business",
+		"path": "/blog/profit-first"
+	},
+	{
+		"title": "How to secure an AWS Root account and create an admin user with access to Billing Information",
+		"excerpt": "A root user on AWS can access everything that AWS offers. Let us see how we can create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to login as a root user",
+		"path": "/blog/secure-aws-root-account-create-admin-user-access-billing"
+	},
+	{
+		"title": "How do you upload a PDF received from an API to AWS S3?",
+		"excerpt": "A code snippet to encrypt and upload a PDF file to an AWS S3 bucket received as a Stream from an external API",
+		"path": "/blog/upload-pdf-received-api-aws-s3"
+	},
+	{
+		"title": "Weekly Roundup 34",
+		"excerpt": "This weeks roundup contains articles/tools from Atila Fassina, Margo McCabe, Nick Maggiulli, Julia Evans, Courtland Allen and Jaana Dogan",
+		"path": "/blog/weekly-roundup-34"
+	},
+	{
+		"title": "Weekly Roundup 33",
+		"excerpt": "This weeks roundup contains articles/tools from Nočnica Fee, LinearB, Gabor Cselle, Drew Bredvick, Hiten Shah and Ramit Sethi",
+		"path": "/blog/weekly-roundup-33"
+	},
+	{
+		"title": "Weekly Roundup 32",
+		"excerpt": "This weeks roundup contains articles/tools from Kevin Stewart, Mark Dalgleish, Mike Mangialardi, Al Tenhundfeld, Nick Babich and Nicky Case",
+		"path": "/blog/weekly-roundup-32"
+	},
+	{
+		"title": "Weekly Roundup 31",
+		"excerpt": "This weeks roundup contains articles/tools from Omar Rizwan, Expedited Security, Growth.Design, Kent C. Dodds, Lorenz Weiß and Michael Chein",
+		"path": "/blog/weekly-roundup-31"
+	},
+	{
+		"title": "Weekly Roundup 30",
+		"excerpt": "This weeks roundup contains articles/tools from Martin Fowler, Ramit Sethi, Pathik Desai, Marko Saric, Habdul Hazeez and ellie-html",
+		"path": "/blog/weekly-roundup-30"
+	},
+	{
+		"title": "How to stop and remove all Docker containers",
+		"excerpt": "Occasionally, I have needed to stop and remove all the docker containers I am running locally. Let's see how we can do it easily.",
+		"path": "/blog/stop-remove-all-docker-containers"
+	},
+	{
+		"title": "Weekly Roundup 29",
+		"excerpt": "This weeks roundup contains articles/tools from Taimur Abdaal and Lukas Koebis, Omer Hamerman, Aaron Xie, David Perell, Ben Foster and Steve Smith",
+		"path": "/blog/weekly-roundup-29"
+	},
+	{
+		"title": "A postmortem for Spring Challenge 2020 (Codingame AI Contest)",
+		"excerpt": "A postmortem for Spring Challenge 2020, a multiplayer AI bot contest based on Pacman held by codingame",
+		"path": "/blog/postmortem-spring-challenge-2020-codingame-ai-contest"
+	},
+	{
+		"title": "Weekly Roundup 28",
+		"excerpt": "This weeks roundup contains articles/tools from Alex Holachek, Chris Coyier, TK, The Happy Saver, Sonya Moisset and Sarah Drasner",
+		"path": "/blog/weekly-roundup-28"
+	},
+	{
+		"title": "How to get TimeZoneInfo on Windows and Linux",
+		"excerpt": "Lets see how we can get the TimeZoneInfo regardless of whether the code is running on Windows or Linux",
+		"path": "/blog/get-time-zone-info-windows-linux"
+	},
+	{
+		"title": "A postmortem for Ocean of Code (Codingame AI Contest)",
+		"excerpt": "A postmortem for Ocean of Code, a multiplayer AI bot contest based on Captain Sonar held by codingame",
+		"path": "/blog/postmortem-ocean-code-codingame-ai-contest"
+	},
+	{
+		"title": "How to publish email bounce notifications to an SQS queue",
+		"excerpt": "In this post, I configure AWS to publish email bounce notifications to an SQS queue using terraform",
+		"path": "/blog/handle-bounces-ses-terraform"
+	},
+	{
+		"title": "The Index card",
+		"excerpt": "This is a well written albeit basic book based on the premise that all the financial advice you need to know can fit on an index card.",
+		"path": "/blog/the-index-card"
+	},
+	{
+		"title": "Weekly Roundup 27",
+		"excerpt": "This weeks roundup contains articles/tools from Bruce Lawson, Austin Gil, Oleksii Trekhleb, Kyle Shevlin, Adam Giebl and Shawn Wang",
+		"path": "/blog/weekly-roundup-27"
+	},
+	{
+		"title": "Weekly Roundup 26",
+		"excerpt": "This weeks roundup contains articles/tools from Sara Viera, Tim Urban, Kent Dodd, Erik Kennedy, Michael Bierut and Charity Majors",
+		"path": "/blog/weekly-roundup-26"
+	},
+	{
+		"title": "Weekly Roundup 25",
+		"excerpt": "This weeks roundup contains articles/tools from Burke Holland, Christian Oliff, Netlify blog, I Will Teach You To Be Rich and Marko Anastasov",
+		"path": "/blog/weekly-roundup-25"
+	},
+	{
+		"title": "How to use ApprovalTests with xUnit's Theory attribute",
+		"excerpt": "if you are writing a Theory-based test the filename will not be unique as a theory-based test is data-driven and therefore has multiple calls to the same method. Let's see how we can get ApprovalTests to generate unique filenames for theory-based tests",
+		"path": "/blog/approval-tests-with-xunit-theory-tests"
+	},
+	{
+		"title": "How to write a query with the IN operator using Dapper and NPGSql",
+		"excerpt": "In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql",
+		"path": "/blog/query-in-clause-dapper-npgsql"
+	},
+	{
+		"title": "Weekly Roundup 24",
+		"excerpt": "This weeks roundup contains articles/tools from I Will Teach You to be Rich, Chris Coyier, Gwern Branwen, Elisabeth Hendrickson and Nathan Barry",
+		"path": "/blog/weekly-roundup-24"
+	},
+	{
+		"title": "Weekly Roundup 23",
+		"excerpt": "This weeks roundup contains articles/tools from I Will Teach You to be Rich, CSS-Tricks, Stephanie Eckles, Ahmad Shadeed and Travis Almand",
+		"path": "/blog/weekly-roundup-23"
+	},
+	{
+		"title": "Codinators.XunitHelpers Nuget Package: Update 1",
+		"excerpt": "This release adds support for reporting multiple assertion failures in one method in xUnit tests",
+		"path": "/blog/codinators-xunit-helpers-nuget-package-update-1"
+	},
+	{
+		"title": "Weekly Roundup 22",
+		"excerpt": "This weeks roundup contains articles/tools from Mihail Gaberov, I Will Teach You to be Rich, Alexandra Murtaza, Bret Victor and Tom Bartel",
+		"path": "/blog/weekly-roundup-22"
+	},
+	{
+		"title": "New Release: Codinators.XunitHelpers Nuget Package",
+		"excerpt": "The 1st Release of Codinators.XunitHelpers adds support for loading test data from a JSON file for xUnit Tests",
+		"path": "/blog/new-release-codinators-xunit-helpers-nuget-package"
+	},
+	{
+		"title": "Weekly Roundup 21",
+		"excerpt": "This weeks roundup contains articles/tools from growth.design, ConvertKit, Helen Anderson, I Will Teach You to be Rich and Amelia Wattenberger",
+		"path": "/blog/weekly-roundup-26-jan-2020"
+	},
+	{
+		"title": "Weekly Roundup 20",
+		"excerpt": "This weeks roundup contains articles/tools from Birgitta Böckeler and Nina Siessegger, Courtland Allen, Baremetrics, Sadhguru and Jason Lengstorf",
+		"path": "/blog/weekly-roundup-19-jan-2020"
+	},
+	{
+		"title": "Weekly Roundup 19",
+		"excerpt": "This weeks roundup contains articles/tools from Sarah Drasner, 30 seconds of code, Valia Havryliuk, Matt Moffitt and zechtyounes",
+		"path": "/blog/weekly-roundup-12-jan-2020"
+	},
+	{
+		"title": "How to create an AWS SNS topic for an AWS SES not in the default provider using terraform",
+		"excerpt": "How can you access resources created in a different AWS region with terraform? I ran into this when trying to access SES created in a different region to the rest of our infrastructure.",
+		"path": "/blog/creating-a-sns-topic-for-a-ses-not-in-the-default-provider"
+	},
+	{
+		"title": "How to deploy a Gatsby site on a schedule with Azure Pipelines",
+		"excerpt": "Azure pipelines can be triggered on a schedule. Let's see how we can use this feature to deploy our gatsby site to netlify on a daily basis and have scheduled posts automatically go live.",
+		"path": "/blog/using-azure-pipelines-to-deploy-a-gatsby-site-on-a-schedule"
+	},
+	{
+		"title": "Weekly Roundup 18",
+		"excerpt": "This weeks roundup contains articles/tools from I Will Teach You to be Rich, Jason Lengstorf, Florin Pop, Steve Schlafman, Alex Hillman",
+		"path": "/blog/weekly-roundup-05-jan-2020"
+	},
+	{
+		"title": "How to deploy a Gatsby site to Netlify using Azure Pipelines",
+		"excerpt": "Deploying a gatsby site to Netlify is super simple and has served me well so far. But, it has a few limits which resulted in my builds failing after my site grew to its current size. By using Azure Pipelines, the netlify limits are no longer a problem.",
+		"path": "/blog/deploying-a-gatsby-site-to-netlify-using-azure-pipelines"
+	},
+	{
+		"title": "Weekly Roundup 17",
+		"excerpt": "This weeks roundup contains articles/tools from You Dont Need, Briana Camp, Nathan Amick, Shawn Wang, Garry Tan and Waylon Walker",
+		"path": "/blog/weekly-roundup-29-dec-2019"
+	},
+	{
+		"title": "How to export highlights and annotations from a Kobo Aura",
+		"excerpt": "Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file.",
+		"path": "/blog/exporting-highlights-and-annotations-from-a-kobo-aura"
+	},
+	{
+		"title": "Weekly Roundup 16",
+		"excerpt": "This weeks roundup contains articles/tools from Alberto Montalesi, Dan Benoni and Louis-Xavier Lavallee, Michael Crump, and Nick Maggiulli.",
+		"path": "/blog/weekly-roundup-22-dec-2019"
+	},
+	{
+		"title": "How to embed a YouTube video with a 16:9 aspect ratio and full-width",
+		"excerpt": "I struggled for a long time to get my YouTube videos to be full-width with a 16:9 aspect ratio. But, there is a neat CSS trick to make iframes responsive. So let us how we can use CSS to display an iframe with 100% width and 16:9 aspect ratio.",
+		"path": "/blog/full-width-you-tube-video-embed"
+	},
+	{
+		"title": "Weekly Roundup 15",
+		"excerpt": "This weeks roundup contains articles/tools from Mackenzie Child, Mạnh Đạt, Katerina Limpitsouni and Aggelos Gesoulis, Sadhguru, Paul Graham and Neal Agarwal",
+		"path": "/blog/weekly-roundup-15-dec-2019"
+	},
+	{
+		"title": "Weekly Roundup 14",
+		"excerpt": "This weeks roundup contains articles/tools from Shawn Wang, Paul Graham, Ellen Barry, Joseph Mosby, Jason Lengstorf and Corey Ginnivan",
+		"path": "/blog/weekly-roundup-08-dec-2019"
+	},
+	{
+		"title": "Weekly Roundup 13",
+		"excerpt": "This weeks roundup contains articles from Christina Gorton, Thomas Ladd, Gwendolyn Faraday, Megha Sachdev and Jeff Vogel",
+		"path": "/blog/weekly-roundup-01-dec-2019"
+	},
+	{
+		"title": "Weekly Roundup 12",
+		"excerpt": "This weeks roundup contains articles from Chris Coyier, Joelle, Kent Dodds and Andrey Azimov",
+		"path": "/blog/weekly-roundup-24-nov-2019"
+	},
+	{
+		"title": "Speechcraft Speech 2: Organize your speech",
+		"excerpt": "The 2nd speech introduces the basic concepts of organizing a speech around an outline.",
+		"path": "/blog/speechcraft-speech-2-organize-your-speech"
+	},
+	{
+		"title": "Weekly Roundup 11",
+		"excerpt": "This weeks roundup contains articles from Martin Gasston, Sunil Sandhu and tools from Bennet Feely, Neil Green and Neal Agarwal.",
+		"path": "/blog/weekly-roundup-17-nov-2019"
+	},
+	{
+		"title": "Speechcraft Speech 1: The Ice Breaker",
+		"excerpt": "The first speech of the Toastmasters program is about introducing yourself to your peers and providing a benchmark for your current skill level.",
+		"path": "/blog/speechcraft-speech-1-the-ice-breaker"
+	},
+	{
+		"title": "Starting Speechcraft",
+		"excerpt": "I recently decided to join Speechcraft, a program designed to help develop public speaking skills. To be honest, there was no real reason for me to join Speechcraft. But, my learning budget was going to waste and I could use it towards Speechcraft so I thought why not.",
+		"path": "/blog/starting-speechcraft"
+	},
+	{
+		"title": "Weekly Roundup 10",
+		"excerpt": "This weeks roundup contains articles from CSS-Tricks, Amelia Wattenberger, The Happy Saver, I Want you to be Rich and Wait but Why",
+		"path": "/blog/weekly-roundup-27-oct-2019"
+	},
+	{
+		"title": "How to add ligatures and cursive fonts to VS Code",
+		"excerpt": "The use of ligatures while typing code is really useful and has been a game-changer. Can we get the styling of cursive fonts and the functionality of ligatures in VS Code?",
+		"path": "/blog/add-cursive-fonts-to-vs-code"
+	},
+	{
+		"title": "Should you make an Impossible List or a Bucket List?",
+		"excerpt": "What is an impossible list? How is it different from a Bucket List? Let's find out.",
+		"path": "/blog/impossible-list-or-a-bucket-list"
+	},
+	{
+		"title": "How to automate the creation of a new blog post",
+		"excerpt": "Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Lets see how to automate it.",
+		"path": "/blog/automating-creation-of-new-blog-post"
+	},
+	{
+		"title": "How to add a RSS feed with images to a Gatsby site",
+		"excerpt": "How do you add an RSS  feed which shows the featured image in the list view to your Gatsby config?",
+		"path": "/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"
+	},
+	{
+		"title": "Why and How I migrated my website from Wordpress to Gatsby",
+		"excerpt": "I have been blogging for a while now and for most of the time, I have been on WordPress. But, I am migrating my site over to Gatsby. What motivated the change and what has the migration process been so far. Let's find out.",
+		"path": "/blog/migrating-from-wordpress-to-gatsby"
+	},
+	{
+		"title": "A guide to creating Custom Type Definitions for JavaScript dependencies",
+		"excerpt": "What to do when you get a \"Could not find a declaration file for module\" error when the package does not exist in \"@types/third-party-library-name\" error and you are too lazy to write a full custom definition.",
+		"path": "/blog/custom-type-definitions-for-java-script-dependencies"
+	},
+	{
+		"title": "How do you use Postman to test Ajax endpoints that are protected with an anti-forgery token",
+		"excerpt": "'Using an anti-forgery token is a pretty common way of securing your website from XSRF(Cross-Site Request Forgery) attacks. However, it does make it difficult to use Postman to test your ajax endpoints. How do you test the endpoints? Let's find out'",
+		"path": "/blog/postman-ajax-endpoints-xsrf-tokens"
+	},
+	{
+		"title": "Elon Musk",
+		"excerpt": "This book gives a great insight into Elon Musk as a person as well as into his companies. It reveals the work ethic, the drive and the ruthlessness that exists within Elon that helps him achieve his goals. ",
+		"path": "/blog/elon-musk"
+	},
+	{
+		"title": "Bad Blood",
+		"excerpt": "The book is about the inner workings at Theranos,  a  startup making medical devices to enable the testing of blood using just a pinprick.",
+		"path": "/blog/bad-blood"
+	},
+	{
+		"title": "To Pixar and Beyond",
+		"excerpt": "This is a very well written book and gives an extremely good insight into Pixar's struggle to become a blockbuster factory.",
+		"path": "/blog/to-pixar-and-beyond"
+	},
+	{
+		"title": "How to load test data from a json file for xUnit tests",
+		"excerpt": "In this post, we look at adding a custom attribute in xUnit to load test data from a json file.",
+		"path": "/blog/load-test-data-from-a-json-file-for-xunit-tests"
+	},
+	{
+		"title": "A guide to securing git commits from tricking you on Windows",
+		"excerpt": "Did you know that by default you can check in code as anyone in your git repository? This article shows you how to prevent this problem by using a GUI.",
+		"path": "/blog/securing-git-commits-windows"
+	},
+	{
+		"title": "JAH Update 7",
+		"excerpt": "JAH Update 7 : v 0.0.9 adds the ability to automatically deploy to azure  whenever a new feature is added. There are still a few things I need to do before sending out the live link.",
+		"path": "/blog/jah-update-7"
+	},
+	{
+		"title": "JAH Update 6",
+		"excerpt": "JAH Update 6: v 0.0.8 adds the ability to logoff and stores applications on a per user basis.",
+		"path": "/blog/jah-update-6"
+	},
+	{
+		"title": "JAH Update 5",
+		"excerpt": "JAH Update 5 : v 0.0.7 adds support for authentication and register/login pages.",
+		"path": "/blog/jah-update-5"
+	},
+	{
+		"title": "JAH Update 4",
+		"excerpt": "JAH Update 4: v 0.0.6 adds custom error page.",
+		"path": "/blog/jah-update-4"
+	},
+	{
+		"title": "JAH: Update 3",
+		"excerpt": "JAH Update 3: v 0.0.5 adds the ability to update the status of existing applications",
+		"path": "/blog/jah-update-3"
+	},
+	{
+		"title": "JAH: Update 2",
+		"excerpt": "JAH Update 2: This update adds the ability to add new applications.",
+		"path": "/blog/jah-update-2"
+	},
+	{
+		"title": "JAH: Update 1",
+		"excerpt": "JAH Update 1: As promised in the previous post, this is what's been done so far.",
+		"path": "/blog/jah-update-1"
+	},
+	{
+		"title": "New Side Project: JAH",
+		"excerpt": "Start of a new side project: Codename JAH to track the status of job application.",
+		"path": "/blog/new-side-project-jah"
+	},
+	{
+		"title": "How to solve Edit(Levenshtein) distance with Dynamic Programming",
+		"excerpt": "In this article, we will look at using the above steps to arrive at a Dynamic Programming solution to the Edit Distance problem.",
+		"path": "/blog/dynamic-programming-editlevenshtein-distance"
+	},
+	{
+		"title": "A PostMortem for Coders of the Caribbean (Codingame AI Contest)",
+		"excerpt": "A postmortem for Coders of the Carribean, a Codingame contest based on Pirates of the Caribbean.",
+		"path": "/blog/coders-carribean-codingame-ai-contest-postmortem"
+	},
+	{
+		"title": "How to solve Longest Common Subsequence with Dynamic Programming",
+		"excerpt": "In this article, we will look at using the above steps to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem.",
+		"path": "/blog/dynamic-programming-longest-common-subsequence"
+	},
+	{
+		"title": "A guide to getting started with Dynamic Programming",
+		"excerpt": "In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution.",
+		"path": "/blog/dynamic-programming-series-introduction"
+	},
+	{
+		"title": "Weekly Roundup 9",
+		"excerpt": "This week's roundup contains articles from Bayalis is the Answer, Get Rich Quick'ish, Millennial Revolution, dev.to, Gamasutra and Zen Pencils.",
+		"path": "/blog/weekly-roundup-9"
+	},
+	{
+		"title": "What is my idea of a dream job",
+		"excerpt": "An opinionated breakdown for deciding whether a job is the dream job you're after. I promise that it can help you compare different opportunities and differentiate between good and bad ones!",
+		"path": "/blog/dream-job"
+	},
+	{
+		"title": "What are my most popular posts in 2016",
+		"excerpt": "The most viewed (popular) posts in 2015.",
+		"path": "/blog/popular-posts-2016"
+	},
+	{
+		"title": "A postmortem for Fantastic Bits (Codingame AI Contest)",
+		"excerpt": "A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.",
+		"path": "/blog/fantastic-bits-codingame-ai-contest-postmortem"
+	},
+	{
+		"title": "Why you should compete in Fantastic Bits @ Codingame",
+		"excerpt": "Fantastic Bits: The next multiplayer competition being held by the folks at codingame based on the Fantastic Beasts movie",
+		"path": "/blog/fantastic-bits-codingame"
+	},
+	{
+		"title": "Weekly Roundup 8",
+		"excerpt": "This weeks roundup contains articles from Budgets Are Sexy and Young Adventuress. Hope you enjoy reading these as much as I did.",
+		"path": "/blog/weekly-roundup-8"
+	},
+	{
+		"title": "A postmortem for The Accountant (Codingame AI Contest)",
+		"excerpt": "A postmortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie \"The Accountant\" held by codingame",
+		"path": "/blog/accountant-codingame-ai-contest-postmortem"
+	},
+	{
+		"title": "Weekly Roundup 7",
+		"excerpt": "This weeks roundup contains articles from Money can buy me happiness, Budgets Are Sexy, Keep Thrifty, NZMuse, The Practical Saver, Zen Pencils, 8th Light and LinkedIn.",
+		"path": "/blog/weekly-roundup-7"
+	},
+	{
+		"title": "Weekly Roundup 6",
+		"excerpt": "This weeks roundup contains articles from How we do Money, The Practical Saver, Think Save Retire, LandLopers, 8th Light, LinkedIn and Gamasutra. Hope you enjoy reading these articles as much as I did.",
+		"path": "/blog/weekly-roundup-6"
+	},
+	{
+		"title": "A postmortem for Hypersonic (Codingame AI Contest)",
+		"excerpt": "A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame.",
+		"path": "/blog/hypersonic-codingame-ai-contest-postmortem"
+	},
+	{
+		"title": "Weekly Roundup 5",
+		"excerpt": "This weeks roundup contains articles from Keep Thrifty, The Happy Saver, Reverse the Crush, A Dangerous Business, Y Travel and Wait but Why. Hope you enjoy reading these articles as much as I did.",
+		"path": "/blog/weekly-roundup-5"
+	},
+	{
+		"title": "Weekly Roundup 4",
+		"excerpt": "This week's roundup contains articles from YTravelblog, Millenial Revolution, Money Smart Guides and Zen Pencils. Hope you enjoy reading these articles as much as I did.",
+		"path": "/blog/weekly-roundup-4"
+	},
+	{
+		"title": "Weekly Roundup 3",
+		"excerpt": "This weeks roundup contains articles from Millennial Revolution, Business Insider, AnkiOnTheMove and XKCD. Hope you enjoy reading these articles as much as I did.",
+		"path": "/blog/weekly-roundup-3"
+	},
+	{
+		"title": "Weekly Roundup 2",
+		"excerpt": "Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.",
+		"path": "/blog/weekly-roundup-2"
+	},
+	{
+		"title": "Weekly Roundup 1",
+		"excerpt": "Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.",
+		"path": "/blog/weekly-roundup-1"
+	},
+	{
+		"title": "Video: Bungee Jump in Queenstown",
+		"excerpt": "A short video of my bungee jump in Queenstown.",
+		"path": "/blog/video-bungee-jump-queenstown"
+	},
+	{
+		"title": "New Zealand Escapes: Photo Essay - Milford Sound",
+		"excerpt": "When it rains in Milford Sound, the rainfall makes hundreds of waterfalls which combined with the rainbows make for a mystical sight.",
+		"path": "/blog/new-zealand-escapes-photo-essay-milford-sound"
+	},
+	{
+		"title": "Should I Rent Or Buy a House?",
+		"excerpt": "My two cents on whether you should rent or buy a house.",
+		"path": "/blog/rent-buy-house"
+	},
+	{
+		"title": "New Zealand Escapes: KiwiRail - TranzAlpine Express",
+		"excerpt": "The Tranzalpine Express is perhaps the most scenic train ride in New Zealand and an excellent alternative to driving to see the country.",
+		"path": "/blog/new-zealand-escapes-tranzalpine-express"
+	},
+	{
+		"title": "New Zealand Escapes: Photo Essay - Mount Maunganui",
+		"excerpt": "The views from the Mount Maunganui summit tends to leave one breathless. Or is it just because of the exertion of walking along a 3.4km steep track :) See the gallery and decide for yourself.",
+		"path": "/blog/new-zealand-escapes-photo-essay-mount-maunganui"
+	},
+	{
+		"title": "New Zealand Escapes: Tauranga",
+		"excerpt": "Tauranga is New Zealand's fifth-largest city has been a popular lifestyle location.  There are quite a few things to do here over a weekend including several waterfalls, walks, cruises and watersports.",
+		"path": "/blog/new-zealand-escapes-tauranga"
+	},
+	{
+		"title": "New Zealand Escapes: Waitomo Blackwater Rafting",
+		"excerpt": "There’s more than one way to see the glowworms in New Zealand’s Waitomo Caves. Our choice Waitomo Blackwater Rafting.",
+		"path": "/blog/new-zealand-escapes-waitomo-blackwater-rafting"
+	},
+	{
+		"title": "New Zealand Escapes: Waiotapu Thermal Wonderland",
+		"excerpt": "Wai-o-Tapu whimsically named as the Waiotapu Thermal Wonderland, is a stunning geothermal area near Rotorua.",
+		"path": "/blog/new-zealand-escapes-waiotapu-thermal-wonderland"
+	},
+	{
+		"title": "New Zealand Escapes: Tamaki Maori Village, Rotorua",
+		"excerpt": "What better way to get an understanding of the Maori Culture than at the Tamaki Maori Village in Rotorua.",
+		"path": "/blog/new-zealand-escapes-tamaki-maori-village-rotorua"
+	},
+	{
+		"title": "What are My most popular posts in 2015",
+		"excerpt": "The most viewed (popular) posts in 2015.",
+		"path": "/blog/my-most-popular-posts-in-2015"
+	},
+	{
+		"title": "New Zealand Escapes: Hobbiton, Matamata",
+		"excerpt": "A highlight for LOTR fans is a tour of the Shire at Hobbiton. This has been one of the places I have wanted to visit, since we moved to New Zealand.",
+		"path": "/blog/new-zealand-escapes-hobbiton-matamata"
+	},
+	{
+		"title": "New Zealand Escapes: Auckland Seaplanes",
+		"excerpt": "It's an amazing feeling to take off and land in the water with Auckland Seaplanes. We boarded expecting to experience Auckland from above. We were not disappointed.",
+		"path": "/blog/new-zealand-escapes-auckland-seaplanes"
+	},
+	{
+		"title": "Review: Takapuna Car Clinic, Auckland",
+		"excerpt": "A review of the Takapuna Car Clinic garage in Auckland.",
+		"path": "/blog/review-takapuna-car-clinic-auckland"
+	},
+	{
+		"title": "Photo Essay: India Vs Zimbabwe, World Cup 2015",
+		"excerpt": "The India vs Zimbabwe match held at Auckland for the Cricket World Cup 2015",
+		"path": "/blog/photo-essay-india-vs-zimbabwe-world-cup-2015"
+	},
+	{
+		"title": "New Zealand Escapes: Northland - Part 2",
+		"excerpt": "We reach Cape Reinga just in time for the sunset. On our way back, we check out the 90 mile beach and KawaKawa.",
+		"path": "/blog/new-zealand-escapes-northland-part-2"
+	},
+	{
+		"title": "New Zealand Escapes: Northland - Part 1",
+		"excerpt": "For our very next escape, we travel through Northland to the the very tip of New Zealand - the place where the Tasman Sea meets the mighty Pacific Ocean.",
+		"path": "/blog/new-zealand-escapes-northland-part-1"
+	},
+	{
+		"title": "New Zealand Escapes: Massey Strawberry Picking, Auckland",
+		"excerpt": "Our next trip is to Sweet Red Strawberries - Massey Gardens. Red, juicy strawberries are best eaten as soon as they've been picked, and one of the easiest ways you can do this is to get them at your local strawberry picking farm.",
+		"path": "/blog/new-zealand-escapes-massey-strawberry-picking-auckland"
+	},
+	{
+		"title": "New Zealand Escapes: Iskcon Temple, Auckland",
+		"excerpt": "From the beaches and islands to a place of worship. A photo essay of the Isckon temple in Auckland.",
+		"path": "/blog/new-zealand-escapes-iskcon-temple-auckland"
+	},
+	{
+		"title": "New Zealand Escapes : Piha Beach",
+		"excerpt": "A travelogue of our visit to Piha beach - One of the most famous beaches on the west coast of New Zealand.",
+		"path": "/blog/new-zealand-escapes-piha-beach"
+	},
+	{
+		"title": "New Zealand Escapes: Rangitoto Island",
+		"excerpt": "To experience the beauty and experience a trip to Rangitoto Island is a must-do for anyone new to Auckland city. It’s no wonder then that for our first trip in Auckland, we decided to take the ferry over to Rangitoto Island.",
+		"path": "/blog/new-zealand-escapes-rangitoto-island"
+	},
+	{
+		"title": "Photo Essay: Seattle, Washington",
+		"excerpt": "Seattle, Washington. Seen from above, carpets of evergreen trees, pristine blue waters, and snowy white mountains surround the downtown's metallic skyscrapers, earning the city its nickname The Emerald City.",
+		"path": "/blog/photo-essay-seattle-washington"
+	},
+	{
+		"title": "Video: Goat in Glacier National Park",
+		"excerpt": "A short video of a nimble footed goat in Glacier National Park.",
+		"path": "/blog/video-goat-glacier-national-park"
+	},
+	{
+		"title": "Photo Essay: Glacier National Park, Montana",
+		"excerpt": "The Glacier National Park is another one of those places that I believe should be in your itinerary. It is a beautiful place and the landscapes are just breathtaking.",
+		"path": "/blog/photo-essay-glacier-national-park-montana"
+	},
+	{
+		"title": "Video: Bear at Yellowstone National Park",
+		"excerpt": "A video of a bear cub that wandered near our car in the Yellowstone National Park.",
+		"path": "/blog/videos-bear-yellowstone-national-park"
+	},
+	{
+		"title": "Videos: Yellowstone National Park Geysers",
+		"excerpt": "A few videos of the Yellowstone National Park Geysers.",
+		"path": "/blog/videos-yellowstone-national-park-geysers"
+	},
+	{
+		"title": "Video: Old Faithful Geyser",
+		"excerpt": "This 2 min long video is of the Old Faithful geyser in the Yellowstone National Park.",
+		"path": "/blog/video-old-faithful-geyser"
+	},
+	{
+		"title": "Photo Essay: Yellowstone National Park, Wyoming",
+		"excerpt": "From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place and pictures cannot do justice.",
+		"path": "/blog/photo-essay-yellowstone-national-park-wyoming"
+	},
+	{
+		"title": "Photo Essay: Corn Palace, South Dakota",
+		"excerpt": "The next stop on the roadtrip is the Corn Palace in Mitchell, South Dakota. This is exactly as it sounds. The building is decorated with crop art.",
+		"path": "/blog/photo-essay-corn-palace-south-dakota"
+	},
+	{
+		"title": "Photo Essay: Diwali in Auckland",
+		"excerpt": "This is a  series of photographs taken at the Diwali Festival organised by the Auckland Council.",
+		"path": "/blog/diwali-auckland-2014"
+	},
+	{
+		"title": "Photo Essay: Niagara Falls, New York",
+		"excerpt": "After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop.Next on the Photo Series of The USA roadtrip : Niagara Falls'",
+		"path": "/blog/photo-essay-niagara-falls-new-york"
+	},
+	{
+		"title": "Photo Essay: Washington DC",
+		"excerpt": "From the home of Elvis Presley, we take a break in Pennyslvania at our relatives house. While I take a well deserved break and visit Washington DC, my parents hop across to New York and Philadelphia as well. Next on the Photo Series of The USA roadtrip: Washington DC",
+		"path": "/blog/photo-essay-washington-dc"
+	},
+	{
+		"title": "Photo Essay: Graceland, Tennessee",
+		"excerpt": "From Georgia we move to Tenessee and visit the home of Elvis Presley. Next on the Photo Series of The USA roadtrip: Graceland",
+		"path": "/blog/photo-essay-graceland-tennessee"
+	},
+	{
+		"title": "Photo Essay: World Of Coca Cola, Georgia",
+		"excerpt": "Next on the Photo Series of The USA roadtrip: World of Coca Cola",
+		"path": "/blog/photo-essay-world-coca-cola-georgia"
+	},
+	{
+		"title": "Photo Essay: NASA's Space Center, Texas",
+		"excerpt": "Next on the Photo Series of The USA roadtrip : NASA's Space Center",
+		"path": "/blog/photo-essay-nasas-space-center-texas"
+	},
+	{
+		"title": "Photo Essay: Meteor Crater, Arizona",
+		"excerpt": "Part of the Photo Series of The USA roadtrip : Meteor Crater in Arizona",
+		"path": "/blog/photo-essay-meteor-crater-arizona"
+	},
+	{
+		"title": "Photo Essay: Sedona, Arizona",
+		"excerpt": "Next on the Photo Series of The USA roadtrip: Sedona, Arizona. A gem of a place, we discovered by accident.",
+		"path": "/blog/photo-essay-sedona-arizona"
+	},
+	{
+		"title": "Photo Essay: Grand Canyon, Arizona",
+		"excerpt": "Next on the Photo Series of The USA roadtrip: Grand Canyon",
+		"path": "/blog/photo-essay-grand-canyon-arizona"
+	},
+	{
+		"title": "Photo Essay: Legoland, San Diego",
+		"excerpt": "For the kid in you, next on the Photo Series of The USA road trip: LegoLand",
+		"path": "/blog/photo-essay-legoland-san-diego"
+	},
+	{
+		"title": "Breakout Clone v1.0",
+		"excerpt": "The first release of the Breakout clone is finally here.",
+		"path": "/blog/breakout-clone-v1-0"
+	},
+	{
+		"title": "Product Review: Paper Boat Drinks",
+		"excerpt": "What is the first thing that you think about when you hear the words Paper Boat? Or even the second or the third? Whatever might have come to your mind, I am sure \"pouches of fruit-flavoured drinks\" did not figure in that list. A product review of the new and exciting flavours that Hector Beverages have recently come out with.",
+		"path": "/blog/product-review-paper-boat-drinks"
+	},
+	{
+		"title": "Photo Essay: San Diego Zoo, San Diego",
+		"excerpt": "Next on the Photo Series of The USA roadtrip: San Diego Zoo",
+		"path": "/blog/photo-essay-san-diego-zoo-san-diego"
+	},
+	{
+		"title": "Photo Essay: SeaWorld, San Diego",
+		"excerpt": "No visit to San Diego is complete without paying a visit to the Orcas at Seaworld.",
+		"path": "/blog/photo-essay-seaworld-san-diego"
+	},
+	{
+		"title": "Photo Essay: DisneyLand, Los Angeles",
+		"excerpt": "Next on the Photo Series of The USA roadtrip: Disney Land in Los Angeles",
+		"path": "/blog/photo-essay-disneyland-los-angeles"
+	},
+	{
+		"title": "Photo Essay: Universal Studios, Los Angeles",
+		"excerpt": "Photo Series of a roadtrip starting from Universal Studios in Los Angeles",
+		"path": "/blog/photo-essay-universal-studios-los-angeles"
+	},
+	{
+		"title": "USA Roadtrip",
+		"excerpt": "The next few photo series will be related to the roadtrip I had taken with my parents across the USA after graduating in May 2010. As a sneak preview, the route of the roadtrip'",
+		"path": "/blog/usa-roadtrip"
+	},
+	{
+		"title": "Photo Series: Jaisalmer",
+		"excerpt": "Photo Series of a roadtrip from Jodhpur to Jaisalmer in Rajasthan",
+		"path": "/blog/photo-series-jaisalmer"
+	},
+	{
+		"title": "Photo Series: Jodhpur",
+		"excerpt": "Photo Series of a roadtrip from Delhi to Jodhpur in Rajasthan.",
+		"path": "/blog/photo-series-jodhpur"
+	},
+	{
+		"title": "Video: Belly Dance",
+		"excerpt": "Video of the Belly Dance during the Desert Safari",
+		"path": "/blog/belly-dance"
+	},
+	{
+		"title": "Video: Tandura Dance",
+		"excerpt": "Clip of Tandura Dance during the Desert Safari",
+		"path": "/blog/tandura-dance"
+	},
+	{
+		"title": "A postmortem of the Asteroids clone",
+		"excerpt": "Postmortem of the Asteroids clone that I made. ",
+		"path": "/blog/postmortem-asteroids"
+	},
+	{
+		"title": "Desert Safari",
+		"excerpt": "In this travelogue, I and Gunjan go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance.",
+		"path": "/blog/desert-safari"
+	},
+	{
+		"title": "A guide to filter yourself from showing up in Google Analytics",
+		"excerpt": "I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress",
+		"path": "/blog/filtering-google-analytics"
+	},
+	{
+		"title": "Atlantis The Lost Chambers",
+		"excerpt": "In this travelogue, me and Gunjan visit the the Lost Chambers in Atlantis in Dubai.",
+		"path": "/blog/atlantis-lost-chambers"
+	},
+	{
+		"title": "How to prevent the compiler from making a copy of an object in c++",
+		"excerpt": "In this C++ tutorial, we see an easy way to prevent the compiler from making objects i.e noncopyable objects.",
+		"path": "/blog/noncopyable-objects"
+	},
+	{
+		"title": "\"Open doors, Open minds\" - Understanding Islam inside the Jumeirah Mosque",
+		"excerpt": "In this travelogue, me and Gunjan visit the Jumeirah Mosque and get a basic understanding of the tenets of Islam.",
+		"path": "/blog/inside-jumeirah-mosque"
+	},
+	{
+		"title": "How to setup Wordpress locally: Installing Wordpress",
+		"excerpt": "The final post in the Testing WordPress Locally series deals with Installing WordPress on windows.",
+		"path": "/blog/installing-wordpress"
+	},
+	{
+		"title": "Dubai Fountain",
+		"excerpt": "The  Dubai Fountain is the world’s largest dancing fountain.There is a show every half hour with the fountain dancing to a different piece of  music every time.",
+		"path": "/blog/dubai-fountain"
+	},
+	{
+		"title": "How to setup Wordpress locally: Installing phpMyAdmin",
+		"excerpt": "The next post in the Testing WordPress Locally series deals with Installing phpMyAdmin on windows.",
+		"path": "/blog/installing-phpmyadmin"
+	},
+	{
+		"title": "At the Top: Burj Khalifa",
+		"excerpt": "This travelogue is about the At The Top‘ experience or scaling the world’s tallest building. The scenery is pretty awesome from the world’s highest outdoor Observatory Deck at the 124th floor. ",
+		"path": "/blog/atthetop"
+	},
+	{
+		"title": "How to setup Wordpress locally: Installing MySQL",
+		"excerpt": "The third post in the series Testing WordPress Locally deals with installing MySQL on windows.",
+		"path": "/blog/installing-mysql"
+	},
+	{
+		"title": "Abra and Souqs in Dubai",
+		"excerpt": "A travelogue of visiting the various souqs in Dubai and taking the Abra, probably the cheapest mode of travel available in Dubai.",
+		"path": "/blog/abra-souqs"
+	},
+	{
+		"title": "How to setup Wordpress locally: Installing PHP",
+		"excerpt": "In this part of the series, we will Install PHP on our local machine.",
+		"path": "/blog/installing-php"
+	},
+	{
+		"title": "Why I am builidng an Asteroid clone as the next game",
+		"excerpt": "Reasons for Making Asteroid as the next game.",
+		"path": "/blog/asteroid-clone"
+	},
+	{
+		"title": "A visit to Wafi Mall",
+		"excerpt": "In this travelogue, me and Gunjan spend some time at the Wafi Mall in Dubai.",
+		"path": "/blog/wafi-mall"
+	},
+	{
+		"title": "How to setup Wordpress locally: Installing an Apache Web Server",
+		"excerpt": "In the first part of the series, we will install Apache (webserver) on our machine.",
+		"path": "/blog/installing-apache"
+	},
+	{
+		"title": "How to setup Wordpress locally: Introduction",
+		"excerpt": "In this series, I will cover how to setup WordPress locally so that you can develop locally before pushing your blog/website on the cloud.",
+		"path": "/blog/testing-wordpress-locally-series"
+	},
+	{
+		"title": "What are the 10 things to achieve when starting 3D programming",
+		"excerpt": "Guidelines to learn the basics of 3D programming.",
+		"path": "/blog/ten-things-achieve-starting-3d-programming"
+	},
+	{
+		"title": "Dubai Dolphinarium",
+		"excerpt": "In this travelogue, me and Gunjan visit the Dubai Dolphinarium.",
+		"path": "/blog/dubai-dolphinarium"
+	},
+	{
+		"title": "A guide to finding memory leaks using macros in c++",
+		"excerpt": "Macro trickery to find the offending file(s) and line(s) causing Memory Leak(s) without using a commercial program.",
+		"path": "/blog/memory-leak-woes"
+	},
+	{
+		"title": "A PostMortem of Mpong",
+		"excerpt": "A postmortem of the Pong clone that I made.",
+		"path": "/blog/postmortem-mpong"
+	},
+	{
+		"title": "What does making Pong take?",
+		"excerpt": "A reality check for people wanting to to get into games. Even though the gameplay elements of Pong are simple, the underlying engine needs to have everything that a modern game has.",
+		"path": "/blog/making-pong-take"
+	},
+	{
+		"title": "Visiting Greenwich and taking a ride on London Eye",
+		"excerpt": "In this travelogue, I visit the Greenwich, the Royal Observatory and take a ride on the London Eye.",
+		"path": "/blog/greenwich-london-eye"
+	},
+	{
+		"title": "How to start using Dynamic-link libraries (DLL)",
+		"excerpt": "This post deals with the basic information you need to know to start using DLL's.",
+		"path": "/blog/dll-basics"
+	},
+	{
+		"title": "Why being an only child is awesome",
+		"excerpt": "Due to my parents steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child.",
+		"path": "/blog/child-appreciation"
+	},
+	{
+		"title": "Walking Around in London",
+		"excerpt": "In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace.",
+		"path": "/blog/walking-around-london"
+	},
+	{
+		"title": "How do I setup the project properties for the Game Engine Project",
+		"excerpt": "The next post in the series talks about setting the project properties so that they are persistent.",
+		"path": "/blog/setting-project-properties"
+	},
+	{
+		"title": "A review of SmokeHouse Deli, Bangalore",
+		"excerpt": "A restaurant review of SmokeHouse Deli in Bangalore.",
+		"path": "/blog/smokehouse-deli-bangalore"
+	},
+	{
+		"title": "Roaming around in London",
+		"excerpt": "This is a part of one of my earlier travels when I traveled to London before starting on my Masters.",
+		"path": "/blog/london"
+	},
+	{
+		"title": "How I structure my Game Engine project",
+		"excerpt": "In this post, I am going to cover the third party libraries, project breakup, and current directory structure that I follow.",
+		"path": "/blog/setting-project-directory-structure"
+	},
+	{
+		"title": "The Beginning",
+		"excerpt": "Welcome to my blog. Over a period of time, I hope to fill this space with travel and food related posts, the status of my projects as well as tutorials for some basic stuff.",
+		"path": "/blog/beginning"
+	},
+	{
+		"title": "Tag testing",
+		"excerpt": null,
+		"path": "/tags/testing"
+	},
+	{
+		"title": "Tag docker",
+		"excerpt": null,
+		"path": "/tags/docker"
+	},
+	{
+		"title": "Tag snippet",
+		"excerpt": null,
+		"path": "/tags/snippet"
+	},
+	{
+		"title": "Tag csharp",
+		"excerpt": null,
+		"path": "/tags/csharp"
+	},
+	{
+		"title": "Tag productivity",
+		"excerpt": null,
+		"path": "/tags/productivity"
+	},
+	{
+		"title": "Tag source generator",
+		"excerpt": null,
+		"path": "/tags/source-generator"
+	},
+	{
+		"title": "Tag dev tools",
+		"excerpt": null,
+		"path": "/tags/dev-tools"
+	},
+	{
+		"title": "Tag reader question",
+		"excerpt": null,
+		"path": "/tags/reader-question"
+	},
+	{
+		"title": "Tag discoveries in bookland",
+		"excerpt": null,
+		"path": "/tags/discoveries-in-bookland"
+	},
+	{
+		"title": "Tag postgres",
+		"excerpt": null,
+		"path": "/tags/postgres"
+	},
+	{
+		"title": "Tag sql",
+		"excerpt": null,
+		"path": "/tags/sql"
+	},
+	{
+		"title": "Tag career",
+		"excerpt": null,
+		"path": "/tags/career"
+	},
+	{
+		"title": "Tag ramblings",
+		"excerpt": null,
+		"path": "/tags/ramblings"
+	},
+	{
+		"title": "Tag Insomnia",
+		"excerpt": null,
+		"path": "/tags/insomnia"
+	},
+	{
+		"title": "Tag tutorial",
+		"excerpt": null,
+		"path": "/tags/tutorial"
+	},
+	{
+		"title": "Tag security",
+		"excerpt": null,
+		"path": "/tags/security"
+	},
+	{
+		"title": "Tag weekly roundup",
+		"excerpt": null,
+		"path": "/tags/weekly-roundup"
+	},
+	{
+		"title": "Tag Gatsby",
+		"excerpt": null,
+		"path": "/tags/gatsby"
+	},
+	{
+		"title": "Tag Wordpress",
+		"excerpt": null,
+		"path": "/tags/wordpress"
+	},
+	{
+		"title": "Tag xUnitHelpers",
+		"excerpt": null,
+		"path": "/tags/x-unit-helpers"
+	},
+	{
+		"title": "Tag project updates",
+		"excerpt": null,
+		"path": "/tags/project-updates"
+	},
+	{
+		"title": "Tag Approval Tests",
+		"excerpt": null,
+		"path": "/tags/approval-tests"
+	},
+	{
+		"title": "Tag leadership",
+		"excerpt": null,
+		"path": "/tags/leadership"
+	},
+	{
+		"title": "Tag business",
+		"excerpt": null,
+		"path": "/tags/business"
+	},
+	{
+		"title": "Tag typescript",
+		"excerpt": null,
+		"path": "/tags/typescript"
+	},
+	{
+		"title": "Tag react",
+		"excerpt": null,
+		"path": "/tags/react"
+	},
+	{
+		"title": "Tag web development",
+		"excerpt": null,
+		"path": "/tags/web-development"
+	},
+	{
+		"title": "Tag terraform",
+		"excerpt": null,
+		"path": "/tags/terraform"
+	},
+	{
+		"title": "Tag devops",
+		"excerpt": null,
+		"path": "/tags/devops"
+	},
+	{
+		"title": "Tag AWS",
+		"excerpt": null,
+		"path": "/tags/aws"
+	},
+	{
+		"title": "Tag IAM",
+		"excerpt": null,
+		"path": "/tags/iam"
+	},
+	{
+		"title": "Tag S3",
+		"excerpt": null,
+		"path": "/tags/s3"
+	},
+	{
+		"title": "Tag Codingame",
+		"excerpt": null,
+		"path": "/tags/codingame"
+	},
+	{
+		"title": "Tag post-mortem",
+		"excerpt": null,
+		"path": "/tags/post-mortem"
+	},
+	{
+		"title": "Tag xUnit",
+		"excerpt": null,
+		"path": "/tags/x-unit"
+	},
+	{
+		"title": "Tag dapper",
+		"excerpt": null,
+		"path": "/tags/dapper"
+	},
+	{
+		"title": "Tag Azure pipelines",
+		"excerpt": null,
+		"path": "/tags/azure-pipelines"
+	},
+	{
+		"title": "Tag Speechcraft",
+		"excerpt": null,
+		"path": "/tags/speechcraft"
+	},
+	{
+		"title": "Tag personal development",
+		"excerpt": null,
+		"path": "/tags/personal-development"
+	},
+	{
+		"title": "Tag VS Code",
+		"excerpt": null,
+		"path": "/tags/vs-code"
+	},
+	{
+		"title": "Tag goals",
+		"excerpt": null,
+		"path": "/tags/goals"
+	},
+	{
+		"title": "Tag javascript",
+		"excerpt": null,
+		"path": "/tags/javascript"
+	},
+	{
+		"title": "Tag Postman",
+		"excerpt": null,
+		"path": "/tags/postman"
+	},
+	{
+		"title": "Tag git",
+		"excerpt": null,
+		"path": "/tags/git"
+	},
+	{
+		"title": "Tag JAH",
+		"excerpt": null,
+		"path": "/tags/jah"
+	},
+	{
+		"title": "Tag cpp",
+		"excerpt": null,
+		"path": "/tags/cpp"
+	},
+	{
+		"title": "Tag dynamic programming",
+		"excerpt": null,
+		"path": "/tags/dynamic-programming"
+	},
+	{
+		"title": "Tag popular posts",
+		"excerpt": null,
+		"path": "/tags/popular-posts"
+	},
+	{
+		"title": "Tag New Zealand",
+		"excerpt": null,
+		"path": "/tags/new-zealand"
+	},
+	{
+		"title": "Tag Oceania",
+		"excerpt": null,
+		"path": "/tags/oceania"
+	},
+	{
+		"title": "Tag travel",
+		"excerpt": null,
+		"path": "/tags/travel"
+	},
+	{
+		"title": "Tag video",
+		"excerpt": null,
+		"path": "/tags/video"
+	},
+	{
+		"title": "Tag reviews",
+		"excerpt": null,
+		"path": "/tags/reviews"
+	},
+	{
+		"title": "Tag cricket",
+		"excerpt": null,
+		"path": "/tags/cricket"
+	},
+	{
+		"title": "Tag North America",
+		"excerpt": null,
+		"path": "/tags/north-america"
+	},
+	{
+		"title": "Tag USA",
+		"excerpt": null,
+		"path": "/tags/usa"
+	},
+	{
+		"title": "Tag Washington",
+		"excerpt": null,
+		"path": "/tags/washington"
+	},
+	{
+		"title": "Tag games",
+		"excerpt": null,
+		"path": "/tags/games"
+	},
+	{
+		"title": "Tag Asia",
+		"excerpt": null,
+		"path": "/tags/asia"
+	},
+	{
+		"title": "Tag India",
+		"excerpt": null,
+		"path": "/tags/india"
+	},
+	{
+		"title": "Tag Middle East",
+		"excerpt": null,
+		"path": "/tags/middle-east"
+	},
+	{
+		"title": "Tag UAE",
+		"excerpt": null,
+		"path": "/tags/uae"
+	},
+	{
+		"title": "Tag Europe",
+		"excerpt": null,
+		"path": "/tags/europe"
+	},
+	{
+		"title": "Tag United Kingdom",
+		"excerpt": null,
+		"path": "/tags/united-kingdom"
+	},
+	{
+		"title": "Tag game engine",
+		"excerpt": null,
+		"path": "/tags/game-engine"
+	},
+	{
+		"title": "Tag Bangalore restaurants",
+		"excerpt": null,
+		"path": "/tags/bangalore-restaurants"
+	}
+]
