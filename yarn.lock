@@ -1118,10 +1118,10 @@
   resolved "https://registry.yarnpkg.com/@codinators/eslint-config/-/eslint-config-1.1.0.tgz#0cb46e6cbe1e1507db21a890a0544491e7c8fc54"
   integrity sha512-n+fZxIOH2t23vQFqQb87S+k5C65QL7voY4fCHhYXgz2DIy3F4zZPExTgmulZ5yJZnmkEzIlMCFJioukPEg0jow==
 
-"@codinators/gatsby-theme-blog@^3.11.0":
-  version "3.11.3"
-  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.11.3.tgz#b518c3073cb96c006fc4987c97065aa465e97e44"
-  integrity sha512-pxDYv+eqBNg9r8R4lXBFqkHM/LPe01Tx5X/gPe6vxj0743QNlU3qjPHsr9vwsE+XPNtxoFO0FyEi+eLIWQ1eRg==
+"@codinators/gatsby-theme-blog@^3.12.0":
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/@codinators/gatsby-theme-blog/-/gatsby-theme-blog-3.12.1.tgz#21f6d5b0b11cf03748f2ac4d8fb20f3722d8dba0"
+  integrity sha512-pqrWpgj03hOZJ58JQpWtbWzpJiTDoWLXDmuBXT3lAJsNByqAGfQCsvy+XPMfDOGUvqEWEeU9BMa2OcSI/MSEjQ==
   dependencies:
     "@emotion/babel-preset-css-prop" "^10.0.23"
     "@emotion/core" "^10.0.28"
@@ -5095,7 +5095,7 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
-color-convert@^1.9.0, color-convert@^1.9.1:
+color-convert@^1.9.0, color-convert@^1.9.1, color-convert@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
   integrity sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
@@ -5135,12 +5135,20 @@ color@3.0.x:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-color@^3.0.0, color@^3.1.3:
+color@^3.0.0:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.4.tgz#8135092b1654abab663277265fb1df071ba99751"
   integrity sha512-2fNuKrJPqa7+eBKhBqUjNZGmpf3wCdYiPCA0Dt+cVt8mf3tBleMiKf+Zgt6o/21Q6uOd5MqQc21wllmh1b1b9A==
   dependencies:
     color-convert "^1.9.1"
+    color-string "^1.6.0"
+
+color@^3.1.3:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/color/-/color-3.2.1.tgz#3544dc198caf4490c3ecc9a790b54fe9ff45e164"
+  integrity sha512-aBl7dZI9ENN6fUGC7mWpMTPNHmWUSNan9tuWN6ahh5ZLNk9baLJOnSMlrQkHcrfFgz2/RigjUVAjdx36VcemKA==
+  dependencies:
+    color-convert "^1.9.3"
     color-string "^1.6.0"
 
 colorette@^1.2.1, colorette@^1.2.2:
@@ -14106,10 +14114,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-peek-readable@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/peek-readable/-/peek-readable-3.1.4.tgz#f5c3b41a4eeb63a1322c4131f0b5bac7105b892e"
-  integrity sha512-DX7ec7frSMtCWw+zMd27f66hcxIz/w9LQTY2RflB4WNHCVPAye1pJiP2t3gvaaOhu7IOhtPbHw8MemMj+F5lrg==
+peek-readable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/peek-readable/-/peek-readable-4.0.0.tgz#b024ef391c86136eba0ae9df3ff4f966a09e9a7e"
+  integrity sha512-kLbU4cz6h86poGVBKgAVMpFmD47nX04fPPQNKnv9fuj+IJZYkEBjsYAVu5nDbZWx0ZsWwWlMzeG90zQa5KLBaA==
 
 pend@~1.2.0:
   version "1.2.0"
@@ -17054,12 +17062,11 @@ strip-outer@^1.0.0, strip-outer@^1.0.1:
     escape-string-regexp "^1.0.2"
 
 strtok3@^6.0.3:
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-6.1.3.tgz#488fe8ca91664cf93432c94752ba9e5c785bd9dd"
-  integrity sha512-ssWSKFOeUTurMSucgyUf+a6Z9mVTYrsYiyEK5RLnh8BM6sFrKSljVlnjZXIDxMguYfdQI+mUPFHo88FYTxq1XA==
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-6.2.0.tgz#7c24e74a9a24c7f2b976e4469654d459e6795d91"
+  integrity sha512-hBbPN4+f9fypbfTs0NImALgzYcb6k/blFr2mJVX6bUOmJCbXe/trDHdIC+Ir5XUXRMGFvq487ecwLitDoHVoew==
   dependencies:
-    "@tokenizer/token" "^0.1.1"
-    peek-readable "^3.1.4"
+    peek-readable "^4.0.0"
 
 style-loader@^0.23.1:
   version "0.23.1"
