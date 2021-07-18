@@ -16,6 +16,7 @@ module.exports = {
                     file: '/blog/rss.xml',
                     title: "Ankur Sheel's Rants and Ramblings",
                 },
+                linksOutputPath: './cypress/fixtures/links.json',
             },
         },
         `gatsby-plugin-offline`,
