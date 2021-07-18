@@ -16,10 +16,6 @@ module.exports = {
     headerLinksIcon: 'avatar.png',
     headerLinks: [
         {
-            label: 'Impossible List',
-            url: '/impossible-list',
-        },
-        {
             label: 'CV',
             url: '/cv',
         },
@@ -28,12 +24,16 @@ module.exports = {
             url: '/blog',
         },
         {
-            label: 'Random Post',
-            url: '/random-post',
-        },
-        {
             label: 'Tags',
             url: '/tags',
+        },
+        {
+            label: 'Impossible List',
+            url: '/impossible-list',
+        },
+        {
+            label: 'Random Post',
+            url: '/random-post',
         },
         {
             label: 'Contact Me',
