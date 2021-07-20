@@ -1,6 +1,6 @@
 ---
 title: 'Create custom type definitions for JavaScript dependencies'
-excerpt: 'What to do when you get a "Could not find a declaration file for module" error when the package does not exist in "@types/third-party-library-name" error and you are too lazy to write a full custom definition.'
+excerpt: 'What to do when you get a "Could not find a declaration file for module" error when the package does not exist in "@types/third-party-library-name" error'
 featuredImage: './cover.jpg'
 tags:
     - 'typescript'
@@ -10,13 +10,13 @@ tags:
 
 If you are importing a javascript dependency into your typescript app, you might run into this error.
 
-**_"Could not find a declaration file for module ‘third-party-library-name’. ‘third-party-library-name.js’ has an ‘any’ type. Try npm install @types/third-party-library-name if it exists or add a new declaration (.d.ts) file containing declare module 'third-party-library-name';"_**
+**_ "Could not find a declaration file for module 'third-party-library-name'. 'third-party-library-name.js' has an 'any' type. Try npm install @types/third-party-library-name if it exists or add a new declaration (.d.ts) file containing declare module 'third-party-library-name';"_**
 
 If you read the error message, you can see that it suggests checking the DefinitelyTyped repository.
 
 If you are lucky, you will find the repository and install it using _npm_ or _yarn_.
 
-But what if you not so lucky?
+But what if you are not so lucky?
 
 ## Solution #1
 
@@ -50,7 +50,7 @@ So, how exactly do you do that?
 
 -   Add a **_third-party-library-name_** folder in the _types_ directory.
 -   Add an _index.d.ts_ in that folder.
--   Add your TypeDefinitions. But if, like me, you want to prototype things or do not want to write a full custom type, you can declare the module by adding this to the _index.d.ts_ file.
+-   Add your TypeDefinitions. But if like me, you want to prototype things or do not want to write a full custom type, you can declare the module by adding this to the _index.d.ts_ file.
 
 ```typescript
 declare module 'third-party-library-name';

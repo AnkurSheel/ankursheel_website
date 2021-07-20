@@ -1,6 +1,6 @@
 ---
 title: 'How to reset the primary key sequence in Postgres'
-excerpt: 'In this post, I look at how we can fix the "duplicate key value violates unique constraint" error because the sequence is out of sync from the records in the table.'
+excerpt: 'How can we fix the "duplicate key value violates unique constraint" error because the primary key sequence is out of sync from the records in the table'
 tags:
     - 'postgres'
     - 'sql'
@@ -43,7 +43,7 @@ Our sequence is out-of-sync when the **_Current Value_** is less than **_Max Val
 
 `PG_GET_SERIAL_SEQUENCE('"table"', 'id')` can be used to get the sequence name.
 
-Using this, we can avoid hard-coding the actual sequence name, which helps avoid any incorrect assumptions about the sequence name.
+Using this, we can avoid hard-coding the actual sequence name, which helps prevent incorrect assumptions about the sequence name.
 
 _Note that the table name is in double-quotes, surrounded by single quotes._
 

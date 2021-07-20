@@ -1,6 +1,6 @@
 ---
 title: 'How to set up the project properties for Source Generators'
-excerpt: 'C# Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. Let us look at the project properties that we need to set to create and use source generators'
+excerpt: 'A guide to setting up the project properties that we need to create and use source generators'
 tags:
     - 'csharp'
     - 'productivity'
@@ -9,7 +9,7 @@ tags:
     - 'dev tools'
 ---
 
-Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. This post will look at the project properties that we need to set on both the source generator project and consumer project.
+Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. This post will look at the project properties that we need to set on both the source generator and consumer projects.
 
 ## Source Generator Project Properties
 
@@ -29,7 +29,7 @@ The empty project is targeting Net5.0. I have also enabled nullables.
 
 ### Add the required packages
 
-Next, we will add the CodeAnalysis libraries from Nuget
+Next, we will add the CodeAnalysis libraries from Nuget.
 
 ```xml
 <ItemGroup>
@@ -44,7 +44,7 @@ In the consumer project, we need to add a reference to the source generator. Thi
 
 ### Reference the project in Debug mode
 
-In Debug mode, we reference the project directly so that its easier for development.
+In Debug mode, we reference the project directly so that it's easier for development.
 
 ```xml
 <ItemGroup Condition="'$(Configuration)'=='Debug'">
@@ -52,8 +52,8 @@ In Debug mode, we reference the project directly so that its easier for developm
 </ItemGroup>
 ```
 
--   **_OutputItemType_**: Source generators as packaged and deployed the same way as Roslyn Analysers so we need to tell the compiler that it is not a normal project reference.
--   **_ReferenceOutputAssembly_**: Tells the compiler not to include the source generator project in the published output i.e the bin folder.
+-   **_OutputItemType_**: Source generators as packaged and deployed the same way as Roslyn Analysers, so we need to tell the compiler that it is not a standard project reference.
+-   **_ReferenceOutputAssembly_**: Tells the compiler not to include the source generator project in the published output, i.e. the bin folder.
 
 ### Reference the NuGet package in Release mode
 
@@ -81,7 +81,7 @@ By default, the generated code is not written to disk. However, when writing a s
 
 ### Excluding the generated folder
 
-We will need to exclude the generated folder or the compiler will try to add the same file twice - one from disk and one from code generator
+We will need to exclude the generated folder, or the compiler will try to add the same file twice - one from disk and one from the code generator
 
 ```xml
 <ItemGroup>
@@ -91,6 +91,6 @@ We will need to exclude the generated folder or the compiler will try to add the
 
 ## Conclusion
 
-Now, we have our projects setup so that we can start creating source generators and consuming the generated code
+Now, we have our projects set up to start creating source generators and consuming the generated code.
 
 If you want to look at the code, you can find it [here](https://github.com/AnkurSheel/CSharpSourceGenerators)
