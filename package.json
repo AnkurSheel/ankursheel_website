@@ -26,8 +26,8 @@
         "lint:markdown": "markdownlint **/*.mdx --ignore node_modules/**",
         "lint:markdown:fix": "markdownlint **/*.mdx --ignore node_modules/** --fix",
         "deduplicate": "yarn-deduplicate --list && yarn-deduplicate",
-        "buildAndTestLinks": "yarn build && yarn testLinks",
-        "testLinks": "start-server-and-test serve http://localhost:9000 cy:run",
+        "buildAndTest": "yarn build && yarn startServerAndTest",
+        "startServerAndTest": "start-server-and-test serve http://localhost:9000 cy:run",
         "cy:open": "yarn cypress open",
         "cy:run": "yarn cypress run"
     },
