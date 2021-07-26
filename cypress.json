@@ -2,7 +2,9 @@
     "baseUrl": "http://localhost:9000/",
     "defaultCommandTimeout": 10000,
     "chromeWebSecurity": false,
-    "blacklistHosts": ["www.google-analytics.com", "www.twitter.com"],
-    "viewportWidth": 1600,
-    "viewportHeight": 900
+    "blockHosts": ["www.google-analytics.com", "www.twitter.com"],
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "video": false,
+    "retries": 1
 }
