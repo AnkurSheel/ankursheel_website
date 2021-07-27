@@ -12,4 +12,3 @@ yalc.lock
 /.idea/
 /.netlify/state.json
 /cypress/screenshots/
-/cypress/fixtures/links.json
