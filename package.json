@@ -13,7 +13,7 @@
     "author": "Ankur Sheel <ankur.sheel@gmail.com>",
     "scripts": {
         "echo": "echo \"Dummy command for netlify\"",
-        "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 && gatsby build --log-pages --verbose",
+        "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 && gatsby build --log-pages --verbose",
         "develop": "gatsby develop",
         "clean": "gatsby clean",
         "serve": "yarn gatsby serve",
