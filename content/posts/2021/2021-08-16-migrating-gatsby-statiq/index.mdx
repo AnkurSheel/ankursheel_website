@@ -11,7 +11,7 @@ tags:
 
 In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.
 
-You can read more about why I migrated to Gatsby at [Why and How I migrated my website from WordPress to Gatsby](./migrating-from-wordpress-to-gatsby).
+You can read more about why I migrated to Gatsby and the earlier parts of the journey at [Why and How I migrated my website from WordPress to Gatsby](./migrating-from-wordpress-to-gatsby).
 
 ## Reasons for moving away from Gatsby
 
@@ -73,7 +73,14 @@ I won't be migrating this blog, but instead, I will be migrating [Discoveries in
 
 ## My migration process
 
-I will fill this section out with links to pages so that you can follow along as I migrate the site.
+_I will fill this section out with links to pages so that you can follow along as I migrate the site._
+
+-   Remove all _js_ files and add a C# solution and project file.
+-   Rename _content_ folder to _input_.
+-   Move _images_ to _input/asset_ folder.
+-   [Rename all _.mdx_ files to _.md_](./rename-multiple-files-subfolders-windows-command-prompt).
+-   Add a a package reference to `Statiq.Web`.
+-   Update netlify to deploy a branch using Statiq to create the website.
 
 ## Conclusion
 
