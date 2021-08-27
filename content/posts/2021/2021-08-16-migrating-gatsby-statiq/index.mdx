@@ -77,15 +77,31 @@ I won't be migrating this blog, but instead, I will be migrating [Discoveries in
 
 _I will fill this section out with links to pages so that you can follow along as I migrate the site._
 
+### Must Haves
+
 -   Remove all _js_ files and add a C# solution and project file.
 -   Rename _content_ folder to _input_.
 -   Move _images_ to _input/asset_ folder.
 -   [Rename all _.mdx_ files to _.md_](./rename-multiple-files-subfolders-windows-command-prompt).
 -   Add a a package reference to `Statiq.Web`.
 -   [Update netlify to deploy a branch using Statiq](./override-netlify-build-config) to create the website.
+-   [Add tailwind](./add-tailwind-css-statiq-website).
+-   Disable the provided asset and content pipelines.
+-   Add pipelines for Assets, HomePage, Pages, Post List, Post, TagList and Tags.
+-   Add layouts and SEO tags.
+
+### Nice to haves (after migration)
+
+-   Add a 404 page
+-   Add buy me a coffee button
+-   Add a contact me page
+-   Generate social images
+-   Add pipline for sitemap
+-   Add pipeline for RSS feed
+-   Minify assets
 
 ## Conclusion
 
-<!-- Although it's an ongoing process, I am happy with how the migration progresses. [my blog](https://www.ankursheel.com) is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups. -->
+Although it's an ongoing process, I am happy with how the migration is progressing. [Discoveries in bookland](https://www.discoveriesinbookland.com/) is now built with Statiq and Markdown and hosted on Netlify. Instead of JS, its all in .Net and I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.
 
-I will be adding more posts related to things I had to go hunting for on google. If you would like to know more about something specific, let me know in the comments.
+If you would like to know more about something specific, let me know.
