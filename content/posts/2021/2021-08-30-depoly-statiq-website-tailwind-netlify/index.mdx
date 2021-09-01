@@ -11,7 +11,7 @@ In this article, I will be showing how we can deploy a website built with [Tailw
 
 ## Problem
 
-As part of the [migration from Gatsby to Statiq](./migrating-gatsby-statiq), I want to deploy my website built with Statiq and Tailwind to Netlify. Netlify allows for only one build command on deployment. The issue is that Tailwind is available as an npm package while static is a .Net solution, and hence both require different commands to run.
+As part of the [migration from Gatsby to Statiq](./migrating-gatsby-statiq), I wanted to deploy my website built with Statiq and Tailwind to Netlify. Netlify allows for only one build command on deployment. The issue is that Tailwind is available as an npm package while static is a .Net solution, and hence both require different commands to run.
 
 ## Solution
 
@@ -59,7 +59,6 @@ bootstrapper.AddProcess(
     LogErrors = false,
     WorkingDirectory = nodeDirectory
 });
-
 ```
 
 -   **Line 3**: Use npx to generate a fully compiled Tailwind CSS file.
