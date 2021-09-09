@@ -19,7 +19,7 @@ module.exports = {
                 linksOutputPath: './cypress/fixtures/links.json',
             },
         },
-        `gatsby-plugin-offline`,
+        'gatsby-plugin-remove-serviceworker',
         {
             resolve: `gatsby-plugin-google-tagmanager`,
             options: pluginOptions.analytic,
