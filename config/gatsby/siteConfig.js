@@ -11,7 +11,7 @@ module.exports = {
     donateText: 'Did you learn something or find this article interesting?',
     buyMeACoffee: {
         link: 'https://www.buymeacoffee.com/ankursheel',
-        altText: 'Show your support',
+        altText: 'Buy me a coffee',
     },
     headerLinksIcon: 'avatar.png',
     headerLinks: [
