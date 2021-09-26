@@ -2,7 +2,5 @@ variables:
     - group: netlify-variables
     - name: 'YARN_CACHE_FOLDER'
       value: '$(Pipeline.Workspace)/.yarn'
-    - name: 'GASTBY_CACHE_FOLDER'
-      value: './.cache'
-    - name: 'GASTBY_PUBLIC_FOLDER'
-      value: './public'
+    - name: 'PROJECT_FOLDER'
+      value: 'ankursheel_website'
