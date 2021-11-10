@@ -1,9 +1,0 @@
-{
-    "gallery": [
-        { "image": "./WashingtonDC-1.jpg", "title": "" },
-        { "image": "./WashingtonDC-2.jpg", "title": "" },
-        { "image": "./WashingtonDC-3.jpg", "title": "" },
-        { "image": "./WashingtonDC-4.jpg", "title": "" },
-        { "image": "./WashingtonDC-5.jpg", "title": "" }
-    ]
-}

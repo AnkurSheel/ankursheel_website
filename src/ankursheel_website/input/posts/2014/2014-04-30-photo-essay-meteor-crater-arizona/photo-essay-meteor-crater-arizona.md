@@ -1,0 +1,21 @@
+---
+title: 'Photo Essay: Meteor Crater, Arizona'
+excerpt: 'Part of the Photo Series of The USA roadtrip : Meteor Crater in Arizona'
+coverImage: ./images/MeteorCrater-5.jpg
+tags:
+    - North America
+    - travel
+    - USA
+---
+
+From the red rock landscape of Sedona, we next visit the Meteor Crater aka Barringer Crater, a few miles east of Flagstaff.
+
+![Mountains](./images/MeteorCrater-1.jpg)
+
+![American Astronaut Wall of Fame](./images/MeteorCrater-2.jpg)
+
+![Crater Rim](./images/MeteorCrater-3.jpg)
+
+![Crater Rim](./images/MeteorCrater-4.jpg)
+
+![Airplane Wreckage](./images/MeteorCrater-5.jpg)
