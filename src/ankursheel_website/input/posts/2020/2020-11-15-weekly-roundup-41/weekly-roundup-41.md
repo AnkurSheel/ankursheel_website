@@ -2,7 +2,6 @@
 title: 'Weekly Roundup 41'
 excerpt: 'This weeks roundup contains articles from Harry Dry, Charity Majors, Mike Crittenden, Josh Comeau, Padmini Pyapali and Rex Woodbury'
 coverImage: 'assets/images/weekly-roundup-cover.png'
-featuredImagePosition: bottom 40% center
 tags:
     - 'weekly roundup'
 ---
