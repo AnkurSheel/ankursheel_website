@@ -8,13 +8,13 @@ pushd %2
 
 for /r %%F in (*.mdx) do @for %%A in ("%%F\..") do ren "%%F" "%%~nxA.mdx"
 
-REM pushd posts
-for /r %%F in (*.mdx) do ren "%%F" "///////////*.md"
-popd
+@REM REM pushd posts
+@REM for /r %%F in (*.mdx) do ren "%%F" "///////////*.md"
+@REM popd
 
-REM pushd pages
-REM for /r %F in (*.md) do ren "%F" "*.mdx"
-REM popd
+@REM pushd pages
+for /r %%F in (*.mdx) do ren "%%F" "*.md"
+popd
 
 REM REM for /r %F in (*.md1) do ren "%F" "*.md"
 
