@@ -51,3 +51,100 @@ from = "/blog/:year/:month/:date"
 to = "/blog"
 status = 410
 force = false
+
+[[redirects]]
+from = "/blog/load-test-data-from-a-json-file-for-xunit-tests"
+to = "/blog/load-test-data-json-file-xunit-tests"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/deploying-a-gatsby-site-to-netlify-using-azure-pipelines"
+to = "/blog/deploy-gatsby-site-netlify-azure-pipelines"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/creating-a-sns-topic-for-a-ses-not-in-the-default-provider"
+to = "/blog/create-sns-topic-ses-not-default-provider"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/using-azure-pipelines-to-deploy-a-gatsby-site-on-a-schedule"
+to = "/blog/use-azure-pipelines-deploy-gatsby-site-schedule"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/depoly-statiq-website-tailwind-netlify"
+to = "/blog/deploy-statiq-website-tailwind-netlify"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/to-pixar-and-beyond"
+to = "https://www.discoveriesinbookland.com/blog/to-pixar-and-beyond"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/bad-blood"
+to = "https://www.discoveriesinbookland.com/blog/bad-blood"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/elon-musk"
+to = "https://www.discoveriesinbookland.com/blog/elon-musk"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/the-index-card"
+to = "https://www.discoveriesinbookland.com/blog/index-card"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/the-index-card"
+to = "https://www.discoveriesinbookland.com/blog/profit-first"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/one-page-financial-plan"
+to = "https://www.discoveriesinbookland.com/blog/one-page-financial-plan"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/death-meeting"
+to = "https://www.discoveriesinbookland.com/blog/death-meeting"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/the-art-of-learning"
+to = "https://www.discoveriesinbookland.com/blog/art-of-learning"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/the-motive"
+to = "https://www.discoveriesinbookland.com/blog/motive"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/building-a-storybrand"
+to = "https://www.discoveriesinbookland.com/blog/building-a-storybrand"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/take-the-stairs"
+to = "https://www.discoveriesinbookland.com/blog/take-the-stairs"
+status = 301
+force = false
+

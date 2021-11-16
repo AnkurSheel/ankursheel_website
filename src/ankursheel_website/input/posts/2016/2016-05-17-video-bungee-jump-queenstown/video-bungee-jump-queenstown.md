@@ -1,0 +1,13 @@
+---
+title: 'Video: Bungee Jump in Queenstown'
+excerpt: A short video of my bungee jump in Queenstown.
+tags:
+    - New Zealand
+    - Oceania
+    - travel
+    - video
+---
+
+A short video of my bungee jump with the [AJ Hackett company](http://www.bungy.co.nz/) at the Kawarau Bridge, Queenstown.
+
+<?# ResponsiveYouTube nI99oOV2deI Title="Bungee Jump Queenstown"/?>

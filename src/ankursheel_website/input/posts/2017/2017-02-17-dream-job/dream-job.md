@@ -1,0 +1,121 @@
+---
+title: What is my idea of a dream job
+excerpt: 'An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities'
+coverImage: './cover.jpg'
+updatedOnDate: 2020-10-01
+tags:
+    - ramblings
+    - career
+---
+
+It's a goal that everyone should have. But, what makes a job the coveted but elusive dream job?
+
+For a long time, I thought that doing something you love automatically meant that you had a dream job. But as I have matured (now, that doesn't seem right ), I have realized that being passionate about the work is not enough to make any ole job **_the dream job_**. Don't get me wrong, passion is a crucial ingredient, but it's not the only one. If the job does not make you happy, no amount of passion will make it a dream job.
+
+The question now becomes, what does my dream job/company look like? After all, if I don't know what my dream job looks like, how do I know if I am progressing towards it. More importantly, how do I compare different opportunities and differentiate between good and bad ones?
+
+Let us tackle the makeup of my dream job and see what it looks like.
+
+## Culture (44 points)
+
+After working with some terrible companies and some great ones, I have realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy? So what does the perfect culture look like?
+
+-   The company and management should trust that I am a responsible adult and will get stuff done without micromanagement. I should be able to blow off steam by playing games or taking walks etc., during work hours without being questioned. **9 points**
+
+There are no draconian rules like explaining why I stepped out for some time, why I was a little late, or why I am on youtube. As long as I am getting my work done in time and no one is blocked, I don't think the company should care about how and when I get stuff done. **8 points**
+
+-   Excellent work/life balance. **7 points for 40 hour weeks. 5 points for 40 hour weeks with occasional overtime to up to 60 hours. 0 otherwise**
+
+-   Open communication not only among team-mates but also with management and Human Resources. **6 points**
+
+-   Friendly people. **5 points**
+
+-   Laid Back dress code. **5 points for shorts and sandals. 3 for Tees and jeans. 0 otherwise**
+
+-   Potential to discuss ideas and be taken seriously on issues related to processes and company culture. **4 points**
+
+<Quote quote="Culture trumps everything else, every single time" />
+
+## Compensation and Benefits (37 points)
+
+I would be lying if I said that money is not important to me. I need to feel that I am fairly compensated for my skills. It's also a good confidence booster to be making an above market rate salary. Benefits and perks are nice, but they don't pay the bills.
+
+Unfortunately, many companies feel that they can afford to pay less because they work on exciting challenges. This is especially prevalent in the games industry. The ideal company would not give a lowball offer when trying to hire me. After all, if I had to fight (actually let me be politically correct and say negotiate) to get what I deserve before I even joined the company, who's to say that I won't have to do it again at each review. More importantly, why would I work for a technology company that skimps on paying its most important assets (the programmers).
+
+-   Above market-rate salary without having to negotiate: **8 points**
+
+-   Above market rate salary with negotiation: **6 points**
+
+-   Market Rate salary without having to negotiate: **4 points**
+
+-   Market Rate salary with negotiation: **0 points**
+
+-   Below Market Rate Salary: **(-) 6 points**
+
+When considering a new job and comparing it with current employment and already at market rate, replace market rate with current salary + X%. The following 2 factors also come into play.
+
+-   No relocation: **(-) 6 points**
+
+-   Initial Low-ball Offer: **(-) 4 points**
+
+Although I did say that the base salary is more important but, for the comparable wages, it is the benefits and perks which make a company more attractive. Some of the essential benefits:
+
+-   Access to productivity tools such as Resharper or Visual Assist X etc., depending on the language. **7 points**
+
+-   100% covered health insurance with a good provider. **5 points**
+
+-   The ability to work remotely, either full-time or part-time. **1 point per day in a week. 2 points for the well-stocked kitchen. Full-time remote work automatically adds 22 points from the culture section**
+
+-   Recurring Bonus: **4 points**
+
+-   A well-stocked kitchen full of coffee, tea, and snacks. **1 point for each for a total of 2 points**
+
+-   The ability to move horizontally or vertically throughout the company. **3 points**
+
+-   Reimbursements for sports-related activities. Most companies give gym memberships, but I don't like going to the gym and prefer to spend my time playing sports. **3 points**
+
+## Learning (6 points)
+
+The perfect company would invest in their employees. The way I see it, this is a win-win for both the employee and the company. The employee improves their skill set, and the company gets a sharp engineer.
+
+-   Ability to work on side projects after work without any repercussions. **3 points**
+
+-   Access to resources such as online courses, conferences or even books. **2 points**
+
+-   Ability to work on non-work-related tasks for a few hours a week. Kind of like Google Fridays. **1 point**
+
+## Passion (5 points)
+
+Not only should I be passionate about the work I am doing, but I want to be around people who are also passionate about their work.
+
+-   I am passionate about the work. **3 points**
+
+-   People around me are passionate about their work. **2 points**
+
+## No Assholes Policy (4 points)
+
+I don't work with people who have ego trips or feel that others need to cater to their every whim and demand because they are more knowledgeable or in a higher position.
+
+## New Things to Work on (3 points)
+
+I just can't see myself being happy working on the same thing for a long time. I love game programming because I got to work on a different aspect of the game every so often.
+
+## Conclusion
+
+That's a total of 100 points. Maybe no job ticks all the boxes, but then again, perhaps there is.
+
+My current job scores **_79/100_**.
+
+How does your company rate on my dream job scale? Let me know.
+
+## Caveats
+
+-   I think it's important to mention that the point breakup or even the list changes over time. After all, the things that were important to me in my early twenties are very different from those that are important now. It will also likely change in the next 5-10 years.
+
+-   This is a very opinionated list, and what is vital for me might not be essential for you even if you are at the same stage in life.
+
+### Thanks
+
+-   Jen Miller for highlighting some important things I had not clarified in the initial post.
+
+-   Chris Greef for pointing out that the wording around the compensation points is ambiguous.

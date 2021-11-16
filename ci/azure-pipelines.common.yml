@@ -11,6 +11,8 @@ jobs:
           vmImage: 'ubuntu-latest'
 
       steps:
+          - bash: echo "##vso[build.updatebuildnumber]${{ parameters.message }}" # Update build number in Pipeline UI
+
           - checkout: self
             fetchDepth: 1
 
@@ -21,38 +23,33 @@ jobs:
 
           - task: Cache@2
             inputs:
-                key: '07Nov21 | yarn | "$(Agent.OS)" | yarn.lock'
-                restoreKeys: |
-                    07Nov21 | yarn | "$(Agent.OS)" | yarn.lock
+                key: '27Aug21 | yarn | "$(Agent.OS)" | node/yarn.lock'
+                restoreKeys: '27Aug21 | yarn | "$(Agent.OS)" | node/yarn.lock'
                 path: $(YARN_CACHE_FOLDER)
             displayName: Cache Yarn packages
 
-          - task: Cache@2
-            inputs:
-                key: '07Nov21 | gatsby | "$(Agent.OS)" | cache'
-                restoreKeys: |
-                    07Nov21 | gatsby | "$(Agent.OS)" | cache
-                path: $(GASTBY_CACHE_FOLDER)
-            displayName: Cache Gatsby Cache Folder
-
-          - task: Cache@2
-            inputs:
-                key: '07Nov21 | gatsby | "$(Agent.OS)" | public'
-                restoreKeys: |
-                    07Nov21 | gatsby | "$(Agent.OS)" | public
-                path: $(GASTBY_PUBLIC_FOLDER)
-            displayName: Cache Gatsby Public Folder
-
           - script: yarn install --frozen-lockfile
             displayName: 'Install dependencies'
+            workingDirectory : $(Build.SourcesDirectory)/node
 
-          - script: yarn build
-            displayName: 'Build Gatsby'
+          - bash: npx tailwind build -c ./tailwind.config.js -i ../src/$(PROJECT_FOLDER)/input/assets/_site.css -o ../src/$(PROJECT_FOLDER)/input/assets/styles.css
+            displayName: 'Compile Tailwind'
+            workingDirectory : $(Build.SourcesDirectory)/node
 
-          # prettier-ignore
+          - script: dotnet run --project ./src/$(PROJECT_FOLDER)/ --configuration Release
+            displayName: Build
+
+#          - task: DotNetCoreCLI@2
+#            inputs:
+#              command: test
+#              projects: '**/*Tests/*.csproj'
+#              arguments: '--configuration Release'
+#              publishTestResults: true
+
           - script: |
-              DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=public --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
+              DEPLOY_URL=`yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} ${{ parameters.deployScriptParams }} --dir=../output --json | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]'`
               # DEPLOY_URL="https://$DEPLOY_ID--ankursheel.netlify.com/"
               echo "##vso[task.setvariable variable=DEPLOY_URL;isOutput=true]$DEPLOY_URL"
             displayName: 'Deploy to Netlify'
             name: deployToNetlify
+            workingDirectory : $(Build.SourcesDirectory)/node
