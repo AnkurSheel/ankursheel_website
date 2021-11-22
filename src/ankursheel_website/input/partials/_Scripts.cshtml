@@ -1,3 +1,8 @@
 ﻿@model BaseModel
 
 <script src="@Model.Context.GetScript()"></script>
+@if (Model.Context.GetGoatCounterCode() != null)
+{
+    var url = $"https://{Model.Context.GetGoatCounterCode()}.goatcounter.com/count";
+    <script data-goatcounter="@url" async src="//gc.zgo.at/count.js"></script>
+}
