@@ -1,0 +1,22 @@
+﻿@using System.Net
+@model BaseModel
+
+@{
+    string url = Model.Document.GetPageUrl(false);
+    string text = $"{Uri.EscapeDataString(Model.Document.GetExcerpt())} via @{Uri.EscapeDataString(Model.Context.GetTwitterUserName())}";
+    string githubPath = $"AnkurSheel/ankursheel_website/blob/master/src/ankursheel_website/input/{Model.Document.Source.GetRelativeInputPath().ToString()}";
+}
+
+<aside class="hidden md:block">
+    @* <div class="flex flex-col gap-2"> *@
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=@url&text=@text" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=@url"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+        @* <div class="flex justify-center gap-x-5"> *@
+            @* <a href="https://twitter.com/search?q=@url" target="_blank" rel="noreferrer noopener">Discuss on Twitter</a> *@
+            @* <span class="self-center">•</span> *@
+            @* <a href="https://github.com/@githubPath" target="_blank" rel="noreferrer noopener">Edit on GitHub</a> *@
+        @* </div> *@
+    @* </div> *@
+</aside>

@@ -65,3 +65,19 @@
         @apply flex justify-end text-purple-500;
     }
 }
+
+@layer components {
+    .social-button{
+        @apply py-2 px-6 rounded-md !text-white hover:!no-underline;
+    }
+
+    .bg-social-twitter {
+        --tw-bg-opacity: 1;
+        background-color: rgba(85, 172, 238, var(--tw-bg-opacity));
+    }
+
+    .bg-social-linkedin {
+        --tw-bg-opacity: 1;
+        background-color: rgba(0, 119, 181, var(--tw-bg-opacity))
+    }
+}
