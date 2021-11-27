@@ -12,13 +12,9 @@ namespace ankursheel_website
     internal class Program
     {
         public static async Task<int> Main(string[] args)
-            => await Bootstrapper.Factory.CreateWeb(args)
-                .RemovePipelines()
+            => await Bootstrapper.Factory.InitStatiq(args)
                 .AddSetting(WebKeys.OutputPath, "../../output")
                 .AddSetting(WebKeys.CachePath, "../../cache")
-                .AddCommand<ResizeImage>()
-                .AddPipelines()
-                .AddServices()
                 .ConfigureServices(
                     services =>
                     {
