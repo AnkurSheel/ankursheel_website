@@ -1,0 +1,217 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - New Zealand Escapes: Tamaki Maori Village, Rotorua</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-tamaki-maori-village-rotorua"/>
+
+<meta itemProp="name" content="New Zealand Escapes: Tamaki Maori Village, Rotorua"/>
+<meta itemProp="description" content="What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-tamaki-maori-village-rotorua-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/new-zealand-escapes-tamaki-maori-village-rotorua"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="New Zealand Escapes: Tamaki Maori Village, Rotorua"/>
+<meta property="og:description" content="What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-tamaki-maori-village-rotorua-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-tamaki-maori-village-rotorua-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="New Zealand Escapes: Tamaki Maori Village, Rotorua"/>
+<meta name="twitter:description" content="What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-tamaki-maori-village-rotorua-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-tamaki-maori-village-rotorua-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">New Zealand Escapes: Tamaki Maori Village, Rotorua</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 05-Jan-2016</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/new-zealand" class="badge text-black bg-grey-light no-underline">New Zealand</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/oceania" class="badge text-black bg-grey-light no-underline">Oceania</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/travel" class="badge text-black bg-grey-light no-underline">travel</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>There is much more to Maori culture than watching the All Blacks do the Haka before a rugby match. Maori's are the original natives of New Zealand, or as they call it, Aotearoa.</p>
+<p>What better way to get an understanding of the Maori Culture than at a traditional Maori Village. The one we decided to go to was the Tamaki Maori Village in Rotorua.</p>
+<p>The evening started with a bus pickup from our hotel. Then we headed to the information centre and grabbed ourselves an information sheet. The information sheets were printed in a range of languages. Soon after, we were on our way to the village.</p>
+<p>We turned our bus into an imaginary Waka (Maori boat) for a brief period. Our driver told us that we needed to pick a Chief of our bus. Nobody was very keen to be the Chief of our bus, but I was determined not to be selected.</p>
+<p>We left the bus and followed the crowd towards a shelter, where all the other tourists were already gathered.</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-1.jpg" alt="Maori_Village-1"></p>
+<p>We were all looking at an opening in front of us, with some greenery and wooden structures to our left. We were all told the importance of standing still and not laughing during the ceremony. After some time, we heard the wails of the Maori's getting louder and closer. The idea of these ceremonies was initially to welcome new tribes.</p>
+<p>The warriors came out one by one chanting with weapons drawn, eyes as round as saucers and tongues darting in and out, as they demonstrated to their guests the fierceness of their spirits.</p>
+<p>The ceremony lasted around 10/15 minutes. This included one of the Chiefs being chosen to accept a peace offering (a branch).</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-2.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-3.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-4.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-5.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-6.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-7.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-8.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-9.jpg" alt=""></p>
+<p>We walked through one of the 3 entrances to the village and found that they led to the same path. We soon found ourselves in one of the groups being ushered to different village areas to learn more about this culture and gain some hands-on experience at the different whares (houses).</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-11.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-13.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-14.jpg" alt=""></p>
+<p>One of the interesting ones was with the sticks. Two ladies told us the importance of the sticks and showed us a routine of throwing them to each other and catching them. Next, we had larger sticks that some audience members had to catch in a circle.</p>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/EkWa5ovphs4" title="Games at Maori Village" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>
+<p>The other activity that I found interesting in the village was a brief learning of the Haka for all the men that wanted to. I tried and proved that I'm no dancer.</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-10.jpg" alt="Maori_Village-10"></p>
+<p>Finally, we all met back up near the hangi, a traditional Maori oven used for cooking the evening meal. While the food cooked, We were all shepherded into a Maori version of a theatre where we were treated to a 30-minute performance.</p>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/4WRIJ6bN7Ps" title="Performance at Maori Village" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>
+<p>The audience is then guided to the eating hall, with tables (each seating 6-8 people) surrounding the feast on display. We were seated with a British couple and had a pleasant conversation while enjoying the meal.</p>
+<p>There are not many options if you are vegetarian, but they did make a potato-filled patty for Gunjan. For others, there were options of chicken, fish and lamb.</p>
+<p>Towards the end of the evening, a singer begins to croon. You could see the young kids having a ball at this part of the evening.</p>
+<p>Our driver decided it would be a good idea to sing songs from your respective countries on the journey back home. Gunjan and I are no singers, and we were glad that we reached our hotel before our turn came. Although, it did seem as if all the others were having fun.</p>
+<p>I was impressed with the Maori Village Experience. The setup, along with the knowledge of the staff, makes for a great experience. The value for money is excellent.</p>
+<p>Have you been to a Maori Village? How was your experience? Let me know.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/new-zealand-escapes-tamaki-maori-village-rotorua&text=What%20better%20way%20to%20understand%20the%20Maori%20Culture%20than%20at%20the%20Tamaki%20Maori%20Village%20in%20Rotorua. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/new-zealand-escapes-tamaki-maori-village-rotorua"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

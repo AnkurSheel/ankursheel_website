@@ -1,0 +1,463 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Posts tagged as &quot;tutorial&quot;</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/tags/tutorial"/>
+
+<meta itemProp="name" content="Posts tagged as &quot;tutorial&quot;"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/tutorial"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Posts tagged as &quot;tutorial&quot;"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Posts tagged as &quot;tutorial&quot;"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Posts tagged as &quot;tutorial&quot;</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/add-estimated-reading-time-posts-statiq" class="text-center prose-2xl mb-4">How to add estimated Reading Time to Posts in Statiq</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq
+        </p>
+            <a href="/blog/add-estimated-reading-time-posts-statiq" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/calculate-reading-time" class="text-center prose-2xl mb-4">How to calculate reading time</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            A guide to calculating the reading time for a given document
+        </p>
+            <a href="/blog/calculate-reading-time" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/automatically-set-access-token-authenticated-requests-insomnia" class="text-center prose-2xl mb-4">How to automatically set the access token in Insomnia</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            How can you test a GraphQl endpoint accessible only to authorised users in Insomnia to test your requests (without jumping through hoops).
+        </p>
+            <a href="/blog/automatically-set-access-token-authenticated-requests-insomnia" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/react-component-draw-page-hooks-typescript" class="text-center prose-2xl mb-4">How to draw on a page using react hooks and typescript</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            Can we recreate the drawing interaction on DEV&#x27;s offline page as a React Component using Hooks and Typescript? Let&#x27;s find out
+        </p>
+            <a href="/blog/react-component-draw-page-hooks-typescript" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule" class="text-center prose-2xl mb-4">How to deploy a Gatsby site on a schedule with Azure Pipelines</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule
+        </p>
+            <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/deploy-gatsby-site-netlify-azure-pipelines" class="text-center prose-2xl mb-4">How to deploy a Gatsby site to Netlify using Azure Pipelines</a>
+        <div class="font-semibold text-center">5 min</div>
+        <p>
+            Deploying a gatsby site to Netlify has a few limits, resulting in my builds timing out. By using Azure Pipelines, the limits are no longer a problem
+        </p>
+            <a href="/blog/deploy-gatsby-site-netlify-azure-pipelines" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura" class="text-center prose-2xl mb-4">How to export highlights and annotations from a Kobo Aura</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file.
+        </p>
+            <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/full-width-you-tube-video-embed" class="text-center prose-2xl mb-4">Embed a YouTube video with 16:9 aspect ratio and full-width</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            How we can use CSS to display an iframe with 100% width and 16:9 aspect ratio so that we can display YouTube videos to be full-width with a 16:9 aspect ratio
+        </p>
+            <a href="/blog/full-width-you-tube-video-embed" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/automating-creation-of-new-blog-post" class="text-center prose-2xl mb-4">How to automate the creation of a new blog post</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it.
+        </p>
+            <a href="/blog/automating-creation-of-new-blog-post" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site" class="text-center prose-2xl mb-4">How to add an RSS feed with images to a Gatsby site</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site
+        </p>
+            <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/custom-type-definitions-for-java-script-dependencies" class="text-center prose-2xl mb-4">Create custom type definitions for JavaScript dependencies</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error
+        </p>
+            <a href="/blog/custom-type-definitions-for-java-script-dependencies" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/postman-ajax-endpoints-xsrf-tokens" class="text-center prose-2xl mb-4">Testing endpoints protected with an XSRF token in Postman</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            How can we test the endpoints using an anti-forgery token to protect us from XSRF(Cross-Site Request Forgery) attacks in Postman
+        </p>
+            <a href="/blog/postman-ajax-endpoints-xsrf-tokens" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/load-test-data-json-file-xunit-tests" class="text-center prose-2xl mb-4">How to load test data from a JSON file for xUnit tests</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            In this post, we add a custom attribute in xUnit to load test data from a JSON file.
+        </p>
+            <a href="/blog/load-test-data-json-file-xunit-tests" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/securing-git-commits-windows" class="text-center prose-2xl mb-4">A guide to securing git commits from tricking you on Windows</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            Did you know that you can check in code as anyone in your git repository by default? This article shows you how to prevent this problem by using a GUI.
+        </p>
+            <a href="/blog/securing-git-commits-windows" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/dynamic-programming-editlevenshtein-distance" class="text-center prose-2xl mb-4">Solve Edit(Levenshtein) distance with Dynamic Programming</a>
+        <div class="font-semibold text-center">7 min</div>
+        <p>
+            In this article, we will develop a Dynamic Programming solution to the Edit Distance problem.
+        </p>
+            <a href="/blog/dynamic-programming-editlevenshtein-distance" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/dynamic-programming-longest-common-subsequence" class="text-center prose-2xl mb-4">Solve Longest Common Subsequence with Dynamic Programming</a>
+        <div class="font-semibold text-center">5 min</div>
+        <p>
+            In this article, we will use the above steps to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem.
+        </p>
+            <a href="/blog/dynamic-programming-longest-common-subsequence" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/dynamic-programming-series-introduction" class="text-center prose-2xl mb-4">A guide to getting started with Dynamic Programming</a>
+        <div class="font-semibold text-center">7 min</div>
+        <p>
+            In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution.
+        </p>
+            <a href="/blog/dynamic-programming-series-introduction" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/filtering-google-analytics" class="text-center prose-2xl mb-4">How to filter yourself from showing up in Google Analytics</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress
+        </p>
+            <a href="/blog/filtering-google-analytics" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/noncopyable-objects" class="text-center prose-2xl mb-4">How to prevent the compiler from copying an object in cpp</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In this C&#x2B;&#x2B; tutorial, we see an easy way to prevent the compiler from making objects, i.e. non-copyable objects.
+        </p>
+            <a href="/blog/noncopyable-objects" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/installing-wordpress" class="text-center prose-2xl mb-4">How to setup WordPress locally: Installing WordPress</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The final post in the Testing WordPress Locally series deals with Installing WordPress on windows.
+        </p>
+            <a href="/blog/installing-wordpress" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/installing-phpmyadmin" class="text-center prose-2xl mb-4">How to setup WordPress locally: Installing phpMyAdmin</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The next post in the Testing WordPress Locally series deals with Installing phpMyAdmin on windows.
+        </p>
+            <a href="/blog/installing-phpmyadmin" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/installing-mysql" class="text-center prose-2xl mb-4">How to setup WordPress locally: Installing MySQL</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The third post in the series Testing WordPress Locally deals with installing MySQL on windows.
+        </p>
+            <a href="/blog/installing-mysql" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/installing-php" class="text-center prose-2xl mb-4">How to setup WordPress locally: Installing PHP</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In this part of the series, we will Install PHP on our local machine.
+        </p>
+            <a href="/blog/installing-php" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/installing-apache" class="text-center prose-2xl mb-4">Setup WordPress locally: Installing an Apache Web Server</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In the first part of the series, we will install Apache (webserver) on our machine.
+        </p>
+            <a href="/blog/installing-apache" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/testing-wordpress-locally-series" class="text-center prose-2xl mb-4">How to setup WordPress locally: Introduction</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud.
+        </p>
+            <a href="/blog/testing-wordpress-locally-series" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/memory-leak-woes" class="text-center prose-2xl mb-4">A guide to finding memory leaks using macros in C&#x2B;&#x2B;</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            Macro trickery to find the offending file(s) and line(s) causing Memory Leak(s) without using a commercial program.
+        </p>
+            <a href="/blog/memory-leak-woes" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/dll-basics" class="text-center prose-2xl mb-4">How to start using Dynamic-link libraries (DLL)</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This post deals with the basic information you need to know to begin using DLL&#x27;s.
+        </p>
+            <a href="/blog/dll-basics" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/setting-project-properties" class="text-center prose-2xl mb-4">Setting up the project properties for Game Engine Project</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            The next post in the series talks about setting the project properties to be persistent.
+        </p>
+            <a href="/blog/setting-project-properties" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/setting-project-directory-structure" class="text-center prose-2xl mb-4">How I structure my Game Engine project</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            In this post, I will cover the third-party libraries, project breakup, and current directory structure that I follow.
+        </p>
+            <a href="/blog/setting-project-directory-structure" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

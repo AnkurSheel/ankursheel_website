@@ -1,0 +1,225 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Increasing Productivity with No-Meeting Days</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days"/>
+
+<meta itemProp="name" content="Increasing Productivity with No-Meeting Days"/>
+<meta itemProp="description" content="How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/increasing-productivity-no-meeting-days-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Increasing Productivity with No-Meeting Days"/>
+<meta property="og:description" content="How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/increasing-productivity-no-meeting-days-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/increasing-productivity-no-meeting-days-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Increasing Productivity with No-Meeting Days"/>
+<meta name="twitter:description" content="How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/increasing-productivity-no-meeting-days-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/increasing-productivity-no-meeting-days-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Increasing Productivity with No-Meeting Days</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 03-Aug-2021</i>
+        <i class="font-bold">
+            Reading Time: 4 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/productivity" class="badge text-black bg-grey-light no-underline">productivity</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/ramblings" class="badge text-black bg-grey-light no-underline">ramblings</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/process" class="badge text-black bg-grey-light no-underline">process</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/company-culture" class="badge text-black bg-grey-light no-underline">company culture</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the original version <a href="https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n">here</a>.</em></p>
+<blockquote>
+<p>Have you ever been in a position where you are in meetings during the day, and then you code at night just to feel that you are getting things done? I know I have."</p>
+</blockquote>
+<p>In 2009, Paul Graham wrote an article about the <a href="http://www.paulgraham.com/makersschedule.html">maker vs manager schedule</a>. It articulates that meetings are disastrous when we are on the maker's schedule. When we attend many meetings, it is tough to focus on the task and get things done. In my case, even a single meeting can blow my whole afternoon.</p>
+<p>Most of us have two workdays in today's world - one on the manager's schedule and the other on the maker's schedule.</p>
+<p>In his article, Paul proposes using office hours and setting aside a time for meetings. But I struggled with this when acting as the team lead for one of the teams and found my day broken up by various meetings. After all, how do we tell our boss (and the rest of the business) that we have office hours and will only meet him/her/them during those? I think office hours works well when we are high enough on the totem pole.</p>
+<p>Since office hours are not viable for most of us, we can try the next best thing - blocking out chunks of time in our calendar for focus time. Blackout periods work well in most cases, but we still have to attend meetings and can't get stuck on a task for the whole day.</p>
+<p>Let us look at something that works a little better - A no-meeting day.</p>
+<h2 id="what-is-a-no-meeting-day">What is a No-Meeting Day?</h2>
+<p>A no-meeting day is a day for focused work. Essentially, it's a day in the week with no meetings so that we get uninterrupted time to do our job. This continuous focus time is perfect for deep work and more extensive projects. In addition, there is less context switching, so it's easier to achieve that magical state of flow.</p>
+<p>And if you are a manager, it also allows you to be a doer.</p>
+<h2 id="a-no-meeting-day-will-never-work-for-my-role">A No-meeting day will never work for my role.</h2>
+<p>Now some of you might be reading this and going -</p>
+<blockquote>
+<p>Yeah, it sounds great, and I would love to get in on that action, but it will never work for my role</p>
+</blockquote>
+<p>Some functions like Sales and Customer Success will require more collaboration than others.</p>
+<p>For these roles, it might be better to institute blackout periods where people can pick half a day each week where they are not expected to be in a meeting. Shared blackout periods can work well so that there is time to have meetings that involve multiple people or external stakeholders.</p>
+<p>Alternatively, we can also institute no meeting days just for internal meetings.</p>
+<h2 id="how-to-implement-no-meeting-days">How to implement no-meeting days?</h2>
+<p>Now that I have allayed your fears, you want to know how to implement them for yourself and your team.</p>
+<blockquote>
+<p>Patience, you must have my young Padawan</p>
+</blockquote>
+<p><strong>Step 1</strong>: The first step to a meeting-free day is to talk with your manager and get them on board. You can start with blackout periods if your manager is concerned and then move up to no-meeting days. Once you have a few blackout periods in your calendar for focus time, it is an easier sell to consolidate them into a single no-meeting day.</p>
+<p><strong>Step 2</strong>: Next, communicate with others about your availability on no meeting days. Have a plan for how or when you are available in case of work emergencies.</p>
+<p><strong>Step 3</strong>: The final step is to ensure that no meetings can be scheduled on your nominated no-meeting day. Create a recurring all-day event on your calendar that blocks others from scheduling time with you.</p>
+<p><strong>Step 4</strong>: Once you are happy with the trial, roll it out to the rest of the team.</p>
+<h2 id="common-pitfalls">Common Pitfalls</h2>
+<h3 id="getting-the-whole-team-to-buy-in-from-the-start">Getting the whole team to buy-in from the start</h3>
+<p>People make a big mistake and set themselves up for failure because they try to get the whole team to agree to try it from the outset. It's not hard to make space for a no-meeting day for a single person.</p>
+<h3 id="blocking-the-calendar-one-week-at-a-time">Blocking the calendar one week at a time</h3>
+<p>Making it recurring and not just a week by week addition makes maintaining the meeting free schedule easier.</p>
+<p>I prefer to set up a regular <strong>Out of Office</strong> event with a title of <strong><em>Focus Time</em></strong> and a message stating - <em>I am open to urgent meetings. Please slack me to get me to accept</em>.</p>
+<h2 id="be-flexible">Be Flexible</h2>
+<p>Meetings involve more than one person. Sometimes, we have to take a meeting on our no-meeting day because that is the only day someone else is available, or there is an urgent fire that we need to put out.</p>
+<blockquote>
+<p>Make exceptions when necessary but try hard to avoid them</p>
+</blockquote>
+<p>Having a no-meeting day does not mean that we don't get together with our co-workers or have spontaneous conversations.</p>
+<p><strong>Feel free to have them; Just don't schedule it!</strong></p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days&text=How%20can%20we%20implement%20no-meeting%20days%20in%20our%20workplaces%20so%20that%20people%20do%20not%20lose%20focus%20because%20of%20meetings%20and%20get%20uninterrupted%20time%20to%20do%20their%20job via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

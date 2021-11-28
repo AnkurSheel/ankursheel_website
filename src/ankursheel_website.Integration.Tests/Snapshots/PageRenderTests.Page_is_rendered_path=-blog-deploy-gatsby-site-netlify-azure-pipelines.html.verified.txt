@@ -1,0 +1,387 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to deploy a Gatsby site to Netlify using Azure Pipelines</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Deploying a gatsby site to Netlify has a few limits, resulting in my builds timing out. By using Azure Pipelines, the limits are no longer a problem"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/deploy-gatsby-site-netlify-azure-pipelines"/>
+
+<meta itemProp="name" content="How to deploy a Gatsby site to Netlify using Azure Pipelines"/>
+<meta itemProp="description" content="Deploying a gatsby site to Netlify has a few limits, resulting in my builds timing out. By using Azure Pipelines, the limits are no longer a problem"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/deploy-gatsby-site-netlify-azure-pipelines-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/deploy-gatsby-site-netlify-azure-pipelines"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to deploy a Gatsby site to Netlify using Azure Pipelines"/>
+<meta property="og:description" content="Deploying a gatsby site to Netlify has a few limits, resulting in my builds timing out. By using Azure Pipelines, the limits are no longer a problem"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/deploy-gatsby-site-netlify-azure-pipelines-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/deploy-gatsby-site-netlify-azure-pipelines-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to deploy a Gatsby site to Netlify using Azure Pipelines"/>
+<meta name="twitter:description" content="Deploying a gatsby site to Netlify has a few limits, resulting in my builds timing out. By using Azure Pipelines, the limits are no longer a problem"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/deploy-gatsby-site-netlify-azure-pipelines-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/deploy-gatsby-site-netlify-azure-pipelines-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to deploy a Gatsby site to Netlify using Azure Pipelines</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 03-Jan-2020</i>
+        <i class="font-bold">
+            Reading Time: 5 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/devops" class="badge text-black bg-grey-light no-underline">devops</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/gatsby" class="badge text-black bg-grey-light no-underline">Gatsby</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/azure-pipelines" class="badge text-black bg-grey-light no-underline">Azure pipelines</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Deploying a site to Netlify is super simple and has served me well so far. But, it has a few limits, which resulted in my builds failing after my site grew to its current size.</p>
+<ul>
+<li>a 15-minute timeout limit for builds</li>
+<li>the free tier has 300 free minutes in a month. In most cases, this is fine, but gatsby takes a fair amount of time to process images, and I was about to hit the limit.</li>
+</ul>
+<h2 id="first-attempt-cache-the-gatsby-folders">First Attempt - Cache the gatsby folders</h2>
+<p>For some time, I solved the issue by using the unofficial <a href="https://www.npmjs.com/package/gatsby-plugin-netlify-cache">gatsby-plugin-netlify-cache</a> plugin. The plugin uses an <a href="https://www.contentful.com/blog/2018/05/17/faster-static-site-builds-part-one-process-only-what-you-need/#caching-for-the-win">undocumented shared folder</a> to cache the <em>.cache</em> and <em>public</em> folders across builds.</p>
+<p>Unfortunately, this solution had 2 main issues.</p>
+<ol>
+<li>A clear cache and deploy site would fail.</li>
+<li>Since my site is image-heavy, I started reaching close to the limit again.</li>
+</ol>
+<h2 id="second-attempt-use-azure-pipelines">Second Attempt - Use Azure Pipelines</h2>
+<p>Azure Pipelines uses a YAML config file to build your project. We will use templates to have separate workflows for <em>pr_and _release</em> builds. Let's create 3 files:</p>
+<ol>
+<li><em>azure-pipelines.common.yaml</em>: The template file with the job to build the gatsby site and deploy to Netlify.</li>
+<li><em>azure-pipelines.pr.yaml</em>: The pipeline to run for PR(Pull Request) builds.</li>
+<li><em>azure-pipelines.ci.yaml</em>: The pipeline to run for Live builds.</li>
+</ol>
+<p>I have separate workflows for Live and PR builds because I do not want PR builds deployed to the live site.</p>
+<h3 id="common-job-to-build-gatsby-site">Common Job to Build Gatsby Site</h3>
+<p>In <em>azure-pipelines.common.yaml</em>, we create the job to build the gatsby site.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">    - job:</span> Build
+
+<span class="hljs-attr">      pool:</span>
+<span class="hljs-attr">          vmImage:</span> <span class="hljs-string">'ubuntu-latest'</span>
+
+<span class="hljs-attr">      steps:</span>
+<span class="hljs-attr">          - checkout:</span> self
+<span class="hljs-attr">            lfs:</span> <span class="hljs-literal">true</span>
+
+<span class="hljs-attr">          - task:</span> NodeTool@<span class="hljs-number">0</span>
+<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Install Node.js'</span>
+<span class="hljs-attr">            inputs:</span>
+<span class="hljs-attr">                versionSpec:</span> <span class="hljs-string">'10.x'</span>
+
+<span class="hljs-attr">          - script:</span> yarn install
+<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Install dependencies'</span>
+
+<span class="hljs-attr">          - script:</span> yarn build
+<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Build Gatsby'</span>
+</code></pre>
+<p>We name the job as <em>Build</em> and use the default <em>ubuntu-latest</em> image. This is followed by a series of steps.</p>
+<ol>
+<li><strong><em>Checkout</em></strong>: Check out the repo and download the files from <em>git-lfs</em>.</li>
+<li><strong><em>Install Node.js</em></strong>: Install Node 10.x.</li>
+<li><strong><em>Install dependencies</em></strong>: Execute <em>yarn install</em>.</li>
+<li><strong><em>Build Gatsby</em></strong>: Execute the <em>yarn build</em> script, which calls <em>gatsby build</em>.</li>
+</ol>
+<h3 id="live-builds">Live Builds</h3>
+<p>Let's add the trigger for live builds in <em>azure-pipelines.ci.yaml</em>.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">'Live'</span>
+
+<span class="hljs-attr">trigger:</span>
+<span class="hljs-attr">    batch:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">    branches:</span>
+<span class="hljs-attr">        include:</span>
+<span class="hljs-bullet">            -</span> master
+
+<span class="hljs-attr">pr:</span> none
+
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
+</code></pre>
+<ol>
+<li><strong><em>name</em></strong>: The name for this pipeline.</li>
+<li><strong><em>trigger</em></strong>: Conditions for running the pipeline when a push is made.
+<ol>
+<li><strong><em>batch: false</em></strong>: trigger the pipeline for each commit, i.e. disable batching builds.</li>
+<li><strong><em>branches</em></strong>: Include only the <em>master</em> branch, so the pipeline is triggered only for commits pushed to <em>master</em>.</li>
+</ol>
+</li>
+<li><strong><em>pr: none</em></strong>: Disable triggering the pipeline when a PR is opened or changes are pushed to an open PR.</li>
+<li><strong><em>jobs</em></strong>: The jobs to run.
+<ol>
+<li><strong><em>template</em></strong>: Use the job template created in <em>azure-pipelines.common.yml</em>.</li>
+</ol>
+</li>
+</ol>
+<h3 id="prpull-requests-builds">PR(Pull Requests) Builds</h3>
+<p>I also want a build to be triggered every time a PR is made against <em>master</em>.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">'PR $(System.PullRequest.PullRequestId)'</span>
+
+<span class="hljs-attr">trigger:</span>
+<span class="hljs-attr">    branches:</span>
+<span class="hljs-attr">        exclude:</span>
+<span class="hljs-bullet">            -</span> <span class="hljs-string">'*'</span>
+<span class="hljs-attr">pr:</span>
+<span class="hljs-attr">    autoCancel:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">    branches:</span>
+<span class="hljs-attr">        include:</span>
+<span class="hljs-bullet">            -</span> master
+
+<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
+</code></pre>
+<ol>
+<li><strong><em>name</em></strong>: The name for this pipeline.</li>
+<li><strong><em>trigger</em></strong>: Conditions for running the pipeline when a push is made.
+<ol>
+<li><strong><em>branches</em></strong>: Exclude all branches so that the build is not triggered for commits on any branch, including <em>master</em>.</li>
+</ol>
+</li>
+<li><strong><em>pr:</em></strong>: Conditions for running the pipeline when a PR is opened or changes pushed to an open PR.
+<ol>
+<li><strong><em>autoCancel</em></strong>: Additional pushes should not cancel in-progress runs.</li>
+<li><strong><em>include</em></strong>: Include only the <em>master</em> branch so that the pipeline is triggered only for PR's opened against <em>master</em>.</li>
+</ol>
+</li>
+<li><strong><em>jobs</em></strong>: The jobs to run.
+<ol>
+<li><strong><em>template</em></strong>: Use the job template created in <em>azure-pipelines.common.yml</em>.</li>
+</ol>
+</li>
+</ol>
+<p>At this point, you might be wondering about having 2 separate files for pr and Live builds. This will become important in the next section when we add the steps to deploy to Netlify.</p>
+<h3 id="deploying-to-netlify">Deploying to Netlify</h3>
+<p>To deploy to Netlify, we need a few variables passed to the template as parameters and then passed as flags to the Netlify deploy command.</p>
+<p>First, let's see what changes we need to make to the template <em>azure-pipelines.common.yml</em>. The updated lines are highlighted.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">parameters:</span>
+<span class="hljs-attr">    deployScriptParams:</span> <span class="hljs-string">''</span> <span class="hljs-comment"># defaults for any parameters that aren't specified</span>
+<span class="hljs-attr">    netlifySiteId:</span> <span class="hljs-string">'defaultID'</span>
+<span class="hljs-attr">    netlifyToken:</span> <span class="hljs-string">'defaultToken'</span>
+<span class="hljs-attr">    message:</span> <span class="hljs-string">''</span>
+
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">    - job:</span> Build_And_Deploy
+
+<span class="hljs-attr">      pool:</span>
+<span class="hljs-attr">          vmImage:</span> <span class="hljs-string">'ubuntu-latest'</span>
+
+<span class="hljs-attr">      steps:</span>
+          <span class="hljs-comment">#unchanged from before</span>
+
+<span class="hljs-attr">          - script:</span> yarn build
+<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Build Gatsby'</span>
+
+          <span class="hljs-comment"># prettier-ignore</span>
+<span class="hljs-attr">          - script:</span> yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} --message <span class="hljs-string">'$<span class="hljs-template-variable">{{ parameters.message }}</span>'</span> ${{ parameters.deployScriptParams }} --dir=public
+<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Deploy to Netlify'</span>
+</code></pre>
+<ol>
+<li><strong><em>parameters</em></strong>: The environment variables to pass as flags to the Netlify deploy command.
+<ol>
+<li><strong><em>deployScriptParams</em></strong>: Any additional parameters that should be passed to the deploy command.</li>
+<li><strong><em>netlifySiteId</em></strong>: The site ID for the Netlify site.</li>
+<li><strong><em>netlifyToken</em></strong>: The access token to authorize Azure Pipeline to deploy the build to Netlify.</li>
+<li><strong><em>message</em></strong>: The message to include in the deploy log.</li>
+</ol>
+</li>
+<li><strong><em>Deploy to Netlify</em></strong>: The Netlify deploy command takes the siteId, token, message and deployScriptParams as flags. We also set the dir flag to public so that the public folder is deployed.
+<ol>
+<li><strong><em># prettier-ignore</em></strong>: I have added this so that prettier does not try to break up the command into multiple lines.</li>
+</ol>
+</li>
+</ol>
+<p>Now we update <em>azure-piplelines.ci.yaml</em> for the live build.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-comment"># unchanged from before</span>
+<span class="hljs-attr">variables:</span>
+<span class="hljs-attr">    - template:</span> azure-pipelines.vars.yml
+
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
+<span class="hljs-attr">      parameters:</span>
+<span class="hljs-attr">          deployScriptParams:</span> <span class="hljs-string">'--prod'</span>
+<span class="hljs-attr">          netlifySiteId:</span> $(netlify.siteId)
+<span class="hljs-attr">          netlifyToken:</span> $(netlify.token)
+<span class="hljs-attr">          message:</span> <span class="hljs-string">'Live $(Build.SourceVersion) $(Build.SourceVersionMessage)'</span>
+</code></pre>
+<ol>
+<li><strong><em>variables</em></strong>: We set a template file to get the environment variables.</li>
+<li><strong><em>parameters</em></strong>: The parameters to be passed to the job template
+<ol>
+<li><strong><em>deployScriptParams</em></strong>: I pass the --prod flag for live builds, which tells Netlify to deploy the build to production.</li>
+<li><strong><em>netlifySiteId</em></strong>: The site ID from environment variables.</li>
+<li><strong><em>netlifyToken</em></strong>: The token from environment variables.</li>
+<li><strong><em>message</em></strong>: The message is created using the commit ID and the comment of the commit.</li>
+</ol>
+</li>
+</ol>
+<p>Next <em>azure-piplelines.pr.yaml</em> for the PR builds.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-comment"># unchanged from before</span>
+<span class="hljs-attr">variables:</span>
+<span class="hljs-attr">    - template:</span> azure-pipelines.vars.yml
+
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
+<span class="hljs-attr">      parameters:</span>
+<span class="hljs-attr">          netlifySiteId:</span> $(netlify.siteId)
+<span class="hljs-attr">          netlifyToken:</span> $(netlify.token)
+<span class="hljs-attr">          message:</span> <span class="hljs-string">'PR $(System.PullRequest.PullRequestNumber) $(System.PullRequest.SourceBranch) $(Build.SourceVersionMessage)'</span>
+</code></pre>
+<ol>
+<li><strong><em>variables</em></strong>: We set a template file to get the environment variables.</li>
+<li><strong><em>parameters</em></strong>: The parameters to be passed to the job template
+<ol>
+<li><strong><em>netlifySiteId</em></strong>: The site ID from environment variables.</li>
+<li><strong><em>netlifyToken</em></strong>: The token from environment variables.</li>
+<li><strong><em>message</em></strong>: The message is created using the Pull Request Number, Source branch and the comment of the commit.</li>
+</ol>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>By using Azure Pipelines, the Netlify limits are no longer a problem. We will see how we can add tests and run them against the deployed URL in a later post.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/deploy-gatsby-site-netlify-azure-pipelines&text=Deploying%20a%20gatsby%20site%20to%20Netlify%20has%20a%20few%20limits%2C%20resulting%20in%20my%20builds%20timing%20out.%20By%20using%20Azure%20Pipelines%2C%20the%20limits%20are%20no%20longer%20a%20problem via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/deploy-gatsby-site-netlify-azure-pipelines"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

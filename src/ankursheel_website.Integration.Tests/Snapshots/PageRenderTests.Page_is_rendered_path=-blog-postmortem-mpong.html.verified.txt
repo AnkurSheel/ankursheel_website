@@ -1,0 +1,208 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - A PostMortem of Mpong</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A post-mortem of the Pong clone that I made."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-mpong"/>
+
+<meta itemProp="name" content="A PostMortem of Mpong"/>
+<meta itemProp="description" content="A post-mortem of the Pong clone that I made."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postmortem-mpong-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/postmortem-mpong"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="A PostMortem of Mpong"/>
+<meta property="og:description" content="A post-mortem of the Pong clone that I made."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/postmortem-mpong-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/postmortem-mpong-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="A PostMortem of Mpong"/>
+<meta name="twitter:description" content="A post-mortem of the Pong clone that I made."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/postmortem-mpong-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/postmortem-mpong-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">A PostMortem of Mpong</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 09-Dec-2013</i>
+        <i class="font-bold">
+            Reading Time: 2 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/games" class="badge text-black bg-grey-light no-underline">games</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/post-mortem" class="badge text-black bg-grey-light no-underline">post-mortem</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>The reasons I decided to stop working on Pong before it was completely polished include</p>
+<ul>
+<li>I had been working on MPong for so long that it was tough to find the motivation to continue working on it.</li>
+<li>Although I was continuously adding features to the engine, I was not building up my portfolio.</li>
+<li>I wanted to test my engine with another game and see how much the code is reusable.</li>
+</ul>
+<h2 id="what-went-right">What Went Right</h2>
+<ul>
+<li><strong>Engine Components</strong>: Starting with Pong as my first game made me concentrate on the engine part. I managed to create a fair amount of the modules I had initially aimed for. Most of the modules were reusable.</li>
+<li><strong>Setup</strong>: I managed to develop a relatively painless way of setting up new projects.</li>
+<li><strong>Refactoring</strong>: I was pretty happy with how the codebase was at that point (all things considered). The fact that I was continuously refactoring the code was beneficial.</li>
+<li><strong>Commenting</strong>: I managed to comment a lot of my classes while programming.</li>
+<li><strong>Using a Repository</strong>: Having a repository for my code meant that I could revert any bugs that I introduced without having to waste too much time.</li>
+</ul>
+<h2 id="what-went-wrong">What Went Wrong</h2>
+<ul>
+<li><strong>Missing Engine Components</strong>: I did not get a chance to work on the physics and networking modules.</li>
+<li><strong>Switching to DirectX 11</strong>: In the middle of the project, I decided to switch to DirectX 11 from DirectX 9. I ended up fixing many bugs that got introduced because of the difference in the way things are handled between the two.</li>
+<li><strong>Engine Code as part of Project</strong>: The engine setup and repository was closely tied to the Pong Project. I should have taken out the engine components and made them into a separate repository and solution to be easily reusable.</li>
+<li><strong>Not Setting a Deadline</strong>: The fact that I did not have a deadline in place meant that I took my own sweet time to make the game. This has resulted in Mpong being in development for a very long time, without me having to show much for it.</li>
+<li><strong>Switching to an Obsolete Technology</strong>: I decided to use DirectSound for my SoundEngine. It was after I had implemented a fair amount of code that someone pointed out to me that I should have used XAudio instead</li>
+</ul>
+<h2 id="things-i-wish-i-had-implemented">Things I wish I had Implemented</h2>
+<ul>
+<li>​Physics and Networking modules</li>
+<li>Support for 2D game elements.</li>
+<li>High Score Table</li>
+<li>Better Graphics</li>
+<li>Restart Option</li>
+<li>Pause on Minimizing</li>
+</ul>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/postmortem-mpong&text=A%20post-mortem%20of%20the%20Pong%20clone%20that%20I%20made. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/postmortem-mpong"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to automate the creation of a new blog post</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/automating-creation-of-new-blog-post"/>
+
+<meta itemProp="name" content="How to automate the creation of a new blog post"/>
+<meta itemProp="description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/automating-creation-of-new-blog-post-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/automating-creation-of-new-blog-post"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to automate the creation of a new blog post"/>
+<meta property="og:description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/automating-creation-of-new-blog-post-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/automating-creation-of-new-blog-post-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to automate the creation of a new blog post"/>
+<meta name="twitter:description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/automating-creation-of-new-blog-post-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/automating-creation-of-new-blog-post-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to automate the creation of a new blog post</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 12-Sep-2019</i>
+        <i class="font-bold">
+            Reading Time: 4 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/devops" class="badge text-black bg-grey-light no-underline">devops</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/gatsby" class="badge text-black bg-grey-light no-underline">Gatsby</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/typescript" class="badge text-black bg-grey-light no-underline">typescript</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>MDX and gatsby are great for building a blog. But it's a pain to create all the skeleton stuff every time I want to create a new blog post.</p>
+<h2 id="steps-to-create-a-new-blog-post">Steps to create a new blog post</h2>
+<ol>
+<li>Create a new folder under <em>content/posts///</em></li>
+<li>Create a new <em>index.mdx</em> file in the above folder.</li>
+<li>Copy the frontmatter from a template file or an existing post.</li>
+<li>Modify most of the properties for the new post.</li>
+<li>If the post has an image gallery, then
+<ol>
+<li>create a subfolder with the name <em>images</em>.</li>
+<li>copy a <em>data.json</em> file from an existing folder and update it.</li>
+</ol>
+</li>
+</ol>
+<p>Here is an example of the frontmatter for this post</p>
+<pre><code class="language-yaml hljs"><span class="hljs-meta">---</span>
+<span class="hljs-attr">author:</span> <span class="hljs-string">'Ankur'</span>
+<span class="hljs-attr">date:</span> <span class="hljs-string">'2019-09-12'</span>
+<span class="hljs-attr">slug:</span> <span class="hljs-string">'automating-creation-of-new-blog-post'</span>
+<span class="hljs-attr">title:</span> <span class="hljs-string">'Automating the creation of a new blog post'</span>
+<span class="hljs-attr">excerpt:</span> <span class="hljs-string">'Creating a new blogpost in markdown and gatsby has quite a bit of skeleton stuff. Lets see how to automate it.'</span>
+<span class="hljs-attr">tags:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">'tutorial'</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">'gatsby'</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">'typescript'</span>
+<span class="hljs-attr">featuredImage:</span> <span class="hljs-string">''</span>
+<span class="hljs-attr">featuredImagePosition:</span> <span class="hljs-string">''</span>
+<span class="hljs-meta">---</span>
+</code></pre>
+<blockquote>
+<p>Wouldn't it be nice if it could all be generated by a single command?</p>
+</blockquote>
+<p>Now you might ask whether it's worth spending the few extra hours to automate something that takes just a few minutes of my time.</p>
+<p>You might be correct in saying that it doesn't save me much time, and there is not much of a context switch when I am starting a new post. But it's a pain creating this manually every time, and it's also error-prone.</p>
+<blockquote>
+<p>Let's Automate all the things</p>
+</blockquote>
+<h2 id="libraries-we-will-be-using">Libraries we will be using</h2>
+<p>Install the following packages using <em>yarn</em> or <em>npm</em>.</p>
+<ul>
+<li><a href="https://github.com/sindresorhus/slugify">slugify</a>: Slugify the title automatically</li>
+<li><a href="http://npm.im/inquirer">inquirer</a>: CLI get user input for title, excerpt, tags etc</li>
+<li><a href="https://github.com/alexcrist/json-to-pretty-yaml">jsToYaml</a>: Convert json to YAML</li>
+<li><a href="https://github.com/substack/node-mkdirp">mkdirp</a>: helper to create directories</li>
+<li><a href="https://github.com/prettier/prettier">prettier</a>: <em>Optional</em>. Code formatter to format the generated files using a prettier config.</li>
+</ul>
+<h2 id="lets-build-the-script">Let's build the script</h2>
+<h3 id="helper-functions">Helper functions</h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> padLeft0 = <span class="hljs-function">(<span class="hljs-params">n: number</span>) =&gt;</span> n.toString().padStart(<span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
+
+<span class="hljs-keyword">const</span> fromRoot = <span class="hljs-function">(<span class="hljs-params">...p: string[]</span>) =&gt;</span> path.join(__dirname, <span class="hljs-string">'..'</span>, ...p);
+
+<span class="hljs-keyword">const</span> formatDate = <span class="hljs-function">(<span class="hljs-params">d: <span class="hljs-built_in">Date</span></span>) =&gt;</span> <span class="hljs-string">`<span class="hljs-subst">${d.getFullYear()}</span>-<span class="hljs-subst">${padLeft0(d.getMonth() + <span class="hljs-number">1</span>)}</span>-<span class="hljs-subst">${padLeft0(d.getDate())}</span>`</span>;
+
+<span class="hljs-keyword">const</span> listify = <span class="hljs-function">(<span class="hljs-params">a: string</span>) =&gt;</span> (a &amp;&amp; a.trim().length ? a.split(<span class="hljs-string">','</span>).map(<span class="hljs-function">(<span class="hljs-params">s</span>) =&gt;</span> s.trim()) : <span class="hljs-string">''</span>);
+</code></pre>
+<h3 id="use-inquirer-to-get-details-from-the-user">Use Inquirer to get details from the user</h3>
+<p>In my case, I am getting the <em>title</em>, <em>description</em>, <em>tags</em> and <em>whether the post has images</em>.</p>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> prompt = <span class="hljs-keyword">await</span> inquirer.prompt([
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'title'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Title'</span>,
+    },
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'description'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Excerpt/Description'</span>,
+    },
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'tags'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Tags/Keywords (comma separated)'</span>,
+    },
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'list'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'images'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Post has image gallery (yes/no)'</span>,
+        <span class="hljs-attr">choices</span>: [
+            { <span class="hljs-attr">name</span>: <span class="hljs-string">'Yes'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'Y'</span> },
+            { <span class="hljs-attr">name</span>: <span class="hljs-string">'No'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'N'</span> },
+        ],
+    },
+]);
+
+<span class="hljs-keyword">const</span> { title, description, tags, images } = prompt;
+</code></pre>
+<h3 id="create-the-folder-structure">Create the folder structure</h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+<span class="hljs-keyword">const</span> slug = slugify(title);
+
+<span class="hljs-keyword">const</span> destination = fromRoot(<span class="hljs-string">'content/posts'</span>, <span class="hljs-string">`<span class="hljs-subst">${date.getFullYear().toString()}</span>`</span>, <span class="hljs-string">`<span class="hljs-subst">${formatDate(date)}</span>-<span class="hljs-subst">${slug}</span>`</span>);
+
+mkdirp.sync(destination);
+</code></pre>
+<p>The date is set to the current date, and the slug is automatically created from the title.</p>
+<p>The folder is created with a consistent structure.</p>
+<h3 id="create-the-mdx-file-with-the-frontmatter">Create the MDX file with the frontmatter</h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> yaml = jsToYaml.stringify({
+    <span class="hljs-attr">author</span>: <span class="hljs-string">'Ankur Sheel'</span>,
+    <span class="hljs-attr">date</span>: formatDate(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()),
+    slug,
+    title,
+    <span class="hljs-attr">excerpt</span>: description,
+    <span class="hljs-attr">tags</span>: listify(tags),
+    <span class="hljs-attr">featuredImage</span>: <span class="hljs-string">''</span>,
+    <span class="hljs-attr">featuredImagePosition</span>: <span class="hljs-string">''</span>,
+    <span class="hljs-attr">imageFacebook</span>: <span class="hljs-string">'./image-facebook.png'</span>,
+    <span class="hljs-attr">imageTwitter</span>: <span class="hljs-string">'./image-twitter.png'</span>,
+});
+<span class="hljs-keyword">const</span> markdown = prettier.format(<span class="hljs-string">`---\r\n<span class="hljs-subst">${yaml}</span>\r\n---\r\n`</span>, {
+    ...require(<span class="hljs-string">'../.prettierrc'</span>), <span class="hljs-comment">// eslint-disable-line global-require</span>
+    trailingComma: <span class="hljs-string">'es5'</span>,
+    <span class="hljs-attr">endOfLine</span>: <span class="hljs-string">'crlf'</span>,
+    <span class="hljs-attr">parser</span>: <span class="hljs-string">'mdx'</span>,
+});
+
+fs.writeFileSync(path.join(destination, <span class="hljs-string">'index.mdx'</span>), markdown);
+</code></pre>
+<p>So what's happening in the above code snippet</p>
+<ul>
+<li><strong><em>Lines 1-12</em></strong>: Create a JSON object and use <em>jsToYaml</em> to convert it to a <em>YAML</em> object.</li>
+<li><strong><em>Lines 13-18</em></strong>: Use prettier to get a formatted string of the <em>yaml</em> object and wrap it with <em>---</em> so that it's in a format that the MDX expects.</li>
+</ul>
+<p>Some of the properties are hardcoded, such as <em>author</em>, <em>imageFacebook</em>, <em>imageTwitter</em>, and the rest are auto-generated.</p>
+<p>The file name is also consistently named <em>index.mdx</em> and lives in the created folder.</p>
+<h3 id="create-the-images-folder-and-data.json-if-required">Create the images folder and data.json <em>(if required)</em></h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">if</span> (images === <span class="hljs-string">'Y'</span>) {
+    <span class="hljs-keyword">const</span> data = {
+        <span class="hljs-attr">gallery</span>: [{ <span class="hljs-attr">image</span>: <span class="hljs-string">`./<span class="hljs-subst">${slug}</span>-1.jpg`</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">''</span> }],
+    };
+
+    <span class="hljs-keyword">const</span> json = prettier.format(<span class="hljs-built_in">JSON</span>.stringify(data, <span class="hljs-literal">null</span>, <span class="hljs-number">4</span>), {
+        ...require(<span class="hljs-string">'../.prettierrc'</span>), <span class="hljs-comment">// eslint-disable-line global-require</span>
+        trailingComma: <span class="hljs-string">'es5'</span>,
+        <span class="hljs-attr">endOfLine</span>: <span class="hljs-string">'crlf'</span>,
+        <span class="hljs-attr">parser</span>: <span class="hljs-string">'json'</span>,
+    });
+
+    <span class="hljs-keyword">const</span> imagesDestination = path.join(destination, <span class="hljs-string">'images'</span>);
+    mkdirp.sync(imagesDestination);
+
+    fs.writeFileSync(path.join(imagesDestination, <span class="hljs-string">'data.json'</span>), json);
+}
+</code></pre>
+<p>Let's see what's happening here.</p>
+<ul>
+<li><strong><em>Line 1</em></strong>: Create the images folder only if the user indicated that this post will have an image gallery.</li>
+<li><strong><em>Lines 2-4</em></strong>: Create the basic JSON object with a single entry for <em>image</em>.</li>
+<li><strong><em>Lines 6-11</em></strong>: Use prettier to get a formatted string of the <em>json</em> object.</li>
+<li><strong><em>Lines 13-14</em></strong>: Create the images folder.</li>
+<li><strong><em>Line 16</em></strong>: Create the <em>data.json</em> file.</li>
+</ul>
+<h2 id="other-notes">Other Notes</h2>
+<ul>
+<li>It might be better/faster to write the generator using <a href="https://github.com/amwmedia/plop">plop</a> so that I have a single template file that can be used. Plop also supports modifying a file which might be helpful if I have many blog posts and want to change the frontmatter structure.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Setting up a new blog post can take a few minutes of my time and can be prone to errors, but with this script, I just need to call the script, enter a few values specific to the post, and I am ready to start writing.</p>
+<p>You can see the whole script <a href="https://github.com/AnkurSheel/ankursheel_website/blob/master/scripts/createNewBlogpost.ts">here</a>.</p>
+<p>Have you automated something in your projects? What modifications would you make to this script? Let me know.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/automating-creation-of-new-blog-post&text=Creating%20a%20new%20blogpost%20in%20markdown%20and%20gatsby%20has%20quite%20a%20bit%20of%20boilerplate.%20Let%20us%20see%20how%20to%20automate%20it. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/automating-creation-of-new-blog-post"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

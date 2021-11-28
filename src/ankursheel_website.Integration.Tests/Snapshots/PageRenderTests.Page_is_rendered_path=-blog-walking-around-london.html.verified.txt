@@ -1,0 +1,206 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Walking Around in London</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/walking-around-london"/>
+
+<meta itemProp="name" content="Walking Around in London"/>
+<meta itemProp="description" content="In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/walking-around-london-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/walking-around-london"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Walking Around in London"/>
+<meta property="og:description" content="In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/walking-around-london-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/walking-around-london-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Walking Around in London"/>
+<meta name="twitter:description" content="In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/walking-around-london-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/walking-around-london-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Walking Around in London</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 29-Nov-2013</i>
+        <i class="font-bold">
+            Reading Time: 4 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/europe" class="badge text-black bg-grey-light no-underline">Europe</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/travel" class="badge text-black bg-grey-light no-underline">travel</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/united-kingdom" class="badge text-black bg-grey-light no-underline">United Kingdom</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>After a bit of walking from the tube station to the Tower of London, I reached a long line of other tourists. Don't people have anything better to do than make me stand in long lines? Well, after standing for an hour in the line in which, by the way, I heard a lot of gibberish because nobody was speaking in Hindi or English ( at least nothing I could understand) and paying about 17 pounds for all that fun, I finally got my ticket.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-2.jpg" alt="Front View of Tower Of London"></p>
+<p>After another long line, I finally entered the Tower of London. As soon as I entered, this massive guy in a redcoat and booming voice beckoned us for an overview of the place. He had a really awesome moustache. I think I will go for that look the next time.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-1.jpg" alt="Model of Tower of London"></p>
+<p>Anyway, he led us to the chapel, and here I am wondering when did I sign up for church :) Half an hour later, after hearing the names of probably all the famous and infamous people imprisoned/buried in the Tower Of London, we were finally left to wander independently.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-4.jpg" alt="Suit of Armor"></p>
+<p>My memory is a little rusty, but I can remember that it was fun walking around in the tower and seeing the inscriptions made by the prisoners, the weapons of yore, their defences etc.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-3.jpg" alt="Guard"></p>
+<p>In some of the outside crevasses, there were some wax statues of guards. At least, that's what I thought initially until one of them needed a break and moved his gun to a more comfortable position. His shift was probably getting over because I managed to see a smaller version of changing the guard. I say a smaller version because only 1 guard got replaced.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-5.jpg" alt="Posing Raven"></p>
+<p>The pseudo highlight - I got some excellent shots of ravens. A couple of them even posed for the camera. How sporting of them. <em>Wrong highlight</em></p>
+<p><img src="/assets/images/posts/walking-around-london/London-6.jpg" alt="The Crown Jewels"></p>
+<p>The actual highlight - The replicas of the crown jewels and the Kohinoor diamond. The British have plundered so much gold and jewellery from other nations it's not even funny. Of course, they disagree :) I thought of mentioning it but then decided that I am too young to die ;) With a lot of security, armed gates and (un)surprisingly walking, I got to see the famous crown jewels. What a dazzling sight.</p>
+<p>The biggest bummer was that they don't let you take pictures in most places, so you guys will have to go for yourself to see if I am telling the truth or just yanking your chain.</p>
+<p>Somehow, the timepiece on my hand caught my eye. After shaking it a lot, I finally concluded that I had spent more than half a day. If I wanted to visit any other place, I would have to postpone my plan to steal the jewels. Oh well, maybe next time. Only if I felt hungry at lunchtime like other people I would have noticed that it was way past lunchtime.</p>
+<p>Next on my list was the St. Pauls Cathedral. I can just see the shocked faces. "Ankur going to a cathedral. Where did the sunrise come from? " To clarify, I would like to say I met a gorgeous girl and went with her but in reality, I went because it's supposed to have stunning architecture. Its also believed to have an excellent service for the religious among you. Aaah, the nods of understanding.</p>
+<p>It didn't look too far on the map, so I decided to take the <em>gyarah no ki bus</em>.</p>
+<p>A mile or so in, I noticed that the street names were on the opposite side of the map, so I retraced my steps. I think I should have taken advice from Joey(from the TV series Friends) and stood on the map to see if I needed to go left or right.</p>
+<p>Unfortunately, this was before smartphones and cheap GPS devices, so I reached the cathedral after a really long walk. Yay, you say. Not so fast. It was closed. Ironically, I had spent all my time trying to find my way out of the tower. Though I did see a throng of people coming out after the service.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-7.jpg" alt="Trafalgar Square"></p>
+<p>I wasn't going to go back and be laughed at for just seeing 1 place the whole day, so I started towards Trafalgar Square with the map in hand. A nice walk along the Thames, and I was at my destination. Very beautiful and lots of people. An excellent place to come with friends or that special someone.</p>
+<p>Since I was alone, I didn't spend too much time there, just clicked a couple of snaps and was off to meet the queen for tea. After all, that's why I had skipped lunch.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-8.jpg" alt="Statue at Buckingham Palace"></p>
+<p>London seems to be a walkers paradise. I Reached Buckingham place, but, unfortunately, the queen was also running late, and I didn't feel like waiting.</p>
+<p><img src="/assets/images/posts/walking-around-london/London-9.jpg" alt="London Eye"></p>
+<p>It was already 7, so I decided to walk to the London Eye. Over there, I finally grabbed a hot dog and took the tube back home. Nope, didn't go on the London Eye.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/walking-around-london&text=In%20this%20travelogue%20of%20London%2C%20I%20visit%20the%20Tower%20of%20London%2C%20Trafalgar%20Square%20and%20Buckingham%20Palace. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/walking-around-london"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

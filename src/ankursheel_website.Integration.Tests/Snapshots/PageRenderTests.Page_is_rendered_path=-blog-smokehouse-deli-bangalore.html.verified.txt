@@ -1,0 +1,210 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - A review of SmokeHouse Deli, Bangalore</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A restaurant review of SmokeHouse Deli in Bangalore."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/smokehouse-deli-bangalore"/>
+
+<meta itemProp="name" content="A review of SmokeHouse Deli, Bangalore"/>
+<meta itemProp="description" content="A restaurant review of SmokeHouse Deli in Bangalore."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/smokehouse-deli-bangalore-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/smokehouse-deli-bangalore"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="A review of SmokeHouse Deli, Bangalore"/>
+<meta property="og:description" content="A restaurant review of SmokeHouse Deli in Bangalore."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/smokehouse-deli-bangalore-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/smokehouse-deli-bangalore-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="A review of SmokeHouse Deli, Bangalore"/>
+<meta name="twitter:description" content="A restaurant review of SmokeHouse Deli in Bangalore."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/smokehouse-deli-bangalore-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/smokehouse-deli-bangalore-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">A review of SmokeHouse Deli, Bangalore</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 25-Nov-2013</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/reviews" class="badge text-black bg-grey-light no-underline">reviews</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Since its inception in Bangalore, we had been planning to go to Smoke House Deli but did not get a chance until recently.</p>
+<p>We had already been left high and dry a few days back because we forgot to make the reservations in time. This time around, Gunjan decided not to take any chances. Armed with a reservation(for four), we headed to Smoke House Deli for dinner at the start of the week.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-2.jpg" alt="Our table"></p>
+<p>This gleaming white building is enclosed by a picket fence, teeming with plants and garden chairs.</p>
+<p>Since there was a slight nip in the air, we decided to it inside and were quickly shown to our table by the extremely courteous staff. We opted for tap water and were pleasantly surprised to find that it had been steeped with lime and mint leaves.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-3.jpg" alt="Kiwi, Melon, Jasmine, Lemonade cooler"></p>
+<p>We decided to skip the alcohol and hence ordered the Watermelon Mint Juice and the Kiwi, Melon, Jasmine, Lemonade cooler for a change. The cooler was incredibly refreshing after a long day at work, and I would be as happy as a clam to have it again on a warm summers day.</p>
+<p>For appetizers, we ordered the Cottage Cheese Skewers and the Lamb Kibbeh. While we were waiting for the appetizers, the staff brought assorted pieces of bread to our table.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-4.jpg" alt="Cottage Cheese Skewers"></p>
+<p>The cottage cheese in the skewers was really soft. However, I felt it to be a little lacking in the marination. I would have been happier if they had provided us with a mint (chutney) dip.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-5.jpg" alt="The Lamb Kibbeh"></p>
+<p>The Lamb Kibbeh, on the other hand, was cooked to perfection and was accompanied with the queso(cheese) dip peppered with garlic and chillies.</p>
+<p>You know the powers that maybe are pushing you to have brinner(Breakfast for Dinner) when the restaurant offers an All-Day Breakfast menu. Gunjan was eyeing the Spinach and Ricotta Ravioli while Anuradha decided to try the Tomato Polenta with Grilled Vegetables and Pesto Cream. Dhruv gave in to the temptation and ordered the Mild English Cheddar Omelet and a side of Breakfast Bacon. I decided to try their Bacon Wrapped Tenderloin with Burnt Butter Hollandaise and Grilled Vegetables.</p>
+<p>The dishes took some time to make it to our table, but the staff ensured that there was bread on our table while we were waiting.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-6.jpg" alt="The Mild English Cheddar Omelet."></p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-7.jpg" alt="Breakfast Bacon"></p>
+<p>The omelette was really soft, and you must try them, especially if you decide to come here for breakfast. I did not particularly enjoy the bacon as it was chewy and not crispy and crunchy.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-8.jpg" alt="Spinach and Ricotta Ravioli"></p>
+<p>The ravioli was cooked perfectly with a generous amount of filling. The sauce was not too creamy, and the addition of olives was a nice touch.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-9.jpg" alt="Tomato Polenta with Grilled Vegetables and Pesto Cream"></p>
+<p>I did not like the polenta, which I suspect was mainly because the tomato was in the base instead of the sauce.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-10.jpg" alt="Bacon Wrapped Tenderloin with Burnt Butter Hollandaise and Grilled Vegetables"></p>
+<p>The tenderloin was a little too rubbery for me. It was a real letdown, which was a shame because the hollandaise and the grilled vegetables would have been a great accompaniment with a well-made tenderloin dish.</p>
+<p>Even though all of us were stuffed by this point, passing up on the desert did not even cross our minds. Gunjan had wanted to try a Pannacotta ever since she saw it on one of the Masterchef shows. The moment we entered the restaurant, she saw that SHD had a pannacotta and that too a blueberry one. She knew what she was having for dessert. She had gone ahead and preordered it before even ordering the drinks and appetizers, lest it they run out by the time we got around to dessert. We finished our meal with a White Chocolate and Orange Crème Brulee, Blueberry Pannacotta and the Flourless Chocolate Fudge cake.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-11.jpg" alt="White Chocolate and Orange Crème Brulee"></p>
+<p>The crème Brulee was near perfect, and the crisp on top was especially lovely.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-13.jpg" alt="Blueberry-Pannacota"> The Blueberry Pannacotta was sublime (Gunjan’s words, not mine, since I didn’t even get to taste it) with a generous helping of blueberries.</p>
+<p><img src="/assets/images/posts/smokehouse-deli-bangalore/Smokehouse-Deli-Bangalore-12.jpg" alt="Flourless Chocolate Fudge cake"></p>
+<p>The Flourless Chocolate Fudge cake was absolutely flawless. The ice cream that came with it was rich and creamy. All in all, all of us were glad we didn’t skip dessert.</p>
+<p>I would recommend making reservations as this place was decently crowded, even for a Monday evening. Although the dishes are on the expensive side, the portions are generous. The staff is extremely courteous. We plan to come back soon to try their burgers and sandwiches.</p>
+<p><strong>Address:</strong> 1209, Opposite Staples, 100 Feet Road, Indiranagar</p>
+<p><strong>Phone:</strong> 0805200899</p>
+<p><strong>Cuisine:</strong> Continental, European</p>
+<p><strong>Accept Cards:</strong> Yes</p>
+<p><strong>Parking:</strong> Valet Available</p>
+<p><strong>Price for 2:</strong> Approx. INR 2000</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/smokehouse-deli-bangalore&text=A%20restaurant%20review%20of%20SmokeHouse%20Deli%20in%20Bangalore. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/smokehouse-deli-bangalore"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

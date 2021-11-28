@@ -1,0 +1,328 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Setting up the project properties for Game Engine Project</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="The next post in the series talks about setting the project properties to be persistent."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/setting-project-properties"/>
+
+<meta itemProp="name" content="Setting up the project properties for Game Engine Project"/>
+<meta itemProp="description" content="The next post in the series talks about setting the project properties to be persistent."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/setting-project-properties-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/setting-project-properties"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Setting up the project properties for Game Engine Project"/>
+<meta property="og:description" content="The next post in the series talks about setting the project properties to be persistent."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/setting-project-properties-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/setting-project-properties-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Setting up the project properties for Game Engine Project"/>
+<meta name="twitter:description" content="The next post in the series talks about setting the project properties to be persistent."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/setting-project-properties-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/setting-project-properties-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Setting up the project properties for Game Engine Project</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 27-Nov-2013</i>
+        <i class="font-bold">
+            Reading Time: 2 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/game-engine" class="badge text-black bg-grey-light no-underline">game engine</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Now that we have decided on the basic directory structure and dependencies that each project will have, we will set the project properties. I prefer to do this at the project level so that the properties are persistent, and I don't have to set them every time I download the project. The steps are based on Visual Studio 2010, but you should be able to adapt them to a different IDE.</p>
+<h2 id="setting-up-the-main-exe-project">Setting up the Main Exe Project</h2>
+<ul>
+<li><p>Create a Win 32 Project and delete all the files except for stdafx.h, stdafx.cpp.</p>
+</li>
+<li><p>Create a new folder called Source and move the above files there (I prefer all my source files in one main directory.</p>
+</li>
+<li><p>In the property settings for the project, perform the following steps</p>
+<ul>
+<li>For Both Release and Debug Modes
+<ul>
+<li>In the tab C/C++ -&gt; General -&gt; Additional Include Directories add</li>
+<li>....\Engine\Source\Base\Includes</li>
+<li>....\Engine\Source\Utilities\Includes</li>
+<li>....\Engine\Source\GameBase\Includes</li>
+<li>..\Game\Includes</li>
+</ul>
+</li>
+<li>For Debug Mode
+<ul>
+<li>In the tab Debugging -&gt; Working Directory add
+<ul>
+<li>....\Debug\</li>
+</ul>
+</li>
+<li>In the tab Debugging -&gt; Target Name add
+<ul>
+<li>$(ProjectName)_D</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; General -&gt; Additional Library Directories add
+<ul>
+<li>....\Debug\</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; Input -&gt; Additional Dependencies add
+<ul>
+<li>Utilities_D.lib</li>
+<li>Base_D.lib</li>
+<li>Game_D.lib</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For Release Mode
+<ul>
+<li>In the tab Debugging -&gt; Working Directory add
+<ul>
+<li>....\bin\</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; General -&gt; Additional Library Directories add
+<ul>
+<li>....\bin\</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; Input -&gt; Additional Dependencies add
+<ul>
+<li>Utilities.lib</li>
+<li>Base.lib</li>
+<li>Game.lib</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="setting-up-the-dlls">Setting up the DLL's</h2>
+<p>I will explain how to set up one of the lib projects, which links to an extern library. Properties for all the other projects can be set in the same way by looking at the dependencies from the <a href="setting-project-directory-structure">previous tutorial</a></p>
+<ul>
+<li>Create a Win 32 Project but change the Application Type to DLL and delete all the files except for stdafx.h, stdafx.cpp <em>(For tutorial purposes we will be setting up the Utilities project).</em></li>
+<li>Create a new folder called Source and move the above files in there.</li>
+<li>In the property settings for the project perform the following steps
+<ul>
+<li>For Both Release and Debug Modes
+<ul>
+<li>In the tab C/C++ -&gt; General -&gt; Additional Include Directories add
+<ul>
+<li>Includes
+<ul>
+<li>..\Base\Includes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; General -&gt; Additional Library Directories add
+<ul>
+<li>....\extern\Lib\Zlib</li>
+<li>....\extern\Lib\TinyXml\VS2010</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For Debug Mode
+<ul>
+<li>In the tab Debugging -&gt; Working Directory add
+<ul>
+<li>....\Debug\</li>
+</ul>
+</li>
+<li>In the tab Debugging -&gt; Target Name add
+<ul>
+<li>$(ProjectName)_D</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; General -&gt; Additional Library Directories add
+<ul>
+<li>......\Debug\</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; Input -&gt; Additional Dependencies add
+<ul>
+<li>Base_D.lib</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For Release Mode
+<ul>
+<li>In the tab Debugging -&gt; Working Directory add
+<ul>
+<li>....\bin\</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; General -&gt; Additional Library Directories add
+<ul>
+<li>......\bin\</li>
+</ul>
+</li>
+<li>In the tab Linker -&gt; Input -&gt; Additional Dependencies add
+<ul>
+<li>Base.lib</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li><p>To point to the DirectX directory, we can use the visual studio macro $(DXSDK_DIR)\Include.</p>
+</li>
+<li><p>I use the suffix _D to distinguish between debug and release builds.</p>
+</li>
+<li><p>For the most part, only the Include folder should be added in the additional include directories.</p>
+</li>
+</ul>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This finishes the initial setup. Since I am unsure how much detail I should get into why I set up my projects this way, I will be happy to answer any questions in the comments.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/setting-project-properties&text=The%20next%20post%20in%20the%20series%20talks%20about%20setting%20the%20project%20properties%20to%20be%20persistent. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/setting-project-properties"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

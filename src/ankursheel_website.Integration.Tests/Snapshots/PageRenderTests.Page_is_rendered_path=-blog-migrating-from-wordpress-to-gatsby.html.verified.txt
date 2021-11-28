@@ -1,0 +1,274 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Why and How I migrated my website from WordPress to Gatsby</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby"/>
+
+<meta itemProp="name" content="Why and How I migrated my website from WordPress to Gatsby"/>
+<meta itemProp="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Why and How I migrated my website from WordPress to Gatsby"/>
+<meta property="og:description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Why and How I migrated my website from WordPress to Gatsby"/>
+<meta name="twitter:description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Why and How I migrated my website from WordPress to Gatsby</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 29-Aug-2019</i>
+        <i class="font-bold">
+            Reading Time: 5 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/devops" class="badge text-black bg-grey-light no-underline">devops</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/gatsby" class="badge text-black bg-grey-light no-underline">Gatsby</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/wordpress" class="badge text-black bg-grey-light no-underline">Wordpress</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/website-migration" class="badge text-black bg-grey-light no-underline">website migration</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><h2 id="my-blogging-journey">My Blogging Journey</h2>
+<p>I started blogging in 2008 with a free Blogspot account. If you are wondering what I am talking about, Blogspot was the free blogging platform provided by Google.</p>
+<p>But it was not until 2014 that I decided to get my domain and have more control over the content and structure of the blog. Enter self-hosting. At that time, WordPress was probably the most popular service, and I moved to a self-hosted blog leveraging all the power of WordPress.</p>
+<h2 id="reasons-for-moving-away-from-wordpress">Reasons for moving away from WordPress</h2>
+<p>There were a few reasons that the WordPress solution was not working for me anymore. In no particular order,</p>
+<ul>
+<li>Slow
+<ul>
+<li>Let's face it, shared hosting does not make for a fast site. Also, WordPress is itself sluggish, and the various plugins I had added were not helping.</li>
+</ul>
+</li>
+<li>Cost
+<ul>
+<li>Most hosting platforms have a heavily discounted first-year plan, after which the price rises astronomically. This resulted in me having to migrate my site every year to a new platform. A few providers made it difficult to cancel the plan and get back the data unless you did it a month in advance. It was getting harder to justify the expense of 100+ USD. Even the cheapest option would easily set me back by 50-60 USD.</li>
+</ul>
+</li>
+<li>Degraded Experience in writing posts
+<ul>
+<li>With the release of the new generation editor and having to do everything with content blocks, I felt like I was spending more time than I felt was required to create a new post.</li>
+<li>I did not want to log in to the site every time I wanted to create a new post or work on an existing draft.</li>
+</ul>
+</li>
+<li>Programming Language that I don't use anywhere else
+<ul>
+<li>I never enjoyed the process of writing PHP to make modifications. The few custom modifications that I made on the site felt like a chore. The fact that I could never see myself using PHP anywhere else probably did not help either.</li>
+</ul>
+</li>
+</ul>
+<h2 id="why-gatsby">Why Gatsby</h2>
+<p>Recently, it has become easier to have a relatively cheap solution for hosting static content by using a static site generator. There are quite a few options out there.</p>
+<p>The first that comes to mind is <a href="https://pages.github.com/">Github pages</a>, which comes nicely integrated with <a href="https://jekyllrb.com/">Jekyll</a>, which is a static website generator. Although it ticked 3 of the 4 boxes above, I did not feel it was the ideal solution for me mainly because the development language was Ruby, another language I couldn't see myself using anywhere else.</p>
+<p>It was a similar story with Hugo, which uses Go.</p>
+<p>Just when it seemed that I would have to resign myself to use Github Pages, I found out about <a href="https://gatsbyjs.org/">Gatsby</a>, which is based on Javascript. I have been using Typescript increasingly at work, so this seemed like the perfect solution.</p>
+<p>Let's see how it stacks up against my concerns from the previous section.</p>
+<ul>
+<li><del>Slow</del>
+<ul>
+<li>Gatsby sites are fast. Blazingly fast.</li>
+</ul>
+</li>
+<li><del>Cost</del> Netlify is awesome.- It's free to host it on <a href="http://www.netlify.com/">Netlify</a>. You can't beat free. It requires almost no setup, and every time I push to master, a new version of the site is deployed.</li>
+<li><del>Degraded Experience of writing posts</del>
+<ul>
+<li>It supports markdown and MDX, which means I can write and edit the posts in any text editor and anywhere. I can also embed react components.</li>
+</ul>
+</li>
+<li><del>Programming Language that I don't use anywhere else</del>
+<ul>
+<li>It's built on the <strong>JAM</strong>stack (<strong>J</strong>avascript <strong>A</strong>PI <strong>M</strong>arkup). All the custom tooling I want to do uses ReactJS, GraphQL, JavaScript/Typescript and CSS. I am using all of these at work, so I can easily transfer the learnings from one place to another.</li>
+</ul>
+</li>
+</ul>
+<h3 id="other-advantages">Other Advantages</h3>
+<ul>
+<li>Build reusable components and use them to construct views.</li>
+<li>Hot Reloading and code-splitting are built-in.</li>
+<li>Can easily be configured to use Typescript.</li>
+<li>A bunch of plugins and starters (both official and unofficial).</li>
+<li>Support for CSS-in-JS.</li>
+<li>Responsive and optimized images.</li>
+<li>No reloads between pages.</li>
+<li>Gatsby detects what links are on the page and prefetches the content.</li>
+<li>Support for MDX which means I can embed React components into the posts.</li>
+</ul>
+<h2 id="my-migration-process">My migration process</h2>
+<p>It's also not difficult to move your blog from WordPress to Gatsby. I will give you the basics of what I did if you also want to make the switch.</p>
+<ul>
+<li>Download the XML from Wordpress using the "Tools-&gt; Export" section.</li>
+<li>Use the <a href="https://github.com/thomasf/exitwp">ExitWP</a> or <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">Wordpress-to-Hugo</a> tool to convert the posts to markdown.</li>
+<li>Download all the images and other content from the server.</li>
+<li>Find a Gatsby start starter so that it's easy to get started.</li>
+<li>Add Git LFS as some of my posts are image-heavy.</li>
+<li>Connect to Netlify and set up automatic deploys.</li>
+<li>The one I used was written in Javascript, so I had to migrate the javascript to Typescript and a few more plugins to enable Typescript. Also, change styling options to use CSS-in-JS.</li>
+<li>Update styling, colours and layout.</li>
+<li>Update the starter so that all the blog content is under "/blog/".</li>
+<li>Add a redirect rule as I decided to remove the date from the URLs.</li>
+<li>Add the converted markdown.
+<ul>
+<li>Fix indent and other issues.</li>
+<li>Build missing react components depending on the post content.</li>
+</ul>
+</li>
+</ul>
+<h2 id="you-said-it-was-easy-to-move-from-wordpress-to-gatsby.but-i-dont-see-all-of-your-posts.did-you-lie">You said it was easy to move from WordPress to gatsby. But I don't see all of your posts. Did you lie?</h2>
+<p>Depending on when you read this post, you might notice that many posts seem to be missing. At the very least, it doesn't seem as if I have been blogging for so many years. The main reason for this is that the original blog had a lot of varied content.</p>
+<p>I have decided to move some of it away to a different blog. For example, I am moving the book reviews to <a href="https://www.discoveriesinbookland.com/">Discoveries in Bookland</a>. Some of it might not even make it to this blog because of the limited value it adds.</p>
+<p>I have taken this opportunity to revisit what content I want to show.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Although it's an ongoing process, I am happy with how the migration is progressing. <a href="https://www.ankursheel.com/">my blog</a> is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.</p>
+<p>I will be adding more posts related to things I had to go hunting for on google. If you would like to know more about something specific, let me know.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby&text=For%20most%20of%20the%20time%2C%20I%20have%20been%20blogging%2C%20I%20have%20been%20on%20WordPress.%20What%20motivated%20me%20to%20migrate%20my%20site%20to%20Gatsby%2C%20and%20how%20did%20I%20move%20the%20site via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Posts tagged as &quot;New Zealand&quot;</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/tags/new-zealand"/>
+
+<meta itemProp="name" content="Posts tagged as &quot;New Zealand&quot;"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/new-zealand"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Posts tagged as &quot;New Zealand&quot;"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Posts tagged as &quot;New Zealand&quot;"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Posts tagged as &quot;New Zealand&quot;</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/video-bungee-jump-queenstown" class="text-center prose-2xl mb-4">Video: Bungee Jump in Queenstown</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            A short video of my bungee jump in Queenstown.
+        </p>
+            <a href="/blog/video-bungee-jump-queenstown" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-photo-essay-milford-sound" class="text-center prose-2xl mb-4">New Zealand Escapes: Photo Essay - Milford Sound</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            When it rains in Milford Sound, the rainfall makes hundreds of waterfalls which, combined with the rainbows, make for a mystical sight.
+        </p>
+            <a href="/blog/new-zealand-escapes-photo-essay-milford-sound" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-tranzalpine-express" class="text-center prose-2xl mb-4">New Zealand Escapes: KiwiRail - TranzAlpine Express</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            The Tranzalpine Express is perhaps the most scenic train ride in New Zealand and an excellent alternative to driving to see the country.
+        </p>
+            <a href="/blog/new-zealand-escapes-tranzalpine-express" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-photo-essay-mount-maunganui" class="text-center prose-2xl mb-4">New Zealand Escapes: Photo Essay - Mount Maunganui</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The views from the Mount Maunganui summit tends to leave one breathless. Or is it because of the exertion of walking along a steep track? Decide for yourself
+        </p>
+            <a href="/blog/new-zealand-escapes-photo-essay-mount-maunganui" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-tauranga" class="text-center prose-2xl mb-4">New Zealand Escapes: Tauranga</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            Tauranga is a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports
+        </p>
+            <a href="/blog/new-zealand-escapes-tauranga" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-waitomo-blackwater-rafting" class="text-center prose-2xl mb-4">New Zealand Escapes: Waitomo Blackwater Rafting</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            There&#x27;s more than one way to see the glowworms in New Zealand&#x27;s Waitomo Caves. Our choice Waitomo Blackwater Rafting.
+        </p>
+            <a href="/blog/new-zealand-escapes-waitomo-blackwater-rafting" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-waiotapu-thermal-wonderland" class="text-center prose-2xl mb-4">New Zealand Escapes: Waiotapu Thermal Wonderland</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            Wai-o-tapu, whimsically named as the Waiotapu Thermal Wonderland, is a stunning geothermal area near Rotorua.
+        </p>
+            <a href="/blog/new-zealand-escapes-waiotapu-thermal-wonderland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-tamaki-maori-village-rotorua" class="text-center prose-2xl mb-4">New Zealand Escapes: Tamaki Maori Village, Rotorua</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua.
+        </p>
+            <a href="/blog/new-zealand-escapes-tamaki-maori-village-rotorua" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-hobbiton-matamata" class="text-center prose-2xl mb-4">New Zealand Escapes: Hobbiton, Matamata</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            A highlight for LOTR fans is a tour of the Shire at Hobbiton. This has been one of the places I have wanted to visit since we moved to New Zealand.
+        </p>
+            <a href="/blog/new-zealand-escapes-hobbiton-matamata" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-auckland-seaplanes" class="text-center prose-2xl mb-4">New Zealand Escapes: Auckland Seaplanes</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            It is an amazing feeling to take off and land in the water with Auckland Seaplanes. We expected to experience Auckland from above and were not disappointed
+        </p>
+            <a href="/blog/new-zealand-escapes-auckland-seaplanes" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-northland-part-2" class="text-center prose-2xl mb-4">New Zealand Escapes: Northland - Part 2</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            We reach Cape Reinga just in time for the sunset. On our way back, we check out the 90 mile beach and KawaKawa.
+        </p>
+            <a href="/blog/new-zealand-escapes-northland-part-2" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-northland-part-1" class="text-center prose-2xl mb-4">New Zealand Escapes: Northland - Part 1</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            For our very next escape, we travel through Northland to the the very tip of New Zealand - the place where the Tasman Sea meets the mighty Pacific Ocean.
+        </p>
+            <a href="/blog/new-zealand-escapes-northland-part-1" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-massey-strawberry-picking-auckland" class="text-center prose-2xl mb-4">New Zealand Escapes: Massey Strawberry Picking, Auckland</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Red, juicy strawberries are best eaten as soon as they&#x27;ve been picked. One of the easiest ways to do this is to get them at your local strawberry picking farm
+        </p>
+            <a href="/blog/new-zealand-escapes-massey-strawberry-picking-auckland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-iskcon-temple-auckland" class="text-center prose-2xl mb-4">New Zealand Escapes: Iskcon Temple, Auckland</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            From the beaches and islands to a place of worship. A photo essay of the Isckon temple in Auckland.
+        </p>
+            <a href="/blog/new-zealand-escapes-iskcon-temple-auckland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-piha-beach" class="text-center prose-2xl mb-4">New Zealand Escapes: Piha Beach</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            A travelogue of our visit to Piha beach - One of the most famous beaches on the west coast of New Zealand.
+        </p>
+            <a href="/blog/new-zealand-escapes-piha-beach" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-rangitoto-island" class="text-center prose-2xl mb-4">New Zealand Escapes: Rangitoto Island</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            To experience the beauty, a ferry trip to Rangitoto Island is a must-do for anyone new to Auckland city
+        </p>
+            <a href="/blog/new-zealand-escapes-rangitoto-island" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/diwali-auckland-2014" class="text-center prose-2xl mb-4">Photo Essay: Diwali in Auckland</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            This is a  series of photographs taken at the Diwali Festival organised by the Auckland Council.
+        </p>
+            <a href="/blog/diwali-auckland-2014" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Route Planner: US Landmarks Waypoints</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints"/>
+
+<meta itemProp="name" content="Route Planner: US Landmarks Waypoints"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Route Planner: US Landmarks Waypoints"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Route Planner: US Landmarks Waypoints"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Route Planner: US Landmarks Waypoints</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            <p>List of way points for USA landmarks Route planner</p>
+<ul>
+<li><p>USS Alabama, Battleship Parkway, Mobile, AL</p>
+</li>
+<li><p>Grand Canyon National Park, Arizona</p>
+</li>
+<li><p>Toltec Mounds, Scott, AR</p>
+</li>
+<li><p>San Andreas Fault, San Benito County, CA</p>
+</li>
+<li><p>Cable Car Museum, 94108, 1201 Mason St, San Francisco, CA 94108</p>
+</li>
+<li><p>Pikes Peak, Colorado</p>
+</li>
+<li><p>The Mark Twain House &amp; Museum, Farmington Avenue, Hartford, CT</p>
+</li>
+<li><p>New Castle Historic District, Delaware</p>
+</li>
+<li><p>White House, Pennsylvania Avenue Northwest, Washington, DC</p>
+</li>
+<li><p>Cape Canaveral, FL</p>
+</li>
+<li><p>Okefenokee Swamp Park, Okefenokee Swamp Park Road, Waycross, GA</p>
+</li>
+<li><p>Craters of the Moon National Monument &amp; Preserve, Arco, ID</p>
+</li>
+<li><p>Lincoln Home National Historic Site Visitor Center, 426 South 7th Street, Springfield, IL</p>
+</li>
+<li><p>West Baden Springs Hotel, West Baden Avenue, West Baden Springs, IN</p>
+</li>
+<li><p>Terrace Hill, Grand Avenue, Des Moines, IA</p>
+</li>
+<li>
+<ol type="A" start="3">
+<li>
+<ol type="A" start="23">
+<li>Parker Carousel Museum, South Esplanade Street, Leavenworth, KS</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Mammoth Cave National Park, Mammoth Cave Pkwy, Mammoth Cave, KY</p>
+</li>
+<li><p>French Quarter, New Orleans, LA</p>
+</li>
+<li><p>Acadia National Park, Maine</p>
+</li>
+<li><p>Maryland State House, 100 State Cir, Annapolis, MD 21401</p>
+</li>
+<li><p>USS Constitution, Boston, MA</p>
+</li>
+<li><p>Olympia Entertainment, Woodward Avenue, Detroit, MI</p>
+</li>
+<li><p>Fort Snelling, Tower Avenue, Saint Paul, MN</p>
+</li>
+<li><p>Vicksburg National Military Park, Clay Street, Vicksburg, MS</p>
+</li>
+<li><p>Gateway Arch, Washington Avenue, St Louis, MO</p>
+</li>
+<li><p>Glacier National Park, West Glacier, MT</p>
+</li>
+<li><p>Ashfall Fossil Bed, Royal, NE</p>
+</li>
+<li><p>Hoover Dam, NV</p>
+</li>
+<li><p>Omni Mount Washington Resort, Mount Washington Hotel Road, Bretton Woods, NH</p>
+</li>
+<li><p>Congress Hall, Congress Place, Cape May, NJ 08204</p>
+</li>
+<li><p>Carlsbad Caverns National Park, Carlsbad, NM</p>
+</li>
+<li><p>Statue of Liberty, Liberty Island, NYC, NY</p>
+</li>
+<li><p>Wright Brothers National Memorial Visitor Center, Manteo, NC</p>
+</li>
+<li><p>Fort Union Trading Post National Historic Site, Williston, North Dakota 1804, ND</p>
+</li>
+<li><p>Spring Grove Cemetery, Spring Grove Avenue, Cincinnati, OH</p>
+</li>
+<li><p>Chickasaw National Recreation Area, 1008 W 2nd St, Sulphur, OK 73086</p>
+</li>
+<li><p>Columbia River Gorge National Scenic Area, Oregon</p>
+</li>
+<li><p>Liberty Bell, 6th Street, Philadelphia, PA</p>
+</li>
+<li><p>The Breakers, Ochre Point Avenue, Newport, RI</p>
+</li>
+<li><p>Fort Sumter National Monument, Sullivan's Island, SC</p>
+</li>
+<li><p>Mount Rushmore National Memorial, South Dakota 244, Keystone, SD</p>
+</li>
+<li><p>Graceland, Elvis Presley Boulevard, Memphis, TN</p>
+</li>
+<li><p>The Alamo, Alamo Plaza, San Antonio, TX</p>
+</li>
+<li><p>Bryce Canyon National Park, Hwy 63, Bryce, UT</p>
+</li>
+<li><p>Shelburne Farms, Harbor Road, Shelburne, VT</p>
+</li>
+<li><p>Mount Vernon, Fairfax County, Virginia</p>
+</li>
+<li><p>Hanford Site, Benton County, WA</p>
+</li>
+<li><p>Lost World Caverns, Lewisburg, WV</p>
+</li>
+<li><p>Taliesin, County Road C, Spring Green, Wisconsin</p>
+</li>
+<li><p>Yellowstone National Park, WY 82190</p>
+</li>
+</ul>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

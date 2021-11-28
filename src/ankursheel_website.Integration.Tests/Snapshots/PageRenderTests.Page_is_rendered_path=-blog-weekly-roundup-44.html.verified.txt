@@ -1,0 +1,250 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Weekly Roundup 44</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-44"/>
+
+<meta itemProp="name" content="Weekly Roundup 44"/>
+<meta itemProp="description" content="This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-44-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/weekly-roundup-44"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Weekly Roundup 44"/>
+<meta property="og:description" content="This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-44-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-44-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Weekly Roundup 44"/>
+<meta name="twitter:description" content="This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-44-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-44-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Weekly Roundup 44</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 08-Aug-2021</i>
+        <i class="font-bold">
+            Reading Time: 4 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/weekly-roundup" class="badge text-black bg-grey-light no-underline">weekly roundup</a>
+            </div>
+    </div>
+</div>
+
+<!-- markdownlint-disable no-duplicate-header --><html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<h2 id="my-13-year-old-has-an-800-phone"><a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone">My 13-year-old has an $800 phone</a></h2>
+<p>Buying a phone is expensive, especially if you are a 13-year-old who wants an iPhone. <strong>Ruth</strong> shares a story about how her daughter could contribute 50% to an $800 iPhone purchase in 2 months.</p>
+<p><quote quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps" author="Ruth"></quote></p>
+<p>This article shows how we can teach our children the habit of saving while also teaching them it's OK to spend money they have budgeted.</p>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li>Teach your child to save/invest a percentage of every dollar they earn.</li>
+<li>For expensive purchases, agree to pay half the amount.</li>
+<li>For massive targets, break them into smaller digestible chunks by using a "savings tracker".</li>
+<li>Look at employment opportunities available to them, and if it needs the help of an adult, offer to help if they are willing to work.</li>
+<li>For a kid, who have all their needs taken care of, it is the best time to teach them the habit of saving a percentage of their income.</li>
+</ul>
+<p><a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone">Link to Article</a></p>
+<h2 id="do-i-need-a-financial-advisor"><a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/">Do I Need a Financial Advisor</a></h2>
+<p>How do we know if we need a financial advisor? <strong>Ramit Sethi</strong> explains the criteria for needing a financial advisor and why most people don't need one.</p>
+<p><quote quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us" author="Ramit Sethi"></quote></p>
+<h3 id="key-takeaways-1">Key Takeaways</h3>
+<ul>
+<li>We need an advisor only if we have over $1 million in investable assets, have a complex financial situation, need a second set of eyes or a behavioural coach.</li>
+<li>Get a fee-only advisor who is a fiduciary, meaning they are legally required to put our best interests first.</li>
+<li>Reach out to at least 10 advisors and set up calls with 5.</li>
+</ul>
+<p><a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/">Link to Article</a></p>
+<h2 id="how-to-learn-stuff-quickly"><a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/">How To Learn Stuff Quickly</a></h2>
+<p>It is easy to get stuck either in tutorial hell or reinvent every wheel when learning new things. <strong>Josh Comeau</strong> shares a few tips on how he has been able to pick up new skills quickly.</p>
+<p><quote quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another" author="Josh Comeau"></quote></p>
+<h3 id="key-takeaways-2">Key Takeaways</h3>
+<ul>
+<li>In the beginning, focus on guided learning. Once we are comfortable with the fundamentals, we should spend more time building interesting things and seeing tutorials only when encountering new problems.</li>
+<li>A tutorial fade is effective, but we are building the same things over and over. Basically, after following a tutorial, you try to repeat it without looking at the tutorial.</li>
+<li>We can add additional functionality to the tutorial project.</li>
+<li>We can build a similar project to the tutorial project.</li>
+<li>By publishing what we learn, we can uncover gaps in our mental model.</li>
+</ul>
+<p><a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/">Link to Article</a></p>
+<h2 id="when-it-pays-to-choose-microservices"><a href="https://blog.typeable.io/posts/2021-07-19-microservices.html">When it Pays to Choose Microservices</a></h2>
+<p>Microservices are extremely popular, with a lot of big companies adopting them. But when is it worth switching over to microservices? <strong>Victoriia Zaripova</strong> outlines the pros and cons of developing a microservice-based solution.</p>
+<p><quote quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores" author="Victoriia Zaripova"></quote></p>
+<h3 id="key-takeaways-3">Key Takeaways</h3>
+<ul>
+<li>If microservices don't solve the business tasks, this is a waste of time and money.</li>
+<li>Don't use microservices for a new solution.</li>
+<li>The minimum pool for one microservice is a team of six to nine persons. One team should support a maximum of two microservices.</li>
+<li>Consider using a microservice when
+<ul>
+<li>there are critical requirements for the application's resistance to loads and/or support of integration with external services</li>
+<li>the business requires significant acceleration of development.</li>
+<li>it's necessary to use a heterogeneous technology stack.</li>
+<li>different points of the application require different rates of changes in various points of the application.</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://blog.typeable.io/posts/2021-07-19-microservices.html">Link to Article</a></p>
+<h2 id="the-nine-states-of-design"><a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85">The Nine States of Design</a></h2>
+<p>When designing UI, we tend to focus on the ideal state. <strong>Vince Speelman</strong> shares his list of the 9 different states that we should plan for to create a better experience for users who hit the unhappy path.</p>
+<p><quote quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone" author="Vince Speelman"></quote></p>
+<h3 id="key-takeaways-4">Key Takeaways</h3>
+<ul>
+<li>The different states that we should consider when building UI
+<ul>
+<li>Nothing state</li>
+<li>Loading</li>
+<li>None</li>
+<li>One</li>
+<li>Some</li>
+<li>Too many</li>
+<li>Incorrect</li>
+<li>Correct</li>
+<li>Done</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85">Link to Article</a></p>
+<hr>
+<p>Hope you enjoy reading these articles as much as I did.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-44&text=This%20weeks%20roundup%20contains%20articles%20from%20Ruth%2C%20Ramit%20Sethi%2C%20Josh%20Comeau%2C%20Victoriia%20Zaripova%20and%20Vince%20Speelman via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/weekly-roundup-44"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

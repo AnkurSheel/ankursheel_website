@@ -1,0 +1,745 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - All Articles</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog"/>
+
+<meta itemProp="name" content="All Articles"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="All Articles"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="All Articles"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">All Articles</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+    <h2>2021(24)</h2>
+        <div>
+            <a href="/blog/implement-graqhql-subscriptions-hotchocolate-redis" class="mb-4">How do I implement Graphql subscriptions in HotChocolate with Redis</a> - November 11, 2021
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-46" class="mb-4">Weekly Roundup 46</a> - November 07, 2021
+        </div>
+        <div>
+            <a href="/blog/move-commit-between-repositories" class="mb-4">How to move a commit between repositories</a> - November 04, 2021
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-45" class="mb-4">Weekly Roundup 45</a> - October 30, 2021
+        </div>
+        <div>
+            <a href="/blog/change-author-multiple-git-commits" class="mb-4">How to change the author of multiple Git commits</a> - October 28, 2021
+        </div>
+        <div>
+            <a href="/blog/team-name" class="mb-4">What&#x27;s in a team name</a> - October 21, 2021
+        </div>
+        <div>
+            <a href="/blog/add-estimated-reading-time-posts-statiq" class="mb-4">How to add estimated Reading Time to Posts in Statiq</a> - October 14, 2021
+        </div>
+        <div>
+            <a href="/blog/calculate-reading-time" class="mb-4">How to calculate reading time</a> - October 07, 2021
+        </div>
+        <div>
+            <a href="/blog/upload-multiple-files-aws-s3-terraform" class="mb-4">How to Upload Multiple Files to AWS S3 using Terraform</a> - September 30, 2021
+        </div>
+        <div>
+            <a href="/blog/replace-pipeline-statiq" class="mb-4">How to replace a pipeline in Statiq</a> - September 23, 2021
+        </div>
+        <div>
+            <a href="/blog/deploy-statiq-website-tailwind-netlify" class="mb-4">Deploy a Statiq website using Tailwind CSS to Netlify</a> - September 16, 2021
+        </div>
+        <div>
+            <a href="/blog/add-tailwind-css-statiq-website" class="mb-4">Add Tailwind CSS to a Statiq website</a> - September 09, 2021
+        </div>
+        <div>
+            <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt" class="mb-4">How to rename multiple files in subfolders using Windows command prompt</a> - August 30, 2021
+        </div>
+        <div>
+            <a href="/blog/override-netlify-build-config" class="mb-4">How to override the netlify build config</a> - August 23, 2021
+        </div>
+        <div>
+            <a href="/blog/migrating-gatsby-statiq" class="mb-4">Migrating from Gatsby to Statiq</a> - August 16, 2021
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-44" class="mb-4">Weekly Roundup 44</a> - August 08, 2021
+        </div>
+        <div>
+            <a href="/blog/increasing-productivity-no-meeting-days" class="mb-4">Increasing Productivity with No-Meeting Days</a> - August 03, 2021
+        </div>
+        <div>
+            <a href="/blog/make-code-reviews-stress-free" class="mb-4">How to make code reviews stress free</a> - July 25, 2021
+        </div>
+        <div>
+            <a href="/blog/difference-stubs-mocks-fakes-spies" class="mb-4">What is the difference between Stubs, Mocks, Fakes and Spies</a> - July 15, 2021
+        </div>
+        <div>
+            <a href="/blog/run-sql-server-docker-container" class="mb-4">How to run SQL Server in a Docker container</a> - June 29, 2021
+        </div>
+        <div>
+            <a href="/blog/setup-project-properties-source-generators" class="mb-4">How to set up the project properties for Source Generators</a> - June 23, 2021
+        </div>
+        <div>
+            <a href="/blog/reader-question-apply-storybrand-communicate-work" class="mb-4">How can we apply Storybrand to how we communicate at work</a> - June 10, 2021
+        </div>
+        <div>
+            <a href="/blog/reset-primary-key-sequence-out-of-sync-postgres" class="mb-4">How to reset the primary key sequence in Postgres</a> - June 03, 2021
+        </div>
+        <div>
+            <a href="/blog/add-cursive-fonts-to-vs-code" class="mb-4">How to add ligatures and cursive fonts to VS Code</a> - May 16, 2021
+        </div>
+    <h2>2020(48)</h2>
+        <div>
+            <a href="/blog/problem-without-solution-harmful" class="mb-4">Do not come with a problem without a solution is harmful</a> - December 16, 2020
+        </div>
+        <div>
+            <a href="/blog/automatically-set-access-token-authenticated-requests-insomnia" class="mb-4">How to automatically set the access token in Insomnia</a> - December 04, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-43" class="mb-4">Weekly Roundup 43</a> - November 29, 2020
+        </div>
+        <div>
+            <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="mb-4">How long did it take to migrate from WordPress to Gatsby?</a> - November 25, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-42" class="mb-4">Weekly Roundup 42</a> - November 22, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-41" class="mb-4">Weekly Roundup 41</a> - November 15, 2020
+        </div>
+        <div>
+            <a href="/blog/codinators-xunit-helpers-nuget-package-update-2" class="mb-4">Codinators.XunitHelpers Nuget Package: Update 2</a> - October 23, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-40" class="mb-4">Weekly Roundup 40</a> - October 18, 2020
+        </div>
+        <div>
+            <a href="/blog/interview-happy-job" class="mb-4">Why do I interview even when I am happy at my job?</a> - October 15, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-39" class="mb-4">Weekly Roundup 39</a> - October 09, 2020
+        </div>
+        <div>
+            <a href="/blog/dream-job" class="mb-4">What is my idea of a dream job</a> - October 01, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-38" class="mb-4">Weekly Roundup 38</a> - September 30, 2020
+        </div>
+        <div>
+            <a href="/blog/react-component-draw-page-hooks-typescript" class="mb-4">How to draw on a page using react hooks and typescript</a> - September 26, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-37" class="mb-4">Weekly Roundup 37</a> - September 23, 2020
+        </div>
+        <div>
+            <a href="/blog/handle-bounces-aws-ses-terraform-2" class="mb-4">How to use terraform to process SQS messages in a lambda</a> - September 19, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-36" class="mb-4">Weekly Roundup 36</a> - September 13, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-35" class="mb-4">Weekly Roundup 35</a> - September 06, 2020
+        </div>
+        <div>
+            <a href="/blog/secure-aws-root-account-create-admin-user-access-billing" class="mb-4">How to add a billing admin user to secure an AWS root account</a> - July 25, 2020
+        </div>
+        <div>
+            <a href="/blog/upload-pdf-received-api-aws-s3" class="mb-4">How do you upload a PDF received from an API to AWS S3?</a> - July 15, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-34" class="mb-4">Weekly Roundup 34</a> - July 05, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-33" class="mb-4">Weekly Roundup 33</a> - June 28, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-32" class="mb-4">Weekly Roundup 32</a> - June 14, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-31" class="mb-4">Weekly Roundup 31</a> - June 07, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-30" class="mb-4">Weekly Roundup 30</a> - May 31, 2020
+        </div>
+        <div>
+            <a href="/blog/stop-remove-all-docker-containers" class="mb-4">How to stop and remove all Docker containers</a> - May 27, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-29" class="mb-4">Weekly Roundup 29</a> - May 24, 2020
+        </div>
+        <div>
+            <a href="/blog/postmortem-spring-challenge-2020-codingame-ai-contest" class="mb-4">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a> - May 20, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-28" class="mb-4">Weekly Roundup 28</a> - May 17, 2020
+        </div>
+        <div>
+            <a href="/blog/get-time-zone-info-windows-linux" class="mb-4">How to get TimeZoneInfo on Windows and Linux</a> - May 06, 2020
+        </div>
+        <div>
+            <a href="/blog/postmortem-ocean-code-codingame-ai-contest" class="mb-4">A postmortem for Ocean of Code (Codingame AI Contest)</a> - May 02, 2020
+        </div>
+        <div>
+            <a href="/blog/handle-bounces-ses-terraform" class="mb-4">How to publish email bounce notifications to an SQS queue</a> - April 29, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-27" class="mb-4">Weekly Roundup 27</a> - April 12, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-26" class="mb-4">Weekly Roundup 26</a> - April 05, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-25" class="mb-4">Weekly Roundup 25</a> - March 29, 2020
+        </div>
+        <div>
+            <a href="/blog/approval-tests-with-xunit-theory-tests" class="mb-4">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a> - March 18, 2020
+        </div>
+        <div>
+            <a href="/blog/query-in-clause-dapper-npgsql" class="mb-4">Dapper and NPGSql : Write a query with the IN operator</a> - March 11, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-24" class="mb-4">Weekly Roundup 24</a> - March 08, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-23" class="mb-4">Weekly Roundup 23</a> - March 01, 2020
+        </div>
+        <div>
+            <a href="/blog/codinators-xunit-helpers-nuget-package-update-1" class="mb-4">Codinators.XunitHelpers Nuget Package: Update 1</a> - February 28, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-22" class="mb-4">Weekly Roundup 22</a> - February 23, 2020
+        </div>
+        <div>
+            <a href="/blog/new-release-codinators-xunit-helpers-nuget-package" class="mb-4">New Release: Codinators.XunitHelpers Nuget Package</a> - February 21, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-26-jan-2020" class="mb-4">Weekly Roundup 21</a> - January 26, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-19-jan-2020" class="mb-4">Weekly Roundup 20</a> - January 19, 2020
+        </div>
+        <div>
+            <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule" class="mb-4">How to deploy a Gatsby site on a schedule with Azure Pipelines</a> - January 17, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-12-jan-2020" class="mb-4">Weekly Roundup 19</a> - January 12, 2020
+        </div>
+        <div>
+            <a href="/blog/create-sns-topic-ses-not-default-provider" class="mb-4">How to create an SNS topic for SES in a different region with terraform</a> - January 10, 2020
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-05-jan-2020" class="mb-4">Weekly Roundup 18</a> - January 05, 2020
+        </div>
+        <div>
+            <a href="/blog/deploy-gatsby-site-netlify-azure-pipelines" class="mb-4">How to deploy a Gatsby site to Netlify using Azure Pipelines</a> - January 03, 2020
+        </div>
+    <h2>2019(18)</h2>
+        <div>
+            <a href="/blog/weekly-roundup-29-dec-2019" class="mb-4">Weekly Roundup 17</a> - December 29, 2019
+        </div>
+        <div>
+            <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura" class="mb-4">How to export highlights and annotations from a Kobo Aura</a> - December 25, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-22-dec-2019" class="mb-4">Weekly Roundup 16</a> - December 22, 2019
+        </div>
+        <div>
+            <a href="/blog/full-width-you-tube-video-embed" class="mb-4">Embed a YouTube video with 16:9 aspect ratio and full-width</a> - December 18, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-15-dec-2019" class="mb-4">Weekly Roundup 15</a> - December 15, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-08-dec-2019" class="mb-4">Weekly Roundup 14</a> - December 08, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-01-dec-2019" class="mb-4">Weekly Roundup 13</a> - December 01, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-24-nov-2019" class="mb-4">Weekly Roundup 12</a> - November 24, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-17-nov-2019" class="mb-4">Weekly Roundup 11</a> - November 17, 2019
+        </div>
+        <div>
+            <a href="/blog/starting-speechcraft" class="mb-4">Starting Speechcraft</a> - November 14, 2019
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-27-oct-2019" class="mb-4">Weekly Roundup 10</a> - October 27, 2019
+        </div>
+        <div>
+            <a href="/blog/impossible-list-or-a-bucket-list" class="mb-4">Should you make an Impossible List or a Bucket List?</a> - September 15, 2019
+        </div>
+        <div>
+            <a href="/blog/automating-creation-of-new-blog-post" class="mb-4">How to automate the creation of a new blog post</a> - September 12, 2019
+        </div>
+        <div>
+            <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site" class="mb-4">How to add an RSS feed with images to a Gatsby site</a> - August 30, 2019
+        </div>
+        <div>
+            <a href="/blog/migrating-from-wordpress-to-gatsby" class="mb-4">Why and How I migrated my website from WordPress to Gatsby</a> - August 29, 2019
+        </div>
+        <div>
+            <a href="/blog/custom-type-definitions-for-java-script-dependencies" class="mb-4">Create custom type definitions for JavaScript dependencies</a> - August 23, 2019
+        </div>
+        <div>
+            <a href="/blog/postman-ajax-endpoints-xsrf-tokens" class="mb-4">Testing endpoints protected with an XSRF token in Postman</a> - May 17, 2019
+        </div>
+        <div>
+            <a href="/blog/load-test-data-json-file-xunit-tests" class="mb-4">How to load test data from a JSON file for xUnit tests</a> - February 20, 2019
+        </div>
+    <h2>2018(6)</h2>
+        <div>
+            <a href="/blog/securing-git-commits-windows" class="mb-4">A guide to securing git commits from tricking you on Windows</a> - September 10, 2018
+        </div>
+        <div>
+            <a href="/blog/jah-update-7" class="mb-4">JAH Update 7</a> - June 14, 2018
+        </div>
+        <div>
+            <a href="/blog/jah-update-6" class="mb-4">JAH Update 6</a> - April 08, 2018
+        </div>
+        <div>
+            <a href="/blog/jah-update-5" class="mb-4">JAH Update 5</a> - March 07, 2018
+        </div>
+        <div>
+            <a href="/blog/jah-update-4" class="mb-4">JAH Update 4</a> - February 05, 2018
+        </div>
+        <div>
+            <a href="/blog/jah-update-3" class="mb-4">JAH: Update 3</a> - January 04, 2018
+        </div>
+    <h2>2017(9)</h2>
+        <div>
+            <a href="/blog/jah-update-2" class="mb-4">JAH: Update 2</a> - December 21, 2017
+        </div>
+        <div>
+            <a href="/blog/jah-update-1" class="mb-4">JAH: Update 1</a> - December 18, 2017
+        </div>
+        <div>
+            <a href="/blog/new-side-project-jah" class="mb-4">New Side Project: JAH</a> - December 13, 2017
+        </div>
+        <div>
+            <a href="/blog/dynamic-programming-editlevenshtein-distance" class="mb-4">Solve Edit(Levenshtein) distance with Dynamic Programming</a> - May 22, 2017
+        </div>
+        <div>
+            <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="mb-4">PostMortem for Codingame AI Contest: Coders of the Caribbean</a> - May 08, 2017
+        </div>
+        <div>
+            <a href="/blog/dynamic-programming-longest-common-subsequence" class="mb-4">Solve Longest Common Subsequence with Dynamic Programming</a> - April 09, 2017
+        </div>
+        <div>
+            <a href="/blog/dynamic-programming-series-introduction" class="mb-4">A guide to getting started with Dynamic Programming</a> - March 27, 2017
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-9" class="mb-4">Weekly Roundup 9</a> - March 18, 2017
+        </div>
+        <div>
+            <a href="/blog/popular-posts-2016" class="mb-4">What were my most popular posts in 2016</a> - February 08, 2017
+        </div>
+    <h2>2016(21)</h2>
+        <div>
+            <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="mb-4">A postmortem for Fantastic Bits (Codingame AI Contest)</a> - December 15, 2016
+        </div>
+        <div>
+            <a href="/blog/fantastic-bits-codingame" class="mb-4">Why you should compete in Fantastic Bits @ Codingame</a> - November 23, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-8" class="mb-4">Weekly Roundup 8</a> - October 22, 2016
+        </div>
+        <div>
+            <a href="/blog/accountant-codingame-ai-contest-postmortem" class="mb-4">A post-mortem for The Accountant (Codingame AI Contest)</a> - October 19, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-7" class="mb-4">Weekly Roundup 7</a> - October 15, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-6" class="mb-4">Weekly Roundup 6</a> - October 08, 2016
+        </div>
+        <div>
+            <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="mb-4">A post-mortem for Hypersonic (Codingame AI Contest)</a> - October 05, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-5" class="mb-4">Weekly Roundup 5</a> - October 01, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-4" class="mb-4">Weekly Roundup 4</a> - September 24, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-3" class="mb-4">Weekly Roundup 3</a> - September 17, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-2" class="mb-4">Weekly Roundup 2</a> - September 10, 2016
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-1" class="mb-4">Weekly Roundup 1</a> - September 03, 2016
+        </div>
+        <div>
+            <a href="/blog/video-bungee-jump-queenstown" class="mb-4">Video: Bungee Jump in Queenstown</a> - May 17, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-photo-essay-milford-sound" class="mb-4">New Zealand Escapes: Photo Essay - Milford Sound</a> - May 10, 2016
+        </div>
+        <div>
+            <a href="/blog/rent-buy-house" class="mb-4">Should I Rent Or Buy a House?</a> - May 03, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-tranzalpine-express" class="mb-4">New Zealand Escapes: KiwiRail - TranzAlpine Express</a> - March 15, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-photo-essay-mount-maunganui" class="mb-4">New Zealand Escapes: Photo Essay - Mount Maunganui</a> - February 23, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-tauranga" class="mb-4">New Zealand Escapes: Tauranga</a> - February 16, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-waitomo-blackwater-rafting" class="mb-4">New Zealand Escapes: Waitomo Blackwater Rafting</a> - February 09, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-waiotapu-thermal-wonderland" class="mb-4">New Zealand Escapes: Waiotapu Thermal Wonderland</a> - February 02, 2016
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-tamaki-maori-village-rotorua" class="mb-4">New Zealand Escapes: Tamaki Maori Village, Rotorua</a> - January 05, 2016
+        </div>
+    <h2>2015(19)</h2>
+        <div>
+            <a href="/blog/my-most-popular-posts-in-2015" class="mb-4">What are my most popular posts in 2015</a> - December 25, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-hobbiton-matamata" class="mb-4">New Zealand Escapes: Hobbiton, Matamata</a> - December 22, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-auckland-seaplanes" class="mb-4">New Zealand Escapes: Auckland Seaplanes</a> - December 01, 2015
+        </div>
+        <div>
+            <a href="/blog/review-takapuna-car-clinic-auckland" class="mb-4">Review: Takapuna Car Clinic, Auckland</a> - November 24, 2015
+        </div>
+        <div>
+            <a href="/blog/photo-essay-india-vs-zimbabwe-world-cup-2015" class="mb-4">Photo Essay: India Vs Zimbabwe, World Cup 2015</a> - November 03, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-northland-part-2" class="mb-4">New Zealand Escapes: Northland - Part 2</a> - October 27, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-northland-part-1" class="mb-4">New Zealand Escapes: Northland - Part 1</a> - October 20, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-massey-strawberry-picking-auckland" class="mb-4">New Zealand Escapes: Massey Strawberry Picking, Auckland</a> - September 08, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-iskcon-temple-auckland" class="mb-4">New Zealand Escapes: Iskcon Temple, Auckland</a> - July 14, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-piha-beach" class="mb-4">New Zealand Escapes: Piha Beach</a> - June 30, 2015
+        </div>
+        <div>
+            <a href="/blog/new-zealand-escapes-rangitoto-island" class="mb-4">New Zealand Escapes: Rangitoto Island</a> - June 09, 2015
+        </div>
+        <div>
+            <a href="/blog/photo-essay-seattle-washington" class="mb-4">Photo Essay: Seattle, Washington</a> - May 19, 2015
+        </div>
+        <div>
+            <a href="/blog/video-goat-glacier-national-park" class="mb-4">Video: Goat in Glacier National Park</a> - February 17, 2015
+        </div>
+        <div>
+            <a href="/blog/photo-essay-glacier-national-park-montana" class="mb-4">Photo Essay: Glacier National Park, Montana</a> - February 10, 2015
+        </div>
+        <div>
+            <a href="/blog/videos-bear-yellowstone-national-park" class="mb-4">Video: Bear at Yellowstone National Park</a> - February 03, 2015
+        </div>
+        <div>
+            <a href="/blog/videos-yellowstone-national-park-geysers" class="mb-4">Videos: Yellowstone National Park Geysers</a> - January 27, 2015
+        </div>
+        <div>
+            <a href="/blog/video-old-faithful-geyser" class="mb-4">Video: Old Faithful Geyser</a> - January 20, 2015
+        </div>
+        <div>
+            <a href="/blog/photo-essay-yellowstone-national-park-wyoming" class="mb-4">Photo Essay: Yellowstone National Park, Wyoming</a> - January 13, 2015
+        </div>
+        <div>
+            <a href="/blog/photo-essay-corn-palace-south-dakota" class="mb-4">Photo Essay: Corn Palace, South Dakota</a> - January 06, 2015
+        </div>
+    <h2>2014(32)</h2>
+        <div>
+            <a href="/blog/diwali-auckland-2014" class="mb-4">Photo Essay: Diwali in Auckland</a> - November 03, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-niagara-falls-new-york" class="mb-4">Photo Essay: Niagara Falls, New York</a> - June 04, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-washington-dc" class="mb-4">Photo Essay: Washington DC</a> - May 28, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-graceland-tennessee" class="mb-4">Photo Essay: Graceland, Tennessee</a> - May 21, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-world-coca-cola-georgia" class="mb-4">Photo Essay: World Of Coca Cola, Georgia</a> - May 14, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-nasas-space-center-texas" class="mb-4">Photo Essay: NASA&#x27;s Space Center, Texas</a> - May 07, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-meteor-crater-arizona" class="mb-4">Photo Essay: Meteor Crater, Arizona</a> - April 30, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-sedona-arizona" class="mb-4">Photo Essay: Sedona, Arizona</a> - April 23, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-grand-canyon-arizona" class="mb-4">Photo Essay: Grand Canyon, Arizona</a> - April 16, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-legoland-san-diego" class="mb-4">Photo Essay: Legoland, San Diego</a> - April 09, 2014
+        </div>
+        <div>
+            <a href="/blog/breakout-clone-v1-0" class="mb-4">Breakout Clone v1.0</a> - April 05, 2014
+        </div>
+        <div>
+            <a href="/blog/product-review-paper-boat-drinks" class="mb-4">Product Review: Paper Boat Drinks</a> - April 04, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-san-diego-zoo-san-diego" class="mb-4">Photo Essay: San Diego Zoo, San Diego</a> - April 02, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-seaworld-san-diego" class="mb-4">Photo Essay: SeaWorld, San Diego</a> - March 26, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-disneyland-los-angeles" class="mb-4">Photo Essay: DisneyLand Los Angeles</a> - March 19, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-essay-universal-studios-los-angeles" class="mb-4">Photo Essay: Universal Studios, Los Angeles</a> - March 12, 2014
+        </div>
+        <div>
+            <a href="/blog/usa-roadtrip" class="mb-4">USA Roadtrip</a> - March 05, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-series-jaisalmer" class="mb-4">Photo Series: Jaisalmer</a> - February 26, 2014
+        </div>
+        <div>
+            <a href="/blog/photo-series-jodhpur" class="mb-4">Photo Series: Jodhpur</a> - February 19, 2014
+        </div>
+        <div>
+            <a href="/blog/belly-dance" class="mb-4">Video: Belly Dance</a> - February 14, 2014
+        </div>
+        <div>
+            <a href="/blog/tandura-dance" class="mb-4">Video: Tandura Dance</a> - February 07, 2014
+        </div>
+        <div>
+            <a href="/blog/postmortem-asteroids" class="mb-4">A post-mortem of the Asteroids clone</a> - February 05, 2014
+        </div>
+        <div>
+            <a href="/blog/desert-safari" class="mb-4">Desert Safari</a> - January 31, 2014
+        </div>
+        <div>
+            <a href="/blog/filtering-google-analytics" class="mb-4">How to filter yourself from showing up in Google Analytics</a> - January 29, 2014
+        </div>
+        <div>
+            <a href="/blog/atlantis-lost-chambers" class="mb-4">Atlantis The Lost Chambers</a> - January 24, 2014
+        </div>
+        <div>
+            <a href="/blog/noncopyable-objects" class="mb-4">How to prevent the compiler from copying an object in cpp</a> - January 22, 2014
+        </div>
+        <div>
+            <a href="/blog/inside-jumeirah-mosque" class="mb-4">Understanding Islam inside the Jumeirah Mosque</a> - January 17, 2014
+        </div>
+        <div>
+            <a href="/blog/installing-wordpress" class="mb-4">How to setup WordPress locally: Installing WordPress</a> - January 15, 2014
+        </div>
+        <div>
+            <a href="/blog/dubai-fountain" class="mb-4">Dubai Fountain</a> - January 10, 2014
+        </div>
+        <div>
+            <a href="/blog/installing-phpmyadmin" class="mb-4">How to setup WordPress locally: Installing phpMyAdmin</a> - January 08, 2014
+        </div>
+        <div>
+            <a href="/blog/atthetop" class="mb-4">At the Top: Burj Khalifa</a> - January 03, 2014
+        </div>
+        <div>
+            <a href="/blog/installing-mysql" class="mb-4">How to setup WordPress locally: Installing MySQL</a> - January 01, 2014
+        </div>
+    <h2>2013(20)</h2>
+        <div>
+            <a href="/blog/abra-souqs" class="mb-4">Abra and Souqs in Dubai</a> - December 27, 2013
+        </div>
+        <div>
+            <a href="/blog/installing-php" class="mb-4">How to setup WordPress locally: Installing PHP</a> - December 25, 2013
+        </div>
+        <div>
+            <a href="/blog/asteroid-clone" class="mb-4">Why I am building an Asteroid clone as the next game</a> - December 23, 2013
+        </div>
+        <div>
+            <a href="/blog/wafi-mall" class="mb-4">A visit to Wafi Mall</a> - December 20, 2013
+        </div>
+        <div>
+            <a href="/blog/installing-apache" class="mb-4">Setup WordPress locally: Installing an Apache Web Server</a> - December 18, 2013
+        </div>
+        <div>
+            <a href="/blog/testing-wordpress-locally-series" class="mb-4">How to setup WordPress locally: Introduction</a> - December 17, 2013
+        </div>
+        <div>
+            <a href="/blog/ten-things-achieve-starting-3d-programming" class="mb-4">10 things to do when getting started with 3D programming</a> - December 16, 2013
+        </div>
+        <div>
+            <a href="/blog/dubai-dolphinarium" class="mb-4">Dubai Dolphinarium</a> - December 13, 2013
+        </div>
+        <div>
+            <a href="/blog/memory-leak-woes" class="mb-4">A guide to finding memory leaks using macros in C&#x2B;&#x2B;</a> - December 11, 2013
+        </div>
+        <div>
+            <a href="/blog/postmortem-mpong" class="mb-4">A PostMortem of Mpong</a> - December 09, 2013
+        </div>
+        <div>
+            <a href="/blog/making-pong-take" class="mb-4">What does making Pong take?</a> - December 08, 2013
+        </div>
+        <div>
+            <a href="/blog/greenwich-london-eye" class="mb-4">Visiting Greenwich and taking a ride on London Eye</a> - December 06, 2013
+        </div>
+        <div>
+            <a href="/blog/dll-basics" class="mb-4">How to start using Dynamic-link libraries (DLL)</a> - December 04, 2013
+        </div>
+        <div>
+            <a href="/blog/child-appreciation" class="mb-4">Why being an only child is awesome</a> - December 02, 2013
+        </div>
+        <div>
+            <a href="/blog/walking-around-london" class="mb-4">Walking Around in London</a> - November 29, 2013
+        </div>
+        <div>
+            <a href="/blog/setting-project-properties" class="mb-4">Setting up the project properties for Game Engine Project</a> - November 27, 2013
+        </div>
+        <div>
+            <a href="/blog/smokehouse-deli-bangalore" class="mb-4">A review of SmokeHouse Deli, Bangalore</a> - November 25, 2013
+        </div>
+        <div>
+            <a href="/blog/london" class="mb-4">Roaming around in London</a> - November 22, 2013
+        </div>
+        <div>
+            <a href="/blog/setting-project-directory-structure" class="mb-4">How I structure my Game Engine project</a> - November 20, 2013
+        </div>
+        <div>
+            <a href="/blog/beginning" class="mb-4">The Beginning</a> - November 19, 2013
+        </div>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

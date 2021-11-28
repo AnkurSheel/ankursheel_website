@@ -1,0 +1,208 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Desert Safari</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/desert-safari"/>
+
+<meta itemProp="name" content="Desert Safari"/>
+<meta itemProp="description" content="In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/desert-safari-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/desert-safari"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Desert Safari"/>
+<meta property="og:description" content="In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/desert-safari-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/desert-safari-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Desert Safari"/>
+<meta name="twitter:description" content="In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/desert-safari-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/desert-safari-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Desert Safari</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 31-Jan-2014</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/middle-east" class="badge text-black bg-grey-light no-underline">Middle East</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/travel" class="badge text-black bg-grey-light no-underline">travel</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/uae" class="badge text-black bg-grey-light no-underline">UAE</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>No trip to Dubai can be complete without experiencing the real sun and sand of this desert city.</p>
+<p>Several tour operators give various packages for the desert safari. We went for a package that included pick and drop from Dubai, dune bashing, camel riding, quad bikes, henna tattooing, dance performances in a desert camp, Arabic coffee and dinner. We booked our tour through recommendations received from family and set out for our ride with another family from Great Britain.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-2.jpg" alt="Waiting in the middle of the desert"></p>
+<p>After a relatively long drive to get out of the city, we first stopped at a souvenir shop where people could buy knickknacks before all the fun of dune bashing. Soon after, we entered the desert and almost immediately took another break while our driver deflated the tires. The tires needed to be deflated to get some traction over the loose sand.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-3.jpg" alt="Follow the leader"></p>
+<p>After that, the cars all started in a single file, although they did break out at intervals so that the ride did not feel monotonous.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-4.jpg" alt="Dune Bashing"></p>
+<p>Despite that, this was super fun, but if you have someone in your group who has motion sickness or a bad back, you might not enjoy it as much. Unfortunately, the other lady in the car had a bad back. She was also afraid of roller-coaster-like rides, so she would not allow the driver to go too fast.</p>
+<p>Luckily, our driver realized that Gunjan and I wanted a little more thrill and would eventually drive so that it felt as if we were going to overturn or fall. To be frank, I think even he didn't like the fact that he was being told not to drive fast.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-5.jpg" alt="Camel at the Camel Farm"></p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-6.jpg" alt="Sand"></p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-7.jpg" alt="Where the deserts meet the road"></p>
+<p>In between all the dune bashing fun, we stopped at a few places, including a camel farm and various other points with photo opportunities.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-8.jpg" alt="Me in the Dishdash"></p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-9.jpg" alt="Abaya"></p>
+<p>We then headed towards our desert camp for the balance part of our program. Here there was a beautiful low seating against the sands and the setting sun. While we waited for the dances to begin, we got a few pictures clicked wearing the traditional dresses of the people there.</p>
+<p>Gunjan had never ridden a camel before, so we decided to start with a short camel ride.</p>
+<p>There was also a small racetrack where you could drive a rented quad bike. Now the rent for the quad bike was 150 dirham for 15 minutes. Unfortunately, had forgotten all our money at home bar 100 dirhams. I can see all of you being sad for us, thinking that we could not drive the quad bike. But don't be. Here's why.</p>
+<p>While I was chatting with the owner of the quad bikes, he let out that he was from Pakistan, but his ancestors were from Amritsar. Now guess who else is from Amritsar? Naah, not me. Leave it to us to find a connection or in the Indian way of saying things <strong><em>"jugaad"</em></strong>.</p>
+<p>Long story short, we not only got the quad bikes at less than 100 dirhams but managed to get them for an unlimited time. Don't worry, it wasn't a bad bargain for the owner. Once other people saw how much fun me and Gunjan were having, he managed to rent out all his bikes in the 20-25 minutes that we were out there.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-10.jpg" alt="Tandura Dance"></p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-11.jpg" alt="Tandura Dance w/o lights"></p>
+<p>By this time, we were both hungry and decided to get our dinner while we waited for the dances to begin. The food was nothing much to rave about, although the Arabic coffee with the dates was fantastic. There were 2 main performances for the evening, and it started with the Tandura dance. In this dance, the performer wears a heavy colourful skirt (above 20 kgs) and whirls while performing different acts. At the end of the dance, he called several people to try dancing with the skirt, but no one managed it for more than a minute or two.</p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-1.jpg" alt="Belly Dance"></p>
+<p><img src="/assets/images/posts/desert-safari/DesertSafari-12.jpg" alt="Belly Dance"></p>
+<p>But the most awaited performance was the belly dance. This was performed by a beautiful dancer with some amazing moves. Earlier, people were allowed to come and dance with the belly dancer, but apparently, some people had misbehaved with one of the dancers, and the government has banned operators from allowing people to come up and dance with the belly dancer.</p>
+<p>After the dances, it was another long drive before we were dropped back to the house. This was the best part of the trip, and personally, I feel the only worthwhile thing to do in Dubai.</p>
+<p>Video clips of the dances next week :-)</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/desert-safari&text=In%20this%20travelogue%2C%20Gunjan%20and%20I%20go%20on%20a%20desert%20safari%20for%20some%20dune%20bashing%2C%20Arabic%20coffee%20with%20dinner%20and%20the%20ever-popular%20Tandura%20and%20belly%20dance. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/desert-safari"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

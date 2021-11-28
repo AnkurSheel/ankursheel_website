@@ -1,0 +1,471 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Solve Edit(Levenshtein) distance with Dynamic Programming</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="In this article, we will develop a Dynamic Programming solution to the Edit Distance problem."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/dynamic-programming-editlevenshtein-distance"/>
+
+<meta itemProp="name" content="Solve Edit(Levenshtein) distance with Dynamic Programming"/>
+<meta itemProp="description" content="In this article, we will develop a Dynamic Programming solution to the Edit Distance problem."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-editlevenshtein-distance-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/dynamic-programming-editlevenshtein-distance"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Solve Edit(Levenshtein) distance with Dynamic Programming"/>
+<meta property="og:description" content="In this article, we will develop a Dynamic Programming solution to the Edit Distance problem."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-editlevenshtein-distance-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-editlevenshtein-distance-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Solve Edit(Levenshtein) distance with Dynamic Programming"/>
+<meta name="twitter:description" content="In this article, we will develop a Dynamic Programming solution to the Edit Distance problem."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-editlevenshtein-distance-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-editlevenshtein-distance-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Solve Edit(Levenshtein) distance with Dynamic Programming</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 22-May-2017</i>
+        <i class="font-bold">
+            Reading Time: 7 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/cpp" class="badge text-black bg-grey-light no-underline">cpp</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/dynamic-programming" class="badge text-black bg-grey-light no-underline">dynamic programming</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>In this article, we will use the steps mentioned in the <a href="/blog/dynamic-programming-series-introduction">introduction article</a> to arrive at a Dynamic Programming solution to the Edit Distance problem.</p>
+<h2 id="edit-distance">Edit Distance</h2>
+<p><strong>Problem Statement:</strong> Given two input strings (S1, S2) of different lengths (m, n), we need to convert the first string into the second string using a minimum number (or minimum cost) of edit operations.</p>
+<p>One can replace existing characters in the first string with characters from the second string, delete existing characters or insert new characters into the first string.</p>
+<p><strong>Examples:</strong></p>
+<ol>
+<li><p>Edit Distance for input sequences <em>"sunday"</em> and <em>"saturday"</em> is 3. The last three and first characters are the same. We need to convert <em>'un'</em> to <em>'atur'</em>.</p>
+<p>This can be achieved by inserting character <em>'a'</em>, inserting character 't' and replacing character <em>'n'</em> with character <em>'r'</em></p>
+</li>
+<li><p>Edit Distance for input sequences <em>"cat"</em> and <em>"cars"</em> is 2. The first 2 characters are the same. We need to convert <em>'t'</em> to <em>'rs'</em>.</p>
+<p>This can be achieved by inserting character <em>'r'</em> and replacing character <em>'t'</em> with character <em>'s'</em>.</p>
+</li>
+</ol>
+<p>The edit distance can be used in spell checkers and correction systems for optical character recognition.</p>
+<p>You can read more about the Edit Distance <a href="https://en.wikipedia.org/wiki/Edit_distance">here</a>.</p>
+<h2 id="profiling">Profiling</h2>
+<p>As mentioned in the <a href="/blog/dynamic-programming-series-introduction">introduction article</a>, we will be using <a href="https://github.com/google/benchmark">google benchmark</a> to help profile our solutions. If you want to know more about how we will be using google benchmark, you can read the <a href="/blog/dynamic-programming-series-introduction">introduction article</a>.</p>
+<p>For the Edit Distance problem, the worst case occurs when there is no match between the sequences.</p>
+<p>For the purposes of this article, we will profile against the worst case by creating 2 strings of length <strong><em>n</em></strong> and filling one of them with <strong><em>'a'</em></strong> and the other with <strong><em>'b'</em></strong>. We will then attempt to see how long it takes for the function to return. <strong><em>n</em></strong> will be part of the Benchmark name.</p>
+<p>If you want to see the benchmarks in action, you can find the code <a href="https://github.com/AnkurSheel/DynamicProgramming">here</a>.</p>
+<h2 id="steps">Steps</h2>
+<p>In the <a href="/blog/dynamic-programming-series-introduction">introduction article</a>, we came up with the following steps to find a dynamic programming approach to our problem</p>
+<ol>
+<li>Find the overlapping subproblem.</li>
+<li>Start with a recursive solution</li>
+<li>Modify the recursive solution to use a top-down memoized version.</li>
+<li>Remove the recursion by making it an iterative solution.</li>
+<li>If you don't need to keep all the previous results, keep only the required ones.</li>
+</ol>
+<h3 id="overlapping-subproblem">Overlapping Subproblem</h3>
+<p>Let the 2 strings be <strong>X</strong> of length <strong><em>m</em></strong> and <strong>Y</strong> of length <strong><em>n</em></strong>.</p>
+<p>Let <strong>EditDistance(i,j)</strong> be the number of operations. Then we can formalise the problem as follows</p>
+<pre><code class="language-ini hljs">EditDistance(i, j) = n - j : if i = 0;
+EditDistance(i, j) = m - i : if  j = 0;
+EditDistance(i, j) = EditDistance(i + 1, j + 1) if X[i] = Y[j]
+EditDistance(i, j) = 1 + min (
+                                EditDistance(i,  j + 1) // insert
+                                EditDistance(i + 1,  j) // delete
+                                EditDistance(i + 1,  j + 1) // replace
+                            ) if X[i] != Y[j]
+</code></pre>
+<p>The length of the edit distance will be <strong><em>EditDistance(0,0)</em></strong>.</p>
+<h3 id="naive-recursive-approach">Naive Recursive Approach</h3>
+<p>The above formalisation can easily be translated into the following recursive method.</p>
+<pre><code class="language-cpp hljs"><span class="hljs-keyword">int</span> cEditDistance::Recursive(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second, <span class="hljs-keyword">int</span> index1, <span class="hljs-keyword">int</span> index2)
+{
+    <span class="hljs-keyword">int</span> length1 = first.length() - index1;
+    <span class="hljs-keyword">int</span> length2 = second.length() - index2;
+
+    <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span>)
+    {
+        <span class="hljs-keyword">return</span> length2;
+    }
+
+    <span class="hljs-keyword">if</span> (length2 == <span class="hljs-number">0</span>)
+    {
+        <span class="hljs-keyword">return</span> length1;
+    }
+
+    <span class="hljs-keyword">if</span> (first[index1] == second[index2])
+    {
+        <span class="hljs-keyword">return</span> Recursive(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">else</span>
+    {
+        <span class="hljs-keyword">int</span> insertCost = Recursive(first, second, index1, index2 + <span class="hljs-number">1</span>);
+        <span class="hljs-keyword">int</span> deleteCost = Recursive(first, second, index1 + <span class="hljs-number">1</span>, index2);
+        <span class="hljs-keyword">int</span> replaceCost = Recursive(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+
+        <span class="hljs-keyword">int</span> minCost = insertCost;
+        <span class="hljs-keyword">if</span> (deleteCost &lt; minCost)
+        {
+            minCost = deleteCost;
+        }
+
+        <span class="hljs-keyword">if</span> (replaceCost &lt; minCost)
+        {
+            minCost = replaceCost;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + minCost;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+}
+</code></pre>
+<p>In the recursive approach, it is tough to get the operations string, so we will just return the number of operations.</p>
+<h3 id="top-down-recursive-approach-with-memoization">Top-Down Recursive approach with Memoization</h3>
+<p>Edit distance subproblems consist of a pair of suffixes of the 2 input strings. To store and look up the subproblem solutions, we can use a 2d array. We will use a <em><strong>-1</strong></em> to tell the algorithm that nothing has been stored yet.</p>
+<p>To get the actual operations, we will use another 2D array that will store the operation we are performing at that stage.</p>
+<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cEditDistance::Memonized(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second)
+{
+    <span class="hljs-keyword">int</span> length1 = first.length();
+    <span class="hljs-keyword">int</span> length2 = second.length();
+
+    m_results.Init(length1 + <span class="hljs-number">1</span>, length2 + <span class="hljs-number">1</span>);
+    m_Operations.Init(length1, length2);
+    <span class="hljs-keyword">int</span> operations = Memonized(first, second, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> GetSteps(first, second, operations);
+}
+
+<span class="hljs-keyword">int</span> cEditDistance::Memonized(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second, <span class="hljs-keyword">int</span> index1, <span class="hljs-keyword">int</span> index2)
+{
+    <span class="hljs-keyword">if</span> (m_results.GetElement(index1, index2) == <span class="hljs-number">-1</span>)
+    {
+        <span class="hljs-keyword">int</span> length1 = first.length() - index1;
+        <span class="hljs-keyword">int</span> length2 = second.length() - index2;
+
+        <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span>)
+        {
+            m_results.SetElement(index1, index2, length2);
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (length2 == <span class="hljs-number">0</span>)
+        {
+            m_results.SetElement(index1, index2, length1);
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (first[index1] == second[index2])
+        {
+            m_results.SetElement(index1, index2, Memonized(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>));
+            m_Operations.SetElement(index1, index2, <span class="hljs-number">0</span>);
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            <span class="hljs-keyword">int</span> insertCost = Memonized(first, second, index1, index2 + <span class="hljs-number">1</span>);
+            <span class="hljs-keyword">int</span> deleteCost = Memonized(first, second, index1 + <span class="hljs-number">1</span>, index2);
+            <span class="hljs-keyword">int</span> replaceCost = Memonized(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+
+            <span class="hljs-keyword">int</span> minCost = insertCost;
+            m_Operations.SetElement(index1, index2, <span class="hljs-number">1</span>);
+
+            <span class="hljs-keyword">if</span> (deleteCost &lt; minCost)
+            {
+                minCost = deleteCost;
+                m_Operations.SetElement(index1, index2, <span class="hljs-number">2</span>);
+            }
+
+            <span class="hljs-keyword">if</span> (replaceCost &lt; minCost)
+            {
+                minCost = replaceCost;
+                m_Operations.SetElement(index1, index2, <span class="hljs-number">3</span>);
+            }
+
+            m_results.SetElement(index1, index2, <span class="hljs-number">1</span> + minCost);
+        }
+    }
+    <span class="hljs-keyword">return</span> m_results.GetElement(index1, index2);
+}
+</code></pre>
+<p>The above algorithm, <strong><em>m_results(0)</em></strong>, gives the number of operations.</p>
+<p>In the next section, we will look at <strong><em>GetSteps()</em></strong> to see how we can get the subsequence after computing the <strong><em>m_operations</em></strong> array.</p>
+<h3 id="getting-the-subsequence">Getting the subsequence</h3>
+<p>Once we have filled in the <strong><em>m_results</em></strong> array, we can find the sequence by traversing forwards through the array.</p>
+<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cEditDistance::GetSteps(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; second, <span class="hljs-keyword">int</span> numberOfOperations)
+{
+    <span class="hljs-keyword">int</span> index1 = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">int</span> index2 = <span class="hljs-number">0</span>;
+    <span class="hljs-built_in">stringstream</span> steps;
+    <span class="hljs-built_in">stringstream</span> currentString;
+
+    steps &lt;&lt; <span class="hljs-string">"Number Of Operations : "</span> &lt;&lt; numberOfOperations &lt;&lt; <span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">if</span> (numberOfOperations == <span class="hljs-number">0</span>)
+    {
+        <span class="hljs-keyword">return</span> steps.str();
+    }
+
+    steps &lt;&lt; <span class="hljs-string">"Starting String : "</span> &lt;&lt; first &lt;&lt; <span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">while</span> (index1 &lt; first.length() &amp;&amp; index2 &lt; second.length())
+    {
+        <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">0</span>)  <span class="hljs-comment">// match</span>
+        {
+            currentString &lt;&lt; first[index1];
+            index1 = index1 + <span class="hljs-number">1</span>;
+            index2 = index2 + <span class="hljs-number">1</span>;
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">1</span>)  <span class="hljs-comment">// insert</span>
+        {
+            steps &lt;&lt; <span class="hljs-string">"Insert character "</span> &lt;&lt; second[index2] &lt;&lt; <span class="hljs-string">" : Current String "</span> &lt;&lt; currentString.str();
+            currentString &lt;&lt; second[index2];
+            steps &lt;&lt; <span class="hljs-string">" : Updated String "</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            index2 = index2 + <span class="hljs-number">1</span>;
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">2</span>)  <span class="hljs-comment">// delete</span>
+        {
+            currentString &lt;&lt; first[index1];
+            steps &lt;&lt; <span class="hljs-string">"Delete character "</span> &lt;&lt; first[index1] &lt;&lt; <span class="hljs-string">" : Current String "</span> &lt;&lt; currentString.str();
+            currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
+            currentString &lt;&lt; <span class="hljs-string">" "</span>;
+            steps &lt;&lt; <span class="hljs-string">" : Updated String "</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
+            index1 = index1 + <span class="hljs-number">1</span>;
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">3</span>)  <span class="hljs-comment">// replace</span>
+        {
+            steps &lt;&lt; <span class="hljs-string">"Replace character "</span> &lt;&lt; first[index1] &lt;&lt; <span class="hljs-string">" with character "</span> &lt;&lt; second[index2] &lt;&lt; <span class="hljs-string">" : Current String "</span>;
+            currentString &lt;&lt; first[index1];
+            steps &lt;&lt; currentString.str();
+            currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
+            currentString &lt;&lt; second[index2];
+            steps &lt;&lt; <span class="hljs-string">" : Updated String "</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            index1 = index1 + <span class="hljs-number">1</span>;
+            index2 = index2 + <span class="hljs-number">1</span>;
+        }
+    }
+    <span class="hljs-keyword">if</span> (second.length() - index2 &gt; <span class="hljs-number">0</span>)
+    {
+        steps &lt;&lt; <span class="hljs-string">"Current String \""</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-string">"\" : Insert remaining "</span> &lt;&lt; second.length() - index2 &lt;&lt; <span class="hljs-string">" characters from the second string at position "</span> &lt;&lt; index2 &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    <span class="hljs-keyword">if</span> (first.length() - index1 &gt; <span class="hljs-number">0</span>)
+    {
+        <span class="hljs-keyword">if</span> (index1 == <span class="hljs-number">0</span>)
+        {
+            currentString &lt;&lt; first;
+        }
+        steps &lt;&lt; <span class="hljs-string">"Current String \""</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-string">"\" : Delete remaining "</span> &lt;&lt; first.length() - index1 &lt;&lt; <span class="hljs-string">" characters from position "</span> &lt;&lt; index1 &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    steps &lt;&lt; <span class="hljs-string">"Final String : "</span> &lt;&lt; second &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-keyword">return</span> steps.str();
+}
+</code></pre>
+<p>To find the operations, we traverse through <strong>m_operations</strong> till either <strong><em>index1 &gt;= first.length</em></strong> or <strong><em>index2 &gt;= second.length</em></strong> as at that point either all the remaining characters need to be inserted or deleted.</p>
+<p>If there is a match, then</p>
+<ul>
+<li>If the element at <strong>m_operations</strong> indicates a <strong>match</strong>, we increment <strong>index1</strong> and <strong>index2</strong>.</li>
+<li>If the element at <strong>m_operations</strong> indicates an <strong>Insert</strong>, then we insert the character at <strong>second[index2]</strong> and increment <strong>index2</strong>.</li>
+<li>If the element at <strong>m_operations</strong> indicates a <strong>Delete</strong>, we delete the character at <strong>first[index1]</strong> and increment <strong>index1</strong>.</li>
+<li>If the element at <strong>m_operations</strong> indicates a <strong>Replace</strong>, we replace the character at <strong>first[index1]</strong> with <strong>second[index2]</strong> and increment <strong>index1</strong> and <strong>index2</strong>.</li>
+</ul>
+<p>Continuing in this way, we can get the operations.</p>
+<h3 id="bottom-up-approach-with-dynamic-programming">Bottom-Up Approach with Dynamic Programming</h3>
+<p>To develop a DP approach, we just flip the way we are storing the results by traversing the strings backwards.</p>
+<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cEditDistance::DP(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; second)
+{
+    <span class="hljs-keyword">int</span> length1 = first.length();
+    <span class="hljs-keyword">int</span> length2 = second.length();
+
+    m_results.Init(length1 + <span class="hljs-number">1</span>, length2 + <span class="hljs-number">1</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> index1 = length1; index1 &gt;= <span class="hljs-number">0</span>; index1--)
+    {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> index2 = length2; index2 &gt;= <span class="hljs-number">0</span>; index2--)
+        {
+            <span class="hljs-keyword">if</span> (index1 == length1)
+            {
+                m_results.SetElement(index1, index2, length2 - index2);
+            }
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (index2 == length2)
+            {
+                m_results.SetElement(index1, index2, length1 - index1);
+            }
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (first[index1] == second[index2])
+            {
+                m_results.SetElement(index1, index2, m_results.GetElement(index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>));
+                m_Operations.SetElement(index1, index2, <span class="hljs-number">0</span>);
+            }
+            <span class="hljs-keyword">else</span>
+            {
+                <span class="hljs-keyword">int</span> insertCost = m_results.GetElement(index1, index2 + <span class="hljs-number">1</span>);
+                <span class="hljs-keyword">int</span> deleteCost = m_results.GetElement(index1 + <span class="hljs-number">1</span>, index2);
+                <span class="hljs-keyword">int</span> replaceCost = m_results.GetElement(index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+
+                <span class="hljs-keyword">int</span> minCost = insertCost;
+                m_Operations.SetElement(index1, index2, <span class="hljs-number">1</span>);
+
+                <span class="hljs-keyword">if</span> (deleteCost &lt; minCost)
+                {
+                    minCost = deleteCost;
+                    m_Operations.SetElement(index1, index2, <span class="hljs-number">2</span>);
+                }
+
+                <span class="hljs-keyword">if</span> (replaceCost &lt; minCost)
+                {
+                    minCost = replaceCost;
+                    m_Operations.SetElement(index1, index2, <span class="hljs-number">3</span>);
+                }
+
+                m_results.SetElement(index1, index2, <span class="hljs-number">1</span> + minCost);
+            }
+        }
+    }
+
+    <span class="hljs-keyword">int</span> operations = m_results.GetElement(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> GetSteps(first, second, operations);
+}
+</code></pre>
+<p>The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem could be solved by computing a fraction of the array.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The benchmark results on my machine</p>
+<p><img src="/assets/images/posts/dynamic-programming-editlevenshtein-distance/cover.jpg" alt="Edit distance benchmarks"></p>
+<p>If you would like to look at the code or run the benchmarks or tests yourself, you can find the code <a href="https://github.com/AnkurSheel/DynamicProgramming">here</a>.</p>
+<p>In the following article in the series, we will look at another problem that can be solved by Dynamic Programming.</p>
+<p>Have you tried Dynamic Programming before? How was your experience? Let me know.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/dynamic-programming-editlevenshtein-distance&text=In%20this%20article%2C%20we%20will%20develop%20a%20Dynamic%20Programming%20solution%20to%20the%20Edit%20Distance%20problem. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/dynamic-programming-editlevenshtein-distance"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

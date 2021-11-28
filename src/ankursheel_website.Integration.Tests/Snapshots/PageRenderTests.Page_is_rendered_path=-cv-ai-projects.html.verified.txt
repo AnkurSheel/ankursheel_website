@@ -1,0 +1,191 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - AI Projects</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects"/>
+
+<meta itemProp="name" content="AI Projects"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/cv/ai-projects"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="AI Projects"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="AI Projects"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">AI Projects</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            <h2 id="a-procedural-minecraft-terrain-generator">A procedural minecraft terrain generator</h2>
+<p>Made with Python</p>
+<p><a href="ai-projects/procedural-minecraft-terrain-generator">Screenshots</a></p>
+<p><a href="https://github.com/AnkurSheel/pmgai-minecraft">Source Code</a></p>
+<h2 id="a-route-planner">A Route planner</h2>
+<p>Route planner is based on Randy Olson's article &quot;Computing the optimal road trip across the U.S.&quot; It takes a list of waypoints and uses googlemaps to get the distance between them. A genetic algorithm used to solve the Travelling Salesman problem, finds a solution of the optimal route for us. It then spits out a html file with the route and directions.</p>
+<p>Made with Python, C++</p>
+<p><a href="ai-projects/route-planner-travelling-salesman-problem">Screenshots</a></p>
+<p><a href="https://github.com/AnkurSheel/RoutePlanner">Source Code</a></p>
+<h2 id="rebuilding-hal9000">Rebuilding HAL9000</h2>
+<p>An experiment in creating a chat-bot.</p>
+<p>Made with Python</p>
+<p><a href="https://github.com/AnkurSheel/pmgai-hal9000">Source Code</a></p>
+<h2 id="agent-that-learns-how-to-play-tetris">Agent that learns how to play Tetris</h2>
+<p>An experiment in using Q-Learning.</p>
+<p>Made with MATLAB</p>
+<h2 id="agent-that-plays-the-texas-hold-em-variation-of-poker-using-game-theory-concepts">Agent that plays the Texas Hold ‘Em variation of poker using game theory concepts</h2>
+<p>Made with C++</p>
+<h2 id="an-autonomous-robot-that-navigates-a-maze-and-find-a-pre-defined-object">An autonomous robot that navigates a maze and find a pre-defined object</h2>
+<p>It uses a motion model to recalculate the probabilities of its current location in the maze using an ultrasonic sensor. It also uses blob-recognition to find the object in the maze.</p>
+<p>Made with C++</p>
+<h2 id="a-pathfinding">A* Pathfinding</h2>
+<p>Made with C++, DirectX 9.0c</p>
+<p><a href="/assets/downloads/Astar.zip">Source Code</a></p>
+<h2 id="a-multi-agent-architecture-with-a-supporting-knowledge-base-to-simulate-a-restaurant-environment">A multi-agent architecture with a supporting knowledge base to simulate a restaurant environment</h2>
+<p>A* was employed to obtain optimal behavior from each entity like waiters, chef and host controlled by agents.</p>
+<p>Made with JAVA, PowerLoom</p>
+<h2 id="genetic-algorithms-to-solve-magic-square">Genetic Algorithm’s to solve magic square</h2>
+<p>Made with C++</p>
+<ul>
+<li><p><a href="/assets/downloads/Genetic_using_string.zip">Source Code using Strings</a></p>
+</li>
+<li><p><a href="/assets/downloads/Genetic_using_ints.zip">Source Code using duplicate integers</a></p>
+</li>
+<li><p><a href="/assets/downloads/Genetic_using_nonduplicate_ints.zip">Source Code using non duplicate integers</a></p>
+</li>
+</ul>
+<h2 id="minmax-algorithm-with-and-wo-alpha-beta-pruning">MinMax Algorithm with and w/o Alpha-Beta Pruning</h2>
+<p>Made with C++</p>
+<p><a href="/assets/downloads/MinMax.zip">Source Code</a></p>
+<h2 id="fuzzy-logic-system">Fuzzy Logic System</h2>
+<p>Made with C++</p>
+<p><a href="/assets/downloads/FuzzyLogic.rar">Source Code</a></p>
+<h2 id="neural-network-with-back-propagation">Neural Network with back propagation</h2>
+<p>Made with C++</p>
+<p><a href="/assets/downloads/NeuralNet.zip">Source Code</a></p>
+<h2 id="negamax-algorithm-with-and-wo-alpha-beta-pruning">NegaMax Algorithm with and w/o Alpha-Beta Pruning</h2>
+<p>Made with C++</p>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Setup WordPress locally: Installing an Apache Web Server</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="In the first part of the series, we will install Apache (webserver) on our machine."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/installing-apache"/>
+
+<meta itemProp="name" content="Setup WordPress locally: Installing an Apache Web Server"/>
+<meta itemProp="description" content="In the first part of the series, we will install Apache (webserver) on our machine."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/installing-apache-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/installing-apache"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Setup WordPress locally: Installing an Apache Web Server"/>
+<meta property="og:description" content="In the first part of the series, we will install Apache (webserver) on our machine."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/installing-apache-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/installing-apache-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Setup WordPress locally: Installing an Apache Web Server"/>
+<meta name="twitter:description" content="In the first part of the series, we will install Apache (webserver) on our machine."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/installing-apache-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/installing-apache-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Setup WordPress locally: Installing an Apache Web Server</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 18-Dec-2013</i>
+        <i class="font-bold">
+            Reading Time: 1 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/wordpress" class="badge text-black bg-grey-light no-underline">Wordpress</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><h2 id="installing-apache-on-windows">Installing Apache on Windows</h2>
+<ul>
+<li>Go to the <a href="https://httpd.apache.org/download.cgi">Apache Website</a> and download the installer file.</li>
+<li>Make sure Internet Information Services (IIS) is not running.</li>
+<li>If IIS is running, you will find the IIS console at Start-&gt;Control Panel-&gt;Administrative Tools-&gt;Internet Services Manager. Shut it down.</li>
+<li>Run the installer</li>
+<li>In the Server Information dialogue, enter the following
+<ul>
+<li><strong>Network Domain:</strong> The domain name. For local testing, enter <em>localhost</em>.</li>
+<li><strong>Server Name:</strong> The name of the server. For local testing, enter <em>localhost</em>.</li>
+<li><strong>Email Address:</strong> The email address where you want to receive email messages about the webserver.</li>
+<li><strong>Run Mode:</strong> In most cases, you would want to run Apache as a service.</li>
+</ul>
+</li>
+<li>You can change the installation directory if you click on Custom.</li>
+<li>Click Install.</li>
+</ul>
+<h2 id="installing-and-starting-apache-manually">Installing and Starting Apache Manually</h2>
+<p>If you choose to run the apache server manually in the Run Mode, you must install it. This can be done as follows.</p>
+<ul>
+<li>Run the command prompt as <strong>Administrator</strong>.</li>
+<li>Navigate to the bin directory in the Apache install directory and run the following command: <em>httpd.exe -k install</em></li>
+<li>Start the server using the Apache Monitor in the taskbar.</li>
+</ul>
+<h2 id="un-installing-apache">Un-Installing Apache</h2>
+<p>Navigate to the bin directory in the Apache install directory and run the following command <em>httpd.exe -k uninstall</em></p>
+<h2 id="configuring-apache">Configuring Apache</h2>
+<p>To change any settings, edit the httpd.conf file. On Windows, you can access this file through the menu at Start -&gt; Programs -&gt; Apache HTTPD Server -&gt; Configure Apache Server -&gt; Edit the Apache httpd.conf File.</p>
+<p>Restart the server for the changes to take effect.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/installing-apache&text=In%20the%20first%20part%20of%20the%20series%2C%20we%20will%20install%20Apache%20%28webserver%29%20on%20our%20machine. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/installing-apache"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

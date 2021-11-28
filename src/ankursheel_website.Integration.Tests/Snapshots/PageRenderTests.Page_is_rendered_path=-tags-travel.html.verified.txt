@@ -1,0 +1,738 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Posts tagged as &quot;travel&quot;</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/tags/travel"/>
+
+<meta itemProp="name" content="Posts tagged as &quot;travel&quot;"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/travel"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Posts tagged as &quot;travel&quot;"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Posts tagged as &quot;travel&quot;"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Posts tagged as &quot;travel&quot;</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/video-bungee-jump-queenstown" class="text-center prose-2xl mb-4">Video: Bungee Jump in Queenstown</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            A short video of my bungee jump in Queenstown.
+        </p>
+            <a href="/blog/video-bungee-jump-queenstown" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-photo-essay-milford-sound" class="text-center prose-2xl mb-4">New Zealand Escapes: Photo Essay - Milford Sound</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            When it rains in Milford Sound, the rainfall makes hundreds of waterfalls which, combined with the rainbows, make for a mystical sight.
+        </p>
+            <a href="/blog/new-zealand-escapes-photo-essay-milford-sound" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-tranzalpine-express" class="text-center prose-2xl mb-4">New Zealand Escapes: KiwiRail - TranzAlpine Express</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            The Tranzalpine Express is perhaps the most scenic train ride in New Zealand and an excellent alternative to driving to see the country.
+        </p>
+            <a href="/blog/new-zealand-escapes-tranzalpine-express" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-photo-essay-mount-maunganui" class="text-center prose-2xl mb-4">New Zealand Escapes: Photo Essay - Mount Maunganui</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The views from the Mount Maunganui summit tends to leave one breathless. Or is it because of the exertion of walking along a steep track? Decide for yourself
+        </p>
+            <a href="/blog/new-zealand-escapes-photo-essay-mount-maunganui" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-tauranga" class="text-center prose-2xl mb-4">New Zealand Escapes: Tauranga</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            Tauranga is a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports
+        </p>
+            <a href="/blog/new-zealand-escapes-tauranga" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-waitomo-blackwater-rafting" class="text-center prose-2xl mb-4">New Zealand Escapes: Waitomo Blackwater Rafting</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            There&#x27;s more than one way to see the glowworms in New Zealand&#x27;s Waitomo Caves. Our choice Waitomo Blackwater Rafting.
+        </p>
+            <a href="/blog/new-zealand-escapes-waitomo-blackwater-rafting" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-waiotapu-thermal-wonderland" class="text-center prose-2xl mb-4">New Zealand Escapes: Waiotapu Thermal Wonderland</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            Wai-o-tapu, whimsically named as the Waiotapu Thermal Wonderland, is a stunning geothermal area near Rotorua.
+        </p>
+            <a href="/blog/new-zealand-escapes-waiotapu-thermal-wonderland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-tamaki-maori-village-rotorua" class="text-center prose-2xl mb-4">New Zealand Escapes: Tamaki Maori Village, Rotorua</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua.
+        </p>
+            <a href="/blog/new-zealand-escapes-tamaki-maori-village-rotorua" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-hobbiton-matamata" class="text-center prose-2xl mb-4">New Zealand Escapes: Hobbiton, Matamata</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            A highlight for LOTR fans is a tour of the Shire at Hobbiton. This has been one of the places I have wanted to visit since we moved to New Zealand.
+        </p>
+            <a href="/blog/new-zealand-escapes-hobbiton-matamata" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-auckland-seaplanes" class="text-center prose-2xl mb-4">New Zealand Escapes: Auckland Seaplanes</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            It is an amazing feeling to take off and land in the water with Auckland Seaplanes. We expected to experience Auckland from above and were not disappointed
+        </p>
+            <a href="/blog/new-zealand-escapes-auckland-seaplanes" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-northland-part-2" class="text-center prose-2xl mb-4">New Zealand Escapes: Northland - Part 2</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            We reach Cape Reinga just in time for the sunset. On our way back, we check out the 90 mile beach and KawaKawa.
+        </p>
+            <a href="/blog/new-zealand-escapes-northland-part-2" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-northland-part-1" class="text-center prose-2xl mb-4">New Zealand Escapes: Northland - Part 1</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            For our very next escape, we travel through Northland to the the very tip of New Zealand - the place where the Tasman Sea meets the mighty Pacific Ocean.
+        </p>
+            <a href="/blog/new-zealand-escapes-northland-part-1" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-massey-strawberry-picking-auckland" class="text-center prose-2xl mb-4">New Zealand Escapes: Massey Strawberry Picking, Auckland</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Red, juicy strawberries are best eaten as soon as they&#x27;ve been picked. One of the easiest ways to do this is to get them at your local strawberry picking farm
+        </p>
+            <a href="/blog/new-zealand-escapes-massey-strawberry-picking-auckland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-iskcon-temple-auckland" class="text-center prose-2xl mb-4">New Zealand Escapes: Iskcon Temple, Auckland</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            From the beaches and islands to a place of worship. A photo essay of the Isckon temple in Auckland.
+        </p>
+            <a href="/blog/new-zealand-escapes-iskcon-temple-auckland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-piha-beach" class="text-center prose-2xl mb-4">New Zealand Escapes: Piha Beach</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            A travelogue of our visit to Piha beach - One of the most famous beaches on the west coast of New Zealand.
+        </p>
+            <a href="/blog/new-zealand-escapes-piha-beach" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/new-zealand-escapes-rangitoto-island" class="text-center prose-2xl mb-4">New Zealand Escapes: Rangitoto Island</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            To experience the beauty, a ferry trip to Rangitoto Island is a must-do for anyone new to Auckland city
+        </p>
+            <a href="/blog/new-zealand-escapes-rangitoto-island" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-seattle-washington" class="text-center prose-2xl mb-4">Photo Essay: Seattle, Washington</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Seen from above, pristine blue waters and snowy white mountains surround the downtown&#x27;s metallic skyscrapers, earning Seattle its nickname, The Emerald City
+        </p>
+            <a href="/blog/photo-essay-seattle-washington" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/video-goat-glacier-national-park" class="text-center prose-2xl mb-4">Video: Goat in Glacier National Park</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            A short video of a nimble footed goat in Glacier National Park.
+        </p>
+            <a href="/blog/video-goat-glacier-national-park" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-glacier-national-park-montana" class="text-center prose-2xl mb-4">Photo Essay: Glacier National Park, Montana</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            The Glacier National Park is a beautiful place and the landscapes are just breathtaking
+        </p>
+            <a href="/blog/photo-essay-glacier-national-park-montana" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/videos-bear-yellowstone-national-park" class="text-center prose-2xl mb-4">Video: Bear at Yellowstone National Park</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            A video of a bear cub that wandered near our car in the Yellowstone National Park.
+        </p>
+            <a href="/blog/videos-bear-yellowstone-national-park" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/videos-yellowstone-national-park-geysers" class="text-center prose-2xl mb-4">Videos: Yellowstone National Park Geysers</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            A few videos of the Yellowstone National Park Geysers.
+        </p>
+            <a href="/blog/videos-yellowstone-national-park-geysers" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/video-old-faithful-geyser" class="text-center prose-2xl mb-4">Video: Old Faithful Geyser</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            This 2 min long video is of the Old Faithful geyser in the Yellowstone National Park.
+        </p>
+            <a href="/blog/video-old-faithful-geyser" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-yellowstone-national-park-wyoming" class="text-center prose-2xl mb-4">Photo Essay: Yellowstone National Park, Wyoming</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place, and pictures cannot do justice.
+        </p>
+            <a href="/blog/photo-essay-yellowstone-national-park-wyoming" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-corn-palace-south-dakota" class="text-center prose-2xl mb-4">Photo Essay: Corn Palace, South Dakota</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            The next stop on the roadtrip is the Corn Palace in Mitchell, South Dakota. This is exactly as it sounds. The building is decorated with crop art.
+        </p>
+            <a href="/blog/photo-essay-corn-palace-south-dakota" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/diwali-auckland-2014" class="text-center prose-2xl mb-4">Photo Essay: Diwali in Auckland</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            This is a  series of photographs taken at the Diwali Festival organised by the Auckland Council.
+        </p>
+            <a href="/blog/diwali-auckland-2014" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-niagara-falls-new-york" class="text-center prose-2xl mb-4">Photo Essay: Niagara Falls, New York</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop.Next on the Photo Series of The USA roadtrip : Niagara Falls&#x27;
+        </p>
+            <a href="/blog/photo-essay-niagara-falls-new-york" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-washington-dc" class="text-center prose-2xl mb-4">Photo Essay: Washington DC</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            While I visit Washington DC, my parents hop across to New York and Philadelphia as well. Next on the Photo Series of The USA roadtrip: Washington DC
+        </p>
+            <a href="/blog/photo-essay-washington-dc" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-graceland-tennessee" class="text-center prose-2xl mb-4">Photo Essay: Graceland, Tennessee</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            From Georgia we move to Tenessee and visit the home of Elvis Presley. Next on the Photo Series of The USA roadtrip: Graceland
+        </p>
+            <a href="/blog/photo-essay-graceland-tennessee" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-world-coca-cola-georgia" class="text-center prose-2xl mb-4">Photo Essay: World Of Coca Cola, Georgia</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Next on the Photo Series of The USA roadtrip: World of Coca Cola
+        </p>
+            <a href="/blog/photo-essay-world-coca-cola-georgia" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-nasas-space-center-texas" class="text-center prose-2xl mb-4">Photo Essay: NASA&#x27;s Space Center, Texas</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Next on the Photo Series of The USA roadtrip : NASA&#x27;s Space Center
+        </p>
+            <a href="/blog/photo-essay-nasas-space-center-texas" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-meteor-crater-arizona" class="text-center prose-2xl mb-4">Photo Essay: Meteor Crater, Arizona</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Part of the Photo Series of The USA roadtrip : Meteor Crater in Arizona
+        </p>
+            <a href="/blog/photo-essay-meteor-crater-arizona" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-sedona-arizona" class="text-center prose-2xl mb-4">Photo Essay: Sedona, Arizona</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Next on the Photo Series of The USA roadtrip: Sedona, Arizona. A gem of a place, we discovered by accident.
+        </p>
+            <a href="/blog/photo-essay-sedona-arizona" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-grand-canyon-arizona" class="text-center prose-2xl mb-4">Photo Essay: Grand Canyon, Arizona</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Next on the Photo Series of The USA roadtrip: Grand Canyon
+        </p>
+            <a href="/blog/photo-essay-grand-canyon-arizona" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-legoland-san-diego" class="text-center prose-2xl mb-4">Photo Essay: Legoland, San Diego</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            For the kid in you, next on the Photo Series of The USA road trip: LegoLand
+        </p>
+            <a href="/blog/photo-essay-legoland-san-diego" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-san-diego-zoo-san-diego" class="text-center prose-2xl mb-4">Photo Essay: San Diego Zoo, San Diego</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Next on the Photo Series of The USA roadtrip: San Diego Zoo
+        </p>
+            <a href="/blog/photo-essay-san-diego-zoo-san-diego" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-seaworld-san-diego" class="text-center prose-2xl mb-4">Photo Essay: SeaWorld, San Diego</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            No visit to San Diego is complete without paying a visit to the Orcas at Seaworld.
+        </p>
+            <a href="/blog/photo-essay-seaworld-san-diego" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-disneyland-los-angeles" class="text-center prose-2xl mb-4">Photo Essay: DisneyLand Los Angeles</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Next on the Photo Series of The USA roadtrip: Disney Land in Los Angeles
+        </p>
+            <a href="/blog/photo-essay-disneyland-los-angeles" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-essay-universal-studios-los-angeles" class="text-center prose-2xl mb-4">Photo Essay: Universal Studios, Los Angeles</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Photo Series of a roadtrip starting from Universal Studios in Los Angeles
+        </p>
+            <a href="/blog/photo-essay-universal-studios-los-angeles" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/usa-roadtrip" class="text-center prose-2xl mb-4">USA Roadtrip</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;
+        </p>
+            <a href="/blog/usa-roadtrip" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-series-jaisalmer" class="text-center prose-2xl mb-4">Photo Series: Jaisalmer</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Photo Series of a roadtrip from Jodhpur to Jaisalmer in Rajasthan
+        </p>
+            <a href="/blog/photo-series-jaisalmer" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/photo-series-jodhpur" class="text-center prose-2xl mb-4">Photo Series: Jodhpur</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Photo Series of a roadtrip from Delhi to Jodhpur in Rajasthan.
+        </p>
+            <a href="/blog/photo-series-jodhpur" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/belly-dance" class="text-center prose-2xl mb-4">Video: Belly Dance</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Video of the Belly Dance during the Desert Safari
+        </p>
+            <a href="/blog/belly-dance" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/tandura-dance" class="text-center prose-2xl mb-4">Video: Tandura Dance</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            Clip of Tandura Dance during the Desert Safari
+        </p>
+            <a href="/blog/tandura-dance" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/desert-safari" class="text-center prose-2xl mb-4">Desert Safari</a>
+        <div class="font-semibold text-center">3 min</div>
+        <p>
+            In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance.
+        </p>
+            <a href="/blog/desert-safari" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/atlantis-lost-chambers" class="text-center prose-2xl mb-4">Atlantis The Lost Chambers</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In this travelogue, Gunjan and I visit the Lost Chambers in Atlantis in Dubai.
+        </p>
+            <a href="/blog/atlantis-lost-chambers" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/inside-jumeirah-mosque" class="text-center prose-2xl mb-4">Understanding Islam inside the Jumeirah Mosque</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            In this travelogue, Gunjan and I visit the Jumeirah Mosque and get a basic understanding of the tenets of Islam.
+        </p>
+            <a href="/blog/inside-jumeirah-mosque" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/dubai-fountain" class="text-center prose-2xl mb-4">Dubai Fountain</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The Dubai Fountain is the world&#x2019;s largest dancing fountain. There is a show every half hour with the fountain dancing to a different piece of music every time
+        </p>
+            <a href="/blog/dubai-fountain" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/atthetop" class="text-center prose-2xl mb-4">At the Top: Burj Khalifa</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            The scenery is pretty awesome from the world&#x27;s highest outdoor Observatory Deck at the 124th floor
+        </p>
+            <a href="/blog/atthetop" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/abra-souqs" class="text-center prose-2xl mb-4">Abra and Souqs in Dubai</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            A travelogue of visiting the various souqs in Dubai and taking the Abra, probably the cheapest mode of travel available in Dubai.
+        </p>
+            <a href="/blog/abra-souqs" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/wafi-mall" class="text-center prose-2xl mb-4">A visit to Wafi Mall</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            In this travelogue, Gunjan and I spend some time at the Wafi Mall in Dubai.
+        </p>
+            <a href="/blog/wafi-mall" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/dubai-dolphinarium" class="text-center prose-2xl mb-4">Dubai Dolphinarium</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In this travelogue, me and Gunjan visit the Dubai Dolphinarium.
+        </p>
+            <a href="/blog/dubai-dolphinarium" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/greenwich-london-eye" class="text-center prose-2xl mb-4">Visiting Greenwich and taking a ride on London Eye</a>
+        <div class="font-semibold text-center">2 min</div>
+        <p>
+            In this travelogue, I visit Greenwich, the Royal Observatory and take a ride on the London Eye.
+        </p>
+            <a href="/blog/greenwich-london-eye" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/walking-around-london" class="text-center prose-2xl mb-4">Walking Around in London</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace.
+        </p>
+            <a href="/blog/walking-around-london" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/london" class="text-center prose-2xl mb-4">Roaming around in London</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This is a part of one of my earlier travels when I travelled to London before starting my Masters.
+        </p>
+            <a href="/blog/london" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

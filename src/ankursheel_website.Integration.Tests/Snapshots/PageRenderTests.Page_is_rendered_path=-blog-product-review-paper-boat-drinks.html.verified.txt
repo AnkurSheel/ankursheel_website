@@ -1,0 +1,208 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Product Review: Paper Boat Drinks</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/product-review-paper-boat-drinks"/>
+
+<meta itemProp="name" content="Product Review: Paper Boat Drinks"/>
+<meta itemProp="description" content="What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/product-review-paper-boat-drinks-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/product-review-paper-boat-drinks"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Product Review: Paper Boat Drinks"/>
+<meta property="og:description" content="What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/product-review-paper-boat-drinks-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/product-review-paper-boat-drinks-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Product Review: Paper Boat Drinks"/>
+<meta name="twitter:description" content="What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/product-review-paper-boat-drinks-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/product-review-paper-boat-drinks-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Product Review: Paper Boat Drinks</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 04-Apr-2014</i>
+        <i class="font-bold">
+            Reading Time: 4 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/reviews" class="badge text-black bg-grey-light no-underline">reviews</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>What is the first thing that you think about when you hear the words Paper Boat? Or even the second or the third? Whatever might have come to your mind, I am sure "pouches of fruit-flavoured drinks" did not figure in that list.</p>
+<blockquote>
+<p>It takes courage to be creative. Just as soon as you have a new idea, you are a minority of one</p>
+<p><cite>E. Paul</cite></p>
+</blockquote>
+<p>I was approached last month by a Paper Boat representative to review their range of drinks. Although I was amused by how the message was framed, I was initially sceptical, as I had never heard of this brand earlier.</p>
+<p>What changed my mind, you ask?</p>
+<p>One was that they had mentioned that I had all the right to say anything and appreciate or criticize the drink based on my experience. It was refreshing (<em>pun intended)</em> to see this statement. The second reason and probably what clinched it for me was the <a href="http://paperboatdrinks.com/">Paper Boat website</a>, which oozes passion and attitude.</p>
+<p>Being true to its name, you are greeted with an image on '<em>how to make a paper boat'.</em> The one that sails - not the drink. Going through the <a href="http://paperboatdrinks.com/p/antakshari">Memories</a> tab would make most people nostalgic about their childhood days.</p>
+<p>You should certainly check out their website. After taking a look at their page, how many of you went "When I was growing, we didn't have any of these new-fangled video games, but we played all these games and more with our friends", even though you were at risk of sounding like an old man/woman (let us not get all the feminists up in arms).</p>
+<p>Oops, I forgot I had to review the drinks and not their website. Well, I guess that's one of the pitfalls of being a programmer.</p>
+<p>How many of you remember the paper boats you made eventually leaking?</p>
+<p>Fortunately, the packaging of the drinks is much better than the paper boats that at least I used to make. The Paper Boat pouches are made of a four-part laminate that makes the pack withstand extremes in pressure and heat while keeping any form of moisture and vapour entering the pack. The layer touching the contents is made of virgin, food-grade polypropylene, which keeps the content fresh, safe and tasty.</p>
+<p>"<em>Dont judge, a book by its cover</em>" is a quote everyone has heard, but for this product, I am going to go out on a limb and say, "<em>Do judge the drink from the packaging</em>".</p>
+<p>Before we get to the actual review of the drinks, for the price-conscious Indian in every one of us, it costs INR 30 for 250 ml(at the time of writing). I can see my readers going; that is all good, but what we want to know is are the drinks any good or will we just end up wasting our money. To them, I say, "Read on".</p>
+<p>Although they started with only 4 flavours, they are continuously increasing the variety they offer. We tasted 7 of their flavours which were neatly packed in an orange gunny bag.</p>
+<ol>
+<li><p><strong><em>Kala Khatta</em></strong>: This was the first one I wanted to try. This drink brought about a flashback to my younger days, slurping ice golas flavoured with Kala Khatta in the South Extension Market in Delhi. The hints of spices enhanced the flavours. A sure winner, although it could have been a tad stronger.</p>
+</li>
+<li><p><strong><em>Jal Jeera</em></strong>: Quite surprisingly, the drink, despite having added flavours, tasted homemade. A natural refresher, this became one of my favourites. An excellent alternative to serving guests instead of the ubiquitous aerated drinks and artificial juices. Add a piece of lemon to enhance the taste.</p>
+</li>
+<li><p><strong><em>AamPanna</em></strong>: The taste of raw mangoes, with a perfect balance of <em>khatta meetha</em>, was an instant hit. The fact that summers have started in Bangalore made this drink the ideal way to beat the heat.</p>
+</li>
+<li><p><strong><em>Golgappe ka Paani</em></strong>: Golgappa, puchka, paani-puri. Although the name varies from region to region, the composition remains more or less the same. This drink was a good balance of sweet and spice and the only thing missing was the actual gol gappa.</p>
+</li>
+<li><p><strong><em>Kokum</em></strong>: Used as a souring agent in Goan/Konkani curries, the taste of the Kokum juice was a bit surprising to me. It was tangy and a bit spicy but highly soothing. The fact that I had never tasted Kokum juice before made this new flavour even more appealing.</p>
+</li>
+<li><p><strong><em>AamRas</em></strong>: Truth be told, I could not make out much of a difference between this drink and Frooti/Maaza. It pretty much tasted the same, albeit it was a little thicker. The major plus for this drink is that there are no artificial sweeteners. Personally, to make this drink a winner, I would require it to be pulpier.</p>
+</li>
+<li><p><strong><em>Imli ka Amana</em></strong>: This was the first time I tasted a drink that made Imli the hero(heroine?). I was excited to taste this drink, but truth be told, it did not live up to my expectations. The drink was a little too sweet, and the flavour of Imli did not shine through. Having said that, I think this would go well in some alcohol-based cocktails.</p>
+</li>
+</ol>
+<p>Now that you have an idea of what the drinks are like, you can easily decide which one to go for. In my opinion, you should head out to the nearest store and try them.</p>
+<p>Let me know your opinion about the new Paper Boat Drinks.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/product-review-paper-boat-drinks&text=What%20is%20the%20first%20thing%20that%20comes%20to%20mind%20when%20you%20hear%20the%20words%20Paper%20Boat%3F%20A%20product%20review%20of%20the%20new%20pouches%20of%20flavoured%20drinks%20by%20Hector%20Beverages via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/product-review-paper-boat-drinks"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

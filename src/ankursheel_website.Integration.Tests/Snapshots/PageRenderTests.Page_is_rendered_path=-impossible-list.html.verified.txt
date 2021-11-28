@@ -1,0 +1,410 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Impossible list :  My ever-growing bucket list</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/impossible-list"/>
+
+<meta itemProp="name" content="Impossible list :  My ever-growing bucket list"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/impossible-list-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/impossible-list"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Impossible list :  My ever-growing bucket list"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/impossible-list-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/impossible-list-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Impossible list :  My ever-growing bucket list"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/impossible-list-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/impossible-list-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Impossible list :  My ever-growing bucket list</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            <p>See the reason behind creating this list <a href="/blog/impossible-list-or-a-bucket-list">here</a>.</p>
+<h2 id="travel-things-to-see-do">Travel - Things to See &amp; Do</h2>
+<ul>
+<li>Visit Every Continent
+<ul>
+<li><a href="/tags/north-america"><del>North America</del></a></li>
+<li>South America</li>
+<li><a href="/tags/europe"><del>Europe</del></a></li>
+<li><a href="/tags/asia"><del>Asia</del></a></li>
+<li>Australia</li>
+<li>Antartica</li>
+<li>Africa</li>
+</ul>
+</li>
+<li><del>Travel For 1 month straight</del> (May - July 2010)
+<ul>
+<li>Travel for 3 months straight.</li>
+</ul>
+</li>
+<li><a href="/blog/usa-roadtrip"><del>Do a roadtrip across the US</del></a> (May-July 2010)</li>
+<li>Do a roadtrip across Europe</li>
+<li>Do a roadtrip across India for atleast 2 months</li>
+<li>Do a roadtrip across New Zealand</li>
+<li>Do a roadtrip across Australia</li>
+<li>Do a round the world trip</li>
+<li><del>Visit atleast 10 countries.</del> (2014)
+<ul>
+<li>Visit atleast 15 countries. <em>Current Progress</em>: 12. See <a href="/impossible-list/country-visit-list">List here</a></li>
+</ul>
+</li>
+<li>Cool Things to See
+<ul>
+<li>Africa
+<ul>
+<li>Pyramids of Giza, Egypt</li>
+<li>Sun Temple of King Ramses II at Abu Simbel, Egypt</li>
+<li>The Migration, Kenya</li>
+<li>Ngorongoro Crater, Tanzania</li>
+<li>Victoria Fall, Zambia</li>
+</ul>
+</li>
+<li>Asia
+<ul>
+<li>Angkor Wat, Cambodia</li>
+<li>Forbidden City in Beijing, China</li>
+<li>Terracotta Warriors in X'ian, China</li>
+<li>The Great Wall of China, China</li>
+<li><del>The Taj Mahal, India</del> (1990, 1995, 2001, 2009)</li>
+<li>A geisha in Japan</li>
+</ul>
+</li>
+<li>Europe
+<ul>
+<li>Eiffel Tower in Paris, France</li>
+<li>Normandy beaches, France</li>
+<li>Notre Dame in Paris, France</li>
+<li>Nazi Concentration Camps, Germany</li>
+<li>Remnants of the Berlin Wall, Germany</li>
+<li>Neuschwanstein Castle, Germany</li>
+<li>Acropolis in Athens, Greece</li>
+<li>Leaning Tower of Pisa, Italy</li>
+<li>Pompeii, Italy</li>
+<li>Sistine Chapel at The Vatican, Italy</li>
+<li>St. Peter’s Basilica at The Vatican, Italy</li>
+<li>Statue Of David in Florence, Italy</li>
+<li>The Colosseum in Rome, Italy</li>
+<li>Trevi Fountain in Rome, Italy</li>
+<li>The fjords of Norway</li>
+<li>Dracula’s Castle, Romania</li>
+<li>Red Square in Moscow, Russia</li>
+<li>St Basil's Cathedral, Russia</li>
+<li>The Royal Mile in Edinbrugh, Scotland</li>
+<li>Cappadocia, Turkey</li>
+<li>Hagia Sophia in Istanbul, Turkey</li>
+<li>Giant’s Causeway, United Kingdom</li>
+<li>Stonehenge, United Kingdom</li>
+<li>Canals in Venice</li>
+<li>Foucault’s pendulum at Musée des Arts et Métiers, France</li>
+</ul>
+</li>
+<li>North America
+<ul>
+<li><del><a href="/blog/photo-essay-niagara-falls-new-york">Niagara falls, USA</a></del> (2010)</li>
+<li>Alcatraz, USA</li>
+<li>Antelope Canyon in Arizona, USA</li>
+<li>Ellis Island in New York City, USA</li>
+<li><del>Golden Gate Bridge in San Fransisco, USA</del> (2010)</li>
+<li><del><a href="/blog/photo-essay-grand-canyon-arizona">Grand Canyon, USA</a></del> (2010)</li>
+<li><del>Las Vegas strip, USA</del> (2010)</li>
+<li>Monument Valley in Utah, USA</li>
+<li><del>Mount Rushmore, USA</del> (2010)</li>
+<li>Pearl Harbor, USA (Hawaii)</li>
+<li><del>Redwood trees in California, USA</del> (2009)</li>
+<li><del>Space Needle in Seattle, USA</del> (2010)</li>
+<li><del>Statue of Liberty in New York City, USA</del> (2009)</li>
+<li><del>Times Square in New York City, USA</del> (2009)</li>
+<li><del><a href="/blog/photo-essay-yellowstone-national-park-wyoming">Yellowstone National Park, USA</a></del> (2010)</li>
+<li><del>Yosemite National Park</del> (2010)</li>
+<li>The Alaskan wilderness, USA</li>
+</ul>
+</li>
+<li>Oceania
+<ul>
+<li>Ayers Rock, Australia</li>
+<li>Harbor Bridge, Australia</li>
+<li>Fraser Island, Australia</li>
+<li>Sydney Opera House, Australia</li>
+<li>The Great Barrier Reef, Australia</li>
+<li><del><a href="/blog/new-zealand-escapes-hobbiton-matamata">Hobbiton movie set, New Zealand</a></del> (2015)</li>
+<li><del><a href="/blog/new-zealand-escapes-photo-essay-milford-sound">Milford Sound, New Zealand</a></del> (2016)</li>
+</ul>
+</li>
+<li>South America
+<ul>
+<li>Amazon RainForest, Brazil</li>
+<li>Easter Island, Chile</li>
+<li>Galapagos Islands, Equador</li>
+<li>Machu Pichu, Peru</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="adventures">Adventures</h2>
+<ul>
+<li>Anywhere
+<ul>
+<li><del>Drive in a country where they drive on the opposite side of the road</del> (USA 2008-2010)</li>
+<li>Walk on a glacier</li>
+<li><del><a href="/blog/video-bungee-jump-queenstown">Go Bungee Jumping</a></del> (Queenstown, New Zealand, 2016)</li>
+<li><del>Go on a cruise</del> (Singapore x 2)</li>
+<li>Go Para Gliding</li>
+<li>Go Para Sailing</li>
+<li>Go Snorkeling</li>
+<li>Go Scuba Diving</li>
+<li>Go Sky Diving</li>
+<li><del>Go white water rafting</del> (Rishikesh, 2008)</li>
+<li>Go Zorbing</li>
+<li>Go ZipLining in a cave</li>
+<li>Learn to fly a plane</li>
+<li><del>Live in another country for a year</del> (USA : 2 years, New Zealand : 5 years)</li>
+<li>Ride in a hot air balloon</li>
+<li><del>Ride in a helicopter</del> (Grand Canyon, 2010)</li>
+<li><a href="/blog/new-zealand-escapes-auckland-seaplanes"><del>Ride in a Seaplane</del></a> (Auckland,New Zealand, 2015)</li>
+<li>Sail on a Tall Ship</li>
+<li>See an active volcano up close</li>
+<li>Spontaneously walk into the airport and buy a same-day ticket to wherever</li>
+</ul>
+</li>
+<li>Africa
+<ul>
+<li>See a lion in the wild, Africa</li>
+</ul>
+</li>
+<li>Asia</li>
+<li>Europe
+<ul>
+<li>Climb the stairs of the Eiffel tower in Paris, France</li>
+<li><del>Drink a beer at hofbrauhaus in Munich, Germany</del> (August 2016)</li>
+<li>Drink a Guinness in Ireland</li>
+</ul>
+</li>
+<li>North America
+<ul>
+<li>Hike in the Grand Canyon, USA</li>
+</ul>
+</li>
+<li>Oceania
+<ul>
+<li>Drive the Great Ocean Road, Australia</li>
+<li>Scuba Dive in the Great Barrier Reef, Australia</li>
+<li>Snorkel in the Great Barrier Reef, Australia</li>
+<li>Sky Dive in New Zealand</li>
+<li>Zorbing in New Zealand</li>
+</ul>
+</li>
+<li>South America</li>
+</ul>
+<h2 id="festivals-events">Festivals / Events</h2>
+<ul>
+<li>Australia Day</li>
+<li>Las Fallas, Valencia, Spain</li>
+<li>La Tomatina, Valencia, Spain</li>
+<li>The sky lantern festival in Thailand</li>
+<li>St Patrick’s Day Festival, Dublin, Ireland</li>
+<li>Songkran Water Festival, Thailand</li>
+<li>The Olympics</li>
+<li>A tennis grand slam</li>
+<li>Chinese New Year in China</li>
+<li>Summer Solstice at Stonehenge</li>
+<li>Full moon Party, Koh Phangan, Thailand</li>
+</ul>
+<h2 id="life">Life</h2>
+<ul>
+<li>Be self-sufficient and location independent</li>
+<li>Get something named after me</li>
+<li>Make a full-time living online</li>
+<li>Go without cell phone for a day</li>
+<li>Live without technology for a day</li>
+<li>Go without social media for a day</li>
+<li>Own less than 100 things</li>
+<li>Meditate for 10 minutes (<strong>Current Progress</strong>: 5 minutes)</li>
+<li>Stop eating fast food for an entire month</li>
+<li>Travel business class</li>
+<li>Have only cold showers for a week</li>
+<li>Go without caffeine for 1 week.</li>
+<li>Drink only water for 1 day.</li>
+</ul>
+<h2 id="fitness">Fitness</h2>
+<ul>
+<li>Exercise every day for 30 continuous days</li>
+<li>Walk 10k steps for 30 days straight</li>
+<li>Wake up at 6am for 30 days – 0/30</li>
+<li><del>10 consecutive pushups</del>
+<ul>
+<li>20 consecutive pushups (Currently 15)</li>
+</ul>
+</li>
+<li><del>10 consecutive squats</del>
+<ul>
+<li><del>20 consecutive squats</del></li>
+<li>30 consecutive squats (Currently 25)</li>
+</ul>
+</li>
+<li>Be able to touch my toes</li>
+<li>Stretch every morning for 7 days</li>
+</ul>
+<h2 id="entrepreneurship-blogging">Entrepreneurship / Blogging</h2>
+<ul>
+<li>Write one blog post every week for <del>1</del> 3 years</li>
+<li>Write three blog post every week for <del>1</del> 3 years</li>
+<li>Blog 365 days in a row</li>
+<li>Start a news letter</li>
+<li><del>Write 5 books summaries.</del>
+<ul>
+<li><del>Write 10 books summaries.</del></li>
+<li>Write 20 books summaries. <strong>Current Progress: 12</strong>. Check out the summaries at <a href="https://www.discoveriesinbookland.com/">Discoveries in bookland</a></li>
+</ul>
+</li>
+<li><del>Get 500 visits in a month.</del> (December 2019)
+<ul>
+<li><del>Get 1000 visits in a month.</del> (January 2020)</li>
+<li><del>Get 2000 visits in a month.</del> (March 2020)</li>
+<li><del>Get 4000 visits in a month.</del> (May 2020)</li>
+<li>Get 8000 visits in a month.</li>
+</ul>
+</li>
+<li><del>Get 50 visits in a day.</del> (January 2020)
+<ul>
+<li><del>Get 100 visits in a day.</del> (March 2020)</li>
+<li>Get 200 visits in a day.</li>
+</ul>
+</li>
+<li><del>Make my first dollar online.</del>
+<ul>
+<li><del>Make 10 dollars online.</del></li>
+<li>Make 100 dollars online.</li>
+</ul>
+</li>
+<li>Start my own company
+<ul>
+<li>Game company</li>
+</ul>
+</li>
+<li>Build an application that someone pays for</li>
+</ul>
+<p>What is on your bucket/impossible list?</p>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

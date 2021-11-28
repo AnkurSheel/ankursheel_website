@@ -1,0 +1,241 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Why being an only child is awesome</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/child-appreciation"/>
+
+<meta itemProp="name" content="Why being an only child is awesome"/>
+<meta itemProp="description" content="Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/child-appreciation-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/child-appreciation"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Why being an only child is awesome"/>
+<meta property="og:description" content="Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/child-appreciation-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/child-appreciation-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Why being an only child is awesome"/>
+<meta name="twitter:description" content="Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/child-appreciation-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/child-appreciation-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Why being an only child is awesome</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 02-Dec-2013</i>
+        <i class="font-bold">
+            Reading Time: 5 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/ramblings" class="badge text-black bg-grey-light no-underline">ramblings</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p><strong><em>Disclaimer: This post may not be used to generalize all only children. I might just be messing with you.</em></strong></p>
+<p>Due to my parent's steadfast refusal to give me a sibling, I have been an only child for almost 30 years. During these years, I have been asked a few questions. The questions aren't there, but some of the answers and my thoughts(which I could have made up 😉) should be enough to make you fall asleep.</p>
+<p>So what does one mean when they say an <em><strong>"Only Child"</strong></em>. Well, an only child is a child with no siblings, either biological or adopted. Although first-born children may be considered temporary only children and have a similar early family environment, an only child is generally applied only to those who never have siblings.</p>
+<ul>
+<li>We do not have any siblings, i.e. brother or sister. <em>P.S. cousins are not siblings</em>.</li>
+<li>Our kids will never have first cousins from our side of the family.</li>
+<li>We are the only offspring our parents have.</li>
+</ul>
+<p>That's enough of the Wikipedia definition...</p>
+<p>Others might think we are spoilt and pampered; I don't see what's wrong with getting 100% of your parents love and resources. To them, I say</p>
+<blockquote>
+<p>Stop being so jealous just because we are the favourite child of our parents</p>
+</blockquote>
+<p>The pro or con, depending on your point of view, is that we don't have to share our stuff, and as one of my cousins says, "that includes the bathroom!!!" Even though I have no need, I love to put stickers on things proclaiming that they are... <strong>MINE</strong>.</p>
+<p>But do my parents overindulge me? That depends. To some people, I have more than enough; to others, I suppose I am derived.</p>
+<blockquote>
+<p>We get what we want (and usually) in our way</p>
+</blockquote>
+<p>Is there any other way to get what you want? This, I believe, is a good thing. Confused?</p>
+<p>We tend to focus on our goals and get tasks done beforehand before jumping into more extensive projects. As a consequence of this,</p>
+<blockquote>
+<p>We like things straightforward.</p>
+</blockquote>
+<p>As a result, being an only child status comes the ability to be entirely in our heads. Sometimes we will be so up in our head that we don't even hear other people. However, I have noticed that an "only child" is a better listener than most people.</p>
+<p>All of us have probably thought that having a sibling would be nice at some point in time. Its tough having</p>
+<ul>
+<li>no one to fight with.</li>
+<li>no one to share our secrets with (only to get blackmailed later on!).</li>
+<li>no one who can go anywhere with us if our friends are not available</li>
+<li>no one to blame if things go wrong.</li>
+<li>no one who you know would be there for you no matter what (and no parents don't count).</li>
+</ul>
+<p>I have lots of friends, but most have siblings, and I always felt that they have a special bond and loyalty that a friendship cant have. (Now that I have made all my friends happy by stating some of the benefits they have, I can continue.)</p>
+<p>But, I don't think that not having siblings has not disrupted my psyche in any way. It was disrupted by a lot of other things. :-)</p>
+<blockquote>
+<p>Personally, loneliness has never been a pervasive feeling.</p>
+</blockquote>
+<p>First and foremost, I had books. I devoured books, going to the public library and checking out big stacks. I read everything we had in the house; I read things that many would consider entirely inappropriate for someone my age. I read it even if I didn't understand it. The way I read books is to disappear completely into them (which explains my obsession with fantasy novels), almost becoming one of the characters.</p>
+<p>Later on, their place was taken by video games, especially RPG's. I now make video games for a living. But, they still haven't been able to take the place of books.</p>
+<blockquote>
+<p>Plus, I had my imaginary friends--legions of them--,</p>
+</blockquote>
+<p>And we did many incredible things. Huge, crazy, all-day adventures sometimes. I remember having those friends well into middle school.</p>
+<p>However, when I started high school, my imaginary friends just disappeared from my life. I can't even remember their names now, which makes me kind of sad.</p>
+<p>I manage to make many friends/acquaintances extremely fast, which will always be a plus. It's because of this that I can go and talk to anybody if I need to. Contradictorily, I don't feel the need to go and talk to people. I also don't feel the constant urge to have someone to talk to at all times.</p>
+<p>One of the cons of not having a sibling is that you are more reliant on friends(and later on your partner), so you might not want to upset them and risk losing them and hence become placating.</p>
+<blockquote>
+<p>Not having a sibling taught me how to spend time so that I am happy alone.</p>
+</blockquote>
+<p>I think that is one reason I can easily walk away from people who don't meet my expectations. But I consider that a good thing, mainly because I end up with long and fulfilling friendships, some of which go more than 20 yrs back.</p>
+<p>The only problem was that earlier, my expectations were very high. But I like to believe as I have grown, my expectations from others have become more realistic. How much of it is true is for others who know me to judge :-)</p>
+<p>I will concede that one bad habit that plagues most of us is that most don't learn how to share. In other words, the word <strong>SHARING</strong> doesn't exist in our dictionary. But, as time goes on, one at least learns how to share worldly things.</p>
+<p>I say at least because most people I know still can't deal with sharing their friends or family with others. Since we have always been a priority for our parents, we expect the same from everybody. This, in turn, can be disastrous as we start expecting things that might be possible but are not something that everybody would realize. From there on, things just go south. Unfortunately, to an extent, even I have this characteristic.</p>
+<p>Anyway, some of the more famous only child(ren)</p>
+<p>( P.S. the name, in the end, is soon going to become famous, but I just added it right now)</p>
+<ul>
+<li>Steve Allen</li>
+<li>Lance Armstrong</li>
+<li>Leonardo da Vinci</li>
+<li>Albert Einstein</li>
+<li>Indira Gandhi</li>
+<li>Isaac Newton</li>
+<li>Franklin D. Roosevelt</li>
+<li>Brooke Shields</li>
+<li>Robin Williams</li>
+<li>Ankur Sheel</li>
+</ul>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/child-appreciation&text=Due%20to%20my%20parent%27s%20steadfast%20refusal%20to%20give%20me%20a%20sibling%2C%20I%20have%20been%20an%20only%20child%20for%20almost%2030%20years.%20This%20post%20talks%20about%20the%20pros%20of%20being%20an%20only%20child. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/child-appreciation"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to draw on a page using react hooks and typescript</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Can we recreate the drawing interaction on DEV&#x27;s offline page as a React Component using Hooks and Typescript? Let&#x27;s find out"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/react-component-draw-page-hooks-typescript"/>
+
+<meta itemProp="name" content="How to draw on a page using react hooks and typescript"/>
+<meta itemProp="description" content="Can we recreate the drawing interaction on DEV&#x27;s offline page as a React Component using Hooks and Typescript? Let&#x27;s find out"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/react-component-draw-page-hooks-typescript-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/react-component-draw-page-hooks-typescript"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to draw on a page using react hooks and typescript"/>
+<meta property="og:description" content="Can we recreate the drawing interaction on DEV&#x27;s offline page as a React Component using Hooks and Typescript? Let&#x27;s find out"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/react-component-draw-page-hooks-typescript-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/react-component-draw-page-hooks-typescript-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to draw on a page using react hooks and typescript"/>
+<meta name="twitter:description" content="Can we recreate the drawing interaction on DEV&#x27;s offline page as a React Component using Hooks and Typescript? Let&#x27;s find out"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/react-component-draw-page-hooks-typescript-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/react-component-draw-page-hooks-typescript-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to draw on a page using react hooks and typescript</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 26-Sep-2020</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/typescript" class="badge text-black bg-grey-light no-underline">typescript</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/react" class="badge text-black bg-grey-light no-underline">react</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/web-development" class="badge text-black bg-grey-light no-underline">web development</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Recently, <a href="https://dev.to/aspittel/how-to-create-the-drawing-interaction-on-dev-s-offline-page-1mbe">How to Create the Drawing Interaction on DEV's Offline Page</a> by <a href="https://dev.to/aspittel">Ali Spittel</a> showed up in my feed, and it looked pretty cool. This got me wondering if I could create the same thing as a react component using hooks and typescript.</p>
+<p>Well, the fact that I am writing this post means I was able to recreate it. So let's see how I did it.</p>
+<p>If you are interested in the final product, you can check out the <a href="https://github.com/AnkurSheel/react-drawing-interaction">Github repository</a> or the <a href="https://codesandbox.io/s/react-drawing-interaction-bo1ph?from-embed">code sandbox</a>.</p>
+<h2 id="creating-the-component">Creating the Component</h2>
+<p>The first thing we need to do is to create a <strong>Canvas</strong> component.</p>
+<p>The canvas needs to take up some space that we will want any parent component to override, so we will add <code>width</code> and <code>height</code> as props.</p>
+<p>But, we want sensible defaults so that we don't have to add these props every time we want to use this component. So, we will add some <em>defaultProps</em> to set these values to <em>window.innerWidth</em> and <em>window.innerHeight</em> respectively.</p>
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">import</span> React from <span class="hljs-string">'react'</span>;
+
+<span class="hljs-keyword">interface</span> CanvasProps {
+    width: <span class="hljs-built_in">number</span>;
+    height: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">const</span> Canvas = ({ width, height }: CanvasProps) =&gt; {
+    <span class="hljs-keyword">return</span> &lt;canvas height={height} width={width} /&gt;;
+};
+
+Canvas.defaultProps = {
+    width: <span class="hljs-built_in">window</span>.innerWidth,
+    height: <span class="hljs-built_in">window</span>.innerHeight,
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Canvas;
+</code></pre>
+<h2 id="lets-draw">Lets Draw</h2>
+<p>Since we need to modify the canvas element, we will need to add a ref to it. We can do this using the <code>useRef</code> hook and changing our <em>canvas</em> element to set the ref.</p>
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> canvasRef = useRef &lt; HTMLCanvasElement &gt; <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">return</span> &lt;canvas ref={canvasRef} height={height} width={width} /&gt;;
+</code></pre>
+<h3 id="set-state">Set state</h3>
+<p>We need to keep track of some variables.</p>
+<ul>
+<li>the mouse position.</li>
+<li>whether we are painting or not.</li>
+</ul>
+<p>We can do this by adding the <code>useState</code> hook. We will also create a <code>Coordinate</code> type to help with keeping track of mouse positions.</p>
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">type</span> Coordinate = {
+    x: <span class="hljs-built_in">number</span>;
+    y: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-keyword">const</span> Canvas = ({ width, height }: CanvasProps) =&gt; {
+<span class="hljs-keyword">const</span> [isPainting, setIsPainting] = useState(<span class="hljs-literal">false</span>);
+<span class="hljs-keyword">const</span> [mousePosition, setMousePosition] = useState&lt;Coordinate | <span class="hljs-literal">undefined</span>&gt;(<span class="hljs-literal">undefined</span>);
+<span class="hljs-comment">// ... other stuff here</span>
+</code></pre>
+<h3 id="start-drawing-when-the-mouse-is-pressed">Start drawing when the mouse is pressed.</h3>
+<p>We will add the event listener in the <code>useEffect</code> hook. If we have a valid reference to the canvas, we add an event listener to the <em>mouseDown</em> event. We also remove the event listener when we unmount.</p>
+<pre><code class="language-typescript hljs">useEffect(() =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
+    canvas.addEventListener(<span class="hljs-string">'mousedown'</span>, startPaint);
+    <span class="hljs-keyword">return</span> () =&gt; {
+        canvas.removeEventListener(<span class="hljs-string">'mousedown'</span>, startPaint);
+    };
+}, [startPaint]);
+</code></pre>
+<p><em>startPaint</em> needs to get the current coordinates of the mouse and set <code>isPainting</code> to true. We will also wrap it in a <code>useCallback</code> hook to use it inside the <code>useEffect</code> hook.</p>
+<pre><code class="language-typescript hljs"> <span class="hljs-keyword">const</span> startPaint = useCallback((event: MouseEvent) =&gt; {
+        <span class="hljs-keyword">const</span> coordinates = getCoordinates(event);
+        <span class="hljs-keyword">if</span> (coordinates) {
+            setIsPainting(<span class="hljs-literal">true</span>);
+            setMousePosition(coordinates);
+        }
+    }, []);
+
+<span class="hljs-comment">// ...other stuff here</span>
+
+<span class="hljs-keyword">const</span> getCoordinates = (event: MouseEvent): Coordinate | <span class="hljs-literal">undefined</span> =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+        <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
+    <span class="hljs-keyword">return</span> {event.pageX - canvas.offsetLeft, event.pageY - canvas.offsetTop};
+};
+</code></pre>
+<h3 id="draw-the-line-on-mouse-move">Draw the line on mouse move</h3>
+<p>Like the <em>mouseDown</em> event listener, we will use the _ useEffect` hook to add the _mousemove_ event.</p>
+<pre><code class="language-typescript hljs">useEffect(() =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
+    canvas.addEventListener(<span class="hljs-string">'mousemove'</span>, paint);
+    <span class="hljs-keyword">return</span> () =&gt; {
+        canvas.removeEventListener(<span class="hljs-string">'mousemove'</span>, paint);
+    };
+}, [paint]);
+</code></pre>
+<p><em>paint</em> needs to</p>
+<ul>
+<li>Check if we are painting.</li>
+<li>Get the new mouse coordinates.</li>
+<li>Draw a line from the old coordinates to the new one by getting the rendering context from the canvas.</li>
+<li>Update the old coordinates.</li>
+</ul>
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> paint = useCallback(
+    (event: MouseEvent) =&gt; {
+        <span class="hljs-keyword">if</span> (isPainting) {
+            <span class="hljs-keyword">const</span> newMousePosition = getCoordinates(event);
+            <span class="hljs-keyword">if</span> (mousePosition &amp;&amp; newMousePosition) {
+                drawLine(mousePosition, newMousePosition);
+                setMousePosition(newMousePosition);
+            }
+        }
+    },
+    [isPainting, mousePosition]
+);
+
+<span class="hljs-comment">// ...other stuff here</span>
+
+<span class="hljs-keyword">const</span> drawLine = (originalMousePosition: Coordinate, newMousePosition: Coordinate) =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
+    <span class="hljs-keyword">const</span> context = canvas.getContext(<span class="hljs-string">'2d'</span>);
+    <span class="hljs-keyword">if</span> (context) {
+        context.strokeStyle = <span class="hljs-string">'red'</span>;
+        context.lineJoin = <span class="hljs-string">'round'</span>;
+        context.lineWidth = <span class="hljs-number">5</span>;
+
+        context.beginPath();
+        context.moveTo(originalMousePosition.x, originalMousePosition.y);
+        context.lineTo(newMousePosition.x, newMousePosition.y);
+        context.closePath();
+
+        context.stroke();
+    }
+};
+</code></pre>
+<h3 id="stop-drawing-on-mouse-release">Stop drawing on mouse release</h3>
+<p>We want to stop drawing when either the user releases the mouse or moves the mouse out of the canvas area.</p>
+<pre><code class="language-typescript hljs">useEffect(() =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
+    canvas.addEventListener(<span class="hljs-string">'mouseup'</span>, exitPaint);
+    canvas.addEventListener(<span class="hljs-string">'mouseleave'</span>, exitPaint);
+    <span class="hljs-keyword">return</span> () =&gt; {
+        canvas.removeEventListener(<span class="hljs-string">'mouseup'</span>, exitPaint);
+        canvas.removeEventListener(<span class="hljs-string">'mouseleave'</span>, exitPaint);
+    };
+}, [exitPaint]);
+</code></pre>
+<p>In <em>exitPaint</em>, we just set the <code>isPainting</code> to <code>false</code>.</p>
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> exitPaint = useCallback(() =&gt; {
+    setIsPainting(<span class="hljs-literal">false</span>);
+}, []);
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>And we have a React component that we can reuse. You can see the final code in either the <a href="https://github.com/AnkurSheel/react-drawing-interaction">Github repository</a> or play with the <a href="https://codesandbox.io/s/react-drawing-interaction-bo1ph?from-embed">code sandbox</a>.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/react-component-draw-page-hooks-typescript&text=Can%20we%20recreate%20the%20drawing%20interaction%20on%20DEV%27s%20offline%20page%20as%20a%20React%20Component%20using%20Hooks%20and%20Typescript%3F%20Let%27s%20find%20out via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/react-component-draw-page-hooks-typescript"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

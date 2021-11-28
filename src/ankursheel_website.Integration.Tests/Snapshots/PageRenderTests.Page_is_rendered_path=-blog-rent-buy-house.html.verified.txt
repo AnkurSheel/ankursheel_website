@@ -1,0 +1,222 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Should I Rent Or Buy a House?</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="My two cents on whether you should rent or buy a house."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/rent-buy-house"/>
+
+<meta itemProp="name" content="Should I Rent Or Buy a House?"/>
+<meta itemProp="description" content="My two cents on whether you should rent or buy a house."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/rent-buy-house"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Should I Rent Or Buy a House?"/>
+<meta property="og:description" content="My two cents on whether you should rent or buy a house."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Should I Rent Or Buy a House?"/>
+<meta name="twitter:description" content="My two cents on whether you should rent or buy a house."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Should I Rent Or Buy a House?</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 03-May-2016</i>
+        <i class="font-bold">
+            Reading Time: 5 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/ramblings" class="badge text-black bg-grey-light no-underline">ramblings</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Conventional wisdom says you grow up and buy a home because that's just what you do when you are a grownup. Now, why would anyone want to be a grownup and have responsibilities is beyond me? But, maybe you like having responsibilities.</p>
+<p><strong>Is buying a house still the right decision for you?</strong></p>
+<p>In my steadfast refusal to invest in a house, I have discussed why I am still renting instead of buying (a house) with various people over the last few years.</p>
+<p><img src="/assets/images/posts/rent-buy-house/cover.jpg" alt="Abandoned House"></p>
+<h2 id="argument-1">Argument #1</h2>
+<p>The biggest argument I have heard for owning a home is</p>
+<blockquote>
+<p>It's an investement</p>
+</blockquote>
+<p>According to Robert Shiller, a Yale economist and Nobel prize winner, buying a house is "like a consumption choice, it's not an investment". He says that, overall, the housing market doesn’t have a significant long-term return.</p>
+<p>Although I agree with him, you could be lucky and have the housing market in your area explode. But, taking that gamble is probably riskier than investing in the stock market, which has a higher return in the long term.</p>
+<p>What you also need to consider is the opportunity cost of buying. When you go to buy a house, there is the down-payment and the mortgages. You need to see if you would be better off by investing in the down-payment.</p>
+<p>Also, if your rent is significantly cheaper than the mortgage, you would be better off renting a house and investing the difference. If you plan to pay the mortgage by using the monthly rent, you need to consider that the rent might not be enough to cover the monthly mortgage or that the house might be empty for some time.</p>
+<p>If your main reason for buying a house is an investment and you hope to sell it down the road for a tidy profit, all I can say is - To quote from the Hunger Games - "<em>May the odds be ever in your favour</em>". If you have been living under a rock and haven't read the books or seen the movies, they generally are not.</p>
+<h2 id="argument-2">Argument #2</h2>
+<p>The second argument that frequently comes up is that.</p>
+<blockquote>
+<p>When you rent, you own nothing. When you buy, you eventually own the house</p>
+</blockquote>
+<p><em>I think this is also why most people are baffled by my stance of renting a furnished apartment instead of buying the furniture myself.</em></p>
+<p>Let me start by saying that "When you are renting, you are paying to have a place to live". In most cases, it would be in a neighbourhood that is more suited to your style of living and what you consider important.</p>
+<p>Personal finance blogger Mr Money Mustache suggests you <a href="http://www.mrmoneymustache.com/2015/07/27/rent-vs-buy/">consider the commuting costs</a> as well. A house in the suburbs of a big city could be far away from your work, costing you gas and vehicle maintenance if you don’t have a public transit option. It probably wouldn’t be too difficult to find a rental closer to your work that could save you money on housing and commute costs. You also don't have to worry about depreciation, repairs and maintenance because of normal wear and tear.</p>
+<p>What if your job requires you to move or you want to explore an exciting new opportunity in a new city? Chances are, if you have a mortgage to pay, financial considerations will weigh in, and you will have to forego the opportunity.</p>
+<h3 id="argument-2-a">Argument #2 A</h3>
+<p>Invariably, someone will counter with the argument that.</p>
+<blockquote>
+<p>But Ankur, if you buy a house, you will eventually pay it off, and it will be yours</p>
+</blockquote>
+<p>Now only if it was so easy. Most people forget about the payment to the government - the dreaded taxes. Even if you have paid off your mortgage and celebrate thinking that you finally own the house, you realize that property tax still exists. If you still believe you own the house, don't pay the tax for a while and see how fast the government comes after you.</p>
+<p>In fact, at one point in time, even we almost fell into the trap and started looking for a house. Luckily, we didn't find anything that we liked. Being the epitome of laziness that I am, I got tired of looking in a few days, and we decided to continue renting.</p>
+<h2 id="argument-3">Argument #3</h2>
+<p>The third argument that comes up is</p>
+<blockquote>
+<p>You save on tax when you buy a house</p>
+</blockquote>
+<p>This is one of those classic cases of Penny Wise, Pound Foolish. The tax you save will probably be not even close to the interest you are paying every year. Yes, you do get a tax benefit, but this should not be a major consideration to decide if you should buy a house or not.</p>
+<h2 id="is-buying-a-house-for-chumps">Is buying a house for chumps?</h2>
+<p>This doesn't mean that you should never buy a house. One advantage of buying a house is that you get to do whatever you want. Customization FTW. As a renter, you are at the mercy of your landlord to get any changes made.</p>
+<p>Owning is also the best way to lock in living costs if you plan to stay in the same place for a long time. After all, rents can go up, and the landlord may just ask you to move out.</p>
+<h2 id="can-i-afford-to-buy-a-house">Can I afford to buy a house?</h2>
+<p>So how do you decide whether you can afford to buy a house? One rule of thumb is that your home should <a href="http://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html">not cost you more than 2.5 times your salary or, better still, your net worth</a>. You should have a cushion between your monthly income and expenses(including your mortgage). You should also not be buying a house if you have a massive credit card debt or other loans that need to be paid off.</p>
+<p>If you are buying a house for investment purposes, you should follow <a href="http://affordanything.com/2012/01/25/income-property/">the one per cent rule of investment</a>, i.e. Does the monthly rent equal one per cent of the purchase price or more? Some people go a step further and claim that you should follow the 2 per cent rule, but I feel that it is too prohibitive.</p>
+<p>Finally, you should remember to add mortgage payments, taxes and maintenance charges into your estimates and make sure it makes sense for you financially before taking a plunge into homeownership.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Although I don't see Gunjan and me buying a house in the foreseeable future, I am not entirely opposed to purchasing a house.</p>
+<p>If you buy for the right reasons and make an informed decision, homeownership, whether for yourself or as an investment, can be one of the best things.</p>
+<p>However, it scares me how many couples I know have bought into the American/Indian Dream of buying a house without doing the due diligence and then not enjoying their lives because they are worried about the next mortgage payment.</p>
+<p>What do you think? Is renting better than buying, or would you rather be a homeowner?</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rent-buy-house&text=My%20two%20cents%20on%20whether%20you%20should%20rent%20or%20buy%20a%20house. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/rent-buy-house"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

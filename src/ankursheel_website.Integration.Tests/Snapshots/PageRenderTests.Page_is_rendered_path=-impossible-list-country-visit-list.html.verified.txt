@@ -1,0 +1,395 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Country Visit List</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/impossible-list/country-visit-list"/>
+
+<meta itemProp="name" content="Country Visit List"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/impossible-list/country-visit-list-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/impossible-list/country-visit-list"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Country Visit List"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/impossible-list/country-visit-list-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/impossible-list/country-visit-list-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Country Visit List"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/impossible-list/country-visit-list-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/impossible-list/country-visit-list-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Country Visit List</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            <h2 id="visited">Visited</h2>
+<ol>
+<li><p>Austria (August 2016)</p>
+</li>
+<li><p><a href="/tags/united-kingdom">England</a> (August 2008, January 2009)</p>
+</li>
+<li><p>Germany (August 2016)</p>
+</li>
+<li><p><a href="/tags/india">India</a> (Citizen)</p>
+</li>
+<li><p>Indonesia (January 2010)</p>
+</li>
+<li><p>Malaysia (December 2004)</p>
+</li>
+<li><p><a href="/tags/new-zealand">New Zealand</a> (Jun 2014 - Present)</p>
+</li>
+<li><p>Singapore (December 2004, August 2007, January 2010)</p>
+</li>
+<li><p>Scotland (August 2008)</p>
+</li>
+<li><p>Thailand (December 2004)</p>
+</li>
+<li><p><a href="/tags/uae">United Arab Emirates</a> (October 2012)</p>
+</li>
+<li><p><a href="/tags/usa">United States</a> (September 2008 – July 2010)</p>
+</li>
+</ol>
+<h2 id="remaining">Remaining</h2>
+<ol>
+<li>Afghanistan</li>
+<li>Albania</li>
+<li>Algeria</li>
+<li>American Samoa</li>
+<li>Andorra</li>
+<li>Angola</li>
+<li>Anguilla</li>
+<li>Antigua and Barbuda</li>
+<li>Argentina</li>
+<li>Armenia</li>
+<li>Aruba</li>
+<li>Australia</li>
+<li>Austria</li>
+<li>Azerbaijan</li>
+<li>Bahamas</li>
+<li>Bahrain</li>
+<li>Bangladesh</li>
+<li>Barbados</li>
+<li>Belarus</li>
+<li>Belgium</li>
+<li>Belize</li>
+<li>Benin</li>
+<li>Bermuda</li>
+<li>Bhutan</li>
+<li>Bolivia</li>
+<li>Bosnia-Herzegovina</li>
+<li>Botswana</li>
+<li>Bouvet Island</li>
+<li>Brazil</li>
+<li>Brunei</li>
+<li>Bulgaria</li>
+<li>Burkina Faso</li>
+<li>Burundi</li>
+<li>Cambodia</li>
+<li>Cameroon</li>
+<li>Canada</li>
+<li>Cape Verde</li>
+<li>Cayman Islands</li>
+<li>Central African Republic</li>
+<li>Chad</li>
+<li>Chile</li>
+<li>China</li>
+<li>Christmas Island</li>
+<li>Cocos (Keeling) Islands</li>
+<li>Colombia</li>
+<li>Comoros</li>
+<li>Congo, Democratic Republic of the (Zaire)</li>
+<li>Congo, Republic of</li>
+<li>Cook Islands</li>
+<li>Costa Rica'</li>
+<li>Croatia</li>
+<li>Cuba</li>
+<li>Cyprus</li>
+<li>Czech Republic</li>
+<li>Denmark</li>
+<li>Djibouti</li>
+<li>Dominica</li>
+<li>Dominican Republic</li>
+<li>Ecuador</li>
+<li>Egypt</li>
+<li>El Salvador</li>
+<li>Equatorial Guinea</li>
+<li>Eritrea</li>
+<li>Estonia</li>
+<li>Ethiopia</li>
+<li>Falkland Islands</li>
+<li>Faroe Islands</li>
+<li>Fiji</li>
+<li>Finland</li>
+<li>France</li>
+<li>French Guiana</li>
+<li>Gabon</li>
+<li>Gambia</li>
+<li>Georgia</li>
+<li>Germany</li>
+<li>Ghana</li>
+<li>Gibraltar</li>
+<li>Greece</li>
+<li>Greenland</li>
+<li>Grenada</li>
+<li>Guadeloupe (French)</li>
+<li>Guam (USA)</li>
+<li>Guatemala</li>
+<li>Guinea</li>
+<li>Guinea Bissau</li>
+<li>Guyana</li>
+<li>Haiti</li>
+<li>Holy See</li>
+<li>Honduras</li>
+<li>Hong Kong</li>
+<li>Hungary</li>
+<li>Iceland</li>
+<li>Iran</li>
+<li>Iraq</li>
+<li>Ireland</li>
+<li>Israel</li>
+<li>Italy</li>
+<li>Ivory Coast (Cote D`Ivoire)</li>
+<li>Jamaica</li>
+<li>Japan</li>
+<li>Jordan</li>
+<li>Kazakhstan</li>
+<li>Kenya</li>
+<li>Kiribati</li>
+<li>Kuwait</li>
+<li>Kyrgyzstan</li>
+<li>Laos</li>
+<li>Latvia</li>
+<li>Lebanon</li>
+<li>Lesotho</li>
+<li>Liberia</li>
+<li>Libya</li>
+<li>Liechtenstein</li>
+<li>Lithuania</li>
+<li>Luxembourg</li>
+<li>Macau</li>
+<li>Macedonia</li>
+<li>Madagascar</li>
+<li>Malawi</li>
+<li>Maldives</li>
+<li>Mali</li>
+<li>Malta</li>
+<li>Marshall Islands</li>
+<li>Martinique (French)</li>
+<li>Mauritania</li>
+<li>Mauritius</li>
+<li>Mayotte</li>
+<li>Mexico</li>
+<li>Micronesia</li>
+<li>Moldova</li>
+<li>Monaco</li>
+<li>Mongolia</li>
+<li>Montenegro</li>
+<li>Montserrat</li>
+<li>Morocco</li>
+<li>Mozambique</li>
+<li>Myanmar</li>
+<li>Namibia</li>
+<li>Nauru</li>
+<li>Nepal</li>
+<li>Netherlands</li>
+<li>Netherlands Antilles</li>
+<li>New Caledonia (French)</li>
+<li>Nicaragua</li>
+<li>Nigeria</li>
+<li>Niue</li>
+<li>Norfolk Island</li>
+<li>North Korea</li>
+<li>Northern Mariana Islands</li>
+<li>Norway</li>
+<li>Oman</li>
+<li>Pakistan</li>
+<li>Palau</li>
+<li>Panama</li>
+<li>Papua New Guinea</li>
+<li>Paraguay</li>
+<li>Peru</li>
+<li>Philippines</li>
+<li>Pitcairn Island</li>
+<li>Poland</li>
+<li>Polynesia (French)</li>
+<li>Portugal</li>
+<li>Puerto Rico</li>
+<li>Qatar</li>
+<li>Reunion</li>
+<li>Romania</li>
+<li>Russia</li>
+<li>Rwanda</li>
+<li>Saint Helena</li>
+<li>Saint Kitts and Nevis</li>
+<li>Saint Lucia</li>
+<li>Saint Pierre and Miquelon</li>
+<li>Saint Vincent and Grenadines</li>
+<li>Samoa</li>
+<li>San Marino</li>
+<li>Sao Tome and Principe</li>
+<li>Saudi Arabia</li>
+<li>Senegal</li>
+<li>Serbia</li>
+<li>Seychelles</li>
+<li>Sierra Leone</li>
+<li>Slovakia</li>
+<li>Slovenia</li>
+<li>Solomon Islands</li>
+<li>Somalia</li>
+<li>South Africa</li>
+<li>South Georgia and South Sandwich Islands</li>
+<li>South Korea</li>
+<li>Spain</li>
+<li>Sri Lanka</li>
+<li>Sudan</li>
+<li>Suriname</li>
+<li>Svalbard and Jan Mayen Islands</li>
+<li>Swaziland</li>
+<li>Sweden</li>
+<li>Switzerland</li>
+<li>Syria</li>
+<li>Taiwan</li>
+<li>Tajikistan</li>
+<li>Tanzania</li>
+<li>Timor-Leste (East Timor)</li>
+<li>Togo</li>
+<li>Tokelau</li>
+<li>Tonga</li>
+<li>Trinidad and Tobago</li>
+<li>Tunisia</li>
+<li>Turkey</li>
+<li>Turkmenistan</li>
+<li>Turks and Caicos Islands</li>
+<li>Tuvalu</li>
+<li>Uganda</li>
+<li>Ukraine</li>
+<li>Uruguay</li>
+<li>Uzbekistan</li>
+<li>Vanuatu</li>
+<li>Venezuela</li>
+<li>Vietnam</li>
+<li>Virgin Islands</li>
+<li>Wallis and Futuna Islands</li>
+<li>Yemen</li>
+<li>Zambia</li>
+<li>Zimbabwe</li>
+</ol>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

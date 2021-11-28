@@ -1,0 +1,205 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Review: Takapuna Car Clinic, Auckland</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A review of the Takapuna Car Clinic garage in Auckland."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/review-takapuna-car-clinic-auckland"/>
+
+<meta itemProp="name" content="Review: Takapuna Car Clinic, Auckland"/>
+<meta itemProp="description" content="A review of the Takapuna Car Clinic garage in Auckland."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/review-takapuna-car-clinic-auckland-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/review-takapuna-car-clinic-auckland"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Review: Takapuna Car Clinic, Auckland"/>
+<meta property="og:description" content="A review of the Takapuna Car Clinic garage in Auckland."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/review-takapuna-car-clinic-auckland-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/review-takapuna-car-clinic-auckland-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Review: Takapuna Car Clinic, Auckland"/>
+<meta name="twitter:description" content="A review of the Takapuna Car Clinic garage in Auckland."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/review-takapuna-car-clinic-auckland-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/review-takapuna-car-clinic-auckland-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Review: Takapuna Car Clinic, Auckland</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 24-Nov-2015</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/reviews" class="badge text-black bg-grey-light no-underline">reviews</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>I am sure you are wondering why would I write a review of a garage (Takapuna Car Clinic) on my blog. The way I see it, there can only be two reasons: either the service provided was exemplary or atrocious.</p>
+<p><strong>Which one do you think it is?</strong></p>
+<h2 id="the-story">The story</h2>
+<p>To begin my story, my car was due for a service and a WOF(Warrant of Fitness), and I decided to look on the usual coupon site like Groupon and Grabone to see if I could find a decent deal. The one that caught my fancy was a deal from the Takapuna Car Clinic.</p>
+<p>The deal itself looks excellent on paper. $59 for a service, 4 litres of oil, an oil filter and WOF instead of the $200+ it would otherwise cost me. To me, that seemed like a win-win situation. I figured even if the service was not up to the mark, how much could losing NZD 59 hurt me. Even if it isn't great, well, I get cheap service and a WOF.</p>
+<p>Furthermore, it required a booking 7 days in advance, which to me looked like a busy garage. And a busy garage to me implies a good garage.</p>
+<p>Oh boy, were all my assumptions wrong. I set up an appointment the required 7 days before. On reaching there, I was told to leave my car as it would take them a couple of hours to service it and get the WOF.</p>
+<p>Oh well, time to go to the nearby beach and kill time.</p>
+<p>After about 2 hours, I got a call saying that the car was ready to be picked up, but they had found a few issues with the car. Some of them seemed routine, probably to a tune of about $100. However, the real kicker was that they had failed my WOF because some engine support was broken.</p>
+<p>Was this piece relatively inexpensive? If only, the part for which the WOF was failed cost an approximate $700. There went my relaxing day at the beach while my car was being worked on.</p>
+<p>Anyway, long story short, I decided not to pay the $700. At that time, I was told I could only drive the car to the house or to another garage to get a WOF unless I coughed up the $700 and got the part replaced.</p>
+<p>This was a little surprising as the car has been driven for less than 3000 kilometres in the last year, and it had passed the previous WOF. Needless to say, I got out of there as fast as I could.</p>
+<p>That's not true;</p>
+<p>I spent some time sitting in the car searching for the nearest AA (WOF) centre. Thankfully, I did. The AA centre told me nothing was wrong with my car and gave me the WOF in 15 minutes.</p>
+<p>I guess the adage "You get what you pay for" has some truth to it.</p>
+<h2 id="other-reviews-on-the-internet">Other reviews on the internet</h2>
+<p>Later on, I searched for reviews on the web and could not find too many bad reviews. The few that were there, for the most part, had given them excellent ratings. However, I did find a few bad reviews(some of which I have outlined below) on google plus and in the slightly obscure sites.</p>
+<p><em><strong>Disclaimer: The comments below have been reproduced as seen on the internet</strong></em></p>
+<blockquote>
+<p>This company deletes bad feedback on Facebook. Don't trust.</p>
+</blockquote>
+<blockquote>
+<p>Takapuna Car Clinic failed my car's WOF because of apparently worn lower control arm bushings on left and right side of car and quoted a fortune in labour costs to replace these. I removed control arms and took the arms to my own mechanic to replace the bushings. According to VTNZ and my mechanic there was nothing wrong with the bushings. I've decided to replace bushings anyway since most of work was already done and had already purchased new bushings, plus the hassle with Takapuna Car…</p>
+</blockquote>
+<blockquote>
+<p>Hideous experience. Warning! Never use this garage. I was ripped off on overpriced work that didn't even need doing. While they also missed a crucial mechanical problem. The customer service is non existant, rude and arrogant. Worst experience ever! "</p>
+</blockquote>
+<h2 id="conclusion">Conclusion</h2>
+<p>The reason for writing this becomes self-evident. A review that the people at the Takapuna car clinic can't delete and can reply to in the comments to defend their position.</p>
+<p>At the time of writing, almost 300 more people have fallen into the trap.</p>
+<p>Have you been to this garage? How was your experience?</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/review-takapuna-car-clinic-auckland&text=A%20review%20of%20the%20Takapuna%20Car%20Clinic%20garage%20in%20Auckland. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/review-takapuna-car-clinic-auckland"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

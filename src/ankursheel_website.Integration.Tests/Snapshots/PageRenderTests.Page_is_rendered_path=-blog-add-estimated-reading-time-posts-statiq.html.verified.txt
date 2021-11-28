@@ -1,0 +1,210 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to add estimated Reading Time to Posts in Statiq</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq"/>
+
+<meta itemProp="name" content="How to add estimated Reading Time to Posts in Statiq"/>
+<meta itemProp="description" content="A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/add-estimated-reading-time-posts-statiq-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to add estimated Reading Time to Posts in Statiq"/>
+<meta property="og:description" content="A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/add-estimated-reading-time-posts-statiq-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-estimated-reading-time-posts-statiq-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to add estimated Reading Time to Posts in Statiq"/>
+<meta name="twitter:description" content="A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/add-estimated-reading-time-posts-statiq-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-estimated-reading-time-posts-statiq-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to add estimated Reading Time to Posts in Statiq</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 14-Oct-2021</i>
+        <i class="font-bold">
+            Reading Time: 1 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/statiq" class="badge text-black bg-grey-light no-underline">Statiq</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/snippet" class="badge text-black bg-grey-light no-underline">snippet</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>In this tutorial, I will show how to use the reading time calculated in <a href="calculate-reading-time">How to calculate reading time</a> to use in a Statiq module to add reading time for our posts.</p>
+<p>To add a module to Statiq, we can inherit from one of the provided base module classes. In this case, we can inherit from the <code>ParallelModule</code> class as the engine can process the documents in any order. We also need to overload the <code>ExecuteInputAsync()</code> method to execute this module for each document in the pipeline.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">GenerateReadingTime</span> : <span class="hljs-title">ParallelModule</span>
+{
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">async</span> Task&lt;IEnumerable&lt;IDocument&gt;&gt; ExecuteInputAsync(IDocument input, IExecutionContext context)
+    {
+        <span class="hljs-keyword">using</span> <span class="hljs-keyword">var</span> textReader = input.GetContentTextReader();
+        <span class="hljs-keyword">var</span> content = <span class="hljs-keyword">await</span> textReader.ReadToEndAsync();
+
+        <span class="hljs-keyword">return</span> input.Clone(
+                <span class="hljs-keyword">new</span> MetadataItems
+                {
+                    { MetaDataKeys.ReadingTime, _readingTimeService.GetReadingTime(content, context.GetInt(<span class="hljs-string">"ReadingTimeWordsPerMinute"</span>, <span class="hljs-number">200</span>)) }
+                })
+            .Yield();
+    }
+}
+</code></pre>
+<ul>
+<li><strong><em>Line 5-6</em></strong>: Get the content associated with the document as a string.</li>
+<li><strong><em>Line 8</em></strong>: Clone the document by adding new metadata items.</li>
+<li><strong><em>Line 10-11</em></strong>: Add a new metadata item with key <em>Reading_time_and a value obtained from a call to <code>GetReadingTime</code>. We use a _ReadingTimeWordsPerMinute</em> setting to override the default value of 200 words per minute.</li>
+<li><strong><em>Line 11</em></strong>: Convert the document into an enumerable.</li>
+</ul>
+<p>We can now use it on our website. You can see an example below.</p>
+<p><img src="/assets/images/posts/add-estimated-reading-time-posts-statiq/cover_orig.png" alt="Reading time example"></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules">Writing Modules in Statiq</a></li>
+</ul>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq&text=A%20guide%20to%20creating%20a%20module%20to%20add%20estimated%20reading%20time%20as%20metadata%20for%20posts%20in%20websites%20created%20with%20Statiq via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

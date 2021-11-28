@@ -1,0 +1,261 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to run SQL Server in a Docker container</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/run-sql-server-docker-container"/>
+
+<meta itemProp="name" content="How to run SQL Server in a Docker container"/>
+<meta itemProp="description" content="In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/run-sql-server-docker-container-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/run-sql-server-docker-container"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to run SQL Server in a Docker container"/>
+<meta property="og:description" content="In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/run-sql-server-docker-container-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/run-sql-server-docker-container-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to run SQL Server in a Docker container"/>
+<meta name="twitter:description" content="In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/run-sql-server-docker-container-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/run-sql-server-docker-container-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to run SQL Server in a Docker container</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 29-Jun-2021</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/docker" class="badge text-black bg-grey-light no-underline">docker</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/snippet" class="badge text-black bg-grey-light no-underline">snippet</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>In this post, we will see how we can run SQL Server on Docker. We will be launching the SQL server container using docker-compose and managing the image and environment variables in a docker file.</p>
+<h3 id="docker-compose-file">Docker Compose file</h3>
+<p>To launch a SQL Server container, we will first create a <code>docker-compose.yml</code> file. I like to keep my docker scripts in a folder called <strong><em>build.</em></strong></p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">'3.8'</span>
+
+<span class="hljs-attr">services:</span>
+<span class="hljs-attr">    db:</span>
+<span class="hljs-attr">        container_name:</span> sql_server_db
+<span class="hljs-attr">        build:</span>
+<span class="hljs-attr">            context:</span> ./../
+<span class="hljs-attr">            dockerfile:</span> ./build/mssqlserver.Dockerfile
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-bullet">            -</span> <span class="hljs-string">'1433:1433'</span>
+</code></pre>
+<ul>
+<li><strong>Line #1</strong>: This denotes that we are using version 3.8 of Docker compose so that Docker can provide the appropriate features.</li>
+<li><strong>Line #3</strong> This section defines all the different containers we will create.</li>
+<li><strong>Line #4</strong>: The name of the SQL Server Database service. <em>Can be anything.</em></li>
+<li><strong>Line #5</strong>: A custom container name rather than a generated default name so that we can easily find the container in Docker.</li>
+<li><strong>Line #6</strong>: Configuration options that are applied at build time</li>
+<li><strong>Line #7:</strong> Setting this to <code>.\..\</code> allows the build process to access any of the files in the root folder.</li>
+<li><strong>Line #8</strong>: Set the path to the docker file relative to the context path.</li>
+<li><strong>Line #9-10</strong>: SQL Server is listening on port 1433 in the container, and we want to expose it on port 1433, on the host.</li>
+</ul>
+<h3 id="docker-file-for-sql-server">Docker file for SQL Server</h3>
+<p>We can start by adding the base image and environment variables to the docker file.</p>
+<pre><code class="language-docker hljs"><span class="hljs-keyword">FROM</span> mcr.microsoft.com/mssql/server:<span class="hljs-number">2017</span>-latest
+
+ARG SA_PASSWORD=<span class="hljs-string">"Password1!"</span>
+<span class="hljs-keyword">ENV</span> SA_PASSWORD=$SA_PASSWORD
+<span class="hljs-keyword">ENV</span> ACCEPT_EULA=<span class="hljs-string">"Y"</span>
+
+<span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">1433</span>
+</code></pre>
+<ul>
+<li><strong>Line #1</strong>: Pull down the SQL Server 2017 container image.</li>
+<li><strong>Line #3</strong>: Set the SA_PASSWORD as a variable so that it can be reused.</li>
+<li><strong>Line #4</strong>: Specify the strong password that meets SQL Server password requirements as an environment variable.</li>
+<li><strong>Line #5</strong>: Sets the environment variable to confirm our acceptance of the End-User Licensing Agreement.</li>
+<li><strong>Line #7</strong>: Expose the port to access it from composed containers. <em>SQL server listens for a connection on TCP port 1433 by default</em>.</li>
+</ul>
+<h3 id="initialize-sql-server-in-docker-container">Initialize SQL server in Docker container</h3>
+<p>Add the following lines to the docker file to initialize SQL Server.</p>
+<pre><code class="language-docker hljs"><span class="hljs-keyword">RUN</span><span class="bash"> mkdir -p /usr/work
+</span><span class="hljs-keyword">COPY</span><span class="bash"> ./build/*.sql /usr/work/
+</span>
+<span class="hljs-keyword">WORKDIR</span><span class="bash"> /usr/work
+</span>
+<span class="hljs-keyword">RUN</span><span class="bash"> ( /opt/mssql/bin/sqlservr &amp; ) \
+    | grep -q <span class="hljs-string">"Service Broker manager has started"</span> \
+    &amp;&amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P <span class="hljs-variable">$SA_PASSWORD</span> -i create-db.sql \
+    &amp;&amp; pkill sqlservr
+</span></code></pre>
+<ul>
+<li><strong>Line #1</strong>: Run a command to create a new directory creating all the directories in the path.</li>
+<li><strong>Line #2</strong>: Copy all the SQL files into the created directory.</li>
+<li><strong>Line #4</strong>: Set the working directory for the subsequent instructions.</li>
+<li><strong>Line #6</strong>: Starts the SQL server.</li>
+<li><strong>Line #7</strong>: Wait for <em>sqlservr</em> to start by checking the logs. <em>grep</em> will block until it has found the string and then exit.</li>
+<li><strong>Line #8</strong>: Run <em>sqlcmd</em> to run <em>create-db.sql</em> which scaffolds our database.</li>
+<li><strong>Line #9</strong>: Kill the <em>sqlservr</em> process.</li>
+</ul>
+<h3 id="script-to-scaffold-our-database">Script to scaffold our database</h3>
+<p>In our SQL script, we can do whatever we need to do at startup. In this demo, we will just create a database with a schema.</p>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> DemoDb;
+GO
+<span class="hljs-keyword">USE</span> DemoDb;
+GO
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> [dbo].[Table1]
+(
+    [<span class="hljs-keyword">Id</span>] <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> PRIMARY <span class="hljs-keyword">KEY</span> <span class="hljs-keyword">IDENTITY</span>,
+    [<span class="hljs-keyword">Name</span>] <span class="hljs-keyword">NVARCHAR</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+)
+
+<span class="hljs-keyword">GO</span>
+</code></pre>
+<h3 id="running-the-container">Running the container</h3>
+<p>We can use the following command to run start the DB using from the root folder.</p>
+<pre><code class="language-bash hljs">docker-compose <span class="hljs-_">-f</span> ./build/docker-compose.yml up <span class="hljs-_">-d</span> --force-recreate --build db
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>Starting a new Docker container with Microsoft SQL Server is really simple. However, there are a few hoops to jump through. I hope that it’s easy to understand how it works after reading this article.</p>
+<p>Please let me know your thoughts about this article if you have any suggestions or share the article with others.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/run-sql-server-docker-container&text=In%20this%20post%2C%20we%20will%20see%20how%20we%20can%20run%20SQL%20Server%20on%20Docker%20using%20docker-compose%20and%20managing%20the%20image%20and%20environment%20variables%20in%20a%20docker%20file via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/run-sql-server-docker-container"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

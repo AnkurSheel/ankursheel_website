@@ -1,0 +1,650 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Posts tagged as &quot;weekly roundup&quot;</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/tags/weekly-roundup"/>
+
+<meta itemProp="name" content="Posts tagged as &quot;weekly roundup&quot;"/>
+<meta itemProp="description"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/weekly-roundup"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Posts tagged as &quot;weekly roundup&quot;"/>
+<meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Posts tagged as &quot;weekly roundup&quot;"/>
+<meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Posts tagged as &quot;weekly roundup&quot;</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-46" class="text-center prose-2xl mb-4">Weekly Roundup 46</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel
+        </p>
+            <a href="/blog/weekly-roundup-46" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-45" class="text-center prose-2xl mb-4">Weekly Roundup 45</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto
+        </p>
+            <a href="/blog/weekly-roundup-45" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-44" class="text-center prose-2xl mb-4">Weekly Roundup 44</a>
+        <div class="font-semibold text-center">4 min</div>
+        <p>
+            This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman
+        </p>
+            <a href="/blog/weekly-roundup-44" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-43" class="text-center prose-2xl mb-4">Weekly Roundup 43</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Shawn Wang, Richard Boehmcke, Kealan Parr, Adam Davis, Facundo Gauna and Jens Neuse
+        </p>
+            <a href="/blog/weekly-roundup-43" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-42" class="text-center prose-2xl mb-4">Weekly Roundup 42</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Harry Dry, Marquette Carney, Josh Comeau, Alexey Guzey, Ben Stokes and Cathryn
+        </p>
+            <a href="/blog/weekly-roundup-42" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-41" class="text-center prose-2xl mb-4">Weekly Roundup 41</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Harry Dry, Charity Majors, Mike Crittenden, Josh Comeau, Padmini Pyapali and Rex Woodbury
+        </p>
+            <a href="/blog/weekly-roundup-41" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-40" class="text-center prose-2xl mb-4">Weekly Roundup 40</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Shawn Wang, David Perrel, Jamie Wong, Kyle Gawley, Catalin Pit, Morgan Housel and Jason Lengstorf
+        </p>
+            <a href="/blog/weekly-roundup-40" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-39" class="text-center prose-2xl mb-4">Weekly Roundup 39</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Charity Majors, Alex, Jared Palmer, Sarah Hum, Tim Urban and Andrew Wilkinson
+        </p>
+            <a href="/blog/weekly-roundup-39" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-38" class="text-center prose-2xl mb-4">Weekly Roundup 38</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from David Sheff, Dan Emmons, Viktor Slavchev, Matt Anderson, Jason Lengstorf and Robert Heaton
+        </p>
+            <a href="/blog/weekly-roundup-38" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-37" class="text-center prose-2xl mb-4">Weekly Roundup 37</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Julia Evans, Blake Boles, Mike Crittenden, Charity Majors, Robert Heaton and Michael Natkin
+        </p>
+            <a href="/blog/weekly-roundup-37" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-36" class="text-center prose-2xl mb-4">Weekly Roundup 36</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Maxwell Forbes, Charity Majors, Chelsea Troy, Mario Fernandez, Robert Heaton and Prasanjit Singh
+        </p>
+            <a href="/blog/weekly-roundup-36" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-35" class="text-center prose-2xl mb-4">Weekly Roundup 35</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Tiago Forte, Julia Evans, Blake Boles, Mike Crittenden, David Clear and Kent Dodds
+        </p>
+            <a href="/blog/weekly-roundup-35" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-34" class="text-center prose-2xl mb-4">Weekly Roundup 34</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Atila Fassina, Margo McCabe, Nick Maggiulli, Julia Evans, Courtland Allen and Jaana Dogan
+        </p>
+            <a href="/blog/weekly-roundup-34" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-33" class="text-center prose-2xl mb-4">Weekly Roundup 33</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from No&#x10D;nica Fee, LinearB, Gabor Cselle, Drew Bredvick, Hiten Shah and Ramit Sethi
+        </p>
+            <a href="/blog/weekly-roundup-33" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-32" class="text-center prose-2xl mb-4">Weekly Roundup 32</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Kevin Stewart, Mark Dalgleish, Mike Mangialardi, Al Tenhundfeld, Nick Babich and Nicky Case
+        </p>
+            <a href="/blog/weekly-roundup-32" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-31" class="text-center prose-2xl mb-4">Weekly Roundup 31</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Omar Rizwan, Expedited Security, Growth.Design, Kent C. Dodds, Lorenz Wei&#xDF; and Michael Chein
+        </p>
+            <a href="/blog/weekly-roundup-31" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-30" class="text-center prose-2xl mb-4">Weekly Roundup 30</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Martin Fowler, Ramit Sethi, Pathik Desai, Marko Saric, Habdul Hazeez and ellie-html
+        </p>
+            <a href="/blog/weekly-roundup-30" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-29" class="text-center prose-2xl mb-4">Weekly Roundup 29</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Taimur Abdaal and Lukas Koebis, Omer Hamerman, Aaron Xie, David Perell, Ben Foster and Steve Smith
+        </p>
+            <a href="/blog/weekly-roundup-29" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-28" class="text-center prose-2xl mb-4">Weekly Roundup 28</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Alex Holachek, Chris Coyier, TK, Ruth, Sonya Moisset and Sarah Drasner
+        </p>
+            <a href="/blog/weekly-roundup-28" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-27" class="text-center prose-2xl mb-4">Weekly Roundup 27</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Bruce Lawson, Austin Gil, Oleksii Trekhleb, Kyle Shevlin, Adam Giebl and Shawn Wang
+        </p>
+            <a href="/blog/weekly-roundup-27" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-26" class="text-center prose-2xl mb-4">Weekly Roundup 26</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Sara Viera, Tim Urban, Kent Dodd, Erik Kennedy, Michael Bierut and Charity Majors
+        </p>
+            <a href="/blog/weekly-roundup-26" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-25" class="text-center prose-2xl mb-4">Weekly Roundup 25</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Burke Holland, Christian Oliff, Netlify blog, Ramit Sethi and Marko Anastasov
+        </p>
+            <a href="/blog/weekly-roundup-25" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-24" class="text-center prose-2xl mb-4">Weekly Roundup 24</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Ramit Sethi, Chris Coyier, Gwern Branwen, Elisabeth Hendrickson and Nathan Barry
+        </p>
+            <a href="/blog/weekly-roundup-24" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-23" class="text-center prose-2xl mb-4">Weekly Roundup 23</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Ramit Sethi, CSS-Tricks, Stephanie Eckles, Ahmad Shadeed and Travis Almand
+        </p>
+            <a href="/blog/weekly-roundup-23" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-22" class="text-center prose-2xl mb-4">Weekly Roundup 22</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Mihail Gaberov, Ramit Sethi, Alexandra Murtaza, Bret Victor and Tom Bartel
+        </p>
+            <a href="/blog/weekly-roundup-22" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-26-jan-2020" class="text-center prose-2xl mb-4">Weekly Roundup 21</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from growth.design, ConvertKit, Helen Anderson, Ramit Sethi and Amelia Wattenberger
+        </p>
+            <a href="/blog/weekly-roundup-26-jan-2020" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-19-jan-2020" class="text-center prose-2xl mb-4">Weekly Roundup 20</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Birgitta B&#xF6;ckeler and Nina Siessegger, Courtland Allen, Baremetrics, Sadhguru and Jason Lengstorf
+        </p>
+            <a href="/blog/weekly-roundup-19-jan-2020" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-12-jan-2020" class="text-center prose-2xl mb-4">Weekly Roundup 19</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Sarah Drasner, 30 seconds of code, Valia Havryliuk, Matt Moffitt and zechtyounes
+        </p>
+            <a href="/blog/weekly-roundup-12-jan-2020" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-05-jan-2020" class="text-center prose-2xl mb-4">Weekly Roundup 18</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Ramit Sethi, Jason Lengstorf, Florin Pop, Steve Schlafman, Alex Hillman
+        </p>
+            <a href="/blog/weekly-roundup-05-jan-2020" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-29-dec-2019" class="text-center prose-2xl mb-4">Weekly Roundup 17</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from You Dont Need, Briana Camp, Nathan Amick, Shawn Wang, Garry Tan and Waylon Walker
+        </p>
+            <a href="/blog/weekly-roundup-29-dec-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-22-dec-2019" class="text-center prose-2xl mb-4">Weekly Roundup 16</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Alberto Montalesi, Dan Benoni and Louis-Xavier Lavallee, Michael Crump, and Nick Maggiulli.
+        </p>
+            <a href="/blog/weekly-roundup-22-dec-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-15-dec-2019" class="text-center prose-2xl mb-4">Weekly Roundup 15</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Mackenzie Child, M&#x1EA1;nh &#x110;&#x1EA1;t, Katerina Limpitsouni and Aggelos Gesoulis, Sadhguru, Paul Graham and Neal Agarwal
+        </p>
+            <a href="/blog/weekly-roundup-15-dec-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-08-dec-2019" class="text-center prose-2xl mb-4">Weekly Roundup 14</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles/tools from Shawn Wang, Paul Graham, Ellen Barry, Joseph Mosby, Jason Lengstorf and Corey Ginnivan
+        </p>
+            <a href="/blog/weekly-roundup-08-dec-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-01-dec-2019" class="text-center prose-2xl mb-4">Weekly Roundup 13</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Christina Gorton, Thomas Ladd, Gwendolyn Faraday, Megha Sachdev and Jeff Vogel
+        </p>
+            <a href="/blog/weekly-roundup-01-dec-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-24-nov-2019" class="text-center prose-2xl mb-4">Weekly Roundup 12</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Chris Coyier, Joelle, Kent Dodds and Andrey Azimov
+        </p>
+            <a href="/blog/weekly-roundup-24-nov-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-17-nov-2019" class="text-center prose-2xl mb-4">Weekly Roundup 11</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Martin Gasston, Sunil Sandhu and tools from Bennet Feely, Neil Green and Neal Agarwal.
+        </p>
+            <a href="/blog/weekly-roundup-17-nov-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-27-oct-2019" class="text-center prose-2xl mb-4">Weekly Roundup 10</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from CSS-Tricks, Amelia Wattenberger, Ruth, Ramit Sethi and Wait but Why
+        </p>
+            <a href="/blog/weekly-roundup-27-oct-2019" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-9" class="text-center prose-2xl mb-4">Weekly Roundup 9</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This week&#x27;s roundup contains articles from Bayalis is the Answer, Get Rich Quick&#x27;ish, Millennial Revolution, dev.to, Gamasutra and Zen Pencils.
+        </p>
+            <a href="/blog/weekly-roundup-9" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-8" class="text-center prose-2xl mb-4">Weekly Roundup 8</a>
+        <div class="font-semibold text-center">0 min</div>
+        <p>
+            This weeks roundup contains articles from Budgets Are Sexy and Young Adventuress. Hope you enjoy reading these as much as I did.
+        </p>
+            <a href="/blog/weekly-roundup-8" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-7" class="text-center prose-2xl mb-4">Weekly Roundup 7</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Money can buy me happiness, Budgets Are Sexy, Keep Thrifty, NZMuse, The Practical Saver, Zen Pencils and 8th Light
+        </p>
+            <a href="/blog/weekly-roundup-7" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-6" class="text-center prose-2xl mb-4">Weekly Roundup 6</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from How we do Money, The Practical Saver, Think Save Retire, LandLopers, 8th Light, LinkedIn and Gamasutra
+        </p>
+            <a href="/blog/weekly-roundup-6" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-5" class="text-center prose-2xl mb-4">Weekly Roundup 5</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Keep Thrifty, Ruth, Reverse the Crush, A Dangerous Business, Y Travel and Wait but Why
+        </p>
+            <a href="/blog/weekly-roundup-5" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-4" class="text-center prose-2xl mb-4">Weekly Roundup 4</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This week&#x27;s roundup contains articles from YTravelblog, Millenial Revolution, Money Smart Guides and Zen Pencils
+        </p>
+            <a href="/blog/weekly-roundup-4" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-3" class="text-center prose-2xl mb-4">Weekly Roundup 3</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Millennial Revolution, Business Insider, AnkiOnTheMove and XKCD
+        </p>
+            <a href="/blog/weekly-roundup-3" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-2" class="text-center prose-2xl mb-4">Weekly Roundup 2</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Apathy Ends, Pamela, Jon, Eric, Cynthia, Amadou, Chelsea, Dmitry and Gianfranco
+        </p>
+            <a href="/blog/weekly-roundup-2" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/weekly-roundup-1" class="text-center prose-2xl mb-4">Weekly Roundup 1</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            This weeks roundup contains articles from Graham, Allan, Mike Winters and Kristin Wong
+        </p>
+            <a href="/blog/weekly-roundup-1" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+</body>
+</html>

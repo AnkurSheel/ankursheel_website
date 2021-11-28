@@ -1,0 +1,285 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to filter yourself from showing up in Google Analytics</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/filtering-google-analytics"/>
+
+<meta itemProp="name" content="How to filter yourself from showing up in Google Analytics"/>
+<meta itemProp="description" content="I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/filtering-google-analytics-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/filtering-google-analytics"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to filter yourself from showing up in Google Analytics"/>
+<meta property="og:description" content="I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/filtering-google-analytics-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/filtering-google-analytics-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to filter yourself from showing up in Google Analytics"/>
+<meta name="twitter:description" content="I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/filtering-google-analytics-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/filtering-google-analytics-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to filter yourself from showing up in Google Analytics</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 29-Jan-2014</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Google Analytics is a powerful and useful tool for anybody with any website who wants to track their traffic.</p>
+<p>I will attempt to show exactly how to add analytics and filter yourself from the data if you have a self-hosted blog using WordPress.</p>
+<h2 id="adding-analytics">Adding Analytics</h2>
+<ol>
+<li><p>Sign in to your Analytics account, and click Admin in the top menu bar.</p>
+</li>
+<li><p>Select the <em>account</em> and <em>property</em> in the respective columns.</p>
+</li>
+<li><p>Add tracking to your website.</p>
+</li>
+<li><p>Create a new profile on Google Analytics (if you have not already created one).</p>
+</li>
+<li><p>Add the tracking code snippet to your website.</p>
+</li>
+<li><p>Click Tracking Info under the Property column.</p>
+</li>
+<li><p>Copy the <strong>tracking code</strong> snippet.</p>
+</li>
+<li><p>Now, you have 3 options:</p>
+<ol>
+<li><strong>Not Recommended:</strong> Modify header.php and paste the tracking code (from step 2.2) before the <code>&lt;/head&gt;</code> tag. This method is <strong>NOT</strong> recommended because if the theme is updated, you will lose your changes.</li>
+<li>Use the <strong>Insert Headers and Footers plugin</strong> and add it under the <strong>Scripts in header</strong> tab.</li>
+<li>Modify functions.php in your <strong>child theme</strong> and paste the following code.</li>
+</ol>
+<pre><code class="language-php hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sp_google_analytics_tracking_code</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-meta">?&gt;</span>
+    &lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+        <span class="hljs-keyword">var</span> _gaq = _gaq || [];
+        _gaq.push([<span class="hljs-string">'_setAccount'</span>, <span class="hljs-string">'UA-45876690-1'</span>]);
+        _gaq.push([<span class="hljs-string">'_trackPageview'</span>]);
+            (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">var</span> ga = document.createElement(<span class="hljs-string">'script'</span>); ga.type = <span class="hljs-string">'text/javascript'</span>; ga.async = <span class="hljs-keyword">true</span>;
+        ga.src = (<span class="hljs-string">'https:'</span> == document.location.protocol ? <span class="hljs-string">'https://ssl'</span> : <span class="hljs-string">'http://www'</span>) + <span class="hljs-string">'.google-analytics.com/ga.js'</span>;
+        <span class="hljs-keyword">var</span> s = document.getElementsByTagName(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>]; s.parentNode.insertBefore(ga, s);
+        })();
+    &lt;/script&gt;
+    <span class="hljs-meta">&lt;?php</span>
+}
+
+<span class="hljs-comment">// include GA tracking code before the closing head tag</span>
+add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string">'sp_google_analytics_tracking_code'</span>);
+</code></pre>
+</li>
+</ol>
+<h2 id="creating-the-filter-in-google-analytics">Creating the Filter in Google Analytics</h2>
+<ol>
+<li>On the Google Analytics admin page, click on <strong>Filter</strong> under the View option. Here is where you create your exclusion filter.</li>
+<li>Click on <strong>"New Filter"</strong>.</li>
+<li>Give it a meaningful name.</li>
+<li>In the <strong>Filter Type</strong>, select <strong><em>Custom Filter</em></strong> and leave it on the default <em>Exclude</em>.</li>
+<li>In the <strong>Filter Field</strong>, select <em>User Defined</em>.</li>
+<li>In the <strong>Filter Pattern</strong>, add no_report.</li>
+<li>Save the filter.</li>
+</ol>
+<h2 id="get-your-google-analytics-account-id">Get your Google Analytics Account ID</h2>
+<ol>
+<li>Click <em>Property Settings</em> under the property column.</li>
+<li>Copy the code under <strong>Tracking ID</strong>. This will look something like <em>UA-XXXXXXXX-X.</em>.</li>
+</ol>
+<h2 id="create-an-html-page-to-create-a-cookie-excluder">Create an Html page to create a cookie excluder</h2>
+<p>Create a new Html file and paste the following code.</p>
+<pre><code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"”Content-Type”"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"”text/html;"</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"iso-8859-1?"</span> /&gt;</span>google analytics cookie excluder
+<span class="hljs-comment">&lt;!-- prevents indexing of this page by search engines --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ROBOTS"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"NOINDEX,NOFOLLOW"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+    <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>
+&gt;</span><span class="handlebars"><span class="xml">
+    // &lt;![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '&lt;em&gt;&lt;strong&gt;UA-XXXXXXXX-X&lt;/strong&gt;&lt;/em&gt;']);
+    _gaq.push(['_setVar', 'no_report']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src =
+            ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();&lt;/script
+    // ]]&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"robots"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"noindex"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"100%"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">cellspacing</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">cellpadding</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: xx-large;"</span>
+                            &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: #ff6600;"</span>&gt;</span>google analytics cookie excluder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
+                        &gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></span></code></pre>
+<ol>
+<li>In the above code, change _UA-XXXXXXXX-X _to the tracking id.</li>
+<li>Place the file anywhere on your site as long as it is under your domain, at the root or in a subdirectory.</li>
+</ol>
+<h2 id="excluding-yourself">Excluding yourself</h2>
+<p>Only carry out the following actions for computers you want to NOT be counted in Google Analytics.</p>
+<ol>
+<li>In the location field of your browser, open the Html file on your domain.</li>
+<li>If everything works, you should see a charcoal background with orange letters saying, "google analytics cookie excluder".</li>
+</ol>
+<h2 id="optional-test">Optional Test</h2>
+<p>Go to the area of your browser that shows cookies. Search for the value you set in the cookie. If you find it, the value is set.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Now you should be able to remove yourself from the google analytics data.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/filtering-google-analytics&text=I%20am%20going%20to%20attempt%20to%20show%20exactly%20how%20to%20add%20google%20analytics%20and%20%20also%20to%20filter%20yourself%20from%20the%20data%20if%20you%20have%20a%20self-hosted%20blog%20using%20WordPress via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/filtering-google-analytics"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

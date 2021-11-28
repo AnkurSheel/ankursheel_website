@@ -1,0 +1,296 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - How to add an RSS feed with images to a Gatsby site</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"/>
+
+<meta itemProp="name" content="How to add an RSS feed with images to a Gatsby site"/>
+<meta itemProp="description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to add an RSS feed with images to a Gatsby site"/>
+<meta property="og:description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="How to add an RSS feed with images to a Gatsby site"/>
+<meta name="twitter:description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">How to add an RSS feed with images to a Gatsby site</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 30-Aug-2019</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/gatsby" class="badge text-black bg-grey-light no-underline">Gatsby</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/web-development" class="badge text-black bg-grey-light no-underline">web development</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/javascript" class="badge text-black bg-grey-light no-underline">javascript</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tutorial" class="badge text-black bg-grey-light no-underline">tutorial</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p><a href="https://www.gatsbyjs.org/">Gatsby</a> has a good <a href="https://www.gatsbyjs.org/docs/adding-an-rss-feed/">article</a> on how to add an RSS feed to your gatsby site. Although it will suffice in most cases and is a good starting point, it wasn't exactly working for me.</p>
+<ul>
+<li>My posts live under <a href="https://www.ankursheel.com/blog/">"<em>/blog/</em>"</a> but the pages are under <a href="https://www.ankursheel.com/">"www.ankursheel.com/"</a>.</li>
+<li>I am working with MDX, but the document deals with markdown posts.</li>
+<li>It doesn't explain how to add the featured image in the list view.</li>
+</ul>
+<p>Let us start modifying the options once we have the base from the gatsby article.</p>
+<h2 id="getting-the-data">Getting the data</h2>
+<pre><code class="language-graphql">query `
+{
+    site {
+        siteMetadata {
+            siteUrl
+        }
+    }
+
+    allMdx(
+        limit: 1000
+        filter: { fileAbsolutePath: { regex: "//content/posts//" } }
+        sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+        edges {
+            node {
+                excerpt(pruneLength: 140)
+                html
+                frontmatter {
+                    slug
+                    title
+                    date
+                    featuredImage {
+                        publicURL
+                    }
+                }
+            }
+        }
+    }
+}
+`;
+</code></pre>
+<p>So what am I doing here?</p>
+<ul>
+<li><strong><em>Lines 3-7</em></strong>: I get the siteUrl from the site metaData. We will need this to build the URL to the posts.</li>
+<li><strong><em>Line 9</em></strong>: Since all of my content is in MDX files instead of markdown, I use <strong><em>allMdx</em></strong>.
+<ul>
+<li><strong><em>Line 10</em></strong>: I limit it to 1000 records. I guess this could be a much smaller value, but it's ok for the time being.</li>
+<li><strong><em>Line 11</em></strong>: I want to build the feed only for my posts, so I add a regex to get only those records that are present in <em>"content/posts"</em>.</li>
+<li><strong><em>Line 12</em></strong>: I sort the records by date in descending order.</li>
+</ul>
+</li>
+<li><strong><em>Lines 14-26</em></strong>: I get the <em>excerpt</em> and <em>html</em>. I also get the <em>slug</em>, <em>title</em>, <em>date</em> and the <em>featured image url</em> from the frontmatter. The excerpt is also pruned to a maximum length of 140 characters.</li>
+</ul>
+<h2 id="build-the-feed-object">Build the feed object</h2>
+<p>The documentation states that every feed must include <em>option</em>, <em>query</em> and <em>title</em>. It also recommends passing a serialize function to customize the feed structure. This is what the final <em>feeds</em> array looks like</p>
+<pre><code class="language-javascript hljs">feeds: [
+    {
+        <span class="hljs-attr">serialize</span>: <span class="hljs-function">(<span class="hljs-params">{ query: { site, allMdx } }</span>) =&gt;</span> {
+            <span class="hljs-keyword">const</span> {
+                <span class="hljs-attr">siteMetadata</span>: { siteUrl },
+            } = site;
+
+            <span class="hljs-keyword">return</span> allMdx.edges.map(<span class="hljs-function"><span class="hljs-params">edge</span> =&gt;</span> {
+                <span class="hljs-keyword">const</span> {
+                    <span class="hljs-attr">node</span>: {
+                        <span class="hljs-attr">frontmatter</span>: { title, date, slug, featuredImage },
+                        excerpt,
+                        html,
+                    },
+                } = edge;
+
+                <span class="hljs-keyword">const</span> blogUrl = <span class="hljs-string">`<span class="hljs-subst">${siteUrl}</span>/blog/<span class="hljs-subst">${slug}</span>`</span>;
+
+                <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.assign({}, edge.node.frontmatter, {
+                    title,
+                    <span class="hljs-attr">description</span>: excerpt,
+                    date,
+                    <span class="hljs-attr">url</span>: blogUrl,
+                    <span class="hljs-attr">guid</span>: blogUrl,
+                    <span class="hljs-attr">enclosure</span>: featuredImage &amp;&amp; {
+                        <span class="hljs-attr">url</span>: siteUrl + featuredImage.publicURL,
+                    },
+                    <span class="hljs-attr">custom_elements</span>: [{ <span class="hljs-string">'content:encoded'</span>: html }],
+                });
+            });
+        },
+
+        <span class="hljs-attr">output</span>: <span class="hljs-string">'/blog/rss.xml'</span>,
+        <span class="hljs-attr">title</span>: <span class="hljs-string">"Ankur Sheel's Ramblings"</span>,
+    },
+],
+</code></pre>
+<p>Let's break this down.</p>
+<ul>
+<li><strong><em>Line 3</em></strong>: Create the serialize function which destructures <em>site</em> and <em>allMdx</em> from the query object.</li>
+<li><strong><em>Lines 4-6</em></strong>: Destructure the <em>siteUrl</em> from the <em>site</em> object.</li>
+<li><strong><em>Line 8</em></strong>: Loop through all the edges and map to a feed item.
+<ul>
+<li><strong><em>Lines 9-15</em></strong>:Destructure <em>title</em>, <em>date</em>, <em>slug</em>, <em>featuredImage</em>, <em>excerpt</em> and <em>html</em>.</li>
+<li><strong><em>Line 17</em></strong>: Create the URL to the blog post.</li>
+<li><strong><em>Line 19</em></strong>: Create the feed item to be returned.
+<ul>
+<li><strong><em>Line 20-24</em></strong>: Nothing fancy happening here. Just setting the feed item properties.</li>
+<li><strong><em>Line 25-27</em></strong>: <strong><em>enclosure</em></strong> is required to set the featured image. It takes in a URL that is set to the public URL of the featured image. If there is no featured image, then the enclosure will be empty.</li>
+<li><strong><em>Line 28</em></strong>: Set the content to be the HTML content.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><em>Line 33</em></strong>: Set the path and filename for the RSS feed.</li>
+<li><strong><em>Line 34</em></strong>: Set the title for the RSS feed.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>After making the changes, the RSS feed for my blog now looks like <img src="/assets/images/posts/adding-an-rss-feed-with-images-to-a-gatsby-site/rss-example.png" alt="Rss Feed screenshot"></p>
+<p>Are you showing images in your RSS feed? How did you go about it? Let me know.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site&text=A%20guide%20for%20adding%20an%20RSS%20feed%20which%20shows%20the%20featured%20image%20in%20the%20list%20view%20for%20a%20Gatsby%20site via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

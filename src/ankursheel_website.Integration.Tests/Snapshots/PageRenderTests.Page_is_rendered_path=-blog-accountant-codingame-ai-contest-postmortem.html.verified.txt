@@ -1,0 +1,223 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - A post-mortem for The Accountant (Codingame AI Contest)</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A post-mortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/accountant-codingame-ai-contest-postmortem"/>
+
+<meta itemProp="name" content="A post-mortem for The Accountant (Codingame AI Contest)"/>
+<meta itemProp="description" content="A post-mortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/accountant-codingame-ai-contest-postmortem-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/accountant-codingame-ai-contest-postmortem"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="A post-mortem for The Accountant (Codingame AI Contest)"/>
+<meta property="og:description" content="A post-mortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/accountant-codingame-ai-contest-postmortem-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/accountant-codingame-ai-contest-postmortem-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="A post-mortem for The Accountant (Codingame AI Contest)"/>
+<meta name="twitter:description" content="A post-mortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/accountant-codingame-ai-contest-postmortem-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/accountant-codingame-ai-contest-postmortem-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">A post-mortem for The Accountant (Codingame AI Contest)</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 19-Oct-2016</i>
+        <i class="font-bold">
+            Reading Time: 5 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/cpp" class="badge text-black bg-grey-light no-underline">cpp</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/codingame" class="badge text-black bg-grey-light no-underline">Codingame</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/post-mortem" class="badge text-black bg-grey-light no-underline">post-mortem</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time around, it was an optimization competition sponsored by <strong>Warner Bro.s</strong> for their upcoming movie "<strong>The Accountant</strong>."</p>
+<p><img src="/assets/images/posts/accountant-codingame-ai-contest-postmortem/cover.jpg" alt="The Accountant - Codingame Contest"></p>
+<p>If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss seeing all the things I did wrong. 😊</p>
+<h2 id="preamble">Preamble</h2>
+<p>For the contest, you played as Christian Wolf, and your aim was to secure data by killing all the enemies. Like all other codingame contests, the game was turn-based. Each turn consisted of you reading the world state information from stdin and outputting your action to stdout. This would be repeated till either all the data points were captured by enemies or all the enemies were killed, or you were killed. You also had a maximum of 100 ms to submit your action before you would timeout and die. If you got killed, you got a score of 0.</p>
+<p>There were a bunch of test cases against which you could test your solution. After submitting, the answer was tested against a different set of validators. After each submission, you would get a score, and your best score would be tracked for the leaderboard.</p>
+<p>You can use multiple languages to submit your solution, but I went with C++ for obvious reasons.</p>
+<h2 id="what-went-right">What Went Right</h2>
+<ul>
+<li>I had already participated in a previous contest at codingame, which gave me a base to start from. For other postmortems click <a href="/tags/codingame">here</a>.</li>
+<li>I already had a setup that allowed me to combine multiple files into a single cpp file (which codingame requires) and a chrome plugin that allowed me to work in Visual Studio as opposed to the web IDE, which made for a faster workflow.</li>
+<li>I spent the first day setting up the framework for the game. This included classes to encapsulate the GameState, Enemies etc. This allowed me to quickly tweak my algorithms and throw away pieces of code that I felt were not working.</li>
+<li>I spent the first few days trying an MCTS approach, but that didn't work. More on that in the <strong>What Went Wrong</strong> section. Once I realized that I needed to do something different, I went back to the basics and coded a simple decision tree with no-look forward. The 1st draft of this immediately raised my score to just under 20000 from about 4000. At the same time, my rank came under 300.</li>
+<li>I managed to create a robust avoidance system. Getting a high score depended on staying alive, which was extremely crucial when improving the algorithm. This also enabled me to try out different things without being afraid that I would get a lower score because I got killed.</li>
+<li>I went for an iterative approach after my failed attempt at MCTS. Once I had the avoidance system in, I tried to kill the closest enemy. After that, it was trying to kill the enemy with the least number of shots. For the most part, the impact was that with each submit, the score and hence my rank improved.</li>
+<li>Continuous refactoring enabled me to keep my code readable and isolated the areas I had to work on.</li>
+<li>Using source control to keep track of the AI. I cannot even stress how helpful it was to go back a version or two because the new logic was performing even worse than a few iterations before.</li>
+</ul>
+<h2 id="what-went-wrong">What Went Wrong</h2>
+<ul>
+<li>The contest started before the Hypersonic contest had ended. After the fatigue from the last contest, I did not start coding until a few days after the contest had begun.</li>
+<li>Being in New Zealand for the contest from a timezone perspective sucks. When I went to bed, I was ranked 192. But, since there were still a few hours left, by the time the contest ended, I had been pushed out of the top 200, which was the goal I had set for myself for this contest. I was also top-ranked in New Zealand and India, but someone beat my score in the last few hours. Not that it mattered in this contest, but you also miss the first few hours because of the timezone.</li>
+<li>I started off with MCTS, but my understanding of the algorithm is still very limited. There are very few tutorials for this approach, which makes it much harder to understand and implement. I spent the first few days coming up with a base that I could use for an MCTS approach. But, in the end, I had to throw away all of that code. At least, I still have it for the next contest because of version control.</li>
+<li>While implementing MCTS, I went for a uniform (random) decision. In retrospect, I should have used something more intelligent. Because of the fatigue from the last contest and work, I could not improve my algorithm further than the decision tree.</li>
+<li>The validators had no information associated with them. You had no idea why a validator failed or why your score went down, even though it had gone up in the IDE. This made tweaking your algorithm feel like blind art.</li>
+<li>It was impossible to make minor tweaks and submit the solution to see how it fared because of a limitation that blocked you from submitting too many times continuously.</li>
+<li>For a long time, I could not figure out whether I should be using ceiling, floor, round or truncate to round the various values and get the same values as were being provided.</li>
+</ul>
+<h2 id="what-would-i-do-differently">What would I do differently</h2>
+<ul>
+<li>Understanding why my MCTS approach wasn't working would be helpful as most of the top solutions in the contests seem to be using this approach. I am still not sure if the low number of moves that I was generating or the scoring function was the issue. I am guessing it's a combination of both.</li>
+<li>Prioritizing saving data points over saving bullets would have given me a much higher score as each data point was worth 100 points.</li>
+<li>Caching the targeted enemy.</li>
+<li>I already had a simulation that I should have used to optimize my code rather than relying on the submission.</li>
+<li>After getting the decision tree to work, I would have liked to incorporate it into the MCTS and see if that helped.</li>
+</ul>
+<h2 id="rankings">Rankings</h2>
+<p><strong>Final Score</strong>: 27440/46293 (59%)</p>
+<p><strong>Global Rank:</strong> 210/2934</p>
+<p><strong>New Zealand:</strong> 2/33</p>
+<p><strong>India:</strong> 2/278</p>
+<p>This was a fun contest, and it was nice that you were practically playing against yourself instead of other people. I do wish I had been able to reach my goal of being in the top 200</p>
+<p>Feel free to follow me at codingame using this <a href="https://www.codingame.com/servlet/urlinvite?u=1506970">url</a>.</p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/accountant-codingame-ai-contest-postmortem&text=A%20post-mortem%20for%20The%20Accountant%2C%20an%20optimization%20contest%20sponsored%20by%20Warner%20Bro.s%20for%20their%20upcoming%20movie%20%22The%20Accountant%22%20held%20by%20codingame via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/accountant-codingame-ai-contest-postmortem"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

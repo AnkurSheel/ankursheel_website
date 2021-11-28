@@ -1,0 +1,205 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Photo Essay: Yellowstone National Park, Wyoming</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place, and pictures cannot do justice."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-yellowstone-national-park-wyoming"/>
+
+<meta itemProp="name" content="Photo Essay: Yellowstone National Park, Wyoming"/>
+<meta itemProp="description" content="From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place, and pictures cannot do justice."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-yellowstone-national-park-wyoming-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/photo-essay-yellowstone-national-park-wyoming"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Photo Essay: Yellowstone National Park, Wyoming"/>
+<meta property="og:description" content="From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place, and pictures cannot do justice."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/photo-essay-yellowstone-national-park-wyoming-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/photo-essay-yellowstone-national-park-wyoming-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Photo Essay: Yellowstone National Park, Wyoming"/>
+<meta name="twitter:description" content="From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place, and pictures cannot do justice."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/photo-essay-yellowstone-national-park-wyoming-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/photo-essay-yellowstone-national-park-wyoming-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Photo Essay: Yellowstone National Park, Wyoming</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 13-Jan-2015</i>
+        <i class="font-bold">
+            Reading Time: 0 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/north-america" class="badge text-black bg-grey-light no-underline">North America</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/travel" class="badge text-black bg-grey-light no-underline">travel</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/usa" class="badge text-black bg-grey-light no-underline">USA</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>From the Corn Palace, we now move to Yellowstone National Park.</p>
+<p>It is known for its wildlife, geothermal features and the Old Faithful Geyser. This is one of those places that I believe should be on your itinerary.</p>
+<p>It is a beautiful place, and pictures cannot do justice (even though I have tried). If you are planning a day trip, try to be at Old Faithful just before it is scheduled to erupt.</p>
+<p>Even though we were unaware of the timings, we were lucky enough to reach the geyser just a few minutes before the eruption.</p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-1.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-2.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-3.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-4.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-5.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-6.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-7.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-8.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-9.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-10.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-11.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-12.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-13.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-14.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-15.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-16.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-17.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-18.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-19.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-20.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-21.jpg" alt=""></p>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/photo-essay-yellowstone-national-park-wyoming&text=From%20the%20Corn%20Palace%2C%20we%20now%20move%20to%20Yellowstone%20National%20Park.%20It%20is%20a%20beautiful%20place%2C%20and%20pictures%20cannot%20do%20justice. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/photo-essay-yellowstone-national-park-wyoming"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - What&#x27;s in a team name</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/team-name"/>
+
+<meta itemProp="name" content="What&#x27;s in a team name"/>
+<meta itemProp="description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/team-name"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What&#x27;s in a team name"/>
+<meta property="og:description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="What&#x27;s in a team name"/>
+<meta name="twitter:description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/team-name-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/team-name-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">What&#x27;s in a team name</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 21-Oct-2021</i>
+        <i class="font-bold">
+            Reading Time: 4 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/ramblings" class="badge text-black bg-grey-light no-underline">ramblings</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/company-culture" class="badge text-black bg-grey-light no-underline">company culture</a>
+            </div>
+    </div>
+</div>
+
+<!-- https://unsplash.com/photos/ocAo7MwGfHY --><html><head></head><body><p>Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.</p>
+<p>This will be a controversial opinion, but I think this is possibly the worst way to decide team names.</p>
+<h2 id="a-common-theme">A common theme</h2>
+<p>A popular reason that people think using a common theme for all team names is a good idea is that they feel it's inclusive.</p>
+<p>But, it's tough to find a genuinely inclusive theme. Even something innocuous like superheroes can make someone feel excluded if they haven't grown up watching superhero cartoons.</p>
+<p>So you decide to go with something <del>boring</del> simple like colours.</p>
+<quote quote="Surely, no one can take offence in that, right?">
+<p>Not so fast, my young padawan. You forgot to consider colour blind people.</p>
+<p>The other reason that frequently comes up is that a common theme makes it easier for people to remember. For the sake of this discussion, let's assume that either colours or superheroes are an inclusive-enough theme for you, and you have two teams. But do the people in your organization know whether they need to talk to the <strong>Superman/Pink</strong> team or the <strong>WonderWoman/Blue</strong> team. More likely, they are saying.</p>
+<blockquote>
+<p>I need to talk to <strong>Harry/Jane</strong>. What is the name of the team? - Ah, who cares?</p>
+</blockquote>
+<p>Or worse, they are mixing it up and talking to the wrong team and then getting redirected.</p>
+<p>What if you have ten teams? No common theme can save you.</p>
+<p>I think this tweet sums it up nicely.</p>
+<blockquote>
+<p>I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheros, so I had to learn it. Like there weren't enough other things to learn."</p>
+<p><cite>Vladimir Sapronov</cite></p>
+</blockquote>
+<p><em><a href="https://twitter.com/v_sapronov/status/1440147633155166210">Tweet link</a></em></p>
+<p>If you want to have team names with no connection to the product, I have a controversial recommendation for you. Let them come about from an inside joke, a conversation or a common identity that the team members can ascribe to.</p>
+<h2 id="an-inside-joke">An inside joke</h2>
+<quote quote="Jelled teams are usually marked by a strong sense of identity" author="Peopleware">
+<p>Having a team name based on an inside joke gives it a unique identity. It's the uniqueness between the names and what that difference signifies that binds one identity to it.</p>
+<p>It gives this feeling of being a part of an elite entity.</p>
+<p>In his similarly titled post <a href="https://critter.blog/2020/09/02/whats-in-a-team-name/">What’s in a team name?</a>, Mike gives an excellent example of how hard it would be to rally around "the Vikings" if they were called the "The Minnesota NFL Team".</p>
+<p>Now, before you go all up in arms and say,</p>
+<quote quote="But, Ankur, having an inside joke for a team name doesn't solve for any of the problems you highlighted before">
+<p>I kinda agree.</p>
+<p>A team name based on an inside joke is not inclusive by nature to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.</p>
+<p>Whether it's easier to remember or not, that's debatable. But it can certainly be more memorable, and memorable things get remembered faster. After all, would you be able to forget a name like <a href="https://twitter.com/catswetel/status/1440039225156538374">The Applesauce Top Hat Brigade</a>? It's a name I am not going to forget anytime soon.</p>
+<p>Team names based on an inside joke are not only more fun but have a few additional advantages.</p>
+<p>As the old guard moves on, the team members change, and the inside joke becomes stale/politically incorrect; it makes it much easier to retire the team name and spin up a new one based on a new inside joke.</p>
+<p>As the number of teams increases, each new team could think of their inside joke to rally around for their team name. Apart from a fun bonding exercise, it could be a great morale booster.</p>
+<p>Merch/swag also feels cooler when it's associated with an inside joke. Remember, it is a potential ice-breaker.</p>
+<h2 id="my-favourite-team-name">My favourite team name</h2>
+<p>One of my favourite team names was based on an inside joke. We were supposed to come up with a name for our team and forgot to submit it in time. In the slide deck for the company meeting, we were introduced as ???. This struck us as extremely funny, and combined with other reasons, we decided to call our team 4Q.</p>
+<p>You can see how this can be construed as offensive because it sounds like a cuss word. I rarely cuss, and this gave me a laugh every time I said Team 4Q (which was one of the reasons to go with it).</p>
+<p>In any case, people had a valid concern. It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not so much of a problem.</p>
+<p>But, it is a problem when communicating verbally with external parties.</p>
+<p>There was a simple fix - to use the name Team 4 Questions when talking externally or to enunciate the name so that it doesn't sound like a cuss word.</p>
+<p>Changing the name in this scenario would be a classic case of throwing the baby out with the bathwater.</p>
+<h2 id="caveats">Caveats</h2>
+<p>It's possible to have stories to share even if you are operating under a common theme. My current team is called <a href="https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/">kārearea</a>, and it appealed to me (more than the other birds) because it's fast and can bring down prey larger than itself.</p>
+<p><em>But, I doubt new people will care about the reasoning behind choosing it as the team name. Sadly, it's not a conversation starter when all the other teams are named after NZ birds. It will always feel as if we randomly chose it because we had to choose something.</em></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.</p>
+<p>Having said that, you should probably have some guidelines to weed out the truly offensive.</p>
+</quote></quote></quote></body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/team-name&text=Having%20a%20team%20name%20is%20one%20of%20the%20easiest%20ways%20to%20give%20everyone%20an%20identity%20to%20rally%20around.%20A%20controversial%20opinion%20on%20how%20to%20decide%20team%20names via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/team-name"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

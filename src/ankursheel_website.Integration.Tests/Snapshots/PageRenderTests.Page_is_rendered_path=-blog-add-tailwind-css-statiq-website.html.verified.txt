@@ -1,0 +1,287 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - Add Tailwind CSS to a Statiq website</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A guide to using TailwindCss with Statiq"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/add-tailwind-css-statiq-website"/>
+
+<meta itemProp="name" content="Add Tailwind CSS to a Statiq website"/>
+<meta itemProp="description" content="A guide to using TailwindCss with Statiq"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/add-tailwind-css-statiq-website"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Add Tailwind CSS to a Statiq website"/>
+<meta property="og:description" content="A guide to using TailwindCss with Statiq"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Add Tailwind CSS to a Statiq website"/>
+<meta name="twitter:description" content="A guide to using TailwindCss with Statiq"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">Add Tailwind CSS to a Statiq website</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 09-Sep-2021</i>
+        <i class="font-bold">
+            Reading Time: 2 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/statiq" class="badge text-black bg-grey-light no-underline">Statiq</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/tailwind" class="badge text-black bg-grey-light no-underline">tailwind</a>
+            </div>
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/website-migration" class="badge text-black bg-grey-light no-underline">website migration</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>In this article, I will be showing how we can integrate <a href="https://tailwindcss.com/">Tailwind CSS</a> with <a href="https://www.statiq.dev/web/">Statiq</a>.</p>
+<h2 id="problem">Problem</h2>
+<p>As part of the <a href="migrating-gatsby-statiq">migration from Gatsby to Statiq</a>, I wanted to use Tailwind with Statiq. Tailwind is available as an NPM package, while Statiq is a .Net solution.</p>
+<p>Many articles out there discuss the pros and cons of using Tailwind so that I won't be doing that. All I will be saying is that Tailwind is a utility first framework with what might be considered an ugly-as syntax, but boy is it faster to build elegant components.</p>
+<h2 id="preresiquites">Preresiquites</h2>
+<ul>
+<li>Install <a href="https://nodejs.org/en/">Node and npm</a></li>
+<li>Install <a href="https://dotnet.microsoft.com/">.Net Core</a></li>
+<li>Create a <a href="https://www.statiq.dev/web/">.Net Core Console Application configured to use Statiq</a></li>
+</ul>
+<h2 id="install-tailwind">Install Tailwind</h2>
+<p>Tailwind can only be installed as an NPM package.</p>
+<h3 id="step-1-create-a-folder-called-node">Step 1: Create a folder called node</h3>
+<p>Because our core project is a .Net Core application, and we don't need npm except for Tailwind, we will install it in a separate folder. This will avoid clutter in the root directory.</p>
+<h3 id="step-2-install-packages">Step 2: Install packages</h3>
+<p>We will install Tailwind, and other peer dependencies inside a directory called <em>node</em>.</p>
+<pre><code class="language-bash hljs"><span class="hljs-built_in">cd</span> node
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+</code></pre>
+<ul>
+<li><strong>PostCSS</strong> is a preprocessor that transforms the CSS using plugins.</li>
+<li><strong>AuoPrefixer</strong> is a PostCSS plugin to add vendor prefixes to CSS rules.</li>
+</ul>
+<p>Our package.json should look something like this.</p>
+<pre><code class="language-json hljs">{
+    <span class="hljs-attr">"devDependencies"</span>: {
+        <span class="hljs-attr">"@tailwindcss/typography"</span>: <span class="hljs-string">"^0.4.1"</span>,
+        <span class="hljs-attr">"autoprefixer"</span>: <span class="hljs-string">"^10.3.1"</span>,
+        <span class="hljs-attr">"postcss"</span>: <span class="hljs-string">"^8.3.6"</span>,
+        <span class="hljs-attr">"tailwindcss"</span>: <span class="hljs-string">"^2.2.7"</span>
+    }
+}
+</code></pre>
+<h3 id="step-3-configure-postcss">Step 3: Configure postcss</h3>
+<p>Create a postcss.config.js file and add <em>tailwindcss</em> and <em>autoprefixer</em></p>
+<pre><code class="language-javascript hljs"><span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-attr">plugins</span>: {
+        <span class="hljs-attr">tailwindcss</span>: {},
+        <span class="hljs-attr">autoprefixer</span>: {},
+    },
+};
+</code></pre>
+<h3 id="step-3-configure-tailwind">Step 3: Configure Tailwind</h3>
+<p>Generate a config file using the Tailwind CLI utility</p>
+<pre><code class="language-bash hljs">npx tailwindcss init
+</code></pre>
+<p>This will create a tailwind.config.js file.</p>
+<p>We will update the purge section to optimize our CSS</p>
+<pre><code class="language-js hljs">    purge: {
+        <span class="hljs-attr">enabled</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">content</span>: [<span class="hljs-string">'../**/input/**/*.cshtml'</span>],
+    },
+</code></pre>
+<ul>
+<li><strong>Line 2</strong>: Enable purge without having to set the NODE_ENV to production</li>
+<li><strong>Line 3</strong>: Scan our razor views files and remove any superfluous CSS from our final output file. We prefix the path with <strong>../</strong> because our config is inside a subfolder, and we need to find the razor views from the root.</li>
+</ul>
+<p>Our final configuration will look like this.</p>
+<pre><code class="language-js hljs"><span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-attr">purge</span>: {
+        <span class="hljs-attr">enabled</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">content</span>: [<span class="hljs-string">'../**/input/**/*.cshtml'</span>],
+    },
+    <span class="hljs-attr">darkMode</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// or 'media' or 'class'</span>
+    theme: {
+        <span class="hljs-attr">extend</span>: {},
+    },
+    <span class="hljs-attr">variants</span>: {
+        <span class="hljs-attr">extend</span>: {},
+    },
+    <span class="hljs-attr">plugins</span>: [],
+};
+</code></pre>
+<h3 id="step-4-add-css">Step 4: Add CSS</h3>
+<p>Create an input folder and add a _site.css</p>
+<pre><code class="language-css hljs"><span class="hljs-comment">/*! @import */</span>
+@<span class="hljs-keyword">tailwind</span> base;
+@<span class="hljs-keyword">tailwind</span> components;
+@<span class="hljs-keyword">tailwind</span> utilities;
+</code></pre>
+<h3 id="step-5-build-the-css">Step 5: Build the CSS</h3>
+<pre><code class="language-bash hljs">npx tailwind build -c ./tailwind.config.js -i ../input/_site.css -o ../Bookland/output/assets/styles.css
+</code></pre>
+<ul>
+<li><strong>-c</strong>: The config file path</li>
+<li><strong>-i</strong>: The input file path. Our CSS file is in the input folder and called _site.css</li>
+<li><strong>-o</strong>: The output file path. Our output file is in the output folder and called styles.css</li>
+</ul>
+<h3 id="step-6-link-the-stylesheet-to-a-layout-file">Step 6: Link the stylesheet to a layout file</h3>
+<p>We will add a _Layout.cshtml file in our input folder and link to the stylesheet generated by tailwind and postcss.</p>
+<pre><code class="language-cs hljs">&lt;!DOCTYPE html&gt;
+&lt;html lang=<span class="hljs-string">"en"</span>&gt;
+&lt;head&gt;
+    &lt;link href=<span class="hljs-string">"/styles.css"</span> rel=<span class="hljs-string">"stylesheet"</span>/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+@RenderBody()
+</code></pre>
+<ul>
+<li>Reference to the styles.css file</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Now we should be able to add Tailwind classes to our Razor view. The generated site will use the styles outputted by Tailwind.</p>
+<h2 id="further-reading">Further reading</h2>
+<ul>
+<li><a href="https://tailwindcss.com/docs">Tailwind Docs</a></li>
+</ul>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/add-tailwind-css-statiq-website&text=A%20guide%20to%20using%20TailwindCss%20with%20Statiq via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/add-tailwind-css-statiq-website"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>

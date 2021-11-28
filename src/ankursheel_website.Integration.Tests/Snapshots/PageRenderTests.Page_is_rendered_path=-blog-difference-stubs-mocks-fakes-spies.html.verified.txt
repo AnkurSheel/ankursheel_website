@@ -1,0 +1,251 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+    
+
+<title>Ankur Sheel - What is the difference between Stubs, Mocks, Fakes and Spies</title>
+<meta charset="utf-8"/>
+
+<!-- Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>
+
+<meta itemProp="name" content="What is the difference between Stubs, Mocks, Fakes and Spies"/>
+<meta itemProp="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What is the difference between Stubs, Mocks, Fakes and Spies"/>
+<meta property="og:description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="What is the difference between Stubs, Mocks, Fakes and Spies"/>
+<meta name="twitter:description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<header class="sticky top-0 bg-white shadow-lg z-10">
+    
+
+<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
+
+<nav>
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7 items-center">
+                <!-- Website Logo -->
+                <div>
+                    <a href="/" class="flex items-center py-4 px-2 ">
+                        <span class="font-semibold text-gray-500 text-lg hover:text-green-500">
+                            Ankur Sheel
+                        </span
+                        >
+                    </a>
+                </div>
+                <ul class="hidden lg:flex items-center space-x-1">
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/blog">All Posts</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/tags">All Tags</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/cv">CV</a>
+                        </li>
+                        <li class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition-all transform hover:scale-110">
+                            <a href="/impossible-list">Impossible List</a>
+                        </li>
+                </ul>
+            </div>
+
+            <ul class="hidden lg:flex items-center space-x-3">
+                <li>
+                    <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/rss.svg" alt="RSS">
+                    </a>
+                </li>
+                <li>
+                    <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel" title="Did you learn something or find this summary interesting?">
+                        <img class="h-8 mr-2 border-none" src="/assets/images/bmc-logo.svg" alt="Buy Me A Coffee">
+                        <p class="font-cookie">Buy me a book</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col">
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/about" class="block">About</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/blog" class="block">All Posts</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/tags" class="block">All Tags</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/contact" class="block">Contact</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/cv" class="block">CV</a>
+                    </li>
+                    <li class="text-sm px-2 py-4 hover:bg-green-500 transition duration-300">
+                        <a href="/impossible-list" class="block">Impossible List</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+<main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
+    <h1 class="text-center">What is the difference between Stubs, Mocks, Fakes and Spies</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+<div class="prose-sm italic ">
+    <div class="flex justify-evenly items-center">
+        <i>Last Updated On: 15-Jul-2021</i>
+        <i class="font-bold">
+            Reading Time: 3 min
+        </i>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
+                <a role="button" href="/tags/testing" class="badge text-black bg-grey-light no-underline">testing</a>
+            </div>
+    </div>
+</div>
+
+<html><head></head><body><p>The lines between the different test doubles are blurred when using a Mocking library like <a href="https://github.com/moq/moq4">Moq</a>.</p>
+<p>I use mocks for almost everything, but I think it's still worthwhile to know the difference between Stubs, Mocks, Fakes and Spies. If nothing else, we will know what people are talking about when they use the different terms.</p>
+<p>Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IRepository</span>
+{
+     <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)</span>;
+     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)</span>;
+}
+</code></pre>
+<h2 id="stub">Stub</h2>
+<p>A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.</p>
+<p>Below is the stubbed version using Moq of a service where the OnPing() function always returns "pong" regardless of the input.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
+mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())).Returns(<span class="hljs-literal">true</span>);
+</code></pre>
+<p>An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.</p>
+<h2 id="spy">Spy</h2>
+<p>A spy lets us verify what functions were called, with what arguments, when, and how often.</p>
+<p>For example, let's take a repository class, which does not have an interface associated with it.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">RepositorySpy</span> : <span class="hljs-title">IRepository</span>
+{
+    <span class="hljs-keyword">public</span> boolean IsValidWasCalled = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
+    </span>{
+        IsValidWasCalled = <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+}
+</code></pre>
+<p>In the test, we will assert that <code>IsValidWasCalled</code> was <em>true</em>.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> spy = <span class="hljs-keyword">new</span> RepositorySpy();
+Assert.True(spy.IsValidWasCalled);
+</code></pre>
+<p>We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.</p>
+<p>An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.</p>
+<p>I rarely use Spies, and it will become clear why once we look at Mocks.</p>
+<h2 id="mock">Mock</h2>
+<p>A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, unlike a spy, which has the assertion in the test, the assertion is in the verify method in a mock.</p>
+<p>Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verify that the correct calls were received.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
+mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">1</span>)).Returns(<span class="hljs-literal">true</span>);
+mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">2</span>)).Returns(<span class="hljs-literal">false</span>);
+mock.Verify(x =&gt; x.Add(<span class="hljs-number">1</span>), Times.Once);
+mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())), Times(<span class="hljs-number">2</span>));
+</code></pre>
+<p>A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.</p>
+<h2 id="fake">Fake</h2>
+<p>A Fake is an object that has a concrete implementation that works similar to the actual implementation. It is a simplified version of production code. It does not affect the behaviour of the test but simplifies the implementation of the test by removing heavyweight dependencies.</p>
+<p>It should be used sparingly and only in cases where a Stub or Mock is not usable.</p>
+<p>Below is an implementation of a Fake repository</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FakeRepository</span> : <span class="hljs-title">IRepository</span>
+{
+    <span class="hljs-keyword">private</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt; _values = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
+    </span>{
+        <span class="hljs-keyword">return</span> _values[id];
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)
+    </span>{
+        _values.Add(id, open);
+    }
+}
+</code></pre>
+<p>An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.</p>
+<h3 id="thanks">Thanks</h3>
+<ul>
+<li>Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.</li>
+</ul>
+<h3 id="edits">Edits</h3>
+<ul>
+<li><em>Updated 17th July 2021 with an example for Spies</em></li>
+</ul>
+</body></html>
+
+
+
+<aside class="hidden md:block">
+        <div class="flex justify-center gap-x-5 ">
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies&text=We%20can%20use%20Mocks%20for%20almost%20everything%20when%20we%20use%20a%20mocking%20framework%2C%20but%20what%20is%20the%20difference%20between%20Stubs%2C%20Mocks%2C%20Fakes%20and%20Spies via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        </div>
+</aside>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+<script src="/assets/js/blog.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ankursheel" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+</body>
+</html>
