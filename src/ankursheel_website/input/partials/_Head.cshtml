@@ -46,8 +46,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 @* Twitter Card tags  *@
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@Model.Context.GetTwitterUserName()"/>
-<meta name="twitter:creator" content="@Model.Context.GetTwitterUserName()"/>
+<meta name="twitter:site" content="@Model.Context.GetTwitterUsername()"/>
+<meta name="twitter:creator" content="@Model.Context.GetTwitterUsername()"/>
 <meta name="twitter:title" content="@Model.Document.GetTitle()"/>
 <meta name="twitter:description" content="@Model.Document.GetExcerpt()"/>
 @if (Model.Document.GetImageTwitter() != null)

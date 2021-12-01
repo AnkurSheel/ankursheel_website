@@ -16,9 +16,10 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 }
-<header class="sticky top-0 bg-white shadow-lg z-10">
+<header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     @await Html.PartialAsync("partials/_Navigation.cshtml")
 </header>
+
 <main class="mx-auto max-w-prose p-8 prose prose-xl prose-purple">
     <h1 class="text-center">@Model.Document.GetTitle()</h1>
     <div class="flex flex-col min-h-screen">
@@ -27,6 +28,10 @@
         </article>
     </div>
 </main>
+
+<footer class="shadow-lg z-10 w-full bg-gray-500 text-white">
+    @await Html.PartialAsync("partials/_Footer.cshtml")
+</footer>
 
 @await Html.PartialAsync("partials/_Scripts.cshtml")
 @await RenderSectionAsync("Scripts", false)

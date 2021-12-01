@@ -3,6 +3,9 @@ Description: 'I go down rabbit holes and blog about them'
 Host: 'www.ankursheel.com'
 LinksUseHttps: true
 TwitterUsername: 'ankur_sheel'
+GithubUsername: 'AnkurSheel'
+LinkedInUsername: 'ankursheel'
+BuyMeACoffeeUsername: 'ankursheel'
 ReadingTimeWordsPerMinute: 238
 HeaderLinks:
     - Title: 'About'
@@ -26,69 +29,3 @@ GoatCounterCode: ankursheel
 #buyMeACoffee: {
 #  link: 'https://www.buymeacoffee.com/ankursheel',
 #  altText: 'Buy me a coffee',
-#},
-#headerLinksIcon: 'avatar.png',
-#headerLinks: [
-#  {
-#    label: 'CV',
-#    url: '/cv',
-#  },
-#  {
-#    label: 'Blog',
-#    url: '/blog',
-#  },
-#  {
-#    label: 'Tags',
-#    url: '/tags',
-#  },
-#  {
-#    label: 'Impossible List',
-#    url: '/impossible-list',
-#  },
-#  {
-#    label: 'Random Post',
-#    url: '/random-post',
-#  },
-#  {
-#    label: 'Contact Me',
-#    url: '/contact',
-#  },
-#],
-#socialLinks: {
-#  twitter: {
-#    url: 'https://twitter.com/ankur_sheel',
-#    text: 'Connect on Twitter',
-#  },
-#  github: {
-#    url: 'https://github.com/AnkurSheel',
-#    text: 'Check out my work on Github',
-#  },
-#  linkedin: {
-#    url: 'https://www.linkedin.com/in/ankursheel',
-#    text: 'View my LinkedIn profile',
-#  },
-#  rss: {
-#    url: '/blog/rss.xml',
-#    text: 'Subscribe on RSS',
-#  },
-#},
-#footerLinks: [
-#  {
-#    sectionName: 'Connect with me',
-#    links: [
-#      {
-#        label: 'Github',
-#        url: 'https://github.com/AnkurSheel',
-#      },
-#      {
-#        label: 'Twitter',
-#        url: 'https://twitter.com/ankur_sheel',
-#      },
-#      {
-#        label: 'LinkedIn',
-#        url: 'https://www.linkedin.com/in/ankursheel',
-#      },
-#    ],
-#  },
-#],
-#};

@@ -3,7 +3,7 @@
 
 @{
     string url = Model.Document.GetPageUrl(false);
-    string text = $"{Uri.EscapeDataString(Model.Document.GetExcerpt())} via @{Uri.EscapeDataString(Model.Context.GetTwitterUserName())}";
+    string text = $"{Uri.EscapeDataString(Model.Document.GetExcerpt())} via @{Uri.EscapeDataString(Model.Context.GetTwitterUsername())}";
     string githubPath = $"AnkurSheel/ankursheel_website/blob/master/src/ankursheel_website/input/{Model.Document.Source.GetRelativeInputPath().ToString()}";
 }
 
