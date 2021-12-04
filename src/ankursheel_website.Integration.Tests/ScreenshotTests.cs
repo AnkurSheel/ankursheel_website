@@ -15,7 +15,7 @@ namespace ankursheel_website.Integration.Tests
             _fixture = fixture;
         }
 
-        [Theory]
+        [Theory(Skip = "Do not run screenshot tests")]
         [MemberData(nameof(GetData))]
         public async Task ScreenshotPage(string path)
         {
