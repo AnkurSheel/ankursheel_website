@@ -8,7 +8,7 @@ using Microsoft.Extensions.FileProviders;
 using PlaywrightSharp;
 using Xunit;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
     public class WebServerFixture : IAsyncLifetime, IDisposable
     {

@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
     public class TestHelpers
     {

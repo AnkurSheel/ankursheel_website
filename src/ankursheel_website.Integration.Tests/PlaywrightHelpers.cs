@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using PlaywrightSharp;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
     public static class PlaywrightHelpers
     {

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.FileProviders;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
     public class TestServerFixture : IDisposable
     {

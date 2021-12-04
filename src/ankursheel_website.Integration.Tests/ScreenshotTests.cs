@@ -2,12 +2,10 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using VerifyXunit;
 using Xunit;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
-    [UsesVerify]
     public class ScreenshotTests : IClassFixture<WebServerFixture>
     {
         private readonly WebServerFixture _fixture;

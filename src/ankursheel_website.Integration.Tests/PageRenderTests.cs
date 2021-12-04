@@ -4,11 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using PlaywrightSharp;
 using VerifyXunit;
 using Xunit;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
     [UsesVerify]
     public class PageRenderTests : IClassFixture<TestServerFixture>

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using DiffEngine;
 using VerifyTests;
 
-namespace Bookland.Integration.Tests
+namespace ankursheel_website.Integration.Tests
 {
     public static class VerifySettings
     {
