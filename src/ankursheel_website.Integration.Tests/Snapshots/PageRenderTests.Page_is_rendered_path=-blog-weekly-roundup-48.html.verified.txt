@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Video: Tandura Dance</title>
+<title>Ankur Sheel - Weekly Roundup 48</title>
 <meta charset="utf-8"/>
 
 <!-- Google Tag Manager -->
@@ -16,27 +16,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End Google Tag Manager -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Clip of Tandura Dance during the Desert Safari"/>
+<meta name="description" content="This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/tandura-dance"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-48"/>
 
-<meta itemProp="name" content="Video: Tandura Dance"/>
-<meta itemProp="description" content="Clip of Tandura Dance during the Desert Safari"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/tandura-dance-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/tandura-dance"/>
+<meta itemProp="name" content="Weekly Roundup 48"/>
+<meta itemProp="description" content="This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-48-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/weekly-roundup-48"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Video: Tandura Dance"/>
-<meta property="og:description" content="Clip of Tandura Dance during the Desert Safari"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/tandura-dance-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/tandura-dance-facebook.png"/>
+<meta property="og:title" content="Weekly Roundup 48"/>
+<meta property="og:description" content="This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-48-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-48-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Video: Tandura Dance"/>
-<meta name="twitter:description" content="Clip of Tandura Dance during the Desert Safari"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/tandura-dance-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/tandura-dance-twitter.png"/>
+<meta name="twitter:title" content="Weekly Roundup 48"/>
+<meta name="twitter:description" content="This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-48-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-48-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -139,46 +139,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Video: Tandura Dance</h1>
+    <h1 class="text-center">Weekly Roundup 48</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <i>Last Updated On: 07-Feb-2014</i>
+        <i>Last Updated On: 12-Dec-2021</i>
         <i class="font-bold">
-            Reading Time: 0 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
-                <a role="button" href="/tags/middle-east" class="badge text-black bg-grey-light no-underline">Middle East</a>
-            </div>
-            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
-                <a role="button" href="/tags/travel" class="badge text-black bg-grey-light no-underline">travel</a>
-            </div>
-            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
-                <a role="button" href="/tags/uae" class="badge text-black bg-grey-light no-underline">UAE</a>
-            </div>
-            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
-                <a role="button" href="/tags/video" class="badge text-black bg-grey-light no-underline">video</a>
+                <a role="button" href="/tags/weekly-roundup" class="badge text-black bg-grey-light no-underline">weekly roundup</a>
             </div>
     </div>
 </div>
 
-<html><head></head><body><div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
-  <iframe src="https://www.youtube.com/embed/oVOINgqt06Y" title="Tandura Dance" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
-</div>
-<p>Read the post <a href="desert-safari">here</a></p>
+<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<h2 id="hiring-and-retaining-a-diverse-engineering-team"><a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/">Hiring (and Retaining) a Diverse Engineering Team</a></h2>
+<p><em>by <strong>Gergely Orosz</strong></em></p>
+<p>Almost everyone agrees that having a diverse team is better for business. But the question remains -&gt; "How do you hire more diverse teams?" Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.</p>
+<h2 id="questions-to-ask-yourself-every-year"><a href="http://stephanango.com/40-questions">40 questions to ask yourself every year</a></h2>
+<p><em>by <strong>Stephan Ango</strong></em></p>
+<p>The end of the year is a good time for introspection. If you are having a hard time coming up with questions to ask yourself, Stephan shares a list of 40 questions he asks himself every year. This should be enough to get you started.</p>
+<h2 id="the-power-of-anti-goals"><a href="https://awilkinson.medium.com/the-power-of-anti-goals-c38f5f46d23c">The Power of Anti-Goals</a></h2>
+<p><em>by <strong>Andrew Wilkinson</strong></em></p>
+<p>When thinking about what we want to achieve, most of us start by thinking about what we want to do. Andrew instead thought of the worst day possible and came up with Anti-goals to avoid it. I feel it's a strategy worth exploring to have more enjoyable days.</p>
+<h2 id="how-i-hustled-to-2kmo-and-got-rid-of-it"><a href="https://kevoncheung.com/blog/creators-monetization-challenges">How I Hustled to $2K/mo and Got Rid of It</a></h2>
+<p><em>by <strong>Kevon Cheung</strong></em></p>
+<p>A behind-the-scenes look at how Kevin created multiple revenue streams to reach 2k/month and why he eventually scrapped them.</p>
+<h2 id="how-to-evaluate-startup-offers-a-beginners-guide"><a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/">How to Evaluate Startup Offers - A Beginner's Guide</a></h2>
+<p><em>by <strong>Avy Faingezicht</strong></em></p>
+<p>It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.</p>
 </body></html>
 
 
 
 <aside class="hidden md:block mt-12">
         <div class="flex justify-center gap-x-5 ">
-            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/tandura-dance&text=Clip%20of%20Tandura%20Dance%20during%20the%20Desert%20Safari via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
-            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/tandura-dance"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-48&text=This%20weeks%20roundup%20contains%20articles%20from%20Gergely%20Orosz%2C%20Stephan%20Ango%2C%20Andrew%20Wilkinson%2C%20Kevon%20Cheung%20and%20Avy%20Faingezicht via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/weekly-roundup-48"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         </div>
 </aside>
 
