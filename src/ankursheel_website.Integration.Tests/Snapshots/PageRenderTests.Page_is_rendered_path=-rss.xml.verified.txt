@@ -5,8 +5,60 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2021</copyright>
-		<pubDate>Mon, 29 Nov 2021 00:20:39 GMT</pubDate>
-		<lastBuildDate>Mon, 29 Nov 2021 00:20:39 GMT</lastBuildDate>
+		<pubDate>Mon, 13 Dec 2021 22:45:29 GMT</pubDate>
+		<lastBuildDate>Mon, 13 Dec 2021 22:45:29 GMT</lastBuildDate>
+		<item>
+			<title>Weekly Roundup 48</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
+			<description>This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-48/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
+			<pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="hiring-and-retaining-a-diverse-engineering-team"&gt;&lt;a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/"&gt;Hiring (and Retaining) a Diverse Engineering Team&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Almost everyone agrees that having a diverse team is better for business. But the question remains -&amp;gt; "How do you hire more diverse teams?" Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.&lt;/p&gt;
+&lt;h2 id="questions-to-ask-yourself-every-year"&gt;&lt;a href="http://stephanango.com/40-questions"&gt;40 questions to ask yourself every year&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Stephan Ango&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The end of the year is a good time for introspection. If you are having a hard time coming up with questions to ask yourself, Stephan shares a list of 40 questions he asks himself every year. This should be enough to get you started.&lt;/p&gt;
+&lt;h2 id="the-power-of-anti-goals"&gt;&lt;a href="https://awilkinson.medium.com/the-power-of-anti-goals-c38f5f46d23c"&gt;The Power of Anti-Goals&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Andrew Wilkinson&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When thinking about what we want to achieve, most of us start by thinking about what we want to do. Andrew instead thought of the worst day possible and came up with Anti-goals to avoid it. I feel it's a strategy worth exploring to have more enjoyable days.&lt;/p&gt;
+&lt;h2 id="how-i-hustled-to-2kmo-and-got-rid-of-it"&gt;&lt;a href="https://kevoncheung.com/blog/creators-monetization-challenges"&gt;How I Hustled to $2K/mo and Got Rid of It&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kevon Cheung&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A behind-the-scenes look at how Kevin created multiple revenue streams to reach 2k/month and why he eventually scrapped them.&lt;/p&gt;
+&lt;h2 id="how-to-evaluate-startup-offers-a-beginners-guide"&gt;&lt;a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/"&gt;How to Evaluate Startup Offers - A Beginner's Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Avy Faingezicht&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 47</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-47</link>
+			<description>This weeks roundup contains articles from Ramit Sethi, Muhammed Saleem, Robert Heaton, Charity Majors and David McCarter</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-47/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
+			<pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="career-seasons-choosing-a-role-based-on-the-lifestyle-you-want"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/career-seasons/"&gt;Career Seasons: Choosing a Role Based on the Lifestyle You Want&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At different points in our lives, we are in a different season of our careers. The 3 different career seasons are Growth, Lifestyle and Reinvention. It's important to know what season we are in to tailor our job search accordingly. This article can help us figure out what career season we are in.&lt;/p&gt;
+&lt;h2 id="dependency-injection-lifetimes-in-asp.net-core"&gt;&lt;a href="https://code-maze.com/dependency-injection-lifetimes-aspnet-core/?utm_source=pocket_mylisthttps://code-maze.com/dependency-injection-lifetimes-aspnet-core/"&gt;Dependency Injection Lifetimes in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Muhammed Saleem&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In ASP.NET Core, we can register the dependencies for three different lifetimes. I always get confused about when to use which. This article compares the 3 injection lifetimes by example. It has recommendations for when to use each and when not to use.&lt;/p&gt;
+&lt;h2 id="how-to-write-better-sentences-6-examples"&gt;&lt;a href="https://robertheaton.com/better-sentences/"&gt;How to write better sentences: 6 examples&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Robert Heaton&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We can improve our articles by making minor tweaks to our writing. This article contains 6 real-world sentences that Robert has made shorter and cleaner.&lt;/p&gt;
+&lt;h3 id="lies-my-parents-told-me-about-logs"&gt;&lt;a href="https://www.honeycomb.io/blog/lies-my-parents-told-me-about-logs/"&gt;Lies My Parents Told Me (About Logs)&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;Charity Majors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All of us have some assumptions about logs. Some used to be true, but some never really were. This article outlines some of the common misconceptions about logs.&lt;/p&gt;
+&lt;h3 id="when-are-companies-going-to-learn-how-software-development-works"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/07/15/when-are-companies-going-to-learn-how-software-development-works/"&gt;When Are Companies Going To Learn How Software Development Works?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many companies make the same mistakes repeatedly that doom their software projects to failure. A story about how David unearthed during an interview of a company making those mistakes.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>How do I implement Graphql subscriptions in HotChocolate with Redis</title>
 			<link>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</link>
@@ -1033,185 +1085,6 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;p&gt;As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.&lt;/p&gt;
 &lt;p&gt;If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.&lt;/p&gt;
 &lt;p&gt;I am always curious to know how other people have adapted this in their workflow so let me know what you did :)&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>What is the difference between Stubs, Mocks, Fakes and Spies</title>
-			<link>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</link>
-			<description>We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies</description>
-			<guid>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</guid>
-			<pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;The lines between the different test doubles are blurred when using a Mocking library like &lt;a href="https://github.com/moq/moq4"&gt;Moq&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I use mocks for almost everything, but I think it's still worthwhile to know the difference between Stubs, Mocks, Fakes and Spies. If nothing else, we will know what people are talking about when they use the different terms.&lt;/p&gt;
-&lt;p&gt;Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;interface&lt;/span&gt; &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
-{
-     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)&lt;/span&gt;;
-     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Add&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; valid&lt;/span&gt;)&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="stub"&gt;Stub&lt;/h2&gt;
-&lt;p&gt;A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.&lt;/p&gt;
-&lt;p&gt;Below is the stubbed version using Moq of a service where the OnPing() function always returns "pong" regardless of the input.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; mock = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Mock&amp;lt;IRepository&amp;gt;();
-mock.Setup(x =&amp;gt; x.IsValid(It.IsAny&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;())).Returns(&lt;span class="hljs-literal"&gt;true&lt;/span&gt;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.&lt;/p&gt;
-&lt;h2 id="spy"&gt;Spy&lt;/h2&gt;
-&lt;p&gt;A spy lets us verify what functions were called, with what arguments, when, and how often.&lt;/p&gt;
-&lt;p&gt;For example, let's take a repository class, which does not have an interface associated with it.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;RepositorySpy&lt;/span&gt; : &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
-{
-    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; boolean IsValidWasCalled = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
-
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; Boolean &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)
-    &lt;/span&gt;{
-        IsValidWasCalled = &lt;span class="hljs-literal"&gt;true&lt;/span&gt;;
-        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; &lt;span class="hljs-literal"&gt;true&lt;/span&gt;;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In the test, we will assert that &lt;code&gt;IsValidWasCalled&lt;/code&gt; was &lt;em&gt;true&lt;/em&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; spy = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; RepositorySpy();
-Assert.True(spy.IsValidWasCalled);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.&lt;/p&gt;
-&lt;p&gt;An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.&lt;/p&gt;
-&lt;p&gt;I rarely use Spies, and it will become clear why once we look at Mocks.&lt;/p&gt;
-&lt;h2 id="mock"&gt;Mock&lt;/h2&gt;
-&lt;p&gt;A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, unlike a spy, which has the assertion in the test, the assertion is in the verify method in a mock.&lt;/p&gt;
-&lt;p&gt;Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verify that the correct calls were received.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; mock = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Mock&amp;lt;IRepository&amp;gt;();
-mock.Setup(x =&amp;gt; x.IsValid(&lt;span class="hljs-number"&gt;1&lt;/span&gt;)).Returns(&lt;span class="hljs-literal"&gt;true&lt;/span&gt;);
-mock.Setup(x =&amp;gt; x.IsValid(&lt;span class="hljs-number"&gt;2&lt;/span&gt;)).Returns(&lt;span class="hljs-literal"&gt;false&lt;/span&gt;);
-mock.Verify(x =&amp;gt; x.Add(&lt;span class="hljs-number"&gt;1&lt;/span&gt;), Times.Once);
-mock.Verify(x =&amp;gt; x.IsValid(It.IsAny&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;())), Times(&lt;span class="hljs-number"&gt;2&lt;/span&gt;));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.&lt;/p&gt;
-&lt;h2 id="fake"&gt;Fake&lt;/h2&gt;
-&lt;p&gt;A Fake is an object that has a concrete implementation that works similar to the actual implementation. It is a simplified version of production code. It does not affect the behaviour of the test but simplifies the implementation of the test by removing heavyweight dependencies.&lt;/p&gt;
-&lt;p&gt;It should be used sparingly and only in cases where a Stub or Mock is not usable.&lt;/p&gt;
-&lt;p&gt;Below is an implementation of a Fake repository&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;FakeRepository&lt;/span&gt; : &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
-{
-    &lt;span class="hljs-keyword"&gt;private&lt;/span&gt; Dictionary&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt;&amp;gt; _values = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Dictionary&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt;&amp;gt;();
-
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)
-    &lt;/span&gt;{
-        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; _values[id];
-    }
-
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Add&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; valid&lt;/span&gt;)
-    &lt;/span&gt;{
-        _values.Add(id, open);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.&lt;/p&gt;
-&lt;h3 id="thanks"&gt;Thanks&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="edits"&gt;Edits&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Updated 17th July 2021 with an example for Spies&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to run SQL Server in a Docker container</title>
-			<link>https://www.ankursheel.com/blog/run-sql-server-docker-container</link>
-			<description>In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file</description>
-			<guid>https://www.ankursheel.com/blog/run-sql-server-docker-container</guid>
-			<pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this post, we will see how we can run SQL Server on Docker. We will be launching the SQL server container using docker-compose and managing the image and environment variables in a docker file.&lt;/p&gt;
-&lt;h3 id="docker-compose-file"&gt;Docker Compose file&lt;/h3&gt;
-&lt;p&gt;To launch a SQL Server container, we will first create a &lt;code&gt;docker-compose.yml&lt;/code&gt; file. I like to keep my docker scripts in a folder called &lt;strong&gt;&lt;em&gt;build.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml hljs"&gt;&lt;span class="hljs-attr"&gt;version:&lt;/span&gt; &lt;span class="hljs-string"&gt;'3.8'&lt;/span&gt;
-
-&lt;span class="hljs-attr"&gt;services:&lt;/span&gt;
-&lt;span class="hljs-attr"&gt;    db:&lt;/span&gt;
-&lt;span class="hljs-attr"&gt;        container_name:&lt;/span&gt; sql_server_db
-&lt;span class="hljs-attr"&gt;        build:&lt;/span&gt;
-&lt;span class="hljs-attr"&gt;            context:&lt;/span&gt; ./../
-&lt;span class="hljs-attr"&gt;            dockerfile:&lt;/span&gt; ./build/mssqlserver.Dockerfile
-&lt;span class="hljs-attr"&gt;        ports:&lt;/span&gt;
-&lt;span class="hljs-bullet"&gt;            -&lt;/span&gt; &lt;span class="hljs-string"&gt;'1433:1433'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: This denotes that we are using version 3.8 of Docker compose so that Docker can provide the appropriate features.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #3&lt;/strong&gt; This section defines all the different containers we will create.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: The name of the SQL Server Database service. &lt;em&gt;Can be anything.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #5&lt;/strong&gt;: A custom container name rather than a generated default name so that we can easily find the container in Docker.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #6&lt;/strong&gt;: Configuration options that are applied at build time&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #7:&lt;/strong&gt; Setting this to &lt;code&gt;.\..\&lt;/code&gt; allows the build process to access any of the files in the root folder.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #8&lt;/strong&gt;: Set the path to the docker file relative to the context path.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #9-10&lt;/strong&gt;: SQL Server is listening on port 1433 in the container, and we want to expose it on port 1433, on the host.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="docker-file-for-sql-server"&gt;Docker file for SQL Server&lt;/h3&gt;
-&lt;p&gt;We can start by adding the base image and environment variables to the docker file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-docker hljs"&gt;&lt;span class="hljs-keyword"&gt;FROM&lt;/span&gt; mcr.microsoft.com/mssql/server:&lt;span class="hljs-number"&gt;2017&lt;/span&gt;-latest
-
-ARG SA_PASSWORD=&lt;span class="hljs-string"&gt;"Password1!"&lt;/span&gt;
-&lt;span class="hljs-keyword"&gt;ENV&lt;/span&gt; SA_PASSWORD=$SA_PASSWORD
-&lt;span class="hljs-keyword"&gt;ENV&lt;/span&gt; ACCEPT_EULA=&lt;span class="hljs-string"&gt;"Y"&lt;/span&gt;
-
-&lt;span class="hljs-keyword"&gt;EXPOSE&lt;/span&gt; &lt;span class="hljs-number"&gt;1433&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: Pull down the SQL Server 2017 container image.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #3&lt;/strong&gt;: Set the SA_PASSWORD as a variable so that it can be reused.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: Specify the strong password that meets SQL Server password requirements as an environment variable.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #5&lt;/strong&gt;: Sets the environment variable to confirm our acceptance of the End-User Licensing Agreement.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #7&lt;/strong&gt;: Expose the port to access it from composed containers. &lt;em&gt;SQL server listens for a connection on TCP port 1433 by default&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="initialize-sql-server-in-docker-container"&gt;Initialize SQL server in Docker container&lt;/h3&gt;
-&lt;p&gt;Add the following lines to the docker file to initialize SQL Server.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-docker hljs"&gt;&lt;span class="hljs-keyword"&gt;RUN&lt;/span&gt;&lt;span class="bash"&gt; mkdir -p /usr/work
-&lt;/span&gt;&lt;span class="hljs-keyword"&gt;COPY&lt;/span&gt;&lt;span class="bash"&gt; ./build/*.sql /usr/work/
-&lt;/span&gt;
-&lt;span class="hljs-keyword"&gt;WORKDIR&lt;/span&gt;&lt;span class="bash"&gt; /usr/work
-&lt;/span&gt;
-&lt;span class="hljs-keyword"&gt;RUN&lt;/span&gt;&lt;span class="bash"&gt; ( /opt/mssql/bin/sqlservr &amp;amp; ) \
-    | grep -q &lt;span class="hljs-string"&gt;"Service Broker manager has started"&lt;/span&gt; \
-    &amp;amp;&amp;amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P &lt;span class="hljs-variable"&gt;$SA_PASSWORD&lt;/span&gt; -i create-db.sql \
-    &amp;amp;&amp;amp; pkill sqlservr
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: Run a command to create a new directory creating all the directories in the path.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #2&lt;/strong&gt;: Copy all the SQL files into the created directory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: Set the working directory for the subsequent instructions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #6&lt;/strong&gt;: Starts the SQL server.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #7&lt;/strong&gt;: Wait for &lt;em&gt;sqlservr&lt;/em&gt; to start by checking the logs. &lt;em&gt;grep&lt;/em&gt; will block until it has found the string and then exit.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #8&lt;/strong&gt;: Run &lt;em&gt;sqlcmd&lt;/em&gt; to run &lt;em&gt;create-db.sql&lt;/em&gt; which scaffolds our database.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #9&lt;/strong&gt;: Kill the &lt;em&gt;sqlservr&lt;/em&gt; process.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="script-to-scaffold-our-database"&gt;Script to scaffold our database&lt;/h3&gt;
-&lt;p&gt;In our SQL script, we can do whatever we need to do at startup. In this demo, we will just create a database with a schema.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-sql hljs"&gt;&lt;span class="hljs-keyword"&gt;CREATE&lt;/span&gt; &lt;span class="hljs-keyword"&gt;DATABASE&lt;/span&gt; DemoDb;
-GO
-&lt;span class="hljs-keyword"&gt;USE&lt;/span&gt; DemoDb;
-GO
-
-&lt;span class="hljs-keyword"&gt;CREATE&lt;/span&gt; &lt;span class="hljs-keyword"&gt;TABLE&lt;/span&gt; [dbo].[Table1]
-(
-    [&lt;span class="hljs-keyword"&gt;Id&lt;/span&gt;] &lt;span class="hljs-built_in"&gt;INT&lt;/span&gt; &lt;span class="hljs-keyword"&gt;NOT&lt;/span&gt; &lt;span class="hljs-literal"&gt;NULL&lt;/span&gt; PRIMARY &lt;span class="hljs-keyword"&gt;KEY&lt;/span&gt; &lt;span class="hljs-keyword"&gt;IDENTITY&lt;/span&gt;,
-    [&lt;span class="hljs-keyword"&gt;Name&lt;/span&gt;] &lt;span class="hljs-keyword"&gt;NVARCHAR&lt;/span&gt;(&lt;span class="hljs-number"&gt;200&lt;/span&gt;) &lt;span class="hljs-keyword"&gt;NOT&lt;/span&gt; &lt;span class="hljs-literal"&gt;NULL&lt;/span&gt;,
-)
-
-&lt;span class="hljs-keyword"&gt;GO&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="running-the-container"&gt;Running the container&lt;/h3&gt;
-&lt;p&gt;We can use the following command to run start the DB using from the root folder.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker-compose &lt;span class="hljs-_"&gt;-f&lt;/span&gt; ./build/docker-compose.yml up &lt;span class="hljs-_"&gt;-d&lt;/span&gt; --force-recreate --build db
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Starting a new Docker container with Microsoft SQL Server is really simple. However, there are a few hoops to jump through. I hope that it’s easy to understand how it works after reading this article.&lt;/p&gt;
-&lt;p&gt;Please let me know your thoughts about this article if you have any suggestions or share the article with others.&lt;/p&gt;
 &lt;/body&gt;&lt;/html&gt;</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
