@@ -16,7 +16,8 @@
     }
 
     /* resets from https://www.joshwcomeau.com/css/custom-css-reset/ */
-    html, body {
+    html,
+    body {
         height: 100%;
     }
 
@@ -24,12 +25,20 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    picture, canvas, svg {
+    picture,
+    canvas,
+    svg {
         display: block;
         max-width: 100%;
     }
 
-    p, h1, h2, h3, h4, h5, h6 {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         overflow-wrap: break-word;
     }
 
@@ -38,7 +47,7 @@
     }
 
     a {
-        @apply transition-all transform hover:scale-110;
+        @apply transition-all transform hover:scale-110 hover:invert;
     }
 
     p {
@@ -67,8 +76,8 @@
 }
 
 @layer components {
-    .social-button{
-        @apply py-2 px-6 rounded-md !text-white hover:!no-underline;
+    .social-button {
+        @apply py-2 px-6 rounded-md !text-gray-100 hover:!no-underline font-semibold shadow-lg;
     }
 
     .bg-social-twitter {
@@ -78,6 +87,6 @@
 
     .bg-social-linkedin {
         --tw-bg-opacity: 1;
-        background-color: rgba(0, 119, 181, var(--tw-bg-opacity))
+        background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
     }
 }

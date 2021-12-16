@@ -22,11 +22,7 @@ module.exports = {
                         a: {
                             textDecoration: 'none',
                             '&:hover': {
-                                color: '#000',
                                 textDecoration: `underline wavy`,
-                            },
-                            '&:focus': {
-                                color: '#000',
                             },
                         },
                         'blockquote > p:first-of-type': {
