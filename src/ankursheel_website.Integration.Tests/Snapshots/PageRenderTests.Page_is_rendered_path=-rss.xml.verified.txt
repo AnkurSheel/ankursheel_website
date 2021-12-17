@@ -5,8 +5,8 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2021</copyright>
-		<pubDate>Mon, 13 Dec 2021 22:45:29 GMT</pubDate>
-		<lastBuildDate>Mon, 13 Dec 2021 22:45:29 GMT</lastBuildDate>
+		<pubDate>Fri, 17 Dec 2021 02:38:44 GMT</pubDate>
+		<lastBuildDate>Fri, 17 Dec 2021 02:38:44 GMT</lastBuildDate>
 		<item>
 			<title>Weekly Roundup 48</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-48</link>

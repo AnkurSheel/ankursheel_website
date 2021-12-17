@@ -39,6 +39,10 @@
         @apply break-words;
     }
 
+    html {
+        @apply scroll-smooth;
+    }
+
     article img {
         @apply rounded border-4 border-gray-600 border-double;
     }
