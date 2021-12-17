@@ -15,10 +15,7 @@
         @foreach (var tag in Model.Document.GetTags())
         {
             var path = new NormalizedPath($"/tags/{tag}").OptimizeFileName().ToString();
-
-            <div class="flex-initial border-2 border-black p-2 m-2 border rounded-xl">
-                <a role="button" href="@path" class="badge text-black bg-grey-light no-underline">@tag</a>
-            </div>
+            <a href="@path" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">@tag</a>
         }
     </div>
 </div>

@@ -1,6 +1,4 @@
 ﻿@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
     @font-face {
@@ -16,11 +14,6 @@
     }
 
     /* resets from https://www.joshwcomeau.com/css/custom-css-reset/ */
-    html,
-    body {
-        height: 100%;
-    }
-
     body {
         -webkit-font-smoothing: antialiased;
     }
@@ -32,6 +25,10 @@
         max-width: 100%;
     }
 
+    html {
+        @apply scroll-smooth;
+    }
+
     p,
     h1,
     h2,
@@ -39,7 +36,11 @@
     h4,
     h5,
     h6 {
-        overflow-wrap: break-word;
+        @apply break-words;
+    }
+
+    html {
+        @apply scroll-smooth;
     }
 
     article img {
@@ -52,6 +53,10 @@
 
     p {
         @apply slashed-zero diagonal-fractions;
+    }
+
+    p a:hover {
+        @apply underline decoration-wavy;
     }
 
     blockquote {
@@ -75,9 +80,11 @@
     }
 }
 
+@tailwind components;
+
 @layer components {
     .social-button {
-        @apply py-2 px-6 rounded-md !text-gray-100 hover:!no-underline font-semibold shadow-lg;
+        @apply py-2 px-6 rounded-md !text-gray-100 font-semibold shadow-lg;
     }
 
     .bg-social-twitter {
@@ -90,3 +97,5 @@
         background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
     }
 }
+
+@tailwind utilities;
