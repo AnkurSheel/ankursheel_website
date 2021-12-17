@@ -25,6 +25,10 @@
         max-width: 100%;
     }
 
+    html {
+        @apply scroll-smooth;
+    }
+
     p,
     h1,
     h2,
@@ -32,7 +36,7 @@
     h4,
     h5,
     h6 {
-        overflow-wrap: break-word;
+        @apply break-words;
     }
 
     article img {
@@ -45,6 +49,10 @@
 
     p {
         @apply slashed-zero diagonal-fractions;
+    }
+
+    p a:hover {
+        @apply underline decoration-wavy;
     }
 
     blockquote {
@@ -72,7 +80,7 @@
 
 @layer components {
     .social-button {
-        @apply py-2 px-6 rounded-md !text-gray-100 hover:!no-underline font-semibold shadow-lg;
+        @apply py-2 px-6 rounded-md !text-gray-100 font-semibold shadow-lg;
     }
 
     .bg-social-twitter {
