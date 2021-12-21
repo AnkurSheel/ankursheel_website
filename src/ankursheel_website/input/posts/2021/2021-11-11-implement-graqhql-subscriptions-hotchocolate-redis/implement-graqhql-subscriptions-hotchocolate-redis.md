@@ -4,7 +4,9 @@ excerpt: 'A guide to adding subscriptions to a HotChocolate GraphQL API with a R
 tags:
     - 'graphql'
     - 'docker'
+    - 'hotchocolate'
 coverImage: './images/redis_response.png'
+series: Graphql subscriptions with Redis and HotChocolate
 ---
 
 GraphQL offers us real-time capabilities to notify us when a specific event happens.
