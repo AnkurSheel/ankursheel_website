@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Migrating from Gatsby to Statiq</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -160,7 +160,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="my-blogging-journey">My Blogging Journey</h2>
+<h2 id="my-blogging-journey">My Blogging Journey</h2>
 <p>In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.</p>
 <p>You can read more about why I migrated to Gatsby and the earlier parts of the journey at <a href="migrating-from-wordpress-to-gatsby">Why and How I migrated my website from WordPress to Gatsby</a>.</p>
 <h2 id="reasons-for-moving-away-from-gatsby">Reasons for moving away from Gatsby</h2>
@@ -282,7 +282,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="conclusion">Conclusion</h2>
 <p>Although it's an ongoing process, I am happy with how the migration is progressing. <a href="https://www.discoveriesinbookland.com/">Discoveries in bookland</a> is now built with Statiq and Markdown and hosted on Netlify. Instead of JS, it's all in .Net, and I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.</p>
 <p>If you would like to know more about something specific, let me know.</p>
-</body></html>
+
 
 
 

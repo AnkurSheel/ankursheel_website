@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Niagara Falls, New York</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,17 +158,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop and bask in the glory of  the Niagara Falls.</p>
+<p>After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop and bask in the glory of  the Niagara Falls.</p>
 <p>Unfortunately, I was not able to cross over to the Canadian side because of a lack of visa, but my parents did so and it's definitely recommended to get a Canadian visa just to get a view of the falls from the other side.</p>
-<p>Also, a ride on the <em><strong>"Maid of the Mist"</strong> is a must do</em>.</p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-9.jpg" alt=""></p>
-</body></html>
+<p>Also, a ride on the <em><strong>&quot;Maid of the Mist&quot;</strong> is a must do</em>.</p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-niagara-falls-new-york/NiagraFalls-9.jpg" alt="" /></p>
+
 
 
 

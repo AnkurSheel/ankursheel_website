@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 43</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Cryptic error messages are annoying. These <a href="https://www.swyx.io/write-errors-that-don-t-make-me-think-24hg/">error message design principles</a> by <strong>Shawn Wang</strong> is something everyone should consider when writing error messages so that their users don't have to think when something goes wrong.</p>
 <p>Money rules are crucial to building the life that you want. <strong>Richard Boehmcke</strong> shares <a href="https://www.iwillteachyoutoberich.com/blog/money-rules/">Ramit Sethi's 10 money rules that you can take as an inspiration</a> to create a list tailored to you.</p>
 <p>As a developer, you want to write code that is well structured and easy to follow. <strong>Kealan Parr</strong> gives <a href="https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/">examples of the 6 anti-patterns that people use to solve problems</a> but end up adding technical debt.</p>
 <p>Is age the only reason that there is a bias against older devs? <strong>Adam Davis</strong> makes a few observations on <a href="https://dev.to/bytebodger/why-older-people-struggle-in-programming-jobs-1pj0">why older people find it more challenging to fit in</a>.</p>
-<p>"Writing daily will help you become a daily writer" is a given. <strong>Facundo Gauna</strong> started an experiment of <a href="https://dev.to/fgauna12/i-wrote-a-daily-blog-post-for-100-days-here-s-what-happened-3673">blogging daily for 100 days and shares some of the unexpected things that happened</a>.</p>
+<p>&quot;Writing daily will help you become a daily writer&quot; is a given. <strong>Facundo Gauna</strong> started an experiment of <a href="https://dev.to/fgauna12/i-wrote-a-daily-blog-post-for-100-days-here-s-what-happened-3673">blogging daily for 100 days and shares some of the unexpected things that happened</a>.</p>
 <p>There is no doubt that Graphql is the future of API's. But <strong>Jens Neuse</strong> suggests that <a href="https://wundergraph.com/blog/why_not_use_graphql">most of the benefits that the community advertises are very generic and have nothing to do with Graphql</a>. According to him, it's the tools and the ecosystem around it that make it powerful.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

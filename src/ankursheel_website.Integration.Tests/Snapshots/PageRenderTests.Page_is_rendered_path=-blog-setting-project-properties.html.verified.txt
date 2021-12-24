@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Setting up the project properties for Game Engine Project</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Now that we have decided on the basic directory structure and dependencies that each project will have, we will set the project properties. I prefer to do this at the project level so that the properties are persistent, and I don't have to set them every time I download the project. The steps are based on Visual Studio 2010, but you should be able to adapt them to a different IDE.</p>
+<p>Now that we have decided on the basic directory structure and dependencies that each project will have, we will set the project properties. I prefer to do this at the project level so that the properties are persistent, and I don't have to set them every time I download the project. The steps are based on Visual Studio 2010, but you should be able to adapt them to a different IDE.</p>
 <h2 id="setting-up-the-main-exe-project">Setting up the Main Exe Project</h2>
 <ul>
 <li><p>Create a Win 32 Project and delete all the files except for stdafx.h, stdafx.cpp.</p>
@@ -308,7 +308,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <h2 id="final-thoughts">Final Thoughts</h2>
 <p>This finishes the initial setup. Since I am unsure how much detail I should get into why I set up my projects this way, I will be happy to answer any questions in the comments.</p>
-</body></html>
+
 
 
 

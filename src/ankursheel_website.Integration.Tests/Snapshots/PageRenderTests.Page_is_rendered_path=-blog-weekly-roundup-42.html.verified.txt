@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 42</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Copywriting is an art form in itself. These <a href="https://marketingexamples.com/copywriting/tips/">17 copywriting tips</a> from <strong>Harry Dry</strong> can help take your message to the next level.</p>
 <p>I have written previously about <a href="dream-job">what I look for in a job</a>. <strong>Marquette Carney</strong> shares some steps on <a href="https://www.iwillteachyoutoberich.com/blog/find-a-job-you-love/">how you can find a job you love</a>.</p>
 <p><strong>Josh Comeau</strong> made this great site called <a href="https://www.joshwcomeau.com/operator-lookup/">Operator Lookup that explains how JavaScript operators work</a>.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>If you are interested in launching micro-businesses, <strong>Ben Stokes</strong> updates how the <a href="https://tinyprojects.dev/posts/six_months_of_tiny_projects">6 projects as part of his one tiny project a week</a> are performing.</p>
 <p>Looking to start a business with a partner? An amazing story by <strong>Cathryn</strong> on getting into a toxic business partnership, how she got out of it and the <a href="https://www.littlemight.com/articles/expensive-lessons-learned-from-a-toxic-business-partnership">things she wishes she had known to discuss in the beginning</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

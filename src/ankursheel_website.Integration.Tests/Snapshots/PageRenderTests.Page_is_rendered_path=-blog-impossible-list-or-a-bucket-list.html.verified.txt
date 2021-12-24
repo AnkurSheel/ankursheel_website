@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Should you make an Impossible List or a Bucket List?</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,12 +157,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>I heard about the impossible list from Joel Runyon in <a href="http://impossiblehq.com/impossible-list/">this article</a>. Shortly after I read about it, I decided to make one of my own. But first,</p>
+<p>I heard about the impossible list from Joel Runyon in <a href="http://impossiblehq.com/impossible-list/">this article</a>. Shortly after I read about it, I decided to make one of my own. But first,</p>
 <h2 id="what-is-a-bucket-list">What is a bucket list?</h2>
 <p>A bucket list is a static list of things that you hope to accomplish before you die. For the most part, they are filled with wishful goals which may or may not be achievable.</p>
 <h2 id="what-is-an-impossible-list">What is an impossible list?</h2>
 <p>An impossible list is sort of like a bucket list. The main difference is that it is an evolving list of attainable goals, i.e. your goals should be challenging but achievable. Your list is constantly changing based on your experiences and achievements. You can also think of it's as a ToDo list on steroids.</p>
-<p>It encourages you to set attainable goals and build on the momentum by accomplishing even bigger goals after achieving them. For example, one of your goals might be to visit a different country. Once you have achieved that goal, you can take it to the next level by replacing it to "visit 3 countries".</p>
+<p>It encourages you to set attainable goals and build on the momentum by accomplishing even bigger goals after achieving them. For example, one of your goals might be to visit a different country. Once you have achieved that goal, you can take it to the next level by replacing it to &quot;visit 3 countries&quot;.</p>
 <h2 id="how-to-create-an-impossible-list">How to create an impossible list?</h2>
 <ul>
 <li>Decide which areas of your life you want to focus on.</li>
@@ -175,7 +175,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>In my opinion, both have their value. If you look at <a href="/impossible-list">my list</a>, you will notice that although some of the sub-goals are attainable and have the next level, some of them are also wishlist items.</p>
 <p>Just use whatever makes sense to you. But I would strongly suggest you incorporate some impossible goals into your list :)</p>
 <p>If you are looking for inspiration, you can check out <a href="/impossible-list">my impossible list</a>.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to Upload Multiple Files to AWS S3 using Terraform</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="problem">Problem</h2>
+<h2 id="problem">Problem</h2>
 <p>I want to upload multiple files from a specific folder to an AWS S3 bucket.</p>
 <h3 id="assumptions">Assumptions</h3>
 <p>The S3 bucket name is <strong>test</strong>.</p>
@@ -180,12 +180,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>s3://test/subdirectory1/subdirectory2/file_1_2_1</li>
 </ul>
 <h2 id="solution">Solution</h2>
-<pre><code class="language-hcl">resource "aws_s3_bucket_object" "test" {
-  for_each = fileset("./documents/", "**")
-  bucket = "test"
+<pre><code class="language-hcl">resource &quot;aws_s3_bucket_object&quot; &quot;test&quot; {
+  for_each = fileset(&quot;./documents/&quot;, &quot;**&quot;)
+  bucket = &quot;test&quot;
   key = each.value
-  source = "./documents/${each.value}"
-  etag = filemd5("./documents/${each.value}")
+  source = &quot;./documents/${each.value}&quot;
+  etag = filemd5(&quot;./documents/${each.value}&quot;)
 }
 </code></pre>
 <ul>
@@ -202,7 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><a href="https://www.terraform.io/docs/language/meta-arguments/for_each.html">for_each</a></li>
 <li><a href="https://www.terraform.io/docs/language/functions/fileset.html">fileset</a></li>
 </ul>
-</body></html>
+
 
 
 

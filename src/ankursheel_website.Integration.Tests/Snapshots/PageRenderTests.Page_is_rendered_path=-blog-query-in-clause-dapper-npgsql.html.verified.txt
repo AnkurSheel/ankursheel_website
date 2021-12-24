@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Dapper and NPGSql : Write a query with the IN operator</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -168,19 +168,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">IN</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
 </code></pre>
 <h3 id="implementation-in-c">Implementation in C#</h3>
-<pre><code class="language-csharp hljs">void GetUsers(IReadOnlyCollection&lt;int&gt; userIds)
-{
-    const sql = @"Select * FROM users
-                WHERE id IN @UserIds"
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
+                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
 
-    var parameters = new Dictionary&lt;string, object&gt;
+    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
                     {
-                        { "UserIds", userIds }
+                        { &quot;UserIds&quot;, userIds }
                     };
 
-    using (var connection = new NpgsqlConnection(_connectionString))
+    <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> NpgsqlConnection(_connectionString))
     {
-        var users  = connection.Query&lt;User&gt;(
+        <span class="hljs-keyword">var</span> users  = connection.Query&lt;User&gt;(
                         sql,
                         parameters.ToDynamicParameters())
                     .ToList();
@@ -205,7 +205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
                     {
-                        { <span class="hljs-string">"UserIds"</span>, userIds.ToArray() }
+                        { &quot;UserIds&quot;, userIds.ToArray() }
                     };
 
     <span class="hljs-comment">// unchanged</span>
@@ -213,7 +213,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </code></pre>
 <h2 id="problem-2">Problem #2</h2>
 <p>We now get the error.</p>
-<pre><code class="language-csharp hljs">Npgsql.PostgresException : <span class="hljs-number">42601</span>: syntax error at or near <span class="hljs-string">"$2"</span>
+<pre><code class="language-csharp hljs">Npgsql.PostgresException : <span class="hljs-number">42601</span>: syntax error at or near &quot;$<span class="hljs-number">2</span>&quot;
 </code></pre>
 <p>Unfortunately, this is a more cryptic error.</p>
 <p>There are 2 changes we need to make to the SQL to fix this error.</p>
@@ -222,27 +222,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><strong>IN</strong> needs to be replaced with <strong>= ANY</strong></li>
 </ul>
 <p>Our resulting SQL now becomes</p>
-<pre><code class="language-csharp hljs">void GetUsers(IReadOnlyCollection&lt;int&gt; userIds)
-{
-    const sql = @"Select * FROM users
-                WHERE id IN @UserIds"
-   // unchanged
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
+                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
+   <span class="hljs-comment">// unchanged</span>
 }
 </code></pre>
 <h2 id="final-solution">Final Solution</h2>
-<pre><code class="language-csharp hljs">void GetUsers(IReadOnlyCollection&lt;int&gt; userIds)
-{
-    const sql = @"Select * FROM users
-                WHERE id IN @UserIds"
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
+                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
 
-    var parameters = new Dictionary&lt;string, object&gt;
+    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
                     {
-                        { "UserIds", userIds.ToArray() }
+                        { &quot;UserIds&quot;, userIds.ToArray() }
                     };
 
-    using (var connection = new NpgsqlConnection(_connectionString))
+    <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> NpgsqlConnection(_connectionString))
     {
-        var users  = connection.Query&lt;User&gt;(
+        <span class="hljs-keyword">var</span> users  = connection.Query&lt;User&gt;(
                         sql,
                         parameters.ToDynamicParameters())
                     .ToList();

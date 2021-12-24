@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 23</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Renting a car can be expensive. <strong>Lars Lofgren</strong> shares a <a href="https://www.iwillteachyoutoberich.com/blog/how-to-find-cheap-car-rental/">list of tricks to save car rental costs</a>.</p>
 <p>Links and Buttons can be confusing. How do you decide when to use which? There is a <a href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/">complete guide to links and buttons</a> over at <strong>CSS-Tricks</strong>.</p>
 <p><strong>Stephanie Eckles</strong> gives examples to help you decide which out of the many <a href="https://dev.to/5t3ph/guide-to-css-units-for-relational-spacing-1mj5">CSS units for relative spacing</a> you should use.</p>
 <p>Can you redesign a component without touching the HTML? <strong>Ahmad Shadeed</strong> takes an article header card component and <a href="https://ishadeed.com/article/same-html-different-css/">redesigns it into 5 different designs by modifying the CSS</a>. He also ensures that all of them are accessible, responsive, performant and progressively enhanced.</p>
 <p>If you are like me, you just use <em>console.log()</em> when using the console for debugging. But the console object has so many more options. <strong>Travis Almand</strong> shares the <a href="https://css-tricks.com/a-guide-to-console-commands/">various commands that can be used in the browsers console output</a></p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

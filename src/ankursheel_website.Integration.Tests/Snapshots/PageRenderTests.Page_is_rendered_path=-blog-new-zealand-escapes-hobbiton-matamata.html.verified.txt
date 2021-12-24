@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Hobbiton, Matamata</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,55 +158,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>A highlight for LOTR fans is a tour of the Shire at Hobbiton Movie Set in the countryside of the North Island. This has been one of the places I have wanted to visit ever since we moved to New Zealand.</p>
+<p>A highlight for LOTR fans is a tour of the Shire at Hobbiton Movie Set in the countryside of the North Island. This has been one of the places I have wanted to visit ever since we moved to New Zealand.</p>
 <blockquote>
 <p>I feel that as long as the Shire lies behind, safe and comfortable, I shall find wandering more bearable: I shall know that somewhere there is a firm foothold, even if my feet cannot stand there again</p>
 <p><cite>J.R.R. Tolkien</cite></p>
 </blockquote>
 <p>Hobbiton is tucked away at the back of a working farm owned by the Alexander family. The original set was built of temporary materials. It was largely deconstructed at the end of The Lord of the Rings filming.</p>
 <p>The set was rebuilt in 2011 for The Hobbit Trilogy - this time in permanent materials, complete with Hobbit holes, gardens, bridge, and mill. It is now operated by the Alexander family in partnership with Sir Peter Jackson.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-1.jpg" alt="Hobbiton-1"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-1.jpg" alt="Hobbiton-1" /></p>
 <p>They have a tour running every 30 minutes, but it's better to prebook your tickets. We got stuck in a bit of traffic and missed our slot. However, the staff was understanding and booked us in the next available slot, which was after a wait of more than 1 hour.</p>
 <p>A small bus ride later, and we were at the site. Once off the bus, the cameras went into overdrive. Our guide was approachable and knowledgeable about all things Hobbiton. Although he had a schedule to keep, he gave us plenty of time to explore and take photos. However, it was challenging to get pictures without people in it(even though each tour group is about 20 people) because there is always another group just ahead of you.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-3.jpg" alt="Hobbiton-3"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-3.jpg" alt="Hobbiton-3" /></p>
 <p>One or two hobbit holes had functional doors, but most were just façades as all the interior filming was done in a studio in Wellington. If you wondered why Frodo looked like a hobbit while Gandalf looked like a giant in the Shire, wonder no more. The magic was in the different sizes of the hobbit holes - designed to make you like a giant or a hobbit :)</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-30.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-30.jpg" alt="" /></p>
 <p>The attention to detail in the landscape and the sets were truly amazing.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-25.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-26.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-27.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-31.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-25.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-26.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-27.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-31.jpg" alt="" /></p>
 <p>The tour's highlight for me was the Green Dragon Inn, where you got a free pint of ale or ginger beer, depending on your preference.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-24.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-28.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-29.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-24.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-28.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-hobbiton-matamata/Hobbiton-29.jpg" alt="" /></p>
 <p><strong>The Hobbiton tour is not cheap but is the experience worth the money?</strong></p>
 <p>If you are a big fan of the books or the movies, it's a no brainer you have to visit. Although, you would probably find the amount of time extremely short.</p>
 <p>If you have read the books or seen the movies but have no strong feelings, you could still visit them.</p>
 <p>If you don't like the books or the movies or have never heard of them, you should probably give it a miss.</p>
 <p>Have you been to Hobbiton? How was your experience? Let me know.</p>
-</body></html>
+
 
 
 

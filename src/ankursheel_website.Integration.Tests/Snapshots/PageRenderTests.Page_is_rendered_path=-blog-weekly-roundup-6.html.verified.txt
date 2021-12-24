@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 6</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Are you an under-buyer or an over-buyer? <strong>Ms Steward</strong> from <strong>How we do Money</strong> explains why either is terrible and how to find <a href="https://howwedomoney.wordpress.com/2016/09/29/finding-the-sweet-spot-in-habit-spending/">the sweet spot in habit spending</a>.</p>
 <p>It is essential to teach kids how to manage money and grow up to be financially responsible adults. <strong>Allan</strong> from <strong>The Practical Saver</strong> has the <a href="http://www.thepracticalsaver.com/10-money-rules-kids-need-learn/">10+ Money rules that all kids should learn</a>.</p>
 <p>Considering that most of what we learn in school never applies to real life, is school worth it? <strong>Steve</strong> from <strong>Think Save Retire</strong> tells us why even though <a href="http://www.thinksaveretire.com/2016/10/05/school-rubbish-real-life/">school is rubbish, it kind of prepares us for real life</a>.</p>
@@ -165,7 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Can blind methods work for recruiting the best programmers? <strong>Ivan</strong> details his experiment on <a href="https://www.linkedin.com/pulse/blind-method-hiring-software-developer-ivan-boyko">hiring someone using the blind method</a> on <strong>LinkedIn.</strong></p>
 <p>Piracy is rampant in the Games industry. <strong>Pieter</strong> has a great article on <strong>Gamasutra</strong> why <a href="http://www.gamasutra.com/blogs/PieterSmal/20161006/277370/Solving_the_problem_of_Piracy_in_the_Third_World.php">people in Third World Countries resort to piracy</a>and how the companies can address these issues by using a carrot rather than a stick.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

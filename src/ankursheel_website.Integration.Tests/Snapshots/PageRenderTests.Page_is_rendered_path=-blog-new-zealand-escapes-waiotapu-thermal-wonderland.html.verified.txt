@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Waiotapu Thermal Wonderland</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,19 +158,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>For our last day during our trip to Rotorua, we decided to see Wai-o-Tapu whimsically named the Waiotapu Thermal Wonderland, a stunning geothermal area.</p>
+<p>For our last day during our trip to Rotorua, we decided to see Wai-o-Tapu whimsically named the Waiotapu Thermal Wonderland, a stunning geothermal area.</p>
 <p>Our first stop was the Lady Knox Geyser. This artificial catalyzed geyser explodes every day at 10:15 A.M. It erupts at the same time every day because the eruption isn't a natural phenomenon but is initiated with at least a handful of washing powder.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-1.jpg" alt="Waiotapu_Thermal_Wonderland-1"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-2.jpg" alt="Waiotapu_Thermal_Wonderland-2"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-1.jpg" alt="Waiotapu_Thermal_Wonderland-1" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-2.jpg" alt="Waiotapu_Thermal_Wonderland-2" /></p>
 <p>There are 3 walks (35 mins, 45mins and 75mins) you can take depending on the time you have to see the different pools. Naturally, we went for the longest one.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-4.jpg" alt="Waiotapu_Thermal_Wonderland-4"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-5.jpg" alt="Waiotapu_Thermal_Wonderland-5"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-7.jpg" alt="Waiotapu_Thermal_Wonderland-7"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-4.jpg" alt="Waiotapu_Thermal_Wonderland-4" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-5.jpg" alt="Waiotapu_Thermal_Wonderland-5" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-7.jpg" alt="Waiotapu_Thermal_Wonderland-7" /></p>
 <p>The mud pools are listed on Wai-O-Tapu's website, but you can see them free of charge. Look for the Mud Pool signs off Waiotapu Loop Road and take a short drive to the car park and viewing area. The mud is active here, so it's worth the detour.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-6.jpg" alt="Waiotapu_Thermal_Wonderland-6"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-8.jpg" alt="Waiotapu_Thermal_Wonderland-8"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-6.jpg" alt="Waiotapu_Thermal_Wonderland-6" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waiotapu-thermal-wonderland/Waiotapu_Thermal_Wonderland-8.jpg" alt="Waiotapu_Thermal_Wonderland-8" /></p>
 <p>Have you been to Wai O'Tapu? How was your visit? Let me know.</p>
-</body></html>
+
 
 
 

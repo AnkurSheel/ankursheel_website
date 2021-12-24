@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 12</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,13 +156,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>How do you get an image to visually float left into the middle of a paragraph of text? <strong>Chris Coyier</strong> shares a handy little trick to achieve just that over at <a href="https://css-tricks.com/float-element-in-the-middle-of-a-paragraph">CSS Tricks</a>.</p>
 <p>CSS Positioning can be confusing. <strong>Joelle</strong> goes through the <a href="https://dev.to/jojonwanderlust/day-11-digging-deeper-into-css-positioning-34b0">different CSS properties</a> that you can use.</p>
 <p>If, like me, you have ever wondered how to apply the <em>Inversion of Control</em> pattern to React. <strong>Kent Dodds</strong> shows a few examples of <a href="https://kentcdodds.com/blog/inversion-of-control">using Inversion of Control In React</a>.</p>
 <p>I found this thread on Twitter by <strong>Andrey Azimov</strong>, which shows <a href="https://threadreaderapp.com/thread/1177123221180538880.html">what the first version of websites of successful tech companies look like</a>. It's really interesting how basic the first iteration looked.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

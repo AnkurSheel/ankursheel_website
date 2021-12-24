@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 47</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <h2 id="career-seasons-choosing-a-role-based-on-the-lifestyle-you-want"><a href="https://www.iwillteachyoutoberich.com/blog/career-seasons/">Career Seasons: Choosing a Role Based on the Lifestyle You Want</a></h2>
 <p><em>by <strong>Ramit Sethi</strong></em></p>
 <p>At different points in our lives, we are in a different season of our careers. The 3 different career seasons are Growth, Lifestyle and Reinvention. It's important to know what season we are in to tailor our job search accordingly. This article can help us figure out what career season we are in.</p>
@@ -172,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h3 id="when-are-companies-going-to-learn-how-software-development-works"><a href="https://dotnettips.wordpress.com/2021/07/15/when-are-companies-going-to-learn-how-software-development-works/">When Are Companies Going To Learn How Software Development Works?</a></h3>
 <p><em>by</em> <strong>David McCarter</strong></p>
 <p>Many companies make the same mistakes repeatedly that doom their software projects to failure. A story about how David unearthed during an interview of a company making those mistakes.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">JAH Update 6</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,17 +157,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>You can see the all the related updates <a href="/tags/jah">here</a></p>
+<p>You can see the all the related updates <a href="/tags/jah">here</a></p>
 <h2 id="v-0.0.8">v 0.0.8</h2>
 <ul>
 <li>Mapping applications to user.</li>
 <li>Ability to logoff after logging on.</li>
 </ul>
 <h2 id="screenshots">Screenshots</h2>
-<p><img src="/assets/images/posts/jah-update-6/jah_update6_map_users.gif" alt="Applications per User and logoff"></p>
+<p><img src="/assets/images/posts/jah-update-6/jah_update6_map_users.gif" alt="Applications per User and logoff" /></p>
 <h2 id="next-up">Next up</h2>
 <p>In the next update, we will be deploying to azure before adding more functionality.</p>
-</body></html>
+
 
 
 

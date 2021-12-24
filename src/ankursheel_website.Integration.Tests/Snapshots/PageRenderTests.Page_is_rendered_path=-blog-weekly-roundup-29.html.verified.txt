@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 29</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Wondering if <a href="rent-buy-house">you should buy or rent</a>? Luckily there is a tool that can help answer such questions for you. <a href="https://www.causal.app/">Casual</a> by <strong>Taimur Abdaal</strong> and <strong>Lukas Koebis</strong> is a tool that allows accounting for uncertainty when building models and forecasts.</p>
 <p>You have probably heard that SQL Injection is a common attack vector for infiltrating a web application. <strong>Omer Hamerman</strong> shows <a href="https://omerxx.com/sql-injection-intro/">how a hacker can use this vulnerability to attack your application</a>.</p>
 <p><strong>Aaron Xie</strong> shows how you would approach <a href="https://www.educative.io/blog/system-design-tinyurl-instagram">designing services like TinyURL and Instagram</a> from a system perspective.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Serilog is an excellent logging library for .Net. <strong>Ben Foster</strong> presents some <a href="https://ben.onfabrik.com/blog/serilog-logging-best-practices">tips and best practices using Serilog</a> in your web applications.a</p>
 <p><strong>Steve Smith</strong> shares the <a href="https://ardalis.com/configuring-a-local-test-email-server">different options to run a local test email server</a> so that you can validate that your code runs without actually sending emails.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

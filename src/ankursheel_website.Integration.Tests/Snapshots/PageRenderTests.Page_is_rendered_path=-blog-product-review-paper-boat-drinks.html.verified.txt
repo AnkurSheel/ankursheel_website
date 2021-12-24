@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Product Review: Paper Boat Drinks</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>What is the first thing that you think about when you hear the words Paper Boat? Or even the second or the third? Whatever might have come to your mind, I am sure "pouches of fruit-flavoured drinks" did not figure in that list.</p>
+<p>What is the first thing that you think about when you hear the words Paper Boat? Or even the second or the third? Whatever might have come to your mind, I am sure &quot;pouches of fruit-flavoured drinks&quot; did not figure in that list.</p>
 <blockquote>
 <p>It takes courage to be creative. Just as soon as you have a new idea, you are a minority of one</p>
 <p><cite>E. Paul</cite></p>
@@ -165,12 +165,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>What changed my mind, you ask?</p>
 <p>One was that they had mentioned that I had all the right to say anything and appreciate or criticize the drink based on my experience. It was refreshing (<em>pun intended)</em> to see this statement. The second reason and probably what clinched it for me was the <a href="http://paperboatdrinks.com/">Paper Boat website</a>, which oozes passion and attitude.</p>
 <p>Being true to its name, you are greeted with an image on '<em>how to make a paper boat'.</em> The one that sails - not the drink. Going through the <a href="http://paperboatdrinks.com/p/antakshari">Memories</a> tab would make most people nostalgic about their childhood days.</p>
-<p>You should certainly check out their website. After taking a look at their page, how many of you went "When I was growing, we didn't have any of these new-fangled video games, but we played all these games and more with our friends", even though you were at risk of sounding like an old man/woman (let us not get all the feminists up in arms).</p>
+<p>You should certainly check out their website. After taking a look at their page, how many of you went &quot;When I was growing, we didn't have any of these new-fangled video games, but we played all these games and more with our friends&quot;, even though you were at risk of sounding like an old man/woman (let us not get all the feminists up in arms).</p>
 <p>Oops, I forgot I had to review the drinks and not their website. Well, I guess that's one of the pitfalls of being a programmer.</p>
 <p>How many of you remember the paper boats you made eventually leaking?</p>
 <p>Fortunately, the packaging of the drinks is much better than the paper boats that at least I used to make. The Paper Boat pouches are made of a four-part laminate that makes the pack withstand extremes in pressure and heat while keeping any form of moisture and vapour entering the pack. The layer touching the contents is made of virgin, food-grade polypropylene, which keeps the content fresh, safe and tasty.</p>
-<p>"<em>Dont judge, a book by its cover</em>" is a quote everyone has heard, but for this product, I am going to go out on a limb and say, "<em>Do judge the drink from the packaging</em>".</p>
-<p>Before we get to the actual review of the drinks, for the price-conscious Indian in every one of us, it costs INR 30 for 250 ml(at the time of writing). I can see my readers going; that is all good, but what we want to know is are the drinks any good or will we just end up wasting our money. To them, I say, "Read on".</p>
+<p>&quot;<em>Dont judge, a book by its cover</em>&quot; is a quote everyone has heard, but for this product, I am going to go out on a limb and say, &quot;<em>Do judge the drink from the packaging</em>&quot;.</p>
+<p>Before we get to the actual review of the drinks, for the price-conscious Indian in every one of us, it costs INR 30 for 250 ml(at the time of writing). I can see my readers going; that is all good, but what we want to know is are the drinks any good or will we just end up wasting our money. To them, I say, &quot;Read on&quot;.</p>
 <p>Although they started with only 4 flavours, they are continuously increasing the variety they offer. We tasted 7 of their flavours which were neatly packed in an orange gunny bag.</p>
 <ol>
 <li><p><strong><em>Kala Khatta</em></strong>: This was the first one I wanted to try. This drink brought about a flashback to my younger days, slurping ice golas flavoured with Kala Khatta in the South Extension Market in Delhi. The hints of spices enhanced the flavours. A sure winner, although it could have been a tad stronger.</p>
@@ -190,7 +190,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ol>
 <p>Now that you have an idea of what the drinks are like, you can easily decide which one to go for. In my opinion, you should head out to the nearest store and try them.</p>
 <p>Let me know your opinion about the new Paper Boat Drinks.</p>
-</body></html>
+
 
 
 

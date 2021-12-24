@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to load test data from a JSON file for xUnit tests</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -208,7 +208,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </code></pre>
 <p>So what exactly are we doing here?</p>
 <ol>
-<li>Use <em><a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&amp;view=netframework-4.7.2">MakeGenericType</a></em> to get the Type of <em>TestObject</em> by substituting the generic type parameters by the actual parameters specified in the test.</li>
+<li>Use <em><a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&amp;amp;view=netframework-4.7.2">MakeGenericType</a></em> to get the Type of <em>TestObject</em> by substituting the generic type parameters by the actual parameters specified in the test.</li>
 <li>Use <em>MakeGenericType</em> again to get a new type which is a <em>List</em> of the new constructed <em>TestObject</em></li>
 <li>Parse the file data as JSON</li>
 <li>Deserialize the JSON data as the <em>genericType</em> and store it in a <em><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(dynamic_CSharpKeyword)%3Bk(DevLang-csharp)%26rd%3Dtrue">dynamic</a></em> type. We need to use dynamic here as we don't know the types passed into <em>TestObject</em> at compile-time, and they can change for each test.</li>
@@ -216,7 +216,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ol>
 <p>This allows us to write our tests in the following manner.</p>
 <pre><code class="language-csharp hljs">[Theory]
-[JsonFileData(<span class="hljs-string">"testData.json"</span>, <span class="hljs-string">"Part1"</span>, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span>), <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">int</span>))]
+[JsonFileData(&quot;testData.json&quot;, &quot;Part1&quot;, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span>), <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">int</span>))]
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params">List&lt;<span class="hljs-keyword">string</span>&gt; data, <span class="hljs-keyword">int</span> expectedResult</span>)
 </span>{
     <span class="hljs-keyword">var</span> result = TestThisMethod(data);
@@ -235,7 +235,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><a href="https://xunit.net/docs/getting-started/netcore/visual-studio">xUnit documentation</a></li>
 <li><a href="https://adventofcode.com/">Advent of Code</a></li>
 <li><a href="https://andrewlock.net/creating-a-custom-xunit-theory-test-dataattribute-to-load-data-from-json-files/">Creating a custom xUnit theory test DataAttribute to load data from JSON files</a> by Andrew Lock</li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&amp;view=netframework-4.7.2">MakeGenericType</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&amp;amp;view=netframework-4.7.2">MakeGenericType</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(dynamic_CSharpKeyword)%3Bk(DevLang-csharp)%26rd%3Dtrue">dynamic</a></li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>

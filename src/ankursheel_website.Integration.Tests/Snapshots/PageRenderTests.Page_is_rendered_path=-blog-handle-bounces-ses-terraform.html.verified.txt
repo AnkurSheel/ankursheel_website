@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to publish email bounce notifications to an SQS queue</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,20 +158,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Recently, I had to work on a task to notify us in slack whenever an email sent through Amazon Simple Email Service(SES) bounced. <strong>Rohan Deshpande</strong> has a great <a href="https://aws.amazon.com/blogs/messaging-and-targeting/handling-bounces-and-complaints/">article which shows how to handle bounces and complaints</a>. Since this article leans heavily on his approach, I recommend reading that first.</p>
+<p>Recently, I had to work on a task to notify us in slack whenever an email sent through Amazon Simple Email Service(SES) bounced. <strong>Rohan Deshpande</strong> has a great <a href="https://aws.amazon.com/blogs/messaging-and-targeting/handling-bounces-and-complaints/">article which shows how to handle bounces and complaints</a>. Since this article leans heavily on his approach, I recommend reading that first.</p>
 <p>Go on, I will wait.</p>
 <p>Oh, Good, you are back. So you might be wondering that if Rohan has already written the article, why am I writing this and more importantly, why should you spend your precious time reading this?</p>
 <p>Well, although his solution solves the problem, it requires me to use the AWS Management Console. However, I want to leverage <a href="https://www.terraform.io/">terraform</a> so that any changes I make can be easily deployed to all the environments.</p>
 <h2 id="step-1-create-an-amazon-sqs-queue">Step 1: Create an Amazon SQS queue</h2>
 <p>I will setup the SQS queue using <a href="https://www.terraform.io/docs/providers/aws/r/sqs_queue.html">Resource: aws_sqs_queue</a></p>
-<pre><code class="language-hcl">resource "aws_sqs_queue" "ses_bounces_queue" {
-  name                      = "ses_bounces_queue"
+<pre><code class="language-hcl">resource &quot;aws_sqs_queue&quot; &quot;ses_bounces_queue&quot; {
+  name                      = &quot;ses_bounces_queue&quot;
   message_retention_seconds = 1209600
-  redrive_policy            = "{\"deadLetterTargetArn\":\"${aws_sqs_queue.ses_dead_letter_queue.arn}\",\"maxReceiveCount\":4}"
+  redrive_policy            = &quot;{\&quot;deadLetterTargetArn\&quot;:\&quot;${aws_sqs_queue.ses_dead_letter_queue.arn}\&quot;,\&quot;maxReceiveCount\&quot;:4}&quot;
 }
 
-resource "aws_sqs_queue" "ses_dead_letter_queue" {
-  name = "ses_dead_letter_queue"
+resource &quot;aws_sqs_queue&quot; &quot;ses_dead_letter_queue&quot; {
+  name = &quot;ses_dead_letter_queue&quot;
 }
 </code></pre>
 <ul>
@@ -181,8 +181,8 @@ resource "aws_sqs_queue" "ses_dead_letter_queue" {
 </ul>
 <h2 id="step-2-create-an-amazon-sns-topic_arn">Step 2: Create an Amazon SNS topic_arn</h2>
 <p>I will set up the SNS topic using <a href="https://www.terraform.io/docs/providers/aws/r/sns_topic.html">Resource: aws_sns_topic</a></p>
-<pre><code class="language-hcl">resource "aws_sns_topic" "ses_bounces_topic" {
-  name     = "ses_bounces_topic"
+<pre><code class="language-hcl">resource &quot;aws_sns_topic&quot; &quot;ses_bounces_topic&quot; {
+  name     = &quot;ses_bounces_topic&quot;
 }
 </code></pre>
 <ul>
@@ -190,9 +190,9 @@ resource "aws_sqs_queue" "ses_dead_letter_queue" {
 </ul>
 <h2 id="step-3-configure-the-amazon-sns-topic-to-publish-to-the-sqs-queue">Step 3: Configure the Amazon SNS topic to publish to the SQS queue</h2>
 <p>I will use <a href="https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html">Resource: aws_sns_topic_subscription</a> to automatically place the messages sent to the SNS topic in the SQS queue.</p>
-<pre><code class="language-hcl">resource "aws_sns_topic_subscription" "ses_bounces_subscription" {
+<pre><code class="language-hcl">resource &quot;aws_sns_topic_subscription&quot; &quot;ses_bounces_subscription&quot; {
   topic_arn = aws_sns_topic.ses_bounces_topic.arn
-  protocol  = "sqs"
+  protocol  = &quot;sqs&quot;
   endpoint  = aws_sqs_queue.ses_bounces_queue.arn
 }
 </code></pre>
@@ -203,9 +203,9 @@ resource "aws_sqs_queue" "ses_dead_letter_queue" {
 </ul>
 <h2 id="step-4-configure-amazon-ses-to-publish-bounce-notifications-using-ses-bounces-topic-to-ses-bounces-queue">Step 4: Configure Amazon SES to publish bounce notifications using ses-bounces-topic to ses-bounces-queue</h2>
 <p>I will use <a href="https://www.terraform.io/docs/providers/aws/r/ses_identity_notification_topic.html">Resource: ses_identity_notification_topic</a> to set the SNS topic to use when delivering bounce notifications.</p>
-<pre><code class="language-hcl">resource "aws_ses_identity_notification_topic" "ses_bounces" {
+<pre><code class="language-hcl">resource &quot;aws_ses_identity_notification_topic&quot; &quot;ses_bounces&quot; {
   topic_arn                = aws_sns_topic.ses_bounces_topic.arn
-  notification_type        = "Bounce"
+  notification_type        = &quot;Bounce&quot;
   identity                 = email_domain
   include_original_headers = true
 }
@@ -218,26 +218,26 @@ resource "aws_sqs_queue" "ses_dead_letter_queue" {
 </ul>
 <h2 id="step-5-ensure-that-iam-policies-are-in-place-so-that-amazon-sns-has-access-to-publish-to-the-appropriate-sqs-queues">Step 5: Ensure that IAM policies are in place so that Amazon SNS has access to publish to the appropriate SQS queues</h2>
 <p>I will use <a href="https://www.terraform.io/docs/providers/aws/d/iam_policy_document.html">Data Source: aws_iam_policy_document</a> to configure the IAM policy to allow the SNS topic to send messages to the SQS queue and use <a href="https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy.html">Resource: aws_sqs_queue_policy</a> to set the policy of the queue.</p>
-<pre><code class="language-hcl">data "aws_iam_policy_document" "ses_bounces_queue_iam_policy" {
-  policy_id = "SESBouncesQueueTopic"
+<pre><code class="language-hcl">data &quot;aws_iam_policy_document&quot; &quot;ses_bounces_queue_iam_policy&quot; {
+  policy_id = &quot;SESBouncesQueueTopic&quot;
   statement {
-    sid       = "SESBouncesQueueTopic"
-    effect    = "Allow"
-    actions   = ["SQS:SendMessage"]
-    resources = ["${aws_sqs_queue.ses_bounces_queue.arn}"]
+    sid       = &quot;SESBouncesQueueTopic&quot;
+    effect    = &quot;Allow&quot;
+    actions   = [&quot;SQS:SendMessage&quot;]
+    resources = [&quot;${aws_sqs_queue.ses_bounces_queue.arn}&quot;]
     principals {
-      identifiers = ["*"]
-      type        = "*"
+      identifiers = [&quot;*&quot;]
+      type        = &quot;*&quot;
     }
     condition {
-      test     = "ArnEquals"
-      values   = ["${aws_sns_topic.ses_bounces_topic.arn}"]
-      variable = "aws:SourceArn"
+      test     = &quot;ArnEquals&quot;
+      values   = [&quot;${aws_sns_topic.ses_bounces_topic.arn}&quot;]
+      variable = &quot;aws:SourceArn&quot;
     }
   }
 }
 
-resource "aws_sqs_queue_policy" "ses_queue_policy" {
+resource &quot;aws_sqs_queue_policy&quot; &quot;ses_queue_policy&quot; {
   queue_url = aws_sqs_queue.ses_bounces_queue.id
   policy    = data.aws_iam_policy_document.ses_bounces_queue_iam_policy.json
 }
@@ -254,7 +254,7 @@ resource "aws_sqs_queue_policy" "ses_queue_policy" {
 <p>You can see the <a href="https://github.com/AnkurSheel/ses-bounces">code here</a>.</p>
 <p>So far, we have configured AWS to publish bounce notifications to an SQS queue. In the next post(s), we will see how we can configure an AWS Lambda to process the messages in the queue and send a custom message to a Slack channel.</p>
 <p>Read <a href="handle-bounces-aws-ses-terraform-2">Part2</a></p>
-</body></html>
+
 
 
 

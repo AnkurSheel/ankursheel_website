@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">A guide to securing git commits from tricking you on Windows</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Did you know that by default, you can check in code as anyone in your git repository? All you need to do is run <code>git config.username = {username}</code> and <code>git config.email={email}</code> and you can trick git into thinking you are someone else.</p>
+<p>Did you know that by default, you can check in code as anyone in your git repository? All you need to do is run <code>git config.username = {username}</code> and <code>git config.email={email}</code> and you can trick git into thinking you are someone else.</p>
 <p>To better understand what kinds of problems this can create, go and read Mike Gerwitz’s article, <a href="https://mikegerwitz.com/papers/git-horror-story">A Git Horror Story</a>.</p>
 <p>Luckily, Git allows you to resolve this issue pretty easily - by letting you sign commits using GPG(GNU Privacy Guard).</p>
 <p>The GitHub help article <a href="https://help.github.com/articles/signing-commits-using-gpg/">Signing commits using GPG</a> is a pretty good guide on how to set it up. But, it requires you to use the git bash console.</p>
@@ -170,29 +170,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Go to the Start menu and start Kleopatra</li>
 <li>Click on File -&gt; New Key Pair</li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_2.png" alt="Kleopatra"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_2.png" alt="Kleopatra" /></p>
 <ul>
 <li>Click on Create a Personal OpenPGP key pair</li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_3.png" alt="Key Pair Creation"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_3.png" alt="Key Pair Creation" /></p>
 <ul>
 <li>Enter details and click next.</li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_4.png" alt="Enter details"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_4.png" alt="Enter details" /></p>
 <ul>
 <li>Review and Create the key. This will show a popup asking you to enter a passphrase to protect the key.</li>
 <li>Enter a passphrase and click Ok</li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_5.png" alt="Enter Paraphrase"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_5.png" alt="Enter Paraphrase" /></p>
 <ul>
 <li>At this point, the key pair should be created. Click on Finish.</li>
 </ul>
 <p><em>You can create a backup of the key and save it somewhere safe.</em></p>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_6.png" alt="Key pair Created"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_6.png" alt="Key pair Created" /></p>
 <ul>
 <li>You should now see the key in Kleopatra</li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_7.png" alt="Key in Kleopatra"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_7.png" alt="Key in Kleopatra" /></p>
 <ul>
 <li>Keep a note of the Key-ID. We will need it in a minute.</li>
 </ul>
@@ -200,12 +200,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <ul>
 <li>Double click the key to see the certificate details</li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_8.png" alt="Key Details"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_8.png" alt="Key Details" /></p>
 <ul>
 <li>Click on export and copy the public gpg key.</li>
 </ul>
 <p><em>Make sure you copy everything including <code>-----BEGIN PGP PUBLIC KEY BLOCK-----</code> and <code>-----END PGP PUBLIC KEY BLOCK-----</code></em></p>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_9.png" alt="PGP public key"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_9.png" alt="PGP public key" /></p>
 <h2 id="configure-git-to-sign-commits">Configure Git to Sign Commits</h2>
 <ul>
 <li><p>Update the global git config to use the signing key. <em>Remember the Key-ID from above - You will need it here.</em></p>
@@ -223,29 +223,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 <li><p>Tell git to use the gpg4win version of gpg.exe</p>
 </li>
-<li><p>Enter <code>git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"</code> in your git console.</p>
+<li><p>Enter <code>git config --global gpg.program &quot;C:\Program Files (x86)\GnuPG\bin\gpg.exe&quot;</code> in your git console.</p>
 </li>
 </ul>
 <p>You might need to tweak the location of the program if you installed it in a custom location.</p>
 <p>To check that it works, commit some code to a repository that has been set up to use signing. You should be prompted for the passphrase you entered earlier.</p>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_10.png" alt="Enter Passphrase"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_10.png" alt="Enter Passphrase" /></p>
 <h2 id="configure-kleopatra-to-cache-the-passphrase-for-a-longer-time">Configure Kleopatra to cache the passphrase for a longer time</h2>
 <ul>
 <li>Run Kleopatra. Click on <em>Settings -&gt; Configure Kleopatra</em></li>
 <li>On the configure page, click on <em>GnuPG System -&gt; Private Keys</em> and scroll down to the Options controlling the security section.</li>
 <li>Set the cache time. <em>86400 seconds is equal to 1 day.</em></li>
 </ul>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_11.png" alt="Configure Kleopatra"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_11.png" alt="Configure Kleopatra" /></p>
 <h2 id="configure-github-to-show-verified-commits">Configure Github to show verified commits</h2>
 <ul>
 <li>Follow the steps at <a href="https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/">Adding a new GPG key to your GitHub account</a> so that Github can show the verified commits. <em>Use the public gpg</em> key that you had copied earlier.</li>
 </ul>
 <p>To check if it works, push the signed commit. You should see the Verified tag in the commit history on Github.</p>
 <p>The commit should have a verified tag which you can click to see additional details.</p>
-<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_1.png" alt="Verified Commits"></p>
+<p><img src="/assets/images/posts/securing-git-commits-windows/secure_git_commits_1.png" alt="Verified Commits" /></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Now all the commits will have a verified tag. Do you sign your commits? Let me know</p>
-</body></html>
+
 
 
 

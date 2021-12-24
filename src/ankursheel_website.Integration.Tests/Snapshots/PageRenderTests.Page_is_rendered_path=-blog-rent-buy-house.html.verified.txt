@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Should I Rent Or Buy a House?</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,27 +156,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Conventional wisdom says you grow up and buy a home because that's just what you do when you are a grownup. Now, why would anyone want to be a grownup and have responsibilities is beyond me? But, maybe you like having responsibilities.</p>
+<p>Conventional wisdom says you grow up and buy a home because that's just what you do when you are a grownup. Now, why would anyone want to be a grownup and have responsibilities is beyond me? But, maybe you like having responsibilities.</p>
 <p><strong>Is buying a house still the right decision for you?</strong></p>
 <p>In my steadfast refusal to invest in a house, I have discussed why I am still renting instead of buying (a house) with various people over the last few years.</p>
-<p><img src="/assets/images/posts/rent-buy-house/cover.jpg" alt="Abandoned House"></p>
+<p><img src="/assets/images/posts/rent-buy-house/cover.jpg" alt="Abandoned House" /></p>
 <h2 id="argument-1">Argument #1</h2>
 <p>The biggest argument I have heard for owning a home is</p>
 <blockquote>
 <p>It's an investement</p>
 </blockquote>
-<p>According to Robert Shiller, a Yale economist and Nobel prize winner, buying a house is "like a consumption choice, it's not an investment". He says that, overall, the housing market doesn’t have a significant long-term return.</p>
+<p>According to Robert Shiller, a Yale economist and Nobel prize winner, buying a house is &quot;like a consumption choice, it's not an investment&quot;. He says that, overall, the housing market doesn’t have a significant long-term return.</p>
 <p>Although I agree with him, you could be lucky and have the housing market in your area explode. But, taking that gamble is probably riskier than investing in the stock market, which has a higher return in the long term.</p>
 <p>What you also need to consider is the opportunity cost of buying. When you go to buy a house, there is the down-payment and the mortgages. You need to see if you would be better off by investing in the down-payment.</p>
 <p>Also, if your rent is significantly cheaper than the mortgage, you would be better off renting a house and investing the difference. If you plan to pay the mortgage by using the monthly rent, you need to consider that the rent might not be enough to cover the monthly mortgage or that the house might be empty for some time.</p>
-<p>If your main reason for buying a house is an investment and you hope to sell it down the road for a tidy profit, all I can say is - To quote from the Hunger Games - "<em>May the odds be ever in your favour</em>". If you have been living under a rock and haven't read the books or seen the movies, they generally are not.</p>
+<p>If your main reason for buying a house is an investment and you hope to sell it down the road for a tidy profit, all I can say is - To quote from the Hunger Games - &quot;<em>May the odds be ever in your favour</em>&quot;. If you have been living under a rock and haven't read the books or seen the movies, they generally are not.</p>
 <h2 id="argument-2">Argument #2</h2>
 <p>The second argument that frequently comes up is that.</p>
 <blockquote>
 <p>When you rent, you own nothing. When you buy, you eventually own the house</p>
 </blockquote>
 <p><em>I think this is also why most people are baffled by my stance of renting a furnished apartment instead of buying the furniture myself.</em></p>
-<p>Let me start by saying that "When you are renting, you are paying to have a place to live". In most cases, it would be in a neighbourhood that is more suited to your style of living and what you consider important.</p>
+<p>Let me start by saying that &quot;When you are renting, you are paying to have a place to live&quot;. In most cases, it would be in a neighbourhood that is more suited to your style of living and what you consider important.</p>
 <p>Personal finance blogger Mr Money Mustache suggests you <a href="http://www.mrmoneymustache.com/2015/07/27/rent-vs-buy/">consider the commuting costs</a> as well. A house in the suburbs of a big city could be far away from your work, costing you gas and vehicle maintenance if you don’t have a public transit option. It probably wouldn’t be too difficult to find a rental closer to your work that could save you money on housing and commute costs. You also don't have to worry about depreciation, repairs and maintenance because of normal wear and tear.</p>
 <p>What if your job requires you to move or you want to explore an exciting new opportunity in a new city? Chances are, if you have a mortgage to pay, financial considerations will weigh in, and you will have to forego the opportunity.</p>
 <h3 id="argument-2-a">Argument #2 A</h3>
@@ -204,7 +204,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>If you buy for the right reasons and make an informed decision, homeownership, whether for yourself or as an investment, can be one of the best things.</p>
 <p>However, it scares me how many couples I know have bought into the American/Indian Dream of buying a house without doing the due diligence and then not enjoying their lives because they are worried about the next mortgage payment.</p>
 <p>What do you think? Is renting better than buying, or would you rather be a homeowner?</p>
-</body></html>
+
 
 
 

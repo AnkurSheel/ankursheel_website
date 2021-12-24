@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 14</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
-<p>Do you regard "no-code" as a threat? <strong>Shawn Wang</strong> shares why <a href="https://webflow.com/blog/no-code-is-a-lie">"no-code" is a lie</a> and its a start towards moving to a GUI economy from the API economy. It's a win for coders because of the better developer tools available so that they can focus on solving complex problems. After all, "no-code" just means "tons of code but just not your code".</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Do you regard &quot;no-code&quot; as a threat? <strong>Shawn Wang</strong> shares why <a href="https://webflow.com/blog/no-code-is-a-lie">&quot;no-code&quot; is a lie</a> and its a start towards moving to a GUI economy from the API economy. It's a win for coders because of the better developer tools available so that they can focus on solving complex problems. After all, &quot;no-code&quot; just means &quot;tons of code but just not your code&quot;.</p>
 <p>Ever wondered <a href="http://paulgraham.com/ycstart.html">how Y Combinator started</a>? I found an old post by <strong>Paul Graham</strong> which talks about just that.</p>
 <p>Did you know that a royal family is living in a 14th Century lodge in New Delhi? I found <a href="https://www.nytimes.com/2019/11/22/world/asia/the-jungle-prince-of-delhi.html">this story</a> by <strong>Ellen Barry</strong> truly fascinating.</p>
 <p>What is a coach, and what do they do? <strong>Joseph Mosby</strong> talks about just this and how an organization like Delloite makes sure that <a href="https://josephmosby.com/2019/11/19/you-should-have-a-coach.html">each person has a coach and aligns their processes around it</a>.</p>
 <p>How do you decide what problem to solve when? By using Level setting, of course. <strong>Jason Lengstorf</strong> shows the <a href="https://lengstorf.com/level-setting/">three levels of problem-solving applied to a Thanksgiving dinner</a>.</p>
 <p>Is your site accessible to people with vision impairments? <a href="https://whocanuse.com/?b=da3&amp;c=302929&amp;f=22&amp;s=b">Who can use</a> by <strong>Corey Ginnivan</strong> shows you a simulation of different vision types for two colours. The one feature that I have not seen elsewhere in the simulation is how the colours look in direct sunlight.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

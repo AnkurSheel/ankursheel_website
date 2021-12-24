@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 37</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Asking good questions is hard, but it is a super important skill. <strong>Julia Evans</strong> has a great list of things that can help you <a href="https://jvns.ca/blog/good-questions/">ask better questions and get the answer you want</a>.</p>
 <p><strong>Blake Boles</strong> explains a few <a href="https://www.blakeboles.com/2012/05/dreamfunding/">strategies for Crowdfunding</a>. For me, the key takeaway was how to decide what perks to give.</p>
-<p>Most people have several lists they maintain. But have you heard of "The Suck List"? <strong>Mike Crittenden</strong> shares his thoughts on <a href="https://critter.blog/2018/06/11/the-power-of-the-suck-list/">why making a Suck list is helpful</a> and his process for creating one.</p>
+<p>Most people have several lists they maintain. But have you heard of &quot;The Suck List&quot;? <strong>Mike Crittenden</strong> shares his thoughts on <a href="https://critter.blog/2018/06/11/the-power-of-the-suck-list/">why making a Suck list is helpful</a> and his process for creating one.</p>
 <p>There is a fair bit of profanity in the article, but <strong>Charity Majors</strong> explains why <a href="https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/">becoming a manager is not a promotion</a> and why engineers should make a practice of going back and forth between the engineering and manager roles.</p>
 <p>Writing understandable code is an art. In this whimsical article, <strong>Robert Heaton</strong> takes a few examples and shows how <a href="https://robertheaton.com/2014/06/20/code-review-without-your-eyes/">you can tell a lot about the design of the code without actually reading any of it</a>.</p>
-<p>How often have you heard "At our company, we value <code>Strong Opinions, Loosely Held</code>"? I have been a big proponent of this ideology because it lets the best ideas bubble up. <strong>Michael Natkin</strong> explains <a href="https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/">why the "Strong Opinions, Loosely held" mantra is less than ideal</a> and what we can do instead.</p>
+<p>How often have you heard &quot;At our company, we value <code>Strong Opinions, Loosely Held</code>&quot;? I have been a big proponent of this ideology because it lets the best ideas bubble up. <strong>Michael Natkin</strong> explains <a href="https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/">why the &quot;Strong Opinions, Loosely held&quot; mantra is less than ideal</a> and what we can do instead.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

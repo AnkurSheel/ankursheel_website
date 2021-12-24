@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: DisneyLand Los Angeles</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,26 +158,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Next on the agenda was "The Happiest Place on Earth" - Disney Land in Los Angeles.</p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-18.jpg" alt=""></p>
-</body></html>
+<p>Next on the agenda was &quot;The Happiest Place on Earth&quot; - Disney Land in Los Angeles.</p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-disneyland-los-angeles/DisneyLand-18.jpg" alt="" /></p>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">A post-mortem for The Accountant (Codingame AI Contest)</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,8 +158,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time around, it was an optimization competition sponsored by <strong>Warner Bro.s</strong> for their upcoming movie "<strong>The Accountant</strong>."</p>
-<p><img src="/assets/images/posts/accountant-codingame-ai-contest-postmortem/cover.jpg" alt="The Accountant - Codingame Contest"></p>
+<p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time around, it was an optimization competition sponsored by <strong>Warner Bro.s</strong> for their upcoming movie &quot;<strong>The Accountant</strong>.&quot;</p>
+<p><img src="/assets/images/posts/accountant-codingame-ai-contest-postmortem/cover.jpg" alt="The Accountant - Codingame Contest" /></p>
 <p>If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss seeing all the things I did wrong. 😊</p>
 <h2 id="preamble">Preamble</h2>
 <p>For the contest, you played as Christian Wolf, and your aim was to secure data by killing all the enemies. Like all other codingame contests, the game was turn-based. Each turn consisted of you reading the world state information from stdin and outputting your action to stdout. This would be repeated till either all the data points were captured by enemies or all the enemies were killed, or you were killed. You also had a maximum of 100 ms to submit your action before you would timeout and die. If you got killed, you got a score of 0.</p>
@@ -201,7 +201,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>India:</strong> 2/278</p>
 <p>This was a fun contest, and it was nice that you were practically playing against yourself instead of other people. I do wish I had been able to reach my goal of being in the top 200</p>
 <p>Feel free to follow me at codingame using this <a href="https://www.codingame.com/servlet/urlinvite?u=1506970">url</a>.</p>
-</body></html>
+
 
 
 

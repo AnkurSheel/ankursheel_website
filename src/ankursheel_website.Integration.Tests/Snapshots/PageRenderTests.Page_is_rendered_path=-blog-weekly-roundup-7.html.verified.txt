@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 7</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Do you feel that your house is cluttered with junk? <strong>Emma</strong> from <strong>Money can buy me happiness</strong> has a list of <a href="http://www.moneycanbuymehappiness.com/things-to-get-rid-of-right-now/">47 things to get rid of</a> to de-clutter your home and life.</p>
 <p>The first million dollars is supposed to be the hardest. But is there something more challenging? <strong>J.Money</strong> from <strong>Budgets Are Sexy</strong> explains why getting to your first <a href="http://www.budgetsaresexy.com/2016/10/the-first-100-thousand-is-the-hardest/">100,000 is the hardest</a>.</p>
 <p>Does the number of items that you own correlate to your happiness? <strong>Chris</strong> from <strong>Keep Thrifty</strong> shows how they are <a href="https://www.keepthrifty.com/2016/10/10/become-twice-as-happy-with-half-as-much/">twice as happy with half as much</a>.</p>
@@ -166,7 +166,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Conventional wisdom tells us to make ourselves indispensable at work. <strong>Lihsuan</strong> from <strong>8th Light</strong> tells us why <a href="https://8thlight.com/blog/lihsuan-lung/2016/10/12/make-yourself-dispensable.html">striving to be dispensable</a> is a good thing.</p>
 <p>Om has a new <a href="https://www.linkedin.com/pulse/ux-review-marvel-contest-champions-om-tandon">UX review for Marvel Contest Of Champions</a> on his Linkedin page.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

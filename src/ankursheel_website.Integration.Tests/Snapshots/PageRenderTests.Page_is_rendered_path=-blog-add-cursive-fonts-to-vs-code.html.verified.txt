@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to add ligatures and cursive fonts to VS Code</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -165,17 +165,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="updating-vs-codes-settings">Updating VS Code's settings</h2>
 <p>My search for a font that encapsulates ligatures and Cursive fonts led me to <a href="https://github.com/kencrocken/FiraCodeiScript">Fira Code iScript</a> made by Ken Krocken. It combines 2 fonts - Fira Code as the regular font and Script12 as the italic font.</p>
 <p>After installing the font on my system, I changed the editor settings to use <em>Fira Code iScript</em> as the first option for <em>font family</em>.</p>
-<pre><code class="language-json hljs">"editor.fontLigatures": true,
-"editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace",
+<pre><code class="language-json hljs">&quot;editor.fontLigatures&quot;: true,
+&quot;editor.fontFamily&quot;: &quot;'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace&quot;,
 </code></pre>
 <p>VS Code uses the TextMate grammar syntax to define how it needs to render code. You can read more in the <a href="https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide">official documentation</a>. In VS Code <em>settings.json</em>, you can override the font style for the current theme by modifying the <em>textMateRules</em> under <em>editor.tokenColorCustomizations</em>.</p>
 <pre><code class="language-json hljs">{
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
+    &quot;editor.tokenColorCustomizations&quot;: {
+        &quot;textMateRules&quot;: [
             {
-                "scope": [], // array of Scopes to which the style should be applied to
-                "settings": {
-                    "fontStyle": "italic" // the font style that should be applied
+                &quot;scope&quot;: [], // array of Scopes to which the style should be applied to
+                &quot;settings&quot;: {
+                    &quot;fontStyle&quot;: &quot;italic&quot; // the font style that should be applied
                 }
             }
         ]
@@ -193,26 +193,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>The one that we will use is <em>scope list</em>. Whichever token you want to make italic, add it to the scopes in the <em>scopes</em> array.</p>
 <p>You can see my current config for an example.</p>
 <h2 id="my-current-config">My current config</h2>
-<pre><code class="language-json hljs">"editor.tokenColorCustomizations": {
-    "textMateRules": [
+<pre><code class="language-json hljs">&quot;editor.tokenColorCustomizations&quot;: {
+    &quot;textMateRules&quot;: [
         {
-            "scope": [
+            &quot;scope&quot;: [
             //following will be in italic (=FlottFlott)
-                "comment",
-                "entity.name.type.class", //class names
-                "keyword", //import, export, return…
-                "storage.modifier", //static keyword
-                "storage.type", //class keyword
-                "support.class.builtin",
-                "keyword.control",
-                "constant.language",
-                "entity.other.attribute-name",
-                "string.quoted.single",
-                "entity.name.method",
-                "entity.name.tag"
+                &quot;comment&quot;,
+                &quot;entity.name.type.class&quot;, //class names
+                &quot;keyword&quot;, //import, export, return…
+                &quot;storage.modifier&quot;, //static keyword
+                &quot;storage.type&quot;, //class keyword
+                &quot;support.class.builtin&quot;,
+                &quot;keyword.control&quot;,
+                &quot;constant.language&quot;,
+                &quot;entity.other.attribute-name&quot;,
+                &quot;string.quoted.single&quot;,
+                &quot;entity.name.method&quot;,
+                &quot;entity.name.tag&quot;
             ],
-            "settings": {
-                "fontStyle": "italic",
+            &quot;settings&quot;: {
+                &quot;fontStyle&quot;: &quot;italic&quot;,
             }
         }
     ]

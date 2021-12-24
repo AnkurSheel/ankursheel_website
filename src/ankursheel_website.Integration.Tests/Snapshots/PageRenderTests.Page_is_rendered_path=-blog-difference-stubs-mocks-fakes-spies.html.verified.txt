@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">What is the difference between Stubs, Mocks, Fakes and Spies</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -167,7 +167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </code></pre>
 <h2 id="stub">Stub</h2>
 <p>A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.</p>
-<p>Below is the stubbed version using Moq of a service where the OnPing() function always returns "pong" regardless of the input.</p>
+<p>Below is the stubbed version using Moq of a service where the OnPing() function always returns &quot;pong&quot; regardless of the input.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
 mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())).Returns(<span class="hljs-literal">true</span>);
 </code></pre>

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How do you upload a PDF received from an API to AWS S3?</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -169,12 +169,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> s3Client = <span class="hljs-keyword">new</span> AmazonS3Client(RegionEndpoint.USEast1);
 <span class="hljs-keyword">var</span> s3Request = <span class="hljs-keyword">new</span> PutObjectRequest
 {
-    BucketName = <span class="hljs-string">"Bucket Name"</span>,
+    BucketName = &quot;Bucket Name&quot;,
     Key = Guid.NewGuid().ToString(),
     InputStream = pdfStream,
     ServerSideEncryptionMethod = ServerSideEncryptionMethod.AWSKMS,
-    ContentType = <span class="hljs-string">"application/pdf"</span>,
-    Headers = { ContentDisposition = <span class="hljs-string">$"attachment; \"filename=\"File Name\""</span> },
+    ContentType = &quot;application/pdf&quot;,
+    Headers = { ContentDisposition = $&quot;attachment; \&quot;filename=\&quot;File Name\&quot;&quot; },
 };
 
 <span class="hljs-keyword">var</span> s3Response = <span class="hljs-keyword">await</span> s3Client.PutObjectAsync(s3Request);

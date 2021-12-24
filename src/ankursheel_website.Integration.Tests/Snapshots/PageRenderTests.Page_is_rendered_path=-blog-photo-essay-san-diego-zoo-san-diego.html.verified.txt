@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: San Diego Zoo, San Diego</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,41 +158,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>You are in San Diego, you have visited the orcas at SeaWorld. Where do you go next? Well, all the animals at the largest zoo in the world are waiting so the next place on the itinerary is the San Diego Zoo.</p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-24.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-25.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-26.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-27.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-28.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-29.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-30.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-31.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-32.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-33.jpg" alt=""></p>
-</body></html>
+<p>You are in San Diego, you have visited the orcas at SeaWorld. Where do you go next? Well, all the animals at the largest zoo in the world are waiting so the next place on the itinerary is the San Diego Zoo.</p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-24.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-25.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-26.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-27.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-28.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-29.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-30.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-31.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-32.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-san-diego-zoo-san-diego/SanDiegoZoo-33.jpg" alt="" /></p>
+
 
 
 

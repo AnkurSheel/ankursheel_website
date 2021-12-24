@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 13</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Want to add some cool animations to your website. <strong>Christina Gorton</strong> talks about some of the <a href="https://dev.to/coffeecraftcode/quick-tips-css-transforms-and-transitions-5b0f">different CSS properties you can use to add animations</a>. She has also has some great Codepen examples in the article.</p>
 <p><strong>Thomas Ladd</strong> talks about the Pro's and Con's of the <del>FrontEnd testing strategy used by StackPath</del>. He talks about their Testing Principles and when to use the different testing tools at your disposal.</p>
 <p>What tools can you use to have more digital privacy? <strong>Gwendolyn Faraday</strong> reviews some of the <a href="https://www.freecodecamp.org/news/privacy-tools/">Personal Privacy and Security Tools</a>.</p>
 <p>Want to add effects to the images on your website but don't want to use Photoshop or any other editing tool? <strong>Megha Sachdev</strong> teaches us <a href="https://dev.to/thisdotmedia/learn-the-basics-of-css-filters-5ffc">how to use CSS filters to improve our visuals</a>.</p>
 <p>Can you make a profitable business making games that look like crap? <strong>Jeff Vogel</strong> has been writing indie games for 25 years and shares why his <a href="https://jeff-vogel.blogspot.com/2019/08/why-all-of-our-games-look-like-crap.html">games look the way they do and why he won't change his art style</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

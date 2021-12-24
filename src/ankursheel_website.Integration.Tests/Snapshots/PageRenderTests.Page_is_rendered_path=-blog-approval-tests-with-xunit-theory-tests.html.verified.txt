@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to use ApprovalTests with xUnit&#x27;s Theory attribute</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -187,7 +187,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     [Theory]
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span> flag</span>)
     </span>{
-        NamerFactory.AdditionalInformation = <span class="hljs-string">$"Flag-<span class="hljs-subst">{flag}</span>"</span>;
+        NamerFactory.AdditionalInformation = $&quot;Flag-{flag}&quot;;
         <span class="hljs-keyword">var</span> result = TestThisMethod(flag);
         Approvals.Verify(result);
     }

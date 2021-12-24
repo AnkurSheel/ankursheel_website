@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to make code reviews stress free</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the original version <a href="https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free">here</a>.</em></p>
+<p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the original version <a href="https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free">here</a>.</em></p>
 <p>Code reviews can be stressful for both parties. The person being reviewed puts their code out there for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.</p>
 <p>There is a lot of advice on the interwebs about how to conduct effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.</p>
 <p>However, computers are still not good at some things, like suggesting good variable names. By only talking about blockers in a code review, we can lose out on some good suggestions. It's a classic case of throwing out the baby with the bathwater.</p>
@@ -192,7 +192,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.</p>
 <p>If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.</p>
 <p>I am always curious to know how other people have adapted this in their workflow so let me know what you did :)</p>
-</body></html>
+
 
 
 

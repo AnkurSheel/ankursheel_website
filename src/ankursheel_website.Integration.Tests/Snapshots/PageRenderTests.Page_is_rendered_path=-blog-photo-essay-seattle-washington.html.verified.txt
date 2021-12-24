@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Seattle, Washington</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,29 +159,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>From the national parks, we move back to the cities and reach Seattle.</p>
+<p>From the national parks, we move back to the cities and reach Seattle.</p>
 <p>The highlight was a visit to the Boeing factory. Unfortunately, they don't allow anyone to take pictures at their facility :-(. So you will have to make do with the other pictures.</p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-20.jpg" alt=""></p>
-</body></html>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seattle-washington/Seattle-20.jpg" alt="" /></p>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How I structure my Game Engine project</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>This post will cover the third-party libraries, project breakup, and current directory structure that I follow. Even though it's not perfect, it has served me well so far.</p>
+<p>This post will cover the third-party libraries, project breakup, and current directory structure that I follow. Even though it's not perfect, it has served me well so far.</p>
 <h2 id="third-party-tools">Third-Party Tools</h2>
 <ul>
 <li>libogg and libVorbis- Sound</li>
@@ -257,7 +257,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="final-thoughts">Final Thoughts</h2>
 <p>Now that we have the basic directory structure mapped out, the following tutorial will set up the project for the Visual Studio environment.</p>
 <p>Till Next Time.</p>
-</body></html>
+
 
 
 

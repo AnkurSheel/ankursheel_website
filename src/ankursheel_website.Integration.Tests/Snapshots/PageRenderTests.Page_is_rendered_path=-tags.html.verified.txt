@@ -141,14 +141,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">All Tags</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="flex flex-row flex-wrap gap-1 place-content-center">
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/travel" class="badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (48)</a>
+            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (49)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tutorial" class="badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
@@ -229,6 +229,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <a role="button" href="/tags/statiq" class="badge text-gray-900 bg-grey-light no-underline"> Statiq (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/docker" class="badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/reviews" class="badge text-gray-900 bg-grey-light no-underline"> reviews (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -248,9 +251,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/career" class="badge text-gray-900 bg-grey-light no-underline"> career (3)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/docker" class="badge text-gray-900 bg-grey-light no-underline"> docker (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dynamic-programming" class="badge text-gray-900 bg-grey-light no-underline"> dynamic programming (3)</a>
@@ -286,6 +286,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <a role="button" href="/tags/game-engine" class="badge text-gray-900 bg-grey-light no-underline"> game engine (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/graphql" class="badge text-gray-900 bg-grey-light no-underline"> graphql (2)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/hotchocolate" class="badge text-gray-900 bg-grey-light no-underline"> hotchocolate (2)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/india" class="badge text-gray-900 bg-grey-light no-underline"> India (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -317,9 +323,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/goals" class="badge text-gray-900 bg-grey-light no-underline"> goals (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/graphql" class="badge text-gray-900 bg-grey-light no-underline"> graphql (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/iam" class="badge text-gray-900 bg-grey-light no-underline"> IAM (1)</a>

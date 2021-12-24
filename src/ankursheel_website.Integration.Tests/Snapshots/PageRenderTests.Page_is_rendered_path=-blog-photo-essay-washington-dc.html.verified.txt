@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Washington DC</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,15 +158,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>After Graceland, we decided to take a break at one of our relatives house in Rydal, Pennsylvania.</p>
+<p>After Graceland, we decided to take a break at one of our relatives house in Rydal, Pennsylvania.</p>
 <p>Since I had already visited part of the east coast earlier, I took a break while my parents visited the sights in Philadelphia, New York and Washington D.C.</p>
 <p>I joined them on the trip to Washington and took a couple of pictures. Let's see if you can guess the landmarks?</p>
-<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-5.jpg" alt=""></p>
-</body></html>
+<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-washington-dc/WashingtonDC-5.jpg" alt="" /></p>
+
 
 
 

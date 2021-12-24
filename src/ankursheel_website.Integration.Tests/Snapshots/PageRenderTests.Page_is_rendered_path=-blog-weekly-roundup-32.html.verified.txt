@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 32</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Kevin Stewart</strong> has some great advice on how to <a href="https://increment.com/teams/how-to-build-a-startup-engineering-team/">build an engineering team at a startup</a>.</p>
 <p><strong>Mark Dalgleish</strong> highlights some reasons <a href="https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660">why CSS-in-JS aka writing styles in Javascript is not a bad idea</a>.</p>
 <p>If you struggle to understand React Components, <strong>Mike Mangialardi</strong> has a helpful <a href="https://medium.com/coding-artist/how-pure-css-images-helped-me-understand-react-components-3ad7b05051b0">comparison between the components in a React application and the hierarchy of a village</a>.</p>
 <p>Ever had to explain to a non-technical stakeholder <a href="https://www.simplethread.com/dear-client-heres-why-that-change-took-so-long/">why what should have been a single line change took so long</a>? <strong>Al Tenhundfeld</strong> has an excellent write-up that shows how you can communicate the reason.</p>
 <p><strong>Nick Babich</strong> reminds you of what you need to <a href="https://uxplanet.org/30-things-we-often-forget-when-designing-mobile-apps-ae30cc3b2c6b">design before shipping your mobile app</a>. I think most of them can also be applied to Web apps.</p>
-<p>The Parable of Polygons by <strong>Nicky Case</strong> is a playable illustration of how "<a href="https://ncase.me/polygons/">harmless choices can make a harmful world</a>".</p>
+<p>The Parable of Polygons by <strong>Nicky Case</strong> is a playable illustration of how &quot;<a href="https://ncase.me/polygons/">harmless choices can make a harmful world</a>&quot;.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

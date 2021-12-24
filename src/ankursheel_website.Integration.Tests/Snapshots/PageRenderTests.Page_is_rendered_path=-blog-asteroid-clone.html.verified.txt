@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Why I am building an Asteroid clone as the next game</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="why-asteroids">Why Asteroids</h2>
+<h2 id="why-asteroids">Why Asteroids</h2>
 <ul>
 <li>It's a free form game with irregular geometry that requires a more robust collision detection system.</li>
 <li>The ship has to move and accelerate in a way that resembles fundamental physics.</li>
 <li>A High Score table makes sense since the scores can vary each game.</li>
 <li>Concept of Lives/Health.</li>
 </ul>
-</body></html>
+
 
 
 

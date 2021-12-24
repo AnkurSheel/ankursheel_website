@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 10</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Sebastian Scholl</strong> has a really <a href="https://css-tricks.com/meeting-graphql-at-a-cocktail-mixer/">entertaining article</a> over at <strong>CSS-Tricks</strong> to explain the difference between REST and GraphQL by using an example of how they would respond if you met them at a cocktail mixer.</p>
 <p>If you are wondering how to <a href="https://wattenberger.com/blog/react-hooks">move away from React classes to React hooks</a>, <strong>Amelia Wattenberger</strong> has got you covered by explaining the mindset change that you need to make.</p>
 <p><strong>Ruth</strong> from the <strong>The Happy Saver</strong> talks about why <a href="https://www.thehappysaver.com/blog/no-i-dont-want-a-rental-property-thank-you">she doesn't want to own a rental property</a>. This one resonated with me quite a bit as I am on the fence of even <a href="/blog/rent-buy-house">buying a house</a>.</p>
-<p>Have you tried <a href="https://www.iwillteachyoutoberich.com/blog/hard-to-find-mentor-coach/">finding a mentor and found it hard to find one</a>? <strong>Ramit Sethi</strong> from <strong>Ramit Sethi</strong> explains why you should start by asking the question "AM I THE RIGHT STUDENT?" and how you can be a great one before looking for a mentor.</p>
+<p>Have you tried <a href="https://www.iwillteachyoutoberich.com/blog/hard-to-find-mentor-coach/">finding a mentor and found it hard to find one</a>? <strong>Ramit Sethi</strong> from <strong>Ramit Sethi</strong> explains why you should start by asking the question &quot;AM I THE RIGHT STUDENT?&quot; and how you can be a great one before looking for a mentor.</p>
 <p>Have you ever wondered as to how we have reached where we are as a society? <strong>Tim Urban</strong> at <strong>Wait But Why</strong> has a great series about <a href="https://waitbutwhy.com/2019/08/story-of-us.html">society and the Story of Us</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

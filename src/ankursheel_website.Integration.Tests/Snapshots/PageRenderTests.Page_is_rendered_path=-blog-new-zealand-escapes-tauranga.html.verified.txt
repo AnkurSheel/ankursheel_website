@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Tauranga</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,43 +158,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Tauranga is New Zealand's fifth-largest city has been a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-30.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-31.jpg" alt=""></p>
+<p>Tauranga is New Zealand's fifth-largest city has been a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports.</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-30.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-31.jpg" alt="" /></p>
 <p>We start with a 3 km walk to take in a selection of heritage sites. Some of the highlights below</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-16.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-16.jpg" alt="" /></p>
 <p>From the Elms Mission house, we reach Robbins Park, which house the 28 bed rose garden, which has recently been nominated as one of the best in New Zealand.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-24.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-25.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-26.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-27.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-24.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-25.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-26.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-27.jpg" alt="" /></p>
 <p>Next was the Marshalls Animal Park. I did not find much to do here. However, it's a nice place to visit if you have kids and want them to get acquainted with farms and wild animals.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-28.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-29.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-28.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-29.jpg" alt="" /></p>
 <p>Have you been to Tauranga? What all did you do there? Let me know.</p>
-</body></html>
+
 
 
 

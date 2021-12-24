@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Why being an only child is awesome</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,9 +156,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p><strong><em>Disclaimer: This post may not be used to generalize all only children. I might just be messing with you.</em></strong></p>
+<p><strong><em>Disclaimer: This post may not be used to generalize all only children. I might just be messing with you.</em></strong></p>
 <p>Due to my parent's steadfast refusal to give me a sibling, I have been an only child for almost 30 years. During these years, I have been asked a few questions. The questions aren't there, but some of the answers and my thoughts(which I could have made up 😉) should be enough to make you fall asleep.</p>
-<p>So what does one mean when they say an <em><strong>"Only Child"</strong></em>. Well, an only child is a child with no siblings, either biological or adopted. Although first-born children may be considered temporary only children and have a similar early family environment, an only child is generally applied only to those who never have siblings.</p>
+<p>So what does one mean when they say an <em><strong>&quot;Only Child&quot;</strong></em>. Well, an only child is a child with no siblings, either biological or adopted. Although first-born children may be considered temporary only children and have a similar early family environment, an only child is generally applied only to those who never have siblings.</p>
 <ul>
 <li>We do not have any siblings, i.e. brother or sister. <em>P.S. cousins are not siblings</em>.</li>
 <li>Our kids will never have first cousins from our side of the family.</li>
@@ -169,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <blockquote>
 <p>Stop being so jealous just because we are the favourite child of our parents</p>
 </blockquote>
-<p>The pro or con, depending on your point of view, is that we don't have to share our stuff, and as one of my cousins says, "that includes the bathroom!!!" Even though I have no need, I love to put stickers on things proclaiming that they are... <strong>MINE</strong>.</p>
+<p>The pro or con, depending on your point of view, is that we don't have to share our stuff, and as one of my cousins says, &quot;that includes the bathroom!!!&quot; Even though I have no need, I love to put stickers on things proclaiming that they are... <strong>MINE</strong>.</p>
 <p>But do my parents overindulge me? That depends. To some people, I have more than enough; to others, I suppose I am derived.</p>
 <blockquote>
 <p>We get what we want (and usually) in our way</p>
@@ -179,7 +179,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <blockquote>
 <p>We like things straightforward.</p>
 </blockquote>
-<p>As a result, being an only child status comes the ability to be entirely in our heads. Sometimes we will be so up in our head that we don't even hear other people. However, I have noticed that an "only child" is a better listener than most people.</p>
+<p>As a result, being an only child status comes the ability to be entirely in our heads. Sometimes we will be so up in our head that we don't even hear other people. However, I have noticed that an &quot;only child&quot; is a better listener than most people.</p>
 <p>All of us have probably thought that having a sibling would be nice at some point in time. Its tough having</p>
 <ul>
 <li>no one to fight with.</li>
@@ -223,7 +223,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Robin Williams</li>
 <li>Ankur Sheel</li>
 </ul>
-</body></html>
+
 
 
 

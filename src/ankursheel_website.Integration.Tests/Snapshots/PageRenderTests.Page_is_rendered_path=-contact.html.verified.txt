@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Ankur Sheel</title>
+<title>Ankur Sheel - Get in Touch</title>
 <meta charset="utf-8"/>
 
 <!-- Google Tag Manager -->
@@ -21,19 +21,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/contact"/>
 
-<meta itemProp="name" content="Ankur Sheel"/>
+<meta itemProp="name" content="Get in Touch"/>
 <meta itemProp="description"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/contact-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/contact"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Ankur Sheel"/>
+<meta property="og:title" content="Get in Touch"/>
 <meta property="og:description"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/contact-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/contact-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Ankur Sheel"/>
+<meta name="twitter:title" content="Get in Touch"/>
 <meta name="twitter:description"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/contact-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/contact-twitter.png"/>
@@ -139,10 +139,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Ankur Sheel</h1>
+    <h1 class="text-center">Get in Touch</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
+
 <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
     <input type="hidden" name="bot-field"/>
     <input type="hidden" name="form-name" value="contact"/>

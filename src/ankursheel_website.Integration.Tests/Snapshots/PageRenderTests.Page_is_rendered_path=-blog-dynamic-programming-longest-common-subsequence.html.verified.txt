@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Solve Longest Common Subsequence with Dynamic Programming</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -163,8 +163,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Problem Statement:</strong> Given two sequences, find the length of the longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order but is not necessarily contiguous.</p>
 <p><strong>Examples:</strong></p>
 <ol>
-<li>LCS for input sequences "ABCDGH" and "AEDFHR" is "ADH".</li>
-<li>LCS for input sequences "HUMAN" and "CHIMPANZEE" is "HMAN".</li>
+<li>LCS for input sequences &quot;ABCDGH&quot; and &quot;AEDFHR&quot; is &quot;ADH&quot;.</li>
+<li>LCS for input sequences &quot;HUMAN&quot; and &quot;CHIMPANZEE&quot; is &quot;HMAN&quot;.</li>
 </ol>
 <p>The longest common subsequence is used to solve problems such as</p>
 <ul>
@@ -221,7 +221,7 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
     <span class="hljs-keyword">int</span> length2 = second.length();
     <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span> || length2 == <span class="hljs-number">0</span>)
     {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;
+        <span class="hljs-keyword">return</span> &quot;&quot;;
     }
     Memonized(first.data(), second.data(), <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
     <span class="hljs-keyword">return</span> GetText(first, second);
@@ -257,11 +257,11 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
 {
     <span class="hljs-keyword">if</span> (m_results[<span class="hljs-number">0</span>] == <span class="hljs-number">0</span>)
     {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;
+        <span class="hljs-keyword">return</span> &quot;&quot;;
     }
     <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
     <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>;
-    <span class="hljs-function"><span class="hljs-built_in">stringstream</span> <span class="hljs-title">ss</span><span class="hljs-params">(<span class="hljs-string">""</span>)</span></span>;
+    <span class="hljs-function"><span class="hljs-built_in">stringstream</span> <span class="hljs-title">ss</span><span class="hljs-params">(&quot;&quot;)</span></span>;
     <span class="hljs-keyword">while</span> (i &lt; first.length() &amp;&amp; j &lt; second.length())
     {
         <span class="hljs-keyword">if</span> (first[i] == second[j])
@@ -295,7 +295,7 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
     <span class="hljs-keyword">int</span> length2 = second.length();
     <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span> || length2 == <span class="hljs-number">0</span>)
     {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;
+        <span class="hljs-keyword">return</span> &quot;&quot;;
     }
 
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = length1; i &gt;= <span class="hljs-number">0</span>; i--)

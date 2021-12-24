@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to add an RSS feed with images to a Gatsby site</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -161,7 +161,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <html><head></head><body><p><a href="https://www.gatsbyjs.org/">Gatsby</a> has a good <a href="https://www.gatsbyjs.org/docs/adding-an-rss-feed/">article</a> on how to add an RSS feed to your gatsby site. Although it will suffice in most cases and is a good starting point, it wasn't exactly working for me.</p>
 <ul>
-<li>My posts live under <a href="https://www.ankursheel.com/blog/">"<em>/blog/</em>"</a> but the pages are under <a href="https://www.ankursheel.com/">"www.ankursheel.com/"</a>.</li>
+<li>My posts live under <a href="https://www.ankursheel.com/blog/">&quot;<em>/blog/</em>&quot;</a> but the pages are under <a href="https://www.ankursheel.com/">&quot;www.ankursheel.com/&quot;</a>.</li>
 <li>I am working with MDX, but the document deals with markdown posts.</li>
 <li>It doesn't explain how to add the featured image in the list view.</li>
 </ul>
@@ -177,7 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     allMdx(
         limit: 1000
-        filter: { fileAbsolutePath: { regex: "//content/posts//" } }
+        filter: { fileAbsolutePath: { regex: &quot;//content/posts//&quot; } }
         sort: { order: DESC, fields: [frontmatter___date] }
     ) {
         edges {
@@ -204,7 +204,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><strong><em>Line 9</em></strong>: Since all of my content is in MDX files instead of markdown, I use <strong><em>allMdx</em></strong>.
 <ul>
 <li><strong><em>Line 10</em></strong>: I limit it to 1000 records. I guess this could be a much smaller value, but it's ok for the time being.</li>
-<li><strong><em>Line 11</em></strong>: I want to build the feed only for my posts, so I add a regex to get only those records that are present in <em>"content/posts"</em>.</li>
+<li><strong><em>Line 11</em></strong>: I want to build the feed only for my posts, so I add a regex to get only those records that are present in <em>&quot;content/posts&quot;</em>.</li>
 <li><strong><em>Line 12</em></strong>: I sort the records by date in descending order.</li>
 </ul>
 </li>
@@ -214,38 +214,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>The documentation states that every feed must include <em>option</em>, <em>query</em> and <em>title</em>. It also recommends passing a serialize function to customize the feed structure. This is what the final <em>feeds</em> array looks like</p>
 <pre><code class="language-javascript hljs">feeds: [
     {
-        <span class="hljs-attr">serialize</span>: <span class="hljs-function">(<span class="hljs-params">{ query: { site, allMdx } }</span>) =&gt;</span> {
-            <span class="hljs-keyword">const</span> {
-                <span class="hljs-attr">siteMetadata</span>: { siteUrl },
+        serialize: ({ query: { site, allMdx } }) =&gt; {
+            const {
+                siteMetadata: { siteUrl },
             } = site;
 
-            <span class="hljs-keyword">return</span> allMdx.edges.map(<span class="hljs-function"><span class="hljs-params">edge</span> =&gt;</span> {
-                <span class="hljs-keyword">const</span> {
-                    <span class="hljs-attr">node</span>: {
-                        <span class="hljs-attr">frontmatter</span>: { title, date, slug, featuredImage },
+            return allMdx.edges.map(edge =&gt; {
+                const {
+                    node: {
+                        frontmatter: { title, date, slug, featuredImage },
                         excerpt,
                         html,
                     },
                 } = edge;
 
-                <span class="hljs-keyword">const</span> blogUrl = <span class="hljs-string">`<span class="hljs-subst">${siteUrl}</span>/blog/<span class="hljs-subst">${slug}</span>`</span>;
+                const blogUrl = `${siteUrl}/blog/${slug}`;
 
-                <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.assign({}, edge.node.frontmatter, {
+                return Object.assign({}, edge.node.frontmatter, {
                     title,
-                    <span class="hljs-attr">description</span>: excerpt,
+                    description: excerpt,
                     date,
-                    <span class="hljs-attr">url</span>: blogUrl,
-                    <span class="hljs-attr">guid</span>: blogUrl,
-                    <span class="hljs-attr">enclosure</span>: featuredImage &amp;&amp; {
-                        <span class="hljs-attr">url</span>: siteUrl + featuredImage.publicURL,
+                    url: blogUrl,
+                    guid: blogUrl,
+                    enclosure: featuredImage &amp;&amp; {
+                        url: siteUrl + featuredImage.publicURL,
                     },
-                    <span class="hljs-attr">custom_elements</span>: [{ <span class="hljs-string">'content:encoded'</span>: html }],
+                    custom_elements: [{ 'content:encoded': html }],
                 });
             });
         },
 
-        <span class="hljs-attr">output</span>: <span class="hljs-string">'/blog/rss.xml'</span>,
-        <span class="hljs-attr">title</span>: <span class="hljs-string">"Ankur Sheel's Ramblings"</span>,
+        output: '/blog/rss.xml',
+        title: &quot;Ankur Sheel's Ramblings&quot;,
     },
 ],
 </code></pre>

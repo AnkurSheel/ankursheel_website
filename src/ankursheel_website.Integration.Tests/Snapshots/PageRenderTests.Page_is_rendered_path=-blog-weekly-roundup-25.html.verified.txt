@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 25</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>What does Serverless mean? Is it just a meaningless buzzword? <strong>Burke Holland</strong> thinks Serverless isn't a single concept but 3 concepts which can be described as <a href="https://burkeholland.github.io/posts/laws-of-serverless/">the Laws of Serverless</a>.</p>
 <p><strong>Christian Oliff</strong> has a <a href="https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/">deep dive on the <em>inputmode</em> attribute</a>. It's a great way to instruct the browser about which keyboard to display.</p>
 <p>The <strong>team at Netlify</strong> has a great post on how they <a href="https://www.netlify.com/blog/2020/03/05/feedback-ladders-how-we-encode-code-reviews-at-netlify/">developed a shared terminology for code reviews</a>. I was so inspired by this approach that we have started using a variation of this in our code reviews.</p>
 <p><strong>Ramit Sethi</strong> from I will teach you to be rich talks about the <a href="https://www.iwillteachyoutoberich.com/blog/the-ladder-of-freedom/">5 levels of freedom</a> and the changes he has made to move up the ladder of freedom.</p>
 <p>How do you <a href="https://semaphoreci.com/blog/2017/03/21/cracking-monolith-forces-that-call-for-microservices.html">decide when your monolithic application is no longer optimal</a> and you should move to a microservices architecture? <strong>Marko Anastasov</strong> shares the 2 classes of problems you should run into before decomposing the monolith.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

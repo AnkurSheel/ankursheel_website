@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to change the author of multiple Git commits</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -167,7 +167,7 @@ name = author_name
 email = author_email
 </code></pre>
 <p>We can run the following command.</p>
-<pre><code class="language-bash hljs">git rebase -i &lt;commit_hash&gt; -x <span class="hljs-string">"git commit --amend --reset-author -CHEAD"</span>
+<pre><code class="language-bash hljs">git rebase -i &lt;commit_hash&gt; -x &quot;git commit --amend --reset-author -CHEAD&quot;
 </code></pre>
 <ul>
 <li><strong>git rebase -i</strong>: Runs git rebase in interactive mode, allowing altering individual commits in the process.</li>
@@ -179,7 +179,7 @@ email = author_email
 </ul>
 <p>We will then be presented with an editor to confirm all the commits we want.</p>
 <p>We can run the following command to update the author for all commits, including the root.</p>
-<pre><code class="language-bash hljs">git rebase -i --root -x <span class="hljs-string">"git commit --amend --reset-author -CHEAD"</span>
+<pre><code class="language-bash hljs">git rebase -i --root -x &quot;git commit --amend --reset-author -CHEAD&quot;
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the <a href="securing-git-commits-windows">guide to securing git commits from tricking you on Windows</a>.</p>

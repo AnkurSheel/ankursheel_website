@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to deploy a Gatsby site to Netlify using Azure Pipelines</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -191,7 +191,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span class="hljs-attr">          - checkout:</span> self
 <span class="hljs-attr">            lfs:</span> <span class="hljs-literal">true</span>
 
-<span class="hljs-attr">          - task:</span> NodeTool@<span class="hljs-number">0</span>
+<span class="hljs-attr">          - task:</span> NodeTool&<span class="hljs-comment">#64;&#64;0</span>
 <span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Install Node.js'</span>
 <span class="hljs-attr">            inputs:</span>
 <span class="hljs-attr">                versionSpec:</span> <span class="hljs-string">'10.x'</span>

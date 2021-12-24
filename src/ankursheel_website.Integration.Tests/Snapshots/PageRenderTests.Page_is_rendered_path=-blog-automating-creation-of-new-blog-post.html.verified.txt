@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to automate the creation of a new blog post</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -207,13 +207,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <h2 id="lets-build-the-script">Let's build the script</h2>
 <h3 id="helper-functions">Helper functions</h3>
-<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> padLeft0 = <span class="hljs-function">(<span class="hljs-params">n: number</span>) =&gt;</span> n.toString().padStart(<span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> padLeft0 = (n: number) =&gt; n.toString().padStart(<span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
 
-<span class="hljs-keyword">const</span> fromRoot = <span class="hljs-function">(<span class="hljs-params">...p: string[]</span>) =&gt;</span> path.join(__dirname, <span class="hljs-string">'..'</span>, ...p);
+<span class="hljs-keyword">const</span> fromRoot = (...p: string[]) =&gt; path.join(__dirname, <span class="hljs-string">'..'</span>, ...p);
 
-<span class="hljs-keyword">const</span> formatDate = <span class="hljs-function">(<span class="hljs-params">d: <span class="hljs-built_in">Date</span></span>) =&gt;</span> <span class="hljs-string">`<span class="hljs-subst">${d.getFullYear()}</span>-<span class="hljs-subst">${padLeft0(d.getMonth() + <span class="hljs-number">1</span>)}</span>-<span class="hljs-subst">${padLeft0(d.getDate())}</span>`</span>;
+<span class="hljs-keyword">const</span> formatDate = (d: <span class="hljs-built_in">Date</span>) =&gt; <span class="hljs-string">`<span class="hljs-subst">${d.getFullYear()}</span>-<span class="hljs-subst">${padLeft0(d.getMonth() + <span class="hljs-number">1</span>)}</span>-<span class="hljs-subst">${padLeft0(d.getDate())}</span>`</span>;
 
-<span class="hljs-keyword">const</span> listify = <span class="hljs-function">(<span class="hljs-params">a: string</span>) =&gt;</span> (a &amp;&amp; a.trim().length ? a.split(<span class="hljs-string">','</span>).map(<span class="hljs-function">(<span class="hljs-params">s</span>) =&gt;</span> s.trim()) : <span class="hljs-string">''</span>);
+<span class="hljs-keyword">const</span> listify = (a: string) =&gt; (a &amp;&amp; a.trim().length ? a.split(<span class="hljs-string">','</span>).map((s) =&gt; s.trim()) : <span class="hljs-string">''</span>);
 </code></pre>
 <h3 id="use-inquirer-to-get-details-from-the-user">Use Inquirer to get details from the user</h3>
 <p>In my case, I am getting the <em>title</em>, <em>description</em>, <em>tags</em> and <em>whether the post has images</em>.</p>

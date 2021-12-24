@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 3</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,13 +156,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Can you be considered wealthy if you don't own a house? <strong>FIRECracker</strong> from <strong>Millennial Revolution</strong> is a millionaire who talks about <a href="http://www.millennial-revolution.com/rent/disowned-millionaire-still-wont-buy-house/">why she still won't buy a house</a>.</p>
 <p>Should you buy things using your credit card? <strong>Mike</strong> at <strong>Business Insider</strong> tells you <a href="http://www.businessinsider.com.au/things-you-should-always-buy-with-a-credit-card-2016-8">8 things you should always buy with a credit card</a>.</p>
 <p>Have you always wondered what it takes to have a successful YouTube channel? <strong>Ankita</strong> from <strong>AnkiOnTheMove</strong> talks about the challenges she faced (and how she overcame them) in <a href="https://www.linkedin.com/pulse/how-i-started-grew-my-youtube-channel-ankita-sinha">growing her YouTube channel</a> over the past 4 years.</p>
 <p>What do people mean when they say the climate has changed before? <strong>XKCD</strong> has an <a href="http://xkcd.com/1732/">earth temperature timeline</a> which aims to answer just this question.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

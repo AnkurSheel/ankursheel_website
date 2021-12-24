@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 15</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Looking for a good colour palette to use? <strong>Mackenzie Child</strong> has a <a href="https://www.happyhues.co/">list of curated colour palettes</a> to select from for your next project.</p>
 <p>Do you find CSS overflow confusing? <strong>Mạnh Đạt</strong> has <a href="https://dev.to/datmt/understanding-overflow-in-css-pb">some examples to clarify how the overflow property works</a>.</p>
 <p><a href="https://undraw.co/">Undraw</a> by <strong>Katerina Limpitsouni</strong> and <strong>Aggelos Gesoulis</strong> has a huge amount of open-source SVG illustrations, perfect for web pages.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Paul Graham</strong> talks about the <a href="http://paulgraham.com/lesson.html">most damaging lesson</a> that we learnt in school that we should unlearn.</p>
 <p><strong>Neal Agarwal</strong> has a new interactive page to <a href="https://neal.fun/deep-sea/">scroll down the deep sea</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

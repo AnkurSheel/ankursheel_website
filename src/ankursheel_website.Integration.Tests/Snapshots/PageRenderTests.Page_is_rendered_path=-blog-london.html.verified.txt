@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Roaming around in London</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,17 +158,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>This post is a part of one of my earlier travels when I travelled to London before starting my Masters.</p>
+<p>This post is a part of one of my earlier travels when I travelled to London before starting my Masters.</p>
 <p>After wasting my time at Delhi airport just watching people, I boarded the flight and reached London. Although the flight was uneventful, I got a free upgrade to premium economy.</p>
 <p>The first setback occurred when after reaching London, the international roaming on my phone didn't work. I couldn't find my cab, so I just kept walking up and down, trying to find a placard with my name on it.</p>
-<p><strong>"Wherever you go, our network follows"</strong>, looks like the dog lost its way trying to follow me. Anyway, after finishing my morning walk in the terminal, I finally saw a person holding a placard with my name.</p>
+<p><strong>&quot;Wherever you go, our network follows&quot;</strong>, looks like the dog lost its way trying to follow me. Anyway, after finishing my morning walk in the terminal, I finally saw a person holding a placard with my name.</p>
 <p>I was on a mission to see as much of London as possible in the 2 days I had there, so early in the morning (normal people early, not mine), I left the house armed with a map and a copy of Lonely Planet. Don't be surprised, I was already awake because the flight attendant woke me up at 6 a.m. local time as we had to deboard.</p>
 <p>Now you may be aware that I can't navigate for nuts, so it made for some really interesting situations. I am sure the shopkeepers started getting suspicious of my back and forth, just trying to reach the nearest tube station.</p>
 <p>En route, I armed myself with a local cell phone connection as well. After spending a little extra time than I was supposed to, I finally reached the tube station (which I realized was just a short 5-minute walk from the house). I got myself a prepaid pass, got on the tube and reached my first destination - <strong>The Tower of London</strong>.</p>
 <p>Rukavat ke liye khed hai... Our story will have to end here for today.</p>
 <p>What happens next? Will I be able to reach home safely, or will I get lost in the London Underground?</p>
 <p>Stay tuned.</p>
-</body></html>
+
 
 
 

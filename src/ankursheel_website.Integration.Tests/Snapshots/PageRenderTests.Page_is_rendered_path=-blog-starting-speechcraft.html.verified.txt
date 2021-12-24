@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Starting Speechcraft</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="what-is-speechcraft">What is Speechcraft</h2>
+<h2 id="what-is-speechcraft">What is Speechcraft</h2>
 <p>Speechcraft is an introductory public speaking course spread over 7 weeks. Each week you have to write a 5-minute speech to meet a particular goal. Each goal builds on the next, so you end up stacking your learned skills.</p>
 <h2 id="why-did-i-join-speechcraft">Why did I join Speechcraft</h2>
 <p>To be honest, there was no real reason for me to join Speechcraft. I am not in a leadership position, nor do I have any public speaking engagements. But, my learning budget was going to waste, and I could use it towards Speechcraft, so I thought, why not.</p>
@@ -167,7 +167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Everyone in the group gives a 5-minute speech on any subject of their choosing, which attempts to meet that week's goals.</p>
 <ul>
 <li>After all the speeches are done, the speeches are evaluated, and you get positive and negative feedback.</li>
-<li>Then, there is a fun improv game called "Table Topics". A Table Topics Master is selected the prior week to come up with random topics for each member. Each member needs to speak to the given topic for a minute.</li>
+<li>Then, there is a fun improv game called &quot;Table Topics&quot;. A Table Topics Master is selected the prior week to come up with random topics for each member. Each member needs to speak to the given topic for a minute.</li>
 </ul>
 <p>Each of us was then asked what we hoped to get out of Speechcraft. It was interesting to see the different motivations. Some wanted to slow down their speaking; others wanted to become more concise. My reasons were simple.</p>
 <ul>
@@ -176,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <h2 id="whats-next">What's next?</h2>
 <p>In the next few posts, I will talk about my speechcraft journey. I will be posting my intended speech, a video of what I actually spoke and an analysis. I might also add some feedback that is given to me by toastmasters.</p>
-</body></html>
+
 
 
 

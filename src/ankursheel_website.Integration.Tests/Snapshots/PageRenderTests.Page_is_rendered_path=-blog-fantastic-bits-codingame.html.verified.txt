@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Why you should compete in Fantastic Bits @ Codingame</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Fantastic Beasts, oops, Bits, anyone? The theme for the next competition by the folks at <a href="http://www.codingame.com/">codingame</a> is inspired by the Harry Potter world.</p>
+<p>Fantastic Beasts, oops, Bits, anyone? The theme for the next competition by the folks at <a href="http://www.codingame.com/">codingame</a> is inspired by the Harry Potter world.</p>
 <p>Code the real-world Skynet or not. But it is still super awesome to see your code making a bot look intelligent. Not only that, but you get to battle other programmers while honing your skills.</p>
 <p>Still not convinced. Let's tackle those pesky excuses of yours for not participating.</p>
 <h2 id="i-dont-know-anything-about-artificial-intelligence">I don't know anything about artificial intelligence</h2>
@@ -171,7 +171,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="but-i-am-not-good-enough">But, I am not good enough</h2>
 <p>The goal is to have fun and learn something along the way. You might not win, but then again, most of the other people won't. You will still have the satisfaction of battling against other players and beating some of them. Also, as far as I have seen, the community is very helpful even when you get stuck, even in the higher leagues.</p>
 <p>Register at the <a href="https://www.codingame.com/contests/fantastic-bits">codingame website</a>. The competition starts on November 27th and will last for 8 days. Feel free to follow me at codingame using this <a href="https://www.codingame.com/servlet/urlinvite?u=1506970">url</a>.</p>
-</body></html>
+
 
 
 

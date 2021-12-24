@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Personal Game Projects</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <h2 id="an-breakout-clone">An Breakout clone</h2>
 <p>Made with C++, DirectX 11.0 and premake</p>
 <p><a href="https://github.com/AnkurSheel/Breakout">Source Code</a></p>

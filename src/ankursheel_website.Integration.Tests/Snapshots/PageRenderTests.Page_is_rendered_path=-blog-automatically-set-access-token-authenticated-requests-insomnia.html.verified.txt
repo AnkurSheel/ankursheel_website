@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to automatically set the access token in Insomnia</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,40 +159,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="problem">Problem</h2>
+<h2 id="problem">Problem</h2>
 <p>The Graphql endpoint for the API is accessible only to authorised users. Although it is required from a security perspective, it makes testing the API through <a href="https://insomnia.rest/">Insomnia</a> a little tedious. What if we could automatically insert the bearer token every time we made a request using Insomnia?</p>
 <h2 id="solution">Solution</h2>
 <p>Let's start by creating a new environment. Although not entirely necessary, it makes authenticating in different environments easy. <em>Note: You can give the environment better names such as Dev, Staging, Production etc.</em></p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/new_environment.png" alt="Creating a new environment"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/new_environment.png" alt="Creating a new environment" /></p>
 <p>Now, let's add some environment variables specific to that environment.</p>
 <ul>
 <li>baseUrl: The base URL for all the endpoints</li>
 <li>email: The email used to login</li>
 <li>password: The password used to login</li>
 </ul>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/environment_variables.png" alt="Adding environment variables"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/environment_variables.png" alt="Adding environment variables" /></p>
 <p>Let's make Insomnia use the environment.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/use_environment.png" alt="Use the environment"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/use_environment.png" alt="Use the environment" /></p>
 <p>Assuming that the endpoint to get the access token is <code>LoginUser</code>, add a new post request called <code>GetAccessToken</code>.</p>
 <p><em>Remember the environment variables from earlier. We can use them so that no matter what environment we are in, everything will just work.</em></p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/get_token.png" alt="Get token"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/get_token.png" alt="Get token" /></p>
 <p>Let's add a new Graphql query and try to send the request. We get a <strong>401 Unauthorised</strong> error because we haven't passed in the bearer token.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/unauthorised.png" alt="Graphql request without bearer token"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/unauthorised.png" alt="Graphql request without bearer token" /></p>
 <p>To set the bearer token, we can click on the <strong>Bearer</strong> tab and enter <em>Response ⇒ Body Attribute</em> for the token.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/set_token.png" alt="Set the bearer token"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/set_token.png" alt="Set the bearer token" /></p>
 <p>To edit the tag, click on it.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/edit_tag.png" alt="Edit the tag"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/edit_tag.png" alt="Edit the tag" /></p>
 <p>In the <strong>Edit Tag</strong> screen, select <em>Post GetAccessToken</em> for the request.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/set_tag_request.png" alt="Set the request on the tag screen"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/set_tag_request.png" alt="Set the request on the tag screen" /></p>
 <p>Set the trigger behaviour to <strong>Always</strong> so that the request is made every time and you get a new token</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/trigger.png" alt="Set the trigger behaviour"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/trigger.png" alt="Set the trigger behaviour" /></p>
 <p>For the filter, enter <code>$.accessToken.value</code>. The value will be dependent on the response that you get from <em>GetAccessToken</em>. If you have set it up correctly, you should see a token in <strong>Live Preview</strong>.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/filter.png" alt="Set the filter"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/filter.png" alt="Set the filter" /></p>
 <p>If you try to resend the request, you should get back a <strong>200 OK</strong> response.</p>
-<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/request_success.png" alt="Send a successful request"></p>
+<p><img src="/assets/images/posts/automatically-set-access-token-authenticated-requests-insomnia/request_success.png" alt="Send a successful request" /></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>We can quickly test our API using Insomnia by automatically generating access tokens every time we make a Graphql request.</p>
-</body></html>
+
 
 
 

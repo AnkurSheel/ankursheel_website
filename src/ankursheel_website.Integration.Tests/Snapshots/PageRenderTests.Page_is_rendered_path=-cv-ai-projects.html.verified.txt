@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">AI Projects</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <h2 id="a-procedural-minecraft-terrain-generator">A procedural minecraft terrain generator</h2>
 <p>Made with Python</p>
 <p><a href="ai-projects/procedural-minecraft-terrain-generator">Screenshots</a></p>

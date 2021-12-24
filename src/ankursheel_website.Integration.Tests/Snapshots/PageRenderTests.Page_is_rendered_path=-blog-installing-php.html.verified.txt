@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to setup WordPress locally: Installing PHP</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="installing-php-on-windows">Installing PHP on Windows</h2>
+<h2 id="installing-php-on-windows">Installing PHP on Windows</h2>
 <ul>
 <li>Go to the PHP website and download the zip file.</li>
 <li>Make sure the zip file contains the dll for the correct version of the Apache.</li>
@@ -169,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p>Configure Apache to load the PHP module.</p>
 <ul>
 <li>Find the <em><strong>LoadModule</strong></em> section.</li>
-<li>Add the following line to <em>LoadModule</em>_ php5<em>module</em> “[path to php5apache2_4.dl in the PHP folder]”. This would be something Like <em>"D:/Softwares/php/php5apache2</em>_<em>4.dll"</em>. Make sure that you use forward slashes.</li>
+<li>Add the following line to <em>LoadModule</em>_ php5<em>module</em> “[path to php5apache2_4.dl in the PHP folder]”. This would be something Like <em>&quot;D:/Softwares/php/php5apache2</em>_<em>4.dll&quot;</em>. Make sure that you use forward slashes.</li>
 </ul>
 </li>
 <li><p>Configure Apache to recognize PHP extensions.</p>
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 <li>Restart the APACHE server.</li>
 </ul>
-</body></html>
+
 
 
 

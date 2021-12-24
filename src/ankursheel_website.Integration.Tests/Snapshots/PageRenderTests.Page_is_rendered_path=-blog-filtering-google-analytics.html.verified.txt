@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to filter yourself from showing up in Google Analytics</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -181,8 +181,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Modify functions.php in your <strong>child theme</strong> and paste the following code.</li>
 </ol>
 <pre><code class="language-php hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sp_google_analytics_tracking_code</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-meta">?&gt;</span>
-    &lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+    ?&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
         <span class="hljs-keyword">var</span> _gaq = _gaq || [];
         _gaq.push([<span class="hljs-string">'_setAccount'</span>, <span class="hljs-string">'UA-45876690-1'</span>]);
         _gaq.push([<span class="hljs-string">'_trackPageview'</span>]);
@@ -192,7 +192,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="hljs-keyword">var</span> s = document.getElementsByTagName(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>]; s.parentNode.insertBefore(ga, s);
         })();
     &lt;/script&gt;
-    <span class="hljs-meta">&lt;?php</span>
+    &lt;?php
 }
 
 <span class="hljs-comment">// include GA tracking code before the closing head tag</span>
@@ -203,7 +203,7 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
 <h2 id="creating-the-filter-in-google-analytics">Creating the Filter in Google Analytics</h2>
 <ol>
 <li>On the Google Analytics admin page, click on <strong>Filter</strong> under the View option. Here is where you create your exclusion filter.</li>
-<li>Click on <strong>"New Filter"</strong>.</li>
+<li>Click on <strong>&quot;New Filter&quot;</strong>.</li>
 <li>Give it a meaningful name.</li>
 <li>In the <strong>Filter Type</strong>, select <strong><em>Custom Filter</em></strong> and leave it on the default <em>Exclude</em>.</li>
 <li>In the <strong>Filter Field</strong>, select <em>User Defined</em>.</li>
@@ -217,10 +217,10 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
 </ol>
 <h2 id="create-an-html-page-to-create-a-cookie-excluder">Create an Html page to create a cookie excluder</h2>
 <p>Create a new Html file and paste the following code.</p>
-<pre><code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"”Content-Type”"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"”text/html;"</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"iso-8859-1?"</span> /&gt;</span>google analytics cookie excluder
-<span class="hljs-comment">&lt;!-- prevents indexing of this page by search engines --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ROBOTS"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"NOINDEX,NOFOLLOW"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>
-    <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>
-&gt;</span><span class="handlebars"><span class="xml">
+<pre><code class="language-html hljs">&lt;meta http-equiv=&quot;”Content-Type”&quot; content=&quot;”text/html;&quot; charset=&quot;iso-8859-1?&quot; /&gt;google analytics cookie excluder
+&lt;!-- prevents indexing of this page by search engines --&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW&quot; /&gt;&lt;script
+    type=&quot;text/javascript&quot;
+&gt;
     // &lt;![CDATA[
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '&lt;em&gt;&lt;strong&gt;UA-XXXXXXXX-X&lt;/strong&gt;&lt;/em&gt;']);
@@ -236,23 +236,23 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
         s.parentNode.insertBefore(ga, s);
     })();&lt;/script
     // ]]&gt;
-<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"robots"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"noindex"</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"100%"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">cellspacing</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">cellpadding</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: xx-large;"</span>
-                            &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: #ff6600;"</span>&gt;</span>google analytics cookie excluder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
-                        &gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span></span></code></pre>
+&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;
+&lt;div align=&quot;center&quot;&gt;
+    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div align=&quot;center&quot;&gt;
+                        &lt;span style=&quot;font-size: xx-large;&quot;
+                            &gt;&lt;span style=&quot;color: #ff6600;&quot;&gt;google analytics cookie excluder&lt;/span&gt;&lt;/span
+                        &gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
 <ol>
 <li>In the above code, change _UA-XXXXXXXX-X _to the tracking id.</li>
 <li>Place the file anywhere on your site as long as it is under your domain, at the root or in a subdirectory.</li>
@@ -261,7 +261,7 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
 <p>Only carry out the following actions for computers you want to NOT be counted in Google Analytics.</p>
 <ol>
 <li>In the location field of your browser, open the Html file on your domain.</li>
-<li>If everything works, you should see a charcoal background with orange letters saying, "google analytics cookie excluder".</li>
+<li>If everything works, you should see a charcoal background with orange letters saying, &quot;google analytics cookie excluder&quot;.</li>
 </ol>
 <h2 id="optional-test">Optional Test</h2>
 <p>Go to the area of your browser that shows cookies. Search for the value you set in the cookie. If you find it, the value is set.</p>

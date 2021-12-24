@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Impossible list :  My ever-growing bucket list</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <p>See the reason behind creating this list <a href="/blog/impossible-list-or-a-bucket-list">here</a>.</p>
 <h2 id="travel-things-to-see-do">Travel - Things to See &amp; Do</h2>
 <ul>

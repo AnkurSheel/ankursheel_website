@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to get TimeZoneInfo on Windows and Linux</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -161,15 +161,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="problem">Problem</h2>
 <p>Unfortunately, Windows and Linux use different timezone systems.</p>
 <ul>
-<li>On Windows, they are identified by a value provided by Microsoft and take a form such as "New Zealand Standard Time".</li>
-<li>On Linux/OSX, they are identified by a value provided by IANA in the TZDB and take a form such as "Pacific/Auckland".</li>
+<li>On Windows, they are identified by a value provided by Microsoft and take a form such as &quot;New Zealand Standard Time&quot;.</li>
+<li>On Linux/OSX, they are identified by a value provided by IANA in the TZDB and take a form such as &quot;Pacific/Auckland&quot;.</li>
 </ul>
 <p>This makes it a little tricky to get the TimeZoneInfo, especially if you want to make sure the code works regardless of the system it is running on.</p>
 <h2 id="solution">Solution</h2>
 <p>The easiest way to solve this is to check if the Windows value exists in the list of time zones. If it exists, use the Windows value to get the time zone info; else, use the IANA value.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> nzTimeZone = TimeZoneInfo.GetSystemTimeZones().Any(x =&gt; x.Id == <span class="hljs-string">"New Zealand Standard Time"</span>)
-    ? TimeZoneInfo.FindSystemTimeZoneById(<span class="hljs-string">"New Zealand Standard Time"</span>)
-    : TimeZoneInfo.FindSystemTimeZoneById(<span class="hljs-string">"Pacific/Auckland"</span>);
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> nzTimeZone = TimeZoneInfo.GetSystemTimeZones().Any(x =&gt; x.Id == &quot;New Zealand Standard Time&quot;)
+    ? TimeZoneInfo.FindSystemTimeZoneById(&quot;New Zealand Standard Time&quot;)
+    : TimeZoneInfo.FindSystemTimeZoneById(&quot;Pacific/Auckland&quot;);
 </code></pre>
 </body></html>
 

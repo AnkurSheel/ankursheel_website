@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">A postmortem for Ocean of Code (Codingame AI Contest)</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,8 +157,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time it was based on Captain Sonar.</p>
-<p><img src="/assets/images/posts/postmortem-ocean-code-codingame-ai-contest/cover.jpg" alt="Ocean of Code"></p>
+<p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time it was based on Captain Sonar.</p>
+<p><img src="/assets/images/posts/postmortem-ocean-code-codingame-ai-contest/cover.jpg" alt="Ocean of Code" /></p>
 <p>If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss seeing all the things I did wrong. 😊</p>
 <h2 id="preamble">Preamble</h2>
 <p>For the contest, you were in command of 1 ship on a grid, and the goal was to have more hit-points than the other ship by the end of the game. There were islands located all over the map, which you had to avoid crashing into.</p>
@@ -219,7 +219,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>New Zealand</strong>: 1/5</p>
 <p><strong>India</strong>: 15/42</p>
 <p>Feel free to follow me at codingame using this <a href="https://www.codingame.com/servlet/urlinvite?u=1506970">URL</a>.</p>
-</body></html>
+
 
 
 

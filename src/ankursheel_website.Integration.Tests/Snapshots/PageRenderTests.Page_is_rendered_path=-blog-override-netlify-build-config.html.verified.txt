@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to override the netlify build config</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -167,8 +167,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>In the above screenshot, my branch for the migration is named <em>statiq</em>.</p>
 <p>To override the build settings set in the Netlify UI, we can add the following snippet to <em>netlify.toml</em></p>
 <pre><code class="language-toml hljs">[build]
-  command = "dotnet run --project ./subDir/"
-  publish = "./subDir/output"
+  command = &quot;dotnet run --project ./subDir/&quot;
+  publish = &quot;./subDir/output&quot;
 </code></pre>
 <p>So, what's happening here?</p>
 <ul>

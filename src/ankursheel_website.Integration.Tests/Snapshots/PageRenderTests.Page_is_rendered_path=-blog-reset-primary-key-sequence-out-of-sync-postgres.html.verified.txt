@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to reset the primary key sequence in Postgres</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,37 +159,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <html><head></head><body><h2 id="the-problem">The Problem</h2>
-<p>When we insert a new row in a table with a sequential primary key, we get a "23505: duplicate key value violates unique constraint" error.</p>
+<p>When we insert a new row in a table with a sequential primary key, we get a &quot;23505: duplicate key value violates unique constraint&quot; error.</p>
 <p>This implies that a record already exists for the next number being returned for the sequence.</p>
 <p>The reason this happens is that the primary key sequence is out of sync with the table rows.</p>
 <h2 id="assumptions">Assumptions</h2>
 <ul>
-<li>The table name is "<strong><em>table"</em></strong></li>
-<li>The column with the issue is "<strong><em>id</em></strong>."</li>
+<li>The table name is &quot;<strong><em>table&quot;</em></strong></li>
+<li>The column with the issue is &quot;<strong><em>id</em></strong>.&quot;</li>
 </ul>
 <h2 id="validate-that-the-sequence-is-out-of-sync">Validate that the sequence is out-of-sync</h2>
 <p>Before we reset the sequence, let us make sure that it is out of sync.</p>
-<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">nextval</span>(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'"table"'</span>, <span class="hljs-string">'id'</span>));
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">nextval</span>(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>));
 
 <span class="hljs-keyword">SELECT</span>
-    CURRVAL(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'"table"'</span>, <span class="hljs-string">'id'</span>)) <span class="hljs-keyword">AS</span> <span class="hljs-string">"Current Value"</span>,
-    <span class="hljs-keyword">MAX</span>(<span class="hljs-string">"id"</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">"Max Value"</span>
-<span class="hljs-keyword">FROM</span> <span class="hljs-string">"table"</span>;
+    CURRVAL(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)) <span class="hljs-keyword">AS</span> &quot;Current Value&quot;,
+    MAX(&quot;id&quot;) AS &quot;Max Value&quot;
+FROM &quot;table&quot;;
 </code></pre>
-<p><strong>Line #1:</strong> We make a call to <strong><em>nextval</em></strong> because if we call <strong><em>currval</em></strong> before calling <strong><em>nextval</em></strong> in the current session, it will give us an error similar to "<strong><em>ERROR: currval of sequence "table_id_seq" is not yet defined in this session</em></strong>".</p>
+<p><strong>Line #1:</strong> We make a call to <strong><em>nextval</em></strong> because if we call <strong><em>currval</em></strong> before calling <strong><em>nextval</em></strong> in the current session, it will give us an error similar to &quot;<strong><em>ERROR: currval of sequence &quot;table_id_seq&quot; is not yet defined in this session</em></strong>&quot;.</p>
 <p><strong>Line #3-6:</strong> Gets the value most recently obtained by <strong>nextval</strong> for this sequence in the current session along with the maximum value for <strong><em>id</em></strong> in <strong><em>table</em></strong>.</p>
 <p>Our sequence is out-of-sync when the <strong><em>Current Value</em></strong> is less than <strong><em>Max Value</em></strong>.</p>
 <h3 id="what-does-pg_get_serial_sequence-do">What does PG_GET_SERIAL_SEQUENCE do?</h3>
-<p><code>PG_GET_SERIAL_SEQUENCE('"table"', 'id')</code> can be used to get the sequence name.</p>
+<p><code>PG_GET_SERIAL_SEQUENCE('&quot;table&quot;', 'id')</code> can be used to get the sequence name.</p>
 <p>Using this, we can avoid hard-coding the actual sequence name, which helps prevent incorrect assumptions about the sequence name.</p>
 <p><em>Note that the table name is in double-quotes, surrounded by single quotes.</em></p>
 <h2 id="the-fix">The Fix</h2>
 <pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> SETVAL(
-    (<span class="hljs-keyword">SELECT</span> PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'"table"'</span>, <span class="hljs-string">'id'</span>)),
-    (<span class="hljs-keyword">SELECT</span> (<span class="hljs-keyword">MAX</span>(<span class="hljs-string">"id"</span>) + <span class="hljs-number">1</span>) <span class="hljs-keyword">FROM</span> <span class="hljs-string">"table"</span>),
-    <span class="hljs-literal">FALSE</span>);
+    (<span class="hljs-keyword">SELECT</span> PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)),
+    (<span class="hljs-keyword">SELECT</span> (<span class="hljs-keyword">MAX</span>(&quot;id&quot;) + 1) FROM &quot;table&quot;),
+    FALSE);
 </code></pre>
-<p>This will set the sequence to the next available value higher than any existing value for "<strong><em>id</em></strong>" in <strong><em>table</em></strong>. Further inserts will not result in a "duplicate key value violates unique constraint" error.</p>
+<p>This will set the sequence to the next available value higher than any existing value for &quot;<strong><em>id</em></strong>&quot; in <strong><em>table</em></strong>. Further inserts will not result in a &quot;duplicate key value violates unique constraint&quot; error.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.postgresql.org/docs/current/functions-sequence.html">Sequence Manipulation Functions</a></li>

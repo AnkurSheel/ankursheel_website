@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Embed a YouTube video with 16:9 aspect ratio and full-width</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -166,27 +166,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="steps">Steps</h2>
 <p>Let's use CSS to display an iframe with 100% width and 16:9 aspect ratio.</p>
 <p>When embedding a video from YouTube, we get a snippet of code similar to</p>
-<pre><code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
-    <span class="hljs-attr">width</span>=<span class="hljs-string">"560"</span>
-    <span class="hljs-attr">height</span>=<span class="hljs-string">"315"</span>
-    <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/RcnksOUugcA"</span>
-    <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span>
-    <span class="hljs-attr">allow</span>=<span class="hljs-string">"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"</span>
-    <span class="hljs-attr">allowfullscreen</span>
-&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<pre><code class="language-html hljs">&lt;iframe
+    width=&quot;560&quot;
+    height=&quot;315&quot;
+    src=&quot;https://www.youtube.com/embed/RcnksOUugcA&quot;
+    frameborder=&quot;0&quot;
+    allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot;
+    allowfullscreen
+&gt;&lt;/iframe&gt;
 </code></pre>
 <h3 id="step-1">Step 1</h3>
 <p>Remove all unnecessary properties, including <em><strong>width</strong></em> and <em><strong>height</strong></em>. Our snippet now becomes</p>
-<pre><code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/RcnksOUugcA"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<pre><code class="language-html hljs">&lt;iframe src=&quot;https://www.youtube.com/embed/RcnksOUugcA&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </code></pre>
 <h3 id="step-2">Step 2</h3>
 <ol>
 <li>Add a container with a CSS class around the iframe.</li>
 <li>Add a CSS class to the iframe.</li>
 </ol>
-<pre><code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"video-container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"video"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/RcnksOUugcA"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<pre><code class="language-html hljs">&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/RcnksOUugcA&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 </code></pre>
 <h3 id="step-3">Step 3</h3>
 <p>Add CSS to the container.</p>

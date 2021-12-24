@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">A post-mortem of the Asteroids clone</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Asteroids was the first game that I could say was more or less feature complete.</p>
+<p>Asteroids was the first game that I could say was more or less feature complete.</p>
 <h2 id="what-went-right">What Went Right</h2>
 <ul>
 <li><strong>Reusing the code:</strong> Since I had gone for a dll-architecture, I did not have to write or even copy-paste most of the basic stuff such as rendering, input, audio etc.</li>
@@ -186,7 +186,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>An easier way to edit GUI's.</li>
 <li>A credit and splash screen.</li>
 </ul>
-</body></html>
+
 
 
 

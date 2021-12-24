@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to setup WordPress locally: Installing MySQL</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="installing-mysql-on-windows">Installing MySQL on Windows</h2>
+<h2 id="installing-mysql-on-windows">Installing MySQL on Windows</h2>
 <ul>
 <li>Go to the MySQL Website and download the installer file from the windows section.</li>
 <li>Run the installer.</li>
@@ -176,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="activating-mysql-for-php">Activating MySQL for PHP</h2>
 <ul>
 <li>Open the <em>php.ini</em> file for editing</li>
-<li>Remove the semicolon from the line <em>;extension_dir ="ext"</em>
+<li>Remove the semicolon from the line <em>;extension_dir =&quot;ext&quot;</em>
 <ul>
 <li>If the line does not exist, add the line.</li>
 </ul>
@@ -189,7 +189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 <li>Restart the APACHE server.</li>
 </ul>
-</body></html>
+
 
 
 

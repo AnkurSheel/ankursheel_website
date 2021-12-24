@@ -5,8 +5,117 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2021</copyright>
-		<pubDate>Fri, 17 Dec 2021 02:38:44 GMT</pubDate>
-		<lastBuildDate>Fri, 17 Dec 2021 02:38:44 GMT</lastBuildDate>
+		<pubDate>Fri, 24 Dec 2021 11:00:35 GMT</pubDate>
+		<lastBuildDate>Fri, 24 Dec 2021 11:00:35 GMT</lastBuildDate>
+		<item>
+			<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
+			<link>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</link>
+			<description>A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate</description>
+			<guid>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</guid>
+			<pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In the last post, we saw how we can &lt;a href="https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis"&gt;add subscriptions to our Graphql server&lt;/a&gt;. This post will show how to set up an ACL (Access Control List) for Redis to restrict access to trusted clients.&lt;/p&gt;
+&lt;h2 id="setting-up-redis-acl-access-control-list"&gt;Setting up Redis ACL (Access Control list)&lt;/h2&gt;
+&lt;p&gt;Create a new file and call it &lt;em&gt;users.acl&lt;/em&gt;. In this file, we want to do 3 things.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;disable the default user&lt;/li&gt;
+&lt;li&gt;add an admin user who is the same as a default user but has an explicit username.&lt;/li&gt;
+&lt;li&gt;add a restricted user with access to a specific channel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="disable-the-default-user"&gt;Disable the default user&lt;/h3&gt;
+&lt;p&gt;By default, a single user without any restrictions is defined. We can disable the default user by adding &lt;code&gt;user default off&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="create-an-admin-user"&gt;Create an admin user&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;user admin on nopass ~* &amp;amp;* +@@all&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This line creates a user with the username &lt;em&gt;&lt;strong&gt;admin&lt;/strong&gt;&lt;/em&gt;. This user is configured to be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: active&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;nopass&lt;/strong&gt;: require no password&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~*&lt;/strong&gt;: access every possible key&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;amp;*&lt;/strong&gt;: access every Pub/Sub channel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;+@@all&lt;/strong&gt;: able to call every possible command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="create-a-restricted-user-for-graphql-subscriptions"&gt;Create a restricted user for Graphql subscriptions&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;user test on nopass ~* resetchannels &amp;amp;cdd/graphql_subscriptions/* -@@all +@@connection +@@pubsub&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This line creates a user with the username &lt;em&gt;&lt;strong&gt;test&lt;/strong&gt;&lt;/em&gt;. This user is configured to be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: active&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;nopass&lt;/strong&gt;: require no password&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~*&lt;/strong&gt;: access every possible key&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;resetchannels&lt;/strong&gt;: : Resetsw the list of allowed channel patterns and disconnect the user from channels it doesnt have access to anymore.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;amp;graphql_subscriptions/*&lt;/strong&gt;: access everything under the &lt;em&gt;graphql_subscriptions&lt;/em&gt; channel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-@@all +@@connection +@@pubsub&lt;/strong&gt;: Restrict access to the connection and pubsub commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="setting-up-redis-configuration"&gt;Setting up Redis configuration&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;redis.conf&lt;/em&gt; file allows us to configure Redis and set up authentication.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;aclfile /usr/local/etc/redis/users.acl&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This tells Redis that we want to use an external aclfile found at &lt;em&gt;/usr/local/etc/redis/&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="updating-hot-chocolate-to-use-a-custom-user"&gt;Updating Hot Chocolate to use a custom user&lt;/h2&gt;
+&lt;p&gt;In our &lt;em&gt;Startup.cs&lt;/em&gt; class, we need to update the configuration options to set the user for the Redis server. We also set the channelPrefix as the graphpqlSubscriptionUser only has access to &lt;em&gt;graphql_subscriptions&lt;/em&gt; channel.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;ConfigureServices&lt;/span&gt;(&lt;span class="hljs-params"&gt;IServiceCollection services&lt;/span&gt;)
+&lt;/span&gt;{
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; options = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ConfigurationOptions
+            {
+                EndPoints = { "localhost:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;" },
+                User = "graphpqlSubscriptionUser",
+                ChannelPrefix = "graphql_subscriptions/"
+            };
+
+    services.AddGraphQLServer()
+        .AddQueryType&amp;lt;Query&amp;gt;()
+        .AddMutationType&amp;lt;Mutation&amp;gt;()
+        .AddSubscriptionType&amp;lt;Subscription&amp;gt;()
+        .AddRedisSubscriptions(_ =&amp;gt; ConnectionMultiplexer.Connect(options));
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="adding-a-docker-compose-file"&gt;Adding a docker compose file&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-dockerfile hljs"&gt;version: &lt;span class="hljs-string"&gt;'3'&lt;/span&gt;
+services:
+  redis:
+    image: redis:&lt;span class="hljs-number"&gt;6.2&lt;/span&gt;-alpine
+    ports:
+      - "&lt;span class="hljs-number"&gt;6379&lt;/span&gt;:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;"
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+      - ./users.acl:/usr/local/etc/redis/users.acl
+    container_name: redis-graphql
+    command: redis-server /usr/local/etc/redis/redis.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we can run the command &lt;code&gt;docker-compose up --force-recreate -d --build&lt;/code&gt; to start the Redis container.&lt;/p&gt;
+&lt;h2 id="demo-project"&gt;Demo Project&lt;/h2&gt;
+&lt;p&gt;There is a &lt;a href="https://github.com/AnkurSheel/HotChocolateSubscriptions"&gt;demo project&lt;/a&gt; you can check out over on GitHub.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://redis.io/topics/acl"&gt;Redis ACL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackexchange.github.io/StackExchange.Redis/Configuration"&gt;StackExchange.Redis Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 49</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-49</link>
+			<description>This weeks roundup contains articles from David McCarter, Janella, Paul Swail, Mike Petrovich and Brian Rinaldi</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-49/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-49</guid>
+			<pubDate>Sun, 19 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="collection-performance-how-do-you-linq"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/12/15/collection-performance-how-do-you-linq"&gt;Collection Performance: How Do You Linq?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This article compares the performance of some common LINQ Queries when it's written using the API vs a lambda and the performance of the different ways to use the lambda versions.&lt;/p&gt;
+&lt;h2 id="good-enough"&gt;&lt;a href="https://blog.janella.nz/posts/2021/08/22/deciding-good-enough.html"&gt;Good enough&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Janella&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It's easy to fall into the trap of future-proofing our code. This article can help us see the key signs indicating that we need to step back from the details. It also outlines the questions we should ask to decide if something is good enough. As an added bonus, there are also some tips on easing ourselves into decision making if we are prone to imposter syndrome.&lt;/p&gt;
+&lt;h2 id="the-testing-trade-off-triangle"&gt;&lt;a href="https://serverlessfirst.com/testing-tradeoff-triangle"&gt;The testing trade-off triangle&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Paul Swail&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Did you know that every time we choose a testing strategy, we need to compromise between confidence level, feedback loop, and maintainability? This article shares some examples of who the loser is when we optimize for one of them and some questions we should ask ourselves to inform or test strategy.&lt;/p&gt;
+&lt;h2 id="the-three-dominoes"&gt;&lt;a href="https://petro.blog/the-3-domino-rule-85888e009e5a"&gt;The Three Dominoes&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Mike Petrovich&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There are 3 simple rules to make it easier for a team to operate: limit work-in-progress, Minimize specialization, and Never sacrifice quality. Read this article to know how each of these rules helps the team achieve long-term success and the limitations of each of the rules.&lt;/p&gt;
+&lt;h2 id="rendering-in-the-jamstack"&gt;&lt;a href="https://bejamas.io/blog/understanding-rendering-in-the-jamstack/"&gt;Rendering in the Jamstack&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Brian Rinaldi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Multiple rendering options are available in JAMstack applications. This article gives an in-depth overview of the different rendering options and helps you choose which one to use when.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Weekly Roundup 48</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
@@ -14,10 +123,10 @@
 			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-48/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
 			<pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="hiring-and-retaining-a-diverse-engineering-team"&gt;&lt;a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/"&gt;Hiring (and Retaining) a Diverse Engineering Team&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Almost everyone agrees that having a diverse team is better for business. But the question remains -&amp;gt; "How do you hire more diverse teams?" Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.&lt;/p&gt;
+&lt;p&gt;Almost everyone agrees that having a diverse team is better for business. But the question remains -&amp;gt; &amp;quot;How do you hire more diverse teams?&amp;quot; Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.&lt;/p&gt;
 &lt;h2 id="questions-to-ask-yourself-every-year"&gt;&lt;a href="http://stephanango.com/40-questions"&gt;40 questions to ask yourself every year&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Stephan Ango&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The end of the year is a good time for introspection. If you are having a hard time coming up with questions to ask yourself, Stephan shares a list of 40 questions he asks himself every year. This should be enough to get you started.&lt;/p&gt;
@@ -30,7 +139,7 @@
 &lt;h2 id="how-to-evaluate-startup-offers-a-beginners-guide"&gt;&lt;a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/"&gt;How to Evaluate Startup Offers - A Beginner's Guide&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Avy Faingezicht&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
@@ -40,7 +149,7 @@
 			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-47/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
 			<pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="career-seasons-choosing-a-role-based-on-the-lifestyle-you-want"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/career-seasons/"&gt;Career Seasons: Choosing a Role Based on the Lifestyle You Want&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;At different points in our lives, we are in a different season of our careers. The 3 different career seasons are Growth, Lifestyle and Reinvention. It's important to know what season we are in to tailor our job search accordingly. This article can help us figure out what career season we are in.&lt;/p&gt;
@@ -56,7 +165,7 @@
 &lt;h3 id="when-are-companies-going-to-learn-how-software-development-works"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/07/15/when-are-companies-going-to-learn-how-software-development-works/"&gt;When Are Companies Going To Learn How Software Development Works?&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Many companies make the same mistakes repeatedly that doom their software projects to failure. A story about how David unearthed during an interview of a company making those mistakes.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
@@ -78,10 +187,10 @@
 {
     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IObjectTypeDescriptor descriptor&lt;/span&gt;)
     &lt;/span&gt;{
-        descriptor.Field(&lt;span class="hljs-string"&gt;"onPing"&lt;/span&gt;)
+        descriptor.Field("onPing")
             .Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;()
             .Resolve(ctx =&amp;gt; ctx.GetEventMessage&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;())
-            .Subscribe(&lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt; &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventReceiver&amp;gt;().SubscribeAsync&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;(&lt;span class="hljs-string"&gt;"onPing"&lt;/span&gt;, ctx.RequestAborted));
+            .Subscribe(&lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt; &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventReceiver&amp;gt;().SubscribeAsync&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;("onPing", ctx.RequestAborted));
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -103,7 +212,7 @@
 &lt;/span&gt;{
     &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; options = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ConfigurationOptions
     {
-        EndPoints = { &lt;span class="hljs-string"&gt;"localhost:6379"&lt;/span&gt; },
+        EndPoints = { "localhost:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;" },
     };
 
     services.AddGraphQLServer()
@@ -118,15 +227,15 @@
 {
     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IObjectTypeDescriptor descriptor&lt;/span&gt;)
     &lt;/span&gt;{
-        descriptor.Field(&lt;span class="hljs-string"&gt;"ping"&lt;/span&gt;)
+        descriptor.Field("ping")
             .Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;()
-            .Argument(&lt;span class="hljs-string"&gt;"payload"&lt;/span&gt;, des =&amp;gt; des.Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;())
+            .Argument("payload", des =&amp;gt; des.Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;())
             .Resolve(
                 &lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt;
                 {
-                    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; input = ctx.ArgumentValue&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;(&lt;span class="hljs-string"&gt;"payload"&lt;/span&gt;);
+                    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; input = ctx.ArgumentValue&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;("payload");
 
-                    &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventSender&amp;gt;().SendAsync(&lt;span class="hljs-string"&gt;"onPing"&lt;/span&gt;, input);
+                    &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventSender&amp;gt;().SendAsync("onPing", input);
                     &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; input;
                 });
     }
@@ -164,7 +273,8 @@
 			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-46/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-46</guid>
 			<pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="the-pragmatic-engineer-test-12-questions-on-engineering-culture"&gt;&lt;a href="https://blog.pragmaticengineer.com/pragmatic-engineer-test/"&gt;The Pragmatic Engineer Test: 12 Questions on Engineering Culture&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You have probably heard of the &lt;a href="https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/"&gt;Joel Test&lt;/a&gt;, but it's 20 years old, and most companies can answer &lt;strong&gt;yes&lt;/strong&gt; to those questions. These questions are better suited to rate the quality of a software team in today's world.&lt;/p&gt;
@@ -180,7 +290,7 @@
 &lt;h2 id="the-three-sides-of-risk"&gt;&lt;a href="https://www.collaborativefund.com/blog/the-three-sides-of-risk/"&gt;The Three Sides of Risk&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Morgan Housel&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What can skiing teach you about investing? A lot, it seems. There are distinct sides of risk 2 of which are easy to grasp. But the last one, the tail-end consequences of getting hit, can often be learned only through experience. But the tail-end events are all that matter. This is also why I always consider the worst outcome of any decision, and only if I am ok with it is when I take the risk.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
@@ -220,7 +330,8 @@
 			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-45/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-45</guid>
 			<pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="is-renting-a-waste-of-money"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/renting-is-not-a-waste/"&gt;Is Renting a Waste of Money&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Even though it's the same thing as paying to eat at a restaurant, many people believe that renting is throwing away money. This article shares the common reasons why believe the myth that renting is throwing away money.&lt;/p&gt;
@@ -236,7 +347,7 @@
 &lt;h2 id="database-normalization"&gt;&lt;a href="https://dev.to/fajarzuhrihadiyanto/database-normalization-jil"&gt;Database Normalization&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Fajar Zuhri Hadiyanto&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The steps to normalize a database from completely un-normalized to 5NF by way of an example.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
@@ -255,7 +366,7 @@ name = author_name
 email = author_email
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We can run the following command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i &amp;lt;commit_hash&amp;gt; -x &lt;span class="hljs-string"&gt;"git commit --amend --reset-author -CHEAD"&lt;/span&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i &amp;lt;commit_hash&amp;gt; -x "git commit --amend --reset-author -CHEAD"
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;git rebase -i&lt;/strong&gt;: Runs git rebase in interactive mode, allowing altering individual commits in the process.&lt;/li&gt;
@@ -267,7 +378,7 @@ email = author_email
 &lt;/ul&gt;
 &lt;p&gt;We will then be presented with an editor to confirm all the commits we want.&lt;/p&gt;
 &lt;p&gt;We can run the following command to update the author for all commits, including the root.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i --root -x &lt;span class="hljs-string"&gt;"git commit --amend --reset-author -CHEAD"&lt;/span&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i --root -x "git commit --amend --reset-author -CHEAD"
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the &lt;a href="https://www.ankursheel.com/securing-git-commits-windows"&gt;guide to securing git commits from tricking you on Windows&lt;/a&gt;.&lt;/p&gt;
@@ -287,13 +398,14 @@ email = author_email
 			<enclosure url="https://www.ankursheel.com/assets/images/posts/team-name/cover.jpg" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/team-name</guid>
 			<pubDate>Thu, 21 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- https://unsplash.com/photos/ocAo7MwGfHY --&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.&lt;/p&gt;
+			<content:encoded>&lt;!-- https://unsplash.com/photos/ocAo7MwGfHY --&gt;
+&lt;p&gt;Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.&lt;/p&gt;
 &lt;p&gt;This will be a controversial opinion, but I think this is possibly the worst way to decide team names.&lt;/p&gt;
 &lt;h2 id="a-common-theme"&gt;A common theme&lt;/h2&gt;
 &lt;p&gt;A popular reason that people think using a common theme for all team names is a good idea is that they feel it's inclusive.&lt;/p&gt;
 &lt;p&gt;But, it's tough to find a genuinely inclusive theme. Even something innocuous like superheroes can make someone feel excluded if they haven't grown up watching superhero cartoons.&lt;/p&gt;
 &lt;p&gt;So you decide to go with something &lt;del&gt;boring&lt;/del&gt; simple like colours.&lt;/p&gt;
-&lt;quote quote="Surely, no one can take offence in that, right?"&gt;
+&lt;Quote quote="Surely, no one can take offence in that, right?" /&gt;
 &lt;p&gt;Not so fast, my young padawan. You forgot to consider colour blind people.&lt;/p&gt;
 &lt;p&gt;The other reason that frequently comes up is that a common theme makes it easier for people to remember. For the sake of this discussion, let's assume that either colours or superheroes are an inclusive-enough theme for you, and you have two teams. But do the people in your organization know whether they need to talk to the &lt;strong&gt;Superman/Pink&lt;/strong&gt; team or the &lt;strong&gt;WonderWoman/Blue&lt;/strong&gt; team. More likely, they are saying.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -303,18 +415,18 @@ email = author_email
 &lt;p&gt;What if you have ten teams? No common theme can save you.&lt;/p&gt;
 &lt;p&gt;I think this tweet sums it up nicely.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheros, so I had to learn it. Like there weren't enough other things to learn."&lt;/p&gt;
+&lt;p&gt;I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheros, so I had to learn it. Like there weren't enough other things to learn.&amp;quot;&lt;/p&gt;
 &lt;p&gt;&lt;cite&gt;Vladimir Sapronov&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;a href="https://twitter.com/v_sapronov/status/1440147633155166210"&gt;Tweet link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;If you want to have team names with no connection to the product, I have a controversial recommendation for you. Let them come about from an inside joke, a conversation or a common identity that the team members can ascribe to.&lt;/p&gt;
 &lt;h2 id="an-inside-joke"&gt;An inside joke&lt;/h2&gt;
-&lt;quote quote="Jelled teams are usually marked by a strong sense of identity" author="Peopleware"&gt;
+&lt;Quote quote="Jelled teams are usually marked by a strong sense of identity" author="Peopleware" /&gt;
 &lt;p&gt;Having a team name based on an inside joke gives it a unique identity. It's the uniqueness between the names and what that difference signifies that binds one identity to it.&lt;/p&gt;
 &lt;p&gt;It gives this feeling of being a part of an elite entity.&lt;/p&gt;
-&lt;p&gt;In his similarly titled post &lt;a href="https://critter.blog/2020/09/02/whats-in-a-team-name/"&gt;What’s in a team name?&lt;/a&gt;, Mike gives an excellent example of how hard it would be to rally around "the Vikings" if they were called the "The Minnesota NFL Team".&lt;/p&gt;
+&lt;p&gt;In his similarly titled post &lt;a href="https://critter.blog/2020/09/02/whats-in-a-team-name/"&gt;What’s in a team name?&lt;/a&gt;, Mike gives an excellent example of how hard it would be to rally around &amp;quot;the Vikings&amp;quot; if they were called the &amp;quot;The Minnesota NFL Team&amp;quot;.&lt;/p&gt;
 &lt;p&gt;Now, before you go all up in arms and say,&lt;/p&gt;
-&lt;quote quote="But, Ankur, having an inside joke for a team name doesn't solve for any of the problems you highlighted before"&gt;
+&lt;Quote quote="But, Ankur, having an inside joke for a team name doesn't solve for any of the problems you highlighted before" /&gt;
 &lt;p&gt;I kinda agree.&lt;/p&gt;
 &lt;p&gt;A team name based on an inside joke is not inclusive by nature to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.&lt;/p&gt;
 &lt;p&gt;Whether it's easier to remember or not, that's debatable. But it can certainly be more memorable, and memorable things get remembered faster. After all, would you be able to forget a name like &lt;a href="https://twitter.com/catswetel/status/1440039225156538374"&gt;The Applesauce Top Hat Brigade&lt;/a&gt;? It's a name I am not going to forget anytime soon.&lt;/p&gt;
@@ -335,7 +447,7 @@ email = author_email
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.&lt;/p&gt;
 &lt;p&gt;Having said that, you should probably have some guidelines to weed out the truly offensive.&lt;/p&gt;
-&lt;/quote&gt;&lt;/quote&gt;&lt;/quote&gt;&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
@@ -357,7 +469,7 @@ email = author_email
         &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; input.Clone(
                 &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; MetadataItems
                 {
-                    { MetaDataKeys.ReadingTime, _readingTimeService.GetReadingTime(content, context.GetInt(&lt;span class="hljs-string"&gt;"ReadingTimeWordsPerMinute"&lt;/span&gt;, &lt;span class="hljs-number"&gt;200&lt;/span&gt;)) }
+                    { MetaDataKeys.ReadingTime, _readingTimeService.GetReadingTime(content, context.GetInt("ReadingTimeWordsPerMinute", &lt;span class="hljs-number"&gt;200&lt;/span&gt;)) }
                 })
             .Yield();
     }
@@ -413,7 +525,7 @@ email = author_email
 &lt;p&gt;Now, we can calculate the reading time and fill in the ReadingTimeData.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;private&lt;/span&gt; ReadingTimeData &lt;span class="hljs-title"&gt;GetReadingTime&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt; content, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; wordsPerMinute&lt;/span&gt;)
 &lt;/span&gt;{
-    &lt;span class="hljs-keyword"&gt;const&lt;/span&gt; Regex SpacesRegex = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Regex(&lt;span class="hljs-string"&gt;"\S+"&lt;/span&gt;, RegexOptions.Multiline);
+    &lt;span class="hljs-keyword"&gt;const&lt;/span&gt; Regex SpacesRegex = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Regex(&amp;quot;\S+&amp;quot;, RegexOptions.Multiline);
     &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; words = SpacesRegex.Matches(content).Count;
 
     &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; minutes = words / WordsPerMinute;
@@ -440,7 +552,7 @@ email = author_email
 			<description>A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform</description>
 			<guid>https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform</guid>
 			<pubDate>Thu, 30 Sep 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;I want to upload multiple files from a specific folder to an AWS S3 bucket.&lt;/p&gt;
 &lt;h3 id="assumptions"&gt;Assumptions&lt;/h3&gt;
 &lt;p&gt;The S3 bucket name is &lt;strong&gt;test&lt;/strong&gt;.&lt;/p&gt;
@@ -461,12 +573,12 @@ email = author_email
 &lt;li&gt;s3://test/subdirectory1/subdirectory2/file_1_2_1&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;pre&gt;&lt;code class="language-hcl"&gt;resource "aws_s3_bucket_object" "test" {
-  for_each = fileset("./documents/", "**")
-  bucket = "test"
+&lt;pre&gt;&lt;code class="language-hcl"&gt;resource &amp;quot;aws_s3_bucket_object&amp;quot; &amp;quot;test&amp;quot; {
+  for_each = fileset(&amp;quot;./documents/&amp;quot;, &amp;quot;**&amp;quot;)
+  bucket = &amp;quot;test&amp;quot;
   key = each.value
-  source = "./documents/${each.value}"
-  etag = filemd5("./documents/${each.value}")
+  source = &amp;quot;./documents/${each.value}&amp;quot;
+  etag = filemd5(&amp;quot;./documents/${each.value}&amp;quot;)
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
@@ -483,7 +595,7 @@ email = author_email
 &lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/meta-arguments/for_each.html"&gt;for_each&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/functions/fileset.html"&gt;fileset&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
@@ -551,8 +663,8 @@ email = author_email
 &lt;p&gt;There are a few ways to do this, but since Statiq Web supports running external processes as part of execution, we will leverage that to install the npm packages and build our statiq website.&lt;/p&gt;
 &lt;h3 id="step-1-get-the-directories"&gt;Step 1: Get the directories&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; currentDirectory = Directory.GetCurrentDirectory();
-&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; nodeDirectory = Path.Combine(currentDirectory, &lt;span class="hljs-string"&gt;".."&lt;/span&gt;, &lt;span class="hljs-string"&gt;"node"&lt;/span&gt;);
-&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; inputDirectory = Path.Combine(currentDirectory, &lt;span class="hljs-string"&gt;"input"&lt;/span&gt;);
+&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; nodeDirectory = Path.Combine(currentDirectory, "..", "node");
+&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; inputDirectory = Path.Combine(currentDirectory, "input");
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Line 1&lt;/strong&gt;: Get the current directory&lt;/li&gt;
@@ -562,7 +674,7 @@ email = author_email
 &lt;h3 id="step-2-install-the-npm-packages"&gt;Step 2: Install the npm packages&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.AddProcess(
     ProcessTiming.Initialization,
-    _ =&amp;gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ProcessLauncher(&lt;span class="hljs-string"&gt;"npm"&lt;/span&gt;, &lt;span class="hljs-string"&gt;"install"&lt;/span&gt;)
+    _ =&amp;gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ProcessLauncher("npm", "install")
     {
         LogErrors = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;,
         WorkingDirectory = nodeDirectory
@@ -578,9 +690,9 @@ email = author_email
 &lt;h3 id="step-3-compile-css-with-tailwind"&gt;Step 3: Compile CSS with Tailwind&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.AddProcess(
     ProcessTiming.Initialization,
-   _ =&amp;gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ProcessLauncher(&lt;span class="hljs-string"&gt;"npx"&lt;/span&gt;, &lt;span class="hljs-string"&gt;"tailwind"&lt;/span&gt;, &lt;span class="hljs-string"&gt;"build"&lt;/span&gt;,
-    &lt;span class="hljs-string"&gt;$"-i &lt;span class="hljs-subst"&gt;{Path.Combine(inputDirectory, &lt;span class="hljs-string"&gt;"_site.css"&lt;/span&gt;)}&lt;/span&gt;"&lt;/span&gt;,
-    &lt;span class="hljs-string"&gt;$"-o &lt;span class="hljs-subst"&gt;{Path.Combine(currentDirectory, &lt;span class="hljs-string"&gt;"output"&lt;/span&gt;, &lt;span class="hljs-string"&gt;"styles.css"&lt;/span&gt;)}&lt;/span&gt;"&lt;/span&gt;)
+   _ =&amp;gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ProcessLauncher("npx", "tailwind", "build",
+    $"-i {Path.Combine(inputDirectory, "_site.css")}",
+    $"-o {Path.Combine(currentDirectory, "output", "styles.css")}")
 {
     LogErrors = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;,
     WorkingDirectory = nodeDirectory
@@ -619,7 +731,7 @@ email = author_email
 &lt;h3 id="step-2-install-packages"&gt;Step 2: Install packages&lt;/h3&gt;
 &lt;p&gt;We will install Tailwind, and other peer dependencies inside a directory called &lt;em&gt;node&lt;/em&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-built_in"&gt;cd&lt;/span&gt; node
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest postcss@latest autoprefixer@latest&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;PostCSS&lt;/strong&gt; is a preprocessor that transforms the CSS using plugins.&lt;/li&gt;
@@ -627,11 +739,11 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;/ul&gt;
 &lt;p&gt;Our package.json should look something like this.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-json hljs"&gt;{
-    &lt;span class="hljs-attr"&gt;"devDependencies"&lt;/span&gt;: {
-        &lt;span class="hljs-attr"&gt;"@@tailwindcss/typography"&lt;/span&gt;: &lt;span class="hljs-string"&gt;"^0.4.1"&lt;/span&gt;,
-        &lt;span class="hljs-attr"&gt;"autoprefixer"&lt;/span&gt;: &lt;span class="hljs-string"&gt;"^10.3.1"&lt;/span&gt;,
-        &lt;span class="hljs-attr"&gt;"postcss"&lt;/span&gt;: &lt;span class="hljs-string"&gt;"^8.3.6"&lt;/span&gt;,
-        &lt;span class="hljs-attr"&gt;"tailwindcss"&lt;/span&gt;: &lt;span class="hljs-string"&gt;"^2.2.7"&lt;/span&gt;
+    "devDependencies": {
+        "@@tailwindcss/typography": "^0.4.1",
+        "autoprefixer": "^10.3.1",
+        "postcss": "^8.3.6",
+        "tailwindcss": "^2.2.7"
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -678,9 +790,9 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;h3 id="step-4-add-css"&gt;Step 4: Add CSS&lt;/h3&gt;
 &lt;p&gt;Create an input folder and add a _site.css&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-css hljs"&gt;&lt;span class="hljs-comment"&gt;/*! @@import */&lt;/span&gt;
-@@&lt;span class="hljs-keyword"&gt;tailwind&lt;/span&gt; base;
-@@&lt;span class="hljs-keyword"&gt;tailwind&lt;/span&gt; components;
-@@&lt;span class="hljs-keyword"&gt;tailwind&lt;/span&gt; utilities;
+&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&lt;span class="hljs-selector-tag"&gt;tailwind&lt;/span&gt; &lt;span class="hljs-selector-tag"&gt;base&lt;/span&gt;;
+&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&lt;span class="hljs-selector-tag"&gt;tailwind&lt;/span&gt; &lt;span class="hljs-selector-tag"&gt;components&lt;/span&gt;;
+&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&lt;span class="hljs-selector-tag"&gt;tailwind&lt;/span&gt; &lt;span class="hljs-selector-tag"&gt;utilities&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="step-5-build-the-css"&gt;Step 5: Build the CSS&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-bash hljs"&gt;npx tailwind build -c ./tailwind.config.js -i ../input/_site.css -o ../Bookland/output/assets/styles.css
@@ -693,12 +805,12 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;h3 id="step-6-link-the-stylesheet-to-a-layout-file"&gt;Step 6: Link the stylesheet to a layout file&lt;/h3&gt;
 &lt;p&gt;We will add a _Layout.cshtml file in our input folder and link to the stylesheet generated by tailwind and postcss.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-cs hljs"&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&lt;span class="hljs-string"&gt;"en"&lt;/span&gt;&amp;gt;
+&amp;lt;html lang="en"&amp;gt;
 &amp;lt;head&amp;gt;
-    &amp;lt;link href=&lt;span class="hljs-string"&gt;"/styles.css"&lt;/span&gt; rel=&lt;span class="hljs-string"&gt;"stylesheet"&lt;/span&gt;/&amp;gt;
+    &amp;lt;link href="/styles.css" rel="stylesheet"/&amp;gt;
 &amp;lt;/head&amp;gt;
 &amp;lt;body&amp;gt;
-@@RenderBody()
+&amp;amp;&lt;span class="hljs-meta"&gt;#64;@RenderBody()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Reference to the styles.css file&lt;/li&gt;
@@ -722,7 +834,7 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I had to rename all the files with the extension &lt;em&gt;mdx&lt;/em&gt; to &lt;em&gt;md&lt;/em&gt;. Now, I could do it one by one or find a utility but using a single command is more elegant.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;To rename all the files recursively, we can use the REN (rename) command as follows.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;FOR /R %G IN (*.mdx) DO REN &lt;span class="hljs-string"&gt;"%G"&lt;/span&gt; &lt;span class="hljs-string"&gt;"%~dpnG.md"&lt;/span&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;FOR /R %G IN (*.mdx) DO REN "%G" "%~dpnG.md"
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let's unpack this command.&lt;/p&gt;
 &lt;ul&gt;
@@ -913,23 +1025,30 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-44/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-44</guid>
 			<pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="my-13-year-old-has-an-800-phone"&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;My 13-year-old has an $800 phone&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Buying a phone is expensive, especially if you are a 13-year-old who wants an iPhone. &lt;strong&gt;Ruth&lt;/strong&gt; shares a story about how her daughter could contribute 50% to an $800 iPhone purchase in 2 months.&lt;/p&gt;
-&lt;p&gt;&lt;quote quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps" author="Ruth"&gt;&lt;/quote&gt;&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps"
+author="Ruth"
+/&gt;&lt;/p&gt;
 &lt;p&gt;This article shows how we can teach our children the habit of saving while also teaching them it's OK to spend money they have budgeted.&lt;/p&gt;
 &lt;h3 id="key-takeaways"&gt;Key Takeaways&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Teach your child to save/invest a percentage of every dollar they earn.&lt;/li&gt;
 &lt;li&gt;For expensive purchases, agree to pay half the amount.&lt;/li&gt;
-&lt;li&gt;For massive targets, break them into smaller digestible chunks by using a "savings tracker".&lt;/li&gt;
+&lt;li&gt;For massive targets, break them into smaller digestible chunks by using a &amp;quot;savings tracker&amp;quot;.&lt;/li&gt;
 &lt;li&gt;Look at employment opportunities available to them, and if it needs the help of an adult, offer to help if they are willing to work.&lt;/li&gt;
 &lt;li&gt;For a kid, who have all their needs taken care of, it is the best time to teach them the habit of saving a percentage of their income.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="do-i-need-a-financial-advisor"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Do I Need a Financial Advisor&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;How do we know if we need a financial advisor? &lt;strong&gt;Ramit Sethi&lt;/strong&gt; explains the criteria for needing a financial advisor and why most people don't need one.&lt;/p&gt;
-&lt;p&gt;&lt;quote quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us" author="Ramit Sethi"&gt;&lt;/quote&gt;&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us"
+author="Ramit Sethi"
+/&gt;&lt;/p&gt;
 &lt;h3 id="key-takeaways-1"&gt;Key Takeaways&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;We need an advisor only if we have over $1 million in investable assets, have a complex financial situation, need a second set of eyes or a behavioural coach.&lt;/li&gt;
@@ -939,7 +1058,10 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;p&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="how-to-learn-stuff-quickly"&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;How To Learn Stuff Quickly&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;It is easy to get stuck either in tutorial hell or reinvent every wheel when learning new things. &lt;strong&gt;Josh Comeau&lt;/strong&gt; shares a few tips on how he has been able to pick up new skills quickly.&lt;/p&gt;
-&lt;p&gt;&lt;quote quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another" author="Josh Comeau"&gt;&lt;/quote&gt;&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another"
+author="Josh Comeau"
+/&gt;&lt;/p&gt;
 &lt;h3 id="key-takeaways-2"&gt;Key Takeaways&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;In the beginning, focus on guided learning. Once we are comfortable with the fundamentals, we should spend more time building interesting things and seeing tutorials only when encountering new problems.&lt;/li&gt;
@@ -951,7 +1073,10 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;p&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="when-it-pays-to-choose-microservices"&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;When it Pays to Choose Microservices&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Microservices are extremely popular, with a lot of big companies adopting them. But when is it worth switching over to microservices? &lt;strong&gt;Victoriia Zaripova&lt;/strong&gt; outlines the pros and cons of developing a microservice-based solution.&lt;/p&gt;
-&lt;p&gt;&lt;quote quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores" author="Victoriia Zaripova"&gt;&lt;/quote&gt;&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores"
+author="Victoriia Zaripova"
+/&gt;&lt;/p&gt;
 &lt;h3 id="key-takeaways-3"&gt;Key Takeaways&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;If microservices don't solve the business tasks, this is a waste of time and money.&lt;/li&gt;
@@ -969,7 +1094,10 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;p&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="the-nine-states-of-design"&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;The Nine States of Design&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;When designing UI, we tend to focus on the ideal state. &lt;strong&gt;Vince Speelman&lt;/strong&gt; shares his list of the 9 different states that we should plan for to create a better experience for users who hit the unhappy path.&lt;/p&gt;
-&lt;p&gt;&lt;quote quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone" author="Vince Speelman"&gt;&lt;/quote&gt;&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone"
+author="Vince Speelman"
+/&gt;&lt;/p&gt;
 &lt;h3 id="key-takeaways-4"&gt;Key Takeaways&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The different states that we should consider when building UI
@@ -987,105 +1115,9 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+&lt;hr /&gt;
 &lt;p&gt;Hope you enjoy reading these articles as much as I did.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Increasing Productivity with No-Meeting Days</title>
-			<link>https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days</link>
-			<description>How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/increasing-productivity-no-meeting-days/cover.jpg" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days</guid>
-			<pubDate>Tue, 03 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the First AML Product &amp;amp; Engineering blog. You can read the original version &lt;a href="https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Have you ever been in a position where you are in meetings during the day, and then you code at night just to feel that you are getting things done? I know I have."&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In 2009, Paul Graham wrote an article about the &lt;a href="http://www.paulgraham.com/makersschedule.html"&gt;maker vs manager schedule&lt;/a&gt;. It articulates that meetings are disastrous when we are on the maker's schedule. When we attend many meetings, it is tough to focus on the task and get things done. In my case, even a single meeting can blow my whole afternoon.&lt;/p&gt;
-&lt;p&gt;Most of us have two workdays in today's world - one on the manager's schedule and the other on the maker's schedule.&lt;/p&gt;
-&lt;p&gt;In his article, Paul proposes using office hours and setting aside a time for meetings. But I struggled with this when acting as the team lead for one of the teams and found my day broken up by various meetings. After all, how do we tell our boss (and the rest of the business) that we have office hours and will only meet him/her/them during those? I think office hours works well when we are high enough on the totem pole.&lt;/p&gt;
-&lt;p&gt;Since office hours are not viable for most of us, we can try the next best thing - blocking out chunks of time in our calendar for focus time. Blackout periods work well in most cases, but we still have to attend meetings and can't get stuck on a task for the whole day.&lt;/p&gt;
-&lt;p&gt;Let us look at something that works a little better - A no-meeting day.&lt;/p&gt;
-&lt;h2 id="what-is-a-no-meeting-day"&gt;What is a No-Meeting Day?&lt;/h2&gt;
-&lt;p&gt;A no-meeting day is a day for focused work. Essentially, it's a day in the week with no meetings so that we get uninterrupted time to do our job. This continuous focus time is perfect for deep work and more extensive projects. In addition, there is less context switching, so it's easier to achieve that magical state of flow.&lt;/p&gt;
-&lt;p&gt;And if you are a manager, it also allows you to be a doer.&lt;/p&gt;
-&lt;h2 id="a-no-meeting-day-will-never-work-for-my-role"&gt;A No-meeting day will never work for my role.&lt;/h2&gt;
-&lt;p&gt;Now some of you might be reading this and going -&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Yeah, it sounds great, and I would love to get in on that action, but it will never work for my role&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Some functions like Sales and Customer Success will require more collaboration than others.&lt;/p&gt;
-&lt;p&gt;For these roles, it might be better to institute blackout periods where people can pick half a day each week where they are not expected to be in a meeting. Shared blackout periods can work well so that there is time to have meetings that involve multiple people or external stakeholders.&lt;/p&gt;
-&lt;p&gt;Alternatively, we can also institute no meeting days just for internal meetings.&lt;/p&gt;
-&lt;h2 id="how-to-implement-no-meeting-days"&gt;How to implement no-meeting days?&lt;/h2&gt;
-&lt;p&gt;Now that I have allayed your fears, you want to know how to implement them for yourself and your team.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Patience, you must have my young Padawan&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: The first step to a meeting-free day is to talk with your manager and get them on board. You can start with blackout periods if your manager is concerned and then move up to no-meeting days. Once you have a few blackout periods in your calendar for focus time, it is an easier sell to consolidate them into a single no-meeting day.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Next, communicate with others about your availability on no meeting days. Have a plan for how or when you are available in case of work emergencies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: The final step is to ensure that no meetings can be scheduled on your nominated no-meeting day. Create a recurring all-day event on your calendar that blocks others from scheduling time with you.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;: Once you are happy with the trial, roll it out to the rest of the team.&lt;/p&gt;
-&lt;h2 id="common-pitfalls"&gt;Common Pitfalls&lt;/h2&gt;
-&lt;h3 id="getting-the-whole-team-to-buy-in-from-the-start"&gt;Getting the whole team to buy-in from the start&lt;/h3&gt;
-&lt;p&gt;People make a big mistake and set themselves up for failure because they try to get the whole team to agree to try it from the outset. It's not hard to make space for a no-meeting day for a single person.&lt;/p&gt;
-&lt;h3 id="blocking-the-calendar-one-week-at-a-time"&gt;Blocking the calendar one week at a time&lt;/h3&gt;
-&lt;p&gt;Making it recurring and not just a week by week addition makes maintaining the meeting free schedule easier.&lt;/p&gt;
-&lt;p&gt;I prefer to set up a regular &lt;strong&gt;Out of Office&lt;/strong&gt; event with a title of &lt;strong&gt;&lt;em&gt;Focus Time&lt;/em&gt;&lt;/strong&gt; and a message stating - &lt;em&gt;I am open to urgent meetings. Please slack me to get me to accept&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="be-flexible"&gt;Be Flexible&lt;/h2&gt;
-&lt;p&gt;Meetings involve more than one person. Sometimes, we have to take a meeting on our no-meeting day because that is the only day someone else is available, or there is an urgent fire that we need to put out.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Make exceptions when necessary but try hard to avoid them&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Having a no-meeting day does not mean that we don't get together with our co-workers or have spontaneous conversations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Feel free to have them; Just don't schedule it!&lt;/strong&gt;&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to make code reviews stress free</title>
-			<link>https://www.ankursheel.com/blog/make-code-reviews-stress-free</link>
-			<description>Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/make-code-reviews-stress-free/cover.jpg" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/make-code-reviews-stress-free</guid>
-			<pubDate>Sun, 25 Jul 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the First AML Product &amp;amp; Engineering blog. You can read the original version &lt;a href="https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Code reviews can be stressful for both parties. The person being reviewed puts their code out there for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.&lt;/p&gt;
-&lt;p&gt;There is a lot of advice on the interwebs about how to conduct effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.&lt;/p&gt;
-&lt;p&gt;However, computers are still not good at some things, like suggesting good variable names. By only talking about blockers in a code review, we can lose out on some good suggestions. It's a classic case of throwing out the baby with the bathwater.&lt;/p&gt;
-&lt;h2 id="inspiration"&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;I thought there was no good solution to this problem for a long time, but then I came across an article on &lt;a href="https://www.netlify.com/blog/2020/03/05/feedback-ladders-how-we-encode-code-reviews-at-netlify/"&gt;Feedback Ladders&lt;/a&gt; by the team at Netlify.&lt;/p&gt;
-&lt;p&gt;The gist of the article is that Nelify uses metaphorical names describing the inconveniences of living in a house still being built in their code reviews. This encodes the severity of the feedback.&lt;/p&gt;
-&lt;h2 id="lets-start-adapting"&gt;Let's start adapting&lt;/h2&gt;
-&lt;p&gt;Netlify has 5 different levels - mountain, boulder, pebble, sand and dust.&lt;/p&gt;
-&lt;p&gt;I think this is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. I feel it's worth adding one more to indicate that it's a clarifying question asked by the reviewer.&lt;/p&gt;
-&lt;p&gt;This is an improvement over the traditional review, but there is still a problem. Text is difficult to parse.&lt;/p&gt;
-&lt;p&gt;The solution is easy — Let's use emoji.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;We can use whatever emojis we like, but our platform of choice must support the emojis that we decide to use.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="some-options-that-work-in-github-for-inspiration"&gt;Some options that work in Github for inspiration&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Vehicles&lt;/strong&gt; 🚑 [ambulance], 🚗 [car], 🚲 [cycle], ⛽ [fuelpump]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Animals&lt;/strong&gt; 🐘 [elephant], 🐑 [sheep], 🐜 [ant], ❓ [question]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Shapes&lt;/strong&gt; 🔴 [circle], 🔶 [diamond], 💚 [heart], ❓[question]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="what-level-to-use-when"&gt;What level to use when&lt;/h2&gt;
-&lt;p&gt;Let's use Vehicles as an example and see what the different levels indicate.&lt;/p&gt;
-&lt;h3 id="blocker"&gt;🚑 Blocker&lt;/h3&gt;
-&lt;p&gt;The Pull Request cannot be merged till the issue is addressed. Examples would be where the solution doesn't fix the issue or has unintended consequences or missing tests.&lt;/p&gt;
-&lt;h3 id="non-blocking-but-essential"&gt;🚗 Non-Blocking but essential&lt;/h3&gt;
-&lt;p&gt;The Pull Request can be merged, but the comment should be addressed in a future PR. Examples of this would be addressing tech debt or enhancements.&lt;/p&gt;
-&lt;h3 id="take-it-or-leave-it"&gt;🚲 Take it or leave it&lt;/h3&gt;
-&lt;p&gt;All those other things are suggestions or a personal opinion and might be considered nitpicking. Examples of this would be suggesting a different variable name.&lt;/p&gt;
-&lt;h3 id="a-clarifying-question"&gt;⛽ A clarifying question&lt;/h3&gt;
-&lt;p&gt;It can be used to get more context on the pull request changes or understand the domain.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Code reviews can incite endless debates between developers. Using emojis to encode the severity of the feedback can help avoid this problem.&lt;/p&gt;
-&lt;p&gt;As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.&lt;/p&gt;
-&lt;p&gt;If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.&lt;/p&gt;
-&lt;p&gt;I am always curious to know how other people have adapted this in their workflow so let me know what you did :)&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 	</channel>

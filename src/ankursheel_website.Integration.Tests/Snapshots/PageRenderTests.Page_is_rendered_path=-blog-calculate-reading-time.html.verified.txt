@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to calculate reading time</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -186,7 +186,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Now, we can calculate the reading time and fill in the ReadingTimeData.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> ReadingTimeData <span class="hljs-title">GetReadingTime</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> content, <span class="hljs-keyword">int</span> wordsPerMinute</span>)
 </span>{
-    <span class="hljs-keyword">const</span> Regex SpacesRegex = <span class="hljs-keyword">new</span> Regex(<span class="hljs-string">"\S+"</span>, RegexOptions.Multiline);
+    <span class="hljs-keyword">const</span> Regex SpacesRegex = <span class="hljs-keyword">new</span> Regex(&quot;\S+&quot;, RegexOptions.Multiline);
     <span class="hljs-keyword">var</span> words = SpacesRegex.Matches(content).Count;
 
     <span class="hljs-keyword">var</span> minutes = words / WordsPerMinute;

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 41</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Conversational copy is powerful, but it is hard to get right. <strong>Harry Dry</strong> has a <a href="https://marketingexamples.com/copywriting/conversational/">guide to conversational copy</a> that can help.</p>
 <p>The conventional advice encourages everyone to become a manager. <strong>Charity Majors</strong> highlights the [<a href="https://charity.wtf/2019/09/08/reasons-not-to-be-a-manager/">17 reasons why you wouldn't want to become a manager</a> even in a healthy organization.</p>
 <p>Building a good culture is hard. In this post, <strong>Mike Crittenden</strong> talks about what I think is the biggest mistake organizations make. Basically, r<a href="https://critter.blog/2020/10/15/the-hero-culture-conundrum/">eward the people who don't live the culture even though it looks like the latter directly benefits the business</a>.</p>
@@ -165,7 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Even though low code/no code won't replace programmers, it is the future because it makes technology more accessible to everyone. <strong>Rex Woodbury</strong> takes a look at the <a href="https://digitalnative.substack.com/p/roblox-airtable-and-the-building">no-code movement and the rise of creator platforms like Roblox</a>.</p>
 <p>In case you missed it, I wrote a book summary of <a href="https://www.discoveriesinbookland.com/blog/death-meeting">Death by Meeting</a> by Patrick M. Lencioni.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

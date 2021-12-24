@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Graceland, Tennessee</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,31 +158,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>For anyone who has grown up listening to Elvis, visiting his house turned museum is a cant miss. Since, it was just a small detour from our original itinerary and my mom is a big fan of Elvis, we ended up at Graceland.</p>
+<p>For anyone who has grown up listening to Elvis, visiting his house turned museum is a cant miss. Since, it was just a small detour from our original itinerary and my mom is a big fan of Elvis, we ended up at Graceland.</p>
 <p>The sheer opulence of the place is unbelievable. Here are some of the snapshots of <em><strong>The King's</strong></em> palace.</p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-21.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-graceland-tennessee/Graceland-21.jpg" alt="" /></p>
 <p><em><strong>Thank you, Thank you very much</strong></em></p>
-</body></html>
+
 
 
 

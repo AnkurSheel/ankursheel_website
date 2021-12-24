@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 17</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Do you need the project that you are planning on using? <a href="https://github.com/you-dont-need/You-Dont-Need.com">You Dont Need</a> has alternatives to some of the more popular projects. It's my goto when I am looking at code samples and want to avoid <em>lodash</em> or <em>jquery</em>.</p>
 <p>Overlapping images is very popular in web design. <strong>Briana Camp</strong> shows <a href="https://bricampgomez.com/blog/how-to-overlap-images-in-css/">2 approaches for achieving overlapping images without content overlap</a>.</p>
 <p>React Hooks are a great way to make your react code reusable. <strong>Nathan Amick</strong> shows how to take a simple stopwatch component and <a href="https://dev.to/namick/why-you-should-be-writing-your-own-react-hooks-23an">extract the logic into hooks</a> to reuse the code to make a timer component.</p>
-<p>Can we do better than saying “Right tool for the job”? <strong>Shawn Wang</strong> tells us <a href="https://www.swyx.io/writing/hammers/">Why "Right Tool for Most Jobs" beats "Right Tool for the Job"</a>.</p>
+<p>Can we do better than saying “Right tool for the job”? <strong>Shawn Wang</strong> tells us <a href="https://www.swyx.io/writing/hammers/">Why &quot;Right Tool for Most Jobs&quot; beats &quot;Right Tool for the Job&quot;</a>.</p>
 <p>Should you work at a tech giant or a startup? <strong>Garry Tan</strong> <a href="https://blog.garrytan.com/working-for-microsoft-cost-me-200-dollars-million">outlines the pros and cons of both</a>.</p>
 <p>Tired of relying on the mouse for simple tasks in VS Code. <strong>Waylon Walker</strong> has a <a href="https://waylonwalker.com/blog/keyboard-driven-vscode/">handy set of keybindings</a> which make vs code keyboard friendly.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

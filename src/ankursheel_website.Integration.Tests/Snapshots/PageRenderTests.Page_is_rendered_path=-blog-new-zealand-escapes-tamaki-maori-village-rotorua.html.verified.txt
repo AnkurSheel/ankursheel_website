@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Tamaki Maori Village, Rotorua</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,33 +158,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>There is much more to Maori culture than watching the All Blacks do the Haka before a rugby match. Maori's are the original natives of New Zealand, or as they call it, Aotearoa.</p>
+<p>There is much more to Maori culture than watching the All Blacks do the Haka before a rugby match. Maori's are the original natives of New Zealand, or as they call it, Aotearoa.</p>
 <p>What better way to get an understanding of the Maori Culture than at a traditional Maori Village. The one we decided to go to was the Tamaki Maori Village in Rotorua.</p>
 <p>The evening started with a bus pickup from our hotel. Then we headed to the information centre and grabbed ourselves an information sheet. The information sheets were printed in a range of languages. Soon after, we were on our way to the village.</p>
 <p>We turned our bus into an imaginary Waka (Maori boat) for a brief period. Our driver told us that we needed to pick a Chief of our bus. Nobody was very keen to be the Chief of our bus, but I was determined not to be selected.</p>
 <p>We left the bus and followed the crowd towards a shelter, where all the other tourists were already gathered.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-1.jpg" alt="Maori_Village-1"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-1.jpg" alt="Maori_Village-1" /></p>
 <p>We were all looking at an opening in front of us, with some greenery and wooden structures to our left. We were all told the importance of standing still and not laughing during the ceremony. After some time, we heard the wails of the Maori's getting louder and closer. The idea of these ceremonies was initially to welcome new tribes.</p>
 <p>The warriors came out one by one chanting with weapons drawn, eyes as round as saucers and tongues darting in and out, as they demonstrated to their guests the fierceness of their spirits.</p>
 <p>The ceremony lasted around 10/15 minutes. This included one of the Chiefs being chosen to accept a peace offering (a branch).</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-9.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-9.jpg" alt="" /></p>
 <p>We walked through one of the 3 entrances to the village and found that they led to the same path. We soon found ourselves in one of the groups being ushered to different village areas to learn more about this culture and gain some hands-on experience at the different whares (houses).</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-14.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-14.jpg" alt="" /></p>
 <p>One of the interesting ones was with the sticks. Two ladies told us the importance of the sticks and showed us a routine of throwing them to each other and catching them. Next, we had larger sticks that some audience members had to catch in a circle.</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/EkWa5ovphs4" title="Games at Maori Village" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
 <p>The other activity that I found interesting in the village was a brief learning of the Haka for all the men that wanted to. I tried and proved that I'm no dancer.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-10.jpg" alt="Maori_Village-10"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-tamaki-maori-village-rotorua/Maori_Village-10.jpg" alt="Maori_Village-10" /></p>
 <p>Finally, we all met back up near the hangi, a traditional Maori oven used for cooking the evening meal. While the food cooked, We were all shepherded into a Maori version of a theatre where we were treated to a 30-minute performance.</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/4WRIJ6bN7Ps" title="Performance at Maori Village" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
@@ -195,7 +195,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Our driver decided it would be a good idea to sing songs from your respective countries on the journey back home. Gunjan and I are no singers, and we were glad that we reached our hotel before our turn came. Although, it did seem as if all the others were having fun.</p>
 <p>I was impressed with the Maori Village Experience. The setup, along with the knowledge of the staff, makes for a great experience. The value for money is excellent.</p>
 <p>Have you been to a Maori Village? How was your experience? Let me know.</p>
-</body></html>
+
 
 
 

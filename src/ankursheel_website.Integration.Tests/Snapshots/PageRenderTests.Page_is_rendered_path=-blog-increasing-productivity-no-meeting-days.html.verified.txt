@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Increasing Productivity with No-Meeting Days</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,9 +159,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the original version <a href="https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n">here</a>.</em></p>
+<p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the original version <a href="https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n">here</a>.</em></p>
 <blockquote>
-<p>Have you ever been in a position where you are in meetings during the day, and then you code at night just to feel that you are getting things done? I know I have."</p>
+<p>Have you ever been in a position where you are in meetings during the day, and then you code at night just to feel that you are getting things done? I know I have.&quot;</p>
 </blockquote>
 <p>In 2009, Paul Graham wrote an article about the <a href="http://www.paulgraham.com/makersschedule.html">maker vs manager schedule</a>. It articulates that meetings are disastrous when we are on the maker's schedule. When we attend many meetings, it is tough to focus on the task and get things done. In my case, even a single meeting can blow my whole afternoon.</p>
 <p>Most of us have two workdays in today's world - one on the manager's schedule and the other on the maker's schedule.</p>
@@ -201,7 +201,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </blockquote>
 <p>Having a no-meeting day does not mean that we don't get together with our co-workers or have spontaneous conversations.</p>
 <p><strong>Feel free to have them; Just don't schedule it!</strong></p>
-</body></html>
+
 
 
 

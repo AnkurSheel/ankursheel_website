@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">What&#x27;s in a team name</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,13 +157,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<!-- https://unsplash.com/photos/ocAo7MwGfHY --><html><head></head><body><p>Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.</p>
+<!-- https://unsplash.com/photos/ocAo7MwGfHY -->
+<p>Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.</p>
 <p>This will be a controversial opinion, but I think this is possibly the worst way to decide team names.</p>
 <h2 id="a-common-theme">A common theme</h2>
 <p>A popular reason that people think using a common theme for all team names is a good idea is that they feel it's inclusive.</p>
 <p>But, it's tough to find a genuinely inclusive theme. Even something innocuous like superheroes can make someone feel excluded if they haven't grown up watching superhero cartoons.</p>
 <p>So you decide to go with something <del>boring</del> simple like colours.</p>
-<quote quote="Surely, no one can take offence in that, right?">
+<Quote quote="Surely, no one can take offence in that, right?" />
 <p>Not so fast, my young padawan. You forgot to consider colour blind people.</p>
 <p>The other reason that frequently comes up is that a common theme makes it easier for people to remember. For the sake of this discussion, let's assume that either colours or superheroes are an inclusive-enough theme for you, and you have two teams. But do the people in your organization know whether they need to talk to the <strong>Superman/Pink</strong> team or the <strong>WonderWoman/Blue</strong> team. More likely, they are saying.</p>
 <blockquote>
@@ -173,18 +174,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>What if you have ten teams? No common theme can save you.</p>
 <p>I think this tweet sums it up nicely.</p>
 <blockquote>
-<p>I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheros, so I had to learn it. Like there weren't enough other things to learn."</p>
+<p>I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheros, so I had to learn it. Like there weren't enough other things to learn.&quot;</p>
 <p><cite>Vladimir Sapronov</cite></p>
 </blockquote>
 <p><em><a href="https://twitter.com/v_sapronov/status/1440147633155166210">Tweet link</a></em></p>
 <p>If you want to have team names with no connection to the product, I have a controversial recommendation for you. Let them come about from an inside joke, a conversation or a common identity that the team members can ascribe to.</p>
 <h2 id="an-inside-joke">An inside joke</h2>
-<quote quote="Jelled teams are usually marked by a strong sense of identity" author="Peopleware">
+<Quote quote="Jelled teams are usually marked by a strong sense of identity" author="Peopleware" />
 <p>Having a team name based on an inside joke gives it a unique identity. It's the uniqueness between the names and what that difference signifies that binds one identity to it.</p>
 <p>It gives this feeling of being a part of an elite entity.</p>
-<p>In his similarly titled post <a href="https://critter.blog/2020/09/02/whats-in-a-team-name/">What’s in a team name?</a>, Mike gives an excellent example of how hard it would be to rally around "the Vikings" if they were called the "The Minnesota NFL Team".</p>
+<p>In his similarly titled post <a href="https://critter.blog/2020/09/02/whats-in-a-team-name/">What’s in a team name?</a>, Mike gives an excellent example of how hard it would be to rally around &quot;the Vikings&quot; if they were called the &quot;The Minnesota NFL Team&quot;.</p>
 <p>Now, before you go all up in arms and say,</p>
-<quote quote="But, Ankur, having an inside joke for a team name doesn't solve for any of the problems you highlighted before">
+<Quote quote="But, Ankur, having an inside joke for a team name doesn't solve for any of the problems you highlighted before" />
 <p>I kinda agree.</p>
 <p>A team name based on an inside joke is not inclusive by nature to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.</p>
 <p>Whether it's easier to remember or not, that's debatable. But it can certainly be more memorable, and memorable things get remembered faster. After all, would you be able to forget a name like <a href="https://twitter.com/catswetel/status/1440039225156538374">The Applesauce Top Hat Brigade</a>? It's a name I am not going to forget anytime soon.</p>
@@ -205,7 +206,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="conclusion">Conclusion</h2>
 <p>It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.</p>
 <p>Having said that, you should probably have some guidelines to weed out the truly offensive.</p>
-</quote></quote></quote></body></html>
+
 
 
 

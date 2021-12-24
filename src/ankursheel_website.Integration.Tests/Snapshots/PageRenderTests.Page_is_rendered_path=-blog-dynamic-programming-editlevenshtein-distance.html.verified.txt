@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Solve Edit(Levenshtein) distance with Dynamic Programming</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -164,10 +164,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>One can replace existing characters in the first string with characters from the second string, delete existing characters or insert new characters into the first string.</p>
 <p><strong>Examples:</strong></p>
 <ol>
-<li><p>Edit Distance for input sequences <em>"sunday"</em> and <em>"saturday"</em> is 3. The last three and first characters are the same. We need to convert <em>'un'</em> to <em>'atur'</em>.</p>
+<li><p>Edit Distance for input sequences <em>&quot;sunday&quot;</em> and <em>&quot;saturday&quot;</em> is 3. The last three and first characters are the same. We need to convert <em>'un'</em> to <em>'atur'</em>.</p>
 <p>This can be achieved by inserting character <em>'a'</em>, inserting character 't' and replacing character <em>'n'</em> with character <em>'r'</em></p>
 </li>
-<li><p>Edit Distance for input sequences <em>"cat"</em> and <em>"cars"</em> is 2. The first 2 characters are the same. We need to convert <em>'t'</em> to <em>'rs'</em>.</p>
+<li><p>Edit Distance for input sequences <em>&quot;cat&quot;</em> and <em>&quot;cars&quot;</em> is 2. The first 2 characters are the same. We need to convert <em>'t'</em> to <em>'rs'</em>.</p>
 <p>This can be achieved by inserting character <em>'r'</em> and replacing character <em>'t'</em> with character <em>'s'</em>.</p>
 </li>
 </ol>
@@ -315,14 +315,14 @@ EditDistance(i, j) = 1 + min (
     <span class="hljs-built_in">stringstream</span> steps;
     <span class="hljs-built_in">stringstream</span> currentString;
 
-    steps &lt;&lt; <span class="hljs-string">"Number Of Operations : "</span> &lt;&lt; numberOfOperations &lt;&lt; <span class="hljs-built_in">endl</span>;
+    steps &lt;&lt; &quot;Number Of Operations : &quot; &lt;&lt; numberOfOperations &lt;&lt; <span class="hljs-built_in">endl</span>;
 
     <span class="hljs-keyword">if</span> (numberOfOperations == <span class="hljs-number">0</span>)
     {
         <span class="hljs-keyword">return</span> steps.str();
     }
 
-    steps &lt;&lt; <span class="hljs-string">"Starting String : "</span> &lt;&lt; first &lt;&lt; <span class="hljs-built_in">endl</span>;
+    steps &lt;&lt; &quot;Starting String : &quot; &lt;&lt; first &lt;&lt; <span class="hljs-built_in">endl</span>;
 
     <span class="hljs-keyword">while</span> (index1 &lt; first.length() &amp;&amp; index2 &lt; second.length())
     {
@@ -334,36 +334,36 @@ EditDistance(i, j) = 1 + min (
         }
         <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">1</span>)  <span class="hljs-comment">// insert</span>
         {
-            steps &lt;&lt; <span class="hljs-string">"Insert character "</span> &lt;&lt; second[index2] &lt;&lt; <span class="hljs-string">" : Current String "</span> &lt;&lt; currentString.str();
+            steps &lt;&lt; &quot;Insert character &quot; &lt;&lt; second[index2] &lt;&lt; &quot; : Current String &quot; &lt;&lt; currentString.str();
             currentString &lt;&lt; second[index2];
-            steps &lt;&lt; <span class="hljs-string">" : Updated String "</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
             index2 = index2 + <span class="hljs-number">1</span>;
         }
         <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">2</span>)  <span class="hljs-comment">// delete</span>
         {
             currentString &lt;&lt; first[index1];
-            steps &lt;&lt; <span class="hljs-string">"Delete character "</span> &lt;&lt; first[index1] &lt;&lt; <span class="hljs-string">" : Current String "</span> &lt;&lt; currentString.str();
+            steps &lt;&lt; &quot;Delete character &quot; &lt;&lt; first[index1] &lt;&lt; &quot; : Current String &quot; &lt;&lt; currentString.str();
             currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
-            currentString &lt;&lt; <span class="hljs-string">" "</span>;
-            steps &lt;&lt; <span class="hljs-string">" : Updated String "</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            currentString &lt;&lt; &quot; &quot;;
+            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
             currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
             index1 = index1 + <span class="hljs-number">1</span>;
         }
         <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">3</span>)  <span class="hljs-comment">// replace</span>
         {
-            steps &lt;&lt; <span class="hljs-string">"Replace character "</span> &lt;&lt; first[index1] &lt;&lt; <span class="hljs-string">" with character "</span> &lt;&lt; second[index2] &lt;&lt; <span class="hljs-string">" : Current String "</span>;
+            steps &lt;&lt; &quot;Replace character &quot; &lt;&lt; first[index1] &lt;&lt; &quot; with character &quot; &lt;&lt; second[index2] &lt;&lt; &quot; : Current String &quot;;
             currentString &lt;&lt; first[index1];
             steps &lt;&lt; currentString.str();
             currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
             currentString &lt;&lt; second[index2];
-            steps &lt;&lt; <span class="hljs-string">" : Updated String "</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
             index1 = index1 + <span class="hljs-number">1</span>;
             index2 = index2 + <span class="hljs-number">1</span>;
         }
     }
     <span class="hljs-keyword">if</span> (second.length() - index2 &gt; <span class="hljs-number">0</span>)
     {
-        steps &lt;&lt; <span class="hljs-string">"Current String \""</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-string">"\" : Insert remaining "</span> &lt;&lt; second.length() - index2 &lt;&lt; <span class="hljs-string">" characters from the second string at position "</span> &lt;&lt; index2 &lt;&lt; <span class="hljs-built_in">endl</span>;
+        steps &lt;&lt; &quot;Current String \&quot;&quot; &lt;&lt; currentString.str() &lt;&lt; &quot;\&quot; : Insert remaining &quot; &lt;&lt; second.length() - index2 &lt;&lt; &quot; characters from the second <span class="hljs-built_in">string</span> at position &quot; &lt;&lt; index2 &lt;&lt; <span class="hljs-built_in">endl</span>;
     }
     <span class="hljs-keyword">if</span> (first.length() - index1 &gt; <span class="hljs-number">0</span>)
     {
@@ -371,9 +371,9 @@ EditDistance(i, j) = 1 + min (
         {
             currentString &lt;&lt; first;
         }
-        steps &lt;&lt; <span class="hljs-string">"Current String \""</span> &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-string">"\" : Delete remaining "</span> &lt;&lt; first.length() - index1 &lt;&lt; <span class="hljs-string">" characters from position "</span> &lt;&lt; index1 &lt;&lt; <span class="hljs-built_in">endl</span>;
+        steps &lt;&lt; &quot;Current String \&quot;&quot; &lt;&lt; currentString.str() &lt;&lt; &quot;\&quot; : Delete remaining &quot; &lt;&lt; first.length() - index1 &lt;&lt; &quot; characters from position &quot; &lt;&lt; index1 &lt;&lt; <span class="hljs-built_in">endl</span>;
     }
-    steps &lt;&lt; <span class="hljs-string">"Final String : "</span> &lt;&lt; second &lt;&lt; <span class="hljs-built_in">endl</span>;
+    steps &lt;&lt; &quot;Final String : &quot; &lt;&lt; second &lt;&lt; <span class="hljs-built_in">endl</span>;
     <span class="hljs-keyword">return</span> steps.str();
 }
 </code></pre>

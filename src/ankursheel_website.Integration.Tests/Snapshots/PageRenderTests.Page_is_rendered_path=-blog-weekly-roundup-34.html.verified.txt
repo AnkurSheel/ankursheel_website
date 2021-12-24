@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 34</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Webmention is a way of letting a website know it has been mentioned somewhere, by someone, in some way. <strong>Atila Fassina</strong> has a <a href="https://css-tricks.com/jumping-into-webmentions-with-nextjs-or-not/">tutorial on adding the feature your wesbite</a>. It's based on NextJs, but I think it can easily be adapted to a site built with Gatsby. Now, I just need to get the time to add it to this one.</p>
 <p>If you are wondering <a href="https://dev.to/harperdb/database-architectures-use-cases-explained-5711">what database architecture you should use</a> for your next application, <strong>Margo McCabe</strong> has an article that helps you determine just that.</p>
 <p><strong>Nick Maggiulli</strong> explains <a href="https://ofdollarsanddata.com/why-is-gold-valuable/">why gold is so valuable even though it is intrinsically worthless</a>. He also talks about who should (or not) invest in gold.</p>
 <p>Giving interviews is hard. <strong>Julia Evans</strong> talks about the importance of <a href="https://jvns.ca/blog/2020/06/30/tell-candidates-what-to-expect-from-your-job-interviews/">telling candidates what to expect from the job interview</a>.</p>
 <p>Being Indie meant being bootstrapped. <strong>Courtland Allen</strong> explains how it has become increasingly common to <a href="https://www.indiehackers.com/post/indie-doesn-t-mean-bootstrapped-anymore-a88300c012">have investors and remain Indie</a>. Although, I think that Indie as a term is overused. Even in the games industry, you can call yourself Indie as long as you don't have a multi-million dollar budget. To stay close to what I feel the term signified initially, we should probably use self-funded instead.</p>
-<p><strong>Jaana Dogan</strong> shares a few <a href="https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78">insights for application developers who don't work a lot with databases</a>.</p>
+<p><strong>Jaana Dogan</strong> shares a few <a href="https://medium.com/&#64;&#64;rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78">insights for application developers who don't work a lot with databases</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 20</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>To pair or not to pair? Everyone has heard about Pair Programming, but not everyone adopts it. <strong>Birgitta Böckeler</strong> and <strong>Nina Siessegger</strong> share why they think <a href="https://martinfowler.com/articles/on-pair-programming.html">Pair Programming is worth it</a>.</p>
-<p>Would you want to build a business that makes you miserable? I am going to guess "No". <strong>Courtland Allen</strong> shares some <a href="https://www.indiehackers.com/post/questions-to-ask-yourself-before-starting-9813f617b3">questions you should ask yourself before starting</a>.</p>
+<p>Would you want to build a business that makes you miserable? I am going to guess &quot;No&quot;. <strong>Courtland Allen</strong> shares some <a href="https://www.indiehackers.com/post/questions-to-ask-yourself-before-starting-9813f617b3">questions you should ask yourself before starting</a>.</p>
 <p>How do you decide whether to build it yourself or pay for a service? The team at <strong>Baremetrics</strong> has a <a href="https://baremetrics.com/build-vs-buy">calculator</a> that can help you answer this question.</p>
 <p>I have always wondered why in the Indian culture, the ashes of the dead are immersed in rivers after cremation. <strong>Sadhguru</strong> explains the <a href="https://isha.sadhguru.org/global/en/wisdom/article/immerse-ashes-dead-ganga">significance of spreading the ashes in the river</a>.</p>
 <p>Can you work so hard that your beard falls off? <strong>Jason Lengstorf</strong> talks about the time he joined the Overkill Cult, how you can tell if <a href="https://lengstorf.com/overkill-cult/">you are in the cult</a> and how you can escape it.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

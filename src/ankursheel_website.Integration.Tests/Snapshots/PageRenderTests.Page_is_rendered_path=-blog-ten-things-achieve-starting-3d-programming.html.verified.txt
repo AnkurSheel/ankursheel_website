@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">10 things to do when getting started with 3D programming</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>I recently came across an interesting article that gave an excellent guideline to learn the basics of 3D programming. This list got me thinking about how I would go about understanding 3D programming. Even though my list is similar to the list in the article, I would go about it differently. So without further ado, here's my list to achieve basic proficiency in 3D programming.</p>
+<p>I recently came across an interesting article that gave an excellent guideline to learn the basics of 3D programming. This list got me thinking about how I would go about understanding 3D programming. Even though my list is similar to the list in the article, I would go about it differently. So without further ado, here's my list to achieve basic proficiency in 3D programming.</p>
 <ul>
 <li>Build your own custom graphic initialization function.
 <ul>
@@ -192,7 +192,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <p>Hopefully, this will help people get started with 3D programming.</p>
 <p>You can read the original article <del>here</del>.</p>
-</body></html>
+
 
 
 

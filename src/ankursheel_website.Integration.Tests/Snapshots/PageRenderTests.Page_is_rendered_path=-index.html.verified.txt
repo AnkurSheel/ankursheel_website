@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <p>I go down rabbit holes and blog about them.</p>
 
 <div class="flex flex-col gap-10 lg:grid lg:overflow-hidden lg:grid-cols-2 lg:grid-rows-1 lg:gap-2">

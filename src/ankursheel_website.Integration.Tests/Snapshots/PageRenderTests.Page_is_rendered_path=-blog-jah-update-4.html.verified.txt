@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">JAH Update 4</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,16 +157,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>You can see the all the related updates <a href="/tags/jah">here</a></p>
+<p>You can see the all the related updates <a href="/tags/jah">here</a></p>
 <h2 id="v-0.0.6">v 0.0.6</h2>
 <ul>
 <li>Show a custom page on error.</li>
 </ul>
 <h2 id="screenshots">Screenshots</h2>
-<p><img src="/assets/images/posts/jah-update-4/jah_update4_1.jpg" alt="Error Page"></p>
+<p><img src="/assets/images/posts/jah-update-4/jah_update4_1.jpg" alt="Error Page" /></p>
 <h2 id="next-up">Next up</h2>
 <p>In the next update, we will add support for different users and a login page.</p>
-</body></html>
+
 
 
 

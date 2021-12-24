@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Meteor Crater, Arizona</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,13 +158,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>From the red rock landscape of Sedona, we next visit the Meteor Crater aka Barringer Crater, a few miles east of Flagstaff.</p>
-<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-1.jpg" alt="Mountains"></p>
-<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-2.jpg" alt="American Astronaut Wall of Fame"></p>
-<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-3.jpg" alt="Crater Rim"></p>
-<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-4.jpg" alt="Crater Rim"></p>
-<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-5.jpg" alt="Airplane Wreckage"></p>
-</body></html>
+<p>From the red rock landscape of Sedona, we next visit the Meteor Crater aka Barringer Crater, a few miles east of Flagstaff.</p>
+<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-1.jpg" alt="Mountains" /></p>
+<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-2.jpg" alt="American Astronaut Wall of Fame" /></p>
+<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-3.jpg" alt="Crater Rim" /></p>
+<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-4.jpg" alt="Crater Rim" /></p>
+<p><img src="/assets/images/posts/photo-essay-meteor-crater-arizona/MeteorCrater-5.jpg" alt="Airplane Wreckage" /></p>
+
 
 
 

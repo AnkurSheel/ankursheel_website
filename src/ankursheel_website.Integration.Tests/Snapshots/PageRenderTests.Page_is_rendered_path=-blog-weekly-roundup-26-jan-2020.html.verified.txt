@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 21</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Growth.Design</strong> has a new case study. This time about the success of the <a href="https://growth.design/case-studies/morning-brew-newsletter-retention/">Morning Brew newsletter</a>.</p>
 <p>Would years of failure stop you from pursuing your dream business? <a href="https://convertkit.com/creator-stories-courtland-allen">Courtland Allen's</a> story over at <strong>ConvertKit</strong> of how he built <a href="https://www.indiehackers.com/">Indiehackers</a> after years of rejections is truly inspiring.</p>
 <p>So you want to build a Data team at your company? <strong>Helen Anderson</strong> shares some of the <a href="https://dev.to/helenanders26/designing-the-data-team-2g54">questions to ask yourself before hiring</a>.</p>
 <p>With the increasing number of options in credit cards, how do you decide which type of card is right for you? <strong>Lars Lofgren</strong> discusses the <a href="https://www.iwillteachyoutoberich.com/blog/types-of-credit-cards/">pros and cons between them all</a>.</p>
 <p>How do browsers resolve competing CSS styles? <strong>Amelia Wattenberger</strong> looks at the <a href="https://wattenberger.com/blog/css-cascade">different tiers of the Cascade</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

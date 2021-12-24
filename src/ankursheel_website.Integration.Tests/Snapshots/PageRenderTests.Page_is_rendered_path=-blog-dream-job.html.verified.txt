@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">What is my idea of a dream job</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>It's a goal that everyone should have. But, what makes a job the coveted but elusive dream job?</p>
+<p>It's a goal that everyone should have. But, what makes a job the coveted but elusive dream job?</p>
 <p>For a long time, I thought that doing something you love automatically meant that you had a dream job. But as I have matured (now, that doesn't seem right ), I have realized that being passionate about the work is not enough to make any ole job <strong><em>the dream job</em></strong>. Don't get me wrong, passion is a crucial ingredient, but it's not the only one. If the job does not make you happy, no amount of passion will make it a dream job.</p>
 <p>The question now becomes, what does my dream job/company look like? After all, if I don't know what my dream job looks like, how do I know if I am progressing towards it. More importantly, how do I compare different opportunities and differentiate between good and bad ones?</p>
 <p>Let us tackle the makeup of my dream job and see what it looks like.</p>
@@ -179,7 +179,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p>Potential to discuss ideas and be taken seriously on issues related to processes and company culture. <strong>4 points</strong></p>
 </li>
 </ul>
-<quote quote="Culture trumps everything else, every single time">
+<Quote quote="Culture trumps everything else, every single time" />
 <h2 id="compensation-and-benefits-37-points">Compensation and Benefits (37 points)</h2>
 <p>I would be lying if I said that money is not important to me. I need to feel that I am fairly compensated for my skills. It's also a good confidence booster to be making an above market rate salary. Benefits and perks are nice, but they don't pay the bills.</p>
 <p>Unfortunately, many companies feel that they can afford to pay less because they work on exciting challenges. This is especially prevalent in the games industry. The ideal company would not give a lowball offer when trying to hire me. After all, if I had to fight (actually let me be politically correct and say negotiate) to get what I deserve before I even joined the company, who's to say that I won't have to do it again at each review. More importantly, why would I work for a technology company that skimps on paying its most important assets (the programmers).</p>
@@ -259,7 +259,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p>Chris Greef for pointing out that the wording around the compensation points is ambiguous.</p>
 </li>
 </ul>
-</quote></body></html>
+
 
 
 

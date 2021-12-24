@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to use terraform to process SQS messages in a lambda</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,16 +158,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>In the last post, we saw <a href="handle-bounces-ses-terraform">how to create an SNS topic to publish the bounce notification to an SQS queue</a>. In this post, we will set up a lambda to process the available messages on the queue.</p>
+<p>In the last post, we saw <a href="handle-bounces-ses-terraform">how to create an SNS topic to publish the bounce notification to an SQS queue</a>. In this post, we will set up a lambda to process the available messages on the queue.</p>
 <h2 id="step-1-create-an-aws-lambda">Step 1: Create an AWS lambda</h2>
 <p>We will create the lambda function using <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function">Resource: aws_lambda_function</a>.</p>
-<pre><code class="language-hcl">resource "aws_lambda_function" "SESBouncesLambda" {
-  filename         = "./zips/lambda.zip"
-  function_name    = "SESBouncesLambda"
+<pre><code class="language-hcl">resource &quot;aws_lambda_function&quot; &quot;SESBouncesLambda&quot; {
+  filename         = &quot;./zips/lambda.zip&quot;
+  function_name    = &quot;SESBouncesLambda&quot;
   role             = aws_iam_role.ses_bounces_lambda_role.arn
-  handler          = "Lambda::Lambda.Function::FunctionHandler"
-  source_code_hash = filebase64sha256("./zips/lambda.zip")
-  runtime          = "dotnetcore3.1"
+  handler          = &quot;Lambda::Lambda.Function::FunctionHandler&quot;
+  source_code_hash = filebase64sha256(&quot;./zips/lambda.zip&quot;)
+  runtime          = &quot;dotnetcore3.1&quot;
 }
 </code></pre>
 <ul>
@@ -181,18 +181,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="step-2-create-an-iam-role-for-the-lambda">Step 2: Create an IAM role for the lambda</h2>
 <p>We will use <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document">Data Source: aws_iam_policy_document</a> to allow the lambda service to assume an IAM role to get temporary credentials.</p>
 <p>We will use <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role">Resource: aws_iam_role</a> to set the IAM role for the lambda.</p>
-<pre><code class="language-hcl">data "aws_iam_policy_document" "ses_bounces_lambda_role_iam_policy" {
+<pre><code class="language-hcl">data &quot;aws_iam_policy_document&quot; &quot;ses_bounces_lambda_role_iam_policy&quot; {
   statement {
-    actions = ["sts:AssumeRole"]
+    actions = [&quot;sts:AssumeRole&quot;]
     principals {
-      type        = "Service"
-      identifiers = ["lambda.amazonaws.com"]
+      type        = &quot;Service&quot;
+      identifiers = [&quot;lambda.amazonaws.com&quot;]
     }
   }
 }
 
-resource "aws_iam_role" "ses_bounces_lambda_role" {
-  name               = "SESBouncesLambdaRole"
+resource &quot;aws_iam_role&quot; &quot;ses_bounces_lambda_role&quot; {
+  name               = &quot;SESBouncesLambdaRole&quot;
   assume_role_policy = data.aws_iam_policy_document.ses_bounces_lambda_role_iam_policy.json
 }
 </code></pre>
@@ -203,9 +203,9 @@ resource "aws_iam_role" "ses_bounces_lambda_role" {
 </ul>
 <h2 id="step-3-give-the-lambda-access-to-read-messages-from-sqs-queues">Step 3: Give the lambda access to read messages from SQS queues</h2>
 <p>We will use <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment">Resource: aws_iam_role_policy_attachment</a> to attach an IAM policy to allow the lambda to read messages from the SQS queue.</p>
-<pre><code class="language-hcl">resource "aws_iam_role_policy_attachment" "lambda_sqs_role_policy" {
+<pre><code class="language-hcl">resource &quot;aws_iam_role_policy_attachment&quot; &quot;lambda_sqs_role_policy&quot; {
   role       = aws_iam_role.ses_bounces_lambda_role.name
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole"
+  policy_arn = &quot;arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole&quot;
 }
 </code></pre>
 <ul>
@@ -214,7 +214,7 @@ resource "aws_iam_role" "ses_bounces_lambda_role" {
 </ul>
 <h2 id="step-4-give-the-lambda-access-to-the-queue">Step 4: Give the lambda access to the queue</h2>
 <p>We will use <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_event_source_mapping">Resource: aws_lambda_event_source_mapping</a> to allow our lambda to get events from the SQS queue</p>
-<pre><code class="language-hcl">resource "aws_lambda_event_source_mapping" "event_source_mapping" {
+<pre><code class="language-hcl">resource &quot;aws_lambda_event_source_mapping&quot; &quot;event_source_mapping&quot; {
   event_source_arn = aws_sqs_queue.ses_bounces_queue.arn
   function_name    = aws_lambda_function.SESBouncesLambda.arn
 }
@@ -226,7 +226,7 @@ resource "aws_iam_role" "ses_bounces_lambda_role" {
 <h2 id="next-steps">Next Steps</h2>
 <p>You can see the <a href="https://github.com/AnkurSheel/ses-bounces">code here</a>.</p>
 <p>So far, we have configured AWS to publish bounce notifications to an SQS queue. In the next post, we will see how to write a lambda function to send a custom message to a Slack channel.</p>
-</body></html>
+
 
 
 

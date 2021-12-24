@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">The Beginning</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,11 +156,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Welcome to my blog. Over time, I hope to fill this space with travel and food-related posts, the status of my projects, and tutorials for some basic stuff.</p>
+<p>Welcome to my blog. Over time, I hope to fill this space with travel and food-related posts, the status of my projects, and tutorials for some basic stuff.</p>
 <p>I am currently working on a basic GameEngine that can be reused easily. I have presently reused variations of the engine for a Pong clone and an Asteroid clone. Currently, I am working on a BreakOut Clone. Needless to say, features are added in continuously.</p>
 <p>The first few tutorials will be cross-posted from my previous blog with minor updates to how the library looks right now.</p>
 <p>Tune in later for an update.</p>
-</body></html>
+
 
 
 

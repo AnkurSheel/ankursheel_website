@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 38</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>There are so <a href="https://www.davidsheff.com/jeff-bezos">many little gems in this 1999 interview of Jeff Bezos</a> on <strong>David Sheff</strong>'s blog.</p>
-<p>What is the difference between the Severity and Priority of bugs? Even though they are different, you can have different combinations, making it harder to decide which bug to fix. <strong>Dan Emmons</strong> <a href="https://medium.com/@dan.ryan.emmons/qa-severity-and-priority-guide-7bacf316db49">explains the different combinations in an obvious way</a>.</p>
+<p>What is the difference between the Severity and Priority of bugs? Even though they are different, you can have different combinations, making it harder to decide which bug to fix. <strong>Dan Emmons</strong> <a href="https://medium.com/&#64;&#64;dan.ryan.emmons/qa-severity-and-priority-guide-7bacf316db49">explains the different combinations in an obvious way</a>.</p>
 <p>Data seeding is critical for achieving isolated test runs. <strong>Viktor Slavchev</strong> walks us through the <a href="https://mrslavchev.com/2020/04/01/hindsight-lessons-about-automation-the-mastery-of-data-seeding/">multiple ways of setting up data for automated checks</a>.</p>
 <p>There are a lot of articles out there that say that we should take a mobile-first approach for our site or app. <strong>Matt Anderson</strong> shows a <a href="https://mattanddesign.com/dont-design-for-mobile/">few examples of where this categorisation starts to break and why we should look at device capabilities instead</a>.</p>
 <p>Even if people know what the right thing is, people will always choose the more convenient thing. <strong>Jason Lengstorf</strong> explains why we don't need to convince others that something is the right thing to do. We just need to <a href="https://lengstorf.com/right-thing-easy-thing/">make it easier to do the thing we want to be done than to do anything else</a>.</p>
 <p>Statistics are unhelpful without context. <strong>Robert Heaton</strong> <a href="https://robertheaton.com/2019/02/24/making-peace-with-simpsons-paradox/">dissolves some common examples of Simpson's paradox with better framing</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Why do I interview even when I am happy at my job?</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every year I dust off my resume and apply for a couple of jobs that look interesting.</p>
+<p>Every year I dust off my resume and apply for a couple of jobs that look interesting.</p>
 <p>Do I do that because conventional wisdom in the tech industry says that if you don't change jobs every 1-2 years, you lose money or is it because I am not happy at my current job? Sometimes that has been true, but most of the time, I have interviewed with other companies regardless.</p>
 <p>You might be wondering - Why do I put myself through the ordeal that is an interview?</p>
 <h2 id="humble-beginnings">Humble Beginnings</h2>
@@ -210,7 +210,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>If I had spoken to any of them when I was desperate for a job, I would have probably taken the offer and been extremely unhappy. Interviewing when there was no need helped me avoid that fate. It also narrows down the companies I can focus on if I ever have to look.</p>
 <h2 id="am-i-wasting-other-peoples-time-when-i-have-no-plans-to-quit">Am I wasting other peoples time when I have no plans to quit?</h2>
 <p>I don't think so. I always tell them that I’m happy at my current company. If they still want to continue with the process, they know that they will need to offer something exceptional for me to consider making a move. Even though so far, everyone has continued with the interview process, they can always stop.</p>
-</body></html>
+
 
 
 

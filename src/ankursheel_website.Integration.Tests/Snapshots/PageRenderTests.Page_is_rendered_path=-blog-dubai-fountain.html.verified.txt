@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Dubai Fountain</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>By the time we finished with Burj Khalifa and came back down, it was late evening. We decided to check out the promenade and another attraction at the Dubai Mall - The Dubai Fountain. At the risk of sounding like a commercial, Set in Burj Khalifa Lake, right outside The Dubai Mall on the Lower Ground Waterfront Promenade, is the world’s largest dancing fountain (the water spray shoots up to 50 stories). The fountain dances to the music of various artists. It was packed by the time we reached the promenade, and we could not find a place to rest our tired legs.</p>
+<p>By the time we finished with Burj Khalifa and came back down, it was late evening. We decided to check out the promenade and another attraction at the Dubai Mall - The Dubai Fountain. At the risk of sounding like a commercial, Set in Burj Khalifa Lake, right outside The Dubai Mall on the Lower Ground Waterfront Promenade, is the world’s largest dancing fountain (the water spray shoots up to 50 stories). The fountain dances to the music of various artists. It was packed by the time we reached the promenade, and we could not find a place to rest our tired legs.</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/O0jWcGCj-aA" title="Dubai Fountain" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
@@ -169,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <h2 id="where-should-you-standsit-to-get-the-best-view">Where should you stand/sit to get the best view?</h2>
 <p>When you come outside the Dubai Mall onto the promenade, start walking right till you cross the bridge/incline. Place yourself somewhere here so that you can view the entire width of the fountain. Another option is to sit in one of the surrounding coffee shops and enjoy the show over a cup of coffee.</p>
-</body></html>
+
 
 
 

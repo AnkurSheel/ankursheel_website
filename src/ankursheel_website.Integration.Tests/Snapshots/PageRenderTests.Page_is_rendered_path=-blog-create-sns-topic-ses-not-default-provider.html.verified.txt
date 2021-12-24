@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to create an SNS topic for SES in a different region with terraform</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,18 +158,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Let us assume that most of our infrastructure is in <em>ap-southeast-2 (Sydney)</em>. But, our Amazon Simple Email Service(SES) is set up in <em>us-west-2 (Oregon)</em>. We also want to create Amazon Simple Notification Service(SNS) topics, and Amazon Simple Queue Service (SQS) queues to handle bounce notifications.</p>
+<p>Let us assume that most of our infrastructure is in <em>ap-southeast-2 (Sydney)</em>. But, our Amazon Simple Email Service(SES) is set up in <em>us-west-2 (Oregon)</em>. We also want to create Amazon Simple Notification Service(SNS) topics, and Amazon Simple Queue Service (SQS) queues to handle bounce notifications.</p>
 <p>Since SES is in a different region, our SNS topics also need to be in that region. So how do we tell terraform to create the topics in the SES region?</p>
 <h2 id="solution">Solution</h2>
 <h3 id="step-1">Step 1</h3>
 <p>Create providers.</p>
-<pre><code class="language-hcl">provider "aws" {
-  region = "ap-southeast-2"
+<pre><code class="language-hcl">provider &quot;aws&quot; {
+  region = &quot;ap-southeast-2&quot;
 }
 
-provider "aws" {
-  region = "us-west-2"
-  alias  = "ses_aws"
+provider &quot;aws&quot; {
+  region = &quot;us-west-2&quot;
+  alias  = &quot;ses_aws&quot;
 }
 </code></pre>
 <ul>
@@ -179,19 +179,19 @@ provider "aws" {
 <h2 id="step-2">Step 2</h2>
 <p>For the resources we want to use the <em>us-west-2</em> region, we specify the <em>provider</em> parameter and set it equal to the <em>alias</em>.</p>
 <p>If a <em>provider</em> parameter is not specified, it will fall back to using the provider that doesn't have an alias.</p>
-<pre><code class="language-hcl">resource "aws_sqs_queue" "example-queue" {
-  name                      = "example_queue"
+<pre><code class="language-hcl">resource &quot;aws_sqs_queue&quot; &quot;example-queue&quot; {
+  name                      = &quot;example_queue&quot;
 }
 
-resource "aws_sns_topic" "example-topic" {
-  name     = "example_topic"
+resource &quot;aws_sns_topic&quot; &quot;example-topic&quot; {
+  name     = &quot;example_topic&quot;
   provider = aws.ses_aws
 }
 </code></pre>
 <p>In the above snippet, <em>example-queue</em> will be created in <em>ap-southeast-2</em> but, <em>example-topic</em> will be created in <em>us-west-2</em>.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>We can change the region by creating additional providers and specifying the <em>provider</em> parameter in a resource.</p>
-</body></html>
+
 
 
 

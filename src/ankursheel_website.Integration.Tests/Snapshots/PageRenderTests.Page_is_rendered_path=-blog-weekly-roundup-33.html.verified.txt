@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 33</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,15 +156,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
-<p><del>The build-vs-buy debate is interesting, and most tech companies will err on the side of build. <strong>Nočnica Fee</strong> explains the short-sightedness of this decision by way of a story of how a company goes from "make money" to "run servers"</del>.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p><del>The build-vs-buy debate is interesting, and most tech companies will err on the side of build. <strong>Nočnica Fee</strong> explains the short-sightedness of this decision by way of a story of how a company goes from &quot;make money&quot; to &quot;run servers&quot;</del>.</p>
 <p>I have never really enjoyed the daily standup because it gives me no useful information and feels like a status update. The team from <strong>LinearB</strong> shares the <a href="https://dev.to/linearb_inc/stand-up-2-0-it-s-time-to-ditch-the-daily-from-1993-5d6l">3 questions that we can ask to make this meeting more valuable</a>.</p>
 <p>How do you spread the word about your product when you are just starting? <strong>Gabor Cselle</strong> gives <a href="https://medium.com/gabor/9-ways-to-build-virality-into-your-product-5975e1fe74e3">9 tips to add virality into your product</a>.</p>
 <p>Everyone knows about ToDo lists. <strong>Drew Bredvick</strong> explains <a href="https://drew.tech/what-not-to-work-on">why Not-ToDo lists are as important when deciding what to work on</a>.</p>
 <p><strong>Hiten Shah</strong> looks at some of the <a href="https://usefyi.com/atlassian-history/">strategies Atlassian employed to become a $10 Billion company</a>. The most interesting part of the case study is that they were self-funded and profitable before working with investors.</p>
 <p><strong>Ramit Sethi</strong> shows you how to know which <a href="https://growthlab.com/people-who-never-buy/">type of customers won't buy from you</a> so that you concentrate on the ones that will.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

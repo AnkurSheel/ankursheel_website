@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to deploy a Gatsby site on a schedule with Azure Pipelines</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -231,7 +231,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ol>
 <h2 id="gotchas">Gotchas</h2>
 <ol>
-<li>The cron syntax is mm HH DD MM DW. You can find more details about the supported syntax <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&amp;tabs=yaml#supported-cron-syntax">here</a></li>
+<li>The cron syntax is mm HH DD MM DW. You can find more details about the supported syntax <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&amp;amp;tabs=yaml#supported-cron-syntax">here</a></li>
 <li>The timezone for schedules is UTC, so the build times need to be adjusted accordingly.</li>
 <li>Don't forget to set <code>always: true</code>. If you have it set to false, a build might not be triggered if you schedule posts a few days in advance.</li>
 </ol>

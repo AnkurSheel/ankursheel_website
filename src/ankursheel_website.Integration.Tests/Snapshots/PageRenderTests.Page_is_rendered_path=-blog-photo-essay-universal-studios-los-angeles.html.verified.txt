@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Universal Studios, Los Angeles</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,21 +158,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>The first place we visited on our USA roadtrip was the Universal Studios in Los Angeles.</p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-1.jpg" alt="Shrek"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-2.jpg" alt="Mr Potato"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-3.jpg" alt="Classic Car"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-4.jpg" alt="Skull"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-5.jpg" alt="Cars and Fire"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-6.jpg" alt="Flood"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-7.jpg" alt="Jaws"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-8.jpg" alt="Phsyco"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-9.jpg" alt="Phsyco"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-10.jpg" alt="Plane crash"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-11.jpg" alt="The Mummy"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-12.jpg" alt="Mummy"></p>
-<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-13.jpg" alt="Waterworld"></p>
-</body></html>
+<p>The first place we visited on our USA roadtrip was the Universal Studios in Los Angeles.</p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-1.jpg" alt="Shrek" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-2.jpg" alt="Mr Potato" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-3.jpg" alt="Classic Car" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-4.jpg" alt="Skull" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-5.jpg" alt="Cars and Fire" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-6.jpg" alt="Flood" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-7.jpg" alt="Jaws" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-8.jpg" alt="Phsyco" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-9.jpg" alt="Phsyco" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-10.jpg" alt="Plane crash" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-11.jpg" alt="The Mummy" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-12.jpg" alt="Mummy" /></p>
+<p><img src="/assets/images/posts/photo-essay-universal-studios-los-angeles/UniversalStudios-13.jpg" alt="Waterworld" /></p>
+
 
 
 

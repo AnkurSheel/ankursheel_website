@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 16</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><del>How can you use Google Sheets to post a new tweet every day? <strong>Alberto Montalesi</strong> has an article that shows how to send daily automated tweets from a Google Sheet</del>.</p>
 <p>Tired of reading articles to find inspiration for your product and design challenges. <strong>Dan Benoni</strong> and <strong>Louis-Xavier Lavallee</strong> have created an <a href="https://growth.design/case-studies/">entertaining way to learn from the best companies to design and grow products users love</a>.</p>
 <p>At some point in time, we have all made the mistake of committing a secret to a Github Repository. <strong>Michael Crump</strong> shows how you can <a href="https://dev.to/mbcrump/remove-passwords-committed-to-github-on-accident-1oj9">remove secrets from a Github repo</a>.</p>
 <p>CSS Grid and CSS Flexbox - 2 of the most popular layout models. <strong>Thomas De Moor</strong> talks about the <a href="https://dev.to/x-team/css-grid-vs-flexbox-3pp6">differences between the 2 models and which one to choose</a>.</p>
 <p><strong>Nick Maggiulli</strong> talks about the different Levels of Wealth and how including <a href="https://ofdollarsanddata.com/climbing-the-wealth-ladder/">lifestyle adjustments based on your current level</a> can be highly rewarding.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

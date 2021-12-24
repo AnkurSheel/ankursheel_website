@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to export highlights and annotations from a Kobo Aura</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -171,7 +171,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Save the file. Make sure the extension is <em>.conf</em> and not <em>.txt</em>.</li>
 <li>Safely eject your Kobo e-reader from the computer.</li>
 </ul>
-<p>Now, when you long-press, a book menu will have an extra option, <strong>"Export highlights"</strong>.</p>
+<p>Now, when you long-press, a book menu will have an extra option, <strong>&quot;Export highlights&quot;</strong>.</p>
 <p>Using this will prompt you for a file name and export the annotations to a file(with the specified name) in the device's root directory.</p>
 </body></html>
 

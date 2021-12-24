@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Massey Strawberry Picking, Auckland</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,27 +158,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Red, juicy strawberries are best eaten as soon as they've been picked, and one of the easiest ways you can do this is to get them at your local strawberry picking farm. So our next trip is to Sweet Red Strawberries - Massey Gardens.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-17.jpg" alt=""></p>
+<p>Red, juicy strawberries are best eaten as soon as they've been picked, and one of the easiest ways you can do this is to get them at your local strawberry picking farm. So our next trip is to Sweet Red Strawberries - Massey Gardens.</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-massey-strawberry-picking-auckland/Massey-17.jpg" alt="" /></p>
 <p>They have lots of wooden tables outside to sit on and lots of outdoor areas to walk around and admire the vast strawberry patch next door while you eat the fresh strawberry ice cream.</p>
 <p>Let me know how your trip was.</p>
-</body></html>
+
 
 
 

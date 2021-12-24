@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Breakout Clone v1.0</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,17 +156,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>The first release of the Breakout clone is finally here.</p>
+<p>The first release of the Breakout clone is finally here.</p>
 <p>The <a href="/assets/downloads/Breakout_setup_v1.1.exe">Installer</a> will install DirectX and the visual studio 2010 re-distributable.</p>
 <p>If you prefer to run the game through a zip file, you can download it from <a href="/assets/downloads/Breakout.zip">here</a>. You will have to make sure that you have the visual studio 2010 re-distributable and the latest DirectX installed on your machine.</p>
 <p>Try it out. In case you face any problems while installing or running the game, let me know, and I will try to come up with a solution.</p>
 <p>Looking forward to hearing your comments on the game :-)</p>
 <h2 id="screenshots">Screenshots</h2>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_title.png" alt="Title Screen"></p>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame1.png" alt="In Game Screen #1"></p>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame2.png" alt="In Game Screen #2"></p>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_pause.png" alt="Pause Screen"></p>
-</body></html>
+<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_title.png" alt="Title Screen" /></p>
+<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame1.png" alt="In Game Screen #1" /></p>
+<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame2.png" alt="In Game Screen #2" /></p>
+<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_pause.png" alt="Pause Screen" /></p>
+
 
 
 

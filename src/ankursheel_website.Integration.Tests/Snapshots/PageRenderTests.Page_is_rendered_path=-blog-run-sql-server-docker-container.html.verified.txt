@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to run SQL Server in a Docker container</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -185,9 +185,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>We can start by adding the base image and environment variables to the docker file.</p>
 <pre><code class="language-docker hljs"><span class="hljs-keyword">FROM</span> mcr.microsoft.com/mssql/server:<span class="hljs-number">2017</span>-latest
 
-ARG SA_PASSWORD=<span class="hljs-string">"Password1!"</span>
+ARG SA_PASSWORD=&quot;Password1!&quot;
 <span class="hljs-keyword">ENV</span> SA_PASSWORD=$SA_PASSWORD
-<span class="hljs-keyword">ENV</span> ACCEPT_EULA=<span class="hljs-string">"Y"</span>
+<span class="hljs-keyword">ENV</span> ACCEPT_EULA=&quot;Y&quot;
 
 <span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">1433</span>
 </code></pre>
@@ -206,7 +206,7 @@ ARG SA_PASSWORD=<span class="hljs-string">"Password1!"</span>
 <span class="hljs-keyword">WORKDIR</span><span class="bash"> /usr/work
 </span>
 <span class="hljs-keyword">RUN</span><span class="bash"> ( /opt/mssql/bin/sqlservr &amp; ) \
-    | grep -q <span class="hljs-string">"Service Broker manager has started"</span> \
+    | grep -q &quot;Service Broker manager has started&quot; \
     &amp;&amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P <span class="hljs-variable">$SA_PASSWORD</span> -i create-db.sql \
     &amp;&amp; pkill sqlservr
 </span></code></pre>

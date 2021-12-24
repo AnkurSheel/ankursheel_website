@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Atlantis The Lost Chambers</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,30 +158,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Dubai is one city that probably has everything that money can buy. One of the biggest examples of this is the artificial islands of Palm Jumeirah. The Palm Jumeirah is an artificial cluster of islands created and arranged in the form of a giant palm tree. After the visit to the mosque, we took a taxi to the Dubai Marina metro station.</p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-2.jpg" alt="View from the Monorail"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-4.jpg" alt="Boats"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-3.jpg" alt="View of Burj Al Arab"></p>
+<p>Dubai is one city that probably has everything that money can buy. One of the biggest examples of this is the artificial islands of Palm Jumeirah. The Palm Jumeirah is an artificial cluster of islands created and arranged in the form of a giant palm tree. After the visit to the mosque, we took a taxi to the Dubai Marina metro station.</p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-2.jpg" alt="View from the Monorail" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-4.jpg" alt="Boats" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-3.jpg" alt="View of Burj Al Arab" /></p>
 <p>From here, we took the Palm Monorail ride to the Palm Islands. The monorail runs along the trunk of the Palm Jumeirah, and you can see the entire Palm from the top. You can see not only the private beach of each villa but also the private boats.</p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-1.jpg" alt="Atlantis Hotel"></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-1.jpg" alt="Atlantis Hotel" /></p>
 <p>At the end of the monorail is the Atlantis hotel. Although entry to the hotel is limited to the hotel's guests, the Atlantis Lost Chambers is open to the public (for a fee :-P ).</p>
 <p>Dubai has two aquariums – one in the Dubai mall and one in the Atlantis. However, since most websites recommend the Lost Chambers, we visited this one.</p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-5.jpg" alt="Mural"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-6.jpg" alt="The Magic Crystal"></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-5.jpg" alt="Mural" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-6.jpg" alt="The Magic Crystal" /></p>
 <p>As soon as you enter the Atlantis, the thing that pops out at you is the mural on the walls. Apart from the shops, restaurants etc., the novelties here are the water park, the dolphin bay and the lost chambers aquarium. The entire interior has some impressive lighting effects, water spouts and, best of all, some unique marine animals.</p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-7.jpg" alt="Fishes"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-8.jpg" alt="Lobster Tank"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-9.jpg" alt="JellyFish"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-10.jpg" alt="Leopard StingRay"></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-7.jpg" alt="Fishes" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-8.jpg" alt="Lobster Tank" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-9.jpg" alt="JellyFish" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-10.jpg" alt="Leopard StingRay" /></p>
 <p>Luckily, we were there for the feeding frenzy wherein a couple of divers entered the giant fish tank and fed the fish. The divers put on a very humorous show, and the chaos is unbelievable when the feeding starts.</p>
 <p>Let's play a game and see in how many of the pictures you can spot the divers :-)</p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-11.jpg" alt="Can you spot the Diver?"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-12.jpg" alt="Can you spot the Diver?"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-13.jpg" alt="Can you spot the Diver?"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-14.jpg" alt="Can you spot the Diver?"></p>
-<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-15.jpg" alt="Can you spot the Diver?"></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-11.jpg" alt="Can you spot the Diver?" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-12.jpg" alt="Can you spot the Diver?" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-13.jpg" alt="Can you spot the Diver?" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-14.jpg" alt="Can you spot the Diver?" /></p>
+<p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-15.jpg" alt="Can you spot the Diver?" /></p>
 <p>How many did u spot?</p>
-</body></html>
+
 
 
 

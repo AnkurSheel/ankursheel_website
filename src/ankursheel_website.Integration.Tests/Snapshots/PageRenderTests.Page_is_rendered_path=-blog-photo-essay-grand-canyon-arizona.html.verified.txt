@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Grand Canyon, Arizona</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,36 +158,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Its impossible to visit USA and not visit the Grand Canyon. A photo essay of a visit to Grand Canyon in 4 parts - Plane, Road, Helicopter and finally a cruise on the Colorado river.</p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-24.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-25.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-27.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-28.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-29.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-30.jpg" alt=""></p>
-</body></html>
+<p>Its impossible to visit USA and not visit the Grand Canyon. A photo essay of a visit to Grand Canyon in 4 parts - Plane, Road, Helicopter and finally a cruise on the Colorado river.</p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-24.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-25.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-27.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-28.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-29.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-grand-canyon-arizona/GrandCanyon-30.jpg" alt="" /></p>
+
 
 
 

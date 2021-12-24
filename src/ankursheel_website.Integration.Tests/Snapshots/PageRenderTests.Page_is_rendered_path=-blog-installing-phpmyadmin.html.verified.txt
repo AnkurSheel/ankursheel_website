@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to setup WordPress locally: Installing phpMyAdmin</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="installing-phpmyadmin-on-windows">Installing phpMyAdmin on Windows</h2>
+<h2 id="installing-phpmyadmin-on-windows">Installing phpMyAdmin on Windows</h2>
 <ul>
 <li>Go to the phpMyAdmin Website and download the zip file</li>
 <li>Unpack the downloaded file to the web server Document root.</li>
@@ -196,7 +196,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Enter the username and password in the login window.</li>
 <li>You should now see the phpMyAdmin Control panel</li>
 </ul>
-</body></html>
+
 
 
 

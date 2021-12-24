@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Waitomo Blackwater Rafting</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,36 +158,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>There's more than one way to see the glowworms in New Zealand's Waitomo Caves, everything from completely sedate to incredibly adventurous.</p>
+<p>There's more than one way to see the glowworms in New Zealand's Waitomo Caves, everything from completely sedate to incredibly adventurous.</p>
 <p>However, when you are in New Zealand, sedate is a word that should not be in your dictionary. The easiest way to experience these caves is on a leisurely walking tour or a boat cruise beneath the ground. Several different adventurous trips are offered, a three hour wet or a dry option and a five hour wet &amp; dry option.</p>
 <p>Guess which one we decided to do?</p>
 <p>At the allotted time, we met our guides and the rest of the group. After some friendly banter and telling the rules, we were handed our wet wetsuits and sent off to get changed.</p>
 <p>This was the 1st time I was putting on a wetsuit, but it has to be one of the more challenging things I have had to do. Then it was time for a few photos before we jumped into a van to go to the caves.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-2.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-2.jpg" alt="" /></p>
 <p>But first, we had to find tubes that would fit around our bums. Who knew the size of the tube mattered?</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-4.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-4.jpg" alt="" /></p>
 <p>To test that we didn't slip through the hole, we had to jump backwards off a wooden ledge into a stream.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-16.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-16.jpg" alt="" /></p>
 <p>We then headed into the caves, ready for it all to begin. We stayed in our tubes, linked together in a long line allowing us to turn out our torches and stare at the glow worms. This happened on several occasions, be it in our tube or just sitting around on the rocks looking up.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-12.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-12.jpg" alt="" /></p>
 <p>There were a few optional jumps, but I would strongly suggest not taking the option of not jumping.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-13.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-13.jpg" alt="" /></p>
 <p>The glow worms were incredible, so bright and a thick continuous trail of them the whole time. I can see why people head to Waitomo to get a look at these fantastic little creatures. The rafting was a fun way to experience the caves and glow worms despite the chilly winter weather.</p>
 <p>Unfortunately, my camera and water don't go well together, so all the photos were taken by our Legendary Black Water Rafting Company guides. After what felt like a really short time, we were back for a shower and some hot soups and bagels.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-15.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-waitomo-blackwater-rafting/Waitomo_Blackwater_Rafting-15.jpg" alt="" /></p>
 <p>We thoroughly enjoyed ourselves, the guides were excellent, keeping it fun but also being very helpful. You felt safe throughout the whole trip with the correct techniques and equipment.</p>
 <p>Waitomo is certainly an NZ Must Do. Have you been tubing in a cave? How was your experience?</p>
-</body></html>
+
 
 
 

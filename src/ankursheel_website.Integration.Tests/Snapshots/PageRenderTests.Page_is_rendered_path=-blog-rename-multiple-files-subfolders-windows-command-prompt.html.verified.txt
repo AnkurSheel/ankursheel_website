@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to rename multiple files in subfolders using Windows command prompt</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -162,7 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>As part of the <a href="migrating-gatsby-statiq">migration from Gatsby to Statiq</a>, I had to rename all the files with the extension <em>mdx</em> to <em>md</em>. Now, I could do it one by one or find a utility but using a single command is more elegant.</p>
 <h2 id="solution">Solution</h2>
 <p>To rename all the files recursively, we can use the REN (rename) command as follows.</p>
-<pre><code class="language-bash hljs">FOR /R %G IN (*.mdx) DO REN <span class="hljs-string">"%G"</span> <span class="hljs-string">"%~dpnG.md"</span>
+<pre><code class="language-bash hljs">FOR /R %G IN (*.mdx) DO REN &quot;%G&quot; &quot;%~dpnG.md&quot;
 </code></pre>
 <p>Let's unpack this command.</p>
 <ul>
@@ -171,7 +171,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><strong>%G</strong>: A parameter set to a different value for each iteration of the for loop.</li>
 <li><strong>(*.mdx)</strong>: The filename pattern that we want to match.</li>
 <li><strong>REN</strong>: The command to rename a file</li>
-<li><strong>%~dpnG"</strong>: Expands the parameter of the original filename to the fully qualified path without the extension</li>
+<li><strong>%~dpnG&quot;</strong>: Expands the parameter of the original filename to the fully qualified path without the extension</li>
 </ul>
 <p>References:</p>
 <ul>

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Testing endpoints protected with an XSRF token in Postman</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -188,12 +188,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>The server validates the token, and if the token does not match, the request is rejected.</li>
 </ol>
 <h2 id="what-does-the-application-look-like">What does the application look like?</h2>
-<p>Our application is built in ASP.NET and uses Razor pages. One of the ways that we can add an anti-forgery token to a Razor page is by using the <code>@Html.AntiForgeryToken()</code> helper function inside a form. All this does is add a hidden form field containing the token. The form field that is added is similar to</p>
-<pre><code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-    <span class="hljs-attr">name</span>=<span class="hljs-string">"__RequestVerificationToken"</span>
-    <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span>
-    <span class="hljs-attr">value</span>=<span class="hljs-string">"HCT7cStZ5BVk3sFWdlYRsaPN2K2xUHwRc-AAEn1tIq02yWO1QSUuAiNuH4pCg6M7JgV3xZjysixJHhkqoGhOTTG8bgk0H3VWi5XpJgntnt2uc-xXwXwSOta9hBNMJQxo5JznbmiBtxPkwSx-GqxXsw2"</span>
-/&gt;</span>
+<p>Our application is built in ASP.NET and uses Razor pages. One of the ways that we can add an anti-forgery token to a Razor page is by using the <code>&#64;&#64;Html.AntiForgeryToken()</code> helper function inside a form. All this does is add a hidden form field containing the token. The form field that is added is similar to</p>
+<pre><code class="language-html hljs">&lt;input
+    name=&quot;__RequestVerificationToken&quot;
+    type=&quot;hidden&quot;
+    value=&quot;HCT7cStZ5BVk3sFWdlYRsaPN2K2xUHwRc-AAEn1tIq02yWO1QSUuAiNuH4pCg6M7JgV3xZjysixJHhkqoGhOTTG8bgk0H3VWi5XpJgntnt2uc-xXwXwSOta9hBNMJQxo5JznbmiBtxPkwSx-GqxXsw2&quot;
+/&gt;
 </code></pre>
 <p>Note the name of the hidden input - <strong><em>__RequestVerificationToken</em></strong>. We will need it later.</p>
 <p>We are also going to assume that the URL with the form is <em>http://localhost/page</em>. When the user presses the submit button, it posts to <em>http://localhost/page-ajax-action</em>. The form on the page itself has two fields <em>FirstName</em> and <em>LastName</em></p>
@@ -214,7 +214,7 @@ pm.sendRequest(<span class="hljs-string">`<span class="hljs-subst">${url}</span>
     } <span class="hljs-keyword">else</span> {
         <span class="hljs-keyword">var</span> body = response.text();
         <span class="hljs-keyword">const</span> html = cheerio(body);
-        <span class="hljs-keyword">var</span> allInputs = html.find(<span class="hljs-string">'input[name="__RequestVerificationToken"]'</span>);
+        <span class="hljs-keyword">var</span> allInputs = html.find(<span class="hljs-string">'input[name=&quot;__RequestVerificationToken&quot;]'</span>);
         <span class="hljs-keyword">var</span> input = allInputs.first();
         <span class="hljs-keyword">var</span> token = input.val();
         pm.environment.set(<span class="hljs-string">'xsrf-token'</span>, token);
@@ -228,7 +228,7 @@ pm.sendRequest(<span class="hljs-string">`<span class="hljs-subst">${url}</span>
 <li><strong><em>Line 3-4</em></strong>: If there is an error, log the error to the console.</li>
 <li><strong><em>Line 6</em></strong>: Get the body from the response object.</li>
 <li><strong><em>Line 7</em></strong>: Parse the body using Postman's inbuilt support for Cheerio. To read more about cheerio visit <a href="https://cheerio.js.org/">Cheerio</a></li>
-<li><strong><em>Line 8</em></strong>: Use cheerio to find all instances of <code>input[name="__RequestVerificationToken</code> in the body.</li>
+<li><strong><em>Line 8</em></strong>: Use cheerio to find all instances of <code>input[name=&quot;__RequestVerificationToken</code> in the body.</li>
 <li><strong><em>Line 9</em></strong>: If there are multiple instances on the page, take the 1st instance.</li>
 <li><strong><em>Line 10</em></strong>: Get the value from the input.</li>
 <li><strong><em>Line 11</em></strong>: Set the <em>xsrf-token</em> environment variable with the token value.</li>

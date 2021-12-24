@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Side Project: JAH</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>For a long time now, I have been looking for a side project to play around with. So far, I have been scratching the itch by participating in coding game contests and writing tutorials on this blog. But, I was not getting the satisfaction of having something to show. I wasn't dabbling with new things, and it is apparent that I was losing interest fast. To address this, I have decided to start working on a new side project - <strong>Codenamed JAH</strong></p>
+<p>For a long time now, I have been looking for a side project to play around with. So far, I have been scratching the itch by participating in coding game contests and writing tutorials on this blog. But, I was not getting the satisfaction of having something to show. I wasn't dabbling with new things, and it is apparent that I was losing interest fast. To address this, I have decided to start working on a new side project - <strong>Codenamed JAH</strong></p>
 <p>So what does <strong>JAH</strong> stand for? It's just an acronym for <strong><em>Job Application Helper</em></strong> - a piece of software that helps you to track the status of your current job applications.</p>
 <h2 id="motivation">Motivation</h2>
 <p>When Gameloft closed in 2016, I was out of a job and talked to many companies and recruiters. At some point, there were so many people I was in contact with that I resorted to my trusty tool - Excel Spreadsheets to keep some of my sanity. Fast forward to the present day, and it seems to be a good idea to port the spreadsheet to an app.</p>
@@ -177,7 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="closing-thoughts">Closing Thoughts</h2>
 <p>I will try to blog with an update on the progress. As I have already started the project, the next post will outline what I have done so far.</p>
 <p>Would this app be of interest to you? Would you like to help test it for me? What features would you like to see? Let me know.</p>
-</body></html>
+
 
 
 

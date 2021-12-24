@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Create custom type definitions for JavaScript dependencies</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <html><head></head><body><p>If you are importing a javascript dependency into your typescript app, you might run into this error.</p>
-<p><em><strong>"Could not find a declaration file for module 'third-party-library-name'. 'third-party-library-name.js' has an 'any' type. Try npm install @types/third-party-library-name if it exists or add a new declaration (.d.ts) file containing declare module 'third-party-library-name';"</strong></em></p>
+<p><em><strong>&quot;Could not find a declaration file for module 'third-party-library-name'. 'third-party-library-name.js' has an 'any' type. Try npm install &#64;&#64;types/third-party-library-name if it exists or add a new declaration (.d.ts) file containing declare module 'third-party-library-name';&quot;</strong></em></p>
 <p>If you read the error message, you can see that it suggests checking the DefinitelyTyped repository.</p>
 <p>You will find the repository and install it using <em>npm</em> or _yarn_if you are lucky.</p>
 <p>But what if you are not so lucky?</p>
@@ -172,17 +172,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>So, how exactly do you do that?</p>
 <ul>
 <li>Create a <strong><em>types</em></strong> folder.</li>
-<li>Edit tsconfig.json to use the typeRoots property so that the compiler can find the local declaration files. You will need it to include both your local folder as well as <em>node</em>_<em>modules/@types</em>. You will also want to check the local folder before the <em>node</em>_<em>modules</em> folder.</li>
+<li>Edit tsconfig.json to use the typeRoots property so that the compiler can find the local declaration files. You will need it to include both your local folder as well as <em>node</em>_<em>modules/&#64;&#64;types</em>. You will also want to check the local folder before the <em>node</em>_<em>modules</em> folder.</li>
 </ul>
-<pre><code class="language-json hljs">"compilerOptions": {
+<pre><code class="language-json hljs">&quot;compilerOptions&quot;: {
  ...
- "typeRoots": ["./types", "node_modules/@types"]
+ &quot;typeRoots&quot;: [&quot;./types&quot;, &quot;node_modules/&#64;&#64;types&quot;]
     }
 </code></pre>
 <ul>
 <li>Add the property to exclude property in tsconfig so that it does not get compiled.</li>
 </ul>
-<pre><code class="language-json hljs">"exclude": [..., "types"]
+<pre><code class="language-json hljs">&quot;exclude&quot;: [..., &quot;types&quot;]
 </code></pre>
 <ul>
 <li>Add a <strong><em>third-party-library-name</em></strong> folder in the <em>types</em> directory.</li>

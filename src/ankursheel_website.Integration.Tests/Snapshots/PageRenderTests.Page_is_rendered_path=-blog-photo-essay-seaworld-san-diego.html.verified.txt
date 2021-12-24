@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: SeaWorld, San Diego</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,29 +158,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>After Los Angeles, the next place on the itinerary was San Diego and no visit to San Diego is complete without paying a visit to the Orcas at Seaworld.</p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-24.jpg" alt=""></p>
-</body></html>
+<p>After Los Angeles, the next place on the itinerary was San Diego and no visit to San Diego is complete without paying a visit to the Orcas at Seaworld.</p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-seaworld-san-diego/SeaWorld-24.jpg" alt="" /></p>
+
 
 
 

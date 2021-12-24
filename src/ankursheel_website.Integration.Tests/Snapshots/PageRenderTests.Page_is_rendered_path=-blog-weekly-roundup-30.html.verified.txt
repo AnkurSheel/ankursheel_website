@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 30</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>If you are a developer, branching and merging is just a way of life. <strong>Martin Fowler</strong> talks about the <a href="https://martinfowler.com/articles/branching-patterns.html">different patterns that have emerged over the years</a> and when you should use which one.</p>
 <p>It's common knowledge that you should have an emergency fund. But, you have to remember that an emergency fund is exactly what it says a fund for emergencies. <strong>Ramit Sethi</strong> talks about the <a href="https://www.iwillteachyoutoberich.com/blog/how-to-build-an-emergency-fund/">psychology of actually using your emergency fund</a> when you need to.</p>
 <p><strong>Pathik Desai</strong> shares the <a href="https://dev.to/pathiknd/software-security-overview-3ldi">different aspects that need to be handled to make your software secure</a>.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Habdul Hazeez</strong> looks at some of the <a href="https://dev.to/ziizium/famous-websites-with-javascript-disabled-2ib1">top websites with Javascript disabled</a>.</p>
 <p><strong>ellie-html</strong> gives an example of how to <a href="https://dev.to/elliehtml/realistic-css-art-hacks-27pk">create Realistic CSS Art</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

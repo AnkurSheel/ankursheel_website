@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 28</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>It is tedious to fill forms on mobile devices. <strong>Alex Holachek</strong> shows how you can <a href="https://css-tricks.com/better-form-inputs-for-better-mobile-user-experiences/">correctly configure inputs</a> to make filling in forms more convenient for your users on mobile devices.</p>
 <p>How do you decide whether you should go for a <a href="https://css-tricks.com/static-or-not/">static website or a server-side software</a>? <strong>Chris Coyier</strong> outlines excellent and wrong reasons to choose one rather than the other.</p>
 <p>Is test-Driven-Devoplment(TDD) even possible for UI? <strong>TK</strong> uses <a href="https://www.freecodecamp.org/news/tdd-functions-and-react-components/">TDD to build a React component</a>.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Ever wondered how hackers find security vulnerabilities in a computer system? <strong>Sonya Moisset</strong> has a <a href="https://www.freecodecamp.org/news/keep-calm-and-hack-the-box-lame/">walkthrough to solve the CTF Challenge <strong><em>Lame</em></strong></a> presented by <a href="https://www.hackthebox.eu/">Hack the Box</a> for doing online penetration practices.</p>
 <p><strong>Sarah Drasner</strong> has a great <a href="https://hero-generator.netlify.app/">tool to generate the CSS code for a hero</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

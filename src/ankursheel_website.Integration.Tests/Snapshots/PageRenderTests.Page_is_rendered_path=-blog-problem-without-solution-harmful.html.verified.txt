@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Do not come with a problem without a solution is harmful</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>I have been told by a few managers that the fact that I bring problems without any solutions annoys them. They would rather have people bring solutions along with the issues. Although they probably mean well, I feel that this approach does more harm than good.</p>
+<p>I have been told by a few managers that the fact that I bring problems without any solutions annoys them. They would rather have people bring solutions along with the issues. Although they probably mean well, I feel that this approach does more harm than good.</p>
 <p>Without even realising it, what they have said is</p>
 <blockquote>
 <p>Of all the problems you find, I only want to know about the ones you can solve</p>
@@ -186,8 +186,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>To cultivate a sense of ownership, let the person bringing the problem own it assuming that they have been given the tools, authority etc., to solve it.</p>
 <p>I don't think we should discourage the complainers. Yes, most of the problems they bring will be trivial, but you will find that rare gem in all of the issues, which will make it worth it.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>What are your thoughts on the approach "Don't come with a problem without a solution"? Do you think it's harmful or beneficial?</p>
-</body></html>
+<p>What are your thoughts on the approach &quot;Don't come with a problem without a solution&quot;? Do you think it's harmful or beneficial?</p>
+
 
 
 

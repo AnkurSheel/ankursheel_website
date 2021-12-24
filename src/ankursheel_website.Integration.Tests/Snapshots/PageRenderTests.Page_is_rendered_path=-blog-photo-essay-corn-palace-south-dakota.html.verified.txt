@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Corn Palace, South Dakota</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,20 +158,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>From Niagara Falls, we visited some relatives in Chicago for a few days. Since, I was too busy eating and drinking, I didnt take too many pictures.</p>
+<p>From Niagara Falls, we visited some relatives in Chicago for a few days. Since, I was too busy eating and drinking, I didnt take too many pictures.</p>
 <p>However, the next stop is the Corn Palace in Mitchell, South Dakota.</p>
 <p>This is exactly as it sounds - The building is decorated with crop art i.e. all the designs covering the building are made from different types of grain.</p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-10.jpg" alt=""></p>
-</body></html>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-corn-palace-south-dakota/CornPalace-10.jpg" alt="" /></p>
+
 
 
 

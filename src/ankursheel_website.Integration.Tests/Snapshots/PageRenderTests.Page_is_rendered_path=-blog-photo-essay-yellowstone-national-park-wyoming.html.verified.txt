@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Yellowstone National Park, Wyoming</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,32 +158,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>From the Corn Palace, we now move to Yellowstone National Park.</p>
+<p>From the Corn Palace, we now move to Yellowstone National Park.</p>
 <p>It is known for its wildlife, geothermal features and the Old Faithful Geyser. This is one of those places that I believe should be on your itinerary.</p>
 <p>It is a beautiful place, and pictures cannot do justice (even though I have tried). If you are planning a day trip, try to be at Old Faithful just before it is scheduled to erupt.</p>
 <p>Even though we were unaware of the timings, we were lucky enough to reach the geyser just a few minutes before the eruption.</p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-21.jpg" alt=""></p>
-</body></html>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-yellowstone-national-park-wyoming/Yellowstone-21.jpg" alt="" /></p>
+
 
 
 

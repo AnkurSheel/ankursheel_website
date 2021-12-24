@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Setup WordPress locally: Installing an Apache Web Server</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="installing-apache-on-windows">Installing Apache on Windows</h2>
+<h2 id="installing-apache-on-windows">Installing Apache on Windows</h2>
 <ul>
 <li>Go to the <a href="https://httpd.apache.org/download.cgi">Apache Website</a> and download the installer file.</li>
 <li>Make sure Internet Information Services (IIS) is not running.</li>
@@ -186,7 +186,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="configuring-apache">Configuring Apache</h2>
 <p>To change any settings, edit the httpd.conf file. On Windows, you can access this file through the menu at Start -&gt; Programs -&gt; Apache HTTPD Server -&gt; Configure Apache Server -&gt; Edit the Apache httpd.conf File.</p>
 <p>Restart the server for the changes to take effect.</p>
-</body></html>
+
 
 
 

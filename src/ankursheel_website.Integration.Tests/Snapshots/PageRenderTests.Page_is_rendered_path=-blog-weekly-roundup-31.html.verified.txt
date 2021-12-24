@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 31</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Omar Rizwan</strong> takes a look at some of the <a href="https://increment.com/programming-languages/language-history/">programming languages that have been developed over the decades</a>.</p>
 <p>AWS has a bunch of opaquely named services. Luckily, <strong>Expedited Security</strong> has added <a href="https://expeditedsecurity.com/aws-in-plain-english/">plain English descriptions</a> to most of them.</p>
 <p>Another great interactive post by <strong>Growth.Design</strong>. This time, it details the <a href="https://growth.design/case-studies/product-team-pitfalls/">7 pitfalls that you should avoid in a product team</a>.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Lorenz Weiß</strong> shares how to <a href="https://www.lorenzweiss.de/common_mistakes_react_hooks/">fix the most common mistakes when writing react components</a>.</p>
 <p><strong>Michael Chein</strong> walks you through the process of <a href="https://towardsdatascience.com/keeping-your-kids-in-shape-during-quarantine-by-turning-their-bicycle-into-a-keyboard-e1f8a34fac2e">building your very own keyboard bike</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Procedural Minecraft Terrain Generator</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <p><a href="https://github.com/AnkurSheel/pmgai-minecraft.jpg">Source Code</a></p>
 <h2 id="screenshots">Screenshots</h2>
 <h3 id="inter-iso">Inter Iso</h3>

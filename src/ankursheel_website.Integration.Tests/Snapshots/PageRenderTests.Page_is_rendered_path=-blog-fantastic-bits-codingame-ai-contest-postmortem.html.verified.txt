@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">A postmortem for Fantastic Bits (Codingame AI Contest)</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,8 +158,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time around, it was a game of <strong>Quidditch</strong> from the <strong>Harry Potter</strong> world and was named <strong>Fantastic Bits</strong> after the <strong>Fantastic Beasts and Where To Find Them</strong></p>
-<p><img src="/assets/images/posts/fantastic-bits-codingame-ai-contest-postmortem/cover.jpg" alt="Fantastic Bits"></p>
+<p>Every couple of weeks, there is a contest hosted by the folks at <a href="http://www.codingame.com/">codingame.com</a>. This time around, it was a game of <strong>Quidditch</strong> from the <strong>Harry Potter</strong> world and was named <strong>Fantastic Bits</strong> after the <strong>Fantastic Beasts and Where To Find Them</strong></p>
+<p><img src="/assets/images/posts/fantastic-bits-codingame-ai-contest-postmortem/cover.jpg" alt="Fantastic Bits" /></p>
 <p>If you just want to look at my statistics for this contest, you can just scroll to the bottom but, then you would miss seeing all the things I did wrong. 😊</p>
 <h2 id="preamble">Preamble</h2>
 <p>For the contest, you played a game of Quidditch and controlled 2 wizards to score points using a Snaffle (Snitch + Quaffle). Like all other codingame contests, the game was turn-based. Each turn consisted of you reading the world state information from stdin and outputting your action to stdout. This would be repeated till either 200 turns had passed or as soon as one player has scored more than half of the possible points. You also had a maximum of 100 ms to submit your action before you would timeout and lose.</p>
@@ -218,7 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>New Zealand</strong>: 13/18</p>
 <p><strong>India</strong>: 6/39</p>
 <p>Feel free to follow me at codingame using this <a href="https://www.codingame.com/servlet/urlinvite?u=1506970">url</a>. which gave me a base to start from. For other postmortems click <a href="/tags/codingame">here</a>.</p>
-</body></html>
+
 
 
 

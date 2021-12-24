@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 9</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>One of my favourite posts of the week was from <strong>Mrs Bita</strong> from <strong>Bayalis is the Answer</strong>. I could relate to all the <a href="http://www.bayalisistheanswer.com/indian-quirks/">quirks of being born in a middle-class Indian family</a>. They were the same as what I had seen while growing up.</p>
 <p>Most people have an emergency fund, but <strong>Ty</strong> from <strong>Get Rich Quick'ish</strong> asks a very important question - What's Your Financial Emergency Plan?. This has got me thinking, and I might outline my financial emergency plan in a future post.</p>
 <p><strong>FIRECracker</strong> from <strong>Millennial Revolution</strong> outlines the different types of spousal personalities and how to <a href="http://www.millennial-revolution.com/build/get-spouse-aboard-fi-train/">get them aboard the FI train</a>.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>On <strong>Gamasutra</strong>, <strong>Shalin</strong> posts the <a href="http://www.gamasutra.com/blogs/ShalinShodhan/20170316/293823/3_things_I_learned_from_5_jobs_in_12_years.php">3 things he has learned from each of his 5 jobs in the last 12 years</a>.</p>
 <p><strong>Gav</strong> from <strong>Zen Pencils</strong> has a new <a href="http://zenpencils.com/comic/picasso/">cartoon</a> based on Pablo Picasso's masterpiece <em><a href="http://www.pablopicasso.org/guernica.jsp">Guernica</a></em> which he completed in 5 weeks after a squadron of German bombers bombed the small town of Guernica.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

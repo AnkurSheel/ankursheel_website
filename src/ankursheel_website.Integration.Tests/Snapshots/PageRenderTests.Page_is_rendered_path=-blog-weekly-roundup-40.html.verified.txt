@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 40</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Do you know what Choice Architecture is? It's a term to describe how the way you present choices to consumers can affect their decision making. <strong>Shawn Wang</strong> shows <a href="https://www.swyx.io/choice-architecture/">how both gyms and startups do choice architecture</a>.</p>
 <p><strong>David Perrel</strong> explains his <a href="https://www.perell.com/tweetstorms/cribs-my-writing-feedback-formula">CRIB system to give writing feedback</a>. Regardless of whether you have to provide feedback to someone else, applying it to your writing and speaking will help a lot.</p>
 <p><strong>Jamie Wong</strong> shares a fun and highly well-written story about <a href="http://jamie-wong.com/post/debugging-misadventures/">debugging with examples</a> taken from some of the bugs he has seen at Figma.</p>
@@ -165,7 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>We generally know the risks that we take, but in the end, it's only the tail end consequences that matter. <strong>Morgan Housel</strong> shares a personal story about <a href="https://www.collaborativefund.com/blog/the-three-sides-of-risk/">how his risk tolerance plunged after paying the ultimate price in a skiing accident</a>.</p>
 <p>Our psychological default is to remember the negative stuff that happens in a day and complain. But, the truth is that for many people, more positive things happen in a day than negative. <strong>Jason Lengstorf</strong> explains how he <a href="https://lengstorf.com/how-to-be-positive/">reprogrammed his brain to become aware of his negativity and list the day's high points instead</a></p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

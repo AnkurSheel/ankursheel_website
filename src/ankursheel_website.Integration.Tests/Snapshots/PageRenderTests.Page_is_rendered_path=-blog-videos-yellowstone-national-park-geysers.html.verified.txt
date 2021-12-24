@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Videos: Yellowstone National Park Geysers</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>A few more videos of the Yellowstone National Park Geysers</p>
+<p>A few more videos of the Yellowstone National Park Geysers</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/YxlkQN3tBu0" title="YellowStone Geysers" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
@@ -172,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/oUuXSrMSui8" title="OldYellowStone Pools" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
-</body></html>
+
 
 
 

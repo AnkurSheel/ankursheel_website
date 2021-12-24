@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Glacier National Park, Montana</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,20 +158,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>From the Yellowstone National Park, we reach another gem in the USA - The Glacier National Park.</p>
+<p>From the Yellowstone National Park, we reach another gem in the USA - The Glacier National Park.</p>
 <p>It is known for its original native plant and animal species.</p>
 <p>This is another one of those places that I believe should be on your itinerary. It is a beautiful place, and the landscapes are just breathtaking.</p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-10.jpg" alt=""></p>
-</body></html>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-10.jpg" alt="" /></p>
+
 
 
 

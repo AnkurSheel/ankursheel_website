@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 19</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>How can you get 2 elements on your web page to overlap? <strong>Sarah Drasner</strong> shows the <a href="https://css-tricks.com/how-to-stack-elements-in-css/">2 ways you can achieve overlapping elements</a>. One is the old school <em>position</em> property. The other method is the new and shiny <em>CSS grid</em>.</p>
 <p><a href="https://www.30secondsofcode.org/">30 seconds of code</a> has some handy code snippets in JS, CSS, Python, React and PHP.</p>
 <p><strong>Valia Havryliuk</strong> shares her <a href="https://dev.to/valiahavryliuk/picking-the-right-stock-photo-for-your-next-design-project-36bd">collection of stock photos and image sites</a> so that you can find the perfect visual for your next article or project.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>zechtyounes</strong> shares the <a href="https://dev.to/zechtyounes/gitlab-vs-github-vs-bitbucket-which-one-deserve-your-time-2npm">pros and cons of the 3 major hosting platforms</a> - Github, Gitlab and BitBucket.</p>
 <p>Was the birth of <a href="http://theconversation.com/how-the-extinction-of-ice-age-mammals-may-have-forced-us-to-invent-civilisation-128799">cilivilization and agriculture just an accident</a> and driven by disaster? <strong>Nick Longrich</strong> shares his thoughts on why he thinks so.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">What are my most popular posts in 2015</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Its almost the end of the year and it's time to see the most popular posts on the blog in 2015.</p>
+<p>Its almost the end of the year and it's time to see the most popular posts on the blog in 2015.</p>
 <h2 id="general">General</h2>
 <p>The most popular posts in this category were related to New Zealand Escapes and reviews. It was surprising to see the review of Paper Boat Drinks coming in the top 5 in 2015.</p>
 <ol>
@@ -238,7 +238,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p>Ice Age Avalanche</p>
 </li>
 </ol>
-</body></html>
+
 
 
 

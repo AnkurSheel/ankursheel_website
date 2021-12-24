@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 48</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,10 +156,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <h2 id="hiring-and-retaining-a-diverse-engineering-team"><a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/">Hiring (and Retaining) a Diverse Engineering Team</a></h2>
 <p><em>by <strong>Gergely Orosz</strong></em></p>
-<p>Almost everyone agrees that having a diverse team is better for business. But the question remains -&gt; "How do you hire more diverse teams?" Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.</p>
+<p>Almost everyone agrees that having a diverse team is better for business. But the question remains -&gt; &quot;How do you hire more diverse teams?&quot; Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.</p>
 <h2 id="questions-to-ask-yourself-every-year"><a href="http://stephanango.com/40-questions">40 questions to ask yourself every year</a></h2>
 <p><em>by <strong>Stephan Ango</strong></em></p>
 <p>The end of the year is a good time for introspection. If you are having a hard time coming up with questions to ask yourself, Stephan shares a list of 40 questions he asks himself every year. This should be enough to get you started.</p>
@@ -172,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="how-to-evaluate-startup-offers-a-beginners-guide"><a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/">How to Evaluate Startup Offers - A Beginner's Guide</a></h2>
 <p><em>by <strong>Avy Faingezicht</strong></em></p>
 <p>It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.</p>
-</body></html>
+
 
 
 

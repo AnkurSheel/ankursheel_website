@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 4</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,13 +156,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Caz</strong> from <strong>YTravelblog</strong> has a <a href="http://www.ytravelblog.com/life-hacks-living-expenses/">list of hacks to optimize your everyday spending</a> so that you can save more money to spend on travel and experiences.</p>
-<p>When you justify spending by saying "Time is Money", are you costing yourself even more time and money in the long run. <strong>FireCracker</strong> from <strong>Millennial Revolution</strong> has a great article detailing how spending on things that don't make you happy <a href="http://www.millennial-revolution.com/build/how-much-is-your-time-really-worth/">unnecessarily increases the number of years you have to work</a> to retire comfortably.</p>
+<p>When you justify spending by saying &quot;Time is Money&quot;, are you costing yourself even more time and money in the long run. <strong>FireCracker</strong> from <strong>Millennial Revolution</strong> has a great article detailing how spending on things that don't make you happy <a href="http://www.millennial-revolution.com/build/how-much-is-your-time-really-worth/">unnecessarily increases the number of years you have to work</a> to retire comfortably.</p>
 <p><a href="http://www.moneysmartguides.com/compound-versus-simple-interest">Compound Interest is your best friend</a> when it comes to quickly generating passive income, and <strong>Jon</strong> from <strong>Money Smart Guides</strong> tells you exactly why.</p>
 <p><strong>Gav</strong> on <strong>Zen Pencils</strong> has a new comic about a man who dedicates his life to sculpting a <a href="http://zenpencils.com/comic/muse/">monument dedicated to his muse.</a> This comic vaguely reminds me of <a href="https://en.wikipedia.org/wiki/Dashrath_Manjhi">Dashrath Manjhi(The Mountain Man of India)</a> who carved a path deep through a hillock using only a hammer and chisel over 22 years.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

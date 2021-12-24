@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 27</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>There are a lot of reasons to ensure that a website is accessible. <strong>Bruce Lawson</strong> shares <a href="https://websitesetup.org/web-accessibility-checklist/">16 tips to improve accessibility</a>. There is also a 6-minute video with Leonie Watson using her screen reader to navigate his site.</p>
 <p>Continuing with the theme of accessibility <strong>Austin Gil</strong> examines the <a href="https://stegosource.com/how-to-build-html-forms-right-semantics/">proper semantics to build an HTML form</a>.</p>
 <p>If you have had difficulty understanding the SOLID principles, you need to see these <a href="https://dev.to/trekhleb/s-o-l-i-d-principles-around-you-1o17">real world examples with illustrations of the SOLID principles</a> by <strong>Oleksii Trekhleb</strong>.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Adam Giebl</strong> has made a tool to <a href="https://neumorphism.io/#55b9f3">generate Soft-UI CSS code</a> to achieve Neumorphic effects.</p>
 <p>If you are a programmer, you would have heard of the Big O notation. But have you heard about Big L notation? <strong>Shawn Wang</strong> sketches out the <a href="https://www.swyx.io/writing/big-l-notation/">Big L notation which plots your learning as a function of N years of experience with P peers</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

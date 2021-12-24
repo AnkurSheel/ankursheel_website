@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: NASA&#x27;s Space Center, Texas</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,31 +158,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>After the Meteor Center, we passed through the Fort Worth Stockyards and the river walk to at San Antonio to reach the NASA Space Center in Houston</p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-24.jpg" alt=""></p>
-</body></html>
+<p>After the Meteor Center, we passed through the Fort Worth Stockyards and the river walk to at San Antonio to reach the NASA Space Center in Houston</p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-nasas-space-center-texas/NasaSpaceCenter-24.jpg" alt="" /></p>
+
 
 
 

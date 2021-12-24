@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">JAH: Update 1</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,13 +157,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>You can see all the related updates <a href="/tags/jah">here</a></p>
+<p>You can see all the related updates <a href="/tags/jah">here</a></p>
 <p>As promised in the <a href="new-side-project-jah">previous post</a>, this is the project's current status.</p>
 <ul>
 <li><p>v 0.0.0</p>
 <ul>
 <li>Setting up a project structure for the separation of concerns and to enable unit and integration testing.</li>
-<li>Added a test hello controller for web and API projects to append "Hello" to the passed-in string.</li>
+<li>Added a test hello controller for web and API projects to append &quot;Hello&quot; to the passed-in string.</li>
 <li>Decoupled web host from the application.</li>
 <li>created initial database migration.</li>
 <li>added web and API endpoints to get a list of job applications.</li>
@@ -181,10 +181,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 </ul>
 <p>This is how the webpage looks currently.</p>
-<p><img src="/assets/images/posts/jah-update-1/jah_update1.jpg" alt="JAH Update 1"></p>
+<p><img src="/assets/images/posts/jah-update-1/jah_update1.jpg" alt="JAH Update 1" /></p>
 <h2 id="next-up">Next up</h2>
 <p>Adding the ability to add new applications.</p>
-</body></html>
+
 
 
 

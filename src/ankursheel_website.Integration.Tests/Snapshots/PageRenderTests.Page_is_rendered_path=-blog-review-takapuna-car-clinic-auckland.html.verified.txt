@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Review: Takapuna Car Clinic, Auckland</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>I am sure you are wondering why would I write a review of a garage (Takapuna Car Clinic) on my blog. The way I see it, there can only be two reasons: either the service provided was exemplary or atrocious.</p>
+<p>I am sure you are wondering why would I write a review of a garage (Takapuna Car Clinic) on my blog. The way I see it, there can only be two reasons: either the service provided was exemplary or atrocious.</p>
 <p><strong>Which one do you think it is?</strong></p>
 <h2 id="the-story">The story</h2>
 <p>To begin my story, my car was due for a service and a WOF(Warrant of Fitness), and I decided to look on the usual coupon site like Groupon and Grabone to see if I could find a decent deal. The one that caught my fancy was a deal from the Takapuna Car Clinic.</p>
@@ -170,7 +170,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>This was a little surprising as the car has been driven for less than 3000 kilometres in the last year, and it had passed the previous WOF. Needless to say, I got out of there as fast as I could.</p>
 <p>That's not true;</p>
 <p>I spent some time sitting in the car searching for the nearest AA (WOF) centre. Thankfully, I did. The AA centre told me nothing was wrong with my car and gave me the WOF in 15 minutes.</p>
-<p>I guess the adage "You get what you pay for" has some truth to it.</p>
+<p>I guess the adage &quot;You get what you pay for&quot; has some truth to it.</p>
 <h2 id="other-reviews-on-the-internet">Other reviews on the internet</h2>
 <p>Later on, I searched for reviews on the web and could not find too many bad reviews. The few that were there, for the most part, had given them excellent ratings. However, I did find a few bad reviews(some of which I have outlined below) on google plus and in the slightly obscure sites.</p>
 <p><em><strong>Disclaimer: The comments below have been reproduced as seen on the internet</strong></em></p>
@@ -181,13 +181,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Takapuna Car Clinic failed my car's WOF because of apparently worn lower control arm bushings on left and right side of car and quoted a fortune in labour costs to replace these. I removed control arms and took the arms to my own mechanic to replace the bushings. According to VTNZ and my mechanic there was nothing wrong with the bushings. I've decided to replace bushings anyway since most of work was already done and had already purchased new bushings, plus the hassle with Takapuna Car…</p>
 </blockquote>
 <blockquote>
-<p>Hideous experience. Warning! Never use this garage. I was ripped off on overpriced work that didn't even need doing. While they also missed a crucial mechanical problem. The customer service is non existant, rude and arrogant. Worst experience ever! "</p>
+<p>Hideous experience. Warning! Never use this garage. I was ripped off on overpriced work that didn't even need doing. While they also missed a crucial mechanical problem. The customer service is non existant, rude and arrogant. Worst experience ever! &quot;</p>
 </blockquote>
 <h2 id="conclusion">Conclusion</h2>
 <p>The reason for writing this becomes self-evident. A review that the people at the Takapuna car clinic can't delete and can reply to in the comments to defend their position.</p>
 <p>At the time of writing, almost 300 more people have fallen into the trap.</p>
 <p>Have you been to this garage? How was your experience?</p>
-</body></html>
+
 
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Weekly Roundup 11</title>
+<title>Ankur Sheel - How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
 <meta charset="utf-8"/>
 
 <!-- Google Tag Manager -->
@@ -16,27 +16,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End Google Tag Manager -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="This weeks roundup contains articles from Martin Gasston, Sunil Sandhu and tools from Bennet Feely, Neil Green and Neal Agarwal."/>
+<meta name="description" content="A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-17-nov-2019"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis"/>
 
-<meta itemProp="name" content="Weekly Roundup 11"/>
-<meta itemProp="description" content="This weeks roundup contains articles from Martin Gasston, Sunil Sandhu and tools from Bennet Feely, Neil Green and Neal Agarwal."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-17-nov-2019-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/weekly-roundup-17-nov-2019"/>
+<meta itemProp="name" content="How to use Access Control Lists (ACL) for Graphql subscriptions with Redis"/>
+<meta itemProp="description" content="A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/use-acl-graphql-subscriptions-redis-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Weekly Roundup 11"/>
-<meta property="og:description" content="This weeks roundup contains articles from Martin Gasston, Sunil Sandhu and tools from Bennet Feely, Neil Green and Neal Agarwal."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-17-nov-2019-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-17-nov-2019-facebook.png"/>
+<meta property="og:title" content="How to use Access Control Lists (ACL) for Graphql subscriptions with Redis"/>
+<meta property="og:description" content="A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/use-acl-graphql-subscriptions-redis-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/use-acl-graphql-subscriptions-redis-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Weekly Roundup 11"/>
-<meta name="twitter:description" content="This weeks roundup contains articles from Martin Gasston, Sunil Sandhu and tools from Bennet Feely, Neil Green and Neal Agarwal."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-17-nov-2019-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-17-nov-2019-twitter.png"/>
+<meta name="twitter:title" content="How to use Access Control Lists (ACL) for Graphql subscriptions with Redis"/>
+<meta name="twitter:description" content="A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/use-acl-graphql-subscriptions-redis-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/use-acl-graphql-subscriptions-redis-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -139,38 +139,107 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Weekly Roundup 11</h1>
+    <h1 class="text-center">How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <i>Last Updated On: 17-Nov-2019</i>
+        <i>Last Updated On: 21-Dec-2021</i>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 2 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/weekly-roundup" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">weekly roundup</a>
+            <a href="/tags/graphql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">graphql</a>
+            <a href="/tags/docker" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">docker</a>
+            <a href="/tags/hotchocolate" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">hotchocolate</a>
     </div>
 </div>
 
-<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
-<p><strong>Martin Gasston</strong> has some great advice on <a href="https://8thlight.com/blog/martin-gaston/2019/10/22/tips-for-technical-writing.html">writing technical articles</a> at the 8th Light blog. He also has some creative writing exercises to help you along. If you are looking for a template, he also has that covered.</p>
-<p><a href="https://bennettfeely.com/clippy/"><strong>Clippy – CSS clip-path Maker</strong></a> is a handy tool (made by <strong>Bennet Feely</strong>) to create shapes using the <code>clip-path</code> CSS property. It also comes with some predefined shapes.</p>
-<p>How do the most popular testing tools for React compare to each other? <strong>Sunil Sandhu</strong> tests the same app using Jest, Enzyme, Testing Library, and Cypress.Check it out <a href="https://medium.com/javascript-in-plain-english/i-tested-a-react-app-with-jest-testing-library-and-cypress-here-are-the-differences-3192eae03850">here</a></p>
-<p>Ever wondered what type of developer you are? <strong>Neil Green</strong> has a <a href="https://www.12types.dev/quiz">handy quiz</a>. My top trait was <em>The Assassin</em>: capable of quickly and quietly finishing their work before anyone even knows they have started. I think this will also be a suitable tool to ask your coworkers to fill for you.</p>
-<p><strong>Neal Agarwal</strong> has a fantastic tour of scale within the known universe at <a href="https://neal.fun/size-of-space/">The Size of Space</a>.</p>
-<p>Hope you enjoy reading these articles as much as I did.</p>
+<html><head></head><body><p>In the last post, we saw how we can <a href="/blog/implement-graqhql-subscriptions-hotchocolate-redis">add subscriptions to our Graphql server</a>. This post will show how to set up an ACL (Access Control List) for Redis to restrict access to trusted clients.</p>
+<h2 id="setting-up-redis-acl-access-control-list">Setting up Redis ACL (Access Control list)</h2>
+<p>Create a new file and call it <em>users.acl</em>. In this file, we want to do 3 things.</p>
+<ul>
+<li>disable the default user</li>
+<li>add an admin user who is the same as a default user but has an explicit username.</li>
+<li>add a restricted user with access to a specific channel.</li>
+</ul>
+<h3 id="disable-the-default-user">Disable the default user</h3>
+<p>By default, a single user without any restrictions is defined. We can disable the default user by adding <code>user default off</code></p>
+<h3 id="create-an-admin-user">Create an admin user</h3>
+<p><code>user admin on nopass ~* &amp;* +&#64;&#64;all</code></p>
+<p>This line creates a user with the username <em><strong>admin</strong></em>. This user is configured to be</p>
+<ul>
+<li><strong>on</strong>: active</li>
+<li><strong>nopass</strong>: require no password</li>
+<li><strong>~*</strong>: access every possible key</li>
+<li><strong>&amp;*</strong>: access every Pub/Sub channel</li>
+<li><strong>+&#64;&#64;all</strong>: able to call every possible command</li>
+</ul>
+<h3 id="create-a-restricted-user-for-graphql-subscriptions">Create a restricted user for Graphql subscriptions</h3>
+<p><code>user test on nopass ~* resetchannels &amp;cdd/graphql_subscriptions/* -&#64;&#64;all +&#64;&#64;connection +&#64;&#64;pubsub</code></p>
+<p>This line creates a user with the username <em><strong>test</strong></em>. This user is configured to be</p>
+<ul>
+<li><strong>on</strong>: active</li>
+<li><strong>nopass</strong>: require no password</li>
+<li><strong>~*</strong>: access every possible key</li>
+<li><strong>resetchannels</strong>: : Resetsw the list of allowed channel patterns and disconnect the user from channels it doesnt have access to anymore.</li>
+<li><strong>&amp;graphql_subscriptions/*</strong>: access everything under the <em>graphql_subscriptions</em> channel</li>
+<li><strong>-&#64;&#64;all +&#64;&#64;connection +&#64;&#64;pubsub</strong>: Restrict access to the connection and pubsub commands.</li>
+</ul>
+<h2 id="setting-up-redis-configuration">Setting up Redis configuration</h2>
+<p>The <em>redis.conf</em> file allows us to configure Redis and set up authentication.</p>
+<p><code>aclfile /usr/local/etc/redis/users.acl</code></p>
+<p>This tells Redis that we want to use an external aclfile found at <em>/usr/local/etc/redis/</em>.</p>
+<h2 id="updating-hot-chocolate-to-use-a-custom-user">Updating Hot Chocolate to use a custom user</h2>
+<p>In our <em>Startup.cs</em> class, we need to update the configuration options to set the user for the Redis server. We also set the channelPrefix as the graphpqlSubscriptionUser only has access to <em>graphql_subscriptions</em> channel.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ConfigureServices</span>(<span class="hljs-params">IServiceCollection services</span>)
+</span>{
+    <span class="hljs-keyword">var</span> options = <span class="hljs-keyword">new</span> ConfigurationOptions
+            {
+                EndPoints = { &quot;localhost:<span class="hljs-number">6379</span>&quot; },
+                User = &quot;graphpqlSubscriptionUser&quot;,
+                ChannelPrefix = &quot;graphql_subscriptions/&quot;
+            };
 
+    services.AddGraphQLServer()
+        .AddQueryType&lt;Query&gt;()
+        .AddMutationType&lt;Mutation&gt;()
+        .AddSubscriptionType&lt;Subscription&gt;()
+        .AddRedisSubscriptions(_ =&gt; ConnectionMultiplexer.Connect(options));
+}
+</code></pre>
+<h2 id="adding-a-docker-compose-file">Adding a docker compose file</h2>
+<pre><code class="language-dockerfile hljs">version: <span class="hljs-string">'3'</span>
+services:
+  redis:
+    image: redis:<span class="hljs-number">6.2</span>-alpine
+    ports:
+      - &quot;<span class="hljs-number">6379</span>:<span class="hljs-number">6379</span>&quot;
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+      - ./users.acl:/usr/local/etc/redis/users.acl
+    container_name: redis-graphql
+    command: redis-server /usr/local/etc/redis/redis.conf
+</code></pre>
+<p>Then we can run the command <code>docker-compose up --force-recreate -d --build</code> to start the Redis container.</p>
+<h2 id="demo-project">Demo Project</h2>
+<p>There is a <a href="https://github.com/AnkurSheel/HotChocolateSubscriptions">demo project</a> you can check out over on GitHub.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://redis.io/topics/acl">Redis ACL</a></li>
+<li><a href="https://stackexchange.github.io/StackExchange.Redis/Configuration">StackExchange.Redis Configuration</a></li>
+</ul>
+</body></html>
 
 
 
 <aside class="hidden md:block mt-12">
         <div class="flex justify-center gap-x-5 ">
-            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-17-nov-2019&text=This%20weeks%20roundup%20contains%20articles%20from%20Martin%20Gasston%2C%20Sunil%20Sandhu%20and%20tools%20from%20Bennet%20Feely%2C%20Neil%20Green%20and%20Neal%20Agarwal. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
-            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/weekly-roundup-17-nov-2019"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis&text=A%20guide%20to%20adding%20Access%20Control%20Lists%20%28ACL%29%20%20for%20Redis%20to%20restrict%20access%20and%20using%20a%20restricted%20user%20for%20Graphql%20subscriptions%20with%20Hot%20Chocolate via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         </div>
 </aside>
 

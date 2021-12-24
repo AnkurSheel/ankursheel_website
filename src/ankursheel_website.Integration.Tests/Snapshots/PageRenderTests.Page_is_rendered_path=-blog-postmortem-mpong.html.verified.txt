@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">A PostMortem of Mpong</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>The reasons I decided to stop working on Pong before it was completely polished include</p>
+<p>The reasons I decided to stop working on Pong before it was completely polished include</p>
 <ul>
 <li>I had been working on MPong for so long that it was tough to find the motivation to continue working on it.</li>
 <li>Although I was continuously adding features to the engine, I was not building up my portfolio.</li>
@@ -188,7 +188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Restart Option</li>
 <li>Pause on Minimizing</li>
 </ul>
-</body></html>
+
 
 
 

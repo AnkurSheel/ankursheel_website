@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 45</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<!-- markdownlint-disable no-duplicate-header --><html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<!-- markdownlint-disable no-duplicate-header -->
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <h2 id="is-renting-a-waste-of-money"><a href="https://www.iwillteachyoutoberich.com/blog/renting-is-not-a-waste/">Is Renting a Waste of Money</a></h2>
 <p><em>by <strong>Ramit Sethi</strong></em></p>
 <p>Even though it's the same thing as paying to eat at a restaurant, many people believe that renting is throwing away money. This article shares the common reasons why believe the myth that renting is throwing away money.</p>
@@ -172,7 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="database-normalization"><a href="https://dev.to/fajarzuhrihadiyanto/database-normalization-jil">Database Normalization</a></h2>
 <p><em>by <strong>Fajar Zuhri Hadiyanto</strong></em></p>
 <p>The steps to normalize a database from completely un-normalized to 5NF by way of an example.</p>
-</body></html>
+
 
 
 

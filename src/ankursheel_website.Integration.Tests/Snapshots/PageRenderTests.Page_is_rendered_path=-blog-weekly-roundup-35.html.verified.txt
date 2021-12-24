@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 35</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Tiago Forte</strong> shares his <a href="https://fortelabs.co/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/">Progressive Summarization technique</a> to write discoverable notes. I have just started applying it to how I consume content over the internet and write book summaries at <a href="https://www.discoveriesinbookland.com/">Discoveries in Bookland</a>. It has been a game-changer. You summarize the notes in layers whenever you come across the note rather than all at once.</p>
 <p>A brag document is beneficial for remembering all the small things you did when it is time for a performance review. Instead of trying to remember everything <strong>Julia Evans</strong> recommends maintaining a <a href="https://jvns.ca/blog/brag-documents/">brag document</a> that you can refer to. She also has a template that you can use at the end of the post.</p>
 <p>Do you know what it takes to write a book? How about crowdfunding it and then independently publishing it? <strong>Blake Boles</strong> documents not only the <a href="https://www.blakeboles.com/2020/07/book-story/">17-month long process of writing</a> but also what his costs were.</p>
@@ -165,7 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Kent Dodds</strong> deprecated his most popular open-source library - <em>Glamourous</em> in favour of <em>Emotion</em>. In this article, he talks about <a href="https://kentcdodds.com/blog/favor-progress-over-pride-in-open-source">when deprecating your open sense project makes sense</a> and how it not only greatly benefits the community but also frees you up to work on new things.</p>
 <p><em>Shameless Plug</em>: I wrote a <a href="https://www.discoveriesinbookland.com/blog/one-page-financial-plan">summmary of The One Page Financial Plan</a> by Carl Richards. Go check it out if you think that making a financial plan has to be complex.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: World Of Coca Cola, Georgia</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,26 +158,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>After the Nasa Space Center, it was time for refreshments and since my Mom is a big fan of Coke, we found ourselves at "The World of Coca Cola" in Atlanta. Unfortunately, they don't allow pictures in most areas.</p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-18.jpg" alt=""></p>
-</body></html>
+<p>After the Nasa Space Center, it was time for refreshments and since my Mom is a big fan of Coke, we found ourselves at &quot;The World of Coca Cola&quot; in Atlanta. Unfortunately, they don't allow pictures in most areas.</p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-world-coca-cola-georgia/WorldOfCocaCola-18.jpg" alt="" /></p>
+
 
 
 

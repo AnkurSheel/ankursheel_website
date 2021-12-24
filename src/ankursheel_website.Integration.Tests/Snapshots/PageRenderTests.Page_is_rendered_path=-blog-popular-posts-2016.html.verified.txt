@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">What were my most popular posts in 2016</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>It is time to see the most popular posts and pages on the blog in 2016.</p>
+<p>It is time to see the most popular posts and pages on the blog in 2016.</p>
 <h2 id="posts">Posts</h2>
 <p>The most popular posts in this category were related to the Codingame contest. I think this was further helped because some of the posts were added to the codingame forum, which increased the visibility to a larger number of people who wouldn't have found the blog otherwise. It also indicates that the Sunday photos and quotes are not good when trying to generate traffic. Apart from that, New Zealand escapes seemed to have made for some good reading.</p>
 <p>This kind of enforces the view that it is better to write fewer articles but with more content.</p>
@@ -169,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 <li><p><a href="accountant-codingame-ai-contest-postmortem">The Accountant (Codingame AI Contest) PostMortem</a></p>
 </li>
-<li><p><a href="fantastic-bits-codingame">Fantastic Bits@Codingame</a> . <a href="weekly-roundup-1">Weekly Roundup 1</a></p>
+<li><p><a href="fantastic-bits-codingame">Fantastic Bits&#64;Codingame</a> . <a href="weekly-roundup-1">Weekly Roundup 1</a></p>
 </li>
 <li><p>Sunday Photo: Apothecary</p>
 </li>
@@ -180,7 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p><a href="new-zealand-escapes-waitomo-blackwater-rafting">New Zealand Escapes: Waitomo Blackwater Rafting</a></p>
 </li>
 </ol>
-<hr>
+<hr />
 <h2 id="pages">Pages</h2>
 <ol>
 <li><p><a href="/cv">CV</a></p>
@@ -194,8 +194,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p>Professional Experience</p>
 </li>
 </ol>
-<hr>
-</body></html>
+<hr />
+
 
 
 

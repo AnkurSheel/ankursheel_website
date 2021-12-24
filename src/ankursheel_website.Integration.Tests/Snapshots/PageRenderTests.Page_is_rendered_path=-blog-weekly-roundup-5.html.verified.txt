@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 5</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Do you want to amp up your spreadsheet skills and know the price for each day of retirement? <strong>Chris</strong> from <strong>Keep Thrifty</strong> has a <a href="http://www.keepthrifty.com/2016/09/25/the-price-of-an-extra-day-spreadsheet-edition/">tutorial on creating your spreadsheet</a> to not only calculate the cost of a day of retirement but also to plot out the retirement account balance against the target balance.</p>
 <p>Have you wanted to start investing, but most of the advice is geared towards the USA market? Fear not, <strong>Ruth</strong> from <strong>The Happy Saver</strong> is a kiwi who talks about her <a href="http://www.thehappysaver.com/blog/dive-into-diversification">diversification strategy for investing</a> in New Zealand.</p>
 <p>Do you go to work just because of the money? <strong>Graham</strong> from <strong>Reverse the Crush</strong> talks about <a href="http://www.reversethecrush.com/taking-year-off-awesome-af/">why taking a year off is a good decision</a> and why everyone should consider it.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Caz</strong> from <strong>Y Travel</strong> has <a href="http://www.ytravelblog.com/ife-hacks-luxury-living/">19 simple life hacks for a luxury living</a>.</p>
 <p>Want more details on SpaceX's BFR(Big Freaking Rocket), which will help to colonize Mars. <strong>Tim</strong> from <strong>Wait but Why</strong> has the <a href="http://waitbutwhy.com/2016/09/spacexs-big-freaking-rocket-cleanversion.html">whole story about this rocket that might be ready to launch in a few years</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

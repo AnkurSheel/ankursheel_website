@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 26</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>If you use object styles for CSS-in-JS like I am using for this blog and need to convert large blocks of CSS styles from tutorials, <a href="https://css2js.dotenv.dev/">CSS2JS</a> from <strong>Sara Viera</strong> is a handy tool that transforms between CSS, JS objects and React props.</p>
 <p><strong>Tim Urban</strong> has a whimsical article on how the <a href="https://waitbutwhy.com/2020/03/my-morning.html">coronavirus is manufactured</a> by a world much smaller than us to cause a scary global crisis so that humans can realise that they are a single team alone in a dangerous universe.</p>
 <p><strong>Ahmad Shadeed</strong> has a <a href="https://ishadeed.com/article/viewport-units/">deep dive on viewport units in CSS</a> which includes the different use cases.</p>
@@ -165,7 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Michael Bierut</strong> has some great tips on <a href="https://designobserver.com/feature/designing-through-the-recession/7177">what you can do in a recession</a>. The best thing is that the suggestions make sense even in good times.</p>
 <p><strong>Charity Majors</strong> has a great post on <a href="https://www.honeycomb.io/blog/honeycomb-welcomes-new-vp-engineering-why-its-so-important-to-look-inside-your-org-before-you-look-outside/">why they promoted their VP of Engineering from within</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

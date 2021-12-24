@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: Legoland, San Diego</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,34 +158,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>For the kid in you who have grown up playing with LEGO blocks, a photo essay of LegoLand</p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-24.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-25.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-26.jpg" alt=""></p>
-</body></html>
+<p>For the kid in you who have grown up playing with LEGO blocks, a photo essay of LegoLand</p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-24.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-25.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-legoland-san-diego/LegoLand-26.jpg" alt="" /></p>
+
 
 
 

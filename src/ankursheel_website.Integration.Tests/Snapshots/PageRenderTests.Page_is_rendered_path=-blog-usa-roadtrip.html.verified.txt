@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">USA Roadtrip</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,9 +158,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<!-- markdownlint-disable MD033 --><html><head></head><body><p>The next few photo series will be related to the road trip I had taken with my parents across the USA after graduating in May 2010. As a sneak preview, the route of the road trip.</p>
-<p><img src="/assets/images/posts/usa-roadtrip/map.jpg" alt="Map of the road trip"></p>
-</body></html>
+<!-- markdownlint-disable MD033 -->
+<p>The next few photo series will be related to the road trip I had taken with my parents across the USA after graduating in May 2010. As a sneak preview, the route of the road trip.</p>
+<p><img src="/assets/images/posts/usa-roadtrip/map.jpg" alt="Map of the road trip" /></p>
+
 
 
 

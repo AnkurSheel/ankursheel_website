@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Dubai Dolphinarium</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,22 +158,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>A must-see in Dubai is the Dubai Dolphinarium located at the Creek Park. The entry fee is about 75 dirhams.</p>
+<p>A must-see in Dubai is the Dubai Dolphinarium located at the Creek Park. The entry fee is about 75 dirhams.</p>
 <p>Dolphins are some of the most fascinating of marine mammals.</p>
-<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-1.jpg" alt="Seals"></p>
+<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-1.jpg" alt="Seals" /></p>
 <p>It was Gunjan's first time to watch a live seal and dolphin show. I was a bit sceptical about the quality of the show but these reservations were quickly shattered once the show started. While it's certainly not SeaWorld, the show is very good.</p>
-<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-2.jpg" alt="More Seals"></p>
+<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-2.jpg" alt="More Seals" /></p>
 <p>The seals show off their skills first. They balance a ball with their nose, sing into a microphone and dance.</p>
-<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-3.jpg" alt="Swimming Dolphins"></p>
+<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-3.jpg" alt="Swimming Dolphins" /></p>
 <p>After the seals finish their tricks, they exit and the dolphins start their antics. They play with rings, basketball, jump and touch balls which are held high and jump through rings.</p>
-<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-5.jpg" alt="Jumping Dolphins"></p>
+<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-5.jpg" alt="Jumping Dolphins" /></p>
 <p>At one point, one of the dolphins painted a picture which was then auctioned off to the audience for a price. The trainer also holds the tail of one of them and moves around the pool. She also stands and rides one of the dolphins. The best part was their play with the audience. While we throw giant balls to them, they throw it back to us.</p>
-<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-4.jpg" alt="More Dolphins"></p>
+<p><img src="/assets/images/posts/dubai-dolphinarium/dubai-dolphinarium-4.jpg" alt="More Dolphins" /></p>
 <p>There was a lucky draw for the children. You had to buy small balls which were about 10 dirhams each and all the children would throw them in the pool. The ball which the dolphins pick up and return first is the winner. The winner got to be pulled in a small boat by a dolphin.</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/sUo_fI09GKI" title="Dubai Dolphinarium" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
-</body></html>
+
 
 
 

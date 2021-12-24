@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 8</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,11 +156,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Are you losing money even though you don't know it? <strong>Cubert AC</strong> has a guest post on <strong>Budgets Are Sexy</strong> detailing how the <a href="http://www.budgetsaresexy.com/2016/10/how-to-lose-a-million-dollars/">small things cost him a million dollars</a> over 20 years.</p>
 <p>Ever wondered how to protect your gear when travelling through extreme climates? <strong>Liz</strong> from <strong>Young Adventuress</strong> has some <a href="http://youngadventuress.com/2016/10/weather-travel-gear.html">tips for travelling in extreme climates and not destroying your stuff</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

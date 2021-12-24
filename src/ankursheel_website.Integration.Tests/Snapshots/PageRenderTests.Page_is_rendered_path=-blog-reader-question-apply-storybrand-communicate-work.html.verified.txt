@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How can we apply Storybrand to how we communicate at work</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="reader-question">Reader Question</h2>
+<h2 id="reader-question">Reader Question</h2>
 <blockquote>
 <p>Even though the Building a Storybrand seems to be mostly oriented towards marketing messaging, how would you apply it to general messaging at work?</p>
 </blockquote>
@@ -178,7 +178,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>We are clear/consistent in our interactions with others so that they know what can be expected from us</li>
 <li>We are clearly articulating the value we bring to the table for both the business and to other individuals</li>
 </ol>
-</body></html>
+
 
 
 

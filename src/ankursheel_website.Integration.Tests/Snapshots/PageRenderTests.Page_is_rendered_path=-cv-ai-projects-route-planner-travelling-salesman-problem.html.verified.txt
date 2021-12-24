@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Route Planner: Travelling Salesman Problem</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <h2 id="usa-cities">USA Cities</h2>
 <p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/USACitiesOriginal.jpg" alt="Original" /></p>
 <p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/USACitiesFinal.jpg" alt="Final" /></p>

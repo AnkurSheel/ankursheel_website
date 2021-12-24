@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 36</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Maxwell Forbes</strong> shares his thoughts on why we should <a href="https://maxwellforbes.com/posts/use-examples">use more examples</a> to make it easier for our audience to understand our ideas. He also gives a counterpoint to most of the common excuses that people have to write examples.</p>
 <p>After being rejected in an interview at a startup, have you ever felt that it was a rejection of you as a person or of your skills? <strong>Charity Majors</strong> shares the <a href="https://charity.wtf/2019/10/18/the-real-11-reasons-i-dont-hire-you/">11 reasons she might not hire someone even though they might be awesome</a>.</p>
 <p>When we focus only on one solution to the exclusion of others, we stop learning. We can miss a different approach that might have been better. <strong>Chelsea Troy</strong> goes over how <a href="https://chelseatroy.com/2020/09/01/only-one-right-way/">applying a single set of practices is prevalent in the tech industry</a> and what we can do to avoid it.</p>
@@ -164,7 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Hiring good people is challenging for any company. These <a href="https://robertheaton.com/2014/04/21/9-ways-to-get-that-engineer/">tweaks to your hiring process</a> by <strong>Robert Heaton</strong> can make it more likely that the people you make offers to accept them.</p>
 <p><strong>Prasanjit Singh</strong> shares a few <a href="https://css-tricks.com/ground-rules-for-web-animations/">ground rules for working with animations</a> which can help your site stand out rather than kill the experience for the user.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

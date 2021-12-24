@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How do I implement Graphql subscriptions in HotChocolate with Redis</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -154,6 +154,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/graphql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">graphql</a>
             <a href="/tags/docker" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">docker</a>
+            <a href="/tags/hotchocolate" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">hotchocolate</a>
     </div>
 </div>
 
@@ -169,10 +170,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IObjectTypeDescriptor descriptor</span>)
     </span>{
-        descriptor.Field(<span class="hljs-string">"onPing"</span>)
+        descriptor.Field(&quot;onPing&quot;)
             .Type&lt;NonNullType&lt;StringType&gt;&gt;()
             .Resolve(ctx =&gt; ctx.GetEventMessage&lt;<span class="hljs-keyword">string</span>&gt;())
-            .Subscribe(<span class="hljs-keyword">async</span> ctx =&gt; <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventReceiver&gt;().SubscribeAsync&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">string</span>&gt;(<span class="hljs-string">"onPing"</span>, ctx.RequestAborted));
+            .Subscribe(<span class="hljs-keyword">async</span> ctx =&gt; <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventReceiver&gt;().SubscribeAsync&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">string</span>&gt;(&quot;onPing&quot;, ctx.RequestAborted));
     }
 }
 </code></pre>
@@ -194,7 +195,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </span>{
     <span class="hljs-keyword">var</span> options = <span class="hljs-keyword">new</span> ConfigurationOptions
     {
-        EndPoints = { <span class="hljs-string">"localhost:6379"</span> },
+        EndPoints = { &quot;localhost:<span class="hljs-number">6379</span>&quot; },
     };
 
     services.AddGraphQLServer()
@@ -209,22 +210,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IObjectTypeDescriptor descriptor</span>)
     </span>{
-        descriptor.Field(<span class="hljs-string">"ping"</span>)
+        descriptor.Field(&quot;ping&quot;)
             .Type&lt;NonNullType&lt;StringType&gt;&gt;()
-            .Argument(<span class="hljs-string">"payload"</span>, des =&gt; des.Type&lt;NonNullType&lt;StringType&gt;&gt;())
+            .Argument(&quot;payload&quot;, des =&gt; des.Type&lt;NonNullType&lt;StringType&gt;&gt;())
             .Resolve(
                 <span class="hljs-keyword">async</span> ctx =&gt;
                 {
-                    <span class="hljs-keyword">var</span> input = ctx.ArgumentValue&lt;<span class="hljs-keyword">string</span>&gt;(<span class="hljs-string">"payload"</span>);
+                    <span class="hljs-keyword">var</span> input = ctx.ArgumentValue&lt;<span class="hljs-keyword">string</span>&gt;(&quot;payload&quot;);
 
-                    <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventSender&gt;().SendAsync(<span class="hljs-string">"onPing"</span>, input);
+                    <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventSender&gt;().SendAsync(&quot;onPing&quot;, input);
                     <span class="hljs-keyword">return</span> input;
                 });
     }
 }
 </code></pre>
 <ul>
-<li><strong><em>Line 13:</em></strong>: "onPing" is the topic we want to publish, and <em>input</em> is our payload.</li>
+<li><strong><em>Line 13:</em></strong>: &quot;onPing&quot; is the topic we want to publish, and <em>input</em> is our payload.</li>
 </ul>
 <h2 id="testing">Testing</h2>
 <p>We can start an Interactive Shell for the Redis Docker Container.</p>
@@ -236,7 +237,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><img src="/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/redis_docker_interactive_shell.png" alt="Subscribing to the topic in an interactive shell for redis"></p>
 <p>In Insomnia (or your IDE of choice), add the following mutation.</p>
 <pre><code class="language-graphql">mutation {
-    ping(payload: "hello")
+    ping(payload: &quot;hello&quot;)
 }
 </code></pre>
 <p>On execution, we should see the following responses.</p>

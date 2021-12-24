@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 24</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,14 +156,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>What's the worst that can happen when you stop paying your credit card. <strong>Lars Lofgren</strong> shares <a href="https://www.iwillteachyoutoberich.com/blog/stop-paying-credit-cards/">what happens at the 30 days, 60 days, 90 days and 180-day intervals</a>. He also gives tips on dealing with collection agencies and other options to consider if you can't pay your debts.</p>
 <p>Writing a technical blog post? You should consider all these points that <strong>Chris Coyier</strong> shares in this <a href="https://css-tricks.com/lets-say-you-were-going-to-write-a-blog-post-about-dark-mode/">thought exercise for writing a blog post about dark mode</a>.</p>
 <p>Think your life has not improved over the years, and it's much worse than before? <strong>Gwern Branwen</strong> has a personal list of how her <a href="https://www.gwern.net/Improvements">life has improved since the '90s</a> because of the progress we have made since then. Going through the list, it is so easy to see how we forget about the irritations that plagued our life just a few years ago.</p>
 <p>Do you think that if you want to get things done, you need to create a sense of urgency? <strong>Elisabeth Hendrickson</strong> explains why <a href="http://testobsessed.com/2020/02/momentum-urgency/">a sense of momentum is much more effective than a sense of urgency</a>.</p>
 <p>How do you make the switch from a consumer to a creator? A lot of good tips by <strong>Nathan Barry</strong> to <a href="https://nathanbarry.com/consumer-to-creator/">help you become a creator</a>.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

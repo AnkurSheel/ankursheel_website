@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">What does making Pong take?</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Considering that Pong is one of the simplest games anyone can work on, why would anyone even want to make Pong. Even though the gameplay elements of Pong are simple, the underlying engine needs to have everything that a modern game has.</p>
+<p>Considering that Pong is one of the simplest games anyone can work on, why would anyone even want to make Pong. Even though the gameplay elements of Pong are simple, the underlying engine needs to have everything that a modern game has.</p>
 <ul>
 <li>Game Logic</li>
 <li>Graphics</li>
@@ -170,7 +170,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <p>References :</p>
 <p>I had come across this <a href="http://tinodidriksen.com/2003/05/06/but-can-you-make-pong/">article</a> a while earlier. It is an interesting read and probably a reality check for people getting into games.</p>
-</body></html>
+
 
 
 

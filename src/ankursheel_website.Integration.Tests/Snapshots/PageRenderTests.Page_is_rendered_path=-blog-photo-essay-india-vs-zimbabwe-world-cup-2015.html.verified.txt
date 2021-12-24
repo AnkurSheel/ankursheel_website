@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Essay: India Vs Zimbabwe, World Cup 2015</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,58 +156,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-10.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-11.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-12.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-13.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-14.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-16.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-17.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-18.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-19.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-20.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-21.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-22.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-23.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-24.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-25.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-26.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-27.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-28.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-29.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-30.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-31.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-32.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-33.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-34.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-35.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-36.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-37.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-38.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-39.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-40.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-41.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-42.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-43.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-44.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-45.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-46.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-47.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-48.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-49.jpg" alt=""></p>
-<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-50.jpg" alt=""></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-10.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-11.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-12.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-13.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-14.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-16.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-17.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-18.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-19.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-20.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-21.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-22.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-23.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-24.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-25.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-26.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-27.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-28.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-29.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-30.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-31.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-32.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-33.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-34.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-35.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-36.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-37.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-38.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-39.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-40.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-41.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-42.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-43.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-44.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-45.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-46.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-47.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-48.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-49.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/photo-essay-india-vs-zimbabwe-world-cup-2015/IndZim_Cricket_03-04-2015-50.jpg" alt="" /></p>
 <p>Hope you liked the gallery. Let me know what you think.</p>
-</body></html>
+
 
 
 

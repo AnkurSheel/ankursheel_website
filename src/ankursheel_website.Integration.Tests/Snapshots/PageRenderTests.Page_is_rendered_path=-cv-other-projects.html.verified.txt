@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Other Projects</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             <h2 id="demo-to-showcase-how-different-easing-functions-behave">Demo to showcase how different easing functions behave</h2>
 <p>Easing Functions Showcased: <em>Linear</em>, <em>Sine</em>, <em>Quadratic</em>, <em>Cubic</em>, <em>Quartic</em>, <em>Quintic</em>, <em>Exponential</em>, <em>Circular</em>, <em>Elastic</em>, <em>Back</em> and <em>Bounce</em>.</p>
 <p>Easing Types supported : <em>EaseIn</em>, <em>EaseOut</em>, <em>EaseInOut</em> and <em>EaseOutIn</em>.</p>

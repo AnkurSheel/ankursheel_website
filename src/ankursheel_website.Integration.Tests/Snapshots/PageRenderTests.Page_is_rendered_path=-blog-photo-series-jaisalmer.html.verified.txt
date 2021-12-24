@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Photo Series: Jaisalmer</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,27 +158,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>My cousin and I visited Jaisalmer in Rajasthan in December 2009.</p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-1.jpg" alt="Dark clouds"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-2.jpg" alt="Open market"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-3.jpg" alt="Man milking goats"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-4.jpg" alt="Footprint in sand"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-5.jpg" alt="Man in front of jeep"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-6.jpg" alt="Family in front of dwelling"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-7.jpg" alt="Village house"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-8.jpg" alt="Man with camel in front of water tank"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-9.jpg" alt="Surly kids"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-10.jpg" alt="Kids laughing"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-11.jpg" alt="Boy running across field"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-12.jpg" alt="Women with pots on head"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-13.jpg" alt="Camel calf drinking milk"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-14.jpg" alt="Goats"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-15.jpg" alt="Closeup of goat"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-16.jpg" alt="Closeup of goat"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-17.jpg" alt="Boy on camel in desert"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-18.jpg" alt="Boy standing to the side of a sitting camel"></p>
-<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-19.jpg" alt="Boy standing to the side of a sitting camel"></p>
-</body></html>
+<p>My cousin and I visited Jaisalmer in Rajasthan in December 2009.</p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-1.jpg" alt="Dark clouds" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-2.jpg" alt="Open market" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-3.jpg" alt="Man milking goats" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-4.jpg" alt="Footprint in sand" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-5.jpg" alt="Man in front of jeep" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-6.jpg" alt="Family in front of dwelling" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-7.jpg" alt="Village house" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-8.jpg" alt="Man with camel in front of water tank" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-9.jpg" alt="Surly kids" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-10.jpg" alt="Kids laughing" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-11.jpg" alt="Boy running across field" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-12.jpg" alt="Women with pots on head" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-13.jpg" alt="Camel calf drinking milk" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-14.jpg" alt="Goats" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-15.jpg" alt="Closeup of goat" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-16.jpg" alt="Closeup of goat" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-17.jpg" alt="Boy on camel in desert" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-18.jpg" alt="Boy standing to the side of a sitting camel" /></p>
+<p><img src="/assets/images/posts/photo-series-jaisalmer/Jaisalmer-19.jpg" alt="Boy standing to the side of a sitting camel" /></p>
+
 
 
 

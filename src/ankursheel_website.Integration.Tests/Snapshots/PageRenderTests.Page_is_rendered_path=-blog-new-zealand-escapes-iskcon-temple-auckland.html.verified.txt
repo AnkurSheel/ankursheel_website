@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Iskcon Temple, Auckland</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,19 +158,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>From the beaches and islands to a place of worship. A photo essay of the Isckon temple in Auckland.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-1.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-2.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-3.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-4.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-5.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-6.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-7.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-8.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-9.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-10.jpg" alt=""></p>
+<p>From the beaches and islands to a place of worship. A photo essay of the Isckon temple in Auckland.</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-1.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-2.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-3.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-4.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-5.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-6.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-7.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-8.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-9.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-iskcon-temple-auckland/IskconTempleAuckland-10.jpg" alt="" /></p>
 <p>Let me know how your visit was.</p>
-</body></html>
+
 
 
 

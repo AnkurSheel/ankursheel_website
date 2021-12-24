@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Deploy a Statiq website using Tailwind CSS to Netlify</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -165,8 +165,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>There are a few ways to do this, but since Statiq Web supports running external processes as part of execution, we will leverage that to install the npm packages and build our statiq website.</p>
 <h3 id="step-1-get-the-directories">Step 1: Get the directories</h3>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> currentDirectory = Directory.GetCurrentDirectory();
-<span class="hljs-keyword">var</span> nodeDirectory = Path.Combine(currentDirectory, <span class="hljs-string">".."</span>, <span class="hljs-string">"node"</span>);
-<span class="hljs-keyword">var</span> inputDirectory = Path.Combine(currentDirectory, <span class="hljs-string">"input"</span>);
+<span class="hljs-keyword">var</span> nodeDirectory = Path.Combine(currentDirectory, &quot;..&quot;, &quot;node&quot;);
+<span class="hljs-keyword">var</span> inputDirectory = Path.Combine(currentDirectory, &quot;input&quot;);
 </code></pre>
 <ul>
 <li><strong>Line 1</strong>: Get the current directory</li>
@@ -176,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h3 id="step-2-install-the-npm-packages">Step 2: Install the npm packages</h3>
 <pre><code class="language-csharp hljs">bootstrapper.AddProcess(
     ProcessTiming.Initialization,
-    _ =&gt; <span class="hljs-keyword">new</span> ProcessLauncher(<span class="hljs-string">"npm"</span>, <span class="hljs-string">"install"</span>)
+    _ =&gt; <span class="hljs-keyword">new</span> ProcessLauncher(&quot;npm&quot;, &quot;install&quot;)
     {
         LogErrors = <span class="hljs-literal">false</span>,
         WorkingDirectory = nodeDirectory
@@ -192,9 +192,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h3 id="step-3-compile-css-with-tailwind">Step 3: Compile CSS with Tailwind</h3>
 <pre><code class="language-csharp hljs">bootstrapper.AddProcess(
     ProcessTiming.Initialization,
-   _ =&gt; <span class="hljs-keyword">new</span> ProcessLauncher(<span class="hljs-string">"npx"</span>, <span class="hljs-string">"tailwind"</span>, <span class="hljs-string">"build"</span>,
-    <span class="hljs-string">$"-i <span class="hljs-subst">{Path.Combine(inputDirectory, <span class="hljs-string">"_site.css"</span>)}</span>"</span>,
-    <span class="hljs-string">$"-o <span class="hljs-subst">{Path.Combine(currentDirectory, <span class="hljs-string">"output"</span>, <span class="hljs-string">"styles.css"</span>)}</span>"</span>)
+   _ =&gt; <span class="hljs-keyword">new</span> ProcessLauncher(&quot;npx&quot;, &quot;tailwind&quot;, &quot;build&quot;,
+    $&quot;-i {Path.Combine(inputDirectory, &quot;_site.css&quot;)}&quot;,
+    $&quot;-o {Path.Combine(currentDirectory, &quot;output&quot;, &quot;styles.css&quot;)}&quot;)
 {
     LogErrors = <span class="hljs-literal">false</span>,
     WorkingDirectory = nodeDirectory

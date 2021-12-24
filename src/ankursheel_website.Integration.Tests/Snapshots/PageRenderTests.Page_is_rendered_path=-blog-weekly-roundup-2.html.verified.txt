@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 2</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><del>Do you want to help out someone terrible with money? <strong>Apathy Ends</strong> has an interesting article on how to tell someone that they are bad with money. The other article you must read while you are there is the 7 step guide to building a financial base</del>.</p>
 <p>Budgeting is essential to attain financial independence. <strong>Pamela</strong> from <strong>My Money Counts</strong> tells you how to implement your budget like a corporation.</p>
 <p>Are you thinking of buying a house? Read my article about whether <a href="rent-buy-house">you should purchase or rent</a>. Still convinced that buying is the right decision for you. <strong>Jon</strong> at <strong>Money Smart Guides</strong> has a <a href="http://www.moneysmartguides.com/ultimate-guide-buying-a-house">complete guide to buying a house</a>.</p>
@@ -167,7 +167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Do you find working remotely hard? <strong>Dmitry</strong> from <strong>Zapier</strong> gives <a href="https://zapier.com/blog/productive-remote-work/">8 strategies for working remotely.</a></p>
 <p>Game Development is complex, especially if you are an indie developer. <strong>Gianfranco</strong> from <strong>GBGames</strong> pens down the <a href="http://gbgames.com/blog/2016/09/the-internal-struggle-on-doing-game-development-right/">internal struggle on doing game development right</a> which I think is something every game developer can relate to.</p>
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

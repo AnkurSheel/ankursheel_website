@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">How to add a billing admin user to secure an AWS root account</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,30 +159,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>When you first create your AWS account, you create a root user. A root user can access everything that AWS offers, and you cannot reduce the permissions associated with it.</p>
+<p>When you first create your AWS account, you create a root user. A root user can access everything that AWS offers, and you cannot reduce the permissions associated with it.</p>
 <p>Amazon best practices recommend that you can create an admin group for administrative tasks. However, IAM users do not have access to the <em>AWS Billing and Cost Management Console</em> by default, so we need to explicitly enable access.</p>
 <p>Let's see how we can create a user with administrator and Billing Access rights to reduce the number of reasons we need to log in as a root user.</p>
 <p>First login as the root user</p>
 <h2 id="enable-access-to-billing-informations-for-iam-users">Enable Access to Billing Informations for IAM users</h2>
 <p>On the navigation bar, choose the account name and click on <em>My Account</em>.</p>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/my_account.png" alt="My Account"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/my_account.png" alt="My Account" /></p>
 <h3 id="enable-access-to-billing-information">Enable Access to Billing Information</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/activate_iam_access.png" alt="Activate IAM Access"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/activate_iam_access.png" alt="Activate IAM Access" /></p>
 <p>In the <em>IAM User and Role Access to Billing Information</em> section, select the <em>Activate IAM Access</em> checkbox and click on the <em>Update</em> button.</p>
 <h2 id="secure-root-user">Secure root user</h2>
 <p>Navigate to the IAM(Identity and Access Management) console.</p>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/IAM.png" alt="IAM Service"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/IAM.png" alt="IAM Service" /></p>
 <ul>
 <li><p>Activate MFA on the root account to secure it.</p>
 </li>
-<li><p>Change the sign-in link to be more friendly by clicking on the <em>Customize</em> button. <img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/sign_in_link.png" alt="Customize Sign-in Link"></p>
+<li><p>Change the sign-in link to be more friendly by clicking on the <em>Customize</em> button. <img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/sign_in_link.png" alt="Customize Sign-in Link" /></p>
 </li>
 </ul>
 <h2 id="add-user-with-administrator-rights">Add User with Administrator Rights</h2>
 <p>Click on the <em>User</em> item in the navigation pane and click the <em>Add User</em> button.</p>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/manage_users.png" alt="Manage Users"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/manage_users.png" alt="Manage Users" /></p>
 <h3 id="set-user-details">Set User Details</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user.png" alt="Add user"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user.png" alt="Add user" /></p>
 <ul>
 <li>Add the username, e.g. <em>user</em>.</li>
 <li>Select the <em>Programmatic Access</em> and <em>AWS Management Console Access</em> checkboxes.</li>
@@ -191,91 +191,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Click the <em>Next: Permissions</em> button.</li>
 </ul>
 <h3 id="set-permissions">Set Permissions</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/create_group.png" alt="Set Permissions"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/create_group.png" alt="Set Permissions" /></p>
 <ul>
 <li>Select the <em>Add user to group</em> item.</li>
 <li>Click on the <em>Create group</em> button.</li>
 </ul>
 <h3 id="create-admin-group">Create Admin Group</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/create_admin_group.png" alt="Create Admin group"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/create_admin_group.png" alt="Create Admin group" /></p>
 <ul>
 <li>Add the group name. e.g. <em>Admin</em>.</li>
 <li>Select the <em>AdminstratorAccess</em> policy from the list of the policies.</li>
 <li>Click <em>Create Group</em>. This will take you back to the <em>Set Permissions</em> screen.</li>
 </ul>
 <h3 id="add-user-to-admin-group">Add user to Admin group</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user_to_group.png" alt="Add user to Admin Group"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user_to_group.png" alt="Add user to Admin Group" /></p>
 <ul>
 <li>Select the Admin group that you just created.</li>
 <li>Click on <em>Next: Tags</em>.</li>
 </ul>
 <h3 id="add-tags">Add tags</h3>
 <p>Adding tags is optional, so we will skip tags.</p>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_tags.png" alt="Add Tags"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_tags.png" alt="Add Tags" /></p>
 <p>Click on <em>Next: Review</em>.</p>
 <h3 id="review-user">Review User</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user_review.png" alt="Add User review"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user_review.png" alt="Add User review" /></p>
 <p>Review the settings, and if everything is correct, press the <em>Create user</em> button.</p>
 <h3 id="download-credential-information">Download Credential Information</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/user_access_keys.png" alt="User Access Keys"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/user_access_keys.png" alt="User Access Keys" /></p>
 <p>Once the user has been created, you can download the credential information. Remember that this will be the only time you can access this information.</p>
 <h2 id="create-a-group-and-policy-for-accessing-billing-service">Create a group and policy for accessing Billing Service</h2>
 <p>Click on the <em>Policies</em> item in the navigation pane and click the <em>Create Policy</em> button.</p>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_policy.png" alt="Create Policy"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_policy.png" alt="Create Policy" /></p>
 <h3 id="add-billing-service">Add Billing Service</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_billing_policy.png" alt="Create Policy"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_billing_policy.png" alt="Create Policy" /></p>
 <p>In the <em>Select a service</em> section, search for <em>Billing</em> and then select <em>Billing</em>.</p>
 <h3 id="add-allowed-actions-for-billing-policy">Add Allowed Actions for Billing Policy</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_billing_actions.png" alt="Add allowed actions"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_billing_actions.png" alt="Add allowed actions" /></p>
 <ul>
 <li>Select the <em>All Billing actions</em> checkbox.</li>
 <li>Click on the <em>Review policy</em> button.</li>
 </ul>
 <h3 id="create-billing-policy">Create Billing Policy</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/create_billing_policy.png" alt="Create Billing Policy"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/create_billing_policy.png" alt="Create Billing Policy" /></p>
 <ul>
 <li>Add the name for the policy, e.g. <em>BillingFullAccess</em>.</li>
 <li>Click the <em>Create Policy</em> button.</li>
 </ul>
 <h3 id="create-billing-group">Create Billing Group</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_group.png" alt="Create Billing Group"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_group.png" alt="Create Billing Group" /></p>
 <p>Click on the <em>Groups</em> item in the navigation pane and click the <em>Create New Group</em> button.</p>
 <h3 id="set-group-name">Set group name</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_billing_group.png" alt="Set Group Name"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_billing_group.png" alt="Set Group Name" /></p>
 <ul>
 <li>Give a name for the Billing group, e.g. <em>BillingFullAccess</em>.</li>
 <li>Click on the <em>Next Step</em> button.</li>
 </ul>
 <h3 id="attach-policy">Attach Policy</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/attach_policy.png" alt="Attach Billing Policy"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/attach_policy.png" alt="Attach Billing Policy" /></p>
 <ul>
 <li>Search for <em>Billing</em> in the filter.</li>
 <li>Select the <em>BillingFullAccess</em> policy checkbox.</li>
 <li>Click on the <em>Next Step</em> button.</li>
 </ul>
 <h3 id="review-group">Review Group</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/group_review.png" alt="Review"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/group_review.png" alt="Review" /></p>
 <ul>
 <li>Click the <em>Create Group</em> button.</li>
 </ul>
 <h2 id="add-user-to-the-billing-group">Add User to the Billing Group</h2>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/select_user.png" alt="Select User"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/select_user.png" alt="Select User" /></p>
 <p>Click on the <em>Users</em> item in the navigation pane and click the user you want to add to the group.</p>
 <h3 id="groups">Groups</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/user_group.png" alt="Select Group"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/user_group.png" alt="Select Group" /></p>
 <p>Select the <em>Groups</em> tab.</p>
 <h3 id="add-user-to-group">Add user to group</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user_to_billing_group.png" alt="Add User to group"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/add_user_to_billing_group.png" alt="Add User to group" /></p>
 <p>Click on the <em>Add User to Group Button</em>.</p>
 <h3 id="select-billing-group">Select Billing group</h3>
-<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/select_billing_group.png" alt="Select Billing Group"></p>
+<p><img src="/assets/images/posts/secure-aws-root-account-create-admin-user-access-billing/select_billing_group.png" alt="Select Billing Group" /></p>
 <ul>
 <li>Select the <em>BillingFullAccessGroup</em> checkbox.</li>
 <li>Click on the <em>Add to Groups</em> button.</li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>We now have an IAM user with administrator rights for our AWS account and has full access to the AWS Billing and Cost Management Console. It is also easy to give other users access to either Administrator rights or Billing rights.</p>
-</body></html>
+
 
 
 

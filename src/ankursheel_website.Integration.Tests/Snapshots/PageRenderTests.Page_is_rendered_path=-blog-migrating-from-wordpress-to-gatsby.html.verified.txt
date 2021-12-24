@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Why and How I migrated my website from WordPress to Gatsby</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -159,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><h2 id="my-blogging-journey">My Blogging Journey</h2>
+<h2 id="my-blogging-journey">My Blogging Journey</h2>
 <p>I started blogging in 2008 with a free Blogspot account. If you are wondering what I am talking about, Blogspot was the free blogging platform provided by Google.</p>
 <p>But it was not until 2014 that I decided to get my domain and have more control over the content and structure of the blog. Enter self-hosting. At that time, WordPress was probably the most popular service, and I moved to a self-hosted blog leveraging all the power of WordPress.</p>
 <h2 id="reasons-for-moving-away-from-wordpress">Reasons for moving away from WordPress</h2>
@@ -226,7 +226,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="my-migration-process">My migration process</h2>
 <p>It's also not difficult to move your blog from WordPress to Gatsby. I will give you the basics of what I did if you also want to make the switch.</p>
 <ul>
-<li>Download the XML from Wordpress using the "Tools-&gt; Export" section.</li>
+<li>Download the XML from Wordpress using the &quot;Tools-&gt; Export&quot; section.</li>
 <li>Use the <a href="https://github.com/thomasf/exitwp">ExitWP</a> or <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">Wordpress-to-Hugo</a> tool to convert the posts to markdown.</li>
 <li>Download all the images and other content from the server.</li>
 <li>Find a Gatsby start starter so that it's easy to get started.</li>
@@ -234,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Connect to Netlify and set up automatic deploys.</li>
 <li>The one I used was written in Javascript, so I had to migrate the javascript to Typescript and a few more plugins to enable Typescript. Also, change styling options to use CSS-in-JS.</li>
 <li>Update styling, colours and layout.</li>
-<li>Update the starter so that all the blog content is under "/blog/".</li>
+<li>Update the starter so that all the blog content is under &quot;/blog/&quot;.</li>
 <li>Add a redirect rule as I decided to remove the date from the URLs.</li>
 <li>Add the converted markdown.
 <ul>
@@ -250,7 +250,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 id="conclusion">Conclusion</h2>
 <p>Although it's an ongoing process, I am happy with how the migration is progressing. <a href="https://www.ankursheel.com/">my blog</a> is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.</p>
 <p>I will be adding more posts related to things I had to go hunting for on google. If you would like to know more about something specific, let me know.</p>
-</body></html>
+
 
 
 

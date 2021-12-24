@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Weekly Roundup 44</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -156,23 +156,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<!-- markdownlint-disable no-duplicate-header --><html><head></head><body><p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<!-- markdownlint-disable no-duplicate-header -->
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <h2 id="my-13-year-old-has-an-800-phone"><a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone">My 13-year-old has an $800 phone</a></h2>
 <p>Buying a phone is expensive, especially if you are a 13-year-old who wants an iPhone. <strong>Ruth</strong> shares a story about how her daughter could contribute 50% to an $800 iPhone purchase in 2 months.</p>
-<p><quote quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps" author="Ruth"></quote></p>
+<p><Quote
+quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps"
+author="Ruth"
+/></p>
 <p>This article shows how we can teach our children the habit of saving while also teaching them it's OK to spend money they have budgeted.</p>
 <h3 id="key-takeaways">Key Takeaways</h3>
 <ul>
 <li>Teach your child to save/invest a percentage of every dollar they earn.</li>
 <li>For expensive purchases, agree to pay half the amount.</li>
-<li>For massive targets, break them into smaller digestible chunks by using a "savings tracker".</li>
+<li>For massive targets, break them into smaller digestible chunks by using a &quot;savings tracker&quot;.</li>
 <li>Look at employment opportunities available to them, and if it needs the help of an adult, offer to help if they are willing to work.</li>
 <li>For a kid, who have all their needs taken care of, it is the best time to teach them the habit of saving a percentage of their income.</li>
 </ul>
 <p><a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone">Link to Article</a></p>
 <h2 id="do-i-need-a-financial-advisor"><a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/">Do I Need a Financial Advisor</a></h2>
 <p>How do we know if we need a financial advisor? <strong>Ramit Sethi</strong> explains the criteria for needing a financial advisor and why most people don't need one.</p>
-<p><quote quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us" author="Ramit Sethi"></quote></p>
+<p><Quote
+quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us"
+author="Ramit Sethi"
+/></p>
 <h3 id="key-takeaways-1">Key Takeaways</h3>
 <ul>
 <li>We need an advisor only if we have over $1 million in investable assets, have a complex financial situation, need a second set of eyes or a behavioural coach.</li>
@@ -182,7 +189,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/">Link to Article</a></p>
 <h2 id="how-to-learn-stuff-quickly"><a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/">How To Learn Stuff Quickly</a></h2>
 <p>It is easy to get stuck either in tutorial hell or reinvent every wheel when learning new things. <strong>Josh Comeau</strong> shares a few tips on how he has been able to pick up new skills quickly.</p>
-<p><quote quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another" author="Josh Comeau"></quote></p>
+<p><Quote
+quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another"
+author="Josh Comeau"
+/></p>
 <h3 id="key-takeaways-2">Key Takeaways</h3>
 <ul>
 <li>In the beginning, focus on guided learning. Once we are comfortable with the fundamentals, we should spend more time building interesting things and seeing tutorials only when encountering new problems.</li>
@@ -194,7 +204,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/">Link to Article</a></p>
 <h2 id="when-it-pays-to-choose-microservices"><a href="https://blog.typeable.io/posts/2021-07-19-microservices.html">When it Pays to Choose Microservices</a></h2>
 <p>Microservices are extremely popular, with a lot of big companies adopting them. But when is it worth switching over to microservices? <strong>Victoriia Zaripova</strong> outlines the pros and cons of developing a microservice-based solution.</p>
-<p><quote quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores" author="Victoriia Zaripova"></quote></p>
+<p><Quote
+quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores"
+author="Victoriia Zaripova"
+/></p>
 <h3 id="key-takeaways-3">Key Takeaways</h3>
 <ul>
 <li>If microservices don't solve the business tasks, this is a waste of time and money.</li>
@@ -212,7 +225,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><a href="https://blog.typeable.io/posts/2021-07-19-microservices.html">Link to Article</a></p>
 <h2 id="the-nine-states-of-design"><a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85">The Nine States of Design</a></h2>
 <p>When designing UI, we tend to focus on the ideal state. <strong>Vince Speelman</strong> shares his list of the 9 different states that we should plan for to create a better experience for users who hit the unhappy path.</p>
-<p><quote quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone" author="Vince Speelman"></quote></p>
+<p><Quote
+quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone"
+author="Vince Speelman"
+/></p>
 <h3 id="key-takeaways-4">Key Takeaways</h3>
 <ul>
 <li>The different states that we should consider when building UI
@@ -230,9 +246,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 </ul>
 <p><a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85">Link to Article</a></p>
-<hr>
+<hr />
 <p>Hope you enjoy reading these articles as much as I did.</p>
-</body></html>
+
 
 
 

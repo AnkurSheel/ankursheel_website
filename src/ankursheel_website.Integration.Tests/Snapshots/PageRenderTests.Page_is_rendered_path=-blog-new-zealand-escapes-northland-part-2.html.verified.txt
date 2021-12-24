@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">New Zealand Escapes: Northland - Part 2</h1>
     <div class="flex flex-col min-h-screen">
-        <article>
+        <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
@@ -158,33 +158,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<html><head></head><body><p>In the previous part of our journey, we had just left Cable Bay for Cape Reinga.</p>
+<p>In the previous part of our journey, we had just left Cable Bay for Cape Reinga.</p>
 <p><em>In case you are just joining us, you can read the previous post <a href="new-zealand-escapes-northland-part-1">here</a>.</em></p>
 <p>Luckily, we were able to make it to Cape Reinga just in time to see the sunset.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-12.jpg" alt="Sunset at Cape Reinga"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-12.jpg" alt="Sunset at Cape Reinga" /></p>
 <p>For the Maori people, Cape Reinga is sacred. It's where they believe their recently passed loved ones' spirits depart from. Many Maori make the journey to the top of New Zealand to say goodbye and make their peace.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-14.jpg" alt="The moon comes out to play"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-17.jpg" alt="Keep the ships safe"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-13.jpg" alt="The Lighthouse at Cape Reinga"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-14.jpg" alt="The moon comes out to play" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-17.jpg" alt="Keep the ships safe" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-13.jpg" alt="The Lighthouse at Cape Reinga" /></p>
 <p>Apart from the views, you can also see how far you are from a bunch of places.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-15.jpg" alt=""></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-16.jpg" alt=""></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-15.jpg" alt="" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-16.jpg" alt="" /></p>
 <p>The next day we started on our journey back but before that, we made a quick stop at the 90-mile beach. Despite its name, the 90-mile beach is just 88 kilometres (55 miles) long. This beach is officially a highway but is only suitable for 4WD vehicles.</p>
 <p>A special treat is to bodyboard down the dunes. Unfortunately, we did not have enough time to try this out. Maybe next time.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-18.jpg" alt="Beach driving anyone?"></p>
-<p>Our last stop before reaching Auckland was KawaKawa or the "<em>Train town"</em> because the Bay of Islands Vintage Railway runs down the middle of its main street.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-23.jpg" alt="Bay of Islands Vintage Railway"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-24.jpg" alt="Trains run"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-25.jpg" alt="TimeTable"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-18.jpg" alt="Beach driving anyone?" /></p>
+<p>Our last stop before reaching Auckland was KawaKawa or the &quot;<em>Train town&quot;</em> because the Bay of Islands Vintage Railway runs down the middle of its main street.</p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-23.jpg" alt="Bay of Islands Vintage Railway" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-24.jpg" alt="Trains run" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-25.jpg" alt="TimeTable" /></p>
 <p>The town is also famous for its Hundertwasser toilet block, designed by Austrian artist Friedensreich Hundertwasser. However, we were unable to understand what the fuss was all about.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-19.jpg" alt="Hundertwasser toilet block"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-19.jpg" alt="Hundertwasser toilet block" /></p>
 <p>We did appreciate the wall art and finding a nicely decorated couch in the middle of the parking lot.</p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-20.jpg" alt="Want to relax in the parking lot"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-21.jpg" alt="Wall Art"></p>
-<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-22.jpg" alt="Wall Art"></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-20.jpg" alt="Want to relax in the parking lot" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-21.jpg" alt="Wall Art" /></p>
+<p><img src="/assets/images/posts/new-zealand-escapes-northland-part-2/CapeReinga-22.jpg" alt="Wall Art" /></p>
 <p>And now we are at the end of our trip - back to Auckland.</p>
 <p>Have you been to these places? How was your experience? Did you do anything differently? Let me know.</p>
-</body></html>
+
 
 
 
