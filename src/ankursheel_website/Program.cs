@@ -4,7 +4,6 @@ using Statiq.App;
 using Statiq.Common;
 using Statiq.Web;
 using StatiqHelpers.Extensions;
-using StatiqHelpers.ImageHelpers;
 using StatiqHelpers.Pipelines;
 
 namespace ankursheel_website
@@ -18,7 +17,7 @@ namespace ankursheel_website
                 .ConfigureServices(
                     services =>
                     {
-                        services.AddSingleton(new PostListOptions(document => document.GetPublishedDate(), Descending: true));
+                        services.AddSingleton(new PostListOptions(document => document.GetLastUpdatedDate(), true));
                     })
                 .RunAsync();
     }

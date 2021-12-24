@@ -5,7 +5,7 @@
 }
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <i>Last Updated On: @Model.Document.GetPublishedDate().ToString("dd-MMM-yyyy")</i>
+        <i>Last Updated On: @Model.Document.GetLastUpdatedDate().ToString("dd-MMM-yyyy")</i>
         <i class="font-bold">
             Reading Time: @Model.Document.GetReadingTime().RoundedMinutes min
         </i>

@@ -5,7 +5,7 @@ Title: All Articles
 @model Posts
 
 @{
-    var groups = Model.AllPosts.GroupBy(x => x.Document.GetPublishedDate().Year);
+    var groups = Model.AllPosts.GroupBy(x => x.Document.GetLastUpdatedDate().Year);
 }
 @foreach (var group in groups)
 {
@@ -14,7 +14,7 @@ Title: All Articles
     foreach (var post in group)
     {
         <div>
-            <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a> - @post.Document.GetPublishedDate().ToString("MMMM dd, yyyy")
+            <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a> - @post.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")
         </div>
     }
 }
