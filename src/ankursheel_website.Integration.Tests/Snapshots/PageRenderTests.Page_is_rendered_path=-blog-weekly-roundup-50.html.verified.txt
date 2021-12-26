@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - How to calculate reading time</title>
+<title>Ankur Sheel - Weekly Roundup 50</title>
 <meta charset="utf-8"/>
 
 <!-- Google Tag Manager -->
@@ -16,27 +16,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End Google Tag Manager -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A guide to calculating the reading time for a given document"/>
+<meta name="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/calculate-reading-time"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-50"/>
 
-<meta itemProp="name" content="How to calculate reading time"/>
-<meta itemProp="description" content="A guide to calculating the reading time for a given document"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/calculate-reading-time-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/calculate-reading-time"/>
+<meta itemProp="name" content="Weekly Roundup 50"/>
+<meta itemProp="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/weekly-roundup-50"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to calculate reading time"/>
-<meta property="og:description" content="A guide to calculating the reading time for a given document"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/calculate-reading-time-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/calculate-reading-time-facebook.png"/>
+<meta property="og:title" content="Weekly Roundup 50"/>
+<meta property="og:description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to calculate reading time"/>
-<meta name="twitter:description" content="A guide to calculating the reading time for a given document"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/calculate-reading-time-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/calculate-reading-time-twitter.png"/>
+<meta name="twitter:title" content="Weekly Roundup 50"/>
+<meta name="twitter:description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -139,79 +139,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to calculate reading time</h1>
+    <h1 class="text-center">Weekly Roundup 50</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-10-07">October 07, 2021</time>
+        <time datetime="2021-12-26">December 26, 2021</time>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
-            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/weekly-roundup" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">weekly roundup</a>
     </div>
 </div>
 
-<html><head></head><body><p>In this snippet, I will be showing how to calculate the reading time for a given string.</p>
-<p>First, we will create a new data structure to hold the reading time. It contains the number of words and the minutes and seconds to read the post.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> record ReadingTimeData
-{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ReadingTimeData</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> minutes, <span class="hljs-keyword">int</span> seconds, <span class="hljs-keyword">int</span> words</span>)
-    </span>{
-        Minutes = minutes;
-        Seconds = seconds;
-        Words = words;
-    }
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<h2 id="how-to-solve-the-good-person-wrong-seat-problem"><a href="https://www.entrepreneur.com/article/331248">How to Solve the Good Person, Wrong Seat Problem</a></h2>
+<p><em>by <strong>JT McCormick</strong></em></p>
+<p>Conversations when you are promoting someone are much easier than when you are asking someone to move laterally anf for a pay-cut. An example of a conversation that you can have when asking someone to change positions and take a pay-cut.</p>
+<h2 id="the-whys-and-hows-of-jelling-teams"><a href="https://critter.blog/2016/10/27/the-whys-and-hows-of-jelling-teams/">The why’s and how’s of jelling teams</a></h2>
+<p><em>by <strong>Mike Crittenden</strong></em></p>
+<p>A jelled team is key for having a happy team. This article outlines some of the advantages of having a jelled and then explains what things we do to keep a team from jelling.</p>
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Minutes { <span class="hljs-keyword">get</span>; }
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Seconds { <span class="hljs-keyword">get</span>; }
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Words { <span class="hljs-keyword">get</span>; }
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> RoundedMinutes
-        =&gt; Seconds &lt; <span class="hljs-number">30</span>
-            ? Minutes
-            : Minutes + <span class="hljs-number">1</span>;
-}
-</code></pre>
-<ul>
-<li><strong><em>RoundedMinutes</em></strong> is the rounded time to make things simpler for a reader. Anything less than 30 seconds gets ignored, and anything more than 30 seconds gets rounded up to the next minute.</li>
-</ul>
-<p>Now, we can calculate the reading time and fill in the ReadingTimeData.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> ReadingTimeData <span class="hljs-title">GetReadingTime</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> content, <span class="hljs-keyword">int</span> wordsPerMinute</span>)
-</span>{
-    <span class="hljs-keyword">const</span> Regex SpacesRegex = <span class="hljs-keyword">new</span> Regex(&quot;\S+&quot;, RegexOptions.Multiline);
-    <span class="hljs-keyword">var</span> words = SpacesRegex.Matches(content).Count;
-
-    <span class="hljs-keyword">var</span> minutes = words / WordsPerMinute;
-    <span class="hljs-keyword">var</span> remainingWords = words % WordsPerMinute;
-    <span class="hljs-keyword">var</span> seconds = remainingWords * <span class="hljs-number">60</span> / WordsPerMinute;
-
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ReadingTimeData(minutes, seconds, words);
-}
-</code></pre>
-<ul>
-<li><strong><em>Line 3-4</em></strong>: Get all the words in the string by using <code>\S</code> as our regex expression, which matches all characters that are not a white space.</li>
-<li><strong><em>Line 6</em></strong>: Get the number of minutes it takes to read the string based on how many words we can read in a minute.</li>
-<li><strong><em>Line 7</em></strong>: Get the number of unread words which we weren't able to read in a full minute.</li>
-<li><strong><em>Line 8</em></strong>: Get the number of seconds to read the remaining text.</li>
-</ul>
-<h2 id="concusion">Concusion</h2>
-<p>Now, we can show the estimated reading time on our articles.</p>
-</body></html>
 
 
 
 <aside class="hidden md:block mt-12">
         <div class="flex justify-center gap-x-5 ">
-            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/calculate-reading-time&text=A%20guide%20to%20calculating%20the%20reading%20time%20for%20a%20given%20document via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
-            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/calculate-reading-time"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-50&text=This%20weeks%20roundup%20contains%20articles%20from%20JT%20McCormick%2C%20Mike%20Crittenden via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/weekly-roundup-50"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         </div>
 </aside>
 

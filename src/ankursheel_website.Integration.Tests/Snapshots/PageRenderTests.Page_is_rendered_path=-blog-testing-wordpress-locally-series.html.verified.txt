@@ -145,7 +145,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <i>Last Updated On: 17-Dec-2013</i>
+        <time datetime="2013-12-17">December 17, 2013</time>
         <i class="font-bold">
             Reading Time: 1 min
         </i>

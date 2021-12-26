@@ -5,8 +5,8 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2021</copyright>
-		<pubDate>Fri, 24 Dec 2021 11:00:35 GMT</pubDate>
-		<lastBuildDate>Fri, 24 Dec 2021 11:00:35 GMT</lastBuildDate>
+		<pubDate>Sun, 26 Dec 2021 22:46:06 GMT</pubDate>
+		<lastBuildDate>Sun, 26 Dec 2021 22:46:06 GMT</lastBuildDate>
 		<item>
 			<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
 			<link>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</link>
