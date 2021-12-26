@@ -14,7 +14,7 @@ Title: All Articles
     foreach (var post in group)
     {
         <div>
-            <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a> - @post.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")
+            <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a> - <time class="prose-sm" datetime="@post.Document.GetLastUpdatedDate().ToString("yy-MM-dd")">@post.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time>
         </div>
     }
 }
