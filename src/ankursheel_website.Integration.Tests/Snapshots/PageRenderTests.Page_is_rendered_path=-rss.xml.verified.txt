@@ -5,8 +5,34 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2021</copyright>
-		<pubDate>Sun, 26 Dec 2021 22:46:06 GMT</pubDate>
-		<lastBuildDate>Sun, 26 Dec 2021 22:46:06 GMT</lastBuildDate>
+		<pubDate>Mon, 27 Dec 2021 11:12:30 GMT</pubDate>
+		<lastBuildDate>Mon, 27 Dec 2021 11:12:30 GMT</lastBuildDate>
+		<item>
+			<title>Weekly Roundup 50</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-50</link>
+			<description>This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-50/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-50</guid>
+			<pubDate>Sun, 26 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="how-to-solve-the-good-person-wrong-seat-problem"&gt;&lt;a href="https://www.entrepreneur.com/article/331248"&gt;How to Solve the Good Person, Wrong Seat Problem&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;JT McCormick&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It's much easier to have a conversation when you promote someone than when you ask someone to move laterally and for a pay-cut. An example of a conversation you can have when asking someone to change positions and take a pay cut.&lt;/p&gt;
+&lt;h2 id="the-whys-and-hows-of-jelling-teams"&gt;&lt;a href="https://critter.blog/2016/10/27/the-whys-and-hows-of-jelling-teams/"&gt;The why's and how's of jelling teams&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Mike Crittenden&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A jelled team is vital for having a happy team. This article outlines some of the advantages of having a jelled and then explains what things keep a team from jelling.&lt;/p&gt;
+&lt;h2 id="subscription-or-no-subscription-that-is-not-the-question"&gt;&lt;a href="https://ia.net/topics/subscription-or-no-subscription"&gt;Subscription or no subscription? That is not the question&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;iA&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Subscriptions for software are ubiquitous, but not every type of software should be a subscription. This article explains why this is so and answers more critical questions such as when subscriptions work and when don't they? What can you do instead?&lt;/p&gt;
+&lt;h2 id="the-update-the-vent-and-the-disaster"&gt;&lt;a href="https://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/"&gt;The Update, The Vent, and The Disaster&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Michael Lopp&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Having a good 1:1 is a tricky business. Did you know that most 1:1's can be thrown into 1 of the 3 buckets - The Update, The Vent and The Disaster. This article tells you how to know which type of 1:1 you are having and what to do in each case to have a productive 1:1.&lt;/p&gt;
+&lt;h2 id="writing-is-networking-for-introverts"&gt;&lt;a href="https://byrnehobart.medium.com/writing-is-networking-for-introverts-5cac14ad4c77"&gt;Writing is Networking for Introverts&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Byrne Hobart&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How do you network if you are an introvert and are bad at striking up conversations with strangers? As the title says, this article explains how writing is a good substitute for networking for introverts.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
 			<link>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</link>
@@ -1015,108 +1041,6 @@ npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest p
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Although it's an ongoing process, I am happy with how the migration is progressing. &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in bookland&lt;/a&gt; is now built with Statiq and Markdown and hosted on Netlify. Instead of JS, it's all in .Net, and I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.&lt;/p&gt;
 &lt;p&gt;If you would like to know more about something specific, let me know.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 44</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-44</link>
-			<description>This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-44/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-44</guid>
-			<pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
-&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="my-13-year-old-has-an-800-phone"&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;My 13-year-old has an $800 phone&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Buying a phone is expensive, especially if you are a 13-year-old who wants an iPhone. &lt;strong&gt;Ruth&lt;/strong&gt; shares a story about how her daughter could contribute 50% to an $800 iPhone purchase in 2 months.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps"
-author="Ruth"
-/&gt;&lt;/p&gt;
-&lt;p&gt;This article shows how we can teach our children the habit of saving while also teaching them it's OK to spend money they have budgeted.&lt;/p&gt;
-&lt;h3 id="key-takeaways"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Teach your child to save/invest a percentage of every dollar they earn.&lt;/li&gt;
-&lt;li&gt;For expensive purchases, agree to pay half the amount.&lt;/li&gt;
-&lt;li&gt;For massive targets, break them into smaller digestible chunks by using a &amp;quot;savings tracker&amp;quot;.&lt;/li&gt;
-&lt;li&gt;Look at employment opportunities available to them, and if it needs the help of an adult, offer to help if they are willing to work.&lt;/li&gt;
-&lt;li&gt;For a kid, who have all their needs taken care of, it is the best time to teach them the habit of saving a percentage of their income.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="do-i-need-a-financial-advisor"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Do I Need a Financial Advisor&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;How do we know if we need a financial advisor? &lt;strong&gt;Ramit Sethi&lt;/strong&gt; explains the criteria for needing a financial advisor and why most people don't need one.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us"
-author="Ramit Sethi"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-1"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;We need an advisor only if we have over $1 million in investable assets, have a complex financial situation, need a second set of eyes or a behavioural coach.&lt;/li&gt;
-&lt;li&gt;Get a fee-only advisor who is a fiduciary, meaning they are legally required to put our best interests first.&lt;/li&gt;
-&lt;li&gt;Reach out to at least 10 advisors and set up calls with 5.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="how-to-learn-stuff-quickly"&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;How To Learn Stuff Quickly&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;It is easy to get stuck either in tutorial hell or reinvent every wheel when learning new things. &lt;strong&gt;Josh Comeau&lt;/strong&gt; shares a few tips on how he has been able to pick up new skills quickly.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another"
-author="Josh Comeau"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-2"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;In the beginning, focus on guided learning. Once we are comfortable with the fundamentals, we should spend more time building interesting things and seeing tutorials only when encountering new problems.&lt;/li&gt;
-&lt;li&gt;A tutorial fade is effective, but we are building the same things over and over. Basically, after following a tutorial, you try to repeat it without looking at the tutorial.&lt;/li&gt;
-&lt;li&gt;We can add additional functionality to the tutorial project.&lt;/li&gt;
-&lt;li&gt;We can build a similar project to the tutorial project.&lt;/li&gt;
-&lt;li&gt;By publishing what we learn, we can uncover gaps in our mental model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="when-it-pays-to-choose-microservices"&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;When it Pays to Choose Microservices&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Microservices are extremely popular, with a lot of big companies adopting them. But when is it worth switching over to microservices? &lt;strong&gt;Victoriia Zaripova&lt;/strong&gt; outlines the pros and cons of developing a microservice-based solution.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores"
-author="Victoriia Zaripova"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-3"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;If microservices don't solve the business tasks, this is a waste of time and money.&lt;/li&gt;
-&lt;li&gt;Don't use microservices for a new solution.&lt;/li&gt;
-&lt;li&gt;The minimum pool for one microservice is a team of six to nine persons. One team should support a maximum of two microservices.&lt;/li&gt;
-&lt;li&gt;Consider using a microservice when
-&lt;ul&gt;
-&lt;li&gt;there are critical requirements for the application's resistance to loads and/or support of integration with external services&lt;/li&gt;
-&lt;li&gt;the business requires significant acceleration of development.&lt;/li&gt;
-&lt;li&gt;it's necessary to use a heterogeneous technology stack.&lt;/li&gt;
-&lt;li&gt;different points of the application require different rates of changes in various points of the application.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="the-nine-states-of-design"&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;The Nine States of Design&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;When designing UI, we tend to focus on the ideal state. &lt;strong&gt;Vince Speelman&lt;/strong&gt; shares his list of the 9 different states that we should plan for to create a better experience for users who hit the unhappy path.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone"
-author="Vince Speelman"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-4"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The different states that we should consider when building UI
-&lt;ul&gt;
-&lt;li&gt;Nothing state&lt;/li&gt;
-&lt;li&gt;Loading&lt;/li&gt;
-&lt;li&gt;None&lt;/li&gt;
-&lt;li&gt;One&lt;/li&gt;
-&lt;li&gt;Some&lt;/li&gt;
-&lt;li&gt;Too many&lt;/li&gt;
-&lt;li&gt;Incorrect&lt;/li&gt;
-&lt;li&gt;Correct&lt;/li&gt;
-&lt;li&gt;Done&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Hope you enjoy reading these articles as much as I did.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>

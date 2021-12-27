@@ -16,25 +16,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End Google Tag Manager -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+<meta name="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-50"/>
 
 <meta itemProp="name" content="Weekly Roundup 50"/>
-<meta itemProp="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+<meta itemProp="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/weekly-roundup-50"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Weekly Roundup 50"/>
-<meta property="og:description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+<meta property="og:description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Weekly Roundup 50"/>
-<meta name="twitter:description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden"/>
+<meta name="twitter:description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-twitter.png"/>
 
@@ -159,17 +159,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <h2 id="how-to-solve-the-good-person-wrong-seat-problem"><a href="https://www.entrepreneur.com/article/331248">How to Solve the Good Person, Wrong Seat Problem</a></h2>
 <p><em>by <strong>JT McCormick</strong></em></p>
-<p>Conversations when you are promoting someone are much easier than when you are asking someone to move laterally anf for a pay-cut. An example of a conversation that you can have when asking someone to change positions and take a pay-cut.</p>
-<h2 id="the-whys-and-hows-of-jelling-teams"><a href="https://critter.blog/2016/10/27/the-whys-and-hows-of-jelling-teams/">The why’s and how’s of jelling teams</a></h2>
+<p>It's much easier to have a conversation when you promote someone than when you ask someone to move laterally and for a pay-cut. An example of a conversation you can have when asking someone to change positions and take a pay cut.</p>
+<h2 id="the-whys-and-hows-of-jelling-teams"><a href="https://critter.blog/2016/10/27/the-whys-and-hows-of-jelling-teams/">The why's and how's of jelling teams</a></h2>
 <p><em>by <strong>Mike Crittenden</strong></em></p>
-<p>A jelled team is key for having a happy team. This article outlines some of the advantages of having a jelled and then explains what things we do to keep a team from jelling.</p>
+<p>A jelled team is vital for having a happy team. This article outlines some of the advantages of having a jelled and then explains what things keep a team from jelling.</p>
+<h2 id="subscription-or-no-subscription-that-is-not-the-question"><a href="https://ia.net/topics/subscription-or-no-subscription">Subscription or no subscription? That is not the question</a></h2>
+<p><em>by <strong>iA</strong></em></p>
+<p>Subscriptions for software are ubiquitous, but not every type of software should be a subscription. This article explains why this is so and answers more critical questions such as when subscriptions work and when don't they? What can you do instead?</p>
+<h2 id="the-update-the-vent-and-the-disaster"><a href="https://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/">The Update, The Vent, and The Disaster</a></h2>
+<p><em>by <strong>Michael Lopp</strong></em></p>
+<p>Having a good 1:1 is a tricky business. Did you know that most 1:1's can be thrown into 1 of the 3 buckets - The Update, The Vent and The Disaster. This article tells you how to know which type of 1:1 you are having and what to do in each case to have a productive 1:1.</p>
+<h2 id="writing-is-networking-for-introverts"><a href="https://byrnehobart.medium.com/writing-is-networking-for-introverts-5cac14ad4c77">Writing is Networking for Introverts</a></h2>
+<p><em>by <strong>Byrne Hobart</strong></em></p>
+<p>How do you network if you are an introvert and are bad at striking up conversations with strangers? As the title says, this article explains how writing is a good substitute for networking for introverts.</p>
 
 
 
 
 <aside class="hidden md:block mt-12">
         <div class="flex justify-center gap-x-5 ">
-            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-50&text=This%20weeks%20roundup%20contains%20articles%20from%20JT%20McCormick%2C%20Mike%20Crittenden via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
+            <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-50&text=This%20weeks%20roundup%20contains%20articles%20from%20JT%20McCormick%2C%20Mike%20Crittenden%2C%20iA%2C%20Michael%20Lopp%20and%20Byrne%20Hobart via @ankur_sheel" target="_blank" rel="noopener noreferrer">Tweet this Article</a>
             <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/weekly-roundup-50"target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         </div>
 </aside>

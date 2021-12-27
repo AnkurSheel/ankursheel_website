@@ -148,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <a role="button" href="/tags/travel" class="badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (49)</a>
+            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (50)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tutorial" class="badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
