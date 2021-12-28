@@ -53,6 +53,12 @@ status = 410
 force = false
 
 [[redirects]]
+from = "/blog/starting-speechcraft"
+to = "/blog"
+status = 410
+force = false
+
+[[redirects]]
 from = "/blog/load-test-data-from-a-json-file-for-xunit-tests"
 to = "/blog/load-test-data-json-file-xunit-tests"
 status = 301
@@ -147,4 +153,3 @@ from = "/blog/take-the-stairs"
 to = "https://www.discoveriesinbookland.com/blog/take-the-stairs"
 status = 301
 force = false
-
