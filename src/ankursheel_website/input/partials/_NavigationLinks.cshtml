@@ -1,0 +1,15 @@
+﻿@model BaseModel
+
+@foreach (var link in Model.Context.GetNavigationLinks())
+{
+    <li class="py-4 px-2 transition-all transform hover:scale-110">
+        @if (link.Url.StartsWith("http"))
+        {
+            <a href="@link.Url" target="_blank">@link.Title</a>
+        }
+        else
+        {
+            <a href="@link.Url">@link.Title</a>
+        }
+    </li>
+}

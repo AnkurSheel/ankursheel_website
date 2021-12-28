@@ -20,6 +20,8 @@ HeaderLinks:
       Url: '/cv'
     - Title: 'Impossible List'
       Url: '/impossible-list'
+    - Title: 'Book Summaries'
+      Url: 'https://www.discoveriesinbookland.com/'
 GoogleTagManagerId: GTM-MG9PGWH
 GoatCounterCode: ankursheel
 #icon: 'content/images/avatar.png',
