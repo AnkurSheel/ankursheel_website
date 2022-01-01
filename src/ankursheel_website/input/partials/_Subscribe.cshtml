@@ -1,0 +1,24 @@
+﻿@{
+    const string formId = "2876599";
+    const string userId = "8f5ef7e5fa";
+    const string weeklyNewsletterTagId = "2832265";
+    const string subFormId = "216980438";
+
+}
+<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
+    <p class="mt-2 text-2xl font-bold text-center">Want a weekly digest of this blog?</p>
+
+    <form action="https://app.convertkit.com/forms/@formId/subscriptions" method="post" data-sv-form="@formId" data-uid="@userId" data-options="{ &quot;settings&quot;: { &quot;after_subscribe&quot;: { &quot;action&quot;: &quot;message&quot;, &quot;success_message&quot;: &quot;Success! Now check your email to confirm your subscription.&quot;, &quot;redirect_url&quot;: &quot;&quot; } } }">
+        <div class="flex gap-4 items-center justify-center flex-wrap">
+            <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0" aria-label="First Name" name="fields[first_name]" required="" placeholder="First Name" type="text">
+            <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email">
+            <button class="px-3 py-2 text-white bg-green-400 rounded-md focus:bg-indigo-600 focus:outline-none flex-none" type="submit">Subscribe</button>
+        </div>
+        <fieldset data-group="checkboxes" class="hidden" type="Custom" order="2" save_as="Tag" group="field">
+            <div data-element="tags-checkboxes" data-group="checkbox">
+                <input id="tag-@subFormId-@weeklyNewsletterTagId" type="checkbox" checked="checked" name="tags[]" value="@weeklyNewsletterTagId"><label for="tag-@subFormId-@weeklyNewsletterTagId">Weekly Newsletter</label>
+            </div>
+        </fieldset>
+    </form>
+</aside>

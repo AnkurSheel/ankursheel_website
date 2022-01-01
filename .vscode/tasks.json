@@ -1,0 +1,53 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "cmd.exe",
+                "args": ["/d", "/c"]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "label": "Create Blog Post",
+            "type": "shell",
+            "command": "yarn createBlogPost",
+            "group": "build"
+        },
+        {
+            "type": "npm",
+            "script": "lint:markdown",
+            "problemMatcher": [
+                {
+                    "fileLocation": ["relative", "${workspaceFolder}"],
+                    "pattern": {
+                        "regexp": "(.*):\\ (\\d+):\\ (\\S+)\\ (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "code": 3,
+                        "message": 4
+                    }
+                }
+            ]
+        },
+        {
+            "type": "npm",
+            "script": "lint:markdown:fix",
+            "problemMatcher": [
+                {
+                    "fileLocation": ["relative", "${workspaceFolder}"],
+                    "pattern": {
+                        "regexp": "(.*):\\ (\\d+):\\ (\\S+)\\ (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "code": 3,
+                        "message": 4
+                    }
+                }
+            ]
+        }
+    ]
+}
