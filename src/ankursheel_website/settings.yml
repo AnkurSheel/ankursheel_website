@@ -1,0 +1,33 @@
+Title: 'Ankur Sheel'
+Description: 'I go down rabbit holes and blog about them'
+Host: 'www.ankursheel.com'
+LinksUseHttps: true
+TwitterUsername: 'ankur_sheel'
+GithubUsername: 'AnkurSheel'
+LinkedInUsername: 'ankursheel'
+BuyMeACoffeeUsername: 'ankursheel'
+ReadingTimeWordsPerMinute: 238
+HeaderLinks:
+    - Title: 'About'
+      Url: '/about'
+    - Title: 'All Posts'
+      Url: '/blog'
+    - Title: 'All Tags'
+      Url: '/tags'
+    - Title: 'Contact'
+      Url: '/contact'
+    - Title: 'CV'
+      Url: '/cv'
+    - Title: 'Impossible List'
+      Url: '/impossible-list'
+    - Title: 'Book Summaries'
+      Url: 'https://www.discoveriesinbookland.com/'
+#GoogleTagManagerId: GTM-MG9PGWH
+GoatCounterCode: ankursheel
+#icon: 'content/images/avatar.png',
+#headerTitle: 'Home',
+#webMonetization: '$ilp.uphold.com/FpRgJHkQhkhb',
+#donateText: 'Did you learn something or find this article interesting?',
+#buyMeACoffee: {
+#  link: 'https://www.buymeacoffee.com/ankursheel',
+#  altText: 'Buy me a coffee',
