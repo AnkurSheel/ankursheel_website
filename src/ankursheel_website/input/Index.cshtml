@@ -1,0 +1,38 @@
+@model PageModel
+@{
+    const int numberOfSummaries = 5;
+}
+<p>I go down rabbit holes and blog about them.</p>
+
+<div class="flex flex-col gap-10 lg:grid lg:overflow-hidden lg:grid-cols-2 lg:grid-rows-1 lg:gap-2">
+    <div class="bg-gray-200 rounded-3xl px-4 my-8">
+        <div class="flex flex-col gap-8 flex-auto text-center">
+            <h2>Most popular posts</h2>
+            <a href="/blog/full-width-you-tube-video-embed">How to embed a YouTube video with a 16:9 aspect ratio and full-width</a>
+            <a href="/blog/add-cursive-fonts-to-vs-code">How to add ligatures and cursive fonts to VS Code?</a>
+            <a href="/blog/custom-type-definitions-for-java-script-dependencies">Create custom type definitions for JavaScript dependencies</a>
+            <a href="/blog/load-test-data-json-file-xunit-tests">How to load test data from a json file for xUnit tests?</a>
+            <a href="/blog/postman-ajax-endpoints-xsrf-tokens">Testing endpoints protected with an XSRF token in Postman</a>
+            <a href="/blog/react-component-draw-page-hooks-typescript">How to draw on a page using react hooks and typescript</a>
+            <a href="/blog/migrating-from-wordpress-to-gatsby">Why and How I migrated my website from Wordpress to Gatsby</a>
+            <a href="/blog/query-in-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a>
+            <a href="/blog/handle-bounces-aws-ses-terraform-2">How to use terraform to process SQS messages in a lambda</a>
+            <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura">How to export highlights and annotations from a Kobo Aura</a>
+        </div>
+    </div>
+    <div class="bg-gray-200 rounded-3xl px-4 my-8">
+        <div class="flex flex-col gap-8 flex-auto text-center">
+            <h2 class="">My favorites</h2>
+            <a href="/blog/make-code-reviews-stress-free">How to make code reviews stress free</a>
+            <a href="/blog/impossible-list-or-a-bucket-list">Should you make an Impossible List or a Bucket List?</a>
+            <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a>
+            <a href="/blog/increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
+            <a href="/blog/child-appreciation">Why being an only child is awesome?</a>
+            <a href="/blog/problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+            <a href="/blog/interview-happy-job">Why I interview even when I am happy at my job?</a>
+            <a href="/blog/dream-job">What is my idea of a dream job?</a>
+            <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem">A postmortem for Fantastic Bits (Codingame AI Contest)</a>
+            <a href="/blog/new-zealand-escapes-tranzalpine-express">New Zealand Escapes: KiwiRail - TranzAlpine Express</a>
+        </div>
+    </div>
+</div>
