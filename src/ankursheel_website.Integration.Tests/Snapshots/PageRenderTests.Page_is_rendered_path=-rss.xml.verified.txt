@@ -5,8 +5,330 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2022</copyright>
-		<pubDate>Sat, 01 Jan 2022 20:50:08 GMT</pubDate>
-		<lastBuildDate>Sat, 01 Jan 2022 20:50:08 GMT</lastBuildDate>
+		<pubDate>Sat, 01 Jan 2022 21:01:05 GMT</pubDate>
+		<lastBuildDate>Sat, 01 Jan 2022 21:01:05 GMT</lastBuildDate>
+		<item>
+			<title>What to do as an end-user when merchants using stripe decline your credit cards</title>
+			<link>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</link>
+			<description>My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/merchants-using-stripe-decline-credit-cards/cover.jpg" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</guid>
+			<pubDate>Wed, 29 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/merchants-using-stripe-decline-credit-cards/cover.jpg" alt="A woman who enters her bank details while shopping online"&gt;&lt;/p&gt;
+&lt;h2 id="what-i-tried-unsuccessfully"&gt;What I  tried (unsuccessfully)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I tried to use various cards, all of which work elsewhere (including overseas transactions).&lt;/li&gt;
+&lt;li&gt;I tried to use cards in my wife's name, which also work elsewhere (including overseas transactions).&lt;/li&gt;
+&lt;li&gt;I used both debit and credit cards.&lt;/li&gt;
+&lt;li&gt;I spoke with my bank as suggested by various merchants. They confirmed there was no security holds on my account. They don't even see the failed transaction on their end.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="a-light-bulb-goes-on"&gt;A light bulb goes on&lt;/h2&gt;
+&lt;p&gt;Recently, I tried to place an order on a merchant using Stripe. As always, it got declined. On a whim, I decided to delete my account and recreate it in my wife's name. On placing an order using her account, the payment immediately went through. Remember, this is on the same merchant who had declined the payment from my account for the same card just a few minutes earlier.&lt;/p&gt;
+&lt;p&gt;This led me to conclude that Stripe is blocking the payments based on my email.&lt;/p&gt;
+&lt;h2 id="so-what-can-you-do"&gt;So what can you do?&lt;/h2&gt;
+&lt;p&gt;If you are using Gmail as an email provider, you can just add &lt;em&gt;&lt;strong&gt;+merchant@gmail.com&lt;/strong&gt;&lt;/em&gt; to the email address, and this will create an alias for your Gmail account. This means that as far as Stripe is concerned, it's a different address from the one they blocked, but the emails from the merchant will still come to your email address.&lt;/p&gt;
+&lt;p&gt;If it's so simple to bypass the decline, you would think it would be easy to get Stripe to take the email off the blocklist. You can read about the ongoing saga below.&lt;/p&gt;
+&lt;h2 id="the-stripe-saga-my-attempt-to-resolve-this-with-stripe-support"&gt;The Stripe Saga: My Attempt to resolve this with Stripe support&lt;/h2&gt;
+&lt;p&gt;With this new insight, I reached out to Stripe. I told them about the payments failing and my suspicion that the failure was because of my email and asked if there was some way to get my email off the blocklist. Unfortunately, Stripe needs a merchant to reach out to them to look at the issue. I haven't had much luck getting merchants to email stripe. Most merchants just suggest talking to the bank, which does not help when the bank does not even see the transaction.&lt;/p&gt;
+&lt;p&gt;Over 3 months and in multiple emails, I communicated to Stripe that merchants are not contacting them because they either don't understand that the email is an issue or they have better things to do with their time. Each time it was a (semi?)canned reply along the lines of, "please reach out to a merchant and ask them to contact us".&lt;/p&gt;
+&lt;p&gt;Finally, I sent them a screenshot showing Stripe's decline code as &lt;em&gt;"fraudulent"&lt;/em&gt;. I also sent them the response from a merchant clearly stating that they(merchant) thinks I should reach out to Stripe as they don't think they(Stripe) would give them the information. I also told them I bypassed the fraudulent decline code by providing an alternate email address.&lt;/p&gt;
+&lt;p&gt;I was hoping that this would get Stripe to resolve the issue. But alas, I got the same canned reply.&lt;/p&gt;
+&lt;p&gt;After telling them that I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.&lt;/p&gt;
+&lt;p&gt;I will update this section with any more progress.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://support.google.com/a/users/answer/9308648?hl=en"&gt;Creating alias email addresses on gmail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Cover Photo from &lt;a href="https://unsplash.com/photos/gf8e6XvG_3E"&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 50</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-50</link>
+			<description>This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-50/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-50</guid>
+			<pubDate>Sun, 26 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="how-to-solve-the-good-person-wrong-seat-problem"&gt;&lt;a href="https://www.entrepreneur.com/article/331248"&gt;How to Solve the Good Person, Wrong Seat Problem&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;JT McCormick&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It's much easier to have a conversation when you promote someone than when you ask someone to move laterally and for a pay-cut. An example of a conversation you can have when asking someone to change positions and take a pay cut.&lt;/p&gt;
+&lt;h2 id="the-whys-and-hows-of-jelling-teams"&gt;&lt;a href="https://critter.blog/2016/10/27/the-whys-and-hows-of-jelling-teams/"&gt;The why's and how's of jelling teams&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Mike Crittenden&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A jelled team is vital for having a happy team. This article outlines some of the advantages of having a jelled team and then explains what things keep a team from jelling.&lt;/p&gt;
+&lt;h2 id="subscription-or-no-subscription-that-is-not-the-question"&gt;&lt;a href="https://ia.net/topics/subscription-or-no-subscription"&gt;Subscription or no subscription? That is not the question&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;iA&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Subscriptions for software are ubiquitous, but not every type of software should be a subscription. This article explains why this is so and answers more critical questions such as when subscriptions work and when don't they? What can you do instead?&lt;/p&gt;
+&lt;h2 id="the-update-the-vent-and-the-disaster"&gt;&lt;a href="https://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/"&gt;The Update, The Vent, and The Disaster&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Michael Lopp&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Having a good 1:1 is a tricky business. Did you know that most 1:1's can be thrown into 1 of the 3 buckets - The Update, The Vent and The Disaster. This article tells you how to know which type of 1:1 you are having and what to do in each case to have a productive 1:1.&lt;/p&gt;
+&lt;h2 id="writing-is-networking-for-introverts"&gt;&lt;a href="https://byrnehobart.medium.com/writing-is-networking-for-introverts-5cac14ad4c77"&gt;Writing is Networking for Introverts&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Byrne Hobart&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How do you network if you are an introvert and are bad at striking up conversations with strangers? As the title says, this article explains how writing is a good substitute for networking for introverts.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
+			<link>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</link>
+			<description>A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate</description>
+			<guid>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</guid>
+			<pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In the last post, we saw how we can &lt;a href="https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis"&gt;add subscriptions to our Graphql server&lt;/a&gt;. This post will show how to set up an ACL (Access Control List) for Redis to restrict access to trusted clients.&lt;/p&gt;
+&lt;h2 id="setting-up-redis-acl-access-control-list"&gt;Setting up Redis ACL (Access Control list)&lt;/h2&gt;
+&lt;p&gt;Create a new file and call it &lt;em&gt;users.acl&lt;/em&gt;. In this file, we want to do 3 things.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;disable the default user&lt;/li&gt;
+&lt;li&gt;add an admin user who is the same as a default user but has an explicit username.&lt;/li&gt;
+&lt;li&gt;add a restricted user with access to a specific channel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="disable-the-default-user"&gt;Disable the default user&lt;/h3&gt;
+&lt;p&gt;By default, a single user without any restrictions is defined. We can disable the default user by adding &lt;code&gt;user default off&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="create-an-admin-user"&gt;Create an admin user&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;user admin on nopass ~* &amp;amp;* +@@all&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This line creates a user with the username &lt;em&gt;&lt;strong&gt;admin&lt;/strong&gt;&lt;/em&gt;. This user is configured to be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: active&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;nopass&lt;/strong&gt;: require no password&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~*&lt;/strong&gt;: access every possible key&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;amp;*&lt;/strong&gt;: access every Pub/Sub channel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;+@@all&lt;/strong&gt;: able to call every possible command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="create-a-restricted-user-for-graphql-subscriptions"&gt;Create a restricted user for Graphql subscriptions&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;user test on nopass ~* resetchannels &amp;amp;cdd/graphql_subscriptions/* -@@all +@@connection +@@pubsub&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This line creates a user with the username &lt;em&gt;&lt;strong&gt;test&lt;/strong&gt;&lt;/em&gt;. This user is configured to be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: active&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;nopass&lt;/strong&gt;: require no password&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~*&lt;/strong&gt;: access every possible key&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;resetchannels&lt;/strong&gt;: : Resetsw the list of allowed channel patterns and disconnect the user from channels it doesnt have access to anymore.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;amp;graphql_subscriptions/*&lt;/strong&gt;: access everything under the &lt;em&gt;graphql_subscriptions&lt;/em&gt; channel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-@@all +@@connection +@@pubsub&lt;/strong&gt;: Restrict access to the connection and pubsub commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="setting-up-redis-configuration"&gt;Setting up Redis configuration&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;redis.conf&lt;/em&gt; file allows us to configure Redis and set up authentication.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;aclfile /usr/local/etc/redis/users.acl&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This tells Redis that we want to use an external aclfile found at &lt;em&gt;/usr/local/etc/redis/&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="updating-hot-chocolate-to-use-a-custom-user"&gt;Updating Hot Chocolate to use a custom user&lt;/h2&gt;
+&lt;p&gt;In our &lt;em&gt;Startup.cs&lt;/em&gt; class, we need to update the configuration options to set the user for the Redis server. We also set the channelPrefix as the graphpqlSubscriptionUser only has access to &lt;em&gt;graphql_subscriptions&lt;/em&gt; channel.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;ConfigureServices&lt;/span&gt;(&lt;span class="hljs-params"&gt;IServiceCollection services&lt;/span&gt;)
+&lt;/span&gt;{
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; options = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ConfigurationOptions
+            {
+                EndPoints = { "localhost:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;" },
+                User = "graphpqlSubscriptionUser",
+                ChannelPrefix = "graphql_subscriptions/"
+            };
+
+    services.AddGraphQLServer()
+        .AddQueryType&amp;lt;Query&amp;gt;()
+        .AddMutationType&amp;lt;Mutation&amp;gt;()
+        .AddSubscriptionType&amp;lt;Subscription&amp;gt;()
+        .AddRedisSubscriptions(_ =&amp;gt; ConnectionMultiplexer.Connect(options));
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="adding-a-docker-compose-file"&gt;Adding a docker compose file&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-dockerfile hljs"&gt;version: &lt;span class="hljs-string"&gt;'3'&lt;/span&gt;
+services:
+  redis:
+    image: redis:&lt;span class="hljs-number"&gt;6.2&lt;/span&gt;-alpine
+    ports:
+      - "&lt;span class="hljs-number"&gt;6379&lt;/span&gt;:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;"
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+      - ./users.acl:/usr/local/etc/redis/users.acl
+    container_name: redis-graphql
+    command: redis-server /usr/local/etc/redis/redis.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we can run the command &lt;code&gt;docker-compose up --force-recreate -d --build&lt;/code&gt; to start the Redis container.&lt;/p&gt;
+&lt;h2 id="demo-project"&gt;Demo Project&lt;/h2&gt;
+&lt;p&gt;There is a &lt;a href="https://github.com/AnkurSheel/HotChocolateSubscriptions"&gt;demo project&lt;/a&gt; you can check out over on GitHub.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://redis.io/topics/acl"&gt;Redis ACL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackexchange.github.io/StackExchange.Redis/Configuration"&gt;StackExchange.Redis Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 49</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-49</link>
+			<description>This weeks roundup contains articles from David McCarter, Janella, Paul Swail, Mike Petrovich and Brian Rinaldi</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-49/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-49</guid>
+			<pubDate>Sun, 19 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="collection-performance-how-do-you-linq"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/12/15/collection-performance-how-do-you-linq"&gt;Collection Performance: How Do You Linq?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This article compares the performance of some common LINQ Queries when it's written using the API vs a lambda and the performance of the different ways to use the lambda versions.&lt;/p&gt;
+&lt;h2 id="good-enough"&gt;&lt;a href="https://blog.janella.nz/posts/2021/08/22/deciding-good-enough.html"&gt;Good enough&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Janella&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It's easy to fall into the trap of future-proofing our code. This article can help us see the key signs indicating that we need to step back from the details. It also outlines the questions we should ask to decide if something is good enough. As an added bonus, there are also some tips on easing ourselves into decision making if we are prone to imposter syndrome.&lt;/p&gt;
+&lt;h2 id="the-testing-trade-off-triangle"&gt;&lt;a href="https://serverlessfirst.com/testing-tradeoff-triangle"&gt;The testing trade-off triangle&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Paul Swail&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Did you know that every time we choose a testing strategy, we need to compromise between confidence level, feedback loop, and maintainability? This article shares some examples of who the loser is when we optimize for one of them and some questions we should ask ourselves to inform or test strategy.&lt;/p&gt;
+&lt;h2 id="the-three-dominoes"&gt;&lt;a href="https://petro.blog/the-3-domino-rule-85888e009e5a"&gt;The Three Dominoes&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Mike Petrovich&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There are 3 simple rules to make it easier for a team to operate: limit work-in-progress, Minimize specialization, and Never sacrifice quality. Read this article to know how each of these rules helps the team achieve long-term success and the limitations of each of the rules.&lt;/p&gt;
+&lt;h2 id="rendering-in-the-jamstack"&gt;&lt;a href="https://bejamas.io/blog/understanding-rendering-in-the-jamstack/"&gt;Rendering in the Jamstack&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Brian Rinaldi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Multiple rendering options are available in JAMstack applications. This article gives an in-depth overview of the different rendering options and helps you choose which one to use when.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 48</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
+			<description>This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-48/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
+			<pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="hiring-and-retaining-a-diverse-engineering-team"&gt;&lt;a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/"&gt;Hiring (and Retaining) a Diverse Engineering Team&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Almost everyone agrees that having a diverse team is better for business. But the question remains -&amp;gt; &amp;quot;How do you hire more diverse teams?&amp;quot; Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.&lt;/p&gt;
+&lt;h2 id="questions-to-ask-yourself-every-year"&gt;&lt;a href="http://stephanango.com/40-questions"&gt;40 questions to ask yourself every year&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Stephan Ango&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The end of the year is a good time for introspection. If you are having a hard time coming up with questions to ask yourself, Stephan shares a list of 40 questions he asks himself every year. This should be enough to get you started.&lt;/p&gt;
+&lt;h2 id="the-power-of-anti-goals"&gt;&lt;a href="https://awilkinson.medium.com/the-power-of-anti-goals-c38f5f46d23c"&gt;The Power of Anti-Goals&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Andrew Wilkinson&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When thinking about what we want to achieve, most of us start by thinking about what we want to do. Andrew instead thought of the worst day possible and came up with Anti-goals to avoid it. I feel it's a strategy worth exploring to have more enjoyable days.&lt;/p&gt;
+&lt;h2 id="how-i-hustled-to-2kmo-and-got-rid-of-it"&gt;&lt;a href="https://kevoncheung.com/blog/creators-monetization-challenges"&gt;How I Hustled to $2K/mo and Got Rid of It&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kevon Cheung&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A behind-the-scenes look at how Kevin created multiple revenue streams to reach 2k/month and why he eventually scrapped them.&lt;/p&gt;
+&lt;h2 id="how-to-evaluate-startup-offers-a-beginners-guide"&gt;&lt;a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/"&gt;How to Evaluate Startup Offers - A Beginner's Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Avy Faingezicht&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 47</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-47</link>
+			<description>This weeks roundup contains articles from Ramit Sethi, Muhammed Saleem, Robert Heaton, Charity Majors and David McCarter</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-47/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
+			<pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="career-seasons-choosing-a-role-based-on-the-lifestyle-you-want"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/career-seasons/"&gt;Career Seasons: Choosing a Role Based on the Lifestyle You Want&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At different points in our lives, we are in a different season of our careers. The 3 different career seasons are Growth, Lifestyle and Reinvention. It's important to know what season we are in to tailor our job search accordingly. This article can help us figure out what career season we are in.&lt;/p&gt;
+&lt;h2 id="dependency-injection-lifetimes-in-asp.net-core"&gt;&lt;a href="https://code-maze.com/dependency-injection-lifetimes-aspnet-core/?utm_source=pocket_mylisthttps://code-maze.com/dependency-injection-lifetimes-aspnet-core/"&gt;Dependency Injection Lifetimes in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Muhammed Saleem&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In ASP.NET Core, we can register the dependencies for three different lifetimes. I always get confused about when to use which. This article compares the 3 injection lifetimes by example. It has recommendations for when to use each and when not to use.&lt;/p&gt;
+&lt;h2 id="how-to-write-better-sentences-6-examples"&gt;&lt;a href="https://robertheaton.com/better-sentences/"&gt;How to write better sentences: 6 examples&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Robert Heaton&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We can improve our articles by making minor tweaks to our writing. This article contains 6 real-world sentences that Robert has made shorter and cleaner.&lt;/p&gt;
+&lt;h3 id="lies-my-parents-told-me-about-logs"&gt;&lt;a href="https://www.honeycomb.io/blog/lies-my-parents-told-me-about-logs/"&gt;Lies My Parents Told Me (About Logs)&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;Charity Majors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All of us have some assumptions about logs. Some used to be true, but some never really were. This article outlines some of the common misconceptions about logs.&lt;/p&gt;
+&lt;h3 id="when-are-companies-going-to-learn-how-software-development-works"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/07/15/when-are-companies-going-to-learn-how-software-development-works/"&gt;When Are Companies Going To Learn How Software Development Works?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many companies make the same mistakes repeatedly that doom their software projects to failure. A story about how David unearthed during an interview of a company making those mistakes.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How do I implement Graphql subscriptions in HotChocolate with Redis</title>
+			<link>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</link>
+			<description>A guide to adding subscriptions to a HotChocolate GraphQL API with a Redis provider</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/images/redis_response.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</guid>
+			<pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;GraphQL offers us real-time capabilities to notify us when a specific event happens.&lt;/p&gt;
+&lt;p&gt;In this tutorial, we will add subscriptions to our graphql server. We will create an &lt;code&gt;onPing&lt;/code&gt; event that will send notifications whenever we ping the server with an input string.&lt;/p&gt;
+&lt;p&gt;We will also use Redis that runs in a docker container, and see how we can listen to the events in a Redis command shell.&lt;/p&gt;
+&lt;h2 id="running-redis-using-docker"&gt;Running Redis using docker&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker run &lt;span class="hljs-_"&gt;-d&lt;/span&gt; --name=redis-graphql -p 6379:6379 redis:6.0-alpine
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="adding-a-subscription"&gt;Adding a Subscription&lt;/h2&gt;
+&lt;p&gt;We will add a new class Subscription which will have our &lt;code&gt;onPing&lt;/code&gt; event.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;Subscription&lt;/span&gt; : &lt;span class="hljs-title"&gt;ObjectType&lt;/span&gt;
+{
+    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IObjectTypeDescriptor descriptor&lt;/span&gt;)
+    &lt;/span&gt;{
+        descriptor.Field("onPing")
+            .Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;()
+            .Resolve(ctx =&amp;gt; ctx.GetEventMessage&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;())
+            .Subscribe(&lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt; &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventReceiver&amp;gt;().SubscribeAsync&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;("onPing", ctx.RequestAborted));
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5&lt;/em&gt;&lt;/strong&gt;: The topic for the subscription.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 7&lt;/em&gt;&lt;/strong&gt;: Gets the message payload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 8&lt;/em&gt;&lt;/strong&gt;: Subscribes to the pub/sub system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use subscriptions, we need to add the WebSockets middleware to our request pipeline.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-comment"&gt;// Startup.cs&lt;/span&gt;
+&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IApplicationBuilder app, IWebHostEnvironment env&lt;/span&gt;)
+&lt;/span&gt;{
+    app.UseWebSockets();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Note: Middleware order is important with .NET Core, so this middleware needs to come before the GraphQL middleware.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Next, We need to register our subscriptions and set up the Redis subscription provider in the Startup class.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;ConfigureServices&lt;/span&gt;(&lt;span class="hljs-params"&gt;IServiceCollection services&lt;/span&gt;)
+&lt;/span&gt;{
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; options = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ConfigurationOptions
+    {
+        EndPoints = { "localhost:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;" },
+    };
+
+    services.AddGraphQLServer()
+            .AddSubscriptionType&amp;lt;Subscription&amp;gt;();
+            .AddRedisSubscriptions(_ =&amp;gt; ConnectionMultiplexer.Connect(options));
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Note: Redis is on port 6379 by default.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="publishing-the-event"&gt;Publishing the event&lt;/h2&gt;
+&lt;p&gt;Our mutation needs to use &lt;code&gt;ITopicEventSender&lt;/code&gt; to send messages to the underlying pub/sub system.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;Mutation&lt;/span&gt; : &lt;span class="hljs-title"&gt;ObjectType&lt;/span&gt;
+{
+    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IObjectTypeDescriptor descriptor&lt;/span&gt;)
+    &lt;/span&gt;{
+        descriptor.Field("ping")
+            .Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;()
+            .Argument("payload", des =&amp;gt; des.Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;())
+            .Resolve(
+                &lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt;
+                {
+                    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; input = ctx.ArgumentValue&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;("payload");
+
+                    &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventSender&amp;gt;().SendAsync("onPing", input);
+                    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; input;
+                });
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 13:&lt;/em&gt;&lt;/strong&gt;: "onPing" is the topic we want to publish, and &lt;em&gt;input&lt;/em&gt; is our payload.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="testing"&gt;Testing&lt;/h2&gt;
+&lt;p&gt;We can start an Interactive Shell for the Redis Docker Container.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker &lt;span class="hljs-built_in"&gt;exec&lt;/span&gt; -it redis-graphql redis-cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we can subscribe to the &lt;em&gt;onPing&lt;/em&gt; channel using the subscribe command.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;subscribe onPing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/redis_docker_interactive_shell.png" alt="Subscribing to the topic in an interactive shell for redis"&gt;&lt;/p&gt;
+&lt;p&gt;In Insomnia (or your IDE of choice), add the following mutation.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-graphql"&gt;mutation {
+    ping(payload: "hello")
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On execution, we should see the following responses.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/mutation.png" alt="Mutation and response"&gt;&lt;/p&gt;
+&lt;p&gt;In the shell, we can see the event on Redis.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/redis_response.png" alt="Event caught by Redis listener"&gt;&lt;/p&gt;
+&lt;h2 id="demo-project"&gt;Demo Project&lt;/h2&gt;
+&lt;p&gt;There is a &lt;a href="https://github.com/AnkurSheel/HotChocolateSubscriptions"&gt;demo project&lt;/a&gt; you can check out over on GitHub.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Weekly Roundup 46</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-46</link>
@@ -626,579 +948,6 @@ npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest p
 &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run"&gt;Dotnet run command&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Migrating from Gatsby to Statiq</title>
-			<link>https://www.ankursheel.com/blog/migrating-gatsby-statiq</link>
-			<description>I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site</description>
-			<guid>https://www.ankursheel.com/blog/migrating-gatsby-statiq</guid>
-			<pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="my-blogging-journey"&gt;My Blogging Journey&lt;/h2&gt;
-&lt;p&gt;In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.&lt;/p&gt;
-&lt;p&gt;You can read more about why I migrated to Gatsby and the earlier parts of the journey at &lt;a href="https://www.ankursheel.com/migrating-from-wordpress-to-gatsby"&gt;Why and How I migrated my website from WordPress to Gatsby&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="reasons-for-moving-away-from-gatsby"&gt;Reasons for moving away from Gatsby&lt;/h2&gt;
-&lt;p&gt;There were a few reasons that the Gatsby solution is not working for me anymore. In no particular order,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lots of dependencies and updates
-&lt;ul&gt;
-&lt;li&gt;Gatsby is based on a plugin architecture. Hence, there are a lot of explicit dependencies that have to be added to get a functional site. I had dependabot running on a monthly cadence, and every month dependabot would open almost 50 PR's.&lt;/li&gt;
-&lt;li&gt;Sometimes, I would upgrade a package only to find it was incompatible with another package. With some libraries moving over to ES Modules, I am running into this a lot more.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Hard to make changes
-&lt;ul&gt;
-&lt;li&gt;After every few upgrades, using the library to generate types for the GraphQl queries would break with cryptic errors. Even updating some other libraries would break my custom tooling. This resulted in a few days being lost to yak-shaving.&lt;/li&gt;
-&lt;li&gt;Upgrading packages would sometimes result in JS memory error in CI. This meant more fiddling with manually changing the memory available and deleting the caches so that the site would deploy again.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Programming Language that I don't use anywhere else
-&lt;ul&gt;
-&lt;li&gt;I never enjoyed the process of writing Javascript to make modifications. With Typescript and React, things are a lot better but with Gatsby and other libraries, not having types out of the box made adding types a chore.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Graphql
-&lt;ul&gt;
-&lt;li&gt;Gatsby is based on GraphQl. Although I like how Graphql works and use it extensively in my working life, it seemed overkill to generate static pages.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lack of a strongly typed system
-&lt;ul&gt;
-&lt;li&gt;When I moved to Gatsby, I was using Typescript at work. Since then, I have realized that I enjoy working with a strongly typed and more mature language like C#.&lt;/li&gt;
-&lt;li&gt;Gatsby and many other libraries don't come with types out of the box, which meant I had to figure out the types on my own or lose things like IntelliSense and errors at compile time.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Hard to write tests and get confidence when I am making changes
-&lt;ul&gt;
-&lt;li&gt;I don't know if it's my experience with Javascript or if Gatsby makes it hard, but I was never able to add tests which increased my stress every time I wanted to make a change.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;JS out of memory error in CI
-&lt;ul&gt;
-&lt;li&gt;For no reason, I get Javascript out of memory errors when building in CI. I don't know why it happens, and a random fix of modifying the space size seems to do the trick.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="why-statiq"&gt;Why Statiq&lt;/h2&gt;
-&lt;p&gt;With Gatsby releasing v3 and being a non-trivial migration, I decided to see what other generators are there.&lt;/p&gt;
-&lt;p&gt;The first obvious option I considered was migrating to Gatsby v3, but I was not overly keen on it.&lt;/p&gt;
-&lt;p&gt;The next option was &lt;a href="https://nextjs.org/"&gt;NextJS&lt;/a&gt;, which is also based on Javascript. I have been hearing increasingly good things about it, and to be honest, I would have probably gone with NextJs, if I had not stumbled upon Statiq.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.statiq.dev/"&gt;Statiq&lt;/a&gt; is based on C#, a language I have used for many years and am still using daily.&lt;/p&gt;
-&lt;p&gt;Let's see how it stacks up against my concerns from the previous section.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;Lots of dependencies and updates&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;To include Statiq, I just need to add 1 package. Regardless of whether I use Statiq.Web or Statiq.Framework, I just need to add 1 package, and it will get all the dependencies for me.&lt;/li&gt;
-&lt;li&gt;The C# packaging system also feels a lot more sensible in the sense that you opt-in for even patch upgrades.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Hard to make changes
-&lt;ul&gt;
-&lt;li&gt;I don't think I will be able to get away with some amount of yak shaving, but hopefully, it will be less than now.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Programming Language that I don't use anywhere else&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;I use C# daily, and OOP(Object Oriented Programming) is something I have been working with for almost my entire programming life.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Graphql&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;Statiq does not use GraphQl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Javascript&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;Statiq is based on C#, which is a strongly typed language.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Hard to write tests and get confidence when I am making changes&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;I have a lot more experience writing tests for C#. Hopefully, that will enable me to write tests and get more confidence when making changes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;JS out of memory error in CI&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;There is no JS, so not an issue.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="other-thoughts"&gt;Other Thoughts&lt;/h3&gt;
-&lt;p&gt;Statiq.Web has built-in functionality, which is capable of handling the most common scenarios. As I am rebuilding the site, I will start with using it. If I am fighting/modifying the library a lot, I will move to Statiq.Framework, which has most of the modules to help build a custom Static Site Generator.&lt;/p&gt;
-&lt;p&gt;I will also be using &lt;a href="https://tailwindcss.com/"&gt;TailwindCSS&lt;/a&gt; as I have heard good things about it and want to see what the hype is about.&lt;/p&gt;
-&lt;p&gt;I won't be migrating this blog, but instead, I will be migrating &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in Bookland&lt;/a&gt;, based on the same theme as this blog but has less complexity and pages. If that goes well, then I will look at migrating this blog as well.&lt;/p&gt;
-&lt;h2 id="my-migration-process"&gt;My migration process&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;I will fill this section out with links to pages so that you can follow along as I migrate the site.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="must-haves"&gt;Must-Haves&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove all &lt;em&gt;js&lt;/em&gt; files and add a C# solution and project file.&lt;/li&gt;
-&lt;li&gt;Rename &lt;em&gt;content&lt;/em&gt; folder to &lt;em&gt;input&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Move &lt;em&gt;images&lt;/em&gt; to &lt;em&gt;input/asset&lt;/em&gt; folder.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/rename-multiple-files-subfolders-windows-command-prompt"&gt;Rename all &lt;em&gt;.mdx&lt;/em&gt; files to &lt;em&gt;.md&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Add a a package reference to &lt;code&gt;Statiq.Web&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/override-netlify-build-config"&gt;Update netlify to deploy a branch using Statiq&lt;/a&gt; to create the website.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/add-tailwind-css-statiq-website"&gt;Add tailwind&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/deploy-statiq-website-tailwind-netlify"&gt;Deploy site to netlify&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/replace-pipeline-statiq"&gt;Disable the provided asset and content pipelines&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Add pipelines for Assets, HomePage, Pages, Post List, Post, TagList and Tags.&lt;/li&gt;
-&lt;li&gt;Add layouts and SEO tags.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="nice-to-haves-after-migration"&gt;Nice to haves (after migration)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add a 404 page&lt;/li&gt;
-&lt;li&gt;Add buy me a coffee button&lt;/li&gt;
-&lt;li&gt;Add contact me page&lt;/li&gt;
-&lt;li&gt;Generate social images&lt;/li&gt;
-&lt;li&gt;Add pipeline for sitemap&lt;/li&gt;
-&lt;li&gt;Add pipeline for RSS feed&lt;/li&gt;
-&lt;li&gt;Minify assets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Although it's an ongoing process, I am happy with how the migration is progressing. &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in bookland&lt;/a&gt; is now built with Statiq and Markdown and hosted on Netlify. Instead of JS, it's all in .Net, and I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.&lt;/p&gt;
-&lt;p&gt;If you would like to know more about something specific, let me know.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 44</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-44</link>
-			<description>This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-44/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-44</guid>
-			<pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
-&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="my-13-year-old-has-an-800-phone"&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;My 13-year-old has an $800 phone&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Buying a phone is expensive, especially if you are a 13-year-old who wants an iPhone. &lt;strong&gt;Ruth&lt;/strong&gt; shares a story about how her daughter could contribute 50% to an $800 iPhone purchase in 2 months.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps"
-author="Ruth"
-/&gt;&lt;/p&gt;
-&lt;p&gt;This article shows how we can teach our children the habit of saving while also teaching them it's OK to spend money they have budgeted.&lt;/p&gt;
-&lt;h3 id="key-takeaways"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Teach your child to save/invest a percentage of every dollar they earn.&lt;/li&gt;
-&lt;li&gt;For expensive purchases, agree to pay half the amount.&lt;/li&gt;
-&lt;li&gt;For massive targets, break them into smaller digestible chunks by using a &amp;quot;savings tracker&amp;quot;.&lt;/li&gt;
-&lt;li&gt;Look at employment opportunities available to them, and if it needs the help of an adult, offer to help if they are willing to work.&lt;/li&gt;
-&lt;li&gt;For a kid, who have all their needs taken care of, it is the best time to teach them the habit of saving a percentage of their income.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="do-i-need-a-financial-advisor"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Do I Need a Financial Advisor&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;How do we know if we need a financial advisor? &lt;strong&gt;Ramit Sethi&lt;/strong&gt; explains the criteria for needing a financial advisor and why most people don't need one.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us"
-author="Ramit Sethi"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-1"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;We need an advisor only if we have over $1 million in investable assets, have a complex financial situation, need a second set of eyes or a behavioural coach.&lt;/li&gt;
-&lt;li&gt;Get a fee-only advisor who is a fiduciary, meaning they are legally required to put our best interests first.&lt;/li&gt;
-&lt;li&gt;Reach out to at least 10 advisors and set up calls with 5.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="how-to-learn-stuff-quickly"&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;How To Learn Stuff Quickly&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;It is easy to get stuck either in tutorial hell or reinvent every wheel when learning new things. &lt;strong&gt;Josh Comeau&lt;/strong&gt; shares a few tips on how he has been able to pick up new skills quickly.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another"
-author="Josh Comeau"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-2"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;In the beginning, focus on guided learning. Once we are comfortable with the fundamentals, we should spend more time building interesting things and seeing tutorials only when encountering new problems.&lt;/li&gt;
-&lt;li&gt;A tutorial fade is effective, but we are building the same things over and over. Basically, after following a tutorial, you try to repeat it without looking at the tutorial.&lt;/li&gt;
-&lt;li&gt;We can add additional functionality to the tutorial project.&lt;/li&gt;
-&lt;li&gt;We can build a similar project to the tutorial project.&lt;/li&gt;
-&lt;li&gt;By publishing what we learn, we can uncover gaps in our mental model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="when-it-pays-to-choose-microservices"&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;When it Pays to Choose Microservices&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Microservices are extremely popular, with a lot of big companies adopting them. But when is it worth switching over to microservices? &lt;strong&gt;Victoriia Zaripova&lt;/strong&gt; outlines the pros and cons of developing a microservice-based solution.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores"
-author="Victoriia Zaripova"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-3"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;If microservices don't solve the business tasks, this is a waste of time and money.&lt;/li&gt;
-&lt;li&gt;Don't use microservices for a new solution.&lt;/li&gt;
-&lt;li&gt;The minimum pool for one microservice is a team of six to nine persons. One team should support a maximum of two microservices.&lt;/li&gt;
-&lt;li&gt;Consider using a microservice when
-&lt;ul&gt;
-&lt;li&gt;there are critical requirements for the application's resistance to loads and/or support of integration with external services&lt;/li&gt;
-&lt;li&gt;the business requires significant acceleration of development.&lt;/li&gt;
-&lt;li&gt;it's necessary to use a heterogeneous technology stack.&lt;/li&gt;
-&lt;li&gt;different points of the application require different rates of changes in various points of the application.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="the-nine-states-of-design"&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;The Nine States of Design&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;When designing UI, we tend to focus on the ideal state. &lt;strong&gt;Vince Speelman&lt;/strong&gt; shares his list of the 9 different states that we should plan for to create a better experience for users who hit the unhappy path.&lt;/p&gt;
-&lt;p&gt;&lt;Quote
-quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone"
-author="Vince Speelman"
-/&gt;&lt;/p&gt;
-&lt;h3 id="key-takeaways-4"&gt;Key Takeaways&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The different states that we should consider when building UI
-&lt;ul&gt;
-&lt;li&gt;Nothing state&lt;/li&gt;
-&lt;li&gt;Loading&lt;/li&gt;
-&lt;li&gt;None&lt;/li&gt;
-&lt;li&gt;One&lt;/li&gt;
-&lt;li&gt;Some&lt;/li&gt;
-&lt;li&gt;Too many&lt;/li&gt;
-&lt;li&gt;Incorrect&lt;/li&gt;
-&lt;li&gt;Correct&lt;/li&gt;
-&lt;li&gt;Done&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Hope you enjoy reading these articles as much as I did.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Increasing Productivity with No-Meeting Days</title>
-			<link>https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days</link>
-			<description>How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/increasing-productivity-no-meeting-days/cover.jpg" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days</guid>
-			<pubDate>Tue, 03 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the First AML Product &amp;amp; Engineering blog. You can read the original version &lt;a href="https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Have you ever been in a position where you are in meetings during the day, and then you code at night just to feel that you are getting things done? I know I have.&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In 2009, Paul Graham wrote an article about the &lt;a href="http://www.paulgraham.com/makersschedule.html"&gt;maker vs manager schedule&lt;/a&gt;. It articulates that meetings are disastrous when we are on the maker's schedule. When we attend many meetings, it is tough to focus on the task and get things done. In my case, even a single meeting can blow my whole afternoon.&lt;/p&gt;
-&lt;p&gt;Most of us have two workdays in today's world - one on the manager's schedule and the other on the maker's schedule.&lt;/p&gt;
-&lt;p&gt;In his article, Paul proposes using office hours and setting aside a time for meetings. But I struggled with this when acting as the team lead for one of the teams and found my day broken up by various meetings. After all, how do we tell our boss (and the rest of the business) that we have office hours and will only meet him/her/them during those? I think office hours works well when we are high enough on the totem pole.&lt;/p&gt;
-&lt;p&gt;Since office hours are not viable for most of us, we can try the next best thing - blocking out chunks of time in our calendar for focus time. Blackout periods work well in most cases, but we still have to attend meetings and can't get stuck on a task for the whole day.&lt;/p&gt;
-&lt;p&gt;Let us look at something that works a little better - A no-meeting day.&lt;/p&gt;
-&lt;h2 id="what-is-a-no-meeting-day"&gt;What is a No-Meeting Day?&lt;/h2&gt;
-&lt;p&gt;A no-meeting day is a day for focused work. Essentially, it's a day in the week with no meetings so that we get uninterrupted time to do our job. This continuous focus time is perfect for deep work and more extensive projects. In addition, there is less context switching, so it's easier to achieve that magical state of flow.&lt;/p&gt;
-&lt;p&gt;And if you are a manager, it also allows you to be a doer.&lt;/p&gt;
-&lt;h2 id="a-no-meeting-day-will-never-work-for-my-role"&gt;A No-meeting day will never work for my role.&lt;/h2&gt;
-&lt;p&gt;Now some of you might be reading this and going -&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Yeah, it sounds great, and I would love to get in on that action, but it will never work for my role&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Some functions like Sales and Customer Success will require more collaboration than others.&lt;/p&gt;
-&lt;p&gt;For these roles, it might be better to institute blackout periods where people can pick half a day each week where they are not expected to be in a meeting. Shared blackout periods can work well so that there is time to have meetings that involve multiple people or external stakeholders.&lt;/p&gt;
-&lt;p&gt;Alternatively, we can also institute no meeting days just for internal meetings.&lt;/p&gt;
-&lt;h2 id="how-to-implement-no-meeting-days"&gt;How to implement no-meeting days?&lt;/h2&gt;
-&lt;p&gt;Now that I have allayed your fears, you want to know how to implement them for yourself and your team.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Patience, you must have my young Padawan&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: The first step to a meeting-free day is to talk with your manager and get them on board. You can start with blackout periods if your manager is concerned and then move up to no-meeting days. Once you have a few blackout periods in your calendar for focus time, it is an easier sell to consolidate them into a single no-meeting day.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Next, communicate with others about your availability on no meeting days. Have a plan for how or when you are available in case of work emergencies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: The final step is to ensure that no meetings can be scheduled on your nominated no-meeting day. Create a recurring all-day event on your calendar that blocks others from scheduling time with you.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;: Once you are happy with the trial, roll it out to the rest of the team.&lt;/p&gt;
-&lt;h2 id="common-pitfalls"&gt;Common Pitfalls&lt;/h2&gt;
-&lt;h3 id="getting-the-whole-team-to-buy-in-from-the-start"&gt;Getting the whole team to buy-in from the start&lt;/h3&gt;
-&lt;p&gt;People make a big mistake and set themselves up for failure because they try to get the whole team to agree to try it from the outset. It's not hard to make space for a no-meeting day for a single person.&lt;/p&gt;
-&lt;h3 id="blocking-the-calendar-one-week-at-a-time"&gt;Blocking the calendar one week at a time&lt;/h3&gt;
-&lt;p&gt;Making it recurring and not just a week by week addition makes maintaining the meeting free schedule easier.&lt;/p&gt;
-&lt;p&gt;I prefer to set up a regular &lt;strong&gt;Out of Office&lt;/strong&gt; event with a title of &lt;strong&gt;&lt;em&gt;Focus Time&lt;/em&gt;&lt;/strong&gt; and a message stating - &lt;em&gt;I am open to urgent meetings. Please slack me to get me to accept&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="be-flexible"&gt;Be Flexible&lt;/h2&gt;
-&lt;p&gt;Meetings involve more than one person. Sometimes, we have to take a meeting on our no-meeting day because that is the only day someone else is available, or there is an urgent fire that we need to put out.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Make exceptions when necessary but try hard to avoid them&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Having a no-meeting day does not mean that we don't get together with our co-workers or have spontaneous conversations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Feel free to have them; Just don't schedule it!&lt;/strong&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to make code reviews stress free</title>
-			<link>https://www.ankursheel.com/blog/make-code-reviews-stress-free</link>
-			<description>Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/make-code-reviews-stress-free/cover.jpg" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/make-code-reviews-stress-free</guid>
-			<pubDate>Sun, 25 Jul 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the First AML Product &amp;amp; Engineering blog. You can read the original version &lt;a href="https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Code reviews can be stressful for both parties. The person being reviewed puts their code out there for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.&lt;/p&gt;
-&lt;p&gt;There is a lot of advice on the interwebs about how to conduct effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.&lt;/p&gt;
-&lt;p&gt;However, computers are still not good at some things, like suggesting good variable names. By only talking about blockers in a code review, we can lose out on some good suggestions. It's a classic case of throwing out the baby with the bathwater.&lt;/p&gt;
-&lt;h2 id="inspiration"&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;I thought there was no good solution to this problem for a long time, but then I came across an article on &lt;a href="https://www.netlify.com/blog/2020/03/05/feedback-ladders-how-we-encode-code-reviews-at-netlify/"&gt;Feedback Ladders&lt;/a&gt; by the team at Netlify.&lt;/p&gt;
-&lt;p&gt;The gist of the article is that Nelify uses metaphorical names describing the inconveniences of living in a house still being built in their code reviews. This encodes the severity of the feedback.&lt;/p&gt;
-&lt;h2 id="lets-start-adapting"&gt;Let's start adapting&lt;/h2&gt;
-&lt;p&gt;Netlify has 5 different levels - mountain, boulder, pebble, sand and dust.&lt;/p&gt;
-&lt;p&gt;I think this is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. I feel it's worth adding one more to indicate that it's a clarifying question asked by the reviewer.&lt;/p&gt;
-&lt;p&gt;This is an improvement over the traditional review, but there is still a problem. Text is difficult to parse.&lt;/p&gt;
-&lt;p&gt;The solution is easy — Let's use emoji.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;We can use whatever emojis we like, but our platform of choice must support the emojis that we decide to use.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="some-options-that-work-in-github-for-inspiration"&gt;Some options that work in Github for inspiration&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Vehicles&lt;/strong&gt; 🚑 [ambulance], 🚗 [car], 🚲 [cycle], ⛽ [fuelpump]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Animals&lt;/strong&gt; 🐘 [elephant], 🐑 [sheep], 🐜 [ant], ❓ [question]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Shapes&lt;/strong&gt; 🔴 [circle], 🔶 [diamond], 💚 [heart], ❓[question]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="what-level-to-use-when"&gt;What level to use when&lt;/h2&gt;
-&lt;p&gt;Let's use Vehicles as an example and see what the different levels indicate.&lt;/p&gt;
-&lt;h3 id="blocker"&gt;🚑 Blocker&lt;/h3&gt;
-&lt;p&gt;The Pull Request cannot be merged till the issue is addressed. Examples would be where the solution doesn't fix the issue or has unintended consequences or missing tests.&lt;/p&gt;
-&lt;h3 id="non-blocking-but-essential"&gt;🚗 Non-Blocking but essential&lt;/h3&gt;
-&lt;p&gt;The Pull Request can be merged, but the comment should be addressed in a future PR. Examples of this would be addressing tech debt or enhancements.&lt;/p&gt;
-&lt;h3 id="take-it-or-leave-it"&gt;🚲 Take it or leave it&lt;/h3&gt;
-&lt;p&gt;All those other things are suggestions or a personal opinion and might be considered nitpicking. Examples of this would be suggesting a different variable name.&lt;/p&gt;
-&lt;h3 id="a-clarifying-question"&gt;⛽ A clarifying question&lt;/h3&gt;
-&lt;p&gt;It can be used to get more context on the pull request changes or understand the domain.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Code reviews can incite endless debates between developers. Using emojis to encode the severity of the feedback can help avoid this problem.&lt;/p&gt;
-&lt;p&gt;As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.&lt;/p&gt;
-&lt;p&gt;If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.&lt;/p&gt;
-&lt;p&gt;I am always curious to know how other people have adapted this in their workflow so let me know what you did :)&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>What is the difference between Stubs, Mocks, Fakes and Spies</title>
-			<link>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</link>
-			<description>We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies</description>
-			<guid>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</guid>
-			<pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;The lines between the different test doubles are blurred when using a Mocking library like &lt;a href="https://github.com/moq/moq4"&gt;Moq&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I use mocks for almost everything, but I think it's still worthwhile to know the difference between Stubs, Mocks, Fakes and Spies. If nothing else, we will know what people are talking about when they use the different terms.&lt;/p&gt;
-&lt;p&gt;Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;interface&lt;/span&gt; &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
-{
-     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)&lt;/span&gt;;
-     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Add&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; valid&lt;/span&gt;)&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="stub"&gt;Stub&lt;/h2&gt;
-&lt;p&gt;A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.&lt;/p&gt;
-&lt;p&gt;Below is the stubbed version using Moq of a service where the OnPing() function always returns &amp;quot;pong&amp;quot; regardless of the input.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; mock = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Mock&amp;lt;IRepository&amp;gt;();
-mock.Setup(x =&amp;gt; x.IsValid(It.IsAny&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;())).Returns(&lt;span class="hljs-literal"&gt;true&lt;/span&gt;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.&lt;/p&gt;
-&lt;h2 id="spy"&gt;Spy&lt;/h2&gt;
-&lt;p&gt;A spy lets us verify what functions were called, with what arguments, when, and how often.&lt;/p&gt;
-&lt;p&gt;For example, let's take a repository class, which does not have an interface associated with it.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;RepositorySpy&lt;/span&gt; : &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
-{
-    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; boolean IsValidWasCalled = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
-
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; Boolean &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)
-    &lt;/span&gt;{
-        IsValidWasCalled = &lt;span class="hljs-literal"&gt;true&lt;/span&gt;;
-        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; &lt;span class="hljs-literal"&gt;true&lt;/span&gt;;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In the test, we will assert that &lt;code&gt;IsValidWasCalled&lt;/code&gt; was &lt;em&gt;true&lt;/em&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; spy = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; RepositorySpy();
-Assert.True(spy.IsValidWasCalled);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.&lt;/p&gt;
-&lt;p&gt;An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.&lt;/p&gt;
-&lt;p&gt;I rarely use Spies, and it will become clear why once we look at Mocks.&lt;/p&gt;
-&lt;h2 id="mock"&gt;Mock&lt;/h2&gt;
-&lt;p&gt;A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, unlike a spy, which has the assertion in the test, the assertion is in the verify method in a mock.&lt;/p&gt;
-&lt;p&gt;Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verify that the correct calls were received.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; mock = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Mock&amp;lt;IRepository&amp;gt;();
-mock.Setup(x =&amp;gt; x.IsValid(&lt;span class="hljs-number"&gt;1&lt;/span&gt;)).Returns(&lt;span class="hljs-literal"&gt;true&lt;/span&gt;);
-mock.Setup(x =&amp;gt; x.IsValid(&lt;span class="hljs-number"&gt;2&lt;/span&gt;)).Returns(&lt;span class="hljs-literal"&gt;false&lt;/span&gt;);
-mock.Verify(x =&amp;gt; x.Add(&lt;span class="hljs-number"&gt;1&lt;/span&gt;), Times.Once);
-mock.Verify(x =&amp;gt; x.IsValid(It.IsAny&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;())), Times(&lt;span class="hljs-number"&gt;2&lt;/span&gt;));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.&lt;/p&gt;
-&lt;h2 id="fake"&gt;Fake&lt;/h2&gt;
-&lt;p&gt;A Fake is an object that has a concrete implementation that works similar to the actual implementation. It is a simplified version of production code. It does not affect the behaviour of the test but simplifies the implementation of the test by removing heavyweight dependencies.&lt;/p&gt;
-&lt;p&gt;It should be used sparingly and only in cases where a Stub or Mock is not usable.&lt;/p&gt;
-&lt;p&gt;Below is an implementation of a Fake repository&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;FakeRepository&lt;/span&gt; : &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
-{
-    &lt;span class="hljs-keyword"&gt;private&lt;/span&gt; Dictionary&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt;&amp;gt; _values = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Dictionary&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt;&amp;gt;();
-
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)
-    &lt;/span&gt;{
-        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; _values[id];
-    }
-
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Add&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; valid&lt;/span&gt;)
-    &lt;/span&gt;{
-        _values.Add(id, open);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.&lt;/p&gt;
-&lt;h3 id="thanks"&gt;Thanks&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="edits"&gt;Edits&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Updated 17th July 2021 with an example for Spies&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to run SQL Server in a Docker container</title>
-			<link>https://www.ankursheel.com/blog/run-sql-server-docker-container</link>
-			<description>In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file</description>
-			<guid>https://www.ankursheel.com/blog/run-sql-server-docker-container</guid>
-			<pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this post, we will see how we can run SQL Server on Docker. We will be launching the SQL server container using docker-compose and managing the image and environment variables in a docker file.&lt;/p&gt;
-&lt;h3 id="docker-compose-file"&gt;Docker Compose file&lt;/h3&gt;
-&lt;p&gt;To launch a SQL Server container, we will first create a &lt;code&gt;docker-compose.yml&lt;/code&gt; file. I like to keep my docker scripts in a folder called &lt;strong&gt;&lt;em&gt;build.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml hljs"&gt;&lt;span class="hljs-attr"&gt;version:&lt;/span&gt; &lt;span class="hljs-string"&gt;'3.8'&lt;/span&gt;
-
-&lt;span class="hljs-attr"&gt;services:&lt;/span&gt;
-&lt;span class="hljs-attr"&gt;    db:&lt;/span&gt;
-&lt;span class="hljs-attr"&gt;        container_name:&lt;/span&gt; sql_server_db
-&lt;span class="hljs-attr"&gt;        build:&lt;/span&gt;
-&lt;span class="hljs-attr"&gt;            context:&lt;/span&gt; ./../
-&lt;span class="hljs-attr"&gt;            dockerfile:&lt;/span&gt; ./build/mssqlserver.Dockerfile
-&lt;span class="hljs-attr"&gt;        ports:&lt;/span&gt;
-&lt;span class="hljs-bullet"&gt;            -&lt;/span&gt; &lt;span class="hljs-string"&gt;'1433:1433'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: This denotes that we are using version 3.8 of Docker compose so that Docker can provide the appropriate features.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #3&lt;/strong&gt; This section defines all the different containers we will create.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: The name of the SQL Server Database service. &lt;em&gt;Can be anything.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #5&lt;/strong&gt;: A custom container name rather than a generated default name so that we can easily find the container in Docker.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #6&lt;/strong&gt;: Configuration options that are applied at build time&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #7:&lt;/strong&gt; Setting this to &lt;code&gt;.\..\&lt;/code&gt; allows the build process to access any of the files in the root folder.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #8&lt;/strong&gt;: Set the path to the docker file relative to the context path.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #9-10&lt;/strong&gt;: SQL Server is listening on port 1433 in the container, and we want to expose it on port 1433, on the host.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="docker-file-for-sql-server"&gt;Docker file for SQL Server&lt;/h3&gt;
-&lt;p&gt;We can start by adding the base image and environment variables to the docker file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-docker hljs"&gt;&lt;span class="hljs-keyword"&gt;FROM&lt;/span&gt; mcr.microsoft.com/mssql/server:&lt;span class="hljs-number"&gt;2017&lt;/span&gt;-latest
-
-ARG SA_PASSWORD=&amp;quot;Password1!&amp;quot;
-&lt;span class="hljs-keyword"&gt;ENV&lt;/span&gt; SA_PASSWORD=$SA_PASSWORD
-&lt;span class="hljs-keyword"&gt;ENV&lt;/span&gt; ACCEPT_EULA=&amp;quot;Y&amp;quot;
-
-&lt;span class="hljs-keyword"&gt;EXPOSE&lt;/span&gt; &lt;span class="hljs-number"&gt;1433&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: Pull down the SQL Server 2017 container image.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #3&lt;/strong&gt;: Set the SA_PASSWORD as a variable so that it can be reused.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: Specify the strong password that meets SQL Server password requirements as an environment variable.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #5&lt;/strong&gt;: Sets the environment variable to confirm our acceptance of the End-User Licensing Agreement.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #7&lt;/strong&gt;: Expose the port to access it from composed containers. &lt;em&gt;SQL server listens for a connection on TCP port 1433 by default&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="initialize-sql-server-in-docker-container"&gt;Initialize SQL server in Docker container&lt;/h3&gt;
-&lt;p&gt;Add the following lines to the docker file to initialize SQL Server.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-docker hljs"&gt;&lt;span class="hljs-keyword"&gt;RUN&lt;/span&gt;&lt;span class="bash"&gt; mkdir -p /usr/work
-&lt;/span&gt;&lt;span class="hljs-keyword"&gt;COPY&lt;/span&gt;&lt;span class="bash"&gt; ./build/*.sql /usr/work/
-&lt;/span&gt;
-&lt;span class="hljs-keyword"&gt;WORKDIR&lt;/span&gt;&lt;span class="bash"&gt; /usr/work
-&lt;/span&gt;
-&lt;span class="hljs-keyword"&gt;RUN&lt;/span&gt;&lt;span class="bash"&gt; ( /opt/mssql/bin/sqlservr &amp;amp; ) \
-    | grep -q &amp;quot;Service Broker manager has started&amp;quot; \
-    &amp;amp;&amp;amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P &lt;span class="hljs-variable"&gt;$SA_PASSWORD&lt;/span&gt; -i create-db.sql \
-    &amp;amp;&amp;amp; pkill sqlservr
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: Run a command to create a new directory creating all the directories in the path.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #2&lt;/strong&gt;: Copy all the SQL files into the created directory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: Set the working directory for the subsequent instructions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #6&lt;/strong&gt;: Starts the SQL server.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #7&lt;/strong&gt;: Wait for &lt;em&gt;sqlservr&lt;/em&gt; to start by checking the logs. &lt;em&gt;grep&lt;/em&gt; will block until it has found the string and then exit.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #8&lt;/strong&gt;: Run &lt;em&gt;sqlcmd&lt;/em&gt; to run &lt;em&gt;create-db.sql&lt;/em&gt; which scaffolds our database.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line #9&lt;/strong&gt;: Kill the &lt;em&gt;sqlservr&lt;/em&gt; process.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="script-to-scaffold-our-database"&gt;Script to scaffold our database&lt;/h3&gt;
-&lt;p&gt;In our SQL script, we can do whatever we need to do at startup. In this demo, we will just create a database with a schema.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-sql hljs"&gt;&lt;span class="hljs-keyword"&gt;CREATE&lt;/span&gt; &lt;span class="hljs-keyword"&gt;DATABASE&lt;/span&gt; DemoDb;
-GO
-&lt;span class="hljs-keyword"&gt;USE&lt;/span&gt; DemoDb;
-GO
-
-&lt;span class="hljs-keyword"&gt;CREATE&lt;/span&gt; &lt;span class="hljs-keyword"&gt;TABLE&lt;/span&gt; [dbo].[Table1]
-(
-    [&lt;span class="hljs-keyword"&gt;Id&lt;/span&gt;] &lt;span class="hljs-built_in"&gt;INT&lt;/span&gt; &lt;span class="hljs-keyword"&gt;NOT&lt;/span&gt; &lt;span class="hljs-literal"&gt;NULL&lt;/span&gt; PRIMARY &lt;span class="hljs-keyword"&gt;KEY&lt;/span&gt; &lt;span class="hljs-keyword"&gt;IDENTITY&lt;/span&gt;,
-    [&lt;span class="hljs-keyword"&gt;Name&lt;/span&gt;] &lt;span class="hljs-keyword"&gt;NVARCHAR&lt;/span&gt;(&lt;span class="hljs-number"&gt;200&lt;/span&gt;) &lt;span class="hljs-keyword"&gt;NOT&lt;/span&gt; &lt;span class="hljs-literal"&gt;NULL&lt;/span&gt;,
-)
-
-&lt;span class="hljs-keyword"&gt;GO&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="running-the-container"&gt;Running the container&lt;/h3&gt;
-&lt;p&gt;We can use the following command to run start the DB using from the root folder.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker-compose &lt;span class="hljs-_"&gt;-f&lt;/span&gt; ./build/docker-compose.yml up &lt;span class="hljs-_"&gt;-d&lt;/span&gt; --force-recreate --build db
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Starting a new Docker container with Microsoft SQL Server is really simple. However, there are a few hoops to jump through. I hope that it’s easy to understand how it works after reading this article.&lt;/p&gt;
-&lt;p&gt;Please let me know your thoughts about this article if you have any suggestions or share the article with others.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to set up the project properties for Source Generators</title>
-			<link>https://www.ankursheel.com/blog/setup-project-properties-source-generators</link>
-			<description>A guide to setting up the project properties that we need to create and use source generators</description>
-			<guid>https://www.ankursheel.com/blog/setup-project-properties-source-generators</guid>
-			<pubDate>Wed, 23 Jun 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. This post will look at the project properties we need to set on both the source generator and consumer projects.&lt;/p&gt;
-&lt;h2 id="source-generator-project-properties"&gt;Source Generator Project Properties&lt;/h2&gt;
-&lt;p&gt;A source generator is a .Net class.&lt;/p&gt;
-&lt;h3 id="create-a-new-solution-and-a-library-project"&gt;Create a new solution and a library project&lt;/h3&gt;
-&lt;p&gt;The empty project is targeting Net5.0. I have also enabled nullables.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;PropertyGroup&amp;gt;
-    &amp;lt;TargetFramework&amp;gt;net5.0&amp;lt;/TargetFramework&amp;gt;
-    &amp;lt;Nullable&amp;gt;enable&amp;lt;/Nullable&amp;gt;
-    &amp;lt;WarningsAsErrors&amp;gt;true&amp;lt;/WarningsAsErrors&amp;gt;
-&amp;lt;/PropertyGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="add-the-required-packages"&gt;Add the required packages&lt;/h3&gt;
-&lt;p&gt;Next, we will add the CodeAnalysis libraries from NuGet.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup&amp;gt;
-    &amp;lt;PackageReference Include=&amp;quot;Microsoft.CodeAnalysis.Analyzers&amp;quot; Version=&amp;quot;3.3.2&amp;quot; /&amp;gt;
-    &amp;lt;PackageReference Include=&amp;quot;Microsoft.CodeAnalysis.CSharp.Workspaces&amp;quot; Version=&amp;quot;3.8.0&amp;quot; /&amp;gt;
-&amp;lt;/ItemGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="consumer-project-properties"&gt;Consumer Project Properties&lt;/h2&gt;
-&lt;p&gt;In the consumer project, we need to add a reference to the source generator. This can be done as either a project reference or a NuGet package.&lt;/p&gt;
-&lt;h3 id="reference-the-project-in-debug-mode"&gt;Reference the project in Debug mode&lt;/h3&gt;
-&lt;p&gt;In Debug mode, we reference the project directly so that it's easier for development.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup Condition=&amp;quot;'$(Configuration)'=='Debug'&amp;quot;&amp;gt;
-    &amp;lt;ProjectReference Include=&amp;quot;..\\SourceGenerator\\SourceGenerator.csproj&amp;quot; OutputItemType=&amp;quot;Analyzer&amp;quot; ReferenceOutputAssembly=&amp;quot;false&amp;quot; /&amp;gt;
-&amp;lt;/ItemGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;OutputItemType&lt;/em&gt;&lt;/strong&gt;: Source generators as packaged and deployed the same way as Roslyn Analysers, so we need to tell the compiler that it is not a standard project reference.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;ReferenceOutputAssembly&lt;/em&gt;&lt;/strong&gt;: Tells the compiler not to include the source generator project in the published output, i.e. the bin folder.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="reference-the-nuget-package-in-release-mode"&gt;Reference the NuGet package in Release mode&lt;/h3&gt;
-&lt;p&gt;In Release mode, we reference the NuGet package so that we can test the package.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup Condition=&amp;quot;'$(Configuration)'=='Release'&amp;quot;&amp;gt;
-    &amp;lt;PackageReference Include=&amp;quot;SourceGenerator&amp;quot; Version=&amp;quot;x.y.z&amp;quot; /&amp;gt;
-&amp;lt;/ItemGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="writing-the-generated-code-to-disk"&gt;Writing the generated code to disk&lt;/h3&gt;
-&lt;p&gt;By default, the generated code is not written to disk. However, when writing a source generator, looking at the generated code can be helpful.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;PropertyGroup&amp;gt;
-    &amp;lt;EmitCompilerGeneratedFiles&amp;gt;true&amp;lt;/EmitCompilerGeneratedFiles&amp;gt;
-    &amp;lt;CompilerGeneratedFilesOutputPath&amp;gt;GeneratedFiles&amp;lt;/CompilerGeneratedFilesOutputPath&amp;gt;
-&amp;lt;/PropertyGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;EmitCompilerGeneratedFiles&lt;/em&gt;&lt;/strong&gt;: This flag tells the compiler to write the generated files to disk&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;CompilerGeneratedFilesOutputPath&lt;/em&gt;&lt;/strong&gt;: By default, the generated code is written to the &lt;strong&gt;&lt;em&gt;obj/generated&lt;/em&gt;&lt;/strong&gt; folder. This property allows us to override the folder. In this case, I am writing them to a GeneratedFiles folder&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="excluding-the-generated-folder"&gt;Excluding the generated folder&lt;/h3&gt;
-&lt;p&gt;We will need to exclude the generated folder, or the compiler will try to add the same file twice - one from disk and one from the code generator.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup&amp;gt;
-    &amp;lt;Compile Remove=&amp;quot;$(CompilerGeneratedFilesOutputPath)/*/**/*.cs&amp;quot; /&amp;gt;
-&amp;lt;/ItemGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Now, we have our projects set up to start creating source generators and consuming the generated code.&lt;/p&gt;
-&lt;p&gt;If you want to look at the code, you can find it &lt;a href="https://github.com/AnkurSheel/CSharpSourceGenerators"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 	</channel>

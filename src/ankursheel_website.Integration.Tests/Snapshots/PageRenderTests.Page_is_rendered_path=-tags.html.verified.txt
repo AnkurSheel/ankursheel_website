@@ -127,7 +127,7 @@
             <a role="button" href="/tags/travel" class="badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (46)</a>
+            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (50)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tutorial" class="badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
@@ -151,7 +151,7 @@
             <a role="button" href="/tags/project-updates" class="badge text-gray-900 bg-grey-light no-underline"> project updates (14)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/ramblings" class="badge text-gray-900 bg-grey-light no-underline"> ramblings (11)</a>
+            <a role="button" href="/tags/ramblings" class="badge text-gray-900 bg-grey-light no-underline"> ramblings (12)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/cpp" class="badge text-gray-900 bg-grey-light no-underline"> cpp (10)</a>
@@ -208,6 +208,9 @@
             <a role="button" href="/tags/statiq" class="badge text-gray-900 bg-grey-light no-underline"> Statiq (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/docker" class="badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/reviews" class="badge text-gray-900 bg-grey-light no-underline"> reviews (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -259,10 +262,13 @@
             <a role="button" href="/tags/company-culture" class="badge text-gray-900 bg-grey-light no-underline"> company culture (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/docker" class="badge text-gray-900 bg-grey-light no-underline"> docker (2)</a>
+            <a role="button" href="/tags/game-engine" class="badge text-gray-900 bg-grey-light no-underline"> game engine (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/game-engine" class="badge text-gray-900 bg-grey-light no-underline"> game engine (2)</a>
+            <a role="button" href="/tags/graphql" class="badge text-gray-900 bg-grey-light no-underline"> graphql (2)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/hotchocolate" class="badge text-gray-900 bg-grey-light no-underline"> hotchocolate (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/india" class="badge text-gray-900 bg-grey-light no-underline"> India (2)</a>
@@ -314,6 +320,9 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/source-generator" class="badge text-gray-900 bg-grey-light no-underline"> source generator (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/stripe" class="badge text-gray-900 bg-grey-light no-underline"> stripe (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/vs-code" class="badge text-gray-900 bg-grey-light no-underline"> VS Code (1)</a>
