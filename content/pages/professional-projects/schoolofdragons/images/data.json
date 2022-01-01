@@ -1,0 +1,9 @@
+{
+    "gallery": [
+        { "image": "./sod1.jpg", "title": "Green House" },
+        { "image": "./sod2.jpg", "title": "" },
+        { "image": "./sod3.jpg", "title": "" },
+        { "image": "./sod4.jpg", "title": "Toothless" },
+        { "image": "./sod5.jpg", "title": "" }
+    ]
+}

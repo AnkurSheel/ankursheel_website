@@ -1,0 +1,37 @@
+---
+title: First Person Shooter Prototype
+---
+
+## Organization
+
+Gameloft
+
+## The Game
+
+A First Person Shooter prototype.
+
+## Technology
+
+C++, Unreal Engine
+
+## Role
+
+-   Responsible for planning and scheduling all the AI-related tasks for the game.
+
+-   Answering designer questions about using the engine for AI.
+
+-   Implemented a Probability Selector node to the behaviour tree system (in Unreal) to give the designers more flexibility. This was eventually used to randomly play enemy barks.
+
+-   Added perception such as sight, sound and damage to the enemies. This was then used to make them react to their surroundings.
+
+-   Added support for making the NPC's jump and crouch. Taught the designers how to annotate the navigation meshes.
+
+-   Added a spawner with multiple parameters so that the designers could easily add waves of enemies.
+
+-   Implemented a system to allow a voice for enemies while making sure that only limited voices could be heard at any given time.
+
+-   Optimised the algorithms when we realised that some of them were using a lot of cycles unnecessarily.
+
+-   Created the initial behaviours for different enemy types as specified by the designers. This was eventually taken care of by the designers and another programmer.
+
+-   Helped with implementing the final boss AI for the prototype.

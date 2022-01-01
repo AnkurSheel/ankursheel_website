@@ -1,0 +1,25 @@
+---
+title: Snakes and Frogs (unpublished)
+---
+
+## Organization
+
+Dhruva Interactive
+
+## The Game
+
+Snakes and Frogs is a unique board game where you control multiple units either snakes or frogs to defeat the other.
+
+## Technology
+
+C++
+
+## Role
+
+-   Proposed algorithms for the Move Generation and Evaluation, Heuristics and Search AI algorithms.
+
+-   Implemented and tested the AI Algorithm and tweaking the same so that it could be ported to mobile handsets (keeping in mind the constraints on mobile devices w.r.t. memory, processor etc) without any drop in game-play
+
+-   Extended and re-implemented AI algorithms to make them portable for (Symbian) mobile devices.
+
+-   Worked closely with a diverse team of designers and initiated the development of tools. Defined the functional requirements for a GUI which could be used to test the game AI.

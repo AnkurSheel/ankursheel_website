@@ -1,0 +1,35 @@
+---
+title: School of Dragons
+featuredImage: './images/sod3.jpg'
+featuredImagePosition: 'center center'
+---
+
+## Organization
+
+Knowledge Adventure
+
+## The Game
+
+School of Dragons is based on DreamWorks Animation’s How To Train Your Dragon franchise, and is one of the first massively multiplayer online role-playing games (MMORPG) to incorporate basic science educational features in its gameplay. As players train their dragons and become fierce Viking adventurers in the game, they will learn key concepts in the scientific method through activities based on earth, life, and physical sciences.
+
+## Technology
+
+Unity3D and C#
+
+## Role
+
+-   Implemented functionality related to dragons such as toys and meters.
+
+-   Analyzing various third-party tools for Path Finding. Integrating the selected one.
+
+## Screenshots
+
+<ImageGallery relativeDirectory={props.path} />
+
+## Video
+
+<Video src="https://www.youtube.com/embed/RcnksOUugcA" title="Pastry Paradise Video" />
+
+## Website
+
+[School of Dragons](http://www.schoolofdragons.com)

@@ -1,0 +1,27 @@
+---
+title: Pool on the Net
+featuredImage: './cover.jpg'
+featuredImagePosition: 'center center'
+---
+
+## Organization
+
+Dhruva Interactive
+
+## The Game
+
+Pool-on-the-Net transforms your PC into a Pool room where you can play popular games like Snooker and 9-ball with friends and other pool players from around the world.
+
+## Technology
+
+C++
+
+## Role
+
+-   Proposed algorithms for the AI.
+
+-   Preparation of Test Case Documents for screen navigation and in-game menus
+
+## Screenshots
+
+![Pool on the Net](./cover.jpg)

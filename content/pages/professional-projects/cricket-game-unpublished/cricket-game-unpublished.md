@@ -1,0 +1,23 @@
+---
+title: Cricket game (unpublished)
+---
+
+## Organization
+
+Trine Game Studios
+
+## The Game
+
+A cricket game
+
+## Technology
+
+C++
+
+## Role
+
+-   Took ownership of the AI system for team management and individual characters.
+
+-   Implemented a Finite State Machine and a Fuzzy Logic System.
+
+-   Implemented a statistics system for the characters to give them unique abilities.

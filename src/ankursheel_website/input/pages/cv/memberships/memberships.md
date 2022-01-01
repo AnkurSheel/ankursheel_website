@@ -1,0 +1,97 @@
+---
+title: Memberships
+---
+
+<!-- markdownlint-disable no-duplicate-header -->
+
+## Viterbi Graduate Student Organization (VGSA) (USC)
+
+Senior Vice President
+
+### Duration
+
+January 2010 - May 2010
+
+### Role
+
+-   Developed communication, negotiation and planning skills through coordinating between various committees.
+
+-   Reduced the turnaround time between the planning and execution of events.
+
+## Computer Science Graduate Organization (CSGO), USC
+
+Finance Chair
+
+### Duration
+
+January 2009 - May 2010
+
+### Role
+
+-   Developed budgeting skills by financing various organizational events held by CSGO.
+
+## Viterbi Graduate Student Organization (VGSA) (USC)
+
+Vice President (Programs)
+
+### Duration
+
+August 2009 - January 2010
+
+### Role
+
+-   Planned and managed several successful events.
+
+-   Successfully planned and executed the 1st Technical Competition for graduate engineering students of all disciplines in the history of VGSA.
+
+-   Learnt how to adapt to unanticipated situations and improvise while organizing events.
+
+## Viterbi Graduate Student Organization (VGSA) (USC)
+
+Senator(Computer Science)
+
+### Duration
+
+January 2009 - August 2009
+
+### Role
+
+-   Planned a various number of workshops directed towards the interests of graduate CS students.
+
+-   Responsible for the publicity for VGSA events as well as maintaining the VGSA website.
+
+## Photography Club, Manipal Institute of Technology
+
+Secretary & Treasurer
+
+### Duration
+
+August 2004 - May 2005
+
+### Role
+
+-   Successfully managed the budget for the various events held by the Photography Club.
+
+-   Planned and Executed several workshops and competitions.
+
+## Photography Club, Manipal Institute of Technology
+
+Member
+
+### Duration
+
+August 2002 - August 2004
+
+## Students Council, Manipal Institute of Technology
+
+Class representative
+
+### Duration
+
+August 2002 - August 2003
+
+### Role
+
+-   Acted as the conduit between the class and the faculty, and the Students Council.
+
+-   Responsible for forwarding the concerns of the students to the faculty and the Students Council.
