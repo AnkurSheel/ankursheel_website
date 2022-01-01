@@ -1,0 +1,1205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+	<channel>
+		<title>Ankur Sheel</title>
+		<link>https://www.ankursheel.com/</link>
+		<description>I go down rabbit holes and blog about them</description>
+		<copyright>2022</copyright>
+		<pubDate>Sat, 01 Jan 2022 20:50:08 GMT</pubDate>
+		<lastBuildDate>Sat, 01 Jan 2022 20:50:08 GMT</lastBuildDate>
+		<item>
+			<title>Weekly Roundup 46</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-46</link>
+			<description>This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-46/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-46</guid>
+			<pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="the-pragmatic-engineer-test-12-questions-on-engineering-culture"&gt;&lt;a href="https://blog.pragmaticengineer.com/pragmatic-engineer-test/"&gt;The Pragmatic Engineer Test: 12 Questions on Engineering Culture&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You have probably heard of the &lt;a href="https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/"&gt;Joel Test&lt;/a&gt;, but it's 20 years old, and most companies can answer &lt;strong&gt;yes&lt;/strong&gt; to those questions. These questions are better suited to rate the quality of a software team in today's world.&lt;/p&gt;
+&lt;h2 id="implementing-content-security-policy-csp-in-asp.net-core"&gt;&lt;a href="https://dotnetthoughts.net/implementing-content-security-policy-in-aspnetcore/"&gt;Implementing Content Security Policy (CSP) in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Anuraj&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;CSP (Content Security Policy) is a security layer that helps us mitigate and report XSS(Cross-Site Scripting) attacks. This is a guide for creating middleware to set the header to the HTTP response in .Net Core.&lt;/p&gt;
+&lt;h2 id="how-potty-training-shaped-my-tech-teaching-style"&gt;&lt;a href="https://dev.to/shaundai/how-potty-training-shaped-my-tech-teaching-style-29e2"&gt;How Potty Training Shaped My Tech Teaching Style&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Shaundai Person&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Did you know there are parallels between teaching coding and potty training? In both cases, we are giving someone a tool they have never seen before combined with a language they have never heard before and then expecting them to do something they have never done before. This article outlines what can we do differently to avoid these mistakes.&lt;/p&gt;
+&lt;h2 id="debugging-configuration-values-in-asp.net-core"&gt;&lt;a href="https://andrewlock.net/debugging-configuration-values-in-aspnetcore/"&gt;Debugging configuration values in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Andrew Lock&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When working with .Net Core, it can be useful to inspect the resolved configuration settings to determine why a configuration value does not have the value we expect. This post shows how to use &lt;code&gt;GetDebugView()&lt;/code&gt; to determine where the configuration values have come from. It also goes through the implementation.&lt;/p&gt;
+&lt;h2 id="the-three-sides-of-risk"&gt;&lt;a href="https://www.collaborativefund.com/blog/the-three-sides-of-risk/"&gt;The Three Sides of Risk&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Morgan Housel&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What can skiing teach you about investing? A lot, it seems. There are distinct sides of risk 2 of which are easy to grasp. But the last one, the tail-end consequences of getting hit, can often be learned only through experience. But the tail-end events are all that matter. This is also why I always consider the worst outcome of any decision, and only if I am ok with it is when I take the risk.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to move a commit between repositories</title>
+			<link>https://www.ankursheel.com/blog/move-commit-between-repositories</link>
+			<description>Steps to move a commit from one repository to another</description>
+			<guid>https://www.ankursheel.com/blog/move-commit-between-repositories</guid>
+			<pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Sometimes you have a commit in a repository that you want to bring over to another repository. We can follow these steps to do just that.&lt;/p&gt;
+&lt;h3 id="create-a-patch"&gt;Create a patch&lt;/h3&gt;
+&lt;p&gt;In the source repository, we can create a patch that describes the commit by running.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git format-patch -1 &amp;lt;sha&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;-1&lt;/strong&gt;: The number of commits to create the patch for&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sha&lt;/strong&gt;: The SHA of the commit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="apply-the-patch"&gt;Apply the patch&lt;/h3&gt;
+&lt;p&gt;In the target repository, we can apply the patch with&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git apply PATH_TO_PATCH --reject
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;reject&lt;/strong&gt;: Applies the parts of the patch that are applicable and leaves the rejected hunks in corresponding *.rej files. We have to apply these manually.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-format-patch"&gt;git-format-patch Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-apply"&gt;git-apply Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 45</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-45</link>
+			<description>This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-45/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-45</guid>
+			<pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="is-renting-a-waste-of-money"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/renting-is-not-a-waste/"&gt;Is Renting a Waste of Money&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Even though it's the same thing as paying to eat at a restaurant, many people believe that renting is throwing away money. This article shares the common reasons why believe the myth that renting is throwing away money.&lt;/p&gt;
+&lt;h2 id="are-you-scared-of-not-buying-a-house"&gt;&lt;a href="https://www.thehappysaver.com/blog/are-you-scared-of-not-buying-a-house"&gt;Are you scared of NOT buying a house?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ruth&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A New Zealand centric article on the potential solutions for people struggling to buy a house in the NZ market. The article also goes into what's great and not so great about renting.&lt;/p&gt;
+&lt;h2 id="how-i-built-a-modern-website-in-2021"&gt;&lt;a href="https://kentcdodds.com/blog/how-i-built-a-modern-website-in-2021"&gt;How I built a modern website in 2021&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kent Dodds&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A blog post about how Kent rebuilt his website using modern tools. It gives an excellent overview of the architecture and tech used, so you can probably pick up some tidbits for your blog even if you don't have the same use case.&lt;/p&gt;
+&lt;h2 id="getting-started-with-aws-cli-v2-as-a-docker-container"&gt;&lt;a href="https://dev.to/aws-builders/getting-started-with-aws-cli-v2-as-a-docker-container-j23"&gt;Getting Started with AWS CLI v2 as a Docker Container&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Fon Nkwenti&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the AWS CLI version 2 in a container-based environment means we don't have to manage the installation and dependencies ourselves.&lt;/p&gt;
+&lt;h2 id="database-normalization"&gt;&lt;a href="https://dev.to/fajarzuhrihadiyanto/database-normalization-jil"&gt;Database Normalization&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Fajar Zuhri Hadiyanto&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The steps to normalize a database from completely un-normalized to 5NF by way of an example.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to change the author of multiple Git commits</title>
+			<link>https://www.ankursheel.com/blog/change-author-multiple-git-commits</link>
+			<description>A snippet for updating the author details of several commits in a git repository</description>
+			<guid>https://www.ankursheel.com/blog/change-author-multiple-git-commits</guid>
+			<pubDate>Thu, 28 Oct 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I have two accounts from which I access my GitHub repositories. I have set one of them as a global setting. On a per-repository basis, I sometimes override the default details with my other account. Sometimes, I forget to override the default values and realize it only after making a few commits.&lt;/p&gt;
+&lt;p&gt;This post will show how we can update the author after making a few commits with incorrect details.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;First, we need to update our gitconfig with the author details.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-txt"&gt;[user]
+name = author_name
+email = author_email
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can run the following command.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i &amp;lt;commit_hash&amp;gt; -x "git commit --amend --reset-author -CHEAD"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;git rebase -i&lt;/strong&gt;: Runs git rebase in interactive mode, allowing altering individual commits in the process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;lt;commit_hash&amp;gt;&lt;/strong&gt;: The hash of the commit after which we want to update the author.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-x&lt;/strong&gt;: Append the shell command for each line creating a commit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;git commit --amend&lt;/strong&gt;: Modify the most recent commit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;--reset-author&lt;/strong&gt;: Resets the author to the settings in the .gitconfig.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-CHEAD&lt;/strong&gt;: -C takes the existing commit object and reuses the log message without allowing the user to edit it. HEAD refers to the current commit we are viewing. -CHEAD takes the message from the current commit without opening the editor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will then be presented with an editor to confirm all the commits we want.&lt;/p&gt;
+&lt;p&gt;We can run the following command to update the author for all commits, including the root.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i --root -x "git commit --amend --reset-author -CHEAD"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the &lt;a href="https://www.ankursheel.com/securing-git-commits-windows"&gt;guide to securing git commits from tricking you on Windows&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-commit"&gt;git-commit Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/gitrevisions"&gt;gitrevisions Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rebase"&gt;git-rebase Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>What's in a team name</title>
+			<link>https://www.ankursheel.com/blog/team-name</link>
+			<description>Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/team-name/cover.jpg" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/team-name</guid>
+			<pubDate>Thu, 21 Oct 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- https://unsplash.com/photos/ocAo7MwGfHY --&gt;
+&lt;p&gt;Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.&lt;/p&gt;
+&lt;p&gt;This will be a controversial opinion, but I think this is possibly the worst way to decide team names.&lt;/p&gt;
+&lt;h2 id="a-common-theme"&gt;A common theme&lt;/h2&gt;
+&lt;p&gt;A popular reason that people think using a common theme for all team names is a good idea is that they feel it's inclusive.&lt;/p&gt;
+&lt;p&gt;But, it's tough to find a genuinely inclusive theme. Even something innocuous like superheroes can make someone feel excluded if they haven't grown up watching superhero cartoons.&lt;/p&gt;
+&lt;p&gt;So you decide to go with something &lt;del&gt;boring&lt;/del&gt; simple like colours.&lt;/p&gt;
+&lt;Quote quote="Surely, no one can take offence in that, right?" /&gt;
+&lt;p&gt;Not so fast, my young padawan. You forgot to consider colour blind people.&lt;/p&gt;
+&lt;p&gt;The other reason that frequently comes up is that a common theme makes it easier for people to remember. For the sake of this discussion, let's assume that either colours or superheroes are an inclusive-enough theme for you, and you have two teams. But do the people in your organization know whether they need to talk to the &lt;strong&gt;Superman/Pink&lt;/strong&gt; team or the &lt;strong&gt;WonderWoman/Blue&lt;/strong&gt; team. More likely, they are saying.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I need to talk to &lt;strong&gt;Harry/Jane&lt;/strong&gt;. What is the name of the team? - Ah, who cares?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Or worse, they are mixing it up and talking to the wrong team and then getting redirected.&lt;/p&gt;
+&lt;p&gt;What if you have ten teams? No common theme can save you.&lt;/p&gt;
+&lt;p&gt;I think this tweet sums it up nicely.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheros, so I had to learn it. Like there weren't enough other things to learn.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Vladimir Sapronov&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href="https://twitter.com/v_sapronov/status/1440147633155166210"&gt;Tweet link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you want to have team names with no connection to the product, I have a controversial recommendation for you. Let them come about from an inside joke, a conversation or a common identity that the team members can ascribe to.&lt;/p&gt;
+&lt;h2 id="an-inside-joke"&gt;An inside joke&lt;/h2&gt;
+&lt;Quote quote="Jelled teams are usually marked by a strong sense of identity" author="Peopleware" /&gt;
+&lt;p&gt;Having a team name based on an inside joke gives it a unique identity. It's the uniqueness between the names and what that difference signifies that binds one identity to it.&lt;/p&gt;
+&lt;p&gt;It gives this feeling of being a part of an elite entity.&lt;/p&gt;
+&lt;p&gt;In his similarly titled post &lt;a href="https://critter.blog/2020/09/02/whats-in-a-team-name/"&gt;What’s in a team name?&lt;/a&gt;, Mike gives an excellent example of how hard it would be to rally around &amp;quot;the Vikings&amp;quot; if they were called the &amp;quot;The Minnesota NFL Team&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Now, before you go all up in arms and say,&lt;/p&gt;
+&lt;Quote quote="But, Ankur, having an inside joke for a team name doesn't solve for any of the problems you highlighted before" /&gt;
+&lt;p&gt;I kinda agree.&lt;/p&gt;
+&lt;p&gt;A team name based on an inside joke is not inclusive by nature to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.&lt;/p&gt;
+&lt;p&gt;Whether it's easier to remember or not, that's debatable. But it can certainly be more memorable, and memorable things get remembered faster. After all, would you be able to forget a name like &lt;a href="https://twitter.com/catswetel/status/1440039225156538374"&gt;The Applesauce Top Hat Brigade&lt;/a&gt;? It's a name I am not going to forget anytime soon.&lt;/p&gt;
+&lt;p&gt;Team names based on an inside joke are not only more fun but have a few additional advantages.&lt;/p&gt;
+&lt;p&gt;As the old guard moves on, the team members change, and the inside joke becomes stale/politically incorrect; it makes it much easier to retire the team name and spin up a new one based on a new inside joke.&lt;/p&gt;
+&lt;p&gt;As the number of teams increases, each new team could think of their inside joke to rally around for their team name. Apart from a fun bonding exercise, it could be a great morale booster.&lt;/p&gt;
+&lt;p&gt;Merch/swag also feels cooler when it's associated with an inside joke. Remember, it is a potential ice-breaker.&lt;/p&gt;
+&lt;h2 id="my-favourite-team-name"&gt;My favourite team name&lt;/h2&gt;
+&lt;p&gt;One of my favourite team names was based on an inside joke. We were supposed to come up with a name for our team and forgot to submit it in time. In the slide deck for the company meeting, we were introduced as ???. This struck us as extremely funny, and combined with other reasons, we decided to call our team 4Q.&lt;/p&gt;
+&lt;p&gt;You can see how this can be construed as offensive because it sounds like a cuss word. I rarely cuss, and this gave me a laugh every time I said Team 4Q (which was one of the reasons to go with it).&lt;/p&gt;
+&lt;p&gt;In any case, people had a valid concern. It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not so much of a problem.&lt;/p&gt;
+&lt;p&gt;But, it is a problem when communicating verbally with external parties.&lt;/p&gt;
+&lt;p&gt;There was a simple fix - to use the name Team 4 Questions when talking externally or to enunciate the name so that it doesn't sound like a cuss word.&lt;/p&gt;
+&lt;p&gt;Changing the name in this scenario would be a classic case of throwing the baby out with the bathwater.&lt;/p&gt;
+&lt;h2 id="caveats"&gt;Caveats&lt;/h2&gt;
+&lt;p&gt;It's possible to have stories to share even if you are operating under a common theme. My current team is called &lt;a href="https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/"&gt;kārearea&lt;/a&gt;, and it appealed to me (more than the other birds) because it's fast and can bring down prey larger than itself.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;But, I doubt new people will care about the reasoning behind choosing it as the team name. Sadly, it's not a conversation starter when all the other teams are named after NZ birds. It will always feel as if we randomly chose it because we had to choose something.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.&lt;/p&gt;
+&lt;p&gt;Having said that, you should probably have some guidelines to weed out the truly offensive.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to add estimated Reading Time to Posts in Statiq</title>
+			<link>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</link>
+			<description>A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</guid>
+			<pubDate>Thu, 14 Oct 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In this tutorial, I will show how to use the reading time calculated in &lt;a href="https://www.ankursheel.com/calculate-reading-time"&gt;How to calculate reading time&lt;/a&gt; to use in a Statiq module to add reading time for our posts.&lt;/p&gt;
+&lt;p&gt;To add a module to Statiq, we can inherit from one of the provided base module classes. In this case, we can inherit from the &lt;code&gt;ParallelModule&lt;/code&gt; class as the engine can process the documents in any order. We also need to overload the &lt;code&gt;ExecuteInputAsync()&lt;/code&gt; method to execute this module for each document in the pipeline.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;GenerateReadingTime&lt;/span&gt; : &lt;span class="hljs-title"&gt;ParallelModule&lt;/span&gt;
+{
+    &lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;async&lt;/span&gt; Task&amp;lt;IEnumerable&amp;lt;IDocument&amp;gt;&amp;gt; ExecuteInputAsync(IDocument input, IExecutionContext context)
+    {
+        &lt;span class="hljs-keyword"&gt;using&lt;/span&gt; &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; textReader = input.GetContentTextReader();
+        &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; content = &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; textReader.ReadToEndAsync();
+
+        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; input.Clone(
+                &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; MetadataItems
+                {
+                    { MetaDataKeys.ReadingTime, _readingTimeService.GetReadingTime(content, context.GetInt("ReadingTimeWordsPerMinute", &lt;span class="hljs-number"&gt;200&lt;/span&gt;)) }
+                })
+            .Yield();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5-6&lt;/em&gt;&lt;/strong&gt;: Get the content associated with the document as a string.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 8&lt;/em&gt;&lt;/strong&gt;: Clone the document by adding new metadata items.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 10-11&lt;/em&gt;&lt;/strong&gt;: Add a new metadata item with key &lt;em&gt;Reading_time_and a value obtained from a call to &lt;code&gt;GetReadingTime&lt;/code&gt;. We use a _ReadingTimeWordsPerMinute&lt;/em&gt; setting to override the default value of 200 words per minute.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 11&lt;/em&gt;&lt;/strong&gt;: Convert the document into an enumerable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can now use it on our website. You can see an example below.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover_orig.png" alt="Reading time example"&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules"&gt;Writing Modules in Statiq&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to calculate reading time</title>
+			<link>https://www.ankursheel.com/blog/calculate-reading-time</link>
+			<description>A guide to calculating the reading time for a given document</description>
+			<guid>https://www.ankursheel.com/blog/calculate-reading-time</guid>
+			<pubDate>Thu, 07 Oct 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this snippet, I will be showing how to calculate the reading time for a given string.&lt;/p&gt;
+&lt;p&gt;First, we will create a new data structure to hold the reading time. It contains the number of words and the minutes and seconds to read the post.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; record ReadingTimeData
+{
+    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-title"&gt;ReadingTimeData&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; minutes, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; seconds, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; words&lt;/span&gt;)
+    &lt;/span&gt;{
+        Minutes = minutes;
+        Seconds = seconds;
+        Words = words;
+    }
+
+    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; Minutes { &lt;span class="hljs-keyword"&gt;get&lt;/span&gt;; }
+
+    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; Seconds { &lt;span class="hljs-keyword"&gt;get&lt;/span&gt;; }
+
+    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; Words { &lt;span class="hljs-keyword"&gt;get&lt;/span&gt;; }
+
+    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; RoundedMinutes
+        =&amp;gt; Seconds &amp;lt; &lt;span class="hljs-number"&gt;30&lt;/span&gt;
+            ? Minutes
+            : Minutes + &lt;span class="hljs-number"&gt;1&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;RoundedMinutes&lt;/em&gt;&lt;/strong&gt; is the rounded time to make things simpler for a reader. Anything less than 30 seconds gets ignored, and anything more than 30 seconds gets rounded up to the next minute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, we can calculate the reading time and fill in the ReadingTimeData.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;private&lt;/span&gt; ReadingTimeData &lt;span class="hljs-title"&gt;GetReadingTime&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt; content, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; wordsPerMinute&lt;/span&gt;)
+&lt;/span&gt;{
+    &lt;span class="hljs-keyword"&gt;const&lt;/span&gt; Regex SpacesRegex = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Regex(&amp;quot;\S+&amp;quot;, RegexOptions.Multiline);
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; words = SpacesRegex.Matches(content).Count;
+
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; minutes = words / WordsPerMinute;
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; remainingWords = words % WordsPerMinute;
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; seconds = remainingWords * &lt;span class="hljs-number"&gt;60&lt;/span&gt; / WordsPerMinute;
+
+    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ReadingTimeData(minutes, seconds, words);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 3-4&lt;/em&gt;&lt;/strong&gt;: Get all the words in the string by using &lt;code&gt;\S&lt;/code&gt; as our regex expression, which matches all characters that are not a white space.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 6&lt;/em&gt;&lt;/strong&gt;: Get the number of minutes it takes to read the string based on how many words we can read in a minute.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 7&lt;/em&gt;&lt;/strong&gt;: Get the number of unread words which we weren't able to read in a full minute.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 8&lt;/em&gt;&lt;/strong&gt;: Get the number of seconds to read the remaining text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="concusion"&gt;Concusion&lt;/h2&gt;
+&lt;p&gt;Now, we can show the estimated reading time on our articles.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to Upload Multiple Files to AWS S3 using Terraform</title>
+			<link>https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform</link>
+			<description>A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform</description>
+			<guid>https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform</guid>
+			<pubDate>Thu, 30 Sep 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I want to upload multiple files from a specific folder to an AWS S3 bucket.&lt;/p&gt;
+&lt;h3 id="assumptions"&gt;Assumptions&lt;/h3&gt;
+&lt;p&gt;The S3 bucket name is &lt;strong&gt;test&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The directory structure is as follows.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-txt"&gt;documents
+|- file_1
+|- subdirectory1
+|  |- file_1_1
+|  |- file_1_2
+|  |- subdirectory2
+|  |  |- file_1_2_1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We want to end up with the following S3 objects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;s3://test/file_1&lt;/li&gt;
+&lt;li&gt;s3://test/subdirectory1/file_1_1&lt;/li&gt;
+&lt;li&gt;s3://test/subdirectory1/file_1_2&lt;/li&gt;
+&lt;li&gt;s3://test/subdirectory1/subdirectory2/file_1_2_1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-hcl"&gt;resource &amp;quot;aws_s3_bucket_object&amp;quot; &amp;quot;test&amp;quot; {
+  for_each = fileset(&amp;quot;./documents/&amp;quot;, &amp;quot;**&amp;quot;)
+  bucket = &amp;quot;test&amp;quot;
+  key = each.value
+  source = &amp;quot;./documents/${each.value}&amp;quot;
+  etag = filemd5(&amp;quot;./documents/${each.value}&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 1&lt;/em&gt;:&lt;/strong&gt;: Create an S3 bucket object resource.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 2&lt;/em&gt;:&lt;/strong&gt;: Use a &lt;strong&gt;&lt;em&gt;for_each&lt;/em&gt;&lt;/strong&gt; argument to iterate over the documents returned by the &lt;strong&gt;&lt;em&gt;fileset&lt;/em&gt;&lt;/strong&gt; function. &lt;strong&gt;&lt;em&gt;for_each&lt;/em&gt;&lt;/strong&gt; identifies each resource instance by its S3 path, making it easy to add/remove files. The fileset function enumerates over a set of filenames for a given path. It uses &lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt; as the pattern for a recursive search.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 3&lt;/em&gt;:&lt;/strong&gt;: The name of the bucket to put the files in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 4&lt;/em&gt;:&lt;/strong&gt;: The object's name once it's in the bucket. In the example above, it is the same as the path.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5&lt;/em&gt;:&lt;/strong&gt;: the Path to the file to be uploaded.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 6&lt;/em&gt;:&lt;/strong&gt;: Triggers an update only if the file changes. The eTag of each object is an MD5 hash of that object.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object"&gt;Resource: aws_s3_bucket_object&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/meta-arguments/for_each.html"&gt;for_each&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/functions/fileset.html"&gt;fileset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to replace a pipeline in Statiq</title>
+			<link>https://www.ankursheel.com/blog/replace-pipeline-statiq</link>
+			<description>A guide to replacing a pipeline in Statiq</description>
+			<guid>https://www.ankursheel.com/blog/replace-pipeline-statiq</guid>
+			<pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In this article, I will be showing how we can replace a pipeline in &lt;a href="https://www.statiq.dev/web/"&gt;Statiq&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I wanted to replace the Assets and Content pipeline to control the files, strongly type the model passed to the razor module and also set some metadata based on the parent folder.&lt;/p&gt;
+&lt;p&gt;Statiq.Web provides quite a few pipelines out of the box. However, it processes different file types by using Templates that define a specific module for that type. Statiq.Web has a nice fluent syntax to modify and remove templates.&lt;/p&gt;
+&lt;p&gt;In most cases, this would be fine, but sometimes it's much easier to replace the whole pipeline.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;To remove a pipeline, we can use&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.ConfigureEngine(
+    engine =&amp;gt;
+    {
+        engine.Pipelines.Remove(&lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Assets));
+    });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To replace it with an empty pipeline, we can use&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.ConfigureEngine(
+    engine =&amp;gt;
+    {
+        engine.Pipelines.Add(&lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Assets), &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Pipeline());
+    });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To replace a pipeline, we can remove it and add it again with a new pipeline.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.ConfigureEngine(
+    engine =&amp;gt;
+    {
+        engine.Pipelines.Remove(&lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(AnalyzeContent));
+        engine.Pipelines.Add(
+            &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(AnalyzeContent),
+            &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Pipeline
+            {
+                InputModules =
+                {
+                    &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ReplaceDocuments(
+                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(PostPipeline),
+                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Content),
+                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Archives),
+                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Assets))
+                }
+            });
+    });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Now, we can remove/replace the pipelines that we don't want to use. Dave Glick, the creator of Statiq, has mentioned that he will provide a fluent syntax to replace pipelines in the next release, so hopefully, we won't need this for too long.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You can see the original issue I created &lt;a href="https://github.com/statiqdev/Statiq.Web/issues/962"&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Deploy a Statiq website using Tailwind CSS to Netlify</title>
+			<link>https://www.ankursheel.com/blog/deploy-statiq-website-tailwind-netlify</link>
+			<description>A guide to installing Tailwind CSS on deploying a Statiq website</description>
+			<guid>https://www.ankursheel.com/blog/deploy-statiq-website-tailwind-netlify</guid>
+			<pubDate>Thu, 16 Sep 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In this article, I will be showing how we can deploy a website built with &lt;a href="https://tailwindcss.com/"&gt;Tailwind CSS&lt;/a&gt; and &lt;a href="https://www.statiq.dev/web/"&gt;Statiq&lt;/a&gt; on &lt;a href="https://www.netlify.com/"&gt;Netlify&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I wanted to deploy my website built with Statiq and Tailwind to Netlify. Netlify allows for only one build command on deployment. The issue is that Tailwind is available as an npm package while Statiq is a .Net solution, and hence both require different commands to run.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;There are a few ways to do this, but since Statiq Web supports running external processes as part of execution, we will leverage that to install the npm packages and build our statiq website.&lt;/p&gt;
+&lt;h3 id="step-1-get-the-directories"&gt;Step 1: Get the directories&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; currentDirectory = Directory.GetCurrentDirectory();
+&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; nodeDirectory = Path.Combine(currentDirectory, "..", "node");
+&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; inputDirectory = Path.Combine(currentDirectory, "input");
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line 1&lt;/strong&gt;: Get the current directory&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 2&lt;/strong&gt;: My npm packages and configs are stored in a node folder, so I need to get the node directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 3&lt;/strong&gt;: Get the input directory where all the razor views are stored.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="step-2-install-the-npm-packages"&gt;Step 2: Install the npm packages&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.AddProcess(
+    ProcessTiming.Initialization,
+    _ =&amp;gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ProcessLauncher("npm", "install")
+    {
+        LogErrors = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;,
+        WorkingDirectory = nodeDirectory
+    })
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line 1&lt;/strong&gt;: Adds a new process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 2&lt;/strong&gt;: Configures the process to run only once on initialization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 3&lt;/strong&gt;: Creates a new process launcher to install the npm packages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 5&lt;/strong&gt;: Ignore errors from npm that would fail the build.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 6&lt;/strong&gt;: Set the working directory to the node directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="step-3-compile-css-with-tailwind"&gt;Step 3: Compile CSS with Tailwind&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.AddProcess(
+    ProcessTiming.Initialization,
+   _ =&amp;gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ProcessLauncher("npx", "tailwind", "build",
+    $"-i {Path.Combine(inputDirectory, "_site.css")}",
+    $"-o {Path.Combine(currentDirectory, "output", "styles.css")}")
+{
+    LogErrors = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;,
+    WorkingDirectory = nodeDirectory
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line 3&lt;/strong&gt;: Use npx to generate a fully compiled Tailwind CSS file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 4&lt;/strong&gt;: Set the input path of the custom CSS file to &lt;em&gt;_site.css&lt;/em&gt; in the input directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 5&lt;/strong&gt;: Set the path for compiled CSS to the output directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Now, as part of building the statiq website, the CSS will be generated on each deployment.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Add Tailwind CSS to a Statiq website</title>
+			<link>https://www.ankursheel.com/blog/add-tailwind-css-statiq-website</link>
+			<description>A guide to using TailwindCss with Statiq</description>
+			<guid>https://www.ankursheel.com/blog/add-tailwind-css-statiq-website</guid>
+			<pubDate>Thu, 09 Sep 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In this article, I will be showing how we can integrate &lt;a href="https://tailwindcss.com/"&gt;Tailwind CSS&lt;/a&gt; with &lt;a href="https://www.statiq.dev/web/"&gt;Statiq&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I wanted to use Tailwind with Statiq. Tailwind is available as an NPM package, while Statiq is a .Net solution.&lt;/p&gt;
+&lt;p&gt;Many articles out there discuss the pros and cons of using Tailwind so that I won't be doing that. All I will be saying is that Tailwind is a utility first framework with what might be considered an ugly-as syntax, but boy is it faster to build elegant components.&lt;/p&gt;
+&lt;h2 id="preresiquites"&gt;Preresiquites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href="https://nodejs.org/en/"&gt;Node and npm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href="https://dotnet.microsoft.com/"&gt;.Net Core&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create a &lt;a href="https://www.statiq.dev/web/"&gt;.Net Core Console Application configured to use Statiq&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-tailwind"&gt;Install Tailwind&lt;/h2&gt;
+&lt;p&gt;Tailwind can only be installed as an NPM package.&lt;/p&gt;
+&lt;h3 id="step-1-create-a-folder-called-node"&gt;Step 1: Create a folder called node&lt;/h3&gt;
+&lt;p&gt;Because our core project is a .Net Core application, and we don't need npm except for Tailwind, we will install it in a separate folder. This will avoid clutter in the root directory.&lt;/p&gt;
+&lt;h3 id="step-2-install-packages"&gt;Step 2: Install packages&lt;/h3&gt;
+&lt;p&gt;We will install Tailwind, and other peer dependencies inside a directory called &lt;em&gt;node&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-built_in"&gt;cd&lt;/span&gt; node
+npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest postcss@latest autoprefixer@latest&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PostCSS&lt;/strong&gt; is a preprocessor that transforms the CSS using plugins.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AuoPrefixer&lt;/strong&gt; is a PostCSS plugin to add vendor prefixes to CSS rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our package.json should look something like this.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-json hljs"&gt;{
+    "devDependencies": {
+        "@@tailwindcss/typography": "^0.4.1",
+        "autoprefixer": "^10.3.1",
+        "postcss": "^8.3.6",
+        "tailwindcss": "^2.2.7"
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-3-configure-postcss"&gt;Step 3: Configure postcss&lt;/h3&gt;
+&lt;p&gt;Create a postcss.config.js file and add &lt;em&gt;tailwindcss&lt;/em&gt; and &lt;em&gt;autoprefixer&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript hljs"&gt;&lt;span class="hljs-built_in"&gt;module&lt;/span&gt;.exports = {
+    &lt;span class="hljs-attr"&gt;plugins&lt;/span&gt;: {
+        &lt;span class="hljs-attr"&gt;tailwindcss&lt;/span&gt;: {},
+        &lt;span class="hljs-attr"&gt;autoprefixer&lt;/span&gt;: {},
+    },
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-3-configure-tailwind"&gt;Step 3: Configure Tailwind&lt;/h3&gt;
+&lt;p&gt;Generate a config file using the Tailwind CLI utility&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;npx tailwindcss init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will create a tailwind.config.js file.&lt;/p&gt;
+&lt;p&gt;We will update the purge section to optimize our CSS&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js hljs"&gt;    purge: {
+        &lt;span class="hljs-attr"&gt;enabled&lt;/span&gt;: &lt;span class="hljs-literal"&gt;true&lt;/span&gt;,
+        &lt;span class="hljs-attr"&gt;content&lt;/span&gt;: [&lt;span class="hljs-string"&gt;'../**/input/**/*.cshtml'&lt;/span&gt;],
+    },
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line 2&lt;/strong&gt;: Enable purge without having to set the NODE_ENV to production&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 3&lt;/strong&gt;: Scan our razor views files and remove any superfluous CSS from our final output file. We prefix the path with &lt;strong&gt;../&lt;/strong&gt; because our config is inside a subfolder, and we need to find the razor views from the root.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our final configuration will look like this.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js hljs"&gt;&lt;span class="hljs-built_in"&gt;module&lt;/span&gt;.exports = {
+    &lt;span class="hljs-attr"&gt;purge&lt;/span&gt;: {
+        &lt;span class="hljs-attr"&gt;enabled&lt;/span&gt;: &lt;span class="hljs-literal"&gt;true&lt;/span&gt;,
+        &lt;span class="hljs-attr"&gt;content&lt;/span&gt;: [&lt;span class="hljs-string"&gt;'../**/input/**/*.cshtml'&lt;/span&gt;],
+    },
+    &lt;span class="hljs-attr"&gt;darkMode&lt;/span&gt;: &lt;span class="hljs-literal"&gt;false&lt;/span&gt;, &lt;span class="hljs-comment"&gt;// or 'media' or 'class'&lt;/span&gt;
+    theme: {
+        &lt;span class="hljs-attr"&gt;extend&lt;/span&gt;: {},
+    },
+    &lt;span class="hljs-attr"&gt;variants&lt;/span&gt;: {
+        &lt;span class="hljs-attr"&gt;extend&lt;/span&gt;: {},
+    },
+    &lt;span class="hljs-attr"&gt;plugins&lt;/span&gt;: [],
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-4-add-css"&gt;Step 4: Add CSS&lt;/h3&gt;
+&lt;p&gt;Create an input folder and add a _site.css&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-css hljs"&gt;&lt;span class="hljs-comment"&gt;/*! @@import */&lt;/span&gt;
+&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&lt;span class="hljs-selector-tag"&gt;tailwind&lt;/span&gt; &lt;span class="hljs-selector-tag"&gt;base&lt;/span&gt;;
+&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&lt;span class="hljs-selector-tag"&gt;tailwind&lt;/span&gt; &lt;span class="hljs-selector-tag"&gt;components&lt;/span&gt;;
+&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&amp;amp;&lt;span class="hljs-selector-id"&gt;#64&lt;/span&gt;;&lt;span class="hljs-selector-tag"&gt;tailwind&lt;/span&gt; &lt;span class="hljs-selector-tag"&gt;utilities&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-5-build-the-css"&gt;Step 5: Build the CSS&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;npx tailwind build -c ./tailwind.config.js -i ../input/_site.css -o ../Bookland/output/assets/styles.css
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;-c&lt;/strong&gt;: The config file path&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-i&lt;/strong&gt;: The input file path. Our CSS file is in the input folder and called _site.css&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-o&lt;/strong&gt;: The output file path. Our output file is in the output folder and called styles.css&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="step-6-link-the-stylesheet-to-a-layout-file"&gt;Step 6: Link the stylesheet to a layout file&lt;/h3&gt;
+&lt;p&gt;We will add a _Layout.cshtml file in our input folder and link to the stylesheet generated by tailwind and postcss.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs hljs"&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang="en"&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;link href="/styles.css" rel="stylesheet"/&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;amp;&lt;span class="hljs-meta"&gt;#64;@RenderBody()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Reference to the styles.css file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Now we should be able to add Tailwind classes to our Razor view. The generated site will use the styles outputted by Tailwind.&lt;/p&gt;
+&lt;h2 id="further-reading"&gt;Further reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tailwindcss.com/docs"&gt;Tailwind Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to rename multiple files in subfolders using Windows command prompt</title>
+			<link>https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt</link>
+			<description>A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt</description>
+			<guid>https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt</guid>
+			<pubDate>Mon, 30 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I had to rename all the files with the extension &lt;em&gt;mdx&lt;/em&gt; to &lt;em&gt;md&lt;/em&gt;. Now, I could do it one by one or find a utility but using a single command is more elegant.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;To rename all the files recursively, we can use the REN (rename) command as follows.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;FOR /R %G IN (*.mdx) DO REN "%G" "%~dpnG.md"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let's unpack this command.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;FOR&lt;/strong&gt;: Loops through files&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;/R&lt;/strong&gt;: Recurse through subfolders.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;%G&lt;/strong&gt;: A parameter set to a different value for each iteration of the for loop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(*.mdx)&lt;/strong&gt;: The filename pattern that we want to match.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REN&lt;/strong&gt;: The command to rename a file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;%~dpnG"&lt;/strong&gt;: Expands the parameter of the original filename to the fully qualified path without the extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ss64.com/nt/for_r.html"&gt;FOR /R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ss64.com/nt/ren.html"&gt;REN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ss64.com/nt/syntax-args.html"&gt;Command Line arguments&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to override the netlify build config</title>
+			<link>https://www.ankursheel.com/blog/override-netlify-build-config</link>
+			<description>A way to override the netlify build settings so that we can override the build commands for a branch</description>
+			<guid>https://www.ankursheel.com/blog/override-netlify-build-config</guid>
+			<pubDate>Mon, 23 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I wanted to keep the original site running with gatsby but deploy the new branch using statiq.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;First, we need to allow branch deploys for our branch.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/override-netlify-build-config/cover.png" alt="Build Setting UI"&gt;&lt;/p&gt;
+&lt;p&gt;In the above screenshot, my branch for the migration is named &lt;em&gt;statiq&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To override the build settings set in the Netlify UI, we can add the following snippet to &lt;em&gt;netlify.toml&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-toml hljs"&gt;[build]
+  command = "dotnet run --project ./subDir/"
+  publish = "./subDir/output"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, what's happening here?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line 1&lt;/strong&gt;: Apply the build settings globally and override anything set in the UI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 2&lt;/strong&gt;: Use the &lt;code&gt;dotnet run&lt;/code&gt; as the build command and specify the project path.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line 3&lt;/strong&gt;: The relative directory to the root directory containing the deploy-ready HTML files and assets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The advantage of updating the &lt;em&gt;netlify.toml&lt;/em&gt; file is that when we merge our branch back to master, it will automatically use Statiq to build the site.&lt;/p&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.netlify.com/configure-builds/file-based-configuration/"&gt;Netlify File Based Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run"&gt;Dotnet run command&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Migrating from Gatsby to Statiq</title>
+			<link>https://www.ankursheel.com/blog/migrating-gatsby-statiq</link>
+			<description>I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site</description>
+			<guid>https://www.ankursheel.com/blog/migrating-gatsby-statiq</guid>
+			<pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="my-blogging-journey"&gt;My Blogging Journey&lt;/h2&gt;
+&lt;p&gt;In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.&lt;/p&gt;
+&lt;p&gt;You can read more about why I migrated to Gatsby and the earlier parts of the journey at &lt;a href="https://www.ankursheel.com/migrating-from-wordpress-to-gatsby"&gt;Why and How I migrated my website from WordPress to Gatsby&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="reasons-for-moving-away-from-gatsby"&gt;Reasons for moving away from Gatsby&lt;/h2&gt;
+&lt;p&gt;There were a few reasons that the Gatsby solution is not working for me anymore. In no particular order,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lots of dependencies and updates
+&lt;ul&gt;
+&lt;li&gt;Gatsby is based on a plugin architecture. Hence, there are a lot of explicit dependencies that have to be added to get a functional site. I had dependabot running on a monthly cadence, and every month dependabot would open almost 50 PR's.&lt;/li&gt;
+&lt;li&gt;Sometimes, I would upgrade a package only to find it was incompatible with another package. With some libraries moving over to ES Modules, I am running into this a lot more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hard to make changes
+&lt;ul&gt;
+&lt;li&gt;After every few upgrades, using the library to generate types for the GraphQl queries would break with cryptic errors. Even updating some other libraries would break my custom tooling. This resulted in a few days being lost to yak-shaving.&lt;/li&gt;
+&lt;li&gt;Upgrading packages would sometimes result in JS memory error in CI. This meant more fiddling with manually changing the memory available and deleting the caches so that the site would deploy again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Programming Language that I don't use anywhere else
+&lt;ul&gt;
+&lt;li&gt;I never enjoyed the process of writing Javascript to make modifications. With Typescript and React, things are a lot better but with Gatsby and other libraries, not having types out of the box made adding types a chore.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Graphql
+&lt;ul&gt;
+&lt;li&gt;Gatsby is based on GraphQl. Although I like how Graphql works and use it extensively in my working life, it seemed overkill to generate static pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lack of a strongly typed system
+&lt;ul&gt;
+&lt;li&gt;When I moved to Gatsby, I was using Typescript at work. Since then, I have realized that I enjoy working with a strongly typed and more mature language like C#.&lt;/li&gt;
+&lt;li&gt;Gatsby and many other libraries don't come with types out of the box, which meant I had to figure out the types on my own or lose things like IntelliSense and errors at compile time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hard to write tests and get confidence when I am making changes
+&lt;ul&gt;
+&lt;li&gt;I don't know if it's my experience with Javascript or if Gatsby makes it hard, but I was never able to add tests which increased my stress every time I wanted to make a change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JS out of memory error in CI
+&lt;ul&gt;
+&lt;li&gt;For no reason, I get Javascript out of memory errors when building in CI. I don't know why it happens, and a random fix of modifying the space size seems to do the trick.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="why-statiq"&gt;Why Statiq&lt;/h2&gt;
+&lt;p&gt;With Gatsby releasing v3 and being a non-trivial migration, I decided to see what other generators are there.&lt;/p&gt;
+&lt;p&gt;The first obvious option I considered was migrating to Gatsby v3, but I was not overly keen on it.&lt;/p&gt;
+&lt;p&gt;The next option was &lt;a href="https://nextjs.org/"&gt;NextJS&lt;/a&gt;, which is also based on Javascript. I have been hearing increasingly good things about it, and to be honest, I would have probably gone with NextJs, if I had not stumbled upon Statiq.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.statiq.dev/"&gt;Statiq&lt;/a&gt; is based on C#, a language I have used for many years and am still using daily.&lt;/p&gt;
+&lt;p&gt;Let's see how it stacks up against my concerns from the previous section.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Lots of dependencies and updates&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;To include Statiq, I just need to add 1 package. Regardless of whether I use Statiq.Web or Statiq.Framework, I just need to add 1 package, and it will get all the dependencies for me.&lt;/li&gt;
+&lt;li&gt;The C# packaging system also feels a lot more sensible in the sense that you opt-in for even patch upgrades.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hard to make changes
+&lt;ul&gt;
+&lt;li&gt;I don't think I will be able to get away with some amount of yak shaving, but hopefully, it will be less than now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Programming Language that I don't use anywhere else&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;I use C# daily, and OOP(Object Oriented Programming) is something I have been working with for almost my entire programming life.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Graphql&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;Statiq does not use GraphQl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Javascript&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;Statiq is based on C#, which is a strongly typed language.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Hard to write tests and get confidence when I am making changes&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;I have a lot more experience writing tests for C#. Hopefully, that will enable me to write tests and get more confidence when making changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;JS out of memory error in CI&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no JS, so not an issue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="other-thoughts"&gt;Other Thoughts&lt;/h3&gt;
+&lt;p&gt;Statiq.Web has built-in functionality, which is capable of handling the most common scenarios. As I am rebuilding the site, I will start with using it. If I am fighting/modifying the library a lot, I will move to Statiq.Framework, which has most of the modules to help build a custom Static Site Generator.&lt;/p&gt;
+&lt;p&gt;I will also be using &lt;a href="https://tailwindcss.com/"&gt;TailwindCSS&lt;/a&gt; as I have heard good things about it and want to see what the hype is about.&lt;/p&gt;
+&lt;p&gt;I won't be migrating this blog, but instead, I will be migrating &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in Bookland&lt;/a&gt;, based on the same theme as this blog but has less complexity and pages. If that goes well, then I will look at migrating this blog as well.&lt;/p&gt;
+&lt;h2 id="my-migration-process"&gt;My migration process&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;I will fill this section out with links to pages so that you can follow along as I migrate the site.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="must-haves"&gt;Must-Haves&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove all &lt;em&gt;js&lt;/em&gt; files and add a C# solution and project file.&lt;/li&gt;
+&lt;li&gt;Rename &lt;em&gt;content&lt;/em&gt; folder to &lt;em&gt;input&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Move &lt;em&gt;images&lt;/em&gt; to &lt;em&gt;input/asset&lt;/em&gt; folder.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/rename-multiple-files-subfolders-windows-command-prompt"&gt;Rename all &lt;em&gt;.mdx&lt;/em&gt; files to &lt;em&gt;.md&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add a a package reference to &lt;code&gt;Statiq.Web&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/override-netlify-build-config"&gt;Update netlify to deploy a branch using Statiq&lt;/a&gt; to create the website.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/add-tailwind-css-statiq-website"&gt;Add tailwind&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/deploy-statiq-website-tailwind-netlify"&gt;Deploy site to netlify&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/replace-pipeline-statiq"&gt;Disable the provided asset and content pipelines&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add pipelines for Assets, HomePage, Pages, Post List, Post, TagList and Tags.&lt;/li&gt;
+&lt;li&gt;Add layouts and SEO tags.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="nice-to-haves-after-migration"&gt;Nice to haves (after migration)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a 404 page&lt;/li&gt;
+&lt;li&gt;Add buy me a coffee button&lt;/li&gt;
+&lt;li&gt;Add contact me page&lt;/li&gt;
+&lt;li&gt;Generate social images&lt;/li&gt;
+&lt;li&gt;Add pipeline for sitemap&lt;/li&gt;
+&lt;li&gt;Add pipeline for RSS feed&lt;/li&gt;
+&lt;li&gt;Minify assets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Although it's an ongoing process, I am happy with how the migration is progressing. &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in bookland&lt;/a&gt; is now built with Statiq and Markdown and hosted on Netlify. Instead of JS, it's all in .Net, and I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.&lt;/p&gt;
+&lt;p&gt;If you would like to know more about something specific, let me know.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Weekly Roundup 44</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-44</link>
+			<description>This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-44/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-44</guid>
+			<pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="my-13-year-old-has-an-800-phone"&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;My 13-year-old has an $800 phone&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Buying a phone is expensive, especially if you are a 13-year-old who wants an iPhone. &lt;strong&gt;Ruth&lt;/strong&gt; shares a story about how her daughter could contribute 50% to an $800 iPhone purchase in 2 months.&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="It's been a journey of many tiny lessons, many brief conversations and when necessary a firm bottom line, to build up her understanding of how money works. Her knowledge is growing in incremental steps"
+author="Ruth"
+/&gt;&lt;/p&gt;
+&lt;p&gt;This article shows how we can teach our children the habit of saving while also teaching them it's OK to spend money they have budgeted.&lt;/p&gt;
+&lt;h3 id="key-takeaways"&gt;Key Takeaways&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Teach your child to save/invest a percentage of every dollar they earn.&lt;/li&gt;
+&lt;li&gt;For expensive purchases, agree to pay half the amount.&lt;/li&gt;
+&lt;li&gt;For massive targets, break them into smaller digestible chunks by using a &amp;quot;savings tracker&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Look at employment opportunities available to them, and if it needs the help of an adult, offer to help if they are willing to work.&lt;/li&gt;
+&lt;li&gt;For a kid, who have all their needs taken care of, it is the best time to teach them the habit of saving a percentage of their income.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.thehappysaver.com/blog/my-13-year-old-has-an-800-dollar-phone"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="do-i-need-a-financial-advisor"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Do I Need a Financial Advisor&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How do we know if we need a financial advisor? &lt;strong&gt;Ramit Sethi&lt;/strong&gt; explains the criteria for needing a financial advisor and why most people don't need one.&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="Most people don't need a financial advisor. We have such simple needs that with a little bit of time we can get an automatic personal finance infrastructure working for us"
+author="Ramit Sethi"
+/&gt;&lt;/p&gt;
+&lt;h3 id="key-takeaways-1"&gt;Key Takeaways&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We need an advisor only if we have over $1 million in investable assets, have a complex financial situation, need a second set of eyes or a behavioural coach.&lt;/li&gt;
+&lt;li&gt;Get a fee-only advisor who is a fiduciary, meaning they are legally required to put our best interests first.&lt;/li&gt;
+&lt;li&gt;Reach out to at least 10 advisors and set up calls with 5.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/do-you-need-a-financial-advisor/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="how-to-learn-stuff-quickly"&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;How To Learn Stuff Quickly&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It is easy to get stuck either in tutorial hell or reinvent every wheel when learning new things. &lt;strong&gt;Josh Comeau&lt;/strong&gt; shares a few tips on how he has been able to pick up new skills quickly.&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="The way I see it, skills are like wealth. The more skills I pick up, the faster they accumulate. Ideas and techniques gleaned in one domain can help in another"
+author="Josh Comeau"
+/&gt;&lt;/p&gt;
+&lt;h3 id="key-takeaways-2"&gt;Key Takeaways&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In the beginning, focus on guided learning. Once we are comfortable with the fundamentals, we should spend more time building interesting things and seeing tutorials only when encountering new problems.&lt;/li&gt;
+&lt;li&gt;A tutorial fade is effective, but we are building the same things over and over. Basically, after following a tutorial, you try to repeat it without looking at the tutorial.&lt;/li&gt;
+&lt;li&gt;We can add additional functionality to the tutorial project.&lt;/li&gt;
+&lt;li&gt;We can build a similar project to the tutorial project.&lt;/li&gt;
+&lt;li&gt;By publishing what we learn, we can uncover gaps in our mental model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="when-it-pays-to-choose-microservices"&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;When it Pays to Choose Microservices&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Microservices are extremely popular, with a lot of big companies adopting them. But when is it worth switching over to microservices? &lt;strong&gt;Victoriia Zaripova&lt;/strong&gt; outlines the pros and cons of developing a microservice-based solution.&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="Like any other fancy solution, microservices aren't always beneficial. Neither do they give a plaster for all sores"
+author="Victoriia Zaripova"
+/&gt;&lt;/p&gt;
+&lt;h3 id="key-takeaways-3"&gt;Key Takeaways&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If microservices don't solve the business tasks, this is a waste of time and money.&lt;/li&gt;
+&lt;li&gt;Don't use microservices for a new solution.&lt;/li&gt;
+&lt;li&gt;The minimum pool for one microservice is a team of six to nine persons. One team should support a maximum of two microservices.&lt;/li&gt;
+&lt;li&gt;Consider using a microservice when
+&lt;ul&gt;
+&lt;li&gt;there are critical requirements for the application's resistance to loads and/or support of integration with external services&lt;/li&gt;
+&lt;li&gt;the business requires significant acceleration of development.&lt;/li&gt;
+&lt;li&gt;it's necessary to use a heterogeneous technology stack.&lt;/li&gt;
+&lt;li&gt;different points of the application require different rates of changes in various points of the application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://blog.typeable.io/posts/2021-07-19-microservices.html"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="the-nine-states-of-design"&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;The Nine States of Design&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;When designing UI, we tend to focus on the ideal state. &lt;strong&gt;Vince Speelman&lt;/strong&gt; shares his list of the 9 different states that we should plan for to create a better experience for users who hit the unhappy path.&lt;/p&gt;
+&lt;p&gt;&lt;Quote
+quote="As we learn to craft systems rather than pages, we must invest effort into shaping these often missed states of design and create with a component lifecycle that can support everyone"
+author="Vince Speelman"
+/&gt;&lt;/p&gt;
+&lt;h3 id="key-takeaways-4"&gt;Key Takeaways&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The different states that we should consider when building UI
+&lt;ul&gt;
+&lt;li&gt;Nothing state&lt;/li&gt;
+&lt;li&gt;Loading&lt;/li&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;li&gt;One&lt;/li&gt;
+&lt;li&gt;Some&lt;/li&gt;
+&lt;li&gt;Too many&lt;/li&gt;
+&lt;li&gt;Incorrect&lt;/li&gt;
+&lt;li&gt;Correct&lt;/li&gt;
+&lt;li&gt;Done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"&gt;Link to Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Hope you enjoy reading these articles as much as I did.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Increasing Productivity with No-Meeting Days</title>
+			<link>https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days</link>
+			<description>How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/increasing-productivity-no-meeting-days/cover.jpg" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/increasing-productivity-no-meeting-days</guid>
+			<pubDate>Tue, 03 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the First AML Product &amp;amp; Engineering blog. You can read the original version &lt;a href="https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Have you ever been in a position where you are in meetings during the day, and then you code at night just to feel that you are getting things done? I know I have.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In 2009, Paul Graham wrote an article about the &lt;a href="http://www.paulgraham.com/makersschedule.html"&gt;maker vs manager schedule&lt;/a&gt;. It articulates that meetings are disastrous when we are on the maker's schedule. When we attend many meetings, it is tough to focus on the task and get things done. In my case, even a single meeting can blow my whole afternoon.&lt;/p&gt;
+&lt;p&gt;Most of us have two workdays in today's world - one on the manager's schedule and the other on the maker's schedule.&lt;/p&gt;
+&lt;p&gt;In his article, Paul proposes using office hours and setting aside a time for meetings. But I struggled with this when acting as the team lead for one of the teams and found my day broken up by various meetings. After all, how do we tell our boss (and the rest of the business) that we have office hours and will only meet him/her/them during those? I think office hours works well when we are high enough on the totem pole.&lt;/p&gt;
+&lt;p&gt;Since office hours are not viable for most of us, we can try the next best thing - blocking out chunks of time in our calendar for focus time. Blackout periods work well in most cases, but we still have to attend meetings and can't get stuck on a task for the whole day.&lt;/p&gt;
+&lt;p&gt;Let us look at something that works a little better - A no-meeting day.&lt;/p&gt;
+&lt;h2 id="what-is-a-no-meeting-day"&gt;What is a No-Meeting Day?&lt;/h2&gt;
+&lt;p&gt;A no-meeting day is a day for focused work. Essentially, it's a day in the week with no meetings so that we get uninterrupted time to do our job. This continuous focus time is perfect for deep work and more extensive projects. In addition, there is less context switching, so it's easier to achieve that magical state of flow.&lt;/p&gt;
+&lt;p&gt;And if you are a manager, it also allows you to be a doer.&lt;/p&gt;
+&lt;h2 id="a-no-meeting-day-will-never-work-for-my-role"&gt;A No-meeting day will never work for my role.&lt;/h2&gt;
+&lt;p&gt;Now some of you might be reading this and going -&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Yeah, it sounds great, and I would love to get in on that action, but it will never work for my role&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some functions like Sales and Customer Success will require more collaboration than others.&lt;/p&gt;
+&lt;p&gt;For these roles, it might be better to institute blackout periods where people can pick half a day each week where they are not expected to be in a meeting. Shared blackout periods can work well so that there is time to have meetings that involve multiple people or external stakeholders.&lt;/p&gt;
+&lt;p&gt;Alternatively, we can also institute no meeting days just for internal meetings.&lt;/p&gt;
+&lt;h2 id="how-to-implement-no-meeting-days"&gt;How to implement no-meeting days?&lt;/h2&gt;
+&lt;p&gt;Now that I have allayed your fears, you want to know how to implement them for yourself and your team.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Patience, you must have my young Padawan&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: The first step to a meeting-free day is to talk with your manager and get them on board. You can start with blackout periods if your manager is concerned and then move up to no-meeting days. Once you have a few blackout periods in your calendar for focus time, it is an easier sell to consolidate them into a single no-meeting day.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Next, communicate with others about your availability on no meeting days. Have a plan for how or when you are available in case of work emergencies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: The final step is to ensure that no meetings can be scheduled on your nominated no-meeting day. Create a recurring all-day event on your calendar that blocks others from scheduling time with you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;: Once you are happy with the trial, roll it out to the rest of the team.&lt;/p&gt;
+&lt;h2 id="common-pitfalls"&gt;Common Pitfalls&lt;/h2&gt;
+&lt;h3 id="getting-the-whole-team-to-buy-in-from-the-start"&gt;Getting the whole team to buy-in from the start&lt;/h3&gt;
+&lt;p&gt;People make a big mistake and set themselves up for failure because they try to get the whole team to agree to try it from the outset. It's not hard to make space for a no-meeting day for a single person.&lt;/p&gt;
+&lt;h3 id="blocking-the-calendar-one-week-at-a-time"&gt;Blocking the calendar one week at a time&lt;/h3&gt;
+&lt;p&gt;Making it recurring and not just a week by week addition makes maintaining the meeting free schedule easier.&lt;/p&gt;
+&lt;p&gt;I prefer to set up a regular &lt;strong&gt;Out of Office&lt;/strong&gt; event with a title of &lt;strong&gt;&lt;em&gt;Focus Time&lt;/em&gt;&lt;/strong&gt; and a message stating - &lt;em&gt;I am open to urgent meetings. Please slack me to get me to accept&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="be-flexible"&gt;Be Flexible&lt;/h2&gt;
+&lt;p&gt;Meetings involve more than one person. Sometimes, we have to take a meeting on our no-meeting day because that is the only day someone else is available, or there is an urgent fire that we need to put out.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make exceptions when necessary but try hard to avoid them&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Having a no-meeting day does not mean that we don't get together with our co-workers or have spontaneous conversations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feel free to have them; Just don't schedule it!&lt;/strong&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to make code reviews stress free</title>
+			<link>https://www.ankursheel.com/blog/make-code-reviews-stress-free</link>
+			<description>Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/make-code-reviews-stress-free/cover.jpg" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/make-code-reviews-stress-free</guid>
+			<pubDate>Sun, 25 Jul 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the First AML Product &amp;amp; Engineering blog. You can read the original version &lt;a href="https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Code reviews can be stressful for both parties. The person being reviewed puts their code out there for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.&lt;/p&gt;
+&lt;p&gt;There is a lot of advice on the interwebs about how to conduct effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.&lt;/p&gt;
+&lt;p&gt;However, computers are still not good at some things, like suggesting good variable names. By only talking about blockers in a code review, we can lose out on some good suggestions. It's a classic case of throwing out the baby with the bathwater.&lt;/p&gt;
+&lt;h2 id="inspiration"&gt;Inspiration&lt;/h2&gt;
+&lt;p&gt;I thought there was no good solution to this problem for a long time, but then I came across an article on &lt;a href="https://www.netlify.com/blog/2020/03/05/feedback-ladders-how-we-encode-code-reviews-at-netlify/"&gt;Feedback Ladders&lt;/a&gt; by the team at Netlify.&lt;/p&gt;
+&lt;p&gt;The gist of the article is that Nelify uses metaphorical names describing the inconveniences of living in a house still being built in their code reviews. This encodes the severity of the feedback.&lt;/p&gt;
+&lt;h2 id="lets-start-adapting"&gt;Let's start adapting&lt;/h2&gt;
+&lt;p&gt;Netlify has 5 different levels - mountain, boulder, pebble, sand and dust.&lt;/p&gt;
+&lt;p&gt;I think this is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. I feel it's worth adding one more to indicate that it's a clarifying question asked by the reviewer.&lt;/p&gt;
+&lt;p&gt;This is an improvement over the traditional review, but there is still a problem. Text is difficult to parse.&lt;/p&gt;
+&lt;p&gt;The solution is easy — Let's use emoji.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We can use whatever emojis we like, but our platform of choice must support the emojis that we decide to use.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="some-options-that-work-in-github-for-inspiration"&gt;Some options that work in Github for inspiration&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vehicles&lt;/strong&gt; 🚑 [ambulance], 🚗 [car], 🚲 [cycle], ⛽ [fuelpump]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Animals&lt;/strong&gt; 🐘 [elephant], 🐑 [sheep], 🐜 [ant], ❓ [question]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shapes&lt;/strong&gt; 🔴 [circle], 🔶 [diamond], 💚 [heart], ❓[question]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-level-to-use-when"&gt;What level to use when&lt;/h2&gt;
+&lt;p&gt;Let's use Vehicles as an example and see what the different levels indicate.&lt;/p&gt;
+&lt;h3 id="blocker"&gt;🚑 Blocker&lt;/h3&gt;
+&lt;p&gt;The Pull Request cannot be merged till the issue is addressed. Examples would be where the solution doesn't fix the issue or has unintended consequences or missing tests.&lt;/p&gt;
+&lt;h3 id="non-blocking-but-essential"&gt;🚗 Non-Blocking but essential&lt;/h3&gt;
+&lt;p&gt;The Pull Request can be merged, but the comment should be addressed in a future PR. Examples of this would be addressing tech debt or enhancements.&lt;/p&gt;
+&lt;h3 id="take-it-or-leave-it"&gt;🚲 Take it or leave it&lt;/h3&gt;
+&lt;p&gt;All those other things are suggestions or a personal opinion and might be considered nitpicking. Examples of this would be suggesting a different variable name.&lt;/p&gt;
+&lt;h3 id="a-clarifying-question"&gt;⛽ A clarifying question&lt;/h3&gt;
+&lt;p&gt;It can be used to get more context on the pull request changes or understand the domain.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Code reviews can incite endless debates between developers. Using emojis to encode the severity of the feedback can help avoid this problem.&lt;/p&gt;
+&lt;p&gt;As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.&lt;/p&gt;
+&lt;p&gt;If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.&lt;/p&gt;
+&lt;p&gt;I am always curious to know how other people have adapted this in their workflow so let me know what you did :)&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>What is the difference between Stubs, Mocks, Fakes and Spies</title>
+			<link>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</link>
+			<description>We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies</description>
+			<guid>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</guid>
+			<pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;The lines between the different test doubles are blurred when using a Mocking library like &lt;a href="https://github.com/moq/moq4"&gt;Moq&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I use mocks for almost everything, but I think it's still worthwhile to know the difference between Stubs, Mocks, Fakes and Spies. If nothing else, we will know what people are talking about when they use the different terms.&lt;/p&gt;
+&lt;p&gt;Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;interface&lt;/span&gt; &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
+{
+     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)&lt;/span&gt;;
+     &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Add&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; valid&lt;/span&gt;)&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="stub"&gt;Stub&lt;/h2&gt;
+&lt;p&gt;A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.&lt;/p&gt;
+&lt;p&gt;Below is the stubbed version using Moq of a service where the OnPing() function always returns &amp;quot;pong&amp;quot; regardless of the input.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; mock = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Mock&amp;lt;IRepository&amp;gt;();
+mock.Setup(x =&amp;gt; x.IsValid(It.IsAny&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;())).Returns(&lt;span class="hljs-literal"&gt;true&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.&lt;/p&gt;
+&lt;h2 id="spy"&gt;Spy&lt;/h2&gt;
+&lt;p&gt;A spy lets us verify what functions were called, with what arguments, when, and how often.&lt;/p&gt;
+&lt;p&gt;For example, let's take a repository class, which does not have an interface associated with it.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;RepositorySpy&lt;/span&gt; : &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
+{
+    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; boolean IsValidWasCalled = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
+
+    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; Boolean &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)
+    &lt;/span&gt;{
+        IsValidWasCalled = &lt;span class="hljs-literal"&gt;true&lt;/span&gt;;
+        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; &lt;span class="hljs-literal"&gt;true&lt;/span&gt;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the test, we will assert that &lt;code&gt;IsValidWasCalled&lt;/code&gt; was &lt;em&gt;true&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; spy = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; RepositorySpy();
+Assert.True(spy.IsValidWasCalled);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.&lt;/p&gt;
+&lt;p&gt;An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.&lt;/p&gt;
+&lt;p&gt;I rarely use Spies, and it will become clear why once we look at Mocks.&lt;/p&gt;
+&lt;h2 id="mock"&gt;Mock&lt;/h2&gt;
+&lt;p&gt;A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, unlike a spy, which has the assertion in the test, the assertion is in the verify method in a mock.&lt;/p&gt;
+&lt;p&gt;Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verify that the correct calls were received.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; mock = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Mock&amp;lt;IRepository&amp;gt;();
+mock.Setup(x =&amp;gt; x.IsValid(&lt;span class="hljs-number"&gt;1&lt;/span&gt;)).Returns(&lt;span class="hljs-literal"&gt;true&lt;/span&gt;);
+mock.Setup(x =&amp;gt; x.IsValid(&lt;span class="hljs-number"&gt;2&lt;/span&gt;)).Returns(&lt;span class="hljs-literal"&gt;false&lt;/span&gt;);
+mock.Verify(x =&amp;gt; x.Add(&lt;span class="hljs-number"&gt;1&lt;/span&gt;), Times.Once);
+mock.Verify(x =&amp;gt; x.IsValid(It.IsAny&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;())), Times(&lt;span class="hljs-number"&gt;2&lt;/span&gt;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.&lt;/p&gt;
+&lt;h2 id="fake"&gt;Fake&lt;/h2&gt;
+&lt;p&gt;A Fake is an object that has a concrete implementation that works similar to the actual implementation. It is a simplified version of production code. It does not affect the behaviour of the test but simplifies the implementation of the test by removing heavyweight dependencies.&lt;/p&gt;
+&lt;p&gt;It should be used sparingly and only in cases where a Stub or Mock is not usable.&lt;/p&gt;
+&lt;p&gt;Below is an implementation of a Fake repository&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;FakeRepository&lt;/span&gt; : &lt;span class="hljs-title"&gt;IRepository&lt;/span&gt;
+{
+    &lt;span class="hljs-keyword"&gt;private&lt;/span&gt; Dictionary&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt;&amp;gt; _values = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Dictionary&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt;&amp;gt;();
+
+    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; &lt;span class="hljs-title"&gt;IsValid&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id&lt;/span&gt;)
+    &lt;/span&gt;{
+        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; _values[id];
+    }
+
+    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Add&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; id, &lt;span class="hljs-keyword"&gt;bool&lt;/span&gt; valid&lt;/span&gt;)
+    &lt;/span&gt;{
+        _values.Add(id, open);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.&lt;/p&gt;
+&lt;h3 id="thanks"&gt;Thanks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="edits"&gt;Edits&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Updated 17th July 2021 with an example for Spies&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to run SQL Server in a Docker container</title>
+			<link>https://www.ankursheel.com/blog/run-sql-server-docker-container</link>
+			<description>In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file</description>
+			<guid>https://www.ankursheel.com/blog/run-sql-server-docker-container</guid>
+			<pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this post, we will see how we can run SQL Server on Docker. We will be launching the SQL server container using docker-compose and managing the image and environment variables in a docker file.&lt;/p&gt;
+&lt;h3 id="docker-compose-file"&gt;Docker Compose file&lt;/h3&gt;
+&lt;p&gt;To launch a SQL Server container, we will first create a &lt;code&gt;docker-compose.yml&lt;/code&gt; file. I like to keep my docker scripts in a folder called &lt;strong&gt;&lt;em&gt;build.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml hljs"&gt;&lt;span class="hljs-attr"&gt;version:&lt;/span&gt; &lt;span class="hljs-string"&gt;'3.8'&lt;/span&gt;
+
+&lt;span class="hljs-attr"&gt;services:&lt;/span&gt;
+&lt;span class="hljs-attr"&gt;    db:&lt;/span&gt;
+&lt;span class="hljs-attr"&gt;        container_name:&lt;/span&gt; sql_server_db
+&lt;span class="hljs-attr"&gt;        build:&lt;/span&gt;
+&lt;span class="hljs-attr"&gt;            context:&lt;/span&gt; ./../
+&lt;span class="hljs-attr"&gt;            dockerfile:&lt;/span&gt; ./build/mssqlserver.Dockerfile
+&lt;span class="hljs-attr"&gt;        ports:&lt;/span&gt;
+&lt;span class="hljs-bullet"&gt;            -&lt;/span&gt; &lt;span class="hljs-string"&gt;'1433:1433'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: This denotes that we are using version 3.8 of Docker compose so that Docker can provide the appropriate features.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #3&lt;/strong&gt; This section defines all the different containers we will create.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: The name of the SQL Server Database service. &lt;em&gt;Can be anything.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #5&lt;/strong&gt;: A custom container name rather than a generated default name so that we can easily find the container in Docker.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #6&lt;/strong&gt;: Configuration options that are applied at build time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #7:&lt;/strong&gt; Setting this to &lt;code&gt;.\..\&lt;/code&gt; allows the build process to access any of the files in the root folder.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #8&lt;/strong&gt;: Set the path to the docker file relative to the context path.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #9-10&lt;/strong&gt;: SQL Server is listening on port 1433 in the container, and we want to expose it on port 1433, on the host.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="docker-file-for-sql-server"&gt;Docker file for SQL Server&lt;/h3&gt;
+&lt;p&gt;We can start by adding the base image and environment variables to the docker file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-docker hljs"&gt;&lt;span class="hljs-keyword"&gt;FROM&lt;/span&gt; mcr.microsoft.com/mssql/server:&lt;span class="hljs-number"&gt;2017&lt;/span&gt;-latest
+
+ARG SA_PASSWORD=&amp;quot;Password1!&amp;quot;
+&lt;span class="hljs-keyword"&gt;ENV&lt;/span&gt; SA_PASSWORD=$SA_PASSWORD
+&lt;span class="hljs-keyword"&gt;ENV&lt;/span&gt; ACCEPT_EULA=&amp;quot;Y&amp;quot;
+
+&lt;span class="hljs-keyword"&gt;EXPOSE&lt;/span&gt; &lt;span class="hljs-number"&gt;1433&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: Pull down the SQL Server 2017 container image.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #3&lt;/strong&gt;: Set the SA_PASSWORD as a variable so that it can be reused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: Specify the strong password that meets SQL Server password requirements as an environment variable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #5&lt;/strong&gt;: Sets the environment variable to confirm our acceptance of the End-User Licensing Agreement.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #7&lt;/strong&gt;: Expose the port to access it from composed containers. &lt;em&gt;SQL server listens for a connection on TCP port 1433 by default&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="initialize-sql-server-in-docker-container"&gt;Initialize SQL server in Docker container&lt;/h3&gt;
+&lt;p&gt;Add the following lines to the docker file to initialize SQL Server.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-docker hljs"&gt;&lt;span class="hljs-keyword"&gt;RUN&lt;/span&gt;&lt;span class="bash"&gt; mkdir -p /usr/work
+&lt;/span&gt;&lt;span class="hljs-keyword"&gt;COPY&lt;/span&gt;&lt;span class="bash"&gt; ./build/*.sql /usr/work/
+&lt;/span&gt;
+&lt;span class="hljs-keyword"&gt;WORKDIR&lt;/span&gt;&lt;span class="bash"&gt; /usr/work
+&lt;/span&gt;
+&lt;span class="hljs-keyword"&gt;RUN&lt;/span&gt;&lt;span class="bash"&gt; ( /opt/mssql/bin/sqlservr &amp;amp; ) \
+    | grep -q &amp;quot;Service Broker manager has started&amp;quot; \
+    &amp;amp;&amp;amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P &lt;span class="hljs-variable"&gt;$SA_PASSWORD&lt;/span&gt; -i create-db.sql \
+    &amp;amp;&amp;amp; pkill sqlservr
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line #1&lt;/strong&gt;: Run a command to create a new directory creating all the directories in the path.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #2&lt;/strong&gt;: Copy all the SQL files into the created directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #4&lt;/strong&gt;: Set the working directory for the subsequent instructions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #6&lt;/strong&gt;: Starts the SQL server.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #7&lt;/strong&gt;: Wait for &lt;em&gt;sqlservr&lt;/em&gt; to start by checking the logs. &lt;em&gt;grep&lt;/em&gt; will block until it has found the string and then exit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #8&lt;/strong&gt;: Run &lt;em&gt;sqlcmd&lt;/em&gt; to run &lt;em&gt;create-db.sql&lt;/em&gt; which scaffolds our database.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Line #9&lt;/strong&gt;: Kill the &lt;em&gt;sqlservr&lt;/em&gt; process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="script-to-scaffold-our-database"&gt;Script to scaffold our database&lt;/h3&gt;
+&lt;p&gt;In our SQL script, we can do whatever we need to do at startup. In this demo, we will just create a database with a schema.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sql hljs"&gt;&lt;span class="hljs-keyword"&gt;CREATE&lt;/span&gt; &lt;span class="hljs-keyword"&gt;DATABASE&lt;/span&gt; DemoDb;
+GO
+&lt;span class="hljs-keyword"&gt;USE&lt;/span&gt; DemoDb;
+GO
+
+&lt;span class="hljs-keyword"&gt;CREATE&lt;/span&gt; &lt;span class="hljs-keyword"&gt;TABLE&lt;/span&gt; [dbo].[Table1]
+(
+    [&lt;span class="hljs-keyword"&gt;Id&lt;/span&gt;] &lt;span class="hljs-built_in"&gt;INT&lt;/span&gt; &lt;span class="hljs-keyword"&gt;NOT&lt;/span&gt; &lt;span class="hljs-literal"&gt;NULL&lt;/span&gt; PRIMARY &lt;span class="hljs-keyword"&gt;KEY&lt;/span&gt; &lt;span class="hljs-keyword"&gt;IDENTITY&lt;/span&gt;,
+    [&lt;span class="hljs-keyword"&gt;Name&lt;/span&gt;] &lt;span class="hljs-keyword"&gt;NVARCHAR&lt;/span&gt;(&lt;span class="hljs-number"&gt;200&lt;/span&gt;) &lt;span class="hljs-keyword"&gt;NOT&lt;/span&gt; &lt;span class="hljs-literal"&gt;NULL&lt;/span&gt;,
+)
+
+&lt;span class="hljs-keyword"&gt;GO&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="running-the-container"&gt;Running the container&lt;/h3&gt;
+&lt;p&gt;We can use the following command to run start the DB using from the root folder.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker-compose &lt;span class="hljs-_"&gt;-f&lt;/span&gt; ./build/docker-compose.yml up &lt;span class="hljs-_"&gt;-d&lt;/span&gt; --force-recreate --build db
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Starting a new Docker container with Microsoft SQL Server is really simple. However, there are a few hoops to jump through. I hope that it’s easy to understand how it works after reading this article.&lt;/p&gt;
+&lt;p&gt;Please let me know your thoughts about this article if you have any suggestions or share the article with others.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How to set up the project properties for Source Generators</title>
+			<link>https://www.ankursheel.com/blog/setup-project-properties-source-generators</link>
+			<description>A guide to setting up the project properties that we need to create and use source generators</description>
+			<guid>https://www.ankursheel.com/blog/setup-project-properties-source-generators</guid>
+			<pubDate>Wed, 23 Jun 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. This post will look at the project properties we need to set on both the source generator and consumer projects.&lt;/p&gt;
+&lt;h2 id="source-generator-project-properties"&gt;Source Generator Project Properties&lt;/h2&gt;
+&lt;p&gt;A source generator is a .Net class.&lt;/p&gt;
+&lt;h3 id="create-a-new-solution-and-a-library-project"&gt;Create a new solution and a library project&lt;/h3&gt;
+&lt;p&gt;The empty project is targeting Net5.0. I have also enabled nullables.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;PropertyGroup&amp;gt;
+    &amp;lt;TargetFramework&amp;gt;net5.0&amp;lt;/TargetFramework&amp;gt;
+    &amp;lt;Nullable&amp;gt;enable&amp;lt;/Nullable&amp;gt;
+    &amp;lt;WarningsAsErrors&amp;gt;true&amp;lt;/WarningsAsErrors&amp;gt;
+&amp;lt;/PropertyGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="add-the-required-packages"&gt;Add the required packages&lt;/h3&gt;
+&lt;p&gt;Next, we will add the CodeAnalysis libraries from NuGet.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup&amp;gt;
+    &amp;lt;PackageReference Include=&amp;quot;Microsoft.CodeAnalysis.Analyzers&amp;quot; Version=&amp;quot;3.3.2&amp;quot; /&amp;gt;
+    &amp;lt;PackageReference Include=&amp;quot;Microsoft.CodeAnalysis.CSharp.Workspaces&amp;quot; Version=&amp;quot;3.8.0&amp;quot; /&amp;gt;
+&amp;lt;/ItemGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="consumer-project-properties"&gt;Consumer Project Properties&lt;/h2&gt;
+&lt;p&gt;In the consumer project, we need to add a reference to the source generator. This can be done as either a project reference or a NuGet package.&lt;/p&gt;
+&lt;h3 id="reference-the-project-in-debug-mode"&gt;Reference the project in Debug mode&lt;/h3&gt;
+&lt;p&gt;In Debug mode, we reference the project directly so that it's easier for development.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup Condition=&amp;quot;'$(Configuration)'=='Debug'&amp;quot;&amp;gt;
+    &amp;lt;ProjectReference Include=&amp;quot;..\\SourceGenerator\\SourceGenerator.csproj&amp;quot; OutputItemType=&amp;quot;Analyzer&amp;quot; ReferenceOutputAssembly=&amp;quot;false&amp;quot; /&amp;gt;
+&amp;lt;/ItemGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;OutputItemType&lt;/em&gt;&lt;/strong&gt;: Source generators as packaged and deployed the same way as Roslyn Analysers, so we need to tell the compiler that it is not a standard project reference.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;ReferenceOutputAssembly&lt;/em&gt;&lt;/strong&gt;: Tells the compiler not to include the source generator project in the published output, i.e. the bin folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="reference-the-nuget-package-in-release-mode"&gt;Reference the NuGet package in Release mode&lt;/h3&gt;
+&lt;p&gt;In Release mode, we reference the NuGet package so that we can test the package.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup Condition=&amp;quot;'$(Configuration)'=='Release'&amp;quot;&amp;gt;
+    &amp;lt;PackageReference Include=&amp;quot;SourceGenerator&amp;quot; Version=&amp;quot;x.y.z&amp;quot; /&amp;gt;
+&amp;lt;/ItemGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="writing-the-generated-code-to-disk"&gt;Writing the generated code to disk&lt;/h3&gt;
+&lt;p&gt;By default, the generated code is not written to disk. However, when writing a source generator, looking at the generated code can be helpful.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;PropertyGroup&amp;gt;
+    &amp;lt;EmitCompilerGeneratedFiles&amp;gt;true&amp;lt;/EmitCompilerGeneratedFiles&amp;gt;
+    &amp;lt;CompilerGeneratedFilesOutputPath&amp;gt;GeneratedFiles&amp;lt;/CompilerGeneratedFilesOutputPath&amp;gt;
+&amp;lt;/PropertyGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;EmitCompilerGeneratedFiles&lt;/em&gt;&lt;/strong&gt;: This flag tells the compiler to write the generated files to disk&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;CompilerGeneratedFilesOutputPath&lt;/em&gt;&lt;/strong&gt;: By default, the generated code is written to the &lt;strong&gt;&lt;em&gt;obj/generated&lt;/em&gt;&lt;/strong&gt; folder. This property allows us to override the folder. In this case, I am writing them to a GeneratedFiles folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="excluding-the-generated-folder"&gt;Excluding the generated folder&lt;/h3&gt;
+&lt;p&gt;We will need to exclude the generated folder, or the compiler will try to add the same file twice - one from disk and one from the code generator.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml hljs"&gt;&amp;lt;ItemGroup&amp;gt;
+    &amp;lt;Compile Remove=&amp;quot;$(CompilerGeneratedFilesOutputPath)/*/**/*.cs&amp;quot; /&amp;gt;
+&amp;lt;/ItemGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Now, we have our projects set up to start creating source generators and consuming the generated code.&lt;/p&gt;
+&lt;p&gt;If you want to look at the code, you can find it &lt;a href="https://github.com/AnkurSheel/CSharpSourceGenerators"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+	</channel>
+</rss>
