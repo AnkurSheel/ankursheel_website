@@ -47,7 +47,7 @@ git rebase -i --root -x "git commit --amend --reset-author -CHEAD"
 
 This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the [guide to securing git commits from tricking you on Windows](./securing-git-commits-windows).
 
-## References
+## Further Reading
 
 -   [git-commit Documentation](https://git-scm.com/docs/git-commit)
 -   [gitrevisions Documentation](https://git-scm.com/docs/gitrevisions)

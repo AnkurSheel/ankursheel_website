@@ -149,6 +149,6 @@ We will add a \_Layout.cshtml file in our input folder and link to the styleshee
 
 Now we should be able to add Tailwind classes to our Razor view. The generated site will use the styles outputted by Tailwind.
 
-## Further reading
+## Further Reading
 
 -   [Tailwind Docs](https://tailwindcss.com/docs)

@@ -106,7 +106,7 @@ Install it by using the following command
 dotnet add package Codinators.XunitHelpers
 ```
 
-## References
+## Further Reading
 
 -   [xUnit documentation](https://xunit.net/docs/getting-started/netcore/visual-studio)
 -   [Advent of Code](https://adventofcode.com)

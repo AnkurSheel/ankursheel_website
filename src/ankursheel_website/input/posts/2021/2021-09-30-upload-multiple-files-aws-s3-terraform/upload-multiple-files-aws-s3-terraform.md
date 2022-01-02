@@ -54,7 +54,7 @@ resource "aws_s3_bucket_object" "test" {
 -   **_Line 5_:**: the Path to the file to be uploaded.
 -   **_Line 6_:**: Triggers an update only if the file changes. The eTag of each object is an MD5 hash of that object.
 
-## References
+## Further Reading
 
 -   [Resource: aws_s3_bucket_object](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object)
 -   [for_each](https://www.terraform.io/docs/language/meta-arguments/for_each.html)

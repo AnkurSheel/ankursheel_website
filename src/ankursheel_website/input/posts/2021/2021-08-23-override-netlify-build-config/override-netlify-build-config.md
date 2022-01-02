@@ -38,7 +38,7 @@ So, what's happening here?
 
 The advantage of updating the _netlify.toml_ file is that when we merge our branch back to master, it will automatically use Statiq to build the site.
 
-References:
+## Further Reading
 
 -   [Netlify File Based Configuration](https://docs.netlify.com/configure-builds/file-based-configuration/)
 -   [Dotnet run command](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run)

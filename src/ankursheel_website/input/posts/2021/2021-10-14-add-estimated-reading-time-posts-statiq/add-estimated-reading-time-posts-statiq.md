@@ -39,6 +39,6 @@ We can now use it on our website. You can see an example below.
 
 ![Reading time example](./cover_orig.png)
 
-## References
+## Further Reading
 
 -   [Writing Modules in Statiq](https://www.statiq.dev/framework/pipelines/modules/writing-modules)

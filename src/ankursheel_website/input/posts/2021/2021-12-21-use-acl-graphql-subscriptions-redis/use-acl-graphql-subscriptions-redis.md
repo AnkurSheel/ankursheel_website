@@ -99,7 +99,7 @@ Then we can run the command `docker-compose up --force-recreate -d --build` to s
 
 There is a [demo project](https://github.com/AnkurSheel/HotChocolateSubscriptions) you can check out over on GitHub.
 
-## References
+## Further Reading
 
 - [Redis ACL](https://redis.io/topics/acl)
 - [StackExchange.Redis Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration)

@@ -28,7 +28,7 @@ Let's unpack this command.
 -   **REN**: The command to rename a file
 -   **%~dpnG"**: Expands the parameter of the original filename to the fully qualified path without the extension
 
-References:
+## Further Reading
 
 -   [FOR /R](https://ss64.com/nt/for_r.html)
 -   [REN](https://ss64.com/nt/ren.html)

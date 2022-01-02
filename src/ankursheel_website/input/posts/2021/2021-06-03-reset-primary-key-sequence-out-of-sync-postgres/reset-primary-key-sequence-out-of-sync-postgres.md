@@ -58,6 +58,6 @@ SELECT SETVAL(
 
 This will set the sequence to the next available value higher than any existing value for "**_id_**" in **_table_**. Further inserts will not result in a "duplicate key value violates unique constraint" error.
 
-## References
+## Further Reading
 
 -   [Sequence Manipulation Functions](https://www.postgresql.org/docs/current/functions-sequence.html)
