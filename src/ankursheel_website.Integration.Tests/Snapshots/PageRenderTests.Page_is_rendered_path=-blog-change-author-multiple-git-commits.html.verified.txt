@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-10-28">October 28, 2021</time>
+        <span>Last Updated: <time datetime="2021-10-28">October 28, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -162,7 +162,7 @@ email = author_email
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the <a href="securing-git-commits-windows">guide to securing git commits from tricking you on Windows</a>.</p>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://git-scm.com/docs/git-commit">git-commit Documentation</a></li>
 <li><a href="https://git-scm.com/docs/gitrevisions">gitrevisions Documentation</a></li>

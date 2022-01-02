@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-08-23">August 23, 2021</time>
+        <span>Last Updated: <time datetime="2021-08-23">August 23, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -157,7 +157,7 @@
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>The advantage of updating the <em>netlify.toml</em> file is that when we merge our branch back to master, it will automatically use Statiq to build the site.</p>
-<p>References:</p>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://docs.netlify.com/configure-builds/file-based-configuration/">Netlify File Based Configuration</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run">Dotnet run command</a></li>

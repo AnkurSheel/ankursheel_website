@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2014-01-10">January 10, 2014</time>
+        <span>Last Updated: <time datetime="2014-01-10">January 10, 2014</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>

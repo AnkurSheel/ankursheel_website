@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-12-21">December 21, 2021</time>
+        <span>Last Updated: <time datetime="2021-12-21">December 21, 2021</time></span>
         <i class="font-bold">
             Reading Time: 2 min
         </i>
@@ -206,7 +206,7 @@ services:
 <p>Then we can run the command <code>docker-compose up --force-recreate -d --build</code> to start the Redis container.</p>
 <h2 id="demo-project">Demo Project</h2>
 <p>There is a <a href="https://github.com/AnkurSheel/HotChocolateSubscriptions">demo project</a> you can check out over on GitHub.</p>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://redis.io/topics/acl">Redis ACL</a></li>
 <li><a href="https://stackexchange.github.io/StackExchange.Redis/Configuration">StackExchange.Redis Configuration</a></li>

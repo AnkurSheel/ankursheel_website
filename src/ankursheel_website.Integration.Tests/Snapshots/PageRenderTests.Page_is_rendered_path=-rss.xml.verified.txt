@@ -5,8 +5,34 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2022</copyright>
-		<pubDate>Sat, 01 Jan 2022 21:01:05 GMT</pubDate>
-		<lastBuildDate>Sat, 01 Jan 2022 21:01:05 GMT</lastBuildDate>
+		<pubDate>Sun, 02 Jan 2022 07:20:34 GMT</pubDate>
+		<lastBuildDate>Sun, 02 Jan 2022 07:20:34 GMT</lastBuildDate>
+		<item>
+			<title>Weekly Roundup 51</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-51</link>
+			<description>This weeks roundup contains articles from Slava Shestopalov, Ahmad Shadeed, Amelia Wattenberger, Kevon Cheung and Gergely Orosz</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-51/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-51</guid>
+			<pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="designing-better-links-for-websites-and-emails-a-guideline"&gt;&lt;a href="https://uxdesign.cc/designing-better-links-for-websites-and-emails-a-guideline-5b8638ce675a"&gt;Designing better links for websites and emails — a guideline&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Slava Shestopalov&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Just because something is common doesn't make it right. This article explains the common mistakes made when adding text links and making them more usable and accessible. It also shows the difference between bad and good links through examples.&lt;/p&gt;
+&lt;h2 id="defensive-css"&gt;&lt;a href="https://ishadeed.com/article/defensive-css/"&gt;Defensive CSS&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ahmad Shadeed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Defensive CSS is a practical set of styles that can help us avoid unexpected issues when writing CSS. So many nuggets in this article.&lt;/p&gt;
+&lt;h2 id="visualizing-a-codebase"&gt;&lt;a href="https://next.github.com/projects/repo-visualization"&gt;Visualizing a codebase&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Amelia Wattenberger&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A fantastic article on how to visualize a GitHub repo with each file and folder depicted as a circle. The article also goes into the design and implementation of the visualization. Apart from some visualizations of some public repositories, you can also see the visualization for your own repositories.&lt;/p&gt;
+&lt;h2 id="how-to-validate-your-tech-startup-idea"&gt;&lt;a href="https://kevoncheung.com/blog/validating-startup-ideas"&gt;How to Validate Your Tech Startup Idea&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kevon Cheung&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is an excellent post that goes into the details of why building Toasty was a terrible idea, even though they talked to users and researched the space before building the product. What they learnt and how would Kevin evaluate future startup ideas for a B2b SaaS.&lt;/p&gt;
+&lt;h2 id="the-cheetah-software-engineer-the-pragmatic-engineer"&gt;&lt;a href="https://blog.pragmaticengineer.com/the-cheetah-software-engineer/"&gt;The Cheetah Software Engineer - The Pragmatic Engineer&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Most organizations are scared of 10x engineers because they are toxic. An observation in extreme detail on what a highly productive engineer can look like. Why they are so rare, and how you can manage them and keep them engaged?&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>What to do as an end-user when merchants using stripe decline your credit cards</title>
 			<link>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</link>
@@ -36,7 +62,7 @@
 &lt;p&gt;I was hoping that this would get Stripe to resolve the issue. But alas, I got the same canned reply.&lt;/p&gt;
 &lt;p&gt;After telling them that I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.&lt;/p&gt;
 &lt;p&gt;I will update this section with any more progress.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://support.google.com/a/users/answer/9308648?hl=en"&gt;Creating alias email addresses on gmail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -145,7 +171,7 @@ services:
 &lt;p&gt;Then we can run the command &lt;code&gt;docker-compose up --force-recreate -d --build&lt;/code&gt; to start the Redis container.&lt;/p&gt;
 &lt;h2 id="demo-project"&gt;Demo Project&lt;/h2&gt;
 &lt;p&gt;There is a &lt;a href="https://github.com/AnkurSheel/HotChocolateSubscriptions"&gt;demo project&lt;/a&gt; you can check out over on GitHub.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://redis.io/topics/acl"&gt;Redis ACL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://stackexchange.github.io/StackExchange.Redis/Configuration"&gt;StackExchange.Redis Configuration&lt;/a&gt;&lt;/li&gt;
@@ -378,7 +404,7 @@ services:
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;reject&lt;/strong&gt;: Applies the parts of the patch that are applicable and leaves the rejected hunks in corresponding *.rej files. We have to apply these manually.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-format-patch"&gt;git-format-patch Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-apply"&gt;git-apply Documentation&lt;/a&gt;&lt;/li&gt;
@@ -445,7 +471,7 @@ email = author_email
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the &lt;a href="https://www.ankursheel.com/securing-git-commits-windows"&gt;guide to securing git commits from tricking you on Windows&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-commit"&gt;git-commit Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/gitrevisions"&gt;gitrevisions Documentation&lt;/a&gt;&lt;/li&gt;
@@ -546,7 +572,7 @@ email = author_email
 &lt;/ul&gt;
 &lt;p&gt;We can now use it on our website. You can see an example below.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover_orig.png" alt="Reading time example"&gt;&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules"&gt;Writing Modules in Statiq&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -652,7 +678,7 @@ email = author_email
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5&lt;/em&gt;:&lt;/strong&gt;: the Path to the file to be uploaded.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 6&lt;/em&gt;:&lt;/strong&gt;: Triggers an update only if the file changes. The eTag of each object is an MD5 hash of that object.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object"&gt;Resource: aws_s3_bucket_object&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/meta-arguments/for_each.html"&gt;for_each&lt;/a&gt;&lt;/li&gt;
@@ -880,7 +906,7 @@ npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest p
 &lt;/ul&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Now we should be able to add Tailwind classes to our Razor view. The generated site will use the styles outputted by Tailwind.&lt;/p&gt;
-&lt;h2 id="further-reading"&gt;Further reading&lt;/h2&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tailwindcss.com/docs"&gt;Tailwind Docs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -908,44 +934,11 @@ npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest p
 &lt;li&gt;&lt;strong&gt;REN&lt;/strong&gt;: The command to rename a file&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;%~dpnG"&lt;/strong&gt;: Expands the parameter of the original filename to the fully qualified path without the extension&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;References:&lt;/p&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://ss64.com/nt/for_r.html"&gt;FOR /R&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ss64.com/nt/ren.html"&gt;REN&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ss64.com/nt/syntax-args.html"&gt;Command Line arguments&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to override the netlify build config</title>
-			<link>https://www.ankursheel.com/blog/override-netlify-build-config</link>
-			<description>A way to override the netlify build settings so that we can override the build commands for a branch</description>
-			<guid>https://www.ankursheel.com/blog/override-netlify-build-config</guid>
-			<pubDate>Mon, 23 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I wanted to keep the original site running with gatsby but deploy the new branch using statiq.&lt;/p&gt;
-&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;p&gt;First, we need to allow branch deploys for our branch.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/override-netlify-build-config/cover.png" alt="Build Setting UI"&gt;&lt;/p&gt;
-&lt;p&gt;In the above screenshot, my branch for the migration is named &lt;em&gt;statiq&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;To override the build settings set in the Netlify UI, we can add the following snippet to &lt;em&gt;netlify.toml&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-toml hljs"&gt;[build]
-  command = "dotnet run --project ./subDir/"
-  publish = "./subDir/output"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So, what's happening here?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Line 1&lt;/strong&gt;: Apply the build settings globally and override anything set in the UI.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line 2&lt;/strong&gt;: Use the &lt;code&gt;dotnet run&lt;/code&gt; as the build command and specify the project path.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Line 3&lt;/strong&gt;: The relative directory to the root directory containing the deploy-ready HTML files and assets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The advantage of updating the &lt;em&gt;netlify.toml&lt;/em&gt; file is that when we merge our branch back to master, it will automatically use Statiq to build the site.&lt;/p&gt;
-&lt;p&gt;References:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.netlify.com/configure-builds/file-based-configuration/"&gt;Netlify File Based Configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run"&gt;Dotnet run command&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

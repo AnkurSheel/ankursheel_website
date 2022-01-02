@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-06-03">June 03, 2021</time>
+        <span>Last Updated: <time datetime="2021-06-03">June 03, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -169,7 +169,7 @@ FROM &quot;table&quot;;
     FALSE);
 </code></pre>
 <p>This will set the sequence to the next available value higher than any existing value for &quot;<strong><em>id</em></strong>&quot; in <strong><em>table</em></strong>. Further inserts will not result in a &quot;duplicate key value violates unique constraint&quot; error.</p>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://www.postgresql.org/docs/current/functions-sequence.html">Sequence Manipulation Functions</a></li>
 </ul>

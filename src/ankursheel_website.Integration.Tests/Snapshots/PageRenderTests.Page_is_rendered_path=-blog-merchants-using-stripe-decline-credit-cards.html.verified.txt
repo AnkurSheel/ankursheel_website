@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-12-29">December 29, 2021</time>
+        <span>Last Updated: <time datetime="2021-12-29">December 29, 2021</time></span>
         <i class="font-bold">
             Reading Time: 3 min
         </i>
@@ -158,7 +158,7 @@
 <p>I was hoping that this would get Stripe to resolve the issue. But alas, I got the same canned reply.</p>
 <p>After telling them that I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.</p>
 <p>I will update this section with any more progress.</p>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://support.google.com/a/users/answer/9308648?hl=en">Creating alias email addresses on gmail</a></li>
 </ul>

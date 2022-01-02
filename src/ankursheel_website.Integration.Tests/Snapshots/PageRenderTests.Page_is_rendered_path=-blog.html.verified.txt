@@ -123,6 +123,10 @@
         <article class="prose-code:bg-slate-400">
             
 
+    <h2>2022(1)</h2>
+        <div>
+            <a href="/blog/weekly-roundup-51" class="mb-4">Weekly Roundup 51</a> - <time class="prose-sm" datetime="22-01-02">January 02, 2022</time>
+        </div>
     <h2>2021(30)</h2>
         <div>
             <a href="/blog/merchants-using-stripe-decline-credit-cards" class="mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-29">December 29, 2021</time>

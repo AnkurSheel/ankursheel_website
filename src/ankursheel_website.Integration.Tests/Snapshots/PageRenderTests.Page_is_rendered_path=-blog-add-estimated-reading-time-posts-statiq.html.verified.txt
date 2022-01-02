@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-10-14">October 14, 2021</time>
+        <span>Last Updated: <time datetime="2021-10-14">October 14, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -163,7 +163,7 @@
 </ul>
 <p>We can now use it on our website. You can see an example below.</p>
 <p><img src="/assets/images/posts/add-estimated-reading-time-posts-statiq/cover_orig.png" alt="Reading time example"></p>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules">Writing Modules in Statiq</a></li>
 </ul>

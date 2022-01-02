@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-09-09">September 09, 2021</time>
+        <span>Last Updated: <time datetime="2021-09-09">September 09, 2021</time></span>
         <i class="font-bold">
             Reading Time: 2 min
         </i>
@@ -240,7 +240,7 @@ npm install -D tailwindcss&<span class="hljs-comment">#64;latest postcss&#64;lat
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>Now we should be able to add Tailwind classes to our Razor view. The generated site will use the styles outputted by Tailwind.</p>
-<h2 id="further-reading">Further reading</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://tailwindcss.com/docs">Tailwind Docs</a></li>
 </ul>

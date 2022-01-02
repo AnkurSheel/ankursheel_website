@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-11-04">November 04, 2021</time>
+        <span>Last Updated: <time datetime="2021-11-04">November 04, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -151,7 +151,7 @@
 <ul>
 <li><strong>reject</strong>: Applies the parts of the patch that are applicable and leaves the rejected hunks in corresponding *.rej files. We have to apply these manually.</li>
 </ul>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://git-scm.com/docs/git-format-patch">git-format-patch Documentation</a></li>
 <li><a href="https://git-scm.com/docs/git-apply">git-apply Documentation</a></li>

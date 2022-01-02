@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2021-08-30">August 30, 2021</time>
+        <span>Last Updated: <time datetime="2021-08-30">August 30, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -152,7 +152,7 @@
 <li><strong>REN</strong>: The command to rename a file</li>
 <li><strong>%~dpnG&quot;</strong>: Expands the parameter of the original filename to the fully qualified path without the extension</li>
 </ul>
-<p>References:</p>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://ss64.com/nt/for_r.html">FOR /R</a></li>
 <li><a href="https://ss64.com/nt/ren.html">REN</a></li>

@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2013-12-08">December 08, 2013</time>
+        <span>Last Updated: <time datetime="2013-12-08">December 08, 2013</time></span>
         <i class="font-bold">
             Reading Time: 0 min
         </i>
@@ -147,7 +147,7 @@
 <li>AI</li>
 <li>Multiplayer - P2p and/or Server Client and or shared input</li>
 </ul>
-<p>References :</p>
+<h2 id="further-reading">Further Reading</h2>
 <p>I had come across this <a href="http://tinodidriksen.com/2003/05/06/but-can-you-make-pong/">article</a> a while earlier. It is an interesting read and probably a reality check for people getting into games.</p>
 
 

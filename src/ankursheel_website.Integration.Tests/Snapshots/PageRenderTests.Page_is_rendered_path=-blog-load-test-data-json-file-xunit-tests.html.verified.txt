@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="2019-02-20">February 20, 2019</time>
+        <span>Last Updated: <time datetime="2019-02-20">February 20, 2019</time></span>
         <i class="font-bold">
             Reading Time: 3 min
         </i>
@@ -209,7 +209,7 @@
 <p>Install it by using the following command</p>
 <pre><code class="language-bash hljs">dotnet add package Codinators.XunitHelpers
 </code></pre>
-<h2 id="references">References</h2>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://xunit.net/docs/getting-started/netcore/visual-studio">xUnit documentation</a></li>
 <li><a href="https://adventofcode.com/">Advent of Code</a></li>
