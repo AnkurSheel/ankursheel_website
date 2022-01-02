@@ -5,7 +5,7 @@
 }
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <time datetime="@Model.Document.GetLastUpdatedDate().ToString("yyyy-MM-dd")">@Model.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time>
+        <span>Last Updated: <time datetime="@Model.Document.GetLastUpdatedDate().ToString("yyyy-MM-dd")">@Model.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time></span>
         <i class="font-bold">
             Reading Time: @Model.Document.GetReadingTime().RoundedMinutes min
         </i>
