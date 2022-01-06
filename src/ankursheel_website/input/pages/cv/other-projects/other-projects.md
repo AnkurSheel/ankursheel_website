@@ -2,6 +2,26 @@
 title: Other Projects
 ---
 
+## Statiq Helpers
+
+Opinionated Wrapper around Statiq.Web to build a static website
+
+[Source code](https://github.com/AnkurSheel/StatiqHelpers)
+[Nuget Package](https://www.nuget.org/packages/Codinators.StatiqHelpers/)
+
+
+## xUnitHelpers
+
+Helpers that come in handy when writing tests with Xunit. Helpers Include
+
+- Loading test data from a JSON file for xUnit Tests
+- Multiple Asserts
+- Auto Approver for Approval Tests
+- Verify calls to ILogger using Moq
+
+[Source code](https://github.com/AnkurSheel/xUnitHelpers)
+[Nuget Package](https://www.nuget.org/packages/Codinators.XunitHelpers/)
+
 ## Demo to showcase how different easing functions behave
 
 Easing Functions Showcased: _Linear_, _Sine_, _Quadratic_, _Cubic_, _Quartic_, _Quintic_, _Exponential_, _Circular_, _Elastic_, _Back_ and _Bounce_.

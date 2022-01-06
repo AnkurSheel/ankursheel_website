@@ -8,9 +8,9 @@ I am a software developer who strives to help people become more efficient and p
 
 To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 
-### Download CV
+### [Download CV](assets/downloads/CV_Ankur_Sheel.pdf){target="\_blank"})
 
-**_Last Updated: 1 Oct 2020_**
+**_Last Updated: 7 Jan 2022_**
 
 [![CV](/assets/images/pdficon_large.png){width=64 height=64}](assets/downloads/CV_Ankur_Sheel.pdf){target="\_blank"}
 
