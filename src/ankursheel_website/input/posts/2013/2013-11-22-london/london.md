@@ -1,6 +1,7 @@
 ---
 title: 'Roaming around in London'
 excerpt: This is a part of one of my earlier travels when I travelled to London before starting my Masters.
+category: "travel"
 tags:
     - Europe
     - travel

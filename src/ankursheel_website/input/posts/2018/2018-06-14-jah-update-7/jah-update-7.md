@@ -1,6 +1,7 @@
 ---
 title: JAH Update 7
 excerpt: 'JAH Update 7 : v 0.0.9 adds the ability to automatically deploy to azure whenever a new feature is added'
+category: "project updates"
 tags:
     - project updates
     - JAH

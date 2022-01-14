@@ -2,6 +2,7 @@
 title: 'How to publish email bounce notifications to an SQS queue'
 excerpt: 'In this post, I configure AWS to publish email bounce notifications to an SQS queue using terraform'
 coverImage: './cover.jpg'
+category: "programming"
 tags:
     - 'terraform'
     - 'devops'

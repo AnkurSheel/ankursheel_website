@@ -2,6 +2,7 @@
 title: 'Photo Series: Jaisalmer'
 excerpt: Photo Series of a roadtrip from Jodhpur to Jaisalmer in Rajasthan
 coverImage: ./images/Jaisalmer-12.jpg
+category: "travel"
 tags:
     - Asia
     - India

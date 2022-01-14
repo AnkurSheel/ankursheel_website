@@ -1,6 +1,7 @@
 ---
 title: 'Video: Tandura Dance'
 excerpt: Clip of Tandura Dance during the Desert Safari
+category: "video"
 tags:
     - Middle East
     - travel

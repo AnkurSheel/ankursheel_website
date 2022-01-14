@@ -2,6 +2,7 @@
 title: 'Photo Essay: World Of Coca Cola, Georgia'
 excerpt: 'Next on the Photo Series of The USA roadtrip: World of Coca Cola'
 coverImage: ./images/WorldOfCocaCola-18.jpg
+category: "travel"
 tags:
     - North America
     - travel

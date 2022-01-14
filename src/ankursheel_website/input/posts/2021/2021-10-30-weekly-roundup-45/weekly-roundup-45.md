@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 45'
-excerpt: 'This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 45"
+excerpt: "This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 <!-- markdownlint-disable no-duplicate-header -->

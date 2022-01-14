@@ -123,46 +123,82 @@
         <article class="prose-code:bg-slate-400">
             
 
-    <h2>2022(1)</h2>
+
+<h2> 5 Most Recent Posts</h2>
+    <div>
+        <a href="/blog/weekly-roundup-52" class="mb-4">Weekly Roundup 52</a> - <time class="prose-sm" datetime="22-01-11">January 11, 2022</time>
+    </div>
+    <div>
+        <a href="/blog/weekly-roundup-51" class="mb-4">Weekly Roundup 51</a> - <time class="prose-sm" datetime="22-01-02">January 02, 2022</time>
+    </div>
+    <div>
+        <a href="/blog/merchants-using-stripe-decline-credit-cards" class="mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-29">December 29, 2021</time>
+    </div>
+    <div>
+        <a href="/blog/weekly-roundup-50" class="mb-4">Weekly Roundup 50</a> - <time class="prose-sm" datetime="21-12-26">December 26, 2021</time>
+    </div>
+    <div>
+        <a href="/blog/use-acl-graphql-subscriptions-redis" class="mb-4">How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</a> - <time class="prose-sm" datetime="21-12-21">December 21, 2021</time>
+    </div>
+
+<h2>By Category</h2>
+
+    <h3 class="py-4 border-b border-grey-lighter capitalize">career / work (6)</h3>
         <div>
-            <a href="/blog/weekly-roundup-51" class="mb-4">Weekly Roundup 51</a> - <time class="prose-sm" datetime="22-01-02">January 02, 2022</time>
-        </div>
-    <h2>2021(30)</h2>
-        <div>
-            <a href="/blog/merchants-using-stripe-decline-credit-cards" class="mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-29">December 29, 2021</time>
+            <a href="/blog/team-name" class="mb-4">What&#x27;s in a team name</a> - <time class="prose-sm" datetime="21-10-21">October 21, 2021</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-50" class="mb-4">Weekly Roundup 50</a> - <time class="prose-sm" datetime="21-12-26">December 26, 2021</time>
+            <a href="/blog/increasing-productivity-no-meeting-days" class="mb-4">Increasing Productivity with No-Meeting Days</a> - <time class="prose-sm" datetime="21-08-03">August 03, 2021</time>
         </div>
+        <div>
+            <a href="/blog/make-code-reviews-stress-free" class="mb-4">How to make code reviews stress free</a> - <time class="prose-sm" datetime="21-07-25">July 25, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/problem-without-solution-harmful" class="mb-4">Do not come with a problem without a solution is harmful</a> - <time class="prose-sm" datetime="20-12-16">December 16, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/interview-happy-job" class="mb-4">Why do I interview even when I am happy at my job?</a> - <time class="prose-sm" datetime="20-10-15">October 15, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/dream-job" class="mb-4">What is my idea of a dream job</a> - <time class="prose-sm" datetime="20-10-01">October 01, 2020</time>
+        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">postmortems (8)</h3>
+        <div>
+            <a href="/blog/postmortem-spring-challenge-2020-codingame-ai-contest" class="mb-4">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-20">May 20, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/postmortem-ocean-code-codingame-ai-contest" class="mb-4">A postmortem for Ocean of Code (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-02">May 02, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="mb-4">PostMortem for Codingame AI Contest: Coders of the Caribbean</a> - <time class="prose-sm" datetime="17-05-08">May 08, 2017</time>
+        </div>
+        <div>
+            <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="mb-4">A postmortem for Fantastic Bits (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-12-15">December 15, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/accountant-codingame-ai-contest-postmortem" class="mb-4">A postmortem for The Accountant (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-19">October 19, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="mb-4">A postmortem for Hypersonic (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-05">October 05, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/postmortem-asteroids" class="mb-4">A postmortem of the Asteroids clone</a> - <time class="prose-sm" datetime="14-02-05">February 05, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/postmortem-mpong" class="mb-4">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
+        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">programming (49)</h3>
         <div>
             <a href="/blog/use-acl-graphql-subscriptions-redis" class="mb-4">How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</a> - <time class="prose-sm" datetime="21-12-21">December 21, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-49" class="mb-4">Weekly Roundup 49</a> - <time class="prose-sm" datetime="21-12-19">December 19, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-48" class="mb-4">Weekly Roundup 48</a> - <time class="prose-sm" datetime="21-12-12">December 12, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-47" class="mb-4">Weekly Roundup 47</a> - <time class="prose-sm" datetime="21-12-05">December 05, 2021</time>
         </div>
         <div>
             <a href="/blog/implement-graqhql-subscriptions-hotchocolate-redis" class="mb-4">How do I implement Graphql subscriptions in HotChocolate with Redis</a> - <time class="prose-sm" datetime="21-11-11">November 11, 2021</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-46" class="mb-4">Weekly Roundup 46</a> - <time class="prose-sm" datetime="21-11-07">November 07, 2021</time>
-        </div>
-        <div>
             <a href="/blog/move-commit-between-repositories" class="mb-4">How to move a commit between repositories</a> - <time class="prose-sm" datetime="21-11-04">November 04, 2021</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-45" class="mb-4">Weekly Roundup 45</a> - <time class="prose-sm" datetime="21-10-30">October 30, 2021</time>
-        </div>
-        <div>
             <a href="/blog/change-author-multiple-git-commits" class="mb-4">How to change the author of multiple Git commits</a> - <time class="prose-sm" datetime="21-10-28">October 28, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/team-name" class="mb-4">What&#x27;s in a team name</a> - <time class="prose-sm" datetime="21-10-21">October 21, 2021</time>
         </div>
         <div>
             <a href="/blog/add-estimated-reading-time-posts-statiq" class="mb-4">How to add estimated Reading Time to Posts in Statiq</a> - <time class="prose-sm" datetime="21-10-14">October 14, 2021</time>
@@ -189,19 +225,7 @@
             <a href="/blog/override-netlify-build-config" class="mb-4">How to override the netlify build config</a> - <time class="prose-sm" datetime="21-08-23">August 23, 2021</time>
         </div>
         <div>
-            <a href="/blog/migrating-gatsby-statiq" class="mb-4">Migrating from Gatsby to Statiq</a> - <time class="prose-sm" datetime="21-08-16">August 16, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-44" class="mb-4">Weekly Roundup 44</a> - <time class="prose-sm" datetime="21-08-08">August 08, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/increasing-productivity-no-meeting-days" class="mb-4">Increasing Productivity with No-Meeting Days</a> - <time class="prose-sm" datetime="21-08-03">August 03, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/make-code-reviews-stress-free" class="mb-4">How to make code reviews stress free</a> - <time class="prose-sm" datetime="21-07-25">July 25, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/difference-stubs-mocks-fakes-spies" class="mb-4">What is the difference between Stubs, Mocks, Fakes and Spies</a> - <time class="prose-sm" datetime="21-07-15">July 15, 2021</time>
+            <a href="/blog/difference-stubs-mocks-fakes-spies" class="mb-4">What is the difference between Stubs, Mocks, Fakes and Spies</a> - <time class="prose-sm" datetime="21-07-17">July 17, 2021</time>
         </div>
         <div>
             <a href="/blog/run-sql-server-docker-container" class="mb-4">How to run SQL Server in a Docker container</a> - <time class="prose-sm" datetime="21-06-29">June 29, 2021</time>
@@ -210,65 +234,16 @@
             <a href="/blog/setup-project-properties-source-generators" class="mb-4">How to set up the project properties for Source Generators</a> - <time class="prose-sm" datetime="21-06-23">June 23, 2021</time>
         </div>
         <div>
-            <a href="/blog/reader-question-apply-storybrand-communicate-work" class="mb-4">How can we apply Storybrand to how we communicate at work</a> - <time class="prose-sm" datetime="21-06-10">June 10, 2021</time>
-        </div>
-        <div>
             <a href="/blog/reset-primary-key-sequence-out-of-sync-postgres" class="mb-4">How to reset the primary key sequence in Postgres</a> - <time class="prose-sm" datetime="21-06-03">June 03, 2021</time>
-        </div>
-        <div>
-            <a href="/blog/add-cursive-fonts-to-vs-code" class="mb-4">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
-        </div>
-    <h2>2020(48)</h2>
-        <div>
-            <a href="/blog/problem-without-solution-harmful" class="mb-4">Do not come with a problem without a solution is harmful</a> - <time class="prose-sm" datetime="20-12-16">December 16, 2020</time>
         </div>
         <div>
             <a href="/blog/automatically-set-access-token-authenticated-requests-insomnia" class="mb-4">How to automatically set the access token in Insomnia</a> - <time class="prose-sm" datetime="20-12-04">December 04, 2020</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-43" class="mb-4">Weekly Roundup 43</a> - <time class="prose-sm" datetime="20-11-29">November 29, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="mb-4">How long did it take to migrate from WordPress to Gatsby?</a> - <time class="prose-sm" datetime="20-11-25">November 25, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-42" class="mb-4">Weekly Roundup 42</a> - <time class="prose-sm" datetime="20-11-22">November 22, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-41" class="mb-4">Weekly Roundup 41</a> - <time class="prose-sm" datetime="20-11-15">November 15, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/codinators-xunit-helpers-nuget-package-update-2" class="mb-4">Codinators.XunitHelpers Nuget Package: Update 2</a> - <time class="prose-sm" datetime="20-10-23">October 23, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-40" class="mb-4">Weekly Roundup 40</a> - <time class="prose-sm" datetime="20-10-18">October 18, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/interview-happy-job" class="mb-4">Why do I interview even when I am happy at my job?</a> - <time class="prose-sm" datetime="20-10-15">October 15, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-39" class="mb-4">Weekly Roundup 39</a> - <time class="prose-sm" datetime="20-10-09">October 09, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/dream-job" class="mb-4">What is my idea of a dream job</a> - <time class="prose-sm" datetime="20-10-01">October 01, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-38" class="mb-4">Weekly Roundup 38</a> - <time class="prose-sm" datetime="20-09-30">September 30, 2020</time>
-        </div>
-        <div>
             <a href="/blog/react-component-draw-page-hooks-typescript" class="mb-4">How to draw on a page using react hooks and typescript</a> - <time class="prose-sm" datetime="20-09-26">September 26, 2020</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-37" class="mb-4">Weekly Roundup 37</a> - <time class="prose-sm" datetime="20-09-23">September 23, 2020</time>
-        </div>
-        <div>
             <a href="/blog/handle-bounces-aws-ses-terraform-2" class="mb-4">How to use terraform to process SQS messages in a lambda</a> - <time class="prose-sm" datetime="20-09-19">September 19, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-36" class="mb-4">Weekly Roundup 36</a> - <time class="prose-sm" datetime="20-09-13">September 13, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-35" class="mb-4">Weekly Roundup 35</a> - <time class="prose-sm" datetime="20-09-06">September 06, 2020</time>
         </div>
         <div>
             <a href="/blog/secure-aws-root-account-create-admin-user-access-billing" class="mb-4">How to add a billing admin user to secure an AWS root account</a> - <time class="prose-sm" datetime="20-07-25">July 25, 2020</time>
@@ -277,49 +252,13 @@
             <a href="/blog/upload-pdf-received-api-aws-s3" class="mb-4">How do you upload a PDF received from an API to AWS S3?</a> - <time class="prose-sm" datetime="20-07-15">July 15, 2020</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-34" class="mb-4">Weekly Roundup 34</a> - <time class="prose-sm" datetime="20-07-05">July 05, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-33" class="mb-4">Weekly Roundup 33</a> - <time class="prose-sm" datetime="20-06-28">June 28, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-32" class="mb-4">Weekly Roundup 32</a> - <time class="prose-sm" datetime="20-06-14">June 14, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-31" class="mb-4">Weekly Roundup 31</a> - <time class="prose-sm" datetime="20-06-07">June 07, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-30" class="mb-4">Weekly Roundup 30</a> - <time class="prose-sm" datetime="20-05-31">May 31, 2020</time>
-        </div>
-        <div>
             <a href="/blog/stop-remove-all-docker-containers" class="mb-4">How to stop and remove all Docker containers</a> - <time class="prose-sm" datetime="20-05-27">May 27, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-29" class="mb-4">Weekly Roundup 29</a> - <time class="prose-sm" datetime="20-05-24">May 24, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/postmortem-spring-challenge-2020-codingame-ai-contest" class="mb-4">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-20">May 20, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-28" class="mb-4">Weekly Roundup 28</a> - <time class="prose-sm" datetime="20-05-17">May 17, 2020</time>
         </div>
         <div>
             <a href="/blog/get-time-zone-info-windows-linux" class="mb-4">How to get TimeZoneInfo on Windows and Linux</a> - <time class="prose-sm" datetime="20-05-06">May 06, 2020</time>
         </div>
         <div>
-            <a href="/blog/postmortem-ocean-code-codingame-ai-contest" class="mb-4">A postmortem for Ocean of Code (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-02">May 02, 2020</time>
-        </div>
-        <div>
             <a href="/blog/handle-bounces-ses-terraform" class="mb-4">How to publish email bounce notifications to an SQS queue</a> - <time class="prose-sm" datetime="20-04-29">April 29, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-27" class="mb-4">Weekly Roundup 27</a> - <time class="prose-sm" datetime="20-04-12">April 12, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-26" class="mb-4">Weekly Roundup 26</a> - <time class="prose-sm" datetime="20-04-05">April 05, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-25" class="mb-4">Weekly Roundup 25</a> - <time class="prose-sm" datetime="20-03-29">March 29, 2020</time>
         </div>
         <div>
             <a href="/blog/approval-tests-with-xunit-theory-tests" class="mb-4">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a> - <time class="prose-sm" datetime="20-03-18">March 18, 2020</time>
@@ -328,83 +267,22 @@
             <a href="/blog/query-in-clause-dapper-npgsql" class="mb-4">Dapper and NPGSql : Write a query with the IN operator</a> - <time class="prose-sm" datetime="20-03-11">March 11, 2020</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-24" class="mb-4">Weekly Roundup 24</a> - <time class="prose-sm" datetime="20-03-08">March 08, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-23" class="mb-4">Weekly Roundup 23</a> - <time class="prose-sm" datetime="20-03-01">March 01, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/codinators-xunit-helpers-nuget-package-update-1" class="mb-4">Codinators.XunitHelpers Nuget Package: Update 1</a> - <time class="prose-sm" datetime="20-02-28">February 28, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-22" class="mb-4">Weekly Roundup 22</a> - <time class="prose-sm" datetime="20-02-23">February 23, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/new-release-codinators-xunit-helpers-nuget-package" class="mb-4">New Release: Codinators.XunitHelpers Nuget Package</a> - <time class="prose-sm" datetime="20-02-21">February 21, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-26-jan-2020" class="mb-4">Weekly Roundup 21</a> - <time class="prose-sm" datetime="20-01-26">January 26, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-19-jan-2020" class="mb-4">Weekly Roundup 20</a> - <time class="prose-sm" datetime="20-01-19">January 19, 2020</time>
-        </div>
-        <div>
             <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule" class="mb-4">How to deploy a Gatsby site on a schedule with Azure Pipelines</a> - <time class="prose-sm" datetime="20-01-17">January 17, 2020</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-12-jan-2020" class="mb-4">Weekly Roundup 19</a> - <time class="prose-sm" datetime="20-01-12">January 12, 2020</time>
         </div>
         <div>
             <a href="/blog/create-sns-topic-ses-not-default-provider" class="mb-4">How to create an SNS topic for SES in a different region with terraform</a> - <time class="prose-sm" datetime="20-01-10">January 10, 2020</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-05-jan-2020" class="mb-4">Weekly Roundup 18</a> - <time class="prose-sm" datetime="20-01-05">January 05, 2020</time>
-        </div>
-        <div>
             <a href="/blog/deploy-gatsby-site-netlify-azure-pipelines" class="mb-4">How to deploy a Gatsby site to Netlify using Azure Pipelines</a> - <time class="prose-sm" datetime="20-01-03">January 03, 2020</time>
-        </div>
-    <h2>2019(17)</h2>
-        <div>
-            <a href="/blog/weekly-roundup-29-dec-2019" class="mb-4">Weekly Roundup 17</a> - <time class="prose-sm" datetime="19-12-29">December 29, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura" class="mb-4">How to export highlights and annotations from a Kobo Aura</a> - <time class="prose-sm" datetime="19-12-25">December 25, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-22-dec-2019" class="mb-4">Weekly Roundup 16</a> - <time class="prose-sm" datetime="19-12-22">December 22, 2019</time>
         </div>
         <div>
             <a href="/blog/full-width-you-tube-video-embed" class="mb-4">Embed a YouTube video with 16:9 aspect ratio and full-width</a> - <time class="prose-sm" datetime="19-12-18">December 18, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-15-dec-2019" class="mb-4">Weekly Roundup 15</a> - <time class="prose-sm" datetime="19-12-15">December 15, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-08-dec-2019" class="mb-4">Weekly Roundup 14</a> - <time class="prose-sm" datetime="19-12-08">December 08, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-01-dec-2019" class="mb-4">Weekly Roundup 13</a> - <time class="prose-sm" datetime="19-12-01">December 01, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-24-nov-2019" class="mb-4">Weekly Roundup 12</a> - <time class="prose-sm" datetime="19-11-24">November 24, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-17-nov-2019" class="mb-4">Weekly Roundup 11</a> - <time class="prose-sm" datetime="19-11-17">November 17, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-27-oct-2019" class="mb-4">Weekly Roundup 10</a> - <time class="prose-sm" datetime="19-10-27">October 27, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/impossible-list-or-a-bucket-list" class="mb-4">Should you make an Impossible List or a Bucket List?</a> - <time class="prose-sm" datetime="19-09-15">September 15, 2019</time>
         </div>
         <div>
             <a href="/blog/automating-creation-of-new-blog-post" class="mb-4">How to automate the creation of a new blog post</a> - <time class="prose-sm" datetime="19-09-12">September 12, 2019</time>
         </div>
         <div>
             <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site" class="mb-4">How to add an RSS feed with images to a Gatsby site</a> - <time class="prose-sm" datetime="19-08-30">August 30, 2019</time>
-        </div>
-        <div>
-            <a href="/blog/migrating-from-wordpress-to-gatsby" class="mb-4">Why and How I migrated my website from WordPress to Gatsby</a> - <time class="prose-sm" datetime="19-08-29">August 29, 2019</time>
         </div>
         <div>
             <a href="/blog/custom-type-definitions-for-java-script-dependencies" class="mb-4">Create custom type definitions for JavaScript dependencies</a> - <time class="prose-sm" datetime="19-08-23">August 23, 2019</time>
@@ -415,9 +293,57 @@
         <div>
             <a href="/blog/load-test-data-json-file-xunit-tests" class="mb-4">How to load test data from a JSON file for xUnit tests</a> - <time class="prose-sm" datetime="19-02-20">February 20, 2019</time>
         </div>
-    <h2>2018(6)</h2>
         <div>
             <a href="/blog/securing-git-commits-windows" class="mb-4">A guide to securing git commits from tricking you on Windows</a> - <time class="prose-sm" datetime="18-09-10">September 10, 2018</time>
+        </div>
+        <div>
+            <a href="/blog/dynamic-programming-editlevenshtein-distance" class="mb-4">Solve Edit(Levenshtein) distance with Dynamic Programming</a> - <time class="prose-sm" datetime="17-05-22">May 22, 2017</time>
+        </div>
+        <div>
+            <a href="/blog/dynamic-programming-longest-common-subsequence" class="mb-4">Solve Longest Common Subsequence with Dynamic Programming</a> - <time class="prose-sm" datetime="17-04-09">April 09, 2017</time>
+        </div>
+        <div>
+            <a href="/blog/dynamic-programming-series-introduction" class="mb-4">A guide to getting started with Dynamic Programming</a> - <time class="prose-sm" datetime="17-03-27">March 27, 2017</time>
+        </div>
+        <div>
+            <a href="/blog/noncopyable-objects" class="mb-4">How to prevent the compiler from copying an object in cpp</a> - <time class="prose-sm" datetime="14-01-22">January 22, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/installing-wordpress" class="mb-4">How to setup WordPress locally: Installing WordPress</a> - <time class="prose-sm" datetime="14-01-15">January 15, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/installing-phpmyadmin" class="mb-4">How to setup WordPress locally: Installing phpMyAdmin</a> - <time class="prose-sm" datetime="14-01-08">January 08, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/installing-mysql" class="mb-4">How to setup WordPress locally: Installing MySQL</a> - <time class="prose-sm" datetime="14-01-01">January 01, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/installing-php" class="mb-4">How to setup WordPress locally: Installing PHP</a> - <time class="prose-sm" datetime="13-12-25">December 25, 2013</time>
+        </div>
+        <div>
+            <a href="/blog/installing-apache" class="mb-4">Setup WordPress locally: Installing an Apache Web Server</a> - <time class="prose-sm" datetime="13-12-18">December 18, 2013</time>
+        </div>
+        <div>
+            <a href="/blog/memory-leak-woes" class="mb-4">A guide to finding memory leaks using macros in C&#x2B;&#x2B;</a> - <time class="prose-sm" datetime="13-12-11">December 11, 2013</time>
+        </div>
+        <div>
+            <a href="/blog/dll-basics" class="mb-4">How to start using Dynamic-link libraries (DLL)</a> - <time class="prose-sm" datetime="13-12-04">December 04, 2013</time>
+        </div>
+        <div>
+            <a href="/blog/setting-project-properties" class="mb-4">Setting up the project properties for Game Engine Project</a> - <time class="prose-sm" datetime="13-11-27">November 27, 2013</time>
+        </div>
+        <div>
+            <a href="/blog/setting-project-directory-structure" class="mb-4">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
+        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">project updates (12)</h3>
+        <div>
+            <a href="/blog/codinators-xunit-helpers-nuget-package-update-2" class="mb-4">Codinators.XunitHelpers Nuget Package: Update 2</a> - <time class="prose-sm" datetime="20-10-23">October 23, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/codinators-xunit-helpers-nuget-package-update-1" class="mb-4">Codinators.XunitHelpers Nuget Package: Update 1</a> - <time class="prose-sm" datetime="20-02-28">February 28, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/new-release-codinators-xunit-helpers-nuget-package" class="mb-4">New Release: Codinators.XunitHelpers Nuget Package</a> - <time class="prose-sm" datetime="20-02-21">February 21, 2020</time>
         </div>
         <div>
             <a href="/blog/jah-update-7" class="mb-4">JAH Update 7</a> - <time class="prose-sm" datetime="18-06-14">June 14, 2018</time>
@@ -434,7 +360,6 @@
         <div>
             <a href="/blog/jah-update-3" class="mb-4">JAH: Update 3</a> - <time class="prose-sm" datetime="18-01-04">January 04, 2018</time>
         </div>
-    <h2>2017(9)</h2>
         <div>
             <a href="/blog/jah-update-2" class="mb-4">JAH: Update 2</a> - <time class="prose-sm" datetime="17-12-21">December 21, 2017</time>
         </div>
@@ -445,68 +370,57 @@
             <a href="/blog/new-side-project-jah" class="mb-4">New Side Project: JAH</a> - <time class="prose-sm" datetime="17-12-13">December 13, 2017</time>
         </div>
         <div>
-            <a href="/blog/dynamic-programming-editlevenshtein-distance" class="mb-4">Solve Edit(Levenshtein) distance with Dynamic Programming</a> - <time class="prose-sm" datetime="17-05-22">May 22, 2017</time>
+            <a href="/blog/breakout-clone-v1-0" class="mb-4">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="14-04-05">April 05, 2014</time>
+        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">ramblings (15)</h3>
+        <div>
+            <a href="/blog/merchants-using-stripe-decline-credit-cards" class="mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-29">December 29, 2021</time>
         </div>
         <div>
-            <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="mb-4">PostMortem for Codingame AI Contest: Coders of the Caribbean</a> - <time class="prose-sm" datetime="17-05-08">May 08, 2017</time>
+            <a href="/blog/migrating-gatsby-statiq" class="mb-4">Migrating from Gatsby to Statiq</a> - <time class="prose-sm" datetime="21-08-16">August 16, 2021</time>
         </div>
         <div>
-            <a href="/blog/dynamic-programming-longest-common-subsequence" class="mb-4">Solve Longest Common Subsequence with Dynamic Programming</a> - <time class="prose-sm" datetime="17-04-09">April 09, 2017</time>
+            <a href="/blog/reader-question-apply-storybrand-communicate-work" class="mb-4">How can we apply Storybrand to how we communicate at work</a> - <time class="prose-sm" datetime="21-06-10">June 10, 2021</time>
         </div>
         <div>
-            <a href="/blog/dynamic-programming-series-introduction" class="mb-4">A guide to getting started with Dynamic Programming</a> - <time class="prose-sm" datetime="17-03-27">March 27, 2017</time>
+            <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="mb-4">How long did it take to migrate from WordPress to Gatsby?</a> - <time class="prose-sm" datetime="20-11-25">November 25, 2020</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-9" class="mb-4">Weekly Roundup 9</a> - <time class="prose-sm" datetime="17-03-18">March 18, 2017</time>
+            <a href="/blog/impossible-list-or-a-bucket-list" class="mb-4">Should you make an Impossible List or a Bucket List?</a> - <time class="prose-sm" datetime="19-09-15">September 15, 2019</time>
         </div>
         <div>
-            <a href="/blog/popular-posts-2016" class="mb-4">What were my most popular posts in 2016</a> - <time class="prose-sm" datetime="17-02-08">February 08, 2017</time>
-        </div>
-    <h2>2016(21)</h2>
-        <div>
-            <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="mb-4">A postmortem for Fantastic Bits (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-12-15">December 15, 2016</time>
+            <a href="/blog/migrating-from-wordpress-to-gatsby" class="mb-4">Why and How I migrated my website from WordPress to Gatsby</a> - <time class="prose-sm" datetime="19-08-29">August 29, 2019</time>
         </div>
         <div>
             <a href="/blog/fantastic-bits-codingame" class="mb-4">Why you should compete in Fantastic Bits @ Codingame</a> - <time class="prose-sm" datetime="16-11-23">November 23, 2016</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-8" class="mb-4">Weekly Roundup 8</a> - <time class="prose-sm" datetime="16-10-22">October 22, 2016</time>
+            <a href="/blog/rent-buy-house" class="mb-4">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="16-05-03">May 03, 2016</time>
         </div>
         <div>
-            <a href="/blog/accountant-codingame-ai-contest-postmortem" class="mb-4">A post-mortem for The Accountant (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-19">October 19, 2016</time>
+            <a href="/blog/review-takapuna-car-clinic-auckland" class="mb-4">Review: Takapuna Car Clinic, Auckland</a> - <time class="prose-sm" datetime="15-11-24">November 24, 2015</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-7" class="mb-4">Weekly Roundup 7</a> - <time class="prose-sm" datetime="16-10-15">October 15, 2016</time>
+            <a href="/blog/product-review-paper-boat-drinks" class="mb-4">Product Review: Paper Boat Drinks</a> - <time class="prose-sm" datetime="14-04-04">April 04, 2014</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-6" class="mb-4">Weekly Roundup 6</a> - <time class="prose-sm" datetime="16-10-08">October 08, 2016</time>
+            <a href="/blog/asteroid-clone" class="mb-4">Why I am building an Asteroid clone as the next game</a> - <time class="prose-sm" datetime="13-12-23">December 23, 2013</time>
         </div>
         <div>
-            <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="mb-4">A post-mortem for Hypersonic (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-05">October 05, 2016</time>
+            <a href="/blog/ten-things-achieve-starting-3d-programming" class="mb-4">10 things to do when getting started with 3D programming</a> - <time class="prose-sm" datetime="13-12-16">December 16, 2013</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-5" class="mb-4">Weekly Roundup 5</a> - <time class="prose-sm" datetime="16-10-01">October 01, 2016</time>
+            <a href="/blog/making-pong-take" class="mb-4">What does making Pong take?</a> - <time class="prose-sm" datetime="13-12-08">December 08, 2013</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-4" class="mb-4">Weekly Roundup 4</a> - <time class="prose-sm" datetime="16-09-24">September 24, 2016</time>
+            <a href="/blog/child-appreciation" class="mb-4">Why being an only child is awesome</a> - <time class="prose-sm" datetime="13-12-02">December 02, 2013</time>
         </div>
         <div>
-            <a href="/blog/weekly-roundup-3" class="mb-4">Weekly Roundup 3</a> - <time class="prose-sm" datetime="16-09-17">September 17, 2016</time>
+            <a href="/blog/smokehouse-deli-bangalore" class="mb-4">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
         </div>
-        <div>
-            <a href="/blog/weekly-roundup-2" class="mb-4">Weekly Roundup 2</a> - <time class="prose-sm" datetime="16-09-10">September 10, 2016</time>
-        </div>
-        <div>
-            <a href="/blog/weekly-roundup-1" class="mb-4">Weekly Roundup 1</a> - <time class="prose-sm" datetime="16-09-03">September 03, 2016</time>
-        </div>
-        <div>
-            <a href="/blog/video-bungee-jump-queenstown" class="mb-4">Video: Bungee Jump in Queenstown</a> - <time class="prose-sm" datetime="16-05-17">May 17, 2016</time>
-        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">travel (47)</h3>
         <div>
             <a href="/blog/new-zealand-escapes-photo-essay-milford-sound" class="mb-4">New Zealand Escapes: Photo Essay - Milford Sound</a> - <time class="prose-sm" datetime="16-05-10">May 10, 2016</time>
-        </div>
-        <div>
-            <a href="/blog/rent-buy-house" class="mb-4">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="16-05-03">May 03, 2016</time>
         </div>
         <div>
             <a href="/blog/new-zealand-escapes-tranzalpine-express" class="mb-4">New Zealand Escapes: KiwiRail - TranzAlpine Express</a> - <time class="prose-sm" datetime="16-03-15">March 15, 2016</time>
@@ -526,21 +440,11 @@
         <div>
             <a href="/blog/new-zealand-escapes-tamaki-maori-village-rotorua" class="mb-4">New Zealand Escapes: Tamaki Maori Village, Rotorua</a> - <time class="prose-sm" datetime="16-01-05">January 05, 2016</time>
         </div>
-    <h2>2015(19)</h2>
-        <div>
-            <a href="/blog/my-most-popular-posts-in-2015" class="mb-4">What are my most popular posts in 2015</a> - <time class="prose-sm" datetime="15-12-25">December 25, 2015</time>
-        </div>
         <div>
             <a href="/blog/new-zealand-escapes-hobbiton-matamata" class="mb-4">New Zealand Escapes: Hobbiton, Matamata</a> - <time class="prose-sm" datetime="15-12-22">December 22, 2015</time>
         </div>
         <div>
             <a href="/blog/new-zealand-escapes-auckland-seaplanes" class="mb-4">New Zealand Escapes: Auckland Seaplanes</a> - <time class="prose-sm" datetime="15-12-01">December 01, 2015</time>
-        </div>
-        <div>
-            <a href="/blog/review-takapuna-car-clinic-auckland" class="mb-4">Review: Takapuna Car Clinic, Auckland</a> - <time class="prose-sm" datetime="15-11-24">November 24, 2015</time>
-        </div>
-        <div>
-            <a href="/blog/photo-essay-india-vs-zimbabwe-world-cup-2015" class="mb-4">Photo Essay: India Vs Zimbabwe, World Cup 2015</a> - <time class="prose-sm" datetime="15-11-03">November 03, 2015</time>
         </div>
         <div>
             <a href="/blog/new-zealand-escapes-northland-part-2" class="mb-4">New Zealand Escapes: Northland - Part 2</a> - <time class="prose-sm" datetime="15-10-27">October 27, 2015</time>
@@ -564,19 +468,7 @@
             <a href="/blog/photo-essay-seattle-washington" class="mb-4">Photo Essay: Seattle, Washington</a> - <time class="prose-sm" datetime="15-05-19">May 19, 2015</time>
         </div>
         <div>
-            <a href="/blog/video-goat-glacier-national-park" class="mb-4">Video: Goat in Glacier National Park</a> - <time class="prose-sm" datetime="15-02-17">February 17, 2015</time>
-        </div>
-        <div>
             <a href="/blog/photo-essay-glacier-national-park-montana" class="mb-4">Photo Essay: Glacier National Park, Montana</a> - <time class="prose-sm" datetime="15-02-10">February 10, 2015</time>
-        </div>
-        <div>
-            <a href="/blog/videos-bear-yellowstone-national-park" class="mb-4">Video: Bear at Yellowstone National Park</a> - <time class="prose-sm" datetime="15-02-03">February 03, 2015</time>
-        </div>
-        <div>
-            <a href="/blog/videos-yellowstone-national-park-geysers" class="mb-4">Videos: Yellowstone National Park Geysers</a> - <time class="prose-sm" datetime="15-01-27">January 27, 2015</time>
-        </div>
-        <div>
-            <a href="/blog/video-old-faithful-geyser" class="mb-4">Video: Old Faithful Geyser</a> - <time class="prose-sm" datetime="15-01-20">January 20, 2015</time>
         </div>
         <div>
             <a href="/blog/photo-essay-yellowstone-national-park-wyoming" class="mb-4">Photo Essay: Yellowstone National Park, Wyoming</a> - <time class="prose-sm" datetime="15-01-13">January 13, 2015</time>
@@ -584,7 +476,6 @@
         <div>
             <a href="/blog/photo-essay-corn-palace-south-dakota" class="mb-4">Photo Essay: Corn Palace, South Dakota</a> - <time class="prose-sm" datetime="15-01-06">January 06, 2015</time>
         </div>
-    <h2>2014(32)</h2>
         <div>
             <a href="/blog/diwali-auckland-2014" class="mb-4">Photo Essay: Diwali in Auckland</a> - <time class="prose-sm" datetime="14-11-03">November 03, 2014</time>
         </div>
@@ -616,12 +507,6 @@
             <a href="/blog/photo-essay-legoland-san-diego" class="mb-4">Photo Essay: Legoland, San Diego</a> - <time class="prose-sm" datetime="14-04-09">April 09, 2014</time>
         </div>
         <div>
-            <a href="/blog/breakout-clone-v1-0" class="mb-4">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="14-04-05">April 05, 2014</time>
-        </div>
-        <div>
-            <a href="/blog/product-review-paper-boat-drinks" class="mb-4">Product Review: Paper Boat Drinks</a> - <time class="prose-sm" datetime="14-04-04">April 04, 2014</time>
-        </div>
-        <div>
             <a href="/blog/photo-essay-san-diego-zoo-san-diego" class="mb-4">Photo Essay: San Diego Zoo, San Diego</a> - <time class="prose-sm" datetime="14-04-02">April 02, 2014</time>
         </div>
         <div>
@@ -643,104 +528,241 @@
             <a href="/blog/photo-series-jodhpur" class="mb-4">Photo Series: Jodhpur</a> - <time class="prose-sm" datetime="14-02-19">February 19, 2014</time>
         </div>
         <div>
-            <a href="/blog/belly-dance" class="mb-4">Video: Belly Dance</a> - <time class="prose-sm" datetime="14-02-14">February 14, 2014</time>
-        </div>
-        <div>
-            <a href="/blog/tandura-dance" class="mb-4">Video: Tandura Dance</a> - <time class="prose-sm" datetime="14-02-07">February 07, 2014</time>
-        </div>
-        <div>
-            <a href="/blog/postmortem-asteroids" class="mb-4">A post-mortem of the Asteroids clone</a> - <time class="prose-sm" datetime="14-02-05">February 05, 2014</time>
-        </div>
-        <div>
             <a href="/blog/desert-safari" class="mb-4">Desert Safari</a> - <time class="prose-sm" datetime="14-01-31">January 31, 2014</time>
-        </div>
-        <div>
-            <a href="/blog/filtering-google-analytics" class="mb-4">How to filter yourself from showing up in Google Analytics</a> - <time class="prose-sm" datetime="14-01-29">January 29, 2014</time>
         </div>
         <div>
             <a href="/blog/atlantis-lost-chambers" class="mb-4">Atlantis The Lost Chambers</a> - <time class="prose-sm" datetime="14-01-24">January 24, 2014</time>
         </div>
         <div>
-            <a href="/blog/noncopyable-objects" class="mb-4">How to prevent the compiler from copying an object in cpp</a> - <time class="prose-sm" datetime="14-01-22">January 22, 2014</time>
-        </div>
-        <div>
             <a href="/blog/inside-jumeirah-mosque" class="mb-4">Understanding Islam inside the Jumeirah Mosque</a> - <time class="prose-sm" datetime="14-01-17">January 17, 2014</time>
-        </div>
-        <div>
-            <a href="/blog/installing-wordpress" class="mb-4">How to setup WordPress locally: Installing WordPress</a> - <time class="prose-sm" datetime="14-01-15">January 15, 2014</time>
         </div>
         <div>
             <a href="/blog/dubai-fountain" class="mb-4">Dubai Fountain</a> - <time class="prose-sm" datetime="14-01-10">January 10, 2014</time>
         </div>
         <div>
-            <a href="/blog/installing-phpmyadmin" class="mb-4">How to setup WordPress locally: Installing phpMyAdmin</a> - <time class="prose-sm" datetime="14-01-08">January 08, 2014</time>
-        </div>
-        <div>
             <a href="/blog/atthetop" class="mb-4">At the Top: Burj Khalifa</a> - <time class="prose-sm" datetime="14-01-03">January 03, 2014</time>
         </div>
         <div>
-            <a href="/blog/installing-mysql" class="mb-4">How to setup WordPress locally: Installing MySQL</a> - <time class="prose-sm" datetime="14-01-01">January 01, 2014</time>
-        </div>
-    <h2>2013(20)</h2>
-        <div>
             <a href="/blog/abra-souqs" class="mb-4">Abra and Souqs in Dubai</a> - <time class="prose-sm" datetime="13-12-27">December 27, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/installing-php" class="mb-4">How to setup WordPress locally: Installing PHP</a> - <time class="prose-sm" datetime="13-12-25">December 25, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/asteroid-clone" class="mb-4">Why I am building an Asteroid clone as the next game</a> - <time class="prose-sm" datetime="13-12-23">December 23, 2013</time>
         </div>
         <div>
             <a href="/blog/wafi-mall" class="mb-4">A visit to Wafi Mall</a> - <time class="prose-sm" datetime="13-12-20">December 20, 2013</time>
         </div>
         <div>
-            <a href="/blog/installing-apache" class="mb-4">Setup WordPress locally: Installing an Apache Web Server</a> - <time class="prose-sm" datetime="13-12-18">December 18, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/testing-wordpress-locally-series" class="mb-4">How to setup WordPress locally: Introduction</a> - <time class="prose-sm" datetime="13-12-17">December 17, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/ten-things-achieve-starting-3d-programming" class="mb-4">10 things to do when getting started with 3D programming</a> - <time class="prose-sm" datetime="13-12-16">December 16, 2013</time>
-        </div>
-        <div>
             <a href="/blog/dubai-dolphinarium" class="mb-4">Dubai Dolphinarium</a> - <time class="prose-sm" datetime="13-12-13">December 13, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/memory-leak-woes" class="mb-4">A guide to finding memory leaks using macros in C&#x2B;&#x2B;</a> - <time class="prose-sm" datetime="13-12-11">December 11, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/postmortem-mpong" class="mb-4">A PostMortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/making-pong-take" class="mb-4">What does making Pong take?</a> - <time class="prose-sm" datetime="13-12-08">December 08, 2013</time>
         </div>
         <div>
             <a href="/blog/greenwich-london-eye" class="mb-4">Visiting Greenwich and taking a ride on London Eye</a> - <time class="prose-sm" datetime="13-12-06">December 06, 2013</time>
         </div>
         <div>
-            <a href="/blog/dll-basics" class="mb-4">How to start using Dynamic-link libraries (DLL)</a> - <time class="prose-sm" datetime="13-12-04">December 04, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/child-appreciation" class="mb-4">Why being an only child is awesome</a> - <time class="prose-sm" datetime="13-12-02">December 02, 2013</time>
-        </div>
-        <div>
             <a href="/blog/walking-around-london" class="mb-4">Walking Around in London</a> - <time class="prose-sm" datetime="13-11-29">November 29, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/setting-project-properties" class="mb-4">Setting up the project properties for Game Engine Project</a> - <time class="prose-sm" datetime="13-11-27">November 27, 2013</time>
-        </div>
-        <div>
-            <a href="/blog/smokehouse-deli-bangalore" class="mb-4">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
         </div>
         <div>
             <a href="/blog/london" class="mb-4">Roaming around in London</a> - <time class="prose-sm" datetime="13-11-22">November 22, 2013</time>
         </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">Uncategorized (8)</h3>
         <div>
-            <a href="/blog/setting-project-directory-structure" class="mb-4">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
+            <a href="/blog/add-cursive-fonts-to-vs-code" class="mb-4">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura" class="mb-4">How to export highlights and annotations from a Kobo Aura</a> - <time class="prose-sm" datetime="19-12-25">December 25, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/popular-posts-2016" class="mb-4">What were my most popular posts in 2016</a> - <time class="prose-sm" datetime="17-02-08">February 08, 2017</time>
+        </div>
+        <div>
+            <a href="/blog/my-most-popular-posts-in-2015" class="mb-4">What are my most popular posts in 2015</a> - <time class="prose-sm" datetime="15-12-25">December 25, 2015</time>
+        </div>
+        <div>
+            <a href="/blog/photo-essay-india-vs-zimbabwe-world-cup-2015" class="mb-4">Photo Essay: India Vs Zimbabwe, World Cup 2015</a> - <time class="prose-sm" datetime="15-11-03">November 03, 2015</time>
+        </div>
+        <div>
+            <a href="/blog/filtering-google-analytics" class="mb-4">How to filter yourself from showing up in Google Analytics</a> - <time class="prose-sm" datetime="14-01-29">January 29, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/testing-wordpress-locally-series" class="mb-4">How to setup WordPress locally: Introduction</a> - <time class="prose-sm" datetime="13-12-19">December 19, 2013</time>
         </div>
         <div>
             <a href="/blog/beginning" class="mb-4">The Beginning</a> - <time class="prose-sm" datetime="13-11-19">November 19, 2013</time>
+        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">video (7)</h3>
+        <div>
+            <a href="/blog/video-bungee-jump-queenstown" class="mb-4">Video: Bungee Jump in Queenstown</a> - <time class="prose-sm" datetime="16-05-17">May 17, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/video-goat-glacier-national-park" class="mb-4">Video: Goat in Glacier National Park</a> - <time class="prose-sm" datetime="15-02-17">February 17, 2015</time>
+        </div>
+        <div>
+            <a href="/blog/videos-bear-yellowstone-national-park" class="mb-4">Video: Bear at Yellowstone National Park</a> - <time class="prose-sm" datetime="15-02-03">February 03, 2015</time>
+        </div>
+        <div>
+            <a href="/blog/videos-yellowstone-national-park-geysers" class="mb-4">Videos: Yellowstone National Park Geysers</a> - <time class="prose-sm" datetime="15-01-27">January 27, 2015</time>
+        </div>
+        <div>
+            <a href="/blog/video-old-faithful-geyser" class="mb-4">Video: Old Faithful Geyser</a> - <time class="prose-sm" datetime="15-01-20">January 20, 2015</time>
+        </div>
+        <div>
+            <a href="/blog/belly-dance" class="mb-4">Video: Belly Dance</a> - <time class="prose-sm" datetime="14-02-14">February 14, 2014</time>
+        </div>
+        <div>
+            <a href="/blog/tandura-dance" class="mb-4">Video: Tandura Dance</a> - <time class="prose-sm" datetime="14-02-07">February 07, 2014</time>
+        </div>
+    <h3 class="py-4 border-b border-grey-lighter capitalize">weekly roundup (52)</h3>
+        <div>
+            <a href="/blog/weekly-roundup-52" class="mb-4">Weekly Roundup 52</a> - <time class="prose-sm" datetime="22-01-11">January 11, 2022</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-51" class="mb-4">Weekly Roundup 51</a> - <time class="prose-sm" datetime="22-01-02">January 02, 2022</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-50" class="mb-4">Weekly Roundup 50</a> - <time class="prose-sm" datetime="21-12-26">December 26, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-49" class="mb-4">Weekly Roundup 49</a> - <time class="prose-sm" datetime="21-12-19">December 19, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-48" class="mb-4">Weekly Roundup 48</a> - <time class="prose-sm" datetime="21-12-12">December 12, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-47" class="mb-4">Weekly Roundup 47</a> - <time class="prose-sm" datetime="21-12-05">December 05, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-46" class="mb-4">Weekly Roundup 46</a> - <time class="prose-sm" datetime="21-11-07">November 07, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-45" class="mb-4">Weekly Roundup 45</a> - <time class="prose-sm" datetime="21-10-30">October 30, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-44" class="mb-4">Weekly Roundup 44</a> - <time class="prose-sm" datetime="21-08-08">August 08, 2021</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-43" class="mb-4">Weekly Roundup 43</a> - <time class="prose-sm" datetime="20-11-29">November 29, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-42" class="mb-4">Weekly Roundup 42</a> - <time class="prose-sm" datetime="20-11-22">November 22, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-41" class="mb-4">Weekly Roundup 41</a> - <time class="prose-sm" datetime="20-11-15">November 15, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-40" class="mb-4">Weekly Roundup 40</a> - <time class="prose-sm" datetime="20-10-18">October 18, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-39" class="mb-4">Weekly Roundup 39</a> - <time class="prose-sm" datetime="20-10-09">October 09, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-38" class="mb-4">Weekly Roundup 38</a> - <time class="prose-sm" datetime="20-09-30">September 30, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-37" class="mb-4">Weekly Roundup 37</a> - <time class="prose-sm" datetime="20-09-23">September 23, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-36" class="mb-4">Weekly Roundup 36</a> - <time class="prose-sm" datetime="20-09-13">September 13, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-35" class="mb-4">Weekly Roundup 35</a> - <time class="prose-sm" datetime="20-09-06">September 06, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-34" class="mb-4">Weekly Roundup 34</a> - <time class="prose-sm" datetime="20-07-05">July 05, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-33" class="mb-4">Weekly Roundup 33</a> - <time class="prose-sm" datetime="20-06-28">June 28, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-32" class="mb-4">Weekly Roundup 32</a> - <time class="prose-sm" datetime="20-06-14">June 14, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-31" class="mb-4">Weekly Roundup 31</a> - <time class="prose-sm" datetime="20-06-07">June 07, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-30" class="mb-4">Weekly Roundup 30</a> - <time class="prose-sm" datetime="20-05-31">May 31, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-29" class="mb-4">Weekly Roundup 29</a> - <time class="prose-sm" datetime="20-05-24">May 24, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-28" class="mb-4">Weekly Roundup 28</a> - <time class="prose-sm" datetime="20-05-17">May 17, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-27" class="mb-4">Weekly Roundup 27</a> - <time class="prose-sm" datetime="20-04-12">April 12, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-26" class="mb-4">Weekly Roundup 26</a> - <time class="prose-sm" datetime="20-04-05">April 05, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-25" class="mb-4">Weekly Roundup 25</a> - <time class="prose-sm" datetime="20-03-29">March 29, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-24" class="mb-4">Weekly Roundup 24</a> - <time class="prose-sm" datetime="20-03-08">March 08, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-23" class="mb-4">Weekly Roundup 23</a> - <time class="prose-sm" datetime="20-03-01">March 01, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-22" class="mb-4">Weekly Roundup 22</a> - <time class="prose-sm" datetime="20-02-23">February 23, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-26-jan-2020" class="mb-4">Weekly Roundup 21</a> - <time class="prose-sm" datetime="20-01-26">January 26, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-19-jan-2020" class="mb-4">Weekly Roundup 20</a> - <time class="prose-sm" datetime="20-01-19">January 19, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-12-jan-2020" class="mb-4">Weekly Roundup 19</a> - <time class="prose-sm" datetime="20-01-12">January 12, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-05-jan-2020" class="mb-4">Weekly Roundup 18</a> - <time class="prose-sm" datetime="20-01-05">January 05, 2020</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-29-dec-2019" class="mb-4">Weekly Roundup 17</a> - <time class="prose-sm" datetime="19-12-29">December 29, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-22-dec-2019" class="mb-4">Weekly Roundup 16</a> - <time class="prose-sm" datetime="19-12-22">December 22, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-15-dec-2019" class="mb-4">Weekly Roundup 15</a> - <time class="prose-sm" datetime="19-12-15">December 15, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-08-dec-2019" class="mb-4">Weekly Roundup 14</a> - <time class="prose-sm" datetime="19-12-08">December 08, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-01-dec-2019" class="mb-4">Weekly Roundup 13</a> - <time class="prose-sm" datetime="19-12-01">December 01, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-24-nov-2019" class="mb-4">Weekly Roundup 12</a> - <time class="prose-sm" datetime="19-11-24">November 24, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-17-nov-2019" class="mb-4">Weekly Roundup 11</a> - <time class="prose-sm" datetime="19-11-17">November 17, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-27-oct-2019" class="mb-4">Weekly Roundup 10</a> - <time class="prose-sm" datetime="19-10-27">October 27, 2019</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-9" class="mb-4">Weekly Roundup 9</a> - <time class="prose-sm" datetime="17-03-18">March 18, 2017</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-8" class="mb-4">Weekly Roundup 8</a> - <time class="prose-sm" datetime="16-10-22">October 22, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-7" class="mb-4">Weekly Roundup 7</a> - <time class="prose-sm" datetime="16-10-15">October 15, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-6" class="mb-4">Weekly Roundup 6</a> - <time class="prose-sm" datetime="16-10-08">October 08, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-5" class="mb-4">Weekly Roundup 5</a> - <time class="prose-sm" datetime="16-10-01">October 01, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-4" class="mb-4">Weekly Roundup 4</a> - <time class="prose-sm" datetime="16-09-24">September 24, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-3" class="mb-4">Weekly Roundup 3</a> - <time class="prose-sm" datetime="16-09-17">September 17, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-2" class="mb-4">Weekly Roundup 2</a> - <time class="prose-sm" datetime="16-09-10">September 10, 2016</time>
+        </div>
+        <div>
+            <a href="/blog/weekly-roundup-1" class="mb-4">Weekly Roundup 1</a> - <time class="prose-sm" datetime="16-09-03">September 03, 2016</time>
         </div>
 
         </article>

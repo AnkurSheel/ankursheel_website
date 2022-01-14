@@ -2,6 +2,7 @@
 title: 'Photo Essay: Yellowstone National Park, Wyoming'
 excerpt: From the Corn Palace, we now move to Yellowstone National Park. It is a beautiful place, and pictures cannot do justice.
 coverImage: ./images/Yellowstone-7.jpg
+category: "travel"
 tags:
     - North America
     - travel

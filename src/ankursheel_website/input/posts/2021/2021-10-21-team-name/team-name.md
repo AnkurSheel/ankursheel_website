@@ -2,6 +2,7 @@
 title: "What's in a team name"
 excerpt: 'Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names'
 coverImage: './cover.jpg'
+category: "career / work"
 tags:
     - 'ramblings'
     - 'company culture'

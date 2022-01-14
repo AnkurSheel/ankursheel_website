@@ -1,6 +1,7 @@
 ---
 title: 'How to replace a pipeline in Statiq'
 excerpt: 'A guide to replacing a pipeline in Statiq'
+category: "programming"
 tags:
     - 'Statiq'
     - 'website migration'

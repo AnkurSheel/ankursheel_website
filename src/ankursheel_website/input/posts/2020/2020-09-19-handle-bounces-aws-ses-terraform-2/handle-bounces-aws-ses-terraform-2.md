@@ -2,6 +2,7 @@
 title: 'How to use terraform to process SQS messages in a lambda'
 excerpt: 'In this post, we will set up a lambda to process the messages that are available on the queue'
 coverImage: './cover.jpg'
+category: "programming"
 tags:
     - 'terraform'
     - 'devops'

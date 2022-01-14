@@ -2,6 +2,7 @@
 title: 'JAH: Update 3'
 excerpt: 'JAH Update 3: v 0.0.5 adds the ability to update the status of existing applications'
 coverImage: ./images/jah_update3_2.jpg
+category: "project updates"
 tags:
     - project updates
     - JAH

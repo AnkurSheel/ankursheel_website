@@ -2,6 +2,7 @@
 title: 'Photo Essay: SeaWorld, San Diego'
 excerpt: No visit to San Diego is complete without paying a visit to the Orcas at Seaworld.
 coverImage: ./images/SeaWorld-4.jpg
+category: "travel"
 tags:
     - North America
     - travel

@@ -2,6 +2,7 @@
 title: Breakout Clone v1.0
 excerpt: The first release of the Breakout clone is finally here.
 coverImage: ./images/breakout_ingame2.png
+category: "project updates"
 tags:
     - games
 ---

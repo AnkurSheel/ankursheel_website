@@ -1,6 +1,7 @@
 ---
 title: 'How to set up the project properties for Source Generators'
 excerpt: 'A guide to setting up the project properties that we need to create and use source generators'
+category: "programming"
 tags:
     - 'csharp'
     - 'productivity'

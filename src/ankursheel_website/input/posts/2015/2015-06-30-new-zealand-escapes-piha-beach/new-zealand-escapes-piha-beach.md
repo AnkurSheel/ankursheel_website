@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Piha Beach'
 excerpt: A travelogue of our visit to Piha beach - One of the most famous beaches on the west coast of New Zealand.
 coverImage: './images/PihaBeach-2.jpg'
+category: "travel"
 tags:
     - New Zealand
     - Oceania

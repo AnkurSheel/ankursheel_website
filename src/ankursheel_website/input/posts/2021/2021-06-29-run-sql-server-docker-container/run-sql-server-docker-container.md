@@ -1,6 +1,7 @@
 ---
 title: 'How to run SQL Server in a Docker container'
 excerpt: 'In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file'
+category: "programming"
 tags:
     - docker
     - snippet

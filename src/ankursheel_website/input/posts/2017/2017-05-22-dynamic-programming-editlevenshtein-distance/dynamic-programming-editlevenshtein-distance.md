@@ -2,6 +2,7 @@
 title: Solve Edit(Levenshtein) distance with Dynamic Programming
 excerpt: In this article, we will develop a Dynamic Programming solution to the Edit Distance problem.
 coverImage: './cover.jpg'
+category: "programming"
 tags:
     - cpp
     - dynamic programming

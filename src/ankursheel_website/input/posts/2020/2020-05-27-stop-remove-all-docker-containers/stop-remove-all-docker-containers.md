@@ -1,6 +1,7 @@
 ---
 title: 'How to stop and remove all Docker containers'
 excerpt: "Occasionally, I have needed to stop and remove all the docker containers I am running locally. Let's see how we can do it easily."
+category: "programming"
 tags:
     - devops
     - docker

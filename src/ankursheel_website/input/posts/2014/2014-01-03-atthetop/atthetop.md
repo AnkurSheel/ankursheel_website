@@ -2,6 +2,7 @@
 title: 'At the Top: Burj Khalifa'
 coverImage: ./images/atthetop-5.jpg
 excerpt: "The scenery is pretty awesome from the world's highest outdoor Observatory Deck at the 124th floor"
+category: "travel"
 tags:
     - Middle East
     - travel

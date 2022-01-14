@@ -2,6 +2,7 @@
 title: 'Codinators.XunitHelpers Nuget Package: Update 1'
 excerpt: 'This release adds support for reporting multiple assertion failures in one method in xUnit tests'
 coverImage: ./cover.jpg
+category: "project updates"
 tags:
     - 'testing'
     - 'xUnit'

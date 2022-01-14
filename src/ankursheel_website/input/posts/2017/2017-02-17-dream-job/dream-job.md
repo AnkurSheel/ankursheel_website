@@ -3,6 +3,7 @@ title: What is my idea of a dream job
 excerpt: 'An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities'
 coverImage: './cover.jpg'
 updatedOnDate: 2020-10-01
+category: "career / work"
 tags:
     - ramblings
     - career

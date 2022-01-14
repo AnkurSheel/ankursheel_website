@@ -1,6 +1,7 @@
 ---
 title: JAH Update 6
 excerpt: 'JAH Update 6: v 0.0.8 adds the ability to logoff and stores applications on a per user basis.'
+category: "project updates"
 tags:
     - project updates
     - JAH

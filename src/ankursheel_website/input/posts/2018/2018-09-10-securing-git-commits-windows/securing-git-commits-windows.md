@@ -2,6 +2,7 @@
 title: A guide to securing git commits from tricking you on Windows
 excerpt: Did you know that you can check in code as anyone in your git repository by default? This article shows you how to prevent this problem by using a GUI.
 coverImage: './images/secure_git_commits_1.png'
+category: "programming"
 tags:
     - tutorial
     - git

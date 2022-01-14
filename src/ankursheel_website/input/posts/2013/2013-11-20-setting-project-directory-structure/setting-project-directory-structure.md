@@ -1,6 +1,7 @@
 ---
 title: 'How I structure my Game Engine project'
 excerpt: In this post, I will cover the third-party libraries, project breakup, and current directory structure that I follow.
+category: "programming"
 tags:
     - tutorial
     - game engine

@@ -1,6 +1,7 @@
 ---
 title: 'How to automate the creation of a new blog post'
 excerpt: 'Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it.'
+category: "programming"
 tags:
     - 'devops'
     - 'tutorial'

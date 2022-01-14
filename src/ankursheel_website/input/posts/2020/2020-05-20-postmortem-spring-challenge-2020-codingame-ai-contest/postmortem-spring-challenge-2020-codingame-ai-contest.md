@@ -2,9 +2,10 @@
 title: 'Postmortem for Spring Challenge 2020 (Codingame AI Contest)'
 excerpt: 'A postmortem for Spring Challenge 2020, a multiplayer AI bot contest based on Pacman held by codingame'
 coverImage: './cover.jpg'
+category: "postmortems"
 tags:
     - 'Codingame'
-    - 'post-mortem'
+    - 'postmortem'
 ---
 
 Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time it was based on **Pacman**.

@@ -2,6 +2,7 @@
 title: 'Do not come with a problem without a solution is harmful'
 excerpt: 'Although the managers who say - Do not bring up problems unless you have a solution mean well, it does not have the outcome they expect'
 coverImage: './cover.jpg'
+category: "career / work"
 tags:
     - career
     - ramblings

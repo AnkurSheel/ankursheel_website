@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Waitomo Blackwater Rafting'
 excerpt: There's more than one way to see the glowworms in New Zealand's Waitomo Caves. Our choice Waitomo Blackwater Rafting.
 coverImage: './images/Waitomo_Blackwater_Rafting-13.jpg'
+category: "travel"
 tags:
     - New Zealand
     - Oceania

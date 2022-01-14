@@ -2,6 +2,7 @@
 title: 'JAH: Update 2'
 excerpt: 'JAH Update 2: This update adds the ability to add new applications.'
 coverImage: ./images/jah_update2_2.jpg
+category: "project updates"
 tags:
     - project updates
     - JAH

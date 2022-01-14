@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - A post-mortem of the Asteroids clone</title>
+<title>Ankur Sheel - A postmortem of the Asteroids clone</title>
 <meta charset="utf-8"/>
 
 
@@ -14,19 +14,19 @@
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-asteroids"/>
 
-<meta itemProp="name" content="A post-mortem of the Asteroids clone"/>
+<meta itemProp="name" content="A postmortem of the Asteroids clone"/>
 <meta itemProp="description" content="Postmortem of the Asteroids clone that I made. "/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postmortem-asteroids-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/postmortem-asteroids"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="A post-mortem of the Asteroids clone"/>
+<meta property="og:title" content="A postmortem of the Asteroids clone"/>
 <meta property="og:description" content="Postmortem of the Asteroids clone that I made. "/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/postmortem-asteroids-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/postmortem-asteroids-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="A post-mortem of the Asteroids clone"/>
+<meta name="twitter:title" content="A postmortem of the Asteroids clone"/>
 <meta name="twitter:description" content="Postmortem of the Asteroids clone that I made. "/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/postmortem-asteroids-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/postmortem-asteroids-twitter.png"/>
@@ -118,7 +118,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">A post-mortem of the Asteroids clone</h1>
+    <h1 class="text-center">A postmortem of the Asteroids clone</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -132,7 +132,7 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/games" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">games</a>
-            <a href="/tags/post-mortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">post-mortem</a>
+            <a href="/tags/postmortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postmortem</a>
     </div>
 </div>
 

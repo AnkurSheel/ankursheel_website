@@ -2,6 +2,7 @@
 title: 'How to get TimeZoneInfo on Windows and Linux'
 excerpt: 'Lets see how we can get the TimeZoneInfo regardless of whether the code is running on Windows or Linux'
 coverImage: './cover.jpg'
+category: "programming"
 tags:
     - 'snippet'
     - 'csharp'

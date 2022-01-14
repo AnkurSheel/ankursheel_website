@@ -2,6 +2,7 @@
 title: 'JAH: Update 1'
 excerpt: "JAH Update 1: As promised in the previous post, this is what's been done so far."
 coverImage: ./jah_update1.jpg
+category: "project updates"
 tags:
     - project updates
     - JAH

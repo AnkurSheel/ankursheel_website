@@ -2,6 +2,7 @@
 title: 'How to make code reviews stress free'
 excerpt: 'Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free'
 coverImage: './cover.jpg'
+category: "career / work"
 tags:
     - 'productivity'
     - 'ramblings'

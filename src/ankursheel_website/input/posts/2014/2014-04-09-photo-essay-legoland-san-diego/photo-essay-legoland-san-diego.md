@@ -2,6 +2,7 @@
 title: 'Photo Essay: Legoland, San Diego'
 excerpt: 'For the kid in you, next on the Photo Series of The USA road trip: LegoLand'
 coverImage: './images/LegoLand-22.jpg'
+category: "travel"
 tags:
     - North America
     - travel

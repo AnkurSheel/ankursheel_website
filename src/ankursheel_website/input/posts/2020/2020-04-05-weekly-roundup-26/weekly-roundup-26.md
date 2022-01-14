@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 26'
-excerpt: 'This weeks roundup contains articles/tools from Sara Viera, Tim Urban, Kent Dodd, Erik Kennedy, Michael Bierut and Charity Majors'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 26"
+excerpt: "This weeks roundup contains articles/tools from Sara Viera, Tim Urban, Kent Dodd, Erik Kennedy, Michael Bierut and Charity Majors"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

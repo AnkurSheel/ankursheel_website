@@ -2,6 +2,7 @@
 title: Testing endpoints protected with an XSRF token in Postman
 excerpt: 'How can we test the endpoints using an anti-forgery token to protect us from XSRF(Cross-Site Request Forgery) attacks in Postman'
 coverImage: './cover.png'
+category: "programming"
 tags:
     - Postman
     - testing

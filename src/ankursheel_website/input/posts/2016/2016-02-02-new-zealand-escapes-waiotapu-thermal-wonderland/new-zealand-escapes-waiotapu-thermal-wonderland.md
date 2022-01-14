@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Waiotapu Thermal Wonderland'
 excerpt: Wai-o-tapu, whimsically named as the Waiotapu Thermal Wonderland, is a stunning geothermal area near Rotorua.
 coverImage: ./images/Waiotapu_Thermal_Wonderland-4.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

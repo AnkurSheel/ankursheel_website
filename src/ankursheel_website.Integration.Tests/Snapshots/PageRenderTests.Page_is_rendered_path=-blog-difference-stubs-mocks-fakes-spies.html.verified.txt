@@ -124,7 +124,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-07-15">July 15, 2021</time></span>
+        <span>Last Updated: <time datetime="2021-07-17">July 17, 2021</time></span>
         <i class="font-bold">
             Reading Time: 3 min
         </i>
@@ -207,10 +207,6 @@ mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&
 <h3 id="thanks">Thanks</h3>
 <ul>
 <li>Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.</li>
-</ul>
-<h3 id="edits">Edits</h3>
-<ul>
-<li><em>Updated 17th July 2021 with an example for Spies</em></li>
 </ul>
 </body></html>
 

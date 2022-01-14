@@ -2,6 +2,7 @@
 title: 'Increasing Productivity with No-Meeting Days'
 excerpt: 'How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job'
 coverImage: './cover.jpg'
+category: "career / work"
 tags:
     - 'productivity'
     - 'ramblings'

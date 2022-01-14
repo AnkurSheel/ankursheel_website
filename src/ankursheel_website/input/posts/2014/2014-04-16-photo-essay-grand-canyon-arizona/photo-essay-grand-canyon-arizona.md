@@ -2,6 +2,7 @@
 title: 'Photo Essay: Grand Canyon, Arizona'
 excerpt: 'Next on the Photo Series of The USA roadtrip: Grand Canyon'
 coverImage: ./images/GrandCanyon-22.jpg
+category: "travel"
 tags:
     - North America
     - travel

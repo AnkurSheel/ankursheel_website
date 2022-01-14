@@ -1,10 +1,14 @@
 ---
-title: 'Weekly Roundup 18'
-excerpt: 'This weeks roundup contains articles/tools from Ramit Sethi, Jason Lengstorf, Florin Pop, Steve Schlafman, Alex Hillman'
+title: "Weekly Roundup 18"
+excerpt: "This weeks roundup contains articles/tools from Ramit Sethi, Jason Lengstorf, Florin Pop, Steve Schlafman, Alex Hillman"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+
+- "weekly roundup"
+
 ---
+
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.
 

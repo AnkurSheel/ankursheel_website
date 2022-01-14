@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Iskcon Temple, Auckland'
 excerpt: From the beaches and islands to a place of worship. A photo essay of the Isckon temple in Auckland.
 coverImage: './images/IskconTempleAuckland-5.jpg'
+category: "travel"
 tags:
     - New Zealand
     - Oceania

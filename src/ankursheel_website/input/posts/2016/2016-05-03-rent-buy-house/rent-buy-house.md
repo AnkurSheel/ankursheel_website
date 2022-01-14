@@ -2,6 +2,7 @@
 title: Should I Rent Or Buy a House?
 excerpt: My two cents on whether you should rent or buy a house.
 coverImage: './cover.jpg'
+category: "ramblings"
 tags:
     - ramblings
 ---

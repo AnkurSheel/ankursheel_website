@@ -2,6 +2,7 @@
 title: JAH Update 4
 excerpt: 'JAH Update 4: v 0.0.6 adds custom error page.'
 coverImage: ./jah_update4_1.jpg
+category: "project updates"
 tags:
     - project updates
     - JAH

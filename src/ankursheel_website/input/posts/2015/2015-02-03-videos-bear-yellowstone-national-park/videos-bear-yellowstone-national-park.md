@@ -1,6 +1,7 @@
 ---
 title: 'Video: Bear at Yellowstone National Park'
 excerpt: A video of a bear cub that wandered near our car in the Yellowstone National Park.
+category: "video"
 tags:
     - North America
     - travel

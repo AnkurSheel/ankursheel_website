@@ -2,6 +2,7 @@
 title: A guide to getting started with Dynamic Programming
 excerpt: In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution.
 coverImage: './cover.png'
+category: "programming"
 tags:
     - cpp
     - dynamic programming

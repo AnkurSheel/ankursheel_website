@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Posts tagged as &quot;post-mortem&quot;</title>
+<title>Ankur Sheel - Posts tagged as &quot;postmortem&quot;</title>
 <meta charset="utf-8"/>
 
 
@@ -12,21 +12,21 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/tags/post-mortem"/>
+<link rel="canonical" href="https://www.ankursheel.com/tags/postmortem"/>
 
-<meta itemProp="name" content="Posts tagged as &quot;post-mortem&quot;"/>
+<meta itemProp="name" content="Posts tagged as &quot;postmortem&quot;"/>
 <meta itemProp="description"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/post-mortem"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/postmortem"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;post-mortem&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;postmortem&quot;"/>
 <meta property="og:description"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;post-mortem&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;postmortem&quot;"/>
 <meta name="twitter:description"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
@@ -118,7 +118,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;post-mortem&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;postmortem&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -150,7 +150,7 @@
         <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">PostMortem for Codingame AI Contest: Coders of the Caribbean</a>
         <div class="font-semibold text-center">4 min</div>
         <p>
-            A post-mortem for Coders of the Caribbean, a Codingame contest based on Pirates of the Caribbean.
+            A postmortem for Coders of the Caribbean, a Codingame contest based on Pirates of the Caribbean.
         </p>
             <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
@@ -161,7 +161,7 @@
         <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A postmortem for Fantastic Bits (Codingame AI Contest)</a>
         <div class="font-semibold text-center">6 min</div>
         <p>
-            A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.
+            A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.
         </p>
             <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
@@ -169,10 +169,10 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/accountant-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A post-mortem for The Accountant (Codingame AI Contest)</a>
+        <a href="/blog/accountant-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A postmortem for The Accountant (Codingame AI Contest)</a>
         <div class="font-semibold text-center">5 min</div>
         <p>
-            A post-mortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame
+            A postmortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame
         </p>
             <a href="/blog/accountant-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
@@ -180,10 +180,10 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A post-mortem for Hypersonic (Codingame AI Contest)</a>
+        <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A postmortem for Hypersonic (Codingame AI Contest)</a>
         <div class="font-semibold text-center">6 min</div>
         <p>
-            A post-mortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame.
+            A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame.
         </p>
             <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
@@ -191,7 +191,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/postmortem-asteroids" class="text-center prose-2xl mb-4">A post-mortem of the Asteroids clone</a>
+        <a href="/blog/postmortem-asteroids" class="text-center prose-2xl mb-4">A postmortem of the Asteroids clone</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
             Postmortem of the Asteroids clone that I made. 
@@ -202,10 +202,10 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/postmortem-mpong" class="text-center prose-2xl mb-4">A PostMortem of Mpong</a>
+        <a href="/blog/postmortem-mpong" class="text-center prose-2xl mb-4">A Postmortem of Mpong</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            A post-mortem of the Pong clone that I made.
+            A postmortem of the Pong clone that I made.
         </p>
             <a href="/blog/postmortem-mpong" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

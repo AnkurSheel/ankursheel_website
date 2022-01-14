@@ -132,7 +132,7 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
-            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Wordpress</a>
+            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordpress</a>
     </div>
 </div>
 

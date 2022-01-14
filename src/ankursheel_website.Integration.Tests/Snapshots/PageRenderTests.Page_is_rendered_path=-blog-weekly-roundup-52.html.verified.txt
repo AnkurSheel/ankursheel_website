@@ -4,32 +4,32 @@
 <head>
     
 
-<title>Ankur Sheel - How to setup WordPress locally: Introduction</title>
+<title>Ankur Sheel - Weekly Roundup 52</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
+<meta name="description" content="This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-52"/>
 
-<meta itemProp="name" content="How to setup WordPress locally: Introduction"/>
-<meta itemProp="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>
+<meta itemProp="name" content="Weekly Roundup 52"/>
+<meta itemProp="description" content="This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-52-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/weekly-roundup-52"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to setup WordPress locally: Introduction"/>
-<meta property="og:description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
+<meta property="og:title" content="Weekly Roundup 52"/>
+<meta property="og:description" content="This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-52-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-52-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to setup WordPress locally: Introduction"/>
-<meta name="twitter:description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-twitter.png"/>
+<meta name="twitter:title" content="Weekly Roundup 52"/>
+<meta name="twitter:description" content="This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-52-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-52-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -118,35 +118,40 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to setup WordPress locally: Introduction</h1>
+    <h1 class="text-center">Weekly Roundup 52</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2013-12-19">December 19, 2013</time></span>
+        <span>Last Updated: <time datetime="2022-01-11">January 11, 2022</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
-            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Wordpress</a>
+            <a href="/tags/weekly-roundup" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">weekly roundup</a>
     </div>
 </div>
 
-<p>In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud. You might also want to set up WordPress locally if you are planning to create plugins or themes. I will be covering the following aspects</p>
-<h2 id="the-series">The Series</h2>
-<ol>
-<li><a href="installing-apache">Installing a Web Server (Apache)</a></li>
-<li><a href="installing-php">Installing PHP</a></li>
-<li><a href="installing-mysql">Installing MySQL</a></li>
-<li><a href="installing-phpmyadmin">Installing phpMyAdmin</a></li>
-<li><a href="installing-wordpress">Installing Wordpress</a></li>
-</ol>
-<p>You can always use existing packages such as <a href="https://www.apachefriends.org/en/xampp.html">XAMPP</a> to take care of installing an Apache Web Server along with MySQL, PHP and PERL. However, I will outline how you can install each component separately.</p>
-<p><strong>Update: 19 Dec 2013:</strong> Sharad pointed out that you can also use <a href="http://bitnami.com/">bitnami app stack</a>.</p>
+<p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
+<h2 id="i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman"><a href="https://selenasoo.medium.com/i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman-8804ffe58cc9">I was in an emotionally abusive relationship, even as a smart and successful woman</a></h2>
+<p><em>by <strong>Selena Soo</strong></em></p>
+<p>A compelling story of a woman recounting her emotional abuse in a former relationship.</p>
+<h2 id="css-based-fingerprinting"><a href="https://csstracking.dev/">CSS-Based Fingerprinting</a></h2>
+<p><em>by <strong>Oliver Brotchie</strong></em></p>
+<p>Fingerprinting is a term that refers to building up enough metadata about a user so that we can essentially figure out who they are. Although it is more common with Javascript, did you know that we can fingerprint(to an extent) with CSS alone? A live demo and example repository also show how you can achieve this.</p>
+<h2 id="why-i-turned-down-a-six-figure-salary-in-big-tech-to-stay-at-a-five-person-startup"><a href="https://www.freecodecamp.org/news/why-i-turned-down-a-six-figure-salary-in-big-tech-to-stay-at-a-five-person-startup/">Why I Turned Down a Six-Figure Salary in Big Tech to Stay at a Five-Person Startup</a></h2>
+<p><em>by <strong>Annie Liew</strong></em></p>
+<p>It's easy to be swayed by a high salary and prestige when comparing offers. But, our values and what we are interested in doing is more important than any opportunity that might be good for us career-wise. An interesting story on what factors were involved in declining an offer from a highly regarded tech company to stay at a small startup.</p>
+<h2 id="integrating-long-path-names-in-windows-applications"><a href="https://weblog.west-wind.com/posts/2022/Jan/03/Integrating-Long-Path-Names-in-Windows-NET-Applications">Integrating Long Path Names in Windows Applications</a></h2>
+<p><em>by <strong>Rick Strahl</strong></em></p>
+<p>Even though a limit of 260 characters for a path is not tiny, long path names are a problem on Windows. This article shows how we can enable long paths in Windows.</p>
+<h2 id="how-serverless-saved-money-on-my-heating-bill"><a href="https://camchenry.com/blog/how-serverless-saved-my-heating-bill">How Serverless Saved Money on My Heating Bill</a></h2>
+<p><em>by <strong>Cameron McHenry</strong></em></p>
+<p>Regardless of what the title says, this article is not about saving money but is about building a full-stack web application with Javascript and getting it up and running for free.</p>
+<p>Thanks for reading. Until next time.</p>
 
 
 
@@ -156,7 +161,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/testing-wordpress-locally-series&text=In%20this%20series%2C%20I%20will%20cover%20how%20to%20set%20up%20WordPress%20locally%20so%20that%20you%20can%20develop%20locally%20before%20pushing%20your%20blog%2Fwebsite%20on%20the%20cloud. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-52&text=This%20weeks%20roundup%20contains%20articles%20from%20Selena%20Soo%2C%20Oliver%20Brotchie%2C%20Annie%20Liew%2C%20Rick%20Strahl%20and%20Cameron%20McHenry via @ankur_sheel" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

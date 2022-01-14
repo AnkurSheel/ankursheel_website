@@ -1,9 +1,9 @@
 ---
 title: 'How to override the netlify build config'
 excerpt: 'A way to override the netlify build settings so that we can override the build commands for a branch'
+category: "programming"
 tags:
     - 'snippet'
-    - 'project updates'
     - 'website migration'
     - 'netlify'
 ---

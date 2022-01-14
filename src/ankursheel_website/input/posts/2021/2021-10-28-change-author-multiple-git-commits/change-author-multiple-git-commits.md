@@ -1,6 +1,7 @@
 ---
 title: 'How to change the author of multiple Git commits'
 excerpt: 'A snippet for updating the author details of several commits in a git repository'
+category: "programming"
 tags:
     - 'snippet'
     - 'git'

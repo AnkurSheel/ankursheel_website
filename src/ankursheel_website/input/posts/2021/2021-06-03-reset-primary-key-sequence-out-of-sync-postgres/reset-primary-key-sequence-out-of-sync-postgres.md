@@ -1,6 +1,7 @@
 ---
 title: 'How to reset the primary key sequence in Postgres'
 excerpt: 'How can we fix the "duplicate key value violates unique constraint" error because the primary key sequence is out of sync from the records in the table'
+category: "programming"
 tags:
     - 'postgres'
     - 'sql'

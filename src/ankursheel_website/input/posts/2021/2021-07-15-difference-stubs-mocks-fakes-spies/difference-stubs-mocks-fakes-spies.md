@@ -1,6 +1,7 @@
 ---
 title: 'What is the difference between Stubs, Mocks, Fakes and Spies'
 excerpt: 'We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies'
+category: "programming"
 tags:
     - 'testing'
 updatedOnDate: 2021-07-17

@@ -5,8 +5,35 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2022</copyright>
-		<pubDate>Sun, 02 Jan 2022 07:20:34 GMT</pubDate>
-		<lastBuildDate>Sun, 02 Jan 2022 07:20:34 GMT</lastBuildDate>
+		<pubDate>Fri, 14 Jan 2022 02:15:34 GMT</pubDate>
+		<lastBuildDate>Fri, 14 Jan 2022 02:15:34 GMT</lastBuildDate>
+		<item>
+			<title>Weekly Roundup 52</title>
+			<link>https://www.ankursheel.com/blog/weekly-roundup-52</link>
+			<description>This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry</description>
+			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-52/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<guid>https://www.ankursheel.com/blog/weekly-roundup-52</guid>
+			<pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+&lt;h2 id="i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman"&gt;&lt;a href="https://selenasoo.medium.com/i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman-8804ffe58cc9"&gt;I was in an emotionally abusive relationship, even as a smart and successful woman&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Selena Soo&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A compelling story of a woman recounting her emotional abuse in a former relationship.&lt;/p&gt;
+&lt;h2 id="css-based-fingerprinting"&gt;&lt;a href="https://csstracking.dev/"&gt;CSS-Based Fingerprinting&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Oliver Brotchie&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Fingerprinting is a term that refers to building up enough metadata about a user so that we can essentially figure out who they are. Although it is more common with Javascript, did you know that we can fingerprint(to an extent) with CSS alone? A live demo and example repository also show how you can achieve this.&lt;/p&gt;
+&lt;h2 id="why-i-turned-down-a-six-figure-salary-in-big-tech-to-stay-at-a-five-person-startup"&gt;&lt;a href="https://www.freecodecamp.org/news/why-i-turned-down-a-six-figure-salary-in-big-tech-to-stay-at-a-five-person-startup/"&gt;Why I Turned Down a Six-Figure Salary in Big Tech to Stay at a Five-Person Startup&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Annie Liew&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It's easy to be swayed by a high salary and prestige when comparing offers. But, our values and what we are interested in doing is more important than any opportunity that might be good for us career-wise. An interesting story on what factors were involved in declining an offer from a highly regarded tech company to stay at a small startup.&lt;/p&gt;
+&lt;h2 id="integrating-long-path-names-in-windows-applications"&gt;&lt;a href="https://weblog.west-wind.com/posts/2022/Jan/03/Integrating-Long-Path-Names-in-Windows-NET-Applications"&gt;Integrating Long Path Names in Windows Applications&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Rick Strahl&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Even though a limit of 260 characters for a path is not tiny, long path names are a problem on Windows. This article shows how we can enable long paths in Windows.&lt;/p&gt;
+&lt;h2 id="how-serverless-saved-money-on-my-heating-bill"&gt;&lt;a href="https://camchenry.com/blog/how-serverless-saved-my-heating-bill"&gt;How Serverless Saved Money on My Heating Bill&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Cameron McHenry&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Regardless of what the title says, this article is not about saving money but is about building a full-stack web application with Javascript and getting it up and running for free.&lt;/p&gt;
+&lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Weekly Roundup 51</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-51</link>
@@ -909,36 +936,6 @@ npm install -D tailwindcss&amp;amp;&lt;span class="hljs-comment"&gt;#64;latest p
 &lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tailwindcss.com/docs"&gt;Tailwind Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to rename multiple files in subfolders using Windows command prompt</title>
-			<link>https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt</link>
-			<description>A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt</description>
-			<guid>https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt</guid>
-			<pubDate>Mon, 30 Aug 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I had to rename all the files with the extension &lt;em&gt;mdx&lt;/em&gt; to &lt;em&gt;md&lt;/em&gt;. Now, I could do it one by one or find a utility but using a single command is more elegant.&lt;/p&gt;
-&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;p&gt;To rename all the files recursively, we can use the REN (rename) command as follows.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;FOR /R %G IN (*.mdx) DO REN "%G" "%~dpnG.md"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let's unpack this command.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;FOR&lt;/strong&gt;: Loops through files&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;/R&lt;/strong&gt;: Recurse through subfolders.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;%G&lt;/strong&gt;: A parameter set to a different value for each iteration of the for loop.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;(*.mdx)&lt;/strong&gt;: The filename pattern that we want to match.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;REN&lt;/strong&gt;: The command to rename a file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;%~dpnG"&lt;/strong&gt;: Expands the parameter of the original filename to the fully qualified path without the extension&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://ss64.com/nt/for_r.html"&gt;FOR /R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ss64.com/nt/ren.html"&gt;REN&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ss64.com/nt/syntax-args.html"&gt;Command Line arguments&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 44'
-excerpt: 'This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 44"
+excerpt: "This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 <!-- markdownlint-disable no-duplicate-header -->

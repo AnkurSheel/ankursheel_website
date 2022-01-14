@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 40'
-excerpt: 'This weeks roundup contains articles from Shawn Wang, David Perrel, Jamie Wong, Kyle Gawley, Catalin Pit, Morgan Housel and Jason Lengstorf'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 40"
+excerpt: "This weeks roundup contains articles from Shawn Wang, David Perrel, Jamie Wong, Kyle Gawley, Catalin Pit, Morgan Housel and Jason Lengstorf"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

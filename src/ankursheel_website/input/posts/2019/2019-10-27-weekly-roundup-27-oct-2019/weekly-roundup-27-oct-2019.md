@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 10'
-excerpt: 'This weeks roundup contains articles from CSS-Tricks, Amelia Wattenberger, Ruth, Ramit Sethi and Wait but Why'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 10"
+excerpt: "This weeks roundup contains articles from CSS-Tricks, Amelia Wattenberger, Ruth, Ramit Sethi and Wait but Why"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

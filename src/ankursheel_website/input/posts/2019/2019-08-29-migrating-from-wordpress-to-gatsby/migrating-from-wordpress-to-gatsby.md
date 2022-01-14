@@ -2,6 +2,7 @@
 title: 'Why and How I migrated my website from WordPress to Gatsby'
 excerpt: 'For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site'
 coverImage: './cover.png'
+category: "ramblings"
 tags:
     - 'devops'
     - 'Gatsby'

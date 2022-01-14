@@ -1,6 +1,7 @@
 ---
 title: 'Video: Goat in Glacier National Park'
 excerpt: A short video of a nimble footed goat in Glacier National Park.
+category: "video"
 tags:
     - North America
     - travel

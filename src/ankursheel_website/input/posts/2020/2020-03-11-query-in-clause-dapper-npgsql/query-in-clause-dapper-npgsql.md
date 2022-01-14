@@ -2,6 +2,7 @@
 title: 'Dapper and NPGSql : Write a query with the IN operator'
 excerpt: 'In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql'
 coverImage: './cover.jpg'
+category: "programming"
 tags:
     - csharp
     - snippet

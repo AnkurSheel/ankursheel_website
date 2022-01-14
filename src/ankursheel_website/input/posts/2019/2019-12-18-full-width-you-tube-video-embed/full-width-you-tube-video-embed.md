@@ -1,6 +1,7 @@
 ---
 title: 'Embed a YouTube video with 16:9 aspect ratio and full-width'
 excerpt: 'How we can use CSS to display an iframe with 100% width and 16:9 aspect ratio so that we can display YouTube videos to be full-width with a 16:9 aspect ratio'
+category: "programming"
 tags:
     - 'tutorial'
     - 'web development'

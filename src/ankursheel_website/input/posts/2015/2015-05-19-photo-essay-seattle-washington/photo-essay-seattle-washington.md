@@ -2,6 +2,7 @@
 title: 'Photo Essay: Seattle, Washington'
 excerpt: Seen from above, pristine blue waters and snowy white mountains surround the downtown's metallic skyscrapers, earning Seattle its nickname, The Emerald City
 coverImage: ./images/Seattle-5.jpg
+category: "travel"
 tags:
     - North America
     - travel

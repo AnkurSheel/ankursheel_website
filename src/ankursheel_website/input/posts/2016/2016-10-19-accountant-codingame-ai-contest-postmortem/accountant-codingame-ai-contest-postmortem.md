@@ -1,11 +1,12 @@
 ---
-title: A post-mortem for The Accountant (Codingame AI Contest)
-excerpt: A post-mortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie "The Accountant" held by codingame
+title: A postmortem for The Accountant (Codingame AI Contest)
+excerpt: A postmortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie "The Accountant" held by codingame
 coverImage: './cover.jpg'
+category: "postmortems"
 tags:
     - cpp
     - Codingame
-    - post-mortem
+    - postmortem
 ---
 
 Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time around, it was an optimization competition sponsored by **Warner Bro.s** for their upcoming movie "**The Accountant**."

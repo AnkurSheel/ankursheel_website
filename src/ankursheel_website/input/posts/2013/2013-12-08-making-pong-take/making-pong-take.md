@@ -1,6 +1,7 @@
 ---
 title: What does making Pong take?
 excerpt: Even though the gameplay elements of Pong are simple, the underlying engine needs to have everything that a modern game has
+category: "ramblings"
 tags:
     - games
     - ramblings

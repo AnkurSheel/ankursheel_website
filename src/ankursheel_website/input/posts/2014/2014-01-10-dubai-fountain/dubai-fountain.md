@@ -1,6 +1,7 @@
 ---
 title: Dubai Fountain
 excerpt: The Dubai Fountain is the world’s largest dancing fountain. There is a show every half hour with the fountain dancing to a different piece of music every time
+category: "travel"
 tags:
     - Middle East
     - travel

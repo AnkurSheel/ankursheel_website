@@ -1,6 +1,7 @@
 ---
 title: How to load test data from a JSON file for xUnit tests
 excerpt: In this post, we add a custom attribute in xUnit to load test data from a JSON file.
+category: "programming"
 tags:
     - csharp
     - testing

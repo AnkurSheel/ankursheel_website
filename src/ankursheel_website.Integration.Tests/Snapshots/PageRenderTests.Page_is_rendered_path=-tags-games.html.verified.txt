@@ -136,7 +136,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/postmortem-asteroids" class="text-center prose-2xl mb-4">A post-mortem of the Asteroids clone</a>
+        <a href="/blog/postmortem-asteroids" class="text-center prose-2xl mb-4">A postmortem of the Asteroids clone</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
             Postmortem of the Asteroids clone that I made. 
@@ -169,10 +169,10 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/postmortem-mpong" class="text-center prose-2xl mb-4">A PostMortem of Mpong</a>
+        <a href="/blog/postmortem-mpong" class="text-center prose-2xl mb-4">A Postmortem of Mpong</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            A post-mortem of the Pong clone that I made.
+            A postmortem of the Pong clone that I made.
         </p>
             <a href="/blog/postmortem-mpong" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

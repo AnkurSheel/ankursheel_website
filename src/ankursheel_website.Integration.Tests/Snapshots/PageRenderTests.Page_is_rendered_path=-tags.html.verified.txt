@@ -124,211 +124,214 @@
             
 <div class="flex flex-row flex-wrap gap-1 place-content-center">
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/travel" class="badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
+            <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/weekly-roundup" class="badge text-gray-900 bg-grey-light no-underline"> weekly roundup (51)</a>
+            <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (52)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/tutorial" class="badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
+            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/north-america" class="badge text-gray-900 bg-grey-light no-underline"> North America (22)</a>
+            <a role="button" href="/tags/north-america" class="capitalize badge text-gray-900 bg-grey-light no-underline"> North America (22)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/usa" class="badge text-gray-900 bg-grey-light no-underline"> USA (22)</a>
+            <a role="button" href="/tags/usa" class="capitalize badge text-gray-900 bg-grey-light no-underline"> USA (22)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/snippet" class="badge text-gray-900 bg-grey-light no-underline"> snippet (18)</a>
+            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (18)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/new-zealand" class="badge text-gray-900 bg-grey-light no-underline"> New Zealand (17)</a>
+            <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (17)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/oceania" class="badge text-gray-900 bg-grey-light no-underline"> Oceania (17)</a>
+            <a role="button" href="/tags/oceania" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Oceania (17)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/project-updates" class="badge text-gray-900 bg-grey-light no-underline"> project updates (14)</a>
+            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (12)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/ramblings" class="badge text-gray-900 bg-grey-light no-underline"> ramblings (12)</a>
+            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (11)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/cpp" class="badge text-gray-900 bg-grey-light no-underline"> cpp (10)</a>
+            <a role="button" href="/tags/cpp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> cpp (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/middle-east" class="badge text-gray-900 bg-grey-light no-underline"> Middle East (10)</a>
+            <a role="button" href="/tags/middle-east" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Middle East (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/uae" class="badge text-gray-900 bg-grey-light no-underline"> UAE (10)</a>
+            <a role="button" href="/tags/uae" class="capitalize badge text-gray-900 bg-grey-light no-underline"> UAE (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/devops" class="badge text-gray-900 bg-grey-light no-underline"> devops (9)</a>
+            <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (9)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/jah" class="badge text-gray-900 bg-grey-light no-underline"> JAH (8)</a>
+            <a role="button" href="/tags/jah" class="capitalize badge text-gray-900 bg-grey-light no-underline"> JAH (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/post-mortem" class="badge text-gray-900 bg-grey-light no-underline"> post-mortem (8)</a>
+            <a role="button" href="/tags/postmortem" class="capitalize badge text-gray-900 bg-grey-light no-underline"> postmortem (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/productivity" class="badge text-gray-900 bg-grey-light no-underline"> productivity (8)</a>
+            <a role="button" href="/tags/productivity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> productivity (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/testing" class="badge text-gray-900 bg-grey-light no-underline"> testing (8)</a>
+            <a role="button" href="/tags/testing" class="capitalize badge text-gray-900 bg-grey-light no-underline"> testing (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/video" class="badge text-gray-900 bg-grey-light no-underline"> video (8)</a>
+            <a role="button" href="/tags/video" class="capitalize badge text-gray-900 bg-grey-light no-underline"> video (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordpress" class="badge text-gray-900 bg-grey-light no-underline"> Wordpress (8)</a>
+            <a role="button" href="/tags/codingame" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Codingame (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/codingame" class="badge text-gray-900 bg-grey-light no-underline"> Codingame (7)</a>
+            <a role="button" href="/tags/gatsby" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Gatsby (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/gatsby" class="badge text-gray-900 bg-grey-light no-underline"> Gatsby (7)</a>
+            <a role="button" href="/tags/website-migration" class="capitalize badge text-gray-900 bg-grey-light no-underline"> website migration (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/website-migration" class="badge text-gray-900 bg-grey-light no-underline"> website migration (7)</a>
+            <a role="button" href="/tags/aws" class="capitalize badge text-gray-900 bg-grey-light no-underline"> AWS (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/aws" class="badge text-gray-900 bg-grey-light no-underline"> AWS (6)</a>
+            <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/games" class="badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
+            <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/csharp" class="badge text-gray-900 bg-grey-light no-underline"> csharp (5)</a>
+            <a role="button" href="/tags/dev-tools" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/dev-tools" class="badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>
+            <a role="button" href="/tags/statiq" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Statiq (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/statiq" class="badge text-gray-900 bg-grey-light no-underline"> Statiq (5)</a>
+            <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordpress (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/docker" class="badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
+            <a role="button" href="/tags/docker" class="capitalize badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/reviews" class="badge text-gray-900 bg-grey-light no-underline"> reviews (4)</a>
+            <a role="button" href="/tags/reviews" class="capitalize badge text-gray-900 bg-grey-light no-underline"> reviews (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/security" class="badge text-gray-900 bg-grey-light no-underline"> security (4)</a>
+            <a role="button" href="/tags/security" class="capitalize badge text-gray-900 bg-grey-light no-underline"> security (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/terraform" class="badge text-gray-900 bg-grey-light no-underline"> terraform (4)</a>
+            <a role="button" href="/tags/terraform" class="capitalize badge text-gray-900 bg-grey-light no-underline"> terraform (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/typescript" class="badge text-gray-900 bg-grey-light no-underline"> typescript (4)</a>
+            <a role="button" href="/tags/typescript" class="capitalize badge text-gray-900 bg-grey-light no-underline"> typescript (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/web-development" class="badge text-gray-900 bg-grey-light no-underline"> web development (4)</a>
+            <a role="button" href="/tags/web-development" class="capitalize badge text-gray-900 bg-grey-light no-underline"> web development (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/xunit" class="badge text-gray-900 bg-grey-light no-underline"> xUnit (4)</a>
+            <a role="button" href="/tags/xunit" class="capitalize badge text-gray-900 bg-grey-light no-underline"> xUnit (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/career" class="badge text-gray-900 bg-grey-light no-underline"> career (3)</a>
+            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/dynamic-programming" class="badge text-gray-900 bg-grey-light no-underline"> dynamic programming (3)</a>
+            <a role="button" href="/tags/dynamic-programming" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dynamic programming (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/europe" class="badge text-gray-900 bg-grey-light no-underline"> Europe (3)</a>
+            <a role="button" href="/tags/europe" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Europe (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/git" class="badge text-gray-900 bg-grey-light no-underline"> git (3)</a>
+            <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/tailwind" class="badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>
+            <a role="button" href="/tags/tailwind" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/united-kingdom" class="badge text-gray-900 bg-grey-light no-underline"> United Kingdom (3)</a>
+            <a role="button" href="/tags/united-kingdom" class="capitalize badge text-gray-900 bg-grey-light no-underline"> United Kingdom (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/xunithelpers" class="badge text-gray-900 bg-grey-light no-underline"> xUnitHelpers (3)</a>
+            <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Wordpress (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/approval-tests" class="badge text-gray-900 bg-grey-light no-underline"> Approval Tests (2)</a>
+            <a role="button" href="/tags/xunithelpers" class="capitalize badge text-gray-900 bg-grey-light no-underline"> xUnitHelpers (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/asia" class="badge text-gray-900 bg-grey-light no-underline"> Asia (2)</a>
+            <a role="button" href="/tags/approval-tests" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Approval Tests (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/azure-pipelines" class="badge text-gray-900 bg-grey-light no-underline"> Azure pipelines (2)</a>
+            <a role="button" href="/tags/asia" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Asia (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/company-culture" class="badge text-gray-900 bg-grey-light no-underline"> company culture (2)</a>
+            <a role="button" href="/tags/azure-pipelines" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Azure pipelines (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/game-engine" class="badge text-gray-900 bg-grey-light no-underline"> game engine (2)</a>
+            <a role="button" href="/tags/company-culture" class="capitalize badge text-gray-900 bg-grey-light no-underline"> company culture (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/graphql" class="badge text-gray-900 bg-grey-light no-underline"> graphql (2)</a>
+            <a role="button" href="/tags/game-engine" class="capitalize badge text-gray-900 bg-grey-light no-underline"> game engine (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/hotchocolate" class="badge text-gray-900 bg-grey-light no-underline"> hotchocolate (2)</a>
+            <a role="button" href="/tags/graphql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> graphql (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/india" class="badge text-gray-900 bg-grey-light no-underline"> India (2)</a>
+            <a role="button" href="/tags/hotchocolate" class="capitalize badge text-gray-900 bg-grey-light no-underline"> hotchocolate (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/popular-posts" class="badge text-gray-900 bg-grey-light no-underline"> popular posts (2)</a>
+            <a role="button" href="/tags/india" class="capitalize badge text-gray-900 bg-grey-light no-underline"> India (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/postgres" class="badge text-gray-900 bg-grey-light no-underline"> postgres (2)</a>
+            <a role="button" href="/tags/popular-posts" class="capitalize badge text-gray-900 bg-grey-light no-underline"> popular posts (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/process" class="badge text-gray-900 bg-grey-light no-underline"> process (2)</a>
+            <a role="button" href="/tags/postgres" class="capitalize badge text-gray-900 bg-grey-light no-underline"> postgres (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/react" class="badge text-gray-900 bg-grey-light no-underline"> react (2)</a>
+            <a role="button" href="/tags/process" class="capitalize badge text-gray-900 bg-grey-light no-underline"> process (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/reader-question" class="badge text-gray-900 bg-grey-light no-underline"> reader question (2)</a>
+            <a role="button" href="/tags/react" class="capitalize badge text-gray-900 bg-grey-light no-underline"> react (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/s3" class="badge text-gray-900 bg-grey-light no-underline"> S3 (2)</a>
+            <a role="button" href="/tags/reader-question" class="capitalize badge text-gray-900 bg-grey-light no-underline"> reader question (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/sql" class="badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
+            <a role="button" href="/tags/s3" class="capitalize badge text-gray-900 bg-grey-light no-underline"> S3 (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/cricket" class="badge text-gray-900 bg-grey-light no-underline"> cricket (1)</a>
+            <a role="button" href="/tags/sql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/dapper" class="badge text-gray-900 bg-grey-light no-underline"> dapper (1)</a>
+            <a role="button" href="/tags/cricket" class="capitalize badge text-gray-900 bg-grey-light no-underline"> cricket (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/goals" class="badge text-gray-900 bg-grey-light no-underline"> goals (1)</a>
+            <a role="button" href="/tags/dapper" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dapper (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/iam" class="badge text-gray-900 bg-grey-light no-underline"> IAM (1)</a>
+            <a role="button" href="/tags/goals" class="capitalize badge text-gray-900 bg-grey-light no-underline"> goals (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/insomnia" class="badge text-gray-900 bg-grey-light no-underline"> Insomnia (1)</a>
+            <a role="button" href="/tags/iam" class="capitalize badge text-gray-900 bg-grey-light no-underline"> IAM (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/javascript" class="badge text-gray-900 bg-grey-light no-underline"> javascript (1)</a>
+            <a role="button" href="/tags/insomnia" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Insomnia (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/netlify" class="badge text-gray-900 bg-grey-light no-underline"> netlify (1)</a>
+            <a role="button" href="/tags/javascript" class="capitalize badge text-gray-900 bg-grey-light no-underline"> javascript (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/postman" class="badge text-gray-900 bg-grey-light no-underline"> Postman (1)</a>
+            <a role="button" href="/tags/netlify" class="capitalize badge text-gray-900 bg-grey-light no-underline"> netlify (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/source-generator" class="badge text-gray-900 bg-grey-light no-underline"> source generator (1)</a>
+            <a role="button" href="/tags/postman" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Postman (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/stripe" class="badge text-gray-900 bg-grey-light no-underline"> stripe (1)</a>
+            <a role="button" href="/tags/source-generator" class="capitalize badge text-gray-900 bg-grey-light no-underline"> source generator (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/vs-code" class="badge text-gray-900 bg-grey-light no-underline"> VS Code (1)</a>
+            <a role="button" href="/tags/stripe" class="capitalize badge text-gray-900 bg-grey-light no-underline"> stripe (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/washington" class="badge text-gray-900 bg-grey-light no-underline"> Washington (1)</a>
+            <a role="button" href="/tags/vs-code" class="capitalize badge text-gray-900 bg-grey-light no-underline"> VS Code (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/washington" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Washington (1)</a>
         </div>
 </div>
 

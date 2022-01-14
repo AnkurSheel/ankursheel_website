@@ -1,6 +1,7 @@
 ---
 title: 'New Release: Codinators.XunitHelpers Nuget Package'
 excerpt: 'The 1st Release of Codinators.XunitHelpers adds support for loading test data from a JSON file for xUnit Tests'
+category: "project updates"
 tags:
     - 'testing'
     - 'xUnit'

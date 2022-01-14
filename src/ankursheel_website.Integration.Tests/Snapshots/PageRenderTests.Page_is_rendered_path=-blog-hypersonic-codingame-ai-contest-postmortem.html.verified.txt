@@ -4,30 +4,30 @@
 <head>
     
 
-<title>Ankur Sheel - A post-mortem for Hypersonic (Codingame AI Contest)</title>
+<title>Ankur Sheel - A postmortem for Hypersonic (Codingame AI Contest)</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A post-mortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
+<meta name="description" content="A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/blog/hypersonic-codingame-ai-contest-postmortem"/>
 
-<meta itemProp="name" content="A post-mortem for Hypersonic (Codingame AI Contest)"/>
-<meta itemProp="description" content="A post-mortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
+<meta itemProp="name" content="A postmortem for Hypersonic (Codingame AI Contest)"/>
+<meta itemProp="description" content="A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/hypersonic-codingame-ai-contest-postmortem-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/hypersonic-codingame-ai-contest-postmortem"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="A post-mortem for Hypersonic (Codingame AI Contest)"/>
-<meta property="og:description" content="A post-mortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
+<meta property="og:title" content="A postmortem for Hypersonic (Codingame AI Contest)"/>
+<meta property="og:description" content="A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/hypersonic-codingame-ai-contest-postmortem-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/hypersonic-codingame-ai-contest-postmortem-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="A post-mortem for Hypersonic (Codingame AI Contest)"/>
-<meta name="twitter:description" content="A post-mortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
+<meta name="twitter:title" content="A postmortem for Hypersonic (Codingame AI Contest)"/>
+<meta name="twitter:description" content="A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/hypersonic-codingame-ai-contest-postmortem-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/hypersonic-codingame-ai-contest-postmortem-twitter.png"/>
 
@@ -118,7 +118,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">A post-mortem for Hypersonic (Codingame AI Contest)</h1>
+    <h1 class="text-center">A postmortem for Hypersonic (Codingame AI Contest)</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -133,7 +133,7 @@
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/codingame" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Codingame</a>
             <a href="/tags/cpp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">cpp</a>
-            <a href="/tags/post-mortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">post-mortem</a>
+            <a href="/tags/postmortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postmortem</a>
     </div>
 </div>
 
@@ -224,7 +224,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/hypersonic-codingame-ai-contest-postmortem&text=A%20post-mortem%20for%20HyperSonic%2C%20a%20multiplayer%20AI%20bot%20contest%20based%20on%20the%20Bomberman%20theme%20held%20by%20codingame. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/hypersonic-codingame-ai-contest-postmortem&text=A%20postmortem%20for%20HyperSonic%2C%20a%20multiplayer%20AI%20bot%20contest%20based%20on%20the%20Bomberman%20theme%20held%20by%20codingame. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

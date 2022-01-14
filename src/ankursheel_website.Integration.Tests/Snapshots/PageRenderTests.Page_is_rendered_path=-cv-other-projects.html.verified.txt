@@ -121,7 +121,21 @@
     <h1 class="text-center">Other Projects</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <h2 id="demo-to-showcase-how-different-easing-functions-behave">Demo to showcase how different easing functions behave</h2>
+            <h2 id="statiq-helpers">Statiq Helpers</h2>
+<p>Opinionated Wrapper around Statiq.Web to build a static website</p>
+<p><a href="https://github.com/AnkurSheel/StatiqHelpers">Source code</a>
+<a href="https://www.nuget.org/packages/Codinators.StatiqHelpers/">Nuget Package</a></p>
+<h2 id="xunithelpers">xUnitHelpers</h2>
+<p>Helpers that come in handy when writing tests with Xunit. Helpers Include</p>
+<ul>
+<li>Loading test data from a JSON file for xUnit Tests</li>
+<li>Multiple Asserts</li>
+<li>Auto Approver for Approval Tests</li>
+<li>Verify calls to ILogger using Moq</li>
+</ul>
+<p><a href="https://github.com/AnkurSheel/xUnitHelpers">Source code</a>
+<a href="https://www.nuget.org/packages/Codinators.XunitHelpers/">Nuget Package</a></p>
+<h2 id="demo-to-showcase-how-different-easing-functions-behave">Demo to showcase how different easing functions behave</h2>
 <p>Easing Functions Showcased: <em>Linear</em>, <em>Sine</em>, <em>Quadratic</em>, <em>Cubic</em>, <em>Quartic</em>, <em>Quintic</em>, <em>Exponential</em>, <em>Circular</em>, <em>Elastic</em>, <em>Back</em> and <em>Bounce</em>.</p>
 <p>Easing Types supported : <em>EaseIn</em>, <em>EaseOut</em>, <em>EaseInOut</em> and <em>EaseOutIn</em>.</p>
 <p>Made with C++</p>

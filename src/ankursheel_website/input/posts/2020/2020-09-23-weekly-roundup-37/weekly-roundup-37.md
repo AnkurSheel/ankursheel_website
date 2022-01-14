@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 37'
-excerpt: 'This weeks roundup contains articles/tools from Julia Evans, Blake Boles, Mike Crittenden, Charity Majors, Robert Heaton and Michael Natkin'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 37"
+excerpt: "This weeks roundup contains articles/tools from Julia Evans, Blake Boles, Mike Crittenden, Charity Majors, Robert Heaton and Michael Natkin"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

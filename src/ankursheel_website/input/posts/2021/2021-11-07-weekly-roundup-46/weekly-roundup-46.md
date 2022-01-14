@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 46'
-excerpt: 'This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 46"
+excerpt: "This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 <!-- markdownlint-disable no-duplicate-header -->

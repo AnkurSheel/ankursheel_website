@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Auckland Seaplanes'
 excerpt: It is an amazing feeling to take off and land in the water with Auckland Seaplanes. We expected to experience Auckland from above and were not disappointed
 coverImage: './images/Auckland_Seaplanes-2.jpg'
+category: "travel"
 tags:
     - New Zealand
     - Oceania

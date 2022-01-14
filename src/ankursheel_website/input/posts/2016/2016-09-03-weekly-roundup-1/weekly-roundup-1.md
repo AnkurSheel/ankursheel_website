@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 1'
+title: "Weekly Roundup 1"
 excerpt: This weeks roundup contains articles from Graham, Allan, Mike Winters and Kristin Wong
-coverImage: 'assets/images/weekly-roundup-cover.png'
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - weekly roundup
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

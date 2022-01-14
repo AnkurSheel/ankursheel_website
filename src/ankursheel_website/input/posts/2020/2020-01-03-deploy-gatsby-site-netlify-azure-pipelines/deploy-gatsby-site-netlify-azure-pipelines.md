@@ -1,6 +1,7 @@
 ---
 title: 'How to deploy a Gatsby site to Netlify using Azure Pipelines'
 excerpt: 'Deploying a gatsby site to Netlify has a few limits, resulting in my builds timing out. By using Azure Pipelines, the limits are no longer a problem'
+category: "programming"
 tags:
     - 'devops'
     - 'tutorial'

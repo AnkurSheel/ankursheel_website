@@ -1,6 +1,7 @@
 ---
 title: 'How do you upload a PDF received from an API to AWS S3?'
 excerpt: 'A code snippet to encrypt and upload a PDF file to an AWS S3 bucket received as a Stream from an external API'
+category: "programming"
 tags:
     - snippet
     - AWS

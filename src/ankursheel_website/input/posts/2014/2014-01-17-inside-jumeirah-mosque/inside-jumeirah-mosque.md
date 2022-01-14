@@ -2,6 +2,7 @@
 title: 'Understanding Islam inside the Jumeirah Mosque'
 excerpt: In this travelogue, Gunjan and I visit the Jumeirah Mosque and get a basic understanding of the tenets of Islam.
 coverImage: ./images/Jumeirah-6.jpg
+category: "travel"
 tags:
     - Middle East
     - travel

@@ -1,6 +1,7 @@
 ---
 title: 'Setting up the project properties for Game Engine Project'
 excerpt: The next post in the series talks about setting the project properties to be persistent.
+category: "programming"
 tags:
     - tutorial
     - game engine

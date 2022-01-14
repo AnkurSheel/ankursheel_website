@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Tamaki Maori Village, Rotorua'
 excerpt: What better way to understand the Maori Culture than at the Tamaki Maori Village in Rotorua.
 coverImage: ./images/Maori_Village-8.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

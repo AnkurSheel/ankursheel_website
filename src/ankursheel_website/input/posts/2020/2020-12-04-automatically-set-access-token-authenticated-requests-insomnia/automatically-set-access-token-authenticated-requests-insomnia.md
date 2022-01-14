@@ -2,6 +2,7 @@
 title: 'How to automatically set the access token in Insomnia'
 excerpt: 'How can you test a GraphQl endpoint accessible only to authorised users in Insomnia to test your requests (without jumping through hoops).'
 coverImage: './images/request_success.png'
+category: "programming"
 tags:
     - Insomnia
     - testing

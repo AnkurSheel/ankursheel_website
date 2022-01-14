@@ -2,6 +2,7 @@
 title: 'Photo Essay: DisneyLand Los Angeles'
 excerpt: 'Next on the Photo Series of The USA roadtrip: Disney Land in Los Angeles'
 coverImage: ./images/DisneyLand-1.jpg
+category: "travel"
 tags:
     - North America
     - travel

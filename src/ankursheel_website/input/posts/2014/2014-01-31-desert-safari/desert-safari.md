@@ -2,6 +2,7 @@
 title: Desert Safari
 excerpt: In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance.
 coverImage: ./images/DesertSafari-3.jpg
+category: "travel"
 tags:
     - Middle East
     - travel

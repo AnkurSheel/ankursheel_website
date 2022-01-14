@@ -9,25 +9,25 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
+<meta name="description" content="A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/blog/fantastic-bits-codingame-ai-contest-postmortem"/>
 
 <meta itemProp="name" content="A postmortem for Fantastic Bits (Codingame AI Contest)"/>
-<meta itemProp="description" content="A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
+<meta itemProp="description" content="A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-ai-contest-postmortem-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/fantastic-bits-codingame-ai-contest-postmortem"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="A postmortem for Fantastic Bits (Codingame AI Contest)"/>
-<meta property="og:description" content="A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
+<meta property="og:description" content="A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-ai-contest-postmortem-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-ai-contest-postmortem-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="A postmortem for Fantastic Bits (Codingame AI Contest)"/>
-<meta name="twitter:description" content="A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
+<meta name="twitter:description" content="A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-ai-contest-postmortem-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-ai-contest-postmortem-twitter.png"/>
 
@@ -133,7 +133,7 @@
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/cpp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">cpp</a>
             <a href="/tags/codingame" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Codingame</a>
-            <a href="/tags/post-mortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">post-mortem</a>
+            <a href="/tags/postmortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postmortem</a>
     </div>
 </div>
 
@@ -172,7 +172,7 @@
 <li>Being in New Zealand for the contest from a timezone perspective sucks. The contest starts and ends when you are sleeping.</li>
 <li>I did not get to spend as much time as I would have liked on this. With work and other personal commitments, I could only spend a few hours on the problem. I was also unable to work on the weekend just before the contest ended, which dropped my rank from the early 400's to below 600 by the time I finished the contest.</li>
 <li>I wasted a lot of time trying to get the 2 spells '<strong>Petrificius</strong>' and '<strong>Obliviate</strong>' to work. In retrospect, I should not have even tried this without having a robust simulation and probably a Genetic Algorithm.</li>
-<li>I read the <a href="http://files.magusgeek.com/csb/csb_en.html">Magus's post-mortem and implementation of CSB</a> quite late. Having implemented parts of it would have helped considerably for this contest. Although other than trolling the chat/forums, I don't see how I could have found this earlier. It might be worthwhile for Codingame to give a reference of which bot contest can be used to practice on a few days before the competition starts.</li>
+<li>I read the <a href="http://files.magusgeek.com/csb/csb_en.html">Magus's postmortem and implementation of CSB</a> quite late. Having implemented parts of it would have helped considerably for this contest. Although other than trolling the chat/forums, I don't see how I could have found this earlier. It might be worthwhile for Codingame to give a reference of which bot contest can be used to practice on a few days before the competition starts.</li>
 <li>My knowledge and interest in physic systems is relatively low. To have a robust simulation, a good understanding of collision avoidance was required.</li>
 <li>I did not get time to implement a Genetic Algorithm or an MCTS, which would have probably helped me gain ranks much faster.</li>
 <li>When I was around the 300 mark, I decided to resubmit the existing code. Big Mistake. Even though my code was the same, my rank dropped like a stone underwater. This was probably because other players had submitted improved code and a submit causes a test against all of them. The lesson learnt here is that gain ranks early and submit only if you are relatively sure of gaining more ranks. A lot of information had to be simulated, such as mana, collisions, and some inputs for the opponent. It was just a lot of work to do, along with writing an AI. I guess it would have been easier if I had code that I could reuse from one of the earlier contests</li>
@@ -206,7 +206,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/fantastic-bits-codingame-ai-contest-postmortem&text=A%20post-mortem%20for%20Fantastic%20Bits%2C%20a%20Codingame%20contest%20based%20on%20Quidditch%20from%20Harry%20Potter. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/fantastic-bits-codingame-ai-contest-postmortem&text=A%20postmortem%20for%20Fantastic%20Bits%2C%20a%20Codingame%20contest%20based%20on%20Quidditch%20from%20Harry%20Potter. via @ankur_sheel" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

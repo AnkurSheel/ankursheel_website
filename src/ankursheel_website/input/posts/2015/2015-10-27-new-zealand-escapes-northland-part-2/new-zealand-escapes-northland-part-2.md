@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Northland - Part 2'
 excerpt: We reach Cape Reinga just in time for the sunset. On our way back, we check out the 90 mile beach and KawaKawa.
 coverImage: ./images/CapeReinga-12.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

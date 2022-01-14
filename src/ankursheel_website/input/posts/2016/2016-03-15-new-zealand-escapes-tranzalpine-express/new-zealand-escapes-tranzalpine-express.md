@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: KiwiRail - TranzAlpine Express'
 excerpt: The Tranzalpine Express is perhaps the most scenic train ride in New Zealand and an excellent alternative to driving to see the country.
 coverImage: './images/TransAlpine_Express-17.jpg'
+category: "travel"
 tags:
     - New Zealand
     - Oceania

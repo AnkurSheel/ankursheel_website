@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Photo Essay - Mount Maunganui'
 excerpt: The views from the Mount Maunganui summit tends to leave one breathless. Or is it because of the exertion of walking along a steep track? Decide for yourself
 coverImage: ./images/Mount_Maunganui-1.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania
