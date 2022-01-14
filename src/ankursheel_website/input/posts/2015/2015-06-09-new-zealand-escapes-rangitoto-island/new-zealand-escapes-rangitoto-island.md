@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Rangitoto Island'
 excerpt: To experience the beauty, a ferry trip to Rangitoto Island is a must-do for anyone new to Auckland city
 coverImage: './images/Rangitoto-9.jpg'
+category: "travel"
 tags:
     - travel
     - New Zealand

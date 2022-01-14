@@ -1,6 +1,7 @@
 ---
 title: 'How to add estimated Reading Time to Posts in Statiq'
 excerpt: 'A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq'
+category: "programming"
 tags:
     - 'Statiq'
     - 'tutorial'

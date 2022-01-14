@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Hobbiton, Matamata'
 excerpt: A highlight for LOTR fans is a tour of the Shire at Hobbiton. This has been one of the places I have wanted to visit since we moved to New Zealand.
 coverImage: ./images/Hobbiton-3.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

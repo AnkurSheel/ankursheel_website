@@ -1,9 +1,12 @@
 ---
 title: Weekly Roundup 9
 excerpt: This week's roundup contains articles from Bayalis is the Answer, Get Rich Quick'ish, Millennial Revolution, dev.to, Gamasutra and Zen Pencils.
-coverImage: 'assets/images/weekly-roundup-cover.png'
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - weekly roundup
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

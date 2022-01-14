@@ -1,9 +1,10 @@
 ---
 title: 'How to setup WordPress locally: Installing phpMyAdmin'
 excerpt: 'The next post in the Testing WordPress Locally series deals with Installing phpMyAdmin on windows.'
+category: "programming"
 tags:
     - tutorial
-    - Wordpress
+    - wordpress
 series: 'Setting up WordPress locally'
 ---
 

@@ -2,6 +2,7 @@
 title: Abra and Souqs in Dubai
 excerpt: A travelogue of visiting the various souqs in Dubai and taking the Abra, probably the cheapest mode of travel available in Dubai.
 coverImage: ./images/AbraSouqs-5.jpg
+category: "travel"
 tags:
     - Middle East
     - travel

@@ -1,6 +1,7 @@
 ---
 title: Solve Longest Common Subsequence with Dynamic Programming
 excerpt: In this article, we will use the above steps to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem.
+category: "programming"
 tags:
     - cpp
     - dynamic programming

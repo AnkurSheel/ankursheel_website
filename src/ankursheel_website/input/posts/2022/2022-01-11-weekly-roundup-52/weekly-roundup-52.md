@@ -2,6 +2,7 @@
 title: "Weekly Roundup 52"
 excerpt: "This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry"
 coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
 
 - "weekly roundup"

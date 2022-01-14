@@ -1,6 +1,7 @@
 ---
 title: 'How to Upload Multiple Files to AWS S3 using Terraform'
 excerpt: 'A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform'
+category: "programming"
 tags:
     - snippet
     - AWS

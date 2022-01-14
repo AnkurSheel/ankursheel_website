@@ -2,6 +2,7 @@
 title: 'How to add a billing admin user to secure an AWS root account'
 excerpt: 'How can we create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to log in as a root user'
 coverImage: './images/IAM.png'
+category: "programming"
 tags:
     - devops
     - AWS

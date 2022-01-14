@@ -2,6 +2,7 @@
 title: "Photo Essay: NASA's Space Center, Texas"
 excerpt: "Next on the Photo Series of The USA roadtrip : NASA's Space Center"
 coverImage: ./images/NasaSpaceCenter-7.jpg
+category: "travel"
 tags:
     - North America
     - travel

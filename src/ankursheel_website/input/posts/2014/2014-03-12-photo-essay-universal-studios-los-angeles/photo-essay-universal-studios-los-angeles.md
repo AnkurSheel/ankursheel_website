@@ -2,6 +2,7 @@
 title: 'Photo Essay: Universal Studios, Los Angeles'
 excerpt: Photo Series of a roadtrip starting from Universal Studios in Los Angeles
 coverImage: ./images/UniversalStudios-5.jpg
+category: "travel"
 tags:
     - North America
     - travel

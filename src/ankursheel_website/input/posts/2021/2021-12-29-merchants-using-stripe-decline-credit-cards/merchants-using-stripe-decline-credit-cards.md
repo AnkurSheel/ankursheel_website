@@ -2,6 +2,7 @@
 title: 'What to do as an end-user when merchants using stripe decline your credit cards'
 excerpt: 'My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue'
 coverImage: './cover.jpg'
+category: "ramblings"
 tags:
 - 'ramblings'
 - 'stripe'

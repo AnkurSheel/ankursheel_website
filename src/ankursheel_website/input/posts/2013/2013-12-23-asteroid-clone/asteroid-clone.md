@@ -1,6 +1,7 @@
 ---
 title: Why I am building an Asteroid clone as the next game
 excerpt: Reasons for Making Asteroid as the next game.
+category: "ramblings"
 tags:
     - games
 ---

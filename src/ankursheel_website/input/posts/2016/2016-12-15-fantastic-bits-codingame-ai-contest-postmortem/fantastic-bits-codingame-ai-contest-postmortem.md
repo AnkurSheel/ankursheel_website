@@ -1,11 +1,12 @@
 ---
 title: A postmortem for Fantastic Bits (Codingame AI Contest)
-excerpt: A post-mortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.
+excerpt: A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.
 coverImage: './cover.jpg'
+category: "postmortems"
 tags:
     - cpp
     - Codingame
-    - post-mortem
+    - postmortem
 ---
 
 Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time around, it was a game of **Quidditch** from the **Harry Potter** world and was named **Fantastic Bits** after the **Fantastic Beasts and Where To Find Them**
@@ -50,7 +51,7 @@ You can use multiple languages to submit your solution, but I went with C++ for 
 -   Being in New Zealand for the contest from a timezone perspective sucks. The contest starts and ends when you are sleeping.
 -   I did not get to spend as much time as I would have liked on this. With work and other personal commitments, I could only spend a few hours on the problem. I was also unable to work on the weekend just before the contest ended, which dropped my rank from the early 400's to below 600 by the time I finished the contest.
 -   I wasted a lot of time trying to get the 2 spells '**Petrificius**' and '**Obliviate**' to work. In retrospect, I should not have even tried this without having a robust simulation and probably a Genetic Algorithm.
--   I read the [Magus's post-mortem and implementation of CSB](http://files.magusgeek.com/csb/csb_en.html) quite late. Having implemented parts of it would have helped considerably for this contest. Although other than trolling the chat/forums, I don't see how I could have found this earlier. It might be worthwhile for Codingame to give a reference of which bot contest can be used to practice on a few days before the competition starts.
+-   I read the [Magus's postmortem and implementation of CSB](http://files.magusgeek.com/csb/csb_en.html) quite late. Having implemented parts of it would have helped considerably for this contest. Although other than trolling the chat/forums, I don't see how I could have found this earlier. It might be worthwhile for Codingame to give a reference of which bot contest can be used to practice on a few days before the competition starts.
 -   My knowledge and interest in physic systems is relatively low. To have a robust simulation, a good understanding of collision avoidance was required.
 -   I did not get time to implement a Genetic Algorithm or an MCTS, which would have probably helped me gain ranks much faster.
 -   When I was around the 300 mark, I decided to resubmit the existing code. Big Mistake. Even though my code was the same, my rank dropped like a stone underwater. This was probably because other players had submitted improved code and a submit causes a test against all of them. The lesson learnt here is that gain ranks early and submit only if you are relatively sure of gaining more ranks. A lot of information had to be simulated, such as mana, collisions, and some inputs for the opponent. It was just a lot of work to do, along with writing an AI. I guess it would have been easier if I had code that I could reuse from one of the earlier contests

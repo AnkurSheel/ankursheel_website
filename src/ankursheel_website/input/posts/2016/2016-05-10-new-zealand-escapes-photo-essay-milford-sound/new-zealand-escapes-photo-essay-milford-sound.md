@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Photo Essay - Milford Sound'
 excerpt: When it rains in Milford Sound, the rainfall makes hundreds of waterfalls which, combined with the rainbows, make for a mystical sight.
 coverImage: ./images/Milford-Sound_6.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

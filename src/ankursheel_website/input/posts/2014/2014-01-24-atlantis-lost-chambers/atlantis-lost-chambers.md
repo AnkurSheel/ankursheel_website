@@ -2,6 +2,7 @@
 title: Atlantis The Lost Chambers
 excerpt: In this travelogue, Gunjan and I visit the Lost Chambers in Atlantis in Dubai.
 coverImage: ./images/Atlantis-11.jpg
+category: "travel"
 tags:
     - Middle East
     - travel

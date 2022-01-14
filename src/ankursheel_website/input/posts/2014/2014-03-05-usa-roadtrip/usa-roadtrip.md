@@ -1,6 +1,7 @@
 ---
 title: 'USA Roadtrip'
 excerpt: The route of the road trip across the USA I took with my parents after graduating in May 2010.'
+category: "travel"
 tags:
     - North America
     - travel

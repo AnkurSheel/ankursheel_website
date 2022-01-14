@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Northland - Part 1'
 excerpt: For our very next escape, we travel through Northland to the the very tip of New Zealand - the place where the Tasman Sea meets the mighty Pacific Ocean.
 coverImage: ./images/CapeReinga-10.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

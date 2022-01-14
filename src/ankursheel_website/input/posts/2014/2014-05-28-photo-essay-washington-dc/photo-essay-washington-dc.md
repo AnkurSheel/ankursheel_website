@@ -2,6 +2,7 @@
 title: 'Photo Essay: Washington DC'
 excerpt: 'While I visit Washington DC, my parents hop across to New York and Philadelphia as well. Next on the Photo Series of The USA roadtrip: Washington DC'
 coverImage: ./images/WashingtonDC-3.jpg
+category: "travel"
 tags:
     - North America
     - travel

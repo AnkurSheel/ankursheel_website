@@ -2,6 +2,7 @@
 title: 'How to deploy a Gatsby site on a schedule with Azure Pipelines'
 excerpt: 'A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule'
 coverImage: './cover.jpg'
+category: "programming"
 tags:
     - 'devops'
     - 'tutorial'

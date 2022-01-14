@@ -1,9 +1,10 @@
 ---
 title: 'Setup WordPress locally: Installing an Apache Web Server'
 excerpt: In the first part of the series, we will install Apache (webserver) on our machine.
+category: "programming"
 tags:
     - tutorial
-    - Wordpress
+    - wordpress
 series: 'Setting up WordPress locally'
 ---
 

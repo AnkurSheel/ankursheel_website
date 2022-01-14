@@ -1,9 +1,12 @@
 ---
 title: Weekly Roundup 4
 excerpt: This week's roundup contains articles from YTravelblog, Millenial Revolution, Money Smart Guides and Zen Pencils
-coverImage: 'assets/images/weekly-roundup-cover.png'
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - weekly roundup
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

@@ -1,6 +1,7 @@
 ---
 title: "How to use ApprovalTests with xUnit's Theory attribute"
 excerpt: 'The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests.'
+category: "programming"
 tags:
     - csharp
     - testing

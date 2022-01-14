@@ -1,6 +1,7 @@
 ---
 title: 'How to calculate reading time'
 excerpt: 'A guide to calculating the reading time for a given document'
+category: "programming"
 tags:
     - 'snippet'
     - 'tutorial'

@@ -2,6 +2,7 @@
 title: 'Photo Essay: Meteor Crater, Arizona'
 excerpt: 'Part of the Photo Series of The USA roadtrip : Meteor Crater in Arizona'
 coverImage: ./images/MeteorCrater-5.jpg
+category: "travel"
 tags:
     - North America
     - travel

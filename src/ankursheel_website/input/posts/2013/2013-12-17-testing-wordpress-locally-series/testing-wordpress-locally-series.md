@@ -1,6 +1,7 @@
 ---
 title: 'How to setup WordPress locally: Introduction'
 excerpt: In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud.
+updatedOnDate: 2013-12-19
 tags:
     - tutorial
     - Wordpress

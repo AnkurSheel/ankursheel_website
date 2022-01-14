@@ -2,6 +2,7 @@
 title: A visit to Wafi Mall
 excerpt: In this travelogue, Gunjan and I spend some time at the Wafi Mall in Dubai.
 coverImage: ./images/Wafi-mall-11.jpg
+category: "travel"
 tags:
     - Middle East
     - travel

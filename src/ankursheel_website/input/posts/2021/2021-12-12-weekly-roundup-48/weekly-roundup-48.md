@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 48'
-excerpt: 'This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 48"
+excerpt: "This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

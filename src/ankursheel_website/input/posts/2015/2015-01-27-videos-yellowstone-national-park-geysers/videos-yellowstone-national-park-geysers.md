@@ -1,6 +1,7 @@
 ---
 title: 'Videos: Yellowstone National Park Geysers'
 excerpt: A few videos of the Yellowstone National Park Geysers.
+category: "video"
 tags:
     - North America
     - travel

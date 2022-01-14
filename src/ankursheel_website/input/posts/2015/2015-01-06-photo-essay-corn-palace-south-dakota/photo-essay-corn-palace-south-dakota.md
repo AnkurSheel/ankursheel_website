@@ -2,6 +2,7 @@
 title: 'Photo Essay: Corn Palace, South Dakota'
 excerpt: The next stop on the roadtrip is the Corn Palace in Mitchell, South Dakota. This is exactly as it sounds. The building is decorated with crop art.
 coverImage: ./images/CornPalace-6.jpg
+category: "travel"
 tags:
     - North America
     - travel

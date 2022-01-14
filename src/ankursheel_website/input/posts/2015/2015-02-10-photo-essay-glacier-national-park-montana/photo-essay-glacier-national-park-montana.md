@@ -2,6 +2,7 @@
 title: 'Photo Essay: Glacier National Park, Montana'
 excerpt: 'The Glacier National Park is a beautiful place and the landscapes are just breathtaking'
 coverImage: ./images/Glacier-7.jpg
+category: "travel"
 tags:
     - North America
     - travel

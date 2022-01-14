@@ -1,9 +1,10 @@
 ---
 title: 'How to setup WordPress locally: Installing PHP'
 excerpt: In this part of the series, we will Install PHP on our local machine.
+category: "programming"
 tags:
     - tutorial
-    - Wordpress
+    - wordpress
 series: 'Setting up WordPress locally'
 ---
 

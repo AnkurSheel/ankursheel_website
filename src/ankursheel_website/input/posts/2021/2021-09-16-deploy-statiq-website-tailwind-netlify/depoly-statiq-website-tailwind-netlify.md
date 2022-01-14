@@ -1,6 +1,7 @@
 ---
 title: 'Deploy a Statiq website using Tailwind CSS to Netlify'
 excerpt: 'A guide to installing Tailwind CSS on deploying a Statiq website'
+category: "programming"
 tags:
     - 'Statiq'
     - 'tailwind'

@@ -1,6 +1,7 @@
 ---
 title: 'Video: Bungee Jump in Queenstown'
 excerpt: A short video of my bungee jump in Queenstown.
+category: "video"
 tags:
     - New Zealand
     - Oceania

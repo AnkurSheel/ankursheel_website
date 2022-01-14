@@ -1,6 +1,7 @@
 ---
 title: How to start using Dynamic-link libraries (DLL)
 excerpt: This post deals with the basic information you need to know to begin using DLL's.
+category: "programming"
 tags:
     - snippet
     - tutorial

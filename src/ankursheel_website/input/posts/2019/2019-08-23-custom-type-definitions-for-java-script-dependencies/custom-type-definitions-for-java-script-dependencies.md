@@ -1,7 +1,8 @@
 ---
 title: 'Create custom type definitions for JavaScript dependencies'
 excerpt: 'What to do when you get a "Could not find a declaration file for module" error when the package does not exist in "@types/third-party-library-name" error'
-featuredImage: './cover.jpg'
+coverImage: './cover.jpg'
+category: "programming"
 tags:
     - 'typescript'
     - 'tutorial'

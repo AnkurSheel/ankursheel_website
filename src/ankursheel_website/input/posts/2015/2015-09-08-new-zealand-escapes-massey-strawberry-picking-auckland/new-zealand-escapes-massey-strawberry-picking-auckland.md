@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Massey Strawberry Picking, Auckland'
 excerpt: Red, juicy strawberries are best eaten as soon as they've been picked. One of the easiest ways to do this is to get them at your local strawberry picking farm
 coverImage: './images/Massey-4.jpg'
+category: "travel"
 tags:
     - New Zealand
     - Oceania

@@ -1,9 +1,10 @@
 ---
 title: 'How to setup WordPress locally: Installing MySQL'
 excerpt: The third post in the series Testing WordPress Locally deals with installing MySQL on windows.
+category: "programming"
 tags:
     - tutorial
-    - Wordpress
+    - wordpress
 series: 'Setting up WordPress locally'
 ---
 

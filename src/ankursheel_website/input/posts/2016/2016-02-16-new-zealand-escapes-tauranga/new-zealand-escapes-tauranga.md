@@ -2,6 +2,7 @@
 title: 'New Zealand Escapes: Tauranga'
 excerpt: Tauranga is a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports
 coverImage: ./images/Tauranga-2.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

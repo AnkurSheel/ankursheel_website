@@ -1,9 +1,10 @@
 ---
 title: 'How to setup WordPress locally: Installing WordPress'
 excerpt: The final post in the Testing WordPress Locally series deals with Installing WordPress on windows.
+category: "programming"
 tags:
     - tutorial
-    - Wordpress
+    - wordpress
 series: 'Setting up WordPress locally'
 ---
 

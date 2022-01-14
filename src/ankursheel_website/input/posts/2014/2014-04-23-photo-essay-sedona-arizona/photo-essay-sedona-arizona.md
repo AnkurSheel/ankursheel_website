@@ -2,6 +2,7 @@
 title: 'Photo Essay: Sedona, Arizona'
 excerpt: 'Next on the Photo Series of The USA roadtrip: Sedona, Arizona. A gem of a place, we discovered by accident.'
 coverImage: ./images/Sedona-5.jpg
+category: "travel"
 tags:
     - North America
     - travel

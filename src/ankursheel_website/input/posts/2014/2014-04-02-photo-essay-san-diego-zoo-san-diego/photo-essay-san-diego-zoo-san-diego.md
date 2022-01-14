@@ -2,6 +2,7 @@
 title: 'Photo Essay: San Diego Zoo, San Diego'
 excerpt: 'Next on the Photo Series of The USA roadtrip: San Diego Zoo'
 coverImage: ./images/SanDiegoZoo-28.jpg
+category: "travel"
 tags:
     - North America
     - travel

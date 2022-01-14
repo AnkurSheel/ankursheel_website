@@ -2,6 +2,7 @@
 title: 'Photo Essay: Niagara Falls, New York'
 excerpt: "After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop.Next on the Photo Series of The USA roadtrip : Niagara Falls'"
 coverImage: ./images/NiagraFalls-1.jpg
+category: "travel"
 tags:
     - North America
     - travel

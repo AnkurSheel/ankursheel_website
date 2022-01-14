@@ -2,6 +2,7 @@
 title: 'Photo Essay: Diwali in Auckland'
 excerpt: This is a  series of photographs taken at the Diwali Festival organised by the Auckland Council.
 coverImage: ./images/Diwali_Auckland_2104-14.jpg
+category: "travel"
 tags:
     - New Zealand
     - Oceania

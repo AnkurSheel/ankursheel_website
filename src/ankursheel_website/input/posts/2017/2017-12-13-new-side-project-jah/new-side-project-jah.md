@@ -1,6 +1,7 @@
 ---
 title: 'New Side Project: JAH'
 excerpt: 'Start of a new side project: Codename JAH to track the status of a job application.'
+category: "project updates"
 tags:
     - project updates
     - JAH

@@ -1,6 +1,7 @@
 ---
 title: JAH Update 5
 excerpt: 'JAH Update 5 : v 0.0.7 adds support for authentication and register/login pages.'
+category: "project updates"
 tags:
     - project updates
     - JAH

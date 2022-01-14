@@ -1,6 +1,7 @@
 ---
 title: How to prevent the compiler from copying an object in cpp
 excerpt: In this C++ tutorial, we see an easy way to prevent the compiler from making objects, i.e. non-copyable objects.
+category: "programming"
 tags:
     - snippet
     - tutorial

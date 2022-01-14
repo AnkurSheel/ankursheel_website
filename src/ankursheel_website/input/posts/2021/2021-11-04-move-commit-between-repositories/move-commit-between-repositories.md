@@ -1,6 +1,7 @@
 ---
 title: 'How to move a commit between repositories'
 excerpt: 'Steps to move a commit from one repository to another'
+category: "programming"
 tags:
     - 'git'
 ---

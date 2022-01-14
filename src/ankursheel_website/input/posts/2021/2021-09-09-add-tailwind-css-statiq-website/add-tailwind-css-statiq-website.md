@@ -1,6 +1,7 @@
 ---
 title: 'Add Tailwind CSS to a Statiq website'
 excerpt: 'A guide to using TailwindCss with Statiq'
+category: "programming"
 tags:
     - 'Statiq'
     - 'tailwind'

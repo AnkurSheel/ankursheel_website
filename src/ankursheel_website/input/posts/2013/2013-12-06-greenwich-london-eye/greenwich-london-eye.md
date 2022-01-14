@@ -2,6 +2,7 @@
 title: Visiting Greenwich and taking a ride on London Eye
 excerpt: In this travelogue, I visit Greenwich, the Royal Observatory and take a ride on the London Eye.
 coverImage: ./images/greenwich-london-eye-2.jpg
+category: "travel"
 tags:
     - Europe
     - travel

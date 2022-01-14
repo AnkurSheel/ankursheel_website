@@ -1,6 +1,7 @@
 ---
 title: 'How to draw on a page using react hooks and typescript'
 excerpt: "Can we recreate the drawing interaction on DEV's offline page as a React Component using Hooks and Typescript? Let's find out"
+category: "programming"
 tags:
     - 'typescript'
     - 'react'

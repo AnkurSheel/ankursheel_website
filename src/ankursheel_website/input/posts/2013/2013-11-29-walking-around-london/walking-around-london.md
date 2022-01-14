@@ -2,6 +2,7 @@
 title: Walking Around in London
 excerpt: In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace.
 coverImage: ./images/London-2.jpg
+category: "travel"
 tags:
     - Europe
     - travel

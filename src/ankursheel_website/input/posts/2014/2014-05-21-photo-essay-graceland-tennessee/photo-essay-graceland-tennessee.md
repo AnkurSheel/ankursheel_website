@@ -2,6 +2,7 @@
 title: 'Photo Essay: Graceland, Tennessee'
 excerpt: 'From Georgia we move to Tenessee and visit the home of Elvis Presley. Next on the Photo Series of The USA roadtrip: Graceland'
 coverImage: ./images/Graceland-13.jpg
+category: "travel"
 tags:
     - North America
     - travel

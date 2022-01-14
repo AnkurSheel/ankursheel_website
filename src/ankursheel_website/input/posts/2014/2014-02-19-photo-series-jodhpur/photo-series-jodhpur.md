@@ -2,6 +2,7 @@
 title: 'Photo Series: Jodhpur'
 excerpt: Photo Series of a roadtrip from Delhi to Jodhpur in Rajasthan.
 coverImage: ./images/Jodhpur-13.jpg
+category: "travel"
 tags:
     - Asia
     - India

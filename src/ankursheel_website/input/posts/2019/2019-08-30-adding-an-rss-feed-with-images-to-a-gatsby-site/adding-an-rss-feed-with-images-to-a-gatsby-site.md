@@ -2,6 +2,7 @@
 title: 'How to add an RSS feed with images to a Gatsby site'
 excerpt: 'A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site'
 coverImage: './rss-example.png'
+category: "programming"
 tags:
     - 'Gatsby'
     - 'web development'

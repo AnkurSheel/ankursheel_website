@@ -2,6 +2,7 @@
 title: 'Why do I interview even when I am happy at my job?'
 excerpt: 'Every year, I dust off my resume and apply for a couple of jobs that look interesting. Why do I put myself through this ordeal?'
 coverImage: ./cover.jpg
+category: "career / work"
 tags:
     - career
     - ramblings

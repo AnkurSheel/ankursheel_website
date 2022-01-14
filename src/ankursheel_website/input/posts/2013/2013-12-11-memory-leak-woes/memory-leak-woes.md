@@ -1,6 +1,7 @@
 ---
 title: A guide to finding memory leaks using macros in C++
 excerpt: Macro trickery to find the offending file(s) and line(s) causing Memory Leak(s) without using a commercial program.
+category: "programming"
 tags:
     - snippet
     - tutorial

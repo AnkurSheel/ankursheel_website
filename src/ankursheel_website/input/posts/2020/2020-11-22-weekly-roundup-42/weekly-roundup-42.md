@@ -1,9 +1,12 @@
 ---
-title: 'Weekly Roundup 42'
-excerpt: 'This weeks roundup contains articles from Harry Dry, Marquette Carney, Josh Comeau, Alexey Guzey, Ben Stokes and Cathryn'
-coverImage: 'assets/images/weekly-roundup-cover.png'
+title: "Weekly Roundup 42"
+excerpt: "This weeks roundup contains articles from Harry Dry, Marquette Carney, Josh Comeau, Alexey Guzey, Ben Stokes and Cathryn"
+coverImage: "assets/images/weekly-roundup-cover.png"
+category: "weekly roundup"
 tags:
-    - 'weekly roundup'
+
+- "weekly roundup"
+
 ---
 
 Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.

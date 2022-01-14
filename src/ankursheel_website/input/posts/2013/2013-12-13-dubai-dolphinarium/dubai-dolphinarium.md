@@ -2,6 +2,7 @@
 title: Dubai Dolphinarium
 excerpt: In this travelogue, me and Gunjan visit the Dubai Dolphinarium.
 coverImage: ./images/dubai-dolphinarium-3.jpg
+category: "travel"
 tags:
     - Middle East
     - travel

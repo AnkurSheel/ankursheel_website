@@ -1,6 +1,7 @@
 ---
 title: 'Video: Belly Dance'
 excerpt: Video of the Belly Dance during the Desert Safari
+category: "video"
 tags:
     - Middle East
     - travel
