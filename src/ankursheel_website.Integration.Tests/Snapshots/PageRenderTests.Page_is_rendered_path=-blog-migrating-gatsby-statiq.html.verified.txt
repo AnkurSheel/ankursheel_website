@@ -134,7 +134,6 @@
             <a href="/tags/statiq" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Statiq</a>
             <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Gatsby</a>
             <a href="/tags/tailwind" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tailwind</a>
-            <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
             <a href="/tags/website-migration" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">website migration</a>
     </div>
 </div>

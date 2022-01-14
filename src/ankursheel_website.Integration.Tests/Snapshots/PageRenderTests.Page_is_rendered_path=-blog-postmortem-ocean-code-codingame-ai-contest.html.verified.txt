@@ -132,7 +132,7 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/codingame" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Codingame</a>
-            <a href="/tags/post-mortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">post-mortem</a>
+            <a href="/tags/postmortem" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postmortem</a>
     </div>
 </div>
 

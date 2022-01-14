@@ -132,7 +132,6 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
-            <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
             <a href="/tags/website-migration" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">website migration</a>
     </div>
 </div>
