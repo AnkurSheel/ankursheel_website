@@ -4,7 +4,7 @@ excerpt: 'A guide for adding an RSS feed which shows the featured image in the l
 coverImage: './rss-example.png'
 category: "programming"
 tags:
-    - 'Gatsby'
+    - 'gatsby'
     - 'web development'
     - 'javascript'
     - 'tutorial'

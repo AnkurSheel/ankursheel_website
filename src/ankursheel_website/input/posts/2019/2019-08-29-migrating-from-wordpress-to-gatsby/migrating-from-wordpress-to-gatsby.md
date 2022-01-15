@@ -5,8 +5,8 @@ coverImage: './cover.png'
 category: "ramblings"
 tags:
     - 'devops'
-    - 'Gatsby'
-    - 'Wordpress'
+    - 'gatsby'
+    - 'wordpress'
     - 'website migration'
 ---
 

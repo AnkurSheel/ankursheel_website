@@ -4,7 +4,7 @@ excerpt: In this series, I will cover how to set up WordPress locally so that yo
 updatedOnDate: 2013-12-19
 tags:
     - tutorial
-    - Wordpress
+    - wordpress
 series: 'Setting up WordPress locally'
 ---
 

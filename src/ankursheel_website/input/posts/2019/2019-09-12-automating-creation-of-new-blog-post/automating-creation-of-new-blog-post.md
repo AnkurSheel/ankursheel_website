@@ -5,7 +5,7 @@ category: "programming"
 tags:
     - 'devops'
     - 'tutorial'
-    - 'Gatsby'
+    - 'gatsby'
     - 'typescript'
 ---
 

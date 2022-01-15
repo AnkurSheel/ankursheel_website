@@ -4,7 +4,7 @@ excerpt: 'I have been on Gatsby for 2 years now. What motivated me to migrate my
 category: "ramblings"
 tags:
     - 'Statiq'
-    - 'Gatsby'
+    - 'gatsby'
     - 'tailwind'
     - 'website migration'
 ---

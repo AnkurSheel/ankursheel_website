@@ -5,8 +5,8 @@ coverImage: './cover.png'
 category: "ramblings"
 tags:
     - 'reader question'
-    - 'Gatsby'
-    - 'Wordpress'
+    - 'gatsby'
+    - 'wordpress'
 ---
 
 ## Reader Question
