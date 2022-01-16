@@ -8,7 +8,9 @@ Title: All Articles
     const int numberOfRecentPosts = 5;
     var sortedPosts = Model.AllPosts.OrderByDescending(x => x.Document.GetLastUpdatedDate()).ToList();
     var groups = sortedPosts.GroupBy(x => x.Document.GetCategory()).OrderBy(x => x.Key);
-    var recentPosts = sortedPosts.Take(numberOfRecentPosts);
+    var recentPosts = sortedPosts
+        // .Where(x => !x.Document.GetTags().Contains("weekly roundup"))
+        .Take(numberOfRecentPosts);
 }
 
 <h2> @numberOfRecentPosts Most Recent Posts</h2>
