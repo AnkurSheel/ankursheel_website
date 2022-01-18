@@ -6,7 +6,6 @@ category: "programming"
 tags:
     - devops
     - AWS
-    - IAM
     - security
 ---
 
@@ -18,7 +17,7 @@ Let's see how we can create a user with administrator and Billing Access rights 
 
 First login as the root user
 
-## Enable Access to Billing Informations for IAM users
+## Enable Access to Billing Information for IAM users
 
 On the navigation bar, choose the account name and click on _My Account_.
 

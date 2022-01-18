@@ -7,7 +7,6 @@ tags:
     - North America
     - travel
     - USA
-    - Washington
 ---
 
 From the national parks, we move back to the cities and reach Seattle.

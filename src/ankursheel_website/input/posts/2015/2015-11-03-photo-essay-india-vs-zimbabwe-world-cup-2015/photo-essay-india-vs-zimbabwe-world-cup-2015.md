@@ -3,7 +3,7 @@ title: 'Photo Essay: India Vs Zimbabwe, World Cup 2015'
 excerpt: The India vs Zimbabwe match held at Auckland for the Cricket World Cup 2015
 coverImage: ./images/IndZim_Cricket_03-04-2015-42.jpg
 tags:
-    - cricket
+    - india
 ---
 
 ![](./images/IndZim_Cricket_03-04-2015-1.jpg)

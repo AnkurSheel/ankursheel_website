@@ -5,7 +5,6 @@ coverImage: './cover.jpg'
 category: "ramblings"
 tags:
 - 'ramblings'
-- 'stripe'
 ---
 
 For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.

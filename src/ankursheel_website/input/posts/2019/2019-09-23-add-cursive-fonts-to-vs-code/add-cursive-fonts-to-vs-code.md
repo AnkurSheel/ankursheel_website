@@ -2,7 +2,6 @@
 title: 'How to add ligatures and cursive fonts to VS Code'
 excerpt: 'The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code'
 tags:
-    - 'VS Code'
     - 'dev tools'
 coverImage: './cover.png'
 updatedOnDate: 2021-05-16
