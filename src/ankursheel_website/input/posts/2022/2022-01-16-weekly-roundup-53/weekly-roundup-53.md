@@ -2,7 +2,7 @@
 title: "Weekly Roundup 53"
 excerpt: "This weeks roundup contains articles from Jimmy Bogard, Mr Money Mustache, Josh Comeau, Andrey Azimov and Growth.Design"
 coverImage: "assets/images/weekly-roundup-cover.png"
-category: "weekly roundup."
+category: "weekly roundup"
 tags:
 
 - "weekly roundup"
