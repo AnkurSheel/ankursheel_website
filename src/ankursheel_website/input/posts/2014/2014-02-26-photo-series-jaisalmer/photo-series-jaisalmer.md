@@ -5,7 +5,7 @@ coverImage: ./images/Jaisalmer-12.jpg
 category: "travel"
 tags:
     - Asia
-    - India
+    - india
     - travel
 ---
 

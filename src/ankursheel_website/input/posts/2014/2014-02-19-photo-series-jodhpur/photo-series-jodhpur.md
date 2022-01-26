@@ -5,7 +5,7 @@ coverImage: ./images/Jodhpur-13.jpg
 category: "travel"
 tags:
     - Asia
-    - India
+    - india
     - travel
 ---
 
