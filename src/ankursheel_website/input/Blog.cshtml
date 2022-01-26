@@ -25,24 +25,26 @@ Title: All Articles
     }
 </div>
 
-
 <h2> @numberOfRecentPosts Most Recent Posts</h2>
-@foreach (var post in recentPosts)
-{
-    <div>
-        <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a>
-    </div>
-}
-
+<ul class="p-0">
+    @foreach (var post in recentPosts)
+    {
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="@post.Document.GetPageUrl()">@post.Document.GetTitle()</a>
+        </li>
+    }
+</ul>
 
 @foreach (var group in groups)
 {
     var header = $"{group.Key} ({group.Count()})";
     <h3 id="@GetHeaderId(group.Key)" class="py-4 border-b border-grey-lighter capitalize">@header</h3>
-    @foreach (var post in group)
-    {
-        <div>
-            <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a> - <time class="prose-sm" datetime="@post.Document.GetLastUpdatedDate().ToString("yy-MM-dd")">@post.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time>
-        </div>
-    }
+    <ul class="p-0">
+        @foreach (var post in group)
+        {
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="@post.Document.GetPageUrl()">@post.Document.GetTitle()</a> - <time class="prose-sm" datetime="@post.Document.GetLastUpdatedDate().ToString("yy-MM-dd")">@post.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time>
+            </li>
+        }
+    </ul>
 }
