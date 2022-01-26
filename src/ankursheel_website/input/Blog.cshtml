@@ -11,7 +11,21 @@ Title: All Articles
     var recentPosts = sortedPosts
         // .Where(x => !x.Document.GetTags().Contains("weekly roundup"))
         .Take(numberOfRecentPosts);
+
+    string GetHeaderId(string header)
+    {
+        return header.RemoveHtmlAndSpecialChars(string.Empty).Replace(' ', '-');
+    }
 }
+
+<h2>All Categories</h2>
+
+<div class="flex flex-wrap gap-x-6 capitalize">
+    @foreach (var group in groups)
+    {
+        <a href="#@GetHeaderId(group.Key)">@group.Key</a>
+    }
+</div>
 
 <h2> @numberOfRecentPosts Most Recent Posts</h2>
 @foreach (var post in recentPosts)
@@ -21,12 +35,11 @@ Title: All Articles
     </div>
 }
 
-<h2>By Category</h2>
 
 @foreach (var group in groups)
 {
     var header = $"{group.Key} ({group.Count()})";
-    <h3 class="py-4 border-b border-grey-lighter capitalize">@header</h3>
+    <h3 id="@GetHeaderId(group.Key)" class="py-4 border-b border-grey-lighter capitalize">@header</h3>
     @foreach (var post in group)
     {
         <div>
