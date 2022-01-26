@@ -25,11 +25,12 @@ Title: All Articles
     }
 </div>
 
+
 <h2> @numberOfRecentPosts Most Recent Posts</h2>
 @foreach (var post in recentPosts)
 {
     <div>
-        <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a> - <time class="prose-sm" datetime="@post.Document.GetLastUpdatedDate().ToString("yy-MM-dd")">@post.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time>
+        <a href="@post.Document.GetPageUrl()" class="mb-4">@post.Document.GetTitle()</a>
     </div>
 }
 
