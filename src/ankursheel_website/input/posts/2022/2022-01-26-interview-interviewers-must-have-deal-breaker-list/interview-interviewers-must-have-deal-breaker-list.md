@@ -2,15 +2,13 @@
 title: "Interviewing your interviewers with a must-have and a deal-breaker list"
 excerpt: "Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"
 category: "career / work"
-updatedOnDate: "2022-02-07"
+updatedOnDate: "2022-02-16"
 tags:
 
 - ramblings
 - career
 
 ---
-
-# How to Interview your interviewers using a must-have and a deal-breaker list
 
 At the end of most interviews will come the question, "Do you have any questions for us?" Common advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more important reason to interview your interviewer.
 
@@ -49,7 +47,7 @@ Keep the list of questions handy so that you can ask questions throughout the in
 - T-shirts/ Shorts and Sandals are not allowed.
 - Mandatory in-office days/ No remote working.
 - If completely remote, there is no office space or compensation to pay for a shared office space.
-- Mandatory after-hours on call .
+- Mandatory after-hours on-call.
 - Micro-management.
 - Lots of meetings.
 - Following Dogmatic Scrum and story pointing.
@@ -75,7 +73,7 @@ _Relates to_: Autonomy and Flexibility
 
 _Relates to_: Open Communication
 
-**Q**: How are disagreements solved - both technical disagreements and other kinds? What happens when personalities clash?
+**Q**: How are disagreements solved - both technical disputes and other kinds? What happens when personalities clash?
 
 _Relates to_: Open Communication
 
@@ -186,6 +184,12 @@ _Relates to_: Learning from mistakes
 **Q**: How do performance reviews work? Do engineers review their peers and managers? What do you do in case of a bad review of a manager?
 
 _Relates to_: Equality, Career Advancement
+
+## What is an appropriate number of questions to ask?
+
+This is quite an extensive list. Chances are we won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by a person working in a similar role.
+
+One thing I have not tried so far but intend to try next time I am interviewing is conducting a [reverse interview](https://blog.pragmaticengineer.com/reverse-interviewing/){target="_blank"} after I have negotiated the offer to get any unanswered questions answered.
 
 ## Conclusion
 
