@@ -4,5 +4,5 @@
 @if (Model.Context.GetGoatCounterCode() != null)
 {
     var url = $"https://{Model.Context.GetGoatCounterCode()}.goatcounter.com/count";
-    <script data-goatcounter="@url" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="@url" src="/@Constants.JsDirectory/gc-count.js"></script>
 }

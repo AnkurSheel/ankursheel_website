@@ -6,16 +6,22 @@
     @await Html.PartialAsync("partials/_Head.cshtml")
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
-@if (Model.Context.GetGoogleTagManagerId() != null)
-{
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
+<noscript>
+    @if (Model.Context.GetGoogleTagManagerId() != null)
+    {
+        <!-- Google Tag Manager (noscript) -->
         <iframe src="https://www.googletagmanager.com/ns.html?id=@Model.Context.GetGoogleTagManagerId()"
                 height="0" width="0" style="display:none;visibility:hidden">
         </iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-}
+        <!-- End Google Tag Manager (noscript) -->
+    }
+    @if (Model.Context.GetGoatCounterCode() != null)
+    {
+        var url = $"https://{Model.Context.GetGoatCounterCode()}.goatcounter.com/count?p=/test-noscript";
+        <img src="@url">
+    }
+</noscript>
+
 <header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     @await Html.PartialAsync("partials/_Navigation.cshtml")
 </header>
