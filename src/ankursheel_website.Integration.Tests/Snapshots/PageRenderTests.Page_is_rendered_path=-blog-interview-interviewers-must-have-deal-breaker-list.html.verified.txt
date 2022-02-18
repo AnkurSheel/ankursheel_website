@@ -4,32 +4,32 @@
 <head>
     
 
-<title>Migrating from Gatsby to Statiq - Ankur Sheel</title>
+<title>Interviewing your interviewers with a must-have and a deal-breaker list - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"/>
+<meta name="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/migrating-gatsby-statiq"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"/>
 
-<meta itemProp="name" content="Migrating from Gatsby to Statiq"/>
-<meta itemProp="description" content="I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/migrating-gatsby-statiq-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/migrating-gatsby-statiq"/>
+<meta itemProp="name" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
+<meta itemProp="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Migrating from Gatsby to Statiq"/>
-<meta property="og:description" content="I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/migrating-gatsby-statiq-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-gatsby-statiq-facebook.png"/>
+<meta property="og:title" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
+<meta property="og:description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Migrating from Gatsby to Statiq"/>
-<meta name="twitter:description" content="I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/migrating-gatsby-statiq-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-gatsby-statiq-twitter.png"/>
+<meta name="twitter:title" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
+<meta name="twitter:description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,148 +122,134 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Migrating from Gatsby to Statiq</h1>
+    <h1 class="text-center">Interviewing your interviewers with a must-have and a deal-breaker list</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-08-16">August 16, 2021</time></span>
+        <span>Last Updated: <time datetime="2022-02-16">February 16, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 5 min
+            Reading Time: 6 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/statiq" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Statiq</a>
-            <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
-            <a href="/tags/tailwind" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tailwind</a>
-            <a href="/tags/website-migration" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">website migration</a>
+            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
+            <a href="/tags/career" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">career</a>
     </div>
 </div>
 
-<h2 id="my-blogging-journey">My Blogging Journey</h2>
-<p>In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.</p>
-<p>You can read more about why I migrated to Gatsby and the earlier parts of the journey at <a href="migrating-from-wordpress-to-gatsby">Why and How I migrated my website from WordPress to Gatsby</a>.</p>
-<h2 id="reasons-for-moving-away-from-gatsby">Reasons for moving away from Gatsby</h2>
-<p>There were a few reasons that the Gatsby solution is not working for me anymore. In no particular order,</p>
+<p>At the end of most interviews will come the question, &quot;Do you have any questions for us?&quot; Common advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more important reason to interview your interviewer.</p>
+<p>I have worked for a few companies in my career. Some of them worked out great, while for others, after a few months of joining, I realized it wasn't a great fit.</p>
+<p>Joining a company and finding out that it isn't a good match never feels great. It can be hard to know if the company we are thinking of joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.</p>
+<h2 id="how-to-apply-the-lists-in-an-interview">How to apply the lists in an interview</h2>
+<p>Now, it's unlikely that we will be able to walk into a job interview and run through our list of must-haves/deal-breakers like a checklist. After all, we can't just ask our prospective boss if they are a micromanager. But we can look for signals that can help us evaluate them.</p>
+<p>At this point, you might be wondering, how do I do that?</p>
+<ol>
+<li>Make your own list of must-haves and deal-breakers.</li>
+<li>For each item in the list, write a question.</li>
+</ol>
+<p><em>It's essential to keep the questions conversational and not accusatory. We should also structure the question so that the interviewer has to provide examples.</em></p>
+<p>Keep the list of questions handy so that you can ask questions throughout the interview as they relate to the topic being discussed.</p>
+<h2 id="my-must-have-list">My Must Have List</h2>
 <ul>
-<li>Lots of dependencies and updates
+<li>A high degree of autonomy and flexibility in how I manage my time and workload.</li>
+<li>Open communication not only among team-mates but also with management and Human Resources.</li>
+<li>Ability to choose my workplace tools, including both hardware and software.</li>
+<li>A clear and defined path toward career advancement (both in skills and compensation)</li>
+<li>Ability to work on non-work-related tasks for a few hours a week.</li>
+<li>Opportunity to spend time sharing my ideas on either mine or a company blog.</li>
+<li>Learning from mistakes / Blameless</li>
+<li>Inclusive Work environment</li>
+<li>Equality when it comes to stock options, reviews etc</li>
+</ul>
+<h2 id="my-deal-breaker-list">My Deal Breaker List</h2>
 <ul>
-<li>Gatsby is based on a plugin architecture. Hence, there are a lot of explicit dependencies that have to be added to get a functional site. I had dependabot running on a monthly cadence, and every month dependabot would open almost 50 PR's.</li>
-<li>Sometimes, I would upgrade a package only to find it was incompatible with another package. With some libraries moving over to ES Modules, I am running into this a lot more.</li>
+<li>Expected overtime.</li>
+<li>T-shirts/ Shorts and Sandals are not allowed.</li>
+<li>Mandatory in-office days/ No remote working.</li>
+<li>If completely remote, there is no office space or compensation to pay for a shared office space.</li>
+<li>Mandatory after-hours on-call.</li>
+<li>Micro-management.</li>
+<li>Lots of meetings.</li>
+<li>Following Dogmatic Scrum and story pointing.</li>
+<li>Long-lived branches.</li>
+<li>No automated tests / over-reliance on manual QA.</li>
+<li>Hiring mainly seniors / Not many intermediates or juniors.</li>
 </ul>
-</li>
-<li>Hard to make changes
-<ul>
-<li>After every few upgrades, using the library to generate types for the GraphQl queries would break with cryptic errors. Even updating some other libraries would break my custom tooling. This resulted in a few days being lost to yak-shaving.</li>
-<li>Upgrading packages would sometimes result in JS memory error in CI. This meant more fiddling with manually changing the memory available and deleting the caches so that the site would deploy again.</li>
-</ul>
-</li>
-<li>Programming Language that I don't use anywhere else
-<ul>
-<li>I never enjoyed the process of writing Javascript to make modifications. With Typescript and React, things are a lot better but with Gatsby and other libraries, not having types out of the box made adding types a chore.</li>
-</ul>
-</li>
-<li>Graphql
-<ul>
-<li>Gatsby is based on GraphQl. Although I like how Graphql works and use it extensively in my working life, it seemed overkill to generate static pages.</li>
-</ul>
-</li>
-<li>Lack of a strongly typed system
-<ul>
-<li>When I moved to Gatsby, I was using Typescript at work. Since then, I have realized that I enjoy working with a strongly typed and more mature language like C#.</li>
-<li>Gatsby and many other libraries don't come with types out of the box, which meant I had to figure out the types on my own or lose things like IntelliSense and errors at compile time.</li>
-</ul>
-</li>
-<li>Hard to write tests and get confidence when I am making changes
-<ul>
-<li>I don't know if it's my experience with Javascript or if Gatsby makes it hard, but I was never able to add tests which increased my stress every time I wanted to make a change.</li>
-</ul>
-</li>
-<li>JS out of memory error in CI
-<ul>
-<li>For no reason, I get Javascript out of memory errors when building in CI. I don't know why it happens, and a random fix of modifying the space size seems to do the trick.</li>
-</ul>
-</li>
-</ul>
-<h2 id="why-statiq">Why Statiq</h2>
-<p>With Gatsby releasing v3 and being a non-trivial migration, I decided to see what other generators are there.</p>
-<p>The first obvious option I considered was migrating to Gatsby v3, but I was not overly keen on it.</p>
-<p>The next option was <a href="https://nextjs.org/">NextJS</a>, which is also based on Javascript. I have been hearing increasingly good things about it, and to be honest, I would have probably gone with NextJs, if I had not stumbled upon Statiq.</p>
-<p><a href="https://www.statiq.dev/">Statiq</a> is based on C#, a language I have used for many years and am still using daily.</p>
-<p>Let's see how it stacks up against my concerns from the previous section.</p>
-<ul>
-<li><del>Lots of dependencies and updates</del>
-<ul>
-<li>To include Statiq, I just need to add 1 package. Regardless of whether I use Statiq.Web or Statiq.Framework, I just need to add 1 package, and it will get all the dependencies for me.</li>
-<li>The C# packaging system also feels a lot more sensible in the sense that you opt-in for even patch upgrades.</li>
-</ul>
-</li>
-<li>Hard to make changes
-<ul>
-<li>I don't think I will be able to get away with some amount of yak shaving, but hopefully, it will be less than now.</li>
-</ul>
-</li>
-<li><del>Programming Language that I don't use anywhere else</del>
-<ul>
-<li>I use C# daily, and OOP(Object Oriented Programming) is something I have been working with for almost my entire programming life.</li>
-</ul>
-</li>
-<li><del>Graphql</del>
-<ul>
-<li>Statiq does not use GraphQl</li>
-</ul>
-</li>
-<li><del>Javascript</del>
-<ul>
-<li>Statiq is based on C#, which is a strongly typed language.</li>
-</ul>
-</li>
-<li><del>Hard to write tests and get confidence when I am making changes</del>
-<ul>
-<li>I have a lot more experience writing tests for C#. Hopefully, that will enable me to write tests and get more confidence when making changes.</li>
-</ul>
-</li>
-<li><del>JS out of memory error in CI</del>
-<ul>
-<li>There is no JS, so not an issue.</li>
-</ul>
-</li>
-</ul>
-<h3 id="other-thoughts">Other Thoughts</h3>
-<p>Statiq.Web has built-in functionality, which is capable of handling the most common scenarios. As I am rebuilding the site, I will start with using it. If I am fighting/modifying the library a lot, I will move to Statiq.Framework, which has most of the modules to help build a custom Static Site Generator.</p>
-<p>I will also be using <a href="https://tailwindcss.com/">TailwindCSS</a> as I have heard good things about it and want to see what the hype is about.</p>
-<p>I won't be migrating this blog, but instead, I will be migrating <a href="https://www.discoveriesinbookland.com/">Discoveries in Bookland</a>, based on the same theme as this blog but has less complexity and pages. If that goes well, then I will look at migrating this blog as well.</p>
-<h2 id="my-migration-process">My migration process</h2>
-<p><em>I will fill this section out with links to pages so that you can follow along as I migrate the site.</em></p>
-<h3 id="must-haves">Must-Haves</h3>
-<ul>
-<li>Remove all <em>js</em> files and add a C# solution and project file.</li>
-<li>Rename <em>content</em> folder to <em>input</em>.</li>
-<li>Move <em>images</em> to <em>input/asset</em> folder.</li>
-<li><a href="rename-multiple-files-subfolders-windows-command-prompt">Rename all <em>.mdx</em> files to <em>.md</em></a>.</li>
-<li>Add a a package reference to <code>Statiq.Web</code>.</li>
-<li><a href="override-netlify-build-config">Update netlify to deploy a branch using Statiq</a> to create the website.</li>
-<li><a href="add-tailwind-css-statiq-website">Add tailwind</a>.</li>
-<li><a href="deploy-statiq-website-tailwind-netlify">Deploy site to netlify</a>.</li>
-<li><a href="replace-pipeline-statiq">Disable the provided asset and content pipelines</a>.</li>
-<li>Add pipelines for Assets, HomePage, Pages, Post List, Post, TagList and Tags.</li>
-<li>Add layouts and SEO tags.</li>
-</ul>
-<h3 id="nice-to-haves-after-migration">Nice to haves (after migration)</h3>
-<ul>
-<li>Add a 404 page</li>
-<li>Add buy me a coffee button</li>
-<li>Add contact me page</li>
-<li>Generate social images</li>
-<li>Add pipeline for sitemap</li>
-<li>Add pipeline for RSS feed</li>
-<li>Minify assets</li>
-</ul>
+<p><em>Note that these items are all about me, my values and what I want. They have very little to do with any particular job or workplace.</em></p>
+<h2 id="turning-the-list-into-questions">Turning the list into questions</h2>
+<p>Now that I have my must-have and deal-breaker lists, it's time to turn them into questions. There might be overlapping questions, so it's best to combine them.</p>
+<p><strong>Q</strong>: Can you walk me through your development process, from a ticket or task to code on production?</p>
+<p><em>Relates to</em>: Autonomy and Flexibility, Dogmatic Scrum, Lots of meetings</p>
+<p><strong>Q</strong>: How do you decide what products people work on? How much say do engineers have over what is built and how it's built?</p>
+<p><em>Relates to</em>: Autonomy and Flexibility</p>
+<p><strong>Q</strong>: Do you encourage public discussions, especially for controversial topics and disagreements?</p>
+<p><em>Relates to</em>: Open Communication</p>
+<p><strong>Q</strong>: How are disagreements solved - both technical disputes and other kinds? What happens when personalities clash?</p>
+<p><em>Relates to</em>: Open Communication</p>
+<p><strong>Q</strong>: How often does the leadership team discuss turnover percentages and other numbers</p>
+<p><em>Relates to</em>: Open Communication</p>
+<p><strong>Q</strong>: Can programmers use their preferred OS, code editor, and other tools?</p>
+<p><em>Relates to</em>: Workplace tools</p>
+<p><strong>Q</strong>: Do you have a career ladder and skill matrix with parallel IC and management tracks?</p>
+<p><em>Relates to</em>: Career Advancement</p>
+<p><strong>Q</strong>: Do you have a shared compensation matrix?</p>
+<p><em>Relates to</em>: Career Advancement</p>
+<p><strong>Q</strong>: What percentage of people have been promoted internally to leadership positions?</p>
+<p><em>Relates to</em>: Career Advancement</p>
+<p><strong>Q</strong>: What are further opportunities for this role? What is the next career level?</p>
+<p><em>Relates to</em>: Career Advancement</p>
+<p><strong>Q</strong>: How do you give back to the community? Open Source/ Blog Articles etc.? Is it encouraged?</p>
+<p><em>Relates to</em>:  Ability to work on non-work-related tasks, Share Ideas</p>
+<p><strong>Q</strong>: Do you have regular retros? Process/Team and after features?</p>
+<p><em>Relates to</em>:  Learning from mistakes</p>
+<p><strong>Q</strong>: What does the company do to ensure an inclusive work environment for transgender people, people with disabilities, single parents, and other people on the margins? Does HR get input for policies or people programs? How is diversity represented within the team or company?</p>
+<p><em>Relates to</em>:  Inclusiveness</p>
+<p><strong>Q</strong>: How responsive are people to emails/Slack over the weekends during the day and after 6pm?</p>
+<p><em>Relates to</em>: Overtime</p>
+<p><strong>Q</strong>: What is the on-call schedule?</p>
+<p><em>Relates to</em>: Mandatory on call</p>
+<p><strong>Q</strong>: How often are there emergencies or times when people have to work extra hours?</p>
+<p><em>Relates to</em>: Mandatory on call, Expected overtime</p>
+<p><strong>Q</strong>: Are people compensated for being on call? How do you measure the impact on developers?</p>
+<p><em>Relates to</em>: Mandatory on call</p>
+<p><strong>Q</strong>: How often are engineers expected to provide status updates on a project?</p>
+<p><em>Relates to</em>: Autonomy and Flexibility, Micro-management</p>
+<p><strong>Q</strong>: Who sets deadlines, and what happens when people fail to meet them?</p>
+<p><em>Relates to</em>: Autonomy and Flexibility, Micro-management</p>
+<p><strong>Q</strong>: How often do you have meetings? Are there any scheduled/standing meetings?</p>
+<p><em>Relates to</em>: Lots of status meetings</p>
+<p><strong>Q</strong>: How does this team plan projects and create estimates?</p>
+<p><em>Relates to</em>: Autonomy and Flexibility, Dogmatic Scrum</p>
+<p><strong>Q</strong>: How often is the product released?</p>
+<p><em>Relates to</em>: Long-lived branches</p>
+<p><strong>Q</strong>: What is the median age for which an issue and a subsequent PR will be open?</p>
+<p><em>Relates to</em>: Long-lived branches</p>
+<p><strong>Q</strong>: What does your QA process look like?</p>
+<p><em>Relates to</em>: No automated tests</p>
+<p><strong>Q</strong>: What is the ratio of junior/intermediate/senior engineers?</p>
+<p><em>Relates to</em>: Hiring mainly seniors</p>
+<p><strong>Q</strong>: How do you ensure that junior engineers are supported?</p>
+<p><em>Relates to</em>: Hiring mainly seniors, Learning from mistakes</p>
+<p><strong>Q</strong>: Does everyone get equity allocation or a part of profit-sharing?</p>
+<p><em>Relates to</em>: Equality</p>
+<p><strong>Q</strong>: Can you give me an example of a mistake you've made here and how it was handled?</p>
+<p><em>Relates to</em>: Open Communication, Learning from mistakes</p>
+<p><strong>Q</strong>: Has there been a time when the engineering team was on the wrong course?</p>
+<p><em>Relates to</em>: Open Communication, Learning from mistakes</p>
+<p><strong>Q</strong>: Does the company collect workplace feedback? Have you ever acted on it?</p>
+<p><em>Relates to</em>: Learning from mistakes</p>
+<p><strong>Q</strong>: How do performance reviews work? Do engineers review their peers and managers? What do you do in case of a bad review of a manager?</p>
+<p><em>Relates to</em>: Equality, Career Advancement</p>
+<h2 id="what-is-an-appropriate-number-of-questions-to-ask">What is an appropriate number of questions to ask?</h2>
+<p>This is quite an extensive list. Chances are we won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by a person working in a similar role.</p>
+<p>One thing I have not tried so far but intend to try next time I am interviewing is conducting a <a href="https://blog.pragmaticengineer.com/reverse-interviewing/" target="_blank">reverse interview</a> after I have negotiated the offer to get any unanswered questions answered.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Although it's an ongoing process, I am happy with how the migration is progressing. <a href="https://www.discoveriesinbookland.com/">Discoveries in bookland</a> is now built with Statiq and Markdown and hosted on Netlify. Instead of JS, it's all in .Net, and I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.</p>
-<p>If you would like to know more about something specific, let me know.</p>
+<p>A list of questions based on our must-haves and deal-breakers can give us the confidence to know that we are making the right decision. We can down positions or step away from the interview process where there isn't a great fit. You owe it to yourself to find a place aligned with your values.</p>
+<hr />
+<p>Thanks to the <a href="http://bloggingfordevs.com/">Blogging for Devs community</a> for providing feedback on this post.</p>
 
 
 
@@ -273,7 +259,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/migrating-gatsby-statiq&text=Migrating%20from%20Gatsby%20to%20Statiq via @ankur_sheel.&#xD;&#xA;I%20have%20been%20on%20Gatsby%20for%202%20years%20now.%20What%20motivated%20me%20to%20migrate%20my%20site%20to%20Statiq%2C%20and%20how%20did%20I%20move%20the%20site" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list&text=Interviewing%20your%20interviewers%20with%20a%20must-have%20and%20a%20deal-breaker%20list via @ankur_sheel.&#xD;&#xA;Joining%20a%20company%20and%20finding%20out%20that%20it%20isn%27t%20a%20good%20match%20never%20feels%20great.%20We%20can%20increase%20the%20chances%20of%20finding%20the%20right%20company%20with%20a%20little%20bit%20of%20introspection%20and%20preparation" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

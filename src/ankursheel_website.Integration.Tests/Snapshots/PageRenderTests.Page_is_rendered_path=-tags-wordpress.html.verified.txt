@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Posts tagged as &quot;wordpress&quot;</title>
+<title>Posts tagged as &quot;wordpress&quot; - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -33,6 +33,10 @@
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
 <header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     
 <!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
@@ -125,6 +129,28 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="text-center prose-2xl mb-4">How long did it take to migrate from WordPress to Gatsby?</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out
+        </p>
+            <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/migrating-from-wordpress-to-gatsby" class="text-center prose-2xl mb-4">Why and How I migrated my website from WordPress to Gatsby</a>
+        <div class="font-semibold text-center">5 min</div>
+        <p>
+            For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site
+        </p>
+            <a href="/blog/migrating-from-wordpress-to-gatsby" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/installing-wordpress" class="text-center prose-2xl mb-4">How to setup WordPress locally: Installing WordPress</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
@@ -164,6 +190,17 @@
             In this part of the series, we will Install PHP on our local machine.
         </p>
             <a href="/blog/installing-php" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/testing-wordpress-locally-series" class="text-center prose-2xl mb-4">How to setup WordPress locally: Introduction</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud.
+        </p>
+            <a href="/blog/testing-wordpress-locally-series" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 
@@ -225,7 +262,7 @@
 
 
 <script src="/assets/js/blog.js"></script>
-    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
 
 
 

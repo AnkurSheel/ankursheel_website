@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - All Tags</title>
+<title>All Tags - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -33,6 +33,10 @@
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
 <header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     
 <!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
@@ -127,7 +131,7 @@
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (52)</a>
+            <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (53)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
@@ -148,7 +152,7 @@
             <a role="button" href="/tags/oceania" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Oceania (17)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (12)</a>
+            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (11)</a>
@@ -181,10 +185,13 @@
             <a role="button" href="/tags/video" class="capitalize badge text-gray-900 bg-grey-light no-underline"> video (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordpress (8)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/codingame" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Codingame (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/gatsby" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Gatsby (7)</a>
+            <a role="button" href="/tags/gatsby" class="capitalize badge text-gray-900 bg-grey-light no-underline"> gatsby (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/website-migration" class="capitalize badge text-gray-900 bg-grey-light no-underline"> website migration (7)</a>
@@ -205,7 +212,7 @@
             <a role="button" href="/tags/statiq" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Statiq (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordpress (5)</a>
+            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/docker" class="capitalize badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
@@ -229,9 +236,6 @@
             <a role="button" href="/tags/xunit" class="capitalize badge text-gray-900 bg-grey-light no-underline"> xUnit (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (3)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dynamic-programming" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dynamic programming (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -241,13 +245,13 @@
             <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/india" class="capitalize badge text-gray-900 bg-grey-light no-underline"> india (3)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tailwind" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/united-kingdom" class="capitalize badge text-gray-900 bg-grey-light no-underline"> United Kingdom (3)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Wordpress (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/xunithelpers" class="capitalize badge text-gray-900 bg-grey-light no-underline"> xUnitHelpers (3)</a>
@@ -274,9 +278,6 @@
             <a role="button" href="/tags/hotchocolate" class="capitalize badge text-gray-900 bg-grey-light no-underline"> hotchocolate (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/india" class="capitalize badge text-gray-900 bg-grey-light no-underline"> India (2)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/popular-posts" class="capitalize badge text-gray-900 bg-grey-light no-underline"> popular posts (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -298,16 +299,7 @@
             <a role="button" href="/tags/sql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/cricket" class="capitalize badge text-gray-900 bg-grey-light no-underline"> cricket (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dapper" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dapper (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/goals" class="capitalize badge text-gray-900 bg-grey-light no-underline"> goals (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/iam" class="capitalize badge text-gray-900 bg-grey-light no-underline"> IAM (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/insomnia" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Insomnia (1)</a>
@@ -323,15 +315,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/source-generator" class="capitalize badge text-gray-900 bg-grey-light no-underline"> source generator (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/stripe" class="capitalize badge text-gray-900 bg-grey-light no-underline"> stripe (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/vs-code" class="capitalize badge text-gray-900 bg-grey-light no-underline"> VS Code (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/washington" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Washington (1)</a>
         </div>
 </div>
 
@@ -382,7 +365,7 @@
 
 
 <script src="/assets/js/blog.js"></script>
-    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
 
 
 

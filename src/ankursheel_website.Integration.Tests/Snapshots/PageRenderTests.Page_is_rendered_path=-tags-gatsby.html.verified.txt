@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Posts tagged as &quot;Gatsby&quot;</title>
+<title>Posts tagged as &quot;gatsby&quot; - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -14,25 +14,29 @@
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/tags/gatsby"/>
 
-<meta itemProp="name" content="Posts tagged as &quot;Gatsby&quot;"/>
+<meta itemProp="name" content="Posts tagged as &quot;gatsby&quot;"/>
 <meta itemProp="description"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/tags/gatsby"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;Gatsby&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;gatsby&quot;"/>
 <meta property="og:description"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;Gatsby&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;gatsby&quot;"/>
 <meta name="twitter:description"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
 <header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     
 <!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
@@ -118,7 +122,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;Gatsby&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;gatsby&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -247,7 +251,7 @@
 
 
 <script src="/assets/js/blog.js"></script>
-    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
 
 
 

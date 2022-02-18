@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Posts tagged as &quot;testing&quot;</title>
+<title>Posts tagged as &quot;testing&quot; - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -33,6 +33,10 @@
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
 <header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     
 <!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
@@ -258,7 +262,7 @@
 
 
 <script src="/assets/js/blog.js"></script>
-    <script data-goatcounter="https://ankursheel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
 
 
 
