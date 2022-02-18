@@ -6,7 +6,7 @@
         : "website";
 }
 
-<title>@Model.Context.GetSiteTitle() - @Model.Document.GetTitle()</title>
+<title>@Model.Document.GetTitle() - @Model.Context.GetSiteTitle()</title>
 <meta charset="utf-8"/>
 
 @if (Model.Context.GetGoogleTagManagerId() != null)
