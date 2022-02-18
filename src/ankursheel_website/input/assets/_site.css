@@ -3,13 +3,13 @@
 @layer base {
     @font-face {
         font-family: 'Inter';
-        src: url(fonts/Inter-VariableFont.ttf);
+        src: url(fonts/Inter-VariableFont.woff2);
         font-display: swap;
     }
 
     @font-face {
         font-family: 'Cookie';
-        src: url(fonts/Cookie-Regular.ttf);
+        src: url(fonts/Cookie-Regular.woff2);
         font-display: swap;
     }
 
