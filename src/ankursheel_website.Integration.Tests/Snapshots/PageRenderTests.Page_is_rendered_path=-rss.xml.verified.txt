@@ -5,8 +5,8 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2022</copyright>
-		<pubDate>Fri, 18 Feb 2022 02:47:16 GMT</pubDate>
-		<lastBuildDate>Fri, 18 Feb 2022 02:47:16 GMT</lastBuildDate>
+		<pubDate>Sat, 19 Feb 2022 22:51:08 GMT</pubDate>
+		<lastBuildDate>Sat, 19 Feb 2022 22:51:08 GMT</lastBuildDate>
 		<item>
 			<title>Interviewing your interviewers with a must-have and a deal-breaker list</title>
 			<link>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</link>
@@ -130,7 +130,7 @@
 			<title>Weekly Roundup 53</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-53</link>
 			<description>This weeks roundup contains articles from Jimmy Bogard, Mr Money Mustache, Josh Comeau, Andrey Azimov and Growth.Design</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-53/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-53</guid>
 			<pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -157,7 +157,7 @@
 			<title>Weekly Roundup 52</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-52</link>
 			<description>This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-52/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-52</guid>
 			<pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -184,7 +184,7 @@
 			<title>Weekly Roundup 51</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-51</link>
 			<description>This weeks roundup contains articles from Slava Shestopalov, Ahmad Shadeed, Amelia Wattenberger, Kevon Cheung and Gergely Orosz</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-51/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-51</guid>
 			<pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -247,7 +247,7 @@
 			<title>Weekly Roundup 50</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-50</link>
 			<description>This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-50/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-50</guid>
 			<pubDate>Sun, 26 Dec 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -356,7 +356,7 @@ services:
 			<title>Weekly Roundup 49</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-49</link>
 			<description>This weeks roundup contains articles from David McCarter, Janella, Paul Swail, Mike Petrovich and Brian Rinaldi</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-49/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-49</guid>
 			<pubDate>Sun, 19 Dec 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -382,7 +382,7 @@ services:
 			<title>Weekly Roundup 48</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
 			<description>This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-48/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
 			<pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -408,7 +408,7 @@ services:
 			<title>Weekly Roundup 47</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-47</link>
 			<description>This weeks roundup contains articles from Ramit Sethi, Muhammed Saleem, Robert Heaton, Charity Majors and David McCarter</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-47/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
 			<pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
@@ -532,7 +532,7 @@ services:
 			<title>Weekly Roundup 46</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-46</link>
 			<description>This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-46/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-46</guid>
 			<pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
@@ -589,7 +589,7 @@ services:
 			<title>Weekly Roundup 45</title>
 			<link>https://www.ankursheel.com/blog/weekly-roundup-45</link>
 			<description>This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/weekly-roundup-45/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
 			<guid>https://www.ankursheel.com/blog/weekly-roundup-45</guid>
 			<pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
