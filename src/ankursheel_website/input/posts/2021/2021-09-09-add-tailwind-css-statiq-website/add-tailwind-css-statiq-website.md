@@ -16,7 +16,7 @@ As part of the [migration from Gatsby to Statiq](./migrating-gatsby-statiq), I w
 
 Many articles out there discuss the pros and cons of using Tailwind so that I won't be doing that. All I will be saying is that Tailwind is a utility first framework with what might be considered an ugly-as syntax, but boy is it faster to build elegant components.
 
-## Preresiquites
+## Prerequisites
 
 -   Install [Node and npm](https://nodejs.org/en/)
 -   Install [.Net Core](https://dotnet.microsoft.com/)
