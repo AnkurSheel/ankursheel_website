@@ -4,32 +4,32 @@
 <head>
     
 
-<title>Add Tailwind CSS to a Statiq website - Ankur Sheel</title>
+<title>How to programmatically remove a service worker - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A guide to using TailwindCss with Statiq"/>
+<meta name="description" content="Sometimes you just want to remove a service worker either because something is wrong with it or you don&#x27;t need it anymore. Lets see how we can do it programmatically"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/add-tailwind-css-statiq-website"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/programmatically-remove-service-worker"/>
 
-<meta itemProp="name" content="Add Tailwind CSS to a Statiq website"/>
-<meta itemProp="description" content="A guide to using TailwindCss with Statiq"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/add-tailwind-css-statiq-website"/>
+<meta itemProp="name" content="How to programmatically remove a service worker"/>
+<meta itemProp="description" content="Sometimes you just want to remove a service worker either because something is wrong with it or you don&#x27;t need it anymore. Lets see how we can do it programmatically"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/programmatically-remove-service-worker-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/programmatically-remove-service-worker"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Add Tailwind CSS to a Statiq website"/>
-<meta property="og:description" content="A guide to using TailwindCss with Statiq"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-facebook.png"/>
+<meta property="og:title" content="How to programmatically remove a service worker"/>
+<meta property="og:description" content="Sometimes you just want to remove a service worker either because something is wrong with it or you don&#x27;t need it anymore. Lets see how we can do it programmatically"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/programmatically-remove-service-worker-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/programmatically-remove-service-worker-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Add Tailwind CSS to a Statiq website"/>
-<meta name="twitter:description" content="A guide to using TailwindCss with Statiq"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-tailwind-css-statiq-website-twitter.png"/>
+<meta name="twitter:title" content="How to programmatically remove a service worker"/>
+<meta name="twitter:description" content="Sometimes you just want to remove a service worker either because something is wrong with it or you don&#x27;t need it anymore. Lets see how we can do it programmatically"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/programmatically-remove-service-worker-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/programmatically-remove-service-worker-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,131 +122,58 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Add Tailwind CSS to a Statiq website</h1>
+    <h1 class="text-center">How to programmatically remove a service worker</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-09-09">September 09, 2021</time></span>
+        <span>Last Updated: <time datetime="2022-03-23">March 23, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 2 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/statiq" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Statiq</a>
-            <a href="/tags/tailwind" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tailwind</a>
-            <a href="/tags/website-migration" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">website migration</a>
+            <a href="/tags/javascript" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">javascript</a>
+            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
+            <a href="/tags/web-development" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">web development</a>
     </div>
 </div>
 
-<html><head></head><body><p>In this article, I will be showing how we can integrate <a href="https://tailwindcss.com/">Tailwind CSS</a> with <a href="https://www.statiq.dev/web/">Statiq</a>.</p>
-<h2 id="problem">Problem</h2>
-<p>As part of the <a href="migrating-gatsby-statiq">migration from Gatsby to Statiq</a>, I wanted to use Tailwind with Statiq. Tailwind is available as an NPM package, while Statiq is a .Net solution.</p>
-<p>Many articles out there discuss the pros and cons of using Tailwind so that I won't be doing that. All I will be saying is that Tailwind is a utility first framework with what might be considered an ugly-as syntax, but boy is it faster to build elegant components.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<html><head></head><body><h2 id="problem">Problem</h2>
+<p>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore.</p>
+<h2 id="solution">Solution</h2>
+<p>To remove a service worker entirely, you can replace the code with code to unregister the service worker.
+Replace the following snippets in the service worker file.</p>
+<pre><code class="language-javascript hljs">self.addEventListener(<span class="hljs-string">'install'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    self.skipWaiting();
+});
+</code></pre>
+<p>The install event is triggered when the browser sees the service worker for the first time.</p>
+<p>The <code>skipWaiting()</code> method tells the service worker to skip the waiting state and move directly to activate (once it has been installed). Otherwise, the service worker will become active once the currently active service worker is released and becomes redundant.</p>
+<pre><code class="language-javascript hljs">
+self.addEventListener(<span class="hljs-string">'activate'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Unregistering service worker`</span>)
+    self.registration.unregister()
+        .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> self.clients.matchAll();
+        })
+        .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">clients</span>) </span>{
+            clients.forEach(client =&gt; {
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Navigating <span class="hljs-subst">${client.url}</span>`</span>)
+                client.navigate(client.url)
+            })
+        });
+});
+</code></pre>
+<p>The activate event is triggered when the old version of the service worker is gone.
+The <code>self.registration.unregister()</code> function unregisters the service worker and returns a promise. The promise resolves to <code>false</code> if no registration was found; otherwise, it resolves to <code>true</code>. If the service worker was not found, it was already unregistered.</p>
+<p>The <code>self.clients.matchAll()</code> method returns a Promise for a list of the service worker clients controlled by the service worker.</p>
+<p>Next, the code loops through all the active clients, and it forces the browser to reload the page, which should remove the service worker.</p>
+<h2 id="references">References</h2>
 <ul>
-<li>Install <a href="https://nodejs.org/en/">Node and npm</a></li>
-<li>Install <a href="https://dotnet.microsoft.com/">.Net Core</a></li>
-<li>Create a <a href="https://www.statiq.dev/web/">.Net Core Console Application configured to use Statiq</a></li>
-</ul>
-<h2 id="install-tailwind">Install Tailwind</h2>
-<p>Tailwind can only be installed as an NPM package.</p>
-<h3 id="step-1-create-a-folder-called-node">Step 1: Create a folder called node</h3>
-<p>Because our core project is a .Net Core application, and we don't need npm except for Tailwind, we will install it in a separate folder. This will avoid clutter in the root directory.</p>
-<h3 id="step-2-install-packages">Step 2: Install packages</h3>
-<p>We will install Tailwind, and other peer dependencies inside a directory called <em>node</em>.</p>
-<pre><code class="language-bash hljs"><span class="hljs-built_in">cd</span> node
-npm install -D tailwindcss&<span class="hljs-comment">#64;latest postcss&#64;latest autoprefixer&#64;latest</span>
-</code></pre>
-<ul>
-<li><strong>PostCSS</strong> is a preprocessor that transforms the CSS using plugins.</li>
-<li><strong>AuoPrefixer</strong> is a PostCSS plugin to add vendor prefixes to CSS rules.</li>
-</ul>
-<p>Our package.json should look something like this.</p>
-<pre><code class="language-json hljs">{
-    &quot;devDependencies&quot;: {
-        &quot;&#64;&#64;tailwindcss/typography&quot;: &quot;^0.4.1&quot;,
-        &quot;autoprefixer&quot;: &quot;^10.3.1&quot;,
-        &quot;postcss&quot;: &quot;^8.3.6&quot;,
-        &quot;tailwindcss&quot;: &quot;^2.2.7&quot;
-    }
-}
-</code></pre>
-<h3 id="step-3-configure-postcss">Step 3: Configure postcss</h3>
-<p>Create a postcss.config.js file and add <em>tailwindcss</em> and <em>autoprefixer</em></p>
-<pre><code class="language-javascript hljs"><span class="hljs-built_in">module</span>.exports = {
-    <span class="hljs-attr">plugins</span>: {
-        <span class="hljs-attr">tailwindcss</span>: {},
-        <span class="hljs-attr">autoprefixer</span>: {},
-    },
-};
-</code></pre>
-<h3 id="step-3-configure-tailwind">Step 3: Configure Tailwind</h3>
-<p>Generate a config file using the Tailwind CLI utility</p>
-<pre><code class="language-bash hljs">npx tailwindcss init
-</code></pre>
-<p>This will create a tailwind.config.js file.</p>
-<p>We will update the purge section to optimize our CSS</p>
-<pre><code class="language-js hljs">    purge: {
-        <span class="hljs-attr">enabled</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-attr">content</span>: [<span class="hljs-string">'../**/input/**/*.cshtml'</span>],
-    },
-</code></pre>
-<ul>
-<li><strong>Line 2</strong>: Enable purge without having to set the NODE_ENV to production</li>
-<li><strong>Line 3</strong>: Scan our razor views files and remove any superfluous CSS from our final output file. We prefix the path with <strong>../</strong> because our config is inside a subfolder, and we need to find the razor views from the root.</li>
-</ul>
-<p>Our final configuration will look like this.</p>
-<pre><code class="language-js hljs"><span class="hljs-built_in">module</span>.exports = {
-    <span class="hljs-attr">purge</span>: {
-        <span class="hljs-attr">enabled</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-attr">content</span>: [<span class="hljs-string">'../**/input/**/*.cshtml'</span>],
-    },
-    <span class="hljs-attr">darkMode</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// or 'media' or 'class'</span>
-    theme: {
-        <span class="hljs-attr">extend</span>: {},
-    },
-    <span class="hljs-attr">variants</span>: {
-        <span class="hljs-attr">extend</span>: {},
-    },
-    <span class="hljs-attr">plugins</span>: [],
-};
-</code></pre>
-<h3 id="step-4-add-css">Step 4: Add CSS</h3>
-<p>Create an input folder and add a _site.css</p>
-<pre><code class="language-css hljs"><span class="hljs-comment">/*! &#64;&#64;import */</span>
-&<span class="hljs-selector-id">#64</span>;&<span class="hljs-selector-id">#64</span>;<span class="hljs-selector-tag">tailwind</span> <span class="hljs-selector-tag">base</span>;
-&<span class="hljs-selector-id">#64</span>;&<span class="hljs-selector-id">#64</span>;<span class="hljs-selector-tag">tailwind</span> <span class="hljs-selector-tag">components</span>;
-&<span class="hljs-selector-id">#64</span>;&<span class="hljs-selector-id">#64</span>;<span class="hljs-selector-tag">tailwind</span> <span class="hljs-selector-tag">utilities</span>;
-</code></pre>
-<h3 id="step-5-build-the-css">Step 5: Build the CSS</h3>
-<pre><code class="language-bash hljs">npx tailwind build -c ./tailwind.config.js -i ../input/_site.css -o ../Bookland/output/assets/styles.css
-</code></pre>
-<ul>
-<li><strong>-c</strong>: The config file path</li>
-<li><strong>-i</strong>: The input file path. Our CSS file is in the input folder and called _site.css</li>
-<li><strong>-o</strong>: The output file path. Our output file is in the output folder and called styles.css</li>
-</ul>
-<h3 id="step-6-link-the-stylesheet-to-a-layout-file">Step 6: Link the stylesheet to a layout file</h3>
-<p>We will add a _Layout.cshtml file in our input folder and link to the stylesheet generated by tailwind and postcss.</p>
-<pre><code class="language-cs hljs">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;link href=&quot;/styles.css&quot; rel=&quot;stylesheet&quot;/&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&<span class="hljs-meta">#64;&#64;RenderBody()</span>
-</code></pre>
-<ul>
-<li>Reference to the styles.css file</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>Now we should be able to add Tailwind classes to our Razor view. The generated site will use the styles outputted by Tailwind.</p>
-<h2 id="further-reading">Further Reading</h2>
-<ul>
-<li><a href="https://tailwindcss.com/docs">Tailwind Docs</a></li>
+<li><a href="https://github.com/NekR/self-destroying-sw">Self-destroying ServiceWorker</a></li>
 </ul>
 </body></html>
 
@@ -257,7 +184,7 @@ npm install -D tailwindcss&<span class="hljs-comment">#64;latest postcss&#64;lat
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/add-tailwind-css-statiq-website&text=Add%20Tailwind%20CSS%20to%20a%20Statiq%20website via @ankur_sheel.&#xD;&#xA;A%20guide%20to%20using%20TailwindCss%20with%20Statiq" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/programmatically-remove-service-worker&text=How%20to%20programmatically%20remove%20a%20service%20worker via @ankur_sheel.&#xD;&#xA;Sometimes%20you%20just%20want%20to%20remove%20a%20service%20worker%20either%20because%20something%20is%20wrong%20with%20it%20or%20you%20don%27t%20need%20it%20anymore.%20Lets%20see%20how%20we%20can%20do%20it%20programmatically" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

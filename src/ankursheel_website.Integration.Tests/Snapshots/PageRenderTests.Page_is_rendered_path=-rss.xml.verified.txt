@@ -5,8 +5,51 @@
 		<link>https://www.ankursheel.com/</link>
 		<description>I go down rabbit holes and blog about them</description>
 		<copyright>2022</copyright>
-		<pubDate>Sat, 19 Feb 2022 22:51:08 GMT</pubDate>
-		<lastBuildDate>Sat, 19 Feb 2022 22:51:08 GMT</lastBuildDate>
+		<pubDate>Tue, 22 Mar 2022 21:05:43 GMT</pubDate>
+		<lastBuildDate>Tue, 22 Mar 2022 21:05:43 GMT</lastBuildDate>
+		<item>
+			<title>How to programmatically remove a service worker</title>
+			<link>https://www.ankursheel.com/blog/programmatically-remove-service-worker</link>
+			<description>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically</description>
+			<guid>https://www.ankursheel.com/blog/programmatically-remove-service-worker</guid>
+			<pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;To remove a service worker entirely, you can replace the code with code to unregister the service worker.
+Replace the following snippets in the service worker file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript hljs"&gt;self.addEventListener(&lt;span class="hljs-string"&gt;'install'&lt;/span&gt;, &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;e&lt;/span&gt;) &lt;/span&gt;{
+    self.skipWaiting();
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The install event is triggered when the browser sees the service worker for the first time.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;skipWaiting()&lt;/code&gt; method tells the service worker to skip the waiting state and move directly to activate (once it has been installed). Otherwise, the service worker will become active once the currently active service worker is released and becomes redundant.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript hljs"&gt;
+self.addEventListener(&lt;span class="hljs-string"&gt;'activate'&lt;/span&gt;, &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;e&lt;/span&gt;) &lt;/span&gt;{
+    &lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(&lt;span class="hljs-string"&gt;`Unregistering service worker`&lt;/span&gt;)
+    self.registration.unregister()
+        .then(&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;&lt;/span&gt;) &lt;/span&gt;{
+            &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; self.clients.matchAll();
+        })
+        .then(&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;clients&lt;/span&gt;) &lt;/span&gt;{
+            clients.forEach(client =&amp;gt; {
+                &lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(&lt;span class="hljs-string"&gt;`Navigating &lt;span class="hljs-subst"&gt;${client.url}&lt;/span&gt;`&lt;/span&gt;)
+                client.navigate(client.url)
+            })
+        });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The activate event is triggered when the old version of the service worker is gone.
+The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters the service worker and returns a promise. The promise resolves to &lt;code&gt;false&lt;/code&gt; if no registration was found; otherwise, it resolves to &lt;code&gt;true&lt;/code&gt;. If the service worker was not found, it was already unregistered.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;self.clients.matchAll()&lt;/code&gt; method returns a Promise for a list of the service worker clients controlled by the service worker.&lt;/p&gt;
+&lt;p&gt;Next, the code loops through all the active clients, and it forces the browser to reload the page, which should remove the service worker.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/NekR/self-destroying-sw"&gt;Self-destroying ServiceWorker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Interviewing your interviewers with a must-have and a deal-breaker list</title>
 			<link>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</link>
@@ -857,58 +900,6 @@ email = author_email
 &lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/meta-arguments/for_each.html"&gt;for_each&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/functions/fileset.html"&gt;fileset&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to replace a pipeline in Statiq</title>
-			<link>https://www.ankursheel.com/blog/replace-pipeline-statiq</link>
-			<description>A guide to replacing a pipeline in Statiq</description>
-			<guid>https://www.ankursheel.com/blog/replace-pipeline-statiq</guid>
-			<pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In this article, I will be showing how we can replace a pipeline in &lt;a href="https://www.statiq.dev/web/"&gt;Statiq&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;As part of the &lt;a href="https://www.ankursheel.com/migrating-gatsby-statiq"&gt;migration from Gatsby to Statiq&lt;/a&gt;, I wanted to replace the Assets and Content pipeline to control the files, strongly type the model passed to the razor module and also set some metadata based on the parent folder.&lt;/p&gt;
-&lt;p&gt;Statiq.Web provides quite a few pipelines out of the box. However, it processes different file types by using Templates that define a specific module for that type. Statiq.Web has a nice fluent syntax to modify and remove templates.&lt;/p&gt;
-&lt;p&gt;In most cases, this would be fine, but sometimes it's much easier to replace the whole pipeline.&lt;/p&gt;
-&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;p&gt;To remove a pipeline, we can use&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.ConfigureEngine(
-    engine =&amp;gt;
-    {
-        engine.Pipelines.Remove(&lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Assets));
-    });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To replace it with an empty pipeline, we can use&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.ConfigureEngine(
-    engine =&amp;gt;
-    {
-        engine.Pipelines.Add(&lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Assets), &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Pipeline());
-    });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To replace a pipeline, we can remove it and add it again with a new pipeline.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;bootstrapper.ConfigureEngine(
-    engine =&amp;gt;
-    {
-        engine.Pipelines.Remove(&lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(AnalyzeContent));
-        engine.Pipelines.Add(
-            &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(AnalyzeContent),
-            &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Pipeline
-            {
-                InputModules =
-                {
-                    &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ReplaceDocuments(
-                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(PostPipeline),
-                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Content),
-                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Archives),
-                        &lt;span class="hljs-keyword"&gt;nameof&lt;/span&gt;(Assets))
-                }
-            });
-    });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Now, we can remove/replace the pipelines that we don't want to use. Dave Glick, the creator of Statiq, has mentioned that he will provide a fluent syntax to replace pipelines in the next release, so hopefully, we won't need this for too long.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;You can see the original issue I created &lt;a href="https://github.com/statiqdev/Statiq.Web/issues/962"&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
