@@ -39,6 +39,14 @@ module.exports = {
                         'blockquote cite:before': {
                             content: "'--'",
                         },
+                        'code::before': false,
+                        'code::after': false,
+                        code: {
+                            'border-radius': '0.25rem',
+                            padding: '0.15rem 0.3rem',
+                            borderWidth: '2px',
+                            borderColor: 'rgba(0,0,0,0.1)',
+                        },
                     },
                 },
             }),
