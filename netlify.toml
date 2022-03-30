@@ -92,64 +92,130 @@ force = false
 from = "/blog/to-pixar-and-beyond"
 to = "https://www.discoveriesinbookland.com/blog/to-pixar-and-beyond"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/bad-blood"
 to = "https://www.discoveriesinbookland.com/blog/bad-blood"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/elon-musk"
 to = "https://www.discoveriesinbookland.com/blog/elon-musk"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/the-index-card"
 to = "https://www.discoveriesinbookland.com/blog/index-card"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/the-index-card"
 to = "https://www.discoveriesinbookland.com/blog/profit-first"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/one-page-financial-plan"
 to = "https://www.discoveriesinbookland.com/blog/one-page-financial-plan"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/death-meeting"
 to = "https://www.discoveriesinbookland.com/blog/death-meeting"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/the-art-of-learning"
 to = "https://www.discoveriesinbookland.com/blog/art-of-learning"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/the-motive"
 to = "https://www.discoveriesinbookland.com/blog/motive"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/building-a-storybrand"
 to = "https://www.discoveriesinbookland.com/blog/building-a-storybrand"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "/blog/take-the-stairs"
 to = "https://www.discoveriesinbookland.com/blog/take-the-stairs"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/add-cursive-fonts-to-vs-code"
+to = "/blog/add-cursive-fonts-vs-code"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"
+to = "/blog/adding-rss-feed-images-gatsby-site"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/approval-tests-with-xunit-theory-tests"
+to = "/blog/approval-tests-xunit-theory-tests"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/automating-creation-of-new-blog-post"
+to = "/blog/automating-creation-new-blog-post"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/reset-primary-key-sequence-out-sync-postgres"
+to = "/blog/exporting-highlights-annotations-kobo-aura"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/impossible-list-or-a-bucket-list"
+to = "/blog/impossible-list-bucket-list"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/migrating-from-wordpress-to-gatsby"
+to = "/blog/migrating-wordpress-gatsby"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/my-most-popular-posts-in-2015"
+to = "/blog/most-popular-posts-2015"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/query-in-clause-dapper-npgsql"
+to = "/blog/query-clause-dapper-npgsql"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/reader-question-how-long-migrate-wordpress-gatsby"
+to = "/blog/reader-question-long-migrate-wordpress-gatsby"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/reset-primary-key-sequence-out-of-sync-postgres"
+to = "/blog/reset-primary-key-sequence-out-sync-postgres"
 status = 301
 force = false
