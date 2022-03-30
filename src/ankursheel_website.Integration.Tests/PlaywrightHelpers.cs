@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using PlaywrightSharp;
+﻿using PlaywrightSharp;
 
 namespace ankursheel_website.Integration.Tests
 {

@@ -1,19 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-16"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
-	<channel>
-		<title>Ankur Sheel</title>
-		<link>https://www.ankursheel.com/</link>
-		<description>I go down rabbit holes and blog about them</description>
-		<copyright>2022</copyright>
-		<pubDate>Tue, 22 Mar 2022 21:05:43 GMT</pubDate>
-		<lastBuildDate>Tue, 22 Mar 2022 21:05:43 GMT</lastBuildDate>
-		<item>
-			<title>How to programmatically remove a service worker</title>
-			<link>https://www.ankursheel.com/blog/programmatically-remove-service-worker</link>
-			<description>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically</description>
-			<guid>https://www.ankursheel.com/blog/programmatically-remove-service-worker</guid>
-			<pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+  <channel>
+    <title>Ankur Sheel</title>
+    <link>https://www.ankursheel.com/</link>
+    <description>I go down rabbit holes and blog about them</description>
+    <copyright>2022</copyright>
+<pubDate>pubDate</pubDate>
+<lastBuildDate>lastBuildDate</lastBuildDate>
+    <item>
+      <title>How to replace a word in a string in C#</title>
+      <link>https://www.ankursheel.com/blog/replace-word-string-csharp</link>
+      <description>There is no way to replace just whole words using string.Replace. Let's see how we can replace whole words in string using Regex</description>
+      <guid>https://www.ankursheel.com/blog/replace-word-string-csharp</guid>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Sometimes you want to replace whole words from a string in C#. But &lt;code&gt;string.Replace&lt;/code&gt; in C# replaces partial matches.&lt;/p&gt;
+&lt;p&gt;For example,&lt;/p&gt;
+&lt;p&gt;Let's assume that the string is &amp;quot;Test testing test tester&amp;quot;, and we want to replace the word &lt;em&gt;test&lt;/em&gt; with &lt;em&gt;text&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If we use &lt;code&gt;string.Replace&lt;/code&gt;, our resultant string would be &amp;quot;text texting text texter&amp;quot;, but what we want is &amp;quot;text testing
+text tester&amp;quot;&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;You can use &lt;code&gt;Regex.Replace&lt;/code&gt; to replace a whole word.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;private&lt;/span&gt; &lt;span class="hljs-keyword"&gt;static&lt;/span&gt; &lt;span class="hljs-keyword"&gt;string&lt;/span&gt; &lt;span class="hljs-title"&gt;ReplaceWholeWord&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt; input, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt; wordToReplace, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt; replacementWord&lt;/span&gt;)
+&lt;/span&gt;{
+    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; pattern = $&amp;quot;\\b{wordToReplace}\\b&amp;quot;;
+    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; Regex.Replace(input, pattern, replacementWord, RegexOptions.IgnoreCase);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are a few things to note here.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The pattern's &lt;code&gt;\b&lt;/code&gt; metacharacter matches on word boundaries.&lt;/li&gt;
+&lt;li&gt;As the name suggests, passing in &lt;code&gt;RegexOptions.IgnoreCase&lt;/code&gt; for the options makes it case-insensitive.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now we can use it like&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; replacedString = ReplaceWholeWord(&amp;quot;Test testing test tester&amp;quot;, &amp;quot;test&amp;quot;, &amp;quot;text&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.replace?view=net-6.0#:%7E:text=The%20Regex.,a%20regular%20expression%20replacement%20pattern."&gt;Regex.Replace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference"&gt;Regular Expression Language - Quick Reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="thanks"&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;Thanks Avery Stephen for pointing out a typo in the original post&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to programmatically remove a service worker</title>
+      <link>https://www.ankursheel.com/blog/programmatically-remove-service-worker</link>
+      <description>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically</description>
+      <guid>https://www.ankursheel.com/blog/programmatically-remove-service-worker</guid>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;To remove a service worker entirely, you can replace the code with code to unregister the service worker.
@@ -48,15 +86,15 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;li&gt;&lt;a href="https://github.com/NekR/self-destroying-sw"&gt;Self-destroying ServiceWorker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Interviewing your interviewers with a must-have and a deal-breaker list</title>
-			<link>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</link>
-			<description>Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation</description>
-			<guid>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</guid>
-			<pubDate>Wed, 16 Feb 2022 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;At the end of most interviews will come the question, &amp;quot;Do you have any questions for us?&amp;quot; Common advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more important reason to interview your interviewer.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Interviewing your interviewers with a must-have and a deal-breaker list</title>
+      <link>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</link>
+      <description>Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation</description>
+      <guid>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</guid>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;At the end of most interviews will come the question, &amp;quot;Do you have any questions for us?&amp;quot; Common advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more important reason to interview your interviewer.&lt;/p&gt;
 &lt;p&gt;I have worked for a few companies in my career. Some of them worked out great, while for others, after a few months of joining, I realized it wasn't a great fit.&lt;/p&gt;
 &lt;p&gt;Joining a company and finding out that it isn't a good match never feels great. It can be hard to know if the company we are thinking of joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.&lt;/p&gt;
 &lt;h2 id="how-to-apply-the-lists-in-an-interview"&gt;How to apply the lists in an interview&lt;/h2&gt;
@@ -167,16 +205,16 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;hr /&gt;
 &lt;p&gt;Thanks to the &lt;a href="http://bloggingfordevs.com/"&gt;Blogging for Devs community&lt;/a&gt; for providing feedback on this post.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 53</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-53</link>
-			<description>This weeks roundup contains articles from Jimmy Bogard, Mr Money Mustache, Josh Comeau, Andrey Azimov and Growth.Design</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-53</guid>
-			<pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 53</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-53</link>
+      <description>This weeks roundup contains articles from Jimmy Bogard, Mr Money Mustache, Josh Comeau, Andrey Azimov and Growth.Design</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-53</guid>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="service-locator-is-not-an-anti-pattern"&gt;&lt;a href="https://jimmybogard.com/service-locator-is-not-an-anti-pattern/"&gt;Service Locator is not an Anti-Pattern&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Jimmy Bogard&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The common thinking is that the Service Locator pattern is an anti-pattern because it hides class dependencies and results in runtime errors. Jimmy Bogard explains the situations where service location is required or even preferable.&lt;/p&gt;
@@ -194,16 +232,16 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;A case study of onboarding in Blinkist shows why onboarding can be tricky and how psychology can help.&lt;/p&gt;
 &lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 52</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-52</link>
-			<description>This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-52</guid>
-			<pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 52</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-52</link>
+      <description>This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-52</guid>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman"&gt;&lt;a href="https://selenasoo.medium.com/i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman-8804ffe58cc9"&gt;I was in an emotionally abusive relationship, even as a smart and successful woman&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Selena Soo&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A compelling story of a woman recounting her emotional abuse in a former relationship.&lt;/p&gt;
@@ -221,16 +259,16 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;Regardless of what the title says, this article is not about saving money but is about building a full-stack web application with Javascript and getting it up and running for free.&lt;/p&gt;
 &lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 51</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-51</link>
-			<description>This weeks roundup contains articles from Slava Shestopalov, Ahmad Shadeed, Amelia Wattenberger, Kevon Cheung and Gergely Orosz</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-51</guid>
-			<pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 51</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-51</link>
+      <description>This weeks roundup contains articles from Slava Shestopalov, Ahmad Shadeed, Amelia Wattenberger, Kevon Cheung and Gergely Orosz</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-51</guid>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="designing-better-links-for-websites-and-emails-a-guideline"&gt;&lt;a href="https://uxdesign.cc/designing-better-links-for-websites-and-emails-a-guideline-5b8638ce675a"&gt;Designing better links for websites and emails — a guideline&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Slava Shestopalov&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Just because something is common doesn't make it right. This article explains the common mistakes made when adding text links and making them more usable and accessible. It also shows the difference between bad and good links through examples.&lt;/p&gt;
@@ -247,16 +285,16 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Most organizations are scared of 10x engineers because they are toxic. An observation in extreme detail on what a highly productive engineer can look like. Why they are so rare, and how you can manage them and keep them engaged?&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>What to do as an end-user when merchants using stripe decline your credit cards</title>
-			<link>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</link>
-			<description>My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/merchants-using-stripe-decline-credit-cards/cover.jpg" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</guid>
-			<pubDate>Wed, 29 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>What to do as an end-user when merchants using stripe decline your credit cards</title>
+      <link>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</link>
+      <description>My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/merchants-using-stripe-decline-credit-cards/cover.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards</guid>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/merchants-using-stripe-decline-credit-cards/cover.jpg" alt="A woman who enters her bank details while shopping online"&gt;&lt;/p&gt;
 &lt;h2 id="what-i-tried-unsuccessfully"&gt;What I  tried (unsuccessfully)&lt;/h2&gt;
 &lt;ul&gt;
@@ -284,16 +322,16 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Cover Photo from &lt;a href="https://unsplash.com/photos/gf8e6XvG_3E"&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 50</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-50</link>
-			<description>This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-50</guid>
-			<pubDate>Sun, 26 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 50</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-50</link>
+      <description>This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-50</guid>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="how-to-solve-the-good-person-wrong-seat-problem"&gt;&lt;a href="https://www.entrepreneur.com/article/331248"&gt;How to Solve the Good Person, Wrong Seat Problem&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;JT McCormick&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It's much easier to have a conversation when you promote someone than when you ask someone to move laterally and for a pay-cut. An example of a conversation you can have when asking someone to change positions and take a pay cut.&lt;/p&gt;
@@ -310,15 +348,15 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Byrne Hobart&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;How do you network if you are an introvert and are bad at striking up conversations with strangers? As the title says, this article explains how writing is a good substitute for networking for introverts.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
-			<link>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</link>
-			<description>A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate</description>
-			<guid>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</guid>
-			<pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In the last post, we saw how we can &lt;a href="https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis"&gt;add subscriptions to our Graphql server&lt;/a&gt;. This post will show how to set up an ACL (Access Control List) for Redis to restrict access to trusted clients.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
+      <link>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</link>
+      <description>A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate</description>
+      <guid>https://www.ankursheel.com/blog/use-acl-graphql-subscriptions-redis</guid>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;In the last post, we saw how we can &lt;a href="https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis"&gt;add subscriptions to our Graphql server&lt;/a&gt;. This post will show how to set up an ACL (Access Control List) for Redis to restrict access to trusted clients.&lt;/p&gt;
 &lt;h2 id="setting-up-redis-acl-access-control-list"&gt;Setting up Redis ACL (Access Control list)&lt;/h2&gt;
 &lt;p&gt;Create a new file and call it &lt;em&gt;users.acl&lt;/em&gt;. In this file, we want to do 3 things.&lt;/p&gt;
 &lt;ul&gt;
@@ -393,16 +431,16 @@ services:
 &lt;li&gt;&lt;a href="https://stackexchange.github.io/StackExchange.Redis/Configuration"&gt;StackExchange.Redis Configuration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 49</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-49</link>
-			<description>This weeks roundup contains articles from David McCarter, Janella, Paul Swail, Mike Petrovich and Brian Rinaldi</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-49</guid>
-			<pubDate>Sun, 19 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 49</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-49</link>
+      <description>This weeks roundup contains articles from David McCarter, Janella, Paul Swail, Mike Petrovich and Brian Rinaldi</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-49</guid>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="collection-performance-how-do-you-linq"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/12/15/collection-performance-how-do-you-linq"&gt;Collection Performance: How Do You Linq?&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This article compares the performance of some common LINQ Queries when it's written using the API vs a lambda and the performance of the different ways to use the lambda versions.&lt;/p&gt;
@@ -419,16 +457,16 @@ services:
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Brian Rinaldi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Multiple rendering options are available in JAMstack applications. This article gives an in-depth overview of the different rendering options and helps you choose which one to use when.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 48</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
-			<description>This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
-			<pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 48</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
+      <description>This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="hiring-and-retaining-a-diverse-engineering-team"&gt;&lt;a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/"&gt;Hiring (and Retaining) a Diverse Engineering Team&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Almost everyone agrees that having a diverse team is better for business. But the question remains -&amp;gt; &amp;quot;How do you hire more diverse teams?&amp;quot; Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.&lt;/p&gt;
@@ -445,16 +483,16 @@ services:
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Avy Faingezicht&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 47</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-47</link>
-			<description>This weeks roundup contains articles from Ramit Sethi, Muhammed Saleem, Robert Heaton, Charity Majors and David McCarter</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
-			<pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 47</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-47</link>
+      <description>This weeks roundup contains articles from Ramit Sethi, Muhammed Saleem, Robert Heaton, Charity Majors and David McCarter</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="career-seasons-choosing-a-role-based-on-the-lifestyle-you-want"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/career-seasons/"&gt;Career Seasons: Choosing a Role Based on the Lifestyle You Want&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;At different points in our lives, we are in a different season of our careers. The 3 different career seasons are Growth, Lifestyle and Reinvention. It's important to know what season we are in to tailor our job search accordingly. This article can help us figure out what career season we are in.&lt;/p&gt;
@@ -471,16 +509,16 @@ services:
 &lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Many companies make the same mistakes repeatedly that doom their software projects to failure. A story about how David unearthed during an interview of a company making those mistakes.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How do I implement Graphql subscriptions in HotChocolate with Redis</title>
-			<link>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</link>
-			<description>A guide to adding subscriptions to a HotChocolate GraphQL API with a Redis provider</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/images/redis_response.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</guid>
-			<pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;GraphQL offers us real-time capabilities to notify us when a specific event happens.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How do I implement Graphql subscriptions in HotChocolate with Redis</title>
+      <link>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</link>
+      <description>A guide to adding subscriptions to a HotChocolate GraphQL API with a Redis provider</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/images/redis_response.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</guid>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;GraphQL offers us real-time capabilities to notify us when a specific event happens.&lt;/p&gt;
 &lt;p&gt;In this tutorial, we will add subscriptions to our graphql server. We will create an &lt;code&gt;onPing&lt;/code&gt; event that will send notifications whenever we ping the server with an input string.&lt;/p&gt;
 &lt;p&gt;We will also use Redis that runs in a docker container, and see how we can listen to the events in a Redis command shell.&lt;/p&gt;
 &lt;h2 id="running-redis-using-docker"&gt;Running Redis using docker&lt;/h2&gt;
@@ -569,16 +607,16 @@ services:
 &lt;h2 id="demo-project"&gt;Demo Project&lt;/h2&gt;
 &lt;p&gt;There is a &lt;a href="https://github.com/AnkurSheel/HotChocolateSubscriptions"&gt;demo project&lt;/a&gt; you can check out over on GitHub.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 46</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-46</link>
-			<description>This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-46</guid>
-			<pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 46</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-46</link>
+      <description>This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-46</guid>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
 &lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="the-pragmatic-engineer-test-12-questions-on-engineering-culture"&gt;&lt;a href="https://blog.pragmaticengineer.com/pragmatic-engineer-test/"&gt;The Pragmatic Engineer Test: 12 Questions on Engineering Culture&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
@@ -596,15 +634,15 @@ services:
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Morgan Housel&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What can skiing teach you about investing? A lot, it seems. There are distinct sides of risk 2 of which are easy to grasp. But the last one, the tail-end consequences of getting hit, can often be learned only through experience. But the tail-end events are all that matter. This is also why I always consider the worst outcome of any decision, and only if I am ok with it is when I take the risk.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to move a commit between repositories</title>
-			<link>https://www.ankursheel.com/blog/move-commit-between-repositories</link>
-			<description>Steps to move a commit from one repository to another</description>
-			<guid>https://www.ankursheel.com/blog/move-commit-between-repositories</guid>
-			<pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Sometimes you have a commit in a repository that you want to bring over to another repository. We can follow these steps to do just that.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to move a commit between repositories</title>
+      <link>https://www.ankursheel.com/blog/move-commit-between-repositories</link>
+      <description>Steps to move a commit from one repository to another</description>
+      <guid>https://www.ankursheel.com/blog/move-commit-between-repositories</guid>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Sometimes you have a commit in a repository that you want to bring over to another repository. We can follow these steps to do just that.&lt;/p&gt;
 &lt;h3 id="create-a-patch"&gt;Create a patch&lt;/h3&gt;
 &lt;p&gt;In the source repository, we can create a patch that describes the commit by running.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash hljs"&gt;git format-patch -1 &amp;lt;sha&amp;gt;
@@ -626,16 +664,16 @@ services:
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-apply"&gt;git-apply Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Weekly Roundup 45</title>
-			<link>https://www.ankursheel.com/blog/weekly-roundup-45</link>
-			<description>This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/weekly-roundup-45</guid>
-			<pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Weekly Roundup 45</title>
+      <link>https://www.ankursheel.com/blog/weekly-roundup-45</link>
+      <description>This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/weekly-roundup-45</guid>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
 &lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
 &lt;h2 id="is-renting-a-waste-of-money"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/renting-is-not-a-waste/"&gt;Is Renting a Waste of Money&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
@@ -653,15 +691,15 @@ services:
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Fajar Zuhri Hadiyanto&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The steps to normalize a database from completely un-normalized to 5NF by way of an example.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to change the author of multiple Git commits</title>
-			<link>https://www.ankursheel.com/blog/change-author-multiple-git-commits</link>
-			<description>A snippet for updating the author details of several commits in a git repository</description>
-			<guid>https://www.ankursheel.com/blog/change-author-multiple-git-commits</guid>
-			<pubDate>Thu, 28 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to change the author of multiple Git commits</title>
+      <link>https://www.ankursheel.com/blog/change-author-multiple-git-commits</link>
+      <description>A snippet for updating the author details of several commits in a git repository</description>
+      <guid>https://www.ankursheel.com/blog/change-author-multiple-git-commits</guid>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;I have two accounts from which I access my GitHub repositories. I have set one of them as a global setting. On a per-repository basis, I sometimes override the default details with my other account. Sometimes, I forget to override the default values and realize it only after making a few commits.&lt;/p&gt;
 &lt;p&gt;This post will show how we can update the author after making a few commits with incorrect details.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
@@ -694,16 +732,16 @@ email = author_email
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rebase"&gt;git-rebase Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>What's in a team name</title>
-			<link>https://www.ankursheel.com/blog/team-name</link>
-			<description>Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/team-name/cover.jpg" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/team-name</guid>
-			<pubDate>Thu, 21 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- https://unsplash.com/photos/ocAo7MwGfHY --&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>What's in a team name</title>
+      <link>https://www.ankursheel.com/blog/team-name</link>
+      <description>Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/team-name/cover.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/team-name</guid>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;!-- https://unsplash.com/photos/ocAo7MwGfHY --&gt;
 &lt;p&gt;Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.&lt;/p&gt;
 &lt;p&gt;This will be a controversial opinion, but I think this is possibly the worst way to decide team names.&lt;/p&gt;
 &lt;h2 id="a-common-theme"&gt;A common theme&lt;/h2&gt;
@@ -753,16 +791,16 @@ email = author_email
 &lt;p&gt;It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.&lt;/p&gt;
 &lt;p&gt;Having said that, you should probably have some guidelines to weed out the truly offensive.&lt;/p&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to add estimated Reading Time to Posts in Statiq</title>
-			<link>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</link>
-			<description>A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq</description>
-			<enclosure url="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover.png" length="0" type="image" />
-			<guid>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</guid>
-			<pubDate>Thu, 14 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In this tutorial, I will show how to use the reading time calculated in &lt;a href="https://www.ankursheel.com/calculate-reading-time"&gt;How to calculate reading time&lt;/a&gt; to use in a Statiq module to add reading time for our posts.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to add estimated Reading Time to Posts in Statiq</title>
+      <link>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</link>
+      <description>A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</guid>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;In this tutorial, I will show how to use the reading time calculated in &lt;a href="https://www.ankursheel.com/calculate-reading-time"&gt;How to calculate reading time&lt;/a&gt; to use in a Statiq module to add reading time for our posts.&lt;/p&gt;
 &lt;p&gt;To add a module to Statiq, we can inherit from one of the provided base module classes. In this case, we can inherit from the &lt;code&gt;ParallelModule&lt;/code&gt; class as the engine can process the documents in any order. We also need to overload the &lt;code&gt;ExecuteInputAsync()&lt;/code&gt; method to execute this module for each document in the pipeline.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;GenerateReadingTime&lt;/span&gt; : &lt;span class="hljs-title"&gt;ParallelModule&lt;/span&gt;
 {
@@ -793,15 +831,15 @@ email = author_email
 &lt;li&gt;&lt;a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules"&gt;Writing Modules in Statiq&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to calculate reading time</title>
-			<link>https://www.ankursheel.com/blog/calculate-reading-time</link>
-			<description>A guide to calculating the reading time for a given document</description>
-			<guid>https://www.ankursheel.com/blog/calculate-reading-time</guid>
-			<pubDate>Thu, 07 Oct 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this snippet, I will be showing how to calculate the reading time for a given string.&lt;/p&gt;
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to calculate reading time</title>
+      <link>https://www.ankursheel.com/blog/calculate-reading-time</link>
+      <description>A guide to calculating the reading time for a given document</description>
+      <guid>https://www.ankursheel.com/blog/calculate-reading-time</guid>
+      <pubDate>Thu, 07 Oct 2021 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this snippet, I will be showing how to calculate the reading time for a given string.&lt;/p&gt;
 &lt;p&gt;First, we will create a new data structure to hold the reading time. It contains the number of words and the minutes and seconds to read the post.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; record ReadingTimeData
 {
@@ -849,59 +887,7 @@ email = author_email
 &lt;h2 id="concusion"&gt;Concusion&lt;/h2&gt;
 &lt;p&gt;Now, we can show the estimated reading time on our articles.&lt;/p&gt;
 &lt;/body&gt;&lt;/html&gt;</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>How to Upload Multiple Files to AWS S3 using Terraform</title>
-			<link>https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform</link>
-			<description>A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform</description>
-			<guid>https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform</guid>
-			<pubDate>Thu, 30 Sep 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;I want to upload multiple files from a specific folder to an AWS S3 bucket.&lt;/p&gt;
-&lt;h3 id="assumptions"&gt;Assumptions&lt;/h3&gt;
-&lt;p&gt;The S3 bucket name is &lt;strong&gt;test&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The directory structure is as follows.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-txt"&gt;documents
-|- file_1
-|- subdirectory1
-|  |- file_1_1
-|  |- file_1_2
-|  |- subdirectory2
-|  |  |- file_1_2_1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We want to end up with the following S3 objects.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;s3://test/file_1&lt;/li&gt;
-&lt;li&gt;s3://test/subdirectory1/file_1_1&lt;/li&gt;
-&lt;li&gt;s3://test/subdirectory1/file_1_2&lt;/li&gt;
-&lt;li&gt;s3://test/subdirectory1/subdirectory2/file_1_2_1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;pre&gt;&lt;code class="language-hcl"&gt;resource &amp;quot;aws_s3_bucket_object&amp;quot; &amp;quot;test&amp;quot; {
-  for_each = fileset(&amp;quot;./documents/&amp;quot;, &amp;quot;**&amp;quot;)
-  bucket = &amp;quot;test&amp;quot;
-  key = each.value
-  source = &amp;quot;./documents/${each.value}&amp;quot;
-  etag = filemd5(&amp;quot;./documents/${each.value}&amp;quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 1&lt;/em&gt;:&lt;/strong&gt;: Create an S3 bucket object resource.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 2&lt;/em&gt;:&lt;/strong&gt;: Use a &lt;strong&gt;&lt;em&gt;for_each&lt;/em&gt;&lt;/strong&gt; argument to iterate over the documents returned by the &lt;strong&gt;&lt;em&gt;fileset&lt;/em&gt;&lt;/strong&gt; function. &lt;strong&gt;&lt;em&gt;for_each&lt;/em&gt;&lt;/strong&gt; identifies each resource instance by its S3 path, making it easy to add/remove files. The fileset function enumerates over a set of filenames for a given path. It uses &lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt; as the pattern for a recursive search.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 3&lt;/em&gt;:&lt;/strong&gt;: The name of the bucket to put the files in.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 4&lt;/em&gt;:&lt;/strong&gt;: The object's name once it's in the bucket. In the example above, it is the same as the path.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5&lt;/em&gt;:&lt;/strong&gt;: the Path to the file to be uploaded.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 6&lt;/em&gt;:&lt;/strong&gt;: Triggers an update only if the file changes. The eTag of each object is an MD5 hash of that object.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object"&gt;Resource: aws_s3_bucket_object&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/meta-arguments/for_each.html"&gt;for_each&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.terraform.io/docs/language/functions/fileset.html"&gt;fileset&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-	</channel>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+  </channel>
 </rss>

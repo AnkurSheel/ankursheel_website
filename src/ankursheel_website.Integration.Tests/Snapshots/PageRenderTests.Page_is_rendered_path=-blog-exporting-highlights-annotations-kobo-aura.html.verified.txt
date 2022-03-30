@@ -12,24 +12,24 @@
 <meta name="description" content="Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/exporting-highlights-and-annotations-from-a-kobo-aura"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura"/>
 
 <meta itemProp="name" content="How to export highlights and annotations from a Kobo Aura"/>
 <meta itemProp="description" content="Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-and-annotations-from-a-kobo-aura-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/exporting-highlights-and-annotations-from-a-kobo-aura"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-annotations-kobo-aura-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="How to export highlights and annotations from a Kobo Aura"/>
 <meta property="og:description" content="Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-and-annotations-from-a-kobo-aura-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-and-annotations-from-a-kobo-aura-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-annotations-kobo-aura-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-annotations-kobo-aura-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="How to export highlights and annotations from a Kobo Aura"/>
 <meta name="twitter:description" content="Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-and-annotations-from-a-kobo-aura-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-and-annotations-from-a-kobo-aura-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-annotations-kobo-aura-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-annotations-kobo-aura-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -165,7 +165,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/exporting-highlights-and-annotations-from-a-kobo-aura&text=How%20to%20export%20highlights%20and%20annotations%20from%20a%20Kobo%20Aura via @ankur_sheel.&#xD;&#xA;Exporting%20annotations%2Fhighlights%20from%20a%20Kobo%20can%20be%20a%20pain.%20Luckily%2C%20there%20is%20a%20setting%20which%20you%20can%20use%20to%20easily%20export%20them%20to%20a%20txt%20file." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura&text=How%20to%20export%20highlights%20and%20annotations%20from%20a%20Kobo%20Aura via @ankur_sheel.&#xD;&#xA;Exporting%20annotations%2Fhighlights%20from%20a%20Kobo%20can%20be%20a%20pain.%20Luckily%2C%20there%20is%20a%20setting%20which%20you%20can%20use%20to%20easily%20export%20them%20to%20a%20txt%20file." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

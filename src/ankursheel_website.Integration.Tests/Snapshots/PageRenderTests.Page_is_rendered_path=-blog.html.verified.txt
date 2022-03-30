@@ -145,6 +145,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/replace-word-string-csharp">How to replace a word in a string in C#</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/programmatically-remove-service-worker">How to programmatically remove a service worker</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -155,9 +158,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/use-acl-graphql-subscriptions-redis">How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/implement-graqhql-subscriptions-hotchocolate-redis">How do I implement Graphql subscriptions in HotChocolate with Redis</a>
         </li>
 </ul>
 
@@ -212,8 +212,11 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (50)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (51)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/replace-word-string-csharp">How to replace a word in a string in C#</a> - <time class="prose-sm" datetime="22-03-30">March 30, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/programmatically-remove-service-worker">How to programmatically remove a service worker</a> - <time class="prose-sm" datetime="22-03-23">March 23, 2022</time>
             </li>
@@ -263,7 +266,7 @@
                 <a href="/blog/setup-project-properties-source-generators">How to set up the project properties for Source Generators</a> - <time class="prose-sm" datetime="21-06-23">June 23, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/reset-primary-key-sequence-out-of-sync-postgres">How to reset the primary key sequence in Postgres</a> - <time class="prose-sm" datetime="21-06-03">June 03, 2021</time>
+                <a href="/blog/reset-primary-key-sequence-out-sync-postgres">How to reset the primary key sequence in Postgres</a> - <time class="prose-sm" datetime="21-06-03">June 03, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/automatically-set-access-token-authenticated-requests-insomnia">How to automatically set the access token in Insomnia</a> - <time class="prose-sm" datetime="20-12-04">December 04, 2020</time>
@@ -290,10 +293,10 @@
                 <a href="/blog/handle-bounces-ses-terraform">How to publish email bounce notifications to an SQS queue</a> - <time class="prose-sm" datetime="20-04-29">April 29, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/approval-tests-with-xunit-theory-tests">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a> - <time class="prose-sm" datetime="20-03-18">March 18, 2020</time>
+                <a href="/blog/approval-tests-xunit-theory-tests">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a> - <time class="prose-sm" datetime="20-03-18">March 18, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/query-in-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a> - <time class="prose-sm" datetime="20-03-11">March 11, 2020</time>
+                <a href="/blog/query-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a> - <time class="prose-sm" datetime="20-03-11">March 11, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule">How to deploy a Gatsby site on a schedule with Azure Pipelines</a> - <time class="prose-sm" datetime="20-01-17">January 17, 2020</time>
@@ -308,10 +311,10 @@
                 <a href="/blog/full-width-you-tube-video-embed">Embed a YouTube video with 16:9 aspect ratio and full-width</a> - <time class="prose-sm" datetime="19-12-18">December 18, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/automating-creation-of-new-blog-post">How to automate the creation of a new blog post</a> - <time class="prose-sm" datetime="19-09-12">September 12, 2019</time>
+                <a href="/blog/automating-creation-new-blog-post">How to automate the creation of a new blog post</a> - <time class="prose-sm" datetime="19-09-12">September 12, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site">How to add an RSS feed with images to a Gatsby site</a> - <time class="prose-sm" datetime="19-08-30">August 30, 2019</time>
+                <a href="/blog/adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a> - <time class="prose-sm" datetime="19-08-30">August 30, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/custom-type-definitions-for-java-script-dependencies">Create custom type definitions for JavaScript dependencies</a> - <time class="prose-sm" datetime="19-08-23">August 23, 2019</time>
@@ -416,13 +419,13 @@
                 <a href="/blog/reader-question-apply-storybrand-communicate-work">How can we apply Storybrand to how we communicate at work</a> - <time class="prose-sm" datetime="21-06-10">June 10, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby">How long did it take to migrate from WordPress to Gatsby?</a> - <time class="prose-sm" datetime="20-11-25">November 25, 2020</time>
+                <a href="/blog/reader-question-long-migrate-wordpress-gatsby">How long did it take to migrate from WordPress to Gatsby?</a> - <time class="prose-sm" datetime="20-11-25">November 25, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/impossible-list-or-a-bucket-list">Should you make an Impossible List or a Bucket List?</a> - <time class="prose-sm" datetime="19-09-15">September 15, 2019</time>
+                <a href="/blog/impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a> - <time class="prose-sm" datetime="19-09-15">September 15, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/migrating-from-wordpress-to-gatsby">Why and How I migrated my website from WordPress to Gatsby</a> - <time class="prose-sm" datetime="19-08-29">August 29, 2019</time>
+                <a href="/blog/migrating-wordpress-gatsby">Why and How I migrated my website from WordPress to Gatsby</a> - <time class="prose-sm" datetime="19-08-29">August 29, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a> - <time class="prose-sm" datetime="16-11-23">November 23, 2016</time>
@@ -599,16 +602,16 @@
     <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (8)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/add-cursive-fonts-to-vs-code">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
+                <a href="/blog/add-cursive-fonts-vs-code">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/exporting-highlights-and-annotations-from-a-kobo-aura">How to export highlights and annotations from a Kobo Aura</a> - <time class="prose-sm" datetime="19-12-25">December 25, 2019</time>
+                <a href="/blog/exporting-highlights-annotations-kobo-aura">How to export highlights and annotations from a Kobo Aura</a> - <time class="prose-sm" datetime="19-12-25">December 25, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/popular-posts-2016">What were my most popular posts in 2016</a> - <time class="prose-sm" datetime="17-02-08">February 08, 2017</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/my-most-popular-posts-in-2015">What are my most popular posts in 2015</a> - <time class="prose-sm" datetime="15-12-25">December 25, 2015</time>
+                <a href="/blog/most-popular-posts-2015">What are my most popular posts in 2015</a> - <time class="prose-sm" datetime="15-12-25">December 25, 2015</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/photo-essay-india-vs-zimbabwe-world-cup-2015">Photo Essay: India Vs Zimbabwe, World Cup 2015</a> - <time class="prose-sm" datetime="15-11-03">November 03, 2015</time>

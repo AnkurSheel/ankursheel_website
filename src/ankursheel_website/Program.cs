@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Statiq.App;
 using Statiq.Common;
 using Statiq.Web;

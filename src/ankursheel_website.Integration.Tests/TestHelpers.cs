@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Linq;
-
-namespace ankursheel_website.Integration.Tests
+﻿namespace ankursheel_website.Integration.Tests
 {
     public class TestHelpers
     {

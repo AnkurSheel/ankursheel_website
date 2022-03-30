@@ -4,32 +4,32 @@
 <head>
     
 
-<title>How long did it take to migrate from WordPress to Gatsby? - Ankur Sheel</title>
+<title>How to use ApprovalTests with xUnit&#x27;s Theory attribute - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
+<meta name="description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/reader-question-how-long-migrate-wordpress-gatsby"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/approval-tests-xunit-theory-tests"/>
 
-<meta itemProp="name" content="How long did it take to migrate from WordPress to Gatsby?"/>
-<meta itemProp="description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/reader-question-how-long-migrate-wordpress-gatsby-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/reader-question-how-long-migrate-wordpress-gatsby"/>
+<meta itemProp="name" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
+<meta itemProp="description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/approval-tests-xunit-theory-tests-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/approval-tests-xunit-theory-tests"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How long did it take to migrate from WordPress to Gatsby?"/>
-<meta property="og:description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/reader-question-how-long-migrate-wordpress-gatsby-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reader-question-how-long-migrate-wordpress-gatsby-facebook.png"/>
+<meta property="og:title" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
+<meta property="og:description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/approval-tests-xunit-theory-tests-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/approval-tests-xunit-theory-tests-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How long did it take to migrate from WordPress to Gatsby?"/>
-<meta name="twitter:description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/reader-question-how-long-migrate-wordpress-gatsby-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reader-question-how-long-migrate-wordpress-gatsby-twitter.png"/>
+<meta name="twitter:title" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
+<meta name="twitter:description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/approval-tests-xunit-theory-tests-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/approval-tests-xunit-theory-tests-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,49 +122,67 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How long did it take to migrate from WordPress to Gatsby?</h1>
+    <h1 class="text-center">How to use ApprovalTests with xUnit&#x27;s Theory attribute</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2020-11-25">November 25, 2020</time></span>
+        <span>Last Updated: <time datetime="2020-03-18">March 18, 2020</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/reader-question" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">reader question</a>
-            <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
-            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordpress</a>
+            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
+            <a href="/tags/testing" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">testing</a>
+            <a href="/tags/xunit" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">xUnit</a>
+            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
+            <a href="/tags/approval-tests" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Approval Tests</a>
     </div>
 </div>
 
-<h2 id="reader-question">Reader Question</h2>
-<blockquote>
-<p>I was reading your blog post about migrating from WordPress to Gatsby and had a question about the necessary timeline we should expect. How long did it take you to make your full migration?</p>
-</blockquote>
-<p><em>If you are wondering what post is being referred to its <a href="migrating-from-wordpress-to-gatsby">Why and How I migrated my website from Wordpress to Gatsby?</a></em></p>
-<h2 id="my-answer">My Answer</h2>
-<p>The timeline for the migration depends on the contents of your site.</p>
-<p>I started the move away from WordPress to Gatsby in August 2019 and switched over in November 2019. You might think that 3 months is a long time for migrating posts, and you would be correct.</p>
-<p>But, it's important to note that I was spending just a few hours a week on this. It would have probably taken me a few hours/days to make the switch if I worked on it full-time.</p>
-<p>I used a starter, so I had a base to start from. But, there were a few things I had to modify(which is why it took time) before I was ready to make the switch.</p>
+<html><head></head><body><h2 id="problem">Problem</h2>
+<p methodname="">In <a href="https://github.com/approvals/ApprovalTests.Net">ApprovalTests</a>, the <strong>Namer</strong> generates a unique name for each approved/received file. This filename takes the format of <strong><em>..approved.txt</em></strong>.</p>
+<p>This works perfectly for <strong>Fact</strong> based tests. But, if you are writing a <strong>Theory</strong> based test, the filename will not be unique as a theory-based test is data-driven and therefore has multiple calls to the same method.</p>
+<h3 id="example">Example</h3>
+<p>Let's look at an example.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span>
+{
+    [InlineData(<span class="hljs-literal">true</span>)]
+    [InlineData(<span class="hljs-literal">false</span>)]
+    [Theory]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span> flag</span>)
+    </span>{
+        <span class="hljs-keyword">var</span> result = TestThisMethod(flag);
+        Approvals.Verify(result);
+    }
+}
+</code></pre>
+<p>In the above snippet, the filename generated for both the tests will be <strong><em>TestClass.Test.approved.txt</em></strong>. This means that you have only 1 approval file for both tests.</p>
+<h2 id="solution">Solution</h2>
+<p>The naming pattern of the default namer is <em><strong>[ClassName].[MethodName].[AdditionalInformation(optional)].approved.[Extension]</strong></em>. So, we can leverage the <em>AdditionalInformation</em> part to generate unique filenames for our tests.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span>
+{
+    [InlineData(<span class="hljs-literal">true</span>)]
+    [InlineData(<span class="hljs-literal">false</span>)]
+    [Theory]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span> flag</span>)
+    </span>{
+        NamerFactory.AdditionalInformation = $&quot;Flag-{flag}&quot;;
+        <span class="hljs-keyword">var</span> result = TestThisMethod(flag);
+        Approvals.Verify(result);
+    }
+}
+</code></pre>
+<p>Now, when we run the tests, 2 files will be generated.</p>
 <ul>
-<li>getting it to play nicely with Typescript.</li>
-<li>making sure all the internal links work.</li>
-<li>building an image gallery component for the image-heavy posts.</li>
-<li>hunting for the plugins not included in the starter and configuring them</li>
+<li>TestClass.Test.Flag-true.approved.txt</li>
+<li>TestClass.Test.Flag-false.approved.txt</li>
 </ul>
-<p>If you are thinking of migrating your site, I would suggest doing what I did.</p>
-<ul>
-<li>Start with a gatsby starter/theme as your base.</li>
-<li>If the theme you have chosen doesn't have all the plugins, just add those plugins in.</li>
-<li>Get an initial version of your site up and running using Netlify.</li>
-</ul>
-<p>Update the styling, components, plugin configurations, add automated scripts etc., as you see fit. This will probably be a continuous thing.</p>
-
+<p><em>Note: We can pass any information to the <strong>AdditionalInformation</strong> property as long as it is unique between tests.</em></p>
+</body></html>
 
 
 
@@ -173,7 +191,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/reader-question-how-long-migrate-wordpress-gatsby&text=How%20long%20did%20it%20take%20to%20migrate%20from%20WordPress%20to%20Gatsby%3F via @ankur_sheel.&#xD;&#xA;A%20reader%20asked%20me%20how%20long%20it%20took%20me%20to%20migrate%20from%20WordPress%20to%20Gatsby.%20Let%27s%20find%20out" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/approval-tests-xunit-theory-tests&text=How%20to%20use%20ApprovalTests%20with%20xUnit%27s%20Theory%20attribute via @ankur_sheel.&#xD;&#xA;The%20approval%20test%20filename%20for%20Theory-based%20tests%20is%20not%20unique%20by%20default.%20How%20can%20we%20get%20generate%20unique%20filenames%20for%20theory-based%20approval%20tests." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

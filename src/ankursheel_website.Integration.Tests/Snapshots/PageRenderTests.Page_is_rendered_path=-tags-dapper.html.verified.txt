@@ -129,12 +129,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/query-in-clause-dapper-npgsql" class="text-center prose-2xl mb-4">Dapper and NPGSql : Write a query with the IN operator</a>
+        <a href="/blog/query-clause-dapper-npgsql" class="text-center prose-2xl mb-4">Dapper and NPGSql : Write a query with the IN operator</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
             In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql
         </p>
-            <a href="/blog/query-in-clause-dapper-npgsql" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/query-clause-dapper-npgsql" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

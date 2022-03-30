@@ -4,32 +4,32 @@
 <head>
     
 
-<title>How to reset the primary key sequence in Postgres - Ankur Sheel</title>
+<title>Dapper and NPGSql : Write a query with the IN operator - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
+<meta name="description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/reset-primary-key-sequence-out-of-sync-postgres"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/query-clause-dapper-npgsql"/>
 
-<meta itemProp="name" content="How to reset the primary key sequence in Postgres"/>
-<meta itemProp="description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-of-sync-postgres-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/reset-primary-key-sequence-out-of-sync-postgres"/>
+<meta itemProp="name" content="Dapper and NPGSql : Write a query with the IN operator"/>
+<meta itemProp="description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/query-clause-dapper-npgsql-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/query-clause-dapper-npgsql"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to reset the primary key sequence in Postgres"/>
-<meta property="og:description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-of-sync-postgres-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-of-sync-postgres-facebook.png"/>
+<meta property="og:title" content="Dapper and NPGSql : Write a query with the IN operator"/>
+<meta property="og:description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/query-clause-dapper-npgsql-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/query-clause-dapper-npgsql-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to reset the primary key sequence in Postgres"/>
-<meta name="twitter:description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-of-sync-postgres-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-of-sync-postgres-twitter.png"/>
+<meta name="twitter:title" content="Dapper and NPGSql : Write a query with the IN operator"/>
+<meta name="twitter:description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/query-clause-dapper-npgsql-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/query-clause-dapper-npgsql-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,61 +122,117 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to reset the primary key sequence in Postgres</h1>
+    <h1 class="text-center">Dapper and NPGSql : Write a query with the IN operator</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-06-03">June 03, 2021</time></span>
+        <span>Last Updated: <time datetime="2020-03-11">March 11, 2020</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/postgres" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postgres</a>
-            <a href="/tags/sql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">sql</a>
+            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
             <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
+            <a href="/tags/sql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">sql</a>
+            <a href="/tags/dapper" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dapper</a>
+            <a href="/tags/postgres" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postgres</a>
     </div>
 </div>
 
-<html><head></head><body><h2 id="the-problem">The Problem</h2>
-<p>When we insert a new row in a table with a sequential primary key, we get a &quot;23505: duplicate key value violates unique constraint&quot; error.</p>
-<p>This implies that a record already exists for the next number being returned for the sequence.</p>
-<p>The reason this happens is that the primary key sequence is out of sync with the table rows.</p>
-<h2 id="assumptions">Assumptions</h2>
-<ul>
-<li>The table name is &quot;<strong><em>table&quot;</em></strong></li>
-<li>The column with the issue is &quot;<strong><em>id</em></strong>.&quot;</li>
-</ul>
-<h2 id="validate-that-the-sequence-is-out-of-sync">Validate that the sequence is out-of-sync</h2>
-<p>Before we reset the sequence, let us make sure that it is out of sync.</p>
-<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">nextval</span>(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>));
+<html><head></head><body><h2 id="scenario">Scenario</h2>
+<p>We want to get details of users that match a given list of ids.</p>
+<h3 id="the-sql">The SQL</h3>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">Select</span> *
+<span class="hljs-keyword">FROM</span> <span class="hljs-keyword">users</span>
+<span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">IN</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+</code></pre>
+<h3 id="implementation-in-c">Implementation in C#</h3>
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
+                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
 
-<span class="hljs-keyword">SELECT</span>
-    CURRVAL(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)) <span class="hljs-keyword">AS</span> &quot;Current Value&quot;,
-    MAX(&quot;id&quot;) AS &quot;Max Value&quot;
-FROM &quot;table&quot;;
+    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
+                    {
+                        { &quot;UserIds&quot;, userIds }
+                    };
+
+    <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> NpgsqlConnection(_connectionString))
+    {
+        <span class="hljs-keyword">var</span> users  = connection.Query&lt;User&gt;(
+                        sql,
+                        parameters.ToDynamicParameters())
+                    .ToList();
+    }
+}
 </code></pre>
-<p><strong>Line #1:</strong> We make a call to <strong><em>nextval</em></strong> because if we call <strong><em>currval</em></strong> before calling <strong><em>nextval</em></strong> in the current session, it will give us an error similar to &quot;<strong><em>ERROR: currval of sequence &quot;table_id_seq&quot; is not yet defined in this session</em></strong>&quot;.</p>
-<p><strong>Line #3-6:</strong> Gets the value most recently obtained by <strong>nextval</strong> for this sequence in the current session along with the maximum value for <strong><em>id</em></strong> in <strong><em>table</em></strong>.</p>
-<p>Our sequence is out-of-sync when the <strong><em>Current Value</em></strong> is less than <strong><em>Max Value</em></strong>.</p>
-<h3 id="what-does-pg_get_serial_sequence-do">What does PG_GET_SERIAL_SEQUENCE do?</h3>
-<p><code>PG_GET_SERIAL_SEQUENCE('&quot;table&quot;', 'id')</code> can be used to get the sequence name.</p>
-<p>Using this, we can avoid hard-coding the actual sequence name, which helps prevent incorrect assumptions about the sequence name.</p>
-<p><em>Note that the table name is in double-quotes, surrounded by single quotes.</em></p>
-<h2 id="the-fix">The Fix</h2>
-<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> SETVAL(
-    (<span class="hljs-keyword">SELECT</span> PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)),
-    (<span class="hljs-keyword">SELECT</span> (<span class="hljs-keyword">MAX</span>(&quot;id&quot;) + 1) FROM &quot;table&quot;),
-    FALSE);
-</code></pre>
-<p>This will set the sequence to the next available value higher than any existing value for &quot;<strong><em>id</em></strong>&quot; in <strong><em>table</em></strong>. Further inserts will not result in a &quot;duplicate key value violates unique constraint&quot; error.</p>
-<h2 id="further-reading">Further Reading</h2>
+<p><em>Notes:</em></p>
 <ul>
-<li><a href="https://www.postgresql.org/docs/current/functions-sequence.html">Sequence Manipulation Functions</a></li>
+<li><em>We are using <a href="https://www.npgsql.org/">NPGSql</a> and <a href="https://github.com/DapperLib/Dapper">Dapper</a>.</em></li>
+<li><em>ToDynamicParameters is an extension method to transform the dictionary into Dapper.DynamicParameters</em></li>
 </ul>
+<h2 id="problem-1">Problem #1</h2>
+<p>On running this, we get an error.</p>
+<pre><code class="language-csharp hljs">System.NotSupportedException: Npgsql <span class="hljs-number">3.</span>x removed support <span class="hljs-keyword">for</span> writing
+    a parameter with an IEnumerable <span class="hljs-keyword">value</span>, use .ToList()/.ToArray()
+    instead.
+</code></pre>
+<p>Luckily, the error message is telling us what we need to do. So let's make userIds an Array.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-comment">//unchanged</span>
+
+    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
+                    {
+                        { &quot;UserIds&quot;, userIds.ToArray() }
+                    };
+
+    <span class="hljs-comment">// unchanged</span>
+}
+</code></pre>
+<h2 id="problem-2">Problem #2</h2>
+<p>We now get the error.</p>
+<pre><code class="language-csharp hljs">Npgsql.PostgresException : <span class="hljs-number">42601</span>: syntax error at or near &quot;$<span class="hljs-number">2</span>&quot;
+</code></pre>
+<p>Unfortunately, this is a more cryptic error.</p>
+<p>There are 2 changes we need to make to the SQL to fix this error.</p>
+<ul>
+<li>parens are needed around the parameter</li>
+<li><strong>IN</strong> needs to be replaced with <strong>= ANY</strong></li>
+</ul>
+<p>Our resulting SQL now becomes</p>
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
+                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
+   <span class="hljs-comment">// unchanged</span>
+}
+</code></pre>
+<h2 id="final-solution">Final Solution</h2>
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
+</span>{
+    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
+                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
+
+    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
+                    {
+                        { &quot;UserIds&quot;, userIds.ToArray() }
+                    };
+
+    <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> NpgsqlConnection(_connectionString))
+    {
+        <span class="hljs-keyword">var</span> users  = connection.Query&lt;User&gt;(
+                        sql,
+                        parameters.ToDynamicParameters())
+                    .ToList();
+    }
+}
+</code></pre>
+<p>This allows us to get details of users that match a given list of ids.</p>
 </body></html>
 
 
@@ -186,7 +242,7 @@ FROM &quot;table&quot;;
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/reset-primary-key-sequence-out-of-sync-postgres&text=How%20to%20reset%20the%20primary%20key%20sequence%20in%20Postgres via @ankur_sheel.&#xD;&#xA;How%20can%20we%20fix%20the%20%22duplicate%20key%20value%20violates%20unique%20constraint%22%20error%20because%20the%20primary%20key%20sequence%20is%20out%20of%20sync%20from%20the%20records%20in%20the%20table" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/query-clause-dapper-npgsql&text=Dapper%20and%20NPGSql%20%3A%20Write%20a%20query%20with%20the%20IN%20operator via @ankur_sheel.&#xD;&#xA;In%20this%20post%2C%20I%20look%20at%20what%20changes%20need%20to%20be%20made%20to%20write%20a%20query%20with%20the%20IN%20operator%20in%20a%20WHERE%20clause%20using%20Dapper%20and%20NPGSql" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

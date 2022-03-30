@@ -4,32 +4,32 @@
 <head>
     
 
-<title>How to add an RSS feed with images to a Gatsby site - Ankur Sheel</title>
+<title>How to replace a word in a string in C# - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
+<meta name="description" content="There is no way to replace just whole words using string.Replace. Let&#x27;s see how we can replace whole words in string using Regex"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/replace-word-string-csharp"/>
 
-<meta itemProp="name" content="How to add an RSS feed with images to a Gatsby site"/>
-<meta itemProp="description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site"/>
+<meta itemProp="name" content="How to replace a word in a string in C#"/>
+<meta itemProp="description" content="There is no way to replace just whole words using string.Replace. Let&#x27;s see how we can replace whole words in string using Regex"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/replace-word-string-csharp-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/replace-word-string-csharp"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to add an RSS feed with images to a Gatsby site"/>
-<meta property="og:description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-facebook.png"/>
+<meta property="og:title" content="How to replace a word in a string in C#"/>
+<meta property="og:description" content="There is no way to replace just whole words using string.Replace. Let&#x27;s see how we can replace whole words in string using Regex"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/replace-word-string-csharp-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/replace-word-string-csharp-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to add an RSS feed with images to a Gatsby site"/>
-<meta name="twitter:description" content="A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/adding-an-rss-feed-with-images-to-a-gatsby-site-twitter.png"/>
+<meta name="twitter:title" content="How to replace a word in a string in C#"/>
+<meta name="twitter:description" content="There is no way to replace just whole words using string.Replace. Let&#x27;s see how we can replace whole words in string using Regex"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/replace-word-string-csharp-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/replace-word-string-csharp-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,139 +122,52 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to add an RSS feed with images to a Gatsby site</h1>
+    <h1 class="text-center">How to replace a word in a string in C#</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2019-08-30">August 30, 2019</time></span>
+        <span>Last Updated: <time datetime="2022-03-30">March 30, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 3 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
-            <a href="/tags/web-development" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">web development</a>
-            <a href="/tags/javascript" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">javascript</a>
-            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
     </div>
 </div>
 
-<html><head></head><body><p><a href="https://www.gatsbyjs.org/">Gatsby</a> has a good <a href="https://www.gatsbyjs.org/docs/adding-an-rss-feed/">article</a> on how to add an RSS feed to your gatsby site. Although it will suffice in most cases and is a good starting point, it wasn't exactly working for me.</p>
-<ul>
-<li>My posts live under <a href="https://www.ankursheel.com/blog/">&quot;<em>/blog/</em>&quot;</a> but the pages are under <a href="https://www.ankursheel.com/">&quot;www.ankursheel.com/&quot;</a>.</li>
-<li>I am working with MDX, but the document deals with markdown posts.</li>
-<li>It doesn't explain how to add the featured image in the list view.</li>
-</ul>
-<p>Let us start modifying the options once we have the base from the gatsby article.</p>
-<h2 id="getting-the-data">Getting the data</h2>
-<pre><code class="language-graphql">query `
-{
-    site {
-        siteMetadata {
-            siteUrl
-        }
-    }
-
-    allMdx(
-        limit: 1000
-        filter: { fileAbsolutePath: { regex: &quot;//content/posts//&quot; } }
-        sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-        edges {
-            node {
-                excerpt(pruneLength: 140)
-                html
-                frontmatter {
-                    slug
-                    title
-                    date
-                    featuredImage {
-                        publicURL
-                    }
-                }
-            }
-        }
-    }
+<html><head></head><body><h2 id="problem">Problem</h2>
+<p>Sometimes you want to replace whole words from a string in C#. But <code>string.Replace</code> in C# replaces partial matches.</p>
+<p>For example,</p>
+<p>Let's assume that the string is &quot;Test testing test tester&quot;, and we want to replace the word <em>test</em> with <em>text</em>.</p>
+<p>If we use <code>string.Replace</code>, our resultant string would be &quot;text texting text texter&quot;, but what we want is &quot;text testing
+text tester&quot;</p>
+<h2 id="solution">Solution</h2>
+<p>You can use <code>Regex.Replace</code> to replace a whole word.</p>
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> <span class="hljs-title">ReplaceWholeWord</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> input, <span class="hljs-keyword">string</span> wordToReplace, <span class="hljs-keyword">string</span> replacementWord</span>)
+</span>{
+    <span class="hljs-keyword">var</span> pattern = $&quot;\\b{wordToReplace}\\b&quot;;
+    <span class="hljs-keyword">return</span> Regex.Replace(input, pattern, replacementWord, RegexOptions.IgnoreCase);
 }
-`;
 </code></pre>
-<p>So what am I doing here?</p>
-<ul>
-<li><strong><em>Lines 3-7</em></strong>: I get the siteUrl from the site metaData. We will need this to build the URL to the posts.</li>
-<li><strong><em>Line 9</em></strong>: Since all of my content is in MDX files instead of markdown, I use <strong><em>allMdx</em></strong>.
-<ul>
-<li><strong><em>Line 10</em></strong>: I limit it to 1000 records. I guess this could be a much smaller value, but it's ok for the time being.</li>
-<li><strong><em>Line 11</em></strong>: I want to build the feed only for my posts, so I add a regex to get only those records that are present in <em>&quot;content/posts&quot;</em>.</li>
-<li><strong><em>Line 12</em></strong>: I sort the records by date in descending order.</li>
-</ul>
-</li>
-<li><strong><em>Lines 14-26</em></strong>: I get the <em>excerpt</em> and <em>html</em>. I also get the <em>slug</em>, <em>title</em>, <em>date</em> and the <em>featured image url</em> from the frontmatter. The excerpt is also pruned to a maximum length of 140 characters.</li>
-</ul>
-<h2 id="build-the-feed-object">Build the feed object</h2>
-<p>The documentation states that every feed must include <em>option</em>, <em>query</em> and <em>title</em>. It also recommends passing a serialize function to customize the feed structure. This is what the final <em>feeds</em> array looks like</p>
-<pre><code class="language-javascript hljs">feeds: [
-    {
-        serialize: ({ query: { site, allMdx } }) =&gt; {
-            const {
-                siteMetadata: { siteUrl },
-            } = site;
-
-            return allMdx.edges.map(edge =&gt; {
-                const {
-                    node: {
-                        frontmatter: { title, date, slug, featuredImage },
-                        excerpt,
-                        html,
-                    },
-                } = edge;
-
-                const blogUrl = `${siteUrl}/blog/${slug}`;
-
-                return Object.assign({}, edge.node.frontmatter, {
-                    title,
-                    description: excerpt,
-                    date,
-                    url: blogUrl,
-                    guid: blogUrl,
-                    enclosure: featuredImage &amp;&amp; {
-                        url: siteUrl + featuredImage.publicURL,
-                    },
-                    custom_elements: [{ 'content:encoded': html }],
-                });
-            });
-        },
-
-        output: '/blog/rss.xml',
-        title: &quot;Ankur Sheel's Ramblings&quot;,
-    },
-],
+<p>There are a few things to note here.</p>
+<ol>
+<li>The pattern's <code>\b</code> metacharacter matches on word boundaries.</li>
+<li>As the name suggests, passing in <code>RegexOptions.IgnoreCase</code> for the options makes it case-insensitive.</li>
+</ol>
+<p>Now we can use it like</p>
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> replacedString = ReplaceWholeWord(&quot;Test testing test tester&quot;, &quot;test&quot;, &quot;text&quot;);
 </code></pre>
-<p>Let's break this down.</p>
+<h2 id="references">References</h2>
 <ul>
-<li><strong><em>Line 3</em></strong>: Create the serialize function which destructures <em>site</em> and <em>allMdx</em> from the query object.</li>
-<li><strong><em>Lines 4-6</em></strong>: Destructure the <em>siteUrl</em> from the <em>site</em> object.</li>
-<li><strong><em>Line 8</em></strong>: Loop through all the edges and map to a feed item.
-<ul>
-<li><strong><em>Lines 9-15</em></strong>:Destructure <em>title</em>, <em>date</em>, <em>slug</em>, <em>featuredImage</em>, <em>excerpt</em> and <em>html</em>.</li>
-<li><strong><em>Line 17</em></strong>: Create the URL to the blog post.</li>
-<li><strong><em>Line 19</em></strong>: Create the feed item to be returned.
-<ul>
-<li><strong><em>Line 20-24</em></strong>: Nothing fancy happening here. Just setting the feed item properties.</li>
-<li><strong><em>Line 25-27</em></strong>: <strong><em>enclosure</em></strong> is required to set the featured image. It takes in a URL that is set to the public URL of the featured image. If there is no featured image, then the enclosure will be empty.</li>
-<li><strong><em>Line 28</em></strong>: Set the content to be the HTML content.</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.replace?view=net-6.0#:%7E:text=The%20Regex.,a%20regular%20expression%20replacement%20pattern.">Regex.Replace</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference">Regular Expression Language - Quick Reference</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><strong><em>Line 33</em></strong>: Set the path and filename for the RSS feed.</li>
-<li><strong><em>Line 34</em></strong>: Set the title for the RSS feed.</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>After making the changes, the RSS feed for my blog now looks like <img src="/assets/images/posts/adding-an-rss-feed-with-images-to-a-gatsby-site/rss-example.png" alt="Rss Feed screenshot"></p>
-<p>Are you showing images in your RSS feed? How did you go about it? Let me know.</p>
+<h3 id="thanks">Thanks</h3>
+<p>Thanks Avery Stephen for pointing out a typo in the original post</p>
 </body></html>
 
 
@@ -264,7 +177,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/adding-an-rss-feed-with-images-to-a-gatsby-site&text=How%20to%20add%20an%20RSS%20feed%20with%20images%20to%20a%20Gatsby%20site via @ankur_sheel.&#xD;&#xA;A%20guide%20for%20adding%20an%20RSS%20feed%20which%20shows%20the%20featured%20image%20in%20the%20list%20view%20for%20a%20Gatsby%20site" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/replace-word-string-csharp&text=How%20to%20replace%20a%20word%20in%20a%20string%20in%20C%23 via @ankur_sheel.&#xD;&#xA;There%20is%20no%20way%20to%20replace%20just%20whole%20words%20using%20string.Replace.%20Let%27s%20see%20how%20we%20can%20replace%20whole%20words%20in%20string%20using%20Regex" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

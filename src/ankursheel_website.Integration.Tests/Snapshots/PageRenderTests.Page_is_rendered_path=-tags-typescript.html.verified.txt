@@ -151,12 +151,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/automating-creation-of-new-blog-post" class="text-center prose-2xl mb-4">How to automate the creation of a new blog post</a>
+        <a href="/blog/automating-creation-new-blog-post" class="text-center prose-2xl mb-4">How to automate the creation of a new blog post</a>
         <div class="font-semibold text-center">4 min</div>
         <p>
             Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it.
         </p>
-            <a href="/blog/automating-creation-of-new-blog-post" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/automating-creation-new-blog-post" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

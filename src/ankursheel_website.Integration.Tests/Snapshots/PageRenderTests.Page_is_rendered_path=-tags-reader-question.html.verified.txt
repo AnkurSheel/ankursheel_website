@@ -140,12 +140,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="text-center prose-2xl mb-4">How long did it take to migrate from WordPress to Gatsby?</a>
+        <a href="/blog/reader-question-long-migrate-wordpress-gatsby" class="text-center prose-2xl mb-4">How long did it take to migrate from WordPress to Gatsby?</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
             A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out
         </p>
-            <a href="/blog/reader-question-how-long-migrate-wordpress-gatsby" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/reader-question-long-migrate-wordpress-gatsby" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

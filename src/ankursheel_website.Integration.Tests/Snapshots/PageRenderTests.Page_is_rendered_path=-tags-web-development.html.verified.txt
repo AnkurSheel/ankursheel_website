@@ -162,12 +162,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site" class="text-center prose-2xl mb-4">How to add an RSS feed with images to a Gatsby site</a>
+        <a href="/blog/adding-rss-feed-images-gatsby-site" class="text-center prose-2xl mb-4">How to add an RSS feed with images to a Gatsby site</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
             A guide for adding an RSS feed which shows the featured image in the list view for a Gatsby site
         </p>
-            <a href="/blog/adding-an-rss-feed-with-images-to-a-gatsby-site" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/adding-rss-feed-images-gatsby-site" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

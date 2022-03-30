@@ -140,12 +140,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/my-most-popular-posts-in-2015" class="text-center prose-2xl mb-4">What are my most popular posts in 2015</a>
+        <a href="/blog/most-popular-posts-2015" class="text-center prose-2xl mb-4">What are my most popular posts in 2015</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
             The most viewed (popular) posts in 2015.
         </p>
-            <a href="/blog/my-most-popular-posts-in-2015" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/most-popular-posts-2015" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

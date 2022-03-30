@@ -4,32 +4,32 @@
 <head>
     
 
-<title>How to use ApprovalTests with xUnit&#x27;s Theory attribute - Ankur Sheel</title>
+<title>How to reset the primary key sequence in Postgres - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
+<meta name="description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/approval-tests-with-xunit-theory-tests"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/reset-primary-key-sequence-out-sync-postgres"/>
 
-<meta itemProp="name" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
-<meta itemProp="description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/approval-tests-with-xunit-theory-tests-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/approval-tests-with-xunit-theory-tests"/>
+<meta itemProp="name" content="How to reset the primary key sequence in Postgres"/>
+<meta itemProp="description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-sync-postgres-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/reset-primary-key-sequence-out-sync-postgres"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
-<meta property="og:description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/approval-tests-with-xunit-theory-tests-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/approval-tests-with-xunit-theory-tests-facebook.png"/>
+<meta property="og:title" content="How to reset the primary key sequence in Postgres"/>
+<meta property="og:description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-sync-postgres-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-sync-postgres-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
-<meta name="twitter:description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/approval-tests-with-xunit-theory-tests-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/approval-tests-with-xunit-theory-tests-twitter.png"/>
+<meta name="twitter:title" content="How to reset the primary key sequence in Postgres"/>
+<meta name="twitter:description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-sync-postgres-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-sync-postgres-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,66 +122,61 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to use ApprovalTests with xUnit&#x27;s Theory attribute</h1>
+    <h1 class="text-center">How to reset the primary key sequence in Postgres</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2020-03-18">March 18, 2020</time></span>
+        <span>Last Updated: <time datetime="2021-06-03">June 03, 2021</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
-            <a href="/tags/testing" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">testing</a>
-            <a href="/tags/xunit" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">xUnit</a>
+            <a href="/tags/postgres" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postgres</a>
+            <a href="/tags/sql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">sql</a>
             <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
-            <a href="/tags/approval-tests" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Approval Tests</a>
     </div>
 </div>
 
-<html><head></head><body><h2 id="problem">Problem</h2>
-<p methodname="">In <a href="https://github.com/approvals/ApprovalTests.Net">ApprovalTests</a>, the <strong>Namer</strong> generates a unique name for each approved/received file. This filename takes the format of <strong><em>..approved.txt</em></strong>.</p>
-<p>This works perfectly for <strong>Fact</strong> based tests. But, if you are writing a <strong>Theory</strong> based test, the filename will not be unique as a theory-based test is data-driven and therefore has multiple calls to the same method.</p>
-<h3 id="example">Example</h3>
-<p>Let's look at an example.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span>
-{
-    [InlineData(<span class="hljs-literal">true</span>)]
-    [InlineData(<span class="hljs-literal">false</span>)]
-    [Theory]
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span> flag</span>)
-    </span>{
-        <span class="hljs-keyword">var</span> result = TestThisMethod(flag);
-        Approvals.Verify(result);
-    }
-}
-</code></pre>
-<p>In the above snippet, the filename generated for both the tests will be <strong><em>TestClass.Test.approved.txt</em></strong>. This means that you have only 1 approval file for both tests.</p>
-<h2 id="solution">Solution</h2>
-<p>The naming pattern of the default namer is <em><strong>[ClassName].[MethodName].[AdditionalInformation(optional)].approved.[Extension]</strong></em>. So, we can leverage the <em>AdditionalInformation</em> part to generate unique filenames for our tests.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span>
-{
-    [InlineData(<span class="hljs-literal">true</span>)]
-    [InlineData(<span class="hljs-literal">false</span>)]
-    [Theory]
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span> flag</span>)
-    </span>{
-        NamerFactory.AdditionalInformation = $&quot;Flag-{flag}&quot;;
-        <span class="hljs-keyword">var</span> result = TestThisMethod(flag);
-        Approvals.Verify(result);
-    }
-}
-</code></pre>
-<p>Now, when we run the tests, 2 files will be generated.</p>
+<html><head></head><body><h2 id="the-problem">The Problem</h2>
+<p>When we insert a new row in a table with a sequential primary key, we get a &quot;23505: duplicate key value violates unique constraint&quot; error.</p>
+<p>This implies that a record already exists for the next number being returned for the sequence.</p>
+<p>The reason this happens is that the primary key sequence is out of sync with the table rows.</p>
+<h2 id="assumptions">Assumptions</h2>
 <ul>
-<li>TestClass.Test.Flag-true.approved.txt</li>
-<li>TestClass.Test.Flag-false.approved.txt</li>
+<li>The table name is &quot;<strong><em>table&quot;</em></strong></li>
+<li>The column with the issue is &quot;<strong><em>id</em></strong>.&quot;</li>
 </ul>
-<p><em>Note: We can pass any information to the <strong>AdditionalInformation</strong> property as long as it is unique between tests.</em></p>
+<h2 id="validate-that-the-sequence-is-out-of-sync">Validate that the sequence is out-of-sync</h2>
+<p>Before we reset the sequence, let us make sure that it is out of sync.</p>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">nextval</span>(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>));
+
+<span class="hljs-keyword">SELECT</span>
+    CURRVAL(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)) <span class="hljs-keyword">AS</span> &quot;Current Value&quot;,
+    MAX(&quot;id&quot;) AS &quot;Max Value&quot;
+FROM &quot;table&quot;;
+</code></pre>
+<p><strong>Line #1:</strong> We make a call to <strong><em>nextval</em></strong> because if we call <strong><em>currval</em></strong> before calling <strong><em>nextval</em></strong> in the current session, it will give us an error similar to &quot;<strong><em>ERROR: currval of sequence &quot;table_id_seq&quot; is not yet defined in this session</em></strong>&quot;.</p>
+<p><strong>Line #3-6:</strong> Gets the value most recently obtained by <strong>nextval</strong> for this sequence in the current session along with the maximum value for <strong><em>id</em></strong> in <strong><em>table</em></strong>.</p>
+<p>Our sequence is out-of-sync when the <strong><em>Current Value</em></strong> is less than <strong><em>Max Value</em></strong>.</p>
+<h3 id="what-does-pg_get_serial_sequence-do">What does PG_GET_SERIAL_SEQUENCE do?</h3>
+<p><code>PG_GET_SERIAL_SEQUENCE('&quot;table&quot;', 'id')</code> can be used to get the sequence name.</p>
+<p>Using this, we can avoid hard-coding the actual sequence name, which helps prevent incorrect assumptions about the sequence name.</p>
+<p><em>Note that the table name is in double-quotes, surrounded by single quotes.</em></p>
+<h2 id="the-fix">The Fix</h2>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> SETVAL(
+    (<span class="hljs-keyword">SELECT</span> PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)),
+    (<span class="hljs-keyword">SELECT</span> (<span class="hljs-keyword">MAX</span>(&quot;id&quot;) + 1) FROM &quot;table&quot;),
+    FALSE);
+</code></pre>
+<p>This will set the sequence to the next available value higher than any existing value for &quot;<strong><em>id</em></strong>&quot; in <strong><em>table</em></strong>. Further inserts will not result in a &quot;duplicate key value violates unique constraint&quot; error.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://www.postgresql.org/docs/current/functions-sequence.html">Sequence Manipulation Functions</a></li>
+</ul>
 </body></html>
 
 
@@ -191,7 +186,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/approval-tests-with-xunit-theory-tests&text=How%20to%20use%20ApprovalTests%20with%20xUnit%27s%20Theory%20attribute via @ankur_sheel.&#xD;&#xA;The%20approval%20test%20filename%20for%20Theory-based%20tests%20is%20not%20unique%20by%20default.%20How%20can%20we%20get%20generate%20unique%20filenames%20for%20theory-based%20approval%20tests." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/reset-primary-key-sequence-out-sync-postgres&text=How%20to%20reset%20the%20primary%20key%20sequence%20in%20Postgres via @ankur_sheel.&#xD;&#xA;How%20can%20we%20fix%20the%20%22duplicate%20key%20value%20violates%20unique%20constraint%22%20error%20because%20the%20primary%20key%20sequence%20is%20out%20of%20sync%20from%20the%20records%20in%20the%20table" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

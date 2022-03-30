@@ -4,32 +4,32 @@
 <head>
     
 
-<title>Should you make an Impossible List or a Bucket List? - Ankur Sheel</title>
+<title>How to add ligatures and cursive fonts to VS Code - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="What is an impossible list? How is it different from a Bucket List? Let&#x27;s find out."/>
+<meta name="description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/impossible-list-or-a-bucket-list"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/add-cursive-fonts-vs-code"/>
 
-<meta itemProp="name" content="Should you make an Impossible List or a Bucket List?"/>
-<meta itemProp="description" content="What is an impossible list? How is it different from a Bucket List? Let&#x27;s find out."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/impossible-list-or-a-bucket-list-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/impossible-list-or-a-bucket-list"/>
+<meta itemProp="name" content="How to add ligatures and cursive fonts to VS Code"/>
+<meta itemProp="description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-vs-code-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/add-cursive-fonts-vs-code"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Should you make an Impossible List or a Bucket List?"/>
-<meta property="og:description" content="What is an impossible list? How is it different from a Bucket List? Let&#x27;s find out."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/impossible-list-or-a-bucket-list-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/impossible-list-or-a-bucket-list-facebook.png"/>
+<meta property="og:title" content="How to add ligatures and cursive fonts to VS Code"/>
+<meta property="og:description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-vs-code-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-vs-code-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Should you make an Impossible List or a Bucket List?"/>
-<meta name="twitter:description" content="What is an impossible list? How is it different from a Bucket List? Let&#x27;s find out."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/impossible-list-or-a-bucket-list-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/impossible-list-or-a-bucket-list-twitter.png"/>
+<meta name="twitter:title" content="How to add ligatures and cursive fonts to VS Code"/>
+<meta name="twitter:description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-vs-code-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-vs-code-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,42 +122,92 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Should you make an Impossible List or a Bucket List?</h1>
+    <h1 class="text-center">How to add ligatures and cursive fonts to VS Code</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2019-09-15">September 15, 2019</time></span>
+        <span>Last Updated: <time datetime="2021-05-16">May 16, 2021</time></span>
         <i class="font-bold">
             Reading Time: 2 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
+            <a href="/tags/dev-tools" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dev tools</a>
     </div>
 </div>
 
-<p>I heard about the impossible list from Joel Runyon in <a href="http://impossiblehq.com/impossible-list/">this article</a>. Shortly after I read about it, I decided to make one of my own. But first,</p>
-<h2 id="what-is-a-bucket-list">What is a bucket list?</h2>
-<p>A bucket list is a static list of things that you hope to accomplish before you die. For the most part, they are filled with wishful goals which may or may not be achievable.</p>
-<h2 id="what-is-an-impossible-list">What is an impossible list?</h2>
-<p>An impossible list is sort of like a bucket list. The main difference is that it is an evolving list of attainable goals, i.e. your goals should be challenging but achievable. Your list is constantly changing based on your experiences and achievements. You can also think of it's as a ToDo list on steroids.</p>
-<p>It encourages you to set attainable goals and build on the momentum by accomplishing even bigger goals after achieving them. For example, one of your goals might be to visit a different country. Once you have achieved that goal, you can take it to the next level by replacing it to &quot;visit 3 countries&quot;.</p>
-<h2 id="how-to-create-an-impossible-list">How to create an impossible list?</h2>
+<html><head></head><body><p>I have been using FiraCode as my font of choice in VS Code since I found about it. The use of ligatures while typing code is handy and has been a game-changer. However, lately, I have seen some VS code screenshots with cursive fonts in the text editor, and I wanted some of that. But, I also wanted to keep the ligatures that FiraCode has already spoiled me with.</p>
+<p>Using my googling skills, I found a few articles, and it seemed the most straightforward way was to install a theme with a cursive font already built in such as <a href="https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic">this</a>. However, I like the flexibility of changing themes, so this was not a viable option for me.</p>
+<h2 id="final-output">Final Output</h2>
+<p><img src="/assets/images/posts/add-cursive-fonts-to-vs-code/cover.png" alt="Final Output Code Snippet"></p>
+<p>Now that we know what we are looking to achieve let's see how to make it happen.</p>
+<h2 id="updating-vs-codes-settings">Updating VS Code's settings</h2>
+<p>My search for a font that encapsulates ligatures and Cursive fonts led me to <a href="https://github.com/kencrocken/FiraCodeiScript">Fira Code iScript</a> made by Ken Krocken. It combines 2 fonts - Fira Code as the regular font and Script12 as the italic font.</p>
+<p>After installing the font on my system, I changed the editor settings to use <em>Fira Code iScript</em> as the first option for <em>font family</em>.</p>
+<pre><code class="language-json hljs">&quot;editor.fontLigatures&quot;: true,
+&quot;editor.fontFamily&quot;: &quot;'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace&quot;,
+</code></pre>
+<p>VS Code uses the TextMate grammar syntax to define how it needs to render code. You can read more in the <a href="https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide">official documentation</a>. In VS Code <em>settings.json</em>, you can override the font style for the current theme by modifying the <em>textMateRules</em> under <em>editor.tokenColorCustomizations</em>.</p>
+<pre><code class="language-json hljs">{
+    &quot;editor.tokenColorCustomizations&quot;: {
+        &quot;textMateRules&quot;: [
+            {
+                &quot;scope&quot;: [], // array of Scopes to which the style should be applied to
+                &quot;settings&quot;: {
+                    &quot;fontStyle&quot;: &quot;italic&quot; // the font style that should be applied
+                }
+            }
+        ]
+    }
+}
+</code></pre>
+<p>You might be wondering how to get the scope to put in the above JSON. Luckily, VS code has a command to help us with this - <strong>Developer: Inspect Editor Tokens and Scopes</strong>. You can trigger this by using the Command Palette (Ctrl + Shift + P) after ensuring that the active cursor is on the token you want to inspect.</p>
+<p>The scope inspector displays the following information:</p>
 <ul>
-<li>Decide which areas of your life you want to focus on.</li>
-<li>Decide the sub-goals of the areas.</li>
-<li>Once you achieve a goal, figure out the next goal</li>
-<li>Share the impossible list publicly so that you can be held accountable. You’ll see mine <a href="/impossible-list">here</a>.</li>
-<li>Keep checking your list in regular intervals to see how you're doing and remove goals that do not make sense anymore. For example, after Araaina was born, I dropped a bunch of goals that did not interest me or seem attainable to me anymore.</li>
+<li>The current token.</li>
+<li>Metadata about the token and information about its computed appearance.</li>
+<li>Theme rules that apply to the token.</li>
+<li>Complete scope list, with the most specific scope at the top.</li>
 </ul>
-<h2 id="impossible-list-or-bucket-list">Impossible List or Bucket List</h2>
-<p>In my opinion, both have their value. If you look at <a href="/impossible-list">my list</a>, you will notice that although some of the sub-goals are attainable and have the next level, some of them are also wishlist items.</p>
-<p>Just use whatever makes sense to you. But I would strongly suggest you incorporate some impossible goals into your list :)</p>
-<p>If you are looking for inspiration, you can check out <a href="/impossible-list">my impossible list</a>.</p>
-
+<p>The one that we will use is <em>scope list</em>. Whichever token you want to make italic, add it to the scopes in the <em>scopes</em> array.</p>
+<p>You can see my current config for an example.</p>
+<h2 id="my-current-config">My current config</h2>
+<pre><code class="language-json hljs">&quot;editor.tokenColorCustomizations&quot;: {
+    &quot;textMateRules&quot;: [
+        {
+            &quot;scope&quot;: [
+            //following will be in italic (=FlottFlott)
+                &quot;comment&quot;,
+                &quot;entity.name.type.class&quot;, //class names
+                &quot;keyword&quot;, //import, export, return…
+                &quot;storage.modifier&quot;, //static keyword
+                &quot;storage.type&quot;, //class keyword
+                &quot;support.class.builtin&quot;,
+                &quot;keyword.control&quot;,
+                &quot;constant.language&quot;,
+                &quot;entity.other.attribute-name&quot;,
+                &quot;string.quoted.single&quot;,
+                &quot;entity.name.method&quot;,
+                &quot;entity.name.tag&quot;
+            ],
+            &quot;settings&quot;: {
+                &quot;fontStyle&quot;: &quot;italic&quot;,
+            }
+        }
+    ]
+}
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>After these steps, I have both ligatures and cursive fonts in my editor.</p>
+<h3 id="thanks">Thanks</h3>
+<ul>
+<li>Daniel de Souza pointed out some changes he needed to make to <a href="https://github.com/tonsky/FiraCode/issues/1161#issuecomment-734453611">get it working with a 4K monitor</a>.</li>
+<li>Manjunath Vadigeri for reaching out and letting me know that the steps don't work in the latest VS Code. <em>The article has been updated to reflect the changes.</em></li>
+</ul>
+</body></html>
 
 
 
@@ -166,7 +216,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/impossible-list-or-a-bucket-list&text=Should%20you%20make%20an%20Impossible%20List%20or%20a%20Bucket%20List%3F via @ankur_sheel.&#xD;&#xA;What%20is%20an%20impossible%20list%3F%20How%20is%20it%20different%20from%20a%20Bucket%20List%3F%20Let%27s%20find%20out." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/add-cursive-fonts-vs-code&text=How%20to%20add%20ligatures%20and%20cursive%20fonts%20to%20VS%20Code via @ankur_sheel.&#xD;&#xA;The%20use%20of%20ligatures%20while%20typing%20code%20has%20been%20a%20game-changer.%20How%20can%20we%20get%20the%20styling%20of%20cursive%20fonts%20and%20the%20functionality%20of%20ligatures%20in%20VS%20Code" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

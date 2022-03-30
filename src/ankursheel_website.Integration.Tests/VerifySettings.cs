@@ -1,8 +1,5 @@
-﻿using System.IO;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
+﻿using System.Runtime.CompilerServices;
 using DiffEngine;
-using VerifyTests;
 
 namespace ankursheel_website.Integration.Tests
 {
@@ -34,11 +31,11 @@ namespace ankursheel_website.Integration.Tests
 
         private static void AutoApproveFile(FilePair filePair)
         {
-            if(File.Exists(filePair.Verified))
+            if(File.Exists(filePair.VerifiedPath))
             {
-                File.Delete(filePair.Verified);
+                File.Delete(filePair.VerifiedPath);
             }
-            File.Copy(filePair.Received, filePair.Verified);
+            File.Copy(filePair.ReceivedPath, filePair.VerifiedPath);
             // File.Delete(filePair.Received);
         }
     }
