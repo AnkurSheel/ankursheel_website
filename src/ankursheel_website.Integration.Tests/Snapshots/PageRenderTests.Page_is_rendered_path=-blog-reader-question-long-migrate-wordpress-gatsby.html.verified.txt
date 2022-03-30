@@ -4,32 +4,32 @@
 <head>
     
 
-<title>Why and How I migrated my website from WordPress to Gatsby - Ankur Sheel</title>
+<title>How long did it take to migrate from WordPress to Gatsby? - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+<meta name="description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/reader-question-long-migrate-wordpress-gatsby"/>
 
-<meta itemProp="name" content="Why and How I migrated my website from WordPress to Gatsby"/>
-<meta itemProp="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby"/>
+<meta itemProp="name" content="How long did it take to migrate from WordPress to Gatsby?"/>
+<meta itemProp="description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/reader-question-long-migrate-wordpress-gatsby-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/reader-question-long-migrate-wordpress-gatsby"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Why and How I migrated my website from WordPress to Gatsby"/>
-<meta property="og:description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-facebook.png"/>
+<meta property="og:title" content="How long did it take to migrate from WordPress to Gatsby?"/>
+<meta property="og:description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/reader-question-long-migrate-wordpress-gatsby-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reader-question-long-migrate-wordpress-gatsby-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Why and How I migrated my website from WordPress to Gatsby"/>
-<meta name="twitter:description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-from-wordpress-to-gatsby-twitter.png"/>
+<meta name="twitter:title" content="How long did it take to migrate from WordPress to Gatsby?"/>
+<meta name="twitter:description" content="A reader asked me how long it took me to migrate from WordPress to Gatsby. Let&#x27;s find out"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/reader-question-long-migrate-wordpress-gatsby-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/reader-question-long-migrate-wordpress-gatsby-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,117 +122,48 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Why and How I migrated my website from WordPress to Gatsby</h1>
+    <h1 class="text-center">How long did it take to migrate from WordPress to Gatsby?</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2019-08-29">August 29, 2019</time></span>
+        <span>Last Updated: <time datetime="2020-11-25">November 25, 2020</time></span>
         <i class="font-bold">
-            Reading Time: 5 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/devops" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">devops</a>
+            <a href="/tags/reader-question" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">reader question</a>
             <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
             <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordpress</a>
-            <a href="/tags/website-migration" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">website migration</a>
     </div>
 </div>
 
-<h2 id="my-blogging-journey">My Blogging Journey</h2>
-<p>I started blogging in 2008 with a free Blogspot account. If you are wondering what I am talking about, Blogspot was the free blogging platform provided by Google.</p>
-<p>But it was not until 2014 that I decided to get my domain and have more control over the content and structure of the blog. Enter self-hosting. At that time, WordPress was probably the most popular service, and I moved to a self-hosted blog leveraging all the power of WordPress.</p>
-<h2 id="reasons-for-moving-away-from-wordpress">Reasons for moving away from WordPress</h2>
-<p>There were a few reasons that the WordPress solution was not working for me anymore. In no particular order,</p>
+<h2 id="reader-question">Reader Question</h2>
+<blockquote>
+<p>I was reading your blog post about migrating from WordPress to Gatsby and had a question about the necessary timeline we should expect. How long did it take you to make your full migration?</p>
+</blockquote>
+<p><em>If you are wondering what post is being referred to its <a href="migrating-from-wordpress-to-gatsby">Why and How I migrated my website from Wordpress to Gatsby?</a></em></p>
+<h2 id="my-answer">My Answer</h2>
+<p>The timeline for the migration depends on the contents of your site.</p>
+<p>I started the move away from WordPress to Gatsby in August 2019 and switched over in November 2019. You might think that 3 months is a long time for migrating posts, and you would be correct.</p>
+<p>But, it's important to note that I was spending just a few hours a week on this. It would have probably taken me a few hours/days to make the switch if I worked on it full-time.</p>
+<p>I used a starter, so I had a base to start from. But, there were a few things I had to modify(which is why it took time) before I was ready to make the switch.</p>
 <ul>
-<li>Slow
+<li>getting it to play nicely with Typescript.</li>
+<li>making sure all the internal links work.</li>
+<li>building an image gallery component for the image-heavy posts.</li>
+<li>hunting for the plugins not included in the starter and configuring them</li>
+</ul>
+<p>If you are thinking of migrating your site, I would suggest doing what I did.</p>
 <ul>
-<li>Let's face it, shared hosting does not make for a fast site. Also, WordPress is itself sluggish, and the various plugins I had added were not helping.</li>
+<li>Start with a gatsby starter/theme as your base.</li>
+<li>If the theme you have chosen doesn't have all the plugins, just add those plugins in.</li>
+<li>Get an initial version of your site up and running using Netlify.</li>
 </ul>
-</li>
-<li>Cost
-<ul>
-<li>Most hosting platforms have a heavily discounted first-year plan, after which the price rises astronomically. This resulted in me having to migrate my site every year to a new platform. A few providers made it difficult to cancel the plan and get back the data unless you did it a month in advance. It was getting harder to justify the expense of 100+ USD. Even the cheapest option would easily set me back by 50-60 USD.</li>
-</ul>
-</li>
-<li>Degraded Experience in writing posts
-<ul>
-<li>With the release of the new generation editor and having to do everything with content blocks, I felt like I was spending more time than I felt was required to create a new post.</li>
-<li>I did not want to log in to the site every time I wanted to create a new post or work on an existing draft.</li>
-</ul>
-</li>
-<li>Programming Language that I don't use anywhere else
-<ul>
-<li>I never enjoyed the process of writing PHP to make modifications. The few custom modifications that I made on the site felt like a chore. The fact that I could never see myself using PHP anywhere else probably did not help either.</li>
-</ul>
-</li>
-</ul>
-<h2 id="why-gatsby">Why Gatsby</h2>
-<p>Recently, it has become easier to have a relatively cheap solution for hosting static content by using a static site generator. There are quite a few options out there.</p>
-<p>The first that comes to mind is <a href="https://pages.github.com/">Github pages</a>, which comes nicely integrated with <a href="https://jekyllrb.com/">Jekyll</a>, which is a static website generator. Although it ticked 3 of the 4 boxes above, I did not feel it was the ideal solution for me mainly because the development language was Ruby, another language I couldn't see myself using anywhere else.</p>
-<p>It was a similar story with Hugo, which uses Go.</p>
-<p>Just when it seemed that I would have to resign myself to use Github Pages, I found out about <a href="https://gatsbyjs.org/">Gatsby</a>, which is based on Javascript. I have been using Typescript increasingly at work, so this seemed like the perfect solution.</p>
-<p>Let's see how it stacks up against my concerns from the previous section.</p>
-<ul>
-<li><del>Slow</del>
-<ul>
-<li>Gatsby sites are fast. Blazingly fast.</li>
-</ul>
-</li>
-<li><del>Cost</del> Netlify is awesome.- It's free to host it on <a href="http://www.netlify.com/">Netlify</a>. You can't beat free. It requires almost no setup, and every time I push to master, a new version of the site is deployed.</li>
-<li><del>Degraded Experience of writing posts</del>
-<ul>
-<li>It supports markdown and MDX, which means I can write and edit the posts in any text editor and anywhere. I can also embed react components.</li>
-</ul>
-</li>
-<li><del>Programming Language that I don't use anywhere else</del>
-<ul>
-<li>It's built on the <strong>JAM</strong>stack (<strong>J</strong>avascript <strong>A</strong>PI <strong>M</strong>arkup). All the custom tooling I want to do uses ReactJS, GraphQL, JavaScript/Typescript and CSS. I am using all of these at work, so I can easily transfer the learnings from one place to another.</li>
-</ul>
-</li>
-</ul>
-<h3 id="other-advantages">Other Advantages</h3>
-<ul>
-<li>Build reusable components and use them to construct views.</li>
-<li>Hot Reloading and code-splitting are built-in.</li>
-<li>Can easily be configured to use Typescript.</li>
-<li>A bunch of plugins and starters (both official and unofficial).</li>
-<li>Support for CSS-in-JS.</li>
-<li>Responsive and optimized images.</li>
-<li>No reloads between pages.</li>
-<li>Gatsby detects what links are on the page and prefetches the content.</li>
-<li>Support for MDX which means I can embed React components into the posts.</li>
-</ul>
-<h2 id="my-migration-process">My migration process</h2>
-<p>It's also not difficult to move your blog from WordPress to Gatsby. I will give you the basics of what I did if you also want to make the switch.</p>
-<ul>
-<li>Download the XML from Wordpress using the &quot;Tools-&gt; Export&quot; section.</li>
-<li>Use the <a href="https://github.com/thomasf/exitwp">ExitWP</a> or <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">Wordpress-to-Hugo</a> tool to convert the posts to markdown.</li>
-<li>Download all the images and other content from the server.</li>
-<li>Find a Gatsby start starter so that it's easy to get started.</li>
-<li>Add Git LFS as some of my posts are image-heavy.</li>
-<li>Connect to Netlify and set up automatic deploys.</li>
-<li>The one I used was written in Javascript, so I had to migrate the javascript to Typescript and a few more plugins to enable Typescript. Also, change styling options to use CSS-in-JS.</li>
-<li>Update styling, colours and layout.</li>
-<li>Update the starter so that all the blog content is under &quot;/blog/&quot;.</li>
-<li>Add a redirect rule as I decided to remove the date from the URLs.</li>
-<li>Add the converted markdown.
-<ul>
-<li>Fix indent and other issues.</li>
-<li>Build missing react components depending on the post content.</li>
-</ul>
-</li>
-</ul>
-<h2 id="you-said-it-was-easy-to-move-from-wordpress-to-gatsby.but-i-dont-see-all-of-your-posts.did-you-lie">You said it was easy to move from WordPress to gatsby. But I don't see all of your posts. Did you lie?</h2>
-<p>Depending on when you read this post, you might notice that many posts seem to be missing. At the very least, it doesn't seem as if I have been blogging for so many years. The main reason for this is that the original blog had a lot of varied content.</p>
-<p>I have decided to move some of it away to a different blog. For example, I am moving the book reviews to <a href="https://www.discoveriesinbookland.com/">Discoveries in Bookland</a>. Some of it might not even make it to this blog because of the limited value it adds.</p>
-<p>I have taken this opportunity to revisit what content I want to show.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Although it's an ongoing process, I am happy with how the migration is progressing. <a href="https://www.ankursheel.com/">my blog</a> is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.</p>
-<p>I will be adding more posts related to things I had to go hunting for on google. If you would like to know more about something specific, let me know.</p>
+<p>Update the styling, components, plugin configurations, add automated scripts etc., as you see fit. This will probably be a continuous thing.</p>
 
 
 
@@ -242,7 +173,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/migrating-from-wordpress-to-gatsby&text=Why%20and%20How%20I%20migrated%20my%20website%20from%20WordPress%20to%20Gatsby via @ankur_sheel.&#xD;&#xA;For%20most%20of%20the%20time%2C%20I%20have%20been%20blogging%2C%20I%20have%20been%20on%20WordPress.%20What%20motivated%20me%20to%20migrate%20my%20site%20to%20Gatsby%2C%20and%20how%20did%20I%20move%20the%20site" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/reader-question-long-migrate-wordpress-gatsby&text=How%20long%20did%20it%20take%20to%20migrate%20from%20WordPress%20to%20Gatsby%3F via @ankur_sheel.&#xD;&#xA;A%20reader%20asked%20me%20how%20long%20it%20took%20me%20to%20migrate%20from%20WordPress%20to%20Gatsby.%20Let%27s%20find%20out" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

@@ -195,12 +195,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/migrating-from-wordpress-to-gatsby" class="text-center prose-2xl mb-4">Why and How I migrated my website from WordPress to Gatsby</a>
+        <a href="/blog/migrating-wordpress-gatsby" class="text-center prose-2xl mb-4">Why and How I migrated my website from WordPress to Gatsby</a>
         <div class="font-semibold text-center">5 min</div>
         <p>
             For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site
         </p>
-            <a href="/blog/migrating-from-wordpress-to-gatsby" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/migrating-wordpress-gatsby" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

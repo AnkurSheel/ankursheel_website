@@ -4,32 +4,32 @@
 <head>
     
 
-<title>How to add ligatures and cursive fonts to VS Code - Ankur Sheel</title>
+<title>Why and How I migrated my website from WordPress to Gatsby - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
+<meta name="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/add-cursive-fonts-to-vs-code"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/migrating-wordpress-gatsby"/>
 
-<meta itemProp="name" content="How to add ligatures and cursive fonts to VS Code"/>
-<meta itemProp="description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-to-vs-code-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/add-cursive-fonts-to-vs-code"/>
+<meta itemProp="name" content="Why and How I migrated my website from WordPress to Gatsby"/>
+<meta itemProp="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/migrating-wordpress-gatsby-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/migrating-wordpress-gatsby"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to add ligatures and cursive fonts to VS Code"/>
-<meta property="og:description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-to-vs-code-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-to-vs-code-facebook.png"/>
+<meta property="og:title" content="Why and How I migrated my website from WordPress to Gatsby"/>
+<meta property="og:description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/migrating-wordpress-gatsby-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-wordpress-gatsby-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to add ligatures and cursive fonts to VS Code"/>
-<meta name="twitter:description" content="The use of ligatures while typing code has been a game-changer. How can we get the styling of cursive fonts and the functionality of ligatures in VS Code"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-to-vs-code-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-cursive-fonts-to-vs-code-twitter.png"/>
+<meta name="twitter:title" content="Why and How I migrated my website from WordPress to Gatsby"/>
+<meta name="twitter:description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/migrating-wordpress-gatsby-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/migrating-wordpress-gatsby-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,92 +122,118 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to add ligatures and cursive fonts to VS Code</h1>
+    <h1 class="text-center">Why and How I migrated my website from WordPress to Gatsby</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-05-16">May 16, 2021</time></span>
+        <span>Last Updated: <time datetime="2019-08-29">August 29, 2019</time></span>
         <i class="font-bold">
-            Reading Time: 2 min
+            Reading Time: 5 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/dev-tools" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dev tools</a>
+            <a href="/tags/devops" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">devops</a>
+            <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
+            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordpress</a>
+            <a href="/tags/website-migration" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">website migration</a>
     </div>
 </div>
 
-<html><head></head><body><p>I have been using FiraCode as my font of choice in VS Code since I found about it. The use of ligatures while typing code is handy and has been a game-changer. However, lately, I have seen some VS code screenshots with cursive fonts in the text editor, and I wanted some of that. But, I also wanted to keep the ligatures that FiraCode has already spoiled me with.</p>
-<p>Using my googling skills, I found a few articles, and it seemed the most straightforward way was to install a theme with a cursive font already built in such as <a href="https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic">this</a>. However, I like the flexibility of changing themes, so this was not a viable option for me.</p>
-<h2 id="final-output">Final Output</h2>
-<p><img src="/assets/images/posts/add-cursive-fonts-to-vs-code/cover.png" alt="Final Output Code Snippet"></p>
-<p>Now that we know what we are looking to achieve let's see how to make it happen.</p>
-<h2 id="updating-vs-codes-settings">Updating VS Code's settings</h2>
-<p>My search for a font that encapsulates ligatures and Cursive fonts led me to <a href="https://github.com/kencrocken/FiraCodeiScript">Fira Code iScript</a> made by Ken Krocken. It combines 2 fonts - Fira Code as the regular font and Script12 as the italic font.</p>
-<p>After installing the font on my system, I changed the editor settings to use <em>Fira Code iScript</em> as the first option for <em>font family</em>.</p>
-<pre><code class="language-json hljs">&quot;editor.fontLigatures&quot;: true,
-&quot;editor.fontFamily&quot;: &quot;'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace&quot;,
-</code></pre>
-<p>VS Code uses the TextMate grammar syntax to define how it needs to render code. You can read more in the <a href="https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide">official documentation</a>. In VS Code <em>settings.json</em>, you can override the font style for the current theme by modifying the <em>textMateRules</em> under <em>editor.tokenColorCustomizations</em>.</p>
-<pre><code class="language-json hljs">{
-    &quot;editor.tokenColorCustomizations&quot;: {
-        &quot;textMateRules&quot;: [
-            {
-                &quot;scope&quot;: [], // array of Scopes to which the style should be applied to
-                &quot;settings&quot;: {
-                    &quot;fontStyle&quot;: &quot;italic&quot; // the font style that should be applied
-                }
-            }
-        ]
-    }
-}
-</code></pre>
-<p>You might be wondering how to get the scope to put in the above JSON. Luckily, VS code has a command to help us with this - <strong>Developer: Inspect Editor Tokens and Scopes</strong>. You can trigger this by using the Command Palette (Ctrl + Shift + P) after ensuring that the active cursor is on the token you want to inspect.</p>
-<p>The scope inspector displays the following information:</p>
+<h2 id="my-blogging-journey">My Blogging Journey</h2>
+<p>I started blogging in 2008 with a free Blogspot account. If you are wondering what I am talking about, Blogspot was the free blogging platform provided by Google.</p>
+<p>But it was not until 2014 that I decided to get my domain and have more control over the content and structure of the blog. Enter self-hosting. At that time, WordPress was probably the most popular service, and I moved to a self-hosted blog leveraging all the power of WordPress.</p>
+<h2 id="reasons-for-moving-away-from-wordpress">Reasons for moving away from WordPress</h2>
+<p>There were a few reasons that the WordPress solution was not working for me anymore. In no particular order,</p>
 <ul>
-<li>The current token.</li>
-<li>Metadata about the token and information about its computed appearance.</li>
-<li>Theme rules that apply to the token.</li>
-<li>Complete scope list, with the most specific scope at the top.</li>
+<li>Slow
+<ul>
+<li>Let's face it, shared hosting does not make for a fast site. Also, WordPress is itself sluggish, and the various plugins I had added were not helping.</li>
 </ul>
-<p>The one that we will use is <em>scope list</em>. Whichever token you want to make italic, add it to the scopes in the <em>scopes</em> array.</p>
-<p>You can see my current config for an example.</p>
-<h2 id="my-current-config">My current config</h2>
-<pre><code class="language-json hljs">&quot;editor.tokenColorCustomizations&quot;: {
-    &quot;textMateRules&quot;: [
-        {
-            &quot;scope&quot;: [
-            //following will be in italic (=FlottFlott)
-                &quot;comment&quot;,
-                &quot;entity.name.type.class&quot;, //class names
-                &quot;keyword&quot;, //import, export, return…
-                &quot;storage.modifier&quot;, //static keyword
-                &quot;storage.type&quot;, //class keyword
-                &quot;support.class.builtin&quot;,
-                &quot;keyword.control&quot;,
-                &quot;constant.language&quot;,
-                &quot;entity.other.attribute-name&quot;,
-                &quot;string.quoted.single&quot;,
-                &quot;entity.name.method&quot;,
-                &quot;entity.name.tag&quot;
-            ],
-            &quot;settings&quot;: {
-                &quot;fontStyle&quot;: &quot;italic&quot;,
-            }
-        }
-    ]
-}
-</code></pre>
+</li>
+<li>Cost
+<ul>
+<li>Most hosting platforms have a heavily discounted first-year plan, after which the price rises astronomically. This resulted in me having to migrate my site every year to a new platform. A few providers made it difficult to cancel the plan and get back the data unless you did it a month in advance. It was getting harder to justify the expense of 100+ USD. Even the cheapest option would easily set me back by 50-60 USD.</li>
+</ul>
+</li>
+<li>Degraded Experience in writing posts
+<ul>
+<li>With the release of the new generation editor and having to do everything with content blocks, I felt like I was spending more time than I felt was required to create a new post.</li>
+<li>I did not want to log in to the site every time I wanted to create a new post or work on an existing draft.</li>
+</ul>
+</li>
+<li>Programming Language that I don't use anywhere else
+<ul>
+<li>I never enjoyed the process of writing PHP to make modifications. The few custom modifications that I made on the site felt like a chore. The fact that I could never see myself using PHP anywhere else probably did not help either.</li>
+</ul>
+</li>
+</ul>
+<h2 id="why-gatsby">Why Gatsby</h2>
+<p>Recently, it has become easier to have a relatively cheap solution for hosting static content by using a static site generator. There are quite a few options out there.</p>
+<p>The first that comes to mind is <a href="https://pages.github.com/">Github pages</a>, which comes nicely integrated with <a href="https://jekyllrb.com/">Jekyll</a>, which is a static website generator. Although it ticked 3 of the 4 boxes above, I did not feel it was the ideal solution for me mainly because the development language was Ruby, another language I couldn't see myself using anywhere else.</p>
+<p>It was a similar story with Hugo, which uses Go.</p>
+<p>Just when it seemed that I would have to resign myself to use Github Pages, I found out about <a href="https://gatsbyjs.org/">Gatsby</a>, which is based on Javascript. I have been using Typescript increasingly at work, so this seemed like the perfect solution.</p>
+<p>Let's see how it stacks up against my concerns from the previous section.</p>
+<ul>
+<li><del>Slow</del>
+<ul>
+<li>Gatsby sites are fast. Blazingly fast.</li>
+</ul>
+</li>
+<li><del>Cost</del> Netlify is awesome.- It's free to host it on <a href="http://www.netlify.com/">Netlify</a>. You can't beat free. It requires almost no setup, and every time I push to master, a new version of the site is deployed.</li>
+<li><del>Degraded Experience of writing posts</del>
+<ul>
+<li>It supports markdown and MDX, which means I can write and edit the posts in any text editor and anywhere. I can also embed react components.</li>
+</ul>
+</li>
+<li><del>Programming Language that I don't use anywhere else</del>
+<ul>
+<li>It's built on the <strong>JAM</strong>stack (<strong>J</strong>avascript <strong>A</strong>PI <strong>M</strong>arkup). All the custom tooling I want to do uses ReactJS, GraphQL, JavaScript/Typescript and CSS. I am using all of these at work, so I can easily transfer the learnings from one place to another.</li>
+</ul>
+</li>
+</ul>
+<h3 id="other-advantages">Other Advantages</h3>
+<ul>
+<li>Build reusable components and use them to construct views.</li>
+<li>Hot Reloading and code-splitting are built-in.</li>
+<li>Can easily be configured to use Typescript.</li>
+<li>A bunch of plugins and starters (both official and unofficial).</li>
+<li>Support for CSS-in-JS.</li>
+<li>Responsive and optimized images.</li>
+<li>No reloads between pages.</li>
+<li>Gatsby detects what links are on the page and prefetches the content.</li>
+<li>Support for MDX which means I can embed React components into the posts.</li>
+</ul>
+<h2 id="my-migration-process">My migration process</h2>
+<p>It's also not difficult to move your blog from WordPress to Gatsby. I will give you the basics of what I did if you also want to make the switch.</p>
+<ul>
+<li>Download the XML from Wordpress using the &quot;Tools-&gt; Export&quot; section.</li>
+<li>Use the <a href="https://github.com/thomasf/exitwp">ExitWP</a> or <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">Wordpress-to-Hugo</a> tool to convert the posts to markdown.</li>
+<li>Download all the images and other content from the server.</li>
+<li>Find a Gatsby start starter so that it's easy to get started.</li>
+<li>Add Git LFS as some of my posts are image-heavy.</li>
+<li>Connect to Netlify and set up automatic deploys.</li>
+<li>The one I used was written in Javascript, so I had to migrate the javascript to Typescript and a few more plugins to enable Typescript. Also, change styling options to use CSS-in-JS.</li>
+<li>Update styling, colours and layout.</li>
+<li>Update the starter so that all the blog content is under &quot;/blog/&quot;.</li>
+<li>Add a redirect rule as I decided to remove the date from the URLs.</li>
+<li>Add the converted markdown.
+<ul>
+<li>Fix indent and other issues.</li>
+<li>Build missing react components depending on the post content.</li>
+</ul>
+</li>
+</ul>
+<h2 id="you-said-it-was-easy-to-move-from-wordpress-to-gatsby.but-i-dont-see-all-of-your-posts.did-you-lie">You said it was easy to move from WordPress to gatsby. But I don't see all of your posts. Did you lie?</h2>
+<p>Depending on when you read this post, you might notice that many posts seem to be missing. At the very least, it doesn't seem as if I have been blogging for so many years. The main reason for this is that the original blog had a lot of varied content.</p>
+<p>I have decided to move some of it away to a different blog. For example, I am moving the book reviews to <a href="https://www.discoveriesinbookland.com/">Discoveries in Bookland</a>. Some of it might not even make it to this blog because of the limited value it adds.</p>
+<p>I have taken this opportunity to revisit what content I want to show.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>After these steps, I have both ligatures and cursive fonts in my editor.</p>
-<h3 id="thanks">Thanks</h3>
-<ul>
-<li>Daniel de Souza pointed out some changes he needed to make to <a href="https://github.com/tonsky/FiraCode/issues/1161#issuecomment-734453611">get it working with a 4K monitor</a>.</li>
-<li>Manjunath Vadigeri for reaching out and letting me know that the steps don't work in the latest VS Code. <em>The article has been updated to reflect the changes.</em></li>
-</ul>
-</body></html>
+<p>Although it's an ongoing process, I am happy with how the migration is progressing. <a href="https://www.ankursheel.com/">my blog</a> is now built with React, Node.js, Gatsby, Markdown and hosted on Netlify. I still have control over my content and blog structure. All the posts are in version control, so there is no need for tons of backups.</p>
+<p>I will be adding more posts related to things I had to go hunting for on google. If you would like to know more about something specific, let me know.</p>
+
 
 
 
@@ -216,7 +242,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/add-cursive-fonts-to-vs-code&text=How%20to%20add%20ligatures%20and%20cursive%20fonts%20to%20VS%20Code via @ankur_sheel.&#xD;&#xA;The%20use%20of%20ligatures%20while%20typing%20code%20has%20been%20a%20game-changer.%20How%20can%20we%20get%20the%20styling%20of%20cursive%20fonts%20and%20the%20functionality%20of%20ligatures%20in%20VS%20Code" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/migrating-wordpress-gatsby&text=Why%20and%20How%20I%20migrated%20my%20website%20from%20WordPress%20to%20Gatsby via @ankur_sheel.&#xD;&#xA;For%20most%20of%20the%20time%2C%20I%20have%20been%20blogging%2C%20I%20have%20been%20on%20WordPress.%20What%20motivated%20me%20to%20migrate%20my%20site%20to%20Gatsby%2C%20and%20how%20did%20I%20move%20the%20site" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

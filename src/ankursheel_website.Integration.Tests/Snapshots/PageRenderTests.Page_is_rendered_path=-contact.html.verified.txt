@@ -152,7 +152,6 @@
         </div>
     </div>
 </form>
-
         </article>
     </div>
 </main>

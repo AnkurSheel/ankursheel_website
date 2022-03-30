@@ -4,32 +4,32 @@
 <head>
     
 
-<title>Dapper and NPGSql : Write a query with the IN operator - Ankur Sheel</title>
+<title>How to automate the creation of a new blog post - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
+<meta name="description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/query-in-clause-dapper-npgsql"/>
+<link rel="canonical" href="https://www.ankursheel.com/blog/automating-creation-new-blog-post"/>
 
-<meta itemProp="name" content="Dapper and NPGSql : Write a query with the IN operator"/>
-<meta itemProp="description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/query-in-clause-dapper-npgsql-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/query-in-clause-dapper-npgsql"/>
+<meta itemProp="name" content="How to automate the creation of a new blog post"/>
+<meta itemProp="description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/automating-creation-new-blog-post-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/automating-creation-new-blog-post"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Dapper and NPGSql : Write a query with the IN operator"/>
-<meta property="og:description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/query-in-clause-dapper-npgsql-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/query-in-clause-dapper-npgsql-facebook.png"/>
+<meta property="og:title" content="How to automate the creation of a new blog post"/>
+<meta property="og:description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/automating-creation-new-blog-post-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/automating-creation-new-blog-post-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Dapper and NPGSql : Write a query with the IN operator"/>
-<meta name="twitter:description" content="In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/query-in-clause-dapper-npgsql-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/query-in-clause-dapper-npgsql-twitter.png"/>
+<meta name="twitter:title" content="How to automate the creation of a new blog post"/>
+<meta name="twitter:description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/automating-creation-new-blog-post-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/automating-creation-new-blog-post-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -122,117 +122,187 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Dapper and NPGSql : Write a query with the IN operator</h1>
+    <h1 class="text-center">How to automate the creation of a new blog post</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2020-03-11">March 11, 2020</time></span>
+        <span>Last Updated: <time datetime="2019-09-12">September 12, 2019</time></span>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 4 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
-            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
-            <a href="/tags/sql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">sql</a>
-            <a href="/tags/dapper" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dapper</a>
-            <a href="/tags/postgres" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">postgres</a>
+            <a href="/tags/devops" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">devops</a>
+            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
+            <a href="/tags/typescript" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">typescript</a>
     </div>
 </div>
 
-<html><head></head><body><h2 id="scenario">Scenario</h2>
-<p>We want to get details of users that match a given list of ids.</p>
-<h3 id="the-sql">The SQL</h3>
-<pre><code class="language-sql hljs"><span class="hljs-keyword">Select</span> *
-<span class="hljs-keyword">FROM</span> <span class="hljs-keyword">users</span>
-<span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">IN</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+<html><head></head><body><p>MDX and gatsby are great for building a blog. But it's a pain to create all the skeleton stuff every time I want to create a new blog post.</p>
+<h2 id="steps-to-create-a-new-blog-post">Steps to create a new blog post</h2>
+<ol>
+<li>Create a new folder under <em>content/posts///</em></li>
+<li>Create a new <em>index.mdx</em> file in the above folder.</li>
+<li>Copy the frontmatter from a template file or an existing post.</li>
+<li>Modify most of the properties for the new post.</li>
+<li>If the post has an image gallery, then
+<ol>
+<li>create a subfolder with the name <em>images</em>.</li>
+<li>copy a <em>data.json</em> file from an existing folder and update it.</li>
+</ol>
+</li>
+</ol>
+<p>Here is an example of the frontmatter for this post</p>
+<pre><code class="language-yaml hljs"><span class="hljs-meta">---</span>
+<span class="hljs-attr">author:</span> <span class="hljs-string">'Ankur'</span>
+<span class="hljs-attr">date:</span> <span class="hljs-string">'2019-09-12'</span>
+<span class="hljs-attr">slug:</span> <span class="hljs-string">'automating-creation-of-new-blog-post'</span>
+<span class="hljs-attr">title:</span> <span class="hljs-string">'Automating the creation of a new blog post'</span>
+<span class="hljs-attr">excerpt:</span> <span class="hljs-string">'Creating a new blogpost in markdown and gatsby has quite a bit of skeleton stuff. Lets see how to automate it.'</span>
+<span class="hljs-attr">tags:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">'tutorial'</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">'gatsby'</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">'typescript'</span>
+<span class="hljs-attr">featuredImage:</span> <span class="hljs-string">''</span>
+<span class="hljs-attr">featuredImagePosition:</span> <span class="hljs-string">''</span>
+<span class="hljs-meta">---</span>
 </code></pre>
-<h3 id="implementation-in-c">Implementation in C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
-</span>{
-    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
-                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
-
-    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
-                    {
-                        { &quot;UserIds&quot;, userIds }
-                    };
-
-    <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> NpgsqlConnection(_connectionString))
-    {
-        <span class="hljs-keyword">var</span> users  = connection.Query&lt;User&gt;(
-                        sql,
-                        parameters.ToDynamicParameters())
-                    .ToList();
-    }
-}
-</code></pre>
-<p><em>Notes:</em></p>
+<blockquote>
+<p>Wouldn't it be nice if it could all be generated by a single command?</p>
+</blockquote>
+<p>Now you might ask whether it's worth spending the few extra hours to automate something that takes just a few minutes of my time.</p>
+<p>You might be correct in saying that it doesn't save me much time, and there is not much of a context switch when I am starting a new post. But it's a pain creating this manually every time, and it's also error-prone.</p>
+<blockquote>
+<p>Let's Automate all the things</p>
+</blockquote>
+<h2 id="libraries-we-will-be-using">Libraries we will be using</h2>
+<p>Install the following packages using <em>yarn</em> or <em>npm</em>.</p>
 <ul>
-<li><em>We are using <a href="https://www.npgsql.org/">NPGSql</a> and <a href="https://github.com/DapperLib/Dapper">Dapper</a>.</em></li>
-<li><em>ToDynamicParameters is an extension method to transform the dictionary into Dapper.DynamicParameters</em></li>
+<li><a href="https://github.com/sindresorhus/slugify">slugify</a>: Slugify the title automatically</li>
+<li><a href="http://npm.im/inquirer">inquirer</a>: CLI get user input for title, excerpt, tags etc</li>
+<li><a href="https://github.com/alexcrist/json-to-pretty-yaml">jsToYaml</a>: Convert json to YAML</li>
+<li><a href="https://github.com/substack/node-mkdirp">mkdirp</a>: helper to create directories</li>
+<li><a href="https://github.com/prettier/prettier">prettier</a>: <em>Optional</em>. Code formatter to format the generated files using a prettier config.</li>
 </ul>
-<h2 id="problem-1">Problem #1</h2>
-<p>On running this, we get an error.</p>
-<pre><code class="language-csharp hljs">System.NotSupportedException: Npgsql <span class="hljs-number">3.</span>x removed support <span class="hljs-keyword">for</span> writing
-    a parameter with an IEnumerable <span class="hljs-keyword">value</span>, use .ToList()/.ToArray()
-    instead.
-</code></pre>
-<p>Luckily, the error message is telling us what we need to do. So let's make userIds an Array.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
-</span>{
-    <span class="hljs-comment">//unchanged</span>
+<h2 id="lets-build-the-script">Let's build the script</h2>
+<h3 id="helper-functions">Helper functions</h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> padLeft0 = (n: number) =&gt; n.toString().padStart(<span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
 
-    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
-                    {
-                        { &quot;UserIds&quot;, userIds.ToArray() }
-                    };
+<span class="hljs-keyword">const</span> fromRoot = (...p: string[]) =&gt; path.join(__dirname, <span class="hljs-string">'..'</span>, ...p);
 
-    <span class="hljs-comment">// unchanged</span>
-}
-</code></pre>
-<h2 id="problem-2">Problem #2</h2>
-<p>We now get the error.</p>
-<pre><code class="language-csharp hljs">Npgsql.PostgresException : <span class="hljs-number">42601</span>: syntax error at or near &quot;$<span class="hljs-number">2</span>&quot;
-</code></pre>
-<p>Unfortunately, this is a more cryptic error.</p>
-<p>There are 2 changes we need to make to the SQL to fix this error.</p>
-<ul>
-<li>parens are needed around the parameter</li>
-<li><strong>IN</strong> needs to be replaced with <strong>= ANY</strong></li>
-</ul>
-<p>Our resulting SQL now becomes</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
-</span>{
-    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
-                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
-   <span class="hljs-comment">// unchanged</span>
-}
-</code></pre>
-<h2 id="final-solution">Final Solution</h2>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">GetUsers</span>(<span class="hljs-params">IReadOnlyCollection&lt;<span class="hljs-keyword">int</span>&gt; userIds</span>)
-</span>{
-    <span class="hljs-keyword">const</span> sql = &<span class="hljs-meta">#64;&#64;&quot;&#64;Html.Raw(&quot;Select * FROM users&quot;)</span>
-                WHERE id IN &<span class="hljs-meta">#64;&#64;UserIds&quot;</span>
+<span class="hljs-keyword">const</span> formatDate = (d: <span class="hljs-built_in">Date</span>) =&gt; <span class="hljs-string">`<span class="hljs-subst">${d.getFullYear()}</span>-<span class="hljs-subst">${padLeft0(d.getMonth() + <span class="hljs-number">1</span>)}</span>-<span class="hljs-subst">${padLeft0(d.getDate())}</span>`</span>;
 
-    <span class="hljs-keyword">var</span> parameters = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;
-                    {
-                        { &quot;UserIds&quot;, userIds.ToArray() }
-                    };
-
-    <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> NpgsqlConnection(_connectionString))
+<span class="hljs-keyword">const</span> listify = (a: string) =&gt; (a &amp;&amp; a.trim().length ? a.split(<span class="hljs-string">','</span>).map((s) =&gt; s.trim()) : <span class="hljs-string">''</span>);
+</code></pre>
+<h3 id="use-inquirer-to-get-details-from-the-user">Use Inquirer to get details from the user</h3>
+<p>In my case, I am getting the <em>title</em>, <em>description</em>, <em>tags</em> and <em>whether the post has images</em>.</p>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> prompt = <span class="hljs-keyword">await</span> inquirer.prompt([
     {
-        <span class="hljs-keyword">var</span> users  = connection.Query&lt;User&gt;(
-                        sql,
-                        parameters.ToDynamicParameters())
-                    .ToList();
-    }
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'title'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Title'</span>,
+    },
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'description'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Excerpt/Description'</span>,
+    },
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'tags'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Tags/Keywords (comma separated)'</span>,
+    },
+    {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'list'</span>,
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'images'</span>,
+        <span class="hljs-attr">message</span>: <span class="hljs-string">'Post has image gallery (yes/no)'</span>,
+        <span class="hljs-attr">choices</span>: [
+            { <span class="hljs-attr">name</span>: <span class="hljs-string">'Yes'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'Y'</span> },
+            { <span class="hljs-attr">name</span>: <span class="hljs-string">'No'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'N'</span> },
+        ],
+    },
+]);
+
+<span class="hljs-keyword">const</span> { title, description, tags, images } = prompt;
+</code></pre>
+<h3 id="create-the-folder-structure">Create the folder structure</h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+<span class="hljs-keyword">const</span> slug = slugify(title);
+
+<span class="hljs-keyword">const</span> destination = fromRoot(<span class="hljs-string">'content/posts'</span>, <span class="hljs-string">`<span class="hljs-subst">${date.getFullYear().toString()}</span>`</span>, <span class="hljs-string">`<span class="hljs-subst">${formatDate(date)}</span>-<span class="hljs-subst">${slug}</span>`</span>);
+
+mkdirp.sync(destination);
+</code></pre>
+<p>The date is set to the current date, and the slug is automatically created from the title.</p>
+<p>The folder is created with a consistent structure.</p>
+<h3 id="create-the-mdx-file-with-the-frontmatter">Create the MDX file with the frontmatter</h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> yaml = jsToYaml.stringify({
+    <span class="hljs-attr">author</span>: <span class="hljs-string">'Ankur Sheel'</span>,
+    <span class="hljs-attr">date</span>: formatDate(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()),
+    slug,
+    title,
+    <span class="hljs-attr">excerpt</span>: description,
+    <span class="hljs-attr">tags</span>: listify(tags),
+    <span class="hljs-attr">featuredImage</span>: <span class="hljs-string">''</span>,
+    <span class="hljs-attr">featuredImagePosition</span>: <span class="hljs-string">''</span>,
+    <span class="hljs-attr">imageFacebook</span>: <span class="hljs-string">'./image-facebook.png'</span>,
+    <span class="hljs-attr">imageTwitter</span>: <span class="hljs-string">'./image-twitter.png'</span>,
+});
+<span class="hljs-keyword">const</span> markdown = prettier.format(<span class="hljs-string">`---\r\n<span class="hljs-subst">${yaml}</span>\r\n---\r\n`</span>, {
+    ...require(<span class="hljs-string">'../.prettierrc'</span>), <span class="hljs-comment">// eslint-disable-line global-require</span>
+    trailingComma: <span class="hljs-string">'es5'</span>,
+    <span class="hljs-attr">endOfLine</span>: <span class="hljs-string">'crlf'</span>,
+    <span class="hljs-attr">parser</span>: <span class="hljs-string">'mdx'</span>,
+});
+
+fs.writeFileSync(path.join(destination, <span class="hljs-string">'index.mdx'</span>), markdown);
+</code></pre>
+<p>So what's happening in the above code snippet</p>
+<ul>
+<li><strong><em>Lines 1-12</em></strong>: Create a JSON object and use <em>jsToYaml</em> to convert it to a <em>YAML</em> object.</li>
+<li><strong><em>Lines 13-18</em></strong>: Use prettier to get a formatted string of the <em>yaml</em> object and wrap it with <em>---</em> so that it's in a format that the MDX expects.</li>
+</ul>
+<p>Some of the properties are hardcoded, such as <em>author</em>, <em>imageFacebook</em>, <em>imageTwitter</em>, and the rest are auto-generated.</p>
+<p>The file name is also consistently named <em>index.mdx</em> and lives in the created folder.</p>
+<h3 id="create-the-images-folder-and-data.json-if-required">Create the images folder and data.json <em>(if required)</em></h3>
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">if</span> (images === <span class="hljs-string">'Y'</span>) {
+    <span class="hljs-keyword">const</span> data = {
+        <span class="hljs-attr">gallery</span>: [{ <span class="hljs-attr">image</span>: <span class="hljs-string">`./<span class="hljs-subst">${slug}</span>-1.jpg`</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">''</span> }],
+    };
+
+    <span class="hljs-keyword">const</span> json = prettier.format(<span class="hljs-built_in">JSON</span>.stringify(data, <span class="hljs-literal">null</span>, <span class="hljs-number">4</span>), {
+        ...require(<span class="hljs-string">'../.prettierrc'</span>), <span class="hljs-comment">// eslint-disable-line global-require</span>
+        trailingComma: <span class="hljs-string">'es5'</span>,
+        <span class="hljs-attr">endOfLine</span>: <span class="hljs-string">'crlf'</span>,
+        <span class="hljs-attr">parser</span>: <span class="hljs-string">'json'</span>,
+    });
+
+    <span class="hljs-keyword">const</span> imagesDestination = path.join(destination, <span class="hljs-string">'images'</span>);
+    mkdirp.sync(imagesDestination);
+
+    fs.writeFileSync(path.join(imagesDestination, <span class="hljs-string">'data.json'</span>), json);
 }
 </code></pre>
-<p>This allows us to get details of users that match a given list of ids.</p>
+<p>Let's see what's happening here.</p>
+<ul>
+<li><strong><em>Line 1</em></strong>: Create the images folder only if the user indicated that this post will have an image gallery.</li>
+<li><strong><em>Lines 2-4</em></strong>: Create the basic JSON object with a single entry for <em>image</em>.</li>
+<li><strong><em>Lines 6-11</em></strong>: Use prettier to get a formatted string of the <em>json</em> object.</li>
+<li><strong><em>Lines 13-14</em></strong>: Create the images folder.</li>
+<li><strong><em>Line 16</em></strong>: Create the <em>data.json</em> file.</li>
+</ul>
+<h2 id="other-notes">Other Notes</h2>
+<ul>
+<li>It might be better/faster to write the generator using <a href="https://github.com/amwmedia/plop">plop</a> so that I have a single template file that can be used. Plop also supports modifying a file which might be helpful if I have many blog posts and want to change the frontmatter structure.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Setting up a new blog post can take a few minutes of my time and can be prone to errors, but with this script, I just need to call the script, enter a few values specific to the post, and I am ready to start writing.</p>
+<p>You can see the whole script <a href="https://github.com/AnkurSheel/ankursheel_website/blob/master/scripts/createNewBlogpost.ts">here</a>.</p>
+<p>Have you automated something in your projects? What modifications would you make to this script? Let me know.</p>
 </body></html>
 
 
@@ -242,7 +312,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/query-in-clause-dapper-npgsql&text=Dapper%20and%20NPGSql%20%3A%20Write%20a%20query%20with%20the%20IN%20operator via @ankur_sheel.&#xD;&#xA;In%20this%20post%2C%20I%20look%20at%20what%20changes%20need%20to%20be%20made%20to%20write%20a%20query%20with%20the%20IN%20operator%20in%20a%20WHERE%20clause%20using%20Dapper%20and%20NPGSql" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/automating-creation-new-blog-post&text=How%20to%20automate%20the%20creation%20of%20a%20new%20blog%20post via @ankur_sheel.&#xD;&#xA;Creating%20a%20new%20blogpost%20in%20markdown%20and%20gatsby%20has%20quite%20a%20bit%20of%20boilerplate.%20Let%20us%20see%20how%20to%20automate%20it." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
