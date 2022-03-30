@@ -1,11 +1,4 @@
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-using VerifyXunit;
-using Xunit;
 
 namespace ankursheel_website.Integration.Tests
 {
@@ -35,7 +28,7 @@ namespace ankursheel_website.Integration.Tests
             var response = await _httpClient.GetAsync(path);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
-            await Verifier.Verify(content, settings);
+            await Verify(content, settings);
         }
 
         [Fact]
@@ -45,21 +38,32 @@ namespace ankursheel_website.Integration.Tests
             var files = Directory.GetFiles(outputDirectory, "*", SearchOption.AllDirectories)
                 .OrderBy(x => x)
                 .Select(x => x.Substring(outputDirectory.Length).Replace("\\", "/").Replace("index.html", "").Replace(".html", "/"));
-            await Verifier.Verify(files);
+            await Verify(files);
         }
 
         public static IEnumerable<object[]> GetData()
         {
             var outputDirectory = TestHelpers.GetOutputDirectory();
-            var patterns = new[] { "*.html", "*.js", "*.xml" };
+            var patterns = new[]
+            {
+                "*.html",
+                "*.js",
+                "*.xml"
+            };
 
-            List<string> filePaths = new List<string>();
+            var filePaths = new List<string>();
 
-            filePaths = patterns.Aggregate(filePaths, (current, pattern) => current.Concat(Directory.GetFiles(outputDirectory, pattern, SearchOption.AllDirectories)).ToList());
+            filePaths = patterns.Aggregate(
+                filePaths,
+                (current, pattern) => current.Concat(Directory.GetFiles(outputDirectory, pattern, SearchOption.AllDirectories)).ToList());
 
             filePaths = filePaths.Select(x => x.Substring(outputDirectory.Length).Replace("\\", "/")).ToList();
 
-            return filePaths.Select(x => new object[] { x });
+            return filePaths.Select(
+                x => new object[]
+                {
+                    x
+                });
         }
     }
 }

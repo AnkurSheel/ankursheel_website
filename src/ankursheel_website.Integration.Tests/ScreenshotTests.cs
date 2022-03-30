@@ -1,10 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Xunit;
-
-namespace ankursheel_website.Integration.Tests
+﻿namespace ankursheel_website.Integration.Tests
 {
     public class ScreenshotTests : IClassFixture<WebServerFixture>
     {
