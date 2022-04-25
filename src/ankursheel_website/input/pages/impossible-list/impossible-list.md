@@ -2,7 +2,7 @@
 title: 'Impossible list :  My ever-growing bucket list'
 ---
 
-See the reason behind creating this list [here](/blog/impossible-list-or-a-bucket-list).
+See the reason behind creating this list [here](/blog/impossible-list-bucket-list).
 
 ## Travel - Things to See & Do
 

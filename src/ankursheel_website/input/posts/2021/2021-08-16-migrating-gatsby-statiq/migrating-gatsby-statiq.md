@@ -13,7 +13,7 @@ tags:
 
 In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.
 
-You can read more about why I migrated to Gatsby and the earlier parts of the journey at [Why and How I migrated my website from WordPress to Gatsby](./migrating-from-wordpress-to-gatsby).
+You can read more about why I migrated to Gatsby and the earlier parts of the journey at [Why and How I migrated my website from WordPress to Gatsby](./migrating-wordpress-gatsby).
 
 ## Reasons for moving away from Gatsby
 

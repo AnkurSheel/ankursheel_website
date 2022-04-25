@@ -102,7 +102,7 @@
 
 <h2 id="my-blogging-journey">My Blogging Journey</h2>
 <p>In 2019, I moved from WordPress to Gatsby. But, after 2 years and with Gatsby releasing v3, it's time to evaluate the options available in the market.</p>
-<p>You can read more about why I migrated to Gatsby and the earlier parts of the journey at <a href="migrating-from-wordpress-to-gatsby">Why and How I migrated my website from WordPress to Gatsby</a>.</p>
+<p>You can read more about why I migrated to Gatsby and the earlier parts of the journey at <a href="migrating-wordpress-gatsby">Why and How I migrated my website from WordPress to Gatsby</a>.</p>
 <h2 id="reasons-for-moving-away-from-gatsby">Reasons for moving away from Gatsby</h2>
 <p>There were a few reasons that the Gatsby solution is not working for me anymore. In no particular order,</p>
 <ul>

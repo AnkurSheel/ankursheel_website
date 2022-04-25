@@ -13,7 +13,7 @@ tags:
 
 > I was reading your blog post about migrating from WordPress to Gatsby and had a question about the necessary timeline we should expect. How long did it take you to make your full migration?
 
-_If you are wondering what post is being referred to its [Why and How I migrated my website from Wordpress to Gatsby?](./migrating-from-wordpress-to-gatsby)_
+_If you are wondering what post is being referred to its [Why and How I migrated my website from Wordpress to Gatsby?](./migrating-wordpress-gatsby)_
 
 ## My Answer
 

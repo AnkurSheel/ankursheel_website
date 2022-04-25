@@ -103,7 +103,7 @@
 <blockquote>
 <p>I was reading your blog post about migrating from WordPress to Gatsby and had a question about the necessary timeline we should expect. How long did it take you to make your full migration?</p>
 </blockquote>
-<p><em>If you are wondering what post is being referred to its <a href="migrating-from-wordpress-to-gatsby">Why and How I migrated my website from Wordpress to Gatsby?</a></em></p>
+<p><em>If you are wondering what post is being referred to its <a href="migrating-wordpress-gatsby">Why and How I migrated my website from Wordpress to Gatsby?</a></em></p>
 <h2 id="my-answer">My Answer</h2>
 <p>The timeline for the migration depends on the contents of your site.</p>
 <p>I started the move away from WordPress to Gatsby in August 2019 and switched over in November 2019. You might think that 3 months is a long time for migrating posts, and you would be correct.</p>
