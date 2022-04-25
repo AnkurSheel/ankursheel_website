@@ -10,18 +10,18 @@ ReadingTimeWordsPerMinute: 238
 HeaderLinks:
     - Title: 'About'
       Url: '/about'
-    - Title: 'All Posts'
+    - Title: 'Blog'
       Url: '/blog'
-    - Title: 'All Tags'
+    - Title: 'Tags'
       Url: '/tags'
-    - Title: 'Contact'
-      Url: '/contact'
     - Title: 'CV'
       Url: '/cv'
     - Title: 'Impossible List'
       Url: '/impossible-list'
     - Title: 'Book Summaries'
       Url: 'https://www.discoveriesinbookland.com/'
+    - Title: 'Contact'
+      Url: '/contact'
 #GoogleTagManagerId: GTM-MG9PGWH
 GoatCounterCode: ankursheel
 #icon: 'content/images/avatar.png',
