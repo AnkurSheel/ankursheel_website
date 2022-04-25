@@ -1,53 +1,16 @@
 @model BaseModel
 
-<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
-
-<nav class="text-gray-500 font-semibold">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-            <div class="flex space-x-7 items-center  ">
-                <!-- Website Logo -->
-                <div>
-                    <a href="/" class="flex items-center py-4 px-2 ">
-                        @Model.Context.GetSiteTitle()
-                    </a>
-                </div>
-                <ul class="hidden lg:flex items-center space-x-1">
-                    @await Html.PartialAsync("_NavigationLinks.cshtml", Model)
-                </ul>
-            </div>
-
-            @* <ul class="hidden lg:flex items-center space-x-3"> *@
-            @*     <li> *@
-            @*         <a role="button" class="" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS"> *@
-            @*             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-6"> *@
-            @*                 <path d="M6.503 20.752A3.25 3.25 0 0 1 3.252 24 3.25 3.25 0 0 1 0 20.752a3.25 3.25 0 0 1 3.252-3.248 3.25 3.25 0 0 1 3.251 3.248zM0 8.18v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817C15.777 15.29 8.721 8.242 0 8.18zm0-3.368C10.58 4.858 19.152 13.406 19.183 24H24C23.97 10.769 13.245.046 0 0v4.812z" fill="currentColor"/> *@
-            @*             </svg> *@
-            @* *@
-            @*         </a> *@
-            @*     </li> *@
-                @* <li> *@
-                @*     <a role="button" class="inline-flex items-center bg-green-400 text-white p-2 rounded-md text-2xl drop-shadow-lg hover:bg-green-800" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/@Model.Context.GetBuyMeACoffeeUsername()" title="Did you learn something or find this summary interesting?"> *@
-                @*         <img class="h-8 mr-2 border-none" src="/@Constants.ImagesDirectory/bmc-logo.svg" alt="Buy Me A Coffee"> *@
-                @*         <p class="font-cookie">Buy me a coffee</p> *@
-                @*     </a> *@
-                @* </li> *@
-            @* </ul> *@
-
-            <div class="lg:hidden flex items-center">
-                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-                    </svg>
-                </button>
-            </div>
-
-        </div>
-        <div class="hidden mobile-menu">
-            <ul class="flex flex-col">
-                @await Html.PartialAsync("_NavigationLinks.cshtml", Model)
-            </ul>
-        </div>
+<nav x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between font-semibold">
+        <a href="/" class="navigation-link text-lg hover:invert-0 text-gray-900 uppercase rounded-lg focus:outline-none">@Model.Context.GetSiteTitle()</a>
+        <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" x-on:click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
     </div>
+    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+        @await Html.PartialAsync("_NavigationLinks.cshtml", Model)
+    </ul>
 </nav>

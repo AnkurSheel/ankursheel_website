@@ -1,6 +1,7 @@
 ﻿@model BaseModel
 
-<script src="@Model.Context.GetScript()"></script>
+<script src="@Model.Context.GetScript()" defer></script>
+<script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
 @if (Model.Context.GetGoatCounterCode() != null)
 {
     var url = $"https://{Model.Context.GetGoatCounterCode()}.goatcounter.com/count";
