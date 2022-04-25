@@ -39,84 +39,42 @@
 
 <header class="sticky top-0 bg-white shadow-lg z-10 w-full">
     
-<!-- https://www.section.io/engineering-education/creating-a-responsive-navigation-bar-using-tailwind-css-and-javascript/ -->
-
-<nav class="text-gray-500 font-semibold">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-            <div class="flex space-x-7 items-center  ">
-                <!-- Website Logo -->
-                <div>
-                    <a href="/" class="flex items-center py-4 px-2 ">
-                        Ankur Sheel
-                    </a>
-                </div>
-                <ul class="hidden lg:flex items-center space-x-1">
-                    
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/about">About</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/blog">All Posts</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/tags">All Tags</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/contact">Contact</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/cv">CV</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/impossible-list">Impossible List</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="https://www.discoveriesinbookland.com/" target="_blank">Book Summaries</a>
-    </li>
-
-                </ul>
-            </div>
-
-
-            <div class="lg:hidden flex items-center">
-                <button class="outline-none mobile-menu-button" aria-label="Mobile Menu">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-                    </svg>
-                </button>
-            </div>
-
-        </div>
-        <div class="hidden mobile-menu">
-            <ul class="flex flex-col">
-                
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/about">About</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/blog">All Posts</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/tags">All Tags</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/contact">Contact</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/cv">CV</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="/impossible-list">Impossible List</a>
-    </li>
-    <li class="py-4 px-2 transition-all transform hover:scale-110">
-            <a href="https://www.discoveriesinbookland.com/" target="_blank">Book Summaries</a>
-    </li>
-
-            </ul>
-        </div>
+<nav x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between font-semibold">
+        <a href="/" class="navigation-link text-lg hover:invert-0 text-gray-900 uppercase rounded-lg focus:outline-none">Ankur Sheel</a>
+        <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" x-on:click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
     </div>
+    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+        
+
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="/about">About</a>
+    </li>
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="/blog">Blog</a>
+    </li>
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="/tags">Tags</a>
+    </li>
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="/cv">CV</a>
+    </li>
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="/impossible-list">Impossible List</a>
+    </li>
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="https://www.discoveriesinbookland.com/" target="_blank">Book Summaries</a>
+    </li>
+    <li class="navigation-link">
+            <a class="hover:invert-0" href="/contact">Contact</a>
+    </li>
+
+    </ul>
 </nav>
 
 </header>
@@ -271,7 +229,8 @@ text tester&quot;</p>
 </footer>
 
 
-<script src="/assets/js/blog.js"></script>
+<script src="/assets/js/blog.js" defer></script>
+<script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
     <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
 
 
