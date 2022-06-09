@@ -8,6 +8,53 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>How to set all bits of an enum flag in C#</title>
+      <link>https://www.ankursheel.com/blog/set-all-bits-enum-flag-c</link>
+      <description>Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag.</description>
+      <guid>https://www.ankursheel.com/blog/set-all-bits-enum-flag-c</guid>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In C#, you can use the [Flags] attribute to create an enum type as bit flags, allowing you to use Bitwise operations.&lt;/p&gt;
+&lt;p&gt;Let's take an example of Seasons&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;
+[Flags]
+&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;enum&lt;/span&gt; Seasons
+{
+    None = &lt;span class="hljs-number"&gt;0&lt;/span&gt;,
+    Spring = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;0&lt;/span&gt;,
+    Winter = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;1&lt;/span&gt;,
+    Autumn = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;2&lt;/span&gt;,
+    Summer = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;3&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum by manually combining all the bits yourself.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;[Flags]
+&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;enum&lt;/span&gt; Seasons
+{
+    ... &lt;span class="hljs-comment"&gt;// omitted for brevity&lt;/span&gt;
+    All = Spring | Winter | Autumn | Summer
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But, this has a small problem. Every time we add a new value to the enum, we must update the &lt;code&gt;All&lt;/code&gt; value.&lt;/p&gt;
+&lt;p&gt;Here is a simple trick to get a variable with all the bits set.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt; &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; AllSeasons = (Seasons)Enum.GetValues&amp;lt;Seasons&amp;gt;().Cast&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;().Sum();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let's see what's happening in the above snippet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enum.GetValues&lt;mydays&gt;()&lt;/mydays&gt;&lt;/strong&gt; returns an array of the enums values.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cast&lt;int&gt;&lt;/int&gt;&lt;/strong&gt; cast the elements of the array to its int values. &lt;em&gt;Remember that the underlying type of an enum is int.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sum&lt;/strong&gt; computes the sum of all the values in the collection.&lt;/p&gt;
+&lt;p&gt;We then cast it back to &lt;em&gt;Seasons&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using Linq magic, we can get an enum value with all the flags set without adding an &lt;em&gt;All&lt;/em&gt; value to the enum.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.enum.getvalues?view=net-6.0"&gt;Enum.GetValues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.cast?view=net-6.0"&gt;Cast&amp;lt;&amp;gt; method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sum?view=net-6.0"&gt;Sum method&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How to replace a word in a string in C#</title>
       <link>https://www.ankursheel.com/blog/replace-word-string-csharp</link>
       <description>There is no way to replace just whole words using string.Replace. Let's see how we can replace whole words in string using Regex</description>
@@ -831,62 +878,6 @@ email = author_email
 &lt;li&gt;&lt;a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules"&gt;Writing Modules in Statiq&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to calculate reading time</title>
-      <link>https://www.ankursheel.com/blog/calculate-reading-time</link>
-      <description>A guide to calculating the reading time for a given document</description>
-      <guid>https://www.ankursheel.com/blog/calculate-reading-time</guid>
-      <pubDate>Thu, 07 Oct 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In this snippet, I will be showing how to calculate the reading time for a given string.&lt;/p&gt;
-&lt;p&gt;First, we will create a new data structure to hold the reading time. It contains the number of words and the minutes and seconds to read the post.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; record ReadingTimeData
-{
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-title"&gt;ReadingTimeData&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; minutes, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; seconds, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; words&lt;/span&gt;)
-    &lt;/span&gt;{
-        Minutes = minutes;
-        Seconds = seconds;
-        Words = words;
-    }
-
-    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; Minutes { &lt;span class="hljs-keyword"&gt;get&lt;/span&gt;; }
-
-    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; Seconds { &lt;span class="hljs-keyword"&gt;get&lt;/span&gt;; }
-
-    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; Words { &lt;span class="hljs-keyword"&gt;get&lt;/span&gt;; }
-
-    &lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; RoundedMinutes
-        =&amp;gt; Seconds &amp;lt; &lt;span class="hljs-number"&gt;30&lt;/span&gt;
-            ? Minutes
-            : Minutes + &lt;span class="hljs-number"&gt;1&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;RoundedMinutes&lt;/em&gt;&lt;/strong&gt; is the rounded time to make things simpler for a reader. Anything less than 30 seconds gets ignored, and anything more than 30 seconds gets rounded up to the next minute.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now, we can calculate the reading time and fill in the ReadingTimeData.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;private&lt;/span&gt; ReadingTimeData &lt;span class="hljs-title"&gt;GetReadingTime&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt; content, &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; wordsPerMinute&lt;/span&gt;)
-&lt;/span&gt;{
-    &lt;span class="hljs-keyword"&gt;const&lt;/span&gt; Regex SpacesRegex = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; Regex(&amp;quot;\S+&amp;quot;, RegexOptions.Multiline);
-    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; words = SpacesRegex.Matches(content).Count;
-
-    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; minutes = words / WordsPerMinute;
-    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; remainingWords = words % WordsPerMinute;
-    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; seconds = remainingWords * &lt;span class="hljs-number"&gt;60&lt;/span&gt; / WordsPerMinute;
-
-    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ReadingTimeData(minutes, seconds, words);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 3-4&lt;/em&gt;&lt;/strong&gt;: Get all the words in the string by using &lt;code&gt;\S&lt;/code&gt; as our regex expression, which matches all characters that are not a white space.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 6&lt;/em&gt;&lt;/strong&gt;: Get the number of minutes it takes to read the string based on how many words we can read in a minute.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 7&lt;/em&gt;&lt;/strong&gt;: Get the number of unread words which we weren't able to read in a full minute.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 8&lt;/em&gt;&lt;/strong&gt;: Get the number of seconds to read the remaining text.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="concusion"&gt;Concusion&lt;/h2&gt;
-&lt;p&gt;Now, we can show the estimated reading time on our articles.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
   </channel>

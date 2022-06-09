@@ -106,6 +106,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/replace-word-string-csharp">How to replace a word in a string in C#</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -116,9 +119,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/use-acl-graphql-subscriptions-redis">How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</a>
         </li>
 </ul>
 
@@ -173,8 +173,11 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (51)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (52)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a> - <time class="prose-sm" datetime="22-06-09">June 09, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/replace-word-string-csharp">How to replace a word in a string in C#</a> - <time class="prose-sm" datetime="22-03-30">March 30, 2022</time>
             </li>

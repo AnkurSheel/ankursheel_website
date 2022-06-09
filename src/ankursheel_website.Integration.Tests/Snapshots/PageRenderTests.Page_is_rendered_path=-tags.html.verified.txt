@@ -104,7 +104,7 @@
             <a role="button" href="/tags/usa" class="capitalize badge text-gray-900 bg-grey-light no-underline"> USA (22)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (20)</a>
+            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (21)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (17)</a>
@@ -161,10 +161,10 @@
             <a role="button" href="/tags/aws" class="capitalize badge text-gray-900 bg-grey-light no-underline"> AWS (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
+            <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (5)</a>
+            <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dev-tools" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>
