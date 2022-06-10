@@ -9,10 +9,10 @@
     </PropertyGroup>
 
     <ItemGroup Condition="'$(Configuration)'=='Debug'">
-        <ProjectReference Include="..\..\..\StatiqHelpers\src\StatiqHelpers\StatiqHelpers.csproj"/>
+        <ProjectReference Include="..\..\..\StatiqHelpers\src\StatiqHelpers\StatiqHelpers.csproj" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(Configuration)'=='Release'">
-        <PackageReference Include="Codinators.StatiqHelpers" Version="0.23.3"/>
+        <PackageReference Include="Codinators.StatiqHelpers" Version="0.24.0" />
     </ItemGroup>
 </Project>

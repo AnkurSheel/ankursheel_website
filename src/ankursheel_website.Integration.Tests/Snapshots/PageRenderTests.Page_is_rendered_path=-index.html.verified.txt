@@ -9,22 +9,22 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description"/>
+<meta name="description" content="I go down rabbit holes and blog about them"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
 <link rel="canonical" href="https://www.ankursheel.com/"/>
 
 <meta itemProp="name" content="Ankur Sheel"/>
-<meta itemProp="description"/>
+<meta itemProp="description" content="I go down rabbit holes and blog about them"/>
 <meta property="og:url" content="https://www.ankursheel.com/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Ankur Sheel"/>
-<meta property="og:description"/>
+<meta property="og:description" content="I go down rabbit holes and blog about them"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Ankur Sheel"/>
-<meta name="twitter:description"/>
+<meta name="twitter:description" content="I go down rabbit holes and blog about them"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
