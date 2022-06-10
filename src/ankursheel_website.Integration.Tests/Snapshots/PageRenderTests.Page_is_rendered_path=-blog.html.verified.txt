@@ -106,6 +106,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -116,9 +119,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
         </li>
 </ul>
 
@@ -563,8 +563,11 @@
                 <a href="/blog/london">Roaming around in London</a> - <time class="prose-sm" datetime="13-11-22">November 22, 2013</time>
             </li>
     </ul>
-    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (8)</h3>
+    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (9)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a> - <time class="prose-sm" datetime="22-06-14">June 14, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/add-cursive-fonts-vs-code">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
             </li>

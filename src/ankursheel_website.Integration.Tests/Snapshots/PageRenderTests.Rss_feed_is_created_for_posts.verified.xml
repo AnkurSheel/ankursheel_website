@@ -8,6 +8,46 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>How to Serialize enums as strings in .Net Core</title>
+      <link>https://www.ankursheel.com/blog/serializing-enums-strings-net-core</link>
+      <description>If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?</description>
+      <guid>https://www.ankursheel.com/blog/serializing-enums-strings-net-core</guid>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;enum&lt;/span&gt; Seasons
+{
+    Unknown,
+    Spring,
+    Winter,
+    Autumn,
+    Summer
+}
+
+&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; seasons = Enum.GetValues&amp;lt;Seasons&amp;gt;().ToList();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When you serialize the list of seasons using the serialize method, i.e. &lt;code&gt;JsonSerializer.Serialize(seasons)&lt;/code&gt;, it gives an output of &lt;code&gt;[0, 1, 2, 3, 4]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;As you can see, this is not very readable and almost meaningless unless you look at the code.&lt;/p&gt;
+&lt;p&gt;To overcome this, you can specify a built-in converter to do the conversion to strings and pass it into a &lt;code&gt;JsonSerializerOptions&lt;/code&gt; object.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; SerializerOptions = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; JsonSerializerOptions
+    {
+        PropertyNameCaseInsensitive = &lt;span class="hljs-literal"&gt;true&lt;/span&gt;,
+        Converters = { &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; JsonStringEnumConverter() }
+    };
+    
+JsonSerializer.Serialize(seasons, SerializerOptions);
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will give an output of &lt;code&gt;[&amp;quot;Unknown&amp;quot;, &amp;quot;Spring&amp;quot;, &amp;quot;Winter&amp;quot;, &amp;quot;Autumn&amp;quot;, &amp;quot;Summer&amp;quot;]&lt;/code&gt; which is much more readable.&lt;/p&gt;
+&lt;p&gt;You can use the same converter for deserializing the enum.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; seasons = JsonSerializer.Deserialize&amp;lt;T&amp;gt;(json, SerializerOptions);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This gives an output of &lt;code&gt;[Seasons.Unknown, Seasons.Spring, Seasons.Winter, Seasons.Autumn, Seasons.Summer]&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using the built-in &lt;code&gt;JsonStringEnumConverter&lt;/code&gt;, we can get a more readable output in our JSON.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How to set all bits of an enum flag in C#</title>
       <link>https://www.ankursheel.com/blog/set-all-bits-enum-flag-c</link>
       <description>Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag.</description>
@@ -837,46 +877,6 @@ email = author_email
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.&lt;/p&gt;
 &lt;p&gt;Having said that, you should probably have some guidelines to weed out the truly offensive.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to add estimated Reading Time to Posts in Statiq</title>
-      <link>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</link>
-      <description>A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/add-estimated-reading-time-posts-statiq</guid>
-      <pubDate>Thu, 14 Oct 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;In this tutorial, I will show how to use the reading time calculated in &lt;a href="https://www.ankursheel.com/calculate-reading-time"&gt;How to calculate reading time&lt;/a&gt; to use in a Statiq module to add reading time for our posts.&lt;/p&gt;
-&lt;p&gt;To add a module to Statiq, we can inherit from one of the provided base module classes. In this case, we can inherit from the &lt;code&gt;ParallelModule&lt;/code&gt; class as the engine can process the documents in any order. We also need to overload the &lt;code&gt;ExecuteInputAsync()&lt;/code&gt; method to execute this module for each document in the pipeline.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;GenerateReadingTime&lt;/span&gt; : &lt;span class="hljs-title"&gt;ParallelModule&lt;/span&gt;
-{
-    &lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;async&lt;/span&gt; Task&amp;lt;IEnumerable&amp;lt;IDocument&amp;gt;&amp;gt; ExecuteInputAsync(IDocument input, IExecutionContext context)
-    {
-        &lt;span class="hljs-keyword"&gt;using&lt;/span&gt; &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; textReader = input.GetContentTextReader();
-        &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; content = &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; textReader.ReadToEndAsync();
-
-        &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; input.Clone(
-                &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; MetadataItems
-                {
-                    { MetaDataKeys.ReadingTime, _readingTimeService.GetReadingTime(content, context.GetInt("ReadingTimeWordsPerMinute", &lt;span class="hljs-number"&gt;200&lt;/span&gt;)) }
-                })
-            .Yield();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5-6&lt;/em&gt;&lt;/strong&gt;: Get the content associated with the document as a string.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 8&lt;/em&gt;&lt;/strong&gt;: Clone the document by adding new metadata items.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 10-11&lt;/em&gt;&lt;/strong&gt;: Add a new metadata item with key &lt;em&gt;Reading_time_and a value obtained from a call to &lt;code&gt;GetReadingTime&lt;/code&gt;. We use a _ReadingTimeWordsPerMinute&lt;/em&gt; setting to override the default value of 200 words per minute.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 11&lt;/em&gt;&lt;/strong&gt;: Convert the document into an enumerable.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We can now use it on our website. You can see an example below.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-estimated-reading-time-posts-statiq/cover_orig.png" alt="Reading time example"&gt;&lt;/p&gt;
-&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.statiq.dev/framework/pipelines/modules/writing-modules"&gt;Writing Modules in Statiq&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
