@@ -24,7 +24,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="@Model.Document.GetExcerpt()"/>
 <link href="/@Constants.AssetsDirectory/styles.css" rel="stylesheet"/>
 <link href="/@Constants.AssetsDirectory/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="@Model.Context.GetCanonicalUrl(Model.Document)"/>
+@if (!Model.Document.Destination.FileNameWithoutExtension.Name.Equals("404"))
+{
+    <link rel="canonical" href="@Model.Context.GetCanonicalUrl(Model.Document)"/>   
+}
 
 @* Google / Search Engine Tags *@
 <meta itemProp="name" content="@Model.Document.GetTitle()"/>
