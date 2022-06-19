@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles/tools from Shawn Wang, Paul Graham, Ellen Barry, Joseph Mosby, Jason Lengstorf and Corey Ginnivan"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-08-dec-2019"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-08-dec-2019"/>   
 <meta itemProp="name" content="Weekly Roundup 14"/>
 <meta itemProp="description" content="This weeks roundup contains articles/tools from Shawn Wang, Paul Graham, Ellen Barry, Joseph Mosby, Jason Lengstorf and Corey Ginnivan"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-08-dec-2019-facebook.png"/>

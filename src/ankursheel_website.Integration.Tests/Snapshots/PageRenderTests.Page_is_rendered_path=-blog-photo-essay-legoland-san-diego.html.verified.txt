@@ -12,8 +12,7 @@
 <meta name="description" content="For the kid in you, next on the Photo Series of The USA road trip: LegoLand"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-legoland-san-diego"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-legoland-san-diego"/>   
 <meta itemProp="name" content="Photo Essay: Legoland, San Diego"/>
 <meta itemProp="description" content="For the kid in you, next on the Photo Series of The USA road trip: LegoLand"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-legoland-san-diego-facebook.png"/>

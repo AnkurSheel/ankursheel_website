@@ -12,8 +12,7 @@
 <meta name="description" content="Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/child-appreciation"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/child-appreciation"/>   
 <meta itemProp="name" content="Why being an only child is awesome"/>
 <meta itemProp="description" content="Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/child-appreciation-facebook.png"/>

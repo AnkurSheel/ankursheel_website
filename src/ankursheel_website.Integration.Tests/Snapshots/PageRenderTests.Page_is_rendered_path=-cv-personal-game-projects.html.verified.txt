@@ -12,8 +12,7 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/cv/personal-game-projects"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/cv/personal-game-projects"/>   
 <meta itemProp="name" content="Personal Game Projects"/>
 <meta itemProp="description"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/personal-game-projects-facebook.png"/>

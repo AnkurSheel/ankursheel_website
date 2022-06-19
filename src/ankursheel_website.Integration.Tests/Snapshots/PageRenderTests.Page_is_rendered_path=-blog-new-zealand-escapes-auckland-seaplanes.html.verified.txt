@@ -12,8 +12,7 @@
 <meta name="description" content="It is an amazing feeling to take off and land in the water with Auckland Seaplanes. We expected to experience Auckland from above and were not disappointed"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-auckland-seaplanes"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-auckland-seaplanes"/>   
 <meta itemProp="name" content="New Zealand Escapes: Auckland Seaplanes"/>
 <meta itemProp="description" content="It is an amazing feeling to take off and land in the water with Auckland Seaplanes. We expected to experience Auckland from above and were not disappointed"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-auckland-seaplanes-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="To experience the beauty, a ferry trip to Rangitoto Island is a must-do for anyone new to Auckland city"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-rangitoto-island"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-rangitoto-island"/>   
 <meta itemProp="name" content="New Zealand Escapes: Rangitoto Island"/>
 <meta itemProp="description" content="To experience the beauty, a ferry trip to Rangitoto Island is a must-do for anyone new to Auckland city"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-rangitoto-island-facebook.png"/>

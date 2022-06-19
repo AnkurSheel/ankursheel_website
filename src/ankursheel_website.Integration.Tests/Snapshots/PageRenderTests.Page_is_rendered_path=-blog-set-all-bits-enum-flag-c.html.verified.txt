@@ -12,8 +12,7 @@
 <meta name="description" content="Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/set-all-bits-enum-flag-c"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/set-all-bits-enum-flag-c"/>   
 <meta itemProp="name" content="How to set all bits of an enum flag in C#"/>
 <meta itemProp="description" content="Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/set-all-bits-enum-flag-c-facebook.png"/>

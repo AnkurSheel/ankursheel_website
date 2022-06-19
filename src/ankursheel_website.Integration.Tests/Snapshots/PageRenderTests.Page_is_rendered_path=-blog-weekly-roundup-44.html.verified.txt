@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-44"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-44"/>   
 <meta itemProp="name" content="Weekly Roundup 44"/>
 <meta itemProp="description" content="This weeks roundup contains articles from Ruth, Ramit Sethi, Josh Comeau, Victoriia Zaripova and Vince Speelman"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-44-facebook.png"/>

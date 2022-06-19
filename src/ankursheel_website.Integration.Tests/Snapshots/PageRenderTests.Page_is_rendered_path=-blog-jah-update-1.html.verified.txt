@@ -12,8 +12,7 @@
 <meta name="description" content="JAH Update 1: As promised in the previous post, this is what&#x27;s been done so far."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/jah-update-1"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/jah-update-1"/>   
 <meta itemProp="name" content="JAH: Update 1"/>
 <meta itemProp="description" content="JAH Update 1: As promised in the previous post, this is what&#x27;s been done so far."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/jah-update-1-facebook.png"/>

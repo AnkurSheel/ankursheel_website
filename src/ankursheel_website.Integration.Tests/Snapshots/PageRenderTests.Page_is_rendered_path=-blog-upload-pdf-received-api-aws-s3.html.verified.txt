@@ -12,8 +12,7 @@
 <meta name="description" content="A code snippet to encrypt and upload a PDF file to an AWS S3 bucket received as a Stream from an external API"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/upload-pdf-received-api-aws-s3"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/upload-pdf-received-api-aws-s3"/>   
 <meta itemProp="name" content="How do you upload a PDF received from an API to AWS S3?"/>
 <meta itemProp="description" content="A code snippet to encrypt and upload a PDF file to an AWS S3 bucket received as a Stream from an external API"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/upload-pdf-received-api-aws-s3-facebook.png"/>

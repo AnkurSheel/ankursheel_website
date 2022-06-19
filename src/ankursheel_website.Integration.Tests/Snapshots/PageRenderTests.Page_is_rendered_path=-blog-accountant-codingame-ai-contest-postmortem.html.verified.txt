@@ -12,8 +12,7 @@
 <meta name="description" content="A postmortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/accountant-codingame-ai-contest-postmortem"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/accountant-codingame-ai-contest-postmortem"/>   
 <meta itemProp="name" content="A postmortem for The Accountant (Codingame AI Contest)"/>
 <meta itemProp="description" content="A postmortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/accountant-codingame-ai-contest-postmortem-facebook.png"/>

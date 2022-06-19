@@ -12,8 +12,7 @@
 <meta name="description" content="Welcome to my blog. Over a period of time, I hope to fill this space with travel and food-related posts, the status of my projects and tutorials"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/beginning"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/beginning"/>   
 <meta itemProp="name" content="The Beginning"/>
 <meta itemProp="description" content="Welcome to my blog. Over a period of time, I hope to fill this space with travel and food-related posts, the status of my projects and tutorials"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/beginning-facebook.png"/>

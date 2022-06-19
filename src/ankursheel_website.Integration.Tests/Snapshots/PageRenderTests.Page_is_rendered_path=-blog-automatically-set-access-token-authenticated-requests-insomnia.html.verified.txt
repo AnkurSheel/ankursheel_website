@@ -12,8 +12,7 @@
 <meta name="description" content="How can you test a GraphQl endpoint accessible only to authorised users in Insomnia to test your requests (without jumping through hoops)."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/automatically-set-access-token-authenticated-requests-insomnia"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/automatically-set-access-token-authenticated-requests-insomnia"/>   
 <meta itemProp="name" content="How to automatically set the access token in Insomnia"/>
 <meta itemProp="description" content="How can you test a GraphQl endpoint accessible only to authorised users in Insomnia to test your requests (without jumping through hoops)."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/automatically-set-access-token-authenticated-requests-insomnia-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/usa-roadtrip"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/usa-roadtrip"/>   
 <meta itemProp="name" content="USA Roadtrip"/>
 <meta itemProp="description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/usa-roadtrip-facebook.png"/>

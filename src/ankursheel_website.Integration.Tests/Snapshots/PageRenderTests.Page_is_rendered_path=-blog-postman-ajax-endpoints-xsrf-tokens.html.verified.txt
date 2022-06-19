@@ -12,8 +12,7 @@
 <meta name="description" content="How can we test the endpoints using an anti-forgery token to protect us from XSRF(Cross-Site Request Forgery) attacks in Postman"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/postman-ajax-endpoints-xsrf-tokens"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/postman-ajax-endpoints-xsrf-tokens"/>   
 <meta itemProp="name" content="Testing endpoints protected with an XSRF token in Postman"/>
 <meta itemProp="description" content="How can we test the endpoints using an anti-forgery token to protect us from XSRF(Cross-Site Request Forgery) attacks in Postman"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postman-ajax-endpoints-xsrf-tokens-facebook.png"/>

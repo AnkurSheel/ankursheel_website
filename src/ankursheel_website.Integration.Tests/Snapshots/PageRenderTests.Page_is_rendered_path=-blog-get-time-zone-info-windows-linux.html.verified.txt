@@ -12,8 +12,7 @@
 <meta name="description" content="Lets see how we can get the TimeZoneInfo regardless of whether the code is running on Windows or Linux"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/get-time-zone-info-windows-linux"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/get-time-zone-info-windows-linux"/>   
 <meta itemProp="name" content="How to get TimeZoneInfo on Windows and Linux"/>
 <meta itemProp="description" content="Lets see how we can get the TimeZoneInfo regardless of whether the code is running on Windows or Linux"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/get-time-zone-info-windows-linux-facebook.png"/>

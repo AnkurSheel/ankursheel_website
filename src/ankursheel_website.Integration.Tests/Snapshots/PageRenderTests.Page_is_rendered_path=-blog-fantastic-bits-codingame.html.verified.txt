@@ -12,8 +12,7 @@
 <meta name="description" content="Fantastic Bits: The next multiplayer competition being held by the folks at codingame based on the Fantastic Beasts movie"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/fantastic-bits-codingame"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/fantastic-bits-codingame"/>   
 <meta itemProp="name" content="Why you should compete in Fantastic Bits @ Codingame"/>
 <meta itemProp="description" content="Fantastic Bits: The next multiplayer competition being held by the folks at codingame based on the Fantastic Beasts movie"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-facebook.png"/>

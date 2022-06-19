@@ -12,8 +12,7 @@
 <meta name="description" content="In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/run-sql-server-docker-container"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/run-sql-server-docker-container"/>   
 <meta itemProp="name" content="How to run SQL Server in a Docker container"/>
 <meta itemProp="description" content="In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/run-sql-server-docker-container-facebook.png"/>

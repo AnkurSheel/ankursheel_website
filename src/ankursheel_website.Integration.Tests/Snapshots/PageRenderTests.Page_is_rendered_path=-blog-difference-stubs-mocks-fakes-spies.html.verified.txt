@@ -12,8 +12,7 @@
 <meta name="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>   
 <meta itemProp="name" content="What is the difference between Stubs, Mocks, Fakes and Spies"/>
 <meta itemProp="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>

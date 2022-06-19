@@ -12,8 +12,7 @@
 <meta name="description" content="In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/dynamic-programming-series-introduction"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/dynamic-programming-series-introduction"/>   
 <meta itemProp="name" content="A guide to getting started with Dynamic Programming"/>
 <meta itemProp="description" content="In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-series-introduction-facebook.png"/>

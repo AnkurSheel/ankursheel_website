@@ -12,8 +12,7 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/procedural-minecraft-terrain-generator"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/procedural-minecraft-terrain-generator"/>   
 <meta itemProp="name" content="Procedural Minecraft Terrain Generator"/>
 <meta itemProp="description"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/procedural-minecraft-terrain-generator-facebook.png"/>

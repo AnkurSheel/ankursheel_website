@@ -12,8 +12,7 @@
 <meta name="description" content="In this post, I configure AWS to publish email bounce notifications to an SQS queue using terraform"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/handle-bounces-ses-terraform"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/handle-bounces-ses-terraform"/>   
 <meta itemProp="name" content="How to publish email bounce notifications to an SQS queue"/>
 <meta itemProp="description" content="In this post, I configure AWS to publish email bounce notifications to an SQS queue using terraform"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/handle-bounces-ses-terraform-facebook.png"/>

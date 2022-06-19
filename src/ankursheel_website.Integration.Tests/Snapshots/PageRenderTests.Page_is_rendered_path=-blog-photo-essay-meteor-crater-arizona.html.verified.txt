@@ -12,8 +12,7 @@
 <meta name="description" content="Part of the Photo Series of The USA roadtrip : Meteor Crater in Arizona"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-meteor-crater-arizona"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-meteor-crater-arizona"/>   
 <meta itemProp="name" content="Photo Essay: Meteor Crater, Arizona"/>
 <meta itemProp="description" content="Part of the Photo Series of The USA roadtrip : Meteor Crater in Arizona"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-meteor-crater-arizona-facebook.png"/>

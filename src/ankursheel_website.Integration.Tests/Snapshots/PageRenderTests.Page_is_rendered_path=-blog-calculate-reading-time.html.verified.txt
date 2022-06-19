@@ -12,8 +12,7 @@
 <meta name="description" content="A guide to calculating the reading time for a given document"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/calculate-reading-time"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/calculate-reading-time"/>   
 <meta itemProp="name" content="How to calculate reading time"/>
 <meta itemProp="description" content="A guide to calculating the reading time for a given document"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/calculate-reading-time-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="Next on the Photo Series of The USA roadtrip : NASA&#x27;s Space Center"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-nasas-space-center-texas"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-nasas-space-center-texas"/>   
 <meta itemProp="name" content="Photo Essay: NASA&#x27;s Space Center, Texas"/>
 <meta itemProp="description" content="Next on the Photo Series of The USA roadtrip : NASA&#x27;s Space Center"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-nasas-space-center-texas-facebook.png"/>

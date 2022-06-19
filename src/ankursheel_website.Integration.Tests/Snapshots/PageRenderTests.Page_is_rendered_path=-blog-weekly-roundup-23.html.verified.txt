@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles/tools from Ramit Sethi, CSS-Tricks, Stephanie Eckles, Ahmad Shadeed and Travis Almand"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-23"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-23"/>   
 <meta itemProp="name" content="Weekly Roundup 23"/>
 <meta itemProp="description" content="This weeks roundup contains articles/tools from Ramit Sethi, CSS-Tricks, Stephanie Eckles, Ahmad Shadeed and Travis Almand"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-23-facebook.png"/>

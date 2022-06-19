@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles from Graham, Allan, Mike Winters and Kristin Wong"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-1"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-1"/>   
 <meta itemProp="name" content="Weekly Roundup 1"/>
 <meta itemProp="description" content="This weeks roundup contains articles from Graham, Allan, Mike Winters and Kristin Wong"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-1-facebook.png"/>

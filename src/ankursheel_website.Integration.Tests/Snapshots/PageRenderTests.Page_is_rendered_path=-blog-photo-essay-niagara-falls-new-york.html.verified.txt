@@ -12,8 +12,7 @@
 <meta name="description" content="After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop.Next on the Photo Series of The USA roadtrip : Niagara Falls&#x27;"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-niagara-falls-new-york"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-niagara-falls-new-york"/>   
 <meta itemProp="name" content="Photo Essay: Niagara Falls, New York"/>
 <meta itemProp="description" content="After a well deserved rest in Rydal, PA, we continued on our journey and to reach our next stop.Next on the Photo Series of The USA roadtrip : Niagara Falls&#x27;"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-niagara-falls-new-york-facebook.png"/>

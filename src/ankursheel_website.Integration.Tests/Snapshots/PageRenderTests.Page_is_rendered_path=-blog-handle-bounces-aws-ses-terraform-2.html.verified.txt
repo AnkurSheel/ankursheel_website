@@ -12,8 +12,7 @@
 <meta name="description" content="In this post, we will set up a lambda to process the messages that are available on the queue"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/handle-bounces-aws-ses-terraform-2"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/handle-bounces-aws-ses-terraform-2"/>   
 <meta itemProp="name" content="How to use terraform to process SQS messages in a lambda"/>
 <meta itemProp="description" content="In this post, we will set up a lambda to process the messages that are available on the queue"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/handle-bounces-aws-ses-terraform-2-facebook.png"/>

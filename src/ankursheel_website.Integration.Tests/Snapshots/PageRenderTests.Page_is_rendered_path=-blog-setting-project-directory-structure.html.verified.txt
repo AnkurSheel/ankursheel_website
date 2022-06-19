@@ -12,8 +12,7 @@
 <meta name="description" content="In this post, I will cover the third-party libraries, project breakup, and current directory structure that I follow."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/setting-project-directory-structure"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/setting-project-directory-structure"/>   
 <meta itemProp="name" content="How I structure my Game Engine project"/>
 <meta itemProp="description" content="In this post, I will cover the third-party libraries, project breakup, and current directory structure that I follow."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/setting-project-directory-structure-facebook.png"/>

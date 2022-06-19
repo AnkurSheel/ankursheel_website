@@ -12,8 +12,7 @@
 <meta name="description" content="In this travelogue, Gunjan and I visit the Jumeirah Mosque and get a basic understanding of the tenets of Islam."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/inside-jumeirah-mosque"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/inside-jumeirah-mosque"/>   
 <meta itemProp="name" content="Understanding Islam inside the Jumeirah Mosque"/>
 <meta itemProp="description" content="In this travelogue, Gunjan and I visit the Jumeirah Mosque and get a basic understanding of the tenets of Islam."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/inside-jumeirah-mosque-facebook.png"/>

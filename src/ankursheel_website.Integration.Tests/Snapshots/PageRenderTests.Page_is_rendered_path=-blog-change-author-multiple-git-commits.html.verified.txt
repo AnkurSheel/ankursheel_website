@@ -12,8 +12,7 @@
 <meta name="description" content="A snippet for updating the author details of several commits in a git repository"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/change-author-multiple-git-commits"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/change-author-multiple-git-commits"/>   
 <meta itemProp="name" content="How to change the author of multiple Git commits"/>
 <meta itemProp="description" content="A snippet for updating the author details of several commits in a git repository"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/change-author-multiple-git-commits-facebook.png"/>

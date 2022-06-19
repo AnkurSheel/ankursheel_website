@@ -12,8 +12,7 @@
 <meta name="description" content="The third post in the series Testing WordPress Locally deals with installing MySQL on windows."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/installing-mysql"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/installing-mysql"/>   
 <meta itemProp="name" content="How to setup WordPress locally: Installing MySQL"/>
 <meta itemProp="description" content="The third post in the series Testing WordPress Locally deals with installing MySQL on windows."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/installing-mysql-facebook.png"/>

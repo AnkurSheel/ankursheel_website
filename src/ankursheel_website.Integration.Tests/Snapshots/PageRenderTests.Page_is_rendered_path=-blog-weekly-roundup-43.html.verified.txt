@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles from Shawn Wang, Richard Boehmcke, Kealan Parr, Adam Davis, Facundo Gauna and Jens Neuse"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-43"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-43"/>   
 <meta itemProp="name" content="Weekly Roundup 43"/>
 <meta itemProp="description" content="This weeks roundup contains articles from Shawn Wang, Richard Boehmcke, Kealan Parr, Adam Davis, Facundo Gauna and Jens Neuse"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-43-facebook.png"/>

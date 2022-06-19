@@ -12,8 +12,7 @@
 <meta name="description" content="A video of a bear cub that wandered near our car in the Yellowstone National Park."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/videos-bear-yellowstone-national-park"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/videos-bear-yellowstone-national-park"/>   
 <meta itemProp="name" content="Video: Bear at Yellowstone National Park"/>
 <meta itemProp="description" content="A video of a bear cub that wandered near our car in the Yellowstone National Park."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/videos-bear-yellowstone-national-park-facebook.png"/>

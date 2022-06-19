@@ -12,8 +12,7 @@
 <meta name="description" content="The views from the Mount Maunganui summit tends to leave one breathless. Or is it because of the exertion of walking along a steep track? Decide for yourself"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-photo-essay-mount-maunganui"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-photo-essay-mount-maunganui"/>   
 <meta itemProp="name" content="New Zealand Escapes: Photo Essay - Mount Maunganui"/>
 <meta itemProp="description" content="The views from the Mount Maunganui summit tends to leave one breathless. Or is it because of the exertion of walking along a steep track? Decide for yourself"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-photo-essay-mount-maunganui-facebook.png"/>

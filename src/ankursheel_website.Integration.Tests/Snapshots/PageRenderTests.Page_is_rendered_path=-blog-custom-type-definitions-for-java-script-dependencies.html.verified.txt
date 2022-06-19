@@ -12,8 +12,7 @@
 <meta name="description" content="What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/custom-type-definitions-for-java-script-dependencies"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/custom-type-definitions-for-java-script-dependencies"/>   
 <meta itemProp="name" content="Create custom type definitions for JavaScript dependencies"/>
 <meta itemProp="description" content="What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/custom-type-definitions-for-java-script-dependencies-facebook.png"/>

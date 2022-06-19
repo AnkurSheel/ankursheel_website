@@ -12,8 +12,7 @@
 <meta name="description" content="Seen from above, pristine blue waters and snowy white mountains surround the downtown&#x27;s metallic skyscrapers, earning Seattle its nickname, The Emerald City"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-seattle-washington"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-seattle-washington"/>   
 <meta itemProp="name" content="Photo Essay: Seattle, Washington"/>
 <meta itemProp="description" content="Seen from above, pristine blue waters and snowy white mountains surround the downtown&#x27;s metallic skyscrapers, earning Seattle its nickname, The Emerald City"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-seattle-washington-facebook.png"/>

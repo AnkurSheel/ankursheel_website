@@ -12,8 +12,7 @@
 <meta name="description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/automating-creation-new-blog-post"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/automating-creation-new-blog-post"/>   
 <meta itemProp="name" content="How to automate the creation of a new blog post"/>
 <meta itemProp="description" content="Creating a new blogpost in markdown and gatsby has quite a bit of boilerplate. Let us see how to automate it."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/automating-creation-new-blog-post-facebook.png"/>

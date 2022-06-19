@@ -12,8 +12,7 @@
 <meta name="description" content="When it rains in Milford Sound, the rainfall makes hundreds of waterfalls which, combined with the rainbows, make for a mystical sight."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-photo-essay-milford-sound"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-photo-essay-milford-sound"/>   
 <meta itemProp="name" content="New Zealand Escapes: Photo Essay - Milford Sound"/>
 <meta itemProp="description" content="When it rains in Milford Sound, the rainfall makes hundreds of waterfalls which, combined with the rainbows, make for a mystical sight."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-photo-essay-milford-sound-facebook.png"/>

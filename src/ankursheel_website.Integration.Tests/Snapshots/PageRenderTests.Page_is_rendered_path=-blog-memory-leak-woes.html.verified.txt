@@ -12,8 +12,7 @@
 <meta name="description" content="Macro trickery to find the offending file(s) and line(s) causing Memory Leak(s) without using a commercial program."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/memory-leak-woes"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/memory-leak-woes"/>   
 <meta itemProp="name" content="A guide to finding memory leaks using macros in C&#x2B;&#x2B;"/>
 <meta itemProp="description" content="Macro trickery to find the offending file(s) and line(s) causing Memory Leak(s) without using a commercial program."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/memory-leak-woes-facebook.png"/>

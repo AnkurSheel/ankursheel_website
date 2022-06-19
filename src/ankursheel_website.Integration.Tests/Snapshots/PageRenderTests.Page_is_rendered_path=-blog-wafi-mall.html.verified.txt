@@ -12,8 +12,7 @@
 <meta name="description" content="In this travelogue, Gunjan and I spend some time at the Wafi Mall in Dubai."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/wafi-mall"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wafi-mall"/>   
 <meta itemProp="name" content="A visit to Wafi Mall"/>
 <meta itemProp="description" content="In this travelogue, Gunjan and I spend some time at the Wafi Mall in Dubai."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wafi-mall-facebook.png"/>

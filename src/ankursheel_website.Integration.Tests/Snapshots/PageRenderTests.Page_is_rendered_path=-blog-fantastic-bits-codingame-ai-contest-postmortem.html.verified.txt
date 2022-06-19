@@ -12,8 +12,7 @@
 <meta name="description" content="A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/fantastic-bits-codingame-ai-contest-postmortem"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/fantastic-bits-codingame-ai-contest-postmortem"/>   
 <meta itemProp="name" content="A postmortem for Fantastic Bits (Codingame AI Contest)"/>
 <meta itemProp="description" content="A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/fantastic-bits-codingame-ai-contest-postmortem-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="In this C&#x2B;&#x2B; tutorial, we see an easy way to prevent the compiler from making objects, i.e. non-copyable objects."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/noncopyable-objects"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/noncopyable-objects"/>   
 <meta itemProp="name" content="How to prevent the compiler from copying an object in cpp"/>
 <meta itemProp="description" content="In this C&#x2B;&#x2B; tutorial, we see an easy way to prevent the compiler from making objects, i.e. non-copyable objects."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/noncopyable-objects-facebook.png"/>

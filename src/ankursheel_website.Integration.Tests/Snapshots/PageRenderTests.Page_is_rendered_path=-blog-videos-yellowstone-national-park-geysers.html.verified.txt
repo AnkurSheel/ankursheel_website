@@ -12,8 +12,7 @@
 <meta name="description" content="A few videos of the Yellowstone National Park Geysers."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/videos-yellowstone-national-park-geysers"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/videos-yellowstone-national-park-geysers"/>   
 <meta itemProp="name" content="Videos: Yellowstone National Park Geysers"/>
 <meta itemProp="description" content="A few videos of the Yellowstone National Park Geysers."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/videos-yellowstone-national-park-geysers-facebook.png"/>

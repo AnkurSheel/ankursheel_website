@@ -12,8 +12,7 @@
 <meta name="description" content="Postmortem of the Asteroids clone that I made. "/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-asteroids"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-asteroids"/>   
 <meta itemProp="name" content="A postmortem of the Asteroids clone"/>
 <meta itemProp="description" content="Postmortem of the Asteroids clone that I made. "/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postmortem-asteroids-facebook.png"/>

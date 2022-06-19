@@ -12,8 +12,7 @@
 <meta name="description" content="Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura"/>   
 <meta itemProp="name" content="How to export highlights and annotations from a Kobo Aura"/>
 <meta itemProp="description" content="Exporting annotations/highlights from a Kobo can be a pain. Luckily, there is a setting which you can use to easily export them to a txt file."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/exporting-highlights-annotations-kobo-aura-facebook.png"/>

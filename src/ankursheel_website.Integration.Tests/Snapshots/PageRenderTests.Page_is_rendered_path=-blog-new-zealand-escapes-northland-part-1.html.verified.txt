@@ -12,8 +12,7 @@
 <meta name="description" content="For our very next escape, we travel through Northland to the the very tip of New Zealand - the place where the Tasman Sea meets the mighty Pacific Ocean."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-northland-part-1"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-northland-part-1"/>   
 <meta itemProp="name" content="New Zealand Escapes: Northland - Part 1"/>
 <meta itemProp="description" content="For our very next escape, we travel through Northland to the the very tip of New Zealand - the place where the Tasman Sea meets the mighty Pacific Ocean."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-northland-part-1-facebook.png"/>

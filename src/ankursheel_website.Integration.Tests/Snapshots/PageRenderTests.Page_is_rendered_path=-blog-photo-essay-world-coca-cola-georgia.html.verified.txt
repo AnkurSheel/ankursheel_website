@@ -12,8 +12,7 @@
 <meta name="description" content="Next on the Photo Series of The USA roadtrip: World of Coca Cola"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-world-coca-cola-georgia"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-world-coca-cola-georgia"/>   
 <meta itemProp="name" content="Photo Essay: World Of Coca Cola, Georgia"/>
 <meta itemProp="description" content="Next on the Photo Series of The USA roadtrip: World of Coca Cola"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-world-coca-cola-georgia-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="How can we create SNS topics to access SES created in a different region to the rest of our infrastructure"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/create-sns-topic-ses-not-default-provider"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/create-sns-topic-ses-not-default-provider"/>   
 <meta itemProp="name" content="How to create an SNS topic for SES in a different region with terraform"/>
 <meta itemProp="description" content="How can we create SNS topics to access SES created in a different region to the rest of our infrastructure"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/create-sns-topic-ses-not-default-provider-facebook.png"/>

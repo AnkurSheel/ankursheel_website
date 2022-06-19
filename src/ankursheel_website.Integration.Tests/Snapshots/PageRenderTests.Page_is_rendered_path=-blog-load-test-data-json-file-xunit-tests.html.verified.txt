@@ -12,8 +12,7 @@
 <meta name="description" content="In this post, we add a custom attribute in xUnit to load test data from a JSON file."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/load-test-data-json-file-xunit-tests"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/load-test-data-json-file-xunit-tests"/>   
 <meta itemProp="name" content="How to load test data from a JSON file for xUnit tests"/>
 <meta itemProp="description" content="In this post, we add a custom attribute in xUnit to load test data from a JSON file."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/load-test-data-json-file-xunit-tests-facebook.png"/>

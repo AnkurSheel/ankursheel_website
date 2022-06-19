@@ -12,8 +12,7 @@
 <meta name="description" content="A short video of a nimble footed goat in Glacier National Park."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/video-goat-glacier-national-park"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/video-goat-glacier-national-park"/>   
 <meta itemProp="name" content="Video: Goat in Glacier National Park"/>
 <meta itemProp="description" content="A short video of a nimble footed goat in Glacier National Park."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/video-goat-glacier-national-park-facebook.png"/>

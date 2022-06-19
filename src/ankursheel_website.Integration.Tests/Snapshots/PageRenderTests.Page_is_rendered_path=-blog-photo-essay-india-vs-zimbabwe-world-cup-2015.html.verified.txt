@@ -12,8 +12,7 @@
 <meta name="description" content="The India vs Zimbabwe match held at Auckland for the Cricket World Cup 2015"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-india-vs-zimbabwe-world-cup-2015"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-india-vs-zimbabwe-world-cup-2015"/>   
 <meta itemProp="name" content="Photo Essay: India Vs Zimbabwe, World Cup 2015"/>
 <meta itemProp="description" content="The India vs Zimbabwe match held at Auckland for the Cricket World Cup 2015"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-india-vs-zimbabwe-world-cup-2015-facebook.png"/>

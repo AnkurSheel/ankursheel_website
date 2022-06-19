@@ -12,8 +12,7 @@
 <meta name="description" content="Steps to move a commit from one repository to another"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/move-commit-between-repositories"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/move-commit-between-repositories"/>   
 <meta itemProp="name" content="How to move a commit between repositories"/>
 <meta itemProp="description" content="Steps to move a commit from one repository to another"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/move-commit-between-repositories-facebook.png"/>

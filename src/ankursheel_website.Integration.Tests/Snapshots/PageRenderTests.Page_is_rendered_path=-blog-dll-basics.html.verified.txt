@@ -12,8 +12,7 @@
 <meta name="description" content="This post deals with the basic information you need to know to begin using DLL&#x27;s."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/dll-basics"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/dll-basics"/>   
 <meta itemProp="name" content="How to start using Dynamic-link libraries (DLL)"/>
 <meta itemProp="description" content="This post deals with the basic information you need to know to begin using DLL&#x27;s."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dll-basics-facebook.png"/>

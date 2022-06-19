@@ -12,8 +12,7 @@
 <meta name="description" content="A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/use-azure-pipelines-deploy-gatsby-site-schedule"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/use-azure-pipelines-deploy-gatsby-site-schedule"/>   
 <meta itemProp="name" content="How to deploy a Gatsby site on a schedule with Azure Pipelines"/>
 <meta itemProp="description" content="A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/use-azure-pipelines-deploy-gatsby-site-schedule-facebook.png"/>

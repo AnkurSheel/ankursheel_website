@@ -12,8 +12,7 @@
 <meta name="description" content="My two cents on whether you should rent or buy a house."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/rent-buy-house"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/rent-buy-house"/>   
 <meta itemProp="name" content="Should I Rent Or Buy a House?"/>
 <meta itemProp="description" content="My two cents on whether you should rent or buy a house."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>

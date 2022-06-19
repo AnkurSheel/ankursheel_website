@@ -12,8 +12,7 @@
 <meta name="description" content="Occasionally, I have needed to stop and remove all the docker containers I am running locally. Let&#x27;s see how we can do it easily."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/stop-remove-all-docker-containers"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/stop-remove-all-docker-containers"/>   
 <meta itemProp="name" content="How to stop and remove all Docker containers"/>
 <meta itemProp="description" content="Occasionally, I have needed to stop and remove all the docker containers I am running locally. Let&#x27;s see how we can do it easily."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/stop-remove-all-docker-containers-facebook.png"/>

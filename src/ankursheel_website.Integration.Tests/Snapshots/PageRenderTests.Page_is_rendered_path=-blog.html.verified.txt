@@ -12,8 +12,7 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog"/>   
 <meta itemProp="name" content="All Articles"/>
 <meta itemProp="description"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog"/>
@@ -106,6 +105,12 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -113,12 +118,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/programmatically-remove-service-worker">How to programmatically remove a service worker</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
         </li>
 </ul>
 
@@ -176,6 +175,9 @@
     <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (52)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a> - <time class="prose-sm" datetime="22-06-20">June 20, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a> - <time class="prose-sm" datetime="22-06-09">June 09, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
@@ -213,9 +215,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/add-tailwind-css-statiq-website">Add Tailwind CSS to a Statiq website</a> - <time class="prose-sm" datetime="21-09-09">September 09, 2021</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a> - <time class="prose-sm" datetime="21-08-30">August 30, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/override-netlify-build-config">How to override the netlify build config</a> - <time class="prose-sm" datetime="21-08-23">August 23, 2021</time>
@@ -374,7 +373,7 @@
     <h3 id="ramblings" class="py-4 border-b border-grey-lighter capitalize">ramblings (15)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-29">December 29, 2021</time>
+                <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-31">December 31, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a> - <time class="prose-sm" datetime="21-08-16">August 16, 2021</time>
@@ -563,8 +562,11 @@
                 <a href="/blog/london">Roaming around in London</a> - <time class="prose-sm" datetime="13-11-22">November 22, 2013</time>
             </li>
     </ul>
-    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (8)</h3>
+    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (9)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a> - <time class="prose-sm" datetime="22-06-13">June 13, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/add-cursive-fonts-vs-code">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
             </li>

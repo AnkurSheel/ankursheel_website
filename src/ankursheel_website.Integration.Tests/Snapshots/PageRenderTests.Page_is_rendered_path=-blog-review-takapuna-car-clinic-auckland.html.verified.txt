@@ -12,8 +12,7 @@
 <meta name="description" content="A review of the Takapuna Car Clinic garage in Auckland."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/review-takapuna-car-clinic-auckland"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/review-takapuna-car-clinic-auckland"/>   
 <meta itemProp="name" content="Review: Takapuna Car Clinic, Auckland"/>
 <meta itemProp="description" content="A review of the Takapuna Car Clinic garage in Auckland."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/review-takapuna-car-clinic-auckland-facebook.png"/>

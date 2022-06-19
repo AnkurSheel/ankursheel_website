@@ -12,8 +12,7 @@
 <meta name="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/migrating-wordpress-gatsby"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/migrating-wordpress-gatsby"/>   
 <meta itemProp="name" content="Why and How I migrated my website from WordPress to Gatsby"/>
 <meta itemProp="description" content="For most of the time, I have been blogging, I have been on WordPress. What motivated me to migrate my site to Gatsby, and how did I move the site"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/migrating-wordpress-gatsby-facebook.png"/>

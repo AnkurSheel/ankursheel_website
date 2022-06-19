@@ -12,8 +12,7 @@
 <meta name="description" content="Did you know that you can check in code as anyone in your git repository by default? This article shows you how to prevent this problem by using a GUI."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/securing-git-commits-windows"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/securing-git-commits-windows"/>   
 <meta itemProp="name" content="A guide to securing git commits from tricking you on Windows"/>
 <meta itemProp="description" content="Did you know that you can check in code as anyone in your git repository by default? This article shows you how to prevent this problem by using a GUI."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/securing-git-commits-windows-facebook.png"/>

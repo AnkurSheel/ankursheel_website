@@ -12,8 +12,7 @@
 <meta name="description" content="A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/upload-multiple-files-aws-s3-terraform"/>   
 <meta itemProp="name" content="How to Upload Multiple Files to AWS S3 using Terraform"/>
 <meta itemProp="description" content="A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/upload-multiple-files-aws-s3-terraform-facebook.png"/>

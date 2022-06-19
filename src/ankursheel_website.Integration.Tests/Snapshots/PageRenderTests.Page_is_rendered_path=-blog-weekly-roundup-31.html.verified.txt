@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles/tools from Omar Rizwan, Expedited Security, Growth.Design, Kent C. Dodds, Lorenz Wei&#xDF; and Michael Chein"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-31"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-31"/>   
 <meta itemProp="name" content="Weekly Roundup 31"/>
 <meta itemProp="description" content="This weeks roundup contains articles/tools from Omar Rizwan, Expedited Security, Growth.Design, Kent C. Dodds, Lorenz Wei&#xDF; and Michael Chein"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-31-facebook.png"/>

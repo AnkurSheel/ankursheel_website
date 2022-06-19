@@ -12,8 +12,7 @@
 <meta name="description" content="In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/desert-safari"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/desert-safari"/>   
 <meta itemProp="name" content="Desert Safari"/>
 <meta itemProp="description" content="In this travelogue, Gunjan and I go on a desert safari for some dune bashing, Arabic coffee with dinner and the ever-popular Tandura and belly dance."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/desert-safari-facebook.png"/>

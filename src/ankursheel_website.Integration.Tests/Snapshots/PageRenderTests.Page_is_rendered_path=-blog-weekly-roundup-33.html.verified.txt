@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles/tools from No&#x10D;nica Fee, LinearB, Gabor Cselle, Drew Bredvick, Hiten Shah and Ramit Sethi"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-33"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-33"/>   
 <meta itemProp="name" content="Weekly Roundup 33"/>
 <meta itemProp="description" content="This weeks roundup contains articles/tools from No&#x10D;nica Fee, LinearB, Gabor Cselle, Drew Bredvick, Hiten Shah and Ramit Sethi"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-33-facebook.png"/>

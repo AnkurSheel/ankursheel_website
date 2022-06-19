@@ -12,8 +12,7 @@
 <meta name="description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/dream-job"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/dream-job"/>   
 <meta itemProp="name" content="What is my idea of a dream job"/>
 <meta itemProp="description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dream-job-facebook.png"/>

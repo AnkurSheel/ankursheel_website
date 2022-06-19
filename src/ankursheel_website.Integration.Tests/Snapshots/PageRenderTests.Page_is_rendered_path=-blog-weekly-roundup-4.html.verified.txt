@@ -12,8 +12,7 @@
 <meta name="description" content="This week&#x27;s roundup contains articles from YTravelblog, Millenial Revolution, Money Smart Guides and Zen Pencils"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-4"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-4"/>   
 <meta itemProp="name" content="Weekly Roundup 4"/>
 <meta itemProp="description" content="This week&#x27;s roundup contains articles from YTravelblog, Millenial Revolution, Money Smart Guides and Zen Pencils"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-4-facebook.png"/>

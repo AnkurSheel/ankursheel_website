@@ -12,8 +12,7 @@
 <meta name="description" content="A postmortem of the Pong clone that I made."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-mpong"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-mpong"/>   
 <meta itemProp="name" content="A Postmortem of Mpong"/>
 <meta itemProp="description" content="A postmortem of the Pong clone that I made."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postmortem-mpong-facebook.png"/>

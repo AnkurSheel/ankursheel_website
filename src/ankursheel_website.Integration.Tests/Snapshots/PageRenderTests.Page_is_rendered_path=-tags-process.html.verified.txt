@@ -12,8 +12,7 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/tags/process"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/tags/process"/>   
 <meta itemProp="name" content="Posts tagged as &quot;process&quot;"/>
 <meta itemProp="description"/>
 <meta property="og:url" content="https://www.ankursheel.com/tags/process"/>

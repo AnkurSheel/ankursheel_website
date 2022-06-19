@@ -12,8 +12,7 @@
 <meta name="description" content="Tauranga is a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-tauranga"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-tauranga"/>   
 <meta itemProp="name" content="New Zealand Escapes: Tauranga"/>
 <meta itemProp="description" content="Tauranga is a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-tauranga-facebook.png"/>

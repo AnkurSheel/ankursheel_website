@@ -12,8 +12,7 @@
 <meta name="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>   
 <meta itemProp="name" content="How to setup WordPress locally: Introduction"/>
 <meta itemProp="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="The first release of the Breakout clone is finally here."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/breakout-clone-v1-0"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/breakout-clone-v1-0"/>   
 <meta itemProp="name" content="Breakout Clone v1.0"/>
 <meta itemProp="description" content="The first release of the Breakout clone is finally here."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/breakout-clone-v1-0-facebook.png"/>

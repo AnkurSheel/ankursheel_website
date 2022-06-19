@@ -12,8 +12,7 @@
 <meta name="description" content="The next post in the Testing WordPress Locally series deals with Installing phpMyAdmin on windows."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/installing-phpmyadmin"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/installing-phpmyadmin"/>   
 <meta itemProp="name" content="How to setup WordPress locally: Installing phpMyAdmin"/>
 <meta itemProp="description" content="The next post in the Testing WordPress Locally series deals with Installing phpMyAdmin on windows."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/installing-phpmyadmin-facebook.png"/>

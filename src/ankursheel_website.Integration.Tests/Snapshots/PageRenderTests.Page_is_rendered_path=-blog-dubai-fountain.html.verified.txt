@@ -12,8 +12,7 @@
 <meta name="description" content="The Dubai Fountain is the world&#x2019;s largest dancing fountain. There is a show every half hour with the fountain dancing to a different piece of music every time"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/dubai-fountain"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/dubai-fountain"/>   
 <meta itemProp="name" content="Dubai Fountain"/>
 <meta itemProp="description" content="The Dubai Fountain is the world&#x2019;s largest dancing fountain. There is a show every half hour with the fountain dancing to a different piece of music every time"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dubai-fountain-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="Red, juicy strawberries are best eaten as soon as they&#x27;ve been picked. One of the easiest ways to do this is to get them at your local strawberry picking farm"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-massey-strawberry-picking-auckland"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-massey-strawberry-picking-auckland"/>   
 <meta itemProp="name" content="New Zealand Escapes: Massey Strawberry Picking, Auckland"/>
 <meta itemProp="description" content="Red, juicy strawberries are best eaten as soon as they&#x27;ve been picked. One of the easiest ways to do this is to get them at your local strawberry picking farm"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-massey-strawberry-picking-auckland-facebook.png"/>

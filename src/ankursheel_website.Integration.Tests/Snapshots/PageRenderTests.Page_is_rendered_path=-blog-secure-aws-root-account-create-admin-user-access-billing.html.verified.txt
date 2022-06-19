@@ -12,8 +12,7 @@
 <meta name="description" content="How can we create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to log in as a root user"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/secure-aws-root-account-create-admin-user-access-billing"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/secure-aws-root-account-create-admin-user-access-billing"/>   
 <meta itemProp="name" content="How to add a billing admin user to secure an AWS root account"/>
 <meta itemProp="description" content="How can we create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to log in as a root user"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/secure-aws-root-account-create-admin-user-access-billing-facebook.png"/>

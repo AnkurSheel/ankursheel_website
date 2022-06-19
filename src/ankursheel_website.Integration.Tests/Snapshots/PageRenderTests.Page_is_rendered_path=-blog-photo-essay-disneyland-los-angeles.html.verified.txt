@@ -12,8 +12,7 @@
 <meta name="description" content="Next on the Photo Series of The USA roadtrip: Disney Land in Los Angeles"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-disneyland-los-angeles"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-disneyland-los-angeles"/>   
 <meta itemProp="name" content="Photo Essay: DisneyLand Los Angeles"/>
 <meta itemProp="description" content="Next on the Photo Series of The USA roadtrip: Disney Land in Los Angeles"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-disneyland-los-angeles-facebook.png"/>

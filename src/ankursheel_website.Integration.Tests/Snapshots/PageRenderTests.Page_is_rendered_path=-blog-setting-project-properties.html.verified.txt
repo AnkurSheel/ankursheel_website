@@ -12,8 +12,7 @@
 <meta name="description" content="The next post in the series talks about setting the project properties to be persistent."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/setting-project-properties"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/setting-project-properties"/>   
 <meta itemProp="name" content="Setting up the project properties for Game Engine Project"/>
 <meta itemProp="description" content="The next post in the series talks about setting the project properties to be persistent."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/setting-project-properties-facebook.png"/>

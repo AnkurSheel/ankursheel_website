@@ -12,8 +12,7 @@
 <meta name="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"/>   
 <meta itemProp="name" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
 <meta itemProp="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>

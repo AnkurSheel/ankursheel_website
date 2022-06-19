@@ -12,8 +12,7 @@
 <meta name="description" content="I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/filtering-google-analytics"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/filtering-google-analytics"/>   
 <meta itemProp="name" content="How to filter yourself from showing up in Google Analytics"/>
 <meta itemProp="description" content="I am going to attempt to show exactly how to add google analytics and  also to filter yourself from the data if you have a self-hosted blog using WordPress"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/filtering-google-analytics-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles/tools from Kevin Stewart, Mark Dalgleish, Mike Mangialardi, Al Tenhundfeld, Nick Babich and Nicky Case"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-32"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-32"/>   
 <meta itemProp="name" content="Weekly Roundup 32"/>
 <meta itemProp="description" content="This weeks roundup contains articles/tools from Kevin Stewart, Mark Dalgleish, Mike Mangialardi, Al Tenhundfeld, Nick Babich and Nicky Case"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-32-facebook.png"/>

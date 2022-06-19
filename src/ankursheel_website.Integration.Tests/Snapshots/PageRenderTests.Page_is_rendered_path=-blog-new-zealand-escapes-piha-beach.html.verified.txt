@@ -12,8 +12,7 @@
 <meta name="description" content="A travelogue of our visit to Piha beach - One of the most famous beaches on the west coast of New Zealand."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-piha-beach"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-piha-beach"/>   
 <meta itemProp="name" content="New Zealand Escapes: Piha Beach"/>
 <meta itemProp="description" content="A travelogue of our visit to Piha beach - One of the most famous beaches on the west coast of New Zealand."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-piha-beach-facebook.png"/>

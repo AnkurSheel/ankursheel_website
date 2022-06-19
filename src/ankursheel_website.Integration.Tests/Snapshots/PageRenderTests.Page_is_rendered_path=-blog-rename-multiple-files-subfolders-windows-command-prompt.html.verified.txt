@@ -12,8 +12,7 @@
 <meta name="description" content="A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt"/>   
 <meta itemProp="name" content="How to rename multiple files in subfolders using Windows command prompt"/>
 <meta itemProp="description" content="A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rename-multiple-files-subfolders-windows-command-prompt-facebook.png"/>
@@ -94,7 +93,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-08-30">August 30, 2021</time></span>
+        <span>Last Updated: <time datetime="2022-06-20">June 20, 2022</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -107,20 +106,39 @@
 </div>
 
 <html><head></head><body><h2 id="problem">Problem</h2>
-<p>As part of the <a href="migrating-gatsby-statiq">migration from Gatsby to Statiq</a>, I had to rename all the files with the extension <em>mdx</em> to <em>md</em>. Now, I could do it one by one or find a utility but using a single command is more elegant.</p>
+<p>As part of the <a href="migrating-gatsby-statiq">migration from Gatsby to Statiq</a>, I had to rename all the files with the extension <em>mdx</em> to <em>md</em>.</p>
+<p>For the posts, the <em>mdx</em> file lived in a directory structure similar to <strong>posts/<em>yyyy</em>/<em>yyyy-mm-dddd-slug</em>/index.mdx</strong>. I wanted to updated this to <strong>posts/<em>yyyy</em>/<em>yyyy-mm-dddd-slug</em>/slug.md</strong>.</p>
+<p>Now, I could do it one by one or find a utility but using a single command is more elegant.</p>
 <h2 id="solution">Solution</h2>
-<p>To rename all the files recursively, we can use the REN (rename) command as follows.</p>
-<pre><code class="language-bash hljs">FOR /R %G IN (*.mdx) DO REN &quot;%G&quot; &quot;%~dpnG.md&quot;
+<p>You can start using the REN (rename) command to update the filename to the parent directory name.</p>
+<pre><code class="language-bat hljs"><span class="hljs-keyword">for</span> /r <span class="hljs-variable">%%F</span> <span class="hljs-keyword">in</span> (*.mdx) <span class="hljs-keyword">do</span> (
+    <span class="hljs-keyword">for</span> <span class="hljs-variable">%%A</span> <span class="hljs-keyword">in</span> (&quot;<span class="hljs-variable">%%F</span>\..&quot;) <span class="hljs-keyword">do</span> (
+        <span class="hljs-built_in">ren</span> &quot;<span class="hljs-variable">%%F</span>&quot; &quot;<span class="hljs-variable">%%~</span>nxA.mdx
+        )
+)&quot;
 </code></pre>
 <p>Let's unpack this command.</p>
 <ul>
-<li><strong>FOR</strong>: Loops through files</li>
-<li><strong>/R</strong>: Recurse through subfolders.</li>
-<li><strong>%G</strong>: A parameter set to a different value for each iteration of the for loop.</li>
-<li><strong>(*.mdx)</strong>: The filename pattern that we want to match.</li>
-<li><strong>REN</strong>: The command to rename a file</li>
-<li><strong>%~dpnG&quot;</strong>: Expands the parameter of the original filename to the fully qualified path without the extension</li>
+<li><strong>Line 1</strong>: Loops through all the MDX files recursively and set the value to a parameter.</li>
+<li><strong>Line 2</strong>: Loop through the parent directory for the MDX file.</li>
+<li><strong>Line 3</strong>: renames the MDX file to the parent directory name.
+<ul>
+<li><strong>~nxA</strong>: Expands the value stored in parameter <strong>A</strong> to a filename and extension</li>
 </ul>
+</li>
+</ul>
+<p>As an example this will rename a file in <strong>posts/<em>yyyy</em>/<em>yyyy-mm-dddd-slug</em>/index.mdx</strong> to <strong>posts/<em>yyyy</em>/<em>yyyy-mm-dddd-slug</em>/<em>yyyy-mm-dddd-slug</em>.mdx</strong>.</p>
+<p>This is not exactly what we wanted, so let's use another REN command.</p>
+<pre><code class="language-bat hljs">for /r %%F in (*.mdx) do (
+    ren &quot;%%F&quot; &quot;///////////*.md
+)&quot;
+</code></pre>
+<p>Let's unpack this command.</p>
+<ul>
+<li><strong>Line 1</strong>: Loops through all the MDX files recursively and set the value to a parameter.</li>
+<li><strong>Line 2</strong>: Renames the file to .md. The <strong>/</strong> drops 1 character from the filename. The number of slashes maps to <em>yyyy-mm-dddd</em> in the file name.</li>
+</ul>
+<p>As an example this will rename a file in <strong>posts/<em>yyyy</em>/<em>yyyy-mm-dddd-slug</em>/<em>yyyy-mm-dddd-slug</em>.mdx</strong> to posts/<em>yyyy</em>/<em>yyyy-mm-dddd-slug</em>/<em>slug</em>.md.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://ss64.com/nt/for_r.html">FOR /R</a></li>

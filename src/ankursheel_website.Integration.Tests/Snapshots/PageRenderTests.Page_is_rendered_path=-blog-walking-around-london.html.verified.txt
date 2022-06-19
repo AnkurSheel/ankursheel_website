@@ -12,8 +12,7 @@
 <meta name="description" content="In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/walking-around-london"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/walking-around-london"/>   
 <meta itemProp="name" content="Walking Around in London"/>
 <meta itemProp="description" content="In this travelogue of London, I visit the Tower of London, Trafalgar Square and Buckingham Palace."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/walking-around-london-facebook.png"/>

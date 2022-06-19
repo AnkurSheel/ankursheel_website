@@ -12,8 +12,7 @@
 <meta name="description" content="We reach Cape Reinga just in time for the sunset. On our way back, we check out the 90 mile beach and KawaKawa."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-northland-part-2"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-northland-part-2"/>   
 <meta itemProp="name" content="New Zealand Escapes: Northland - Part 2"/>
 <meta itemProp="description" content="We reach Cape Reinga just in time for the sunset. On our way back, we check out the 90 mile beach and KawaKawa."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-northland-part-2-facebook.png"/>

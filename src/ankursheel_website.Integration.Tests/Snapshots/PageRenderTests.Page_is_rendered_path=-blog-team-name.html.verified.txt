@@ -12,8 +12,7 @@
 <meta name="description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/team-name"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/team-name"/>   
 <meta itemProp="name" content="What&#x27;s in a team name"/>
 <meta itemProp="description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>

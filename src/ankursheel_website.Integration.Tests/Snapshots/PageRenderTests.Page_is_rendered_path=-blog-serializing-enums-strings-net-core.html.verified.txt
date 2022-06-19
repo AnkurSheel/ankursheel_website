@@ -12,8 +12,7 @@
 <meta name="description" content="If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/serializing-enums-strings-net-core"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/serializing-enums-strings-net-core"/>   
 <meta itemProp="name" content="How to Serialize enums as strings in .Net Core"/>
 <meta itemProp="description" content="If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/serializing-enums-strings-net-core-facebook.png"/>
@@ -94,7 +93,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-06-14">June 14, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-06-13">June 13, 2022</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>

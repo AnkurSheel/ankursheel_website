@@ -12,8 +12,7 @@
 <meta name="description" content="How we can use CSS to display an iframe with 100% width and 16:9 aspect ratio so that we can display YouTube videos to be full-width with a 16:9 aspect ratio"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/full-width-you-tube-video-embed"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/full-width-you-tube-video-embed"/>   
 <meta itemProp="name" content="Embed a YouTube video with 16:9 aspect ratio and full-width"/>
 <meta itemProp="description" content="How we can use CSS to display an iframe with 100% width and 16:9 aspect ratio so that we can display YouTube videos to be full-width with a 16:9 aspect ratio"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/full-width-you-tube-video-embed-facebook.png"/>

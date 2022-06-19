@@ -12,8 +12,7 @@
 <meta name="description" content="Guidelines to learn the basics of 3D programming."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/ten-things-achieve-starting-3d-programming"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/ten-things-achieve-starting-3d-programming"/>   
 <meta itemProp="name" content="10 things to do when getting started with 3D programming"/>
 <meta itemProp="description" content="Guidelines to learn the basics of 3D programming."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/ten-things-achieve-starting-3d-programming-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="A postmortem for Coders of the Caribbean, a Codingame contest based on Pirates of the Caribbean."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/coders-carribean-codingame-ai-contest-postmortem"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/coders-carribean-codingame-ai-contest-postmortem"/>   
 <meta itemProp="name" content="PostMortem for Codingame AI Contest: Coders of the Caribbean"/>
 <meta itemProp="description" content="A postmortem for Coders of the Caribbean, a Codingame contest based on Pirates of the Caribbean."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/coders-carribean-codingame-ai-contest-postmortem-facebook.png"/>

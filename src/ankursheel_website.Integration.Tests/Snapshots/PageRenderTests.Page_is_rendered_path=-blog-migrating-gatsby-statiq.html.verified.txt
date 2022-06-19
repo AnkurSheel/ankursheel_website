@@ -12,8 +12,7 @@
 <meta name="description" content="I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/migrating-gatsby-statiq"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/migrating-gatsby-statiq"/>   
 <meta itemProp="name" content="Migrating from Gatsby to Statiq"/>
 <meta itemProp="description" content="I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/migrating-gatsby-statiq-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="A postmortem for Spring Challenge 2020, a multiplayer AI bot contest based on Pacman held by codingame"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-spring-challenge-2020-codingame-ai-contest"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-spring-challenge-2020-codingame-ai-contest"/>   
 <meta itemProp="name" content="Postmortem for Spring Challenge 2020 (Codingame AI Contest)"/>
 <meta itemProp="description" content="A postmortem for Spring Challenge 2020, a multiplayer AI bot contest based on Pacman held by codingame"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postmortem-spring-challenge-2020-codingame-ai-contest-facebook.png"/>

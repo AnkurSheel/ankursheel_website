@@ -12,8 +12,7 @@
 <meta name="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards"/>   
 <meta itemProp="name" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
 <meta itemProp="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
@@ -94,7 +93,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-12-29">December 29, 2021</time></span>
+        <span>Last Updated: <time datetime="2021-12-31">December 31, 2021</time></span>
         <i class="font-bold">
             Reading Time: 3 min
         </i>
@@ -118,15 +117,17 @@
 <p>Recently, I tried to place an order on a merchant using Stripe. As always, it got declined. On a whim, I decided to delete my account and recreate it in my wife's name. On placing an order using her account, the payment immediately went through. Remember, this is on the same merchant who had declined the payment from my account for the same card just a few minutes earlier.</p>
 <p>This led me to conclude that Stripe is blocking the payments based on my email.</p>
 <h2 id="so-what-can-you-do">So what can you do?</h2>
-<p>If you are using Gmail as an email provider, you can just add <em><strong>+merchant&#64;gmail.com</strong></em> to the email address, and this will create an alias for your Gmail account. This means that as far as Stripe is concerned, it's a different address from the one they blocked, but the emails from the merchant will still come to your email address.</p>
-<p>If it's so simple to bypass the decline, you would think it would be easy to get Stripe to take the email off the blocklist. You can read about the ongoing saga below.</p>
+<p>If you are using Gmail as an email provider, you can just add <em><strong>+merchant&#64;gmail.com</strong></em> to the email address, which will create an alias for your Gmail account. This means that as far as Stripe is concerned, it's a different address from the one they blocked, but the emails from the merchant will still come to your email address.</p>
+<p>If it's so simple to bypass the decline, you would think getting Stripe to take the email off the blocklist would be easy. You can read about the ongoing saga below.</p>
 <h2 id="the-stripe-saga-my-attempt-to-resolve-this-with-stripe-support">The Stripe Saga: My Attempt to resolve this with Stripe support</h2>
-<p>With this new insight, I reached out to Stripe. I told them about the payments failing and my suspicion that the failure was because of my email and asked if there was some way to get my email off the blocklist. Unfortunately, Stripe needs a merchant to reach out to them to look at the issue. I haven't had much luck getting merchants to email stripe. Most merchants just suggest talking to the bank, which does not help when the bank does not even see the transaction.</p>
-<p>Over 3 months and in multiple emails, I communicated to Stripe that merchants are not contacting them because they either don't understand that the email is an issue or they have better things to do with their time. Each time it was a (semi?)canned reply along the lines of, &quot;please reach out to a merchant and ask them to contact us&quot;.</p>
-<p>Finally, I sent them a screenshot showing Stripe's decline code as <em>&quot;fraudulent&quot;</em>. I also sent them the response from a merchant clearly stating that they(merchant) thinks I should reach out to Stripe as they don't think they(Stripe) would give them the information. I also told them I bypassed the fraudulent decline code by providing an alternate email address.</p>
+<p>With this new insight, I reached out to Stripe. I told them about the payments failing and my suspicion that the failure was because of my email and asked if there was some way to get my email off the blocklist. Unfortunately, Stripe needs a merchant to contact them to look at the issue. I haven't had much luck getting merchants to email stripe. Most merchants suggest talking to the bank, which does not help when the bank does not even see the transaction.</p>
+<p>Over 3 months and in multiple emails, I communicated to Stripe that merchants are not contacting them because they either don't understand that the email is an issue or they have better things to do with their time. Each time it was a (semi?)canned reply, &quot;please reach out to a merchant and ask them to contact us&quot;.</p>
+<p>Finally, I sent them a screenshot showing Stripe's decline code as <em>&quot;fraudulent&quot;</em>. I also sent them the response from a merchant clearly stating that they(merchant) think I should reach out to Stripe as they don't think they(Stripe) would give them the information. I also told them I bypassed the fraudulent decline code by providing an alternate email address.</p>
 <p>I was hoping that this would get Stripe to resolve the issue. But alas, I got the same canned reply.</p>
-<p>After telling them that I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.</p>
+<p>After telling them I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.</p>
 <p>I will update this section with any more progress.</p>
+<h2 id="updates">Updates</h2>
+<p>Immediately after posting this article, the people at Stripe reached out to me on Twitter. Two days later, they resolved the issue- the issue being that the email had previously been flagged. Unfortunately, they could not share any more information with me. But the good news is that this issue is now sorted.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://support.google.com/a/users/answer/9308648?hl=en">Creating alias email addresses on gmail</a></li>

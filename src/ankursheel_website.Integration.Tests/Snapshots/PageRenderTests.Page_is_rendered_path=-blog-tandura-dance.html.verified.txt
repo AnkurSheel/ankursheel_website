@@ -12,8 +12,7 @@
 <meta name="description" content="Clip of Tandura Dance during the Desert Safari"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/tandura-dance"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/tandura-dance"/>   
 <meta itemProp="name" content="Video: Tandura Dance"/>
 <meta itemProp="description" content="Clip of Tandura Dance during the Desert Safari"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/tandura-dance-facebook.png"/>

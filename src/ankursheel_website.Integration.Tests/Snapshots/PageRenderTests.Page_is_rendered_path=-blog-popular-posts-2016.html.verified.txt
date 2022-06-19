@@ -12,8 +12,7 @@
 <meta name="description" content="The most viewed (popular) posts in 2015."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/popular-posts-2016"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/popular-posts-2016"/>   
 <meta itemProp="name" content="What were my most popular posts in 2016"/>
 <meta itemProp="description" content="The most viewed (popular) posts in 2015."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/popular-posts-2016-facebook.png"/>

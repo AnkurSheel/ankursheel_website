@@ -12,8 +12,7 @@
 <meta name="description" content="What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/product-review-paper-boat-drinks"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/product-review-paper-boat-drinks"/>   
 <meta itemProp="name" content="Product Review: Paper Boat Drinks"/>
 <meta itemProp="description" content="What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/product-review-paper-boat-drinks-facebook.png"/>

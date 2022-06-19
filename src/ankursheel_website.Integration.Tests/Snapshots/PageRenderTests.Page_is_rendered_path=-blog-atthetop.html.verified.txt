@@ -12,8 +12,7 @@
 <meta name="description" content="The scenery is pretty awesome from the world&#x27;s highest outdoor Observatory Deck at the 124th floor"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/atthetop"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/atthetop"/>   
 <meta itemProp="name" content="At the Top: Burj Khalifa"/>
 <meta itemProp="description" content="The scenery is pretty awesome from the world&#x27;s highest outdoor Observatory Deck at the 124th floor"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/atthetop-facebook.png"/>

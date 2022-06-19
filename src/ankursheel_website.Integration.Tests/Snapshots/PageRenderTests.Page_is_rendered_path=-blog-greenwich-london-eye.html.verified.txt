@@ -12,8 +12,7 @@
 <meta name="description" content="In this travelogue, I visit Greenwich, the Royal Observatory and take a ride on the London Eye."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/greenwich-london-eye"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/greenwich-london-eye"/>   
 <meta itemProp="name" content="Visiting Greenwich and taking a ride on London Eye"/>
 <meta itemProp="description" content="In this travelogue, I visit Greenwich, the Royal Observatory and take a ride on the London Eye."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/greenwich-london-eye-facebook.png"/>

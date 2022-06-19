@@ -12,8 +12,7 @@
 <meta name="description" content="A restaurant review of SmokeHouse Deli in Bangalore."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/smokehouse-deli-bangalore"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/smokehouse-deli-bangalore"/>   
 <meta itemProp="name" content="A review of SmokeHouse Deli, Bangalore"/>
 <meta itemProp="description" content="A restaurant review of SmokeHouse Deli in Bangalore."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/smokehouse-deli-bangalore-facebook.png"/>

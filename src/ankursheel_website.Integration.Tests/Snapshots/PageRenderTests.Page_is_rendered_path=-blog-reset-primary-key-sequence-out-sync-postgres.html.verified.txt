@@ -12,8 +12,7 @@
 <meta name="description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/reset-primary-key-sequence-out-sync-postgres"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/reset-primary-key-sequence-out-sync-postgres"/>   
 <meta itemProp="name" content="How to reset the primary key sequence in Postgres"/>
 <meta itemProp="description" content="How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/reset-primary-key-sequence-out-sync-postgres-facebook.png"/>

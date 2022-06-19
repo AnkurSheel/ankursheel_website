@@ -12,8 +12,7 @@
 <meta name="description" content="A highlight for LOTR fans is a tour of the Shire at Hobbiton. This has been one of the places I have wanted to visit since we moved to New Zealand."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-hobbiton-matamata"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/new-zealand-escapes-hobbiton-matamata"/>   
 <meta itemProp="name" content="New Zealand Escapes: Hobbiton, Matamata"/>
 <meta itemProp="description" content="A highlight for LOTR fans is a tour of the Shire at Hobbiton. This has been one of the places I have wanted to visit since we moved to New Zealand."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/new-zealand-escapes-hobbiton-matamata-facebook.png"/>

@@ -12,8 +12,7 @@
 <meta name="description" content="Although the managers who say - Do not bring up problems unless you have a solution mean well, it does not have the outcome they expect"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/problem-without-solution-harmful"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/problem-without-solution-harmful"/>   
 <meta itemProp="name" content="Do not come with a problem without a solution is harmful"/>
 <meta itemProp="description" content="Although the managers who say - Do not bring up problems unless you have a solution mean well, it does not have the outcome they expect"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/problem-without-solution-harmful-facebook.png"/>

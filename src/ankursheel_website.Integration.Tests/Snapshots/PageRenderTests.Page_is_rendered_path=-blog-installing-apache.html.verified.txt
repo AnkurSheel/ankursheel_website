@@ -12,8 +12,7 @@
 <meta name="description" content="In the first part of the series, we will install Apache (webserver) on our machine."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/installing-apache"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/installing-apache"/>   
 <meta itemProp="name" content="Setup WordPress locally: Installing an Apache Web Server"/>
 <meta itemProp="description" content="In the first part of the series, we will install Apache (webserver) on our machine."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/installing-apache-facebook.png"/>

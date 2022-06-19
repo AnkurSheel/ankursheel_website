@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-50"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-50"/>   
 <meta itemProp="name" content="Weekly Roundup 50"/>
 <meta itemProp="description" content="This weeks roundup contains articles from JT McCormick, Mike Crittenden, iA, Michael Lopp and Byrne Hobart"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-50-facebook.png"/>

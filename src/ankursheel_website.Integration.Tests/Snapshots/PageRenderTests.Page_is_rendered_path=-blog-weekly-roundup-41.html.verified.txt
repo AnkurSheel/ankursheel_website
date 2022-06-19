@@ -12,8 +12,7 @@
 <meta name="description" content="This weeks roundup contains articles from Harry Dry, Charity Majors, Mike Crittenden, Josh Comeau, Padmini Pyapali and Rex Woodbury"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-41"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/weekly-roundup-41"/>   
 <meta itemProp="name" content="Weekly Roundup 41"/>
 <meta itemProp="description" content="This weeks roundup contains articles from Harry Dry, Charity Majors, Mike Crittenden, Josh Comeau, Padmini Pyapali and Rex Woodbury"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/weekly-roundup-41-facebook.png"/>

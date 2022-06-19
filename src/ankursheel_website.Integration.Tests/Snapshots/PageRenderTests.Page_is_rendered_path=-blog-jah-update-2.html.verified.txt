@@ -12,8 +12,7 @@
 <meta name="description" content="JAH Update 2: This update adds the ability to add new applications."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/jah-update-2"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/jah-update-2"/>   
 <meta itemProp="name" content="JAH: Update 2"/>
 <meta itemProp="description" content="JAH Update 2: This update adds the ability to add new applications."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/jah-update-2-facebook.png"/>

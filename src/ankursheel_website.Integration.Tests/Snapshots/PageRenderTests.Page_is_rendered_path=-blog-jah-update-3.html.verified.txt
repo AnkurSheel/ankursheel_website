@@ -12,8 +12,7 @@
 <meta name="description" content="JAH Update 3: v 0.0.5 adds the ability to update the status of existing applications"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/jah-update-3"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/jah-update-3"/>   
 <meta itemProp="name" content="JAH: Update 3"/>
 <meta itemProp="description" content="JAH Update 3: v 0.0.5 adds the ability to update the status of existing applications"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/jah-update-3-facebook.png"/>

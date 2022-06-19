@@ -12,8 +12,7 @@
 <meta name="description" content="How can we apply the StoryBrand framework to communicate at work, even though it seems to be oriented towards marketing messaging"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/reader-question-apply-storybrand-communicate-work"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/reader-question-apply-storybrand-communicate-work"/>   
 <meta itemProp="name" content="How can we apply Storybrand to how we communicate at work"/>
 <meta itemProp="description" content="How can we apply the StoryBrand framework to communicate at work, even though it seems to be oriented towards marketing messaging"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/reader-question-apply-storybrand-communicate-work-facebook.png"/>

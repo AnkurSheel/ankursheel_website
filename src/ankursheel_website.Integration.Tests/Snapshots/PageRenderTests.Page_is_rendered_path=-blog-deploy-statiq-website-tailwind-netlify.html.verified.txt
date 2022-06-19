@@ -12,8 +12,7 @@
 <meta name="description" content="A guide to installing Tailwind CSS on deploying a Statiq website"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/deploy-statiq-website-tailwind-netlify"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/deploy-statiq-website-tailwind-netlify"/>   
 <meta itemProp="name" content="Deploy a Statiq website using Tailwind CSS to Netlify"/>
 <meta itemProp="description" content="A guide to installing Tailwind CSS on deploying a Statiq website"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/deploy-statiq-website-tailwind-netlify-facebook.png"/>

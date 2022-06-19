@@ -12,8 +12,7 @@
 <meta name="description" content="In this article, we will use the above steps to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/dynamic-programming-longest-common-subsequence"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/dynamic-programming-longest-common-subsequence"/>   
 <meta itemProp="name" content="Solve Longest Common Subsequence with Dynamic Programming"/>
 <meta itemProp="description" content="In this article, we will use the above steps to arrive at a Dynamic Programming solution to the Longest Common Subsequence problem."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dynamic-programming-longest-common-subsequence-facebook.png"/>

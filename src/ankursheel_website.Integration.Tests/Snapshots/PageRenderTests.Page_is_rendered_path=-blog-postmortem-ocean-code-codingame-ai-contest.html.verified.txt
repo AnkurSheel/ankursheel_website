@@ -12,8 +12,7 @@
 <meta name="description" content="A postmortem for Ocean of Code, a multiplayer AI bot contest based on Captain Sonar held by codingame"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-ocean-code-codingame-ai-contest"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/postmortem-ocean-code-codingame-ai-contest"/>   
 <meta itemProp="name" content="A postmortem for Ocean of Code (Codingame AI Contest)"/>
 <meta itemProp="description" content="A postmortem for Ocean of Code, a multiplayer AI bot contest based on Captain Sonar held by codingame"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/postmortem-ocean-code-codingame-ai-contest-facebook.png"/>

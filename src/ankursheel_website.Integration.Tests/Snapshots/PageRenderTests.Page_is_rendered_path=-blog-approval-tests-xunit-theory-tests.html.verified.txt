@@ -12,8 +12,7 @@
 <meta name="description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-<link rel="canonical" href="https://www.ankursheel.com/blog/approval-tests-xunit-theory-tests"/>
-
+    <link rel="canonical" href="https://www.ankursheel.com/blog/approval-tests-xunit-theory-tests"/>   
 <meta itemProp="name" content="How to use ApprovalTests with xUnit&#x27;s Theory attribute"/>
 <meta itemProp="description" content="The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/approval-tests-xunit-theory-tests-facebook.png"/>
