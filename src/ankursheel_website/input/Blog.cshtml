@@ -8,7 +8,7 @@ Title: All Articles
     const int numberOfRecentPosts = 5;
     var sortedPosts = Model.AllPosts.OrderByDescending(x => x.Document.GetLastUpdatedDate()).ToList();
     var groups = sortedPosts.GroupBy(x => x.Document.GetCategory()).OrderBy(x => x.Key);
-    var recentPosts = sortedPosts.Where(x => !x.Document.GetTags().Contains("weekly roundup")).Take(numberOfRecentPosts);
+    var recentPosts = Model.AllPosts.OrderByDescending(x => x.Document.GetPublishedDate()).ToList().Where(x => !x.Document.GetTags().Contains("weekly roundup")).Take(numberOfRecentPosts);
 
     string GetHeaderId(string header)
     {
@@ -16,7 +16,7 @@ Title: All Articles
     }
 }
 
-<h2>All Categories</h2>
+<h2>All Categories (@sortedPosts.Count)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
     @foreach (var group in groups)
