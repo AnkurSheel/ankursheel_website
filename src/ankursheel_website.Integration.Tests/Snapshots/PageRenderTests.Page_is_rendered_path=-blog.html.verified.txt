@@ -88,7 +88,7 @@
             
 
 
-<h2>All Categories</h2>
+<h2>All Categories (180)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -98,14 +98,13 @@
         <a href="#ramblings">ramblings</a>
         <a href="#travel">travel</a>
         <a href="#Uncategorized">Uncategorized</a>
-        <a href="#video">video</a>
         <a href="#weekly-roundup">weekly roundup</a>
 </div>
 
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
+            <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
@@ -172,10 +171,16 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (52)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (54)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a> - <time class="prose-sm" datetime="22-06-23">June 23, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a> - <time class="prose-sm" datetime="22-06-20">June 20, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a> - <time class="prose-sm" datetime="22-06-16">June 16, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a> - <time class="prose-sm" datetime="22-06-09">June 09, 2022</time>
@@ -418,10 +423,10 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="travel" class="py-4 border-b border-grey-lighter capitalize">travel (47)</h3>
+    <h3 id="travel" class="py-4 border-b border-grey-lighter capitalize">travel (25)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/new-zealand-escapes-photo-essay-milford-sound">New Zealand Escapes: Photo Essay - Milford Sound</a> - <time class="prose-sm" datetime="16-05-10">May 10, 2016</time>
+                <a href="/blog/usa-roadtrip">USA Road-trip</a> - <time class="prose-sm" datetime="22-06-27">June 27, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/new-zealand-escapes-tranzalpine-express">New Zealand Escapes: KiwiRail - TranzAlpine Express</a> - <time class="prose-sm" datetime="16-03-15">March 15, 2016</time>
@@ -454,79 +459,13 @@
                 <a href="/blog/new-zealand-escapes-northland-part-1">New Zealand Escapes: Northland - Part 1</a> - <time class="prose-sm" datetime="15-10-20">October 20, 2015</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/new-zealand-escapes-massey-strawberry-picking-auckland">New Zealand Escapes: Massey Strawberry Picking, Auckland</a> - <time class="prose-sm" datetime="15-09-08">September 08, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/new-zealand-escapes-iskcon-temple-auckland">New Zealand Escapes: Iskcon Temple, Auckland</a> - <time class="prose-sm" datetime="15-07-14">July 14, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/new-zealand-escapes-piha-beach">New Zealand Escapes: Piha Beach</a> - <time class="prose-sm" datetime="15-06-30">June 30, 2015</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/new-zealand-escapes-rangitoto-island">New Zealand Escapes: Rangitoto Island</a> - <time class="prose-sm" datetime="15-06-09">June 09, 2015</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-seattle-washington">Photo Essay: Seattle, Washington</a> - <time class="prose-sm" datetime="15-05-19">May 19, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-glacier-national-park-montana">Photo Essay: Glacier National Park, Montana</a> - <time class="prose-sm" datetime="15-02-10">February 10, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-yellowstone-national-park-wyoming">Photo Essay: Yellowstone National Park, Wyoming</a> - <time class="prose-sm" datetime="15-01-13">January 13, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-corn-palace-south-dakota">Photo Essay: Corn Palace, South Dakota</a> - <time class="prose-sm" datetime="15-01-06">January 06, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/diwali-auckland-2014">Photo Essay: Diwali in Auckland</a> - <time class="prose-sm" datetime="14-11-03">November 03, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-niagara-falls-new-york">Photo Essay: Niagara Falls, New York</a> - <time class="prose-sm" datetime="14-06-04">June 04, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-washington-dc">Photo Essay: Washington DC</a> - <time class="prose-sm" datetime="14-05-28">May 28, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-graceland-tennessee">Photo Essay: Graceland, Tennessee</a> - <time class="prose-sm" datetime="14-05-21">May 21, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-world-coca-cola-georgia">Photo Essay: World Of Coca Cola, Georgia</a> - <time class="prose-sm" datetime="14-05-14">May 14, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-nasas-space-center-texas">Photo Essay: NASA&#x27;s Space Center, Texas</a> - <time class="prose-sm" datetime="14-05-07">May 07, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-meteor-crater-arizona">Photo Essay: Meteor Crater, Arizona</a> - <time class="prose-sm" datetime="14-04-30">April 30, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-sedona-arizona">Photo Essay: Sedona, Arizona</a> - <time class="prose-sm" datetime="14-04-23">April 23, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-grand-canyon-arizona">Photo Essay: Grand Canyon, Arizona</a> - <time class="prose-sm" datetime="14-04-16">April 16, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-legoland-san-diego">Photo Essay: Legoland, San Diego</a> - <time class="prose-sm" datetime="14-04-09">April 09, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-san-diego-zoo-san-diego">Photo Essay: San Diego Zoo, San Diego</a> - <time class="prose-sm" datetime="14-04-02">April 02, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-seaworld-san-diego">Photo Essay: SeaWorld, San Diego</a> - <time class="prose-sm" datetime="14-03-26">March 26, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-disneyland-los-angeles">Photo Essay: DisneyLand Los Angeles</a> - <time class="prose-sm" datetime="14-03-19">March 19, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-universal-studios-los-angeles">Photo Essay: Universal Studios, Los Angeles</a> - <time class="prose-sm" datetime="14-03-12">March 12, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/usa-roadtrip">USA Roadtrip</a> - <time class="prose-sm" datetime="14-03-05">March 05, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-series-jaisalmer">Photo Series: Jaisalmer</a> - <time class="prose-sm" datetime="14-02-26">February 26, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-series-jodhpur">Photo Series: Jodhpur</a> - <time class="prose-sm" datetime="14-02-19">February 19, 2014</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/desert-safari">Desert Safari</a> - <time class="prose-sm" datetime="14-01-31">January 31, 2014</time>
@@ -562,11 +501,8 @@
                 <a href="/blog/london">Roaming around in London</a> - <time class="prose-sm" datetime="13-11-22">November 22, 2013</time>
             </li>
     </ul>
-    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (9)</h3>
+    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (6)</h3>
     <ul class="p-0">
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a> - <time class="prose-sm" datetime="22-06-13">June 13, 2022</time>
-            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/add-cursive-fonts-vs-code">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
             </li>
@@ -577,12 +513,6 @@
                 <a href="/blog/popular-posts-2016">What were my most popular posts in 2016</a> - <time class="prose-sm" datetime="17-02-08">February 08, 2017</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/most-popular-posts-2015">What are my most popular posts in 2015</a> - <time class="prose-sm" datetime="15-12-25">December 25, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/photo-essay-india-vs-zimbabwe-world-cup-2015">Photo Essay: India Vs Zimbabwe, World Cup 2015</a> - <time class="prose-sm" datetime="15-11-03">November 03, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/filtering-google-analytics">How to filter yourself from showing up in Google Analytics</a> - <time class="prose-sm" datetime="14-01-29">January 29, 2014</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
@@ -590,30 +520,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/beginning">The Beginning</a> - <time class="prose-sm" datetime="13-11-19">November 19, 2013</time>
-            </li>
-    </ul>
-    <h3 id="video" class="py-4 border-b border-grey-lighter capitalize">video (7)</h3>
-    <ul class="p-0">
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/video-bungee-jump-queenstown">Video: Bungee Jump in Queenstown</a> - <time class="prose-sm" datetime="16-05-17">May 17, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/video-goat-glacier-national-park">Video: Goat in Glacier National Park</a> - <time class="prose-sm" datetime="15-02-17">February 17, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/videos-bear-yellowstone-national-park">Video: Bear at Yellowstone National Park</a> - <time class="prose-sm" datetime="15-02-03">February 03, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/videos-yellowstone-national-park-geysers">Videos: Yellowstone National Park Geysers</a> - <time class="prose-sm" datetime="15-01-27">January 27, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/video-old-faithful-geyser">Video: Old Faithful Geyser</a> - <time class="prose-sm" datetime="15-01-20">January 20, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/belly-dance">Video: Belly Dance</a> - <time class="prose-sm" datetime="14-02-14">February 14, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/tandura-dance">Video: Tandura Dance</a> - <time class="prose-sm" datetime="14-02-07">February 07, 2014</time>
             </li>
     </ul>
     <h3 id="weekly-roundup" class="py-4 border-b border-grey-lighter capitalize">weekly roundup (53)</h3>

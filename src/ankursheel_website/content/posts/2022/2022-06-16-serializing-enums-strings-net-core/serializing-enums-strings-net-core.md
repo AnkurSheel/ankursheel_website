@@ -1,6 +1,7 @@
 ---
 title: "How to Serialize enums as strings in .Net Core"
 excerpt: "If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?"
+category: "programming"
 tags:
 
 - "snippet"

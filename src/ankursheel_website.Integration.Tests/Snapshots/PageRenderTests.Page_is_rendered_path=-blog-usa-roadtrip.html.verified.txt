@@ -4,29 +4,29 @@
 <head>
     
 
-<title>USA Roadtrip - Ankur Sheel</title>
+<title>USA Road-trip - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;"/>
+<meta name="description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/usa-roadtrip"/>   
-<meta itemProp="name" content="USA Roadtrip"/>
-<meta itemProp="description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;"/>
+<meta itemProp="name" content="USA Road-trip"/>
+<meta itemProp="description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/usa-roadtrip-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/usa-roadtrip"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="USA Roadtrip"/>
-<meta property="og:description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;"/>
+<meta property="og:title" content="USA Road-trip"/>
+<meta property="og:description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/usa-roadtrip-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/usa-roadtrip-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="USA Roadtrip"/>
-<meta name="twitter:description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010.&#x27;"/>
+<meta name="twitter:title" content="USA Road-trip"/>
+<meta name="twitter:description" content="The route of the road trip across the USA I took with my parents after graduating in May 2010"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/usa-roadtrip-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/usa-roadtrip-twitter.png"/>
 
@@ -87,15 +87,15 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">USA Roadtrip</h1>
+    <h1 class="text-center">USA Road-trip</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2014-03-05">March 05, 2014</time></span>
+        <span>Last Updated: <time datetime="2022-06-27">June 27, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 0 min
+            Reading Time: 1 min
         </i>
     </div>
 
@@ -106,9 +106,111 @@
     </div>
 </div>
 
-<!-- markdownlint-disable MD033 -->
-<p>The next few photo series will be related to the road trip I had taken with my parents across the USA after graduating in May 2010. As a sneak preview, the route of the road trip.</p>
+<p>An itinerary of a road trip I took with my parents across the USA after graduating in May 2010.</p>
 <p><img src="/assets/images/posts/usa-roadtrip/map.jpg" alt="Map of the road trip" /></p>
+<ul>
+<li>Los Angeles
+<ul>
+<li>Universal Studios</li>
+<li>Disneyland</li>
+<li>HollyWood Walk of Fame</li>
+<li>HollyWood Sign</li>
+<li>Griffith Park</li>
+<li>Rodeo Drive</li>
+<li>Santa Monica Pier</li>
+<li>Mullholland Hwy</li>
+</ul>
+</li>
+<li>San Diego
+<ul>
+<li>US Midway Museum</li>
+<li>Old Town</li>
+<li>Seaworld</li>
+<li>San Diego Zoo</li>
+<li>Legoland</li>
+</ul>
+</li>
+<li>Las Vegas
+<ul>
+<li>Grand Canyon</li>
+</ul>
+</li>
+<li>Flagstaff
+<ul>
+<li>Sedona</li>
+</ul>
+</li>
+<li>Albuquerque
+<ul>
+<li>Meteor Crater</li>
+</ul>
+</li>
+<li>Oklahoma City</li>
+<li>San Antonio
+<ul>
+<li>Fort Worth Stockyards</li>
+</ul>
+</li>
+<li>Houston
+<ul>
+<li>Nasa Space Center</li>
+</ul>
+</li>
+<li>Montgomery</li>
+<li>Atlanta
+<ul>
+<li>World Of Coca Cola</li>
+</ul>
+</li>
+<li>Memphis
+<ul>
+<li>CNN Center</li>
+</ul>
+</li>
+<li>Johnson City
+<ul>
+<li>Graceland</li>
+</ul>
+</li>
+<li>Philadelphia</li>
+<li>Washington DC</li>
+<li>New York</li>
+<li>Buffalo
+<ul>
+<li>Niagara Falls</li>
+</ul>
+</li>
+<li>Chicago</li>
+<li>Austin, Mn</li>
+<li>Hill City
+<ul>
+<li>Corn palace</li>
+</ul>
+</li>
+<li>Billings
+<ul>
+<li>Mount Rushmore</li>
+</ul>
+</li>
+<li>Idaho Falls
+<ul>
+<li>Yellowstone National Park</li>
+</ul>
+</li>
+<li>Kalispell</li>
+<li>Montana
+<ul>
+<li>Glacier National Park</li>
+</ul>
+</li>
+<li>Seattle</li>
+<li>Redding</li>
+<li>Cupertino
+<ul>
+<li>Napa Valley</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -118,7 +220,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/usa-roadtrip&text=USA%20Roadtrip via @ankur_sheel.&#xD;&#xA;The%20route%20of%20the%20road%20trip%20across%20the%20USA%20I%20took%20with%20my%20parents%20after%20graduating%20in%20May%202010.%27" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/usa-roadtrip&text=USA%20Road-trip via @ankur_sheel.&#xD;&#xA;The%20route%20of%20the%20road%20trip%20across%20the%20USA%20I%20took%20with%20my%20parents%20after%20graduating%20in%20May%202010" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

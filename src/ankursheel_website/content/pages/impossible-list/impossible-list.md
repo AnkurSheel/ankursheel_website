@@ -10,9 +10,9 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   [~~North America~~](/tags/north-america)
     -   South America
     -   [~~Europe~~](/tags/europe)
-    -   [~~Asia~~](/tags/asia)
+    -   ~~Asia~~
     -   Australia
-    -   Antartica
+    -   Antarctica
     -   Africa
 -   ~~Travel For 1 month straight~~ (May - July 2010)
     -   Travel for 3 months straight.
@@ -65,12 +65,12 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
         -   Canals in Venice
         -   Foucault’s pendulum at Musée des Arts et Métiers, France
     -   North America
-        -   ~~[Niagara falls, USA](/blog/photo-essay-niagara-falls-new-york)~~ (2010)
+        -   ~~Niagara falls, USA~~ (2010)
         -   Alcatraz, USA
         -   Antelope Canyon in Arizona, USA
         -   Ellis Island in New York City, USA
         -   ~~Golden Gate Bridge in San Fransisco, USA~~ (2010)
-        -   ~~[Grand Canyon, USA](/blog/photo-essay-grand-canyon-arizona)~~ (2010)
+        -   ~~Grand Canyon, USA~~ (2010)
         -   ~~Las Vegas strip, USA~~ (2010)
         -   Monument Valley in Utah, USA
         -   ~~Mount Rushmore, USA~~ (2010)
@@ -79,7 +79,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
         -   ~~Space Needle in Seattle, USA~~ (2010)
         -   ~~Statue of Liberty in New York City, USA~~ (2009)
         -   ~~Times Square in New York City, USA~~ (2009)
-        -   ~~[Yellowstone National Park, USA](/blog/photo-essay-yellowstone-national-park-wyoming)~~ (2010)
+        -   ~~Yellowstone National Park, USA~~ (2010)
         -   ~~Yosemite National Park~~ (2010)
         -   The Alaskan wilderness, USA
     -   Oceania
@@ -89,7 +89,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
         -   Sydney Opera House, Australia
         -   The Great Barrier Reef, Australia
         -   ~~[Hobbiton movie set, New Zealand](/blog/new-zealand-escapes-hobbiton-matamata)~~ (2015)
-        -   ~~[Milford Sound, New Zealand](/blog/new-zealand-escapes-photo-essay-milford-sound)~~ (2016)
+        -   ~~Milford Sound, New Zealand~~ (2016)
     -   South America
         -   Amazon RainForest, Brazil
         -   Easter Island, Chile
@@ -101,7 +101,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
 -   Anywhere
     -   ~~Drive in a country where they drive on the opposite side of the road~~ (USA 2008-2010)
     -   Walk on a glacier
-    -   ~~[Go Bungee Jumping](/blog/video-bungee-jump-queenstown)~~ (Queenstown, New Zealand, 2016)
+    -   ~~Go Bungee Jumping~~ (Queenstown, New Zealand, 2016)
     -   ~~Go on a cruise~~ (Singapore x 2)
     -   Go Para Gliding
     -   Go Para Sailing

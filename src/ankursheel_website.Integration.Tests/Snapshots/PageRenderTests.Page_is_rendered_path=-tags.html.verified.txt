@@ -88,28 +88,22 @@
             
 <div class="flex flex-row flex-wrap gap-1 place-content-center">
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (54)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (53)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (29)</a>
+            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (30)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/north-america" class="capitalize badge text-gray-900 bg-grey-light no-underline"> North America (22)</a>
+            <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (22)</a>
+            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (23)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/usa" class="capitalize badge text-gray-900 bg-grey-light no-underline"> USA (22)</a>
+            <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (17)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/oceania" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Oceania (17)</a>
+            <a role="button" href="/tags/oceania" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Oceania (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (13)</a>
@@ -121,16 +115,13 @@
             <a role="button" href="/tags/cpp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> cpp (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/middle-east" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Middle East (10)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/uae" class="capitalize badge text-gray-900 bg-grey-light no-underline"> UAE (10)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (9)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/jah" class="capitalize badge text-gray-900 bg-grey-light no-underline"> JAH (8)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/middle-east" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Middle East (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/postmortem" class="capitalize badge text-gray-900 bg-grey-light no-underline"> postmortem (8)</a>
@@ -142,7 +133,7 @@
             <a role="button" href="/tags/testing" class="capitalize badge text-gray-900 bg-grey-light no-underline"> testing (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/video" class="capitalize badge text-gray-900 bg-grey-light no-underline"> video (8)</a>
+            <a role="button" href="/tags/uae" class="capitalize badge text-gray-900 bg-grey-light no-underline"> UAE (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordpress (8)</a>
@@ -205,9 +196,6 @@
             <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/india" class="capitalize badge text-gray-900 bg-grey-light no-underline"> india (3)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tailwind" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -218,9 +206,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/approval-tests" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Approval Tests (2)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/asia" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Asia (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/azure-pipelines" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Azure pipelines (2)</a>
@@ -241,7 +226,7 @@
             <a role="button" href="/tags/javascript" class="capitalize badge text-gray-900 bg-grey-light no-underline"> javascript (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/popular-posts" class="capitalize badge text-gray-900 bg-grey-light no-underline"> popular posts (2)</a>
+            <a role="button" href="/tags/netlify" class="capitalize badge text-gray-900 bg-grey-light no-underline"> netlify (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/postgres" class="capitalize badge text-gray-900 bg-grey-light no-underline"> postgres (2)</a>
@@ -268,13 +253,25 @@
             <a role="button" href="/tags/insomnia" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Insomnia (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/netlify" class="capitalize badge text-gray-900 bg-grey-light no-underline"> netlify (1)</a>
+            <a role="button" href="/tags/north-america" class="capitalize badge text-gray-900 bg-grey-light no-underline"> North America (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/popular-posts" class="capitalize badge text-gray-900 bg-grey-light no-underline"> popular posts (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/postman" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Postman (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/source-generator" class="capitalize badge text-gray-900 bg-grey-light no-underline"> source generator (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/usa" class="capitalize badge text-gray-900 bg-grey-light no-underline"> USA (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/video" class="capitalize badge text-gray-900 bg-grey-light no-underline"> video (1)</a>
         </div>
 </div>
 

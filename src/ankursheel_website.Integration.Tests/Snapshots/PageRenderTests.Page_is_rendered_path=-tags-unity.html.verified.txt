@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;USA&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;unity&quot; - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,17 +12,17 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/usa"/>   
-<meta itemProp="name" content="Posts tagged as &quot;USA&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/unity"/>   
+<meta itemProp="name" content="Posts tagged as &quot;unity&quot;"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/usa"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/unity"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;USA&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;unity&quot;"/>
 <meta property="og:description"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;USA&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;unity&quot;"/>
 <meta name="twitter:description"/>
 
 </head>
@@ -82,19 +82,19 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;USA&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;unity&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/usa-roadtrip" class="text-center prose-2xl mb-4">USA Road-trip</a>
-        <div class="font-semibold text-center">1 min</div>
+        <a href="/blog/host-compressed-unity-webgl-game-on-netlify" class="text-center prose-2xl mb-4">How to host a compressed Unity WebGL game on Netlify</a>
+        <div class="font-semibold text-center">2 min</div>
         <p>
-            The route of the road trip across the USA I took with my parents after graduating in May 2010
+            In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify
         </p>
-            <a href="/blog/usa-roadtrip" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/host-compressed-unity-webgl-game-on-netlify" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

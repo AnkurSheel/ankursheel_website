@@ -1,5 +1,7 @@
 ---
-title: 'Country Visit List'
+
+title: "Country Visit List"
+
 ---
 
 ## Visited
@@ -10,7 +12,7 @@ title: 'Country Visit List'
 
 1. Germany (August 2016)
 
-1. [India](/tags/india) (Citizen)
+1. India (till 2014)
 
 1. Indonesia (January 2010)
 

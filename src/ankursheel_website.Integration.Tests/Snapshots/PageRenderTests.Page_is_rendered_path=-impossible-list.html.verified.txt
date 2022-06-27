@@ -98,9 +98,9 @@
 <li><a href="/tags/north-america"><del>North America</del></a></li>
 <li>South America</li>
 <li><a href="/tags/europe"><del>Europe</del></a></li>
-<li><a href="/tags/asia"><del>Asia</del></a></li>
+<li><del>Asia</del></li>
 <li>Australia</li>
-<li>Antartica</li>
+<li>Antarctica</li>
 <li>Africa</li>
 </ul>
 </li>
@@ -172,12 +172,12 @@
 </li>
 <li>North America
 <ul>
-<li><del><a href="/blog/photo-essay-niagara-falls-new-york">Niagara falls, USA</a></del> (2010)</li>
+<li><del>Niagara falls, USA</del> (2010)</li>
 <li>Alcatraz, USA</li>
 <li>Antelope Canyon in Arizona, USA</li>
 <li>Ellis Island in New York City, USA</li>
 <li><del>Golden Gate Bridge in San Fransisco, USA</del> (2010)</li>
-<li><del><a href="/blog/photo-essay-grand-canyon-arizona">Grand Canyon, USA</a></del> (2010)</li>
+<li><del>Grand Canyon, USA</del> (2010)</li>
 <li><del>Las Vegas strip, USA</del> (2010)</li>
 <li>Monument Valley in Utah, USA</li>
 <li><del>Mount Rushmore, USA</del> (2010)</li>
@@ -186,7 +186,7 @@
 <li><del>Space Needle in Seattle, USA</del> (2010)</li>
 <li><del>Statue of Liberty in New York City, USA</del> (2009)</li>
 <li><del>Times Square in New York City, USA</del> (2009)</li>
-<li><del><a href="/blog/photo-essay-yellowstone-national-park-wyoming">Yellowstone National Park, USA</a></del> (2010)</li>
+<li><del>Yellowstone National Park, USA</del> (2010)</li>
 <li><del>Yosemite National Park</del> (2010)</li>
 <li>The Alaskan wilderness, USA</li>
 </ul>
@@ -199,7 +199,7 @@
 <li>Sydney Opera House, Australia</li>
 <li>The Great Barrier Reef, Australia</li>
 <li><del><a href="/blog/new-zealand-escapes-hobbiton-matamata">Hobbiton movie set, New Zealand</a></del> (2015)</li>
-<li><del><a href="/blog/new-zealand-escapes-photo-essay-milford-sound">Milford Sound, New Zealand</a></del> (2016)</li>
+<li><del>Milford Sound, New Zealand</del> (2016)</li>
 </ul>
 </li>
 <li>South America
@@ -219,7 +219,7 @@
 <ul>
 <li><del>Drive in a country where they drive on the opposite side of the road</del> (USA 2008-2010)</li>
 <li>Walk on a glacier</li>
-<li><del><a href="/blog/video-bungee-jump-queenstown">Go Bungee Jumping</a></del> (Queenstown, New Zealand, 2016)</li>
+<li><del>Go Bungee Jumping</del> (Queenstown, New Zealand, 2016)</li>
 <li><del>Go on a cruise</del> (Singapore x 2)</li>
 <li>Go Para Gliding</li>
 <li>Go Para Sailing</li>
