@@ -4,7 +4,6 @@ excerpt: "A way to remove a file committed in git that you now want git to forge
 category: "programming"
 tags:
 
-- "snippet"
 - "git"
 
 ---
