@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Photo Essay: Glacier National Park, Montana - Ankur Sheel</title>
+<title>How to host a compressed Unity WebGL game on Netlify - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="The Glacier National Park is a beautiful place and the landscapes are just breathtaking"/>
+<meta name="description" content="In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/photo-essay-glacier-national-park-montana"/>   
-<meta itemProp="name" content="Photo Essay: Glacier National Park, Montana"/>
-<meta itemProp="description" content="The Glacier National Park is a beautiful place and the landscapes are just breathtaking"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/photo-essay-glacier-national-park-montana-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/photo-essay-glacier-national-park-montana"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify"/>   
+<meta itemProp="name" content="How to host a compressed Unity WebGL game on Netlify"/>
+<meta itemProp="description" content="In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/host-compressed-unity-webgl-game-on-netlify-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Photo Essay: Glacier National Park, Montana"/>
-<meta property="og:description" content="The Glacier National Park is a beautiful place and the landscapes are just breathtaking"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/photo-essay-glacier-national-park-montana-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/photo-essay-glacier-national-park-montana-facebook.png"/>
+<meta property="og:title" content="How to host a compressed Unity WebGL game on Netlify"/>
+<meta property="og:description" content="In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/host-compressed-unity-webgl-game-on-netlify-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/host-compressed-unity-webgl-game-on-netlify-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Photo Essay: Glacier National Park, Montana"/>
-<meta name="twitter:description" content="The Glacier National Park is a beautiful place and the landscapes are just breathtaking"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/photo-essay-glacier-national-park-montana-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/photo-essay-glacier-national-park-montana-twitter.png"/>
+<meta name="twitter:title" content="How to host a compressed Unity WebGL game on Netlify"/>
+<meta name="twitter:description" content="In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/host-compressed-unity-webgl-game-on-netlify-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/host-compressed-unity-webgl-game-on-netlify-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,39 +87,93 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Photo Essay: Glacier National Park, Montana</h1>
+    <h1 class="text-center">How to host a compressed Unity WebGL game on Netlify</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2015-02-10">February 10, 2015</time></span>
+        <span>Last Updated: <time datetime="2022-06-23">June 23, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 0 min
+            Reading Time: 2 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/north-america" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">North America</a>
-            <a href="/tags/travel" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">travel</a>
-            <a href="/tags/usa" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">USA</a>
+            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
+            <a href="/tags/netlify" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">netlify</a>
+            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
     </div>
 </div>
 
-<p>From the Yellowstone National Park, we reach another gem in the USA - The Glacier National Park.</p>
-<p>It is known for its original native plant and animal species.</p>
-<p>This is another one of those places that I believe should be on your itinerary. It is a beautiful place, and the landscapes are just breathtaking.</p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-1.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-2.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-3.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-4.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-5.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-6.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-7.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-8.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-9.jpg" alt="" /></p>
-<p><img src="/assets/images/posts/photo-essay-glacier-national-park-montana/Glacier-10.jpg" alt="" /></p>
+<html><head></head><body><hr>
+<p>When you deploy a WebGL build for a Unity game, you can define the compression format to Brotli(or gzip).</p>
+<p>If you deploy this compressed unity game to Netlify and try to run it, you will see an error similar to</p>
+<blockquote>
+<p>Unable to parse XYZ.br! This can happen if build compression was enabled but web server hosting the content was misconfigured to not serve the file with HTTP Response Header &quot;Content-Encoding: br&quot; present. Check browser Console and Devtools Network tab to debug.</p>
+</blockquote>
+<h2 id="solution-1">Solution 1</h2>
+<p>One option is to enable the <code>Decompression fallback</code> option which embeds a Javascript decompressor into your build.</p>
+<p>You can find this in the <em>Project Settings</em> -&gt; <em>Player</em> -&gt; <em>Publishing Settings (for WebGL)</em></p>
+<p>Although a perfectly valid option, it results in a larger loader size and is less efficient (according to the docs).</p>
+<p>So, let's look at a better solution.</p>
+<h2 id="solution-2">Solution 2</h2>
+<p>To ensure that the browser can run the game, you need to tell the browser to decompress the files with the <strong>.br</strong> extension using the Brotli algorithm.</p>
+<p>If you look at the files generated by Unity in the <strong>Build</strong> folder, you will find the following files.</p>
+<ul>
+<li>XYZ.data.br</li>
+<li>XYZ.framework.js.br</li>
+<li>XYZ.loader.js</li>
+<li>XYZ.wasm.br</li>
+</ul>
+<p>You need to set the <strong>Content-Encoding</strong> header for each file extension to <strong>br</strong> so that the browser knows how to decompress the files.</p>
+<p>You can do this by creating a <strong>netlify.toml</strong> file at the root if you don't have one already and adding the following snippet to it.</p>
+<pre><code class="language-toml hljs">[[headers]]
+  for = &quot;/Build/*.data.br&quot;
+  [headers.values]
+    Content-Encoding = &quot;br&quot;
+    Content-Type = &quot;application/octet-stream&quot;
 
+[[headers]]
+  for = &quot;/Build/*.wasm.br&quot;
+  [headers.values]
+    Content-Encoding = &quot;br&quot;
+    Content-Type = &quot;application/wasm&quot;
+
+[[headers]]
+  for = &quot;/Build/*.js&quot;
+  [headers.values]
+    Content-Encoding = &quot;js&quot;
+    Content-Type = &quot;application/javascript&quot;
+
+[[headers]]
+  for = &quot;/Build/*.js.br&quot;
+  [headers.values]
+    Content-Encoding = &quot;br&quot;
+    Content-Type = &quot;application/javascript&quot;
+</code></pre>
+<ul>
+<li><strong>for</strong>: The path where the headers will be added.</li>
+<li><strong>values</strong>: A map of values to add to the response headersa
+<ul>
+<li><strong>Content-Encoding</strong>: The encoding that has been applied to the message paylaod.1</li>
+<li><strong>Content-Type</strong>: Indicates the original type of the resource.</li>
+</ul>
+</li>
+</ul>
+<p>This will set the correct content encoding for all the generated files.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By setting the appropriate headers in the <strong>netlify.toml</strong> file, we can serve a compressed Unity game on Netlify.</p>
+<p><em>If you want to use <strong>gzip</strong> instead, you can follow the same steps by changing <strong>br</strong> to <strong>gz</strong> in the netlify.toml file.</em></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.unity3d.com/Manual/webgl-deploying.html">Unity Webgl Compressed builds</a></li>
+<li><a href="https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file">Netlify headers</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding">Content-Encoding</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-Type</a></li>
+</ul>
+</body></html>
 
 
 
@@ -128,7 +182,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/photo-essay-glacier-national-park-montana&text=Photo%20Essay%3A%20Glacier%20National%20Park%2C%20Montana via @ankur_sheel.&#xD;&#xA;The%20Glacier%20National%20Park%20is%20a%20beautiful%20place%20and%20the%20landscapes%20are%20just%20breathtaking" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify&text=How%20to%20host%20a%20compressed%20Unity%20WebGL%20game%20on%20Netlify via @ankur_sheel.&#xD;&#xA;In%20this%20article%2C%20I%20will%20be%20showing%20how%20to%20serve%20a%20unity%20game%20compressed%20with%20Brotli%20compression%20to%20Netlify" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
