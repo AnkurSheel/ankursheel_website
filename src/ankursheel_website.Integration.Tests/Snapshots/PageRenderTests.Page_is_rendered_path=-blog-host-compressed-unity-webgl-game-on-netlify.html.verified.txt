@@ -93,7 +93,7 @@
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-06-23">June 23, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-06-22">June 22, 2022</time></span>
         <i class="font-bold">
             Reading Time: 2 min
         </i>

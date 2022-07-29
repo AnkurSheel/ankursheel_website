@@ -4,31 +4,31 @@
 <head>
     
 
-<title>How to change the author of multiple Git commits - Ankur Sheel</title>
+<title>How to make Git forget about a committed file added to .gitignore - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A snippet for updating the author details of several commits in a git repository"/>
+<meta name="description" content="A way to remove a file committed in git that you now want git to forget about"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/change-author-multiple-git-commits"/>   
-<meta itemProp="name" content="How to change the author of multiple Git commits"/>
-<meta itemProp="description" content="A snippet for updating the author details of several commits in a git repository"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/change-author-multiple-git-commits-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/change-author-multiple-git-commits"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore"/>   
+<meta itemProp="name" content="How to make Git forget about a committed file added to .gitignore"/>
+<meta itemProp="description" content="A way to remove a file committed in git that you now want git to forget about"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to change the author of multiple Git commits"/>
-<meta property="og:description" content="A snippet for updating the author details of several commits in a git repository"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/change-author-multiple-git-commits-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/change-author-multiple-git-commits-facebook.png"/>
+<meta property="og:title" content="How to make Git forget about a committed file added to .gitignore"/>
+<meta property="og:description" content="A way to remove a file committed in git that you now want git to forget about"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to change the author of multiple Git commits"/>
-<meta name="twitter:description" content="A snippet for updating the author details of several commits in a git repository"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/change-author-multiple-git-commits-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/change-author-multiple-git-commits-twitter.png"/>
+<meta name="twitter:title" content="How to make Git forget about a committed file added to .gitignore"/>
+<meta name="twitter:description" content="A way to remove a file committed in git that you now want git to forget about"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,13 +87,13 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to change the author of multiple Git commits</h1>
+    <h1 class="text-center">How to make Git forget about a committed file added to .gitignore</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-10-28">October 28, 2021</time></span>
+        <span>Last Updated: <time datetime="2022-07-06">July 06, 2022</time></span>
         <i class="font-bold">
             Reading Time: 1 min
         </i>
@@ -105,36 +105,23 @@
 </div>
 
 <html><head></head><body><h2 id="problem">Problem</h2>
-<p>I have two accounts from which I access my GitHub repositories. I have set one of them as a global setting. I sometimes override the default details with my other account on a per-repository basis. Sometimes, I forget to override the default values and realize it only after making a few commits.</p>
-<p>This post will show how we can update the author after making a few commits with incorrect details.</p>
+<p>You committed a file to git and then changed your mind and want git to forget about it. So, you added the file to <code>.gitignore</code>. But the file still keeps showing up as part of your changes.</p>
 <h2 id="solution">Solution</h2>
-<p>First, we need to update our gitconfig with the author details.</p>
-<pre><code class="language-txt">[user]
-name = author_name
-email = author_email
-</code></pre>
-<p>We can run the following command.</p>
-<pre><code class="language-bash hljs">git rebase -i &lt;commit_hash&gt; -x &quot;git commit --amend --reset-author -CHEAD&quot;
+<p>This happens because <code>.gitignore</code> prevents files from being added but does not actively remove the ones already tracked.</p>
+<p>To stop tracking a file (but not delete it), you need to remove it from the index. This can be achieved with this command.</p>
+<pre><code class="language-bash hljs">git rm -r --cached &lt;filename&gt;
 </code></pre>
 <ul>
-<li><strong>git rebase -i</strong>: Runs git rebase in interactive mode, allowing altering individual commits in the process.</li>
-<li><strong>&lt;commit_hash&gt;</strong>: The hash of the commit after which we want to update the author.</li>
-<li><strong>-x</strong>: Append the shell command for each line creating a commit.</li>
-<li><strong>git commit --amend</strong>: Modify the most recent commit.</li>
-<li><strong>--reset-author</strong>: Resets the author to the settings in the .gitconfig.</li>
-<li><strong>-CHEAD</strong>: -C takes the existing commit object and reuses the log message without allowing the user to edit it. HEAD refers to the current commit we are viewing. -CHEAD takes the message from the current commit without opening the editor.</li>
+<li><strong><em>git rm</em></strong>: the command that lets us remove tracked changes.</li>
+<li><strong><em>-r</em></strong>:  Removes the file recursively.</li>
+<li><strong><em>--cached</em></strong>: Removes only from the index.</li>
+<li><strong><em>&lt;filename&gt;</em></strong>: the file name you wish to stop tracking.</li>
 </ul>
-<p>We will then be presented with an editor to confirm all the commits we want.</p>
-<p>We can run the following command to update the author for all commits, including the root.</p>
-<pre><code class="language-bash hljs">git rebase -i --root -x &quot;git commit --amend --reset-author -CHEAD&quot;
-</code></pre>
-<h2 id="conclusion">Conclusion</h2>
-<p>This will update the author details for all the specified commits. This is also why it&quot;s important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the <a href="securing-git-commits-windows">guide to securing git commits from tricking you on Windows</a>.</p>
-<h2 id="further-reading">Further Reading</h2>
+<p>You can now make a new commit and push it to your remote.</p>
+<p>Note that this will not remove the physical file from your local machine but will remove the files from other devices on the next git pull, so be careful with this command.</p>
+<h2 id="references">References</h2>
 <ul>
-<li><a href="https://git-scm.com/docs/git-commit">git-commit Documentation</a></li>
-<li><a href="https://git-scm.com/docs/gitrevisions">gitrevisions Documentation</a></li>
-<li><a href="https://git-scm.com/docs/git-rebase">git-rebase Documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-rm">git-rm</a></li>
 </ul>
 </body></html>
 
@@ -145,7 +132,7 @@ email = author_email
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/change-author-multiple-git-commits&text=How%20to%20change%20the%20author%20of%20multiple%20Git%20commits via @ankur_sheel.&#xD;&#xA;A%20snippet%20for%20updating%20the%20author%20details%20of%20several%20commits%20in%20a%20git%20repository" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore&text=How%20to%20make%20Git%20forget%20about%20a%20committed%20file%20added%20to%20.gitignore via @ankur_sheel.&#xD;&#xA;A%20way%20to%20remove%20a%20file%20committed%20in%20git%20that%20you%20now%20want%20git%20to%20forget%20about" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

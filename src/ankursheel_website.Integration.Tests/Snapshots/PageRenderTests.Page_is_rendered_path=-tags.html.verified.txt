@@ -160,6 +160,9 @@
             <a role="button" href="/tags/dev-tools" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (5)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/statiq" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Statiq (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -191,9 +194,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/europe" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Europe (3)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tailwind" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>
@@ -247,6 +247,9 @@
             <a role="button" href="/tags/sql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (2)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dapper" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dapper (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -263,9 +266,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/source-generator" class="capitalize badge text-gray-900 bg-grey-light no-underline"> source generator (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/usa" class="capitalize badge text-gray-900 bg-grey-light no-underline"> USA (1)</a>

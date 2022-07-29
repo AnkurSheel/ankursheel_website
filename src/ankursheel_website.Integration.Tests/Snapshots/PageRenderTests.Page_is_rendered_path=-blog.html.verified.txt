@@ -88,7 +88,7 @@
             
 
 
-<h2>All Categories (180)</h2>
+<h2>All Categories (183)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -104,19 +104,19 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/replace-word-string-csharp">How to replace a word in a string in C#</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/programmatically-remove-service-worker">How to programmatically remove a service worker</a>
         </li>
 </ul>
 
@@ -171,10 +171,19 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (54)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (57)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a> - <time class="prose-sm" datetime="22-06-23">June 23, 2022</time>
+                <a href="/blog/restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a> - <time class="prose-sm" datetime="22-07-28">July 28, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a> - <time class="prose-sm" datetime="22-07-06">July 06, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a> - <time class="prose-sm" datetime="22-06-29">June 29, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a> - <time class="prose-sm" datetime="22-06-22">June 22, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a> - <time class="prose-sm" datetime="22-06-20">June 20, 2022</time>

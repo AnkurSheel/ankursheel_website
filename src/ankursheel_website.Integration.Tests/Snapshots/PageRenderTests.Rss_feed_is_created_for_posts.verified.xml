@@ -8,11 +8,90 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>How to restore lost commits using git reflog</title>
+      <link>https://www.ankursheel.com/blog/restore-lost-commits-git-reflog</link>
+      <description>A way to restore lost commits after a hard reset or a bad force push</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/restore-lost-commits-git-reflog/reflog-example.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/restore-lost-commits-git-reflog</guid>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;If you are like me, you have probably sometimes committed a change in git but did a hard reset. Or you force pushed after a rebase and lost a commit that you needed. Let's see how you can restore that commit without rework.&lt;/p&gt;
+&lt;p&gt;Have no fear; your work is still here. Let's see how you restore lost commits so that you don't have to do that work again.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;You can use &lt;code&gt;git reflog&lt;/code&gt; to restore lost commits. &lt;code&gt;git reflog&lt;/code&gt; is a logging mechanism that keeps track of all changes made in a repository.&lt;/p&gt;
+&lt;p&gt;Below is an example of the output of git reflog&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/restore-lost-commits-git-reflog/reflog-example.png" alt="Reflog Example"&gt;&lt;/p&gt;
+&lt;p n=""&gt;In the image above, you can see that each commit has a unique hash-id. You can either use the SHA or HEAD@&lt;/p&gt;
+&lt;p&gt;Now, depending on what you want, there are several options.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git reset --hard &amp;lt;SHA&amp;gt;&lt;/code&gt;: restores the project's history to that commit.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;git checkout &amp;lt;SHA&amp;gt; -- &amp;lt;filename&amp;gt;&lt;/code&gt;: recreates one or more files in your working directory without altering the history.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;git cherry-pick &amp;lt;SHA&amp;gt;&lt;/code&gt;: append the commit to the current working head&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-reflog"&gt;git reflog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-cherry-pick"&gt;git cherry-pick&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to make Git forget about a committed file added to .gitignore</title>
+      <link>https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore</link>
+      <description>A way to remove a file committed in git that you now want git to forget about</description>
+      <guid>https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore</guid>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;You committed a file to git and then changed your mind and want git to forget about it. So, you added the file to &lt;code&gt;.gitignore&lt;/code&gt;. But the file still keeps showing up as part of your changes.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;This happens because &lt;code&gt;.gitignore&lt;/code&gt; prevents files from being added but does not actively remove the ones already tracked.&lt;/p&gt;
+&lt;p&gt;To stop tracking a file (but not delete it), you need to remove it from the index. This can be achieved with this command.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rm -r --cached &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;git rm&lt;/em&gt;&lt;/strong&gt;: the command that lets us remove tracked changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;-r&lt;/em&gt;&lt;/strong&gt;:  Removes the file recursively.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;--cached&lt;/em&gt;&lt;/strong&gt;: Removes only from the index.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;&amp;lt;filename&amp;gt;&lt;/em&gt;&lt;/strong&gt;: the file name you wish to stop tracking.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can now make a new commit and push it to your remote.&lt;/p&gt;
+&lt;p&gt;Note that this will not remove the physical file from your local machine but will remove the files from other devices on the next git pull, so be careful with this command.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rm"&gt;git-rm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>How to fix the Language version error for Unity projects in Rider</title>
+      <link>https://www.ankursheel.com/blog/fix-language-version-error-unity-rider</link>
+      <description>How to fix the language version compiler error on building a project in rider created with Unity.</description>
+      <guid>https://www.ankursheel.com/blog/fix-language-version-error-unity-rider</guid>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;On building a project created with Unity 2021.3 in Rider, you get a language version error which looks similar to&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-lsl hljs"&gt;Invalid option '&lt;span class="hljs-number"&gt;9.0&lt;/span&gt;' for /langversion; must be ISO&lt;span class="hljs-number"&gt;-1&lt;/span&gt;, ISO&lt;span class="hljs-number"&gt;-2&lt;/span&gt;, &lt;span class="hljs-number"&gt;3&lt;/span&gt;, &lt;span class="hljs-number"&gt;4&lt;/span&gt;, &lt;span class="hljs-number"&gt;5&lt;/span&gt; or Default
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, you don't see any errors when building inside the unity editor.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;This is because the API Compatability level in Unity is set to &lt;strong&gt;&lt;em&gt;.NET Standard 2.1&lt;/em&gt;&lt;/strong&gt;. This, in turn, sets the LangVersion property in the csproj to &lt;strong&gt;&lt;em&gt;9.0&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;But, Rider puts the MSBuild version to .NET Framework 4.&lt;/p&gt;
+&lt;p&gt;The solution is to change the MSBuild version (in Rider) from Auto Detected to the embedded JetBrains path.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/fix-language-version-error-unity-rider/rider-settings.png" alt="Rider settings for MSbuild version"&gt;&lt;/p&gt;
+&lt;p&gt;Remember to save it to the team-shared layer.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We can eliminate the language error by updating the project's MSBuild version Rider uses.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How to host a compressed Unity WebGL game on Netlify</title>
       <link>https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify</link>
       <description>In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify</description>
       <guid>https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify</guid>
-      <pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate>
       <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;hr&gt;
 &lt;p&gt;When you deploy a WebGL build for a Unity game, you can define the compression format to Brotli(or gzip).&lt;/p&gt;
 &lt;p&gt;If you deploy this compressed unity game to Netlify and try to run it, you will see an error similar to&lt;/p&gt;
@@ -797,104 +876,6 @@ services:
 &lt;h2 id="the-three-sides-of-risk"&gt;&lt;a href="https://www.collaborativefund.com/blog/the-three-sides-of-risk/"&gt;The Three Sides of Risk&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Morgan Housel&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What can skiing teach you about investing? A lot, it seems. There are distinct sides of risk 2 of which are easy to grasp. But the last one, the tail-end consequences of getting hit, can often be learned only through experience. But the tail-end events are all that matter. This is also why I always consider the worst outcome of any decision, and only if I am ok with it is when I take the risk.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to move a commit between repositories</title>
-      <link>https://www.ankursheel.com/blog/move-commit-between-repositories</link>
-      <description>Steps to move a commit from one repository to another</description>
-      <guid>https://www.ankursheel.com/blog/move-commit-between-repositories</guid>
-      <pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Sometimes you have a commit in a repository that you want to bring over to another repository. We can follow these steps to do just that.&lt;/p&gt;
-&lt;h3 id="create-a-patch"&gt;Create a patch&lt;/h3&gt;
-&lt;p&gt;In the source repository, we can create a patch that describes the commit by running.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git format-patch -1 &amp;lt;sha&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;-1&lt;/strong&gt;: The number of commits to create the patch for&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;sha&lt;/strong&gt;: The SHA of the commit&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="apply-the-patch"&gt;Apply the patch&lt;/h3&gt;
-&lt;p&gt;In the target repository, we can apply the patch with&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git apply PATH_TO_PATCH --reject
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;reject&lt;/strong&gt;: Applies the parts of the patch that are applicable and leaves the rejected hunks in corresponding *.rej files. We have to apply these manually.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-format-patch"&gt;git-format-patch Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-apply"&gt;git-apply Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 45</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-45</link>
-      <description>This weeks roundup contains articles from Ramit Sethi, Ruth, Kent Dodds, Fon Nkwenti and Fajar Zuhri Hadiyanto</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-45</guid>
-      <pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
-&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="is-renting-a-waste-of-money"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/renting-is-not-a-waste/"&gt;Is Renting a Waste of Money&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Even though it's the same thing as paying to eat at a restaurant, many people believe that renting is throwing away money. This article shares the common reasons why believe the myth that renting is throwing away money.&lt;/p&gt;
-&lt;h2 id="are-you-scared-of-not-buying-a-house"&gt;&lt;a href="https://www.thehappysaver.com/blog/are-you-scared-of-not-buying-a-house"&gt;Are you scared of NOT buying a house?&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ruth&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A New Zealand centric article on the potential solutions for people struggling to buy a house in the NZ market. The article also goes into what's great and not so great about renting.&lt;/p&gt;
-&lt;h2 id="how-i-built-a-modern-website-in-2021"&gt;&lt;a href="https://kentcdodds.com/blog/how-i-built-a-modern-website-in-2021"&gt;How I built a modern website in 2021&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kent Dodds&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A blog post about how Kent rebuilt his website using modern tools. It gives an excellent overview of the architecture and tech used, so you can probably pick up some tidbits for your blog even if you don't have the same use case.&lt;/p&gt;
-&lt;h2 id="getting-started-with-aws-cli-v2-as-a-docker-container"&gt;&lt;a href="https://dev.to/aws-builders/getting-started-with-aws-cli-v2-as-a-docker-container-j23"&gt;Getting Started with AWS CLI v2 as a Docker Container&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Fon Nkwenti&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the AWS CLI version 2 in a container-based environment means we don't have to manage the installation and dependencies ourselves.&lt;/p&gt;
-&lt;h2 id="database-normalization"&gt;&lt;a href="https://dev.to/fajarzuhrihadiyanto/database-normalization-jil"&gt;Database Normalization&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Fajar Zuhri Hadiyanto&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The steps to normalize a database from completely un-normalized to 5NF by way of an example.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to change the author of multiple Git commits</title>
-      <link>https://www.ankursheel.com/blog/change-author-multiple-git-commits</link>
-      <description>A snippet for updating the author details of several commits in a git repository</description>
-      <guid>https://www.ankursheel.com/blog/change-author-multiple-git-commits</guid>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;I have two accounts from which I access my GitHub repositories. I have set one of them as a global setting. On a per-repository basis, I sometimes override the default details with my other account. Sometimes, I forget to override the default values and realize it only after making a few commits.&lt;/p&gt;
-&lt;p&gt;This post will show how we can update the author after making a few commits with incorrect details.&lt;/p&gt;
-&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;p&gt;First, we need to update our gitconfig with the author details.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-txt"&gt;[user]
-name = author_name
-email = author_email
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We can run the following command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i &amp;lt;commit_hash&amp;gt; -x "git commit --amend --reset-author -CHEAD"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;git rebase -i&lt;/strong&gt;: Runs git rebase in interactive mode, allowing altering individual commits in the process.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&amp;lt;commit_hash&amp;gt;&lt;/strong&gt;: The hash of the commit after which we want to update the author.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;-x&lt;/strong&gt;: Append the shell command for each line creating a commit.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;git commit --amend&lt;/strong&gt;: Modify the most recent commit.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;--reset-author&lt;/strong&gt;: Resets the author to the settings in the .gitconfig.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;-CHEAD&lt;/strong&gt;: -C takes the existing commit object and reuses the log message without allowing the user to edit it. HEAD refers to the current commit we are viewing. -CHEAD takes the message from the current commit without opening the editor.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We will then be presented with an editor to confirm all the commits we want.&lt;/p&gt;
-&lt;p&gt;We can run the following command to update the author for all commits, including the root.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rebase -i --root -x "git commit --amend --reset-author -CHEAD"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;This will update the author details for all the specified commits. This is also why it's important to sign your commits so that no one else can attribute bad malicious commits to you. You can see how to do this by following the steps in the &lt;a href="https://www.ankursheel.com/securing-git-commits-windows"&gt;guide to securing git commits from tricking you on Windows&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-commit"&gt;git-commit Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/gitrevisions"&gt;gitrevisions Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rebase"&gt;git-rebase Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

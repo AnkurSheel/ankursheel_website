@@ -766,6 +766,18 @@
   </url>
   <url>
     <loc>https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify</loc>
-    <lastmod>2022-06-23T00:00:00Z</lastmod>
+    <lastmod>2022-06-22T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/fix-language-version-error-unity-rider</loc>
+    <lastmod>2022-06-29T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore</loc>
+    <lastmod>2022-07-06T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/restore-lost-commits-git-reflog</loc>
+    <lastmod>2022-07-28T00:00:00Z</lastmod>
   </url>
 </urlset>
