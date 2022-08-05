@@ -219,3 +219,9 @@ from = "/blog/reset-primary-key-sequence-out-of-sync-postgres"
 to = "/blog/reset-primary-key-sequence-out-sync-postgres"
 status = 301
 force = false
+
+[[redirects]]
+from = "/blog/betternamingconventionunittests"
+to = "/blog/better-naming-convention-unit-tests"
+status = 301
+force = false
