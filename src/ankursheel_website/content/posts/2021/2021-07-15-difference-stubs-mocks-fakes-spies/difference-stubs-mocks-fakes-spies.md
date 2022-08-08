@@ -1,15 +1,17 @@
 ---
-title: 'What is the difference between Stubs, Mocks, Fakes and Spies'
-excerpt: 'We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies'
+title: "Stubs vs Mocks vs Fakes vs Spy"
+excerpt: "We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"
 category: "programming"
+updatedOnDate: "2022-08-08"
 tags:
-    - 'testing'
-updatedOnDate: 2021-07-17
+
+- "testing"
+
 ---
 
 The lines between the different test doubles are blurred when using a Mocking library like [Moq](https://github.com/moq/moq4).
 
-I use mocks for almost everything, but I think it's still worthwhile to know the difference between Stubs, Mocks, Fakes and Spies. If nothing else, we will know what people are talking about when they use the different terms.
+I use mocks for almost everything, but knowing the difference between Stubs, Mocks, Fakes, and Spies is worthwhile. If nothing else, we will know what people are talking about when they use the different terms.
 
 Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.
 
@@ -38,7 +40,7 @@ An example can be an object that needs to grab some data from the database to re
 
 A spy lets us verify what functions were called, with what arguments, when, and how often.
 
-For example, let's take a repository class, which does not have an interface associated with it.
+For example, let's take a repository class which does not have an interface associated with it.
 
 ```csharp
 public class RepositorySpy : IRepository
@@ -62,15 +64,15 @@ Assert.True(spy.IsValidWasCalled);
 
 We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.
 
-An example could be to be check that we are sending an email only once and with the correct arguments or that all the logs are logged correctly.
+An example would be checking that we send an email only once with the correct arguments or that all the logs are logged correctly.
 
 I rarely use Spies, and it will become clear why once we look at Mocks.
 
 ## Mock
 
-A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, unlike a spy, which has the assertion in the test, the assertion is in the verify method in a mock.
+A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, the assertion is in the verify method in a mock. In a spy, the assertion is in the test,
 
-Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verify that the correct calls were received.
+Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verified that the correct calls were received.
 
 ```csharp
 var mock = new Mock<IRepository>();
@@ -84,7 +86,7 @@ A mock can be used anywhere we use a stub, but we need to verify multiple more s
 
 ## Fake
 
-A Fake is an object that has a concrete implementation that works similar to the actual implementation. It is a simplified version of production code. It does not affect the behaviour of the test but simplifies the implementation of the test by removing heavyweight dependencies.
+A Fake is an object with a concrete implementation that works similarly to the actual implementation. It is a simplified version of production code. It does not affect the test's behaviour but simplifies the test's implementation by removing heavyweight dependencies.
 
 It should be used sparingly and only in cases where a Stub or Mock is not usable.
 
