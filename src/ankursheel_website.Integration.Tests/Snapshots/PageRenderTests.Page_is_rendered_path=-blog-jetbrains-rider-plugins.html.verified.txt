@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Stubs vs Mocks vs Fakes vs Spy - Ankur Sheel</title>
+<title>My JetBrains Rider plugins - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
+<meta name="description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>   
-<meta itemProp="name" content="Stubs vs Mocks vs Fakes vs Spy"/>
-<meta itemProp="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/jetbrains-rider-plugins"/>   
+<meta itemProp="name" content="My JetBrains Rider plugins"/>
+<meta itemProp="description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/jetbrains-rider-plugins"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Stubs vs Mocks vs Fakes vs Spy"/>
-<meta property="og:description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
+<meta property="og:title" content="My JetBrains Rider plugins"/>
+<meta property="og:description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Stubs vs Mocks vs Fakes vs Spy"/>
-<meta name="twitter:description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-twitter.png"/>
+<meta name="twitter:title" content="My JetBrains Rider plugins"/>
+<meta name="twitter:description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,97 +87,88 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Stubs vs Mocks vs Fakes vs Spy</h1>
+    <h1 class="text-center">My JetBrains Rider plugins</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-08-08">August 08, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-08-24">August 24, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 3 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/testing" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">testing</a>
+            <a href="/tags/rider" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">rider</a>
+            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
     </div>
 </div>
 
-<html><head></head><body><p>The lines between the different test doubles are blurred when using a Mocking library like <a href="https://github.com/moq/moq4">Moq</a>.</p>
-<p>I use mocks for almost everything, but knowing the difference between Stubs, Mocks, Fakes, and Spies is worthwhile. If nothing else, we will know what people are talking about when they use the different terms.</p>
-<p>Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IRepository</span>
-{
-     <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)</span>;
-     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)</span>;
-}
-</code></pre>
-<h2 id="stub">Stub</h2>
-<p>A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.</p>
-<p>Below is the stubbed version using Moq of a service where the OnPing() function always returns &quot;pong&quot; regardless of the input.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
-mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())).Returns(<span class="hljs-literal">true</span>);
-</code></pre>
-<p>An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.</p>
-<h2 id="spy">Spy</h2>
-<p>A spy lets us verify what functions were called, with what arguments, when, and how often.</p>
-<p>For example, let's take a repository class which does not have an interface associated with it.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">RepositorySpy</span> : <span class="hljs-title">IRepository</span>
-{
-    <span class="hljs-keyword">public</span> boolean IsValidWasCalled = <span class="hljs-literal">false</span>;
+<p>I've been using <a href="https://www.jetbrains.com/rider/">JetBrains Rider</a> for quite some time now. Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them.</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>What does it do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.NET Core User Secrets</td>
+<td>Provides the ability to create and edit user secrets in .NET projects</td>
+</tr>
+<tr>
+<td>GraphQL</td>
+<td>Adds syntax highlighting and IntelliSense for graphql files</td>
+</tr>
+<tr>
+<td>Json Formatter</td>
+<td>Reformats JSON</td>
+</tr>
+<tr>
+<td>Key Promoter X</td>
+<td>Shows you keyboard shortcuts that you could have used instead of using a mouse button inside the IDE</td>
+</tr>
+<tr>
+<td>MoqComplete</td>
+<td>Provides Code Completion for Moq</td>
+</tr>
+<tr>
+<td>Rainbow Brackets</td>
+<td>Provides coloured brackets, parentheses, and lines in the IDE</td>
+</tr>
+<tr>
+<td>Rossynt</td>
+<td>Roslyn Syntax tree viewer</td>
+</tr>
+<tr>
+<td>Statiq Support</td>
+<td>Live templates for Statiq</td>
+</tr>
+<tr>
+<td>String Manipulation</td>
+<td>Perform a variety of tasks on strings, from capitalizing, converting between different cases, and escaping strings</td>
+</tr>
+<tr>
+<td>Structured Logging</td>
+<td>Useful analyzers for structured logging</td>
+</tr>
+<tr>
+<td>Tailwind CSS</td>
+<td>adds autocompletes and previews for Tailwind classes</td>
+</tr>
+<tr>
+<td>Terraform and HCL</td>
+<td>Adds autocompletion and syntax highlighting for hcl files</td>
+</tr>
+<tr>
+<td>Toml</td>
+<td>support for netlify toml files</td>
+</tr>
+</tbody>
+</table>
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
-    </span>{
-        IsValidWasCalled = <span class="hljs-literal">true</span>;
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-    }
-}
-</code></pre>
-<p>In the test, we will assert that <code>IsValidWasCalled</code> was <em>true</em>.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> spy = <span class="hljs-keyword">new</span> RepositorySpy();
-Assert.True(spy.IsValidWasCalled);
-</code></pre>
-<p>We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.</p>
-<p>An example would be checking that we send an email only once with the correct arguments or that all the logs are logged correctly.</p>
-<p>I rarely use Spies, and it will become clear why once we look at Mocks.</p>
-<h2 id="mock">Mock</h2>
-<p>A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, the assertion is in the verify method in a mock. In a spy, the assertion is in the test,</p>
-<p>Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verified that the correct calls were received.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
-mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">1</span>)).Returns(<span class="hljs-literal">true</span>);
-mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">2</span>)).Returns(<span class="hljs-literal">false</span>);
-mock.Verify(x =&gt; x.Add(<span class="hljs-number">1</span>), Times.Once);
-mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())), Times(<span class="hljs-number">2</span>));
-</code></pre>
-<p>A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.</p>
-<h2 id="fake">Fake</h2>
-<p>A Fake is an object with a concrete implementation that works similarly to the actual implementation. It is a simplified version of production code. It does not affect the test's behaviour but simplifies the test's implementation by removing heavyweight dependencies.</p>
-<p>It should be used sparingly and only in cases where a Stub or Mock is not usable.</p>
-<p>Below is an implementation of a Fake repository</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FakeRepository</span> : <span class="hljs-title">IRepository</span>
-{
-    <span class="hljs-keyword">private</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt; _values = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt;();
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
-    </span>{
-        <span class="hljs-keyword">return</span> _values[id];
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)
-    </span>{
-        _values.Add(id, open);
-    }
-}
-</code></pre>
-<p>An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.</p>
-<h3 id="thanks">Thanks</h3>
-<ul>
-<li>Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.</li>
-</ul>
-</body></html>
 
 
 
@@ -186,7 +177,7 @@ mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies&text=Stubs%20vs%20Mocks%20vs%20Fakes%20vs%20Spy via @ankur_sheel.&#xD;&#xA;We%20can%20use%20Mocks%20for%20almost%20everything%20when%20we%20use%20a%20mocking%20framework%2C%20but%20what%20is%20the%20difference%20between%20Stubs%2C%20Mocks%2C%20Fakes%20and%20Spies" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/jetbrains-rider-plugins&text=My%20JetBrains%20Rider%20plugins via @ankur_sheel.&#xD;&#xA;JetBrains%20Rider%20has%20a%20rich%20plugin%20ecosystem%2C%20many%20of%20which%20are%20bundled%20at%20the%20installation%20time.%20Here%20is%20a%20list%20of%20plugins%20I%20like%20to%20add%20on%20top%20of%20them" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

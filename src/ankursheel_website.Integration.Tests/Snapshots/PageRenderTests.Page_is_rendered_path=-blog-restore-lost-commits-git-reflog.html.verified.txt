@@ -105,8 +105,8 @@
 </div>
 
 <h2 id="problem">Problem</h2>
-<p>If you are like me, you have probably sometimes committed a change in git but did a hard reset. Or you force pushed after a rebase and lost a commit that you needed. Let's see how you can restore that commit without rework.</p>
-<p>Have no fear; your work is still here. Let's see how you restore lost commits so that you don't have to do that work again.</p>
+<p>If you are like me, you have probably sometimes committed a change in git but did a hard reset. Or you force pushed after a rebase and lost a commit that you needed.</p>
+<p>Have no fear; your work is still here. Let's see how you can restore lost commits so that you don't have to do that work again.</p>
 <h2 id="solution">Solution</h2>
 <p>You can use <code>git reflog</code> to restore lost commits. <code>git reflog</code> is a logging mechanism that keeps track of all changes made in a repository.</p>
 <p>Below is an example of the output of git reflog</p>
@@ -115,8 +115,8 @@
 <p>Now, depending on what you want, there are several options.</p>
 <ul>
 <li><code>git reset --hard &lt;SHA&gt;</code>: restores the project's history to that commit.</li>
-<li>Use <code>git checkout &lt;SHA&gt; -- &lt;filename&gt;</code>: recreates one or more files in your working directory without altering the history.</li>
-<li>Use <code>git cherry-pick &lt;SHA&gt;</code>: append the commit to the current working head</li>
+<li><code>git checkout &lt;SHA&gt; -- &lt;filename&gt;</code>: recreates one or more files in your working directory without altering the history.</li>
+<li><code>git cherry-pick &lt;SHA&gt;</code>: append the commit to the current working head.</li>
 </ul>
 <h2 id="references">References</h2>
 <ul>

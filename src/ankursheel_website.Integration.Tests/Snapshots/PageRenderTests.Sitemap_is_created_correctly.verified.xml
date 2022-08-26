@@ -293,10 +293,6 @@
     <lastmod>2016-12-15T00:00:00Z</lastmod>
   </url>
   <url>
-    <loc>https://www.ankursheel.com/blog/popular-posts-2016</loc>
-    <lastmod>2017-02-08T00:00:00Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.ankursheel.com/blog/dream-job</loc>
     <lastmod>2020-10-01T00:00:00Z</lastmod>
   </url>
@@ -634,7 +630,7 @@
   </url>
   <url>
     <loc>https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies</loc>
-    <lastmod>2021-07-17T00:00:00Z</lastmod>
+    <lastmod>2022-08-08T00:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://www.ankursheel.com/blog/make-code-reviews-stress-free</loc>
@@ -779,5 +775,17 @@
   <url>
     <loc>https://www.ankursheel.com/blog/restore-lost-commits-git-reflog</loc>
     <lastmod>2022-07-28T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/better-naming-convention-unit-tests</loc>
+    <lastmod>2022-08-04T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable</loc>
+    <lastmod>2022-08-17T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/jetbrains-rider-plugins</loc>
+    <lastmod>2022-08-24T00:00:00Z</lastmod>
   </url>
 </urlset>

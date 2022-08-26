@@ -8,6 +8,140 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>My JetBrains Rider plugins</title>
+      <link>https://www.ankursheel.com/blog/jetbrains-rider-plugins</link>
+      <description>JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them</description>
+      <guid>https://www.ankursheel.com/blog/jetbrains-rider-plugins</guid>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;I've been using &lt;a href="https://www.jetbrains.com/rider/"&gt;JetBrains Rider&lt;/a&gt; for quite some time now. Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Plugin&lt;/th&gt;
+&lt;th&gt;What does it do&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;.NET Core User Secrets&lt;/td&gt;
+&lt;td&gt;Provides the ability to create and edit user secrets in .NET projects&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GraphQL&lt;/td&gt;
+&lt;td&gt;Adds syntax highlighting and IntelliSense for graphql files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Json Formatter&lt;/td&gt;
+&lt;td&gt;Reformats JSON&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Key Promoter X&lt;/td&gt;
+&lt;td&gt;Shows you keyboard shortcuts that you could have used instead of using a mouse button inside the IDE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MoqComplete&lt;/td&gt;
+&lt;td&gt;Provides Code Completion for Moq&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Rainbow Brackets&lt;/td&gt;
+&lt;td&gt;Provides coloured brackets, parentheses, and lines in the IDE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Rossynt&lt;/td&gt;
+&lt;td&gt;Roslyn Syntax tree viewer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Statiq Support&lt;/td&gt;
+&lt;td&gt;Live templates for Statiq&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String Manipulation&lt;/td&gt;
+&lt;td&gt;Perform a variety of tasks on strings, from capitalizing, converting between different cases, and escaping strings&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Structured Logging&lt;/td&gt;
+&lt;td&gt;Useful analyzers for structured logging&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tailwind CSS&lt;/td&gt;
+&lt;td&gt;adds autocompletes and previews for Tailwind classes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Terraform and HCL&lt;/td&gt;
+&lt;td&gt;Adds autocompletion and syntax highlighting for hcl files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Toml&lt;/td&gt;
+&lt;td&gt;support for netlify toml files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Organizing Unity projects to make them testable</title>
+      <link>https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable</link>
+      <description>Unity, by default, puts all the scripts in a single assembly. See how I structure my unity projects to make the code more organized and testable</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/organizing-unity-projects-make-them-testable/cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable</guid>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;When we create a project in Unity, Unity groups all the scripts into a single Assembly predefined by &lt;strong&gt;&lt;em&gt;Unity&lt;/em&gt;&lt;/strong&gt; as &lt;em&gt;Assembly-CSharp.dll&lt;/em&gt;. This allows all of our scripts to have direct access to each other, which makes prototyping and implementation of functionality in Unity very easy.&lt;/p&gt;
+&lt;p&gt;However, by making parts of our code entirely dependent on each other, we risk creating spaghetti code, especially as the project grows.&lt;/p&gt;
+&lt;p&gt;To remove this risk of falling into a big bowl of spaghetti code, we need to remove the mono behaviours from the program logic. We can achieve this by creating our own Assembly definitions and references.&lt;/p&gt;
+&lt;h2 id="splitting-into-assemblies"&gt;Splitting into assemblies&lt;/h2&gt;
+&lt;p&gt;In my unity projects, I have a &lt;strong&gt;Core&lt;/strong&gt; assembly which contains all the program logic. The classes in this assembly do not inherit from &lt;code&gt;Monobehaviour&lt;/code&gt; or &lt;code&gt;ScriptableObject&lt;/code&gt;. This is where the meat of the code lives.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/organizing-unity-projects-make-them-testable/cover.png" alt="Project structure"&gt;&lt;/p&gt;
+&lt;p&gt;3 other assemblies depend on Core&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scripts&lt;/strong&gt; contains all the mono behaviours and scriptable objects. The classes expose the properties that a designer might want to edit. They pass those values to the appropriate functions in &lt;strong&gt;Core&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor&lt;/strong&gt; contains all our custom inspectors and Editors. It only supports the Editor platform&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tests&lt;/strong&gt; contains all our tests. Since the &lt;strong&gt;Scripts&lt;/strong&gt; and &lt;strong&gt;Editor&lt;/strong&gt; do not contain any logic, we can write unit tests against the classes in &lt;strong&gt;Core&lt;/strong&gt; and make sure they are modular.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Besides making our code more organized and testable, splitting our code into assembly definitions helps compile times. With a single assembly definition, every time we make a change to any script, Unity has to compile every single script. By moving our code into assemblies, Unity only has to recompile the scripts that are only inside that &lt;strong&gt;&lt;em&gt;Assembly&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As each assembly becomes more extensive, I split it into smaller assemblies.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Unity, by default, puts all the scripts in a single assembly. This might be fine for small projects. But, by putting in a little effort and splitting our code into multiple assemblies, we can make our code more organized and testable.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>A better naming convention for unit tests</title>
+      <link>https://www.ankursheel.com/blog/better-naming-convention-unit-tests</link>
+      <description>There are a lot of problems with the most common naming convention(MethodName_Scenario_ExpectedResult) for unit test. Let's look at a naming convention that improves test readability</description>
+      <guid>https://www.ankursheel.com/blog/better-naming-convention-unit-tests</guid>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;I have been writing unit tests for quite some time now and have seen and tried a lot of naming conventions.&lt;/p&gt;
+&lt;p&gt;One of the most common conventions I have seen is &lt;code&gt;MethodName_Scenario_ExpectedResult&lt;/code&gt;, or one of its many variations.&lt;/p&gt;
+&lt;p&gt;Here&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MethodName&lt;/strong&gt;: is the name of the method you want to test.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scenario&lt;/strong&gt;: the condition under which you test the method.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ExpectedResult&lt;/strong&gt;: the expected result from the method under test to do in the specified scenario.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An example of this naming convention is &lt;code&gt;IsOrderValid_NoProducts_ReturnsFalse&lt;/code&gt;. If you can't tell, this test check verifies that an order is invalid if it has no products.&lt;/p&gt;
+&lt;h2 id="problems-with-the-methodname_scenario_expectedresult-naming-convention"&gt;Problems with the MethodName_Scenario_ExpectedResult naming convention&lt;/h2&gt;
+&lt;p&gt;This convention does not help with test readability.&lt;/p&gt;
+&lt;p&gt;Focusing on the implementation details instead of the behaviour makes it harder for a non-programmer to read and understand. Even though a programmer could decipher the name, it will take a few brain cycles to figure out precisely what the test is testing and how it relates to the business requirements.&lt;/p&gt;
+&lt;p&gt;Another disadvantage of this convention is that it is tightly coupled to the method name. If the method name changes as part of refactoring, then the test name must also be updated. This affects the maintainability of the test suite.&lt;/p&gt;
+&lt;h2 id="a-better-alternative"&gt;A better alternative&lt;/h2&gt;
+&lt;p&gt;Let's contrast this with the test name written in plain English, &lt;code&gt;Order_with_no_products_is_invalid&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This version describes one of the aspects of the application behaviour under test using terms a non-programmer would understand.&lt;/p&gt;
+&lt;p&gt;It conveys the behaviour of the system instead of the implementation details. It describes the &lt;em&gt;&lt;strong&gt;what-to&lt;/strong&gt;&lt;/em&gt; not the &lt;strong&gt;&lt;em&gt;how-to&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It avoids code smells because it is decoupled from the method name.&lt;/p&gt;
+&lt;p&gt;One nice side benefit of using this naming convention is that our tests can now be treated as a form of documentation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The underscores make long test names more readable.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="unit-test-naming-guidelines"&gt;Unit test naming guidelines&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A non-programmer such as a business analyst should be able to understand what the test is verifying at a glance, i.e. the test name should be in plain English&lt;/li&gt;
+&lt;li&gt;Separating words by underscores increases the readability of long names&lt;/li&gt;
+&lt;li&gt;Don't include the name of the SUT's method in the test's name&lt;/li&gt;
+&lt;li&gt;The test class name can indicate the unit of behaviour you are verifying.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How to restore lost commits using git reflog</title>
       <link>https://www.ankursheel.com/blog/restore-lost-commits-git-reflog</link>
       <description>A way to restore lost commits after a hard reset or a bad force push</description>
@@ -15,8 +149,8 @@
       <guid>https://www.ankursheel.com/blog/restore-lost-commits-git-reflog</guid>
       <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;If you are like me, you have probably sometimes committed a change in git but did a hard reset. Or you force pushed after a rebase and lost a commit that you needed. Let's see how you can restore that commit without rework.&lt;/p&gt;
-&lt;p&gt;Have no fear; your work is still here. Let's see how you restore lost commits so that you don't have to do that work again.&lt;/p&gt;
+&lt;p&gt;If you are like me, you have probably sometimes committed a change in git but did a hard reset. Or you force pushed after a rebase and lost a commit that you needed.&lt;/p&gt;
+&lt;p&gt;Have no fear; your work is still here. Let's see how you can restore lost commits so that you don't have to do that work again.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;You can use &lt;code&gt;git reflog&lt;/code&gt; to restore lost commits. &lt;code&gt;git reflog&lt;/code&gt; is a logging mechanism that keeps track of all changes made in a repository.&lt;/p&gt;
 &lt;p&gt;Below is an example of the output of git reflog&lt;/p&gt;
@@ -25,8 +159,8 @@
 &lt;p&gt;Now, depending on what you want, there are several options.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git reset --hard &amp;lt;SHA&amp;gt;&lt;/code&gt;: restores the project's history to that commit.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;git checkout &amp;lt;SHA&amp;gt; -- &amp;lt;filename&amp;gt;&lt;/code&gt;: recreates one or more files in your working directory without altering the history.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;git cherry-pick &amp;lt;SHA&amp;gt;&lt;/code&gt;: append the commit to the current working head&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout &amp;lt;SHA&amp;gt; -- &amp;lt;filename&amp;gt;&lt;/code&gt;: recreates one or more files in your working directory without altering the history.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git cherry-pick &amp;lt;SHA&amp;gt;&lt;/code&gt;: append the commit to the current working head.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
@@ -725,157 +859,6 @@ services:
 &lt;h2 id="how-to-evaluate-startup-offers-a-beginners-guide"&gt;&lt;a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/"&gt;How to Evaluate Startup Offers - A Beginner's Guide&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Avy Faingezicht&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 47</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-47</link>
-      <description>This weeks roundup contains articles from Ramit Sethi, Muhammed Saleem, Robert Heaton, Charity Majors and David McCarter</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-47</guid>
-      <pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="career-seasons-choosing-a-role-based-on-the-lifestyle-you-want"&gt;&lt;a href="https://www.iwillteachyoutoberich.com/blog/career-seasons/"&gt;Career Seasons: Choosing a Role Based on the Lifestyle You Want&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ramit Sethi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;At different points in our lives, we are in a different season of our careers. The 3 different career seasons are Growth, Lifestyle and Reinvention. It's important to know what season we are in to tailor our job search accordingly. This article can help us figure out what career season we are in.&lt;/p&gt;
-&lt;h2 id="dependency-injection-lifetimes-in-asp.net-core"&gt;&lt;a href="https://code-maze.com/dependency-injection-lifetimes-aspnet-core/?utm_source=pocket_mylisthttps://code-maze.com/dependency-injection-lifetimes-aspnet-core/"&gt;Dependency Injection Lifetimes in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Muhammed Saleem&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;In ASP.NET Core, we can register the dependencies for three different lifetimes. I always get confused about when to use which. This article compares the 3 injection lifetimes by example. It has recommendations for when to use each and when not to use.&lt;/p&gt;
-&lt;h2 id="how-to-write-better-sentences-6-examples"&gt;&lt;a href="https://robertheaton.com/better-sentences/"&gt;How to write better sentences: 6 examples&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Robert Heaton&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;We can improve our articles by making minor tweaks to our writing. This article contains 6 real-world sentences that Robert has made shorter and cleaner.&lt;/p&gt;
-&lt;h3 id="lies-my-parents-told-me-about-logs"&gt;&lt;a href="https://www.honeycomb.io/blog/lies-my-parents-told-me-about-logs/"&gt;Lies My Parents Told Me (About Logs)&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;Charity Majors&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;All of us have some assumptions about logs. Some used to be true, but some never really were. This article outlines some of the common misconceptions about logs.&lt;/p&gt;
-&lt;h3 id="when-are-companies-going-to-learn-how-software-development-works"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/07/15/when-are-companies-going-to-learn-how-software-development-works/"&gt;When Are Companies Going To Learn How Software Development Works?&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;by&lt;/em&gt; &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Many companies make the same mistakes repeatedly that doom their software projects to failure. A story about how David unearthed during an interview of a company making those mistakes.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How do I implement Graphql subscriptions in HotChocolate with Redis</title>
-      <link>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</link>
-      <description>A guide to adding subscriptions to a HotChocolate GraphQL API with a Redis provider</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/images/redis_response.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/implement-graqhql-subscriptions-hotchocolate-redis</guid>
-      <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;GraphQL offers us real-time capabilities to notify us when a specific event happens.&lt;/p&gt;
-&lt;p&gt;In this tutorial, we will add subscriptions to our graphql server. We will create an &lt;code&gt;onPing&lt;/code&gt; event that will send notifications whenever we ping the server with an input string.&lt;/p&gt;
-&lt;p&gt;We will also use Redis that runs in a docker container, and see how we can listen to the events in a Redis command shell.&lt;/p&gt;
-&lt;h2 id="running-redis-using-docker"&gt;Running Redis using docker&lt;/h2&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker run &lt;span class="hljs-_"&gt;-d&lt;/span&gt; --name=redis-graphql -p 6379:6379 redis:6.0-alpine
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="adding-a-subscription"&gt;Adding a Subscription&lt;/h2&gt;
-&lt;p&gt;We will add a new class Subscription which will have our &lt;code&gt;onPing&lt;/code&gt; event.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;Subscription&lt;/span&gt; : &lt;span class="hljs-title"&gt;ObjectType&lt;/span&gt;
-{
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IObjectTypeDescriptor descriptor&lt;/span&gt;)
-    &lt;/span&gt;{
-        descriptor.Field("onPing")
-            .Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;()
-            .Resolve(ctx =&amp;gt; ctx.GetEventMessage&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;())
-            .Subscribe(&lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt; &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventReceiver&amp;gt;().SubscribeAsync&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;("onPing", ctx.RequestAborted));
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 5&lt;/em&gt;&lt;/strong&gt;: The topic for the subscription.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 7&lt;/em&gt;&lt;/strong&gt;: Gets the message payload.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 8&lt;/em&gt;&lt;/strong&gt;: Subscribes to the pub/sub system&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To use subscriptions, we need to add the WebSockets middleware to our request pipeline.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-comment"&gt;// Startup.cs&lt;/span&gt;
-&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IApplicationBuilder app, IWebHostEnvironment env&lt;/span&gt;)
-&lt;/span&gt;{
-    app.UseWebSockets();
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Note: Middleware order is important with .NET Core, so this middleware needs to come before the GraphQL middleware.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Next, We need to register our subscriptions and set up the Redis subscription provider in the Startup class.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;ConfigureServices&lt;/span&gt;(&lt;span class="hljs-params"&gt;IServiceCollection services&lt;/span&gt;)
-&lt;/span&gt;{
-    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; options = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; ConfigurationOptions
-    {
-        EndPoints = { "localhost:&lt;span class="hljs-number"&gt;6379&lt;/span&gt;" },
-    };
-
-    services.AddGraphQLServer()
-            .AddSubscriptionType&amp;lt;Subscription&amp;gt;();
-            .AddRedisSubscriptions(_ =&amp;gt; ConnectionMultiplexer.Connect(options));
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Note: Redis is on port 6379 by default.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="publishing-the-event"&gt;Publishing the event&lt;/h2&gt;
-&lt;p&gt;Our mutation needs to use &lt;code&gt;ITopicEventSender&lt;/code&gt; to send messages to the underlying pub/sub system.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;class&lt;/span&gt; &lt;span class="hljs-title"&gt;Mutation&lt;/span&gt; : &lt;span class="hljs-title"&gt;ObjectType&lt;/span&gt;
-{
-    &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;protected&lt;/span&gt; &lt;span class="hljs-keyword"&gt;override&lt;/span&gt; &lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;Configure&lt;/span&gt;(&lt;span class="hljs-params"&gt;IObjectTypeDescriptor descriptor&lt;/span&gt;)
-    &lt;/span&gt;{
-        descriptor.Field("ping")
-            .Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;()
-            .Argument("payload", des =&amp;gt; des.Type&amp;lt;NonNullType&amp;lt;StringType&amp;gt;&amp;gt;())
-            .Resolve(
-                &lt;span class="hljs-keyword"&gt;async&lt;/span&gt; ctx =&amp;gt;
-                {
-                    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; input = ctx.ArgumentValue&amp;lt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt;&amp;gt;("payload");
-
-                    &lt;span class="hljs-keyword"&gt;await&lt;/span&gt; ctx.Service&amp;lt;ITopicEventSender&amp;gt;().SendAsync("onPing", input);
-                    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; input;
-                });
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Line 13:&lt;/em&gt;&lt;/strong&gt;: "onPing" is the topic we want to publish, and &lt;em&gt;input&lt;/em&gt; is our payload.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="testing"&gt;Testing&lt;/h2&gt;
-&lt;p&gt;We can start an Interactive Shell for the Redis Docker Container.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;docker &lt;span class="hljs-built_in"&gt;exec&lt;/span&gt; -it redis-graphql redis-cli
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we can subscribe to the &lt;em&gt;onPing&lt;/em&gt; channel using the subscribe command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;subscribe onPing
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/redis_docker_interactive_shell.png" alt="Subscribing to the topic in an interactive shell for redis"&gt;&lt;/p&gt;
-&lt;p&gt;In Insomnia (or your IDE of choice), add the following mutation.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-graphql"&gt;mutation {
-    ping(payload: "hello")
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On execution, we should see the following responses.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/mutation.png" alt="Mutation and response"&gt;&lt;/p&gt;
-&lt;p&gt;In the shell, we can see the event on Redis.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/redis_response.png" alt="Event caught by Redis listener"&gt;&lt;/p&gt;
-&lt;h2 id="demo-project"&gt;Demo Project&lt;/h2&gt;
-&lt;p&gt;There is a &lt;a href="https://github.com/AnkurSheel/HotChocolateSubscriptions"&gt;demo project&lt;/a&gt; you can check out over on GitHub.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 46</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-46</link>
-      <description>This weeks roundup contains articles from Gergely Orosz, Anuraj, Shaundai Person, Andrew Lock and Morgan Housel</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-46</guid>
-      <pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;!-- markdownlint-disable no-duplicate-header --&gt;
-&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="the-pragmatic-engineer-test-12-questions-on-engineering-culture"&gt;&lt;a href="https://blog.pragmaticengineer.com/pragmatic-engineer-test/"&gt;The Pragmatic Engineer Test: 12 Questions on Engineering Culture&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You have probably heard of the &lt;a href="https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/"&gt;Joel Test&lt;/a&gt;, but it's 20 years old, and most companies can answer &lt;strong&gt;yes&lt;/strong&gt; to those questions. These questions are better suited to rate the quality of a software team in today's world.&lt;/p&gt;
-&lt;h2 id="implementing-content-security-policy-csp-in-asp.net-core"&gt;&lt;a href="https://dotnetthoughts.net/implementing-content-security-policy-in-aspnetcore/"&gt;Implementing Content Security Policy (CSP) in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Anuraj&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;CSP (Content Security Policy) is a security layer that helps us mitigate and report XSS(Cross-Site Scripting) attacks. This is a guide for creating middleware to set the header to the HTTP response in .Net Core.&lt;/p&gt;
-&lt;h2 id="how-potty-training-shaped-my-tech-teaching-style"&gt;&lt;a href="https://dev.to/shaundai/how-potty-training-shaped-my-tech-teaching-style-29e2"&gt;How Potty Training Shaped My Tech Teaching Style&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Shaundai Person&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Did you know there are parallels between teaching coding and potty training? In both cases, we are giving someone a tool they have never seen before combined with a language they have never heard before and then expecting them to do something they have never done before. This article outlines what can we do differently to avoid these mistakes.&lt;/p&gt;
-&lt;h2 id="debugging-configuration-values-in-asp.net-core"&gt;&lt;a href="https://andrewlock.net/debugging-configuration-values-in-aspnetcore/"&gt;Debugging configuration values in ASP.NET Core&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Andrew Lock&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;When working with .Net Core, it can be useful to inspect the resolved configuration settings to determine why a configuration value does not have the value we expect. This post shows how to use &lt;code&gt;GetDebugView()&lt;/code&gt; to determine where the configuration values have come from. It also goes through the implementation.&lt;/p&gt;
-&lt;h2 id="the-three-sides-of-risk"&gt;&lt;a href="https://www.collaborativefund.com/blog/the-three-sides-of-risk/"&gt;The Three Sides of Risk&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Morgan Housel&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;What can skiing teach you about investing? A lot, it seems. There are distinct sides of risk 2 of which are easy to grasp. But the last one, the tail-end consequences of getting hit, can often be learned only through experience. But the tail-end events are all that matter. This is also why I always consider the worst outcome of any decision, and only if I am ok with it is when I take the risk.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

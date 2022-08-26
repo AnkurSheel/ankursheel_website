@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Stubs vs Mocks vs Fakes vs Spy - Ankur Sheel</title>
+<title>A better naming convention for unit tests - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
+<meta name="description" content="There are a lot of problems with the most common naming convention(MethodName_Scenario_ExpectedResult) for unit test. Let&#x27;s look at a naming convention that improves test readability"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>   
-<meta itemProp="name" content="Stubs vs Mocks vs Fakes vs Spy"/>
-<meta itemProp="description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/better-naming-convention-unit-tests"/>   
+<meta itemProp="name" content="A better naming convention for unit tests"/>
+<meta itemProp="description" content="There are a lot of problems with the most common naming convention(MethodName_Scenario_ExpectedResult) for unit test. Let&#x27;s look at a naming convention that improves test readability"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/better-naming-convention-unit-tests-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/better-naming-convention-unit-tests"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Stubs vs Mocks vs Fakes vs Spy"/>
-<meta property="og:description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-facebook.png"/>
+<meta property="og:title" content="A better naming convention for unit tests"/>
+<meta property="og:description" content="There are a lot of problems with the most common naming convention(MethodName_Scenario_ExpectedResult) for unit test. Let&#x27;s look at a naming convention that improves test readability"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/better-naming-convention-unit-tests-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/better-naming-convention-unit-tests-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Stubs vs Mocks vs Fakes vs Spy"/>
-<meta name="twitter:description" content="We can use Mocks for almost everything when we use a mocking framework, but what is the difference between Stubs, Mocks, Fakes and Spies"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/difference-stubs-mocks-fakes-spies-twitter.png"/>
+<meta name="twitter:title" content="A better naming convention for unit tests"/>
+<meta name="twitter:description" content="There are a lot of problems with the most common naming convention(MethodName_Scenario_ExpectedResult) for unit test. Let&#x27;s look at a naming convention that improves test readability"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/better-naming-convention-unit-tests-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/better-naming-convention-unit-tests-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,15 +87,15 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Stubs vs Mocks vs Fakes vs Spy</h1>
+    <h1 class="text-center">A better naming convention for unit tests</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-08-08">August 08, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-08-04">August 04, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 3 min
+            Reading Time: 2 min
         </i>
     </div>
 
@@ -104,80 +104,34 @@
     </div>
 </div>
 
-<html><head></head><body><p>The lines between the different test doubles are blurred when using a Mocking library like <a href="https://github.com/moq/moq4">Moq</a>.</p>
-<p>I use mocks for almost everything, but knowing the difference between Stubs, Mocks, Fakes, and Spies is worthwhile. If nothing else, we will know what people are talking about when they use the different terms.</p>
-<p>Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IRepository</span>
-{
-     <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)</span>;
-     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)</span>;
-}
-</code></pre>
-<h2 id="stub">Stub</h2>
-<p>A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.</p>
-<p>Below is the stubbed version using Moq of a service where the OnPing() function always returns &quot;pong&quot; regardless of the input.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
-mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())).Returns(<span class="hljs-literal">true</span>);
-</code></pre>
-<p>An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.</p>
-<h2 id="spy">Spy</h2>
-<p>A spy lets us verify what functions were called, with what arguments, when, and how often.</p>
-<p>For example, let's take a repository class which does not have an interface associated with it.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">RepositorySpy</span> : <span class="hljs-title">IRepository</span>
-{
-    <span class="hljs-keyword">public</span> boolean IsValidWasCalled = <span class="hljs-literal">false</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
-    </span>{
-        IsValidWasCalled = <span class="hljs-literal">true</span>;
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-    }
-}
-</code></pre>
-<p>In the test, we will assert that <code>IsValidWasCalled</code> was <em>true</em>.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> spy = <span class="hljs-keyword">new</span> RepositorySpy();
-Assert.True(spy.IsValidWasCalled);
-</code></pre>
-<p>We should use spies where we don't care about the return values of functions but want to verify what functions were called, with what arguments, when, and how often.</p>
-<p>An example would be checking that we send an email only once with the correct arguments or that all the logs are logged correctly.</p>
-<p>I rarely use Spies, and it will become clear why once we look at Mocks.</p>
-<h2 id="mock">Mock</h2>
-<p>A mock is similar to a stub, but the behaviour of the mocked interface can be changed dynamically based on scenarios. It is also similar to a spy as it allows us to verify that a method was called. However, the assertion is in the verify method in a mock. In a spy, the assertion is in the test,</p>
-<p>Below is the mocked version using Moq of a service where the IsValid() function behaves differently for different inputs. We also verified that the correct calls were received.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
-mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">1</span>)).Returns(<span class="hljs-literal">true</span>);
-mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">2</span>)).Returns(<span class="hljs-literal">false</span>);
-mock.Verify(x =&gt; x.Add(<span class="hljs-number">1</span>), Times.Once);
-mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())), Times(<span class="hljs-number">2</span>));
-</code></pre>
-<p>A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.</p>
-<h2 id="fake">Fake</h2>
-<p>A Fake is an object with a concrete implementation that works similarly to the actual implementation. It is a simplified version of production code. It does not affect the test's behaviour but simplifies the test's implementation by removing heavyweight dependencies.</p>
-<p>It should be used sparingly and only in cases where a Stub or Mock is not usable.</p>
-<p>Below is an implementation of a Fake repository</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FakeRepository</span> : <span class="hljs-title">IRepository</span>
-{
-    <span class="hljs-keyword">private</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt; _values = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt;();
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
-    </span>{
-        <span class="hljs-keyword">return</span> _values[id];
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)
-    </span>{
-        _values.Add(id, open);
-    }
-}
-</code></pre>
-<p>An example could be using AWS S3 in production but adding a fake that saves files to disk for testing purposes.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Hopefully, now, you understand the difference between the test doubles and are not confused when people talk about fakes, stubs or mocks.</p>
-<h3 id="thanks">Thanks</h3>
+<p>I have been writing unit tests for quite some time now and have seen and tried a lot of naming conventions.</p>
+<p>One of the most common conventions I have seen is <code>MethodName_Scenario_ExpectedResult</code>, or one of its many variations.</p>
+<p>Here</p>
 <ul>
-<li>Aamir Mulla for suggesting that a code sample to the Spy section would be helpful.</li>
+<li><strong>MethodName</strong>: is the name of the method you want to test.</li>
+<li><strong>Scenario</strong>: the condition under which you test the method.</li>
+<li><strong>ExpectedResult</strong>: the expected result from the method under test to do in the specified scenario.</li>
 </ul>
-</body></html>
+<p>An example of this naming convention is <code>IsOrderValid_NoProducts_ReturnsFalse</code>. If you can't tell, this test check verifies that an order is invalid if it has no products.</p>
+<h2 id="problems-with-the-methodname_scenario_expectedresult-naming-convention">Problems with the MethodName_Scenario_ExpectedResult naming convention</h2>
+<p>This convention does not help with test readability.</p>
+<p>Focusing on the implementation details instead of the behaviour makes it harder for a non-programmer to read and understand. Even though a programmer could decipher the name, it will take a few brain cycles to figure out precisely what the test is testing and how it relates to the business requirements.</p>
+<p>Another disadvantage of this convention is that it is tightly coupled to the method name. If the method name changes as part of refactoring, then the test name must also be updated. This affects the maintainability of the test suite.</p>
+<h2 id="a-better-alternative">A better alternative</h2>
+<p>Let's contrast this with the test name written in plain English, <code>Order_with_no_products_is_invalid</code>.</p>
+<p>This version describes one of the aspects of the application behaviour under test using terms a non-programmer would understand.</p>
+<p>It conveys the behaviour of the system instead of the implementation details. It describes the <em><strong>what-to</strong></em> not the <strong><em>how-to</em></strong>.</p>
+<p>It avoids code smells because it is decoupled from the method name.</p>
+<p>One nice side benefit of using this naming convention is that our tests can now be treated as a form of documentation.</p>
+<p><em>The underscores make long test names more readable.</em></p>
+<h2 id="unit-test-naming-guidelines">Unit test naming guidelines</h2>
+<ul>
+<li>A non-programmer such as a business analyst should be able to understand what the test is verifying at a glance, i.e. the test name should be in plain English</li>
+<li>Separating words by underscores increases the readability of long names</li>
+<li>Don't include the name of the SUT's method in the test's name</li>
+<li>The test class name can indicate the unit of behaviour you are verifying.</li>
+</ul>
+
 
 
 
@@ -186,7 +140,7 @@ mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies&text=Stubs%20vs%20Mocks%20vs%20Fakes%20vs%20Spy via @ankur_sheel.&#xD;&#xA;We%20can%20use%20Mocks%20for%20almost%20everything%20when%20we%20use%20a%20mocking%20framework%2C%20but%20what%20is%20the%20difference%20between%20Stubs%2C%20Mocks%2C%20Fakes%20and%20Spies" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/better-naming-convention-unit-tests&text=A%20better%20naming%20convention%20for%20unit%20tests via @ankur_sheel.&#xD;&#xA;There%20are%20a%20lot%20of%20problems%20with%20the%20most%20common%20naming%20convention%28MethodName_Scenario_ExpectedResult%29%20for%20unit%20test.%20Let%27s%20look%20at%20a%20naming%20convention%20that%20improves%20test%20readability" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

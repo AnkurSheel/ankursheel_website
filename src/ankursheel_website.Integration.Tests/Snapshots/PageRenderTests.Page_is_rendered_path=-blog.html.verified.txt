@@ -88,7 +88,7 @@
             
 
 
-<h2>All Categories (183)</h2>
+<h2>All Categories (185)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -104,19 +104,19 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/jetbrains-rider-plugins">My JetBrains Rider plugins</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/better-naming-convention-unit-tests">A better naming convention for unit tests</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
         </li>
 </ul>
 
@@ -171,8 +171,20 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (57)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (60)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/jetbrains-rider-plugins">My JetBrains Rider plugins</a> - <time class="prose-sm" datetime="22-08-24">August 24, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a> - <time class="prose-sm" datetime="22-08-17">August 17, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/difference-stubs-mocks-fakes-spies">Stubs vs Mocks vs Fakes vs Spy</a> - <time class="prose-sm" datetime="22-08-08">August 08, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/better-naming-convention-unit-tests">A better naming convention for unit tests</a> - <time class="prose-sm" datetime="22-08-04">August 04, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a> - <time class="prose-sm" datetime="22-07-28">July 28, 2022</time>
             </li>
@@ -232,9 +244,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/override-netlify-build-config">How to override the netlify build config</a> - <time class="prose-sm" datetime="21-08-23">August 23, 2021</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/difference-stubs-mocks-fakes-spies">What is the difference between Stubs, Mocks, Fakes and Spies</a> - <time class="prose-sm" datetime="21-07-17">July 17, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/run-sql-server-docker-container">How to run SQL Server in a Docker container</a> - <time class="prose-sm" datetime="21-06-29">June 29, 2021</time>
@@ -510,16 +519,13 @@
                 <a href="/blog/london">Roaming around in London</a> - <time class="prose-sm" datetime="13-11-22">November 22, 2013</time>
             </li>
     </ul>
-    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (6)</h3>
+    <h3 id="Uncategorized" class="py-4 border-b border-grey-lighter capitalize">Uncategorized (5)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/add-cursive-fonts-vs-code">How to add ligatures and cursive fonts to VS Code</a> - <time class="prose-sm" datetime="21-05-16">May 16, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/exporting-highlights-annotations-kobo-aura">How to export highlights and annotations from a Kobo Aura</a> - <time class="prose-sm" datetime="19-12-25">December 25, 2019</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/popular-posts-2016">What were my most popular posts in 2016</a> - <time class="prose-sm" datetime="17-02-08">February 08, 2017</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/filtering-google-analytics">How to filter yourself from showing up in Google Analytics</a> - <time class="prose-sm" datetime="14-01-29">January 29, 2014</time>
