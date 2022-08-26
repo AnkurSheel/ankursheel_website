@@ -78,6 +78,14 @@
     blockquote cite {
         @apply flex justify-end text-purple-500;
     }
+
+    th {
+        @apply border
+    }
+
+    td {
+        @apply border
+    }
 }
 
 @tailwind components;
