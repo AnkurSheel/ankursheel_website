@@ -15,6 +15,8 @@ Here are some factors I looked at before deciding which one to buy.
 
 ## Library Size
 
+> There is no point in buying an e-reader if you don't have a decently sized collection of books to choose from.
+
 Both e-readers have access to an online store with lots of e-books. However, The number of books available in the Kindle store is slightly larger than the Kobo store.
 
 One of the significant differences is that the Kindles are locked to the Amazon store and only support the AZW format. In contrast, the Kobo natively supports multiple file formats, including PDFs. It is possible to convert and transfer other document formats onto Kindle using [Calibre](https://calibre-ebook.com/), a third-party software, but it's time-consuming.
@@ -27,13 +29,15 @@ Kobo also integrates with pocket service, so you can easily read web articles on
 
 ## Built-in Light
 
-I like having an inbuilt light on the e-reader as I prefer to read before going to sleep.
+> I like having an inbuilt light on the e-reader as I prefer to read before going to sleep.
 
 Kobos have an adjustable backlight on almost all of their models.
 
 Kindle has edge lighting on some of its models.
 
 ## Exporting Highlights and Notes
+
+> I tend to highlight passages in the books I read and eventually turn them into summaries published at [Discoveries in Bookland](https://www.discoveriesinbookland.com/).
 
 Both Kobo and Kindle allow readers to highlight passages and export notes.
 
