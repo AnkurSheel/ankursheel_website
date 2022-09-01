@@ -194,8 +194,10 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   ~~Get 4000 visits in a month.~~ (May 2020)
     -   Get 8000 visits in a month.
 -   ~~Get 50 visits in a day.~~ (January 2020)
-    -   ~~Get 100 visits in a day.~~ (March 2020)
-    -   Get 200 visits in a day.
+    - ~~Get 100 visits in a day.~~ (March 2020)
+    - ~~Get 200 visits in a day.~~ (Feb 2022)
+    -
+        - Get 500 visits in a day.
 -   ~~Make my first dollar online.~~
     -   ~~Make 10 dollars online.~~
     -   Make 100 dollars online.
