@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Essential Plugins for JetBrains Rider plugins - Ankur Sheel</title>
+<title>Kobo vs Kindle: Which e-reader to buy? - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
+<meta name="description" content="When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/jetbrains-rider-plugins"/>   
-<meta itemProp="name" content="Essential Plugins for JetBrains Rider plugins"/>
-<meta itemProp="description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/jetbrains-rider-plugins"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/kobo-vs-kindle"/>   
+<meta itemProp="name" content="Kobo vs Kindle: Which e-reader to buy?"/>
+<meta itemProp="description" content="When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/kobo-vs-kindle-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/kobo-vs-kindle"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Essential Plugins for JetBrains Rider plugins"/>
-<meta property="og:description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
+<meta property="og:title" content="Kobo vs Kindle: Which e-reader to buy?"/>
+<meta property="og:description" content="When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/kobo-vs-kindle-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/kobo-vs-kindle-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Essential Plugins for JetBrains Rider plugins"/>
-<meta name="twitter:description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-twitter.png"/>
+<meta name="twitter:title" content="Kobo vs Kindle: Which e-reader to buy?"/>
+<meta name="twitter:description" content="When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/kobo-vs-kindle-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/kobo-vs-kindle-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,87 +87,51 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Essential Plugins for JetBrains Rider plugins</h1>
+    <h1 class="text-center">Kobo vs Kindle: Which e-reader to buy?</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-08-24">August 24, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-09-01">September 01, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 2 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/rider" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">rider</a>
-            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
+            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
     </div>
 </div>
 
-<p>I've been using <a href="https://www.jetbrains.com/rider/">JetBrains Rider</a> for quite some time now. Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them.</p>
-<table>
-<thead>
-<tr>
-<th>Plugin</th>
-<th>What does it do</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.NET Core User Secrets</td>
-<td>Provides the ability to create and edit user secrets in .NET projects</td>
-</tr>
-<tr>
-<td>GraphQL</td>
-<td>Adds syntax highlighting and IntelliSense for graphql files</td>
-</tr>
-<tr>
-<td>Json Formatter</td>
-<td>Reformat JSON</td>
-</tr>
-<tr>
-<td>Key Promoter X</td>
-<td>Shows you keyboard shortcuts that you could have used instead of using a mouse button inside the IDE</td>
-</tr>
-<tr>
-<td>MoqComplete</td>
-<td>Provides Code Completion for Moq</td>
-</tr>
-<tr>
-<td>Rainbow Brackets</td>
-<td>Provides coloured brackets, parentheses, and lines in the IDE</td>
-</tr>
-<tr>
-<td>Rossynt</td>
-<td>Roslyn Syntax tree viewer</td>
-</tr>
-<tr>
-<td>Statiq Support</td>
-<td>Live templates for Statiq</td>
-</tr>
-<tr>
-<td>String Manipulation</td>
-<td>Perform a variety of tasks on strings, from capitalizing, converting between different cases, and escaping strings</td>
-</tr>
-<tr>
-<td>Structured Logging</td>
-<td>Useful analyzers for structured logging</td>
-</tr>
-<tr>
-<td>Tailwind CSS</td>
-<td>adds autocompletes and previews for Tailwind classes</td>
-</tr>
-<tr>
-<td>Terraform and HCL</td>
-<td>Adds autocompletion and syntax highlighting for hcl files</td>
-</tr>
-<tr>
-<td>Toml</td>
-<td>support for netlify toml files</td>
-</tr>
-</tbody>
-</table>
+<p>When buying an e-reader, most people consider a Kobo or a Kindle.</p>
+<p>Here are some factors I looked at before deciding which one to buy.</p>
+<h2 id="library-size">Library Size</h2>
+<blockquote>
+<p>There is no point in buying an e-reader if you don't have a decently sized collection of books to choose from.</p>
+</blockquote>
+<p>Both e-readers have access to an online store with lots of e-books. However, The number of books available in the Kindle store is slightly larger than the Kobo store.</p>
+<p>One of the significant differences is that the Kindles are locked to the Amazon store and only support the AZW format. In contrast, the Kobo natively supports multiple file formats, including PDFs. It is possible to convert and transfer other document formats onto Kindle using <a href="https://calibre-ebook.com/">Calibre</a>, a third-party software, but it's time-consuming.</p>
+<p>Kobo integrates with <a href="https://www.overdrive.com/">OverDrive</a>, which allows you to borrow e-books from public libraries. You can borrow books from the e-reader itself. However, this seems to be hit-and-miss for me. The borrowed books automatically get downloaded to Kobo.</p>
+<p>Kindle has integration with Overdrive, but it's only available if you are in the USA. Since I am not in the USA, I am unsure how well the integration works.</p>
+<p>Kobo also integrates with pocket service, so you can easily read web articles on the e-reader. However, you cannot highlight or add notes to these articles inside the e-reader.</p>
+<h2 id="built-in-light">Built-in Light</h2>
+<blockquote>
+<p>I like having an inbuilt light on the e-reader as I prefer to read before going to sleep.</p>
+</blockquote>
+<p>Kobos have an adjustable backlight on almost all of their models.</p>
+<p>Kindle has edge lighting on some of its models.</p>
+<h2 id="exporting-highlights-and-notes">Exporting Highlights and Notes</h2>
+<blockquote>
+<p>I tend to highlight passages in the books I read and eventually turn them into summaries published at <a href="https://www.discoveriesinbookland.com/">Discoveries in Bookland</a>.</p>
+</blockquote>
+<p>Both Kobo and Kindle allow readers to highlight passages and export notes.</p>
+<p>Since highlights made on a Kindle are synced to the cloud, it's pretty easy to export your highlights and notes. There is also integration with other 3rd party services like ReadWise, which makes this process painless.</p>
+<p>Although it's easy to highlight and take notes on the Kobo, it's not as easy to export them. I previously wrote about how you can enable a <a href="/blog/exporting-highlights-annotations-kobo-aura">hidden option to export them</a> as a plain text file on Kobo. But you still have to manually download them by connecting the Kobo to a computer.</p>
+<h2 id="verdict">Verdict</h2>
+<p>So which is better? There is no correct answer. I have had both in the past. Choosing the suitable device depends on how you enjoy your books. The Kobo came out on top for me because I am not in the USA and because of the integration with Overdrive and the built-in light.</p>
+<p>Which one did you go with?</p>
+<!-- Cover Image from : https://pxhere.com/en/photo/1616236 -->
 
 
 
@@ -177,7 +141,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/jetbrains-rider-plugins&text=Essential%20Plugins%20for%20JetBrains%20Rider%20plugins via @ankur_sheel.&#xD;&#xA;JetBrains%20Rider%20has%20a%20rich%20plugin%20ecosystem%2C%20many%20of%20which%20are%20bundled%20at%20installation%20time.%20Here%20is%20a%20list%20of%20plugins%20I%20like%20to%20add%20on%20top%20of%20them" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/kobo-vs-kindle&text=Kobo%20vs%20Kindle%3A%20Which%20e-reader%20to%20buy%3F via @ankur_sheel.&#xD;&#xA;When%20buying%20an%20e-reader%2C%20most%20people%20consider%20a%20Kobo%20or%20a%20Kindle.%20Here%20are%20some%20factors%20I%20looked%20at%20before%20deciding%20which%20one%20to%20buy" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

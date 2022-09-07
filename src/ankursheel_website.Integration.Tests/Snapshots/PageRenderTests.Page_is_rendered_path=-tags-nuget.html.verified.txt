@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;ramblings&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;nuget&quot; - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,17 +12,17 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/ramblings"/>   
-<meta itemProp="name" content="Posts tagged as &quot;ramblings&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/nuget"/>   
+<meta itemProp="name" content="Posts tagged as &quot;nuget&quot;"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/ramblings"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/nuget"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;ramblings&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;nuget&quot;"/>
 <meta property="og:description"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;ramblings&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;nuget&quot;"/>
 <meta name="twitter:description"/>
 
 </head>
@@ -82,162 +82,19 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;ramblings&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;nuget&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/kobo-vs-kindle" class="text-center prose-2xl mb-4">Kobo vs Kindle: Which e-reader to buy?</a>
+        <a href="/blog/installing-nuget-packages-unity-2021" class="text-center prose-2xl mb-4">Installing NuGet packages in Unity 2021</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy
+            NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021
         </p>
-            <a href="/blog/kobo-vs-kindle" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/interview-interviewers-must-have-deal-breaker-list" class="text-center prose-2xl mb-4">Interviewing your interviewers with a must-have and a deal-breaker list</a>
-        <div class="font-semibold text-center">6 min</div>
-        <p>
-            Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation
-        </p>
-            <a href="/blog/interview-interviewers-must-have-deal-breaker-list" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/merchants-using-stripe-decline-credit-cards" class="text-center prose-2xl mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a>
-        <div class="font-semibold text-center">3 min</div>
-        <p>
-            My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue
-        </p>
-            <a href="/blog/merchants-using-stripe-decline-credit-cards" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/team-name" class="text-center prose-2xl mb-4">What&#x27;s in a team name</a>
-        <div class="font-semibold text-center">4 min</div>
-        <p>
-            Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names
-        </p>
-            <a href="/blog/team-name" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/increasing-productivity-no-meeting-days" class="text-center prose-2xl mb-4">Increasing Productivity with No-Meeting Days</a>
-        <div class="font-semibold text-center">4 min</div>
-        <p>
-            How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job
-        </p>
-            <a href="/blog/increasing-productivity-no-meeting-days" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/make-code-reviews-stress-free" class="text-center prose-2xl mb-4">How to make code reviews stress free</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free
-        </p>
-            <a href="/blog/make-code-reviews-stress-free" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/problem-without-solution-harmful" class="text-center prose-2xl mb-4">Do not come with a problem without a solution is harmful</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            Although the managers who say - Do not bring up problems unless you have a solution mean well, it does not have the outcome they expect
-        </p>
-            <a href="/blog/problem-without-solution-harmful" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/interview-happy-job" class="text-center prose-2xl mb-4">Why do I interview even when I am happy at my job?</a>
-        <div class="font-semibold text-center">5 min</div>
-        <p>
-            Every year, I dust off my resume and apply for a couple of jobs that look interesting. Why do I put myself through this ordeal?
-        </p>
-            <a href="/blog/interview-happy-job" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/dream-job" class="text-center prose-2xl mb-4">What is my idea of a dream job</a>
-        <div class="font-semibold text-center">5 min</div>
-        <p>
-            An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities
-        </p>
-            <a href="/blog/dream-job" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/rent-buy-house" class="text-center prose-2xl mb-4">Should I Rent Or Buy a House?</a>
-        <div class="font-semibold text-center">5 min</div>
-        <p>
-            My two cents on whether you should rent or buy a house.
-        </p>
-            <a href="/blog/rent-buy-house" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/ten-things-achieve-starting-3d-programming" class="text-center prose-2xl mb-4">10 things to do when getting started with 3D programming</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            Guidelines to learn the basics of 3D programming.
-        </p>
-            <a href="/blog/ten-things-achieve-starting-3d-programming" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/making-pong-take" class="text-center prose-2xl mb-4">What does making Pong take?</a>
-        <div class="font-semibold text-center">0 min</div>
-        <p>
-            Even though the gameplay elements of Pong are simple, the underlying engine needs to have everything that a modern game has
-        </p>
-            <a href="/blog/making-pong-take" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/child-appreciation" class="text-center prose-2xl mb-4">Why being an only child is awesome</a>
-        <div class="font-semibold text-center">5 min</div>
-        <p>
-            Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child.
-        </p>
-            <a href="/blog/child-appreciation" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/beginning" class="text-center prose-2xl mb-4">The Beginning</a>
-        <div class="font-semibold text-center">0 min</div>
-        <p>
-            Welcome to my blog. Over a period of time, I hope to fill this space with travel and food-related posts, the status of my projects and tutorials
-        </p>
-            <a href="/blog/beginning" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/installing-nuget-packages-unity-2021" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

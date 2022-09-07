@@ -340,7 +340,12 @@
 <li><del>Get 50 visits in a day.</del> (January 2020)
 <ul>
 <li><del>Get 100 visits in a day.</del> (March 2020)</li>
-<li>Get 200 visits in a day.</li>
+<li><del>Get 200 visits in a day.</del> (Feb 2022)</li>
+<li>
+<ul>
+<li>Get 500 visits in a day.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><del>Make my first dollar online.</del>

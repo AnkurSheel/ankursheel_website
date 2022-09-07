@@ -88,7 +88,7 @@
             
 
 
-<h2>All Categories (185)</h2>
+<h2>All Categories (187)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -104,19 +104,19 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/jetbrains-rider-plugins">My JetBrains Rider plugins</a>
+            <a href="/blog/installing-nuget-packages-unity-2021">Installing NuGet packages in Unity 2021</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/jetbrains-rider-plugins">Essential Plugins for JetBrains Rider plugins</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/better-naming-convention-unit-tests">A better naming convention for unit tests</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a>
         </li>
 </ul>
 
@@ -171,10 +171,13 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (60)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (61)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/jetbrains-rider-plugins">My JetBrains Rider plugins</a> - <time class="prose-sm" datetime="22-08-24">August 24, 2022</time>
+                <a href="/blog/installing-nuget-packages-unity-2021">Installing NuGet packages in Unity 2021</a> - <time class="prose-sm" datetime="22-09-06">September 06, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/jetbrains-rider-plugins">Essential Plugins for JetBrains Rider plugins</a> - <time class="prose-sm" datetime="22-08-24">August 24, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a> - <time class="prose-sm" datetime="22-08-17">August 17, 2022</time>
@@ -393,8 +396,11 @@
                 <a href="/blog/breakout-clone-v1-0">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="14-04-05">April 05, 2014</time>
             </li>
     </ul>
-    <h3 id="ramblings" class="py-4 border-b border-grey-lighter capitalize">ramblings (15)</h3>
+    <h3 id="ramblings" class="py-4 border-b border-grey-lighter capitalize">ramblings (16)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a> - <time class="prose-sm" datetime="22-09-01">September 01, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-31">December 31, 2021</time>
             </li>

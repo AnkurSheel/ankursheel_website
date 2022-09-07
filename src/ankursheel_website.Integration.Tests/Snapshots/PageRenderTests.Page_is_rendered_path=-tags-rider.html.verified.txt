@@ -89,10 +89,10 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/jetbrains-rider-plugins" class="text-center prose-2xl mb-4">My JetBrains Rider plugins</a>
+        <a href="/blog/jetbrains-rider-plugins" class="text-center prose-2xl mb-4">Essential Plugins for JetBrains Rider plugins</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
-            JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them
+            JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them
         </p>
             <a href="/blog/jetbrains-rider-plugins" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

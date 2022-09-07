@@ -8,9 +8,97 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
-      <title>My JetBrains Rider plugins</title>
+      <title>Installing NuGet packages in Unity 2021</title>
+      <link>https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021</link>
+      <description>NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/moq-error.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021</guid>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;NuGet is indispensable for working in .NET. Unfortunately, it takes a bit of work to get it working with Unity.&lt;/p&gt;
+&lt;p&gt;Unity only recognizes DLLs placed under the &lt;em&gt;Assets&lt;/em&gt; folder, so we need a way to get the DLLs into the Assets folder. We cannot add the Nuget packages to the project files as we would for other .NET projects because Unity generates the sln and project files. This means that any NuGet packages that we have installed using the IDE will get wiped out by Unity.&lt;/p&gt;
+&lt;p&gt;There is an &lt;a href="https://www.what-could-possibly-go-wrong.com/unity-and-nuget/"&gt;older guide&lt;/a&gt; that I found, which helped me figure out how to add NuGet packages into Unity. But, it had many steps that were irrelevant to Unity 2021.&lt;/p&gt;
+&lt;p&gt;As an example, we will look at installing Installing &lt;em&gt;Microsoft.Extensions.DependencyInjection&lt;/em&gt; into an assembly definition.&lt;/p&gt;
+&lt;h2 id="step-1-install-nuget-package"&gt;Step 1: Install Nuget Package&lt;/h2&gt;
+&lt;p&gt;Select the  &lt;em&gt;Manage NuGet Packages for Solution&lt;/em&gt; in your IDE.&lt;/p&gt;
+&lt;p&gt;Search and install the &lt;em&gt;Microsoft.Extensions.DependencyInjection&lt;/em&gt; package&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/installing-nuget-package-window.png" alt="Installing Nuget Package Window"&gt;&lt;/p&gt;
+&lt;p&gt;This will do a few things.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an &lt;code&gt;app.config&lt;/code&gt; file. This file can be deleted.&lt;/li&gt;
+&lt;li&gt;Create a packages.config file. This file can be committed&lt;/li&gt;
+&lt;li&gt;Download the Nuget package and its dependencies to the &lt;code&gt;$(Solutiondir)/packages&lt;/code&gt; folder. This folder should be added to .gitignore&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/packages-folder.png" alt="Packages Folder"&gt;&lt;/p&gt;
+&lt;h2 id="step-2-make-the-dll-available-to-unity"&gt;Step 2: Make the DLL available to Unity&lt;/h2&gt;
+&lt;p&gt;In the &lt;em&gt;packages\Microsoft.Extensions.DependencyInjection.6.0.0/lib&lt;/em&gt; folder, you might see folders for different targets.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/target-frameworks.png" alt="Target Frameworks"&gt;&lt;/p&gt;
+&lt;p&gt;Copy the DLL from the &lt;em&gt;netstandard2.1&lt;/em&gt; folder into the &lt;em&gt;Assets/Plugin/DI&lt;/em&gt; folder. Remember how Unity needs DLLs to be inside the Assets folder. I prefer to put the DLL into nested folders under &lt;em&gt;Assets&lt;/em&gt;, so it's easier to manage multiple DLLs.&lt;/p&gt;
+&lt;h2 id="step-3-turn-off-auto-reference"&gt;Step 3:  Turn off  Auto reference&lt;/h2&gt;
+&lt;p&gt;By default, all predefined assemblies and assembly definitions can automatically reference the DLL. In most cases, we want a DLL to be exposed only to specific assembly definitions.&lt;/p&gt;
+&lt;p&gt;Turn off Auto reference in the import settings for the DLL and click Apply.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/turn-off-auto-reference.png" alt="Turn Off Auto Reference"&gt;&lt;/p&gt;
+&lt;h2 id="step-4-add-the-dll-as-a-reference-to-the-assembly-definition"&gt;Step 4: Add the DLL as a reference to the assembly definition&lt;/h2&gt;
+&lt;p&gt;Select override references in the assemblies that need this package and add the DLLs to the assembly references.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/add-reference-to-dll.png" alt="Add Reference To DLL"&gt;&lt;/p&gt;
+&lt;h2 id="troubleshooting"&gt;TroubleShooting&lt;/h2&gt;
+&lt;h3 id="error-unloading-broken-assembly-assetspluginsdimicrosoft.extensions.dependencyinjection.dll-this-assembly-can-cause-crashes-in-the-runtime"&gt;Error: Unloading broken assembly Assets/Plugins/DI/Microsoft.Extensions.DependencyInjection.dll, this assembly can cause crashes in the runtime&lt;/h3&gt;
+&lt;p&gt;Copy the DLL from &lt;em&gt;packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\netstandard2.1&lt;/em&gt; to the &lt;em&gt;Assets/Plugin/DI&lt;/em&gt; folder. It is because Unity needs the &lt;em&gt;Microsoft.Extensions.DependencyInjection.Abstractions.dll&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="bonus-installing-moq-into-an-assembly-definition-for-tests"&gt;Bonus: Installing &lt;em&gt;Moq&lt;/em&gt; into an assembly definition for Tests&lt;/h2&gt;
+&lt;p&gt;Repeat the steps for Moq and make the appropriate changes&lt;/p&gt;
+&lt;p&gt;After Unity recompiling, you will see an error in the unity console.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/moq-error.png" alt="Mog Error"&gt;&lt;/p&gt;
+&lt;p&gt;To fix this, copy the Castle.Core.dll from the packages folder and put it in the same folder as Moq.dll.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;NuGet allows us to install useful DLLs. I have shown how you can install NuGet packages into Unity 2021.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.unity3d.com/Manual/PluginInspector.html"&gt;Configuring plugins in Unity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Kobo vs Kindle: Which e-reader to buy?</title>
+      <link>https://www.ankursheel.com/blog/kobo-vs-kindle</link>
+      <description>When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/kobo-vs-kindle/cover.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/kobo-vs-kindle</guid>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;When buying an e-reader, most people consider a Kobo or a Kindle.&lt;/p&gt;
+&lt;p&gt;Here are some factors I looked at before deciding which one to buy.&lt;/p&gt;
+&lt;h2 id="library-size"&gt;Library Size&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no point in buying an e-reader if you don't have a decently sized collection of books to choose from.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Both e-readers have access to an online store with lots of e-books. However, The number of books available in the Kindle store is slightly larger than the Kobo store.&lt;/p&gt;
+&lt;p&gt;One of the significant differences is that the Kindles are locked to the Amazon store and only support the AZW format. In contrast, the Kobo natively supports multiple file formats, including PDFs. It is possible to convert and transfer other document formats onto Kindle using &lt;a href="https://calibre-ebook.com/"&gt;Calibre&lt;/a&gt;, a third-party software, but it's time-consuming.&lt;/p&gt;
+&lt;p&gt;Kobo integrates with &lt;a href="https://www.overdrive.com/"&gt;OverDrive&lt;/a&gt;, which allows you to borrow e-books from public libraries. You can borrow books from the e-reader itself. However, this seems to be hit-and-miss for me. The borrowed books automatically get downloaded to Kobo.&lt;/p&gt;
+&lt;p&gt;Kindle has integration with Overdrive, but it's only available if you are in the USA. Since I am not in the USA, I am unsure how well the integration works.&lt;/p&gt;
+&lt;p&gt;Kobo also integrates with pocket service, so you can easily read web articles on the e-reader. However, you cannot highlight or add notes to these articles inside the e-reader.&lt;/p&gt;
+&lt;h2 id="built-in-light"&gt;Built-in Light&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I like having an inbuilt light on the e-reader as I prefer to read before going to sleep.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kobos have an adjustable backlight on almost all of their models.&lt;/p&gt;
+&lt;p&gt;Kindle has edge lighting on some of its models.&lt;/p&gt;
+&lt;h2 id="exporting-highlights-and-notes"&gt;Exporting Highlights and Notes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I tend to highlight passages in the books I read and eventually turn them into summaries published at &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in Bookland&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Both Kobo and Kindle allow readers to highlight passages and export notes.&lt;/p&gt;
+&lt;p&gt;Since highlights made on a Kindle are synced to the cloud, it's pretty easy to export your highlights and notes. There is also integration with other 3rd party services like ReadWise, which makes this process painless.&lt;/p&gt;
+&lt;p&gt;Although it's easy to highlight and take notes on the Kobo, it's not as easy to export them. I previously wrote about how you can enable a &lt;a href="https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura"&gt;hidden option to export them&lt;/a&gt; as a plain text file on Kobo. But you still have to manually download them by connecting the Kobo to a computer.&lt;/p&gt;
+&lt;h2 id="verdict"&gt;Verdict&lt;/h2&gt;
+&lt;p&gt;So which is better? There is no correct answer. I have had both in the past. Choosing the suitable device depends on how you enjoy your books. The Kobo came out on top for me because I am not in the USA and because of the integration with Overdrive and the built-in light.&lt;/p&gt;
+&lt;p&gt;Which one did you go with?&lt;/p&gt;
+&lt;!-- Cover Image from : https://pxhere.com/en/photo/1616236 --&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>Essential Plugins for JetBrains Rider plugins</title>
       <link>https://www.ankursheel.com/blog/jetbrains-rider-plugins</link>
-      <description>JetBrains Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them</description>
+      <description>JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them</description>
       <guid>https://www.ankursheel.com/blog/jetbrains-rider-plugins</guid>
       <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;I've been using &lt;a href="https://www.jetbrains.com/rider/"&gt;JetBrains Rider&lt;/a&gt; for quite some time now. Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them.&lt;/p&gt;
@@ -32,7 +120,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Json Formatter&lt;/td&gt;
-&lt;td&gt;Reformats JSON&lt;/td&gt;
+&lt;td&gt;Reformat JSON&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Key Promoter X&lt;/td&gt;
@@ -807,58 +895,6 @@ services:
 &lt;li&gt;&lt;a href="https://redis.io/topics/acl"&gt;Redis ACL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://stackexchange.github.io/StackExchange.Redis/Configuration"&gt;StackExchange.Redis Configuration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 49</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-49</link>
-      <description>This weeks roundup contains articles from David McCarter, Janella, Paul Swail, Mike Petrovich and Brian Rinaldi</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-49</guid>
-      <pubDate>Sun, 19 Dec 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="collection-performance-how-do-you-linq"&gt;&lt;a href="https://dotnettips.wordpress.com/2021/12/15/collection-performance-how-do-you-linq"&gt;Collection Performance: How Do You Linq?&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;David McCarter&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This article compares the performance of some common LINQ Queries when it's written using the API vs a lambda and the performance of the different ways to use the lambda versions.&lt;/p&gt;
-&lt;h2 id="good-enough"&gt;&lt;a href="https://blog.janella.nz/posts/2021/08/22/deciding-good-enough.html"&gt;Good enough&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Janella&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;It's easy to fall into the trap of future-proofing our code. This article can help us see the key signs indicating that we need to step back from the details. It also outlines the questions we should ask to decide if something is good enough. As an added bonus, there are also some tips on easing ourselves into decision making if we are prone to imposter syndrome.&lt;/p&gt;
-&lt;h2 id="the-testing-trade-off-triangle"&gt;&lt;a href="https://serverlessfirst.com/testing-tradeoff-triangle"&gt;The testing trade-off triangle&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Paul Swail&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Did you know that every time we choose a testing strategy, we need to compromise between confidence level, feedback loop, and maintainability? This article shares some examples of who the loser is when we optimize for one of them and some questions we should ask ourselves to inform or test strategy.&lt;/p&gt;
-&lt;h2 id="the-three-dominoes"&gt;&lt;a href="https://petro.blog/the-3-domino-rule-85888e009e5a"&gt;The Three Dominoes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Mike Petrovich&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;There are 3 simple rules to make it easier for a team to operate: limit work-in-progress, Minimize specialization, and Never sacrifice quality. Read this article to know how each of these rules helps the team achieve long-term success and the limitations of each of the rules.&lt;/p&gt;
-&lt;h2 id="rendering-in-the-jamstack"&gt;&lt;a href="https://bejamas.io/blog/understanding-rendering-in-the-jamstack/"&gt;Rendering in the Jamstack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Brian Rinaldi&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Multiple rendering options are available in JAMstack applications. This article gives an in-depth overview of the different rendering options and helps you choose which one to use when.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 48</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-48</link>
-      <description>This weeks roundup contains articles from Gergely Orosz, Stephan Ango, Andrew Wilkinson, Kevon Cheung and Avy Faingezicht</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-48</guid>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="hiring-and-retaining-a-diverse-engineering-team"&gt;&lt;a href="https://blog.pragmaticengineer.com/hiring-a-diverse-engineering-team/"&gt;Hiring (and Retaining) a Diverse Engineering Team&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Almost everyone agrees that having a diverse team is better for business. But the question remains -&amp;gt; &amp;quot;How do you hire more diverse teams?&amp;quot; Gregory talks to 6 engineering leaders who have successfully built diverse teams about hiring and retaining diverse engineering teams.&lt;/p&gt;
-&lt;h2 id="questions-to-ask-yourself-every-year"&gt;&lt;a href="http://stephanango.com/40-questions"&gt;40 questions to ask yourself every year&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Stephan Ango&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The end of the year is a good time for introspection. If you are having a hard time coming up with questions to ask yourself, Stephan shares a list of 40 questions he asks himself every year. This should be enough to get you started.&lt;/p&gt;
-&lt;h2 id="the-power-of-anti-goals"&gt;&lt;a href="https://awilkinson.medium.com/the-power-of-anti-goals-c38f5f46d23c"&gt;The Power of Anti-Goals&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Andrew Wilkinson&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;When thinking about what we want to achieve, most of us start by thinking about what we want to do. Andrew instead thought of the worst day possible and came up with Anti-goals to avoid it. I feel it's a strategy worth exploring to have more enjoyable days.&lt;/p&gt;
-&lt;h2 id="how-i-hustled-to-2kmo-and-got-rid-of-it"&gt;&lt;a href="https://kevoncheung.com/blog/creators-monetization-challenges"&gt;How I Hustled to $2K/mo and Got Rid of It&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kevon Cheung&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A behind-the-scenes look at how Kevin created multiple revenue streams to reach 2k/month and why he eventually scrapped them.&lt;/p&gt;
-&lt;h2 id="how-to-evaluate-startup-offers-a-beginners-guide"&gt;&lt;a href="https://faingezicht.com/articles/2021/09/20/evaluating-startup-offers/"&gt;How to Evaluate Startup Offers - A Beginner's Guide&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Avy Faingezicht&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;It can be tough to compare different startup offers. This article gives a really nice overview of what working for a VC-funded startup looks like financially.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

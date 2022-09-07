@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Essential Plugins for JetBrains Rider plugins - Ankur Sheel</title>
+<title>Installing NuGet packages in Unity 2021 - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
+<meta name="description" content="NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/jetbrains-rider-plugins"/>   
-<meta itemProp="name" content="Essential Plugins for JetBrains Rider plugins"/>
-<meta itemProp="description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/jetbrains-rider-plugins"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021"/>   
+<meta itemProp="name" content="Installing NuGet packages in Unity 2021"/>
+<meta itemProp="description" content="NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/installing-nuget-packages-unity-2021-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Essential Plugins for JetBrains Rider plugins"/>
-<meta property="og:description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-facebook.png"/>
+<meta property="og:title" content="Installing NuGet packages in Unity 2021"/>
+<meta property="og:description" content="NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/installing-nuget-packages-unity-2021-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/installing-nuget-packages-unity-2021-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Essential Plugins for JetBrains Rider plugins"/>
-<meta name="twitter:description" content="JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/jetbrains-rider-plugins-twitter.png"/>
+<meta name="twitter:title" content="Installing NuGet packages in Unity 2021"/>
+<meta name="twitter:description" content="NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/installing-nuget-packages-unity-2021-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/installing-nuget-packages-unity-2021-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,87 +87,64 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Essential Plugins for JetBrains Rider plugins</h1>
+    <h1 class="text-center">Installing NuGet packages in Unity 2021</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-08-24">August 24, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-09-06">September 06, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 2 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/rider" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">rider</a>
-            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
+            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
+            <a href="/tags/nuget" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">nuget</a>
     </div>
 </div>
 
-<p>I've been using <a href="https://www.jetbrains.com/rider/">JetBrains Rider</a> for quite some time now. Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them.</p>
-<table>
-<thead>
-<tr>
-<th>Plugin</th>
-<th>What does it do</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.NET Core User Secrets</td>
-<td>Provides the ability to create and edit user secrets in .NET projects</td>
-</tr>
-<tr>
-<td>GraphQL</td>
-<td>Adds syntax highlighting and IntelliSense for graphql files</td>
-</tr>
-<tr>
-<td>Json Formatter</td>
-<td>Reformat JSON</td>
-</tr>
-<tr>
-<td>Key Promoter X</td>
-<td>Shows you keyboard shortcuts that you could have used instead of using a mouse button inside the IDE</td>
-</tr>
-<tr>
-<td>MoqComplete</td>
-<td>Provides Code Completion for Moq</td>
-</tr>
-<tr>
-<td>Rainbow Brackets</td>
-<td>Provides coloured brackets, parentheses, and lines in the IDE</td>
-</tr>
-<tr>
-<td>Rossynt</td>
-<td>Roslyn Syntax tree viewer</td>
-</tr>
-<tr>
-<td>Statiq Support</td>
-<td>Live templates for Statiq</td>
-</tr>
-<tr>
-<td>String Manipulation</td>
-<td>Perform a variety of tasks on strings, from capitalizing, converting between different cases, and escaping strings</td>
-</tr>
-<tr>
-<td>Structured Logging</td>
-<td>Useful analyzers for structured logging</td>
-</tr>
-<tr>
-<td>Tailwind CSS</td>
-<td>adds autocompletes and previews for Tailwind classes</td>
-</tr>
-<tr>
-<td>Terraform and HCL</td>
-<td>Adds autocompletion and syntax highlighting for hcl files</td>
-</tr>
-<tr>
-<td>Toml</td>
-<td>support for netlify toml files</td>
-</tr>
-</tbody>
-</table>
+<p>NuGet is indispensable for working in .NET. Unfortunately, it takes a bit of work to get it working with Unity.</p>
+<p>Unity only recognizes DLLs placed under the <em>Assets</em> folder, so we need a way to get the DLLs into the Assets folder. We cannot add the Nuget packages to the project files as we would for other .NET projects because Unity generates the sln and project files. This means that any NuGet packages that we have installed using the IDE will get wiped out by Unity.</p>
+<p>There is an <a href="https://www.what-could-possibly-go-wrong.com/unity-and-nuget/">older guide</a> that I found, which helped me figure out how to add NuGet packages into Unity. But, it had many steps that were irrelevant to Unity 2021.</p>
+<p>As an example, we will look at installing Installing <em>Microsoft.Extensions.DependencyInjection</em> into an assembly definition.</p>
+<h2 id="step-1-install-nuget-package">Step 1: Install Nuget Package</h2>
+<p>Select the  <em>Manage NuGet Packages for Solution</em> in your IDE.</p>
+<p>Search and install the <em>Microsoft.Extensions.DependencyInjection</em> package</p>
+<p><img src="/assets/images/posts/installing-nuget-packages-unity-2021/installing-nuget-package-window.png" alt="Installing Nuget Package Window" /></p>
+<p>This will do a few things.</p>
+<ol>
+<li>Create an <code>app.config</code> file. This file can be deleted.</li>
+<li>Create a packages.config file. This file can be committed</li>
+<li>Download the Nuget package and its dependencies to the <code>$(Solutiondir)/packages</code> folder. This folder should be added to .gitignore</li>
+</ol>
+<p><img src="/assets/images/posts/installing-nuget-packages-unity-2021/packages-folder.png" alt="Packages Folder" /></p>
+<h2 id="step-2-make-the-dll-available-to-unity">Step 2: Make the DLL available to Unity</h2>
+<p>In the <em>packages\Microsoft.Extensions.DependencyInjection.6.0.0/lib</em> folder, you might see folders for different targets.</p>
+<p><img src="/assets/images/posts/installing-nuget-packages-unity-2021/target-frameworks.png" alt="Target Frameworks" /></p>
+<p>Copy the DLL from the <em>netstandard2.1</em> folder into the <em>Assets/Plugin/DI</em> folder. Remember how Unity needs DLLs to be inside the Assets folder. I prefer to put the DLL into nested folders under <em>Assets</em>, so it's easier to manage multiple DLLs.</p>
+<h2 id="step-3-turn-off-auto-reference">Step 3:  Turn off  Auto reference</h2>
+<p>By default, all predefined assemblies and assembly definitions can automatically reference the DLL. In most cases, we want a DLL to be exposed only to specific assembly definitions.</p>
+<p>Turn off Auto reference in the import settings for the DLL and click Apply.</p>
+<p><img src="/assets/images/posts/installing-nuget-packages-unity-2021/turn-off-auto-reference.png" alt="Turn Off Auto Reference" /></p>
+<h2 id="step-4-add-the-dll-as-a-reference-to-the-assembly-definition">Step 4: Add the DLL as a reference to the assembly definition</h2>
+<p>Select override references in the assemblies that need this package and add the DLLs to the assembly references.</p>
+<p><img src="/assets/images/posts/installing-nuget-packages-unity-2021/add-reference-to-dll.png" alt="Add Reference To DLL" /></p>
+<h2 id="troubleshooting">TroubleShooting</h2>
+<h3 id="error-unloading-broken-assembly-assetspluginsdimicrosoft.extensions.dependencyinjection.dll-this-assembly-can-cause-crashes-in-the-runtime">Error: Unloading broken assembly Assets/Plugins/DI/Microsoft.Extensions.DependencyInjection.dll, this assembly can cause crashes in the runtime</h3>
+<p>Copy the DLL from <em>packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\netstandard2.1</em> to the <em>Assets/Plugin/DI</em> folder. It is because Unity needs the <em>Microsoft.Extensions.DependencyInjection.Abstractions.dll</em>.</p>
+<h2 id="bonus-installing-moq-into-an-assembly-definition-for-tests">Bonus: Installing <em>Moq</em> into an assembly definition for Tests</h2>
+<p>Repeat the steps for Moq and make the appropriate changes</p>
+<p>After Unity recompiling, you will see an error in the unity console.</p>
+<p><img src="/assets/images/posts/installing-nuget-packages-unity-2021/moq-error.png" alt="Mog Error" /></p>
+<p>To fix this, copy the Castle.Core.dll from the packages folder and put it in the same folder as Moq.dll.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>NuGet allows us to install useful DLLs. I have shown how you can install NuGet packages into Unity 2021.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.unity3d.com/Manual/PluginInspector.html">Configuring plugins in Unity</a></li>
+</ul>
 
 
 
@@ -177,7 +154,7 @@
     <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
 
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/jetbrains-rider-plugins&text=Essential%20Plugins%20for%20JetBrains%20Rider%20plugins via @ankur_sheel.&#xD;&#xA;JetBrains%20Rider%20has%20a%20rich%20plugin%20ecosystem%2C%20many%20of%20which%20are%20bundled%20at%20installation%20time.%20Here%20is%20a%20list%20of%20plugins%20I%20like%20to%20add%20on%20top%20of%20them" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021&text=Installing%20NuGet%20packages%20in%20Unity%202021 via @ankur_sheel.&#xD;&#xA;NuGet%20is%20indispensable%20for%20working%20in%20.NET.%20Unfortunately%2C%20it%20does%20not%20work%20out%20of%20the%20box%20in%20Unity.%20Let%20us%20see%20how%20we%20can%20install%20a%20NuGet%20package%20in%20Unity%202021" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
