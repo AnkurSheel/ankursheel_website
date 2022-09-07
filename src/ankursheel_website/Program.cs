@@ -1,8 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Statiq.App;
-using Statiq.Common;
-using Statiq.Web;
-using StatiqHelpers.Extensions;
+using StatiqHelpers.CustomExtensions;
 using StatiqHelpers.Pipelines;
 
 namespace ankursheel_website
@@ -10,7 +7,7 @@ namespace ankursheel_website
     internal class Program
     {
         public static async Task<int> Main(string[] args)
-            => await Bootstrapper.Factory.InitStatiq(args)
+            => await Bootstrapper.Factory.CreateBootstrapper(args)
                 .AddSetting(WebKeys.OutputPath, "../../output")
                 .AddSetting(WebKeys.CachePath, "../../cache")
                 .AddSetting(
