@@ -3,6 +3,7 @@
 @{
     Layout = "../_Layout.cshtml";
 }
+
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
         <span>Last Updated: <time datetime="@Model.Document.GetLastUpdatedDate().ToString("yyyy-MM-dd")">@Model.Document.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time></span>
@@ -23,6 +24,8 @@
 @RenderBody()
 
 @await Html.PartialAsync("../partials/_SocialShareBar.cshtml")
+
+@await Html.PartialAsync("../partials/_RelatedPosts.cshtml")
 
 @await Html.PartialAsync("../partials/_Subscribe.cshtml")
 
