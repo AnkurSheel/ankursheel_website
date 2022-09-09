@@ -91,6 +91,7 @@
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
+
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
         <span>Last Updated: <time datetime="2020-04-29">April 29, 2020</time></span>
@@ -206,10 +207,7 @@ resource &quot;aws_sqs_queue_policy&quot; &quot;ses_queue_policy&quot; {
 
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">Did you find this post useful?</h2>
-    <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
-
+<aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
         <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/handle-bounces-ses-terraform&text=How%20to%20publish%20email%20bounce%20notifications%20to%20an%20SQS%20queue via @ankur_sheel.&#xD;&#xA;In%20this%20post%2C%20I%20configure%20AWS%20to%20publish%20email%20bounce%20notifications%20to%20an%20SQS%20queue%20using%20terraform" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -235,7 +233,29 @@ resource &quot;aws_sqs_queue_policy&quot; &quot;ses_queue_policy&quot; {
 </aside>
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">More like this</h2>
+
+    <ul>
+            <li>
+                <a href="create-sns-topic-ses-not-default-provider">How to create an SNS topic for SES in a different region with terraform</a>
+            </li>
+            <li>
+                <a href="handle-bounces-aws-ses-terraform-2">How to use terraform to process SQS messages in a lambda</a>
+            </li>
+            <li>
+                <a href="secure-aws-root-account-create-admin-user-access-billing">How to add a billing admin user to secure an AWS root account</a>
+            </li>
+            <li>
+                <a href="upload-multiple-files-aws-s3-terraform">How to Upload Multiple Files to AWS S3 using Terraform</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
     <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <p class="mt-2 text-2xl font-bold text-center">Want a weekly digest of this blog?</p>
