@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Breakout Clone v1.0 - Ankur Sheel</title>
+<title>Create custom type definitions for JavaScript dependencies - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="The first release of the Breakout clone is finally here."/>
+<meta name="description" content="What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/breakout-clone-v1-0"/>   
-<meta itemProp="name" content="Breakout Clone v1.0"/>
-<meta itemProp="description" content="The first release of the Breakout clone is finally here."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/breakout-clone-v1-0-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/breakout-clone-v1-0"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/custom-type-definitions-java-script-dependencies"/>   
+<meta itemProp="name" content="Create custom type definitions for JavaScript dependencies"/>
+<meta itemProp="description" content="What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/custom-type-definitions-java-script-dependencies-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/custom-type-definitions-java-script-dependencies"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Breakout Clone v1.0"/>
-<meta property="og:description" content="The first release of the Breakout clone is finally here."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/breakout-clone-v1-0-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/breakout-clone-v1-0-facebook.png"/>
+<meta property="og:title" content="Create custom type definitions for JavaScript dependencies"/>
+<meta property="og:description" content="What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/custom-type-definitions-java-script-dependencies-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/custom-type-definitions-java-script-dependencies-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Breakout Clone v1.0"/>
-<meta name="twitter:description" content="The first release of the Breakout clone is finally here."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/breakout-clone-v1-0-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/breakout-clone-v1-0-twitter.png"/>
+<meta name="twitter:title" content="Create custom type definitions for JavaScript dependencies"/>
+<meta name="twitter:description" content="What to do when you get a &quot;Could not find a declaration file for module&quot; error when the package does not exist in &quot;@types/third-party-library-name&quot; error"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/custom-type-definitions-java-script-dependencies-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/custom-type-definitions-java-script-dependencies-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,41 +87,69 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Breakout Clone v1.0</h1>
+    <h1 class="text-center">Create custom type definitions for JavaScript dependencies</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2014-04-05">April 05, 2014</time></span>
+        <span>Last Updated: <time datetime="2019-08-23">August 23, 2019</time></span>
         <i class="font-bold">
-            Reading Time: 0 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/games" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">games</a>
+            <a href="/tags/typescript" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">typescript</a>
+            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/web-development" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">web development</a>
     </div>
 </div>
 
-<p>The first release of the Breakout clone is finally here.</p>
-<p>The <a href="/assets/downloads/Breakout_setup_v1.1.exe">Installer</a> will install DirectX and the visual studio 2010 re-distributable.</p>
-<p>If you prefer to run the game through a zip file, you can download it from <a href="/assets/downloads/Breakout.zip">here</a>. You will have to make sure that you have the visual studio 2010 re-distributable and the latest DirectX installed on your machine.</p>
-<p>Try it out. In case you face any problems while installing or running the game, let me know, and I will try to come up with a solution.</p>
-<p>Looking forward to hearing your comments on the game :-)</p>
-<h2 id="screenshots">Screenshots</h2>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_title.png" alt="Title Screen" /></p>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame1.png" alt="In Game Screen #1" /></p>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame2.png" alt="In Game Screen #2" /></p>
-<p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_pause.png" alt="Pause Screen" /></p>
-
+<html><head></head><body><p>If you are importing a javascript dependency into your typescript app, you might run into this error.</p>
+<p><em><strong>&quot;Could not find a declaration file for module 'third-party-library-name'. 'third-party-library-name.js' has an 'any' type. Try npm install &#64;&#64;types/third-party-library-name if it exists or add a new declaration (.d.ts) file containing declare module 'third-party-library-name';&quot;</strong></em></p>
+<p>If you read the error message, you can see that it suggests checking the DefinitelyTyped repository.</p>
+<p>You will find the repository and install it using <em>npm</em> or _yarn_if you are lucky.</p>
+<p>But what if you are not so lucky?</p>
+<h2 id="solution-1">Solution #1</h2>
+<p>Now, you will only see this error if you have <code>noImplicitAny: true</code> in your <em>tsconfig.json</em>. So you could get around this error is by setting <code>noImplicitAny: false</code>.</p>
+<p>But, by doing this, you lose type-safety, so let's rule this out as a viable option.</p>
+<h2 id="solution-2">Solution #2</h2>
+<p>Add a local declaration file.</p>
+<h3 id="steps">Steps</h3>
+<p>So, how exactly do you do that?</p>
+<ul>
+<li>Create a <strong><em>types</em></strong> folder.</li>
+<li>Edit tsconfig.json to use the typeRoots property so that the compiler can find the local declaration files. You will need it to include both your local folder as well as <em>node</em>_<em>modules/&#64;&#64;types</em>. You will also want to check the local folder before the <em>node</em>_<em>modules</em> folder.</li>
+</ul>
+<pre><code class="language-json hljs">&quot;compilerOptions&quot;: {
+ ...
+ &quot;typeRoots&quot;: [&quot;./types&quot;, &quot;node_modules/&#64;&#64;types&quot;]
+    }
+</code></pre>
+<ul>
+<li>Add the property to exclude property in tsconfig so that it does not get compiled.</li>
+</ul>
+<pre><code class="language-json hljs">&quot;exclude&quot;: [..., &quot;types&quot;]
+</code></pre>
+<ul>
+<li>Add a <strong><em>third-party-library-name</em></strong> folder in the <em>types</em> directory.</li>
+<li>Add an <em>index.d.ts</em> in that folder.</li>
+<li>Add your TypeDefinitions. But if, like me, you want to prototype things or do not want to write a full custom type, you can declare the module by adding this to the <em>index.d.ts</em> file.</li>
+</ul>
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">declare</span> <span class="hljs-keyword">module</span> 'third-party-library-name';
+</code></pre>
+<p>The only caveat is that you don't get any IntelliSense.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hopefully, this post will help you. You won't have to resort to either removing Typescript from your project or losing type-safety by adding <code>noImplicitAny: false</code> in your tsconfig.json.</p>
+</body></html>
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/breakout-clone-v1-0&text=Breakout%20Clone%20v1.0 via @ankur_sheel.&#xD;&#xA;The%20first%20release%20of%20the%20Breakout%20clone%20is%20finally%20here." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/custom-type-definitions-java-script-dependencies&text=Create%20custom%20type%20definitions%20for%20JavaScript%20dependencies via @ankur_sheel.&#xD;&#xA;What%20to%20do%20when%20you%20get%20a%20%22Could%20not%20find%20a%20declaration%20file%20for%20module%22%20error%20when%20the%20package%20does%20not%20exist%20in%20%22%40types%2Fthird-party-library-name%22%20error" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -152,16 +180,16 @@
 
     <ul>
             <li>
-                <a href="new-side-project-jah">New Side Project: JAH</a>
+                <a href="full-width-you-tube-video-embed">Embed a YouTube video with 16:9 aspect ratio and full-width</a>
             </li>
             <li>
-                <a href="jah-update-1">JAH: Update 1</a>
+                <a href="react-component-draw-page-hooks-typescript">How to draw on a page using react hooks and typescript</a>
             </li>
             <li>
-                <a href="jah-update-2">JAH: Update 2</a>
+                <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>
             </li>
             <li>
-                <a href="jah-update-3">JAH: Update 3</a>
+                <a href="automating-creation-new-blog-post">How to automate the creation of a new blog post</a>
             </li>
     </ul>
 </aside>

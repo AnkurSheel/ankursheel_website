@@ -91,6 +91,7 @@
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
+
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
         <span>Last Updated: <time datetime="2017-03-27">March 27, 2017</time></span>
@@ -312,10 +313,7 @@ FibonacciDPOptimized/2100000               10 ms            128          205.070
 
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">Did you find this post useful?</h2>
-    <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
-
+<aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
         <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/dynamic-programming-series-introduction&text=A%20guide%20to%20getting%20started%20with%20Dynamic%20Programming via @ankur_sheel.&#xD;&#xA;In%20this%20article%2C%20I%20will%20show%20the%20advantages%20of%20using%20a%20Dynamic%20Programming%20approach.%20Using%20an%20example%2C%20we%20will%20come%20up%20with%20an%20approach%20to%20find%20a%20DP%20solution." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -341,7 +339,29 @@ FibonacciDPOptimized/2100000               10 ms            128          205.070
 </aside>
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">More like this</h2>
+
+    <ul>
+            <li>
+                <a href="dynamic-programming-longest-common-subsequence">Solve Longest Common Subsequence with Dynamic Programming</a>
+            </li>
+            <li>
+                <a href="dynamic-programming-editlevenshtein-distance">Solve Edit(Levenshtein) distance with Dynamic Programming</a>
+            </li>
+            <li>
+                <a href="noncopyable-objects">How to prevent the compiler from copying an object in cpp</a>
+            </li>
+            <li>
+                <a href="memory-leak-woes">A guide to finding memory leaks using macros in C&#x2B;&#x2B;</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
     <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <p class="mt-2 text-2xl font-bold text-center">Want a weekly digest of this blog?</p>

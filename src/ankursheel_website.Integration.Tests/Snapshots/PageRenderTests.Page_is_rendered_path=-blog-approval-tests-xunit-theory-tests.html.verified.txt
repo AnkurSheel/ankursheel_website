@@ -91,6 +91,7 @@
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
+
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
         <span>Last Updated: <time datetime="2020-03-18">March 18, 2020</time></span>
@@ -151,10 +152,7 @@
 
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">Did you find this post useful?</h2>
-    <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
-
+<aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
         <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/approval-tests-xunit-theory-tests&text=How%20to%20use%20ApprovalTests%20with%20xUnit%27s%20Theory%20attribute via @ankur_sheel.&#xD;&#xA;The%20approval%20test%20filename%20for%20Theory-based%20tests%20is%20not%20unique%20by%20default.%20How%20can%20we%20get%20generate%20unique%20filenames%20for%20theory-based%20approval%20tests." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -180,7 +178,29 @@
 </aside>
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">More like this</h2>
+
+    <ul>
+            <li>
+                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
+            </li>
+            <li>
+                <a href="query-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a>
+            </li>
+            <li>
+                <a href="get-time-zone-info-windows-linux">How to get TimeZoneInfo on Windows and Linux</a>
+            </li>
+            <li>
+                <a href="setup-project-properties-source-generators">How to set up the project properties for Source Generators</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
     <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <p class="mt-2 text-2xl font-bold text-center">Want a weekly digest of this blog?</p>

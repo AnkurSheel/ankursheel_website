@@ -1,0 +1,18 @@
+﻿@model BaseModel
+
+@{
+    var relatedPosts = Model.Document.GetRelatedPosts();
+}
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">More like this</h2>
+
+    <ul>
+        @foreach (var relatedPost in relatedPosts)
+        {
+            <li>
+                <a href="@relatedPost.Path">@relatedPost.Title</a>
+            </li>
+        }
+    </ul>
+</aside>

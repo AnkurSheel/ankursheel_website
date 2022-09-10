@@ -91,6 +91,7 @@
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
+
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
         <span>Last Updated: <time datetime="2021-12-26">December 26, 2021</time></span>
@@ -124,10 +125,7 @@
 
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">Did you find this post useful?</h2>
-    <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
-
+<aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
         <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/weekly-roundup-50&text=Weekly%20Roundup%2050 via @ankur_sheel.&#xD;&#xA;This%20weeks%20roundup%20contains%20articles%20from%20JT%20McCormick%2C%20Mike%20Crittenden%2C%20iA%2C%20Michael%20Lopp%20and%20Byrne%20Hobart" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -153,7 +151,29 @@
 </aside>
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">More like this</h2>
+
+    <ul>
+            <li>
+                <a href="weekly-roundup-49">Weekly Roundup 49</a>
+            </li>
+            <li>
+                <a href="weekly-roundup-51">Weekly Roundup 51</a>
+            </li>
+            <li>
+                <a href="weekly-roundup-48">Weekly Roundup 48</a>
+            </li>
+            <li>
+                <a href="weekly-roundup-52">Weekly Roundup 52</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
     <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <p class="mt-2 text-2xl font-bold text-center">Want a weekly digest of this blog?</p>

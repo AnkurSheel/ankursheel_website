@@ -91,6 +91,7 @@
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
+
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
         <span>Last Updated: <time datetime="2022-06-27">June 27, 2022</time></span>
@@ -215,10 +216,7 @@
 
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">Did you find this post useful?</h2>
-    <p>I would be really thankful if you let me know by sharing it on Twitter. You can also support me by buying me a coffee 🙂</p>
-
+<aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
         <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/usa-roadtrip&text=USA%20Road-trip via @ankur_sheel.&#xD;&#xA;The%20route%20of%20the%20road%20trip%20across%20the%20USA%20I%20took%20with%20my%20parents%20after%20graduating%20in%20May%202010" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -244,7 +242,29 @@
 </aside>
 
 
-<aside class="border-t-2 mt-2 p-4 bg-slate-200 rounded-lg shadow-sm">
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">More like this</h2>
+
+    <ul>
+            <li>
+                <a href="desert-safari">Desert Safari</a>
+            </li>
+            <li>
+                <a href="atlantis-lost-chambers">Atlantis The Lost Chambers</a>
+            </li>
+            <li>
+                <a href="inside-jumeirah-mosque">Understanding Islam inside the Jumeirah Mosque</a>
+            </li>
+            <li>
+                <a href="dubai-fountain">Dubai Fountain</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
     <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <p class="mt-2 text-2xl font-bold text-center">Want a weekly digest of this blog?</p>
