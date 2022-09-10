@@ -228,10 +228,10 @@ pm.sendRequest(<span class="hljs-string">`<span class="hljs-subst">${url}</span>
                 <a href="automatically-set-access-token-authenticated-requests-insomnia">How to automatically set the access token in Insomnia</a>
             </li>
             <li>
-                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
+                <a href="securing-git-commits-windows">A guide to securing git commits from tricking you on Windows</a>
             </li>
             <li>
-                <a href="securing-git-commits-windows">A guide to securing git commits from tricking you on Windows</a>
+                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
             </li>
             <li>
                 <a href="custom-type-definitions-for-java-script-dependencies">Create custom type definitions for JavaScript dependencies</a>

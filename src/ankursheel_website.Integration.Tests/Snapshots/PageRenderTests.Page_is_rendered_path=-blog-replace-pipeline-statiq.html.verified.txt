@@ -193,7 +193,7 @@
                 <a href="add-tailwind-css-statiq-website">Add Tailwind CSS to a Statiq website</a>
             </li>
             <li>
-                <a href="add-estimated-reading-time-posts-statiq">How to add estimated Reading Time to Posts in Statiq</a>
+                <a href="override-netlify-build-config">How to override the netlify build config</a>
             </li>
             <li>
                 <a href="rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>

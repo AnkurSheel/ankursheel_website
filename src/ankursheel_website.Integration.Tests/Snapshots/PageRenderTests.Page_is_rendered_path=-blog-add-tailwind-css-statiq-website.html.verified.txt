@@ -257,10 +257,10 @@ npm install -D tailwindcss&<span class="hljs-comment">#64;latest postcss&#64;lat
                 <a href="replace-pipeline-statiq">How to replace a pipeline in Statiq</a>
             </li>
             <li>
-                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
+                <a href="override-netlify-build-config">How to override the netlify build config</a>
             </li>
             <li>
-                <a href="override-netlify-build-config">How to override the netlify build config</a>
+                <a href="migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a>
             </li>
     </ul>
 </aside>

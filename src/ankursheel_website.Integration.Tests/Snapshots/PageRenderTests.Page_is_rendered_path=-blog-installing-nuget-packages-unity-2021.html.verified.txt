@@ -192,7 +192,7 @@
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
-                <a href="jetbrains-rider-plugins">Essential Plugins for JetBrains Rider plugins</a>
+                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
             </li>
     </ul>
 </aside>

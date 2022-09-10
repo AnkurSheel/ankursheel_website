@@ -190,10 +190,10 @@
 
     <ul>
             <li>
-                <a href="add-estimated-reading-time-posts-statiq">How to add estimated Reading Time to Posts in Statiq</a>
+                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
-                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
+                <a href="add-estimated-reading-time-posts-statiq">How to add estimated Reading Time to Posts in Statiq</a>
             </li>
             <li>
                 <a href="noncopyable-objects">How to prevent the compiler from copying an object in cpp</a>

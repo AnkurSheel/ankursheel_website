@@ -237,10 +237,10 @@
                 <a href="automatically-set-access-token-authenticated-requests-insomnia">How to automatically set the access token in Insomnia</a>
             </li>
             <li>
-                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
+                <a href="custom-type-definitions-for-java-script-dependencies">Create custom type definitions for JavaScript dependencies</a>
             </li>
             <li>
-                <a href="custom-type-definitions-for-java-script-dependencies">Create custom type definitions for JavaScript dependencies</a>
+                <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>
             </li>
     </ul>
 </aside>

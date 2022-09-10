@@ -210,16 +210,16 @@
 
     <ul>
             <li>
-                <a href="new-release-codinators-xunit-helpers-nuget-package">New Release: Codinators.XunitHelpers Nuget Package</a>
-            </li>
-            <li>
-                <a href="codinators-xunit-helpers-nuget-package-update-1">Codinators.XunitHelpers Nuget Package: Update 1</a>
+                <a href="setup-project-properties-source-generators">How to set up the project properties for Source Generators</a>
             </li>
             <li>
                 <a href="codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a>
             </li>
             <li>
-                <a href="setup-project-properties-source-generators">How to set up the project properties for Source Generators</a>
+                <a href="codinators-xunit-helpers-nuget-package-update-1">Codinators.XunitHelpers Nuget Package: Update 1</a>
+            </li>
+            <li>
+                <a href="new-release-codinators-xunit-helpers-nuget-package">New Release: Codinators.XunitHelpers Nuget Package</a>
             </li>
     </ul>
 </aside>

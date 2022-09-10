@@ -94,7 +94,7 @@
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2019-02-20">February 20, 2019</time></span>
+        <span>Last Updated: <time datetime="2022-09-10">September 10, 2022</time></span>
         <i class="font-bold">
             Reading Time: 3 min
         </i>
@@ -108,7 +108,8 @@
     </div>
 </div>
 
-<html><head></head><body><h2 id="xunit-101">xUnit 101</h2>
+<html><head></head><body><p><em>You can install <a href="https://www.nuget.org/packages/Codinators.XunitHelpers">xUnitHelpers as a Nuget Package</a> if you want a easy way to load test data from a JSON file for xUnit tests.</em></p>
+<h2 id="xunit-101">xUnit 101</h2>
 <p>xUnit is a unit testing tool for the .Net framework. If you're new to testing with xUnit, I suggest reading the getting started <a href="https://xunit.net/docs/getting-started/netcore/visual-studio">documentation</a>.</p>
 <p>xUnit allows support for both parameterless and parameterized tests. There are 3 different ways to supply data to the parameterized tests.</p>
 <ul>
@@ -229,13 +230,13 @@
                 <a href="approval-tests-xunit-theory-tests">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a>
             </li>
             <li>
-                <a href="postman-ajax-endpoints-xsrf-tokens">Testing endpoints protected with an XSRF token in Postman</a>
-            </li>
-            <li>
                 <a href="automatically-set-access-token-authenticated-requests-insomnia">How to automatically set the access token in Insomnia</a>
             </li>
             <li>
-                <a href="securing-git-commits-windows">A guide to securing git commits from tricking you on Windows</a>
+                <a href="postman-ajax-endpoints-xsrf-tokens">Testing endpoints protected with an XSRF token in Postman</a>
+            </li>
+            <li>
+                <a href="add-estimated-reading-time-posts-statiq">How to add estimated Reading Time to Posts in Statiq</a>
             </li>
     </ul>
 </aside>

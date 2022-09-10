@@ -249,16 +249,16 @@
 
     <ul>
             <li>
-                <a href="desert-safari">Desert Safari</a>
+                <a href="new-zealand-escapes-tranzalpine-express">New Zealand Escapes: KiwiRail - TranzAlpine Express</a>
             </li>
             <li>
-                <a href="atlantis-lost-chambers">Atlantis The Lost Chambers</a>
+                <a href="new-zealand-escapes-photo-essay-mount-maunganui">New Zealand Escapes: Photo Essay - Mount Maunganui</a>
             </li>
             <li>
-                <a href="inside-jumeirah-mosque">Understanding Islam inside the Jumeirah Mosque</a>
+                <a href="new-zealand-escapes-tauranga">New Zealand Escapes: Tauranga</a>
             </li>
             <li>
-                <a href="dubai-fountain">Dubai Fountain</a>
+                <a href="new-zealand-escapes-waitomo-blackwater-rafting">New Zealand Escapes: Waitomo Blackwater Rafting</a>
             </li>
     </ul>
 </aside>

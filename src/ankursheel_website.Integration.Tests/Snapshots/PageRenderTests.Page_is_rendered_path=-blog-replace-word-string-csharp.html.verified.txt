@@ -180,7 +180,7 @@ text tester&quot;</p>
                 <a href="serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
             </li>
             <li>
-                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
+                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
             </li>
     </ul>
 </aside>

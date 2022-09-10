@@ -183,16 +183,16 @@
 
     <ul>
             <li>
-                <a href="override-netlify-build-config">How to override the netlify build config</a>
-            </li>
-            <li>
                 <a href="replace-pipeline-statiq">How to replace a pipeline in Statiq</a>
             </li>
             <li>
-                <a href="add-tailwind-css-statiq-website">Add Tailwind CSS to a Statiq website</a>
+                <a href="override-netlify-build-config">How to override the netlify build config</a>
             </li>
             <li>
-                <a href="deploy-statiq-website-tailwind-netlify">Deploy a Statiq website using Tailwind CSS to Netlify</a>
+                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
+            </li>
+            <li>
+                <a href="serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
             </li>
     </ul>
 </aside>
