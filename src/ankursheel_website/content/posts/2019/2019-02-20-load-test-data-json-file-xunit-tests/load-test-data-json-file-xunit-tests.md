@@ -3,11 +3,17 @@ title: How to load test data from a JSON file for xUnit tests
 excerpt: In this post, we add a custom attribute in xUnit to load test data from a JSON file.
 category: "programming"
 tags:
-    - csharp
-    - testing
-    - tutorial
-    - xUnit
+
+- csharp
+- testing
+- tutorial
+- xUnit
+
+updatedOnDate: "2022-09-10"
+
 ---
+
+_You can install [xUnitHelpers as a Nuget Package](https://www.nuget.org/packages/Codinators.XunitHelpers) if you want a easy way to load test data from a JSON file for xUnit tests._
 
 ## xUnit 101
 
@@ -15,9 +21,9 @@ xUnit is a unit testing tool for the .Net framework. If you're new to testing wi
 
 xUnit allows support for both parameterless and parameterized tests. There are 3 different ways to supply data to the parameterized tests.
 
--   **Inline Data** is good when the method parameters are constant. Still, it gets unwieldy pretty quickly when you have many test cases. It also can't be used when the data is not constant.
--   **Class Data** removes clutter from test files by moving the data to a separate class. It also allows you to pass non-constant data to the test. The downside is that you have to create a new class.
--   **Member Data** is similar to class data but uses a static property or method of a type instead of a _class_.
+- **Inline Data** is good when the method parameters are constant. Still, it gets unwieldy pretty quickly when you have many test cases. It also can't be used when the data is not constant.
+- **Class Data** removes clutter from test files by moving the data to a separate class. It also allows you to pass non-constant data to the test. The downside is that you have to create a new class.
+- **Member Data** is similar to class data but uses a static property or method of a type instead of a _class_.
 
 ## Problems
 
@@ -109,11 +115,11 @@ dotnet add package Codinators.XunitHelpers
 
 ## Further Reading
 
--   [xUnit documentation](https://xunit.net/docs/getting-started/netcore/visual-studio)
--   [Advent of Code](https://adventofcode.com)
--   [Creating a custom xUnit theory test DataAttribute to load data from JSON files](https://andrewlock.net/creating-a-custom-xunit-theory-test-dataattribute-to-load-data-from-json-files/) by Andrew Lock
--   [MakeGenericType](<https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&view=netframework-4.7.2>)
--   [dynamic](<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(dynamic_CSharpKeyword)%3Bk(DevLang-csharp)%26rd%3Dtrue>)
+- [xUnit documentation](https://xunit.net/docs/getting-started/netcore/visual-studio)
+- [Advent of Code](https://adventofcode.com)
+- [Creating a custom xUnit theory test DataAttribute to load data from JSON files](https://andrewlock.net/creating-a-custom-xunit-theory-test-dataattribute-to-load-data-from-json-files/) by Andrew Lock
+- [MakeGenericType](<https://docs.microsoft.com/en-us/dotnet/api/system.type.makegenerictype?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(System.Type.MakeGenericType);k(DevLang-csharp)%26rd%3Dtrue&view=netframework-4.7.2>)
+- [dynamic](<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic?f1url=https%3A%2F%2Fmsdn.microsoft.com%2Fquery%2Fdev15.query%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(dynamic_CSharpKeyword)%3Bk(DevLang-csharp)%26rd%3Dtrue>)
 
 ## Conclusion
 

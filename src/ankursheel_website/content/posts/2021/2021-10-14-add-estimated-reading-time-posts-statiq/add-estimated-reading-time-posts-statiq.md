@@ -1,13 +1,19 @@
 ---
-title: 'How to add estimated Reading Time to Posts in Statiq'
-excerpt: 'A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq'
+title: "How to add estimated Reading Time to Posts in Statiq"
+excerpt: "A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq"
 category: "programming"
 tags:
-    - 'Statiq'
-    - 'tutorial'
-    - 'snippet'
-coverImage: './cover.png'
+
+- "Statiq"
+- "tutorial"
+- "snippet"
+
+coverImage: "./cover.png"
+updatedOnDate: "2022-09-10"
+
 ---
+
+_You can install [StatiqHelpers as a Nuget Package](https://www.nuget.org/packages/Codinators.StatiqHelpers) if you just want a module to add to your website._
 
 In this tutorial, I will show how to use the reading time calculated in [How to calculate reading time](./calculate-reading-time) to use in a Statiq module to add reading time for our posts.
 
@@ -31,10 +37,10 @@ public class GenerateReadingTime : ParallelModule
 }
 ```
 
--   **_Line 5-6_**: Get the content associated with the document as a string.
--   **_Line 8_**: Clone the document by adding new metadata items.
--   **_Line 10-11_**: Add a new metadata item with key _Reading_time_and a value obtained from a call to `GetReadingTime`. We use a \_ReadingTimeWordsPerMinute_ setting to override the default value of 200 words per minute.
--   **_Line 11_**: Convert the document into an enumerable.
+- **_Line 5-6_**: Get the content associated with the document as a string.
+- **_Line 8_**: Clone the document by adding new metadata items.
+- **_Line 10-11_**: Add a new metadata item with key _Reading_time_and a value obtained from a call to `GetReadingTime`. We use a \_ReadingTimeWordsPerMinute_ setting to override the default value of 200 words per minute.
+- **_Line 11_**: Convert the document into an enumerable.
 
 We can now use it on our website. You can see an example below.
 
@@ -42,4 +48,4 @@ We can now use it on our website. You can see an example below.
 
 ## Further Reading
 
--   [Writing Modules in Statiq](https://www.statiq.dev/framework/pipelines/modules/writing-modules)
+- [Writing Modules in Statiq](https://www.statiq.dev/framework/pipelines/modules/writing-modules)
