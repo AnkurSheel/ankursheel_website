@@ -6,7 +6,7 @@ coverImage: "./dashboard.png"
 category: "ramblings"
 tags:
 
-- "review"
+- "reviews"
 - "csharp"
 
 ---
