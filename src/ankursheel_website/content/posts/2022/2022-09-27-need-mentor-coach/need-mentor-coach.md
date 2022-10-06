@@ -144,3 +144,5 @@ Don't be afraid to part ways if the relationship is not providing value to both 
 It's also worth figuring out if you need a mentor or a coach to help you. Both are valuable in their own ways.
 
 What are your experiences with mentoring? Have you ever had a senior individual or anyone you looked up to as your role model?
+
+_Thanks to the [Blogging for Devs community](http://bloggingfordevs.com/) for providing feedback on this post._
