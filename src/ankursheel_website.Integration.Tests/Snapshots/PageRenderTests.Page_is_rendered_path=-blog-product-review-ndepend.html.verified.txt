@@ -4,31 +4,31 @@
 <head>
     
 
-<title>How to setup WordPress locally: Introduction - Ankur Sheel</title>
+<title>Product Review: NDepend - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
+<meta name="description" content="NDepend is a static code analyser for .Net developers. Let&#x27;s find out if it&#x27;s worth adding to your toolbelt."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>   
-<meta itemProp="name" content="How to setup WordPress locally: Introduction"/>
-<meta itemProp="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/product-review-ndepend"/>   
+<meta itemProp="name" content="Product Review: NDepend"/>
+<meta itemProp="description" content="NDepend is a static code analyser for .Net developers. Let&#x27;s find out if it&#x27;s worth adding to your toolbelt."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/product-review-ndepend-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/product-review-ndepend"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to setup WordPress locally: Introduction"/>
-<meta property="og:description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
+<meta property="og:title" content="Product Review: NDepend"/>
+<meta property="og:description" content="NDepend is a static code analyser for .Net developers. Let&#x27;s find out if it&#x27;s worth adding to your toolbelt."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/product-review-ndepend-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/product-review-ndepend-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to setup WordPress locally: Introduction"/>
-<meta name="twitter:description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-twitter.png"/>
+<meta name="twitter:title" content="Product Review: NDepend"/>
+<meta name="twitter:description" content="NDepend is a static code analyser for .Net developers. Let&#x27;s find out if it&#x27;s worth adding to your toolbelt."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/product-review-ndepend-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/product-review-ndepend-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,43 +87,73 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to setup WordPress locally: Introduction</h1>
+    <h1 class="text-center">Product Review: NDepend</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2013-12-19">December 19, 2013</time></span>
+        <span>Last Updated: <time datetime="2022-09-13">September 13, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 5 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
-            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordpress</a>
+            <a href="/tags/reviews" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">reviews</a>
+            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
     </div>
 </div>
 
-<p>In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud. You might also want to set up WordPress locally if you are planning to create plugins or themes. I will be covering the following aspects</p>
-<h2 id="the-series">The Series</h2>
-<ol>
-<li><a href="installing-apache">Installing a Web Server (Apache)</a></li>
-<li><a href="installing-php">Installing PHP</a></li>
-<li><a href="installing-mysql">Installing MySQL</a></li>
-<li><a href="installing-phpmyadmin">Installing phpMyAdmin</a></li>
-<li><a href="installing-wordpress">Installing Wordpress</a></li>
-</ol>
-<p>You can always use existing packages such as <a href="https://www.apachefriends.org/en/xampp.html">XAMPP</a> to take care of installing an Apache Web Server along with MySQL, PHP and PERL. However, I will outline how you can install each component separately.</p>
-<p><strong>Update: 19 Dec 2013:</strong> Sharad pointed out that you can also use <a href="http://bitnami.com/">bitnami app stack</a>.</p>
+<p><a href="http://www.ndepend.com/">NDepend</a> is a static code analyser for .Net developers. It is billed as a &quot;Swiss Army knife for developers&quot; on its feature page, and I agree it comes with a chockful of features.</p>
+<p><em>Disclaimer: I was given a year-long license to evaluate NDepend by Patrick Smacchia, the creator and lead dev. I agreed to write an article on the condition that the article would be an honest opinion of the software.</em></p>
+<p>But is it worth adding to your tool belt? Let's find out.</p>
+<h2 id="impressions">Impressions</h2>
+<p>The installation process is a little clunky. I downloaded a zip file and had to extract the contents into a folder. I received the license file in a separate email and was able to register the product with a single command.</p>
+<h3 id="installation-and-getting-started">Installation and Getting Started</h3>
+<p>You can use NDepend as a Visual Studio extension or a standalone application. Since I use Rider as my IDE and there is no support for Rider (yet), I used the standalone application. This makes it harder to integrate into your daily workflow as it's not integrated with the IDE.</p>
+<p>It's pretty easy to get started. You pick a solution to analyse and let NDepend do its thing. Once the analysis is completed, it will generate a summary report and populate the different views in the application. The HTML reports are more accessible, but the application's views are more interactive.</p>
+<h3 id="dashboard">Dashboard</h3>
+<p><img src="/assets/images/posts/product-review-ndepend/dashboard.png" alt="Dashboard" /></p>
+<p>NDepend gives an incredibly informative overview of the application in a dashboard containing key metrics, rule violations and the evolution over time of some metrics. To see coverage results, you can provide a directory with the coverage file, and NDepend will find it automatically.</p>
+<h3 id="dependency-graph-view">Dependency Graph View</h3>
+<p><img src="/assets/images/posts/product-review-ndepend/dependency-graph.png" alt="Dependency Graph" /></p>
+<p>The dependency graph view is exceptionally detailed. Besides providing a simple-to-read view of the dependencies in your project and .Net assemblies, it's interactive. It lets you drill down to the method and field. The graph is coloured, which makes it easy to see what is happening. The searching capabilities are great as well.</p>
+<p>You also get a related view with a table-based dependency matrix, but I found it hard to understand and use.</p>
+<h3 id="abstractness-vs-instability">Abstractness vs Instability</h3>
+<p><img src="/assets/images/posts/product-review-ndepend/abstractness-Instability.png" alt="Abstractness vs Instability" /></p>
+<p>NDepend also creates an interesting graph which plots Abstractness vs Instability. It can indicate which assemblies are painful to use because they are used by many other types but lack abstractness. An assembly is painful to use if it is used by many different types but lacks abstractness. An assembly is useless if it has a lot of abstractions but is used by no one. I can see this being useful on larger projects to find non-modular and over-engineered code.</p>
+<h3 id="baseline-and-trend-metrics">Baseline and Trend Metrics</h3>
+<p>One feature I am excited to use is Trend Metrics. Trend metrics, in theory, allow you to compare the code evolution over time. It will do this by plotting standard and custom metrics over time.</p>
+<p>By setting a baseline, you can detect if you are introducing debt or reducing it. It will show the new/fixed issues etc., since the last baseline. You can also set the baseline for the comparison, so it does not have to be the 1st time you ran the analysis on your project.</p>
+<h3 id="rules">Rules</h3>
+<p>NDepend has a lot of default rules(which can be edited) used to analyse the project. Each rule has a description that helps you understand why you should fix it and how to fix it. However, it can't fix your code automatically, which is a shame because some of the rules, especially around naming, feel as if they could be handled by the tool.</p>
+<p><img src="/assets/images/posts/product-review-ndepend/rules.png" alt="Rules" /></p>
+<p>I found the default ruleset to be a little too generalised. The 1st time you run the tool, chances are you will get a lot of warnings to the point of it being overwhelming. In the screenshot above, you can see that even for a small project like this website, it detected 125 issues. Although, the tool does indicate that only 10 of them are high severity and the rest are medium or low severity. Once you have a baseline, you can see how many new issues were introduced (on a subsequent analysis). You can then fix just the latest issues, which should be much easier to handle.</p>
+<p>You can manually disable the rule to match your coding style. Alternatively, you can suppress an issue by using an attribute. I am not a big fan of littering my code with &quot;suppress &quot; attributes, so being able to do that using a global suppression file was a pleasant surprise. However, I stumbled on it by chance as it was hidden in a context menu and not shown as part of the message.</p>
+<p>You can also navigate from rule violations to your code. This felt a little inconsistent in that sometimes it took me to the line causing the breach of the rule, but other times it took me to the top of the file. Sometimes it just errored out, and I had to manually go to the file.</p>
+<p>It also kept trying to open Visual Studio for me. I was eventually able to configure it to open Rider. It would have been nice if it had asked me to select my IDE of choice on startup.</p>
+<p><em>I sent an early draft of this article to Patrick, who, after reading this suggestion, implemented it within a few days. It will be available in version 2022.2, to be released next month. Here is a sneak peek just for you.</em> :)</p>
+<p><img src="/assets/images/posts/product-review-ndepend/ide-selector.png" alt="IDE Selector" /></p>
+<p>Even though it has its quirks, this feature is powerful because you can add custom rules. It uses a variation of LINQ called CQLinq(Code Query over LINQ), which should be easy for a C# developer to pick up.</p>
+<h3 id="misc">Misc</h3>
+<p>I quite liked that everything is customisable. If you want to, you can precisely define heuristics for your organisation which is a shortcoming in many tools. You can also share your rules &amp; settings across your NDepend projects with rule files.</p>
+<p>I found the learning curve for NDepend quite steep. The UI is a bit confusing and cluttered - it requires significant amounts of screen space to work comfortably. However, almost everything has a tooltip, and the documentation on the website is top-notch.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>NDepend is a great product, and it's fast, a must for a tool you expect to use regularly.</p>
+<p>Like with any similar tool, it's easy to fall into the trap of getting the perfect metrics. We need to be careful - after all, is there any point in refactoring a method rarely touched when you could be shipping more valuable features?</p>
+<p>Although it's a powerful analysis tool, I am not sure how valuable it is for smaller teams and projects. The licensing cost is a decent chunk of change.</p>
+<p>After using NDepend for a few weeks, I am using the Dependency Graph and Rules Explorer the most. A Lite/Community version with just these features and a lower price point would be helpful for smaller projects/teams. I would have also preferred a per-user licensing model rather than a per-machine license to be able to install it on both my desktop and laptop.</p>
+<p>However, if you work in a larger organisation with a fair amount of legacy code and struggle to get your tech debt in control. In that case, this just might be the right tool for you. The graphs and metrics can probably help make a business case for upper management to invest in improving code quality. Almost everything is customisable, so you can update the values and thresholds to what makes sense for your business.</p>
+<p>You can get a free trial from the <a href="https://www.ndepend.com/download">NDepend download page</a>.</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/testing-wordpress-locally-series&text=How%20to%20setup%20WordPress%20locally%3A%20Introduction via @ankur_sheel.&#xD;&#xA;In%20this%20series%2C%20I%20will%20cover%20how%20to%20set%20up%20WordPress%20locally%20so%20that%20you%20can%20develop%20locally%20before%20pushing%20your%20blog%2Fwebsite%20on%20the%20cloud." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/product-review-ndepend&text=Product%20Review%3A%20NDepend via @ankur_sheel.&#xD;&#xA;NDepend%20is%20a%20static%20code%20analyser%20for%20.Net%20developers.%20Let%27s%20find%20out%20if%20it%27s%20worth%20adding%20to%20your%20toolbelt." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -154,16 +184,16 @@
 
     <ul>
             <li>
-                <a href="installing-apache">Setup WordPress locally: Installing an Apache Web Server</a>
+                <a href="review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a>
             </li>
             <li>
-                <a href="installing-php">How to setup WordPress locally: Installing PHP</a>
+                <a href="product-review-paper-boat-drinks">Product Review: Paper Boat Drinks</a>
             </li>
             <li>
-                <a href="installing-mysql">How to setup WordPress locally: Installing MySQL</a>
+                <a href="smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a>
             </li>
             <li>
-                <a href="installing-phpmyadmin">How to setup WordPress locally: Installing phpMyAdmin</a>
+                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
     </ul>
 </aside>

@@ -4,31 +4,31 @@
 <head>
     
 
-<title>How to setup WordPress locally: Introduction - Ankur Sheel</title>
+<title>Do you need a mentor or a coach? - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
+<meta name="description" content="The mentor-mentee relationship is one of the most important relationships you will develop during your career. Everyone can use a mentor. But what is mentoring? How is it different from coaching? How can you find the right mentor for you."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>   
-<meta itemProp="name" content="How to setup WordPress locally: Introduction"/>
-<meta itemProp="description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/testing-wordpress-locally-series"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/need-mentor-coach"/>   
+<meta itemProp="name" content="Do you need a mentor or a coach?"/>
+<meta itemProp="description" content="The mentor-mentee relationship is one of the most important relationships you will develop during your career. Everyone can use a mentor. But what is mentoring? How is it different from coaching? How can you find the right mentor for you."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/need-mentor-coach-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/need-mentor-coach"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to setup WordPress locally: Introduction"/>
-<meta property="og:description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-facebook.png"/>
+<meta property="og:title" content="Do you need a mentor or a coach?"/>
+<meta property="og:description" content="The mentor-mentee relationship is one of the most important relationships you will develop during your career. Everyone can use a mentor. But what is mentoring? How is it different from coaching? How can you find the right mentor for you."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/need-mentor-coach-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/need-mentor-coach-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to setup WordPress locally: Introduction"/>
-<meta name="twitter:description" content="In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/testing-wordpress-locally-series-twitter.png"/>
+<meta name="twitter:title" content="Do you need a mentor or a coach?"/>
+<meta name="twitter:description" content="The mentor-mentee relationship is one of the most important relationships you will develop during your career. Everyone can use a mentor. But what is mentoring? How is it different from coaching? How can you find the right mentor for you."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/need-mentor-coach-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/need-mentor-coach-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,43 +87,123 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to setup WordPress locally: Introduction</h1>
+    <h1 class="text-center">Do you need a mentor or a coach?</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2013-12-19">December 19, 2013</time></span>
+        <span>Last Updated: <time datetime="2022-09-27">September 27, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 6 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
-            <a href="/tags/wordpress" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordpress</a>
+            <a href="/tags/career" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">career</a>
+            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
     </div>
 </div>
 
-<p>In this series, I will cover how to set up WordPress locally so that you can develop locally before pushing your blog/website on the cloud. You might also want to set up WordPress locally if you are planning to create plugins or themes. I will be covering the following aspects</p>
-<h2 id="the-series">The Series</h2>
-<ol>
-<li><a href="installing-apache">Installing a Web Server (Apache)</a></li>
-<li><a href="installing-php">Installing PHP</a></li>
-<li><a href="installing-mysql">Installing MySQL</a></li>
-<li><a href="installing-phpmyadmin">Installing phpMyAdmin</a></li>
-<li><a href="installing-wordpress">Installing Wordpress</a></li>
-</ol>
-<p>You can always use existing packages such as <a href="https://www.apachefriends.org/en/xampp.html">XAMPP</a> to take care of installing an Apache Web Server along with MySQL, PHP and PERL. However, I will outline how you can install each component separately.</p>
-<p><strong>Update: 19 Dec 2013:</strong> Sharad pointed out that you can also use <a href="http://bitnami.com/">bitnami app stack</a>.</p>
+<!-- https://unsplash.com/photos/z7oytXGI6VI -->
+<p>The mentor-mentee relationship is one of the most important relationships you will develop during your career.</p>
+<p>I have been fortunate to have been on both sides of the table. I have also seen people mix mentoring and coaching as they are closely related.</p>
+<p>This article will outline what mentoring is and how it differs from coaching (even though they are closely related). It's a 2-way street, so you will also learn what mentors and mentees can do to make it a successful relationship.</p>
+<p>And the question on everyone's mind - How can you find the right mentor for you?</p>
+<h2 id="what-is-mentoring">What is mentoring</h2>
+<blockquote>
+<p>Communication and long-term focus is key</p>
+</blockquote>
+<p>Mentorship is a relationship between a more experienced person (Mentor) and a less experienced person (Mentee). It involves the mentee getting guidance from the mentor based on their knowledge and experiences.</p>
+<p>It generally focuses on long-term development and takes a more holistic approach.</p>
+<p>It involves making a safe space for a mentee to discuss ideas and ask questions without the fear of pressure or judgement.</p>
+<h3 id="what-is-a-mentor">What is a mentor?</h3>
+<p><img src="/assets/images/posts/need-mentor-coach/cover.jpg" alt="quote I feel like making dreams come true" /></p>
+<p>A mentor is someone who has been in your shoes. They can share their knowledge, skills and/or experience. They can, therefore, provide you with strategies and offer advice on what they did and what worked for them. They can help navigate complex social situations.</p>
+<blockquote>
+<p>A helpful mentor to have is someone who is two or three levels above you but doesn't work directly with you</p>
+<p><cite>Mary Grace Gardner</cite></p>
+</blockquote>
+<p>A mentor is generally not someone you report to. This allows them to give you unbiased feedback that won't be coloured by past work. Since your work doesn't directly impact them, a mentor is someone you can bounce ideas off, and they can offer a different perspective on things.</p>
+<p>Most importantly, a mentor will focus on self-empowerment. They will answer tough questions and raise questions you hadn't considered.</p>
+<p>A mentor isn't there to tell you what to do. It's up to you to either heed their advice and take action on it or decide to go your own way.</p>
+<h2 id="how-is-coaching-different-from-mentoring">How is coaching different from mentoring?</h2>
+<blockquote>
+<p>They are similar on the surface, but they are not the same</p>
+</blockquote>
+<p>Coaching is a more focused approach to learning. It is usually for a shorter term and is primarily focused on assisting people with their current performance.</p>
+<p>It is most beneficial when there is a well-defined goal based on improving skills and performance.</p>
+<h3 id="how-is-a-mentor-different-from-a-coach">How is a mentor different from a coach?</h3>
+<blockquote>
+<p>It helps if you are intentional about whether you want a coach vs a mentor, and it's more challenging if you don't know the difference.</p>
+</blockquote>
+<p>A coach can address your needs and goals rather than provide general guidance. They can guide you with practical steps towards sharpening your existing skillset and learning new skills.</p>
+<p>A coach tends to focus more on goals and measurable progress. They will devise a plan and run you through a series of practices and lessons to help you achieve it. They will provide specific feedback to ensure you stay on track with the plan to reach the goals set.</p>
+<p>A good coach would work closely with you on a weekly, if not daily, basis.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-sport-analogy">A Sport analogy</h3>
+<p>Taking the sport of cricket as an example</p>
+<p><strong>A mentor</strong> would be someone with a lot of experience playing a sport. They are not necessarily experts in any specific area of cricket. In fact, they may not even be a cricketer. They know what it takes to become a team captain (and probably have been one themselves).</p>
+<p><strong>A coach</strong> is an expert. They train the cricketer and help them prepare for specific skills such as batting. They focus on upcoming matches and get the cricketer to a certain performance level.</p>
+<h3 id="some-real-life-examples">Some Real Life examples</h3>
+<p><strong>Examples of mentoring</strong></p>
+<ul>
+<li>Guidance on career progression</li>
+<li>Dealing with managers</li>
+<li>actionable tips and tricks to ace projects</li>
+</ul>
+<p><strong>Examples of coaching</strong></p>
+<ul>
+<li>Passing a certification/exam</li>
+<li>Learning the fundamentals behind a field or topics like automated testing or building APIs</li>
+<li>Reviewing code</li>
+<li>Improve your networking skills</li>
+</ul>
+<h2 id="advice-for-mentors">Advice for Mentors</h2>
+<blockquote>
+<p>Mentorship is not a one-size fits all model</p>
+</blockquote>
+<p>It is essential to spend the first conversation getting to know each other and setting expectations. You should also understand the mentee's motivations, so you can tailor the advice you provide.</p>
+<p>You must have the bandwidth and provide adequate time for the mentoring relationship. You should meet with the mentee regularly (at least once a month) and give your uninterrupted attention.</p>
+<p>It's essential to be available for your mentee without being overbearing. You should check in with them regularly to see how they are doing but give them space to grow and learn independently.</p>
+<p>Remember to support and encourage your mentee as they advance their knowledge.</p>
+<p>Be honest if you aren't familiar with an area the mentee asks about and try to seek out the answer or connect the mentee with someone else who can help.</p>
+<p>You should also be ready to offer your honest opinion even if it might be hard for the other person to hear. However, you need to show empathy when giving this kind of feedback.</p>
+<p>Your main goal should be to get your mentees to a point where they don't necessarily need you anymore.</p>
+<h2 id="advice-for-mentees">Advice for Mentees</h2>
+<p>Find a mentor you can work with, someone you admire, and someone who can help you grow. <em>See the following section for advice on how to do that.</em></p>
+<p>Remember to communicate regularly with your mentor but be mindful of not overwhelming your mentor. If something can wait till the next scheduled meeting, batch it up.</p>
+<p>Bring topics to discuss. You can set an agenda if you want, but don't be afraid of free-wheeling as long you discuss whatever is on your mind. You can think of this as &quot;work therapy&quot;.</p>
+<p>Try to find ways you can provide value to your mentor. e.g. sharing valuable links and resources.</p>
+<p>Most importantly, put your ego aside, and be able to take advice, even criticism.</p>
+<h3 id="how-do-you-figure-out-who-will-be-a-good-mentor-for-you">How do you figure out who will be a good mentor for you?</h3>
+<p>Remember, mentorship doesn't have to be a formal relationship. Anyone can be your mentor (even if they don't know about it 😀). You can ask yourself these questions.</p>
+<ul>
+<li>What will I gain by working with this person as a mentor?</li>
+<li>Does their style and values align with mine?</li>
+<li>Have they shared a similar career path, or do they have a career path I seek to follow?</li>
+<li>Does this mentor have a skill set that will complement my weaknesses?</li>
+</ul>
+<p>If you are looking for a mentor to satisfy one of the following reasons, you are looking for a sponsor, not a mentor.</p>
+<ul>
+<li>What steps can I skip by having this person as my mentor?</li>
+<li>Who else can this person introduce me to in the next month?</li>
+</ul>
+<h2 id="parting-thoughts">Parting Thoughts</h2>
+<p>Everyone can use a mentor, and anyone can be a mentor. Both are rewarding in their own ways. You have probably had at least one mentor in your journey (even if unintentionally). Then you reach a point in your life where you have a chance to be one for someone else.</p>
+<p>The success of a mentoring relationship depends on transparency, honesty and mutual trust, so it's essential to find the right person.</p>
+<p>Don't be afraid to part ways if the relationship is not providing value to both of you.</p>
+<p>It's also worth figuring out if you need a mentor or a coach to help you. Both are valuable in their own ways.</p>
+<p>What are your experiences with mentoring? Have you ever had a senior individual or anyone you looked up to as your role model?</p>
+<p><em>Thanks to the <a href="http://bloggingfordevs.com/">Blogging for Devs community</a> for providing feedback on this post.</em></p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/testing-wordpress-locally-series&text=How%20to%20setup%20WordPress%20locally%3A%20Introduction via @ankur_sheel.&#xD;&#xA;In%20this%20series%2C%20I%20will%20cover%20how%20to%20set%20up%20WordPress%20locally%20so%20that%20you%20can%20develop%20locally%20before%20pushing%20your%20blog%2Fwebsite%20on%20the%20cloud." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/need-mentor-coach&text=Do%20you%20need%20a%20mentor%20or%20a%20coach%3F via @ankur_sheel.&#xD;&#xA;The%20mentor-mentee%20relationship%20is%20one%20of%20the%20most%20important%20relationships%20you%20will%20develop%20during%20your%20career.%20Everyone%20can%20use%20a%20mentor.%20But%20what%20is%20mentoring%3F%20How%20is%20it%20different%20from%20coaching%3F%20How%20can%20you%20find%20the%20right%20mentor%20for%20you." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -154,16 +234,16 @@
 
     <ul>
             <li>
-                <a href="installing-apache">Setup WordPress locally: Installing an Apache Web Server</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
             </li>
             <li>
-                <a href="installing-php">How to setup WordPress locally: Installing PHP</a>
+                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
             <li>
-                <a href="installing-mysql">How to setup WordPress locally: Installing MySQL</a>
+                <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
             </li>
             <li>
-                <a href="installing-phpmyadmin">How to setup WordPress locally: Installing phpMyAdmin</a>
+                <a href="dream-job">What is my idea of a dream job</a>
             </li>
     </ul>
 </aside>

@@ -182,7 +182,7 @@
                 <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
             </li>
             <li>
-                <a href="make-code-reviews-stress-free">How to make code reviews stress free</a>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
     </ul>
 </aside>
@@ -211,6 +211,25 @@
 </aside>
 
 
+<footer>
+    <script src="https://giscus.app/client.js"
+        data-repo="AnkurSheel/blog-comments"
+        data-repo-id="R_kgDOIAUZqA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIAUZqM4CRdIF"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+
+</footer>
 
         </article>
     </div>

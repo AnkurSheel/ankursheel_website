@@ -253,6 +253,9 @@
 
     <ul>
             <li>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+            </li>
+            <li>
                 <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
             <li>
@@ -260,9 +263,6 @@
             </li>
             <li>
                 <a href="dream-job">What is my idea of a dream job</a>
-            </li>
-            <li>
-                <a href="team-name">What&#x27;s in a team name</a>
             </li>
     </ul>
 </aside>
@@ -291,6 +291,25 @@
 </aside>
 
 
+<footer>
+    <script src="https://giscus.app/client.js"
+        data-repo="AnkurSheel/blog-comments"
+        data-repo-id="R_kgDOIAUZqA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIAUZqM4CRdIF"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+
+</footer>
 
         </article>
     </div>
