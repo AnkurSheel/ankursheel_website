@@ -126,10 +126,10 @@
                 <a href="/blog/team-name">What&#x27;s in a team name</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/need-mentor-coach">Do you need a mentor or a coach?</a> - <time class="prose-sm" datetime="22-09-27">September 27, 2022</time>
+                <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a> - <time class="prose-sm" datetime="22-02-16">February 16, 2022</time>
+                <a href="/blog/need-mentor-coach">Do you need a mentor or a coach?</a> - <time class="prose-sm" datetime="22-09-27">September 27, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a> - <time class="prose-sm" datetime="21-08-03">August 03, 2021</time>

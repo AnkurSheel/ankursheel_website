@@ -251,10 +251,10 @@
                 <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
             </li>
     </ul>
 </aside>

@@ -706,25 +706,25 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
     <item>
       <title>Interviewing your interviewers with a must-have and a deal-breaker list</title>
       <link>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</link>
-      <description>Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation</description>
+      <description>Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation.</description>
       <guid>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</guid>
-      <pubDate>Wed, 16 Feb 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;At the end of most interviews will come the question, &amp;quot;Do you have any questions for us?&amp;quot; Common advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more important reason to interview your interviewer.&lt;/p&gt;
+      <pubDate>Thu, 06 Oct 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;At the end of most interviews will come the question, &amp;quot;Do you have any questions for us?&amp;quot; Standard advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more critical reason to interview your interviewer.&lt;/p&gt;
 &lt;p&gt;I have worked for a few companies in my career. Some of them worked out great, while for others, after a few months of joining, I realized it wasn't a great fit.&lt;/p&gt;
-&lt;p&gt;Joining a company and finding out that it isn't a good match never feels great. It can be hard to know if the company we are thinking of joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.&lt;/p&gt;
+&lt;p&gt;Joining a company and finding out it isn't a good match never feels great. It can be hard to know if the company we are considering joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.&lt;/p&gt;
 &lt;h2 id="how-to-apply-the-lists-in-an-interview"&gt;How to apply the lists in an interview&lt;/h2&gt;
 &lt;p&gt;Now, it's unlikely that we will be able to walk into a job interview and run through our list of must-haves/deal-breakers like a checklist. After all, we can't just ask our prospective boss if they are a micromanager. But we can look for signals that can help us evaluate them.&lt;/p&gt;
-&lt;p&gt;At this point, you might be wondering, how do I do that?&lt;/p&gt;
+&lt;p&gt;At this point, you might wonder, how do I do that?&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Make your own list of must-haves and deal-breakers.&lt;/li&gt;
 &lt;li&gt;For each item in the list, write a question.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;em&gt;It's essential to keep the questions conversational and not accusatory. We should also structure the question so that the interviewer has to provide examples.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Keep the list of questions handy so that you can ask questions throughout the interview as they relate to the topic being discussed.&lt;/p&gt;
-&lt;h2 id="my-must-have-list"&gt;My Must Have List&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;It's essential to keep the questions conversational and not accusatory. We should also structure the question, so the interviewer has to provide examples.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Keep the list of questions handy, so you can ask questions throughout the interview as they relate to the topic being discussed.&lt;/p&gt;
+&lt;h2 id="my-must-have-list"&gt;My Must-Have List&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A high degree of autonomy and flexibility in how I manage my time and workload.&lt;/li&gt;
-&lt;li&gt;Open communication not only among team-mates but also with management and Human Resources.&lt;/li&gt;
+&lt;li&gt;A high degree of autonomy and flexibility in managing my time and workload.&lt;/li&gt;
+&lt;li&gt;Open communication among teammates and with management and Human Resources.&lt;/li&gt;
 &lt;li&gt;Ability to choose my workplace tools, including both hardware and software.&lt;/li&gt;
 &lt;li&gt;A clear and defined path toward career advancement (both in skills and compensation)&lt;/li&gt;
 &lt;li&gt;Ability to work on non-work-related tasks for a few hours a week.&lt;/li&gt;
@@ -745,6 +745,7 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;li&gt;Following Dogmatic Scrum and story pointing.&lt;/li&gt;
 &lt;li&gt;Long-lived branches.&lt;/li&gt;
 &lt;li&gt;No automated tests / over-reliance on manual QA.&lt;/li&gt;
+&lt;li&gt;No QA / over-reliance on automated tests / only developers testing&lt;/li&gt;
 &lt;li&gt;Hiring mainly seniors / Not many intermediates or juniors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Note that these items are all about me, my values and what I want. They have very little to do with any particular job or workplace.&lt;/em&gt;&lt;/p&gt;
@@ -756,7 +757,7 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Autonomy and Flexibility&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Do you encourage public discussions, especially for controversial topics and disagreements?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How are disagreements solved - both technical disputes and other kinds? What happens when personalities clash?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How are disagreements solved - technical disputes and other kinds? What happens when personalities clash?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often does the leadership team discuss turnover percentages and other numbers&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication&lt;/p&gt;
@@ -774,14 +775,14 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;:  Ability to work on non-work-related tasks, Share Ideas&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Do you have regular retros? Process/Team and after features?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;:  Learning from mistakes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What does the company do to ensure an inclusive work environment for transgender people, people with disabilities, single parents, and other people on the margins? Does HR get input for policies or people programs? How is diversity represented within the team or company?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What does the company do to ensure an inclusive work environment for transgender people, people with disabilities, single parents, and other under-represented folks? How is diversity represented within the team or company? Does HR get input for policies or people programs?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;:  Inclusiveness&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How responsive are people to emails/Slack over the weekends during the day and after 6pm?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Overtime&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What is the on-call schedule?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on call&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often are there emergencies or times when people have to work extra hours?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on call, Expected overtime&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on-call, Expected overtime&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Are people compensated for being on call? How do you measure the impact on developers?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on call&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often are engineers expected to provide status updates on a project?&lt;/p&gt;
@@ -813,7 +814,7 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do performance reviews work? Do engineers review their peers and managers? What do you do in case of a bad review of a manager?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Equality, Career Advancement&lt;/p&gt;
 &lt;h2 id="what-is-an-appropriate-number-of-questions-to-ask"&gt;What is an appropriate number of questions to ask?&lt;/h2&gt;
-&lt;p&gt;This is quite an extensive list. Chances are we won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by a person working in a similar role.&lt;/p&gt;
+&lt;p&gt;This is quite an extensive list. We won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by someone working in a similar role.&lt;/p&gt;
 &lt;p&gt;One thing I have not tried so far but intend to try next time I am interviewing is conducting a &lt;a href="https://blog.pragmaticengineer.com/reverse-interviewing/" target="_blank"&gt;reverse interview&lt;/a&gt; after I have negotiated the offer to get any unanswered questions answered.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;A list of questions based on our must-haves and deal-breakers can give us the confidence to know that we are making the right decision. We can down positions or step away from the interview process where there isn't a great fit. You owe it to yourself to find a place aligned with your values.&lt;/p&gt;

@@ -193,10 +193,10 @@
                 <a href="team-name">What&#x27;s in a team name</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
             <li>
-                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+                <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
             </li>
     </ul>
 </aside>

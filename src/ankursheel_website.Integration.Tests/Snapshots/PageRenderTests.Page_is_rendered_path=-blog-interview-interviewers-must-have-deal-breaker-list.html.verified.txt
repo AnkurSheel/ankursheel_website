@@ -9,24 +9,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+<meta name="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"/>   
 <meta itemProp="name" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
-<meta itemProp="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+<meta itemProp="description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
-<meta property="og:description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+<meta property="og:description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Interviewing your interviewers with a must-have and a deal-breaker list"/>
-<meta name="twitter:description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with a little bit of introspection and preparation"/>
+<meta name="twitter:description" content="Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/interview-interviewers-must-have-deal-breaker-list-twitter.png"/>
 
@@ -94,7 +94,7 @@
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-02-16">February 16, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-10-06">October 06, 2022</time></span>
         <i class="font-bold">
             Reading Time: 6 min
         </i>
@@ -106,22 +106,22 @@
     </div>
 </div>
 
-<p>At the end of most interviews will come the question, &quot;Do you have any questions for us?&quot; Common advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more important reason to interview your interviewer.</p>
+<p>At the end of most interviews will come the question, &quot;Do you have any questions for us?&quot; Standard advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more critical reason to interview your interviewer.</p>
 <p>I have worked for a few companies in my career. Some of them worked out great, while for others, after a few months of joining, I realized it wasn't a great fit.</p>
-<p>Joining a company and finding out that it isn't a good match never feels great. It can be hard to know if the company we are thinking of joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.</p>
+<p>Joining a company and finding out it isn't a good match never feels great. It can be hard to know if the company we are considering joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.</p>
 <h2 id="how-to-apply-the-lists-in-an-interview">How to apply the lists in an interview</h2>
 <p>Now, it's unlikely that we will be able to walk into a job interview and run through our list of must-haves/deal-breakers like a checklist. After all, we can't just ask our prospective boss if they are a micromanager. But we can look for signals that can help us evaluate them.</p>
-<p>At this point, you might be wondering, how do I do that?</p>
+<p>At this point, you might wonder, how do I do that?</p>
 <ol>
 <li>Make your own list of must-haves and deal-breakers.</li>
 <li>For each item in the list, write a question.</li>
 </ol>
-<p><em>It's essential to keep the questions conversational and not accusatory. We should also structure the question so that the interviewer has to provide examples.</em></p>
-<p>Keep the list of questions handy so that you can ask questions throughout the interview as they relate to the topic being discussed.</p>
-<h2 id="my-must-have-list">My Must Have List</h2>
+<p><em>It's essential to keep the questions conversational and not accusatory. We should also structure the question, so the interviewer has to provide examples.</em></p>
+<p>Keep the list of questions handy, so you can ask questions throughout the interview as they relate to the topic being discussed.</p>
+<h2 id="my-must-have-list">My Must-Have List</h2>
 <ul>
-<li>A high degree of autonomy and flexibility in how I manage my time and workload.</li>
-<li>Open communication not only among team-mates but also with management and Human Resources.</li>
+<li>A high degree of autonomy and flexibility in managing my time and workload.</li>
+<li>Open communication among teammates and with management and Human Resources.</li>
 <li>Ability to choose my workplace tools, including both hardware and software.</li>
 <li>A clear and defined path toward career advancement (both in skills and compensation)</li>
 <li>Ability to work on non-work-related tasks for a few hours a week.</li>
@@ -142,6 +142,7 @@
 <li>Following Dogmatic Scrum and story pointing.</li>
 <li>Long-lived branches.</li>
 <li>No automated tests / over-reliance on manual QA.</li>
+<li>No QA / over-reliance on automated tests / only developers testing</li>
 <li>Hiring mainly seniors / Not many intermediates or juniors.</li>
 </ul>
 <p><em>Note that these items are all about me, my values and what I want. They have very little to do with any particular job or workplace.</em></p>
@@ -153,7 +154,7 @@
 <p><em>Relates to</em>: Autonomy and Flexibility</p>
 <p><strong>Q</strong>: Do you encourage public discussions, especially for controversial topics and disagreements?</p>
 <p><em>Relates to</em>: Open Communication</p>
-<p><strong>Q</strong>: How are disagreements solved - both technical disputes and other kinds? What happens when personalities clash?</p>
+<p><strong>Q</strong>: How are disagreements solved - technical disputes and other kinds? What happens when personalities clash?</p>
 <p><em>Relates to</em>: Open Communication</p>
 <p><strong>Q</strong>: How often does the leadership team discuss turnover percentages and other numbers</p>
 <p><em>Relates to</em>: Open Communication</p>
@@ -171,14 +172,14 @@
 <p><em>Relates to</em>:  Ability to work on non-work-related tasks, Share Ideas</p>
 <p><strong>Q</strong>: Do you have regular retros? Process/Team and after features?</p>
 <p><em>Relates to</em>:  Learning from mistakes</p>
-<p><strong>Q</strong>: What does the company do to ensure an inclusive work environment for transgender people, people with disabilities, single parents, and other people on the margins? Does HR get input for policies or people programs? How is diversity represented within the team or company?</p>
+<p><strong>Q</strong>: What does the company do to ensure an inclusive work environment for transgender people, people with disabilities, single parents, and other under-represented folks? How is diversity represented within the team or company? Does HR get input for policies or people programs?</p>
 <p><em>Relates to</em>:  Inclusiveness</p>
 <p><strong>Q</strong>: How responsive are people to emails/Slack over the weekends during the day and after 6pm?</p>
 <p><em>Relates to</em>: Overtime</p>
 <p><strong>Q</strong>: What is the on-call schedule?</p>
 <p><em>Relates to</em>: Mandatory on call</p>
 <p><strong>Q</strong>: How often are there emergencies or times when people have to work extra hours?</p>
-<p><em>Relates to</em>: Mandatory on call, Expected overtime</p>
+<p><em>Relates to</em>: Mandatory on-call, Expected overtime</p>
 <p><strong>Q</strong>: Are people compensated for being on call? How do you measure the impact on developers?</p>
 <p><em>Relates to</em>: Mandatory on call</p>
 <p><strong>Q</strong>: How often are engineers expected to provide status updates on a project?</p>
@@ -210,7 +211,7 @@
 <p><strong>Q</strong>: How do performance reviews work? Do engineers review their peers and managers? What do you do in case of a bad review of a manager?</p>
 <p><em>Relates to</em>: Equality, Career Advancement</p>
 <h2 id="what-is-an-appropriate-number-of-questions-to-ask">What is an appropriate number of questions to ask?</h2>
-<p>This is quite an extensive list. Chances are we won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by a person working in a similar role.</p>
+<p>This is quite an extensive list. We won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by someone working in a similar role.</p>
 <p>One thing I have not tried so far but intend to try next time I am interviewing is conducting a <a href="https://blog.pragmaticengineer.com/reverse-interviewing/" target="_blank">reverse interview</a> after I have negotiated the offer to get any unanswered questions answered.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>A list of questions based on our must-haves and deal-breakers can give us the confidence to know that we are making the right decision. We can down positions or step away from the interview process where there isn't a great fit. You owe it to yourself to find a place aligned with your values.</p>
@@ -222,7 +223,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list&text=Interviewing%20your%20interviewers%20with%20a%20must-have%20and%20a%20deal-breaker%20list via @ankur_sheel.&#xD;&#xA;Joining%20a%20company%20and%20finding%20out%20that%20it%20isn%27t%20a%20good%20match%20never%20feels%20great.%20We%20can%20increase%20the%20chances%20of%20finding%20the%20right%20company%20with%20a%20little%20bit%20of%20introspection%20and%20preparation" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list&text=Interviewing%20your%20interviewers%20with%20a%20must-have%20and%20a%20deal-breaker%20list via @ankur_sheel.&#xD;&#xA;Joining%20a%20company%20and%20finding%20out%20that%20it%20isn%27t%20a%20good%20match%20never%20feels%20great.%20We%20can%20increase%20the%20chances%20of%20finding%20the%20right%20company%20with%20some%20introspection%20and%20preparation." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
