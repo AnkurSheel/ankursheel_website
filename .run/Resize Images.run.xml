@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Resize Images" type="RunExe" factoryName=".NET Executable">
     <option name="EXE_PATH" value="C:/Program Files/dotnet/dotnet.exe" />
-    <option name="PROGRAM_PARAMETERS" value="run -- resize-image 800 0 -c" />
+    <option name="PROGRAM_PARAMETERS" value="run -- resize-image 0 1280"/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ankursheel_website/" />
     <option name="PASS_PARENT_ENVS" value="1" />
     <envs>
