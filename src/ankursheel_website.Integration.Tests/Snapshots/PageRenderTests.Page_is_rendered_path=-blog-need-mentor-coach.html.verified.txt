@@ -234,6 +234,9 @@
 
     <ul>
             <li>
+                <a href="dream-job">What is my idea of a dream job</a>
+            </li>
+            <li>
                 <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
             </li>
             <li>
@@ -241,9 +244,6 @@
             </li>
             <li>
                 <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
-            </li>
-            <li>
-                <a href="dream-job">What is my idea of a dream job</a>
             </li>
     </ul>
 </aside>

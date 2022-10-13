@@ -210,10 +210,10 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
                 <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
             </li>
             <li>
-                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+                <a href="dream-job">What is my idea of a dream job</a>
             </li>
             <li>
-                <a href="make-code-reviews-stress-free">How to make code reviews stress free</a>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
     </ul>
 </aside>

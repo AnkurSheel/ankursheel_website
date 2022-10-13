@@ -9,24 +9,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities"/>
+<meta name="description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/dream-job"/>   
 <meta itemProp="name" content="What is my idea of a dream job"/>
-<meta itemProp="description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities"/>
+<meta itemProp="description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/dream-job-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/dream-job"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="What is my idea of a dream job"/>
-<meta property="og:description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities"/>
+<meta property="og:description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/dream-job-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/dream-job-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="What is my idea of a dream job"/>
-<meta name="twitter:description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities"/>
+<meta name="twitter:description" content="An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/dream-job-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/dream-job-twitter.png"/>
 
@@ -94,9 +94,9 @@
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2020-10-01">October 01, 2020</time></span>
+        <span>Last Updated: <time datetime="2022-10-03">October 03, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 5 min
+            Reading Time: 4 min
         </i>
     </div>
 
@@ -106,115 +106,203 @@
     </div>
 </div>
 
-<p>It's a goal that everyone should have. But, what makes a job the coveted but elusive dream job?</p>
-<p>For a long time, I thought that doing something you love automatically meant that you had a dream job. But as I have matured (now, that doesn't seem right ), I have realized that being passionate about the work is not enough to make any ole job <strong><em>the dream job</em></strong>. Don't get me wrong, passion is a crucial ingredient, but it's not the only one. If the job does not make you happy, no amount of passion will make it a dream job.</p>
-<p>The question now becomes, what does my dream job/company look like? After all, if I don't know what my dream job looks like, how do I know if I am progressing towards it. More importantly, how do I compare different opportunities and differentiate between good and bad ones?</p>
+<p>It's a goal that everyone should have. But what makes a job the coveted but elusive dream job?</p>
+<p>For a long time, I thought that doing something you love automatically meant that you had a dream job. But as I have matured (now, that doesn't seem right), I have realized that being passionate about the work is not enough to make any ole job <strong><em>the dream job</em></strong>. If the job does not make you happy, no amount of passion will make it a dream job. Don't get me wrong, passion is a crucial ingredient, but it's not the only one.</p>
+<p>The question now becomes, what does my dream job/company look like? After all, if I don't know what my dream job looks like, how do I know if I am applying for one or even in one? More importantly, how do I compare different opportunities and differentiate between good and bad ones?</p>
 <p>Let us tackle the makeup of my dream job and see what it looks like.</p>
-<h2 id="culture-44-points">Culture (44 points)</h2>
-<p>After working with some terrible companies and some great ones, I have realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy? So what does the perfect culture look like?</p>
-<ul>
-<li>The company and management should trust that I am a responsible adult and will get stuff done without micromanagement. I should be able to blow off steam by playing games or taking walks etc., during work hours without being questioned. <strong>9 points</strong></li>
-</ul>
-<p>There are no draconian rules like explaining why I stepped out for some time, why I was a little late, or why I am on youtube. As long as I am getting my work done in time and no one is blocked, I don't think the company should care about how and when I get stuff done. <strong>8 points</strong></p>
-<ul>
-<li><p>Excellent work/life balance. <strong>7 points for 40 hour weeks. 5 points for 40 hour weeks with occasional overtime to up to 60 hours. 0 otherwise</strong></p>
-</li>
-<li><p>Open communication not only among team-mates but also with management and Human Resources. <strong>6 points</strong></p>
-</li>
-<li><p>Friendly people. <strong>5 points</strong></p>
-</li>
-<li><p>Laid Back dress code. <strong>5 points for shorts and sandals. 3 for Tees and jeans. 0 otherwise</strong></p>
-</li>
-<li><p>Potential to discuss ideas and be taken seriously on issues related to processes and company culture. <strong>4 points</strong></p>
-</li>
-</ul>
-<Quote quote="Culture trumps everything else, every single time" />
-<h2 id="compensation-and-benefits-37-points">Compensation and Benefits (37 points)</h2>
-<p>I would be lying if I said that money is not important to me. I need to feel that I am fairly compensated for my skills. It's also a good confidence booster to be making an above market rate salary. Benefits and perks are nice, but they don't pay the bills.</p>
-<p>Unfortunately, many companies feel that they can afford to pay less because they work on exciting challenges. This is especially prevalent in the games industry. The ideal company would not give a lowball offer when trying to hire me. After all, if I had to fight (actually let me be politically correct and say negotiate) to get what I deserve before I even joined the company, who's to say that I won't have to do it again at each review. More importantly, why would I work for a technology company that skimps on paying its most important assets (the programmers).</p>
-<ul>
-<li><p>Above market-rate salary without having to negotiate: <strong>8 points</strong></p>
-</li>
-<li><p>Above market rate salary with negotiation: <strong>6 points</strong></p>
-</li>
-<li><p>Market Rate salary without having to negotiate: <strong>4 points</strong></p>
-</li>
-<li><p>Market Rate salary with negotiation: <strong>0 points</strong></p>
-</li>
-<li><p>Below Market Rate Salary: <strong>(-) 6 points</strong></p>
-</li>
-</ul>
-<p>When considering a new job and comparing it with current employment and already at market rate, replace market rate with current salary + X%. The following 2 factors also come into play.</p>
-<ul>
-<li><p>No relocation: <strong>(-) 6 points</strong></p>
-</li>
-<li><p>Initial Low-ball Offer: <strong>(-) 4 points</strong></p>
-</li>
-</ul>
-<p>Although I did say that the base salary is more important but, for the comparable wages, it is the benefits and perks which make a company more attractive. Some of the essential benefits:</p>
-<ul>
-<li><p>Access to productivity tools such as Resharper or Visual Assist X etc., depending on the language. <strong>7 points</strong></p>
-</li>
-<li><p>100% covered health insurance with a good provider. <strong>5 points</strong></p>
-</li>
-<li><p>The ability to work remotely, either full-time or part-time. <strong>1 point per day in a week. 2 points for the well-stocked kitchen. Full-time remote work automatically adds 22 points from the culture section</strong></p>
-</li>
-<li><p>Recurring Bonus: <strong>4 points</strong></p>
-</li>
-<li><p>A well-stocked kitchen full of coffee, tea, and snacks. <strong>1 point for each for a total of 2 points</strong></p>
-</li>
-<li><p>The ability to move horizontally or vertically throughout the company. <strong>3 points</strong></p>
-</li>
-<li><p>Reimbursements for sports-related activities. Most companies give gym memberships, but I don't like going to the gym and prefer to spend my time playing sports. <strong>3 points</strong></p>
-</li>
-</ul>
-<h2 id="learning-6-points">Learning (6 points)</h2>
+<table>
+<thead>
+<tr>
+<th>High-Level Breakdown</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Culture</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Compensation and Benefits</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Learning</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Passion</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="culture-50-points">Culture (50 points)</h2>
+<blockquote>
+<p>Culture trumps everything else, every single time</p>
+</blockquote>
+<p>After working with some terrible and great companies, I realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy?</p>
+<p>So what does the perfect culture look like?</p>
+<table>
+<thead>
+<tr>
+<th>Breakdown for Culture</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Honesty and Transparency by Management.</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Potential to discuss ideas and be taken seriously on processes and company culture.</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Open communication among team-mates</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Open communication with management and Human Resources.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>The ability to move horizontally or vertically throughout the company.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Internally Visible Compensation Matrix</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="compensation-and-benefits-35-points">Compensation and Benefits (35 points)</h2>
+<p>I would be lying if I said that money is not important to me. I need to feel that I am fairly compensated for my skills. It's also a good confidence booster to make an above-market-rate salary. Benefits and perks are nice, but they don't pay the bills.</p>
+<p>Unfortunately, many companies feel they can afford to pay less because they work on exciting challenges. This is especially prevalent in the games industry. The ideal company would not give a lowball offer when trying to hire me.</p>
+<p>After all, if I had to fight (actually, let me be politically correct and say negotiate) to get what I deserve before I even joined the company, who's to say that I won't have to do it again at each review? More importantly, why would I work for a technology company that skimps on paying its most important assets (the programmers).</p>
+<h3 id="salary-15-points">Salary (15 points)</h3>
+<table>
+<thead>
+<tr>
+<th>Breakdown for Salary</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Above market-rate base salary without having to negotiate</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Market Rate base salary without having to negotiate</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Above market rate salary with negotiation</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Below market base salary.</td>
+<td>-15</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>Note 1:</strong> Some companies will give an annual bonus. Unless the base salary is already above market, deduct 5 points from the salary breakdown table. This is because you don't get benefits like Kiwisaver etc., on bonuses.</em></p>
+<p><em><strong>Note 2:</strong> When considering a new job and comparing it with current employment and already at market rate, replace market rate with current salary + X%.</em></p>
+<h3 id="benefits-20-points">Benefits (20 points)</h3>
+<p>Although I did say that the base salary is more important, the benefits and perks make a company more attractive for comparable wages.</p>
+<table>
+<thead>
+<tr>
+<th>Breakdown for Benefits</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESOP's / RSU's</td>
+<td>10</td>
+</tr>
+<tr>
+<td>100% covered health insurance with a good provider.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Reimbursements for sports. Most companies give gym memberships, but I don't like going to the gym and prefer to spend my time playing sports.</td>
+<td>3</td>
+</tr>
+<tr>
+<td>A well-stocked kitchen full of coffee, tea, and snacks</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="learning-10-points">Learning (10 points)</h2>
 <p>The perfect company would invest in their employees. The way I see it, this is a win-win for both the employee and the company. The employee improves their skill set, and the company gets a sharp engineer.</p>
-<ul>
-<li><p>Ability to work on side projects after work without any repercussions. <strong>3 points</strong></p>
-</li>
-<li><p>Access to resources such as online courses, conferences or even books. <strong>2 points</strong></p>
-</li>
-<li><p>Ability to work on non-work-related tasks for a few hours a week. Kind of like Google Fridays. <strong>1 point</strong></p>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Breakdown for Learning</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ability to work on non-work-related tasks for a few hours a week. Kind of like Google Fridays.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>New Things to Work on</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Access to resources such as online courses, conferences or even books.</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
 <h2 id="passion-5-points">Passion (5 points)</h2>
-<p>Not only should I be passionate about the work I am doing, but I want to be around people who are also passionate about their work.</p>
+<p>Not only should I be passionate about my work, but I also want to be around people passionate about it.</p>
+<table>
+<thead>
+<tr>
+<th>Breakdown for Learning</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I am passionate about the work.</td>
+<td>3</td>
+</tr>
+<tr>
+<td>People around me are passionate about their work.</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cause-for-automatic-rejections">Cause for Automatic Rejections</h2>
 <ul>
-<li><p>I am passionate about the work. <strong>3 points</strong></p>
-</li>
-<li><p>People around me are passionate about their work. <strong>2 points</strong></p>
-</li>
+<li>No relocation (if moving to a new city/country)</li>
+<li>Initial Low-ball Offer.</li>
+<li>Mandatory in-office days.</li>
+<li>Micro Management.</li>
+<li>No Ability to work on side projects after work.</li>
+<li>I don't work with people who have ego trips or feel that others need to cater to their every whim and demand because they are more knowledgeable or in a higher position.</li>
 </ul>
-<h2 id="no-assholes-policy-4-points">No Assholes Policy (4 points)</h2>
-<p>I don't work with people who have ego trips or feel that others need to cater to their every whim and demand because they are more knowledgeable or in a higher position.</p>
-<h2 id="new-things-to-work-on-3-points">New Things to Work on (3 points)</h2>
-<p>I just can't see myself being happy working on the same thing for a long time. I love game programming because I got to work on a different aspect of the game every so often.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>That's a total of 100 points. Maybe no job ticks all the boxes, but then again, perhaps there is.</p>
-<p>My current job scores <strong><em>79/100</em></strong>.</p>
+<p>That's a total of 100 points. Maybe no job ticks all the boxes, but then again, perhaps there are.</p>
+<p>My current job at First AML scores <strong><em>42/100</em></strong> 😢. <em>The last time I did this exercise in 2020 after a few months at First Aml, it was <strong><em>79/100</em></strong></em>.</p>
+<p>This is a very opinionated list, and what is vital for me might not be essential for you even if you are at the same stage in life.</p>
+<p>Remember that the point breakup and the list change over time. It will also likely change in the next 5-10 years. After all, the things that were important to me in my early twenties are very different from those that are important now.</p>
 <p>How does your company rate on my dream job scale? Let me know.</p>
-<h2 id="caveats">Caveats</h2>
-<ul>
-<li><p>I think it's important to mention that the point breakup or even the list changes over time. After all, the things that were important to me in my early twenties are very different from those that are important now. It will also likely change in the next 5-10 years.</p>
-</li>
-<li><p>This is a very opinionated list, and what is vital for me might not be essential for you even if you are at the same stage in life.</p>
-</li>
-</ul>
-<h3 id="thanks">Thanks</h3>
-<ul>
-<li><p>Jen Miller for highlighting some important things I had not clarified in the initial post.</p>
-</li>
-<li><p>Chris Greef for pointing out that the wording around the compensation points is ambiguous.</p>
-</li>
-</ul>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/dream-job&text=What%20is%20my%20idea%20of%20a%20dream%20job via @ankur_sheel.&#xD;&#xA;An%20opinionated%20breakdown%20for%20deciding%20whether%20a%20job%20is%20the%20dream%20job%20you%20are%20after.%20It%20can%20also%20help%20you%20compare%20different%20opportunities" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/dream-job&text=What%20is%20my%20idea%20of%20a%20dream%20job via @ankur_sheel.&#xD;&#xA;An%20opinionated%20breakdown%20for%20deciding%20whether%20a%20job%20is%20the%20dream%20job%20you%20are%20after.%20It%20can%20also%20help%20you%20compare%20different%20opportunities." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -245,16 +333,16 @@
 
     <ul>
             <li>
-                <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
-            </li>
-            <li>
-                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
             </li>
             <li>
                 <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+            </li>
+            <li>
+                <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
             </li>
     </ul>
 </aside>

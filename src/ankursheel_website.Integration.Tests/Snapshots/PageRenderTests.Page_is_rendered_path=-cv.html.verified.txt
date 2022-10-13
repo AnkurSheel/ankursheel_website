@@ -94,7 +94,7 @@
 <p>I am a software developer who strives to help people become more efficient and productive. I take an active interest in improving processes to benefit my team members. I enjoy building tools that help reduce the time taken by my team members to complete tasks. I specialize in making code maintainable by using refactoring techniques and adding unit and system test coverage. I have often been brought into different projects because of my debugging skills. I also enjoy extending my technical skillset by indulging in side-projects.</p>
 <p>To see what I look for in a company, please visit: <a href="/blog/dream-job">Dream Job</a></p>
 <h3 id="download-cv" target="\_blank"><a href="assets/downloads/CV_Ankur_Sheel.pdf">Download CV</a></h3>
-<p><strong><em>Last Updated: 7 Jul 2022</em></strong></p>
+<p><strong><em>Last Updated: 1 Oct 2022</em></strong></p>
 <p><a href="assets/downloads/CV_Ankur_Sheel.pdf" target="\_blank"><img src="/assets/images/pdficon_large.png" width="64" height="64" alt="CV" /></a></p>
 <h2 id="related-links">Related Links</h2>
 <ul>
