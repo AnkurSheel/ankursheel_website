@@ -1,38 +1,37 @@
 @model PageModel
+
 @{
-    const int numberOfSummaries = 5;
+    const int numberOfRecentPosts = 5;
+    var recentPosts = Model.Posts.OrderByDescending(x => x.GetLastUpdatedDate()).ToList().Where(x => !x.GetTags().Contains("weekly roundup")).Take(numberOfRecentPosts);
 }
+
 <p>I go down rabbit holes and blog about them.</p>
 
-<div class="flex flex-col gap-10 lg:grid lg:overflow-hidden lg:grid-cols-2 lg:grid-rows-1 lg:gap-2">
-    <div class="bg-gray-200 rounded-3xl px-4 my-8">
-        <div class="flex flex-col gap-8 flex-auto text-center">
-            <h2>Most popular posts</h2>
-            <a href="/blog/full-width-you-tube-video-embed">How to embed a YouTube video with a 16:9 aspect ratio and full-width</a>
-            <a href="/blog/add-cursive-fonts-vs-code">How to add ligatures and cursive fonts to VS Code?</a>
-            <a href="/blog/load-test-data-json-file-xunit-tests">How to load test data from a json file for xUnit tests?</a>
-            <a href="/blog/react-component-draw-page-hooks-typescript">How to draw on a page using react hooks and typescript</a>
-            <a href="/blog/custom-type-definitions-for-java-script-dependencies">Create custom type definitions for JavaScript dependencies</a>
-            <a href="/blog/automatically-set-access-token-authenticated-requests-insomnia/">How to automatically set the access token in Insomnia</a>
-            <a href="/blog/handle-bounces-aws-ses-terraform-2">How to use terraform to process SQS messages in a lambda</a>
-            <a href="/blog/query-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a>
-            <a href="/blog/upload-pdf-received-api-aws-s3">How do you upload a PDF received from an API to AWS S3?</a>
-            <a href="/blog/stop-remove-all-docker-containers">How to stop and remove all Docker containers</a>
-        </div>
-    </div>
-    <div class="bg-gray-200 rounded-3xl px-4 my-8">
-        <div class="flex flex-col gap-8 flex-auto text-center">
-            <h2 class="">My favorites</h2>
-            <a href="/blog/make-code-reviews-stress-free">How to make code reviews stress free</a>
-            <a href="/blog/impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a>
-            <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a>
-            <a href="/blog/increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
-            <a href="/blog/child-appreciation">Why being an only child is awesome?</a>
-            <a href="/blog/problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
-            <a href="/blog/interview-happy-job">Why I interview even when I am happy at my job?</a>
-            <a href="/blog/dream-job">What is my idea of a dream job?</a>
-            <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem">A postmortem for Fantastic Bits (Codingame AI Contest)</a>
-            <a href="/blog/new-zealand-escapes-tranzalpine-express">New Zealand Escapes: KiwiRail - TranzAlpine Express</a>
-        </div>
-    </div>
-</div>
+<h2> @numberOfRecentPosts Most Recently Updated Posts</h2>
+<ul class="p-0">
+    @foreach (var post in recentPosts)
+    {
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="@post.GetPageUrl()">@post.GetTitle()</a> - <time class="prose-sm" datetime="@post.GetLastUpdatedDate().ToString("yy-MM-dd")">@post.GetLastUpdatedDate().ToString("MMMM dd, yyyy")</time>
+        </li>
+    }
+</ul>
+
+<h2>My favourites</h2>
+<ul class="p-0">
+    <li class="list-none mt-6 md:mt-1 p-0">
+        <a href="/blog/child-appreciation">Why being an only child is awesome?</a>
+    </li>
+    <li class="list-none mt-6 md:mt-1 p-0">
+        <a href="/blog/dream-job">What is my idea of a dream job?</a>
+    </li>
+    <li class="list-none mt-6 md:mt-1 p-0">
+        <a href="/blog/impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a>
+    </li>
+    <li class="list-none mt-6 md:mt-1 p-0">
+        <a href="/blog/make-code-reviews-stress-free">How to make code reviews stress free?</a>
+    </li>
+    <li class="list-none mt-6 md:mt-1 p-0">
+        <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a>
+    </li>
+</ul>
