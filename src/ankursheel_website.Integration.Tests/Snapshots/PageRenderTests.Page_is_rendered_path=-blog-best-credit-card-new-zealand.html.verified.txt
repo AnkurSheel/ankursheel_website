@@ -4,31 +4,31 @@
 <head>
     
 
-<title>What to do as an end-user when merchants using stripe decline your credit cards - Ankur Sheel</title>
+<title>Finding the best credit card in New Zealand - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
+<meta name="description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards"/>   
-<meta itemProp="name" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
-<meta itemProp="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/best-credit-card-new-zealand"/>   
+<meta itemProp="name" content="Finding the best credit card in New Zealand"/>
+<meta itemProp="description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/best-credit-card-new-zealand"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
-<meta property="og:description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
+<meta property="og:title" content="Finding the best credit card in New Zealand"/>
+<meta property="og:description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
-<meta name="twitter:description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-twitter.png"/>
+<meta name="twitter:title" content="Finding the best credit card in New Zealand"/>
+<meta name="twitter:description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,14 +87,14 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">What to do as an end-user when merchants using stripe decline your credit cards</h1>
+    <h1 class="text-center">Finding the best credit card in New Zealand</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2021-12-31">December 31, 2021</time></span>
+        <span>Last Updated: <time datetime="2022-11-06">November 06, 2022</time></span>
         <i class="font-bold">
             Reading Time: 3 min
         </i>
@@ -105,42 +105,101 @@
     </div>
 </div>
 
-<p>For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.</p>
-<p><img src="/assets/images/posts/merchants-using-stripe-decline-credit-cards/cover.jpg" alt="A woman who enters her bank details while shopping online" /></p>
-<h2 id="what-i-tried-unsuccessfully">What I  tried (unsuccessfully)</h2>
-<ul>
-<li>I tried to use various cards, all of which work elsewhere (including overseas transactions).</li>
-<li>I tried to use cards in my wife's name, which also work elsewhere (including overseas transactions).</li>
-<li>I used both debit and credit cards.</li>
-<li>I spoke with my bank as suggested by various merchants. They confirmed there was no security holds on my account. They don't even see the failed transaction on their end.</li>
-</ul>
-<h2 id="a-light-bulb-goes-on">A light bulb goes on</h2>
-<p>Recently, I tried to place an order on a merchant using Stripe. As always, it got declined. On a whim, I decided to delete my account and recreate it in my wife's name. On placing an order using her account, the payment immediately went through. Remember, this is on the same merchant who had declined the payment from my account for the same card just a few minutes earlier.</p>
-<p>This led me to conclude that Stripe is blocking the payments based on my email.</p>
-<h2 id="so-what-can-you-do">So what can you do?</h2>
-<p>If you are using Gmail as an email provider, you can just add <em><strong>+merchant&#64;gmail.com</strong></em> to the email address, which will create an alias for your Gmail account. This means that as far as Stripe is concerned, it's a different address from the one they blocked, but the emails from the merchant will still come to your email address.</p>
-<p>If it's so simple to bypass the decline, you would think getting Stripe to take the email off the blocklist would be easy. You can read about the ongoing saga below.</p>
-<h2 id="the-stripe-saga-my-attempt-to-resolve-this-with-stripe-support">The Stripe Saga: My Attempt to resolve this with Stripe support</h2>
-<p>With this new insight, I reached out to Stripe. I told them about the payments failing and my suspicion that the failure was because of my email and asked if there was some way to get my email off the blocklist. Unfortunately, Stripe needs a merchant to contact them to look at the issue. I haven't had much luck getting merchants to email stripe. Most merchants suggest talking to the bank, which does not help when the bank does not even see the transaction.</p>
-<p>Over 3 months and in multiple emails, I communicated to Stripe that merchants are not contacting them because they either don't understand that the email is an issue or they have better things to do with their time. Each time it was a (semi?)canned reply, &quot;please reach out to a merchant and ask them to contact us&quot;.</p>
-<p>Finally, I sent them a screenshot showing Stripe's decline code as <em>&quot;fraudulent&quot;</em>. I also sent them the response from a merchant clearly stating that they(merchant) think I should reach out to Stripe as they don't think they(Stripe) would give them the information. I also told them I bypassed the fraudulent decline code by providing an alternate email address.</p>
-<p>I was hoping that this would get Stripe to resolve the issue. But alas, I got the same canned reply.</p>
-<p>After telling them I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.</p>
-<p>I will update this section with any more progress.</p>
-<h2 id="updates">Updates</h2>
-<p>Immediately after posting this article, the people at Stripe reached out to me on Twitter. Two days later, they resolved the issue- the issue being that the email had previously been flagged. Unfortunately, they could not share any more information with me. But the good news is that this issue is now sorted.</p>
-<h2 id="further-reading">Further Reading</h2>
-<ul>
-<li><a href="https://support.google.com/a/users/answer/9308648?hl=en">Creating alias email addresses on gmail</a></li>
-</ul>
-<p><em>Cover Photo from <a href="https://unsplash.com/photos/gf8e6XvG_3E">Unsplash</a></em></p>
+<!-- https://unsplash.com/photos/RJQE64NmC_o -->
+<p>Credit cards are a tool. If you can pay your cards off in full every month, they can help you build wealth. If not, they can trap you in a cycle of debt that's very difficult to break.</p>
+<p>However, with so many credit card options, finding the one that maximizes the value based on your spending can take time and effort. Each credit card comes with its own benefits and features, so it can feel like you're comparing apples to oranges.</p>
+<h2 id="comparison">Comparison</h2>
+<p>In this post, I compare the value of some of the cards offered by ANZ and American Express in New Zealand.</p>
+<table>
+<thead>
+<tr>
+<th>Credit Card</th>
+<th>Annual fee (NZD)</th>
+<th>Rebate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>American Express Airpoints</td>
+<td>$0</td>
+<td>1.00%</td>
+</tr>
+<tr>
+<td>ANZ Cashback Visa</td>
+<td>$45</td>
+<td>0.67%</td>
+</tr>
+<tr>
+<td>ANZ Airpoints Visa</td>
+<td>$65</td>
+<td>0.77%</td>
+</tr>
+<tr>
+<td>ANZ Cashback Visa Platinum</td>
+<td>$85</td>
+<td>0.83%</td>
+</tr>
+<tr>
+<td>ANZ Airpoints Visa Platinum</td>
+<td>$150</td>
+<td>1.18%</td>
+</tr>
+<tr>
+<td>American Express Airpoints Platinum</td>
+<td>$195</td>
+<td>1.69%</td>
+</tr>
+<tr>
+<td>American Express Gold Card</td>
+<td>$200</td>
+<td>0.75%</td>
+</tr>
+<tr>
+<td>American Express Platinum Card</td>
+<td>$1250</td>
+<td>1.33%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="anz-cashback-visa">ANZ Cashback Visa</h3>
+<p>You must spend at least NZD 6,750 annually to cover the card fee.</p>
+<p>You will get back 0.67 cents for every additional dollar you spend.</p>
+<h3 id="anz-cashback-visa-platinum">ANZ Cashback Visa Platinum</h3>
+<p>You must spend at least NZD 10,200 annually to cover the card fee.</p>
+<p>You will get back 0.83 cents for every additional dollar you spend.</p>
+<p><em>The cashback visa is a better option unless you spend more than NZD 24000 in a year.</em></p>
+<h3 id="anz-airpoints-visa">ANZ Airpoints Visa</h3>
+<p>You must spend at least NZD 8,450 annually to cover the card fee.</p>
+<p>You will get back 0.77 cents for every additional dollar you spend.</p>
+<h3 id="anz-airpoints-visa-platinum">ANZ Airpoints Visa Platinum</h3>
+<p>You must spend at least NZD 12,750 annually to cover the card fee.</p>
+<p>You will get back 1.18 cents for every additional dollar you spend.</p>
+<p><em>The Airpoints visa is a better option unless you spend more than NZD 21000 in a year.</em></p>
+<h3 id="american-express-airpoints">American Express Airpoints</h3>
+<p>Since there is no <em>Annual fee</em>, you don't need to spend a minimum amount in a year.</p>
+<p>You will get back 1 cent for every additional dollar you spend.</p>
+<h3 id="american-express-airpoints-platinum">American Express Airpoints Platinum</h3>
+<p>You must spend at least NZD 11,505 annually to cover the card fee.</p>
+<p>You will get back 1.69 cents for every additional dollar you spend.</p>
+<p><em>The Airpoints visa is a better option unless you spend more than NZD 28000 in a year. However, you get travel insurance and lounge visits which might make up the difference.</em></p>
+<h3 id="american-express-gold-card">American Express Gold Card</h3>
+<p>You must spend at least NZD 26,600 annually to cover the card fee.</p>
+<p>You will get back 0.75 cents for every additional dollar you spend.</p>
+<h3 id="american-express-platinum-card">American Express Platinum Card</h3>
+<p>You must spend at least NZD 93,750 annually to cover the card fee.</p>
+<p>You will get back 1.33 cents for every additional dollar you spend.</p>
+<p><em>However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee.</em></p>
+<h2 id="my-recommendation">My Recommendation</h2>
+<p>I like using The American Express Airpoints Platinum card as my primary card. It has the best rebate. If you need to spend more to cover the card fee, then the American Express Airpoints Card is the next best card to get.</p>
+<p>Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.</p>
+<p>Is there a card you would like me to evaluate? Let me know in the comments.</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards&text=What%20to%20do%20as%20an%20end-user%20when%20merchants%20using%20stripe%20decline%20your%20credit%20cards via @ankur_sheel.&#xD;&#xA;My%20ongoing%20saga%20with%20Stripe%20support%20as%20an%20end-user%20to%20get%20them%20to%20stop%20blocking%20my%20card.%20A%20workaround%20while%20they%20try%20to%20resolve%20the%20issue" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/best-credit-card-new-zealand&text=Finding%20the%20best%20credit%20card%20in%20New%20Zealand via @ankur_sheel.&#xD;&#xA;Each%20credit%20card%20has%20its%20own%20benefits%20and%20features%2C%20so%20it%20can%20feel%20like%20you%27re%20comparing%20apples%20to%20oranges.%20Finding%20the%20one%20that%20maximizes%20the%20value%20based%20on%20your%20spending%20can%20take%20time%20and%20effort." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -174,7 +233,7 @@
                 <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
             <li>
-                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
+                <a href="merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
             </li>
             <li>
                 <a href="rent-buy-house">Should I Rent Or Buy a House?</a>

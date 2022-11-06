@@ -88,7 +88,7 @@
             
 
 
-<h2>All Categories (189)</h2>
+<h2>All Categories (190)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -104,6 +104,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/need-mentor-coach">Do you need a mentor or a coach?</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -114,9 +117,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/jetbrains-rider-plugins">Essential Plugins for JetBrains Rider plugins</a>
         </li>
 </ul>
 
@@ -399,8 +399,11 @@
                 <a href="/blog/breakout-clone-v1-0">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="14-04-05">April 05, 2014</time>
             </li>
     </ul>
-    <h3 id="ramblings" class="py-4 border-b border-grey-lighter capitalize">ramblings (17)</h3>
+    <h3 id="ramblings" class="py-4 border-b border-grey-lighter capitalize">ramblings (18)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a> - <time class="prose-sm" datetime="22-11-06">November 06, 2022</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/product-review-ndepend">Product Review: NDepend</a> - <time class="prose-sm" datetime="22-09-13">September 13, 2022</time>
             </li>
