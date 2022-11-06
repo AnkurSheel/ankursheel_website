@@ -1,9 +1,11 @@
 ---
-title: 'Product Review: Paper Boat Drinks'
-excerpt: What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages
+title: "Product Review: Paper Boat Drinks"
+excerpt: "What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"
 category: "ramblings"
 tags:
-    - reviews
+
+- "reviews"
+
 ---
 
 What is the first thing that you think about when you hear the words Paper Boat? Or even the second or the third? Whatever might have come to your mind, I am sure "pouches of fruit-flavoured drinks" did not figure in that list.

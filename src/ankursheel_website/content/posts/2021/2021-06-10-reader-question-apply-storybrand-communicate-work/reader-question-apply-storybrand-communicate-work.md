@@ -1,9 +1,12 @@
 ---
-title: 'How can we apply Storybrand to how we communicate at work'
-excerpt: 'How can we apply the StoryBrand framework to communicate at work, even though it seems to be oriented towards marketing messaging'
+title: "How can we apply Storybrand to how we communicate at work"
+excerpt: "How can we apply the StoryBrand framework to communicate at work, even though it seems to be oriented towards marketing messaging"
 category: "ramblings"
 tags:
-    - 'reader question'
+
+- "reader question"
+- "career"
+
 ---
 
 ## Reader Question

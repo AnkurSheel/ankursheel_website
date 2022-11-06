@@ -114,7 +114,7 @@
         <a href="/blog/review-takapuna-car-clinic-auckland" class="text-center prose-2xl mb-4">Review: Takapuna Car Clinic, Auckland</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
-            A review of the Takapuna Car Clinic garage in Auckland.
+            A review of the Takapuna Car Clinic garage in Auckland
         </p>
             <a href="/blog/review-takapuna-car-clinic-auckland" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

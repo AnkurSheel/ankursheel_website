@@ -122,6 +122,17 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/reader-question-apply-storybrand-communicate-work" class="text-center prose-2xl mb-4">How can we apply Storybrand to how we communicate at work</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            How can we apply the StoryBrand framework to communicate at work, even though it seems to be oriented towards marketing messaging
+        </p>
+            <a href="/blog/reader-question-apply-storybrand-communicate-work" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/problem-without-solution-harmful" class="text-center prose-2xl mb-4">Do not come with a problem without a solution is harmful</a>
         <div class="font-semibold text-center">2 min</div>
         <p>

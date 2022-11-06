@@ -6,7 +6,6 @@ updatedOnDate: "2022-10-03"
 category: "career / work"
 tags:
 
-- "ramblings"
 - "career"
 
 ---

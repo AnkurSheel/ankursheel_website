@@ -101,7 +101,7 @@
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
+            <a href="/tags/finance" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">finance</a>
     </div>
 </div>
 
@@ -171,16 +171,16 @@
 
     <ul>
             <li>
-                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
-            </li>
-            <li>
                 <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
             </li>
             <li>
                 <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
             </li>
             <li>
-                <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
+                <a href="migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a>
+            </li>
+            <li>
+                <a href="reader-question-apply-storybrand-communicate-work">How can we apply Storybrand to how we communicate at work</a>
             </li>
     </ul>
 </aside>

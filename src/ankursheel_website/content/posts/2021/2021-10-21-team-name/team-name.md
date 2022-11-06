@@ -5,7 +5,6 @@ coverImage: "./cover.jpg"
 category: "career / work"
 tags:
 
-- "ramblings"
 - "company culture"
 
 updatedOnDate: "2022-10-06"

@@ -1,12 +1,13 @@
 ---
-title: 'How to make code reviews stress free'
-excerpt: 'Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free'
-coverImage: './cover.jpg'
+title: "How to make code reviews stress free"
+excerpt: "Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free"
+coverImage: "./cover.jpg"
 category: "career / work"
 tags:
-    - 'productivity'
-    - 'ramblings'
-    - 'process'
+
+- "productivity"
+- "process"
+
 ---
 
 _This is an edited version of an article I originally wrote for the First AML Product & Engineering blog. You can read the original version [here](https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free)._
@@ -37,9 +38,9 @@ _We can use whatever emojis we like, but our platform of choice must support the
 
 ## Some options that work in Github for inspiration
 
--   **Vehicles** 🚑 [ambulance], 🚗 [car], 🚲 [cycle], ⛽ [fuelpump]
--   **Animals** 🐘 [elephant], 🐑 [sheep], 🐜 [ant], ❓ [question]
--   **Shapes** 🔴 [circle], 🔶 [diamond], 💚 [heart], ❓[question]
+- **Vehicles** 🚑 [ambulance], 🚗 [car], 🚲 [cycle], ⛽ [fuelpump]
+- **Animals** 🐘 [elephant], 🐑 [sheep], 🐜 [ant], ❓ [question]
+- **Shapes** 🔴 [circle], 🔶 [diamond], 💚 [heart], ❓[question]
 
 ## What level to use when
 

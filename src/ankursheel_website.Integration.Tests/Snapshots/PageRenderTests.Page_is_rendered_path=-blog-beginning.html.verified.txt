@@ -149,13 +149,7 @@
                 <a href="child-appreciation">Why being an only child is awesome</a>
             </li>
             <li>
-                <a href="making-pong-take">What does making Pong take?</a>
-            </li>
-            <li>
-                <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
-            </li>
-            <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
     </ul>
 </aside>

@@ -1,7 +1,6 @@
 ---
 title: "Product Review: NDepend"
 excerpt: "NDepend is a static code analyser for .Net developers. Let's find out if it's worth adding to your toolbelt."
-
 coverImage: "./dashboard.png"
 category: "ramblings"
 tags:

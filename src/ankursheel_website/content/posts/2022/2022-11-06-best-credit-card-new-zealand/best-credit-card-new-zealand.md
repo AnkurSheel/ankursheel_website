@@ -5,7 +5,7 @@ coverImage: "./cover.jpg"
 category: "ramblings"
 tags:
 
-- "ramblings"
+- "finance"
 
 ---
 
@@ -30,11 +30,23 @@ In this post, I compare the value of some of the cards offered by ANZ and Americ
 | American Express Gold Card          | $200             | 0.75%  |
 | American Express Platinum Card      | $1250            | 1.33%  |
 
+### American Express Airpoints
+
+Since there is no *Annual fee*, you don't need to spend a minimum amount in a year.
+
+You will get back 1 cent for every additional dollar you spend.
+
 ### ANZ Cashback Visa
 
 You must spend at least NZD 6,750 annually to cover the card fee.
 
 You will get back 0.67 cents for every additional dollar you spend.
+
+### ANZ Airpoints Visa
+
+You must spend at least NZD 8,450 annually to cover the card fee.
+
+You will get back 0.77 cents for every additional dollar you spend.
 
 ### ANZ Cashback Visa Platinum
 
@@ -44,12 +56,6 @@ You will get back 0.83 cents for every additional dollar you spend.
 
 _The cashback visa is a better option unless you spend more than NZD 24000 in a year._
 
-### ANZ Airpoints Visa
-
-You must spend at least NZD 8,450 annually to cover the card fee.
-
-You will get back 0.77 cents for every additional dollar you spend.
-
 ### ANZ Airpoints Visa Platinum
 
 You must spend at least NZD 12,750 annually to cover the card fee.
@@ -57,12 +63,6 @@ You must spend at least NZD 12,750 annually to cover the card fee.
 You will get back 1.18 cents for every additional dollar you spend.
 
 _The Airpoints visa is a better option unless you spend more than NZD 21000 in a year._
-
-### American Express Airpoints
-
-Since there is no *Annual fee*, you don't need to spend a minimum amount in a year.
-
-You will get back 1 cent for every additional dollar you spend.
 
 ### American Express Airpoints Platinum
 

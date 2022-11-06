@@ -100,9 +100,6 @@
             <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (23)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (16)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -154,10 +151,10 @@
             <a role="button" href="/tags/aws" class="capitalize badge text-gray-900 bg-grey-light no-underline"> AWS (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
+            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (5)</a>
+            <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dev-tools" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>
@@ -197,6 +194,12 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/europe" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Europe (3)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/finance" class="capitalize badge text-gray-900 bg-grey-light no-underline"> finance (3)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tailwind" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>

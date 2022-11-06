@@ -1,9 +1,11 @@
 ---
-title: Why you should compete in Fantastic Bits @ Codingame
-excerpt: 'Fantastic Bits: The next multiplayer competition being held by the folks at codingame based on the Fantastic Beasts movie'
+title: "Why you should compete in Fantastic Bits @ Codingame"
+excerpt: "Fantastic Bits: The next multiplayer competition being held by the folks at codingame based on the Fantastic Beasts movie"
 category: "ramblings"
 tags:
-    - Codingame
+
+- "Codingame"
+
 ---
 
 Fantastic Beasts, oops, Bits, anyone? The theme for the next competition by the folks at [codingame](http://www.codingame.com) is inspired by the Harry Potter world.

@@ -102,7 +102,6 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/games" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">games</a>
-            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
     </div>
 </div>
 
@@ -159,13 +158,13 @@
                 <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
             </li>
             <li>
-                <a href="child-appreciation">Why being an only child is awesome</a>
-            </li>
-            <li>
                 <a href="asteroid-clone">Why I am building an Asteroid clone as the next game</a>
             </li>
             <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+                <a href="child-appreciation">Why being an only child is awesome</a>
+            </li>
+            <li>
+                <a href="smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a>
             </li>
     </ul>
 </aside>

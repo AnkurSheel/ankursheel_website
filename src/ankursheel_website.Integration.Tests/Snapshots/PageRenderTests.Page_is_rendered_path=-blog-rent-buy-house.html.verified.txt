@@ -9,24 +9,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="My two cents on whether you should rent or buy a house."/>
+<meta name="description" content="My two cents on whether you should rent or buy a house"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/rent-buy-house"/>   
 <meta itemProp="name" content="Should I Rent Or Buy a House?"/>
-<meta itemProp="description" content="My two cents on whether you should rent or buy a house."/>
+<meta itemProp="description" content="My two cents on whether you should rent or buy a house"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/rent-buy-house"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Should I Rent Or Buy a House?"/>
-<meta property="og:description" content="My two cents on whether you should rent or buy a house."/>
+<meta property="og:description" content="My two cents on whether you should rent or buy a house"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Should I Rent Or Buy a House?"/>
-<meta name="twitter:description" content="My two cents on whether you should rent or buy a house."/>
+<meta name="twitter:description" content="My two cents on whether you should rent or buy a house"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-twitter.png"/>
 
@@ -101,7 +101,7 @@
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
+            <a href="/tags/finance" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">finance</a>
     </div>
 </div>
 
@@ -159,7 +159,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rent-buy-house&text=Should%20I%20Rent%20Or%20Buy%20a%20House%3F via @ankur_sheel.&#xD;&#xA;My%20two%20cents%20on%20whether%20you%20should%20rent%20or%20buy%20a%20house." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rent-buy-house&text=Should%20I%20Rent%20Or%20Buy%20a%20House%3F via @ankur_sheel.&#xD;&#xA;My%20two%20cents%20on%20whether%20you%20should%20rent%20or%20buy%20a%20house" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -190,16 +190,16 @@
 
     <ul>
             <li>
-                <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
-            </li>
-            <li>
-                <a href="making-pong-take">What does making Pong take?</a>
-            </li>
-            <li>
-                <a href="child-appreciation">Why being an only child is awesome</a>
-            </li>
-            <li>
                 <a href="merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
+            </li>
+            <li>
+                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
+            </li>
+            <li>
+                <a href="review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a>
+            </li>
+            <li>
+                <a href="fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a>
             </li>
     </ul>
 </aside>

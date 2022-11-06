@@ -1,11 +1,13 @@
 ﻿---
-title: 'What to do as an end-user when merchants using stripe decline your credit cards'
-excerpt: 'My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue'
-coverImage: './cover.jpg'
+title: "What to do as an end-user when merchants using stripe decline your credit cards"
+excerpt: "My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"
+coverImage: "./cover.jpg"
 category: "ramblings"
-updatedOnDate: 2021-12-31
+updatedOnDate: "2021-12-31"
 tags:
-- 'ramblings'
+
+- "finance"
+
 ---
 
 For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.

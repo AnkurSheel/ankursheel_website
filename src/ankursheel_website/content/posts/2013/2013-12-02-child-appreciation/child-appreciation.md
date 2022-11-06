@@ -3,7 +3,9 @@ title: Why being an only child is awesome
 excerpt: Due to my parent's steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child.
 category: "ramblings"
 tags:
-    - ramblings
+
+- "ramblings"
+
 ---
 
 **_Disclaimer: This post may not be used to generalize all only children. I might just be messing with you._**
@@ -12,9 +14,9 @@ Due to my parent's steadfast refusal to give me a sibling, I have been an only c
 
 So what does one mean when they say an _**"Only Child"**_. Well, an only child is a child with no siblings, either biological or adopted. Although first-born children may be considered temporary only children and have a similar early family environment, an only child is generally applied only to those who never have siblings.
 
--   We do not have any siblings, i.e. brother or sister. _P.S. cousins are not siblings_.
--   Our kids will never have first cousins from our side of the family.
--   We are the only offspring our parents have.
+- We do not have any siblings, i.e. brother or sister. _P.S. cousins are not siblings_.
+- Our kids will never have first cousins from our side of the family.
+- We are the only offspring our parents have.
 
 That's enough of the Wikipedia definition...
 
@@ -38,11 +40,11 @@ As a result, being an only child status comes the ability to be entirely in our 
 
 All of us have probably thought that having a sibling would be nice at some point in time. Its tough having
 
--   no one to fight with.
--   no one to share our secrets with (only to get blackmailed later on!).
--   no one who can go anywhere with us if our friends are not available
--   no one to blame if things go wrong.
--   no one who you know would be there for you no matter what (and no parents don't count).
+- no one to fight with.
+- no one to share our secrets with (only to get blackmailed later on!).
+- no one who can go anywhere with us if our friends are not available
+- no one to blame if things go wrong.
+- no one who you know would be there for you no matter what (and no parents don't count).
 
 I have lots of friends, but most have siblings, and I always felt that they have a special bond and loyalty that a friendship cant have. (Now that I have made all my friends happy by stating some of the benefits they have, I can continue.)
 
@@ -78,13 +80,13 @@ Anyway, some of the more famous only child(ren)
 
 ( P.S. the name, in the end, is soon going to become famous, but I just added it right now)
 
--   Steve Allen
--   Lance Armstrong
--   Leonardo da Vinci
--   Albert Einstein
--   Indira Gandhi
--   Isaac Newton
--   Franklin D. Roosevelt
--   Brooke Shields
--   Robin Williams
--   Ankur Sheel
+- Steve Allen
+- Lance Armstrong
+- Leonardo da Vinci
+- Albert Einstein
+- Indira Gandhi
+- Isaac Newton
+- Franklin D. Roosevelt
+- Brooke Shields
+- Robin Williams
+- Ankur Sheel

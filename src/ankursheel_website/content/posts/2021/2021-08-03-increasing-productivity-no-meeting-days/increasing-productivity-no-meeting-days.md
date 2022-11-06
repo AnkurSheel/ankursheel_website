@@ -1,13 +1,14 @@
 ---
-title: 'Increasing Productivity with No-Meeting Days'
-excerpt: 'How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job'
-coverImage: './cover.jpg'
+title: "Increasing Productivity with No-Meeting Days"
+excerpt: "How can we implement no-meeting days in our workplaces so that people do not lose focus because of meetings and get uninterrupted time to do their job"
+coverImage: "./cover.jpg"
 category: "career / work"
 tags:
-    - 'productivity'
-    - 'ramblings'
-    - 'process'
-    - 'company culture'
+
+- "productivity"
+- "process"
+- "company culture"
+
 ---
 
 _This is an edited version of an article I originally wrote for the First AML Product & Engineering blog. You can read the original version [here](https://firstaml.dev/blog/nzdp3nek8xxhb9eg2a0s8wnde0yt3n)._

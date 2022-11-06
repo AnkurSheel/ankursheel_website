@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;games&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;finance&quot; - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,17 +12,17 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/games"/>   
-<meta itemProp="name" content="Posts tagged as &quot;games&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/finance"/>   
+<meta itemProp="name" content="Posts tagged as &quot;finance&quot;"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/games"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/finance"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;games&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;finance&quot;"/>
 <meta property="og:description"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;games&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;finance&quot;"/>
 <meta name="twitter:description"/>
 
 </head>
@@ -82,74 +82,41 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;games&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;finance&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/breakout-clone-v1-0" class="text-center prose-2xl mb-4">Breakout Clone v1.0</a>
-        <div class="font-semibold text-center">0 min</div>
+        <a href="/blog/best-credit-card-new-zealand" class="text-center prose-2xl mb-4">Finding the best credit card in New Zealand</a>
+        <div class="font-semibold text-center">3 min</div>
         <p>
-            The first release of the Breakout clone is finally here.
+            Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort.
         </p>
-            <a href="/blog/breakout-clone-v1-0" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/best-credit-card-new-zealand" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/postmortem-asteroids" class="text-center prose-2xl mb-4">A postmortem of the Asteroids clone</a>
-        <div class="font-semibold text-center">2 min</div>
+        <a href="/blog/merchants-using-stripe-decline-credit-cards" class="text-center prose-2xl mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a>
+        <div class="font-semibold text-center">3 min</div>
         <p>
-            Postmortem of the Asteroids clone that I made. 
+            My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue
         </p>
-            <a href="/blog/postmortem-asteroids" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/merchants-using-stripe-decline-credit-cards" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/asteroid-clone" class="text-center prose-2xl mb-4">Why I am building an Asteroid clone as the next game</a>
-        <div class="font-semibold text-center">0 min</div>
+        <a href="/blog/rent-buy-house" class="text-center prose-2xl mb-4">Should I Rent Or Buy a House?</a>
+        <div class="font-semibold text-center">5 min</div>
         <p>
-            Reasons for Making Asteroid as the next game
+            My two cents on whether you should rent or buy a house
         </p>
-            <a href="/blog/asteroid-clone" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/ten-things-achieve-starting-3d-programming" class="text-center prose-2xl mb-4">10 things to do when getting started with 3D programming</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            Guidelines to learn the basics of 3D programming
-        </p>
-            <a href="/blog/ten-things-achieve-starting-3d-programming" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/postmortem-mpong" class="text-center prose-2xl mb-4">A Postmortem of Mpong</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            A postmortem of the Pong clone that I made.
-        </p>
-            <a href="/blog/postmortem-mpong" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/making-pong-take" class="text-center prose-2xl mb-4">What does making Pong take?</a>
-        <div class="font-semibold text-center">0 min</div>
-        <p>
-            Even though the gameplay elements of Pong are simple, the underlying engine needs to have everything that a modern game has
-        </p>
-            <a href="/blog/making-pong-take" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/rent-buy-house" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

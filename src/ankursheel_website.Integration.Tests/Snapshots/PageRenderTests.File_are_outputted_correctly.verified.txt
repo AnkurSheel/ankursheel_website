@@ -1126,6 +1126,7 @@
   /tags/docker/,
   /tags/dynamic-programming/,
   /tags/europe/,
+  /tags/finance/,
   /tags/game-engine/,
   /tags/games/,
   /tags/gatsby/,

@@ -102,6 +102,7 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/reader-question" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">reader question</a>
+            <a href="/tags/career" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">career</a>
     </div>
 </div>
 

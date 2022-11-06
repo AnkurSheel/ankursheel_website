@@ -1,9 +1,11 @@
 ---
-title: 'Review: Takapuna Car Clinic, Auckland'
-excerpt: A review of the Takapuna Car Clinic garage in Auckland.
+title: "Review: Takapuna Car Clinic, Auckland"
+excerpt: "A review of the Takapuna Car Clinic garage in Auckland"
 category: "ramblings"
 tags:
-    - reviews
+
+- "reviews"
+
 ---
 
 I am sure you are wondering why would I write a review of a garage (Takapuna Car Clinic) on my blog. The way I see it, there can only be two reasons: either the service provided was exemplary or atrocious.

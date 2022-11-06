@@ -1,10 +1,11 @@
 ---
-title: Should I Rent Or Buy a House?
-excerpt: My two cents on whether you should rent or buy a house.
-coverImage: './cover.jpg'
+title: "Should I Rent Or Buy a House?"
+excerpt: "My two cents on whether you should rent or buy a house"
+coverImage: "./cover.jpg"
 category: "ramblings"
 tags:
-    - ramblings
+- "finance"
+
 ---
 
 Conventional wisdom says you grow up and buy a home because that's just what you do when you are a grownup. Now, why would anyone want to be a grownup and have responsibilities is beyond me? But, maybe you like having responsibilities.

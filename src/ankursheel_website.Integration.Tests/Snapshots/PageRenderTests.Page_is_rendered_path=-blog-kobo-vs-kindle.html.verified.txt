@@ -170,16 +170,16 @@
 
     <ul>
             <li>
+                <a href="child-appreciation">Why being an only child is awesome</a>
+            </li>
+            <li>
+                <a href="product-review-ndepend">Product Review: NDepend</a>
+            </li>
+            <li>
                 <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
             </li>
             <li>
                 <a href="merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
-            </li>
-            <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
-            </li>
-            <li>
-                <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
             </li>
     </ul>
 </aside>

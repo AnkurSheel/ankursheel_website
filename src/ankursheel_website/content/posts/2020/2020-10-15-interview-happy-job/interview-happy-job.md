@@ -1,11 +1,12 @@
 ---
-title: 'Why do I interview even when I am happy at my job?'
-excerpt: 'Every year, I dust off my resume and apply for a couple of jobs that look interesting. Why do I put myself through this ordeal?'
-coverImage: ./cover.jpg
+title: "Why do I interview even when I am happy at my job?"
+excerpt: "Every year, I dust off my resume and apply for a couple of jobs that look interesting. Why do I put myself through this ordeal?"
+coverImage: "./cover.jpg"
 category: "career / work"
 tags:
-    - career
-    - ramblings
+
+- "career"
+
 ---
 
 Every year I dust off my resume and apply for a couple of jobs that look interesting.
@@ -84,16 +85,16 @@ I am glad I went. Not only was the work very interesting, but they made me an of
 
 ## Mismatch in Style
 
--   Everything went well, but then they low balled me on the offer.
--   Ghosted me for a month or so before getting back to me and asking me to come for another interview without giving any reason for the silence.
--   Wouldn't agree to start the process till I give them my current salary.
--   Wouldn't agree to have a chat before asking me to spend some time on a coding test
--   One-way video interview as part of the process - Need I say more?
--   Shared music on the floor the whole day.
--   A few because the tech stack or the product or the team didn't interest me enough.
--   A coding test in which I had to keep a granular track of the hours spent.
--   A mandate for Mob programming / Pair Programming as the only way to work.
--   A bunch of recruiters disappeared after the initial call. They all went on my blocklist.
+- Everything went well, but then they low balled me on the offer.
+- Ghosted me for a month or so before getting back to me and asking me to come for another interview without giving any reason for the silence.
+- Wouldn't agree to start the process till I give them my current salary.
+- Wouldn't agree to have a chat before asking me to spend some time on a coding test
+- One-way video interview as part of the process - Need I say more?
+- Shared music on the floor the whole day.
+- A few because the tech stack or the product or the team didn't interest me enough.
+- A coding test in which I had to keep a granular track of the hours spent.
+- A mandate for Mob programming / Pair Programming as the only way to work.
+- A bunch of recruiters disappeared after the initial call. They all went on my blocklist.
 
 If I had spoken to any of them when I was desperate for a job, I would have probably taken the offer and been extremely unhappy. Interviewing when there was no need helped me avoid that fate. It also narrows down the companies I can focus on if I ever have to look.
 

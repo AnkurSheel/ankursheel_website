@@ -1,8 +1,10 @@
 ---
-title: The Beginning
-excerpt: Welcome to my blog. Over a period of time, I hope to fill this space with travel and food-related posts, the status of my projects and tutorials
+title: "The Beginning"
+excerpt: "Welcome to my blog. Over a period of time, I hope to fill this space with travel and food-related posts, the status of my projects and tutorials"
 tags:
-    - ramblings
+
+- "ramblings"
+
 ---
 
 Welcome to my blog. Over time, I hope to fill this space with travel and food-related posts, the status of my projects, and tutorials for some basic stuff.

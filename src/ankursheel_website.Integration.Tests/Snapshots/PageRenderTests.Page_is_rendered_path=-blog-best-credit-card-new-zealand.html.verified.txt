@@ -101,7 +101,7 @@
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/ramblings" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">ramblings</a>
+            <a href="/tags/finance" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">finance</a>
     </div>
 </div>
 
@@ -230,16 +230,16 @@
 
     <ul>
             <li>
-                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
-            </li>
-            <li>
                 <a href="merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
             </li>
             <li>
                 <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
             </li>
             <li>
-                <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
+                <a href="product-review-ndepend">Product Review: NDepend</a>
+            </li>
+            <li>
+                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
     </ul>
 </aside>

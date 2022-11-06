@@ -1,12 +1,14 @@
 ---
-title: 'How long did it take to migrate from WordPress to Gatsby?'
+title: "How long did it take to migrate from WordPress to Gatsby?"
 excerpt: "A reader asked me how long it took me to migrate from WordPress to Gatsby. Let's find out"
-coverImage: './cover.png'
+coverImage: "./cover.png"
 category: "ramblings"
 tags:
-    - 'reader question'
-    - 'gatsby'
-    - 'wordpress'
+
+- "reader question"
+- "gatsby"
+- "wordpress"
+
 ---
 
 ## Reader Question
@@ -25,15 +27,15 @@ But, it's important to note that I was spending just a few hours a week on this.
 
 I used a starter, so I had a base to start from. But, there were a few things I had to modify(which is why it took time) before I was ready to make the switch.
 
--   getting it to play nicely with Typescript.
--   making sure all the internal links work.
--   building an image gallery component for the image-heavy posts.
--   hunting for the plugins not included in the starter and configuring them
+- getting it to play nicely with Typescript.
+- making sure all the internal links work.
+- building an image gallery component for the image-heavy posts.
+- hunting for the plugins not included in the starter and configuring them
 
 If you are thinking of migrating your site, I would suggest doing what I did.
 
--   Start with a gatsby starter/theme as your base.
--   If the theme you have chosen doesn't have all the plugins, just add those plugins in.
--   Get an initial version of your site up and running using Netlify.
+- Start with a gatsby starter/theme as your base.
+- If the theme you have chosen doesn't have all the plugins, just add those plugins in.
+- Get an initial version of your site up and running using Netlify.
 
 Update the styling, components, plugin configurations, add automated scripts etc., as you see fit. This will probably be a continuous thing.

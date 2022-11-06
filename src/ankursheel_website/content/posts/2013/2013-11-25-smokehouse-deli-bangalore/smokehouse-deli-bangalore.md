@@ -1,10 +1,12 @@
 ---
-title: A review of SmokeHouse Deli, Bangalore
-excerpt: A restaurant review of SmokeHouse Deli in Bangalore.
-coverImage: ./images/Smokehouse-Deli-Bangalore-1.jpg
+title: "A review of SmokeHouse Deli, Bangalore"
+excerpt: "A restaurant review of SmokeHouse Deli in Bangalore."
+coverImage: "./images/Smokehouse-Deli-Bangalore-1.jpg"
 category: "ramblings"
 tags:
-    - reviews
+
+- "reviews"
+
 ---
 
 Since its inception in Bangalore, we had been planning to go to Smoke House Deli but did not get a chance until recently.

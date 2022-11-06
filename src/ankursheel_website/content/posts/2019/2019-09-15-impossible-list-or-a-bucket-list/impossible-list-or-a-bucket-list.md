@@ -1,9 +1,11 @@
 ---
-title: 'Should you make an Impossible List or a Bucket List?'
-excerpt: "What is an impossible list? How is it different from a Bucket List? Let's find out."
+title: "Should you make an Impossible List or a Bucket List?"
+excerpt: "What is an impossible list? How is it different from a Bucket List? Let's find out"
 category: "ramblings"
 tags:
-    - 'productivity'
+
+- "productivity"
+
 ---
 
 I heard about the impossible list from Joel Runyon in [this article](http://impossiblehq.com/impossible-list/). Shortly after I read about it, I decided to make one of my own. But first,
@@ -20,11 +22,11 @@ It encourages you to set attainable goals and build on the momentum by accomplis
 
 ## How to create an impossible list?
 
--   Decide which areas of your life you want to focus on.
--   Decide the sub-goals of the areas.
--   Once you achieve a goal, figure out the next goal
--   Share the impossible list publicly so that you can be held accountable. You’ll see mine [here](/impossible-list).
--   Keep checking your list in regular intervals to see how you're doing and remove goals that do not make sense anymore. For example, after Araaina was born, I dropped a bunch of goals that did not interest me or seem attainable to me anymore.
+- Decide which areas of your life you want to focus on.
+- Decide the sub-goals of the areas.
+- Once you achieve a goal, figure out the next goal
+- Share the impossible list publicly so that you can be held accountable. You’ll see mine [here](/impossible-list).
+- Keep checking your list in regular intervals to see how you're doing and remove goals that do not make sense anymore. For example, after Araaina was born, I dropped a bunch of goals that did not interest me or seem attainable to me anymore.
 
 ## Impossible List or Bucket List
 
