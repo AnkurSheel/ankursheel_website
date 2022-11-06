@@ -88,7 +88,7 @@ _However, suppose you use the additional benefits like the Accor membership, the
 
 ## My Recommendation
 
-I like using The American Express Airpoints Platinum card as my primary card. It has the best rebate. If you need to spend more to cover the card fee, then the American Express Airpoints Card is the next best card to get.
+I like using The American Express Airpoints Platinum card as my primary card. It has the best value. If you are spending less than NZD 11,000, then the American Express Airpoints Card is the next best card to get.
 
 Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.
 
