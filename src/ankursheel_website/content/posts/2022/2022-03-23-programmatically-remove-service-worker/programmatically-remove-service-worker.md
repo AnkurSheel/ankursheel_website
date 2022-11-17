@@ -1,5 +1,5 @@
 ---
-title: "How to programmatically remove a service worker"
+title: "How to programmatically unregister a service worker"
 excerpt: "Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically"
 tags:
 - "javascript"

@@ -1,6 +1,6 @@
 ---
 
-title: "How to rename multiple files in subfolders using Windows command prompt"
+title: "How to batch rename multiple files in subfolders in Windows"
 excerpt: "A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt"
 updatedOnDate: "2022-06-20"
 category: "programming"
