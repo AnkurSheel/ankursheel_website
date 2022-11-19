@@ -171,7 +171,7 @@ text tester&quot;</p>
 
     <ul>
             <li>
-                <a href="programmatically-remove-service-worker">How to programmatically remove a service worker</a>
+                <a href="programmatically-remove-service-worker">How to programmatically unregister a service worker</a>
             </li>
             <li>
                 <a href="set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
@@ -180,7 +180,7 @@ text tester&quot;</p>
                 <a href="serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
             </li>
             <li>
-                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
+                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to batch rename multiple files in subfolders in Windows</a>
             </li>
     </ul>
 </aside>

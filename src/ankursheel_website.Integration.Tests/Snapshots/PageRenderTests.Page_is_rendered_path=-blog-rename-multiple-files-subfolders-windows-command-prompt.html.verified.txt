@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to rename multiple files in subfolders using Windows command prompt - Ankur Sheel</title>
+<title>How to batch rename multiple files in subfolders in Windows - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt"/>   
-<meta itemProp="name" content="How to rename multiple files in subfolders using Windows command prompt"/>
+<meta itemProp="name" content="How to batch rename multiple files in subfolders in Windows"/>
 <meta itemProp="description" content="A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rename-multiple-files-subfolders-windows-command-prompt-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to rename multiple files in subfolders using Windows command prompt"/>
+<meta property="og:title" content="How to batch rename multiple files in subfolders in Windows"/>
 <meta property="og:description" content="A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/rename-multiple-files-subfolders-windows-command-prompt-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rename-multiple-files-subfolders-windows-command-prompt-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to rename multiple files in subfolders using Windows command prompt"/>
+<meta name="twitter:title" content="How to batch rename multiple files in subfolders in Windows"/>
 <meta name="twitter:description" content="A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/rename-multiple-files-subfolders-windows-command-prompt-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rename-multiple-files-subfolders-windows-command-prompt-twitter.png"/>
@@ -87,7 +87,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to rename multiple files in subfolders using Windows command prompt</h1>
+    <h1 class="text-center">How to batch rename multiple files in subfolders in Windows</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -152,7 +152,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt&text=How%20to%20rename%20multiple%20files%20in%20subfolders%20using%20Windows%20command%20prompt via @ankur_sheel.&#xD;&#xA;A%20single%20command%20to%20update%20the%20file%20extensions%20for%20files%20in%20all%20the%20subfolders%20using%20a%20single%20command%20in%20Windows%20command%20prompt" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rename-multiple-files-subfolders-windows-command-prompt&text=How%20to%20batch%20rename%20multiple%20files%20in%20subfolders%20in%20Windows via @ankur_sheel.&#xD;&#xA;A%20single%20command%20to%20update%20the%20file%20extensions%20for%20files%20in%20all%20the%20subfolders%20using%20a%20single%20command%20in%20Windows%20command%20prompt" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

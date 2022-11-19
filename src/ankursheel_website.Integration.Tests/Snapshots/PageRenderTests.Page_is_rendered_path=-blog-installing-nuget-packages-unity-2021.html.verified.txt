@@ -189,10 +189,10 @@
                 <a href="fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a>
             </li>
             <li>
-                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
+                <a href="add-image-camera-background-unity">How to add an image as a camera background in Unity</a>
             </li>
             <li>
-                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
+                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
     </ul>
 </aside>

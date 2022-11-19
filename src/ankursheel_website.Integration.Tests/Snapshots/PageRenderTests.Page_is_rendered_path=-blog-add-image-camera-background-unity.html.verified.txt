@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Finding the best credit card in New Zealand - Ankur Sheel</title>
+<title>How to add an image as a camera background in Unity - Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+<meta name="description" content="The camera in Unity allows the setting of the background as a solid colour but not as an image. Let&#x27;s look at how we can set it up to render a background image instead of a plain colour."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/best-credit-card-new-zealand"/>   
-<meta itemProp="name" content="Finding the best credit card in New Zealand"/>
-<meta itemProp="description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/best-credit-card-new-zealand"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/add-image-camera-background-unity"/>   
+<meta itemProp="name" content="How to add an image as a camera background in Unity"/>
+<meta itemProp="description" content="The camera in Unity allows the setting of the background as a solid colour but not as an image. Let&#x27;s look at how we can set it up to render a background image instead of a plain colour."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/add-image-camera-background-unity-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/add-image-camera-background-unity"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Finding the best credit card in New Zealand"/>
-<meta property="og:description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
+<meta property="og:title" content="How to add an image as a camera background in Unity"/>
+<meta property="og:description" content="The camera in Unity allows the setting of the background as a solid colour but not as an image. Let&#x27;s look at how we can set it up to render a background image instead of a plain colour."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/add-image-camera-background-unity-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-image-camera-background-unity-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Finding the best credit card in New Zealand"/>
-<meta name="twitter:description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-twitter.png"/>
+<meta name="twitter:title" content="How to add an image as a camera background in Unity"/>
+<meta name="twitter:description" content="The camera in Unity allows the setting of the background as a solid colour but not as an image. Let&#x27;s look at how we can set it up to render a background image instead of a plain colour."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/add-image-camera-background-unity-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/add-image-camera-background-unity-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -87,119 +87,80 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Finding the best credit card in New Zealand</h1>
+    <h1 class="text-center">How to add an image as a camera background in Unity</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2022-11-06">November 06, 2022</time></span>
+        <span>Last Updated: <time datetime="2022-11-19">November 19, 2022</time></span>
         <i class="font-bold">
-            Reading Time: 3 min
+            Reading Time: 1 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/finance" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">finance</a>
+            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
     </div>
 </div>
 
-<!-- https://unsplash.com/photos/RJQE64NmC_o -->
-<p>Credit cards are a tool. If you can pay your cards off in full every month, they can help you build wealth. If not, they can trap you in a cycle of debt that's very difficult to break.</p>
-<p>However, with so many credit card options, finding the one that maximizes the value based on your spending can take time and effort. Each credit card comes with its own benefits and features, so it can feel like you're comparing apples to oranges.</p>
-<h2 id="comparison">Comparison</h2>
-<p>In this post, I compare the value of some of the cards offered by ANZ and American Express in New Zealand.</p>
-<table>
-<thead>
-<tr>
-<th>Credit Card</th>
-<th>Annual fee (NZD)</th>
-<th>Rebate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>American Express Airpoints</td>
-<td>$0</td>
-<td>1.00%</td>
-</tr>
-<tr>
-<td>ANZ Cashback Visa</td>
-<td>$45</td>
-<td>0.67%</td>
-</tr>
-<tr>
-<td>ANZ Airpoints Visa</td>
-<td>$65</td>
-<td>0.77%</td>
-</tr>
-<tr>
-<td>ANZ Cashback Visa Platinum</td>
-<td>$85</td>
-<td>0.83%</td>
-</tr>
-<tr>
-<td>ANZ Airpoints Visa Platinum</td>
-<td>$150</td>
-<td>1.18%</td>
-</tr>
-<tr>
-<td>American Express Airpoints Platinum</td>
-<td>$195</td>
-<td>1.69%</td>
-</tr>
-<tr>
-<td>American Express Gold Card</td>
-<td>$200</td>
-<td>0.75%</td>
-</tr>
-<tr>
-<td>American Express Platinum Card</td>
-<td>$1250</td>
-<td>1.33%</td>
-</tr>
-</tbody>
-</table>
-<h3 id="american-express-airpoints">American Express Airpoints</h3>
-<p>Since there is no <em>Annual fee</em>, you don't need to spend a minimum amount in a year.</p>
-<p>You will get back 1 cent for every additional dollar you spend.</p>
-<h3 id="anz-cashback-visa">ANZ Cashback Visa</h3>
-<p>You must spend at least NZD 6,750 annually to cover the card fee.</p>
-<p>You will get back 0.67 cents for every additional dollar you spend.</p>
-<h3 id="anz-airpoints-visa">ANZ Airpoints Visa</h3>
-<p>You must spend at least NZD 8,450 annually to cover the card fee.</p>
-<p>You will get back 0.77 cents for every additional dollar you spend.</p>
-<h3 id="anz-cashback-visa-platinum">ANZ Cashback Visa Platinum</h3>
-<p>You must spend at least NZD 10,200 annually to cover the card fee.</p>
-<p>You will get back 0.83 cents for every additional dollar you spend.</p>
-<p><em>The cashback visa is a better option unless you spend more than NZD 24000 in a year.</em></p>
-<h3 id="anz-airpoints-visa-platinum">ANZ Airpoints Visa Platinum</h3>
-<p>You must spend at least NZD 12,750 annually to cover the card fee.</p>
-<p>You will get back 1.18 cents for every additional dollar you spend.</p>
-<p><em>The Airpoints visa is a better option unless you spend more than NZD 21000 in a year.</em></p>
-<h3 id="american-express-airpoints-platinum">American Express Airpoints Platinum</h3>
-<p>You must spend at least NZD 11,505 annually to cover the card fee.</p>
-<p>You will get back 1.69 cents for every additional dollar you spend.</p>
-<p><em>The Airpoints visa is a better option unless you spend more than NZD 28000 in a year. However, you get travel insurance and lounge visits which might make up the difference.</em></p>
-<h3 id="american-express-gold-card">American Express Gold Card</h3>
-<p>You must spend at least NZD 26,600 annually to cover the card fee.</p>
-<p>You will get back 0.75 cents for every additional dollar you spend.</p>
-<h3 id="american-express-platinum-card">American Express Platinum Card</h3>
-<p>You must spend at least NZD 93,750 annually to cover the card fee.</p>
-<p>You will get back 1.33 cents for every additional dollar you spend.</p>
-<p><em>However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee.</em></p>
-<h2 id="my-recommendation">My Recommendation</h2>
-<p>I like using The American Express Airpoints Platinum card as my primary card. It has the best value. If you are spending less than NZD 11,000, then the American Express Airpoints Card is the next best card to get.</p>
-<p>Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.</p>
-<p>Is there a card you would like me to evaluate? Let me know in the comments.</p>
+<p>The camera in Unity allows the setting of the background as a solid colour but not as an image. The camera is currently rendering the image below.</p>
+<p><img src="/assets/images/posts/add-image-camera-background-unity/before.png" alt="Camera rendering a solid colour" /></p>
+<p>Let's look at how we can set it up to render a background image instead of a plain colour.</p>
+<h2 id="adding-a-canvas">Adding a Canvas</h2>
+<ol>
+<li>Start by creating a new canvas.</li>
+<li>Update the properties
+<ol>
+<li>Update <strong>Render Mode</strong> to <code>Screen Space - Camera</code>:
+<ul>
+<li><code>Screen Space - Overlay</code> should be used only for the foreground UI. It renders the canvas on top of everything else, including the camera view.</li>
+<li><code>Screen Space - Camera</code> will render the canvas on a plane object in front of the camera. It will also automatically rescale to fit the view.</li>
+</ul>
+</li>
+<li>Set the <strong>Render Camera</strong>
+<ul>
+<li>Drag and drop the camera from the scene.</li>
+</ul>
+</li>
+<li>Update <strong>Plane Distance</strong> (if needed):
+<ul>
+<li><strong>Plane Distance</strong> is used to set the z-position for the canvas. You can increase it if some scene objects are hidden behind it.</li>
+</ul>
+</li>
+<li>Remove/Disable the <strong>Graphics Raycaster</strong>
+<ul>
+<li>Disabling the <strong>Graphics Raycaster</strong> makes the canvas non-interactive, i.e. it will not capture clicks etc.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="/assets/images/posts/add-image-camera-background-unity/canvas-settings.png" alt="Canvas Settings" /></p>
+<h2 id="add-the-background-image">Add the background image</h2>
+<ol>
+<li>Create an <strong>Image</strong> inside of the canvas.</li>
+<li>Set the <strong>Source Image</strong> to the background sprite.</li>
+</ol>
+<p><img src="/assets/images/posts/add-image-camera-background-unity/image-settings.png" alt="Setting the background sprite" /></p>
+<ol start="3">
+<li>Stretch your image to fill the (canvas) container.</li>
+</ol>
+<p><img src="/assets/images/posts/add-image-camera-background-unity/stretch-settings.png" alt="Rect Transform settings.png" /></p>
+<ul>
+<li>You can do this by clicking the grey square in the <strong>Rect Transform</strong>. In the window that opens, hold down <strong>Alt</strong> and click the most <strong>bottom-right</strong> square.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Now the image will show as the background.</p>
+<p><img src="/assets/images/posts/add-image-camera-background-unity/after.png" alt="Camera with background image" /></p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/best-credit-card-new-zealand&text=Finding%20the%20best%20credit%20card%20in%20New%20Zealand via @ankur_sheel.&#xD;&#xA;Each%20credit%20card%20has%20its%20own%20benefits%20and%20features%2C%20so%20it%20can%20feel%20like%20you%27re%20comparing%20apples%20to%20oranges.%20Finding%20the%20one%20that%20maximizes%20the%20value%20based%20on%20your%20spending%20can%20take%20time%20and%20effort." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/add-image-camera-background-unity&text=How%20to%20add%20an%20image%20as%20a%20camera%20background%20in%20Unity via @ankur_sheel.&#xD;&#xA;The%20camera%20in%20Unity%20allows%20the%20setting%20of%20the%20background%20as%20a%20solid%20colour%20but%20not%20as%20an%20image.%20Let%27s%20look%20at%20how%20we%20can%20set%20it%20up%20to%20render%20a%20background%20image%20instead%20of%20a%20plain%20colour." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -230,16 +191,16 @@
 
     <ul>
             <li>
-                <a href="merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a>
+                <a href="installing-nuget-packages-unity-2021">Installing NuGet packages in Unity 2021</a>
             </li>
             <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+                <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
             </li>
             <li>
-                <a href="product-review-ndepend">Product Review: NDepend</a>
+                <a href="fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a>
             </li>
             <li>
-                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
+                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
     </ul>
 </aside>

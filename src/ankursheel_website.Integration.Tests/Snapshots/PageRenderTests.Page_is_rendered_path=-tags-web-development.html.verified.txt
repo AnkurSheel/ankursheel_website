@@ -89,7 +89,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/programmatically-remove-service-worker" class="text-center prose-2xl mb-4">How to programmatically remove a service worker</a>
+        <a href="/blog/programmatically-remove-service-worker" class="text-center prose-2xl mb-4">How to programmatically unregister a service worker</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
             Sometimes you just want to remove a service worker either because something is wrong with it or you don&#x27;t need it anymore. Lets see how we can do it programmatically

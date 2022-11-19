@@ -8,6 +8,65 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>How to add an image as a camera background in Unity</title>
+      <link>https://www.ankursheel.com/blog/add-image-camera-background-unity</link>
+      <description>The camera in Unity allows the setting of the background as a solid colour but not as an image. Let's look at how we can set it up to render a background image instead of a plain colour.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/after.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/add-image-camera-background-unity</guid>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;The camera in Unity allows the setting of the background as a solid colour but not as an image. The camera is currently rendering the image below.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/before.png" alt="Camera rendering a solid colour"&gt;&lt;/p&gt;
+&lt;p&gt;Let's look at how we can set it up to render a background image instead of a plain colour.&lt;/p&gt;
+&lt;h2 id="adding-a-canvas"&gt;Adding a Canvas&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Start by creating a new canvas.&lt;/li&gt;
+&lt;li&gt;Update the properties
+&lt;ol&gt;
+&lt;li&gt;Update &lt;strong&gt;Render Mode&lt;/strong&gt; to &lt;code&gt;Screen Space - Camera&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Screen Space - Overlay&lt;/code&gt; should be used only for the foreground UI. It renders the canvas on top of everything else, including the camera view.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Screen Space - Camera&lt;/code&gt; will render the canvas on a plane object in front of the camera. It will also automatically rescale to fit the view.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;Render Camera&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Drag and drop the camera from the scene.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Update &lt;strong&gt;Plane Distance&lt;/strong&gt; (if needed):
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plane Distance&lt;/strong&gt; is used to set the z-position for the canvas. You can increase it if some scene objects are hidden behind it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Remove/Disable the &lt;strong&gt;Graphics Raycaster&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Disabling the &lt;strong&gt;Graphics Raycaster&lt;/strong&gt; makes the canvas non-interactive, i.e. it will not capture clicks etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/canvas-settings.png" alt="Canvas Settings"&gt;&lt;/p&gt;
+&lt;h2 id="add-the-background-image"&gt;Add the background image&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an &lt;strong&gt;Image&lt;/strong&gt; inside of the canvas.&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;Source Image&lt;/strong&gt; to the background sprite.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/image-settings.png" alt="Setting the background sprite"&gt;&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Stretch your image to fill the (canvas) container.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/stretch-settings.png" alt="Rect Transform settings.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can do this by clicking the grey square in the &lt;strong&gt;Rect Transform&lt;/strong&gt;. In the window that opens, hold down &lt;strong&gt;Alt&lt;/strong&gt; and click the most &lt;strong&gt;bottom-right&lt;/strong&gt; square.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Now the image will show as the background.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/after.png" alt="Camera with background image"&gt;&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Finding the best credit card in New Zealand</title>
       <link>https://www.ankursheel.com/blog/best-credit-card-new-zealand</link>
       <description>Each credit card has its own benefits and features, so it can feel like you're comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort.</description>
@@ -70,23 +129,23 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h3 id="american-express-airpoints"&gt;American Express Airpoints&lt;/h3&gt;
+&lt;p&gt;Since there is no &lt;em&gt;Annual fee&lt;/em&gt;, you don't need to spend a minimum amount in a year.&lt;/p&gt;
+&lt;p&gt;You will get back 1 cent for every additional dollar you spend.&lt;/p&gt;
 &lt;h3 id="anz-cashback-visa"&gt;ANZ Cashback Visa&lt;/h3&gt;
 &lt;p&gt;You must spend at least NZD 6,750 annually to cover the card fee.&lt;/p&gt;
 &lt;p&gt;You will get back 0.67 cents for every additional dollar you spend.&lt;/p&gt;
+&lt;h3 id="anz-airpoints-visa"&gt;ANZ Airpoints Visa&lt;/h3&gt;
+&lt;p&gt;You must spend at least NZD 8,450 annually to cover the card fee.&lt;/p&gt;
+&lt;p&gt;You will get back 0.77 cents for every additional dollar you spend.&lt;/p&gt;
 &lt;h3 id="anz-cashback-visa-platinum"&gt;ANZ Cashback Visa Platinum&lt;/h3&gt;
 &lt;p&gt;You must spend at least NZD 10,200 annually to cover the card fee.&lt;/p&gt;
 &lt;p&gt;You will get back 0.83 cents for every additional dollar you spend.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The cashback visa is a better option unless you spend more than NZD 24000 in a year.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="anz-airpoints-visa"&gt;ANZ Airpoints Visa&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 8,450 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 0.77 cents for every additional dollar you spend.&lt;/p&gt;
 &lt;h3 id="anz-airpoints-visa-platinum"&gt;ANZ Airpoints Visa Platinum&lt;/h3&gt;
 &lt;p&gt;You must spend at least NZD 12,750 annually to cover the card fee.&lt;/p&gt;
 &lt;p&gt;You will get back 1.18 cents for every additional dollar you spend.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The Airpoints visa is a better option unless you spend more than NZD 21000 in a year.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="american-express-airpoints"&gt;American Express Airpoints&lt;/h3&gt;
-&lt;p&gt;Since there is no &lt;em&gt;Annual fee&lt;/em&gt;, you don't need to spend a minimum amount in a year.&lt;/p&gt;
-&lt;p&gt;You will get back 1 cent for every additional dollar you spend.&lt;/p&gt;
 &lt;h3 id="american-express-airpoints-platinum"&gt;American Express Airpoints Platinum&lt;/h3&gt;
 &lt;p&gt;You must spend at least NZD 11,505 annually to cover the card fee.&lt;/p&gt;
 &lt;p&gt;You will get back 1.69 cents for every additional dollar you spend.&lt;/p&gt;
@@ -99,7 +158,7 @@
 &lt;p&gt;You will get back 1.33 cents for every additional dollar you spend.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="my-recommendation"&gt;My Recommendation&lt;/h2&gt;
-&lt;p&gt;I like using The American Express Airpoints Platinum card as my primary card. It has the best rebate. If you need to spend more to cover the card fee, then the American Express Airpoints Card is the next best card to get.&lt;/p&gt;
+&lt;p&gt;I like using The American Express Airpoints Platinum card as my primary card. It has the best value. If you are spending less than NZD 11,000, then the American Express Airpoints Card is the next best card to get.&lt;/p&gt;
 &lt;p&gt;Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.&lt;/p&gt;
 &lt;p&gt;Is there a card you would like me to evaluate? Let me know in the comments.&lt;/p&gt;
 </content:encoded>
@@ -759,7 +818,7 @@ text tester&amp;quot;&lt;/p&gt;
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>How to programmatically remove a service worker</title>
+      <title>How to programmatically unregister a service worker</title>
       <link>https://www.ankursheel.com/blog/programmatically-remove-service-worker</link>
       <description>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically</description>
       <guid>https://www.ankursheel.com/blog/programmatically-remove-service-worker</guid>
@@ -972,32 +1031,6 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Cameron McHenry&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Regardless of what the title says, this article is not about saving money but is about building a full-stack web application with Javascript and getting it up and running for free.&lt;/p&gt;
 &lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 51</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-51</link>
-      <description>This weeks roundup contains articles from Slava Shestopalov, Ahmad Shadeed, Amelia Wattenberger, Kevon Cheung and Gergely Orosz</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-51</guid>
-      <pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="designing-better-links-for-websites-and-emails-a-guideline"&gt;&lt;a href="https://uxdesign.cc/designing-better-links-for-websites-and-emails-a-guideline-5b8638ce675a"&gt;Designing better links for websites and emails — a guideline&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Slava Shestopalov&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Just because something is common doesn't make it right. This article explains the common mistakes made when adding text links and making them more usable and accessible. It also shows the difference between bad and good links through examples.&lt;/p&gt;
-&lt;h2 id="defensive-css"&gt;&lt;a href="https://ishadeed.com/article/defensive-css/"&gt;Defensive CSS&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Ahmad Shadeed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Defensive CSS is a practical set of styles that can help us avoid unexpected issues when writing CSS. So many nuggets in this article.&lt;/p&gt;
-&lt;h2 id="visualizing-a-codebase"&gt;&lt;a href="https://next.github.com/projects/repo-visualization"&gt;Visualizing a codebase&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Amelia Wattenberger&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A fantastic article on how to visualize a GitHub repo with each file and folder depicted as a circle. The article also goes into the design and implementation of the visualization. Apart from some visualizations of some public repositories, you can also see the visualization for your own repositories.&lt;/p&gt;
-&lt;h2 id="how-to-validate-your-tech-startup-idea"&gt;&lt;a href="https://kevoncheung.com/blog/validating-startup-ideas"&gt;How to Validate Your Tech Startup Idea&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Kevon Cheung&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is an excellent post that goes into the details of why building Toasty was a terrible idea, even though they talked to users and researched the space before building the product. What they learnt and how would Kevin evaluate future startup ideas for a B2b SaaS.&lt;/p&gt;
-&lt;h2 id="the-cheetah-software-engineer-the-pragmatic-engineer"&gt;&lt;a href="https://blog.pragmaticengineer.com/the-cheetah-software-engineer/"&gt;The Cheetah Software Engineer - The Pragmatic Engineer&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Gergely Orosz&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Most organizations are scared of 10x engineers because they are toxic. An observation in extreme detail on what a highly productive engineer can look like. Why they are so rare, and how you can manage them and keep them engaged?&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

@@ -171,7 +171,7 @@
                 <a href="replace-pipeline-statiq">How to replace a pipeline in Statiq</a>
             </li>
             <li>
-                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
+                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to batch rename multiple files in subfolders in Windows</a>
             </li>
             <li>
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>

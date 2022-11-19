@@ -196,7 +196,7 @@
                 <a href="override-netlify-build-config">How to override the netlify build config</a>
             </li>
             <li>
-                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to rename multiple files in subfolders using Windows command prompt</a>
+                <a href="rename-multiple-files-subfolders-windows-command-prompt">How to batch rename multiple files in subfolders in Windows</a>
             </li>
     </ul>
 </aside>
