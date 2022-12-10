@@ -8,6 +8,71 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>How to echo commands as they are executed in a shell script</title>
+      <link>https://www.ankursheel.com/blog/echo-commands-they-are-executed-shell-script</link>
+      <description>It is helpful to log the shell commands being executed when running a bash script (especially when debugging it). Let see what commands we can use to log the commands</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/echo-commands-they-are-executed-shell-script/cover.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/echo-commands-they-are-executed-shell-script</guid>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;!-- https://unsplash.com/s/photos/ubuntu --&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;It is helpful to log the shell commands being executed when running a bash script (especially when debugging it).&lt;/p&gt;
+&lt;p&gt;As an example, we will use this bash file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-meta"&gt;#!/bin/bash  
+  &lt;/span&gt;
+Name=&amp;quot;Ankur&amp;quot;  
+  
+&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;  
+ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When we execute this script, we can see this as the output.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-lsl hljs"&gt;Ankur
+&lt;span class="hljs-number"&gt;10&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="solution-1"&gt;Solution 1&lt;/h2&gt;
+&lt;p&gt;You can use &lt;code&gt;set -v&lt;/code&gt; in the shell script.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-meta"&gt;#!/bin/bash  &lt;/span&gt;
+&lt;span class="hljs-built_in"&gt;set&lt;/span&gt; -v
+
+Name=&amp;quot;Ankur&amp;quot;  
+  
+&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;  
+ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On running this script, we can see&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;Name=&amp;quot;Ankur&amp;quot;  
+
+&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;
+Ankur
+ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Note: You can turn off this behaviour by using &lt;code&gt;set +v&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can see that although it showed the command being executed, it did not expand the variable in the echo command.&lt;/p&gt;
+&lt;h2 id="solution-2"&gt;Solution 2&lt;/h2&gt;
+&lt;p&gt;You can use &lt;code&gt;set -x&lt;/code&gt; in a shell script.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-meta"&gt;#!/bin/bash  &lt;/span&gt;
+&lt;span class="hljs-built_in"&gt;set&lt;/span&gt; -x
+
+Name=&amp;quot;Ankur&amp;quot;  
+  
+&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;  
+ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On running this script, we can see&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-markdown hljs"&gt;&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;Name=Ankur
+&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;echo Ankur
+Ankur
+&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;ls
+&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;wc -l
+10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Note: To turn off this behaviour, you can use &lt;code&gt;set +x&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It showed the executed command and added a &lt;code&gt;+&lt;/code&gt; sign before the command. It also expanded the variable name.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We looked at 2 ways of showing the commands being executed in a shell script. These can be extremely helpful when debugging your shell script.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How to add an image as a camera background in Unity</title>
       <link>https://www.ankursheel.com/blog/add-image-camera-background-unity</link>
       <description>The camera in Unity allows the setting of the background as a solid colour but not as an image. Let's look at how we can set it up to render a background image instead of a plain colour.</description>
@@ -1003,33 +1068,6 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;h2 id="case-study-user-onboarding-blinkist"&gt;&lt;a href="https://growth.design/case-studies/blinkist-user-onboarding"&gt;Case study: User onboarding (Blinkist)&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;strong&gt;Growth.Design&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A case study of onboarding in Blinkist shows why onboarding can be tricky and how psychology can help.&lt;/p&gt;
-&lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 52</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-52</link>
-      <description>This weeks roundup contains articles from Selena Soo, Oliver Brotchie, Annie Liew, Rick Strahl and Cameron McHenry</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-52</guid>
-      <pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman"&gt;&lt;a href="https://selenasoo.medium.com/i-was-in-an-emotionally-abusive-relationship-even-as-a-smart-and-successful-woman-8804ffe58cc9"&gt;I was in an emotionally abusive relationship, even as a smart and successful woman&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Selena Soo&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A compelling story of a woman recounting her emotional abuse in a former relationship.&lt;/p&gt;
-&lt;h2 id="css-based-fingerprinting"&gt;&lt;a href="https://csstracking.dev/"&gt;CSS-Based Fingerprinting&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Oliver Brotchie&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Fingerprinting is a term that refers to building up enough metadata about a user so that we can essentially figure out who they are. Although it is more common with Javascript, did you know that we can fingerprint(to an extent) with CSS alone? A live demo and example repository also show how you can achieve this.&lt;/p&gt;
-&lt;h2 id="why-i-turned-down-a-six-figure-salary-in-big-tech-to-stay-at-a-five-person-startup"&gt;&lt;a href="https://www.freecodecamp.org/news/why-i-turned-down-a-six-figure-salary-in-big-tech-to-stay-at-a-five-person-startup/"&gt;Why I Turned Down a Six-Figure Salary in Big Tech to Stay at a Five-Person Startup&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Annie Liew&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;It's easy to be swayed by a high salary and prestige when comparing offers. But, our values and what we are interested in doing is more important than any opportunity that might be good for us career-wise. An interesting story on what factors were involved in declining an offer from a highly regarded tech company to stay at a small startup.&lt;/p&gt;
-&lt;h2 id="integrating-long-path-names-in-windows-applications"&gt;&lt;a href="https://weblog.west-wind.com/posts/2022/Jan/03/Integrating-Long-Path-Names-in-Windows-NET-Applications"&gt;Integrating Long Path Names in Windows Applications&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Rick Strahl&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Even though a limit of 260 characters for a path is not tiny, long path names are a problem on Windows. This article shows how we can enable long paths in Windows.&lt;/p&gt;
-&lt;h2 id="how-serverless-saved-money-on-my-heating-bill"&gt;&lt;a href="https://camchenry.com/blog/how-serverless-saved-my-heating-bill"&gt;How Serverless Saved Money on My Heating Bill&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Cameron McHenry&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Regardless of what the title says, this article is not about saving money but is about building a full-stack web application with Javascript and getting it up and running for free.&lt;/p&gt;
 &lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

@@ -92,6 +92,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/echo-commands-they-are-executed-shell-script">How to echo commands as they are executed in a shell script</a> - <time class="prose-sm" datetime="22-12-10">December 10, 2022</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/add-image-camera-background-unity">How to add an image as a camera background in Unity</a> - <time class="prose-sm" datetime="22-11-19">November 19, 2022</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -102,9 +105,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/team-name">What&#x27;s in a team name</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
         </li>
 </ul>
 

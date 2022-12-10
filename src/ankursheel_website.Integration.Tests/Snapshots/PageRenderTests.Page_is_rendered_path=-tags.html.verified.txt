@@ -97,7 +97,7 @@
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (23)</a>
+            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (24)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (13)</a>
