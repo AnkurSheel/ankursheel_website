@@ -8,6 +8,33 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>How To Disable Buttons In Unity</title>
+      <link>https://www.ankursheel.com/blog/disable-buttons-unity</link>
+      <description>Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.</description>
+      <guid>https://www.ankursheel.com/blog/disable-buttons-unity</guid>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;When working with Unity UI, there will be times when you will need to disable a button. Unity provides three ways to disable a UI Button, each of which can be used depending on the desired user experience.&lt;/p&gt;
+&lt;h2 id="using-enabled-property"&gt;Using enabled property&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;enabled&lt;/code&gt; property will make the button non-clickable, but it will not use the disabled colour.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;testButton.enabled = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You will rarely want to use &lt;code&gt;enabled&lt;/code&gt; as it results in a confusing user experience.&lt;/p&gt;
+&lt;h2 id="using-interactable-property"&gt;Using interactable property&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;interactable&lt;/code&gt; property will make the button non-clickable and will set the disabled colour (which is grey by default).&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;testButton.interactable = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In most cases, this is the option to use.&lt;/p&gt;
+&lt;h2 id="using-gameobject.setactive"&gt;Using GameObject.SetActive&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;gameObject.SetActive&lt;/code&gt; will deactivate the button and hide it from the user.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;testButton.gameObject.SetActive(&lt;span class="hljs-literal"&gt;false&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is an excellent option if you want to change what button is showing based on some conditions.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using these methods, you can customize how the user will interact with the UI Button. It is crucial to understand how each of these methods works so that you can choose the best one for your project.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How to echo commands as they are executed in a shell script</title>
       <link>https://www.ankursheel.com/blog/echo-commands-they-are-executed-shell-script</link>
       <description>It is helpful to log the shell commands being executed when running a bash script (especially when debugging it). Let see what commands we can use to log the commands</description>
@@ -1042,33 +1069,6 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;p&gt;A list of questions based on our must-haves and deal-breakers can give us the confidence to know that we are making the right decision. We can down positions or step away from the interview process where there isn't a great fit. You owe it to yourself to find a place aligned with your values.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;Thanks to the &lt;a href="http://bloggingfordevs.com/"&gt;Blogging for Devs community&lt;/a&gt; for providing feedback on this post.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Weekly Roundup 53</title>
-      <link>https://www.ankursheel.com/blog/weekly-roundup-53</link>
-      <description>This weeks roundup contains articles from Jimmy Bogard, Mr Money Mustache, Josh Comeau, Andrey Azimov and Growth.Design</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/weekly-roundup-cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/weekly-roundup-53</guid>
-      <pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.&lt;/p&gt;
-&lt;h2 id="service-locator-is-not-an-anti-pattern"&gt;&lt;a href="https://jimmybogard.com/service-locator-is-not-an-anti-pattern/"&gt;Service Locator is not an Anti-Pattern&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Jimmy Bogard&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The common thinking is that the Service Locator pattern is an anti-pattern because it hides class dependencies and results in runtime errors. Jimmy Bogard explains the situations where service location is required or even preferable.&lt;/p&gt;
-&lt;h2 id="inflation-should-we-be-worried"&gt;&lt;a href="https://www.mrmoneymustache.com/2022/01/11/inflation-should-we-be-worried/"&gt;Inflation – Should We Be Worried?&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Mr Money Mustache&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This very in-depth article that gets into inflation explains why inflation does not mean we are getting poorer and might even be good for the economy.&lt;/p&gt;
-&lt;h2 id="make-beautiful-gradients"&gt;&lt;a href="https://www.joshwcomeau.com/css/make-beautiful-gradients/"&gt;Make Beautiful Gradients&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Josh Comeau&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;In this blog post, we learn why the dreaded grey zone happens when building a linear gradient and what we can do to avoid it by using colour theory.&lt;/p&gt;
-&lt;h2 id="how-to-accept-payments-online-if-you-cant-use-stripe"&gt;&lt;a href="https://andreyazimov.medium.com/how-to-accept-payments-online-if-you-cant-use-stripe-a16e6df98b1d"&gt;How to Accept Payments Online If You Can't Use Stripe?&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Andrey Azimov&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Stripe is slowly becoming the preferred payment provider for apps. But what do you do if you live in one of the countries where Stripe is not supported. Andrey compares the 3 alternatives: Gumroad, Paddle and Paypal.&lt;/p&gt;
-&lt;h2 id="case-study-user-onboarding-blinkist"&gt;&lt;a href="https://growth.design/case-studies/blinkist-user-onboarding"&gt;Case study: User onboarding (Blinkist)&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;by &lt;strong&gt;Growth.Design&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A case study of onboarding in Blinkist shows why onboarding can be tricky and how psychology can help.&lt;/p&gt;
-&lt;p&gt;Thanks for reading. Until next time.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
