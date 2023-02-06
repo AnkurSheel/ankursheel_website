@@ -350,7 +350,7 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

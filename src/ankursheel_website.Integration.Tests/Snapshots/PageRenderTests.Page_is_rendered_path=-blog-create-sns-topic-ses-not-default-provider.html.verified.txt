@@ -274,7 +274,7 @@ resource &quot;aws_sns_topic&quot; &quot;example-topic&quot; {
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

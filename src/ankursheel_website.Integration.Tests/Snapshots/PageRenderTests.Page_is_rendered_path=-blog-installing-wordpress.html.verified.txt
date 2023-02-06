@@ -283,7 +283,7 @@ define(<span class="hljs-string">'DB_PASSWORD'</span>, <span class="hljs-string"
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

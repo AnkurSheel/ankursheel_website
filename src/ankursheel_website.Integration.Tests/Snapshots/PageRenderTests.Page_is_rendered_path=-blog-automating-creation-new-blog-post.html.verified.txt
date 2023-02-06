@@ -403,7 +403,7 @@ fs.writeFileSync(path.join(destination, <span class="hljs-string">'index.mdx'</s
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

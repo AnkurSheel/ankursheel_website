@@ -337,7 +337,7 @@ resource &quot;aws_sqs_queue_policy&quot; &quot;ses_queue_policy&quot; {
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

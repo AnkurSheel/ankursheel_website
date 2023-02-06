@@ -300,7 +300,7 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

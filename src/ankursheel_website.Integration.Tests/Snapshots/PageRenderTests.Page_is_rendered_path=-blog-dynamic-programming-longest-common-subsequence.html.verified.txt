@@ -410,7 +410,7 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 

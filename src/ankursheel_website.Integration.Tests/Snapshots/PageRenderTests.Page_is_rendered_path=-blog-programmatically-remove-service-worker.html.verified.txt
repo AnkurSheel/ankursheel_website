@@ -275,7 +275,7 @@ The <code>self.registration.unregister()</code> function unregisters the service
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2022
+        © AnkurSheel 2023
     </div>
 </div>
 
