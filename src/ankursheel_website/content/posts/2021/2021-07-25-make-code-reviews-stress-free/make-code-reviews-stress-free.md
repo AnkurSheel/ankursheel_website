@@ -11,7 +11,7 @@ tags:
 
 ---
 
-_This is an edited version of an article I originally wrote for the First AML Product & Engineering blog. You can read the original version [here](https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free)._
+_This is an edited version of an article I originally wrote for the First AML Product & Engineering blog. You can read the [original version here](https://firstaml.dev/blog/how-we-made-our-code-reviews-stress-free)_.
 
 Code reviews can be stressful for both parties. The person being reviewed puts their code for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.
 
