@@ -13,25 +13,25 @@
       <description>Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.</description>
       <guid>https://www.ankursheel.com/blog/disable-buttons-unity</guid>
       <pubDate>Mon, 06 Feb 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;When working with Unity UI, there will be times when you will need to disable a button. Unity provides three ways to disable a UI Button, each of which can be used depending on the desired user experience.&lt;/p&gt;
+      <content:encoded>&lt;p&gt;When working with Unity UI, there will be times when you will need to disable a button. Unity provides three ways to disable a UI Button, each of which can be used depending on the desired user experience.&lt;/p&gt;
 &lt;h2 id="using-enabled-property"&gt;Using enabled property&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;enabled&lt;/code&gt; property will make the button non-clickable, but it will not use the disabled colour.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;testButton.enabled = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;testButton.enabled = false;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You will rarely want to use &lt;code&gt;enabled&lt;/code&gt; as it results in a confusing user experience.&lt;/p&gt;
 &lt;h2 id="using-interactable-property"&gt;Using interactable property&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;interactable&lt;/code&gt; property will make the button non-clickable and will set the disabled colour (which is grey by default).&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;testButton.interactable = &lt;span class="hljs-literal"&gt;false&lt;/span&gt;;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;testButton.interactable = false;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In most cases, this is the option to use.&lt;/p&gt;
 &lt;h2 id="using-gameobject.setactive"&gt;Using GameObject.SetActive&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;gameObject.SetActive&lt;/code&gt; will deactivate the button and hide it from the user.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;testButton.gameObject.SetActive(&lt;span class="hljs-literal"&gt;false&lt;/span&gt;);
+&lt;pre&gt;&lt;code class="language-csharp"&gt;testButton.gameObject.SetActive(false);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This is an excellent option if you want to change what button is showing based on some conditions.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Using these methods, you can customize how the user will interact with the UI Button. It is crucial to understand how each of these methods works so that you can choose the best one for your project.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -41,62 +41,63 @@
       <enclosure url="https://www.ankursheel.com/assets/images/posts/echo-commands-they-are-executed-shell-script/cover.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/echo-commands-they-are-executed-shell-script</guid>
       <pubDate>Sat, 10 Dec 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;!-- https://unsplash.com/s/photos/ubuntu --&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;It is helpful to log the shell commands being executed when running a bash script (especially when debugging it).&lt;/p&gt;
+      <content:encoded>&lt;!-- https://unsplash.com/s/photos/ubuntu --&gt;
+&lt;p&gt;It is helpful to log the shell commands being executed when running a bash script (especially when debugging it).&lt;/p&gt;
 &lt;p&gt;As an example, we will use this bash file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-meta"&gt;#!/bin/bash  
-  &lt;/span&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;#!/bin/bash  
+  
 Name=&amp;quot;Ankur&amp;quot;  
   
-&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;  
-ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+echo $Name  
+ls | wc -l
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When we execute this script, we can see this as the output.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-lsl hljs"&gt;Ankur
-&lt;span class="hljs-number"&gt;10&lt;/span&gt;
+&lt;pre&gt;&lt;code&gt;Ankur
+10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="solution-1"&gt;Solution 1&lt;/h2&gt;
 &lt;p&gt;You can use &lt;code&gt;set -v&lt;/code&gt; in the shell script.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-meta"&gt;#!/bin/bash  &lt;/span&gt;
-&lt;span class="hljs-built_in"&gt;set&lt;/span&gt; -v
+&lt;pre&gt;&lt;code class="language-bash"&gt;#!/bin/bash  
+set -v
 
 Name=&amp;quot;Ankur&amp;quot;  
   
-&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;  
-ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+echo $Name  
+ls | wc -l
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;On running this script, we can see&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;Name=&amp;quot;Ankur&amp;quot;  
+&lt;pre&gt;&lt;code&gt;Name=&amp;quot;Ankur&amp;quot;  
 
-&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;
+echo $Name
 Ankur
-ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+ls | wc -l
 10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Note: You can turn off this behaviour by using &lt;code&gt;set +v&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You can see that although it showed the command being executed, it did not expand the variable in the echo command.&lt;/p&gt;
 &lt;h2 id="solution-2"&gt;Solution 2&lt;/h2&gt;
 &lt;p&gt;You can use &lt;code&gt;set -x&lt;/code&gt; in a shell script.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;&lt;span class="hljs-meta"&gt;#!/bin/bash  &lt;/span&gt;
-&lt;span class="hljs-built_in"&gt;set&lt;/span&gt; -x
+&lt;pre&gt;&lt;code class="language-bash"&gt;#!/bin/bash  
+set -x
 
 Name=&amp;quot;Ankur&amp;quot;  
   
-&lt;span class="hljs-built_in"&gt;echo&lt;/span&gt; &lt;span class="hljs-variable"&gt;$Name&lt;/span&gt;  
-ls | wc &lt;span class="hljs-_"&gt;-l&lt;/span&gt;
+echo $Name  
+ls | wc -l
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;On running this script, we can see&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-markdown hljs"&gt;&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;Name=Ankur
-&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;echo Ankur
+&lt;pre&gt;&lt;code&gt;+ Name=Ankur
++ echo Ankur
 Ankur
-&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;ls
-&lt;span class="hljs-bullet"&gt;+ &lt;/span&gt;wc -l
++ ls
++ wc -l
 10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Note: To turn off this behaviour, you can use &lt;code&gt;set +x&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It showed the executed command and added a &lt;code&gt;+&lt;/code&gt; sign before the command. It also expanded the variable name.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;We looked at 2 ways of showing the commands being executed in a shell script. These can be extremely helpful when debugging your shell script.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -665,12 +666,12 @@ Ankur
       <description>A way to remove a file committed in git that you now want git to forget about</description>
       <guid>https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore</guid>
       <pubDate>Wed, 06 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;You committed a file to git and then changed your mind and want git to forget about it. So, you added the file to &lt;code&gt;.gitignore&lt;/code&gt;. But the file still keeps showing up as part of your changes.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;This happens because &lt;code&gt;.gitignore&lt;/code&gt; prevents files from being added but does not actively remove the ones already tracked.&lt;/p&gt;
 &lt;p&gt;To stop tracking a file (but not delete it), you need to remove it from the index. This can be achieved with this command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash hljs"&gt;git rm -r --cached &amp;lt;filename&amp;gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;git rm -r --cached &amp;lt;filename&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;git rm&lt;/em&gt;&lt;/strong&gt;: the command that lets us remove tracked changes.&lt;/li&gt;
@@ -684,7 +685,7 @@ Ankur
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rm"&gt;git-rm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -695,7 +696,7 @@ Ankur
       <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
       <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;On building a project created with Unity 2021.3 in Rider, you get a language version error which looks similar to&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-lsl hljs"&gt;Invalid option '&lt;span class="hljs-number"&gt;9.0&lt;/span&gt;' for /langversion; must be ISO&lt;span class="hljs-number"&gt;-1&lt;/span&gt;, ISO&lt;span class="hljs-number"&gt;-2&lt;/span&gt;, &lt;span class="hljs-number"&gt;3&lt;/span&gt;, &lt;span class="hljs-number"&gt;4&lt;/span&gt;, &lt;span class="hljs-number"&gt;5&lt;/span&gt; or Default
+&lt;pre&gt;&lt;code&gt;Invalid option '9.0' for /langversion; must be ISO-1, ISO-2, 3, 4, 5 or Default
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;However, you don't see any errors when building inside the unity editor.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
@@ -715,7 +716,7 @@ Ankur
       <description>In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify</description>
       <guid>https://www.ankursheel.com/blog/host-compressed-unity-webgl-game-on-netlify</guid>
       <pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;hr&gt;
+      <content:encoded>&lt;hr /&gt;
 &lt;p&gt;When you deploy a WebGL build for a Unity game, you can define the compression format to Brotli(or gzip).&lt;/p&gt;
 &lt;p&gt;If you deploy this compressed unity game to Netlify and try to run it, you will see an error similar to&lt;/p&gt;
 &lt;blockquote&gt;
@@ -737,7 +738,7 @@ Ankur
 &lt;/ul&gt;
 &lt;p&gt;You need to set the &lt;strong&gt;Content-Encoding&lt;/strong&gt; header for each file extension to &lt;strong&gt;br&lt;/strong&gt; so that the browser knows how to decompress the files.&lt;/p&gt;
 &lt;p&gt;You can do this by creating a &lt;strong&gt;netlify.toml&lt;/strong&gt; file at the root if you don't have one already and adding the following snippet to it.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-toml hljs"&gt;[[headers]]
+&lt;pre&gt;&lt;code class="language-toml"&gt;[[headers]]
   for = &amp;quot;/Build/*.data.br&amp;quot;
   [headers.values]
     Content-Encoding = &amp;quot;br&amp;quot;
@@ -781,7 +782,7 @@ Ankur
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding"&gt;Content-Encoding&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type"&gt;Content-Type&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -790,8 +791,8 @@ Ankur
       <description>If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?</description>
       <guid>https://www.ankursheel.com/blog/serializing-enums-strings-net-core</guid>
       <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;enum&lt;/span&gt; Seasons
+      <content:encoded>&lt;p&gt;If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public enum Seasons
 {
     Unknown,
     Spring,
@@ -800,15 +801,15 @@ Ankur
     Summer
 }
 
-&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; seasons = Enum.GetValues&amp;lt;Seasons&amp;gt;().ToList();
+var seasons = Enum.GetValues&amp;lt;Seasons&amp;gt;().ToList();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When you serialize the list of seasons using the serialize method, i.e. &lt;code&gt;JsonSerializer.Serialize(seasons)&lt;/code&gt;, it gives an output of &lt;code&gt;[0, 1, 2, 3, 4]&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;As you can see, this is not very readable and almost meaningless unless you look at the code.&lt;/p&gt;
 &lt;p&gt;To overcome this, you can specify a built-in converter to do the conversion to strings and pass it into a &lt;code&gt;JsonSerializerOptions&lt;/code&gt; object.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; SerializerOptions = &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; JsonSerializerOptions
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var SerializerOptions = new JsonSerializerOptions
     {
-        PropertyNameCaseInsensitive = &lt;span class="hljs-literal"&gt;true&lt;/span&gt;,
-        Converters = { &lt;span class="hljs-keyword"&gt;new&lt;/span&gt; JsonStringEnumConverter() }
+        PropertyNameCaseInsensitive = true,
+        Converters = { new JsonStringEnumConverter() }
     };
     
 JsonSerializer.Serialize(seasons, SerializerOptions);
@@ -816,12 +817,12 @@ JsonSerializer.Serialize(seasons, SerializerOptions);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This will give an output of &lt;code&gt;[&amp;quot;Unknown&amp;quot;, &amp;quot;Spring&amp;quot;, &amp;quot;Winter&amp;quot;, &amp;quot;Autumn&amp;quot;, &amp;quot;Summer&amp;quot;]&lt;/code&gt; which is much more readable.&lt;/p&gt;
 &lt;p&gt;You can use the same converter for deserializing the enum.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; seasons = JsonSerializer.Deserialize&amp;lt;T&amp;gt;(json, SerializerOptions);
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var seasons = JsonSerializer.Deserialize&amp;lt;T&amp;gt;(json, SerializerOptions);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This gives an output of &lt;code&gt;[Seasons.Unknown, Seasons.Spring, Seasons.Winter, Seasons.Autumn, Seasons.Summer]&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Using the built-in &lt;code&gt;JsonStringEnumConverter&lt;/code&gt;, we can get a more readable output in our JSON.&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -830,34 +831,34 @@ JsonSerializer.Serialize(seasons, SerializerOptions);
       <description>Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag.</description>
       <guid>https://www.ankursheel.com/blog/set-all-bits-enum-flag-c</guid>
       <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;In C#, you can use the [Flags] attribute to create an enum type as bit flags, allowing you to use Bitwise operations.&lt;/p&gt;
+      <content:encoded>&lt;p&gt;In C#, you can use the [Flags] attribute to create an enum type as bit flags, allowing you to use Bitwise operations.&lt;/p&gt;
 &lt;p&gt;Let's take an example of Seasons&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;
 [Flags]
-&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;enum&lt;/span&gt; Seasons
+public enum Seasons
 {
-    None = &lt;span class="hljs-number"&gt;0&lt;/span&gt;,
-    Spring = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;0&lt;/span&gt;,
-    Winter = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;1&lt;/span&gt;,
-    Autumn = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;2&lt;/span&gt;,
-    Summer = &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class="hljs-number"&gt;3&lt;/span&gt;
+    None = 0,
+    Spring = 1 &amp;lt;&amp;lt; 0,
+    Winter = 1 &amp;lt;&amp;lt; 1,
+    Autumn = 1 &amp;lt;&amp;lt; 2,
+    Summer = 1 &amp;lt;&amp;lt; 3
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum by manually combining all the bits yourself.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;[Flags]
-&lt;span class="hljs-keyword"&gt;public&lt;/span&gt; &lt;span class="hljs-keyword"&gt;enum&lt;/span&gt; Seasons
+&lt;pre&gt;&lt;code class="language-csharp"&gt;[Flags]
+public enum Seasons
 {
-    ... &lt;span class="hljs-comment"&gt;// omitted for brevity&lt;/span&gt;
+    ... // omitted for brevity
     All = Spring | Winter | Autumn | Summer
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;But, this has a small problem. Every time we add a new value to the enum, we must update the &lt;code&gt;All&lt;/code&gt; value.&lt;/p&gt;
 &lt;p&gt;Here is a simple trick to get a variable with all the bits set.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt; &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; AllSeasons = (Seasons)Enum.GetValues&amp;lt;Seasons&amp;gt;().Cast&amp;lt;&lt;span class="hljs-keyword"&gt;int&lt;/span&gt;&amp;gt;().Sum();
+&lt;pre&gt;&lt;code class="language-csharp"&gt; var AllSeasons = (Seasons)Enum.GetValues&amp;lt;Seasons&amp;gt;().Cast&amp;lt;int&amp;gt;().Sum();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let's see what's happening in the above snippet.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Enum.GetValues&lt;mydays&gt;()&lt;/mydays&gt;&lt;/strong&gt; returns an array of the enums values.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cast&lt;int&gt;&lt;/int&gt;&lt;/strong&gt; cast the elements of the array to its int values. &lt;em&gt;Remember that the underlying type of an enum is int.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enum.GetValues&lt;MyDays&gt;()&lt;/strong&gt; returns an array of the enums values.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cast&lt;int&gt;&lt;/strong&gt; cast the elements of the array to its int values. &lt;em&gt;Remember that the underlying type of an enum is int.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sum&lt;/strong&gt; computes the sum of all the values in the collection.&lt;/p&gt;
 &lt;p&gt;We then cast it back to &lt;em&gt;Seasons&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
@@ -868,7 +869,7 @@ JsonSerializer.Serialize(seasons, SerializerOptions);
 &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.cast?view=net-6.0"&gt;Cast&amp;lt;&amp;gt; method&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sum?view=net-6.0"&gt;Sum method&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -877,7 +878,7 @@ JsonSerializer.Serialize(seasons, SerializerOptions);
       <description>There is no way to replace just whole words using string.Replace. Let's see how we can replace whole words in string using Regex</description>
       <guid>https://www.ankursheel.com/blog/replace-word-string-csharp</guid>
       <pubDate>Wed, 30 Mar 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Sometimes you want to replace whole words from a string in C#. But &lt;code&gt;string.Replace&lt;/code&gt; in C# replaces partial matches.&lt;/p&gt;
 &lt;p&gt;For example,&lt;/p&gt;
 &lt;p&gt;Let's assume that the string is &amp;quot;Test testing test tester&amp;quot;, and we want to replace the word &lt;em&gt;test&lt;/em&gt; with &lt;em&gt;text&lt;/em&gt;.&lt;/p&gt;
@@ -885,10 +886,10 @@ JsonSerializer.Serialize(seasons, SerializerOptions);
 text tester&amp;quot;&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;You can use &lt;code&gt;Regex.Replace&lt;/code&gt; to replace a whole word.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;private&lt;/span&gt; &lt;span class="hljs-keyword"&gt;static&lt;/span&gt; &lt;span class="hljs-keyword"&gt;string&lt;/span&gt; &lt;span class="hljs-title"&gt;ReplaceWholeWord&lt;/span&gt;(&lt;span class="hljs-params"&gt;&lt;span class="hljs-keyword"&gt;string&lt;/span&gt; input, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt; wordToReplace, &lt;span class="hljs-keyword"&gt;string&lt;/span&gt; replacementWord&lt;/span&gt;)
-&lt;/span&gt;{
-    &lt;span class="hljs-keyword"&gt;var&lt;/span&gt; pattern = $&amp;quot;\\b{wordToReplace}\\b&amp;quot;;
-    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; Regex.Replace(input, pattern, replacementWord, RegexOptions.IgnoreCase);
+&lt;pre&gt;&lt;code class="language-csharp"&gt;private static string ReplaceWholeWord(string input, string wordToReplace, string replacementWord)
+{
+    var pattern = $&amp;quot;\\b{wordToReplace}\\b&amp;quot;;
+    return Regex.Replace(input, pattern, replacementWord, RegexOptions.IgnoreCase);
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;There are a few things to note here.&lt;/p&gt;
@@ -897,7 +898,7 @@ text tester&amp;quot;&lt;/p&gt;
 &lt;li&gt;As the name suggests, passing in &lt;code&gt;RegexOptions.IgnoreCase&lt;/code&gt; for the options makes it case-insensitive.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Now we can use it like&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp hljs"&gt;&lt;span class="hljs-keyword"&gt;var&lt;/span&gt; replacedString = ReplaceWholeWord(&amp;quot;Test testing test tester&amp;quot;, &amp;quot;test&amp;quot;, &amp;quot;text&amp;quot;);
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var replacedString = ReplaceWholeWord(&amp;quot;Test testing test tester&amp;quot;, &amp;quot;test&amp;quot;, &amp;quot;text&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
@@ -906,7 +907,7 @@ text tester&amp;quot;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id="thanks"&gt;Thanks&lt;/h3&gt;
 &lt;p&gt;Thanks Avery Stephen for pointing out a typo in the original post&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
@@ -915,27 +916,27 @@ text tester&amp;quot;&lt;/p&gt;
       <description>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically</description>
       <guid>https://www.ankursheel.com/blog/programmatically-remove-service-worker</guid>
       <pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;To remove a service worker entirely, you can replace the code with code to unregister the service worker.
 Replace the following snippets in the service worker file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-javascript hljs"&gt;self.addEventListener(&lt;span class="hljs-string"&gt;'install'&lt;/span&gt;, &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;e&lt;/span&gt;) &lt;/span&gt;{
+&lt;pre&gt;&lt;code class="language-javascript"&gt;self.addEventListener('install', function (e) {
     self.skipWaiting();
 });
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The install event is triggered when the browser sees the service worker for the first time.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;skipWaiting()&lt;/code&gt; method tells the service worker to skip the waiting state and move directly to activate (once it has been installed). Otherwise, the service worker will become active once the currently active service worker is released and becomes redundant.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-javascript hljs"&gt;
-self.addEventListener(&lt;span class="hljs-string"&gt;'activate'&lt;/span&gt;, &lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;e&lt;/span&gt;) &lt;/span&gt;{
-    &lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(&lt;span class="hljs-string"&gt;`Unregistering service worker`&lt;/span&gt;)
+&lt;pre&gt;&lt;code class="language-javascript"&gt;
+self.addEventListener('activate', function (e) {
+    console.log(`Unregistering service worker`)
     self.registration.unregister()
-        .then(&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;&lt;/span&gt;) &lt;/span&gt;{
-            &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; self.clients.matchAll();
+        .then(function () {
+            return self.clients.matchAll();
         })
-        .then(&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;function&lt;/span&gt; (&lt;span class="hljs-params"&gt;clients&lt;/span&gt;) &lt;/span&gt;{
+        .then(function (clients) {
             clients.forEach(client =&amp;gt; {
-                &lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(&lt;span class="hljs-string"&gt;`Navigating &lt;span class="hljs-subst"&gt;${client.url}&lt;/span&gt;`&lt;/span&gt;)
+                console.log(`Navigating ${client.url}`)
                 client.navigate(client.url)
             })
         });
@@ -949,7 +950,7 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/NekR/self-destroying-sw"&gt;Self-destroying ServiceWorker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/body&gt;&lt;/html&gt;</content:encoded>
+</content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
