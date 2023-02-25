@@ -106,7 +106,7 @@
     </div>
 </div>
 
-<p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the original version <a href="https://firstaml.dev/blog/how-we-made-our-code-re-views-stress-free">here</a>.</em></p>
+<p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the <a href="https://firstaml.dev/blog/how-we-made-our-code-reviews-stress-free">original version here</a></em>.</p>
 <p>Code reviews can be stressful for both parties. The person being reviewed puts their code for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.</p>
 <p>There is a lot of advice on the interwebs about conducting effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.</p>
 <p>However, computers are still not good at some things, like suggesting good variable names. We can lose out on some good suggestions by only talking about blockers in a code review. It's a classic case of throwing out the baby with the bathwater.</p>
