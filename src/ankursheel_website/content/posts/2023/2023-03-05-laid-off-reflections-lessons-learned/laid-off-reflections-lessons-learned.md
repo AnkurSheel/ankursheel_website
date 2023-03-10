@@ -21,6 +21,11 @@ Having gone through this multiple times (for different reasons), I can say it's 
 
 Given the current climate, I would like this post to normalise discussing layoffs and hopefully make people feel less alone.
 
+## A bit of background
+
+I am not in a country with at-will employment(like the USA), so it's not easy to fire people unless they indulge in illegal activities. Even if you want to fire someone for performance reasons, you have to put them on a PIP and give them a few months to get their performance back to a satisfactory level.
+
+That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave. There was no issue with my performance, but with the decision to announce layoffs, they found an easy way to get me to leave.
 
 ## Thoughts about the given reason for laying me off
 
@@ -28,19 +33,19 @@ The official reason for disestablishing my role was that the company had too man
 
 Although this reasoning might have a grain of truth, it doesn't make sense to me.
 
-- The engineering team retained multiple (backend) engineers who were more senior to me.
+- The engineering team retained multiple (backend) engineers who were more senior to me and had a higher compensation.
 - They also retained others with different titles who were supposed to be getting the same compensation as me.
 
 It was also not a problem with my work ethic or performance, given that I had met with my lead to discuss the upcoming performance review, and no concerns were raised.
 
-If the company wanted to keep me on, they could have allowed me to work in an area where they needed more engineers. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk. They could also have asked me(or others) to work reduced hours. 
+If the company wanted to keep me on, they could have allowed me to work in an area where they needed more engineers. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk. They could also have asked me(or others) to work reduced hours.
 
 I had written a lot of the backend code. I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.
 
 _Now that I have the benefit of looking back from the future, this reasoning makes even less sense to me because_
 
 - _Less than a month after the layoffs, I saw posts on LinkedIn about some people getting promoted._
-- _Around 3 months after the layoffs, I saw posts on LinkedIn hiring for multiple roles, including engineers and some others getting promoted._
+- _Around 3 months after the layoffs, I saw posts on LinkedIn hiring for multiple roles, including engineers and others getting promoted._
 
 ## What I think was the actual reason
 
@@ -56,8 +61,6 @@ Leadership might have been threatened by my discussions in internal forums aroun
 
 There is no good time to announce layoffs, but doing so just before mid-year reviews was not great. I was also a few weeks away from vesting another 25% of my ESOPs, which worsened the timing.
 
-_In hindsight, the saving grace with the timing was that it was before Big Tech started doing layoffs and other companies started putting a hiring freeze in place._
-
 I was surprised that the company continued hiring and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.
 
 I wish, in this regard, they had been more like Apple (who, at the time of publishing) have not resorted to layoffs because [they did not overhire](https://blog.pragmaticengineer.com/apple-job-cuts-tide/). Moreover, [CEO Tim Cook took a pay cut of 40%](https://www.bbc.com/news/business-64258289) to help weather the economic climate.
@@ -65,7 +68,7 @@ I wish, in this regard, they had been more like Apple (who, at the time of publi
 ### Relationships with co-workers
 
 > While you don't have to be everything to everyone in your network, it's human decency 101 to reach out to those you spent 40 hours a week with
-> 
+>
 > ""Scarlett McCarthy""
 
 This one hurt the most.
@@ -78,13 +81,15 @@ But in the case of layoffs, all of that vanishes, and you feel like a social par
 
 Some colleagues I thought would reach out didn't. On the flip side, some people I didn't expect reached out. I want to believe that it's not because the relationship did not matter but because it makes for an awkward conversation.
 
-I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them and that I could take with me for the future would have been appreciated and made the experience less painful.
+If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.
+
+I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them would have been appreciated. Anything I could take with me for the future would have made the experience less painful.
 
 ## Light at the end of the tunnel
 
 Everything worked out for me in the end.
 
-I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the options I was supposed to receive (that year).
+I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the options just a few weeks short of vesting.
 
 I landed a job almost immediately but took a month to unwind before starting the new position. _Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
 
@@ -103,13 +108,13 @@ Nearly all the companies I had worked with previously reached out to see if I wa
 
 I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up. At all companies I have worked at, I have always chosen to stand up and speak out when I have felt that something is wrong.
 
-In most cases, it has worked out well. For example, at a different company, I advocated for allowing men to wear shorts (at least in the scorching summers) even though I almost always came in in jeans. In another I asked for a one-day-a-week WFH policy.
+In most cases, it has worked out well. For example, at a different company, I advocated for allowing men to wear shorts (at least in the scorching summers) even though I almost always came in in jeans. In another, I asked for a one-day-a-week WFH policy.
 
 People have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.
 
 _If you want someone else to tell you why this is a good thing, watch [Why your business needs dissenters by Andrew Millar](https://www.youtube.com/watch?v=dGfcc4Np_Sc)._
 
-That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave. And even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me. However, with the announcement of layoffs, they were able to find an easy way to get me to leave.
+Even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me.
 
 The silver lining of all this is that it further shaped my perspective and has informed the [questions I'm asking companies during the interview process](https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list).
 
