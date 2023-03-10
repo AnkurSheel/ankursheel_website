@@ -73,7 +73,7 @@ I wish some more of my colleagues had asked how I was doing and if I wanted to c
 
 Everything worked out for me in the end.
 
-I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the options just a few weeks short of vesting.
+I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the options that were about to vest.
 
 I landed a job almost immediately but took a month to unwind before starting the new position. _Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
 
