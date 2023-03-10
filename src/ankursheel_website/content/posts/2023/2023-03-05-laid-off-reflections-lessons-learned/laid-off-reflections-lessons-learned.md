@@ -23,9 +23,9 @@ Given the current climate, I would like this post to normalise discussing layoff
 
 ## A bit of background
 
-I am not in a country with at-will employment(like the USA), so it's not easy to fire people unless they indulge in illegal activities. Even if you want to fire someone for performance reasons, you have to put them on a PIP and give them a few months to get their performance back to a satisfactory level.
+I am not in a country with at-will employment(like the USA), so it's not easy to fire people here unless its for serious misconduct. Even if you want to fire someone for performance reasons, you have to put them on a PIP(Performance Improvement Plan) and give them a few months to get their performance back to a satisfactory level.
 
-That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave. There was no issue with my performance, but with the decision to announce layoffs, they found an easy way to get me to leave.
+That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave.
 
 ## Thoughts about the reason for laying me off
 
@@ -98,7 +98,7 @@ People have repeatedly told me they appreciated having someone ask questions and
 
 _If you want someone else to tell you why this is a good thing, watch [Why your business needs dissenters by Andrew Millar](https://www.youtube.com/watch?v=dGfcc4Np_Sc)._
 
-Even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me.
+Even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me. Since, there was no issue with my performance, with the decision to announce layoffs, they found an easy way to get me to leave.
 
 The silver lining of all this is that it further shaped my perspective and has informed the [questions I'm asking companies during the interview process](https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list).
 
