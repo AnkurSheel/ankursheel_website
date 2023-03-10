@@ -27,27 +27,11 @@ I am not in a country with at-will employment(like the USA), so it's not easy to
 
 That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave. There was no issue with my performance, but with the decision to announce layoffs, they found an easy way to get me to leave.
 
-## Thoughts about the given reason for laying me off
+## Thoughts about the reason for laying me off
 
 The official reason for disestablishing my role was that the company had too many backend engineers. I was "too senior" (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.
 
-Although this reasoning might have a grain of truth, it doesn't make sense to me.
-
-- The engineering team retained multiple (backend) engineers who were more senior to me and had a higher compensation.
-- They also retained others with different titles who were supposed to be getting the same compensation as me.
-
-It was also not a problem with my work ethic or performance, given that I had met with my lead to discuss the upcoming performance review, and no concerns were raised.
-
-If the company wanted to keep me on, they could have allowed me to work in an area where they needed more engineers. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk. They could also have asked me(or others) to work reduced hours.
-
-I had written a lot of the backend code. I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.
-
-_Now that I have the benefit of looking back from the future, this reasoning makes even less sense to me because_
-
-- _Less than a month after the layoffs, I saw posts on LinkedIn about some people getting promoted._
-- _Around 3 months after the layoffs, I saw posts on LinkedIn hiring for multiple roles, including engineers and others getting promoted._
-
-## What I think was the actual reason
+Although this might be true, it doesn't make sense to me for various reasons.
 
 > It was the easiest way to silence what I think they saw as disruptive dissent
 
