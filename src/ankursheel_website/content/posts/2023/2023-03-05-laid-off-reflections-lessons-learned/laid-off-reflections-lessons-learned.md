@@ -23,10 +23,6 @@ Given the current climate, I would like this post to normalise discussing layoff
 
 ## What would I change about my layoff experience
 
-_I am not in a country with at-will employment(like the USA), so it's not easy to fire people here unless it's for serious misconduct. Even with layoffs there is a consultation period with the impacted people before (officially) finalising the decision._
-
-That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave.
-
 There is no good time to announce layoffs, but doing so just before mid-year reviews was not great. I was also a few weeks away from vesting another 25% of my ESOPs, which worsened the timing. 
 
 I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.
@@ -55,6 +51,8 @@ If you are on the other side and know someone who has been laid off, don't be a 
 
 ### Thoughts about the reason for laying me off
 
+That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave.
+
 The official reason for disestablishing my role was that the company had too many backend engineers. I was "too senior" (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.
 
 Although this might be true, it doesn't make sense to me for various reasons.
@@ -63,9 +61,11 @@ Although this might be true, it doesn't make sense to me for various reasons.
 
 Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
 
-I feel that as the company grew, leadership became increasingly uncomfortable with my standing up for my principles. It's possible that advocating for pay transparency and disagreeing with mandatory in-office days, etc., is what put the final nail in the coffin.
+I feel that as the company grew, leadership became increasingly uncomfortable with my standing up for my principles. Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out. It's possible that advocating for things like pay transparency and disagreeing with mandatory in-office days, etc., is what put the final nail in the coffin.
 
-Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out.
+Since there was no issue with my performance, with the decision to announce layoffs, they found an easy way to get me to leave.
+
+_I am not in a country with at-will employment(like the USA), so it's not easy to fire people here unless it's for serious misconduct. Even with layoffs there is a consultation period with the impacted people before (officially) finalising the decision._
 
 ## It worked out in the end
 
@@ -90,13 +90,9 @@ Nearly all the companies I had worked with previously reached out to see if I wa
 
 I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up. At all companies I have worked at, I have always chosen to stand up and speak out when I have felt the need to.
 
-In most companies, it has worked out well. In some others, not so much.
-
-But, the commonality in both of these is that people have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.
+In most companies, it has worked out well. In some others, not so much. Regardless of how it went for me, people have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.
 
 _If you want someone else to tell you why this is a good thing, watch [Why your business needs dissenters by Andrew Millar](https://www.youtube.com/watch?v=dGfcc4Np_Sc)._
-
-Even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me. Since there was no issue with my performance, with the decision to announce layoffs, they found an easy way to get me to leave.
 
 The silver lining of all this is that it further shaped my perspective and has informed the [questions I'm asking companies during the interview process](https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list).
 
