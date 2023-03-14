@@ -13,7 +13,7 @@ tags:
 _**I initially started writing to process my feelings about getting laid off. When I wrote this, I didn't know if I would ever publish it.
 I was inspired to clean it up and post it after reading [The Future of Quality at Instrument was 35 Days Long](https://angelariggs.github.io/articles/thirty-five-days). More importantly, some of my friends have been laid off recently, and after chatting with them, I thought this could be helpful to others. And enough time has passed that I am comfortable publishing this, even though there might still be repercussions.**_
 
-Unfortunately, getting laid off can feel like a personal badge of failure. You might see an open-to-work badge on LinkedIn or hear about the new job someone is starting, but no one talks about their feelings after getting laid off.
+Unfortunately, getting laid off can feel like a personal badge of failure. You might see an open-to-work badge on LinkedIn or hear about the new job someone is starting, but no one talks about their feelings after getting laid off, especially if they feel they were performing satisfactorily.
 
 ![A cartoon of a sad person with a cardboard box](./cover.png)
 
@@ -21,31 +21,15 @@ Having gone through this multiple times (for different reasons), I can say it's 
 
 Given the current climate, I would like this post to normalise discussing layoffs and hopefully make people feel less alone.
 
-## A bit of background
+## What would I change about my layoff experience
 
-I am not in a country with at-will employment(like the USA), so it's not easy to fire people here unless its for serious misconduct. Even if you want to fire someone for performance reasons, you have to put them on a PIP(Performance Improvement Plan) and give them a few months to get their performance back to a satisfactory level.
+_I am not in a country with at-will employment(like the USA), so it's not easy to fire people here unless it's for serious misconduct. Even with layoffs there is a consultation period with the impacted people before (officially) finalising the decision._
 
 That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave.
 
-## Thoughts about the reason for laying me off
+There is no good time to announce layoffs, but doing so just before mid-year reviews was not great. I was also a few weeks away from vesting another 25% of my ESOPs, which worsened the timing. 
 
-The official reason for disestablishing my role was that the company had too many backend engineers. I was "too senior" (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.
-
-Although this might be true, it doesn't make sense to me for various reasons.
-
-> It was the easiest way to silence what I think they saw as disruptive dissent
-
-Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
-
-I feel that as the company grew, leadership became increasingly uncomfortable with my standing up for my principles. It's possible that advocating for pay transparency and disagreeing with mandatory in-office days, etc., is what put the final nail in the coffin.
-
-Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out.
-
-## What would I change about my layoff experience
-
-There is no good time to announce layoffs, but doing so just before mid-year reviews was not great. I was also a few weeks away from vesting another 25% of my ESOPs, which worsened the timing.
-
-I was surprised that the company continued hiring and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.
+I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.
 
 I wish, in this regard, they had been more like Apple (who, at the time of publishing) have not resorted to layoffs because [they did not overhire](https://blog.pragmaticengineer.com/apple-job-cuts-tide/). Moreover, [CEO Tim Cook took a pay cut of 40%](https://www.bbc.com/news/business-64258289) to help weather the economic climate.
 
@@ -65,15 +49,29 @@ But in the case of layoffs, all of that vanishes, and you feel like a social par
 
 Some colleagues I thought would reach out didn't. On the flip side, some people I didn't expect reached out. I want to believe that it's not because the relationship did not matter but because it makes for an awkward conversation.
 
-If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.
-
 I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them would have been appreciated. Anything I could take with me for the future would have made the experience less painful.
 
-## Light at the end of the tunnel
+If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.
+
+### Thoughts about the reason for laying me off
+
+The official reason for disestablishing my role was that the company had too many backend engineers. I was "too senior" (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.
+
+Although this might be true, it doesn't make sense to me for various reasons.
+
+> It was the easiest way to silence what I think they saw as disruptive dissent
+
+Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
+
+I feel that as the company grew, leadership became increasingly uncomfortable with my standing up for my principles. It's possible that advocating for pay transparency and disagreeing with mandatory in-office days, etc., is what put the final nail in the coffin.
+
+Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out.
+
+## It worked out in the end
 
 Everything worked out for me in the end.
 
-I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the options that were about to vest.
+I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options. The company also allowed us to keep access to slack/email so that we could say our goodbyes.
 
 I landed a job almost immediately but took a month to unwind before starting the new position. _Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
 
@@ -90,15 +88,15 @@ Nearly all the companies I had worked with previously reached out to see if I wa
 
 ## Final Thoughts
 
-I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up. At all companies I have worked at, I have always chosen to stand up and speak out when I have felt that something is wrong.
+I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up. At all companies I have worked at, I have always chosen to stand up and speak out when I have felt the need to.
 
-In most cases, it has worked out well. For example, at a different company, I advocated for allowing men to wear shorts (at least in the scorching summers) even though I almost always came in in jeans. In another, I asked for a one-day-a-week WFH policy.
+In most companies, it has worked out well. In some others, not so much.
 
-People have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.
+But, the commonality in both of these is that people have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.
 
 _If you want someone else to tell you why this is a good thing, watch [Why your business needs dissenters by Andrew Millar](https://www.youtube.com/watch?v=dGfcc4Np_Sc)._
 
-Even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me. Since, there was no issue with my performance, with the decision to announce layoffs, they found an easy way to get me to leave.
+Even though I know that employment is a business transaction, I always thought that being with the company as an early engineer, providing value and trying to do the right thing would protect me. Since there was no issue with my performance, with the decision to announce layoffs, they found an easy way to get me to leave.
 
 The silver lining of all this is that it further shaped my perspective and has informed the [questions I'm asking companies during the interview process](https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list).
 
