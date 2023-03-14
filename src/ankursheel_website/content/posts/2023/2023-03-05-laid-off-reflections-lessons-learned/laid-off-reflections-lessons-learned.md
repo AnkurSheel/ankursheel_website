@@ -71,7 +71,7 @@ Leadership might have been threatened by my discussions in internal forums aroun
 
 Everything worked out for me in the end.
 
-I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options. The company also allowed us to keep access to slack/email so that we could say our goodbyes.
+I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options. The company also allowed us to keep access to slack/email for a few days so that we could say our goodbyes.
 
 I landed a job almost immediately but took a month to unwind before starting the new position. _Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
 
