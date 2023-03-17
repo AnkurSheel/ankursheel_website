@@ -57,6 +57,8 @@ The official reason for disestablishing my role was that the company had too man
 
 Although this might be true, it doesn't make sense to me for various reasons.
 
+If the company really wanted to keep me on, they could have allowed me to work in an area where they needed more engineers or explored the possibility of working reduced hours/pay. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk. I had written a lot of the backend code. I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.
+
 > It was the easiest way to silence what I think they saw as disruptive dissent
 
 Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
@@ -77,7 +79,7 @@ _Previously, the time for getting a new job has varied from 1 to 6 months, so th
 
 Nearly all the companies I had worked with previously, reached out to see if I wanted to come back. This was a great signal that I was doing something right when I was there. I had also been [interviewing when I didn't need a job](https://www.ankursheel.com/blog/interview-happy-job), so I could reinitiate talks with some of those companies.
 
-## Lessons Learned
+## Takeaways from this experience
 
 - Have a layoff fund, so you have some runway and can ensure the next job is not just a rebound.
 - Every couple of months, update your resume, so you are not scrambling to remember what you did in case of an unplanned exit.
