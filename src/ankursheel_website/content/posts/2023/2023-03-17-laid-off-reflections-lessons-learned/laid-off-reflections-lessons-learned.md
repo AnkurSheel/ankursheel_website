@@ -17,13 +17,13 @@ Unfortunately, getting laid off can feel like a personal badge of failure. You m
 
 ![A cartoon of a sad person with a cardboard box](./cover.png)
 
-Having gone through this multiple times (for different reasons), I can say it's been traumatic every time. Every time I felt like I was the only one struggling when I should be able to move on like the others. And to be honest, that's the face I showed in public every time.
+Having gone through layoffs multiple times, I can say it's been traumatic every time. Every time I felt like I was the only one struggling when I should be able to move on like the others. And to be honest, that's the face I showed in public every time.
 
-Given the current climate, I would like this post to normalise discussing layoffs and hopefully make people feel less alone.
+Given the current climate, I would like this post to make people feel less alone after getting laid off.
 
 ## What would I change about my layoff experience
 
-There is no good time to announce layoffs, but doing so just before mid-year reviews was not great. I was also a few weeks away from vesting another 25% of my ESOPs, which worsened the timing. 
+There is no good time to announce layoffs. But getting laid off just before mid-year reviews was not ideal. I was also a few weeks away from vesting another 25% of my ESOPs, which made the timing worse.
 
 I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.
 
@@ -61,23 +61,23 @@ Although this might be true, it doesn't make sense to me for various reasons.
 
 Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
 
-I feel that as the company grew, leadership became increasingly uncomfortable with my standing up for my principles. Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out. It's possible that advocating for things like pay transparency and disagreeing with mandatory in-office days, etc., is what put the final nail in the coffin.
+I feel that as new leaders joined the company, they became increasingly uncomfortable with my standing up for my principles. Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, advocating for pay transparency etc., is what put the final nail in the coffin.
 
-Since there was no issue with my performance, with the decision to announce layoffs, they found an easy way to get me to leave.
-
-_I am not in a country with at-will employment(like the USA), so it's not easy to fire people here unless it's for serious misconduct. Even with layoffs there is a consultation period with the impacted people before (officially) finalising the decision._
+Since I am not in a country with at-will employment and there was no issue with my performance, I feel that with the decision to announce layoffs, my detractors found an easy way to force me to leave.
 
 ## It worked out in the end
 
 Everything worked out for me in the end.
 
-I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options. The company also allowed us to keep access to slack/email for a few days so that we could say our goodbyes.
+I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options.
 
-I landed a job almost immediately but took a month to unwind before starting the new position. _Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
+I took a few days to process my feelings before starting the job hunt. Luckily, I landed a job almost immediately once I started looking but I took a month to unwind before starting the new position.
 
-Nearly all the companies I had worked with previously reached out to see if I wanted to come back, which signals that I was doing something right when I was there. I had also been [interviewing when I didn't need a job](https://www.ankursheel.com/blog/interview-happy-job), so I could reinitiate talks with some of those companies.
+_Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
 
-## Some Unsolicited Advice
+Nearly all the companies I had worked with previously, reached out to see if I wanted to come back. This was a great signal that I was doing something right when I was there. I had also been [interviewing when I didn't need a job](https://www.ankursheel.com/blog/interview-happy-job), so I could reinitiate talks with some of those companies.
+
+## Lessons Learned
 
 - Have a layoff fund, so you have some runway and can ensure the next job is not just a rebound.
 - Every couple of months, update your resume, so you are not scrambling to remember what you did in case of an unplanned exit.
@@ -85,6 +85,7 @@ Nearly all the companies I had worked with previously reached out to see if I wa
 - Take some me-time. Give yourself time to process your feelings. This is one of the few times in your life when you get to be alone with your thoughts and can truly unwind. Every time I was laid off, it was a coincidence that I was about to go on a holiday. This enabled me to take a step back and recharge before taking a new job.
 - A job search is a numbers game, so keep applying and don't take the rejection personally. Most importantly, don't stop applying till you sign an offer letter.
 - The company might employ pressure tactics to get you to leave but do not yield. Either negotiate a severance or [talk to a lawyer, or you will most likely get a horrible deal](https://twitter.com/GergelyOrosz/status/1620038048913444866).
+- Finally, remember that you are more than your job title and organisation.
 
 ## Final Thoughts
 
@@ -99,7 +100,5 @@ The silver lining of all this is that it further shaped my perspective and has i
 It's not the first time, and it won't be the last when people are fired/laid off as a silencing tactic. On an even more public scale, look at [what happened at Twitter after the takeover](https://ma.nu/blog/bye-twitter) and [what happened at Apple in 2021](https://twitter.com/JannekeParrish/status/1449066853314224129)
 
 If you were recently laid off, please drop me a note. I might not be able to help, but I know how valuable it is to vent, and I'm happy to lend an ear.
-
-Finally, remember that you are more than your job title and organisation.
 
 Something else you want to know? Ask in the comments.
