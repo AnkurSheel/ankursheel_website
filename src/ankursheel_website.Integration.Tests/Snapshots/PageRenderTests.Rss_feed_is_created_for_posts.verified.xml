@@ -8,6 +8,74 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Laid off: Reflections and Lessons learned</title>
+      <link>https://www.ankursheel.com/blog/laid-off-reflections-lessons-learned</link>
+      <description>Talking about layoffs is essential to support those going through it. Reflections and Lessons learned after getting laid off again</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/laid-off-reflections-lessons-learned/cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/laid-off-reflections-lessons-learned</guid>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;&lt;em&gt;&lt;strong&gt;I initially started writing to process my feelings about getting laid off. When I wrote this, I didn't know if I would ever publish it.
+I was inspired to clean it up and post it after reading &lt;a href="https://angelariggs.github.io/articles/thirty-five-days"&gt;The Future of Quality at Instrument was 35 Days Long&lt;/a&gt;. More importantly, some of my friends have been laid off recently, and after chatting with them, I thought this could be helpful to others. And enough time has passed that I am comfortable publishing this, even though there might still be repercussions.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, getting laid off can feel like a personal badge of failure. You might see an open-to-work badge on LinkedIn or hear about the new job someone is starting, but no one talks about their feelings after getting laid off, especially if they feel they were performing satisfactorily.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/laid-off-reflections-lessons-learned/cover.png" alt="A cartoon of a sad person with a cardboard box"&gt;&lt;/p&gt;
+&lt;p&gt;Having gone through layoffs multiple times, I can say it's been traumatic every time. Every time I felt like I was the only one struggling when I should be able to move on like the others. And to be honest, that's the face I showed in public every time.&lt;/p&gt;
+&lt;p&gt;Given the current climate, I would like this post to make people feel less alone after getting laid off.&lt;/p&gt;
+&lt;h2 id="what-would-i-change-about-my-layoff-experience"&gt;What would I change about my layoff experience&lt;/h2&gt;
+&lt;p&gt;There is no good time to announce layoffs. But getting laid off just before mid-year reviews was not ideal. I was also a few weeks away from vesting another 25% of my ESOPs, which made the timing worse.&lt;/p&gt;
+&lt;p&gt;I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.&lt;/p&gt;
+&lt;p&gt;I wish, in this regard, they had been more like Apple (who, at the time of publishing) have not resorted to layoffs because &lt;a href="https://blog.pragmaticengineer.com/apple-job-cuts-tide/"&gt;they did not overhire&lt;/a&gt;. Moreover, &lt;a href="https://www.bbc.com/news/business-64258289"&gt;CEO Tim Cook took a pay cut of 40%&lt;/a&gt; to help weather the economic climate.&lt;/p&gt;
+&lt;h3 id="relationships-with-co-workers"&gt;Relationships with co-workers&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While you don't have to be everything to everyone in your network, it's human decency 101 to reach out to those you spent 40 hours a week with&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Scarlett McCarthy&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This one hurt the most.&lt;/p&gt;
+&lt;p&gt;It is ironic that when you quit of your own accord, you get a going away present, a card filled with thoughts on how you will be missed and maybe a speech or two extolling your value. You get an exit interview and a place to share your thoughts. Your wins are celebrated.&lt;/p&gt;
+&lt;p&gt;But in the case of layoffs, all of that vanishes, and you feel like a social pariah.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Just because it's uncomfortable to have doesn't mean you should avoid it&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some colleagues I thought would reach out didn't. On the flip side, some people I didn't expect reached out. I want to believe that it's not because the relationship did not matter but because it makes for an awkward conversation.&lt;/p&gt;
+&lt;p&gt;I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them would have been appreciated. Anything I could take with me for the future would have made the experience less painful.&lt;/p&gt;
+&lt;p&gt;If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.&lt;/p&gt;
+&lt;h3 id="thoughts-about-the-reason-for-laying-me-off"&gt;Thoughts about the reason for laying me off&lt;/h3&gt;
+&lt;p&gt;That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave.&lt;/p&gt;
+&lt;p&gt;The official reason for disestablishing my role was that the company had too many backend engineers. I was "too senior" (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.&lt;/p&gt;
+&lt;p&gt;Although this might be true, it doesn't make sense to me for various reasons.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It was the easiest way to silence what I think they saw as disruptive dissent&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.&lt;/p&gt;
+&lt;p&gt;I feel that as new leaders joined the company, they became increasingly uncomfortable with my standing up for my principles. Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, advocating for pay transparency etc., is what put the final nail in the coffin.&lt;/p&gt;
+&lt;p&gt;Since I am not in a country with at-will employment and there was no issue with my performance, I feel that with the decision to announce layoffs, my detractors found an easy way to force me to leave.&lt;/p&gt;
+&lt;h2 id="it-worked-out-in-the-end"&gt;It worked out in the end&lt;/h2&gt;
+&lt;p&gt;Everything worked out for me in the end.&lt;/p&gt;
+&lt;p&gt;I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options.&lt;/p&gt;
+&lt;p&gt;I took a few days to process my feelings before starting the job hunt. Luckily, I landed a job almost immediately once I started looking but I took a month to unwind before starting the new position.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Nearly all the companies I had worked with previously, reached out to see if I wanted to come back. This was a great signal that I was doing something right when I was there. I had also been &lt;a href="https://www.ankursheel.com/blog/interview-happy-job"&gt;interviewing when I didn't need a job&lt;/a&gt;, so I could reinitiate talks with some of those companies.&lt;/p&gt;
+&lt;h2 id="lessons-learned"&gt;Lessons Learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Have a layoff fund, so you have some runway and can ensure the next job is not just a rebound.&lt;/li&gt;
+&lt;li&gt;Every couple of months, update your resume, so you are not scrambling to remember what you did in case of an unplanned exit.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/blog/interview-happy-job"&gt;Keep interviewing even if you are happy in your job&lt;/a&gt; and keep a list of interesting companies. Ask and connect with the interviewers (you resonated with) on LinkedIn.&lt;/li&gt;
+&lt;li&gt;Take some me-time. Give yourself time to process your feelings. This is one of the few times in your life when you get to be alone with your thoughts and can truly unwind. Every time I was laid off, it was a coincidence that I was about to go on a holiday. This enabled me to take a step back and recharge before taking a new job.&lt;/li&gt;
+&lt;li&gt;A job search is a numbers game, so keep applying and don't take the rejection personally. Most importantly, don't stop applying till you sign an offer letter.&lt;/li&gt;
+&lt;li&gt;The company might employ pressure tactics to get you to leave but do not yield. Either negotiate a severance or &lt;a href="https://twitter.com/GergelyOrosz/status/1620038048913444866"&gt;talk to a lawyer, or you will most likely get a horrible deal&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Finally, remember that you are more than your job title and organisation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="final-thoughts"&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up. At all companies I have worked at, I have always chosen to stand up and speak out when I have felt the need to.&lt;/p&gt;
+&lt;p&gt;In most companies, it has worked out well. In some others, not so much. Regardless of how it went for me, people have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want someone else to tell you why this is a good thing, watch &lt;a href="https://www.youtube.com/watch?v=dGfcc4Np_Sc"&gt;Why your business needs dissenters by Andrew Millar&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The silver lining of all this is that it further shaped my perspective and has informed the &lt;a href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list"&gt;questions I'm asking companies during the interview process&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It's not the first time, and it won't be the last when people are fired/laid off as a silencing tactic. On an even more public scale, look at &lt;a href="https://ma.nu/blog/bye-twitter"&gt;what happened at Twitter after the takeover&lt;/a&gt; and &lt;a href="https://twitter.com/JannekeParrish/status/1449066853314224129"&gt;what happened at Apple in 2021&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you were recently laid off, please drop me a note. I might not be able to help, but I know how valuable it is to vent, and I'm happy to lend an ear.&lt;/p&gt;
+&lt;p&gt;Something else you want to know? Ask in the comments.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>How To Disable Buttons In Unity</title>
       <link>https://www.ankursheel.com/blog/disable-buttons-unity</link>
       <description>Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.</description>
@@ -950,126 +1018,6 @@ The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/NekR/self-destroying-sw"&gt;Self-destroying ServiceWorker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Interviewing your interviewers with a must-have and a deal-breaker list</title>
-      <link>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</link>
-      <description>Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation.</description>
-      <guid>https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list</guid>
-      <pubDate>Thu, 06 Oct 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;At the end of most interviews will come the question, &amp;quot;Do you have any questions for us?&amp;quot; Standard advice over the interwebs is that you should always have questions to ask because it will make you look more prepared and leave a good impression. But, there is a much more critical reason to interview your interviewer.&lt;/p&gt;
-&lt;p&gt;I have worked for a few companies in my career. Some of them worked out great, while for others, after a few months of joining, I realized it wasn't a great fit.&lt;/p&gt;
-&lt;p&gt;Joining a company and finding out it isn't a good match never feels great. It can be hard to know if the company we are considering joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.&lt;/p&gt;
-&lt;h2 id="how-to-apply-the-lists-in-an-interview"&gt;How to apply the lists in an interview&lt;/h2&gt;
-&lt;p&gt;Now, it's unlikely that we will be able to walk into a job interview and run through our list of must-haves/deal-breakers like a checklist. After all, we can't just ask our prospective boss if they are a micromanager. But we can look for signals that can help us evaluate them.&lt;/p&gt;
-&lt;p&gt;At this point, you might wonder, how do I do that?&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Make your own list of must-haves and deal-breakers.&lt;/li&gt;
-&lt;li&gt;For each item in the list, write a question.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;em&gt;It's essential to keep the questions conversational and not accusatory. We should also structure the question, so the interviewer has to provide examples.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Keep the list of questions handy, so you can ask questions throughout the interview as they relate to the topic being discussed.&lt;/p&gt;
-&lt;h2 id="my-must-have-list"&gt;My Must-Have List&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A high degree of autonomy and flexibility in managing my time and workload.&lt;/li&gt;
-&lt;li&gt;Open communication among teammates and with management and Human Resources.&lt;/li&gt;
-&lt;li&gt;Ability to choose my workplace tools, including both hardware and software.&lt;/li&gt;
-&lt;li&gt;A clear and defined path toward career advancement (both in skills and compensation)&lt;/li&gt;
-&lt;li&gt;Ability to work on non-work-related tasks for a few hours a week.&lt;/li&gt;
-&lt;li&gt;Opportunity to spend time sharing my ideas on either mine or a company blog.&lt;/li&gt;
-&lt;li&gt;Learning from mistakes / Blameless&lt;/li&gt;
-&lt;li&gt;Inclusive Work environment&lt;/li&gt;
-&lt;li&gt;Equality when it comes to stock options, reviews etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="my-deal-breaker-list"&gt;My Deal Breaker List&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Expected overtime.&lt;/li&gt;
-&lt;li&gt;T-shirts/ Shorts and Sandals are not allowed.&lt;/li&gt;
-&lt;li&gt;Mandatory in-office days/ No remote working.&lt;/li&gt;
-&lt;li&gt;If completely remote, there is no office space or compensation to pay for a shared office space.&lt;/li&gt;
-&lt;li&gt;Mandatory after-hours on-call.&lt;/li&gt;
-&lt;li&gt;Micro-management.&lt;/li&gt;
-&lt;li&gt;Lots of meetings.&lt;/li&gt;
-&lt;li&gt;Following Dogmatic Scrum and story pointing.&lt;/li&gt;
-&lt;li&gt;Long-lived branches.&lt;/li&gt;
-&lt;li&gt;No automated tests / over-reliance on manual QA.&lt;/li&gt;
-&lt;li&gt;No QA / over-reliance on automated tests / only developers testing&lt;/li&gt;
-&lt;li&gt;Hiring mainly seniors / Not many intermediates or juniors.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Note that these items are all about me, my values and what I want. They have very little to do with any particular job or workplace.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="turning-the-list-into-questions"&gt;Turning the list into questions&lt;/h2&gt;
-&lt;p&gt;Now that I have my must-have and deal-breaker lists, it's time to turn them into questions. There might be overlapping questions, so it's best to combine them.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Can you walk me through your development process, from a ticket or task to code on production?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Autonomy and Flexibility, Dogmatic Scrum, Lots of meetings&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you decide what products people work on? How much say do engineers have over what is built and how it's built?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Autonomy and Flexibility&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Do you encourage public discussions, especially for controversial topics and disagreements?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How are disagreements solved - technical disputes and other kinds? What happens when personalities clash?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often does the leadership team discuss turnover percentages and other numbers&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Can programmers use their preferred OS, code editor, and other tools?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Workplace tools&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Do you have a career ladder and skill matrix with parallel IC and management tracks?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Career Advancement&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Do you have a shared compensation matrix?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Career Advancement&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What percentage of people have been promoted internally to leadership positions?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Career Advancement&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What are further opportunities for this role? What is the next career level?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Career Advancement&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you give back to the community? Open Source/ Blog Articles etc.? Is it encouraged?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;:  Ability to work on non-work-related tasks, Share Ideas&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Do you have regular retros? Process/Team and after features?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;:  Learning from mistakes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What does the company do to ensure an inclusive work environment for transgender people, people with disabilities, single parents, and other under-represented folks? How is diversity represented within the team or company? Does HR get input for policies or people programs?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;:  Inclusiveness&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How responsive are people to emails/Slack over the weekends during the day and after 6pm?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Overtime&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What is the on-call schedule?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on call&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often are there emergencies or times when people have to work extra hours?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on-call, Expected overtime&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Are people compensated for being on call? How do you measure the impact on developers?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Mandatory on call&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often are engineers expected to provide status updates on a project?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Autonomy and Flexibility, Micro-management&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Who sets deadlines, and what happens when people fail to meet them?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Autonomy and Flexibility, Micro-management&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often do you have meetings? Are there any scheduled/standing meetings?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Lots of status meetings&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How does this team plan projects and create estimates?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Autonomy and Flexibility, Dogmatic Scrum&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How often is the product released?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Long-lived branches&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What is the median age for which an issue and a subsequent PR will be open?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Long-lived branches&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What does your QA process look like?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: No automated tests&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What is the ratio of junior/intermediate/senior engineers?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Hiring mainly seniors&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you ensure that junior engineers are supported?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Hiring mainly seniors, Learning from mistakes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Does everyone get equity allocation or a part of profit-sharing?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Equality&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Can you give me an example of a mistake you've made here and how it was handled?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication, Learning from mistakes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Has there been a time when the engineering team was on the wrong course?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Open Communication, Learning from mistakes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Does the company collect workplace feedback? Have you ever acted on it?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Learning from mistakes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do performance reviews work? Do engineers review their peers and managers? What do you do in case of a bad review of a manager?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Relates to&lt;/em&gt;: Equality, Career Advancement&lt;/p&gt;
-&lt;h2 id="what-is-an-appropriate-number-of-questions-to-ask"&gt;What is an appropriate number of questions to ask?&lt;/h2&gt;
-&lt;p&gt;This is quite an extensive list. We won't be able to ask all of them in a single interview. Most interviews keep only the last couple of minutes for questions. However, when interviewing for jobs, there are often multiple rounds. I would suggest choosing questions to ask at the different stages. After all, some questions are better answered by a hiring manager, while others are better answered by someone working in a similar role.&lt;/p&gt;
-&lt;p&gt;One thing I have not tried so far but intend to try next time I am interviewing is conducting a &lt;a href="https://blog.pragmaticengineer.com/reverse-interviewing/" target="_blank"&gt;reverse interview&lt;/a&gt; after I have negotiated the offer to get any unanswered questions answered.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;A list of questions based on our must-haves and deal-breakers can give us the confidence to know that we are making the right decision. We can down positions or step away from the interview process where there isn't a great fit. You owe it to yourself to find a place aligned with your values.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Thanks to the &lt;a href="http://bloggingfordevs.com/"&gt;Blogging for Devs community&lt;/a&gt; for providing feedback on this post.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

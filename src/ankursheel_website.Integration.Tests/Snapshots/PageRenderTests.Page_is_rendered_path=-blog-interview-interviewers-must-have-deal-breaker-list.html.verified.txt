@@ -259,10 +259,10 @@
                 <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+                <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
             <li>
-                <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
+                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
     </ul>
 </aside>

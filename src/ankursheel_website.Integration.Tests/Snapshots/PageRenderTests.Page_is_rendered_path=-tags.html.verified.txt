@@ -139,6 +139,9 @@
             <a role="button" href="/tags/wordpress" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordpress (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (7)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/codingame" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Codingame (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -149,9 +152,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/aws" class="capitalize badge text-gray-900 bg-grey-light no-underline"> AWS (6)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>
@@ -178,6 +178,9 @@
             <a role="button" href="/tags/docker" class="capitalize badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (4)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/security" class="capitalize badge text-gray-900 bg-grey-light no-underline"> security (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -197,9 +200,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/finance" class="capitalize badge text-gray-900 bg-grey-light no-underline"> finance (3)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/tailwind" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tailwind (3)</a>
