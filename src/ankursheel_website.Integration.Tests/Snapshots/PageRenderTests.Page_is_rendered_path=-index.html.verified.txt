@@ -92,7 +92,7 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-17">March 17, 2023</time>
+            <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-28">March 28, 2023</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/disable-buttons-unity">How To Disable Buttons In Unity</a> - <time class="prose-sm" datetime="23-02-06">February 06, 2023</time>
