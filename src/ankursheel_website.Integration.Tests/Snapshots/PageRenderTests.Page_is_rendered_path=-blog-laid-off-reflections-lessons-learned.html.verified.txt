@@ -94,9 +94,9 @@
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2023-03-17">March 17, 2023</time></span>
+        <span>Last Updated: <time datetime="2023-03-28">March 28, 2023</time></span>
         <i class="font-bold">
-            Reading Time: 6 min
+            Reading Time: 7 min
         </i>
     </div>
 
@@ -106,14 +106,14 @@
     </div>
 </div>
 
-<p><em><strong>I initially started writing to process my feelings about getting laid off. When I wrote this, I didn't know if I would ever publish it.
-I was inspired to clean it up and post it after reading <a href="https://angelariggs.github.io/articles/thirty-five-days">The Future of Quality at Instrument was 35 Days Long</a>. More importantly, some of my friends have been laid off recently, and after chatting with them, I thought this could be helpful to others. And enough time has passed that I am comfortable publishing this, even though there might still be repercussions.</strong></em></p>
+<p><em>When I wrote this, I didn't think I would ever publish any part of it. It was a way to process my feelings after getting laid off. I was inspired to clean it up and post it after reading <a href="https://angelariggs.github.io/articles/thirty-five-days">The Future of Quality at Instrument was 35 Days Long</a>. And enough time has passed that I am comfortable publishing this, even though there might still be repercussions.</em></p>
+<p><em><strong>Disclaimer: The facts and interpretation are from my point of view.</strong></em></p>
 <p>Unfortunately, getting laid off can feel like a personal badge of failure. You might see an open-to-work badge on LinkedIn or hear about the new job someone is starting, but no one talks about their feelings after getting laid off, especially if they feel they were performing satisfactorily.</p>
 <p><img src="/assets/images/posts/laid-off-reflections-lessons-learned/cover.png" alt="A cartoon of a sad person with a cardboard box" /></p>
 <p>Having gone through layoffs multiple times, I can say it's been traumatic every time. Every time I felt like I was the only one struggling when I should be able to move on like the others. And to be honest, that's the face I showed in public every time.</p>
 <p>Given the current climate, I would like this post to make people feel less alone after getting laid off.</p>
 <h2 id="what-would-i-change-about-my-layoff-experience">What would I change about my layoff experience</h2>
-<p>There is no good time to announce layoffs. But getting laid off just before mid-year reviews was not ideal. I was also a few weeks away from vesting another 25% of my ESOPs, which made the timing worse.</p>
+<p>There is no good time to announce layoffs. But getting laid off just before mid-year reviews was not ideal. I was also a few weeks away from vesting another 25% of my ESOPs, which worsened the timing.</p>
 <p>I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.</p>
 <p>I wish, in this regard, they had been more like Apple (who, at the time of publishing) have not resorted to layoffs because <a href="https://blog.pragmaticengineer.com/apple-job-cuts-tide/">they did not overhire</a>. Moreover, <a href="https://www.bbc.com/news/business-64258289">CEO Tim Cook took a pay cut of 40%</a> to help weather the economic climate.</p>
 <h3 id="relationships-with-co-workers">Relationships with co-workers</h3>
@@ -121,7 +121,7 @@ I was inspired to clean it up and post it after reading <a href="https://angelar
 <p>While you don't have to be everything to everyone in your network, it's human decency 101 to reach out to those you spent 40 hours a week with</p>
 <p><cite>Scarlett McCarthy</cite></p>
 </blockquote>
-<p>This one hurt the most.</p>
+<p><strong>This one hurt the most.</strong></p>
 <p>It is ironic that when you quit of your own accord, you get a going away present, a card filled with thoughts on how you will be missed and maybe a speech or two extolling your value. You get an exit interview and a place to share your thoughts. Your wins are celebrated.</p>
 <p>But in the case of layoffs, all of that vanishes, and you feel like a social pariah.</p>
 <blockquote>
@@ -131,25 +131,36 @@ I was inspired to clean it up and post it after reading <a href="https://angelar
 <p>I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them would have been appreciated. Anything I could take with me for the future would have made the experience less painful.</p>
 <p>If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.</p>
 <h3 id="thoughts-about-the-reason-for-laying-me-off">Thoughts about the reason for laying me off</h3>
-<p>That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave.</p>
+<p>That I was on the hit list at this company was both surprising and not surprising. There were subtle and not-so-subtle hints that some people wanted me to leave, but I was also one of the 1st engineers to join the company.</p>
 <p>The official reason for disestablishing my role was that the company had too many backend engineers. I was &quot;too senior&quot; (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.</p>
 <p>Although this might be true, it doesn't make sense to me for various reasons.</p>
 <blockquote>
 <p>It was the easiest way to silence what I think they saw as disruptive dissent</p>
 </blockquote>
 <p>Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.</p>
-<p>I feel that as new leaders joined the company, they became increasingly uncomfortable with my standing up for my principles. Leadership might have been threatened by my discussions in internal forums around things I felt were incorrect, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, advocating for pay transparency etc., is what put the final nail in the coffin.</p>
-<p>Since I am not in a country with at-will employment and there was no issue with my performance, I feel that with the decision to announce layoffs, my detractors found an easy way to force me to leave.</p>
+<p>I feel that as new leaders joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums might have threatened leadership, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, advocating for pay transparency etc. is what put the final nail in the coffin.</p>
+<p>If the company wanted to keep me on, they would have asked me to work in an area where they needed more engineers or explored the possibility of working reduced hours/pay. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk. I had written a lot of the backend code. I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.</p>
+<p>Since I am not in a country with at-will employment and there was no issue with my performance, I feel that with the decision to announce layoffs, my detractors found an easy way to force me to leave. I don't blame them for not wanting to deal with the questions I was raising.</p>
+<h2 id="speaking-up-is-risky-so-why-do-it">Speaking up is risky, so why do it?</h2>
+<p>It's not the first time, and it won't be the last when people are fired/laid off as a silencing tactic. Look at <a href="https://ma.nu/blog/bye-twitter">what happened at Twitter after the takeover</a> by Elon Musk.</p>
+<p>But speaking up is the right thing to do.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">There are consequences for speaking out. There are consequences for doing the right thing. <br><br>But we do the right thing because it is the right thing to do. <a href="https://twitter.com/hashtag/AppleToo?src=hash&amp;ref_src=twsrc%5Etfw">#AppleToo</a> is about asking Apple to do better, to end systemic discrimination, abuse, and pay inequity. <br><br>Do the right thing. <a href="https://t.co/nhxFlflSvR">https://t.co/nhxFlflSvR</a></p>&mdash; Janneke Parrish (&#64;JannekeParrish) <a href="https://twitter.com/JannekeParrish/status/1449066853314224129?ref_src=twsrc%5Etfw">October 15, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>It's also good for business.</p>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/dGfcc4Np_Sc" title="Why your business needs dissenters" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>
 <h2 id="it-worked-out-in-the-end">It worked out in the end</h2>
 <p>Everything worked out for me in the end.</p>
-<p>I got a month of severance. I also had many annual leaves left over, which got paid out. After I raised my concerns with the founders, they also vested the 25% of my options.</p>
-<p>I took a few days to process my feelings before starting the job hunt. Luckily, I landed a job almost immediately once I started looking but I took a month to unwind before starting the new position.</p>
+<p>After I raised my concerns with the founders, they agreed to vest 25% of my options. I got a month of severance. I also had many annual leaves left over, which got paid out.</p>
+<p>I took a few days to process my feelings before starting the job hunt. Luckily, I landed a job almost immediately once I started looking. Nevertheless, I took a month to unwind before starting the new position.</p>
 <p><em>Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise.</em></p>
-<p>Nearly all the companies I had worked with previously, reached out to see if I wanted to come back. This was a great signal that I was doing something right when I was there. I had also been <a href="https://www.ankursheel.com/blog/interview-happy-job">interviewing when I didn't need a job</a>, so I could reinitiate talks with some of those companies.</p>
-<h2 id="lessons-learned">Lessons Learned</h2>
+<p>Nearly all the companies I had worked with previously contacted me to see if I wanted to return. This was a great signal that I was doing something right when I was there. I had also been <a href="https://www.ankursheel.com/blog/interview-happy-job">interviewing when I didn't need a job</a>, so I could reinitiate talks with some of those companies.</p>
+<p>It further shaped my perspective and has informed the <a href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list">questions I'm asking companies during the interview process</a>.</p>
+<h2 id="some-unsolicited-advice">Some unsolicited advice</h2>
 <ul>
 <li>Have a layoff fund, so you have some runway and can ensure the next job is not just a rebound.</li>
-<li>Every couple of months, update your resume, so you are not scrambling to remember what you did in case of an unplanned exit.</li>
+<li>Every couple of months, update your resume so you are not scrambling to remember what you did in case of an unplanned exit.</li>
 <li><a href="https://www.ankursheel.com/blog/interview-happy-job">Keep interviewing even if you are happy in your job</a> and keep a list of interesting companies. Ask and connect with the interviewers (you resonated with) on LinkedIn.</li>
 <li>Take some me-time. Give yourself time to process your feelings. This is one of the few times in your life when you get to be alone with your thoughts and can truly unwind. Every time I was laid off, it was a coincidence that I was about to go on a holiday. This enabled me to take a step back and recharge before taking a new job.</li>
 <li>A job search is a numbers game, so keep applying and don't take the rejection personally. Most importantly, don't stop applying till you sign an offer letter.</li>
@@ -157,12 +168,14 @@ I was inspired to clean it up and post it after reading <a href="https://angelar
 <li>Finally, remember that you are more than your job title and organisation.</li>
 </ul>
 <h2 id="final-thoughts">Final Thoughts</h2>
-<p>I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up. At all companies I have worked at, I have always chosen to stand up and speak out when I have felt the need to.</p>
-<p>In most companies, it has worked out well. In some others, not so much. Regardless of how it went for me, people have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.</p>
-<p><em>If you want someone else to tell you why this is a good thing, watch <a href="https://www.youtube.com/watch?v=dGfcc4Np_Sc">Why your business needs dissenters by Andrew Millar</a>.</em></p>
-<p>The silver lining of all this is that it further shaped my perspective and has informed the <a href="https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list">questions I'm asking companies during the interview process</a>.</p>
-<p>It's not the first time, and it won't be the last when people are fired/laid off as a silencing tactic. On an even more public scale, look at <a href="https://ma.nu/blog/bye-twitter">what happened at Twitter after the takeover</a> and <a href="https://twitter.com/JannekeParrish/status/1449066853314224129">what happened at Apple in 2021</a></p>
+<p>I am aware that I am privileged to be able to speak up more than others. I know the risks of speaking up.</p>
+<p>At all companies I have worked at, I have always chosen to stand up and speak out when I have felt the need to. In most cases, it has worked out well. In some others, not so much.</p>
+<p>Regardless of how it went for me, people have repeatedly told me they appreciated having someone ask questions and say what they were thinking but didn't feel safe saying.</p>
 <p>If you were recently laid off, please drop me a note. I might not be able to help, but I know how valuable it is to vent, and I'm happy to lend an ear.</p>
+<p>Also, this song is an excellent pick-me-up if you have been laid off for speaking up.</p>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/CevxZvSJLk8" title="Roar" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>
 <p>Something else you want to know? Ask in the comments.</p>
 
 

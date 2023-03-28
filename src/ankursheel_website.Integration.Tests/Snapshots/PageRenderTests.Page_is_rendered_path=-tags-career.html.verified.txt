@@ -90,7 +90,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/laid-off-reflections-lessons-learned" class="text-center prose-2xl mb-4">Laid off: Reflections and Lessons learned</a>
-        <div class="font-semibold text-center">6 min</div>
+        <div class="font-semibold text-center">7 min</div>
         <p>
             Talking about layoffs is essential to support those going through it. Reflections and Lessons learned after getting laid off again
         </p>

@@ -123,7 +123,7 @@
     <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (9)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-17">March 17, 2023</time>
+                <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-28">March 28, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/make-code-reviews-stress-free">An adaption of the Feedback Ladders for code reviews from Netlify</a> - <time class="prose-sm" datetime="22-11-18">November 18, 2022</time>
