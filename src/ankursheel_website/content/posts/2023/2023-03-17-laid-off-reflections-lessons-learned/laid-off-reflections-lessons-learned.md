@@ -1,7 +1,7 @@
 ---
 title: "Laid off: Reflections and Lessons learned"
 excerpt: "Talking about layoffs is essential to support those going through it. Reflections and Lessons learned after getting laid off again"
-updatedOnDate: 2023-03-28
+updatedOnDate: 2023-03-30
 category: "career / work"
 coverImage: "./cover.png"
 tags:
@@ -63,7 +63,7 @@ Although this might be true, it doesn't make sense to me for various reasons.
 
 Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
 
-I feel that as new leaders joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums might have threatened leadership, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, advocating for pay transparency etc. is what put the final nail in the coffin.
+I feel that as new leaders joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums might have threatened leadership, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, [change in team names](./team-name) and advocating for pay transparency/equity etc. is what put the final nail in the coffin.
 
 If the company wanted to keep me on, they would have asked me to work in an area where they needed more engineers or explored the possibility of working reduced hours/pay. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk. I had written a lot of the backend code. I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.
 
@@ -91,9 +91,9 @@ I took a few days to process my feelings before starting the job hunt. Luckily, 
 
 _Previously, the time for getting a new job has varied from 1 to 6 months, so this was a pleasant surprise._
 
-Nearly all the companies I had worked with previously contacted me to see if I wanted to return. This was a great signal that I was doing something right when I was there. I had also been [interviewing when I didn't need a job](https://www.ankursheel.com/blog/interview-happy-job), so I could reinitiate talks with some of those companies.
+Nearly all the companies I had worked with previously contacted me to see if I wanted to return. This was a great signal that I was doing something right when I was there. I had also been [interviewing when I didn't need a job](./interview-happy-job), so I could reinitiate talks with some of those companies.
 
-It further shaped my perspective and has informed the [questions I'm asking companies during the interview process](https://www.ankursheel.com/blog/interview-interviewers-must-have-deal-breaker-list).
+It further shaped my perspective and has informed the [questions I'm asking companies during the interview process](./interview-interviewers-must-have-deal-breaker-list).
 
 ## Some unsolicited advice
 
