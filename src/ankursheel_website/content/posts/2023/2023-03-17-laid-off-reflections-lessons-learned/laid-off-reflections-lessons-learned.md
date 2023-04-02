@@ -25,7 +25,7 @@ Given the current climate, I would like this post to make people feel less alone
 
 ## What would I change about my layoff experience
 
-There is no good time to be laid-off. But getting laid off just before mid-year reviews was not ideal. I was also about a month away from my anniversary and vesting another 25% of my ESOPs, which worsened the timing.
+There is no good time to be laid-off. But getting laid off just before mid-year reviews was not ideal. I was also about a month away from my anniversary and vesting another 25% of my ESOPs.
 
 I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.
 
@@ -49,11 +49,11 @@ Some colleagues I thought would reach out didn't. On the flip side, some people 
 
 I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them would have been appreciated. Anything I could take with me for the future would have made the experience less painful.
 
-If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.
+If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with getting laid-off differently. The important thing is that they will remember that you reached out to them.
 
 ### Thoughts about the reason for laying me off
 
-That I was on the hit list at this company was both surprising and not surprising. I was one of the 1st engineers to join the company which in theory should have protected. But, there were subtle and not-so-subtle hints that some people wanted me to leave. Probably because of that very reason.
+That I was on the hit list at this company was both surprising and not surprising. I was one of the 1st engineers to join the company which in theory should have protected me. But, there were subtle and not-so-subtle hints that some people wanted me to leave. Probably because of that very reason.
 
 The official reason for disestablishing my role was that the company had too many backend engineers. I was "too senior" (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.
 
@@ -61,17 +61,19 @@ Although this might be true, it doesn't make sense to me for various reasons. Th
 
 If the company wanted to keep me on, they would have asked me to work in an area where they needed more engineers or explored the possibility of working reduced hours/pay. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk.
 
-I had written a lot of the backend code as well as a few utilities for developer productivity. Infact, as far as the github vanity metrics for, I was far ahead of most most people.
+I had written a lot of the backend code as well as some utilities for developer productivity. Infact, as far as the github vanity metrics go, I was far ahead of everyone.
 
-I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.
+I also had a lot of historical context about some engineering decisions in the Product and Engineering team
+
+given all this, I could have easily continued to provide value.
 
 > It was the easiest way to silence what I think they saw as disruptive dissent
 
 Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.
 
-I feel that as new people joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums might have threatened leadership, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, [change in team names](./team-name) and advocating for pay transparency/equity etc. is what put the final nail in the coffin.
+I feel that as new people joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums clearly threatened leadership, as they probably felt called out. 
 
-I don't blame them for not wanting to deal with the questions I was raising.
+I don't blame them for not wanting to deal with the questions I was raising. It's possible that disagreeing with mandatory in-office days, [change in team names](./team-name) and advocating for pay transparency/equity etc. is what helped put the final nails in the coffin.
 
 Since I am not in a country with at-will employment and there was no issue with my performance, I feel that with the decision to announce layoffs, my detractors found an easy way to force me to leave.
 
