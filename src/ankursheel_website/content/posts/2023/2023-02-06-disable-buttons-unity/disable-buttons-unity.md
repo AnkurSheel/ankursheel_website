@@ -5,6 +5,7 @@ category: "programming"
 tags:
 
 - "unity"
+- "tutorial"
 
 ---
 
