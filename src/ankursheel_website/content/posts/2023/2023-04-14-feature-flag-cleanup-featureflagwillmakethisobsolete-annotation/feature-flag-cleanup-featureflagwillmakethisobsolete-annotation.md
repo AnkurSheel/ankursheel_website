@@ -90,4 +90,3 @@ In conclusion, the `FeatureFlagWillMakeThisObsolete` annotation provides a pract
 This annotation has several advantages over the existing workarounds, including the ability to mark even nested functions and optimize for simple cleanups.
 
 While it is important to remember to add the annotation when writing the code and ensure that other developers treat it similarly to `@Deprecated`, by implementing the `FeatureFlagWillMakeThisObsolete` annotation in our codebase, we can improve code quality, reduce technical debt, and make Feature Flag cleanup a breeze.
-As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.
