@@ -8,6 +8,66 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Don't Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</title>
+      <link>https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation</link>
+      <description>Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation/cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation</guid>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.&lt;/p&gt;
+&lt;p&gt;However, when cleaning up the flag, there is a possibility of forgetting to delete this now-unused method (s). For me, it happens a lot more than I would like to admit. This results in unused code just lying around adding to the cruft.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; We might also want to delete whole classes or just a field on cleanup, but for brevity, I am using "methods" in the article.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation/cover.png" alt="obscure code with a X"&gt;&lt;/p&gt;
+&lt;h2 id="clunky-workarounds"&gt;Clunky Workarounds&lt;/h2&gt;
+&lt;h3 id="clunky-workaround-1"&gt;Clunky Workaround #1&lt;/h3&gt;
+&lt;p&gt;We can use tools to automatically check for unused code in our code base and complain if any instances are found.&lt;/p&gt;
+&lt;p&gt;In my experience, such tools are slightly clunky in scenarios where nested methods must be removed. We need to manually check and delete other methods calling the original function or run multiple passes to make the check green.&lt;/p&gt;
+&lt;p&gt;It can also create friction if people are used to writing the methods first and then wiring them up later.&lt;/p&gt;
+&lt;h3 id="clunky-workaround-2"&gt;Clunky Workaround #2&lt;/h3&gt;
+&lt;p&gt;A potential step up is adding a comment inside the methods telling us to delete it when the flag is removed. But what if we don't search with the feature key at the time of cleanup or have a typo in the feature key inside the comment?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What if we could make the compiler complain if we forgot to delete the unused method?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="introducing-the-featureflagwillmakethisobsolete-annotation"&gt;Introducing the FeatureFlagWillMakeThisObsolete Annotation&lt;/h2&gt;
+&lt;p&gt;We can create a new annotation, &lt;code&gt;FeatureFlagWillMakeThisObsolete&lt;/code&gt;, that makes the compiler complain if an unused method is not deleted. This annotation can be added to the code using a string argument corresponding to the feature flag name.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;@Retention(RetentionPolicy.SOURCE)  
+public @interface FeatureFlagWillMakeThisObsolete {
+    String value();  
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we don't need the annotation at runtime, we can add the retention policy as Source. We also want to be able to annotate anything so we do not add the &lt;code&gt;@Target&lt;/code&gt; meta-annotation.&lt;/p&gt;
+&lt;p&gt;Since we still have to pass in a constant string, you might think this is no better than the comment workaround above, and you would be correct.&lt;/p&gt;
+&lt;p&gt;But if we refactor the flag name into a static final field, you can pass it into the annotation.&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;static final String MyFeatureFlagKey = "feature.key";`
+
+@FeatureFlagWillMakeThisObsolete(MyFeatureFlagKey)
+void deleteMe()
+{
+    // old code
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, at cleanup time, all we have to do is remove &lt;code&gt;MyFeatureFlagKey&lt;/code&gt;, and the compiler will complain until we remove all instances where it was being used.&lt;/p&gt;
+&lt;h2 id="advantages-of-the-featureflagwillmakethisobsolete-annotation"&gt;Advantages of the FeatureFlagWillMakeThisObsolete Annotation&lt;/h2&gt;
+&lt;p&gt;The most significant advantage of this approach is that you can mark even the nested functions that should be deleted on cleanup. No looking in the IDE to find the unused functions one by one.&lt;/p&gt;
+&lt;p&gt;It centralizes where the raw string for the feature flag name is defined in the code base.&lt;/p&gt;
+&lt;p&gt;We also don't have to stop and look at the code at the cleanup time to decide whether it can be deleted or not. We had already made that decision when we were writing the code. It allows us (and the reviewer) to optimize for simple cleanup reviews.&lt;/p&gt;
+&lt;p&gt;We could also create custom plugins for our IDE(like IntelliJ) to automatically nuke the annotated methods.&lt;/p&gt;
+&lt;h2 id="caveats"&gt;Caveats&lt;/h2&gt;
+&lt;p&gt;It's not all a bed of roses, though. There are some things to keep in mind while using this annotation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The developer must remember to add the annotation when writing the code.&lt;/li&gt;
+&lt;li&gt;Other developers need to treat this annotation similarly to &lt;code&gt;@Deprecated&lt;/code&gt;. This requires education or making the developers add the &lt;code&gt;@Deprecated&lt;/code&gt; annotation along with this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In conclusion, the &lt;code&gt;FeatureFlagWillMakeThisObsolete&lt;/code&gt; annotation provides a practical solution for ensuring cleaner Feature Flags cleanup by marking unused methods that can be safely deleted.&lt;/p&gt;
+&lt;p&gt;This annotation has several advantages over the existing workarounds, including the ability to mark even nested functions and optimize for simple cleanups.&lt;/p&gt;
+&lt;p&gt;While it is important to remember to add the annotation when writing the code and ensure that other developers treat it similarly to &lt;code&gt;@Deprecated&lt;/code&gt;, by implementing the &lt;code&gt;FeatureFlagWillMakeThisObsolete&lt;/code&gt; annotation in our codebase, we can improve code quality, reduce technical debt, and make Feature Flag cleanup a breeze.
+As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Laid off: Reflections and Lessons learned</title>
       <link>https://www.ankursheel.com/blog/laid-off-reflections-lessons-learned</link>
       <description>Talking about layoffs is essential to support those going through it. Reflections and Lessons learned after getting laid off again</description>
@@ -997,49 +1057,6 @@ text tester&amp;quot;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id="thanks"&gt;Thanks&lt;/h3&gt;
 &lt;p&gt;Thanks Avery Stephen for pointing out a typo in the original post&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to programmatically unregister a service worker</title>
-      <link>https://www.ankursheel.com/blog/programmatically-remove-service-worker</link>
-      <description>Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore. Lets see how we can do it programmatically</description>
-      <guid>https://www.ankursheel.com/blog/programmatically-remove-service-worker</guid>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;Sometimes you just want to remove a service worker either because something is wrong with it or you don't need it anymore.&lt;/p&gt;
-&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-&lt;p&gt;To remove a service worker entirely, you can replace the code with code to unregister the service worker.
-Replace the following snippets in the service worker file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-javascript"&gt;self.addEventListener('install', function (e) {
-    self.skipWaiting();
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The install event is triggered when the browser sees the service worker for the first time.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;skipWaiting()&lt;/code&gt; method tells the service worker to skip the waiting state and move directly to activate (once it has been installed). Otherwise, the service worker will become active once the currently active service worker is released and becomes redundant.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-javascript"&gt;
-self.addEventListener('activate', function (e) {
-    console.log(`Unregistering service worker`)
-    self.registration.unregister()
-        .then(function () {
-            return self.clients.matchAll();
-        })
-        .then(function (clients) {
-            clients.forEach(client =&amp;gt; {
-                console.log(`Navigating ${client.url}`)
-                client.navigate(client.url)
-            })
-        });
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The activate event is triggered when the old version of the service worker is gone.
-The &lt;code&gt;self.registration.unregister()&lt;/code&gt; function unregisters the service worker and returns a promise. The promise resolves to &lt;code&gt;false&lt;/code&gt; if no registration was found; otherwise, it resolves to &lt;code&gt;true&lt;/code&gt;. If the service worker was not found, it was already unregistered.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;self.clients.matchAll()&lt;/code&gt; method returns a Promise for a list of the service worker clients controlled by the service worker.&lt;/p&gt;
-&lt;p&gt;Next, the code loops through all the active clients, and it forces the browser to reload the page, which should remove the service worker.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/NekR/self-destroying-sw"&gt;Self-destroying ServiceWorker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

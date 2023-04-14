@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How To Disable Buttons In Unity - Ankur Sheel</title>
+<title>Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup - Ankur Sheel</title>
 <meta charset="utf-8">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.">
+<meta name="description" content="Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.ankursheel.com/blog/disable-buttons-unity">   
-<meta itemprop="name" content="How To Disable Buttons In Unity">
-<meta itemprop="description" content="Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.">
-    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/disable-buttons-unity-facebook.png">
-<meta property="og:url" content="https://www.ankursheel.com/blog/disable-buttons-unity">
+    <link rel="canonical" href="https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">   
+<meta itemprop="name" content="Don&amp;#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup">
+<meta itemprop="description" content="Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt">
+    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation-facebook.png">
+<meta property="og:url" content="https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How To Disable Buttons In Unity">
-<meta property="og:description" content="Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.">
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/disable-buttons-unity-facebook.png">
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/disable-buttons-unity-facebook.png">
+<meta property="og:title" content="Don&amp;#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup">
+<meta property="og:description" content="Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt">
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation-facebook.png">
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
-<meta name="twitter:title" content="How To Disable Buttons In Unity">
-<meta name="twitter:description" content="Unity offers three different ways to disable a UI Button, each of which can be used depending on the desired outcome.">
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/disable-buttons-unity-twitter.png">
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/disable-buttons-unity-twitter.png">
+<meta name="twitter:title" content="Don&amp;#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup">
+<meta name="twitter:description" content="Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt">
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation-twitter.png">
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation-twitter.png">
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -84,50 +84,84 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How To Disable Buttons In Unity</h1>
+    <h1 class="text-center">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic ">
     <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2023-02-06">February 06, 2023</time></span>
+        <span>Last Updated: <time datetime="2023-04-14">April 14, 2023</time></span>
         <i class="font-bold">
-            Reading Time: 1 min
+            Reading Time: 3 min
         </i>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
+            <a href="/tags/java" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">java</a>
             <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
+            <a href="/tags/code-quality" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">code quality</a>
     </div>
 </div>
 
-<p>When working with Unity UI, there will be times when you will need to disable a button. Unity provides three ways to disable a UI Button, each of which can be used depending on the desired user experience.</p>
-<h2 id="using-enabled-property">Using enabled property</h2>
-<p>The <code>enabled</code> property will make the button non-clickable, but it will not use the disabled colour.</p>
-<pre><code class="language-csharp hljs">testButton.enabled = <span class="hljs-literal">false</span>;
+<p>As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.</p>
+<p>However, when cleaning up the flag, there is a possibility of forgetting to delete this now-unused method (s). For me, it happens a lot more than I would like to admit. This results in unused code just lying around adding to the cruft.</p>
+<p><em><strong>Note:</strong> We might also want to delete whole classes or just a field on cleanup, but for brevity, I am using &quot;methods&quot; in the article.</em></p>
+<p><img src="/assets/images/posts/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation/cover.png" alt="obscure code with a X"></p>
+<h2 id="clunky-workarounds">Clunky Workarounds</h2>
+<h3 id="clunky-workaround-1">Clunky Workaround #1</h3>
+<p>We can use tools to automatically check for unused code in our code base and complain if any instances are found.</p>
+<p>In my experience, such tools are slightly clunky in scenarios where nested methods must be removed. We need to manually check and delete other methods calling the original function or run multiple passes to make the check green.</p>
+<p>It can also create friction if people are used to writing the methods first and then wiring them up later.</p>
+<h3 id="clunky-workaround-2">Clunky Workaround #2</h3>
+<p>A potential step up is adding a comment inside the methods telling us to delete it when the flag is removed. But what if we don't search with the feature key at the time of cleanup or have a typo in the feature key inside the comment?</p>
+<blockquote>
+<p>What if we could make the compiler complain if we forgot to delete the unused method?</p>
+</blockquote>
+<h2 id="introducing-the-featureflagwillmakethisobsolete-annotation">Introducing the FeatureFlagWillMakeThisObsolete Annotation</h2>
+<p>We can create a new annotation, <code>FeatureFlagWillMakeThisObsolete</code>, that makes the compiler complain if an unused method is not deleted. This annotation can be added to the code using a string argument corresponding to the feature flag name.</p>
+<pre><code class="language-java hljs">&#64;Retention(RetentionPolicy.SOURCE)  
+public &#64;interface FeatureFlagWillMakeThisObsolete {
+    String value();  
+}
 </code></pre>
-<p>You will rarely want to use <code>enabled</code> as it results in a confusing user experience.</p>
-<h2 id="using-interactable-property">Using interactable property</h2>
-<p>The <code>interactable</code> property will make the button non-clickable and will set the disabled colour (which is grey by default).</p>
-<pre><code class="language-csharp hljs">testButton.interactable = <span class="hljs-literal">false</span>;
+<p>Since we don't need the annotation at runtime, we can add the retention policy as Source. We also want to be able to annotate anything so we do not add the <code>&#64;Target</code> meta-annotation.</p>
+<p>Since we still have to pass in a constant string, you might think this is no better than the comment workaround above, and you would be correct.</p>
+<p>But if we refactor the flag name into a static final field, you can pass it into the annotation.</p>
+<p>Example</p>
+<pre><code class="language-java hljs">static final String MyFeatureFlagKey = &quot;feature.key&quot;;`
+
+&#64;FeatureFlagWillMakeThisObsolete(MyFeatureFlagKey)
+void deleteMe()
+{
+    // old code
+}
 </code></pre>
-<p>In most cases, this is the option to use.</p>
-<h2 id="using-gameobject.setactive">Using GameObject.SetActive</h2>
-<p><code>gameObject.SetActive</code> will deactivate the button and hide it from the user.</p>
-<pre><code class="language-csharp hljs">testButton.gameObject.SetActive(<span class="hljs-literal">false</span>);
-</code></pre>
-<p>This is an excellent option if you want to change what button is showing based on some conditions.</p>
+<p>Now, at cleanup time, all we have to do is remove <code>MyFeatureFlagKey</code>, and the compiler will complain until we remove all instances where it was being used.</p>
+<h2 id="advantages-of-the-featureflagwillmakethisobsolete-annotation">Advantages of the FeatureFlagWillMakeThisObsolete Annotation</h2>
+<p>The most significant advantage of this approach is that you can mark even the nested functions that should be deleted on cleanup. No looking in the IDE to find the unused functions one by one.</p>
+<p>It centralizes where the raw string for the feature flag name is defined in the code base.</p>
+<p>We also don't have to stop and look at the code at the cleanup time to decide whether it can be deleted or not. We had already made that decision when we were writing the code. It allows us (and the reviewer) to optimize for simple cleanup reviews.</p>
+<p>We could also create custom plugins for our IDE(like IntelliJ) to automatically nuke the annotated methods.</p>
+<h2 id="caveats">Caveats</h2>
+<p>It's not all a bed of roses, though. There are some things to keep in mind while using this annotation.</p>
+<ul>
+<li>The developer must remember to add the annotation when writing the code.</li>
+<li>Other developers need to treat this annotation similarly to <code>&#64;Deprecated</code>. This requires education or making the developers add the <code>&#64;Deprecated</code> annotation along with this.</li>
+</ul>
 <h2 id="conclusion">Conclusion</h2>
-<p>Using these methods, you can customize how the user will interact with the UI Button. It is crucial to understand how each of these methods works so that you can choose the best one for your project.</p>
+<p>In conclusion, the <code>FeatureFlagWillMakeThisObsolete</code> annotation provides a practical solution for ensuring cleaner Feature Flags cleanup by marking unused methods that can be safely deleted.</p>
+<p>This annotation has several advantages over the existing workarounds, including the ability to mark even nested functions and optimize for simple cleanups.</p>
+<p>While it is important to remember to add the annotation when writing the code and ensure that other developers treat it similarly to <code>&#64;Deprecated</code>, by implementing the <code>FeatureFlagWillMakeThisObsolete</code> annotation in our codebase, we can improve code quality, reduce technical debt, and make Feature Flag cleanup a breeze.
+As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/disable-buttons-unity&amp;text=How%20To%20Disable%20Buttons%20In%20Unity via @ankur_sheel.&amp;#xD;&amp;#xA;Unity%20offers%20three%20different%20ways%20to%20disable%20a%20UI%20Button%2C%20each%20of%20which%20can%20be%20used%20depending%20on%20the%20desired%20outcome." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation&amp;text=Don%27t%20Let%20Unused%20Methods%20Linger%3A%20A%20Better%20Approach%20to%20Feature%20Flags%20Cleanup via @ankur_sheel.&amp;#xD;&amp;#xA;Keep%20your%20codebase%20clean%20and%20organized%20with%20the%20FeatureFlagWillMakeThisObsolete%20annotation.%20Mark%20unused%20methods%20that%20can%20be%20safely%20deleted%20on%20feature%20flag%20cleanup%20a%20breeze.%20Say%20goodbye%20to%20clunky%20workarounds%20and%20technical%20debt" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"></path>
@@ -158,16 +192,16 @@
 
     <ul>
             <li>
-                <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
+                <a href="add-estimated-reading-time-posts-statiq">How to add estimated Reading Time to Posts in Statiq</a>
             </li>
             <li>
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
-                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+                <a href="calculate-reading-time">How to calculate reading time</a>
             </li>
             <li>
-                <a href="add-image-camera-background-unity">How to add an image as a camera background in Unity</a>
+                <a href="noncopyable-objects">How to prevent the compiler from copying an object in cpp</a>
             </li>
     </ul>
 </aside>

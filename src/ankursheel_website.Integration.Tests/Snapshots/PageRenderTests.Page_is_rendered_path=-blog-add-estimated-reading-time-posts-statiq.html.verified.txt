@@ -175,13 +175,13 @@
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
+                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+            </li>
+            <li>
                 <a href="calculate-reading-time">How to calculate reading time</a>
             </li>
             <li>
                 <a href="replace-pipeline-statiq">How to replace a pipeline in Statiq</a>
-            </li>
-            <li>
-                <a href="noncopyable-objects">How to prevent the compiler from copying an object in cpp</a>
             </li>
     </ul>
 </aside>

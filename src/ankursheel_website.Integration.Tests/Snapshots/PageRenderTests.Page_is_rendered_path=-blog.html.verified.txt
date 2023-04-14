@@ -88,7 +88,7 @@
             
 
 
-<h2>All Categories (194)</h2>
+<h2>All Categories (195)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -104,6 +104,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -114,9 +117,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/add-image-camera-background-unity">How to add an image as a camera background in Unity</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
         </li>
 </ul>
 
@@ -177,8 +177,11 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (64)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (65)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a> - <time class="prose-sm" datetime="23-04-14">April 14, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/disable-buttons-unity">How To Disable Buttons In Unity</a> - <time class="prose-sm" datetime="23-02-06">February 06, 2023</time>
             </li>

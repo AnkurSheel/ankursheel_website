@@ -91,13 +91,13 @@
             <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (53)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (31)</a>
+            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (33)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (24)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (13)</a>
@@ -253,10 +253,16 @@
             <a role="button" href="/tags/sql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/code-quality" class="capitalize badge text-gray-900 bg-grey-light no-underline"> code quality (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dapper" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dapper (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/insomnia" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Insomnia (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/java" class="capitalize badge text-gray-900 bg-grey-light no-underline"> java (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/north-america" class="capitalize badge text-gray-900 bg-grey-light no-underline"> North America (1)</a>
