@@ -92,7 +92,7 @@
         <a href="/blog/best-credit-card-new-zealand" class="text-center prose-2xl mb-4">Finding the best credit card in New Zealand</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
-            Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort.
+            This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card
         </p>
             <a href="/blog/best-credit-card-new-zealand" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

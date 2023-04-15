@@ -9,24 +9,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+<meta name="description" content="This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/best-credit-card-new-zealand"/>   
 <meta itemProp="name" content="Finding the best credit card in New Zealand"/>
-<meta itemProp="description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+<meta itemProp="description" content="This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/best-credit-card-new-zealand"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Finding the best credit card in New Zealand"/>
-<meta property="og:description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+<meta property="og:description" content="This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Finding the best credit card in New Zealand"/>
-<meta name="twitter:description" content="Each credit card has its own benefits and features, so it can feel like you&#x27;re comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."/>
+<meta name="twitter:description" content="This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/best-credit-card-new-zealand-twitter.png"/>
 
@@ -199,7 +199,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/best-credit-card-new-zealand&text=Finding%20the%20best%20credit%20card%20in%20New%20Zealand via @ankur_sheel.&#xD;&#xA;Each%20credit%20card%20has%20its%20own%20benefits%20and%20features%2C%20so%20it%20can%20feel%20like%20you%27re%20comparing%20apples%20to%20oranges.%20Finding%20the%20one%20that%20maximizes%20the%20value%20based%20on%20your%20spending%20can%20take%20time%20and%20effort." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/best-credit-card-new-zealand&text=Finding%20the%20best%20credit%20card%20in%20New%20Zealand via @ankur_sheel.&#xD;&#xA;This%20article%20compares%20a%20few%20credit%20cards%20offered%20in%20New%20Zealand.%20It%20looks%20at%20how%20much%20you%20need%20to%20spend%20in%20a%20year%20to%20maximize%20the%20value%20of%20each%20card" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

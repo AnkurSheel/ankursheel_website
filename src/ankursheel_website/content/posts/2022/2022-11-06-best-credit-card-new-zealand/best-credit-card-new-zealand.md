@@ -1,6 +1,6 @@
 ---
 title: "Finding the best credit card in New Zealand"
-excerpt: "Each credit card has its own benefits and features, so it can feel like you're comparing apples to oranges. Finding the one that maximizes the value based on your spending can take time and effort."
+excerpt: "This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card"
 coverImage: "./cover.jpg"
 category: "ramblings"
 tags:

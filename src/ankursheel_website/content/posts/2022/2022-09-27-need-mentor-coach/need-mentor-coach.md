@@ -1,6 +1,6 @@
 ---
 title: "Do you need a mentor or a coach?"
-excerpt: "The mentor-mentee relationship is one of the most important relationships you will develop during your career. Everyone can use a mentor. But what is mentoring? How is it different from coaching? How can you find the right mentor for you."
+excerpt: "This article highlights the importance of having a mentor or coach. It also explores the differences between mentors and coaches and offers insights on finding the right one."
 coverImage: "./cover.jpg"
 category: "career / work"
 tags:
