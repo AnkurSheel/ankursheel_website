@@ -346,7 +346,7 @@
 
     <ul>
             <li>
-                <a href="use-azure-pipelines-deploy-gatsby-site-schedule">How to deploy a Gatsby site on a schedule with Azure Pipelines</a>
+                <a href="use-azure-pipelines-deploy-gatsby-site-schedule">Deploy a Gatsby site on a schedule with Azure Pipelines</a>
             </li>
             <li>
                 <a href="automating-creation-new-blog-post">How to automate the creation of a new blog post</a>
@@ -355,7 +355,7 @@
                 <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>
             </li>
             <li>
-                <a href="create-sns-topic-ses-not-default-provider">How to create an SNS topic for SES in a different region with terraform</a>
+                <a href="create-sns-topic-ses-not-default-provider">Terraform: Create an SNS topic for SES in a different region</a>
             </li>
     </ul>
 </aside>

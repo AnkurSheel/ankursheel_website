@@ -162,7 +162,7 @@
                 <a href="deploy-gatsby-site-netlify-azure-pipelines">How to deploy a Gatsby site to Netlify using Azure Pipelines</a>
             </li>
             <li>
-                <a href="use-azure-pipelines-deploy-gatsby-site-schedule">How to deploy a Gatsby site on a schedule with Azure Pipelines</a>
+                <a href="use-azure-pipelines-deploy-gatsby-site-schedule">Deploy a Gatsby site on a schedule with Azure Pipelines</a>
             </li>
             <li>
                 <a href="new-release-codinators-xunit-helpers-nuget-package">New Release: Codinators.XunitHelpers Nuget Package</a>

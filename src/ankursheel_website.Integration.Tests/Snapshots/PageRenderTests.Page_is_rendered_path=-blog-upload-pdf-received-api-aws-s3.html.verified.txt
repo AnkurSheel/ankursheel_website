@@ -183,7 +183,7 @@
                 <a href="upload-multiple-files-aws-s3-terraform">How to Upload Multiple Files to AWS S3 using Terraform</a>
             </li>
             <li>
-                <a href="secure-aws-root-account-create-admin-user-access-billing">How to add a billing admin user to secure an AWS root account</a>
+                <a href="secure-aws-root-account-create-admin-user-access-billing">Add a billing admin user to secure an AWS root account</a>
             </li>
             <li>
                 <a href="stop-remove-all-docker-containers">How to stop and remove all Docker containers</a>

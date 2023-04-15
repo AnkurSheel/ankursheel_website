@@ -122,7 +122,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/create-sns-topic-ses-not-default-provider" class="text-center prose-2xl mb-4">How to create an SNS topic for SES in a different region with terraform</a>
+        <a href="/blog/create-sns-topic-ses-not-default-provider" class="text-center prose-2xl mb-4">Terraform: Create an SNS topic for SES in a different region</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
             How can we create SNS topics to access SES created in a different region to the rest of our infrastructure

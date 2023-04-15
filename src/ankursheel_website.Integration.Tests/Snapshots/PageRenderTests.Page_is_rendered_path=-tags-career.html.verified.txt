@@ -100,7 +100,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/interview-interviewers-must-have-deal-breaker-list" class="text-center prose-2xl mb-4">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+        <a href="/blog/interview-interviewers-must-have-deal-breaker-list" class="text-center prose-2xl mb-4">Interviewing interviewers: Must-haves and deal-breakers list</a>
         <div class="font-semibold text-center">6 min</div>
         <p>
             Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation.

@@ -186,7 +186,7 @@
                 <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
             </li>
             <li>
-                <a href="fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a>
+                <a href="fix-language-version-error-unity-rider">Fix the Language version error for Unity projects in Rider</a>
             </li>
             <li>
                 <a href="add-image-camera-background-unity">How to add an image as a camera background in Unity</a>

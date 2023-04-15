@@ -175,7 +175,7 @@
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
-                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
             </li>
             <li>
                 <a href="calculate-reading-time">How to calculate reading time</a>

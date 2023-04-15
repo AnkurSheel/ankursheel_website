@@ -332,7 +332,7 @@
 
     <ul>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
             </li>
             <li>
                 <a href="need-mentor-coach">Do you need a mentor or a coach?</a>

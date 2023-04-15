@@ -1,5 +1,5 @@
 ---
-title: "How to fix the Language version error for Unity projects in Rider"
+title: "Fix the Language version error for Unity projects in Rider"
 excerpt: "How to fix the language version compiler error on building a project in rider created with Unity."
 category: "programming"
 tags:

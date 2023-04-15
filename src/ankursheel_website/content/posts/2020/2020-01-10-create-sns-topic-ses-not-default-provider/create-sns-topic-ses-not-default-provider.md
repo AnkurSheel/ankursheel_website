@@ -1,5 +1,5 @@
 ---
-title: 'How to create an SNS topic for SES in a different region with terraform'
+title: 'Terraform: Create an SNS topic for SES in a different region'
 excerpt: 'How can we create SNS topics to access SES created in a different region to the rest of our infrastructure'
 category: "programming"
 tags:

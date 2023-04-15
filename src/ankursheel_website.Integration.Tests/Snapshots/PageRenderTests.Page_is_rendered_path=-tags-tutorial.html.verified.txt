@@ -89,7 +89,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center prose-2xl mb-4">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+        <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center prose-2xl mb-4">Feature Flags: Removing Unused Methods on Cleanup</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
             Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt
@@ -188,7 +188,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule" class="text-center prose-2xl mb-4">How to deploy a Gatsby site on a schedule with Azure Pipelines</a>
+        <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule" class="text-center prose-2xl mb-4">Deploy a Gatsby site on a schedule with Azure Pipelines</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
             A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule

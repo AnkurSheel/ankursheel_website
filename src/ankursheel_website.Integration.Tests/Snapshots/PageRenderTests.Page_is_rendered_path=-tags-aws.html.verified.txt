@@ -111,7 +111,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/secure-aws-root-account-create-admin-user-access-billing" class="text-center prose-2xl mb-4">How to add a billing admin user to secure an AWS root account</a>
+        <a href="/blog/secure-aws-root-account-create-admin-user-access-billing" class="text-center prose-2xl mb-4">Add a billing admin user to secure an AWS root account</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
             How can we create a user with administrator and Billing Access rights so that we can reduce the number of reasons of why we would need to log in as a root user
@@ -144,7 +144,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/create-sns-topic-ses-not-default-provider" class="text-center prose-2xl mb-4">How to create an SNS topic for SES in a different region with terraform</a>
+        <a href="/blog/create-sns-topic-ses-not-default-provider" class="text-center prose-2xl mb-4">Terraform: Create an SNS topic for SES in a different region</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
             How can we create SNS topics to access SES created in a different region to the rest of our infrastructure

@@ -1,5 +1,5 @@
 ---
-title: "Don't Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup"
+title: "Feature Flags: Removing Unused Methods on Cleanup"
 excerpt: "Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt"
 coverImage: "./cover.png"
 category: "programming"

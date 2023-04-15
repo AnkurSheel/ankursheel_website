@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to make Git forget about a committed file added to .gitignore</title>
+<title>Make Git forget about committed files in .gitignore</title>
 <meta charset="utf-8">
 
 
@@ -10,19 +10,19 @@
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
     <link rel="canonical" href="https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore">   
-<meta itemprop="name" content="How to make Git forget about a committed file added to .gitignore">
+<meta itemprop="name" content="Make Git forget about committed files in .gitignore">
 <meta itemprop="description" content="A way to remove a file committed in git that you now want git to forget about">
     <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-facebook.png">
 <meta property="og:url" content="https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to make Git forget about a committed file added to .gitignore">
+<meta property="og:title" content="Make Git forget about committed files in .gitignore">
 <meta property="og:description" content="A way to remove a file committed in git that you now want git to forget about">
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-facebook.png">
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
-<meta name="twitter:title" content="How to make Git forget about a committed file added to .gitignore">
+<meta name="twitter:title" content="Make Git forget about committed files in .gitignore">
 <meta name="twitter:description" content="A way to remove a file committed in git that you now want git to forget about">
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-twitter.png">
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-git-forget-committed-file-added-gitignore-twitter.png">
@@ -84,7 +84,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to make Git forget about a committed file added to .gitignore</h1>
+    <h1 class="text-center">Make Git forget about committed files in .gitignore</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -127,7 +127,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore&amp;text=How%20to%20make%20Git%20forget%20about%20a%20committed%20file%20added%20to%20.gitignore via @ankur_sheel.&amp;#xD;&amp;#xA;A%20way%20to%20remove%20a%20file%20committed%20in%20git%20that%20you%20now%20want%20git%20to%20forget%20about" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore&amp;text=Make%20Git%20forget%20about%20committed%20files%20in%20.gitignore via @ankur_sheel.&amp;#xD;&amp;#xA;A%20way%20to%20remove%20a%20file%20committed%20in%20git%20that%20you%20now%20want%20git%20to%20forget%20about" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"></path>

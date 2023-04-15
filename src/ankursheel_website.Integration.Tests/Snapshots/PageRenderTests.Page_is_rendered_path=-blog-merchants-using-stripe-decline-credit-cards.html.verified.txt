@@ -4,7 +4,7 @@
 <head>
     
 
-<title>What to do as an end-user when merchants using stripe decline your credit cards</title>
+<title>Merchant using Stripe Declined credit Card: What to Do</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards"/>   
-<meta itemProp="name" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
+<meta itemProp="name" content="Merchant using Stripe Declined credit Card: What to Do"/>
 <meta itemProp="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
+<meta property="og:title" content="Merchant using Stripe Declined credit Card: What to Do"/>
 <meta property="og:description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="What to do as an end-user when merchants using stripe decline your credit cards"/>
+<meta name="twitter:title" content="Merchant using Stripe Declined credit Card: What to Do"/>
 <meta name="twitter:description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/merchants-using-stripe-decline-credit-cards-twitter.png"/>
@@ -87,7 +87,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">What to do as an end-user when merchants using stripe decline your credit cards</h1>
+    <h1 class="text-center">Merchant using Stripe Declined credit Card: What to Do</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -140,7 +140,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards&text=What%20to%20do%20as%20an%20end-user%20when%20merchants%20using%20stripe%20decline%20your%20credit%20cards via @ankur_sheel.&#xD;&#xA;My%20ongoing%20saga%20with%20Stripe%20support%20as%20an%20end-user%20to%20get%20them%20to%20stop%20blocking%20my%20card.%20A%20workaround%20while%20they%20try%20to%20resolve%20the%20issue" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/merchants-using-stripe-decline-credit-cards&text=Merchant%20using%20Stripe%20Declined%20credit%20Card%3A%20What%20to%20Do via @ankur_sheel.&#xD;&#xA;My%20ongoing%20saga%20with%20Stripe%20support%20as%20an%20end-user%20to%20get%20them%20to%20stop%20blocking%20my%20card.%20A%20workaround%20while%20they%20try%20to%20resolve%20the%20issue" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>

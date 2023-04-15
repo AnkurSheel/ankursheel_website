@@ -8,7 +8,7 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
-      <title>Don't Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</title>
+      <title>Feature Flags: Removing Unused Methods on Cleanup</title>
       <link>https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation</link>
       <description>Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation/cover.png" length="0" type="image" />
@@ -811,7 +811,7 @@ Ankur
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>How to make Git forget about a committed file added to .gitignore</title>
+      <title>Make Git forget about committed files in .gitignore</title>
       <link>https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore</link>
       <description>A way to remove a file committed in git that you now want git to forget about</description>
       <guid>https://www.ankursheel.com/blog/make-git-forget-committed-file-added-gitignore</guid>
@@ -839,7 +839,7 @@ Ankur
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>How to fix the Language version error for Unity projects in Rider</title>
+      <title>Fix the Language version error for Unity projects in Rider</title>
       <link>https://www.ankursheel.com/blog/fix-language-version-error-unity-rider</link>
       <description>How to fix the language version compiler error on building a project in rider created with Unity.</description>
       <guid>https://www.ankursheel.com/blog/fix-language-version-error-unity-rider</guid>

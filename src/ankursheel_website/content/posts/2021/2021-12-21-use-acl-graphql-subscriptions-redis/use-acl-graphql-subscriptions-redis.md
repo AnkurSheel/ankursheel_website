@@ -1,5 +1,5 @@
 ---
-title: 'How to use Access Control Lists (ACL) for Graphql subscriptions with Redis'
+title: 'How to Secure Graphql Subscriptions with Redis ACLs'
 excerpt: 'A guide to adding Access Control Lists (ACL)  for Redis to restrict access and using a restricted user for Graphql subscriptions with Hot Chocolate'
 category: "programming"
 tags:

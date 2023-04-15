@@ -1,5 +1,5 @@
 ﻿---
-title: "What to do as an end-user when merchants using stripe decline your credit cards"
+title: "Merchant using Stripe Declined credit Card: What to Do"
 excerpt: "My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"
 coverImage: "./cover.jpg"
 category: "ramblings"

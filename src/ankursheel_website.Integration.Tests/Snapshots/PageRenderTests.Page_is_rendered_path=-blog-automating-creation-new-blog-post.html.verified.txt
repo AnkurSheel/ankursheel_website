@@ -306,7 +306,7 @@ fs.writeFileSync(path.join(destination, <span class="hljs-string">'index.mdx'</s
                 <a href="deploy-gatsby-site-netlify-azure-pipelines">How to deploy a Gatsby site to Netlify using Azure Pipelines</a>
             </li>
             <li>
-                <a href="use-azure-pipelines-deploy-gatsby-site-schedule">How to deploy a Gatsby site on a schedule with Azure Pipelines</a>
+                <a href="use-azure-pipelines-deploy-gatsby-site-schedule">Deploy a Gatsby site on a schedule with Azure Pipelines</a>
             </li>
             <li>
                 <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>

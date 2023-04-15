@@ -163,7 +163,7 @@
                 <a href="change-author-multiple-git-commits">How to change the author of multiple Git commits</a>
             </li>
             <li>
-                <a href="make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a>
+                <a href="make-git-forget-committed-file-added-gitignore">Make Git forget about committed files in .gitignore</a>
             </li>
             <li>
                 <a href="restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>

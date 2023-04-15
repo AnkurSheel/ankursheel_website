@@ -1,5 +1,5 @@
 ---
-title: "How to make Git forget about a committed file added to .gitignore"
+title: "Make Git forget about committed files in .gitignore"
 excerpt: "A way to remove a file committed in git that you now want git to forget about"
 category: "programming"
 tags:

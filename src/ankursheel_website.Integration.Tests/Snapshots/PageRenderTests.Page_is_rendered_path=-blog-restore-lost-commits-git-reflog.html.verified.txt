@@ -161,7 +161,7 @@
 
     <ul>
             <li>
-                <a href="make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a>
+                <a href="make-git-forget-committed-file-added-gitignore">Make Git forget about committed files in .gitignore</a>
             </li>
             <li>
                 <a href="move-commit-between-repositories">How to move a commit between repositories</a>

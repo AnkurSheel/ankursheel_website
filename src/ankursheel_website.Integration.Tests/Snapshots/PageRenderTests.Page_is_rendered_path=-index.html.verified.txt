@@ -92,7 +92,7 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a> - <time class="prose-sm" datetime="23-04-14">April 14, 2023</time>
+            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a> - <time class="prose-sm" datetime="23-04-14">April 14, 2023</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-30">March 30, 2023</time>

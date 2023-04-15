@@ -89,7 +89,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center prose-2xl mb-4">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+        <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center prose-2xl mb-4">Feature Flags: Removing Unused Methods on Cleanup</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
             Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt

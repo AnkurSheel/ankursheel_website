@@ -1,5 +1,5 @@
 ---
-title: 'How do I implement Graphql subscriptions in HotChocolate with Redis'
+title: 'Adding Graphql Subscriptions with HotChocolate and Redis'
 excerpt: 'A guide to adding subscriptions to a HotChocolate GraphQL API with a Redis provider'
 category: "programming"
 tags:

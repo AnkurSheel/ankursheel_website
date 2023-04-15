@@ -186,7 +186,7 @@
 
     <ul>
             <li>
-                <a href="make-code-reviews-stress-free">An adaption of the Feedback Ladders for code reviews from Netlify</a>
+                <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
             </li>
             <li>
                 <a href="team-name">What&#x27;s in a team name</a>

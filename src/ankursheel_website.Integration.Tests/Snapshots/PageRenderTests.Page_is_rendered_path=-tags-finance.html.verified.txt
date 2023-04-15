@@ -100,7 +100,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/merchants-using-stripe-decline-credit-cards" class="text-center prose-2xl mb-4">What to do as an end-user when merchants using stripe decline your credit cards</a>
+        <a href="/blog/merchants-using-stripe-decline-credit-cards" class="text-center prose-2xl mb-4">Merchant using Stripe Declined credit Card: What to Do</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
             My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue

@@ -104,7 +104,7 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
@@ -126,13 +126,13 @@
                 <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-30">March 30, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/make-code-reviews-stress-free">An adaption of the Feedback Ladders for code reviews from Netlify</a> - <time class="prose-sm" datetime="22-11-18">November 18, 2022</time>
+                <a href="/blog/make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a> - <time class="prose-sm" datetime="22-11-18">November 18, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/team-name">What&#x27;s in a team name</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
+                <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/dream-job">What is my idea of a dream job</a> - <time class="prose-sm" datetime="22-10-03">October 03, 2022</time>
@@ -180,7 +180,7 @@
     <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (65)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a> - <time class="prose-sm" datetime="23-04-14">April 14, 2023</time>
+                <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a> - <time class="prose-sm" datetime="23-04-14">April 14, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/disable-buttons-unity">How To Disable Buttons In Unity</a> - <time class="prose-sm" datetime="23-02-06">February 06, 2023</time>
@@ -216,10 +216,10 @@
                 <a href="/blog/restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a> - <time class="prose-sm" datetime="22-07-28">July 28, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/make-git-forget-committed-file-added-gitignore">How to make Git forget about a committed file added to .gitignore</a> - <time class="prose-sm" datetime="22-07-06">July 06, 2022</time>
+                <a href="/blog/make-git-forget-committed-file-added-gitignore">Make Git forget about committed files in .gitignore</a> - <time class="prose-sm" datetime="22-07-06">July 06, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/fix-language-version-error-unity-rider">How to fix the Language version error for Unity projects in Rider</a> - <time class="prose-sm" datetime="22-06-29">June 29, 2022</time>
+                <a href="/blog/fix-language-version-error-unity-rider">Fix the Language version error for Unity projects in Rider</a> - <time class="prose-sm" datetime="22-06-29">June 29, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a> - <time class="prose-sm" datetime="22-06-22">June 22, 2022</time>
@@ -240,10 +240,10 @@
                 <a href="/blog/programmatically-remove-service-worker">How to programmatically unregister a service worker</a> - <time class="prose-sm" datetime="22-03-23">March 23, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/use-acl-graphql-subscriptions-redis">How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</a> - <time class="prose-sm" datetime="21-12-21">December 21, 2021</time>
+                <a href="/blog/use-acl-graphql-subscriptions-redis">How to Secure Graphql Subscriptions with Redis ACLs</a> - <time class="prose-sm" datetime="21-12-21">December 21, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/implement-graqhql-subscriptions-hotchocolate-redis">How do I implement Graphql subscriptions in HotChocolate with Redis</a> - <time class="prose-sm" datetime="21-11-11">November 11, 2021</time>
+                <a href="/blog/implement-graqhql-subscriptions-hotchocolate-redis">Adding Graphql Subscriptions with HotChocolate and Redis</a> - <time class="prose-sm" datetime="21-11-11">November 11, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/move-commit-between-repositories">How to move a commit between repositories</a> - <time class="prose-sm" datetime="21-11-04">November 04, 2021</time>
@@ -288,7 +288,7 @@
                 <a href="/blog/handle-bounces-aws-ses-terraform-2">How to use terraform to process SQS messages in a lambda</a> - <time class="prose-sm" datetime="20-09-19">September 19, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/secure-aws-root-account-create-admin-user-access-billing">How to add a billing admin user to secure an AWS root account</a> - <time class="prose-sm" datetime="20-07-25">July 25, 2020</time>
+                <a href="/blog/secure-aws-root-account-create-admin-user-access-billing">Add a billing admin user to secure an AWS root account</a> - <time class="prose-sm" datetime="20-07-25">July 25, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/upload-pdf-received-api-aws-s3">How do you upload a PDF received from an API to AWS S3?</a> - <time class="prose-sm" datetime="20-07-15">July 15, 2020</time>
@@ -309,10 +309,10 @@
                 <a href="/blog/query-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a> - <time class="prose-sm" datetime="20-03-11">March 11, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule">How to deploy a Gatsby site on a schedule with Azure Pipelines</a> - <time class="prose-sm" datetime="20-01-17">January 17, 2020</time>
+                <a href="/blog/use-azure-pipelines-deploy-gatsby-site-schedule">Deploy a Gatsby site on a schedule with Azure Pipelines</a> - <time class="prose-sm" datetime="20-01-17">January 17, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/create-sns-topic-ses-not-default-provider">How to create an SNS topic for SES in a different region with terraform</a> - <time class="prose-sm" datetime="20-01-10">January 10, 2020</time>
+                <a href="/blog/create-sns-topic-ses-not-default-provider">Terraform: Create an SNS topic for SES in a different region</a> - <time class="prose-sm" datetime="20-01-10">January 10, 2020</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/deploy-gatsby-site-netlify-azure-pipelines">How to deploy a Gatsby site to Netlify using Azure Pipelines</a> - <time class="prose-sm" datetime="20-01-03">January 03, 2020</time>
@@ -426,7 +426,7 @@
                 <a href="/blog/kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a> - <time class="prose-sm" datetime="22-09-01">September 01, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/merchants-using-stripe-decline-credit-cards">What to do as an end-user when merchants using stripe decline your credit cards</a> - <time class="prose-sm" datetime="21-12-31">December 31, 2021</time>
+                <a href="/blog/merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a> - <time class="prose-sm" datetime="21-12-31">December 31, 2021</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a> - <time class="prose-sm" datetime="21-08-16">August 16, 2021</time>

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>An adaption of the Feedback Ladders for code reviews from Netlify</title>
+<title>Adaption of the code reviews Feedback Ladders from Netlify</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/make-code-reviews-stress-free"/>   
-<meta itemProp="name" content="An adaption of the Feedback Ladders for code reviews from Netlify"/>
+<meta itemProp="name" content="Adaption of the code reviews Feedback Ladders from Netlify"/>
 <meta itemProp="description" content="Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/make-code-reviews-stress-free"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="An adaption of the Feedback Ladders for code reviews from Netlify"/>
+<meta property="og:title" content="Adaption of the code reviews Feedback Ladders from Netlify"/>
 <meta property="og:description" content="Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="An adaption of the Feedback Ladders for code reviews from Netlify"/>
+<meta name="twitter:title" content="Adaption of the code reviews Feedback Ladders from Netlify"/>
 <meta name="twitter:description" content="Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-twitter.png"/>
@@ -87,7 +87,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">An adaption of the Feedback Ladders for code reviews from Netlify</h1>
+    <h1 class="text-center">Adaption of the code reviews Feedback Ladders from Netlify</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -146,7 +146,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-code-reviews-stress-free&text=An%20adaption%20of%20the%20Feedback%20Ladders%20for%20code%20reviews%20from%20Netlify via @ankur_sheel.&#xD;&#xA;Code%20reviews%20can%20be%20stressful%20for%20both%20parties.%20An%20opinionated%20adaption%20of%20the%20Feedback%20Ladders%20from%20Netlify%20to%20make%20reviews%20code%20stress%20free." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-code-reviews-stress-free&text=Adaption%20of%20the%20code%20reviews%20Feedback%20Ladders%20from%20Netlify via @ankur_sheel.&#xD;&#xA;Code%20reviews%20can%20be%20stressful%20for%20both%20parties.%20An%20opinionated%20adaption%20of%20the%20Feedback%20Ladders%20from%20Netlify%20to%20make%20reviews%20code%20stress%20free." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -183,7 +183,7 @@
                 <a href="team-name">What&#x27;s in a team name</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
             </li>
             <li>
                 <a href="dream-job">What is my idea of a dream job</a>

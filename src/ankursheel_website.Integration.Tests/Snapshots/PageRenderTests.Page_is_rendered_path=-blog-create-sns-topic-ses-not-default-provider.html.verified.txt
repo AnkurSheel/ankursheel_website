@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to create an SNS topic for SES in a different region with terraform</title>
+<title>Terraform: Create an SNS topic for SES in a different region</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/create-sns-topic-ses-not-default-provider"/>   
-<meta itemProp="name" content="How to create an SNS topic for SES in a different region with terraform"/>
+<meta itemProp="name" content="Terraform: Create an SNS topic for SES in a different region"/>
 <meta itemProp="description" content="How can we create SNS topics to access SES created in a different region to the rest of our infrastructure"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/create-sns-topic-ses-not-default-provider-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/create-sns-topic-ses-not-default-provider"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to create an SNS topic for SES in a different region with terraform"/>
+<meta property="og:title" content="Terraform: Create an SNS topic for SES in a different region"/>
 <meta property="og:description" content="How can we create SNS topics to access SES created in a different region to the rest of our infrastructure"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/create-sns-topic-ses-not-default-provider-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/create-sns-topic-ses-not-default-provider-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to create an SNS topic for SES in a different region with terraform"/>
+<meta name="twitter:title" content="Terraform: Create an SNS topic for SES in a different region"/>
 <meta name="twitter:description" content="How can we create SNS topics to access SES created in a different region to the rest of our infrastructure"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/create-sns-topic-ses-not-default-provider-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/create-sns-topic-ses-not-default-provider-twitter.png"/>
@@ -87,7 +87,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to create an SNS topic for SES in a different region with terraform</h1>
+    <h1 class="text-center">Terraform: Create an SNS topic for SES in a different region</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -146,7 +146,7 @@ resource &quot;aws_sns_topic&quot; &quot;example-topic&quot; {
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/create-sns-topic-ses-not-default-provider&text=How%20to%20create%20an%20SNS%20topic%20for%20SES%20in%20a%20different%20region%20with%20terraform via @ankur_sheel.&#xD;&#xA;How%20can%20we%20create%20SNS%20topics%20to%20access%20SES%20created%20in%20a%20different%20region%20to%20the%20rest%20of%20our%20infrastructure" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/create-sns-topic-ses-not-default-provider&text=Terraform%3A%20Create%20an%20SNS%20topic%20for%20SES%20in%20a%20different%20region via @ankur_sheel.&#xD;&#xA;How%20can%20we%20create%20SNS%20topics%20to%20access%20SES%20created%20in%20a%20different%20region%20to%20the%20rest%20of%20our%20infrastructure" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
             <svg class="h-8 mr-2" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518V297.518Z" fill="#0D0C22"/>
@@ -183,7 +183,7 @@ resource &quot;aws_sns_topic&quot; &quot;example-topic&quot; {
                 <a href="handle-bounces-aws-ses-terraform-2">How to use terraform to process SQS messages in a lambda</a>
             </li>
             <li>
-                <a href="secure-aws-root-account-create-admin-user-access-billing">How to add a billing admin user to secure an AWS root account</a>
+                <a href="secure-aws-root-account-create-admin-user-access-billing">Add a billing admin user to secure an AWS root account</a>
             </li>
             <li>
                 <a href="upload-multiple-files-aws-s3-terraform">How to Upload Multiple Files to AWS S3 using Terraform</a>

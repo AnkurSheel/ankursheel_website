@@ -193,7 +193,7 @@
                 <a href="add-estimated-reading-time-posts-statiq">How to add estimated Reading Time to Posts in Statiq</a>
             </li>
             <li>
-                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</a>
+                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
             </li>
             <li>
                 <a href="noncopyable-objects">How to prevent the compiler from copying an object in cpp</a>

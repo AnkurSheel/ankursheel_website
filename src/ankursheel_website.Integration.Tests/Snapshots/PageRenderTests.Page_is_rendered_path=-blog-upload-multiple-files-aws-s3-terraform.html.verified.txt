@@ -197,7 +197,7 @@
                 <a href="handle-bounces-ses-terraform">How to publish email bounce notifications to an SQS queue</a>
             </li>
             <li>
-                <a href="create-sns-topic-ses-not-default-provider">How to create an SNS topic for SES in a different region with terraform</a>
+                <a href="create-sns-topic-ses-not-default-provider">Terraform: Create an SNS topic for SES in a different region</a>
             </li>
     </ul>
 </aside>

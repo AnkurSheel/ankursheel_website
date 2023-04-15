@@ -1,5 +1,5 @@
 ---
-title: "Interviewing your interviewers with a must-have and a deal-breaker list"
+title: "Interviewing interviewers: Must-haves and deal-breakers list"
 excerpt: "Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation."
 category: "career / work"
 updatedOnDate: "2022-10-06"

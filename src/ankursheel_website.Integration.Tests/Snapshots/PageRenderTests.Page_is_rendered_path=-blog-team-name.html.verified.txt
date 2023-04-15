@@ -206,7 +206,7 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
                 <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing your interviewers with a must-have and a deal-breaker list</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
             </li>
             <li>
                 <a href="dream-job">What is my idea of a dream job</a>
