@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to setup WordPress locally: Installing phpMyAdmin - Ankur Sheel</title>
+<title>How to setup WordPress locally: Installing phpMyAdmin</title>
 <meta charset="utf-8"/>
 
 

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Add Tailwind CSS to a Statiq website - Ankur Sheel</title>
+<title>Add Tailwind CSS to a Statiq website</title>
 <meta charset="utf-8">
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to setup WordPress locally: Installing PHP - Ankur Sheel</title>
+<title>How to setup WordPress locally: Installing PHP</title>
 <meta charset="utf-8"/>
 
 

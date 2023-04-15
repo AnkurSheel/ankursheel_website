@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>A guide to getting started with Dynamic Programming - Ankur Sheel</title>
+<title>A guide to getting started with Dynamic Programming</title>
 <meta charset="utf-8">
 
 

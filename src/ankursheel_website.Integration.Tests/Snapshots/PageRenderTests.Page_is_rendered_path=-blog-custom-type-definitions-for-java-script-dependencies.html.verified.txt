@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Create custom type definitions for JavaScript dependencies - Ankur Sheel</title>
+<title>Create custom type definitions for JavaScript dependencies</title>
 <meta charset="utf-8">
 
 

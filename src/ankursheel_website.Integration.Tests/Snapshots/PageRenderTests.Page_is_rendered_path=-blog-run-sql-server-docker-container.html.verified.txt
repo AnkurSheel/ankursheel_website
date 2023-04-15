@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to run SQL Server in a Docker container - Ankur Sheel</title>
+<title>How to run SQL Server in a Docker container</title>
 <meta charset="utf-8">
 
 

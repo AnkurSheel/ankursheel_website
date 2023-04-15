@@ -4,7 +4,7 @@
 <head>
     
 
-<title>10 things to do when getting started with 3D programming - Ankur Sheel</title>
+<title>10 things to do when getting started with 3D programming</title>
 <meta charset="utf-8"/>
 
 

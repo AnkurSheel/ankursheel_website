@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Walking Around in London - Ankur Sheel</title>
+<title>Walking Around in London</title>
 <meta charset="utf-8"/>
 
 

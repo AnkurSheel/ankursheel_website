@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Installing NuGet packages in Unity 2021 - Ankur Sheel</title>
+<title>Installing NuGet packages in Unity 2021</title>
 <meta charset="utf-8"/>
 
 

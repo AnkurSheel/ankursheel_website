@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Why do I interview even when I am happy at my job? - Ankur Sheel</title>
+<title>Why do I interview even when I am happy at my job?</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Dubai Fountain - Ankur Sheel</title>
+<title>Dubai Fountain</title>
 <meta charset="utf-8"/>
 
 

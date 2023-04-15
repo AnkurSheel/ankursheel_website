@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to fix the Language version error for Unity projects in Rider - Ankur Sheel</title>
+<title>How to fix the Language version error for Unity projects in Rider</title>
 <meta charset="utf-8">
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Waitomo Blackwater Rafting - Ankur Sheel</title>
+<title>New Zealand Escapes: Waitomo Blackwater Rafting</title>
 <meta charset="utf-8"/>
 
 

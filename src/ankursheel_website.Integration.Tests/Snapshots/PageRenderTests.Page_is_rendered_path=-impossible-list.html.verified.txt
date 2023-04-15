@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Impossible list :  My ever-growing bucket list - Ankur Sheel</title>
+<title>Impossible list :  My ever-growing bucket list</title>
 <meta charset="utf-8"/>
 
 

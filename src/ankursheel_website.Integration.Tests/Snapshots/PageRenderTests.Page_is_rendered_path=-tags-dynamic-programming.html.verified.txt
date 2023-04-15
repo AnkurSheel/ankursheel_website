@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;dynamic programming&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;dynamic programming&quot;</title>
 <meta charset="utf-8"/>
 
 

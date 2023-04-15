@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;rider&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;rider&quot;</title>
 <meta charset="utf-8"/>
 
 

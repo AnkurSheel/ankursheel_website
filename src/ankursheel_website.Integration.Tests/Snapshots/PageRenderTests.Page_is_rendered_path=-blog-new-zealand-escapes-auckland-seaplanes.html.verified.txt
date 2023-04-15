@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Auckland Seaplanes - Ankur Sheel</title>
+<title>New Zealand Escapes: Auckland Seaplanes</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Weekly Roundup 38 - Ankur Sheel</title>
+<title>Weekly Roundup 38</title>
 <meta charset="utf-8"/>
 
 

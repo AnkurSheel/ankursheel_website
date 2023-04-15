@@ -4,7 +4,7 @@
 <head>
     
 
-<title>What to do as an end-user when merchants using stripe decline your credit cards - Ankur Sheel</title>
+<title>What to do as an end-user when merchants using stripe decline your credit cards</title>
 <meta charset="utf-8"/>
 
 

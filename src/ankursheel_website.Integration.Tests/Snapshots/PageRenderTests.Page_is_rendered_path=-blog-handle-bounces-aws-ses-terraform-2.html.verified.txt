@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to use terraform to process SQS messages in a lambda - Ankur Sheel</title>
+<title>How to use terraform to process SQS messages in a lambda</title>
 <meta charset="utf-8"/>
 
 

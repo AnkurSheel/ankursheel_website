@@ -4,7 +4,7 @@
 <head>
     
 
-<title>A better naming convention for unit tests - Ankur Sheel</title>
+<title>A better naming convention for unit tests</title>
 <meta charset="utf-8"/>
 
 

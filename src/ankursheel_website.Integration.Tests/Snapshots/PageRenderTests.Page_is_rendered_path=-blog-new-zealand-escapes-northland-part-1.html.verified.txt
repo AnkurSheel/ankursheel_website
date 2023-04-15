@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Northland - Part 1 - Ankur Sheel</title>
+<title>New Zealand Escapes: Northland - Part 1</title>
 <meta charset="utf-8"/>
 
 

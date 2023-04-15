@@ -4,7 +4,7 @@
 <head>
     
 
-<title>A postmortem of the Asteroids clone - Ankur Sheel</title>
+<title>A postmortem of the Asteroids clone</title>
 <meta charset="utf-8"/>
 
 

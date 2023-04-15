@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to echo commands as they are executed in a shell script - Ankur Sheel</title>
+<title>How to echo commands as they are executed in a shell script</title>
 <meta charset="utf-8">
 
 

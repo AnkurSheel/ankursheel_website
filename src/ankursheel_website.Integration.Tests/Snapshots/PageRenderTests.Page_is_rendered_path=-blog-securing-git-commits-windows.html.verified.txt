@@ -4,7 +4,7 @@
 <head>
     
 
-<title>A guide to securing git commits from tricking you on Windows - Ankur Sheel</title>
+<title>A guide to securing git commits from tricking you on Windows</title>
 <meta charset="utf-8"/>
 
 

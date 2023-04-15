@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;graphql&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;graphql&quot;</title>
 <meta charset="utf-8"/>
 
 

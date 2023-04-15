@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to draw on a page using react hooks and typescript - Ankur Sheel</title>
+<title>How to draw on a page using react hooks and typescript</title>
 <meta charset="utf-8">
 
 

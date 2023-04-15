@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: KiwiRail - TranzAlpine Express - Ankur Sheel</title>
+<title>New Zealand Escapes: KiwiRail - TranzAlpine Express</title>
 <meta charset="utf-8"/>
 
 

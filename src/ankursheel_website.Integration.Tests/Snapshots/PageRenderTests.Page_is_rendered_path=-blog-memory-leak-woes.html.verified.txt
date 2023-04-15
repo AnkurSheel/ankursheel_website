@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>A guide to finding memory leaks using macros in C&#x2B;&#x2B; - Ankur Sheel</title>
+<title>A guide to finding memory leaks using macros in C&#x2B;&#x2B;</title>
 <meta charset="utf-8">
 
 

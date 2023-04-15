@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Visiting Greenwich and taking a ride on London Eye - Ankur Sheel</title>
+<title>Visiting Greenwich and taking a ride on London Eye</title>
 <meta charset="utf-8"/>
 
 

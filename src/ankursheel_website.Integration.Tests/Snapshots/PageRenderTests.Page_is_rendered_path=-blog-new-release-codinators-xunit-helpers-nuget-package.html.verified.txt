@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>New Release: Codinators.XunitHelpers Nuget Package - Ankur Sheel</title>
+<title>New Release: Codinators.XunitHelpers Nuget Package</title>
 <meta charset="utf-8">
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Abra and Souqs in Dubai - Ankur Sheel</title>
+<title>Abra and Souqs in Dubai</title>
 <meta charset="utf-8"/>
 
 

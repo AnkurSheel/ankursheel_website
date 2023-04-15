@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Country Visit List - Ankur Sheel</title>
+<title>Country Visit List</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to Upload Multiple Files to AWS S3 using Terraform - Ankur Sheel</title>
+<title>How to Upload Multiple Files to AWS S3 using Terraform</title>
 <meta charset="utf-8"/>
 
 

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup - Ankur Sheel</title>
+<title>Don&#x27;t Let Unused Methods Linger: A Better Approach to Feature Flags Cleanup</title>
 <meta charset="utf-8">
 
 
@@ -153,8 +153,7 @@ void deleteMe()
 <h2 id="conclusion">Conclusion</h2>
 <p>In conclusion, the <code>FeatureFlagWillMakeThisObsolete</code> annotation provides a practical solution for ensuring cleaner Feature Flags cleanup by marking unused methods that can be safely deleted.</p>
 <p>This annotation has several advantages over the existing workarounds, including the ability to mark even nested functions and optimize for simple cleanups.</p>
-<p>While it is important to remember to add the annotation when writing the code and ensure that other developers treat it similarly to <code>&#64;Deprecated</code>, by implementing the <code>FeatureFlagWillMakeThisObsolete</code> annotation in our codebase, we can improve code quality, reduce technical debt, and make Feature Flag cleanup a breeze.
-As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.</p>
+<p>While it is important to remember to add the annotation when writing the code and ensure that other developers treat it similarly to <code>&#64;Deprecated</code>, by implementing the <code>FeatureFlagWillMakeThisObsolete</code> annotation in our codebase, we can improve code quality, reduce technical debt, and make Feature Flag cleanup a breeze.</p>
 
 
 

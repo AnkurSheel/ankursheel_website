@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Tamaki Maori Village, Rotorua - Ankur Sheel</title>
+<title>New Zealand Escapes: Tamaki Maori Village, Rotorua</title>
 <meta charset="utf-8"/>
 
 

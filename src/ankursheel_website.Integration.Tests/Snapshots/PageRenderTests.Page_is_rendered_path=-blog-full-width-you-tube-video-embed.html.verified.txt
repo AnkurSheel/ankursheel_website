@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Embed a YouTube video with 16:9 aspect ratio and full-width - Ankur Sheel</title>
+<title>Embed a YouTube video with 16:9 aspect ratio and full-width</title>
 <meta charset="utf-8">
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>A visit to Wafi Mall - Ankur Sheel</title>
+<title>A visit to Wafi Mall</title>
 <meta charset="utf-8"/>
 
 

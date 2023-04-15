@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Why I am building an Asteroid clone as the next game - Ankur Sheel</title>
+<title>Why I am building an Asteroid clone as the next game</title>
 <meta charset="utf-8"/>
 
 

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to calculate reading time - Ankur Sheel</title>
+<title>How to calculate reading time</title>
 <meta charset="utf-8">
 
 

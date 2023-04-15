@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Breakout Clone v1.0 - Ankur Sheel</title>
+<title>Breakout Clone v1.0</title>
 <meta charset="utf-8"/>
 
 

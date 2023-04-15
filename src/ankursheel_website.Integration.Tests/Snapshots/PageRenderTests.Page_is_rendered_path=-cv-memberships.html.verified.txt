@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Memberships - Ankur Sheel</title>
+<title>Memberships</title>
 <meta charset="utf-8"/>
 
 

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to change the author of multiple Git commits - Ankur Sheel</title>
+<title>How to change the author of multiple Git commits</title>
 <meta charset="utf-8">
 
 

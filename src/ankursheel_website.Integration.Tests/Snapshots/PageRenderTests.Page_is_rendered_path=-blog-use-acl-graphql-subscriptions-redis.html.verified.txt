@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis - Ankur Sheel</title>
+<title>How to use Access Control Lists (ACL) for Graphql subscriptions with Redis</title>
 <meta charset="utf-8">
 
 

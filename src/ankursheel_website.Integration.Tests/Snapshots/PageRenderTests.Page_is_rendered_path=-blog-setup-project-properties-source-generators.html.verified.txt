@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to set up the project properties for Source Generators - Ankur Sheel</title>
+<title>How to set up the project properties for Source Generators</title>
 <meta charset="utf-8">
 
 

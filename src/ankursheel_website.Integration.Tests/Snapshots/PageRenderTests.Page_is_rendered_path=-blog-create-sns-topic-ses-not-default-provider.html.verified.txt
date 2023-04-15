@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to create an SNS topic for SES in a different region with terraform - Ankur Sheel</title>
+<title>How to create an SNS topic for SES in a different region with terraform</title>
 <meta charset="utf-8"/>
 
 

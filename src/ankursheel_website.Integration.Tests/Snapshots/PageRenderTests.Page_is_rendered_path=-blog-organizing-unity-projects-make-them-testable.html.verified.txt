@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Organizing Unity projects to make them testable - Ankur Sheel</title>
+<title>Organizing Unity projects to make them testable</title>
 <meta charset="utf-8"/>
 
 

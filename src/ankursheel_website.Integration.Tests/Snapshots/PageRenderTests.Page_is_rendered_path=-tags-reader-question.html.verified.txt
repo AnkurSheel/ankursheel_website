@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;reader question&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;reader question&quot;</title>
 <meta charset="utf-8"/>
 
 

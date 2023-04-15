@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Rangitoto Island - Ankur Sheel</title>
+<title>New Zealand Escapes: Rangitoto Island</title>
 <meta charset="utf-8"/>
 
 

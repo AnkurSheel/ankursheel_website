@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to publish email bounce notifications to an SQS queue - Ankur Sheel</title>
+<title>How to publish email bounce notifications to an SQS queue</title>
 <meta charset="utf-8"/>
 
 

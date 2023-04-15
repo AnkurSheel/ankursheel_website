@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Waiotapu Thermal Wonderland - Ankur Sheel</title>
+<title>New Zealand Escapes: Waiotapu Thermal Wonderland</title>
 <meta charset="utf-8"/>
 
 

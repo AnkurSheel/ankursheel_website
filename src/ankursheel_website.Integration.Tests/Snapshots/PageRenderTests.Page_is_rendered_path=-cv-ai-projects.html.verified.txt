@@ -4,7 +4,7 @@
 <head>
     
 
-<title>AI Projects - Ankur Sheel</title>
+<title>AI Projects</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Product Review: NDepend - Ankur Sheel</title>
+<title>Product Review: NDepend</title>
 <meta charset="utf-8"/>
 
 

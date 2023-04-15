@@ -4,7 +4,7 @@
 <head>
     
 
-<title>USA Road-trip - Ankur Sheel</title>
+<title>USA Road-trip</title>
 <meta charset="utf-8"/>
 
 

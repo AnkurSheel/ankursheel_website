@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to automatically set the access token in Insomnia - Ankur Sheel</title>
+<title>How to automatically set the access token in Insomnia</title>
 <meta charset="utf-8"/>
 
 

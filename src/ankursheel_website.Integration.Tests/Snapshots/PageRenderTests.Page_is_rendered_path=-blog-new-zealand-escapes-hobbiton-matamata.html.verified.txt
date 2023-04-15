@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Zealand Escapes: Hobbiton, Matamata - Ankur Sheel</title>
+<title>New Zealand Escapes: Hobbiton, Matamata</title>
 <meta charset="utf-8"/>
 
 

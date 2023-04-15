@@ -4,7 +4,7 @@
 <head>
     
 
-<title>404 - Page Not Found - Ankur Sheel</title>
+<title>404 - Page Not Found</title>
 <meta charset="utf-8"/>
 
 

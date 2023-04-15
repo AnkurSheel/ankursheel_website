@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Essential Plugins for JetBrains Rider plugins - Ankur Sheel</title>
+<title>Essential Plugins for JetBrains Rider plugins</title>
 <meta charset="utf-8"/>
 
 

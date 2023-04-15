@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Get in Touch - Ankur Sheel</title>
+<title>Get in Touch</title>
 <meta charset="utf-8"/>
 
 

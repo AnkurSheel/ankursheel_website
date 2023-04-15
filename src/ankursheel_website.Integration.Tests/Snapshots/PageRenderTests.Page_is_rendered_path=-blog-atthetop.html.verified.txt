@@ -4,7 +4,7 @@
 <head>
     
 
-<title>At the Top: Burj Khalifa - Ankur Sheel</title>
+<title>At the Top: Burj Khalifa</title>
 <meta charset="utf-8"/>
 
 

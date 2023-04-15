@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Atlantis The Lost Chambers - Ankur Sheel</title>
+<title>Atlantis The Lost Chambers</title>
 <meta charset="utf-8"/>
 
 

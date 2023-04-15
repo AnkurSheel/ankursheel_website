@@ -4,7 +4,7 @@
 <head>
     
 
-<title>All Articles - Ankur Sheel</title>
+<title>All Articles</title>
 <meta charset="utf-8"/>
 
 

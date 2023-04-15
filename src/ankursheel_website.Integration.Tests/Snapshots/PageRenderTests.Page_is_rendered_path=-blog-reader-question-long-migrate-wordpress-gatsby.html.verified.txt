@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How long did it take to migrate from WordPress to Gatsby? - Ankur Sheel</title>
+<title>How long did it take to migrate from WordPress to Gatsby?</title>
 <meta charset="utf-8"/>
 
 

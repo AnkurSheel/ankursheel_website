@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Laid off: Reflections and Lessons learned - Ankur Sheel</title>
+<title>Laid off: Reflections and Lessons learned</title>
 <meta charset="utf-8"/>
 
 
@@ -113,7 +113,7 @@
 <p>Having gone through layoffs multiple times, I can say it's been traumatic every time. Especially if I felt I was performing satisfactorily. Every time I felt like I was the only one struggling when I should be able to move on like the others. And to be honest, that's the face I showed in public every time.</p>
 <p>Given the current climate, I would like this post to make people feel less alone after getting laid off.</p>
 <h2 id="what-would-i-change-about-my-layoff-experience">What would I change about my layoff experience</h2>
-<p>There is no good time to be laid-off. But getting laid off just before mid-year reviews was not ideal. I was also about a month away from my anniversary and vesting another 25% of my ESOPs, which worsened the timing.</p>
+<p>There is no good time to be laid-off. But getting laid off just before mid-year reviews was not ideal. I was also about a month away from my anniversary and vesting another 25% of my ESOPs.</p>
 <p>I was surprised that the company continued hiring till before the layoffs and did not explore an across-the-board reduction in pay or voluntary (temporary) quitting, like the last time they were in a similar situation.</p>
 <p>I wish, in this regard, they had been more like Apple (who, at the time of publishing) have not resorted to layoffs because <a href="https://blog.pragmaticengineer.com/apple-job-cuts-tide/">they did not overhire</a>. Moreover, <a href="https://www.bbc.com/news/business-64258289">CEO Tim Cook took a pay cut of 40%</a> to help weather the economic climate.</p>
 <h3 id="relationships-with-co-workers">Relationships with co-workers</h3>
@@ -129,20 +129,21 @@
 </blockquote>
 <p>Some colleagues I thought would reach out didn't. On the flip side, some people I didn't expect reached out. I want to believe that people did not reach out not because the relationship did not matter but because it makes for an awkward conversation.</p>
 <p>I wish some more of my colleagues had asked how I was doing and if I wanted to catch up. Even some messages that made me feel I had a beneficial impact on them would have been appreciated. Anything I could take with me for the future would have made the experience less painful.</p>
-<p>If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with this differently. The important thing is that they will remember that you reached out to them.</p>
+<p>If you are on the other side and know someone who has been laid off, don't be a stranger. Drop them an email or a slack message asking if they want to get together for a coffee. Even if they ignore you or say no, that's fine. Everyone deals with getting laid-off differently. The important thing is that they will remember that you reached out to them.</p>
 <h3 id="thoughts-about-the-reason-for-laying-me-off">Thoughts about the reason for laying me off</h3>
-<p>That I was on the hit list at this company was both surprising and not surprising. I was one of the 1st engineers to join the company which in theory should have protected. But, there were subtle and not-so-subtle hints that some people wanted me to leave. Probably because of that very reason.</p>
+<p>That I was on the hit list at this company was both surprising and not surprising. I was one of the 1st engineers to join the company which in theory should have protected me. But, there were subtle and not-so-subtle hints that some people wanted me to leave. Probably because of that very reason.</p>
 <p>The official reason for disestablishing my role was that the company had too many backend engineers. I was &quot;too senior&quot; (whatever that means) and hence expensive to keep on. By letting me go, they could save more jobs.</p>
 <p>Although this might be true, it doesn't make sense to me for various reasons. The most important being that more senior people as well as people on the same level as me but with a different role were not put in the firing line.</p>
 <p>If the company wanted to keep me on, they would have asked me to work in an area where they needed more engineers or explored the possibility of working reduced hours/pay. I have on multiple occasions shown that I can pick up new technologies relatively fast, so it would have been low risk.</p>
-<p>I had written a lot of the backend code as well as a few utilities for developer productivity. Infact, as far as the github vanity metrics for, I was far ahead of most most people.</p>
-<p>I also had a lot of historical context about some engineering decisions in the Product and Engineering team, so I could have easily continued to provide value.</p>
+<p>I had written a lot of the backend code as well as some utilities for developer productivity. Infact, as far as the github vanity metrics go, I was far ahead of everyone.</p>
+<p>I also had a lot of historical context about some engineering decisions in the Product and Engineering team</p>
+<p>given all this, I could have easily continued to provide value.</p>
 <blockquote>
 <p>It was the easiest way to silence what I think they saw as disruptive dissent</p>
 </blockquote>
 <p>Like other startups I have been a part of, I joined this one early in the company's life before the founders built the leadership team. From the beginning, I openly raised things I disagreed with or thought could be better.</p>
-<p>I feel that as new people joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums might have threatened leadership, as they probably felt called out. It's possible that disagreeing with mandatory in-office days, <a href="team-name">change in team names</a> and advocating for pay transparency/equity etc. is what put the final nail in the coffin.</p>
-<p>I don't blame them for not wanting to deal with the questions I was raising.</p>
+<p>I feel that as new people joined the company, they became increasingly uncomfortable with my standing up for my principles. My discussions in internal forums clearly threatened leadership, as they probably felt called out.</p>
+<p>I don't blame them for not wanting to deal with the questions I was raising. It's possible that disagreeing with mandatory in-office days, <a href="team-name">change in team names</a> and advocating for pay transparency/equity etc. is what helped put the final nails in the coffin.</p>
 <p>Since I am not in a country with at-will employment and there was no issue with my performance, I feel that with the decision to announce layoffs, my detractors found an easy way to force me to leave.</p>
 <h2 id="speaking-up-is-risky-so-why-do-it">Speaking up is risky, so why do it?</h2>
 <p>It's not the first time, and it won't be the last when people are fired/laid off as a silencing tactic. Look at <a href="https://ma.nu/blog/bye-twitter">what happened at Twitter after the takeover</a> by Elon Musk.</p>

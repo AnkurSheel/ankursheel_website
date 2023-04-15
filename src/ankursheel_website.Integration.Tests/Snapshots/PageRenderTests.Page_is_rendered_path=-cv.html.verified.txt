@@ -4,7 +4,7 @@
 <head>
     
 
-<title>CV - Ankur Sheel</title>
+<title>CV</title>
 <meta charset="utf-8"/>
 
 

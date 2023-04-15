@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel - Ankur Sheel</title>
+<title>Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 

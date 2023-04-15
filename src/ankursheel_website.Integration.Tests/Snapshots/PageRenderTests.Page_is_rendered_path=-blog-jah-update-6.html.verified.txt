@@ -4,7 +4,7 @@
 <head>
     
 
-<title>JAH Update 6 - Ankur Sheel</title>
+<title>JAH Update 6</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Should I Rent Or Buy a House? - Ankur Sheel</title>
+<title>Should I Rent Or Buy a House?</title>
 <meta charset="utf-8"/>
 
 

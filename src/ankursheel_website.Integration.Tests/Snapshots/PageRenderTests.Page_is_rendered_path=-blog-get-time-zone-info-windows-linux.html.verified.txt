@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to get TimeZoneInfo on Windows and Linux - Ankur Sheel</title>
+<title>How to get TimeZoneInfo on Windows and Linux</title>
 <meta charset="utf-8">
 
 

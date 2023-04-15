@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to restore lost commits using git reflog - Ankur Sheel</title>
+<title>How to restore lost commits using git reflog</title>
 <meta charset="utf-8"/>
 
 

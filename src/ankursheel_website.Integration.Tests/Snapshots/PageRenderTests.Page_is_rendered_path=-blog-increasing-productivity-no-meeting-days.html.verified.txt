@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Increasing Productivity with No-Meeting Days - Ankur Sheel</title>
+<title>Increasing Productivity with No-Meeting Days</title>
 <meta charset="utf-8"/>
 
 

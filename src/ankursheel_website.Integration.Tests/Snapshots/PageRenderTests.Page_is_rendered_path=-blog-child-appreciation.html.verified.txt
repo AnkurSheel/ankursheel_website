@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Why being an only child is awesome - Ankur Sheel</title>
+<title>Why being an only child is awesome</title>
 <meta charset="utf-8"/>
 
 

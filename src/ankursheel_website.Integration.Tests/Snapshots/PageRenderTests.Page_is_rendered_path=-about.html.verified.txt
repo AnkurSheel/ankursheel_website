@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Ankur Sheel&#x27;s Rants and Ramblings - Ankur Sheel</title>
+<title>Ankur Sheel&#x27;s Rants and Ramblings</title>
 <meta charset="utf-8"/>
 
 

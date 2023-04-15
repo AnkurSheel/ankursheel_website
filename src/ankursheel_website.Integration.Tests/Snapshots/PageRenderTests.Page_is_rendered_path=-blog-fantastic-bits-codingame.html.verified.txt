@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Why you should compete in Fantastic Bits @ Codingame - Ankur Sheel</title>
+<title>Why you should compete in Fantastic Bits @ Codingame</title>
 <meta charset="utf-8"/>
 
 

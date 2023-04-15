@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to automate the creation of a new blog post - Ankur Sheel</title>
+<title>How to automate the creation of a new blog post</title>
 <meta charset="utf-8">
 
 

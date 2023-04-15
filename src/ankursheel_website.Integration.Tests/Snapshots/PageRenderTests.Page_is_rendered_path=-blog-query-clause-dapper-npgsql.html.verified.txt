@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Dapper and NPGSql : Write a query with the IN operator - Ankur Sheel</title>
+<title>Dapper and NPGSql : Write a query with the IN operator</title>
 <meta charset="utf-8">
 
 

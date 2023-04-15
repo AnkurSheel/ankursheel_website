@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Procedural Minecraft Terrain Generator - Ankur Sheel</title>
+<title>Procedural Minecraft Terrain Generator</title>
 <meta charset="utf-8"/>
 
 

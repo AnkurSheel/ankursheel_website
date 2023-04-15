@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Personal Game Projects - Ankur Sheel</title>
+<title>Personal Game Projects</title>
 <meta charset="utf-8"/>
 
 

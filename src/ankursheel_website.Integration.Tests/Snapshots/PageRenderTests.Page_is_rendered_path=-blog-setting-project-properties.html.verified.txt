@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Setting up the project properties for Game Engine Project - Ankur Sheel</title>
+<title>Setting up the project properties for Game Engine Project</title>
 <meta charset="utf-8"/>
 
 

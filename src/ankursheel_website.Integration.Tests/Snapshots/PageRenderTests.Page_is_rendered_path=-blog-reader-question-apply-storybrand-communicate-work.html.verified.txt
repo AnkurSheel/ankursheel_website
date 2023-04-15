@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How can we apply Storybrand to how we communicate at work - Ankur Sheel</title>
+<title>How can we apply Storybrand to how we communicate at work</title>
 <meta charset="utf-8"/>
 
 

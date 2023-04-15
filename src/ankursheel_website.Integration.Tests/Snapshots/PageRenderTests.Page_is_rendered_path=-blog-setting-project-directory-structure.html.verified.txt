@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How I structure my Game Engine project - Ankur Sheel</title>
+<title>How I structure my Game Engine project</title>
 <meta charset="utf-8"/>
 
 

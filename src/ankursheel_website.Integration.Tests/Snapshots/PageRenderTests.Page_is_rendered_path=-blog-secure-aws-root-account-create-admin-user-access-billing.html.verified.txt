@@ -4,7 +4,7 @@
 <head>
     
 
-<title>How to add a billing admin user to secure an AWS root account - Ankur Sheel</title>
+<title>How to add a billing admin user to secure an AWS root account</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Route Planner: US Landmarks Waypoints - Ankur Sheel</title>
+<title>Route Planner: US Landmarks Waypoints</title>
 <meta charset="utf-8"/>
 
 

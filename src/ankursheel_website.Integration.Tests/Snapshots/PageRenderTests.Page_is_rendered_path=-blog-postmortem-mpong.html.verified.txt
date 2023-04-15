@@ -4,7 +4,7 @@
 <head>
     
 
-<title>A Postmortem of Mpong - Ankur Sheel</title>
+<title>A Postmortem of Mpong</title>
 <meta charset="utf-8"/>
 
 

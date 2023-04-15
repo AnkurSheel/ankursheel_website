@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Deploy a Statiq website using Tailwind CSS to Netlify - Ankur Sheel</title>
+<title>Deploy a Statiq website using Tailwind CSS to Netlify</title>
 <meta charset="utf-8">
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>PostMortem for Codingame AI Contest: Coders of the Caribbean - Ankur Sheel</title>
+<title>PostMortem for Codingame AI Contest: Coders of the Caribbean</title>
 <meta charset="utf-8"/>
 
 

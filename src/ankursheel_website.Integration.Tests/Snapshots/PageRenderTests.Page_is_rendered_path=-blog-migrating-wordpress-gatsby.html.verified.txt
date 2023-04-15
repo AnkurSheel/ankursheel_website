@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Why and How I migrated my website from WordPress to Gatsby - Ankur Sheel</title>
+<title>Why and How I migrated my website from WordPress to Gatsby</title>
 <meta charset="utf-8"/>
 
 

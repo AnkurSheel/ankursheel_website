@@ -4,7 +4,7 @@
 <head>
     
 
-<title>New Side Project: JAH - Ankur Sheel</title>
+<title>New Side Project: JAH</title>
 <meta charset="utf-8"/>
 
 

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Do you need a mentor or a coach? - Ankur Sheel</title>
+<title>Do you need a mentor or a coach?</title>
 <meta charset="utf-8"/>
 
 

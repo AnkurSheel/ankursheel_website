@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Migrating from Gatsby to Statiq - Ankur Sheel</title>
+<title>Migrating from Gatsby to Statiq</title>
 <meta charset="utf-8"/>
 
 

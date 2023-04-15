@@ -4,7 +4,7 @@
 <head>
     
 
-<title>What&#x27;s in a team name - Ankur Sheel</title>
+<title>What&#x27;s in a team name</title>
 <meta charset="utf-8"/>
 
 

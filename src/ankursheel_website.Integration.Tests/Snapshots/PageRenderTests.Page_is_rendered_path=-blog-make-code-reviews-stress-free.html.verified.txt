@@ -4,7 +4,7 @@
 <head>
     
 
-<title>An adaption of the Feedback Ladders for code reviews from Netlify - Ankur Sheel</title>
+<title>An adaption of the Feedback Ladders for code reviews from Netlify</title>
 <meta charset="utf-8"/>
 
 

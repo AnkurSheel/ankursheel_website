@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Other Projects - Ankur Sheel</title>
+<title>Other Projects</title>
 <meta charset="utf-8"/>
 
 

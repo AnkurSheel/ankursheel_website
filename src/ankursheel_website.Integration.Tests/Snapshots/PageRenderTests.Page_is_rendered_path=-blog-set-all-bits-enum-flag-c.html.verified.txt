@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to set all bits of an enum flag in C# - Ankur Sheel</title>
+<title>How to set all bits of an enum flag in C#</title>
 <meta charset="utf-8">
 
 

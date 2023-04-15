@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to move a commit between repositories - Ankur Sheel</title>
+<title>How to move a commit between repositories</title>
 <meta charset="utf-8">
 
 

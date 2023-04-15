@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;Azure pipelines&quot; - Ankur Sheel</title>
+<title>Posts tagged as &quot;Azure pipelines&quot;</title>
 <meta charset="utf-8"/>
 
 
