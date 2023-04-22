@@ -92,12 +92,13 @@
         <article class="prose-code:bg-slate-400">
             
 
-<div class="prose-sm italic ">
-    <div class="flex justify-evenly items-center">
-        <span>Last Updated: <time datetime="2017-12-21">December 21, 2017</time></span>
-        <i class="font-bold">
-            Reading Time: 0 min
-        </i>
+<div class="prose-sm italic">
+    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
+        <p class="mr-4">Published on <time datetime="2017-12-21">Dec 21, 2017</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2017-12-21">Dec 21, 2017</time></p>
+        <p>
+            Estimated Reading Time: <span  class="font-bold">0 min</span>
+        </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
