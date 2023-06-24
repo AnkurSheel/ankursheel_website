@@ -297,11 +297,16 @@
 <li>Have only cold showers for a week</li>
 <li>Go without caffeine for 1 week.</li>
 <li>Drink only water for 1 day.</li>
+<li><del>Get citizenship of another country</del> (March 2023)</li>
 </ul>
 <h2 id="fitness">Fitness</h2>
 <ul>
 <li>Exercise every day for 30 continuous days</li>
-<li>Walk 10k steps for 30 days straight</li>
+<li><del>Walk 10k steps for 30 days straight</del> (April 2023)
+<ul>
+<li>Walk 15k steps for 30 days straight</li>
+</ul>
+</li>
 <li>Wake up at 6am for 30 days – 0/30</li>
 <li><del>10 consecutive pushups</del>
 <ul>
@@ -340,12 +345,8 @@
 <li><del>Get 50 visits in a day.</del> (January 2020)
 <ul>
 <li><del>Get 100 visits in a day.</del> (March 2020)</li>
-<li><del>Get 200 visits in a day.</del> (Feb 2022)</li>
-<li>
-<ul>
+<li><del>Get 200 visits in a day.</del> (February 2022)</li>
 <li>Get 500 visits in a day.</li>
-</ul>
-</li>
 </ul>
 </li>
 <li><del>Make my first dollar online.</del>
@@ -359,7 +360,11 @@
 <li>Game company</li>
 </ul>
 </li>
-<li>Build an application that someone pays for</li>
+<li><del>Build an application</del> (June 2023)
+<ul>
+<li>that someone pays for</li>
+</ul>
+</li>
 </ul>
 <p>What is on your bucket/impossible list?</p>
 

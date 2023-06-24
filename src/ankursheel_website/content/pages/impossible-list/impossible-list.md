@@ -165,11 +165,13 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
 -   Have only cold showers for a week
 -   Go without caffeine for 1 week.
 -   Drink only water for 1 day.
+-   ~~Get citizenship of another country~~ (March 2023)
 
 ## Fitness
 
 -   Exercise every day for 30 continuous days
--   Walk 10k steps for 30 days straight
+-   ~~Walk 10k steps for 30 days straight~~ (April 2023)
+    -   Walk 15k steps for 30 days straight
 -   Wake up at 6am for 30 days – 0/30
 -   ~~10 consecutive pushups~~
     -   20 consecutive pushups (Currently 15)
@@ -195,14 +197,14 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   Get 8000 visits in a month.
 -   ~~Get 50 visits in a day.~~ (January 2020)
     - ~~Get 100 visits in a day.~~ (March 2020)
-    - ~~Get 200 visits in a day.~~ (Feb 2022)
-    -
-        - Get 500 visits in a day.
+    - ~~Get 200 visits in a day.~~ (February 2022)
+    - Get 500 visits in a day.
 -   ~~Make my first dollar online.~~
     -   ~~Make 10 dollars online.~~
     -   Make 100 dollars online.
 -   Start my own company
     -   Game company
--   Build an application that someone pays for
+-   ~~Build an application~~ (June 2023) 
+    - that someone pays for
 
 What is on your bucket/impossible list?
