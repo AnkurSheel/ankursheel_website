@@ -1,6 +1,6 @@
 ---
 title: "Interviewing interviewers: Must-haves and deal-breakers list"
-excerpt: "Joining a company and finding out that it isn't a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation."
+excerpt: "Minimize the risk of joining the wrong company. Interview your interviewers using a must-have and deal-breaker list to make informed decisions"
 category: "career / work"
 updatedOnDate: "2022-10-06"
 tags:
@@ -13,7 +13,7 @@ At the end of most interviews will come the question, "Do you have any questions
 
 I have worked for a few companies in my career. Some of them worked out great, while for others, after a few months of joining, I realized it wasn't a great fit.
 
-Joining a company and finding out it isn't a good match never feels great. It can be hard to know if the company we are considering joining is a good fit (before actually joining them). Still, we can increase the chances by doing a little bit of introspection and preparation.
+Joining a company and finding out it isn't a good match never feels great. It can be hard to know if the company we are considering joining is a good fit (before actually joining them). But, we can increase the chances by doing a little bit of introspection and preparation.
 
 ## How to apply the lists in an interview
 

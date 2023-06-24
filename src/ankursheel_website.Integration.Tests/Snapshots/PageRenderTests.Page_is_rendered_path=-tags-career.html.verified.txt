@@ -103,7 +103,7 @@
         <a href="/blog/interview-interviewers-must-have-deal-breaker-list" class="text-center prose-2xl mb-4">Interviewing interviewers: Must-haves and deal-breakers list</a>
         <div class="font-semibold text-center">6 min</div>
         <p>
-            Joining a company and finding out that it isn&#x27;t a good match never feels great. We can increase the chances of finding the right company with some introspection and preparation.
+            Minimize the risk of joining the wrong company. Interview your interviewers using a must-have and deal-breaker list to make informed decisions
         </p>
             <a href="/blog/interview-interviewers-must-have-deal-breaker-list" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
