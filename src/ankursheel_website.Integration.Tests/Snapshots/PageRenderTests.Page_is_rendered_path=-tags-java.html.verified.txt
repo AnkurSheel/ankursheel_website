@@ -89,6 +89,17 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/transitioning-c-linq-java-streams" class="text-center prose-2xl mb-4">Transitioning from C# LINQ to Java Streams</a>
+        <div class="font-semibold text-center">12 min</div>
+        <p>
+            Transitioning from C# to Java? Mapping C# LINQ functions to Java Streams may seem challenging, but we&#x27;ll explore their equivalents in this blog post.
+        </p>
+            <a href="/blog/transitioning-c-linq-java-streams" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center prose-2xl mb-4">Feature Flags: Removing Unused Methods on Cleanup</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
