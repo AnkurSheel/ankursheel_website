@@ -10,7 +10,10 @@
             </svg>
         </button>
     </div>
-    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 items-center md:pb-0 hidden md:flex md:justify-end md:flex-row">
         @await Html.PartialAsync("_NavigationLinks.cshtml", Model)
+        <li class="navigation-link hidden md:block">
+            @await Html.PartialAsync("_BuyMeACoffeButton.cshtml", Model)
+        </li>
     </ul>
 </nav>
