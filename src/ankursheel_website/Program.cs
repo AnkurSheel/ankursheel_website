@@ -3,7 +3,7 @@ using StatiqHelpers.CustomExtensions;
 using StatiqHelpers.Pipelines;
 
 namespace ankursheel_website
-{
+{ 
     internal class Program
     {
         public static async Task<int> Main(string[] args)
