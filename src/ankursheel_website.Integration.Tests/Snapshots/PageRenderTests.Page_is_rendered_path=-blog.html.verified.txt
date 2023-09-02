@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (196)</h2>
+<h2>All Categories (198)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,12 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/transitioning-c-linq-java-streams">Transitioning from C# LINQ to Java Streams</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -134,12 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/disable-buttons-unity">How To Disable Buttons In Unity</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/echo-commands-they-are-executed-shell-script">How to echo commands as they are executed in a shell script</a>
         </li>
 </ul>
 
@@ -200,8 +200,14 @@
                 <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (66)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (68)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a> - <time class="prose-sm" datetime="23-09-01">September 01, 2023</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a> - <time class="prose-sm" datetime="23-08-20">August 20, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/transitioning-c-linq-java-streams">Transitioning from C# LINQ to Java Streams</a> - <time class="prose-sm" datetime="23-06-25">June 25, 2023</time>
             </li>

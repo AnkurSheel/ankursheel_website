@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Organizing Unity projects to make them testable</title>
+<title>Workaround for Unity Personal License Manual Activation Not Supported</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Unity, by default, puts all the scripts in a single assembly. See how I structure my unity projects to make the code more organized and testable"/>
+<meta name="description" content="A workaround for Unity no longer supporting manual activation of Personal licenses."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable"/>   
-<meta itemProp="name" content="Organizing Unity projects to make them testable"/>
-<meta itemProp="description" content="Unity, by default, puts all the scripts in a single assembly. See how I structure my unity projects to make the code more organized and testable"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/organizing-unity-projects-make-them-testable-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround"/>   
+<meta itemProp="name" content="Workaround for Unity Personal License Manual Activation Not Supported"/>
+<meta itemProp="description" content="A workaround for Unity no longer supporting manual activation of Personal licenses."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/unity-personal-license-manual-activation-workaround-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Organizing Unity projects to make them testable"/>
-<meta property="og:description" content="Unity, by default, puts all the scripts in a single assembly. See how I structure my unity projects to make the code more organized and testable"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/organizing-unity-projects-make-them-testable-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/organizing-unity-projects-make-them-testable-facebook.png"/>
+<meta property="og:title" content="Workaround for Unity Personal License Manual Activation Not Supported"/>
+<meta property="og:description" content="A workaround for Unity no longer supporting manual activation of Personal licenses."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-personal-license-manual-activation-workaround-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-personal-license-manual-activation-workaround-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Organizing Unity projects to make them testable"/>
-<meta name="twitter:description" content="Unity, by default, puts all the scripts in a single assembly. See how I structure my unity projects to make the code more organized and testable"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/organizing-unity-projects-make-them-testable-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/organizing-unity-projects-make-them-testable-twitter.png"/>
+<meta name="twitter:title" content="Workaround for Unity Personal License Manual Activation Not Supported"/>
+<meta name="twitter:description" content="A workaround for Unity no longer supporting manual activation of Personal licenses."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-personal-license-manual-activation-workaround-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-personal-license-manual-activation-workaround-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,50 +110,59 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Organizing Unity projects to make them testable</h1>
+    <h1 class="text-center">Workaround for Unity Personal License Manual Activation Not Supported</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2022-08-17">Aug 17, 2022</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2022-08-17">Aug 17, 2022</time></p>
+        <p class="mr-4">Published on <time datetime="2023-08-20">Aug 20, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-08-20">Aug 20, 2023</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">1 min</span>
         </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
             <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
     </div>
 </div>
 
-<p>When we create a project in Unity, Unity groups all the scripts into a single Assembly predefined by <strong><em>Unity</em></strong> as <em>Assembly-CSharp.dll</em>. This allows all of our scripts to have direct access to each other, which makes prototyping and implementation of functionality in Unity very easy.</p>
-<p>However, by making parts of our code entirely dependent on each other, we risk creating spaghetti code, especially as the project grows.</p>
-<p>To remove this risk of falling into a big bowl of spaghetti code, we need to remove the mono behaviours from the program logic. We can achieve this by creating our own Assembly definitions and references.</p>
-<h2 id="splitting-into-assemblies">Splitting into assemblies</h2>
-<p>In my unity projects, I have a <strong>Core</strong> assembly which contains all the program logic. The classes in this assembly do not inherit from <code>Monobehaviour</code> or <code>ScriptableObject</code>. This is where the meat of the code lives.</p>
-<p><img src="/assets/images/posts/organizing-unity-projects-make-them-testable/cover.png" alt="Project structure" /></p>
-<p>3 other assemblies depend on Core</p>
-<ul>
-<li><strong>Scripts</strong> contains all the mono behaviours and scriptable objects. The classes expose the properties that a designer might want to edit. They pass those values to the appropriate functions in <strong>Core</strong></li>
-<li><strong>Editor</strong> contains all our custom inspectors and Editors. It only supports the Editor platform</li>
-<li><strong>Tests</strong> contains all our tests. Since the <strong>Scripts</strong> and <strong>Editor</strong> do not contain any logic, we can write unit tests against the classes in <strong>Core</strong> and make sure they are modular.</li>
-</ul>
-<p>Besides making our code more organized and testable, splitting our code into assembly definitions helps compile times. With a single assembly definition, every time we make a change to any script, Unity has to compile every single script. By moving our code into assemblies, Unity only has to recompile the scripts that are only inside that <strong><em>Assembly</em></strong>.</p>
-<p>As each assembly becomes more extensive, I split it into smaller assemblies.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Unity, by default, puts all the scripts in a single assembly. This might be fine for small projects. But, by putting in a little effort and splitting our code into multiple assemblies, we can make our code more organized and testable.</p>
+<p>You decided to add a CI/CD pipeline to your Unity Project using <a href="https://game.ci/">GameCI</a>. You are all pumped up and
+ready to start.</p>
+<p>What's the 1st step? Activating Unity! No biggie, right?</p>
+<p>Well, hold on a sec. You generate the <strong><em>alf</em></strong> file after creating the github action. You carry on with the list and
+head to <a href="https://license.unity3d.com/manual">https://license.unity3d.com/manual</a>, all set to create that <strong><em>ulf</em></strong> file.</p>
+<h2 id="plot-twist">Plot Twist</h2>
+<p>But hold your horses because here comes the twist.</p>
+<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" alt="Unity no longer supports manual activation of Personal licenses" /></p>
+<p>Unity dropped a bombshell: &quot;Unity no longer supports manual activation of Personal licenses.&quot;</p>
+<p>Manual activation of Personal licenses? Nope, not happening anymore. Cue the dramatic music. 🎵</p>
+<p>But we are not giving up that easily. We disregard the message and upload the <strong><em>alf</em></strong> file.</p>
+<p>Something's fishy. The option to generate an ulf for a personal license? Poof, it's vanished. Instead, it asks us to
+type in a serial number.</p>
+<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/serial_number.png" alt="Activate your license using serial number" /></p>
+<h2 id="time-for-a-bit-of-trickery">Time for a bit of trickery</h2>
+<p>Right-click and inspect the serial number box</p>
+<p>Now, hunt down the <code>&lt;div class=&quot;option option-personal clear&quot; style=&quot;display: none;&quot;&gt;</code> section</p>
+<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png" alt="Html Source" /></p>
+<p>Guess what? We're deleting that pesky <code>&quot;display: none;&quot;</code>.</p>
+<p>Boom! Like magic, the Unity Personal Edition option reappears. 🎉</p>
+<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png" alt="Page With Personal License" /></p>
+<p>Hopefully, before this hack stops working, GameCI will have an official workaround :)</p>
+<h3 id="shoutout">Shoutout</h3>
+<p>And here's a shoutout to <a href="https://reallpepe.itch.io/defendron">realpepe</a>, who cracked the code and shared the wisdom on
+Discord. Because in the world of tech, teamwork makes the magic happen.</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable&text=Organizing%20Unity%20projects%20to%20make%20them%20testable via @ankur_sheel.&#xD;&#xA;Unity%2C%20by%20default%2C%20puts%20all%20the%20scripts%20in%20a%20single%20assembly.%20See%20how%20I%20structure%20my%20unity%20projects%20to%20make%20the%20code%20more%20organized%20and%20testable" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/organizing-unity-projects-make-them-testable" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround&text=Workaround%20for%20Unity%20Personal%20License%20Manual%20Activation%20Not%20Supported via @ankur_sheel.&#xD;&#xA;A%20workaround%20for%20Unity%20no%20longer%20supporting%20manual%20activation%20of%20Personal%20licenses." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -188,16 +197,16 @@
 
     <ul>
             <li>
-                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
-            </li>
-            <li>
                 <a href="disable-buttons-unity">How To Disable Buttons In Unity</a>
             </li>
             <li>
-                <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
+                <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
             </li>
             <li>
-                <a href="installing-nuget-packages-unity-2021">Installing NuGet packages in Unity 2021</a>
+                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
+            </li>
+            <li>
+                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
             </li>
     </ul>
 </aside>

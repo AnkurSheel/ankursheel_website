@@ -209,7 +209,7 @@ email = author_email
                 <a href="restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>
             </li>
             <li>
-                <a href="securing-git-commits-windows">A guide to securing git commits from tricking you on Windows</a>
+                <a href="cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
             </li>
     </ul>
 </aside>

@@ -190,13 +190,13 @@
                 <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
             </li>
             <li>
+                <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
+            </li>
+            <li>
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
                 <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
-            </li>
-            <li>
-                <a href="add-image-camera-background-unity">How to add an image as a camera background in Unity</a>
             </li>
     </ul>
 </aside>

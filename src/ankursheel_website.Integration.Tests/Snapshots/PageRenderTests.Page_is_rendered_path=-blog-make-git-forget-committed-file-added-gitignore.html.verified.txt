@@ -196,7 +196,7 @@
                 <a href="change-author-multiple-git-commits">How to change the author of multiple Git commits</a>
             </li>
             <li>
-                <a href="securing-git-commits-windows">A guide to securing git commits from tricking you on Windows</a>
+                <a href="cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
             </li>
     </ul>
 </aside>

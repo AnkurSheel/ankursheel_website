@@ -1,23 +1,174 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Ankur Sheel</title>
-    <link>https://www.ankursheel.com/</link>
-    <description>I go down rabbit holes and blog about them</description>
-    <copyright>2023</copyright>
-<pubDate>pubDate</pubDate>
-<lastBuildDate>lastBuildDate</lastBuildDate>
-    <item>
-      <title>Transitioning from C# LINQ to Java Streams</title>
-      <link>https://www.ankursheel.com/blog/transitioning-c-linq-java-streams</link>
-      <description>Transitioning from C# to Java? Mapping C# LINQ functions to Java Streams may seem challenging, but we'll explore their equivalents in this blog post.</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/transitioning-c-linq-java-streams/cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/transitioning-c-linq-java-streams</guid>
-      <pubDate>Sun, 25 Jun 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;If you're transitioning from C# to Java, the task of mapping C# LINQ functions to Java Streams can seem challenging
-While the core concepts bear similarities, unravelling the nuances of syntax and functionality is crucial for success.&lt;/p&gt;
-&lt;p&gt;In this blog post, we will explore the Java equivalents for C# LINQ functions.&lt;/p&gt;
-&lt;h2 id="operations"&gt;Operations&lt;/h2&gt;
+      <title>Ankur Sheel</title>
+      <link>https://www.ankursheel.com/</link>
+      <description>I go down rabbit holes and blog about them</description>
+      <copyright>2023</copyright>
+      <pubDate>pubDate</pubDate>
+      <lastBuildDate>lastBuildDate</lastBuildDate>
+      <item>
+          <title>Cleaning Up Unnecessary Remote-Tracking References</title>
+          <link>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</link>
+          <description>git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote
+              branches to reduce the amount of time spent updating git repositories
+          </description>
+          <guid>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</guid>
+          <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
+          <content:encoded>&lt;p&gt;If your work involves collaborating on a monolithic project with multiple teams, you
+              might find yourself in a situation where you're tracking numerous branches. However, you might soon
+              realise that most of these branches are unnecessary for your specific work. This situation can lead to an
+              avoidable increase in the time you spend updating your project, especially if you're habitually using &lt;code&gt;git
+              pull&lt;/code&gt;.&lt;/p&gt;
+              &lt;p&gt;To streamline our Git workflow and save those precious seconds(or minutes), we should clean up
+              those remote-tracking references.&lt;/p&gt;
+              &lt;h2 id="identifying-the-branches-to-keep"&gt;Identifying the Branches to Keep&lt;/h2&gt;
+              &lt;p&gt;Before we start removing stuff, we should identify the branches that we want to keep. Typically,
+              these would include the &lt;em&gt;main (or master)&lt;/em&gt; branch and a few select branches we actively
+              work on.&lt;/p&gt;
+              &lt;p&gt;To get their unique commit hashes, execute the following command, ensuring to replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;,
+              &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt;
+              with the actual branch names.&lt;/p&gt;
+              &lt;pre&gt;&lt;code class="language-bash"&gt;git rev-parse --quiet origin/main origin/my-branch-1
+              origin/my-branch-2
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;p&gt;&lt;em&gt;Note: I’m assuming the &lt;em&gt;&lt;strong&gt;origin&lt;/strong&gt;&lt;/em&gt; is the
+              name of the upstream&lt;/em&gt;&lt;/p&gt;
+              &lt;p&gt;The &lt;code&gt;git rev-parse&lt;/code&gt; command translates human-readable branch names into
+              cryptic yet significant SHA-1 hashes, which are essentially commit identifiers.&lt;/p&gt;
+              &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;--quiet&lt;/em&gt;&lt;/strong&gt;: Silence is golden, as this flag
+              suppresses output unless there is an error.&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;When executed, the command will produce an output similar to this:&lt;/p&gt;
+              &lt;pre&gt;&lt;code class="language-text"&gt;3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
+              3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
+              64abe6831bf1cb04396d1df02dd7c2ad6d999ab3
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;p&gt;These are the commit hashes associated with the branches we wish to retain.&lt;/p&gt;
+              &lt;h2 id="cleaning-up-unnecessary-local-references"&gt;Cleaning Up Unnecessary Local References&lt;/h2&gt;
+              &lt;p&gt;Now that we have the commit hashes, we can tidy up our local references to remote branches.&lt;/p&gt;
+              &lt;p&gt;This can be done by using a combination of 2 commands - &lt;code&gt;git branch&lt;/code&gt; and
+              &lt;code&gt;xargs&lt;/code&gt;. &lt;code&gt;xargs&lt;/code&gt; is a command-line tool that helps build
+              argument lists for other commands.&lt;/p&gt;
+              &lt;pre&gt;&lt;code class="language-bash"&gt;git branch -r \
+              --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
+              --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
+              --no-contains 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3 \
+              | xargs -I{} git branch -rd &amp;quot;{}&amp;quot;
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;p&gt;Let's look at the options for the &lt;code&gt;git branch&lt;/code&gt; command&lt;/p&gt;
+              &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;-r&lt;/em&gt;&lt;/strong&gt;: Lists the remote-tracking branches.&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;--no-contains&lt;/em&gt;&lt;/strong&gt;: Filters the list of remote
+              branches to include only branches that don't contain the specified commits (our identified hashes).&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;The output of this filtered list is then passed to &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt;.
+              &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt; is a command that allows us to construct argument
+              lists for other commands using input from standard input (stdin).&lt;/p&gt;
+              &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;-I&lt;/em&gt;&lt;/strong&gt;: This option tells &lt;code&gt;xargs&lt;/code&gt;
+              to replace every occurrence of &lt;code&gt;{}&lt;/code&gt; with the input elements pulled from standard
+              input (stdin).&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;git branch -rd&lt;/em&gt;&lt;/strong&gt;: Deletes a remote branch.
+              &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;&amp;quot;&amp;quot;&lt;/em&gt;&lt;/strong&gt;: This is the placeholder,
+              which gets replaced by the specific input item read from stdin.&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;h2 id="preventing-this-buildup-in-the-future"&gt;Preventing this buildup in the future&lt;/h2&gt;
+              &lt;p&gt;Instead of calling &lt;code&gt;git pull&lt;/code&gt;, use &lt;code&gt;git fetch&lt;/code&gt; and
+              &lt;code&gt;git rebase&lt;/code&gt; instead.&lt;/p&gt;
+              &lt;pre&gt;&lt;code class="language-bash"&gt;git fetch origin main --prune --prune-tags
+              git rebase origin/main
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;--prune&lt;/em&gt;&lt;/strong&gt;: Before fetching, remove any
+              remote-tracking references that no longer exist on the remote.&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;em&gt;--prune-tags&lt;/em&gt;&lt;/strong&gt;: Before fetching, remove any
+              local tags that no longer exist on the remote if --prune is enabled.&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+              &lt;p&gt;Following these steps, we can declutter our Git workflow and keep only the relevant references.&lt;/p&gt;
+              &lt;h2 id="references"&gt;References&lt;/h2&gt;
+              &lt;ul&gt;
+              &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-branch"&gt;git branch&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="https://man7.org/linux/man-pages/man1/xargs.1.html"&gt;xargs&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-fetch"&gt;git fetch&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rebase"&gt;git rebase&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+          </content:encoded>
+          <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+      </item>
+      <item>
+          <title>Workaround for Unity Personal License Manual Activation Not Supported</title>
+          <link>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</link>
+          <description>A workaround for Unity no longer supporting manual activation of Personal licenses.</description>
+          <enclosure
+                  url="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png"
+                  length="0" type="image"/>
+          <guid>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</guid>
+          <pubDate>Sun, 20 Aug 2023 00:00:00 GMT</pubDate>
+          <content:encoded>&lt;p&gt;You decided to add a CI/CD pipeline to your Unity Project using &lt;a
+              href="https://game.ci/"&gt;GameCI&lt;/a&gt;. You are all pumped up and
+              ready to start.&lt;/p&gt;
+              &lt;p&gt;What's the 1st step? Activating Unity! No biggie, right?&lt;/p&gt;
+              &lt;p&gt;Well, hold on a sec. You generate the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file
+              after creating the github action. You carry on with the list and
+              head to &lt;a href="https://license.unity3d.com/manual"&gt;https://license.unity3d.com/manual&lt;/a&gt;,
+              all set to create that &lt;strong&gt;&lt;em&gt;ulf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
+              &lt;h2 id="plot-twist"&gt;Plot Twist&lt;/h2&gt;
+              &lt;p&gt;But hold your horses because here comes the twist.&lt;/p&gt;
+              &lt;p&gt;&lt;img
+              src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png"
+              alt="Unity no longer supports manual activation of Personal licenses"&gt;&lt;/p&gt;
+              &lt;p&gt;Unity dropped a bombshell: "Unity no longer supports manual activation of Personal licenses."&lt;/p&gt;
+              &lt;p&gt;Manual activation of Personal licenses? Nope, not happening anymore. Cue the dramatic music. 🎵&lt;/p&gt;
+              &lt;p&gt;But we are not giving up that easily. We disregard the message and upload the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt;
+              file.&lt;/p&gt;
+              &lt;p&gt;Something's fishy. The option to generate an ulf for a personal license? Poof, it's vanished.
+              Instead, it asks us to
+              type in a serial number.&lt;/p&gt;
+              &lt;p&gt;&lt;img
+              src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/serial_number.png"
+              alt="Activate your license using serial number"&gt;&lt;/p&gt;
+              &lt;h2 id="time-for-a-bit-of-trickery"&gt;Time for a bit of trickery&lt;/h2&gt;
+              &lt;p&gt;Right-click and inspect the serial number box&lt;/p&gt;
+              &lt;p&gt;Now, hunt down the &lt;code&gt;&amp;lt;div class="option option-personal clear" style="display:
+              none;"&amp;gt;&lt;/code&gt; section&lt;/p&gt;
+              &lt;p&gt;&lt;img
+              src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png"
+              alt="Html Source"&gt;&lt;/p&gt;
+              &lt;p&gt;Guess what? We're deleting that pesky &lt;code&gt;"display: none;"&lt;/code&gt;.&lt;/p&gt;
+              &lt;p&gt;Boom! Like magic, the Unity Personal Edition option reappears. 🎉&lt;/p&gt;
+              &lt;p&gt;&lt;img
+              src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png"
+              alt="Page With Personal License"&gt;&lt;/p&gt;
+              &lt;p&gt;Hopefully, before this hack stops working, GameCI will have an official workaround :)&lt;/p&gt;
+              &lt;h3 id="shoutout"&gt;Shoutout&lt;/h3&gt;
+              &lt;p&gt;And here's a shoutout to &lt;a href="https://reallpepe.itch.io/defendron"&gt;realpepe&lt;/a&gt;,
+              who cracked the code and shared the wisdom on
+              Discord. Because in the world of tech, teamwork makes the magic happen.&lt;/p&gt;
+          </content:encoded>
+          <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+      </item>
+      <item>
+          <title>Transitioning from C# LINQ to Java Streams</title>
+          <link>https://www.ankursheel.com/blog/transitioning-c-linq-java-streams</link>
+          <description>Transitioning from C# to Java? Mapping C# LINQ functions to Java Streams may seem challenging,
+              but we'll explore their equivalents in this blog post.
+          </description>
+          <enclosure url="https://www.ankursheel.com/assets/images/posts/transitioning-c-linq-java-streams/cover.png"
+                     length="0" type="image"/>
+          <guid>https://www.ankursheel.com/blog/transitioning-c-linq-java-streams</guid>
+          <pubDate>Sun, 25 Jun 2023 00:00:00 GMT</pubDate>
+          <content:encoded>&lt;p&gt;If you're transitioning from C# to Java, the task of mapping C# LINQ functions to
+              Java Streams can seem challenging
+              While the core concepts bear similarities, unravelling the nuances of syntax and functionality is crucial
+              for success.&lt;/p&gt;
+              &lt;p&gt;In this blog post, we will explore the Java equivalents for C# LINQ functions.&lt;/p&gt;
+              &lt;h2 id="operations"&gt;Operations&lt;/h2&gt;
 &lt;h2 id="select-map"&gt;Select / map&lt;/h2&gt;
 &lt;p&gt;Transforms each element of a sequence based on a given function.&lt;/p&gt;
 &lt;h3 id="c"&gt;C#&lt;/h3&gt;
@@ -27,8 +178,8 @@ var squaredNumbers = numbers.Select(x =&amp;gt; x * x).ToList();
 &lt;h3 id="java"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; squaredNumbers = numbers.stream()
-                                      .map(x -&amp;gt; x * x)
-                                      .collect(Collectors.toList());
+              .map(x -&amp;gt; x * x)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 4, 9, 16, 25]
@@ -42,8 +193,8 @@ var evenNumbers = numbers.Where(x =&amp;gt; x % 2 == 0).ToList();
 &lt;h3 id="java-1"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; evenNumbers = numbers.stream()
-                                   .filter(x -&amp;gt; x % 2 == 0)
-                                   .collect(Collectors.toList());
+              .filter(x -&amp;gt; x % 2 == 0)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-1"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[2, 4]
@@ -57,8 +208,8 @@ var sortedNumbers = numbers.OrderBy(x =&amp;gt; x).ToList();
 &lt;h3 id="java-2"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(3, 1, 4, 2, 5);
 List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
-                                     .sorted()
-                                     .collect(Collectors.toList());
+              .sorted()
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-2"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
@@ -72,9 +223,9 @@ var sortedNumbers = numbers.OrderByDescending(n =&amp;gt; n);
 &lt;h3 id="java-3"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9, 1, 7);
 
-List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
-                                     .sorted(Comparator.reverseOrder())
-                                     .collect(Collectors.toList());
+              List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
+              .sorted(Comparator.reverseOrder())
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-3"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[9, 7, 5, 2, 1]
@@ -84,25 +235,25 @@ List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
 &lt;h3 id="c-4"&gt;C#&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-csharp"&gt;var people = new List&amp;lt;Person&amp;gt;
 {
-    new Person { Name = &amp;quot;Alice&amp;quot;, Age = 25 },
-    new Person { Name = &amp;quot;Bob&amp;quot;, Age = 30 },
-    new Person { Name = &amp;quot;Charlie&amp;quot;, Age = 25 }
+              new Person { Name = &amp;quot;Alice&amp;quot;, Age = 25 },
+              new Person { Name = &amp;quot;Bob&amp;quot;, Age = 30 },
+              new Person { Name = &amp;quot;Charlie&amp;quot;, Age = 25 }
 };
 var peopleByAge = people.GroupBy(p =&amp;gt; p.Age);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-4"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Person&amp;gt; people = Arrays.asList(
-        new Person(&amp;quot;Alice&amp;quot;, 25),
-        new Person(&amp;quot;Bob&amp;quot;, 30),
-        new Person(&amp;quot;Charlie&amp;quot;, 25)
+              new Person(&amp;quot;Alice&amp;quot;, 25),
+              new Person(&amp;quot;Bob&amp;quot;, 30),
+              new Person(&amp;quot;Charlie&amp;quot;, 25)
 );
 Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; peopleByAge = people.stream()
-                                               .collect(Collectors.groupingBy(Person::getAge));
+              .collect(Collectors.groupingBy(Person::getAge));
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-4"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;{
-    25: [{ Name: &amp;quot;Alice&amp;quot;, Age: 25 }, { Name: &amp;quot;Charlie&amp;quot;, Age: 25 }],
-    30: [{ Name: &amp;quot;Bob&amp;quot;, Age: 30 }]
+              25: [{ Name: &amp;quot;Alice&amp;quot;, Age: 25 }, { Name: &amp;quot;Charlie&amp;quot;, Age: 25 }],
+              30: [{ Name: &amp;quot;Bob&amp;quot;, Age: 30 }]
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="join-join"&gt;Join / join&lt;/h2&gt;
@@ -110,47 +261,47 @@ Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; peopleByAge = people.stre
 &lt;h3 id="c-5"&gt;C#&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-csharp"&gt;var persons = new List&amp;lt;Person&amp;gt;
 {
-    new Person { Id = 1, Name = &amp;quot;John&amp;quot; },
-    new Person { Id = 2, Name = &amp;quot;Jane&amp;quot; },
-    new Person { Id = 3, Name = &amp;quot;Alice&amp;quot; }
+              new Person { Id = 1, Name = &amp;quot;John&amp;quot; },
+              new Person { Id = 2, Name = &amp;quot;Jane&amp;quot; },
+              new Person { Id = 3, Name = &amp;quot;Alice&amp;quot; }
 };
 
-var addresses = new List&amp;lt;Address&amp;gt;
+              var addresses = new List&amp;lt;Address&amp;gt;
 {
-    new Address { Id = 1, City = &amp;quot;New York&amp;quot; },
-    new Address { Id = 2, City = &amp;quot;London&amp;quot; },
-    new Address { Id = 3, City = &amp;quot;Paris&amp;quot; }
+              new Address { Id = 1, City = &amp;quot;New York&amp;quot; },
+              new Address { Id = 2, City = &amp;quot;London&amp;quot; },
+              new Address { Id = 3, City = &amp;quot;Paris&amp;quot; }
 };
 
-var joinedData = persons.Join(addresses,
-                              person =&amp;gt; person.Id,
-                              address =&amp;gt; address.Id,
-                              (person, address) =&amp;gt; new { PersonName = person.Name, City = address.City });
+              var joinedData = persons.Join(addresses,
+              person =&amp;gt; person.Id,
+              address =&amp;gt; address.Id,
+              (person, address) =&amp;gt; new { PersonName = person.Name, City = address.City });
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-5"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Person&amp;gt; persons = List.of(
-        new Person(1, &amp;quot;John&amp;quot;),
-        new Person(2, &amp;quot;Jane&amp;quot;),
-        new Person(3, &amp;quot;Alice&amp;quot;)
+              new Person(1, &amp;quot;John&amp;quot;),
+              new Person(2, &amp;quot;Jane&amp;quot;),
+              new Person(3, &amp;quot;Alice&amp;quot;)
 );
 
-List&amp;lt;Address&amp;gt; addresses = List.of(
-        new Address(1, &amp;quot;New York&amp;quot;),
-        new Address(2, &amp;quot;London&amp;quot;),
-        new Address(3, &amp;quot;Paris&amp;quot;)
+              List&amp;lt;Address&amp;gt; addresses = List.of(
+              new Address(1, &amp;quot;New York&amp;quot;),
+              new Address(2, &amp;quot;London&amp;quot;),
+              new Address(3, &amp;quot;Paris&amp;quot;)
 );
 
-List&amp;lt;JoinedData&amp;gt; joinedData = persons.stream()
-                                     .join(addresses.stream(),
-                                           person -&amp;gt; person.getId(),
-                                           address -&amp;gt; address.getId(),
-                                           (person, address) -&amp;gt; new JoinedData(person.getName(), address.getCity()))
-                                     .collect(Collectors.toList());
+              List&amp;lt;JoinedData&amp;gt; joinedData = persons.stream()
+              .join(addresses.stream(),
+              person -&amp;gt; person.getId(),
+              address -&amp;gt; address.getId(),
+              (person, address) -&amp;gt; new JoinedData(person.getName(), address.getCity()))
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-5"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[{ PersonName = &amp;quot;John&amp;quot;, City = &amp;quot;New York&amp;quot; },
- { PersonName = &amp;quot;Jane&amp;quot;, City = &amp;quot;London&amp;quot; },
- { PersonName = &amp;quot;Alice&amp;quot;, City = &amp;quot;Paris&amp;quot; }]
+              { PersonName = &amp;quot;Jane&amp;quot;, City = &amp;quot;London&amp;quot; },
+              { PersonName = &amp;quot;Alice&amp;quot;, City = &amp;quot;Paris&amp;quot; }]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="any-anymatch"&gt;Any / AnyMatch&lt;/h2&gt;
 &lt;p&gt;Checks if any element in the sequence satisfies a specified condition.&lt;/p&gt;
@@ -161,7 +312,7 @@ var anyEven = numbers.Any(n =&amp;gt; n % 2 == 0);
 &lt;h3 id="java-6"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 boolean anyEven = numbers.stream()
-                         .anyMatch(n -&amp;gt; n % 2 == 0);
+              .anyMatch(n -&amp;gt; n % 2 == 0);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-6"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;true
@@ -175,8 +326,8 @@ var allPositive = numbers.All(n =&amp;gt; n &amp;gt; 0);
 &lt;h3 id="java-7"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 
-boolean allPositive = numbers.stream()
-                             .allMatch(n -&amp;gt; n &amp;gt; 0);
+              boolean allPositive = numbers.stream()
+              .allMatch(n -&amp;gt; n &amp;gt; 0);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-7"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;true
@@ -203,7 +354,7 @@ var count = numbers.Count();
 &lt;h3 id="java-9"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 long count = numbers.stream()
-                    .count();
+              .count();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-9"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;5
@@ -217,8 +368,8 @@ var firstNumber = numbers.First();
 &lt;h3 id="java-10"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 int firstNumber = numbers.stream()
-                         .findFirst()
-                         .orElseThrow(NoSuchElementException::new);
+              .findFirst()
+              .orElseThrow(NoSuchElementException::new);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-10"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;1
@@ -232,8 +383,8 @@ var firstOrDefaultNumber = numbers.FirstOrDefault();
 &lt;h3 id="java-11"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
 int firstOrDefaultNumber = numbers.stream()
-                                  .findFirst()
-                                  .orElse(0);
+              .findFirst()
+              .orElse(0);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-11"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;0
@@ -243,13 +394,13 @@ int firstOrDefaultNumber = numbers.stream()
 &lt;h3 id="c-12"&gt;C#&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-csharp"&gt;List&amp;lt;int&amp;gt; numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
 
-int lastNumber = numbers.Last();
+              int lastNumber = numbers.Last();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-12"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 int lastNumber = numbers.stream()
-                .reduce((a, b) -&amp;gt; b)
-                .orElseThrow(NoSuchElementException::new);
+              .reduce((a, b) -&amp;gt; b)
+              .orElseThrow(NoSuchElementException::new);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-12"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;5
@@ -263,8 +414,8 @@ var lastOrDefaultNumber = numbers.LastOrDefault();
 &lt;h3 id="java-13"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
 int lastOrDefaultNumber = numbers.stream()
-                                 .reduce((a, b) -&amp;gt; b)
-                                 .orElse(0);
+              .reduce((a, b) -&amp;gt; b)
+              .orElse(0);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-13"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;0
@@ -278,8 +429,8 @@ var skippedNumbers = numbers.Skip(2);
 &lt;h3 id="java-14"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; skippedNumbers = numbers.stream()
-                                      .skip(2)
-                                      .collect(Collectors.toList());
+              .skip(2)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-14"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[3, 4, 5]
@@ -293,8 +444,8 @@ var skippedNumbers = numbers.SkipWhile(n =&amp;gt; n &amp;lt; 3);
 &lt;h3 id="java-15"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; skippedNumbers = numbers.stream()
-                                      .dropWhile(n -&amp;gt; n &amp;lt; 3)
-                                      .collect(Collectors.toList());
+              .dropWhile(n -&amp;gt; n &amp;lt; 3)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-15"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[3, 4, 5]
@@ -308,10 +459,10 @@ var takenNumbers = numbers.Take(3);
 &lt;h3 id="java-16"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; takenNumbers = numbers.stream()
-                                    .limit(3)
-                                    .collect(Collectors.toList());
+              .limit(3)
+              .collect(Collectors.toList());
 
-&lt;/code&gt;&lt;/pre&gt;
+              &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-16"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3]
 &lt;/code&gt;&lt;/pre&gt;
@@ -324,8 +475,8 @@ var takenNumbers = numbers.TakeWhile(n =&amp;gt; n &amp;lt; 4);
 &lt;h3 id="java-17"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; takenNumbers = numbers.stream()
-                                    .takeWhile(n -&amp;gt; n &amp;lt; 4)
-                                    .collect(Collectors.toList());
+              .takeWhile(n -&amp;gt; n &amp;lt; 4)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-17"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3]
@@ -352,9 +503,9 @@ var average = numbers.Average();
 &lt;h3 id="java-19"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 double average = numbers.stream()
-                        .mapToInt(Integer::intValue)
-                        .average()
-                        .orElseThrow(NoSuchElementException::new);
+              .mapToInt(Integer::intValue)
+              .average()
+              .orElseThrow(NoSuchElementException::new);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-19"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;3
@@ -368,9 +519,9 @@ var min = numbers.Min();
 &lt;h3 id="java-20"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9, 1, 7);
 int min = numbers.stream()
-                 .mapToInt(Integer::intValue)
-                 .min()
-                 .orElseThrow(NoSuchElementException::new);
+              .mapToInt(Integer::intValue)
+              .min()
+              .orElseThrow(NoSuchElementException::new);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-20"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;1
@@ -384,9 +535,9 @@ var max = numbers.Max();
 &lt;h3 id="java-21"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9, 1, 7);
 int max = numbers.stream()
-                 .mapToInt(Integer::intValue)
-                 .max()
-                 .orElseThrow(NoSuchElementException::new);
+              .mapToInt(Integer::intValue)
+              .max()
+              .orElseThrow(NoSuchElementException::new);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-21"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;9
@@ -400,7 +551,7 @@ var sum = numbers.Aggregate((acc, num) =&amp;gt; acc + num);
 &lt;h3 id="java-22"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 int sum = numbers.stream()
-                 .reduce(0, (acc, num) -&amp;gt; acc + num);
+              .reduce(0, (acc, num) -&amp;gt; acc + num);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-22"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;15
@@ -414,8 +565,8 @@ var distinctNumbers = numbers.Distinct();
 &lt;h3 id="java-23"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 2, 3, 3, 4, 5);
 List&amp;lt;Integer&amp;gt; distinctNumbers = numbers.stream()
-                                       .distinct()
-                                       .collect(Collectors.toList());
+              .distinct()
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-23"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
@@ -431,8 +582,8 @@ var unionNumbers = numbers1.Union(numbers2);
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3);
 List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
 List&amp;lt;Integer&amp;gt; unionNumbers = Stream.concat(numbers1.stream(), numbers2.stream())
-                                   .distinct()
-                                   .collect(Collectors.toList());
+              .distinct()
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-24"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
@@ -448,8 +599,8 @@ var intersectNumbers = numbers1.Intersect(numbers2);
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3, 4);
 List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
 List&amp;lt;Integer&amp;gt; intersectNumbers = numbers1.stream()
-                                         .filter(numbers2::contains)
-                                         .collect(Collectors.toList());
+              .filter(numbers2::contains)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-25"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[3, 4]
@@ -465,8 +616,8 @@ var exceptNumbers = numbers1.Except(numbers2);
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3, 4);
 List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
 List&amp;lt;Integer&amp;gt; exceptNumbers = numbers1.stream()
-                                      .filter(num -&amp;gt; !numbers2.contains(num))
-                                      .collect(Collectors.toList());
+              .filter(num -&amp;gt; !numbers2.contains(num))
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-26"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2]
@@ -482,7 +633,7 @@ var concatenatedNumbers = numbers1.Concat(numbers2).ToList();
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3);
 List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
 List&amp;lt;Integer&amp;gt; concatenatedNumbers = Stream.concat(numbers1.stream(), numbers2.stream())
-                                          .collect(Collectors.toList());
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-27"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3, 3, 4, 5]
@@ -506,14 +657,14 @@ Collections.reverse(numbers);
 &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
 var numbers2 = new List&amp;lt;int&amp;gt; { 10, 20, 30 };
 
-var zippedNumbers = numbers1.Zip(numbers2, (x, y) =&amp;gt; x + y).ToList();
+              var zippedNumbers = numbers1.Zip(numbers2, (x, y) =&amp;gt; x + y).ToList();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-29"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3, 4);
 List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(10, 20, 30);
 List&amp;lt;Integer&amp;gt; zippedNumbers = IntStream.range(0, Math.min(numbers1.size(), numbers2.size()))
-                                       .mapToObj(i -&amp;gt; numbers1.get(i) + numbers2.get(i))
-                                       .collect(Collectors.toList());
+              .mapToObj(i -&amp;gt; numbers1.get(i) + numbers2.get(i))
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-29"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[11, 22, 33]
@@ -540,10 +691,10 @@ var singleNumber = numbers.Single();
 &lt;h3 id="java-31"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1);
 int singleNumber = numbers.stream()
-                          .reduce((a, b) -&amp;gt; {
-                              throw new IllegalStateException(&amp;quot;More than one element found&amp;quot;);
-                          })
-                          .orElseThrow(NoSuchElementException::new);
+              .reduce((a, b) -&amp;gt; {
+              throw new IllegalStateException(&amp;quot;More than one element found&amp;quot;);
+              })
+              .orElseThrow(NoSuchElementException::new);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-31"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;1
@@ -557,10 +708,10 @@ var singleOrDefaultNumber = numbers.SingleOrDefault();
 &lt;h3 id="java-32"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3);
 int singleOrDefaultNumber = numbers.stream()
-                                   .reduce((a, b) -&amp;gt; { 
-                                        throw new IllegalStateException(&amp;quot;More than one element found&amp;quot;);
-                                   })
-                                   .orElse(0);
+              .reduce((a, b) -&amp;gt; {
+              throw new IllegalStateException(&amp;quot;More than one element found&amp;quot;);
+              })
+              .orElse(0);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-32"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;0
@@ -573,9 +724,9 @@ var numbersWithDefault = numbers.DefaultIfEmpty(5);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-33"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
-Iterable&amp;lt;Integer&amp;gt; numbersWithDefault = numbers.isEmpty() 
-                                        ? Collections.singletonList(5) 
-                                        : numbers;
+Iterable&amp;lt;Integer&amp;gt; numbersWithDefault = numbers.isEmpty()
+              ? Collections.singletonList(5)
+              : numbers;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-33"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[5]
@@ -604,10 +755,10 @@ IEnumerable&amp;lt;int&amp;gt; numbers = objects.Cast&amp;lt;int&amp;gt;();
 &lt;h3 id="java-35"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;Object[] objects = { 1, 2, 3 };
 List&amp;lt;Integer&amp;gt; numbers = Arrays.stream(objects)
-                              .map(obj -&amp;gt; (Integer) obj)
-                              .collect(Collectors.toList());
+              .map(obj -&amp;gt; (Integer) obj)
+              .collect(Collectors.toList());
 
-&lt;/code&gt;&lt;/pre&gt;
+              &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-35"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[1, 2, 3]
 &lt;/code&gt;&lt;/pre&gt;
@@ -620,9 +771,9 @@ IEnumerable&amp;lt;string&amp;gt; strings = mixedList.OfType&amp;lt;string&amp;g
 &lt;h3 id="java-36"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Object&amp;gt; mixedList = Arrays.asList(1, &amp;quot;hello&amp;quot;, 3.14, true);
 List&amp;lt;String&amp;gt; strings = mixedList.stream()
-                                .filter(obj -&amp;gt; obj instanceof String)
-                                .map(obj -&amp;gt; (String) obj)
-                                .collect(Collectors.toList());
+              .filter(obj -&amp;gt; obj instanceof String)
+              .map(obj -&amp;gt; (String) obj)
+              .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-36"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[&amp;quot;hello&amp;quot;]
@@ -636,8 +787,8 @@ int[] numberArray = numbers.ToArray();
 &lt;h3 id="java-37"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3);
 int[] numberArray = numbers.stream()
-                           .mapToInt(Integer::intValue)
-                           .toArray();
+              .mapToInt(Integer::intValue)
+              .toArray();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="tolist-aslist"&gt;ToList / asList&lt;/h2&gt;
 &lt;p&gt;Converts a sequence to a list.&lt;/p&gt;
@@ -658,13 +809,13 @@ Dictionary&amp;lt;string, int&amp;gt; fruitLengths = fruits.ToDictionary(fruit =
 &lt;h3 id="java-39"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;);
 Map&amp;lt;String, Integer&amp;gt; fruitMap = fruits.stream()
-                                      .collect(Collectors.toMap(fruit -&amp;gt; fruit, fruit -&amp;gt; fruit.length()));
+              .collect(Collectors.toMap(fruit -&amp;gt; fruit, fruit -&amp;gt; fruit.length()));
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-37"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;{
-    apple: 5,
-    banana: 6,
-    cherry: 6
+              apple: 5,
+              banana: 6,
+              cherry: 6
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="tolookup-groupingby"&gt;ToLookup / groupingBy&lt;/h2&gt;
@@ -676,21 +827,21 @@ ILookup&amp;lt;char, string&amp;gt; fruitsByFirstLetter = fruits.ToLookup(fruit 
 &lt;h3 id="java-40"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;, &amp;quot;avocado&amp;quot;, &amp;quot;blueberry&amp;quot;);
 Map&amp;lt;Character, List&amp;lt;String&amp;gt;&amp;gt; fruitsByFirstLetter = fruits.stream()
-                                                        .collect(Collectors.groupingBy(fruit -&amp;gt; fruit.charAt(0)));
+              .collect(Collectors.groupingBy(fruit -&amp;gt; fruit.charAt(0)));
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-38"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;{
-    a = [apple, avocado],
-    b = [banana, blueberry],
-    c = [cherry]
+              a = [apple, avocado],
+              b = [banana, blueberry],
+              c = [cherry]
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;By grasping the mapping of C# LINQ functions to their Java equivalents, we can confidently navigate the transition between these languages.&lt;/p&gt;
 </content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
+          <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+      </item>
     <item>
       <title>Feature Flags: Removing Unused Methods on Cleanup</title>
       <link>https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation</link>
@@ -1615,93 +1766,6 @@ Ankur
 &lt;li&gt;&lt;a href="https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file"&gt;Netlify headers&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding"&gt;Content-Encoding&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type"&gt;Content-Type&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to Serialize enums as strings in .Net Core</title>
-      <link>https://www.ankursheel.com/blog/serializing-enums-strings-net-core</link>
-      <description>If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?</description>
-      <guid>https://www.ankursheel.com/blog/serializing-enums-strings-net-core</guid>
-      <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;public enum Seasons
-{
-    Unknown,
-    Spring,
-    Winter,
-    Autumn,
-    Summer
-}
-
-var seasons = Enum.GetValues&amp;lt;Seasons&amp;gt;().ToList();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;When you serialize the list of seasons using the serialize method, i.e. &lt;code&gt;JsonSerializer.Serialize(seasons)&lt;/code&gt;, it gives an output of &lt;code&gt;[0, 1, 2, 3, 4]&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;As you can see, this is not very readable and almost meaningless unless you look at the code.&lt;/p&gt;
-&lt;p&gt;To overcome this, you can specify a built-in converter to do the conversion to strings and pass it into a &lt;code&gt;JsonSerializerOptions&lt;/code&gt; object.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var SerializerOptions = new JsonSerializerOptions
-    {
-        PropertyNameCaseInsensitive = true,
-        Converters = { new JsonStringEnumConverter() }
-    };
-    
-JsonSerializer.Serialize(seasons, SerializerOptions);
-};
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will give an output of &lt;code&gt;[&amp;quot;Unknown&amp;quot;, &amp;quot;Spring&amp;quot;, &amp;quot;Winter&amp;quot;, &amp;quot;Autumn&amp;quot;, &amp;quot;Summer&amp;quot;]&lt;/code&gt; which is much more readable.&lt;/p&gt;
-&lt;p&gt;You can use the same converter for deserializing the enum.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var seasons = JsonSerializer.Deserialize&amp;lt;T&amp;gt;(json, SerializerOptions);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This gives an output of &lt;code&gt;[Seasons.Unknown, Seasons.Spring, Seasons.Winter, Seasons.Autumn, Seasons.Summer]&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Using the built-in &lt;code&gt;JsonStringEnumConverter&lt;/code&gt;, we can get a more readable output in our JSON.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>How to set all bits of an enum flag in C#</title>
-      <link>https://www.ankursheel.com/blog/set-all-bits-enum-flag-c</link>
-      <description>Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag.</description>
-      <guid>https://www.ankursheel.com/blog/set-all-bits-enum-flag-c</guid>
-      <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;In C#, you can use the [Flags] attribute to create an enum type as bit flags, allowing you to use Bitwise operations.&lt;/p&gt;
-&lt;p&gt;Let's take an example of Seasons&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;
-[Flags]
-public enum Seasons
-{
-    None = 0,
-    Spring = 1 &amp;lt;&amp;lt; 0,
-    Winter = 1 &amp;lt;&amp;lt; 1,
-    Autumn = 1 &amp;lt;&amp;lt; 2,
-    Summer = 1 &amp;lt;&amp;lt; 3
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum by manually combining all the bits yourself.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;[Flags]
-public enum Seasons
-{
-    ... // omitted for brevity
-    All = Spring | Winter | Autumn | Summer
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But, this has a small problem. Every time we add a new value to the enum, we must update the &lt;code&gt;All&lt;/code&gt; value.&lt;/p&gt;
-&lt;p&gt;Here is a simple trick to get a variable with all the bits set.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt; var AllSeasons = (Seasons)Enum.GetValues&amp;lt;Seasons&amp;gt;().Cast&amp;lt;int&amp;gt;().Sum();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let's see what's happening in the above snippet.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Enum.GetValues&lt;MyDays&gt;()&lt;/strong&gt; returns an array of the enums values.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cast&lt;int&gt;&lt;/strong&gt; cast the elements of the array to its int values. &lt;em&gt;Remember that the underlying type of an enum is int.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Sum&lt;/strong&gt; computes the sum of all the values in the collection.&lt;/p&gt;
-&lt;p&gt;We then cast it back to &lt;em&gt;Seasons&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Using Linq magic, we can get an enum value with all the flags set without adding an &lt;em&gt;All&lt;/em&gt; value to the enum.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.enum.getvalues?view=net-6.0"&gt;Enum.GetValues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.cast?view=net-6.0"&gt;Cast&amp;lt;&amp;gt; method&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sum?view=net-6.0"&gt;Sum method&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>How to move a commit between repositories</title>
+<title>Cleaning Up Unnecessary Remote-Tracking References</title>
 <meta charset="utf-8">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Steps to move a commit from one repository to another">
+<meta name="description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating git repositories">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.ankursheel.com/blog/move-commit-between-repositories">   
-<meta itemprop="name" content="How to move a commit between repositories">
-<meta itemprop="description" content="Steps to move a commit from one repository to another">
-    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/move-commit-between-repositories-facebook.png">
-<meta property="og:url" content="https://www.ankursheel.com/blog/move-commit-between-repositories">
+    <link rel="canonical" href="https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references">   
+<meta itemprop="name" content="Cleaning Up Unnecessary Remote-Tracking References">
+<meta itemprop="description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating git repositories">
+    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-facebook.png">
+<meta property="og:url" content="https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to move a commit between repositories">
-<meta property="og:description" content="Steps to move a commit from one repository to another">
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/move-commit-between-repositories-facebook.png">
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/move-commit-between-repositories-facebook.png">
+<meta property="og:title" content="Cleaning Up Unnecessary Remote-Tracking References">
+<meta property="og:description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating git repositories">
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-facebook.png">
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
-<meta name="twitter:title" content="How to move a commit between repositories">
-<meta name="twitter:description" content="Steps to move a commit from one repository to another">
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/move-commit-between-repositories-twitter.png">
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/move-commit-between-repositories-twitter.png">
+<meta name="twitter:title" content="Cleaning Up Unnecessary Remote-Tracking References">
+<meta name="twitter:description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating git repositories">
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-twitter.png">
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-twitter.png">
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -107,17 +107,17 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to move a commit between repositories</h1>
+    <h1 class="text-center">Cleaning Up Unnecessary Remote-Tracking References</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2021-11-04">Nov 04, 2021</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2021-11-04">Nov 04, 2021</time></p>
+        <p class="mr-4">Published on <time datetime="2023-09-01">Sep 01, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-09-01">Sep 01, 2023</time></p>
         <p>
-            Estimated Reading Time: <span class="font-bold">1 min</span>
+            Estimated Reading Time: <span class="font-bold">2 min</span>
         </p>
     </div>
 
@@ -126,26 +126,64 @@
     </div>
 </div>
 
-<p>Sometimes you have a commit in a repository that you want to bring over to another repository. We can follow these steps to do just that.</p>
-<h3 id="create-a-patch">Create a patch</h3>
-<p>In the source repository, we can create a patch that describes the commit by running.</p>
-<pre><code class="language-bash hljs">git format-patch -1 &lt;sha&gt;
+<p>If your work involves collaborating on a monolithic project with multiple teams, you might find yourself in a situation where you're tracking numerous branches. However, you might soon realise that most of these branches are unnecessary for your specific work. This situation can lead to an avoidable increase in the time you spend updating your project, especially if you're habitually using <code>git pull</code>.</p>
+<p>To streamline our Git workflow and save those precious seconds(or minutes), we should clean up those remote-tracking references.</p>
+<h2 id="identifying-the-branches-to-keep">Identifying the Branches to Keep</h2>
+<p>Before we start removing stuff, we should identify the branches that we want to keep. Typically, these would include the <em>main (or master)</em> branch and a few select branches we actively work on.</p>
+<p>To get their unique commit hashes, execute the following command, ensuring to replace <strong><em>origin/main</em></strong>, <strong><em>origin/my-branch-1</em></strong>, and <strong><em>origin/my-branch-2</em></strong> with the actual branch names.</p>
+<pre><code class="language-bash hljs">git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
+</code></pre>
+<p><em>Note: I’m assuming the <em><strong>origin</strong></em> is the name of the upstream</em></p>
+<p>The <code>git rev-parse</code> command translates human-readable branch names into cryptic yet significant SHA-1 hashes, which are essentially commit identifiers.</p>
+<ul>
+<li><strong><em>--quiet</em></strong>: Silence is golden, as this flag suppresses output unless there is an error.</li>
+</ul>
+<p>When executed, the command will produce an output similar to this:</p>
+<pre><code class="language-text">3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
+3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
+64abe6831bf1cb04396d1df02dd7c2ad6d999ab3
+</code></pre>
+<p>These are the commit hashes associated with the branches we wish to retain.</p>
+<h2 id="cleaning-up-unnecessary-local-references">Cleaning Up Unnecessary Local References</h2>
+<p>Now that we have the commit hashes, we can tidy up our local references to remote branches.</p>
+<p>This can be done by using a combination of 2 commands - <code>git branch</code> and <code>xargs</code>. <code>xargs</code> is a command-line tool that helps build argument lists for other commands.</p>
+<pre><code class="language-bash hljs">git branch -r \ 
+--no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
+--no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
+--no-contains 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3 \
+| xargs -I{} git branch -rd &quot;{}&quot;
+</code></pre>
+<p>Let's look at the options for the <code>git branch</code> command</p>
+<ul>
+<li><strong><em>-r</em></strong>: Lists the remote-tracking branches.</li>
+<li><strong><em>--no-contains</em></strong>: Filters the list of remote branches to include only branches that don't contain the specified commits (our identified hashes).</li>
+</ul>
+<p>The output of this filtered list is then passed to <strong><em>xargs</em></strong>. <strong><em>xargs</em></strong> is a command that allows us to construct argument lists for other commands using input from standard input (stdin).</p>
+<ul>
+<li><strong><em>-I</em></strong>:  This option tells <code>xargs</code> to replace every occurrence of <code>{}</code> with the input elements pulled from standard input (stdin).</li>
+<li><strong><em>git branch -rd</em></strong>: Deletes a remote branch.
+<ul>
+<li><strong><em>&quot;&quot;</em></strong>: This is the placeholder, which gets replaced by the specific input item read from stdin.</li>
+</ul>
+</li>
+</ul>
+<h2 id="preventing-this-buildup-in-the-future">Preventing this buildup in the future</h2>
+<p>Instead of calling <code>git pull</code>, use <code>git fetch</code>  and <code>git rebase</code> instead.</p>
+<pre><code class="language-bash hljs">git fetch origin main --prune --prune-tags
+git rebase origin/main
 </code></pre>
 <ul>
-<li><strong>-1</strong>: The number of commits to create the patch for</li>
-<li><strong>sha</strong>: The SHA of the commit</li>
+<li><strong><em>--prune</em></strong>: Before fetching, remove any remote-tracking references that no longer exist on the remote.</li>
+<li><strong><em>--prune-tags</em></strong>: Before fetching, remove any local tags that no longer exist on the remote if --prune is enabled.</li>
 </ul>
-<h3 id="apply-the-patch">Apply the patch</h3>
-<p>In the target repository, we can apply the patch with</p>
-<pre><code class="language-bash hljs">git apply PATH_TO_PATCH --reject
-</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>Following these steps, we can declutter our Git workflow and keep only the relevant references.</p>
+<h2 id="references">References</h2>
 <ul>
-<li><strong>reject</strong>: Applies the parts of the patch that are applicable and leaves the rejected hunks in corresponding *.rej files. We have to apply these manually.</li>
-</ul>
-<h2 id="further-reading">Further Reading</h2>
-<ul>
-<li><a href="https://git-scm.com/docs/git-format-patch">git-format-patch Documentation</a></li>
-<li><a href="https://git-scm.com/docs/git-apply">git-apply Documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-branch">git branch</a></li>
+<li><a href="https://man7.org/linux/man-pages/man1/xargs.1.html">xargs</a></li>
+<li><a href="https://git-scm.com/docs/git-fetch">git fetch</a></li>
+<li><a href="https://git-scm.com/docs/git-rebase">git rebase</a></li>
 </ul>
 
 
@@ -153,8 +191,8 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/move-commit-between-repositories&amp;text=How%20to%20move%20a%20commit%20between%20repositories via @ankur_sheel.&amp;#xD;&amp;#xA;Steps%20to%20move%20a%20commit%20from%20one%20repository%20to%20another" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/move-commit-between-repositories" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references&amp;text=Cleaning%20Up%20Unnecessary%20Remote-Tracking%20References via @ankur_sheel.&amp;#xD;&amp;#xA;git%20pull%20can%20be%20slow%20if%20you%20have%20a%20lot%20of%20remote%20branches.%20Remove%20unnecessary%20tracking%20of%20remote%20branches%20to%20reduce%20the%20amount%20of%20time%20spent%20updating%20git%20repositories" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -189,16 +227,16 @@
 
     <ul>
             <li>
-                <a href="change-author-multiple-git-commits">How to change the author of multiple Git commits</a>
+                <a href="restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>
             </li>
             <li>
                 <a href="make-git-forget-committed-file-added-gitignore">Make Git forget about committed files in .gitignore</a>
             </li>
             <li>
-                <a href="restore-lost-commits-git-reflog">How to restore lost commits using git reflog</a>
+                <a href="move-commit-between-repositories">How to move a commit between repositories</a>
             </li>
             <li>
-                <a href="cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
+                <a href="change-author-multiple-git-commits">How to change the author of multiple Git commits</a>
             </li>
     </ul>
 </aside>
