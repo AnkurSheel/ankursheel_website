@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;ramblings&quot;</title>
+<title>Posts tagged as &quot;opinion&quot;</title>
 <meta charset="utf-8"/>
 
 
@@ -12,17 +12,17 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/ramblings"/>   
-<meta itemProp="name" content="Posts tagged as &quot;ramblings&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/opinion"/>   
+<meta itemProp="name" content="Posts tagged as &quot;opinion&quot;"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/ramblings"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/opinion"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;ramblings&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;opinion&quot;"/>
 <meta property="og:description"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;ramblings&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;opinion&quot;"/>
 <meta name="twitter:description"/>
 
 </head>
@@ -105,7 +105,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;ramblings&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;opinion&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             

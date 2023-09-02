@@ -1,11 +1,11 @@
 ---
 title: "Kobo vs Kindle: Which e-reader to buy?"
 excerpt: "When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy"
-category: "ramblings"
+category: "opinion"
 coverImage: "./cover.jpg"
 tags:
 
-- "ramblings"
+  - "opinion"
 
 ---
 

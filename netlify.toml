@@ -225,3 +225,9 @@ from = "/blog/betternamingconventionunittests"
 to = "/blog/better-naming-convention-unit-tests"
 status = 301
 force = false
+
+[[redirects]]
+from = "/tags/ramblings/"
+to = "/tags/opinion/"
+status = 301
+force = false

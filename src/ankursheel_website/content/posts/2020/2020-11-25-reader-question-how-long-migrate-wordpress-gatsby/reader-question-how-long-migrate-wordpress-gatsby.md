@@ -2,12 +2,12 @@
 title: "How long did it take to migrate from WordPress to Gatsby?"
 excerpt: "A reader asked me how long it took me to migrate from WordPress to Gatsby. Let's find out"
 coverImage: "./cover.png"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "reader question"
-- "gatsby"
-- "wordpress"
+  - "reader question"
+  - "gatsby"
+  - "wordpress"
 
 ---
 

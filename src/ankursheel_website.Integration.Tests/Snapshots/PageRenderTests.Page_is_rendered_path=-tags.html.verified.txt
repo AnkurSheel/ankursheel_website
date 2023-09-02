@@ -201,7 +201,7 @@
             <a role="button" href="/tags/docker" class="capitalize badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/ramblings" class="capitalize badge text-gray-900 bg-grey-light no-underline"> ramblings (4)</a>
+            <a role="button" href="/tags/opinion" class="capitalize badge text-gray-900 bg-grey-light no-underline"> opinion (4)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/security" class="capitalize badge text-gray-900 bg-grey-light no-underline"> security (4)</a>

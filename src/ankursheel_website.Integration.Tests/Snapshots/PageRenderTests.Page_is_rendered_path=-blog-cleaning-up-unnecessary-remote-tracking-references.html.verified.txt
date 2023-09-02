@@ -126,15 +126,22 @@
     </div>
 </div>
 
-<p>If your work involves collaborating on a monolithic project with multiple teams, you might find yourself in a situation where you're tracking numerous branches. However, you might soon realise that most of these branches are unnecessary for your specific work. This situation can lead to an avoidable increase in the time you spend updating your project, especially if you're habitually using <code>git pull</code>.</p>
-<p>To streamline our Git workflow and save those precious seconds(or minutes), we should clean up those remote-tracking references.</p>
+<p>If your work involves collaborating on a monolithic project with multiple teams, you might find yourself in a situation
+where you're tracking numerous branches. However, you might soon realise that most of these branches are unnecessary for
+your specific work. This situation can lead to an avoidable increase in the time you spend updating your project,
+especially if you're habitually using <code>git pull</code>.</p>
+<p>To streamline our Git workflow and save those precious seconds(or minutes), we should clean up those remote-tracking
+references.</p>
 <h2 id="identifying-the-branches-to-keep">Identifying the Branches to Keep</h2>
-<p>Before we start removing stuff, we should identify the branches that we want to keep. Typically, these would include the <em>main (or master)</em> branch and a few select branches we actively work on.</p>
-<p>To get their unique commit hashes, execute the following command, ensuring to replace <strong><em>origin/main</em></strong>, <strong><em>origin/my-branch-1</em></strong>, and <strong><em>origin/my-branch-2</em></strong> with the actual branch names.</p>
+<p>Before we start removing stuff, we should identify the branches that we want to keep. Typically, these would include the
+<em>main (or master)</em> branch and a few select branches we actively work on.</p>
+<p>To get their unique commit hashes, execute the following command, ensuring to replace <strong><em>origin/main</em></strong>, *
+*<em>origin/my-branch-1</em>**, and <strong><em>origin/my-branch-2</em></strong> with the actual branch names.</p>
 <pre><code class="language-bash hljs">git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
 </code></pre>
 <p><em>Note: I’m assuming the <em><strong>origin</strong></em> is the name of the upstream</em></p>
-<p>The <code>git rev-parse</code> command translates human-readable branch names into cryptic yet significant SHA-1 hashes, which are essentially commit identifiers.</p>
+<p>The <code>git rev-parse</code> command translates human-readable branch names into cryptic yet significant SHA-1 hashes, which are
+essentially commit identifiers.</p>
 <ul>
 <li><strong><em>--quiet</em></strong>: Silence is golden, as this flag suppresses output unless there is an error.</li>
 </ul>
@@ -146,7 +153,8 @@
 <p>These are the commit hashes associated with the branches we wish to retain.</p>
 <h2 id="cleaning-up-unnecessary-local-references">Cleaning Up Unnecessary Local References</h2>
 <p>Now that we have the commit hashes, we can tidy up our local references to remote branches.</p>
-<p>This can be done by using a combination of 2 commands - <code>git branch</code> and <code>xargs</code>. <code>xargs</code> is a command-line tool that helps build argument lists for other commands.</p>
+<p>This can be done by using a combination of 2 commands - <code>git branch</code> and <code>xargs</code>. <code>xargs</code> is a command-line tool that
+helps build argument lists for other commands.</p>
 <pre><code class="language-bash hljs">git branch -r \ 
 --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
 --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
@@ -156,11 +164,14 @@
 <p>Let's look at the options for the <code>git branch</code> command</p>
 <ul>
 <li><strong><em>-r</em></strong>: Lists the remote-tracking branches.</li>
-<li><strong><em>--no-contains</em></strong>: Filters the list of remote branches to include only branches that don't contain the specified commits (our identified hashes).</li>
+<li><strong><em>--no-contains</em></strong>: Filters the list of remote branches to include only branches that don't contain the specified
+commits (our identified hashes).</li>
 </ul>
-<p>The output of this filtered list is then passed to <strong><em>xargs</em></strong>. <strong><em>xargs</em></strong> is a command that allows us to construct argument lists for other commands using input from standard input (stdin).</p>
+<p>The output of this filtered list is then passed to <strong><em>xargs</em></strong>. <strong><em>xargs</em></strong> is a command that allows us to construct
+argument lists for other commands using input from standard input (stdin).</p>
 <ul>
-<li><strong><em>-I</em></strong>:  This option tells <code>xargs</code> to replace every occurrence of <code>{}</code> with the input elements pulled from standard input (stdin).</li>
+<li><strong><em>-I</em></strong>:  This option tells <code>xargs</code> to replace every occurrence of <code>{}</code> with the input elements pulled from
+standard input (stdin).</li>
 <li><strong><em>git branch -rd</em></strong>: Deletes a remote branch.
 <ul>
 <li><strong><em>&quot;&quot;</em></strong>: This is the placeholder, which gets replaced by the specific input item read from stdin.</li>
@@ -223,7 +234,7 @@ git rebase origin/main
 
 
 <aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">More like this</h2>
+    <h2 class="mt-2 text-center">You might also like</h2>
 
     <ul>
             <li>

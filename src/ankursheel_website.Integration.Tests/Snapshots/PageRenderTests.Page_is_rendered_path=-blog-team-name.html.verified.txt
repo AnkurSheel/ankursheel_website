@@ -228,7 +228,7 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
 
 
 <aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">More like this</h2>
+    <h2 class="mt-2 text-center">You might also like</h2>
 
     <ul>
             <li>

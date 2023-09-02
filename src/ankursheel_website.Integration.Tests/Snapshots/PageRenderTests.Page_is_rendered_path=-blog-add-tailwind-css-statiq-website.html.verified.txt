@@ -273,7 +273,7 @@ npm install -D tailwindcss&<span class="hljs-comment">#64;latest postcss&#64;lat
 
 
 <aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">More like this</h2>
+    <h2 class="mt-2 text-center">You might also like</h2>
 
     <ul>
             <li>

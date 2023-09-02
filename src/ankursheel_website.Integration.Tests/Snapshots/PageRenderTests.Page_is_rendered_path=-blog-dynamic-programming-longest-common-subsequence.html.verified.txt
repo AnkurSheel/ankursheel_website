@@ -335,7 +335,7 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
 
 
 <aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">More like this</h2>
+    <h2 class="mt-2 text-center">You might also like</h2>
 
     <ul>
             <li>

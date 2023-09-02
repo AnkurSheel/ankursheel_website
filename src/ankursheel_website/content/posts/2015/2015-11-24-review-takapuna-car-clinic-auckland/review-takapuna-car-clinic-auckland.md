@@ -1,10 +1,10 @@
 ---
 title: "Review: Takapuna Car Clinic, Auckland"
 excerpt: "A review of the Takapuna Car Clinic garage in Auckland"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "reviews"
+  - "reviews"
 
 ---
 

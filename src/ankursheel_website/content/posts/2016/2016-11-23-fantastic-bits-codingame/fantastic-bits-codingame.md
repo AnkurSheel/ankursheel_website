@@ -1,10 +1,10 @@
 ---
 title: "Why you should compete in Fantastic Bits @ Codingame"
 excerpt: "Fantastic Bits: The next multiplayer competition being held by the folks at codingame based on the Fantastic Beasts movie"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "Codingame"
+  - "Codingame"
 
 ---
 

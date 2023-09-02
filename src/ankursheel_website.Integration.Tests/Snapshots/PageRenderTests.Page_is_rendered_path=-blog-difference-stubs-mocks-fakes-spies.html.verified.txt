@@ -237,7 +237,7 @@ mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&
 
 
 <aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
-    <h2 class="mt-2 text-center">More like this</h2>
+    <h2 class="mt-2 text-center">You might also like</h2>
 
     <ul>
             <li>

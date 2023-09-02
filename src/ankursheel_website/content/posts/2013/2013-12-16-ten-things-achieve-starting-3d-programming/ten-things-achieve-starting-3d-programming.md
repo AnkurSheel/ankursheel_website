@@ -1,7 +1,7 @@
 ---
 title: "10 things to do when getting started with 3D programming"
 excerpt: "Guidelines to learn the basics of 3D programming"
-category: "ramblings"
+category: "opinion"
 tags:
 
 - "games"

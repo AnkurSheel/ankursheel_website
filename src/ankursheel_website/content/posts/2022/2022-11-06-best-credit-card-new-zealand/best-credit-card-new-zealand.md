@@ -2,10 +2,10 @@
 title: "Finding the best credit card in New Zealand"
 excerpt: "This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card"
 coverImage: "./cover.jpg"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "finance"
+  - "finance"
 
 ---
 

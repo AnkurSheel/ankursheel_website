@@ -16,18 +16,22 @@
           <guid>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</guid>
           <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
           <content:encoded>&lt;p&gt;If your work involves collaborating on a monolithic project with multiple teams, you
-              might find yourself in a situation where you're tracking numerous branches. However, you might soon
-              realise that most of these branches are unnecessary for your specific work. This situation can lead to an
-              avoidable increase in the time you spend updating your project, especially if you're habitually using &lt;code&gt;git
-              pull&lt;/code&gt;.&lt;/p&gt;
+              might find yourself in a situation
+              where you're tracking numerous branches. However, you might soon realise that most of these branches are
+              unnecessary for
+              your specific work. This situation can lead to an avoidable increase in the time you spend updating your
+              project,
+              especially if you're habitually using &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
               &lt;p&gt;To streamline our Git workflow and save those precious seconds(or minutes), we should clean up
-              those remote-tracking references.&lt;/p&gt;
+              those remote-tracking
+              references.&lt;/p&gt;
               &lt;h2 id="identifying-the-branches-to-keep"&gt;Identifying the Branches to Keep&lt;/h2&gt;
               &lt;p&gt;Before we start removing stuff, we should identify the branches that we want to keep. Typically,
-              these would include the &lt;em&gt;main (or master)&lt;/em&gt; branch and a few select branches we actively
-              work on.&lt;/p&gt;
+              these would include the
+              &lt;em&gt;main (or master)&lt;/em&gt; branch and a few select branches we actively work on.&lt;/p&gt;
               &lt;p&gt;To get their unique commit hashes, execute the following command, ensuring to replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;,
-              &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt;
+              *
+              *&lt;em&gt;origin/my-branch-1&lt;/em&gt;**, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt;
               with the actual branch names.&lt;/p&gt;
               &lt;pre&gt;&lt;code class="language-bash"&gt;git rev-parse --quiet origin/main origin/my-branch-1
               origin/my-branch-2
@@ -35,7 +39,8 @@
               &lt;p&gt;&lt;em&gt;Note: I’m assuming the &lt;em&gt;&lt;strong&gt;origin&lt;/strong&gt;&lt;/em&gt; is the
               name of the upstream&lt;/em&gt;&lt;/p&gt;
               &lt;p&gt;The &lt;code&gt;git rev-parse&lt;/code&gt; command translates human-readable branch names into
-              cryptic yet significant SHA-1 hashes, which are essentially commit identifiers.&lt;/p&gt;
+              cryptic yet significant SHA-1 hashes, which are
+              essentially commit identifiers.&lt;/p&gt;
               &lt;ul&gt;
               &lt;li&gt;&lt;strong&gt;&lt;em&gt;--quiet&lt;/em&gt;&lt;/strong&gt;: Silence is golden, as this flag
               suppresses output unless there is an error.&lt;/li&gt;
@@ -49,8 +54,8 @@
               &lt;h2 id="cleaning-up-unnecessary-local-references"&gt;Cleaning Up Unnecessary Local References&lt;/h2&gt;
               &lt;p&gt;Now that we have the commit hashes, we can tidy up our local references to remote branches.&lt;/p&gt;
               &lt;p&gt;This can be done by using a combination of 2 commands - &lt;code&gt;git branch&lt;/code&gt; and
-              &lt;code&gt;xargs&lt;/code&gt;. &lt;code&gt;xargs&lt;/code&gt; is a command-line tool that helps build
-              argument lists for other commands.&lt;/p&gt;
+              &lt;code&gt;xargs&lt;/code&gt;. &lt;code&gt;xargs&lt;/code&gt; is a command-line tool that
+              helps build argument lists for other commands.&lt;/p&gt;
               &lt;pre&gt;&lt;code class="language-bash"&gt;git branch -r \
               --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
               --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
@@ -61,15 +66,16 @@
               &lt;ul&gt;
               &lt;li&gt;&lt;strong&gt;&lt;em&gt;-r&lt;/em&gt;&lt;/strong&gt;: Lists the remote-tracking branches.&lt;/li&gt;
               &lt;li&gt;&lt;strong&gt;&lt;em&gt;--no-contains&lt;/em&gt;&lt;/strong&gt;: Filters the list of remote
-              branches to include only branches that don't contain the specified commits (our identified hashes).&lt;/li&gt;
+              branches to include only branches that don't contain the specified
+              commits (our identified hashes).&lt;/li&gt;
               &lt;/ul&gt;
               &lt;p&gt;The output of this filtered list is then passed to &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt;.
-              &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt; is a command that allows us to construct argument
-              lists for other commands using input from standard input (stdin).&lt;/p&gt;
+              &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt; is a command that allows us to construct
+              argument lists for other commands using input from standard input (stdin).&lt;/p&gt;
               &lt;ul&gt;
               &lt;li&gt;&lt;strong&gt;&lt;em&gt;-I&lt;/em&gt;&lt;/strong&gt;: This option tells &lt;code&gt;xargs&lt;/code&gt;
-              to replace every occurrence of &lt;code&gt;{}&lt;/code&gt; with the input elements pulled from standard
-              input (stdin).&lt;/li&gt;
+              to replace every occurrence of &lt;code&gt;{}&lt;/code&gt; with the input elements pulled from
+              standard input (stdin).&lt;/li&gt;
               &lt;li&gt;&lt;strong&gt;&lt;em&gt;git branch -rd&lt;/em&gt;&lt;/strong&gt;: Deletes a remote branch.
               &lt;ul&gt;
               &lt;li&gt;&lt;strong&gt;&lt;em&gt;&amp;quot;&amp;quot;&lt;/em&gt;&lt;/strong&gt;: This is the placeholder,
@@ -169,127 +175,135 @@
               for success.&lt;/p&gt;
               &lt;p&gt;In this blog post, we will explore the Java equivalents for C# LINQ functions.&lt;/p&gt;
               &lt;h2 id="operations"&gt;Operations&lt;/h2&gt;
-&lt;h2 id="select-map"&gt;Select / map&lt;/h2&gt;
-&lt;p&gt;Transforms each element of a sequence based on a given function.&lt;/p&gt;
-&lt;h3 id="c"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var squaredNumbers = numbers.Select(x =&amp;gt; x * x).ToList();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; squaredNumbers = numbers.stream()
+              &lt;h2 id="select-map"&gt;Select / map&lt;/h2&gt;
+              &lt;p&gt;Transforms each element of a sequence based on a given function.&lt;/p&gt;
+              &lt;h3 id="c"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var squaredNumbers = numbers.Select(x =&amp;gt; x * x).ToList();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              List&amp;lt;Integer&amp;gt; squaredNumbers = numbers.stream()
               .map(x -&amp;gt; x * x)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 4, 9, 16, 25]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="where-filter"&gt;Where / filter&lt;/h2&gt;
-&lt;p&gt;Filters a sequence based on a specified condition.&lt;/p&gt;
-&lt;h3 id="c-1"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var evenNumbers = numbers.Where(x =&amp;gt; x % 2 == 0).ToList();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-1"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; evenNumbers = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 4, 9, 16, 25]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="where-filter"&gt;Where / filter&lt;/h2&gt;
+              &lt;p&gt;Filters a sequence based on a specified condition.&lt;/p&gt;
+              &lt;h3 id="c-1"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var evenNumbers = numbers.Where(x =&amp;gt; x % 2 == 0).ToList();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-1"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              List&amp;lt;Integer&amp;gt; evenNumbers = numbers.stream()
               .filter(x -&amp;gt; x % 2 == 0)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-1"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[2, 4]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="orderby-sorted"&gt;OrderBy / sorted&lt;/h2&gt;
-&lt;p&gt;Sorts the elements of a sequence in ascending order based on a specified key.&lt;/p&gt;
-&lt;h3 id="c-2"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 3, 1, 4, 2, 5 };
-var sortedNumbers = numbers.OrderBy(x =&amp;gt; x).ToList();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-2"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(3, 1, 4, 2, 5);
-List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-1"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[2, 4]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="orderby-sorted"&gt;OrderBy / sorted&lt;/h2&gt;
+              &lt;p&gt;Sorts the elements of a sequence in ascending order based on a specified key.&lt;/p&gt;
+              &lt;h3 id="c-2"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 3, 1, 4, 2, 5
+              };
+              var sortedNumbers = numbers.OrderBy(x =&amp;gt; x).ToList();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-2"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(3, 1, 4,
+              2, 5);
+              List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
               .sorted()
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-2"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="orderbydescending-sorted"&gt;OrderByDescending / sorted&lt;/h2&gt;
-&lt;p&gt;Sorts the elements of a sequence in descending order based on a specified key.&lt;/p&gt;
-&lt;h3 id="c-3"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 5, 2, 9, 1, 7 };
-var sortedNumbers = numbers.OrderByDescending(n =&amp;gt; n);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-3"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9, 1, 7);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-2"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="orderbydescending-sorted"&gt;OrderByDescending / sorted&lt;/h2&gt;
+              &lt;p&gt;Sorts the elements of a sequence in descending order based on a specified key.&lt;/p&gt;
+              &lt;h3 id="c-3"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 5, 2, 9, 1, 7
+              };
+              var sortedNumbers = numbers.OrderByDescending(n =&amp;gt; n);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-3"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9,
+              1, 7);
 
               List&amp;lt;Integer&amp;gt; sortedNumbers = numbers.stream()
               .sorted(Comparator.reverseOrder())
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-3"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[9, 7, 5, 2, 1]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="groupby-groupingby"&gt;GroupBy / groupingBy&lt;/h2&gt;
-&lt;p&gt;Groups the elements of a sequence based on a specified key.&lt;/p&gt;
-&lt;h3 id="c-4"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var people = new List&amp;lt;Person&amp;gt;
-{
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-3"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[9, 7, 5, 2, 1]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="groupby-groupingby"&gt;GroupBy / groupingBy&lt;/h2&gt;
+              &lt;p&gt;Groups the elements of a sequence based on a specified key.&lt;/p&gt;
+              &lt;h3 id="c-4"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var people = new List&amp;lt;Person&amp;gt;
+              {
               new Person { Name = &amp;quot;Alice&amp;quot;, Age = 25 },
               new Person { Name = &amp;quot;Bob&amp;quot;, Age = 30 },
               new Person { Name = &amp;quot;Charlie&amp;quot;, Age = 25 }
-};
-var peopleByAge = people.GroupBy(p =&amp;gt; p.Age);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-4"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Person&amp;gt; people = Arrays.asList(
+              };
+              var peopleByAge = people.GroupBy(p =&amp;gt; p.Age);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-4"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Person&amp;gt; people = Arrays.asList(
               new Person(&amp;quot;Alice&amp;quot;, 25),
               new Person(&amp;quot;Bob&amp;quot;, 30),
               new Person(&amp;quot;Charlie&amp;quot;, 25)
-);
-Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; peopleByAge = people.stream()
+              );
+              Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; peopleByAge = people.stream()
               .collect(Collectors.groupingBy(Person::getAge));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-4"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;{
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-4"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;{
               25: [{ Name: &amp;quot;Alice&amp;quot;, Age: 25 }, { Name: &amp;quot;Charlie&amp;quot;, Age: 25 }],
               30: [{ Name: &amp;quot;Bob&amp;quot;, Age: 30 }]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="join-join"&gt;Join / join&lt;/h2&gt;
-&lt;p&gt;Combines two sequences based on matching keys.&lt;/p&gt;
-&lt;h3 id="c-5"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var persons = new List&amp;lt;Person&amp;gt;
-{
+              }
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="join-join"&gt;Join / join&lt;/h2&gt;
+              &lt;p&gt;Combines two sequences based on matching keys.&lt;/p&gt;
+              &lt;h3 id="c-5"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var persons = new List&amp;lt;Person&amp;gt;
+              {
               new Person { Id = 1, Name = &amp;quot;John&amp;quot; },
               new Person { Id = 2, Name = &amp;quot;Jane&amp;quot; },
               new Person { Id = 3, Name = &amp;quot;Alice&amp;quot; }
-};
+              };
 
               var addresses = new List&amp;lt;Address&amp;gt;
-{
+              {
               new Address { Id = 1, City = &amp;quot;New York&amp;quot; },
               new Address { Id = 2, City = &amp;quot;London&amp;quot; },
               new Address { Id = 3, City = &amp;quot;Paris&amp;quot; }
-};
+              };
 
               var joinedData = persons.Join(addresses,
               person =&amp;gt; person.Id,
               address =&amp;gt; address.Id,
               (person, address) =&amp;gt; new { PersonName = person.Name, City = address.City });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-5"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Person&amp;gt; persons = List.of(
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-5"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Person&amp;gt; persons = List.of(
               new Person(1, &amp;quot;John&amp;quot;),
               new Person(2, &amp;quot;Jane&amp;quot;),
               new Person(3, &amp;quot;Alice&amp;quot;)
-);
+              );
 
               List&amp;lt;Address&amp;gt; addresses = List.of(
               new Address(1, &amp;quot;New York&amp;quot;),
               new Address(2, &amp;quot;London&amp;quot;),
               new Address(3, &amp;quot;Paris&amp;quot;)
-);
+              );
 
               List&amp;lt;JoinedData&amp;gt; joinedData = persons.stream()
               .join(addresses.stream(),
@@ -297,47 +311,52 @@ Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; peopleByAge = people.stre
               address -&amp;gt; address.getId(),
               (person, address) -&amp;gt; new JoinedData(person.getName(), address.getCity()))
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-5"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[{ PersonName = &amp;quot;John&amp;quot;, City = &amp;quot;New York&amp;quot; },
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-5"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[{ PersonName = &amp;quot;John&amp;quot;, City = &amp;quot;New York&amp;quot; },
               { PersonName = &amp;quot;Jane&amp;quot;, City = &amp;quot;London&amp;quot; },
               { PersonName = &amp;quot;Alice&amp;quot;, City = &amp;quot;Paris&amp;quot; }]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="any-anymatch"&gt;Any / AnyMatch&lt;/h2&gt;
-&lt;p&gt;Checks if any element in the sequence satisfies a specified condition.&lt;/p&gt;
-&lt;h3 id="c-6"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var anyEven = numbers.Any(n =&amp;gt; n % 2 == 0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-6"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-boolean anyEven = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="any-anymatch"&gt;Any / AnyMatch&lt;/h2&gt;
+              &lt;p&gt;Checks if any element in the sequence satisfies a specified condition.&lt;/p&gt;
+              &lt;h3 id="c-6"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var anyEven = numbers.Any(n =&amp;gt; n % 2 == 0);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-6"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              boolean anyEven = numbers.stream()
               .anyMatch(n -&amp;gt; n % 2 == 0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-6"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="all-allmatch"&gt;All / AllMatch&lt;/h2&gt;
-&lt;p&gt;Checks if all elements in the sequence satisfy a specified condition.&lt;/p&gt;
-&lt;h3 id="c-7"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var allPositive = numbers.All(n =&amp;gt; n &amp;gt; 0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-7"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-6"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;true
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="all-allmatch"&gt;All / AllMatch&lt;/h2&gt;
+              &lt;p&gt;Checks if all elements in the sequence satisfy a specified condition.&lt;/p&gt;
+              &lt;h3 id="c-7"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var allPositive = numbers.All(n =&amp;gt; n &amp;gt; 0);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-7"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
 
               boolean allPositive = numbers.stream()
               .allMatch(n -&amp;gt; n &amp;gt; 0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-7"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="contains-contains"&gt;Contains / contains&lt;/h2&gt;
-&lt;p&gt;Checks if a sequence contains a specific element.&lt;/p&gt;
-&lt;h3 id="c-8"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot; };
-var containsBanana = fruits.Contains(&amp;quot;banana&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-7"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;true
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="contains-contains"&gt;Contains / contains&lt;/h2&gt;
+              &lt;p&gt;Checks if a sequence contains a specific element.&lt;/p&gt;
+              &lt;h3 id="c-8"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;,
+              &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot; };
+              var containsBanana = fruits.Contains(&amp;quot;banana&amp;quot;);
+              &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-8"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;);
 boolean containsBanana = fruits.contains(&amp;quot;banana&amp;quot;);
@@ -358,276 +377,305 @@ long count = numbers.stream()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-9"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="first-findfirst"&gt;First / findFirst&lt;/h2&gt;
-&lt;p&gt;Returns the first element from a sequence, or throws an exception if the sequence is empty.&lt;/p&gt;
-&lt;h3 id="c-10"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var firstNumber = numbers.First();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-10"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-int firstNumber = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="first-findfirst"&gt;First / findFirst&lt;/h2&gt;
+              &lt;p&gt;Returns the first element from a sequence, or throws an exception if the sequence is empty.&lt;/p&gt;
+              &lt;h3 id="c-10"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
+              var firstNumber = numbers.First();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-10"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              int firstNumber = numbers.stream()
               .findFirst()
               .orElseThrow(NoSuchElementException::new);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-10"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="firstordefault-findfirst"&gt;FirstOrDefault / findFirst&lt;/h2&gt;
-&lt;p&gt;Returns the first element from a sequence, or returns the default value for the element type if the sequence is empty.&lt;/p&gt;
-&lt;h3 id="c-11"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt;();
-var firstOrDefaultNumber = numbers.FirstOrDefault();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-11"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
-int firstOrDefaultNumber = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-10"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;1
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="firstordefault-findfirst"&gt;FirstOrDefault / findFirst&lt;/h2&gt;
+              &lt;p&gt;Returns the first element from a sequence, or returns the default value for the element type if
+              the sequence is empty.&lt;/p&gt;
+              &lt;h3 id="c-11"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt;();
+              var firstOrDefaultNumber = numbers.FirstOrDefault();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-11"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
+              int firstOrDefaultNumber = numbers.stream()
               .findFirst()
               .orElse(0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-11"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="last-reduce"&gt;Last / reduce&lt;/h2&gt;
-&lt;p&gt;Returns the last element from a sequence, or throws an exception if the sequence is empty.&lt;/p&gt;
-&lt;h3 id="c-12"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;List&amp;lt;int&amp;gt; numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-11"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;0
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="last-reduce"&gt;Last / reduce&lt;/h2&gt;
+              &lt;p&gt;Returns the last element from a sequence, or throws an exception if the sequence is empty.&lt;/p&gt;
+              &lt;h3 id="c-12"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;List&amp;lt;int&amp;gt; numbers = new List&amp;lt;int&amp;gt;
+              { 1, 2, 3, 4, 5 };
 
               int lastNumber = numbers.Last();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-12"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-int lastNumber = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-12"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              int lastNumber = numbers.stream()
               .reduce((a, b) -&amp;gt; b)
               .orElseThrow(NoSuchElementException::new);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-12"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="lastordefault-reduce"&gt;LastOrDefault / reduce&lt;/h2&gt;
-&lt;p&gt;Returns the last element from a sequence, or returns the default value for the element type if the sequence is empty.&lt;/p&gt;
-&lt;h3 id="c-13"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var = new List&amp;lt;int&amp;gt;();
-var lastOrDefaultNumber = numbers.LastOrDefault();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-13"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
-int lastOrDefaultNumber = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-12"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;5
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="lastordefault-reduce"&gt;LastOrDefault / reduce&lt;/h2&gt;
+              &lt;p&gt;Returns the last element from a sequence, or returns the default value for the element type if
+              the sequence is empty.&lt;/p&gt;
+              &lt;h3 id="c-13"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var = new List&amp;lt;int&amp;gt;();
+              var lastOrDefaultNumber = numbers.LastOrDefault();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-13"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
+              int lastOrDefaultNumber = numbers.stream()
               .reduce((a, b) -&amp;gt; b)
               .orElse(0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-13"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="skip-skip"&gt;Skip / skip&lt;/h2&gt;
-&lt;p&gt;Skips a specified number of elements from the start of a sequence.&lt;/p&gt;
-&lt;h3 id="c-14"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var skippedNumbers = numbers.Skip(2);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-14"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; skippedNumbers = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-13"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;0
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="skip-skip"&gt;Skip / skip&lt;/h2&gt;
+              &lt;p&gt;Skips a specified number of elements from the start of a sequence.&lt;/p&gt;
+              &lt;h3 id="c-14"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var skippedNumbers = numbers.Skip(2);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-14"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              List&amp;lt;Integer&amp;gt; skippedNumbers = numbers.stream()
               .skip(2)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-14"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[3, 4, 5]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="skipwhile-dropwhile"&gt;SkipWhile / dropWhile&lt;/h2&gt;
-&lt;p&gt;Skips elements in a sequence until a specified condition is no longer satisfied, and includes all the remaining elements.&lt;/p&gt;
-&lt;h3 id="c-15"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var skippedNumbers = numbers.SkipWhile(n =&amp;gt; n &amp;lt; 3);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-15"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; skippedNumbers = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-14"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[3, 4, 5]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="skipwhile-dropwhile"&gt;SkipWhile / dropWhile&lt;/h2&gt;
+              &lt;p&gt;Skips elements in a sequence until a specified condition is no longer satisfied, and includes all
+              the remaining elements.&lt;/p&gt;
+              &lt;h3 id="c-15"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var skippedNumbers = numbers.SkipWhile(n =&amp;gt; n &amp;lt; 3);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-15"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              List&amp;lt;Integer&amp;gt; skippedNumbers = numbers.stream()
               .dropWhile(n -&amp;gt; n &amp;lt; 3)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-15"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[3, 4, 5]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="take-limit"&gt;Take / limit&lt;/h2&gt;
-&lt;p&gt;Returns a specified number of contiguous elements from the start of a sequence.&lt;/p&gt;
-&lt;h3 id="c-16"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var takenNumbers = numbers.Take(3);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-16"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; takenNumbers = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-15"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[3, 4, 5]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="take-limit"&gt;Take / limit&lt;/h2&gt;
+              &lt;p&gt;Returns a specified number of contiguous elements from the start of a sequence.&lt;/p&gt;
+              &lt;h3 id="c-16"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var takenNumbers = numbers.Take(3);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-16"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              List&amp;lt;Integer&amp;gt; takenNumbers = numbers.stream()
               .limit(3)
               .collect(Collectors.toList());
 
               &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-16"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="takewhile-takewhile"&gt;TakeWhile / takeWhile&lt;/h2&gt;
-&lt;p&gt;takes elements from a sequence as long as a specified condition is true.&lt;/p&gt;
-&lt;h3 id="c-17"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var takenNumbers = numbers.TakeWhile(n =&amp;gt; n &amp;lt; 4);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-17"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; takenNumbers = numbers.stream()
+              &lt;h3 id="output-16"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2, 3]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="takewhile-takewhile"&gt;TakeWhile / takeWhile&lt;/h2&gt;
+              &lt;p&gt;takes elements from a sequence as long as a specified condition is true.&lt;/p&gt;
+              &lt;h3 id="c-17"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var takenNumbers = numbers.TakeWhile(n =&amp;gt; n &amp;lt; 4);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-17"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              List&amp;lt;Integer&amp;gt; takenNumbers = numbers.stream()
               .takeWhile(n -&amp;gt; n &amp;lt; 4)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-17"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="sum-sum"&gt;Sum / Sum&lt;/h2&gt;
-&lt;p&gt;Calculates the sum of a sequence of numeric values.&lt;/p&gt;
-&lt;h3 id="c-18"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var sum = numbers.Sum();
-&lt;/code&gt;&lt;/pre&gt;
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-17"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2, 3]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="sum-sum"&gt;Sum / Sum&lt;/h2&gt;
+              &lt;p&gt;Calculates the sum of a sequence of numeric values.&lt;/p&gt;
+              &lt;h3 id="c-18"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var sum = numbers.Sum();
+              &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-18"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;int&amp;gt; numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
 int sum = numbers.Sum();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-18"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;15
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="average-average"&gt;Average / average&lt;/h2&gt;
-&lt;p&gt;Calculates the average of a sequence of numeric values.&lt;/p&gt;
-&lt;h3 id="c-19"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var average = numbers.Average();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-19"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-double average = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="average-average"&gt;Average / average&lt;/h2&gt;
+              &lt;p&gt;Calculates the average of a sequence of numeric values.&lt;/p&gt;
+              &lt;h3 id="c-19"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var average = numbers.Average();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-19"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              double average = numbers.stream()
               .mapToInt(Integer::intValue)
               .average()
               .orElseThrow(NoSuchElementException::new);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-19"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;3
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="min-min"&gt;Min / min&lt;/h2&gt;
-&lt;p&gt;Returns the minimum value from a sequence of comparable elements.&lt;/p&gt;
-&lt;h3 id="c-20"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 5, 2, 9, 1, 7 };
-var min = numbers.Min();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-20"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9, 1, 7);
-int min = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-19"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;3
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="min-min"&gt;Min / min&lt;/h2&gt;
+              &lt;p&gt;Returns the minimum value from a sequence of comparable elements.&lt;/p&gt;
+              &lt;h3 id="c-20"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 5, 2, 9, 1, 7
+              };
+              var min = numbers.Min();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-20"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9,
+              1, 7);
+              int min = numbers.stream()
               .mapToInt(Integer::intValue)
               .min()
               .orElseThrow(NoSuchElementException::new);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-20"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="max-max"&gt;Max / max&lt;/h2&gt;
-&lt;p&gt;Returns the maximum value from a sequence of comparable elements.&lt;/p&gt;
-&lt;h3 id="c-21"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 5, 2, 9, 1, 7 };
-var max = numbers.Max();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-21"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9, 1, 7);
-int max = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-20"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;1
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="max-max"&gt;Max / max&lt;/h2&gt;
+              &lt;p&gt;Returns the maximum value from a sequence of comparable elements.&lt;/p&gt;
+              &lt;h3 id="c-21"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 5, 2, 9, 1, 7
+              };
+              var max = numbers.Max();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-21"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(5, 2, 9,
+              1, 7);
+              int max = numbers.stream()
               .mapToInt(Integer::intValue)
               .max()
               .orElseThrow(NoSuchElementException::new);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-21"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;9
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="aggregate-reduce"&gt;Aggregate / reduce&lt;/h2&gt;
-&lt;p&gt;Performs a custom aggregation operation on the elements of a sequence, combining them iteratively based on a specified lambda expression.&lt;/p&gt;
-&lt;h3 id="c-22"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5 };
-var sum = numbers.Aggregate((acc, num) =&amp;gt; acc + num);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-22"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
-int sum = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-21"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;9
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="aggregate-reduce"&gt;Aggregate / reduce&lt;/h2&gt;
+              &lt;p&gt;Performs a custom aggregation operation on the elements of a sequence, combining them iteratively
+              based on a specified lambda expression.&lt;/p&gt;
+              &lt;h3 id="c-22"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4, 5
+              };
+              var sum = numbers.Aggregate((acc, num) =&amp;gt; acc + num);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-22"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3,
+              4, 5);
+              int sum = numbers.stream()
               .reduce(0, (acc, num) -&amp;gt; acc + num);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-22"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;15
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="distinct-distinct"&gt;Distinct / distinct&lt;/h2&gt;
-&lt;p&gt;Returns a sequence with distinct elements.&lt;/p&gt;
-&lt;h3 id="c-23"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 2, 3, 3, 4, 5 };
-var distinctNumbers = numbers.Distinct();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-23"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 2, 3, 3, 4, 5);
-List&amp;lt;Integer&amp;gt; distinctNumbers = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-22"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;15
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="distinct-distinct"&gt;Distinct / distinct&lt;/h2&gt;
+              &lt;p&gt;Returns a sequence with distinct elements.&lt;/p&gt;
+              &lt;h3 id="c-23"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 2, 3, 3,
+              4, 5 };
+              var distinctNumbers = numbers.Distinct();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-23"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 2,
+              3, 3, 4, 5);
+              List&amp;lt;Integer&amp;gt; distinctNumbers = numbers.stream()
               .distinct()
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-23"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="union-concat"&gt;Union / concat&lt;/h2&gt;
-&lt;p&gt;Combines two sequences, returning a sequence that contains distinct elements from both sequences.&lt;/p&gt;
-&lt;h3 id="c-24"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
-var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
-var unionNumbers = numbers1.Union(numbers2);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-24"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3);
-List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
-List&amp;lt;Integer&amp;gt; unionNumbers = Stream.concat(numbers1.stream(), numbers2.stream())
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-23"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="union-concat"&gt;Union / concat&lt;/h2&gt;
+              &lt;p&gt;Combines two sequences, returning a sequence that contains distinct elements from both sequences.&lt;/p&gt;
+              &lt;h3 id="c-24"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
+              var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
+              var unionNumbers = numbers1.Union(numbers2);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-24"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2,
+              3);
+              List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
+              List&amp;lt;Integer&amp;gt; unionNumbers = Stream.concat(numbers1.stream(), numbers2.stream())
               .distinct()
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-24"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="intersect-filter"&gt;Intersect / filter&lt;/h2&gt;
-&lt;p&gt;Returns the common elements between two sequences.&lt;/p&gt;
-&lt;h3 id="c-25"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
-var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
-var intersectNumbers = numbers1.Intersect(numbers2);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-25"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3, 4);
-List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
-List&amp;lt;Integer&amp;gt; intersectNumbers = numbers1.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-24"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2, 3, 4, 5]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="intersect-filter"&gt;Intersect / filter&lt;/h2&gt;
+              &lt;p&gt;Returns the common elements between two sequences.&lt;/p&gt;
+              &lt;h3 id="c-25"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
+              var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
+              var intersectNumbers = numbers1.Intersect(numbers2);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-25"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3,
+              4);
+              List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
+              List&amp;lt;Integer&amp;gt; intersectNumbers = numbers1.stream()
               .filter(numbers2::contains)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-25"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[3, 4]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="except-filter"&gt;Except / filter&lt;/h2&gt;
-&lt;p&gt;Returns the elements from the first sequence that are not present in the second sequence.&lt;/p&gt;
-&lt;h3 id="c-26"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
-var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
-var exceptNumbers = numbers1.Except(numbers2);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-26"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3, 4);
-List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
-List&amp;lt;Integer&amp;gt; exceptNumbers = numbers1.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-25"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[3, 4]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="except-filter"&gt;Except / filter&lt;/h2&gt;
+              &lt;p&gt;Returns the elements from the first sequence that are not present in the second sequence.&lt;/p&gt;
+              &lt;h3 id="c-26"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
+              var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
+              var exceptNumbers = numbers1.Except(numbers2);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-26"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3,
+              4);
+              List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(3, 4, 5);
+              List&amp;lt;Integer&amp;gt; exceptNumbers = numbers1.stream()
               .filter(num -&amp;gt; !numbers2.contains(num))
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-26"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="concat-concat"&gt;Concat / concat&lt;/h2&gt;
-&lt;p&gt;Concatenates two sequences into a single sequence.&lt;/p&gt;
-&lt;h3 id="c-27"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
-var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
-var concatenatedNumbers = numbers1.Concat(numbers2).ToList();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-26"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="concat-concat"&gt;Concat / concat&lt;/h2&gt;
+              &lt;p&gt;Concatenates two sequences into a single sequence.&lt;/p&gt;
+              &lt;h3 id="c-27"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
+              var numbers2 = new List&amp;lt;int&amp;gt; { 3, 4, 5 };
+              var concatenatedNumbers = numbers1.Concat(numbers2).ToList();
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-27"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3);
@@ -647,96 +695,100 @@ numbers.Reverse();
 &lt;h3 id="java-28"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
 Collections.reverse(numbers);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-28"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[5, 4, 3, 2, 1]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="zip-maptoobj"&gt;Zip / mapToObj&lt;/h2&gt;
-&lt;p&gt;Combines two sequences by merging corresponding elements into a new sequence of tuples.&lt;/p&gt;
-&lt;h3 id="c-29"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
-var numbers2 = new List&amp;lt;int&amp;gt; { 10, 20, 30 };
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-28"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[5, 4, 3, 2, 1]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="zip-maptoobj"&gt;Zip / mapToObj&lt;/h2&gt;
+              &lt;p&gt;Combines two sequences by merging corresponding elements into a new sequence of tuples.&lt;/p&gt;
+              &lt;h3 id="c-29"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3, 4 };
+              var numbers2 = new List&amp;lt;int&amp;gt; { 10, 20, 30 };
 
               var zippedNumbers = numbers1.Zip(numbers2, (x, y) =&amp;gt; x + y).ToList();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-29"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3, 4);
-List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(10, 20, 30);
-List&amp;lt;Integer&amp;gt; zippedNumbers = IntStream.range(0, Math.min(numbers1.size(), numbers2.size()))
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-29"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3,
+              4);
+              List&amp;lt;Integer&amp;gt; numbers2 = Arrays.asList(10, 20, 30);
+              List&amp;lt;Integer&amp;gt; zippedNumbers = IntStream.range(0, Math.min(numbers1.size(), numbers2.size()))
               .mapToObj(i -&amp;gt; numbers1.get(i) + numbers2.get(i))
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-29"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[11, 22, 33]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="elementat-get"&gt;ElementAt / get&lt;/h2&gt;
-&lt;p&gt;Returns the element at a specified index in a sequence.&lt;/p&gt;
-&lt;h3 id="c-30"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot; };
-var element = fruits.ElementAt(1);
-&lt;/code&gt;&lt;/pre&gt;
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-29"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[11, 22, 33]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="elementat-get"&gt;ElementAt / get&lt;/h2&gt;
+              &lt;p&gt;Returns the element at a specified index in a sequence.&lt;/p&gt;
+              &lt;h3 id="c-30"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;,
+              &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot; };
+              var element = fruits.ElementAt(1);
+              &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-30"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;);
 String element = fruits.get(1);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-30"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;banana
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="single-reduce"&gt;Single / reduce&lt;/h2&gt;
-&lt;p&gt;Returns a single element from a sequence and throws an exception if the sequence contains zero or more than one element.&lt;/p&gt;
-&lt;h3 id="c-31"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1 };
-var singleNumber = numbers.Single();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-31"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1);
-int singleNumber = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="single-reduce"&gt;Single / reduce&lt;/h2&gt;
+              &lt;p&gt;Returns a single element from a sequence and throws an exception if the sequence contains zero or
+              more than one element.&lt;/p&gt;
+              &lt;h3 id="c-31"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1 };
+              var singleNumber = numbers.Single();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-31"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1);
+              int singleNumber = numbers.stream()
               .reduce((a, b) -&amp;gt; {
               throw new IllegalStateException(&amp;quot;More than one element found&amp;quot;);
               })
               .orElseThrow(NoSuchElementException::new);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-31"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="singleordefault-reduce"&gt;SingleOrDefault / reduce&lt;/h2&gt;
-&lt;p&gt;Returns the single element of a sequence, or the default value if the sequence is empty or contains more than one element.&lt;/p&gt;
-&lt;h3 id="c-32"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
-var singleOrDefaultNumber = numbers.SingleOrDefault();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-32"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3);
-int singleOrDefaultNumber = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-31"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;1
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="singleordefault-reduce"&gt;SingleOrDefault / reduce&lt;/h2&gt;
+              &lt;p&gt;Returns the single element of a sequence, or the default value if the sequence is empty or
+              contains more than one element.&lt;/p&gt;
+              &lt;h3 id="c-32"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
+              var singleOrDefaultNumber = numbers.SingleOrDefault();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-32"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3);
+              int singleOrDefaultNumber = numbers.stream()
               .reduce((a, b) -&amp;gt; {
               throw new IllegalStateException(&amp;quot;More than one element found&amp;quot;);
               })
               .orElse(0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-32"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="defaultifempty"&gt;DefaultIfEmpty&lt;/h2&gt;
-&lt;p&gt;Returns a sequence with a default element if the original sequence is empty.&lt;/p&gt;
-&lt;h3 id="c-33"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt;();
-var numbersWithDefault = numbers.DefaultIfEmpty(5);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-33"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
-Iterable&amp;lt;Integer&amp;gt; numbersWithDefault = numbers.isEmpty()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-32"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;0
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="defaultifempty"&gt;DefaultIfEmpty&lt;/h2&gt;
+              &lt;p&gt;Returns a sequence with a default element if the original sequence is empty.&lt;/p&gt;
+              &lt;h3 id="c-33"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt;();
+              var numbersWithDefault = numbers.DefaultIfEmpty(5);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-33"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = new ArrayList&amp;lt;&amp;gt;();
+              Iterable&amp;lt;Integer&amp;gt; numbersWithDefault = numbers.isEmpty()
               ? Collections.singletonList(5)
               : numbers;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-33"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[5]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="sequenceequal-sequenceequal"&gt;SequenceEqual / sequenceEqual&lt;/h2&gt;
-&lt;p&gt;Checks if two sequences are equal by comparing their elements.&lt;/p&gt;
-&lt;h3 id="c-34"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
-var numbers2 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
-var isEqual = numbers1.SequenceEqual(numbers2);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-33"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[5]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="sequenceequal-sequenceequal"&gt;SequenceEqual / sequenceEqual&lt;/h2&gt;
+              &lt;p&gt;Checks if two sequences are equal by comparing their elements.&lt;/p&gt;
+              &lt;h3 id="c-34"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers1 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
+              var numbers2 = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
+              var isEqual = numbers1.SequenceEqual(numbers2);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="java-34"&gt;Java&lt;/h3&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers1 = Arrays.asList(1, 2, 3);
@@ -745,101 +797,111 @@ boolean isEqual = Objects.equals(numbers1, numbers2);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="output-34"&gt;Output&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="cast-map-with-explicit-casting"&gt;Cast / map (with explicit casting)&lt;/h2&gt;
-&lt;p&gt;Converts the elements of a sequence to a specified type or throws an exception if any element in the sequence cannot be cast to that type.&lt;/p&gt;
-&lt;h3 id="c-35"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;object[] objects = { 1, 2, 3 };
-IEnumerable&amp;lt;int&amp;gt; numbers = objects.Cast&amp;lt;int&amp;gt;();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-35"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;Object[] objects = { 1, 2, 3 };
-List&amp;lt;Integer&amp;gt; numbers = Arrays.stream(objects)
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="cast-map-with-explicit-casting"&gt;Cast / map (with explicit casting)&lt;/h2&gt;
+              &lt;p&gt;Converts the elements of a sequence to a specified type or throws an exception if any element in
+              the sequence cannot be cast to that type.&lt;/p&gt;
+              &lt;h3 id="c-35"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;object[] objects = { 1, 2, 3 };
+              IEnumerable&amp;lt;int&amp;gt; numbers = objects.Cast&amp;lt;int&amp;gt;();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-35"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;Object[] objects = { 1, 2, 3 };
+              List&amp;lt;Integer&amp;gt; numbers = Arrays.stream(objects)
               .map(obj -&amp;gt; (Integer) obj)
               .collect(Collectors.toList());
 
               &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-35"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="oftype-filter-with-type-check"&gt;OfType / filter (with type check)&lt;/h2&gt;
-&lt;p&gt;Filters the elements of a sequence based on a specified type.&lt;/p&gt;
-&lt;h3 id="c-36"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var mixedList = new ArrayList { 1, &amp;quot;hello&amp;quot;, 3.14, true };
-IEnumerable&amp;lt;string&amp;gt; strings = mixedList.OfType&amp;lt;string&amp;gt;();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-36"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Object&amp;gt; mixedList = Arrays.asList(1, &amp;quot;hello&amp;quot;, 3.14, true);
-List&amp;lt;String&amp;gt; strings = mixedList.stream()
+              &lt;h3 id="output-35"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[1, 2, 3]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="oftype-filter-with-type-check"&gt;OfType / filter (with type check)&lt;/h2&gt;
+              &lt;p&gt;Filters the elements of a sequence based on a specified type.&lt;/p&gt;
+              &lt;h3 id="c-36"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var mixedList = new ArrayList { 1, &amp;quot;hello&amp;quot;,
+              3.14, true };
+              IEnumerable&amp;lt;string&amp;gt; strings = mixedList.OfType&amp;lt;string&amp;gt;();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-36"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Object&amp;gt; mixedList = Arrays.asList(1, &amp;quot;hello&amp;quot;,
+              3.14, true);
+              List&amp;lt;String&amp;gt; strings = mixedList.stream()
               .filter(obj -&amp;gt; obj instanceof String)
               .map(obj -&amp;gt; (String) obj)
               .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-36"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[&amp;quot;hello&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="toarray-toarray"&gt;ToArray / toArray&lt;/h2&gt;
-&lt;p&gt;Converts a sequence to an array.&lt;/p&gt;
-&lt;h3 id="c-37"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
-int[] numberArray = numbers.ToArray();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-37"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3);
-int[] numberArray = numbers.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-36"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;[&amp;quot;hello&amp;quot;]
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="toarray-toarray"&gt;ToArray / toArray&lt;/h2&gt;
+              &lt;p&gt;Converts a sequence to an array.&lt;/p&gt;
+              &lt;h3 id="c-37"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var numbers = new List&amp;lt;int&amp;gt; { 1, 2, 3 };
+              int[] numberArray = numbers.ToArray();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-37"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3);
+              int[] numberArray = numbers.stream()
               .mapToInt(Integer::intValue)
               .toArray();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="tolist-aslist"&gt;ToList / asList&lt;/h2&gt;
-&lt;p&gt;Converts a sequence to a list.&lt;/p&gt;
-&lt;h3 id="c-38"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;int[] numbers = { 1, 2, 3 };
-var numberList = numbers.ToList();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-38"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;int[] numbers = { 1, 2, 3 };
-List&amp;lt;Integer&amp;gt; numberList = new ArrayList&amp;lt;&amp;gt;(Arrays.asList(numbers));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="todictionary-tomap"&gt;ToDictionary / toMap&lt;/h2&gt;
-&lt;p&gt;Converts a sequence to a dictionary based on a specified key and value selector.&lt;/p&gt;
-&lt;h3 id="c-39"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot; };
-Dictionary&amp;lt;string, int&amp;gt; fruitLengths = fruits.ToDictionary(fruit =&amp;gt; fruit, fruit =&amp;gt; fruit.Length);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-39"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;);
-Map&amp;lt;String, Integer&amp;gt; fruitMap = fruits.stream()
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="tolist-aslist"&gt;ToList / asList&lt;/h2&gt;
+              &lt;p&gt;Converts a sequence to a list.&lt;/p&gt;
+              &lt;h3 id="c-38"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;int[] numbers = { 1, 2, 3 };
+              var numberList = numbers.ToList();
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-38"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;int[] numbers = { 1, 2, 3 };
+              List&amp;lt;Integer&amp;gt; numberList = new ArrayList&amp;lt;&amp;gt;(Arrays.asList(numbers));
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="todictionary-tomap"&gt;ToDictionary / toMap&lt;/h2&gt;
+              &lt;p&gt;Converts a sequence to a dictionary based on a specified key and value selector.&lt;/p&gt;
+              &lt;h3 id="c-39"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;,
+              &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot; };
+              Dictionary&amp;lt;string, int&amp;gt; fruitLengths = fruits.ToDictionary(fruit =&amp;gt; fruit, fruit =&amp;gt;
+              fruit.Length);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-39"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;,
+              &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;);
+              Map&amp;lt;String, Integer&amp;gt; fruitMap = fruits.stream()
               .collect(Collectors.toMap(fruit -&amp;gt; fruit, fruit -&amp;gt; fruit.length()));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-37"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;{
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-37"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;{
               apple: 5,
               banana: 6,
               cherry: 6
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="tolookup-groupingby"&gt;ToLookup / groupingBy&lt;/h2&gt;
-&lt;p&gt;Converts a sequence to a lookup based on a specified key selector.&lt;/p&gt;
-&lt;h3 id="c-40"&gt;C#&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;, &amp;quot;avocado&amp;quot;, &amp;quot;blueberry&amp;quot; };
-ILookup&amp;lt;char, string&amp;gt; fruitsByFirstLetter = fruits.ToLookup(fruit =&amp;gt; fruit[0]);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="java-40"&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;, &amp;quot;avocado&amp;quot;, &amp;quot;blueberry&amp;quot;);
-Map&amp;lt;Character, List&amp;lt;String&amp;gt;&amp;gt; fruitsByFirstLetter = fruits.stream()
+              }
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h2 id="tolookup-groupingby"&gt;ToLookup / groupingBy&lt;/h2&gt;
+              &lt;p&gt;Converts a sequence to a lookup based on a specified key selector.&lt;/p&gt;
+              &lt;h3 id="c-40"&gt;C#&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-csharp"&gt;var fruits = new List&amp;lt;string&amp;gt; { &amp;quot;apple&amp;quot;,
+              &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;, &amp;quot;avocado&amp;quot;, &amp;quot;blueberry&amp;quot;
+              };
+              ILookup&amp;lt;char, string&amp;gt; fruitsByFirstLetter = fruits.ToLookup(fruit =&amp;gt; fruit[0]);
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="java-40"&gt;Java&lt;/h3&gt;
+              &lt;pre&gt;&lt;code class="language-java"&gt;List&amp;lt;String&amp;gt; fruits = Arrays.asList(&amp;quot;apple&amp;quot;,
+              &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;, &amp;quot;avocado&amp;quot;, &amp;quot;blueberry&amp;quot;);
+              Map&amp;lt;Character, List&amp;lt;String&amp;gt;&amp;gt; fruitsByFirstLetter = fruits.stream()
               .collect(Collectors.groupingBy(fruit -&amp;gt; fruit.charAt(0)));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="output-38"&gt;Output&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;{
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;h3 id="output-38"&gt;Output&lt;/h3&gt;
+              &lt;pre&gt;&lt;code&gt;{
               a = [apple, avocado],
               b = [banana, blueberry],
               c = [cherry]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;By grasping the mapping of C# LINQ functions to their Java equivalents, we can confidently navigate the transition between these languages.&lt;/p&gt;
-</content:encoded>
+              }
+              &lt;/code&gt;&lt;/pre&gt;
+              &lt;hr /&gt;
+              &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+              &lt;p&gt;By grasping the mapping of C# LINQ functions to their Java equivalents, we can confidently
+              navigate the transition between these languages.&lt;/p&gt;
+          </content:encoded>
           <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
       </item>
     <item>

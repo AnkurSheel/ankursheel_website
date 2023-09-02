@@ -1,13 +1,13 @@
 ---
 title: "Migrating from Gatsby to Statiq"
 excerpt: "I have been on Gatsby for 2 years now. What motivated me to migrate my site to Statiq, and how did I move the site"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "Statiq"
-- "gatsby"
-- "tailwind"
-- "website migration"
+  - "Statiq"
+  - "gatsby"
+  - "tailwind"
+  - "website migration"
 
 ---
 

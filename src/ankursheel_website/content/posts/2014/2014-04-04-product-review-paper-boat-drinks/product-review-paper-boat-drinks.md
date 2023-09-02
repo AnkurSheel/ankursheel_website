@@ -1,10 +1,10 @@
 ---
 title: "Product Review: Paper Boat Drinks"
 excerpt: "What is the first thing that comes to mind when you hear the words Paper Boat? A product review of the new pouches of flavoured drinks by Hector Beverages"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "reviews"
+  - "reviews"
 
 ---
 

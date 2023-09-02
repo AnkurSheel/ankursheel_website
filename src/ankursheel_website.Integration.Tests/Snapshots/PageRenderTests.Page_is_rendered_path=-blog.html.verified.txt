@@ -115,10 +115,10 @@
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
+        <a href="#opinion">opinion</a>
         <a href="#postmortems">postmortems</a>
         <a href="#programming">programming</a>
         <a href="#project-updates">project updates</a>
-        <a href="#ramblings">ramblings</a>
         <a href="#travel">travel</a>
         <a href="#Uncategorized">Uncategorized</a>
         <a href="#weekly-roundup">weekly roundup</a>
@@ -171,6 +171,63 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/interview-happy-job">Why do I interview even when I am happy at my job?</a> - <time class="prose-sm" datetime="20-10-15">October 15, 2020</time>
+            </li>
+    </ul>
+    <h3 id="opinion" class="py-4 border-b border-grey-lighter capitalize">opinion (18)</h3>
+    <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a> - <time class="prose-sm" datetime="22-11-06">November 06, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/product-review-ndepend">Product Review: NDepend</a> - <time class="prose-sm" datetime="22-09-13">September 13, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a> - <time class="prose-sm" datetime="22-09-01">September 01, 2022</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a> - <time class="prose-sm" datetime="21-12-31">December 31, 2021</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a> - <time class="prose-sm" datetime="21-08-16">August 16, 2021</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/reader-question-apply-storybrand-communicate-work">How can we apply Storybrand to how we communicate at work</a> - <time class="prose-sm" datetime="21-06-10">June 10, 2021</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/reader-question-long-migrate-wordpress-gatsby">How long did it take to migrate from WordPress to Gatsby?</a> - <time class="prose-sm" datetime="20-11-25">November 25, 2020</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a> - <time class="prose-sm" datetime="19-09-15">September 15, 2019</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/migrating-wordpress-gatsby">Why and How I migrated my website from WordPress to Gatsby</a> - <time class="prose-sm" datetime="19-08-29">August 29, 2019</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a> - <time class="prose-sm" datetime="16-11-23">November 23, 2016</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="16-05-03">May 03, 2016</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a> - <time class="prose-sm" datetime="15-11-24">November 24, 2015</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/product-review-paper-boat-drinks">Product Review: Paper Boat Drinks</a> - <time class="prose-sm" datetime="14-04-04">April 04, 2014</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/asteroid-clone">Why I am building an Asteroid clone as the next game</a> - <time class="prose-sm" datetime="13-12-23">December 23, 2013</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a> - <time class="prose-sm" datetime="13-12-16">December 16, 2013</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/making-pong-take">What does making Pong take?</a> - <time class="prose-sm" datetime="13-12-08">December 08, 2013</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/child-appreciation">Why being an only child is awesome</a> - <time class="prose-sm" datetime="13-12-02">December 02, 2013</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
     <h3 id="postmortems" class="py-4 border-b border-grey-lighter capitalize">postmortems (8)</h3>
@@ -444,63 +501,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/breakout-clone-v1-0">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="14-04-05">April 05, 2014</time>
-            </li>
-    </ul>
-    <h3 id="ramblings" class="py-4 border-b border-grey-lighter capitalize">ramblings (18)</h3>
-    <ul class="p-0">
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a> - <time class="prose-sm" datetime="22-11-06">November 06, 2022</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/product-review-ndepend">Product Review: NDepend</a> - <time class="prose-sm" datetime="22-09-13">September 13, 2022</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a> - <time class="prose-sm" datetime="22-09-01">September 01, 2022</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a> - <time class="prose-sm" datetime="21-12-31">December 31, 2021</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a> - <time class="prose-sm" datetime="21-08-16">August 16, 2021</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/reader-question-apply-storybrand-communicate-work">How can we apply Storybrand to how we communicate at work</a> - <time class="prose-sm" datetime="21-06-10">June 10, 2021</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/reader-question-long-migrate-wordpress-gatsby">How long did it take to migrate from WordPress to Gatsby?</a> - <time class="prose-sm" datetime="20-11-25">November 25, 2020</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a> - <time class="prose-sm" datetime="19-09-15">September 15, 2019</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/migrating-wordpress-gatsby">Why and How I migrated my website from WordPress to Gatsby</a> - <time class="prose-sm" datetime="19-08-29">August 29, 2019</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a> - <time class="prose-sm" datetime="16-11-23">November 23, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="16-05-03">May 03, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a> - <time class="prose-sm" datetime="15-11-24">November 24, 2015</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/product-review-paper-boat-drinks">Product Review: Paper Boat Drinks</a> - <time class="prose-sm" datetime="14-04-04">April 04, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/asteroid-clone">Why I am building an Asteroid clone as the next game</a> - <time class="prose-sm" datetime="13-12-23">December 23, 2013</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a> - <time class="prose-sm" datetime="13-12-16">December 16, 2013</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/making-pong-take">What does making Pong take?</a> - <time class="prose-sm" datetime="13-12-08">December 08, 2013</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/child-appreciation">Why being an only child is awesome</a> - <time class="prose-sm" datetime="13-12-02">December 02, 2013</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
     <h3 id="travel" class="py-4 border-b border-grey-lighter capitalize">travel (25)</h3>

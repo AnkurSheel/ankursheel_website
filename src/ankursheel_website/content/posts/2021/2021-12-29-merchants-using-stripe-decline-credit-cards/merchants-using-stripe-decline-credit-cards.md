@@ -2,11 +2,11 @@
 title: "Merchant using Stripe Declined credit Card: What to Do"
 excerpt: "My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"
 coverImage: "./cover.jpg"
-category: "ramblings"
+category: "opinion"
 updatedOnDate: "2021-12-31"
 tags:
 
-- "finance"
+  - "finance"
 
 ---
 

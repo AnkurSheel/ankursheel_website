@@ -1,10 +1,10 @@
 ---
 title: "Why being an only child is awesome"
 excerpt: "Gain personal insights into the advantages and unique benefits of being an only child"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "ramblings"
+- "opinion"
 
 ---
 

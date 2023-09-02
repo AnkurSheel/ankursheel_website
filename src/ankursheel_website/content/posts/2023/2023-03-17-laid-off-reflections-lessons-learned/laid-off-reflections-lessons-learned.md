@@ -6,8 +6,8 @@ category: "career / work"
 coverImage: "./cover.png"
 tags:
 
-- "career"
-- "ramblings"
+  - "career"
+  - "opinion"
 
 ---
 

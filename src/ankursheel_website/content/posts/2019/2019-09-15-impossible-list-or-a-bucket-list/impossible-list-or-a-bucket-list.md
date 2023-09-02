@@ -1,10 +1,10 @@
 ---
 title: "Should you make an Impossible List or a Bucket List?"
 excerpt: "What is an impossible list? How is it different from a Bucket List? Let's find out"
-category: "ramblings"
+category: "opinion"
 tags:
 
-- "productivity"
+  - "productivity"
 
 ---
 
