@@ -1,7 +1,7 @@
 name: 'Daily Release'
 
 schedules:
-    - cron: '0 1 * * *'
+    - cron: '0 16 * * *'
       displayName: Daily build
       branches:
           include:
