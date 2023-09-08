@@ -6,6 +6,8 @@ title: "Country Visit List"
 
 ## Visited
 
+1. Australia (April 2023)
+
 1. Austria (August 2016)
 
 1. [England](/tags/united-kingdom) (August 2008, January 2009)
@@ -43,8 +45,6 @@ title: "Country Visit List"
 1. Argentina
 1. Armenia
 1. Aruba
-1. Australia
-1. Austria
 1. Azerbaijan
 1. Bahamas
 1. Bahrain

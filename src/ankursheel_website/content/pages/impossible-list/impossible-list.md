@@ -23,7 +23,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
 -   Do a roadtrip across Australia
 -   Do a round the world trip
 -   ~~Visit atleast 10 countries.~~ (2014)
-    -   Visit atleast 15 countries. _Current Progress_: 12. See [List here](/impossible-list/country-visit-list)
+    - Visit atleast 15 countries. _Current Progress_: 13. See [List here](/impossible-list/country-visit-list)
 -   Cool Things to See
     -   Africa
         -   Pyramids of Giza, Egypt
@@ -104,7 +104,6 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   ~~Go Bungee Jumping~~ (Queenstown, New Zealand, 2016)
     -   ~~Go on a cruise~~ (Singapore x 2)
     -   Go Para Gliding
-    -   Go Para Sailing
     -   Go Snorkeling
     -   Go Scuba Diving
     -   Go Sky Diving
@@ -126,8 +125,6 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   Climb the stairs of the Eiffel tower in Paris, France
     -   ~~Drink a beer at hofbrauhaus in Munich, Germany~~ (August 2016)
     -   Drink a Guinness in Ireland
--   North America
-    -   Hike in the Grand Canyon, USA
 -   Oceania
     -   Drive the Great Ocean Road, Australia
     -   Scuba Dive in the Great Barrier Reef, Australia
@@ -204,7 +201,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   Make 100 dollars online.
 -   Start my own company
     -   Game company
--   ~~Build an application~~ (June 2023) 
+- ~~Build an application~~ [Match 'N Spell Magic on AppStore](https://apps.apple.com/app/match-n-spell-magic/id1661527186)(June 2023)
     - that someone pays for
 
 What is on your bucket/impossible list?

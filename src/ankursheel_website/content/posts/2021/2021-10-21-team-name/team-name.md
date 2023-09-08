@@ -84,22 +84,23 @@ Merch/swag also feels cooler when associated with an inside joke. Remember, it i
 
 ## My favourite team name
 
-One of my favourite team names was based on an inside joke. We were supposed to come up with a name for our team and forgot to submit it in time. In the slide deck for the company meeting, we were introduced as ???. This struck us as extremely funny, and combined with other reasons, we decided to call our team 4Q.
+One of my favourite team names was based on an inside joke at FirstAml. We were supposed to come up with a name for our team and forgot to submit it in time. In the slide deck for the company meeting, we were introduced as ???. This struck us as extremely funny, and combined with other reasons, we decided to call our team 4Q.
 
 You can see how this can be construed as offensive because it sounds like a cuss word. I rarely cuss, and this gave me a laugh every time I said Team 4Q (which was one of the reasons to go with it).
 
-It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not a problem. In any case, you could say it was a valid concern because it coulda be a problem when communicating verbally with external parties.
-_Although Atlassian has one of their values as Don't @$/# with the customer, and they are not shy of using the word in interviews_ so probably an overreaction
+It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not a problem. In any case, you could say it was a valid concern because it could be a problem when communicating verbally with external parties.
 
-There was a simple fix - to use the name Team 4 Questions when talking externally or to enunciate the name so that it doesn't sound like a cuss word.
+_Although Atlassian has one of their values as Don't @$/# with the customer, and they are not shy of using the word in interviews so it was probably an overreaction by the leaders at First AML._
+
+There was a simple fix - to use the name "Team 4 Questions" when talking externally or to enunciate the name so that it doesn't sound like a cuss word.
 
 The other team was made primarily of Front end engineers who named their team **_XXM_**. If you are wondering what that stands for, it's nothing offensive. It's **Extra Extra Medium**, an allusion to the breakpoints (screen sizes) that Front End Engineers have to deal with when building out pages.
 
-Changing the name in this scenario would be a classic case of throwing the baby out with the bathwater.
+Changing their name was a classic case of throwing the baby out with the bathwater.
 
 ## Caveats
 
-It's possible to have stories to share, even if you are operating under a common theme. My current team is called [kārearea](https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/),, and it appealed to me (more than the other birds) because it's fast and can bring down prey larger than itself.
+It's possible to have stories to share, even if you are operating under a common theme. My team at FirstAMl was later renamed to [kārearea](https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/), and it appealed to me (more than the other birds) because it's fast and can bring down prey larger than itself.
 
 _But I doubt new people will care about the reasoning behind choosing it as the team name. Sadly, it's not a conversation starter when all the other teams are named after NZ birds. It will always feel like we randomly chose it because we had to choose something._
 
