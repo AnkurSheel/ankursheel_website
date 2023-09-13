@@ -23,8 +23,8 @@ jobs:
 
           - task: Cache@2
             inputs:
-                key: '27Aug21 | yarn | "$(Agent.OS)" | node/yarn.lock'
-                restoreKeys: '27Aug21 | yarn | "$(Agent.OS)" | node/yarn.lock'
+                key: '13Sep23 | yarn | "$(Agent.OS)" | node/yarn.lock'
+                restoreKeys: '13Sep23 | yarn | "$(Agent.OS)" | node/yarn.lock'
                 path: $(YARN_CACHE_FOLDER)
             displayName: Cache Yarn packages
 
