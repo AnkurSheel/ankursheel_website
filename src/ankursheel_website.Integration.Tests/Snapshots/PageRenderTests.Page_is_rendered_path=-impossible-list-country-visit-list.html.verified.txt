@@ -115,6 +115,8 @@
         <article class="prose-code:bg-slate-400">
             <h2 id="visited">Visited</h2>
 <ol>
+<li><p>Australia (April 2023)</p>
+</li>
 <li><p>Austria (August 2016)</p>
 </li>
 <li><p><a href="/tags/united-kingdom">England</a> (August 2008, January 2009)</p>
@@ -153,8 +155,6 @@
 <li>Argentina</li>
 <li>Armenia</li>
 <li>Aruba</li>
-<li>Australia</li>
-<li>Austria</li>
 <li>Azerbaijan</li>
 <li>Bahamas</li>
 <li>Bahrain</li>

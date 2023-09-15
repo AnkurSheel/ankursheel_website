@@ -152,13 +152,15 @@
 </ul>
 <h2 id="things-i-wish-i-had-implemented">Things I wish I had Implemented</h2>
 <ul>
-<li>​Physics and Networking modules.</li>
+<li>Physics and Networking modules.</li>
 <li>A better model loader.</li>
 <li>Better Graphics.</li>
 <li>Pause on Minimizing.</li>
 <li>An easier way to edit GUI's.</li>
 <li>A credit and splash screen.</li>
 </ul>
+<h2 id="source-code">Source Code</h2>
+<p><a href="https://github.com/AnkurSheel/Asteroids">Github</a></p>
 
 
 

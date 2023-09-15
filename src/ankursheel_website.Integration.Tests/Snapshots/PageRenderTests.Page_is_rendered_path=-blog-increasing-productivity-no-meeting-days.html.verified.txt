@@ -221,10 +221,10 @@
                 <a href="team-name">What&#x27;s in a team name</a>
             </li>
             <li>
-                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
             <li>
-                <a href="interview-happy-job">Why do I interview even when I am happy at my job?</a>
+                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
     </ul>
 </aside>
