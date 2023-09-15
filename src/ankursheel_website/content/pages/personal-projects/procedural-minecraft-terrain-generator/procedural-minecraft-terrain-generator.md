@@ -2,7 +2,7 @@
 title: Procedural Minecraft Terrain Generator
 ---
 
-[Source Code](https://github.com/AnkurSheel/pmgai-minecraft.jpg)
+[Source Code](https://github.com/AnkurSheel/pmgai-minecraft)
 
 ## Screenshots
 
