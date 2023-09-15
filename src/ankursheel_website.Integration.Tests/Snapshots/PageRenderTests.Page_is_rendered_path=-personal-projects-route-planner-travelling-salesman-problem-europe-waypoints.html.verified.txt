@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Route Planner: Travelling Salesman Problem</title>
+<title>Route Planner: Europe Cities Waypoints</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem"/>   
-<meta itemProp="name" content="Route Planner: Travelling Salesman Problem"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints"/>   
+<meta itemProp="name" content="Route Planner: Europe Cities Waypoints"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Route Planner: Travelling Salesman Problem"/>
+<meta property="og:title" content="Route Planner: Europe Cities Waypoints"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Route Planner: Travelling Salesman Problem"/>
+<meta name="twitter:title" content="Route Planner: Europe Cities Waypoints"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,21 +110,102 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Route Planner: Travelling Salesman Problem</h1>
+    <h1 class="text-center">Route Planner: Europe Cities Waypoints</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <h2 id="usa-cities">USA Cities</h2>
-<p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/USACitiesOriginal.jpg" alt="Original" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/USACitiesFinal.jpg" alt="Final" /></p>
-<p>Click <a href="route-planner-travelling-salesman-problem/us-cities-waypoints">here</a> to see the list of waypoints.</p>
-<h2 id="usa-landmarks">USA Landmarks</h2>
-<p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/USALandmarksOriginal.jpg" alt="Original" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/USALandmarksFinal.jpg" alt="Final" /></p>
-<p>Click <a href="route-planner-travelling-salesman-problem/us-landmarks-waypoints">here</a> to see the list of waypoints.</p>
-<h2 id="europe">Europe</h2>
-<p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/EuropeOriginal.jpg" alt="Original" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/route-planner-travelling-salesman-problem/EuropeFinal.jpg" alt="Final" /></p>
-<p>Click <a href="route-planner-travelling-salesman-problem/europe-waypoints">here</a> to see the list of waypoints.</p>
+            <p>List of waypoints for the Europe Cities Route planner</p>
+<ul>
+<li><p>Innsbruck, Austria</p>
+</li>
+<li><p>Munich, Germany</p>
+</li>
+<li><p>Pag, Croatia</p>
+</li>
+<li><p>Venice, Italy</p>
+</li>
+<li><p>Tuscany, Italy</p>
+</li>
+<li><p>Florence, Italy</p>
+</li>
+<li><p>Rome, Italy</p>
+</li>
+<li><p>Vatican City</p>
+</li>
+<li><p>Amalfi, Italy</p>
+</li>
+<li><p>Gozo, Malta</p>
+</li>
+<li><p>Dubrovnik, Croatia</p>
+</li>
+<li><p>Santorini, Thira, Greece</p>
+</li>
+<li><p>Rila Monastery, Rilski manastir, Bulgaria</p>
+</li>
+<li><p>Istanbul, Turkey</p>
+</li>
+<li><p>Sighisoara, Mures County, Romania</p>
+</li>
+<li><p>Budapest, Hungary</p>
+</li>
+<li><p>Vienna, Austria</p>
+</li>
+<li><p>Prague, Czech Republic</p>
+</li>
+<li><p>Krakow, Poland</p>
+</li>
+<li><p>Jägala Waterfall, 74205 Harjumaa, Estonia</p>
+</li>
+<li><p>Lapland, Finland</p>
+</li>
+<li><p>ICEBAR, Marknadsvägen, Jukkasjärvi, Sweden</p>
+</li>
+<li><p>Bergen, Norway</p>
+</li>
+<li><p>Copenhagen, Denmark</p>
+</li>
+<li><p>Berlin, Germany</p>
+</li>
+<li><p>Amsterdam, Netherlands</p>
+</li>
+<li><p>Keukenhof, Stationsweg, Lisse, Netherlands</p>
+</li>
+<li><p>Edinburgh, United Kingdom</p>
+</li>
+<li><p>Inverness, United Kingdom</p>
+</li>
+<li><p>Ballybunion, Ireland</p>
+</li>
+<li><p>Cliffs of Moher, Clare, Ireland</p>
+</li>
+<li><p>Cornwall, England</p>
+</li>
+<li><p>Stonehenge, Amesbury, United Kingdom</p>
+</li>
+<li><p>London, United Kingdom</p>
+</li>
+<li><p>Brussels, Belgium</p>
+</li>
+<li><p>Paris, France</p>
+</li>
+<li><p>Pamplona, Spain</p>
+</li>
+<li><p>Lagos, Portugal</p>
+</li>
+<li><p>Granada, Spain</p>
+</li>
+<li><p>Ibiza, Spain</p>
+</li>
+<li><p>Barcelona, Spain</p>
+</li>
+<li><p>Luberone, Bonnieux, France</p>
+</li>
+<li><p>Nice, France</p>
+</li>
+<li><p>Monte Carlo, Monaco</p>
+</li>
+<li><p>Interlaken, Switzerland</p>
+</li>
+</ul>
 
         </article>
     </div>

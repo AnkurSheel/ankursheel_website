@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Personal Game Projects</title>
+<title>Posts tagged as &quot;wordwhiz&quot;</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,18 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/personal-game-projects"/>   
-<meta itemProp="name" content="Personal Game Projects"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/wordwhiz"/>   
+<meta itemProp="name" content="Posts tagged as &quot;wordwhiz&quot;"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/personal-game-projects-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/personal-game-projects"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/wordwhiz"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Personal Game Projects"/>
+<meta property="og:title" content="Posts tagged as &quot;wordwhiz&quot;"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/personal-game-projects-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/personal-game-projects-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Personal Game Projects"/>
+<meta name="twitter:title" content="Posts tagged as &quot;wordwhiz&quot;"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/personal-game-projects-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/personal-game-projects-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,38 +105,21 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Personal Game Projects</h1>
+    <h1 class="text-center">Posts tagged as &quot;wordwhiz&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <h2 id="an-breakout-clone">An Breakout clone</h2>
-<p>Made with C++, DirectX 11.0 and premake</p>
-<p><a href="https://github.com/AnkurSheel/Breakout">Source Code</a></p>
-<p><a href="/assets/downloads/Breakout_setup_v1.1.exe">Installer</a></p>
-<p><a href="/assets/downloads/Breakout.zip">Zip</a></p>
-<h2 id="a-2d-topdown-prototype-where-you-have-to-fight-an-un-ending-horde-of-enemies">A 2D topdown prototype where you have to fight an un-ending horde of enemies</h2>
-<p>Made with C++, SDL</p>
-<p><a href="https://github.com/AnkurSheel/SpaceMarine">Source Code</a></p>
-<p><a href="/assets/downloads/SpaceMarine.zip">Zip</a></p>
-<h2 id="sudoku-generator-and-solver">Sudoku Generator and Solver</h2>
-<p>Made with C++</p>
-<p><a href="/assets/downloads/Sudoku.zip">Source Code</a></p>
-<h2 id="an-asteroid-clone">An Asteroid clone</h2>
-<p>Made with C++, DirectX 9.0c</p>
-<p><a href="https://github.com/AnkurSheel/Asteroids">Source Code</a></p>
-<p><a href="/assets/downloads/Asteroids_setup_V2_0.exe">Installer</a></p>
-<p><a href="/assets/downloads/Asteroids_v_2_0.zip">Zip</a></p>
-<h2 id="a-pong-clone">A Pong clone</h2>
-<p>Made with C++, DirectX 9.0c</p>
-<p><a href="https://github.com/AnkurSheel/sppong">Source Code</a></p>
-<p><a href="/assets/downloads/MPong_setup_v_2_0.exe">Installer</a></p>
-<p><a href="/assets/downloads/MPong_v_2_0.zip">Zip</a></p>
-<h2 id="tic-tac-toe-single-and-multiplayer-modes">Tic Tac Toe – Single and Multiplayer Modes</h2>
-<p>Made with C++ and DirectX 9.0c</p>
-<p><a href="/assets/downloads/Tic_Tac_Toe.zip">Source Code</a></p>
-<h2 id="multiplayer-chess">Multiplayer Chess</h2>
-<p>Made with C++, WinBoard for Windows</p>
-<h2 id="single-player-air-hockey">Single Player Air Hockey</h2>
-<p>Made with Visual C# and XNA</p>
+            
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/wordwhiz-update-1" class="text-center prose-2xl mb-4">WordWhiz Update #1</a>
+        <div class="font-semibold text-center">1 min</div>
+        <p>
+            WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion
+        </p>
+            <a href="/blog/wordwhiz-update-1" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
 
         </article>
     </div>

@@ -271,7 +271,7 @@
                 <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
             <li>
-                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
+                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
     </ul>
 </aside>

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Route Planner: US Landmarks Waypoints</title>
+<title>Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints"/>   
-<meta itemProp="name" content="Route Planner: US Landmarks Waypoints"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/match-spell-magic"/>   
+<meta itemProp="name" content="Ankur Sheel"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/match-spell-magic-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/match-spell-magic"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Route Planner: US Landmarks Waypoints"/>
+<meta property="og:title" content="Ankur Sheel"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/match-spell-magic-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/match-spell-magic-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Route Planner: US Landmarks Waypoints"/>
+<meta name="twitter:title" content="Ankur Sheel"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/match-spell-magic-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/match-spell-magic-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,119 +110,19 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Route Planner: US Landmarks Waypoints</h1>
+    <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <p>List of way points for USA landmarks Route planner</p>
-<ul>
-<li><p>USS Alabama, Battleship Parkway, Mobile, AL</p>
-</li>
-<li><p>Grand Canyon National Park, Arizona</p>
-</li>
-<li><p>Toltec Mounds, Scott, AR</p>
-</li>
-<li><p>San Andreas Fault, San Benito County, CA</p>
-</li>
-<li><p>Cable Car Museum, 94108, 1201 Mason St, San Francisco, CA 94108</p>
-</li>
-<li><p>Pikes Peak, Colorado</p>
-</li>
-<li><p>The Mark Twain House &amp; Museum, Farmington Avenue, Hartford, CT</p>
-</li>
-<li><p>New Castle Historic District, Delaware</p>
-</li>
-<li><p>White House, Pennsylvania Avenue Northwest, Washington, DC</p>
-</li>
-<li><p>Cape Canaveral, FL</p>
-</li>
-<li><p>Okefenokee Swamp Park, Okefenokee Swamp Park Road, Waycross, GA</p>
-</li>
-<li><p>Craters of the Moon National Monument &amp; Preserve, Arco, ID</p>
-</li>
-<li><p>Lincoln Home National Historic Site Visitor Center, 426 South 7th Street, Springfield, IL</p>
-</li>
-<li><p>West Baden Springs Hotel, West Baden Avenue, West Baden Springs, IN</p>
-</li>
-<li><p>Terrace Hill, Grand Avenue, Des Moines, IA</p>
-</li>
-<li>
-<ol type="A" start="3">
-<li>
-<ol type="A" start="23">
-<li>Parker Carousel Museum, South Esplanade Street, Leavenworth, KS</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p>Mammoth Cave National Park, Mammoth Cave Pkwy, Mammoth Cave, KY</p>
-</li>
-<li><p>French Quarter, New Orleans, LA</p>
-</li>
-<li><p>Acadia National Park, Maine</p>
-</li>
-<li><p>Maryland State House, 100 State Cir, Annapolis, MD 21401</p>
-</li>
-<li><p>USS Constitution, Boston, MA</p>
-</li>
-<li><p>Olympia Entertainment, Woodward Avenue, Detroit, MI</p>
-</li>
-<li><p>Fort Snelling, Tower Avenue, Saint Paul, MN</p>
-</li>
-<li><p>Vicksburg National Military Park, Clay Street, Vicksburg, MS</p>
-</li>
-<li><p>Gateway Arch, Washington Avenue, St Louis, MO</p>
-</li>
-<li><p>Glacier National Park, West Glacier, MT</p>
-</li>
-<li><p>Ashfall Fossil Bed, Royal, NE</p>
-</li>
-<li><p>Hoover Dam, NV</p>
-</li>
-<li><p>Omni Mount Washington Resort, Mount Washington Hotel Road, Bretton Woods, NH</p>
-</li>
-<li><p>Congress Hall, Congress Place, Cape May, NJ 08204</p>
-</li>
-<li><p>Carlsbad Caverns National Park, Carlsbad, NM</p>
-</li>
-<li><p>Statue of Liberty, Liberty Island, NYC, NY</p>
-</li>
-<li><p>Wright Brothers National Memorial Visitor Center, Manteo, NC</p>
-</li>
-<li><p>Fort Union Trading Post National Historic Site, Williston, North Dakota 1804, ND</p>
-</li>
-<li><p>Spring Grove Cemetery, Spring Grove Avenue, Cincinnati, OH</p>
-</li>
-<li><p>Chickasaw National Recreation Area, 1008 W 2nd St, Sulphur, OK 73086</p>
-</li>
-<li><p>Columbia River Gorge National Scenic Area, Oregon</p>
-</li>
-<li><p>Liberty Bell, 6th Street, Philadelphia, PA</p>
-</li>
-<li><p>The Breakers, Ochre Point Avenue, Newport, RI</p>
-</li>
-<li><p>Fort Sumter National Monument, Sullivan's Island, SC</p>
-</li>
-<li><p>Mount Rushmore National Memorial, South Dakota 244, Keystone, SD</p>
-</li>
-<li><p>Graceland, Elvis Presley Boulevard, Memphis, TN</p>
-</li>
-<li><p>The Alamo, Alamo Plaza, San Antonio, TX</p>
-</li>
-<li><p>Bryce Canyon National Park, Hwy 63, Bryce, UT</p>
-</li>
-<li><p>Shelburne Farms, Harbor Road, Shelburne, VT</p>
-</li>
-<li><p>Mount Vernon, Fairfax County, Virginia</p>
-</li>
-<li><p>Hanford Site, Benton County, WA</p>
-</li>
-<li><p>Lost World Caverns, Lewisburg, WV</p>
-</li>
-<li><p>Taliesin, County Road C, Spring Green, Wisconsin</p>
-</li>
-<li><p>Yellowstone National Park, WY 82190</p>
-</li>
-</ul>
+            <p>Match 'N Spell Magic is a game I co-developed with 2 friends.</p>
+<p>It invites children to match letters which spell out the names of adorable animals. 🦁🐰🦉</p>
+<p>By engaging in this delightful gameplay experience, kids can enhance their spelling abilities and cognitive skills in a fun and interactive way.</p>
+<p>Download it on the <a href="https://apps.apple.com/app/match-n-spell-magic/id1661527186">App Store</a></p>
+<h2 id="screenshots">Screenshots</h2>
+<p><img src="/assets/images/pages/personal-projects/match-spell-magic/level_selection.jpg" alt="level_selection.jpg" /></p>
+<p><img src="/assets/images/pages/personal-projects/match-spell-magic/gameplay_2.jpg" alt="gameplay_2.jpg" /></p>
+<p><img src="/assets/images/pages/personal-projects/match-spell-magic/gameplay_1.jpg" alt="gameplay_1.jpg" /></p>
+<p><img src="/assets/images/pages/personal-projects/match-spell-magic/level_complete.jpg" alt="level_complete.jpg" /></p>
+<p><img src="/assets/images/pages/personal-projects/match-spell-magic/fact.jpg" alt="fact.jpg" /></p>
 
         </article>
     </div>

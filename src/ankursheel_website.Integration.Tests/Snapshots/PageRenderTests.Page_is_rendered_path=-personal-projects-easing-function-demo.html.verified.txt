@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Other Projects</title>
+<title>Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/other-projects"/>   
-<meta itemProp="name" content="Other Projects"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/easing-function-demo"/>   
+<meta itemProp="name" content="Ankur Sheel"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/other-projects-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/other-projects"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/easing-function-demo-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/easing-function-demo"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Other Projects"/>
+<meta property="og:title" content="Ankur Sheel"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/other-projects-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/other-projects-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/easing-function-demo-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/easing-function-demo-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Other Projects"/>
+<meta name="twitter:title" content="Ankur Sheel"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/other-projects-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/other-projects-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/easing-function-demo-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/easing-function-demo-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,40 +110,16 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Other Projects</h1>
+    <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <h2 id="statiq-helpers">Statiq Helpers</h2>
-<p>Opinionated Wrapper around Statiq.Web to build a static website</p>
-<p><a href="https://github.com/AnkurSheel/StatiqHelpers">Source code</a>
-<a href="https://www.nuget.org/packages/Codinators.StatiqHelpers/">Nuget Package</a></p>
-<h2 id="xunithelpers">xUnitHelpers</h2>
-<p>Helpers that come in handy when writing tests with Xunit. Helpers Include</p>
-<ul>
-<li>Loading test data from a JSON file for xUnit Tests</li>
-<li>Multiple Asserts</li>
-<li>Auto Approver for Approval Tests</li>
-<li>Verify calls to ILogger using Moq</li>
-</ul>
-<p><a href="https://github.com/AnkurSheel/xUnitHelpers">Source code</a>
-<a href="https://www.nuget.org/packages/Codinators.XunitHelpers/">Nuget Package</a></p>
-<h2 id="demo-to-showcase-how-different-easing-functions-behave">Demo to showcase how different easing functions behave</h2>
+            <p>I created this to see how different easing functions behave</p>
 <p>Easing Functions Showcased: <em>Linear</em>, <em>Sine</em>, <em>Quadratic</em>, <em>Cubic</em>, <em>Quartic</em>, <em>Quintic</em>, <em>Exponential</em>, <em>Circular</em>, <em>Elastic</em>, <em>Back</em> and <em>Bounce</em>.</p>
 <p>Easing Types supported : <em>EaseIn</em>, <em>EaseOut</em>, <em>EaseInOut</em> and <em>EaseOutIn</em>.</p>
-<p>Made with C++</p>
 <p><a href="https://github.com/AnkurSheel/EasingFunctionsDemo">Source code</a></p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/x0vW7pHsvFQ" title="Easing Functions Video" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
-<h2 id="fuzzy-logic-system">Fuzzy Logic system</h2>
-<p>A Fuzzy Logic system reads the data produced by CERT (a facial features recognition program to examine pictures taken by a webcam) and processes it to determine the most prevalent emotion expressed by the player. This emotion is then used to modify the internal game mechanics of Quake 3 in real-time.</p>
-<p>Made with C++</p>
-<h2 id="reliable-udp-protocol">Reliable UDP protocol</h2>
-<p>A Reliable UDP protocol to simulate AI (steering) behaviours over a network with a client-server architecture involving multiple systems.</p>
-<p>Made with C++</p>
-<h2 id="tv-listings-scraper">TV Listings Scraper</h2>
-<p>A Google Maps based interface displays the current TV Listings of Los Angeles TV stations scraped from existing TV Listings.</p>
-<p>Made with HTML, CSS, DOM, AJAX, XML, JAVA Servlets, JSON &amp; PERL</p>
 
         </article>
     </div>

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Procedural Minecraft Terrain Generator</title>
+<title>Route Planner: US Cities Waypoints</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/procedural-minecraft-terrain-generator"/>   
-<meta itemProp="name" content="Procedural Minecraft Terrain Generator"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints"/>   
+<meta itemProp="name" content="Route Planner: US Cities Waypoints"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/procedural-minecraft-terrain-generator-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/ai-projects/procedural-minecraft-terrain-generator"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Procedural Minecraft Terrain Generator"/>
+<meta property="og:title" content="Route Planner: US Cities Waypoints"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/procedural-minecraft-terrain-generator-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/procedural-minecraft-terrain-generator-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Procedural Minecraft Terrain Generator"/>
+<meta name="twitter:title" content="Route Planner: US Cities Waypoints"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/procedural-minecraft-terrain-generator-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/procedural-minecraft-terrain-generator-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,36 +110,106 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Procedural Minecraft Terrain Generator</h1>
+    <h1 class="text-center">Route Planner: US Cities Waypoints</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <p><a href="https://github.com/AnkurSheel/pmgai-minecraft.jpg">Source Code</a></p>
-<h2 id="screenshots">Screenshots</h2>
-<h3 id="inter-iso">Inter Iso</h3>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Inter0_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Inter1_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Inter2_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Inter0_top.jpg" alt="" /></p>
-<h3 id="inter-top">Inter Top</h3>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Inter1_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Inter2_top.jpg" alt="" /></p>
-<h3 id="step-iso">Step Iso</h3>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step0_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step1_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step2_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step3_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step4_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step5_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step6_iso.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step7_iso.jpg" alt="" /></p>
-<h3 id="step-top">Step Top</h3>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step0_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step1_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step2_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step3_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step5_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step6_top.jpg" alt="" /></p>
-<p><img src="/assets/images/pages/cv/ai-projects/procedural-minecraft-terrain-generator/Step7_top.jpg" alt="" /></p>
+            <p>List of waypoints for the USA Cities Route planner</p>
+<ul>
+<li><p>Oklahoma City, Oklahoma</p>
+</li>
+<li><p>Boise, Idaho</p>
+</li>
+<li><p>Wichita, Kansas</p>
+</li>
+<li><p>Denver, Colorado</p>
+</li>
+<li><p>Albuquerque, New Mexico</p>
+</li>
+<li><p>Phoenix, Arizona</p>
+</li>
+<li><p>Las Vegas, Nevada</p>
+</li>
+<li><p>San Francisco, California</p>
+</li>
+<li><p>Portland, Oregon</p>
+</li>
+<li><p>Seattle, Washington</p>
+</li>
+<li><p>Chicago, Illinois</p>
+</li>
+<li><p>Park City, Utah</p>
+</li>
+<li><p>Jackson, Wyoming</p>
+</li>
+<li><p>Billings, Montana</p>
+</li>
+<li><p>Sioux Falls, South Dakota</p>
+</li>
+<li><p>Omaha, Nebraska</p>
+</li>
+<li><p>Des Moines, Iowa</p>
+</li>
+<li><p>Minneapolis, Minnesota</p>
+</li>
+<li><p>Milwaukee, Wisconsin</p>
+</li>
+<li><p>Providence, Rhode Island</p>
+</li>
+<li><p>Indianapolis, Indiana</p>
+</li>
+<li><p>Louisville, Kentuckyy</p>
+</li>
+<li><p>Columbus, Ohio</p>
+</li>
+<li><p>Detroit, Michigan</p>
+</li>
+<li><p>Manchester, New Hampshire</p>
+</li>
+<li><p>Portland, Maine</p>
+</li>
+<li><p>Boston, Massachusetts</p>
+</li>
+<li><p>Charlotte, North Carolina</p>
+</li>
+<li><p>New Haven, Connecticut</p>
+</li>
+<li><p>New York City, New York</p>
+</li>
+<li><p>Ocean City, New Jersey</p>
+</li>
+<li><p>Philadelphia, Pennsylvania</p>
+</li>
+<li><p>Wilmington, Delaware</p>
+</li>
+<li><p>Baltimore, Maryland</p>
+</li>
+<li><p>Washington, D.C.</p>
+</li>
+<li><p>Virginia Beach, Virginia</p>
+</li>
+<li><p>Little Rock, Arkansas</p>
+</li>
+<li><p>Charleston, South Carolina</p>
+</li>
+<li><p>Orlando, Florida</p>
+</li>
+<li><p>Atlanta, Georgia</p>
+</li>
+<li><p>Nashville, Tennessee</p>
+</li>
+<li><p>Birmingham, Alabama</p>
+</li>
+<li><p>Jackson, Mississippi</p>
+</li>
+<li><p>New Orleans, Louisiana</p>
+</li>
+<li><p>Houston, Texas</p>
+</li>
+<li><p>Oklahoma City, Oklahoma</p>
+</li>
+<li><p>Branson, Missouri</p>
+</li>
+</ul>
 
         </article>
     </div>

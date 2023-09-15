@@ -140,7 +140,7 @@
 <li>Do a round the world trip</li>
 <li><del>Visit atleast 10 countries.</del> (2014)
 <ul>
-<li>Visit atleast 15 countries. <em>Current Progress</em>: 12. See <a href="/impossible-list/country-visit-list">List here</a></li>
+<li>Visit atleast 15 countries. <em>Current Progress</em>: 13. See <a href="/impossible-list/country-visit-list">List here</a></li>
 </ul>
 </li>
 <li>Cool Things to See
@@ -245,7 +245,6 @@
 <li><del>Go Bungee Jumping</del> (Queenstown, New Zealand, 2016)</li>
 <li><del>Go on a cruise</del> (Singapore x 2)</li>
 <li>Go Para Gliding</li>
-<li>Go Para Sailing</li>
 <li>Go Snorkeling</li>
 <li>Go Scuba Diving</li>
 <li>Go Sky Diving</li>
@@ -273,11 +272,6 @@
 <li>Climb the stairs of the Eiffel tower in Paris, France</li>
 <li><del>Drink a beer at hofbrauhaus in Munich, Germany</del> (August 2016)</li>
 <li>Drink a Guinness in Ireland</li>
-</ul>
-</li>
-<li>North America
-<ul>
-<li>Hike in the Grand Canyon, USA</li>
 </ul>
 </li>
 <li>Oceania
@@ -383,7 +377,7 @@
 <li>Game company</li>
 </ul>
 </li>
-<li><del>Build an application</del> (June 2023)
+<li><del>Build an application</del> <a href="https://apps.apple.com/app/match-n-spell-magic/id1661527186">Match 'N Spell Magic on AppStore</a>(June 2023)
 <ul>
 <li>that someone pays for</li>
 </ul>

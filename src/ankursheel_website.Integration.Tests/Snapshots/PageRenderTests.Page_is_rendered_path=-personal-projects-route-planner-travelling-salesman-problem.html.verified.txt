@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Route Planner: US Cities Waypoints</title>
+<title>Route Planner: Travelling Salesman Problem</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints"/>   
-<meta itemProp="name" content="Route Planner: US Cities Waypoints"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem"/>   
+<meta itemProp="name" content="Route Planner: Travelling Salesman Problem"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Route Planner: US Cities Waypoints"/>
+<meta property="og:title" content="Route Planner: Travelling Salesman Problem"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Route Planner: US Cities Waypoints"/>
+<meta name="twitter:title" content="Route Planner: Travelling Salesman Problem"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/route-planner-travelling-salesman-problem-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,106 +110,24 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Route Planner: US Cities Waypoints</h1>
+    <h1 class="text-center">Route Planner: Travelling Salesman Problem</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <p>List of waypoints for the USA Cities Route planner</p>
-<ul>
-<li><p>Oklahoma City, Oklahoma</p>
-</li>
-<li><p>Boise, Idaho</p>
-</li>
-<li><p>Wichita, Kansas</p>
-</li>
-<li><p>Denver, Colorado</p>
-</li>
-<li><p>Albuquerque, New Mexico</p>
-</li>
-<li><p>Phoenix, Arizona</p>
-</li>
-<li><p>Las Vegas, Nevada</p>
-</li>
-<li><p>San Francisco, California</p>
-</li>
-<li><p>Portland, Oregon</p>
-</li>
-<li><p>Seattle, Washington</p>
-</li>
-<li><p>Chicago, Illinois</p>
-</li>
-<li><p>Park City, Utah</p>
-</li>
-<li><p>Jackson, Wyoming</p>
-</li>
-<li><p>Billings, Montana</p>
-</li>
-<li><p>Sioux Falls, South Dakota</p>
-</li>
-<li><p>Omaha, Nebraska</p>
-</li>
-<li><p>Des Moines, Iowa</p>
-</li>
-<li><p>Minneapolis, Minnesota</p>
-</li>
-<li><p>Milwaukee, Wisconsin</p>
-</li>
-<li><p>Providence, Rhode Island</p>
-</li>
-<li><p>Indianapolis, Indiana</p>
-</li>
-<li><p>Louisville, Kentuckyy</p>
-</li>
-<li><p>Columbus, Ohio</p>
-</li>
-<li><p>Detroit, Michigan</p>
-</li>
-<li><p>Manchester, New Hampshire</p>
-</li>
-<li><p>Portland, Maine</p>
-</li>
-<li><p>Boston, Massachusetts</p>
-</li>
-<li><p>Charlotte, North Carolina</p>
-</li>
-<li><p>New Haven, Connecticut</p>
-</li>
-<li><p>New York City, New York</p>
-</li>
-<li><p>Ocean City, New Jersey</p>
-</li>
-<li><p>Philadelphia, Pennsylvania</p>
-</li>
-<li><p>Wilmington, Delaware</p>
-</li>
-<li><p>Baltimore, Maryland</p>
-</li>
-<li><p>Washington, D.C.</p>
-</li>
-<li><p>Virginia Beach, Virginia</p>
-</li>
-<li><p>Little Rock, Arkansas</p>
-</li>
-<li><p>Charleston, South Carolina</p>
-</li>
-<li><p>Orlando, Florida</p>
-</li>
-<li><p>Atlanta, Georgia</p>
-</li>
-<li><p>Nashville, Tennessee</p>
-</li>
-<li><p>Birmingham, Alabama</p>
-</li>
-<li><p>Jackson, Mississippi</p>
-</li>
-<li><p>New Orleans, Louisiana</p>
-</li>
-<li><p>Houston, Texas</p>
-</li>
-<li><p>Oklahoma City, Oklahoma</p>
-</li>
-<li><p>Branson, Missouri</p>
-</li>
-</ul>
+            <p>Based on Randy Olson's article &quot;Computing the optimal road trip across the U.S.&quot;</p>
+<p>It employs a genetic algorithm to solve the Traveling Salesman problem. It calculates optimal routes by utilizing Google Maps to measure distances between waypoints. The end result is an HTML file that presents the chosen route along with directions.</p>
+<p><a href="https://github.com/AnkurSheel/RoutePlanner">Source Code</a></p>
+<h2 id="usa-cities">USA Cities</h2>
+<p><img src="/assets/images/pages/personal-projects/route-planner-travelling-salesman-problem/USACitiesOriginal.jpg" alt="Original" /></p>
+<p><img src="/assets/images/pages/personal-projects/route-planner-travelling-salesman-problem/USACitiesFinal.jpg" alt="Final" /></p>
+<p><a href="route-planner-travelling-salesman-problem/us-cities-waypoints">list of waypoints</a>.</p>
+<h2 id="usa-landmarks">USA Landmarks</h2>
+<p><img src="/assets/images/pages/personal-projects/route-planner-travelling-salesman-problem/USALandmarksOriginal.jpg" alt="Original" /></p>
+<p><img src="/assets/images/pages/personal-projects/route-planner-travelling-salesman-problem/USALandmarksFinal.jpg" alt="Final" /></p>
+<p><a href="route-planner-travelling-salesman-problem/us-landmarks-waypoints">list of waypoints</a></p>
+<h2 id="europe">Europe</h2>
+<p><img src="/assets/images/pages/personal-projects/route-planner-travelling-salesman-problem/EuropeOriginal.jpg" alt="Original" /></p>
+<p><img src="/assets/images/pages/personal-projects/route-planner-travelling-salesman-problem/EuropeFinal.jpg" alt="Final" /></p>
+<p><a href="route-planner-travelling-salesman-problem/europe-waypoints">list of waypoints</a></p>
 
         </article>
     </div>

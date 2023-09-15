@@ -119,17 +119,169 @@
 <h3 id="download-cv" target="\_blank"><a href="assets/downloads/CV_Ankur_Sheel.pdf">Download CV</a></h3>
 <p><strong><em>Last Updated: 5 Jan 2023</em></strong></p>
 <p><a href="assets/downloads/CV_Ankur_Sheel.pdf" target="\_blank"><img src="/assets/images/pdficon_large.png" width="64" height="64" alt="CV" /></a></p>
-<h2 id="related-links">Related Links</h2>
-<ul>
-<li><p><a href="cv/ai-projects">AI Projects</a></p>
-</li>
-<li><p><a href="cv/personal-game-projects">Personal Game Projects</a></p>
-</li>
-<li><p><a href="cv/other-projects">Other Projects</a></p>
-</li>
-<li><p><a href="cv/memberships">Memberships</a></p>
-</li>
-</ul>
+<h2 id="personal-projects">Personal Projects</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Category</th>
+<th>Status</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="personal-projects/word-whiz">WordWhiz: Wordle for Kids</a></td>
+<td style="text-align: center;">Game</td>
+<td>Active</td>
+<td>C#, Unity3D</td>
+</tr>
+<tr>
+<td><a href="personal-projects/match-spell-magic">Match 'N Spell Magic: A memory matching game</a></td>
+<td style="text-align: center;">Game</td>
+<td>Active</td>
+<td>C#, Unity3D</td>
+</tr>
+<tr>
+<td><a href="personal-projects/statiqhelpers">StatiqHelpers Nuget Package</a></td>
+<td style="text-align: center;">Tool</td>
+<td>Active</td>
+<td>C#</td>
+</tr>
+<tr>
+<td><a href="personal-projects/xunithelpers">xUnitHelpers Nuget Package</a></td>
+<td style="text-align: center;">Tool</td>
+<td>Active</td>
+<td>C#</td>
+</tr>
+<tr>
+<td><a href="/blog/breakout-clone-v1-0">Breakout clone</a></td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++, DirectX 11.0, premake</td>
+</tr>
+<tr>
+<td><a href="personal-projects/easing-function-demo">Demo to showcase behavior of different easing functions</a></td>
+<td style="text-align: center;">Other</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td><a href="/blog/postmortem-asteroids">Asteroid clone</a></td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++, DirectX 9</td>
+</tr>
+<tr>
+<td><a href="/blog/postmortem-mpong">Pong clone</a></td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++, DirectX 9</td>
+</tr>
+<tr>
+<td><a href="personal-projects/procedural-minecraft-terrain-generator">Procedural Minecraft terrain generator</a></td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>NegaMax Algorithm with and w/o Alpha-Beta Pruning</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Sudoku Generator and Solver</td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Autonomous robot using an ultrasonic sensor to navigate a maze and blob recognition find an object in a maze</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Tetris Agent built using Q-Learning</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>MATLAB</td>
+</tr>
+<tr>
+<td>GUI to show how A* pathfinding works</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++, DirectX 9</td>
+</tr>
+<tr>
+<td>Texas Hold ‘Em Poker Bot built using game theory concepts</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>MinMax Algorithm with and w/o Alpha-Beta Pruning</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Neural Network with back propagation</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Fuzzy Logic System</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Reliable UDP protocol to simulate AI (steering) behaviours over a network involving multiple systems</td>
+<td style="text-align: center;">Other</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>Magic Square Solver using Genetic Algorithms</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>C++</td>
+</tr>
+<tr>
+<td>2D prototype where you have to fight an un-ending horde of enemies</td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++, SDL</td>
+</tr>
+<tr>
+<td>MultiAgent Restaurant Simulation using a knowledge base and  A*</td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>Java, PowerLoom</td>
+</tr>
+<tr>
+<td>Multiplayer Chess</td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++, WinBoard for Windows</td>
+</tr>
+<tr>
+<td>Tic Tac Toe – Single and Multiplayer Modes</td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C++, DirectX 9</td>
+</tr>
+<tr>
+<td>Single Player Air Hockey</td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>Visual C#, XNA</td>
+</tr>
+</tbody>
+</table>
 
         </article>
     </div>

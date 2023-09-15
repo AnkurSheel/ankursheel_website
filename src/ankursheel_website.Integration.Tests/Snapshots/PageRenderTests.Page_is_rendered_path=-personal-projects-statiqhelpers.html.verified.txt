@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Memberships</title>
+<title>Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/cv/memberships"/>   
-<meta itemProp="name" content="Memberships"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/statiqhelpers"/>   
+<meta itemProp="name" content="Ankur Sheel"/>
 <meta itemProp="description"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/cv/memberships-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/cv/memberships"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/statiqhelpers-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/statiqhelpers"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Memberships"/>
+<meta property="og:title" content="Ankur Sheel"/>
 <meta property="og:description"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cv/memberships-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/memberships-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/statiqhelpers-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/statiqhelpers-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Memberships"/>
+<meta name="twitter:title" content="Ankur Sheel"/>
 <meta name="twitter:description"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cv/memberships-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cv/memberships-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/statiqhelpers-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/statiqhelpers-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,78 +110,33 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Memberships</h1>
+    <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            <!-- markdownlint-disable no-duplicate-header -->
-<h2 id="viterbi-graduate-student-organization-vgsa-usc">Viterbi Graduate Student Organization (VGSA) (USC)</h2>
-<p>Senior Vice President</p>
-<h3 id="duration">Duration</h3>
-<p>January 2010 - May 2010</p>
-<h3 id="role">Role</h3>
+            <p>An opinionated wrapper around Statiq.Web</p>
+<p><a href="https://github.com/AnkurSheel/StatiqHelpers">Source code</a></p>
+<p><a href="https://www.nuget.org/packages/Codinators.StatiqHelpers/">Nuget Package</a></p>
+<h2 id="features">Features:</h2>
 <ul>
-<li><p>Developed communication, negotiation and planning skills through coordinating between various committees.</p>
-</li>
-<li><p>Reduced the turnaround time between the planning and execution of events.</p>
-</li>
+<li>Copying images, JavaScript, stylesheets, fonts, and binary files to specific asset folders.</li>
+<li>Optimizing slugs for pages and posts.</li>
+<li>Handling pages and posts, including markdown and Razor pages, and organizing them based on folders.</li>
+<li>Managing post details, such as publishing date, reading time, and related posts.</li>
+<li>Configuring index and blog pages with custom ordering and grouping of posts.</li>
+<li>Creating RSS and sitemap files with metadata from posts.</li>
 </ul>
-<h2 id="computer-science-graduate-organization-csgo-usc">Computer Science Graduate Organization (CSGO), USC</h2>
-<p>Finance Chair</p>
-<h3 id="duration-1">Duration</h3>
-<p>January 2009 - May 2010</p>
-<h3 id="role-1">Role</h3>
+<h3 id="modules">Modules:</h3>
 <ul>
-<li>Developed budgeting skills by financing various organizational events held by CSGO.</li>
-</ul>
-<h2 id="viterbi-graduate-student-organization-vgsa-usc-1">Viterbi Graduate Student Organization (VGSA) (USC)</h2>
-<p>Vice President (Programs)</p>
-<h3 id="duration-2">Duration</h3>
-<p>August 2009 - January 2010</p>
-<h3 id="role-2">Role</h3>
-<ul>
-<li><p>Planned and managed several successful events.</p>
-</li>
-<li><p>Successfully planned and executed the 1st Technical Competition for graduate engineering students of all disciplines in the history of VGSA.</p>
-</li>
-<li><p>Learnt how to adapt to unanticipated situations and improvise while organizing events.</p>
-</li>
-</ul>
-<h2 id="viterbi-graduate-student-organization-vgsa-usc-2">Viterbi Graduate Student Organization (VGSA) (USC)</h2>
-<p>Senator(Computer Science)</p>
-<h3 id="duration-3">Duration</h3>
-<p>January 2009 - August 2009</p>
-<h3 id="role-3">Role</h3>
-<ul>
-<li><p>Planned a various number of workshops directed towards the interests of graduate CS students.</p>
-</li>
-<li><p>Responsible for the publicity for VGSA events as well as maintaining the VGSA website.</p>
-</li>
-</ul>
-<h2 id="photography-club-manipal-institute-of-technology">Photography Club, Manipal Institute of Technology</h2>
-<p>Secretary &amp; Treasurer</p>
-<h3 id="duration-4">Duration</h3>
-<p>August 2004 - May 2005</p>
-<h3 id="role-4">Role</h3>
-<ul>
-<li><p>Successfully managed the budget for the various events held by the Photography Club.</p>
-</li>
-<li><p>Planned and Executed several workshops and competitions.</p>
-</li>
-</ul>
-<h2 id="photography-club-manipal-institute-of-technology-1">Photography Club, Manipal Institute of Technology</h2>
-<p>Member</p>
-<h3 id="duration-5">Duration</h3>
-<p>August 2002 - August 2004</p>
-<h2 id="students-council-manipal-institute-of-technology">Students Council, Manipal Institute of Technology</h2>
-<p>Class representative</p>
-<h3 id="duration-6">Duration</h3>
-<p>August 2002 - August 2003</p>
-<h3 id="role-5">Role</h3>
-<ul>
-<li><p>Acted as the conduit between the class and the faculty, and the Students Council.</p>
-</li>
-<li><p>Responsible for forwarding the concerns of the students to the faculty and the Students Council.</p>
-</li>
+<li><strong>Reading Time Module</strong>: Calculates reading time for articles.</li>
+<li><strong>Responsive YouTube Shortcode</strong>: Makes YouTube videos responsive.</li>
+<li><strong>Optimize Slug</strong>: Optimizes destination slugs.</li>
+<li><strong>Replace Image Links</strong>: Corrects relative image links in markdown files.</li>
+<li><strong>GenerateRssMetaData</strong>: Sets RSS feed metadata.</li>
+<li><strong>GenerateSitemapMetaData</strong>: Sets sitemap metadata.</li>
+<li><strong>GeneratePageDetailsFromPath</strong>: Sets slugs for pages based on folder paths.</li>
+<li><strong>GeneratePostDetailsFromPath</strong>: Sets slugs and published dates for posts from folder paths.</li>
+<li><strong>GenerateSocialImage</strong>s: Creates social share images for Facebook and Twitter.</li>
+<li><strong>Related Posts Module</strong>: Generates related posts based on categories, tags, and relative dates.</li>
 </ul>
 
         </article>

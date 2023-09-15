@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (198)</h2>
+<h2>All Categories (200)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,24 +127,27 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordwhiz-update-1">WordWhiz Update #1</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/transitioning-c-linq-java-streams">Transitioning from C# LINQ to Java Streams</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
         </li>
 </ul>
 
-    <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (9)</h3>
+    <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (10)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a> - <time class="prose-sm" datetime="23-09-13">September 13, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-30">March 30, 2023</time>
             </li>
@@ -464,8 +467,11 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (12)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (13)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordwhiz-update-1">WordWhiz Update #1</a> - <time class="prose-sm" datetime="23-08-07">August 07, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a> - <time class="prose-sm" datetime="20-10-23">October 23, 2020</time>
             </li>
@@ -474,6 +480,9 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/new-release-codinators-xunit-helpers-nuget-package">New Release: Codinators.XunitHelpers Nuget Package</a> - <time class="prose-sm" datetime="20-02-21">February 21, 2020</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/breakout-clone-v1-0">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="19-01-30">January 30, 2019</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/jah-update-7">JAH Update 7</a> - <time class="prose-sm" datetime="18-06-14">June 14, 2018</time>
@@ -498,9 +507,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/new-side-project-jah">New Side Project: JAH</a> - <time class="prose-sm" datetime="17-12-13">December 13, 2017</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/breakout-clone-v1-0">Breakout Clone v1.0</a> - <time class="prose-sm" datetime="14-04-05">April 05, 2014</time>
             </li>
     </ul>
     <h3 id="travel" class="py-4 border-b border-grey-lighter capitalize">travel (25)</h3>

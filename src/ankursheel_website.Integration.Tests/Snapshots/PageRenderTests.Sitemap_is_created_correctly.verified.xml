@@ -7,40 +7,46 @@
     <loc>https://www.ankursheel.com/about</loc>
   </url>
   <url>
-    <loc>https://www.ankursheel.com/cv/ai-projects</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/ai-projects/procedural-minecraft-terrain-generator</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/europe-waypoints</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-cities-waypoints</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/ai-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints</loc>
-  </url>
-  <url>
     <loc>https://www.ankursheel.com/cv</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/memberships</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/other-projects</loc>
-  </url>
-  <url>
-    <loc>https://www.ankursheel.com/cv/personal-game-projects</loc>
   </url>
   <url>
     <loc>https://www.ankursheel.com/impossible-list/country-visit-list</loc>
   </url>
   <url>
     <loc>https://www.ankursheel.com/impossible-list</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/easing-function-demo</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/match-spell-magic</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/procedural-minecraft-terrain-generator</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/europe-waypoints</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem</loc>
+  </url>
+  <url>
+      <loc>https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/us-cities-waypoints
+      </loc>
+  </url>
+  <url>
+      <loc>
+          https://www.ankursheel.com/personal-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints
+      </loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/statiqhelpers</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/word-whiz</loc>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/personal-projects/xunithelpers</loc>
   </url>
   <url>
     <loc>https://www.ankursheel.com/404</loc>
@@ -182,7 +188,7 @@
   </url>
   <url>
     <loc>https://www.ankursheel.com/blog/breakout-clone-v1-0</loc>
-    <lastmod>2014-04-05T00:00:00Z</lastmod>
+    <lastmod>2019-01-30T00:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://www.ankursheel.com/blog/diwali-auckland-2014</loc>
@@ -833,11 +839,19 @@
     <lastmod>2023-06-25T00:00:00Z</lastmod>
   </url>
   <url>
+    <loc>https://www.ankursheel.com/blog/wordwhiz-update-1</loc>
+    <lastmod>2023-08-07T00:00:00Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</loc>
     <lastmod>2023-08-20T00:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</loc>
     <lastmod>2023-09-01T00:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings</loc>
+    <lastmod>2023-09-13T00:00:00Z</lastmod>
   </url>
 </urlset>

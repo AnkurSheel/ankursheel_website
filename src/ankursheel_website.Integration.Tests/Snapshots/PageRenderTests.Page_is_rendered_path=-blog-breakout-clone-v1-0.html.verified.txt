@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2014-04-05">Apr 05, 2014</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2014-04-05">Apr 05, 2014</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2019-01-30">Jan 30, 2019</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">0 min</span>
         </p>
@@ -129,11 +129,8 @@
     </div>
 </div>
 
-<p>The first release of the Breakout clone is finally here.</p>
-<p>The <a href="/assets/downloads/Breakout_setup_v1.1.exe">Installer</a> will install DirectX and the visual studio 2010 re-distributable.</p>
-<p>If you prefer to run the game through a zip file, you can download it from <a href="/assets/downloads/Breakout.zip">here</a>. You will have to make sure that you have the visual studio 2010 re-distributable and the latest DirectX installed on your machine.</p>
-<p>Try it out. In case you face any problems while installing or running the game, let me know, and I will try to come up with a solution.</p>
-<p>Looking forward to hearing your comments on the game :-)</p>
+<p>Breakout clone is no longer available for download.
+However, you can still download the <a href="https://github.com/AnkurSheel/Breakout">source code</a></p>
 <h2 id="screenshots">Screenshots</h2>
 <p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_title.png" alt="Title Screen" /></p>
 <p><img src="/assets/images/posts/breakout-clone-v1-0/breakout_ingame1.png" alt="In Game Screen #1" /></p>
@@ -181,16 +178,16 @@
 
     <ul>
             <li>
-                <a href="new-side-project-jah">New Side Project: JAH</a>
+                <a href="jah-update-7">JAH Update 7</a>
             </li>
             <li>
-                <a href="jah-update-1">JAH: Update 1</a>
+                <a href="jah-update-6">JAH Update 6</a>
             </li>
             <li>
-                <a href="jah-update-2">JAH: Update 2</a>
+                <a href="jah-update-5">JAH Update 5</a>
             </li>
             <li>
-                <a href="jah-update-3">JAH: Update 3</a>
+                <a href="jah-update-4">JAH Update 4</a>
             </li>
     </ul>
 </aside>
