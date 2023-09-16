@@ -241,13 +241,13 @@
                 <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
             <li>
+                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+            </li>
+            <li>
                 <a href="making-pong-take">What does making Pong take?</a>
             </li>
             <li>
                 <a href="smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a>
-            </li>
-            <li>
-                <a href="ten-things-achieve-starting-3d-programming">10 things to do when getting started with 3D programming</a>
             </li>
     </ul>
 </aside>

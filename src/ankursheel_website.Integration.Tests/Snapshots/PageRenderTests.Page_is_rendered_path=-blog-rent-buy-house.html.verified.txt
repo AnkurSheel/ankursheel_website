@@ -9,24 +9,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="My two cents on whether you should rent or buy a house"/>
+<meta name="description" content="My two cents on whether you should rent or buy a house and why I rent"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/rent-buy-house"/>   
 <meta itemProp="name" content="Should I Rent Or Buy a House?"/>
-<meta itemProp="description" content="My two cents on whether you should rent or buy a house"/>
+<meta itemProp="description" content="My two cents on whether you should rent or buy a house and why I rent"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/rent-buy-house"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Should I Rent Or Buy a House?"/>
-<meta property="og:description" content="My two cents on whether you should rent or buy a house"/>
+<meta property="og:description" content="My two cents on whether you should rent or buy a house and why I rent"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Should I Rent Or Buy a House?"/>
-<meta name="twitter:description" content="My two cents on whether you should rent or buy a house"/>
+<meta name="twitter:description" content="My two cents on whether you should rent or buy a house and why I rent"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rent-buy-house-twitter.png"/>
 
@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2016-05-03">May 03, 2016</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2016-05-03">May 03, 2016</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-09-16">Sep 16, 2023</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">5 min</span>
         </p>
@@ -126,64 +126,75 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/finance" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">finance</a>
+            <a href="/tags/opinion" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">opinion</a>
     </div>
 </div>
 
-<p>Conventional wisdom says you grow up and buy a home because that's just what you do when you are a grownup. Now, why would anyone want to be a grownup and have responsibilities is beyond me? But, maybe you like having responsibilities.</p>
-<p><strong>Is buying a house still the right decision for you?</strong></p>
-<p>In my steadfast refusal to invest in a house, I have discussed why I am still renting instead of buying (a house) with various people over the last few years.</p>
+<p>Conventional wisdom dictates that you grow up and buy a home because adulthood equates to homeownership. Now, why would anyone want to be a grownup and have responsibilities is beyond me? But, maybe you like having responsibilities.</p>
+<p>As someone who staunchly opts for renting over buying, I've engaged in countless discussions on why I make this choice. Let's dive into the arguments that people have given to convince me to buy a house.</p>
 <p><img src="/assets/images/posts/rent-buy-house/cover.jpg" alt="Abandoned House" /></p>
-<h2 id="argument-1">Argument #1</h2>
+<h2 id="argument-1-the-investment-myth">Argument #1: The Investment Myth</h2>
 <p>The biggest argument I have heard for owning a home is</p>
 <blockquote>
-<p>It's an investement</p>
+<p>It's an investment</p>
 </blockquote>
-<p>According to Robert Shiller, a Yale economist and Nobel prize winner, buying a house is &quot;like a consumption choice, it's not an investment&quot;. He says that, overall, the housing market doesn’t have a significant long-term return.</p>
-<p>Although I agree with him, you could be lucky and have the housing market in your area explode. But, taking that gamble is probably riskier than investing in the stock market, which has a higher return in the long term.</p>
-<p>What you also need to consider is the opportunity cost of buying. When you go to buy a house, there is the down-payment and the mortgages. You need to see if you would be better off by investing in the down-payment.</p>
-<p>Also, if your rent is significantly cheaper than the mortgage, you would be better off renting a house and investing the difference. If you plan to pay the mortgage by using the monthly rent, you need to consider that the rent might not be enough to cover the monthly mortgage or that the house might be empty for some time.</p>
-<p>If your main reason for buying a house is an investment and you hope to sell it down the road for a tidy profit, all I can say is - To quote from the Hunger Games - &quot;<em>May the odds be ever in your favour</em>&quot;. If you have been living under a rock and haven't read the books or seen the movies, they generally are not.</p>
-<h2 id="argument-2">Argument #2</h2>
+<p>However, Yale economist and Nobel prize winner Robert Shiller suggests otherwise; buying a house is &quot;like a consumption choice, it's not an investment&quot;. He says that, overall, the housing market doesn’t have a significant long-term return.</p>
+<p>Although I agree with him, you could be lucky and there could be a boom in the market when you are ready to sell. But, taking that gamble is riskier than investing in the stock market, which has a higher return in the long term.</p>
+<p>There is also an opportunity cost to buying. When you go to buy a house, there is a significant down-payment that you have to pay. It might be better to invest the money instead. Additionally, if your rent is significantly cheaper than the mortgage, you would be better off renting a house and investing the difference.</p>
+<p>Moreover, if you plan to cover the mortgage with rent, remember that rental income might not suffice, or that the house might be vacant for some time.</p>
+<p>If your main reason for buying a house is an investment and you hope to sell it down the road for a tidy profit, all I can say is</p>
+<blockquote>
+<p>May the odds be ever in your favour</p>
+<p>&quot;Hunger Games&quot;</p>
+</blockquote>
+<p><em>If you have been living under a rock and haven't read the books or seen the movies, they generally are not.</em></p>
+<h2 id="argument-2-the-illusion-of-ownership">Argument #2: The Illusion of Ownership</h2>
 <p>The second argument that frequently comes up is that.</p>
 <blockquote>
 <p>When you rent, you own nothing. When you buy, you eventually own the house</p>
 </blockquote>
-<p><em>I think this is also why most people are baffled by my stance of renting a furnished apartment instead of buying the furniture myself.</em></p>
-<p>Let me start by saying that &quot;When you are renting, you are paying to have a place to live&quot;. In most cases, it would be in a neighbourhood that is more suited to your style of living and what you consider important.</p>
-<p>Personal finance blogger Mr Money Mustache suggests you <a href="http://www.mrmoneymustache.com/2015/07/27/rent-vs-buy/">consider the commuting costs</a> as well. A house in the suburbs of a big city could be far away from your work, costing you gas and vehicle maintenance if you don’t have a public transit option. It probably wouldn’t be too difficult to find a rental closer to your work that could save you money on housing and commute costs. You also don't have to worry about depreciation, repairs and maintenance because of normal wear and tear.</p>
+<p><em>~~This is also why most people are baffled by my stance on renting a furnished apartment instead of purchasing the furniture myself.~~I have since changed my stance on this because most furnished places don't come with baby furniture or place to put them.</em></p>
+<p>Let me start by saying that &quot;When you are renting, you are paying to have a place to live&quot;. In most cases, it would be in a neighbourhood that suits your lifestyle.</p>
+<p>Personal finance blogger Mr Money Mustache suggests you <a href="http://www.mrmoneymustache.com/2015/07/27/rent-vs-buy/">consider the commuting costs</a> as well. A suburban house might mean a costly daily commute especially if you don’t have a public transit option. It would be easier to find a rental closer to your work saving you money and time. Plus, you're spared the headache of home maintenance.</p>
 <p>What if your job requires you to move or you want to explore an exciting new opportunity in a new city? Chances are, if you have a mortgage to pay, financial considerations will weigh in, and you will have to forego the opportunity.</p>
-<h3 id="argument-2-a">Argument #2 A</h3>
-<p>Invariably, someone will counter with the argument that.</p>
+<h3 id="argument-2a">Argument #2A</h3>
+<p>Invariably, someone will counter with the argument</p>
 <blockquote>
 <p>But Ankur, if you buy a house, you will eventually pay it off, and it will be yours</p>
 </blockquote>
 <p>Now only if it was so easy. Most people forget about the payment to the government - the dreaded taxes. Even if you have paid off your mortgage and celebrate thinking that you finally own the house, you realize that property tax still exists. If you still believe you own the house, don't pay the tax for a while and see how fast the government comes after you.</p>
-<p>In fact, at one point in time, even we almost fell into the trap and started looking for a house. Luckily, we didn't find anything that we liked. Being the epitome of laziness that I am, I got tired of looking in a few days, and we decided to continue renting.</p>
-<h2 id="argument-3">Argument #3</h2>
+<p>The other cost that people forget is the home maintenance and repairs.</p>
+<p>In fact, at one point, we almost fell into the trap and started looking for a house. Luckily, we didn't find anything that we liked. Being the epitome of laziness, I got tired of looking after a few days, and we decided to continue renting. This allowed us to pack up our bags and move to NZ easily when the opportunity arose.</p>
+<h2 id="argument-3-tax-savings">Argument #3: Tax Savings</h2>
 <p>The third argument that comes up is</p>
 <blockquote>
 <p>You save on tax when you buy a house</p>
 </blockquote>
-<p>This is one of those classic cases of Penny Wise, Pound Foolish. The tax you save will probably be not even close to the interest you are paying every year. Yes, you do get a tax benefit, but this should not be a major consideration to decide if you should buy a house or not.</p>
+<p>This is one of those classic cases of Penny Wise, Pound Foolish. The tax you save will probably be far from the interest you pay yearly. Yes, you get a tax benefit, but this should be a minor consideration to decide if you should buy a house.</p>
 <h2 id="is-buying-a-house-for-chumps">Is buying a house for chumps?</h2>
-<p>This doesn't mean that you should never buy a house. One advantage of buying a house is that you get to do whatever you want. Customization FTW. As a renter, you are at the mercy of your landlord to get any changes made.</p>
-<p>Owning is also the best way to lock in living costs if you plan to stay in the same place for a long time. After all, rents can go up, and the landlord may just ask you to move out.</p>
-<h2 id="can-i-afford-to-buy-a-house">Can I afford to buy a house?</h2>
-<p>So how do you decide whether you can afford to buy a house? One rule of thumb is that your home should <a href="http://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html">not cost you more than 2.5 times your salary or, better still, your net worth</a>. You should have a cushion between your monthly income and expenses(including your mortgage). You should also not be buying a house if you have a massive credit card debt or other loans that need to be paid off.</p>
+<p>This doesn't mean that you should never buy a house.</p>
+<p>One advantage of purchasing a home is that you can do whatever you want. Customization FTW. As a renter, you are at the mercy of your landlord to get any changes made.</p>
+<p>Owning is also the best way to lock in living costs if you plan to stay in the same place for a long time. After all, the landlord may ask you to move out. Rents can also increase, but so can monthly payments as can be seen in the NZ climate in 2023.</p>
+<h2 id="can-you-afford-homeownership">Can You Afford Homeownership?</h2>
+<p>So how do you decide whether you can afford to buy a house? By assessing your financial readiness.</p>
+<blockquote>
+<p>When half of your salary is fed to the house, that means that you must be a lot more judicious with how you spend your money.</p>
+<p>&quot;I Will Teach You To Be Rich &quot;</p>
+</blockquote>
+<p>One rule of thumb is that your home should <a href="http://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html">not cost you more than 2.5 times your salary or, better still, your net worth</a>. You should have a cushion between your monthly income and expenses(including your mortgage). You should also not be buying a house if you have a massive credit card debt or other loans that need to be paid off.</p>
 <p>If you are buying a house for investment purposes, you should follow <a href="http://affordanything.com/2012/01/25/income-property/">the one per cent rule of investment</a>, i.e. Does the monthly rent equal one per cent of the purchase price or more? Some people go a step further and claim that you should follow the 2 per cent rule, but I feel that it is too prohibitive.</p>
 <p>Finally, you should remember to add mortgage payments, taxes and maintenance charges into your estimates and make sure it makes sense for you financially before taking a plunge into homeownership.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Although I don't see Gunjan and me buying a house in the foreseeable future, I am not entirely opposed to purchasing a house.</p>
-<p>If you buy for the right reasons and make an informed decision, homeownership, whether for yourself or as an investment, can be one of the best things.</p>
-<p>However, it scares me how many couples I know have bought into the American/Indian Dream of buying a house without doing the due diligence and then not enjoying their lives because they are worried about the next mortgage payment.</p>
-<p>What do you think? Is renting better than buying, or would you rather be a homeowner?</p>
+<p>While I lean toward renting, I appreciate the value of informed homeownership decisions. If you buy for the right reason, homeownership, whether for yourself or as an investment, can be one of the best things.</p>
+<p>However, it scares me how many couples I know have bought into the American/Indian Dream of buying a house without adequate due diligence, sacrificing life's joys for mortgage worries.</p>
+<p>What's your take? Is renting the practical choice, or do you prefer homeownership? Share your thoughts!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rent-buy-house&text=Should%20I%20Rent%20Or%20Buy%20a%20House%3F via @ankur_sheel.&#xD;&#xA;My%20two%20cents%20on%20whether%20you%20should%20rent%20or%20buy%20a%20house" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rent-buy-house&text=Should%20I%20Rent%20Or%20Buy%20a%20House%3F via @ankur_sheel.&#xD;&#xA;My%20two%20cents%20on%20whether%20you%20should%20rent%20or%20buy%20a%20house%20and%20why%20I%20rent" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/rent-buy-house" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -219,16 +230,16 @@
 
     <ul>
             <li>
-                <a href="merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
-            </li>
-            <li>
                 <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
             </li>
             <li>
-                <a href="review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a>
+                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
             <li>
-                <a href="fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a>
+                <a href="merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
+            </li>
+            <li>
+                <a href="child-appreciation">Why being an only child is awesome</a>
             </li>
     </ul>
 </aside>

@@ -113,7 +113,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/wordwhiz-update-1" class="text-center prose-2xl mb-4">WordWhiz Update #1</a>
-        <div class="font-semibold text-center">1 min</div>
+        <div class="font-semibold text-center">0 min</div>
         <p>
             WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion
         </p>

@@ -120,7 +120,7 @@
         <p class="mr-4">Published on <time datetime="2023-08-07">Aug 07, 2023</time></p>
         <p class="mr-4">Last Updated on <time datetime="2023-08-07">Aug 07, 2023</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">1 min</span>
+            Estimated Reading Time: <span  class="font-bold">0 min</span>
         </p>
     </div>
 
@@ -131,11 +131,11 @@
 </div>
 
 <p>You can see all the related updates <a href="/tags/wordwhiz">here</a></p>
-<p>In our latest WordWhiz game update, we've brought some fantastic additions to enhance your gaming experience:</p>
+<p>The latest WordWhiz game update, has some great additions.</p>
 <h2 id="new-words">20 New Words</h2>
-<p>We've introduced 20 new words to keep young minds engaged and entertained. These colorful additions will add a new dimension to your WordWhiz adventure.</p>
+<p>I have curated 20 new words to keep young minds engaged and entertained.</p>
 <h2 id="play-a-new-game-with-randomly-selected-words">Play a New Game with Randomly Selected Words</h2>
-<p>After completing a level, get ready to dive into a new game featuring a randomly selected word. It's a delightful twist that keeps things fresh and exciting.</p>
+<p>After completing a level, you can play another level with a randomly selected word</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
   <iframe src="https://www.youtube.com/embed/_mw6u4SIGWk" title="WordWhiz Next Level" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>

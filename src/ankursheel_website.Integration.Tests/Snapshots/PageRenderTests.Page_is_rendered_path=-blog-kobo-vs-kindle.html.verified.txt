@@ -199,6 +199,9 @@
 
     <ul>
             <li>
+                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+            </li>
+            <li>
                 <a href="child-appreciation">Why being an only child is awesome</a>
             </li>
             <li>
@@ -206,9 +209,6 @@
             </li>
             <li>
                 <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
-            </li>
-            <li>
-                <a href="merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
             </li>
     </ul>
 </aside>

@@ -115,6 +115,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="23-09-16">September 16, 2023</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a> - <time class="prose-sm" datetime="23-09-13">September 13, 2023</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -125,9 +128,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordwhiz-update-1">WordWhiz Update #1</a> - <time class="prose-sm" datetime="23-08-07">August 07, 2023</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/transitioning-c-linq-java-streams">Transitioning from C# LINQ to Java Streams</a> - <time class="prose-sm" datetime="23-06-25">June 25, 2023</time>
         </li>
 </ul>
 

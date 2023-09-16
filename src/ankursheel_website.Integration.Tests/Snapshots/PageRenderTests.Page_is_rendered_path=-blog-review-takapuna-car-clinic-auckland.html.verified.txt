@@ -211,7 +211,7 @@
                 <a href="product-review-ndepend">Product Review: NDepend</a>
             </li>
             <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+                <a href="fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a>
             </li>
     </ul>
 </aside>

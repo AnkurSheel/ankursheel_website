@@ -179,6 +179,9 @@
     <h3 id="opinion" class="py-4 border-b border-grey-lighter capitalize">opinion (18)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="23-09-16">September 16, 2023</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a> - <time class="prose-sm" datetime="22-11-06">November 06, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
@@ -207,9 +210,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/fantastic-bits-codingame">Why you should compete in Fantastic Bits @ Codingame</a> - <time class="prose-sm" datetime="16-11-23">November 23, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="16-05-03">May 03, 2016</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a> - <time class="prose-sm" datetime="15-11-24">November 24, 2015</time>

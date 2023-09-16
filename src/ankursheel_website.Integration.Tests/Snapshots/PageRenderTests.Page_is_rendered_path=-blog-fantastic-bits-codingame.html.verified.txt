@@ -186,9 +186,6 @@
 
     <ul>
             <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
-            </li>
-            <li>
                 <a href="review-takapuna-car-clinic-auckland">Review: Takapuna Car Clinic, Auckland</a>
             </li>
             <li>
@@ -196,6 +193,9 @@
             </li>
             <li>
                 <a href="migrating-wordpress-gatsby">Why and How I migrated my website from WordPress to Gatsby</a>
+            </li>
+            <li>
+                <a href="impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a>
             </li>
     </ul>
 </aside>

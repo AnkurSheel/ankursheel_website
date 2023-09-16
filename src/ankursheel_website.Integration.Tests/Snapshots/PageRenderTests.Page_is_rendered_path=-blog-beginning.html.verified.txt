@@ -183,6 +183,9 @@
             <li>
                 <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
+            <li>
+                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+            </li>
     </ul>
 </aside>
 
