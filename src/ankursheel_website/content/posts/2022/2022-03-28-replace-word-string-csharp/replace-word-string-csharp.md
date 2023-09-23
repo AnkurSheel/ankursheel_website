@@ -1,7 +1,6 @@
 ---
 title: "How to replace a word in a string in C#"
-excerpt: "There is no way to replace just whole words using string.Replace. Let's see how we can replace whole words in
-string using Regex"
+excerpt: "There is no way to replace just whole words using string.Replace. Let's see how we can replace whole words in string using Regex"
 category: "programming"
 updatedOnDate: "2022-03-30"
 tags:
