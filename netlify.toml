@@ -231,3 +231,9 @@ from = "/tags/ramblings/"
 to = "/tags/opinion/"
 status = 301
 force = false
+
+[[redirects]]
+from = "/cv/ai-projects/"
+to = "/personal-projects/"
+status = 301
+force = false
