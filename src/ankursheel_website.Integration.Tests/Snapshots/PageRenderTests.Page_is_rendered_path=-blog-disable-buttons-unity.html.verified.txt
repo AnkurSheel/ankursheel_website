@@ -196,7 +196,7 @@
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
-                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
+                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
     </ul>
 </aside>

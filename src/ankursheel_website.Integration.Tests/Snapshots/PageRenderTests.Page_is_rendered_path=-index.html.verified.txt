@@ -115,6 +115,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a> - <time class="prose-sm" datetime="23-09-25">September 25, 2023</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a> - <time class="prose-sm" datetime="23-09-16">September 16, 2023</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -125,9 +128,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a> - <time class="prose-sm" datetime="23-08-20">August 20, 2023</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordwhiz-update-1">WordWhiz Update #1</a> - <time class="prose-sm" datetime="23-08-07">August 07, 2023</time>
         </li>
 </ul>
 

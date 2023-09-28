@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Deploy a Gatsby site on a schedule with Azure Pipelines</title>
+<title>Unity CI/CD Demystified: Part 1: One-Time Setup</title>
 <meta charset="utf-8">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule">
+<meta name="description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.ankursheel.com/blog/use-azure-pipelines-deploy-gatsby-site-schedule">   
-<meta itemprop="name" content="Deploy a Gatsby site on a schedule with Azure Pipelines">
-<meta itemprop="description" content="A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule">
-    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/use-azure-pipelines-deploy-gatsby-site-schedule-facebook.png">
-<meta property="og:url" content="https://www.ankursheel.com/blog/use-azure-pipelines-deploy-gatsby-site-schedule">
+    <link rel="canonical" href="https://www.ankursheel.com/blog/unity-cicd-one-time-setup">   
+<meta itemprop="name" content="Unity CI/CD Demystified: Part 1: One-Time Setup">
+<meta itemprop="description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
+    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png">
+<meta property="og:url" content="https://www.ankursheel.com/blog/unity-cicd-one-time-setup">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Deploy a Gatsby site on a schedule with Azure Pipelines">
-<meta property="og:description" content="A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule">
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/use-azure-pipelines-deploy-gatsby-site-schedule-facebook.png">
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/use-azure-pipelines-deploy-gatsby-site-schedule-facebook.png">
+<meta property="og:title" content="Unity CI/CD Demystified: Part 1: One-Time Setup">
+<meta property="og:description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png">
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
-<meta name="twitter:title" content="Deploy a Gatsby site on a schedule with Azure Pipelines">
-<meta name="twitter:description" content="A guide to deploying a gatsby site to netlify daily and have scheduled posts automatically go live by triggering Azure pipelines on a schedule">
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/use-azure-pipelines-deploy-gatsby-site-schedule-twitter.png">
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/use-azure-pipelines-deploy-gatsby-site-schedule-twitter.png">
+<meta name="twitter:title" content="Unity CI/CD Demystified: Part 1: One-Time Setup">
+<meta name="twitter:description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-twitter.png">
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-twitter.png">
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -107,114 +107,114 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Deploy a Gatsby site on a schedule with Azure Pipelines</h1>
+    <h1 class="text-center">Unity CI/CD Demystified: Part 1: One-Time Setup</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2020-01-17">Jan 17, 2020</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2020-01-17">Jan 17, 2020</time></p>
+        <p class="mr-4">Published on <time datetime="2023-09-25">Sep 25, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-09-25">Sep 25, 2023</time></p>
         <p>
             Estimated Reading Time: <span class="font-bold">2 min</span>
         </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/devops" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">devops</a>
+            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
             <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
-            <a href="/tags/gatsby" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">gatsby</a>
-            <a href="/tags/azure-pipelines" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">Azure pipelines</a>
+            <a href="/tags/devops" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">devops</a>
     </div>
 </div>
 
-<p>In an <a href="deploy-gatsby-site-netlify-azure-pipelines">earlier post</a>, I showed how to use azure pipelines to build a gatsby site and deploy to Netlify. But it was slightly limited. A live build was deployed only when a push was made to <em>master</em>. There was no way to have scheduled posts go live automatically.</p>
-<p>There are 2 ways to approach this problem.</p>
-<ol>
-<li>By using an AWS Lambda or Azure Functions. I initially had this, and you can see the code <a href="https://github.com/AnkurSheel/BlogFunctions">here</a>.</li>
-<li>By adding a new azure pipeline that runs on a schedule.</li>
-</ol>
-<p>In this post, I will be using azure pipelines to deploy the site daily.</p>
-<p><em>Note: We will be using the template files created in the <a href="deploy-gatsby-site-netlify-azure-pipelines">Deploying a Gatsby site to Netlify using Azure Pipelines</a>, so I would suggest reading that first. Go on, I will wait.</em></p>
-<h2 id="adding-a-new-pipeline-to-schedule-posts">Adding a new pipeline to schedule posts</h2>
-<p>Good, you are back.</p>
-<p>Let's create a new file <em>azure-pipelines.daily.yml</em>.</p>
-<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">'Daily Release'</span>
-
-<span class="hljs-attr">schedules:</span>
-<span class="hljs-attr">    - cron:</span> <span class="hljs-string">'0 14 * * *'</span>
-<span class="hljs-attr">      displayName:</span> Daily build
-<span class="hljs-attr">      branches:</span>
-<span class="hljs-attr">          include:</span>
-<span class="hljs-bullet">              -</span> master
-<span class="hljs-attr">      always:</span> <span class="hljs-literal">true</span>
-
-<span class="hljs-attr">trigger:</span>
-<span class="hljs-attr">    batch:</span> <span class="hljs-literal">false</span>
-<span class="hljs-attr">    branches:</span>
-<span class="hljs-attr">        exclude:</span>
-<span class="hljs-bullet">            -</span> <span class="hljs-string">'*'</span>
-
-<span class="hljs-attr">pr:</span> none
-
-<span class="hljs-attr">variables:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.vars.yml
-
-<span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
-<span class="hljs-attr">      parameters:</span>
-<span class="hljs-attr">          deployScriptParams:</span> <span class="hljs-string">'--prod'</span>
-<span class="hljs-attr">          netlifySiteId:</span> $(netlify.siteId)
-<span class="hljs-attr">          netlifyToken:</span> $(netlify.token)
-<span class="hljs-attr">          message:</span> <span class="hljs-string">'Daily build'</span>
+<p>Adding CI/CD to Unity projects is a game-changer, even if you're not a CI/CD enthusiast.</p>
+<p>In this series, I'll guide you through setting up a robust CI/CD pipeline for Unity projects using <a href="https://github.com/features/actions">GitHub Actions</a> and <a href="https://game.ci/">GameCI</a>.</p>
+<p>Part 1 of this series covers the essential one-time setup for a successful CI/CD pipeline.</p>
+<h2 id="preparing-the-project">Preparing the Project</h2>
+<p>First, let's ensure our project is ready for CI/CD. Follow these steps:</p>
+<h3 id="update.gitignore">Update .gitignore</h3>
+<p>Start by ignoring files generated by GameCI. Update the <code>.gitignore</code> file with these lines:</p>
+<pre><code class="language-accesslog hljs">/<span class="hljs-string">[Aa]</span>rtifacts/  
+/<span class="hljs-string">[Cc]</span>odeCoverage/
 </code></pre>
+<h3 id="verify-packages">Verify Packages</h3>
+<p>Ensure that these entries are present in <code>packages/manifest.json</code>:</p>
+<ul>
+<li><code>com.unity.2d.sprite</code></li>
+<li><code>com.unity.inputsystem</code></li>
+<li><code>com.unity.test-framework</code></li>
+<li><code>com.unity.textmeshpro</code></li>
+</ul>
+<p>If any of these packages are missing, add them using the Unity Package Manager. Remember to commit the changes in <code>packages/manifest.json</code> and <code>packages/package-lock.json</code>.</p>
+<p><em>This is important because things might work in the editor, but the build might fail because of missing packages.</em></p>
+<h2 id="acquire-an-activation-file-for-github-runners">Acquire an Activation File for GitHub Runners</h2>
+<p><strong>Note 1: This step can be skipped if you already have a generated .ulf file from a previous project.</strong></p>
+<p><strong>Note 2: The activation file uses machine identifiers, so we need to generate a license for GitHub runners.</strong></p>
 <ol>
-<li><strong><em>name</em></strong>: The name for this pipeline.</li>
-<li><strong><em>schedules</em></strong>: The schedule on which the pipeline should run.
-<ol>
-<li><strong><em>cron</em></strong>: The cron syntax defining the schedule.</li>
-<li><strong><em>displayName</em></strong>: The display name for the schedule.</li>
-<li><strong><em>branches</em></strong>: Include only the <em>master</em> branch so that only the <em>master</em> branch is built and deployed.</li>
-<li><strong><em>always: true</em></strong>: Always run the pipeline.</li>
+<li>Create a file named <code>.github/workflows/activation.yml</code> and add the following workflow definition:</li>
 </ol>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> Acquire activation file  
+<span class="hljs-attr">on:</span>  
+<span class="hljs-attr">  workflow_dispatch:</span> {}  
+<span class="hljs-attr">jobs:</span>  
+<span class="hljs-attr">  activation:</span>  
+<span class="hljs-attr">    name:</span> Request manual activation file 🔑  
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest  
+<span class="hljs-attr">    steps:</span>  
+      <span class="hljs-comment"># Request manual activation file  </span>
+<span class="hljs-attr">      - name:</span> Unity - Request Activation File  
+<span class="hljs-attr">        id:</span> getManualLicenseFile  
+<span class="hljs-attr">        uses:</span> game-ci/unity-request-activation-file&<span class="hljs-comment">#64;v2.0.0  </span>
+      <span class="hljs-comment"># Upload artifact (Unity_v20XX.X.XXXX.alf)  </span>
+<span class="hljs-attr">      - name:</span> Expose as artifact  
+<span class="hljs-attr">        uses:</span> actions/upload-artifact&<span class="hljs-comment">#64;v3</span>
+<span class="hljs-attr">        with:</span>  
+<span class="hljs-attr">          name:</span> ${{ steps.getManualLicenseFile.outputs.filePath }}  
+<span class="hljs-attr">          path:</span> ${{ steps.getManualLicenseFile.outputs.filePath }}
+</code></pre>
+<p>In this workflow, we use GameCI to request the activation file and upload it as an artifact. The <strong>workflow_dispatch</strong> event enables manual triggering of this workflow.</p>
+<ol start="2">
+<li><p>Manually run the above workflow<br>
+<img src="/assets/images/posts/unity-cicd-one-time-setup/run-workflow.png" alt="Run workflow manually"></p>
 </li>
-<li><strong><em>trigger</em></strong>: Conditions for running the pipeline when a push is made.
-<ol>
-<li><strong><em>branches</em></strong>: Exclude all branches so that the build is not triggered for commits on any branch, including <em>master</em>.</li>
-</ol>
+<li><p>Download the manual activation file that appears as an artifact and extract the .alf file from the zip<br>
+<img src="/assets/images/posts/unity-cicd-one-time-setup/download-artifact.png" alt="Download Artifact"></p>
 </li>
-<li><strong><em>pr: none</em></strong>: Disable triggering the pipeline when a PR is opened or changes are pushed to an open PR. <em>master</em>.</li>
-<li><strong><em>variables</em></strong>: We set a template file to get the environment variables.</li>
-<li><strong><em>jobs</em></strong>: The jobs to run.
-<ol>
-<li><strong><em>template</em></strong>: Use the job template created in <em>azure-pipelines.common.yml</em>.</li>
-</ol>
-</li>
-<li><strong><em>parameters</em></strong>: The parameters to be passed to the job template
-<ol>
-<li><strong><em>netlifySiteId</em></strong>: The site ID from environment variables.</li>
-<li><strong><em>netlifyToken</em></strong>: The token from environment variables.</li>
-<li><strong><em>message</em></strong>: The message is hardcoded to Daily Build.</li>
-</ol>
+<li><p>Visit <a href="https://license.unity3d.com/manual">license.unity3d.com</a> and upload the <em>alf</em> file.<br>
+<img src="/assets/images/posts/unity-cicd-one-time-setup/upload-alf.png" alt="Upload Alf file.png"></p>
 </li>
 </ol>
-<h2 id="gotchas">Gotchas</h2>
-<ol>
-<li>The cron syntax is mm HH DD MM DW. You can find more details about the supported syntax <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&amp;amp;tabs=yaml#supported-cron-syntax">here</a></li>
-<li>The timezone for schedules is UTC, so the build times need to be adjusted accordingly.</li>
-<li>Don't forget to set <code>always: true</code>. If you have it set to false, a build might not be triggered if you schedule posts a few days in advance.</li>
+<p><em>Note: If you do not see the option for activating a &quot;Unity Personal license&quot;, follow the steps at <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a></em>.</p>
+<ol start="5">
+<li>Download the <em>ulf</em> file. <em>The numbers don't have to match the Unity version exactly.</em></li>
 </ol>
+<h2 id="setting-up-secrets-for-github-actions">Setting up Secrets for GitHub Actions</h2>
+<p>In the repository on GitHub, navigate to <em>Settings</em> -&gt; <em>Secrets and Variables</em> -&gt; <em>Actions</em>.</p>
+<p><img src="/assets/images/posts/unity-cicd-one-time-setup/repository-settings.png" alt="Repository Settings"></p>
+<p>Create the following secrets</p>
+<ul>
+<li><strong>UNITY_EMAIL</strong>: The email address used to log in to Unity.</li>
+<li><strong>UNITY_LICENSE</strong>: Paste the contents of the .ulf file.</li>
+<li><strong>UNITY_PASSWORD</strong>: The password used to log in to Unity.</li>
+</ul>
+<p>I prefer to add them as organisation secrets because I want to reuse these across all the projects.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>With this setup, I can write posts and schedule them to go live in the future.</p>
+<p>This one-time setup paves the way for a streamlined Unity CI/CD pipeline. Stay tuned for the next steps in our journey. Happy coding!!</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions">Workflow syntax</a></li>
+<li><a href="https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch">Workflow dispatch</a></li>
+<li><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions">Using secrets in GitHub Actions</a></li>
+</ul>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/use-azure-pipelines-deploy-gatsby-site-schedule&amp;text=Deploy%20a%20Gatsby%20site%20on%20a%20schedule%20with%20Azure%20Pipelines via @ankur_sheel.&amp;#xD;&amp;#xA;A%20guide%20to%20deploying%20a%20gatsby%20site%20to%20netlify%20daily%20and%20have%20scheduled%20posts%20automatically%20go%20live%20by%20triggering%20Azure%20pipelines%20on%20a%20schedule" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/use-azure-pipelines-deploy-gatsby-site-schedule" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-one-time-setup&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%201%3A%20One-Time%20Setup via @ankur_sheel.&amp;#xD;&amp;#xA;Adding%20CI%2FCD%20to%20Unity%20projects%20is%20a%20game-changer%20even%20if%20you%27re%20not%20a%20CI%2FCD%20enthusiast.%20Part%201%20covers%20the%20one-time%20setup%20for%20a%20successful%20CI%2FCD%20pipeline" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-cicd-one-time-setup" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -249,16 +249,16 @@
 
     <ul>
             <li>
-                <a href="deploy-gatsby-site-netlify-azure-pipelines">How to deploy a Gatsby site to Netlify using Azure Pipelines</a>
+                <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
             </li>
             <li>
-                <a href="automating-creation-new-blog-post">How to automate the creation of a new blog post</a>
+                <a href="disable-buttons-unity">How To Disable Buttons In Unity</a>
             </li>
             <li>
-                <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>
+                <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
             </li>
             <li>
-                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
+                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
     </ul>
 </aside>

@@ -197,7 +197,7 @@
                 <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
             </li>
             <li>
-                <a href="installing-nuget-packages-unity-2021">Installing NuGet packages in Unity 2021</a>
+                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
     </ul>
 </aside>
