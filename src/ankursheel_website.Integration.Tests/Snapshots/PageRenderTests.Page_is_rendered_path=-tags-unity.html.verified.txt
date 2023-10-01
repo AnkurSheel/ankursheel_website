@@ -113,7 +113,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/unity-cicd-one-time-setup" class="text-center prose-2xl mb-4">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
-        <div class="font-semibold text-center">2 min</div>
+        <div class="font-semibold text-center">3 min</div>
         <p>
             Adding CI/CD to Unity projects is a game-changer even if you&#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline
         </p>
