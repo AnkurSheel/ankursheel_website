@@ -115,7 +115,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2023-09-25">Sep 25, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-09-25">Sep 25, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-10-02">Oct 02, 2023</time></p>
         <p>
             Estimated Reading Time: <span class="font-bold">3 min</span>
         </p>
@@ -168,7 +168,7 @@
 <img src="/assets/images/posts/unity-cicd-one-time-setup/upload-alf.png" alt="Upload Alf file.png"></p>
 </li>
 </ol>
-<p><em>Note: If you do not see the option for activating a &quot;Unity Personal license&quot;, follow the steps at <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a></em>.</p>
+<p><em>Note: If you don't see the option for activating a &quot;Unity Personal license&quot;, follow the steps at <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a></em>.</p>
 <ol start="5">
 <li>Download the <em>ulf</em> file. <em>The numbers don't have to match the Unity version exactly.</em></li>
 </ol>
@@ -181,15 +181,15 @@
 <h2 id="setup-codesigning-with-github-actions">Setup Codesigning with GitHub Actions</h2>
 <ul>
 <li>Create a private GitHub repository to store the certificates and code-signing identities we generate.</li>
-<li>In the private repository, navigate to <em>Settings</em> -&gt; <em>Deploy Keys</em> -&gt; <em>Add Deploy Key</em>
+<li>In the private repository, navigate to <em>Settings</em> -&gt; <em>Deploy Keys</em> -&gt; <em>Add Deploy Key</em><br>
 <img src="/assets/images/posts/unity-cicd-one-time-setup/deploy_key.png" alt="Add a new deploy key"></li>
-<li>Generate an SSH key. We can use 1Password or use <code>ssh-keygen</code> utility.</li>
+<li>Generate an SSH key. We can use 1Password or use the <code>ssh-keygen</code> utility.</li>
 <li>Paste the public key (starting with ssh) into the &quot;Key&quot; field.</li>
-<li>elect <strong><em>Allow write access</em></strong> to enable pushing certificates to the repository.
+<li>Select <strong><em>Allow write access</em></strong> to enable pushing certificates to the repository.<br>
 <img src="/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"></li>
 </ul>
 <h3 id="generate-a-github-personal-access-token">Generate a GitHub Personal Access Token</h3>
-<p>We need a Personal Access Token to enable our Github Actions to access the private GitHub repository where we'll store our certificates.</p>
+<p>We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.</p>
 <ul>
 <li>Go to <em>Settings</em> -&gt; <em>Developer Settings</em> -&gt; <em>Personal Access Tokens</em> -&gt; <em>Tokens (classic)</em>.</li>
 <li>Click <em>Generate Token</em>.</li>
@@ -205,17 +205,14 @@
 <p>Create the following secrets</p>
 <ul>
 <li><strong>UNITY_EMAIL</strong>: Your Unity login email address.</li>
-<li><strong>UNITY_LICENSE</strong>: The contents of the .ulf file.</li>
+<li><strong>UNITY_LICENSE</strong>: The contents of the <em>.ulf</em> file.</li>
 <li><strong>UNITY_PASSWORD</strong>: Your Unity login password.</li>
-<li><strong>GH_PAT</strong>: The Personal Access Token we generated.</li>
+<li><strong>GH_PAT</strong>: The Personal Access Token we generated. Make sure that there is an empty newline at the end.</li>
 <li><strong>MATCH_PASSWORD</strong>: This is an additional layer of security required for encrypting/decrypting certificates.</li>
-<li><strong>MATCH_REPOSITORY</strong>: The name of the private GitHub repository that will store our certificates, in the format <code>organization/repository</code>.</li>
+<li><strong>MATCH_REPOSITORY</strong>: The name of the private GitHub repository that will store our certificates in the format <code>organization/repository</code>.</li>
 <li><strong>MATCH_DEPLOY_KEY</strong>: This is the private part of the SSH key we created in the private repository to store our certificates.</li>
-<li><strong>APPLE_CONNECT_EMAIL</strong>: Your Apple ID email.</li>
-<li><strong>APPLE_DEVELOPER_EMAIL</strong>: Your Apple ID email.</li>
-<li><strong>APPLE_TEAM_ID</strong>: Team Id from your <a href="https://developer.apple.com/account">Apple Developer Account</a> -&gt; <em>Membership Details</em>.</li>
 </ul>
-<p>I recommend adding these secrets at the organization level so you can reuse them across multiple projects. You can then selectively grant access to each secret for specific repositories.</p>
+<p>I recommend adding these secrets at the organisation level so that we can reuse them across multiple projects. We can then selectively grant access to each secret for specific repositories.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>This one-time setup paves the way for a streamlined Unity CI/CD pipeline. Stay tuned for the next steps in our journey. Happy coding!!</p>
 <h2 id="references">References</h2>

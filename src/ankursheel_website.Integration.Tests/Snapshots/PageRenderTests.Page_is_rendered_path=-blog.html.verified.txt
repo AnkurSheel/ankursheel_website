@@ -263,7 +263,7 @@
     <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (69)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a> - <time class="prose-sm" datetime="23-09-25">September 25, 2023</time>
+                <a href="/blog/unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a> - <time class="prose-sm" datetime="23-10-02">October 02, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a> - <time class="prose-sm" datetime="23-09-01">September 01, 2023</time>

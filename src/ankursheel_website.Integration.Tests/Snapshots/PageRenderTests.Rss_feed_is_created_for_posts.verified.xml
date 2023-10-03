@@ -13,7 +13,7 @@
       <description>Adding CI/CD to Unity projects is a game-changer even if you're not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-cicd-one-time-setup</guid>
-      <pubDate>Mon, 25 Sep 2023 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;Adding CI/CD to Unity projects is a game-changer, even if you're not a CI/CD enthusiast.&lt;/p&gt;
 &lt;p&gt;In this series, I'll guide you through setting up a robust CI/CD pipeline for Unity projects using &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt; and &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Part 1 of this series covers the essential one-time setup for a successful CI/CD pipeline.&lt;/p&gt;
@@ -54,7 +54,7 @@ jobs:
 &lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/upload-alf.png" alt="Upload Alf file.png"&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;em&gt;Note: If you do not see the option for activating a "Unity Personal license", follow the steps at &lt;a href="https://www.ankursheel.com/unity-personal-license-manual-activation-workaround"&gt;Workaround for Unity Personal License Manual Activation Not Supported&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: If you don't see the option for activating a "Unity Personal license", follow the steps at &lt;a href="https://www.ankursheel.com/unity-personal-license-manual-activation-workaround"&gt;Workaround for Unity Personal License Manual Activation Not Supported&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;ol start="5"&gt;
 &lt;li&gt;Download the &lt;em&gt;ulf&lt;/em&gt; file. &lt;em&gt;The numbers don't have to match the Unity version exactly.&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -67,15 +67,15 @@ jobs:
 &lt;h2 id="setup-codesigning-with-github-actions"&gt;Setup Codesigning with GitHub Actions&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a private GitHub repository to store the certificates and code-signing identities we generate.&lt;/li&gt;
-&lt;li&gt;In the private repository, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Deploy Keys&lt;/em&gt; -&amp;gt; &lt;em&gt;Add Deploy Key&lt;/em&gt;
+&lt;li&gt;In the private repository, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Deploy Keys&lt;/em&gt; -&amp;gt; &lt;em&gt;Add Deploy Key&lt;/em&gt;&lt;br&gt;
 &lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/deploy_key.png" alt="Add a new deploy key"&gt;&lt;/li&gt;
-&lt;li&gt;Generate an SSH key. We can use 1Password or use &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
+&lt;li&gt;Generate an SSH key. We can use 1Password or use the &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
 &lt;li&gt;Paste the public key (starting with ssh) into the "Key" field.&lt;/li&gt;
-&lt;li&gt;elect &lt;strong&gt;&lt;em&gt;Allow write access&lt;/em&gt;&lt;/strong&gt; to enable pushing certificates to the repository.
+&lt;li&gt;Select &lt;strong&gt;&lt;em&gt;Allow write access&lt;/em&gt;&lt;/strong&gt; to enable pushing certificates to the repository.&lt;br&gt;
 &lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="generate-a-github-personal-access-token"&gt;Generate a GitHub Personal Access Token&lt;/h3&gt;
-&lt;p&gt;We need a Personal Access Token to enable our Github Actions to access the private GitHub repository where we'll store our certificates.&lt;/p&gt;
+&lt;p&gt;We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Developer Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Personal Access Tokens&lt;/em&gt; -&amp;gt; &lt;em&gt;Tokens (classic)&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;Generate Token&lt;/em&gt;.&lt;/li&gt;
@@ -91,17 +91,14 @@ jobs:
 &lt;p&gt;Create the following secrets&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;UNITY_EMAIL&lt;/strong&gt;: Your Unity login email address.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: The contents of the .ulf file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: The contents of the &lt;em&gt;.ulf&lt;/em&gt; file.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;UNITY_PASSWORD&lt;/strong&gt;: Your Unity login password.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GH_PAT&lt;/strong&gt;: The Personal Access Token we generated.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GH_PAT&lt;/strong&gt;: The Personal Access Token we generated. Make sure that there is an empty newline at the end.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MATCH_PASSWORD&lt;/strong&gt;: This is an additional layer of security required for encrypting/decrypting certificates.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATCH_REPOSITORY&lt;/strong&gt;: The name of the private GitHub repository that will store our certificates, in the format &lt;code&gt;organization/repository&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATCH_REPOSITORY&lt;/strong&gt;: The name of the private GitHub repository that will store our certificates in the format &lt;code&gt;organization/repository&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MATCH_DEPLOY_KEY&lt;/strong&gt;: This is the private part of the SSH key we created in the private repository to store our certificates.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;APPLE_CONNECT_EMAIL&lt;/strong&gt;: Your Apple ID email.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;APPLE_DEVELOPER_EMAIL&lt;/strong&gt;: Your Apple ID email.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;APPLE_TEAM_ID&lt;/strong&gt;: Team Id from your &lt;a href="https://developer.apple.com/account"&gt;Apple Developer Account&lt;/a&gt; -&amp;gt; &lt;em&gt;Membership Details&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I recommend adding these secrets at the organization level so you can reuse them across multiple projects. You can then selectively grant access to each secret for specific repositories.&lt;/p&gt;
+&lt;p&gt;I recommend adding these secrets at the organisation level so that we can reuse them across multiple projects. We can then selectively grant access to each secret for specific repositories.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This one-time setup paves the way for a streamlined Unity CI/CD pipeline. Stay tuned for the next steps in our journey. Happy coding!!&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
