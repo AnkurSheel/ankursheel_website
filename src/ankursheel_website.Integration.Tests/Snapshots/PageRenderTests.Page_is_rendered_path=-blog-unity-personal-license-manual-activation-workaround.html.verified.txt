@@ -200,13 +200,13 @@ Discord. Because in the world of tech, teamwork makes the magic happen.</p>
                 <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
             <li>
+                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+            </li>
+            <li>
                 <a href="disable-buttons-unity">How To Disable Buttons In Unity</a>
             </li>
             <li>
                 <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
-            </li>
-            <li>
-                <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
     </ul>
 </aside>
