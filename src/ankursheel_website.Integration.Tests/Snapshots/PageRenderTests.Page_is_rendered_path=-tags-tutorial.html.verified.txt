@@ -115,7 +115,7 @@
         <a href="/blog/unity-cicd-trigger-events-tests" class="text-center prose-2xl mb-4">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
         <div class="font-semibold text-center">3 min</div>
         <p>
-            Adding CI/CD to Unity projects is a game-changer even if you&#x27;re not a CI/CD enthusiast. Part 2 focuses on event triggers and running automated tests.
+            Adding CI/CD to Unity projects is a game-changer even if you&#x27;re not a CI/CD enthusiast. Part 2 focuses on workflow triggers and running automated tests.
         </p>
             <a href="/blog/unity-cicd-trigger-events-tests" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

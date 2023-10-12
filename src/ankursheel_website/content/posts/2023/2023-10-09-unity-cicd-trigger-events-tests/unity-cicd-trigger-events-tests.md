@@ -11,7 +11,7 @@ tags:
 
 Welcome back to our Unity CI/CD journey. In Part 1, we nailed down the [one-time setup to kickstart our CI/CD pipeline](./unity-cicd-one-time-setup).
 
-It's time for Part 2, where we'll delve into the nitty-gritty of trigger events and automation testing.
+It's time for Part 2, where we'll delve into the nitty-gritty of the events to trigger our workflow and running our automated tests.
 
 Let's dive in!
 
@@ -68,7 +68,7 @@ A lot is going on here, but let's break it down:
     - **push**: Our workflow will fire up when there's a push event to the "main" branch. We are also filtering this down to specific paths within our repo. We're only interested if changes happen in the actual Unity project. Anything else, and our CI/CD pipeline ignores them.
     - **pull_request**: Our workflow also triggers when a pull request is opened or synchronized (updated) in the "main" branch. And yes, we're narrowing it down to those same paths.
     - **release**: The workflow is also triggered when we publish a release.
-  - **workflow_dispatch** lets us manually trigger our workflow through the GitHub Actions interface. We have an input field named **release_platform
+  - **workflow_dispatch** lets us manually trigger our workflow through the GitHub Actions interface. We have an input field named **release\_platform
     **, which allows us to specify where to release our project. This input will help us run only the necessary jobs. Perfect for testing intermediate builds that aren't meant for customer's eyes.
 
 ## Building and Running Tests
@@ -135,7 +135,7 @@ If any of these packages are missing, add them using the Unity Package Manager. 
 
 ## Conclusion
 
-Stay tuned for Part 3, where we'll cover the deployment process and how to release Unity projects automatically.
+Stay tuned for Part 3, where I'll cover building the project to target different platforms.
 
 ## References
 
