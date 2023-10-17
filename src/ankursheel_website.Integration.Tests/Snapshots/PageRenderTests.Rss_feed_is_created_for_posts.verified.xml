@@ -8,6 +8,32 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>WordWhiz Update #2</title>
+      <link>https://www.ankursheel.com/blog/wordwhiz-update-2</link>
+      <description>WordWhiz Update 2 updates the colors and adds a new instruction page</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-2/instructions.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordwhiz-update-2</guid>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am thrilled to share some updates for the WordWhiz game! 🎉&lt;/p&gt;
+&lt;h2 id="testflight-approval"&gt;🚀 Testflight Approval&lt;/h2&gt;
+&lt;p&gt;The first version with around 25 words has received the green light for TestFlight! If you registered as beta tester for iOS, watch your inbox for those invites - they're coming soon! 📬 . If you didnt, you can register by filling &lt;a href="https://tally.so/r/wverVQ"&gt;the form&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="updated-colors"&gt;🌈 Updated Colors&lt;/h2&gt;
+&lt;p&gt;I have revamped the colors! Let me know if you have any suggestions on better colors. Share your ideas with me! 🎨&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-2/updated_colors.jpg" alt="Updated Colors"&gt;&lt;/p&gt;
+&lt;h2 id="instructions-page"&gt;📜 Instructions Page&lt;/h2&gt;
+&lt;p&gt;I have added a new instructions page at the start of the game for people who are new to Wordle.📘&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-2/instructions.jpg" alt="Instructions"&gt;&lt;/p&gt;
+&lt;h2 id="whats-next"&gt;🔮 What's Next&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A public Trello board for the roadmap, so beta testers can vote on what they would like to see next.&lt;/li&gt;
+&lt;li&gt;More Words&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I encourage you to spread the word and share the excitement with fellow parents and educators who would love to join in on the magic. Please share the &lt;a href="https://tally.so/r/wverVQ"&gt;link to the form&lt;/a&gt; ✨&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-trigger-events-tests</link>
       <description>Adding CI/CD to Unity projects is a game-changer even if you're not a CI/CD enthusiast. Part 2 focuses on workflow triggers and running automated tests.</description>
@@ -1853,42 +1879,6 @@ Ankur
 &lt;p&gt;As each assembly becomes more extensive, I split it into smaller assemblies.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Unity, by default, puts all the scripts in a single assembly. This might be fine for small projects. But, by putting in a little effort and splitting our code into multiple assemblies, we can make our code more organized and testable.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>A better naming convention for unit tests</title>
-      <link>https://www.ankursheel.com/blog/better-naming-convention-unit-tests</link>
-      <description>There are a lot of problems with the most common naming convention(MethodName_Scenario_ExpectedResult) for unit test. Let's look at a naming convention that improves test readability</description>
-      <guid>https://www.ankursheel.com/blog/better-naming-convention-unit-tests</guid>
-      <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;I have been writing unit tests for quite some time now and have seen and tried a lot of naming conventions.&lt;/p&gt;
-&lt;p&gt;One of the most common conventions I have seen is &lt;code&gt;MethodName_Scenario_ExpectedResult&lt;/code&gt;, or one of its many variations.&lt;/p&gt;
-&lt;p&gt;Here&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;MethodName&lt;/strong&gt;: is the name of the method you want to test.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scenario&lt;/strong&gt;: the condition under which you test the method.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ExpectedResult&lt;/strong&gt;: the expected result from the method under test to do in the specified scenario.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;An example of this naming convention is &lt;code&gt;IsOrderValid_NoProducts_ReturnsFalse&lt;/code&gt;. If you can't tell, this test check verifies that an order is invalid if it has no products.&lt;/p&gt;
-&lt;h2 id="problems-with-the-methodname_scenario_expectedresult-naming-convention"&gt;Problems with the MethodName_Scenario_ExpectedResult naming convention&lt;/h2&gt;
-&lt;p&gt;This convention does not help with test readability.&lt;/p&gt;
-&lt;p&gt;Focusing on the implementation details instead of the behaviour makes it harder for a non-programmer to read and understand. Even though a programmer could decipher the name, it will take a few brain cycles to figure out precisely what the test is testing and how it relates to the business requirements.&lt;/p&gt;
-&lt;p&gt;Another disadvantage of this convention is that it is tightly coupled to the method name. If the method name changes as part of refactoring, then the test name must also be updated. This affects the maintainability of the test suite.&lt;/p&gt;
-&lt;h2 id="a-better-alternative"&gt;A better alternative&lt;/h2&gt;
-&lt;p&gt;Let's contrast this with the test name written in plain English, &lt;code&gt;Order_with_no_products_is_invalid&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;This version describes one of the aspects of the application behaviour under test using terms a non-programmer would understand.&lt;/p&gt;
-&lt;p&gt;It conveys the behaviour of the system instead of the implementation details. It describes the &lt;em&gt;&lt;strong&gt;what-to&lt;/strong&gt;&lt;/em&gt; not the &lt;strong&gt;&lt;em&gt;how-to&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;It avoids code smells because it is decoupled from the method name.&lt;/p&gt;
-&lt;p&gt;One nice side benefit of using this naming convention is that our tests can now be treated as a form of documentation.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The underscores make long test names more readable.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="unit-test-naming-guidelines"&gt;Unit test naming guidelines&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A non-programmer such as a business analyst should be able to understand what the test is verifying at a glance, i.e. the test name should be in plain English&lt;/li&gt;
-&lt;li&gt;Separating words by underscores increases the readability of long names&lt;/li&gt;
-&lt;li&gt;Don't include the name of the SUT's method in the test's name&lt;/li&gt;
-&lt;li&gt;The test class name can indicate the unit of behaviour you are verifying.&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

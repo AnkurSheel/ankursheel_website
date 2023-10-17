@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (202)</h2>
+<h2>All Categories (203)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordwhiz-update-2">WordWhiz Update #2</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -137,9 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
         </li>
 </ul>
 
@@ -473,8 +473,11 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (13)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (14)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordwhiz-update-2">WordWhiz Update #2</a> - <time class="prose-sm" datetime="23-10-16">October 16, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/wordwhiz-update-1">WordWhiz Update #1</a> - <time class="prose-sm" datetime="23-08-07">August 07, 2023</time>
             </li>

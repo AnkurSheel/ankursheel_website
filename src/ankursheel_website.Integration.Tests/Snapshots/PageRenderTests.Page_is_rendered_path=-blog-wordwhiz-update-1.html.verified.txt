@@ -184,6 +184,9 @@
 
     <ul>
             <li>
+                <a href="wordwhiz-update-2">WordWhiz Update #2</a>
+            </li>
+            <li>
                 <a href="codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a>
             </li>
             <li>
@@ -191,9 +194,6 @@
             </li>
             <li>
                 <a href="new-release-codinators-xunit-helpers-nuget-package">New Release: Codinators.XunitHelpers Nuget Package</a>
-            </li>
-            <li>
-                <a href="jah-update-7">JAH Update 7</a>
             </li>
     </ul>
 </aside>

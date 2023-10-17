@@ -115,6 +115,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordwhiz-update-2">WordWhiz Update #2</a> - <time class="prose-sm" datetime="23-10-16">October 16, 2023</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a> - <time class="prose-sm" datetime="23-10-09">October 09, 2023</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -125,9 +128,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a> - <time class="prose-sm" datetime="23-09-13">September 13, 2023</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a> - <time class="prose-sm" datetime="23-09-01">September 01, 2023</time>
         </li>
 </ul>
 
