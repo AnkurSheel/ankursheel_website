@@ -13,7 +13,7 @@ Welcome back to our Unity CI/CD journey.
 
 In Part 1, we nailed down the [One-Time Setup for Unity CD](./unity-cicd-one-time-setup).
 
-In Part 2, we set the [Trigger Events and Automation Testing for Unity CD](./unity-cicd-trigger-events-automation-testing)
+In Part 2, we set the [Trigger Events and Automation Testing for Unity CD](./unity-cicd-trigger-events-tests)
 
 It's time for Part 3, where we will create a reusable workflow to build the Unity project for various platforms. The jobs in this workflow will run on a Linux VM.  
 
