@@ -2,11 +2,10 @@
 title: A postmortem for Hypersonic (Codingame AI Contest)
 excerpt: A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame.
 coverImage: './cover.png'
-category: "postmortems"
+category: "retrospective"
 tags:
-    - Codingame
-    - cpp
-    - postmortem
+    - "Codingame"
+    - "postmortem"
 ---
 
 Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time around, it was a multiplayer AI bot competition based on the Bomberman theme.

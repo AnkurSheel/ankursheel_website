@@ -2,11 +2,10 @@
 title: A postmortem for Fantastic Bits (Codingame AI Contest)
 excerpt: A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.
 coverImage: './cover.jpg'
-category: "postmortems"
+category: "retrospective"
 tags:
-    - cpp
-    - Codingame
-    - postmortem
+    - "Codingame"
+    - "postmortem"
 ---
 
 Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time around, it was a game of **Quidditch** from the **Harry Potter** world and was named **Fantastic Bits** after the **Fantastic Beasts and Where To Find Them**

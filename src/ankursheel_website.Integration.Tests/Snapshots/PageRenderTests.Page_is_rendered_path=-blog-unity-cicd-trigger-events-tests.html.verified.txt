@@ -294,13 +294,13 @@
                 <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
             <li>
+                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
+            </li>
+            <li>
                 <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
             </li>
             <li>
                 <a href="disable-buttons-unity">How To Disable Buttons In Unity</a>
-            </li>
-            <li>
-                <a href="organizing-unity-projects-make-them-testable">Organizing Unity projects to make them testable</a>
             </li>
     </ul>
 </aside>

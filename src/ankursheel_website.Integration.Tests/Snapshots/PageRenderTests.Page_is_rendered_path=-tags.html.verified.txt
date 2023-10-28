@@ -114,7 +114,7 @@
             <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (53)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (36)</a>
+            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (37)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (25)</a>
@@ -132,22 +132,19 @@
             <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (11)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/cpp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> cpp (10)</a>
+            <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (12)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/productivity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> productivity (10)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (9)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/testing" class="capitalize badge text-gray-900 bg-grey-light no-underline"> testing (9)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (9)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (8)</a>
@@ -178,6 +175,9 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/aws" class="capitalize badge text-gray-900 bg-grey-light no-underline"> AWS (6)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/cpp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> cpp (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/games" class="capitalize badge text-gray-900 bg-grey-light no-underline"> games (6)</a>

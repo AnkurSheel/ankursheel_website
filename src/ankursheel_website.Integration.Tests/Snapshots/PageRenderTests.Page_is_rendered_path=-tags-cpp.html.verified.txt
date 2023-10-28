@@ -123,17 +123,6 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">PostMortem for Codingame AI Contest: Coders of the Caribbean</a>
-        <div class="font-semibold text-center">4 min</div>
-        <p>
-            A postmortem for Coders of the Caribbean, a Codingame contest based on Pirates of the Caribbean.
-        </p>
-            <a href="/blog/coders-carribean-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/dynamic-programming-longest-common-subsequence" class="text-center prose-2xl mb-4">Solve Longest Common Subsequence with Dynamic Programming</a>
         <div class="font-semibold text-center">5 min</div>
         <p>
@@ -151,39 +140,6 @@
             In this article, I will show the advantages of using a Dynamic Programming approach. Using an example, we will come up with an approach to find a DP solution.
         </p>
             <a href="/blog/dynamic-programming-series-introduction" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A postmortem for Fantastic Bits (Codingame AI Contest)</a>
-        <div class="font-semibold text-center">6 min</div>
-        <p>
-            A postmortem for Fantastic Bits, a Codingame contest based on Quidditch from Harry Potter.
-        </p>
-            <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/accountant-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A postmortem for The Accountant (Codingame AI Contest)</a>
-        <div class="font-semibold text-center">5 min</div>
-        <p>
-            A postmortem for The Accountant, an optimization contest sponsored by Warner Bro.s for their upcoming movie &quot;The Accountant&quot; held by codingame
-        </p>
-            <a href="/blog/accountant-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="text-center prose-2xl mb-4">A postmortem for Hypersonic (Codingame AI Contest)</a>
-        <div class="font-semibold text-center">6 min</div>
-        <p>
-            A postmortem for HyperSonic, a multiplayer AI bot contest based on the Bomberman theme held by codingame.
-        </p>
-            <a href="/blog/hypersonic-codingame-ai-contest-postmortem" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

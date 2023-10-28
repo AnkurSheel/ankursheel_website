@@ -2,11 +2,10 @@
 title: 'PostMortem for Codingame AI Contest: Coders of the Caribbean'
 excerpt: A postmortem for Coders of the Caribbean, a Codingame contest based on Pirates of the Caribbean.
 coverImage: './cover.jpg'
-category: "postmortems"
+category: "retrospective"
 tags:
-    - cpp
-    - Codingame
-    - postmortem
+    - "Codingame"
+    - "postmortem"
 ---
 
 Every couple of weeks, there is a contest hosted by the folks at [codingame.com](http://www.codingame.com). This time around, it was a game based **Pirates of the Caribbean** and was named **Coders of the Caribbean.**

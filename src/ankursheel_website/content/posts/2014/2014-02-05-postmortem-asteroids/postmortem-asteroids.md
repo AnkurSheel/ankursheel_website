@@ -1,10 +1,10 @@
 ---
 title: 'A postmortem of the Asteroids clone'
 excerpt: 'Postmortem of the Asteroids clone that I made. '
-category: "postmortems"
+category: "retrospective"
 tags:
-    - games
-    - postmortem
+    - "games"
+    - "postmortem"
 ---
 
 Asteroids was the first game that I could say was more or less feature complete.

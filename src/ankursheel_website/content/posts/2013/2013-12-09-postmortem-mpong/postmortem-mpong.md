@@ -1,10 +1,10 @@
 ---
-title: A Postmortem of Mpong
-excerpt: A postmortem of the Pong clone that I made.
-category: "postmortems"
+title: "A Postmortem of Mpong"
+excerpt: "A postmortem of the Pong clone that I made."
+category: "retrospective"
 tags:
-    - games
-    - postmortem
+    - "games"
+    - "postmortem"
 ---
 
 The reasons I decided to stop working on Pong before it was completely polished include

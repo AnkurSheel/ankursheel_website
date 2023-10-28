@@ -2,7 +2,7 @@
 title: 'A postmortem for Ocean of Code (Codingame AI Contest)'
 excerpt: 'A postmortem for Ocean of Code, a multiplayer AI bot contest based on Captain Sonar held by codingame'
 coverImage: './cover.jpg'
-category: "postmortems"
+category: "retrospective"
 tags:
     - 'Codingame'
     - 'postmortem'

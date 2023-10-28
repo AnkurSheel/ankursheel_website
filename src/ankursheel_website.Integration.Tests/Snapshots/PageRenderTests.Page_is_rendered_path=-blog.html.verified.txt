@@ -111,14 +111,14 @@
             
 
 
-<h2>All Categories (203)</h2>
+<h2>All Categories (204)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
         <a href="#opinion">opinion</a>
-        <a href="#postmortems">postmortems</a>
         <a href="#programming">programming</a>
         <a href="#project-updates">project updates</a>
+        <a href="#retrospective">retrospective</a>
         <a href="#travel">travel</a>
         <a href="#Uncategorized">Uncategorized</a>
         <a href="#weekly-roundup">weekly roundup</a>
@@ -126,6 +126,9 @@
 
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
+        </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordwhiz-update-2">WordWhiz Update #2</a>
         </li>
@@ -137,9 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a>
         </li>
 </ul>
 
@@ -233,35 +233,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="postmortems" class="py-4 border-b border-grey-lighter capitalize">postmortems (8)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (71)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/postmortem-spring-challenge-2020-codingame-ai-contest">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-20">May 20, 2020</time>
+                <a href="/blog/unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a> - <time class="prose-sm" datetime="23-10-23">October 23, 2023</time>
             </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/postmortem-ocean-code-codingame-ai-contest">A postmortem for Ocean of Code (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-02">May 02, 2020</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/coders-carribean-codingame-ai-contest-postmortem">PostMortem for Codingame AI Contest: Coders of the Caribbean</a> - <time class="prose-sm" datetime="17-05-08">May 08, 2017</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem">A postmortem for Fantastic Bits (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-12-15">December 15, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/accountant-codingame-ai-contest-postmortem">A postmortem for The Accountant (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-19">October 19, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/hypersonic-codingame-ai-contest-postmortem">A postmortem for Hypersonic (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-05">October 05, 2016</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/postmortem-asteroids">A postmortem of the Asteroids clone</a> - <time class="prose-sm" datetime="14-02-05">February 05, 2014</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
-            </li>
-    </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (70)</h3>
-    <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a> - <time class="prose-sm" datetime="23-10-09">October 09, 2023</time>
             </li>
@@ -516,6 +492,33 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/new-side-project-jah">New Side Project: JAH</a> - <time class="prose-sm" datetime="17-12-13">December 13, 2017</time>
+            </li>
+    </ul>
+    <h3 id="retrospective" class="py-4 border-b border-grey-lighter capitalize">retrospective (8)</h3>
+    <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/postmortem-spring-challenge-2020-codingame-ai-contest">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-20">May 20, 2020</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/postmortem-ocean-code-codingame-ai-contest">A postmortem for Ocean of Code (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-02">May 02, 2020</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/coders-carribean-codingame-ai-contest-postmortem">PostMortem for Codingame AI Contest: Coders of the Caribbean</a> - <time class="prose-sm" datetime="17-05-08">May 08, 2017</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/fantastic-bits-codingame-ai-contest-postmortem">A postmortem for Fantastic Bits (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-12-15">December 15, 2016</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/accountant-codingame-ai-contest-postmortem">A postmortem for The Accountant (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-19">October 19, 2016</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/hypersonic-codingame-ai-contest-postmortem">A postmortem for Hypersonic (Codingame AI Contest)</a> - <time class="prose-sm" datetime="16-10-05">October 05, 2016</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/postmortem-asteroids">A postmortem of the Asteroids clone</a> - <time class="prose-sm" datetime="14-02-05">February 05, 2014</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/postmortem-mpong">A Postmortem of Mpong</a> - <time class="prose-sm" datetime="13-12-09">December 09, 2013</time>
             </li>
     </ul>
     <h3 id="travel" class="py-4 border-b border-grey-lighter capitalize">travel (25)</h3>
