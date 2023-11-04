@@ -115,7 +115,7 @@
         <a href="/blog/2023-q3-retrospective" class="text-center prose-2xl mb-4">2023 - Q3 Retrospective</a>
         <div class="font-semibold text-center">1 min</div>
         <p>
-            Quarterly Retrospective for Q3-2023 (Jul- Sep)
+            At the start of the quarter, I laid out some high-level goals. Here&#x2019;s how I did against those goals.
         </p>
             <a href="/blog/2023-q3-retrospective" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

@@ -1,6 +1,6 @@
 ---
 title: "2023 - Q3 Retrospective"
-excerpt: "Quarterly Retrospective for Q3-2023 (Jul- Sep)"
+excerpt: "At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals."
 category: "retrospective"
 coverImage: "./cover.jpeg"
 tags:
@@ -8,9 +8,7 @@ tags:
 
 ---
 
-At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals.
-
-### Goal How it wents
+At the start of the quarter, I laid out some high-level personal goals. Here’s how I did against those goals.
 
 #### Goal: Publish 3 blog posts
 
@@ -18,7 +16,7 @@ At the start of the quarter, I laid out some high-level goals. Here’s how I di
 
 **How it went**: <span style="color: green;">SUCCESS</span>
 
-I hit the target and published 4 posts.
+I published 4 posts.
 
 - [Workaround for Unity Personal License Manual Activation Not Supported](./unity-personal-license-manual-activation-workaround)
 - [Cleaning Up Unnecessary Remote-Tracking References](./cleaning-up-unnecessary-remote-tracking-references)

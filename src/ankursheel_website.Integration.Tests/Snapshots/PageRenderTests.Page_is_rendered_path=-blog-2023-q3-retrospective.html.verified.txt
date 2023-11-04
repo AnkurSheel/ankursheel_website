@@ -9,24 +9,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Quarterly Retrospective for Q3-2023 (Jul- Sep)"/>
+<meta name="description" content="At the start of the quarter, I laid out some high-level goals. Here&#x2019;s how I did against those goals."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/2023-q3-retrospective"/>   
 <meta itemProp="name" content="2023 - Q3 Retrospective"/>
-<meta itemProp="description" content="Quarterly Retrospective for Q3-2023 (Jul- Sep)"/>
+<meta itemProp="description" content="At the start of the quarter, I laid out some high-level goals. Here&#x2019;s how I did against those goals."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/2023-q3-retrospective-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/2023-q3-retrospective"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="2023 - Q3 Retrospective"/>
-<meta property="og:description" content="Quarterly Retrospective for Q3-2023 (Jul- Sep)"/>
+<meta property="og:description" content="At the start of the quarter, I laid out some high-level goals. Here&#x2019;s how I did against those goals."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/2023-q3-retrospective-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/2023-q3-retrospective-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="2023 - Q3 Retrospective"/>
-<meta name="twitter:description" content="Quarterly Retrospective for Q3-2023 (Jul- Sep)"/>
+<meta name="twitter:description" content="At the start of the quarter, I laid out some high-level goals. Here&#x2019;s how I did against those goals."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/2023-q3-retrospective-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/2023-q3-retrospective-twitter.png"/>
 
@@ -129,12 +129,11 @@
     </div>
 </div>
 
-<p>At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals.</p>
-<h3 id="goal-how-it-wents">Goal How it wents</h3>
+<p>At the start of the quarter, I laid out some high-level personal goals. Here’s how I did against those goals.</p>
 <h4 id="goal-publish-3-blog-posts">Goal: Publish 3 blog posts</h4>
 <p><strong>Result</strong>: I published 4 posts</p>
 <p><strong>How it went</strong>: <span style="color: green;">SUCCESS</span></p>
-<p>I hit the target and published 4 posts.</p>
+<p>I published 4 posts.</p>
 <ul>
 <li><a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a></li>
 <li><a href="cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a></li>
@@ -169,7 +168,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/2023-q3-retrospective&text=2023%20-%20Q3%20Retrospective via @ankur_sheel.&#xD;&#xA;Quarterly%20Retrospective%20for%20Q3-2023%20%28Jul-%20Sep%29" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/2023-q3-retrospective&text=2023%20-%20Q3%20Retrospective via @ankur_sheel.&#xD;&#xA;At%20the%20start%20of%20the%20quarter%2C%20I%20laid%20out%20some%20high-level%20goals.%20Here%E2%80%99s%20how%20I%20did%20against%20those%20goals." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/2023-q3-retrospective" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
