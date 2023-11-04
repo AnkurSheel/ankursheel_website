@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (204)</h2>
+<h2>All Categories (205)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/2023-q3-retrospective">2023 - Q3 Retrospective</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -137,9 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
         </li>
 </ul>
 
@@ -494,8 +494,11 @@
                 <a href="/blog/new-side-project-jah">New Side Project: JAH</a> - <time class="prose-sm" datetime="17-12-13">December 13, 2017</time>
             </li>
     </ul>
-    <h3 id="retrospective" class="py-4 border-b border-grey-lighter capitalize">retrospective (8)</h3>
+    <h3 id="retrospective" class="py-4 border-b border-grey-lighter capitalize">retrospective (9)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/2023-q3-retrospective">2023 - Q3 Retrospective</a> - <time class="prose-sm" datetime="23-10-30">October 30, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/postmortem-spring-challenge-2020-codingame-ai-contest">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a> - <time class="prose-sm" datetime="20-05-20">May 20, 2020</time>
             </li>

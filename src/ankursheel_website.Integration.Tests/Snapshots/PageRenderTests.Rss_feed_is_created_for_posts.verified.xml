@@ -8,6 +8,50 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>2023 - Q3 Retrospective</title>
+      <link>https://www.ankursheel.com/blog/2023-q3-retrospective</link>
+      <description>Quarterly Retrospective for Q3-2023 (Jul- Sep)</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/2023-q3-retrospective/cover.jpeg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/2023-q3-retrospective</guid>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals.&lt;/p&gt;
+&lt;h3 id="goal-how-it-wents"&gt;Goal How it wents&lt;/h3&gt;
+&lt;h4 id="goal-publish-3-blog-posts"&gt;Goal: Publish 3 blog posts&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: I published 4 posts&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How it went&lt;/strong&gt;: &lt;span style="color: green;"&gt;SUCCESS&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I hit the target and published 4 posts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/unity-personal-license-manual-activation-workaround"&gt;Workaround for Unity Personal License Manual Activation Not Supported&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/cleaning-up-unnecessary-remote-tracking-references"&gt;Cleaning Up Unnecessary Remote-Tracking References&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/unlock-your-careers-potential-effective-11-meetings"&gt;Unlock your career's potential with effective 1:1 meetings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;Unity CI/CD Demystified: Part 1: One-Time Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also refreshed an old post&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/rent-buy-house"&gt;Should I Rent Or Buy a House?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="goal-publish-3-book-summaries"&gt;Goal: Publish 3 book summaries&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: I didnt finish even a single book summary&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How it went&lt;/strong&gt;: &lt;span style="color: red;"&gt;FAILURE&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I need to take out time to write a book summary a month. Maybe I should have spent some time on book summaries instead of the 4th post.&lt;/p&gt;
+&lt;h3 id="goal-explore-ideas-for-a-new-game"&gt;Goal: Explore ideas for a new game&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: I settled on creating a Wordle for Kids and reached out to a few people to gauge interest.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How it went&lt;/strong&gt;: &lt;span style="color: orange;"&gt;MEH&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I created a MVP for a 4 letter wordle clone. I shared a &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; on social media to gauge interest for a Wordle for Kids game. Although, I did not get as many responses as I would have liked, it was enough to validate that people are interested in having an app that has kid appropriate 4 letter words.&lt;/p&gt;
+&lt;h2 id="goals-for-next-month"&gt;Goals for next month&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Publish 3 blog posts on ankursheel.com&lt;/li&gt;
+&lt;li&gt;Publish 3 book summaries on discoveriesinbookland.com&lt;/li&gt;
+&lt;li&gt;Get WordWhiz in the hands of beta testers and get the 1st release out&lt;/li&gt;
+&lt;li&gt;Get 10 more responses to the WordWhiz form&lt;/li&gt;
+&lt;li&gt;Lose 5 kgs&lt;/li&gt;
+&lt;li&gt;25 consecutive pushups&lt;/li&gt;
+&lt;li&gt;50 consecutive squats&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Unity CI/CD Demystified: Part 3: Build with Linux</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-linux-build</link>
       <description>In Part 3 of our Unity CI/CD series, we delve into creating a reusable workflow to build Unity projects for different platforms.</description>
@@ -1898,78 +1942,6 @@ Ankur
 &lt;p&gt;So which is better? There is no correct answer. I have had both in the past. Choosing the suitable device depends on how you enjoy your books. The Kobo came out on top for me because I am not in the USA and because of the integration with Overdrive and the built-in light.&lt;/p&gt;
 &lt;p&gt;Which one did you go with?&lt;/p&gt;
 &lt;!-- Cover Image from : https://pxhere.com/en/photo/1616236 --&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Essential Plugins for JetBrains Rider plugins</title>
-      <link>https://www.ankursheel.com/blog/jetbrains-rider-plugins</link>
-      <description>JetBrains Rider has a rich plugin ecosystem, many of which are bundled at installation time. Here is a list of plugins I like to add on top of them</description>
-      <guid>https://www.ankursheel.com/blog/jetbrains-rider-plugins</guid>
-      <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;I've been using &lt;a href="https://www.jetbrains.com/rider/"&gt;JetBrains Rider&lt;/a&gt; for quite some time now. Rider has a rich plugin ecosystem, many of which are bundled at the installation time. Here is a list of plugins I like to add on top of them.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Plugin&lt;/th&gt;
-&lt;th&gt;What does it do&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;.NET Core User Secrets&lt;/td&gt;
-&lt;td&gt;Provides the ability to create and edit user secrets in .NET projects&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;GraphQL&lt;/td&gt;
-&lt;td&gt;Adds syntax highlighting and IntelliSense for graphql files&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Json Formatter&lt;/td&gt;
-&lt;td&gt;Reformat JSON&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Key Promoter X&lt;/td&gt;
-&lt;td&gt;Shows you keyboard shortcuts that you could have used instead of using a mouse button inside the IDE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MoqComplete&lt;/td&gt;
-&lt;td&gt;Provides Code Completion for Moq&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Rainbow Brackets&lt;/td&gt;
-&lt;td&gt;Provides coloured brackets, parentheses, and lines in the IDE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Rossynt&lt;/td&gt;
-&lt;td&gt;Roslyn Syntax tree viewer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Statiq Support&lt;/td&gt;
-&lt;td&gt;Live templates for Statiq&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;String Manipulation&lt;/td&gt;
-&lt;td&gt;Perform a variety of tasks on strings, from capitalizing, converting between different cases, and escaping strings&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Structured Logging&lt;/td&gt;
-&lt;td&gt;Useful analyzers for structured logging&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Tailwind CSS&lt;/td&gt;
-&lt;td&gt;adds autocompletes and previews for Tailwind classes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Terraform and HCL&lt;/td&gt;
-&lt;td&gt;Adds autocompletion and syntax highlighting for hcl files&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Toml&lt;/td&gt;
-&lt;td&gt;support for netlify toml files&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

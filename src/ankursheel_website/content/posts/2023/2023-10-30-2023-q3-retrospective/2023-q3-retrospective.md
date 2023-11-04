@@ -10,13 +10,13 @@ tags:
 
 At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals.
 
-### Goal Grades
+### Goal How it wents
 
 #### Goal: Publish 3 blog posts
 
 **Result**: I published 4 posts
 
-**Grade**: A
+**How it went**: <span style="color: green;">SUCCESS</span>
 
 I hit the target and published 4 posts.
 
@@ -33,7 +33,7 @@ I also refreshed an old post
 
 **Result**: I didnt finish even a single book summary
 
-**Grade**: F
+**How it went**: <span style="color: red;">FAILURE</span>
 
 I need to take out time to write a book summary a month. Maybe I should have spent some time on book summaries instead of the 4th post.
 
@@ -41,7 +41,7 @@ I need to take out time to write a book summary a month. Maybe I should have spe
 
 **Result**: I settled on creating a Wordle for Kids and reached out to a few people to gauge interest.
 
-**Grade**: B-
+**How it went**: <span style="color: orange;">MEH</span>
 
 I created a MVP for a 4 letter wordle clone. I shared a [form](https://tally.so/r/wverVQ) on social media to gauge interest for a Wordle for Kids game. Although, I did not get as many responses as I would have liked, it was enough to validate that people are interested in having an app that has kid appropriate 4 letter words.
 
@@ -51,3 +51,6 @@ I created a MVP for a 4 letter wordle clone. I shared a [form](https://tally.so/
 - Publish 3 book summaries on discoveriesinbookland.com
 - Get WordWhiz in the hands of beta testers and get the 1st release out
 - Get 10 more responses to the WordWhiz form
+- Lose 5 kgs
+- 25 consecutive pushups
+- 50 consecutive squats

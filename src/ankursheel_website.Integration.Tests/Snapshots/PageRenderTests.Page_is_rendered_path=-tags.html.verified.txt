@@ -300,6 +300,9 @@
             <a role="button" href="/tags/postman" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Postman (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/retrospective" class="capitalize badge text-gray-900 bg-grey-light no-underline"> retrospective (1)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/rider" class="capitalize badge text-gray-900 bg-grey-light no-underline"> rider (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
