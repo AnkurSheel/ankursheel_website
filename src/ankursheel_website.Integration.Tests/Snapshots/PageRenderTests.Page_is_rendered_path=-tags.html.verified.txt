@@ -114,13 +114,16 @@
             <a role="button" href="/tags/weekly-roundup" class="capitalize badge text-gray-900 bg-grey-light no-underline"> weekly roundup (53)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (37)</a>
+            <a role="button" href="/tags/tutorial" class="capitalize badge text-gray-900 bg-grey-light no-underline"> tutorial (38)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/snippet" class="capitalize badge text-gray-900 bg-grey-light no-underline"> snippet (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/new-zealand" class="capitalize badge text-gray-900 bg-grey-light no-underline"> New Zealand (13)</a>
@@ -132,13 +135,10 @@
             <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (12)</a>
+            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (11)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/productivity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> productivity (10)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (9)</a>

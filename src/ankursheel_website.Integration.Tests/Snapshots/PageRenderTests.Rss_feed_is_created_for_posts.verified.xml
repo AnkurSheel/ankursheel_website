@@ -8,6 +8,126 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</title>
+      <link>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</link>
+      <description>Welcome back to our Unity CI/CD adventure! In Part 4, we'll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</guid>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Welcome back to our Unity CI/CD journey!&lt;/p&gt;
+&lt;p&gt;Recapping our previous chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Part 1 we nailed down the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;one time setup&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Part 2 saw us setting up the &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;trigger events and running the automated tests&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Part 3 was all about &lt;a href="https://www.ankursheel.com/unity-cicd-linux-build"&gt;creating a reusable workflow&lt;/a&gt;  to build the Unity project for various platforms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, we're all set for Part 4, where we take full advantage of our reusable workflow to deploy a WebGL build to GitHub Pages.&lt;/p&gt;
+&lt;p&gt;Our journey begins by updating our &lt;code&gt;.github/workflows/main.yml&lt;/code&gt; file.&lt;/p&gt;
+&lt;h2 id="job-1-building-for-webgl"&gt;Job 1: Building for WebGL&lt;/h2&gt;
+&lt;p&gt;This job uses our reusable workflow to generate the files needed for hosting the game on a web server.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml"&gt;buildForWebGL:
+  name: Build for WebGL
+  needs: test
+  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'WebGL'))
+  uses: ./.github/workflows/buildWithLinux.yml
+  with:
+    platform: WebGL
+    secrets:
+      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This step relies on the successful completion of the &lt;code&gt;test&lt;/code&gt; job, introduced back in Part 2.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;: Defines the conditions for this job to run. It kicks into action when:
+&lt;ul&gt;
+&lt;li&gt;We're either pushing changes to the main branch or creating a pull request against it.&lt;/li&gt;
+&lt;li&gt;Initiate a GitHub release.&lt;/li&gt;
+&lt;li&gt;We manually trigger the workflow with the '&lt;strong&gt;&lt;em&gt;release&lt;/em&gt;&lt;/strong&gt;' and '&lt;strong&gt;&lt;em&gt;WebGL&lt;/em&gt;&lt;/strong&gt;' parameters in the &lt;code&gt;release_platform&lt;/code&gt; field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;uses&lt;/strong&gt;: We're calling the reusable workflow from Part 3.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;with&lt;/strong&gt;: We're providing the necessary parameters, setting the &lt;code&gt;platform&lt;/code&gt; to &lt;strong&gt;&lt;em&gt;WebGL&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="job-2-deploying-to-github-pages"&gt;Job 2: Deploying to GitHub Pages&lt;/h2&gt;
+&lt;p&gt;This job copies the WebGL artifact to the correct location for &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;. Once copied, it triggers a GitHub Pages deployment.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml"&gt;buildForWebGL:
+  name: Build for WebGL
+  needs: test
+  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'WebGL'))
+  uses: ./.github/workflows/buildWithLinux.yml
+  with:
+    platform: WebGL
+  secrets:
+    UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+    UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+deployToGitHubPages:
+  name: Deploy to GitHub Pages
+  runs-on: ubuntu-latest
+  needs: buildForWebGL
+  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'WebGL'))
+  steps:
+    - name: Echo Build Version
+      run: echo ${{ needs.buildForWebGL.outputs.buildVersion }}
+
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        lfs: false
+
+    - name: Download WebGL Artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: build-WebGL
+        path: build/WebGL
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build/WebGL/WebGL
+        commit-message: Deploy
+        single-commit: true
+
+    - name: Cleanup to avoid storage limit
+      uses: geekyeggo/delete-artifact@v2
+      with:
+        name: build-WebGL
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This job depends on the successful completion of the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;:  It follows the same conditions as the buildForWebGL job.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, we have a series of steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Echo Build Version&lt;/strong&gt;: Prints the build version generated by the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Checkout Repository&lt;/strong&gt;: Checks out the code repository.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Download WebGL Artifact&lt;/strong&gt;: This action fetches the &lt;strong&gt;_build-WebGL&lt;/strong&gt;_ artifact produced by the &lt;code&gt;buildForWebGL&lt;/code&gt; job and places it into the &lt;strong&gt;_build/WebGL&lt;/strong&gt;_ directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy to GitHub Pages&lt;/strong&gt;: We deploy the contents of the &lt;strong&gt;_build/WebGL/WebGL&lt;/strong&gt;_ folder to GitHub Pages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cleanup to avoid storage limit&lt;/strong&gt;: Lastly, we clean up by deleting the &lt;strong&gt;_build-WebGL-&lt;/strong&gt; artifact, ensuring we don't hog unnecessary storage space.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="setting-up-github-pages"&gt;Setting up Github Pages&lt;/h2&gt;
+&lt;p&gt;Once the workflow for a WebGL build is triggered, a gh_pages branch will be created. Now we can setup Github pages to showcase our game.&lt;/p&gt;
+&lt;p&gt;In the repository on GitHub, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Pages&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Set the source to &lt;strong&gt;&lt;em&gt;Deploy from a branch&lt;/em&gt;&lt;/strong&gt; and set the branch to &lt;code&gt;gh-pages&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" alt="Repository Settings"&gt;&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Stay tuned for Part 5, where we'll cover how to generate certificates for iOS deployments.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow"&gt;Calling a reusable workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/github-pages-deploy-action"&gt;Github Pages Deploy Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/delete-artifact"&gt;Delete Artifact Github Action&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>2023 - Q3 Retrospective</title>
       <link>https://www.ankursheel.com/blog/2023-q3-retrospective</link>
       <description>At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals.</description>
@@ -1903,44 +2023,6 @@ Ankur
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.unity3d.com/Manual/PluginInspector.html"&gt;Configuring plugins in Unity&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Kobo vs Kindle: Which e-reader to buy?</title>
-      <link>https://www.ankursheel.com/blog/kobo-vs-kindle</link>
-      <description>When buying an e-reader, most people consider a Kobo or a Kindle. Here are some factors I looked at before deciding which one to buy</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/kobo-vs-kindle/cover.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/kobo-vs-kindle</guid>
-      <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;When buying an e-reader, most people consider a Kobo or a Kindle.&lt;/p&gt;
-&lt;p&gt;Here are some factors I looked at before deciding which one to buy.&lt;/p&gt;
-&lt;h2 id="library-size"&gt;Library Size&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;There is no point in buying an e-reader if you don't have a decently sized collection of books to choose from.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Both e-readers have access to an online store with lots of e-books. However, The number of books available in the Kindle store is slightly larger than the Kobo store.&lt;/p&gt;
-&lt;p&gt;One of the significant differences is that the Kindles are locked to the Amazon store and only support the AZW format. In contrast, the Kobo natively supports multiple file formats, including PDFs. It is possible to convert and transfer other document formats onto Kindle using &lt;a href="https://calibre-ebook.com/"&gt;Calibre&lt;/a&gt;, a third-party software, but it's time-consuming.&lt;/p&gt;
-&lt;p&gt;Kobo integrates with &lt;a href="https://www.overdrive.com/"&gt;OverDrive&lt;/a&gt;, which allows you to borrow e-books from public libraries. You can borrow books from the e-reader itself. However, this seems to be hit-and-miss for me. The borrowed books automatically get downloaded to Kobo.&lt;/p&gt;
-&lt;p&gt;Kindle has integration with Overdrive, but it's only available if you are in the USA. Since I am not in the USA, I am unsure how well the integration works.&lt;/p&gt;
-&lt;p&gt;Kobo also integrates with pocket service, so you can easily read web articles on the e-reader. However, you cannot highlight or add notes to these articles inside the e-reader.&lt;/p&gt;
-&lt;h2 id="built-in-light"&gt;Built-in Light&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I like having an inbuilt light on the e-reader as I prefer to read before going to sleep.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Kobos have an adjustable backlight on almost all of their models.&lt;/p&gt;
-&lt;p&gt;Kindle has edge lighting on some of its models.&lt;/p&gt;
-&lt;h2 id="exporting-highlights-and-notes"&gt;Exporting Highlights and Notes&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I tend to highlight passages in the books I read and eventually turn them into summaries published at &lt;a href="https://www.discoveriesinbookland.com/"&gt;Discoveries in Bookland&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Both Kobo and Kindle allow readers to highlight passages and export notes.&lt;/p&gt;
-&lt;p&gt;Since highlights made on a Kindle are synced to the cloud, it's pretty easy to export your highlights and notes. There is also integration with other 3rd party services like ReadWise, which makes this process painless.&lt;/p&gt;
-&lt;p&gt;Although it's easy to highlight and take notes on the Kobo, it's not as easy to export them. I previously wrote about how you can enable a &lt;a href="https://www.ankursheel.com/blog/exporting-highlights-annotations-kobo-aura"&gt;hidden option to export them&lt;/a&gt; as a plain text file on Kobo. But you still have to manually download them by connecting the Kobo to a computer.&lt;/p&gt;
-&lt;h2 id="verdict"&gt;Verdict&lt;/h2&gt;
-&lt;p&gt;So which is better? There is no correct answer. I have had both in the past. Choosing the suitable device depends on how you enjoy your books. The Kobo came out on top for me because I am not in the USA and because of the integration with Overdrive and the built-in light.&lt;/p&gt;
-&lt;p&gt;Which one did you go with?&lt;/p&gt;
-&lt;!-- Cover Image from : https://pxhere.com/en/photo/1616236 --&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Unity CI/CD Demystified: Part 1: One-Time Setup</title>
+<title>Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</title>
 <meta charset="utf-8">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
+<meta name="description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.ankursheel.com/blog/unity-cicd-one-time-setup">   
-<meta itemprop="name" content="Unity CI/CD Demystified: Part 1: One-Time Setup">
-<meta itemprop="description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
-    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png">
-<meta property="og:url" content="https://www.ankursheel.com/blog/unity-cicd-one-time-setup">
+    <link rel="canonical" href="https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages">   
+<meta itemprop="name" content="Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages">
+<meta itemprop="description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png">
+<meta property="og:url" content="https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Unity CI/CD Demystified: Part 1: One-Time Setup">
-<meta property="og:description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png">
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png">
+<meta property="og:title" content="Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages">
+<meta property="og:description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png">
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
-<meta name="twitter:title" content="Unity CI/CD Demystified: Part 1: One-Time Setup">
-<meta name="twitter:description" content="Adding CI/CD to Unity projects is a game-changer even if you&amp;#x27;re not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline">
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-twitter.png">
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-twitter.png">
+<meta name="twitter:title" content="Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages">
+<meta name="twitter:description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-twitter.png">
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-twitter.png">
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -107,15 +107,15 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Unity CI/CD Demystified: Part 1: One-Time Setup</h1>
+    <h1 class="text-center">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2023-09-25">Sep 25, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-10-02">Oct 02, 2023</time></p>
+        <p class="mr-4">Published on <time datetime="2023-11-13">Nov 13, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-11-13">Nov 13, 2023</time></p>
         <p>
             Estimated Reading Time: <span class="font-bold">3 min</span>
         </p>
@@ -128,99 +128,115 @@
     </div>
 </div>
 
-<p>Adding CI/CD to Unity projects is a game-changer, even if you're not a CI/CD enthusiast.</p>
-<p>In this series, I'll guide you through setting up a robust CI/CD pipeline for Unity projects using <a href="https://github.com/features/actions">GitHub Actions</a> and <a href="https://game.ci/">GameCI</a>.</p>
-<p>Part 1 of this series covers the essential one-time setup for a successful CI/CD pipeline.</p>
-<p><strong><em>Note: These setup steps can be skipped if you've already performed them for a previous project.</em></strong></p>
-<h2 id="acquire-an-activation-file-for-github-runners">Acquire an Activation File for GitHub Runners</h2>
-<p><em><strong>Note: The activation file uses machine identifiers, so we need to generate a license for GitHub runners.</strong></em></p>
-<ol>
-<li>Create a file named <code>.github/workflows/activation.yml</code> and add the following workflow definition:</li>
-</ol>
-<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> Acquire activation file  
-<span class="hljs-attr">on:</span>  
-<span class="hljs-attr">  workflow_dispatch:</span> {}  
-<span class="hljs-attr">jobs:</span>  
-<span class="hljs-attr">  activation:</span>  
-<span class="hljs-attr">    name:</span> Request manual activation file 🔑  
-<span class="hljs-attr">    runs-on:</span> ubuntu-latest  
-<span class="hljs-attr">    steps:</span>  
-      <span class="hljs-comment"># Request manual activation file  </span>
-<span class="hljs-attr">      - name:</span> Unity - Request Activation File  
-<span class="hljs-attr">        id:</span> getManualLicenseFile  
-<span class="hljs-attr">        uses:</span> game-ci/unity-request-activation-file&<span class="hljs-comment">#64;v2.0.0  </span>
-      <span class="hljs-comment"># Upload artifact (Unity_v20XX.X.XXXX.alf)  </span>
-<span class="hljs-attr">      - name:</span> Expose as artifact  
-<span class="hljs-attr">        uses:</span> actions/upload-artifact&<span class="hljs-comment">#64;v3</span>
-<span class="hljs-attr">        with:</span>  
-<span class="hljs-attr">          name:</span> ${{ steps.getManualLicenseFile.outputs.filePath }}  
-<span class="hljs-attr">          path:</span> ${{ steps.getManualLicenseFile.outputs.filePath }}
+<p>Welcome back to our Unity CI/CD journey!</p>
+<p>Recapping our previous chapters:</p>
+<ul>
+<li>In Part 1 we nailed down the <a href="unity-cicd-one-time-setup">one time setup</a>.</li>
+<li>Part 2 saw us setting up the <a href="unity-cicd-trigger-events-tests">trigger events and running the automated tests</a>.</li>
+<li>Part 3 was all about <a href="unity-cicd-linux-build">creating a reusable workflow</a>  to build the Unity project for various platforms.</li>
+</ul>
+<p>Now, we're all set for Part 4, where we take full advantage of our reusable workflow to deploy a WebGL build to GitHub Pages.</p>
+<p>Our journey begins by updating our <code>.github/workflows/main.yml</code> file.</p>
+<h2 id="job-1-building-for-webgl">Job 1: Building for WebGL</h2>
+<p>This job uses our reusable workflow to generate the files needed for hosting the game on a web server.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">buildForWebGL:</span>
+<span class="hljs-attr">  name:</span> Build for WebGL
+<span class="hljs-attr">  needs:</span> test
+<span class="hljs-attr">  if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span> || github.event.action == <span class="hljs-string">'published'</span> || (contains(github.event.inputs.release_platform, <span class="hljs-string">'release'</span>) &amp;&amp; contains(github.event.inputs.release_platform, <span class="hljs-string">'WebGL'</span>))
+<span class="hljs-attr">  uses:</span> ./.github/workflows/buildWithLinux.yml
+<span class="hljs-attr">  with:</span>
+<span class="hljs-attr">    platform:</span> WebGL
+<span class="hljs-attr">    secrets:</span>
+<span class="hljs-attr">      UNITY_EMAIL:</span> ${{ secrets.UNITY_EMAIL }}
+<span class="hljs-attr">      UNITY_PASSWORD:</span> ${{ secrets.UNITY_PASSWORD }}
+<span class="hljs-attr">      UNITY_LICENSE:</span> ${{ secrets.UNITY_LICENSE }}
 </code></pre>
-<p>In this workflow, we use GameCI to request the activation file and upload it as an artifact. The <strong>workflow_dispatch</strong> event enables manual triggering of this workflow.</p>
-<ol start="2">
-<li><p>Manually run the above workflow<br>
-<img src="/assets/images/posts/unity-cicd-one-time-setup/run-workflow.png" alt="Run workflow manually"></p>
+<ul>
+<li><strong>needs</strong>: This step relies on the successful completion of the <code>test</code> job, introduced back in Part 2.</li>
+<li><strong>if</strong>: Defines the conditions for this job to run. It kicks into action when:
+<ul>
+<li>We're either pushing changes to the main branch or creating a pull request against it.</li>
+<li>Initiate a GitHub release.</li>
+<li>We manually trigger the workflow with the '<strong><em>release</em></strong>' and '<strong><em>WebGL</em></strong>' parameters in the <code>release_platform</code> field.</li>
+</ul>
 </li>
-<li><p>Download the manual activation file that appears as an artifact and extract the .alf file from the zip<br>
-<img src="/assets/images/posts/unity-cicd-one-time-setup/download-artifact.png" alt="Download Artifact"></p>
+<li><strong>uses</strong>: We're calling the reusable workflow from Part 3.
+<ul>
+<li><strong>with</strong>: We're providing the necessary parameters, setting the <code>platform</code> to <strong><em>WebGL</em></strong>.</li>
+</ul>
 </li>
-<li><p>Visit <a href="https://license.unity3d.com/manual">license.unity3d.com</a> and upload the <em>alf</em> file.<br>
-<img src="/assets/images/posts/unity-cicd-one-time-setup/upload-alf.png" alt="Upload Alf file.png"></p>
-</li>
+</ul>
+<h2 id="job-2-deploying-to-github-pages">Job 2: Deploying to GitHub Pages</h2>
+<p>This job copies the WebGL artifact to the correct location for <a href="https://pages.github.com/">GitHub Pages</a>. Once copied, it triggers a GitHub Pages deployment.</p>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">buildForWebGL:</span>
+<span class="hljs-attr">  name:</span> Build for WebGL
+<span class="hljs-attr">  needs:</span> test
+<span class="hljs-attr">  if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span> || github.event.action == <span class="hljs-string">'published'</span> || (contains(github.event.inputs.release_platform, <span class="hljs-string">'release'</span>) &amp;&amp; contains(github.event.inputs.release_platform, <span class="hljs-string">'WebGL'</span>))
+<span class="hljs-attr">  uses:</span> ./.github/workflows/buildWithLinux.yml
+<span class="hljs-attr">  with:</span>
+<span class="hljs-attr">    platform:</span> WebGL
+<span class="hljs-attr">  secrets:</span>
+<span class="hljs-attr">    UNITY_EMAIL:</span> ${{ secrets.UNITY_EMAIL }}
+<span class="hljs-attr">    UNITY_PASSWORD:</span> ${{ secrets.UNITY_PASSWORD }}
+<span class="hljs-attr">    UNITY_LICENSE:</span> ${{ secrets.UNITY_LICENSE }}
+
+<span class="hljs-attr">deployToGitHubPages:</span>
+<span class="hljs-attr">  name:</span> Deploy to GitHub Pages
+<span class="hljs-attr">  runs-on:</span> ubuntu-latest
+<span class="hljs-attr">  needs:</span> buildForWebGL
+<span class="hljs-attr">  if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span> || github.event.action == <span class="hljs-string">'published'</span> || (contains(github.event.inputs.release_platform, <span class="hljs-string">'release'</span>) &amp;&amp; contains(github.event.inputs.release_platform, <span class="hljs-string">'WebGL'</span>))
+<span class="hljs-attr">  steps:</span>
+<span class="hljs-attr">    - name:</span> Echo Build Version
+<span class="hljs-attr">      run:</span> echo ${{ needs.buildForWebGL.outputs.buildVersion }}
+
+<span class="hljs-attr">    - name:</span> Checkout Repository
+<span class="hljs-attr">      uses:</span> actions/checkout&<span class="hljs-comment">#64;v3</span>
+<span class="hljs-attr">      with:</span>
+<span class="hljs-attr">        fetch-depth:</span> <span class="hljs-number">0</span>
+<span class="hljs-attr">        lfs:</span> <span class="hljs-literal">false</span>
+
+<span class="hljs-attr">    - name:</span> Download WebGL Artifact
+<span class="hljs-attr">      uses:</span> actions/download-artifact&<span class="hljs-comment">#64;v3</span>
+<span class="hljs-attr">      with:</span>
+<span class="hljs-attr">        name:</span> build-WebGL
+<span class="hljs-attr">        path:</span> build/WebGL
+
+<span class="hljs-attr">    - name:</span> Deploy to GitHub Pages
+<span class="hljs-attr">      uses:</span> JamesIves/github-pages-deploy-action&<span class="hljs-comment">#64;v4</span>
+<span class="hljs-attr">      with:</span>
+<span class="hljs-attr">        folder:</span> build/WebGL/WebGL
+<span class="hljs-attr">        commit-message:</span> Deploy
+<span class="hljs-attr">        single-commit:</span> <span class="hljs-literal">true</span>
+
+<span class="hljs-attr">    - name:</span> Cleanup to avoid storage limit
+<span class="hljs-attr">      uses:</span> geekyeggo/delete-artifact&<span class="hljs-comment">#64;v2</span>
+<span class="hljs-attr">      with:</span>
+<span class="hljs-attr">        name:</span> build-WebGL
+</code></pre>
+<ul>
+<li><strong>needs</strong>: This job depends on the successful completion of the <code>buildForWebGL</code> job.</li>
+<li><strong>if</strong>:  It follows the same conditions as the buildForWebGL job.</li>
+</ul>
+<p>Next, we have a series of steps:</p>
+<ol>
+<li><strong>Echo Build Version</strong>: Prints the build version generated by the <code>buildForWebGL</code> job.</li>
+<li><strong>Checkout Repository</strong>: Checks out the code repository.</li>
+<li><strong>Download WebGL Artifact</strong>: This action fetches the <strong>_build-WebGL</strong>_ artifact produced by the <code>buildForWebGL</code> job and places it into the <strong>_build/WebGL</strong>_ directory.</li>
+<li><strong>Deploy to GitHub Pages</strong>: We deploy the contents of the <strong>_build/WebGL/WebGL</strong>_ folder to GitHub Pages.</li>
+<li><strong>Cleanup to avoid storage limit</strong>: Lastly, we clean up by deleting the <strong>_build-WebGL-</strong> artifact, ensuring we don't hog unnecessary storage space.</li>
 </ol>
-<p><em>Note: If you don't see the option for activating a &quot;Unity Personal license&quot;, follow the steps at <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a></em>.</p>
-<ol start="5">
-<li>Download the <em>ulf</em> file. <em>The numbers don't have to match the Unity version exactly.</em></li>
-</ol>
-<h2 id="install-ruby">Install Ruby</h2>
-<ul>
-<li>Install Ruby from <a href="https://rubyinstaller.org/downloads/">here</a></li>
-<li>Verify the installation by running <code>ruby -v</code>.</li>
-<li>Install <em>Bundler</em> by running <code>gem install bundler</code></li>
-</ul>
-<h2 id="setup-codesigning-with-github-actions">Setup Codesigning with GitHub Actions</h2>
-<ul>
-<li>Create a private GitHub repository to store the certificates and code-signing identities we generate.</li>
-<li>In the private repository, navigate to <em>Settings</em> -&gt; <em>Deploy Keys</em> -&gt; <em>Add Deploy Key</em><br>
-<img src="/assets/images/posts/unity-cicd-one-time-setup/deploy_key.png" alt="Add a new deploy key"></li>
-<li>Generate an SSH key. We can use 1Password or use the <code>ssh-keygen</code> utility.</li>
-<li>Paste the public key (starting with ssh) into the &quot;Key&quot; field.</li>
-<li>Select <strong><em>Allow write access</em></strong> to enable pushing certificates to the repository.<br>
-<img src="/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"></li>
-</ul>
-<h3 id="generate-a-github-personal-access-token">Generate a GitHub Personal Access Token</h3>
-<p>We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.</p>
-<ul>
-<li>Go to <em>Settings</em> -&gt; <em>Developer Settings</em> -&gt; <em>Personal Access Tokens</em> -&gt; <em>Tokens (classic)</em>.</li>
-<li>Click <em>Generate Token</em>.</li>
-</ul>
-<p><img src="/assets/images/posts/unity-cicd-one-time-setup/generate_personal_access_token.png" alt="Generate Personal Access Token"></p>
-<ul>
-<li>Give the token all <strong><em>repo</em></strong> permissions.</li>
-</ul>
-<p><img src="/assets/images/posts/unity-cicd-one-time-setup/token_scopes.png" alt="Token Scopes"></p>
-<h2 id="setting-up-secrets-for-github-actions">Setting up Secrets for GitHub Actions</h2>
-<p>On GitHub, navigate to <em>Settings</em> -&gt; <em>Secrets and Variables</em> -&gt; <em>Actions</em>.</p>
-<p><img src="/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" alt="Adding secrets"></p>
-<p>Create the following secrets</p>
-<ul>
-<li><strong>UNITY_EMAIL</strong>: Your Unity login email address.</li>
-<li><strong>UNITY_LICENSE</strong>: The contents of the <em>.ulf</em> file.</li>
-<li><strong>UNITY_PASSWORD</strong>: Your Unity login password.</li>
-<li><strong>GH_PAT</strong>: The Personal Access Token we generated. Make sure that there is an empty newline at the end.</li>
-<li><strong>MATCH_PASSWORD</strong>: This is an additional layer of security required for encrypting/decrypting certificates.</li>
-<li><strong>MATCH_REPOSITORY</strong>: The name of the private GitHub repository that will store our certificates in the format <code>organization/repository</code>.</li>
-<li><strong>MATCH_DEPLOY_KEY</strong>: This is the private part of the SSH key we created in the private repository to store our certificates.</li>
-</ul>
-<p>I recommend adding these secrets at the organisation level so that we can reuse them across multiple projects. We can then selectively grant access to each secret for specific repositories.</p>
+<h2 id="setting-up-github-pages">Setting up Github Pages</h2>
+<p>Once the workflow for a WebGL build is triggered, a gh_pages branch will be created. Now we can setup Github pages to showcase our game.</p>
+<p>In the repository on GitHub, navigate to <em>Settings</em> -&gt; <em>Pages</em>.</p>
+<p>Set the source to <strong><em>Deploy from a branch</em></strong> and set the branch to <code>gh-pages</code></p>
+<p><img src="/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" alt="Repository Settings"></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>This one-time setup paves the way for a streamlined Unity CI/CD pipeline. Stay tuned for the next steps in our journey. Happy coding!!</p>
+<p>Stay tuned for Part 5, where we'll cover how to generate certificates for iOS deployments.</p>
 <h2 id="references">References</h2>
 <ul>
-<li><a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions">Workflow syntax</a></li>
-<li><a href="https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch">Workflow dispatch</a></li>
-<li><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions">Using secrets in GitHub Actions</a></li>
-<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#set-up-deploy-keys">Setup deploy keys on Github</a></li>
+<li><a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow">Calling a reusable workflow</a></li>
+<li><a href="https://github.com/marketplace/actions/github-pages-deploy-action">Github Pages Deploy Action</a></li>
+<li><a href="https://github.com/marketplace/actions/delete-artifact">Delete Artifact Github Action</a></li>
 </ul>
 
 
@@ -228,8 +244,8 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-one-time-setup&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%201%3A%20One-Time%20Setup via @ankur_sheel.&amp;#xD;&amp;#xA;Adding%20CI%2FCD%20to%20Unity%20projects%20is%20a%20game-changer%20even%20if%20you%27re%20not%20a%20CI%2FCD%20enthusiast.%20Part%201%20covers%20the%20one-time%20setup%20for%20a%20successful%20CI%2FCD%20pipeline" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-cicd-one-time-setup" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%204%3A%20Deploying%20WebGL%20Builds%20to%20GitHub%20Pages via @ankur_sheel.&amp;#xD;&amp;#xA;Welcome%20back%20to%20our%20Unity%20CI%2FCD%20adventure%21%20In%20Part%204%2C%20we%27ll%20explore%20deploying%20Unity%20projects%20to%20GitHub%20Pages%2C%20making%20web-based%20Unity%20releases%20easier%20than%20ever%20before." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -264,13 +280,13 @@
 
     <ul>
             <li>
-                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
-            </li>
-            <li>
                 <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
             </li>
             <li>
-                <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
+                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+            </li>
+            <li>
+                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
             <li>
                 <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
