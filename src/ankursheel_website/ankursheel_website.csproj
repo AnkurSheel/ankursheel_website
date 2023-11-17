@@ -13,6 +13,6 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(Configuration)'=='Release'">
-        <PackageReference Include="Codinators.StatiqHelpers" Version="0.27.2"/>
+        <PackageReference Include="Codinators.StatiqHelpers" Version="0.27.3"/>
     </ItemGroup>
 </Project>
