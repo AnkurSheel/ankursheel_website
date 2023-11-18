@@ -135,26 +135,26 @@
 <p>A source generator is a .Net class.</p>
 <h3 id="create-a-new-solution-and-a-library-project">Create a new solution and a library project</h3>
 <p>The empty project is targeting Net5.0. I have also enabled nullables.</p>
-<pre><code class="language-xml hljs">&lt;PropertyGroup&gt;
-    &lt;TargetFramework&gt;net5.0&lt;/TargetFramework&gt;
-    &lt;Nullable&gt;enable&lt;/Nullable&gt;
-    &lt;WarningsAsErrors&gt;true&lt;/WarningsAsErrors&gt;
-&lt;/PropertyGroup&gt;
+<pre><code class="language-xml hljs"><span class="hljs-symbol">&lt;</span>PropertyGroup<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>TargetFramework<span class="hljs-symbol">&gt;</span>net5.0<span class="hljs-symbol">&lt;</span>/TargetFramework<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>Nullable<span class="hljs-symbol">&gt;</span>enable<span class="hljs-symbol">&lt;</span>/Nullable<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>WarningsAsErrors<span class="hljs-symbol">&gt;</span>true<span class="hljs-symbol">&lt;</span>/WarningsAsErrors<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/PropertyGroup<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h3 id="add-the-required-packages">Add the required packages</h3>
 <p>Next, we will add the CodeAnalysis libraries from NuGet.</p>
-<pre><code class="language-xml hljs">&lt;ItemGroup&gt;
-    &lt;PackageReference Include=&quot;Microsoft.CodeAnalysis.Analyzers&quot; Version=&quot;3.3.2&quot; /&gt;
-    &lt;PackageReference Include=&quot;Microsoft.CodeAnalysis.CSharp.Workspaces&quot; Version=&quot;3.8.0&quot; /&gt;
-&lt;/ItemGroup&gt;
+<pre><code class="language-xml hljs"><span class="hljs-symbol">&lt;</span>ItemGroup<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>PackageReference Include=<span class="hljs-symbol">&quot;</span>Microsoft.CodeAnalysis.Analyzers<span class="hljs-symbol">&quot;</span> Version=<span class="hljs-symbol">&quot;</span>3.3.2<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>PackageReference Include=<span class="hljs-symbol">&quot;</span>Microsoft.CodeAnalysis.CSharp.Workspaces<span class="hljs-symbol">&quot;</span> Version=<span class="hljs-symbol">&quot;</span>3.8.0<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/ItemGroup<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h2 id="consumer-project-properties">Consumer Project Properties</h2>
 <p>In the consumer project, we need to add a reference to the source generator. This can be done as either a project reference or a NuGet package.</p>
 <h3 id="reference-the-project-in-debug-mode">Reference the project in Debug mode</h3>
 <p>In Debug mode, we reference the project directly so that it's easier for development.</p>
-<pre><code class="language-xml hljs">&lt;ItemGroup Condition=&quot;'$(Configuration)'=='Debug'&quot;&gt;
-    &lt;ProjectReference Include=&quot;..\\SourceGenerator\\SourceGenerator.csproj&quot; OutputItemType=&quot;Analyzer&quot; ReferenceOutputAssembly=&quot;false&quot; /&gt;
-&lt;/ItemGroup&gt;
+<pre><code class="language-xml hljs"><span class="hljs-symbol">&lt;</span>ItemGroup Condition=<span class="hljs-symbol">&quot;</span>'$(Configuration)'=='Debug'<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>ProjectReference Include=<span class="hljs-symbol">&quot;</span>..\\SourceGenerator\\SourceGenerator.csproj<span class="hljs-symbol">&quot;</span> OutputItemType=<span class="hljs-symbol">&quot;</span>Analyzer<span class="hljs-symbol">&quot;</span> ReferenceOutputAssembly=<span class="hljs-symbol">&quot;</span>false<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/ItemGroup<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <ul>
 <li><strong><em>OutputItemType</em></strong>: Source generators as packaged and deployed the same way as Roslyn Analysers, so we need to tell the compiler that it is not a standard project reference.</li>
@@ -162,16 +162,16 @@
 </ul>
 <h3 id="reference-the-nuget-package-in-release-mode">Reference the NuGet package in Release mode</h3>
 <p>In Release mode, we reference the NuGet package so that we can test the package.</p>
-<pre><code class="language-xml hljs">&lt;ItemGroup Condition=&quot;'$(Configuration)'=='Release'&quot;&gt;
-    &lt;PackageReference Include=&quot;SourceGenerator&quot; Version=&quot;x.y.z&quot; /&gt;
-&lt;/ItemGroup&gt;
+<pre><code class="language-xml hljs"><span class="hljs-symbol">&lt;</span>ItemGroup Condition=<span class="hljs-symbol">&quot;</span>'$(Configuration)'=='Release'<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>PackageReference Include=<span class="hljs-symbol">&quot;</span>SourceGenerator<span class="hljs-symbol">&quot;</span> Version=<span class="hljs-symbol">&quot;</span>x.y.z<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/ItemGroup<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h3 id="writing-the-generated-code-to-disk">Writing the generated code to disk</h3>
 <p>By default, the generated code is not written to disk. However, when writing a source generator, looking at the generated code can be helpful.</p>
-<pre><code class="language-xml hljs">&lt;PropertyGroup&gt;
-    &lt;EmitCompilerGeneratedFiles&gt;true&lt;/EmitCompilerGeneratedFiles&gt;
-    &lt;CompilerGeneratedFilesOutputPath&gt;GeneratedFiles&lt;/CompilerGeneratedFilesOutputPath&gt;
-&lt;/PropertyGroup&gt;
+<pre><code class="language-xml hljs"><span class="hljs-symbol">&lt;</span>PropertyGroup<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>EmitCompilerGeneratedFiles<span class="hljs-symbol">&gt;</span>true<span class="hljs-symbol">&lt;</span>/EmitCompilerGeneratedFiles<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>CompilerGeneratedFilesOutputPath<span class="hljs-symbol">&gt;</span>GeneratedFiles<span class="hljs-symbol">&lt;</span>/CompilerGeneratedFilesOutputPath<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/PropertyGroup<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <ul>
 <li><strong><em>EmitCompilerGeneratedFiles</em></strong>: This flag tells the compiler to write the generated files to disk</li>
@@ -179,9 +179,9 @@
 </ul>
 <h3 id="excluding-the-generated-folder">Excluding the generated folder</h3>
 <p>We will need to exclude the generated folder, or the compiler will try to add the same file twice - one from disk and one from the code generator.</p>
-<pre><code class="language-xml hljs">&lt;ItemGroup&gt;
-    &lt;Compile Remove=&quot;$(CompilerGeneratedFilesOutputPath)/*/**/*.cs&quot; /&gt;
-&lt;/ItemGroup&gt;
+<pre><code class="language-xml hljs"><span class="hljs-symbol">&lt;</span>ItemGroup<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>Compile Remove=<span class="hljs-symbol">&quot;</span>$(CompilerGeneratedFilesOutputPath)/*/**/*.cs<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/ItemGroup<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>Now, we have our projects set up to start creating source generators and consuming the generated code.</p>

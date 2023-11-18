@@ -139,12 +139,12 @@
 </ul>
 <h2 id="validate-that-the-sequence-is-out-of-sync">Validate that the sequence is out-of-sync</h2>
 <p>Before we reset the sequence, let us make sure that it is out of sync.</p>
-<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">nextval</span>(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>));
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> nextval(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>));
 
 <span class="hljs-keyword">SELECT</span>
-    CURRVAL(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)) <span class="hljs-keyword">AS</span> &quot;Current Value&quot;,
-    MAX(&quot;id&quot;) AS &quot;Max Value&quot;
-FROM &quot;table&quot;;
+    CURRVAL(PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)) <span class="hljs-keyword">AS</span> <span class="hljs-operator">&</span>quot;<span class="hljs-keyword">Current</span> <span class="hljs-keyword">Value</span><span class="hljs-operator">&</span>quot;,
+    <span class="hljs-built_in">MAX</span>(<span class="hljs-operator">&</span>quot;id<span class="hljs-operator">&</span>quot;) <span class="hljs-keyword">AS</span> <span class="hljs-operator">&</span>quot;Max <span class="hljs-keyword">Value</span><span class="hljs-operator">&</span>quot;
+<span class="hljs-keyword">FROM</span> <span class="hljs-operator">&</span>quot;<span class="hljs-keyword">table</span><span class="hljs-operator">&</span>quot;;
 </code></pre>
 <p><strong>Line #1:</strong> We make a call to <strong><em>nextval</em></strong> because if we call <strong><em>currval</em></strong> before calling <strong><em>nextval</em></strong> in the current session, it will give us an error similar to &quot;<strong><em>ERROR: currval of sequence &quot;table_id_seq&quot; is not yet defined in this session</em></strong>&quot;.</p>
 <p><strong>Line #3-6:</strong> Gets the value most recently obtained by <strong>nextval</strong> for this sequence in the current session along with the maximum value for <strong><em>id</em></strong> in <strong><em>table</em></strong>.</p>
@@ -156,8 +156,8 @@ FROM &quot;table&quot;;
 <h2 id="the-fix">The Fix</h2>
 <pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> SETVAL(
     (<span class="hljs-keyword">SELECT</span> PG_GET_SERIAL_SEQUENCE(<span class="hljs-string">'&quot;table&quot;'</span>, <span class="hljs-string">'id'</span>)),
-    (<span class="hljs-keyword">SELECT</span> (<span class="hljs-keyword">MAX</span>(&quot;id&quot;) + 1) FROM &quot;table&quot;),
-    FALSE);
+    (<span class="hljs-keyword">SELECT</span> (<span class="hljs-built_in">MAX</span>(<span class="hljs-operator">&</span>quot;id<span class="hljs-operator">&</span>quot;) <span class="hljs-operator">+</span> <span class="hljs-number">1</span>) <span class="hljs-keyword">FROM</span> <span class="hljs-operator">&</span>quot;<span class="hljs-keyword">table</span><span class="hljs-operator">&</span>quot;),
+    <span class="hljs-literal">FALSE</span>);
 </code></pre>
 <p>This will set the sequence to the next available value higher than any existing value for &quot;<strong><em>id</em></strong>&quot; in <strong><em>table</em></strong>. Further inserts will not result in a &quot;duplicate key value violates unique constraint&quot; error.</p>
 <h2 id="further-reading">Further Reading</h2>

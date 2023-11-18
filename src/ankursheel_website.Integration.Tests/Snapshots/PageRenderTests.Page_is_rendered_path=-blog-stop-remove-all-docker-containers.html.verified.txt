@@ -139,18 +139,18 @@
 <li><strong><em>-a</em></strong>: Show all the containers.</li>
 <li><strong><em>-q</em></strong>: Only display the numeric ids.</li>
 </ul>
-<pre><code class="language-bash hljs">docker container ls -aq
+<pre><code class="language-bash hljs">docker container <span class="hljs-built_in">ls</span> -aq
 </code></pre>
 <h3 id="stopping-all-containers">Stopping all containers</h3>
 <p>The command to <a href="https://docs.docker.com/engine/reference/commandline/container_stop/">stop docker containers</a> is <code>docker container stop [OPTIONS] CONTAINER [CONTAINER...]</code></p>
 <p>We can see it takes a space-delimited list of container ids/names to stop. We already have the list of container id's from the previous step. We need to use a shell expansion trick to pass in the list of all containers.</p>
-<pre><code class="language-bash hljs">docker container stop $(docker container ls -aq)
+<pre><code class="language-bash hljs">docker container stop $(docker container <span class="hljs-built_in">ls</span> -aq)
 </code></pre>
 <h3 id="removing-all-containers">Removing all containers</h3>
 <p>The command to <a href="https://docs.docker.com/engine/reference/commandline/container_rm/">remove docker containers</a> is <code>docker container rm [OPTIONS] CONTAINER [CONTAINER...]</code></p>
 <p>We can see it's similar to the stop command and also takes a space-delimited list of container ids to remove.</p>
 <p>We can use the same shell expansion trick to pass in the list of all containers.</p>
-<pre><code class="language-bash hljs">docker container rm $(docker container ls -aq)
+<pre><code class="language-bash hljs">docker container <span class="hljs-built_in">rm</span> $(docker container <span class="hljs-built_in">ls</span> -aq)
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>This makes it trivial to stop and remove all the containers that I have running locally.</p>

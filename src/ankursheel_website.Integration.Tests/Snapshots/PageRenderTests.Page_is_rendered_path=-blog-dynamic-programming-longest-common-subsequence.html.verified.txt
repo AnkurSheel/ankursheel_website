@@ -160,24 +160,24 @@
 <h3 id="overlapping-subproblem">Overlapping Subproblem</h3>
 <p>Let the 2 strings be <strong>X</strong> of length <em><strong>m</strong></em> and <strong>Y</strong> of length <em><strong>n</strong></em></p>
 <p>Let <strong>LCS(i,j)</strong> be the length of the LCS. Then we can formalise the problem as follows</p>
-<pre><code class="language-ini hljs">LCS(i,j) = 0 if X[i] = '\0' || Y[j] = '\0'
-LCS(i,j) = 1 + LCS(i+1, j+1) if X[i] = Y[j]
-LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
+<pre><code class="language-ini hljs">LCS(i,j) = 0 if X<span class="hljs-section">[i]</span> = '\0' || Y<span class="hljs-section">[j]</span> = '\0'
+LCS(i,j) = 1 + LCS(i+1, j+1) if X<span class="hljs-section">[i]</span> = Y<span class="hljs-section">[j]</span>
+LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X<span class="hljs-section">[i]</span> != Y<span class="hljs-section">[j]</span>
 </code></pre>
 <p>The length of the longest common subsequence will be <strong>LCS(0,0)</strong>.</p>
 <h3 id="naive-recursive-approach">Naive Recursive Approach</h3>
 <p>The above formalisation can easily be translated into the following recursive method.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-keyword">int</span> cLCS::Recursive(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* <span class="hljs-keyword">const</span> first, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* <span class="hljs-keyword">const</span> second)
-{
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">cLCS::Recursive</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span>* <span class="hljs-type">const</span> first, <span class="hljs-type">const</span> <span class="hljs-type">char</span>* <span class="hljs-type">const</span> second)</span>
+</span>{
     <span class="hljs-keyword">if</span> (*first == <span class="hljs-string">'\0'</span> || *second == <span class="hljs-string">'\0'</span>)
     {
         <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
     }
     <span class="hljs-keyword">if</span> (*first == *second)
     {
-        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + Recursive(first + <span class="hljs-number">1</span>, second + <span class="hljs-number">1</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-built_in">Recursive</span>(first + <span class="hljs-number">1</span>, second + <span class="hljs-number">1</span>);
     }
-    <span class="hljs-keyword">return</span> max(Recursive(first + <span class="hljs-number">1</span>, second), Recursive(first, second + <span class="hljs-number">1</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">max</span>(<span class="hljs-built_in">Recursive</span>(first + <span class="hljs-number">1</span>, second), <span class="hljs-built_in">Recursive</span>(first, second + <span class="hljs-number">1</span>));
 }
 </code></pre>
 <p>In the recursive approach, it is tough to get the actual LCS string, so we are just going to return the length of the LCS.</p>
@@ -185,54 +185,54 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
 <p>LCS subproblems consist of a pair of suffixes of the 2 input strings.</p>
 <p>To store and look up the subproblem solutions, we can use a 2d array.</p>
 <p>We will use a <em><strong>-1</strong></em> to tell the algorithm that nothing has been stored yet.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cLCS::Memonized(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second)
-{
-    <span class="hljs-keyword">int</span> length1 = first.length();
-    <span class="hljs-keyword">int</span> length2 = second.length();
+<pre><code class="language-cpp hljs"><span class="hljs-function">string <span class="hljs-title">cLCS::Memonized</span><span class="hljs-params">(<span class="hljs-type">const</span> string&amp; first, <span class="hljs-type">const</span> string&amp; second)</span>
+</span>{
+    <span class="hljs-type">int</span> length1 = first.<span class="hljs-built_in">length</span>();
+    <span class="hljs-type">int</span> length2 = second.<span class="hljs-built_in">length</span>();
     <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span> || length2 == <span class="hljs-number">0</span>)
     {
         <span class="hljs-keyword">return</span> &quot;&quot;;
     }
-    Memonized(first.data(), second.data(), <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
-    <span class="hljs-keyword">return</span> GetText(first, second);
+    <span class="hljs-built_in">Memonized</span>(first.<span class="hljs-built_in">data</span>(), second.<span class="hljs-built_in">data</span>(), <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">GetText</span>(first, second);
 }
 
-<span class="hljs-keyword">int</span> cLCS::Memonized(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* <span class="hljs-keyword">const</span> first, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* <span class="hljs-keyword">const</span> second, <span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j)
-{
-    <span class="hljs-keyword">if</span> (m_results[GetIndex(i, j)] == <span class="hljs-number">-1</span>)
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">cLCS::Memonized</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span>* <span class="hljs-type">const</span> first, <span class="hljs-type">const</span> <span class="hljs-type">char</span>* <span class="hljs-type">const</span> second, <span class="hljs-type">int</span> i, <span class="hljs-type">int</span> j)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] == <span class="hljs-number">-1</span>)
     {
         <span class="hljs-keyword">if</span> (first[i] == <span class="hljs-string">'\0'</span> || second[j] == <span class="hljs-string">'\0'</span>)
         {
-            m_results[GetIndex(i, j)] = <span class="hljs-number">0</span>;
+            m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] = <span class="hljs-number">0</span>;
         }
         <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (first[i] == second[j])
         {
-            m_results[GetIndex(i, j)] = <span class="hljs-number">1</span> + Memonized(first, second, i + <span class="hljs-number">1</span>, j + <span class="hljs-number">1</span>);
+            m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] = <span class="hljs-number">1</span> + <span class="hljs-built_in">Memonized</span>(first, second, i + <span class="hljs-number">1</span>, j + <span class="hljs-number">1</span>);
         }
         <span class="hljs-keyword">else</span>
         {
-            <span class="hljs-keyword">int</span> val1 = Memonized(first, second, i + <span class="hljs-number">1</span>, j);
-            <span class="hljs-keyword">int</span> val2 = Memonized(first, second, i, j + <span class="hljs-number">1</span>);
-            m_results[GetIndex(i, j)] = max(val1, val2);
+            <span class="hljs-type">int</span> val1 = <span class="hljs-built_in">Memonized</span>(first, second, i + <span class="hljs-number">1</span>, j);
+            <span class="hljs-type">int</span> val2 = <span class="hljs-built_in">Memonized</span>(first, second, i, j + <span class="hljs-number">1</span>);
+            m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] = <span class="hljs-built_in">max</span>(val1, val2);
         }
     }
-    <span class="hljs-keyword">return</span> m_results[GetIndex(i, j)];
+    <span class="hljs-keyword">return</span> m_results[<span class="hljs-built_in">GetIndex</span>(i, j)];
 }
 </code></pre>
 <p>In the above algorithm, <em><strong>m_results(0)</strong></em>, gives the length of the LCS.</p>
 <p>We will look at <em><strong>GetText()</strong></em> in the next section to see how we can get the subsequence after computing the <em><strong>m_results</strong></em> array.</p>
 <h3 id="getting-the-subsequence">Getting the subsequence</h3>
 <p>Once we have filled in the <strong><em>m_results</em></strong> array, we can find the sequence by traversing forwards through the array.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cLCS::GetText(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second)
-{
+<pre><code class="language-cpp hljs"><span class="hljs-function">string <span class="hljs-title">cLCS::GetText</span><span class="hljs-params">(<span class="hljs-type">const</span> string&amp; first, <span class="hljs-type">const</span> string&amp; second)</span>
+</span>{
     <span class="hljs-keyword">if</span> (m_results[<span class="hljs-number">0</span>] == <span class="hljs-number">0</span>)
     {
         <span class="hljs-keyword">return</span> &quot;&quot;;
     }
-    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>;
-    <span class="hljs-function"><span class="hljs-built_in">stringstream</span> <span class="hljs-title">ss</span><span class="hljs-params">(&quot;&quot;)</span></span>;
-    <span class="hljs-keyword">while</span> (i &lt; first.length() &amp;&amp; j &lt; second.length())
+    <span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;
+    <span class="hljs-type">int</span> j = <span class="hljs-number">0</span>;
+    <span class="hljs-function">stringstream <span class="hljs-title">ss</span><span class="hljs-params">(&quot;&quot;)</span></span>;
+    <span class="hljs-keyword">while</span> (i &lt; first.<span class="hljs-built_in">length</span>() &amp;&amp; j &lt; second.<span class="hljs-built_in">length</span>())
     {
         <span class="hljs-keyword">if</span> (first[i] == second[j])
         {
@@ -240,7 +240,7 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
             i++;
             j++;
         }
-        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_results[GetIndex(i + <span class="hljs-number">1</span>, j)] &gt;= m_results[GetIndex(i, j + <span class="hljs-number">1</span>)])
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_results[<span class="hljs-built_in">GetIndex</span>(i + <span class="hljs-number">1</span>, j)] &gt;= m_results[<span class="hljs-built_in">GetIndex</span>(i, j + <span class="hljs-number">1</span>)])
         {
             i++;
         }
@@ -249,7 +249,7 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
             j++;
         }
     }
-    <span class="hljs-keyword">return</span> ss.str();
+    <span class="hljs-keyword">return</span> ss.<span class="hljs-built_in">str</span>();
 }
 </code></pre>
 <p>To find the longest common subsequence, we traverse through both the strings - <em><strong>first</strong></em> and <strong><em>second</em></strong> using indexes <strong><em>i</em></strong> and <strong><em>j</em></strong> respectively.</p>
@@ -259,34 +259,34 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X[i] != Y[j]
 <p>Continuing in this way, we can get the common subsequence.</p>
 <h3 id="bottom-up-approach-with-dynamic-programming">Bottom-Up Approach with Dynamic Programming</h3>
 <p>To develop a DP approach, we just flip the way we are storing the results by traversing the array backwards.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cLCS::DP(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; second)
-{
-    <span class="hljs-keyword">int</span> length1 = first.length();
-    <span class="hljs-keyword">int</span> length2 = second.length();
+<pre><code class="language-cpp hljs"><span class="hljs-function">string <span class="hljs-title">cLCS::DP</span><span class="hljs-params">(<span class="hljs-type">const</span> std::string&amp; first, <span class="hljs-type">const</span> std::string&amp; second)</span>
+</span>{
+    <span class="hljs-type">int</span> length1 = first.<span class="hljs-built_in">length</span>();
+    <span class="hljs-type">int</span> length2 = second.<span class="hljs-built_in">length</span>();
     <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span> || length2 == <span class="hljs-number">0</span>)
     {
         <span class="hljs-keyword">return</span> &quot;&quot;;
     }
 
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = length1; i &gt;= <span class="hljs-number">0</span>; i--)
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = length1; i &gt;= <span class="hljs-number">0</span>; i--)
     {
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = length2; j &gt;= <span class="hljs-number">0</span>; j--)
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = length2; j &gt;= <span class="hljs-number">0</span>; j--)
         {
             <span class="hljs-keyword">if</span> (first[i] == <span class="hljs-string">'\0'</span> || second[j] == <span class="hljs-string">'\0'</span>)
             {
-                m_results[GetIndex(i, j)] = <span class="hljs-number">0</span>;
+                m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] = <span class="hljs-number">0</span>;
             }
             <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (first[i] == second[j])
             {
-                m_results[GetIndex(i, j)] = <span class="hljs-number">1</span> + m_results[GetIndex(i + <span class="hljs-number">1</span>, j + <span class="hljs-number">1</span>)];
+                m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] = <span class="hljs-number">1</span> + m_results[<span class="hljs-built_in">GetIndex</span>(i + <span class="hljs-number">1</span>, j + <span class="hljs-number">1</span>)];
             }
             <span class="hljs-keyword">else</span>
             {
-                m_results[GetIndex(i, j)] = max(m_results[GetIndex(i + <span class="hljs-number">1</span>, j)], m_results[GetIndex(i, j + <span class="hljs-number">1</span>)]);
+                m_results[<span class="hljs-built_in">GetIndex</span>(i, j)] = <span class="hljs-built_in">max</span>(m_results[<span class="hljs-built_in">GetIndex</span>(i + <span class="hljs-number">1</span>, j)], m_results[<span class="hljs-built_in">GetIndex</span>(i, j + <span class="hljs-number">1</span>)]);
             }
         }
     }
-    <span class="hljs-keyword">return</span> GetText(first, second);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">GetText</span>(first, second);
 }
 </code></pre>
 <p>The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem could be solved by computing a fraction of the array.</p>

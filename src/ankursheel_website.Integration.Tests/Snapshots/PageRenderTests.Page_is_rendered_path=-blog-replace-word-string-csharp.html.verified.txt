@@ -134,8 +134,8 @@
 text tester&quot;</p>
 <h2 id="solution">Solution</h2>
 <p>You can use <code>Regex.Replace</code> to replace a whole word.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> <span class="hljs-title">ReplaceWholeWord</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> input, <span class="hljs-keyword">string</span> wordToReplace, <span class="hljs-keyword">string</span> replacementWord</span>)
-</span>{
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-built_in">string</span> <span class="hljs-title">ReplaceWholeWord</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> input, <span class="hljs-built_in">string</span> wordToReplace, <span class="hljs-built_in">string</span> replacementWord</span>)</span>
+{
     <span class="hljs-keyword">var</span> pattern = $&quot;\\b{wordToReplace}\\b&quot;;
     <span class="hljs-keyword">return</span> Regex.Replace(input, pattern, replacementWord, RegexOptions.IgnoreCase);
 }

@@ -160,22 +160,22 @@
 <h3 id="overlapping-subproblem">Overlapping Subproblem</h3>
 <p>Let the 2 strings be <strong>X</strong> of length <strong><em>m</em></strong> and <strong>Y</strong> of length <strong><em>n</em></strong>.</p>
 <p>Let <strong>EditDistance(i,j)</strong> be the number of operations. Then we can formalise the problem as follows</p>
-<pre><code class="language-ini hljs">EditDistance(i, j) = n - j : if i = 0;
-EditDistance(i, j) = m - i : if  j = 0;
-EditDistance(i, j) = EditDistance(i + 1, j + 1) if X[i] = Y[j]
+<pre><code class="language-ini hljs">EditDistance(i, j) = n - j : if <span class="hljs-attr">i</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+EditDistance(i, j) = m - i : if  <span class="hljs-attr">j</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+EditDistance(i, j) = EditDistance(i + 1, j + 1) if X<span class="hljs-section">[i]</span> = Y<span class="hljs-section">[j]</span>
 EditDistance(i, j) = 1 + min (
                                 EditDistance(i,  j + 1) // insert
                                 EditDistance(i + 1,  j) // delete
                                 EditDistance(i + 1,  j + 1) // replace
-                            ) if X[i] != Y[j]
+                            ) if X<span class="hljs-section">[i]</span> != Y<span class="hljs-section">[j]</span>
 </code></pre>
 <p>The length of the edit distance will be <strong><em>EditDistance(0,0)</em></strong>.</p>
 <h3 id="naive-recursive-approach">Naive Recursive Approach</h3>
 <p>The above formalisation can easily be translated into the following recursive method.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-keyword">int</span> cEditDistance::Recursive(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second, <span class="hljs-keyword">int</span> index1, <span class="hljs-keyword">int</span> index2)
-{
-    <span class="hljs-keyword">int</span> length1 = first.length() - index1;
-    <span class="hljs-keyword">int</span> length2 = second.length() - index2;
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">cEditDistance::Recursive</span><span class="hljs-params">(<span class="hljs-type">const</span> string&amp; first, <span class="hljs-type">const</span> string&amp; second, <span class="hljs-type">int</span> index1, <span class="hljs-type">int</span> index2)</span>
+</span>{
+    <span class="hljs-type">int</span> length1 = first.<span class="hljs-built_in">length</span>() - index1;
+    <span class="hljs-type">int</span> length2 = second.<span class="hljs-built_in">length</span>() - index2;
 
     <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span>)
     {
@@ -189,15 +189,15 @@ EditDistance(i, j) = 1 + min (
 
     <span class="hljs-keyword">if</span> (first[index1] == second[index2])
     {
-        <span class="hljs-keyword">return</span> Recursive(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Recursive</span>(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
     }
     <span class="hljs-keyword">else</span>
     {
-        <span class="hljs-keyword">int</span> insertCost = Recursive(first, second, index1, index2 + <span class="hljs-number">1</span>);
-        <span class="hljs-keyword">int</span> deleteCost = Recursive(first, second, index1 + <span class="hljs-number">1</span>, index2);
-        <span class="hljs-keyword">int</span> replaceCost = Recursive(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+        <span class="hljs-type">int</span> insertCost = <span class="hljs-built_in">Recursive</span>(first, second, index1, index2 + <span class="hljs-number">1</span>);
+        <span class="hljs-type">int</span> deleteCost = <span class="hljs-built_in">Recursive</span>(first, second, index1 + <span class="hljs-number">1</span>, index2);
+        <span class="hljs-type">int</span> replaceCost = <span class="hljs-built_in">Recursive</span>(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
 
-        <span class="hljs-keyword">int</span> minCost = insertCost;
+        <span class="hljs-type">int</span> minCost = insertCost;
         <span class="hljs-keyword">if</span> (deleteCost &lt; minCost)
         {
             minCost = deleteCost;
@@ -216,135 +216,135 @@ EditDistance(i, j) = 1 + min (
 <h3 id="top-down-recursive-approach-with-memoization">Top-Down Recursive approach with Memoization</h3>
 <p>Edit distance subproblems consist of a pair of suffixes of the 2 input strings. To store and look up the subproblem solutions, we can use a 2d array. We will use a <em><strong>-1</strong></em> to tell the algorithm that nothing has been stored yet.</p>
 <p>To get the actual operations, we will use another 2D array that will store the operation we are performing at that stage.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cEditDistance::Memonized(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second)
-{
-    <span class="hljs-keyword">int</span> length1 = first.length();
-    <span class="hljs-keyword">int</span> length2 = second.length();
+<pre><code class="language-cpp hljs"><span class="hljs-function">string <span class="hljs-title">cEditDistance::Memonized</span><span class="hljs-params">(<span class="hljs-type">const</span> string&amp; first, <span class="hljs-type">const</span> string&amp; second)</span>
+</span>{
+    <span class="hljs-type">int</span> length1 = first.<span class="hljs-built_in">length</span>();
+    <span class="hljs-type">int</span> length2 = second.<span class="hljs-built_in">length</span>();
 
-    m_results.Init(length1 + <span class="hljs-number">1</span>, length2 + <span class="hljs-number">1</span>);
-    m_Operations.Init(length1, length2);
-    <span class="hljs-keyword">int</span> operations = Memonized(first, second, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
-    <span class="hljs-keyword">return</span> GetSteps(first, second, operations);
+    m_results.<span class="hljs-built_in">Init</span>(length1 + <span class="hljs-number">1</span>, length2 + <span class="hljs-number">1</span>);
+    m_Operations.<span class="hljs-built_in">Init</span>(length1, length2);
+    <span class="hljs-type">int</span> operations = <span class="hljs-built_in">Memonized</span>(first, second, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">GetSteps</span>(first, second, operations);
 }
 
-<span class="hljs-keyword">int</span> cEditDistance::Memonized(<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; second, <span class="hljs-keyword">int</span> index1, <span class="hljs-keyword">int</span> index2)
-{
-    <span class="hljs-keyword">if</span> (m_results.GetElement(index1, index2) == <span class="hljs-number">-1</span>)
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">cEditDistance::Memonized</span><span class="hljs-params">(<span class="hljs-type">const</span> string&amp; first, <span class="hljs-type">const</span> string&amp; second, <span class="hljs-type">int</span> index1, <span class="hljs-type">int</span> index2)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (m_results.<span class="hljs-built_in">GetElement</span>(index1, index2) == <span class="hljs-number">-1</span>)
     {
-        <span class="hljs-keyword">int</span> length1 = first.length() - index1;
-        <span class="hljs-keyword">int</span> length2 = second.length() - index2;
+        <span class="hljs-type">int</span> length1 = first.<span class="hljs-built_in">length</span>() - index1;
+        <span class="hljs-type">int</span> length2 = second.<span class="hljs-built_in">length</span>() - index2;
 
         <span class="hljs-keyword">if</span> (length1 == <span class="hljs-number">0</span>)
         {
-            m_results.SetElement(index1, index2, length2);
+            m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, length2);
         }
         <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (length2 == <span class="hljs-number">0</span>)
         {
-            m_results.SetElement(index1, index2, length1);
+            m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, length1);
         }
         <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (first[index1] == second[index2])
         {
-            m_results.SetElement(index1, index2, Memonized(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>));
-            m_Operations.SetElement(index1, index2, <span class="hljs-number">0</span>);
+            m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-built_in">Memonized</span>(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>));
+            m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">0</span>);
         }
         <span class="hljs-keyword">else</span>
         {
-            <span class="hljs-keyword">int</span> insertCost = Memonized(first, second, index1, index2 + <span class="hljs-number">1</span>);
-            <span class="hljs-keyword">int</span> deleteCost = Memonized(first, second, index1 + <span class="hljs-number">1</span>, index2);
-            <span class="hljs-keyword">int</span> replaceCost = Memonized(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+            <span class="hljs-type">int</span> insertCost = <span class="hljs-built_in">Memonized</span>(first, second, index1, index2 + <span class="hljs-number">1</span>);
+            <span class="hljs-type">int</span> deleteCost = <span class="hljs-built_in">Memonized</span>(first, second, index1 + <span class="hljs-number">1</span>, index2);
+            <span class="hljs-type">int</span> replaceCost = <span class="hljs-built_in">Memonized</span>(first, second, index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
 
-            <span class="hljs-keyword">int</span> minCost = insertCost;
-            m_Operations.SetElement(index1, index2, <span class="hljs-number">1</span>);
+            <span class="hljs-type">int</span> minCost = insertCost;
+            m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">1</span>);
 
             <span class="hljs-keyword">if</span> (deleteCost &lt; minCost)
             {
                 minCost = deleteCost;
-                m_Operations.SetElement(index1, index2, <span class="hljs-number">2</span>);
+                m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">2</span>);
             }
 
             <span class="hljs-keyword">if</span> (replaceCost &lt; minCost)
             {
                 minCost = replaceCost;
-                m_Operations.SetElement(index1, index2, <span class="hljs-number">3</span>);
+                m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">3</span>);
             }
 
-            m_results.SetElement(index1, index2, <span class="hljs-number">1</span> + minCost);
+            m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">1</span> + minCost);
         }
     }
-    <span class="hljs-keyword">return</span> m_results.GetElement(index1, index2);
+    <span class="hljs-keyword">return</span> m_results.<span class="hljs-built_in">GetElement</span>(index1, index2);
 }
 </code></pre>
 <p>The above algorithm, <strong><em>m_results(0)</em></strong>, gives the number of operations.</p>
 <p>In the next section, we will look at <strong><em>GetSteps()</em></strong> to see how we can get the subsequence after computing the <strong><em>m_operations</em></strong> array.</p>
 <h3 id="getting-the-subsequence">Getting the subsequence</h3>
 <p>Once we have filled in the <strong><em>m_results</em></strong> array, we can find the sequence by traversing forwards through the array.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cEditDistance::GetSteps(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; second, <span class="hljs-keyword">int</span> numberOfOperations)
-{
-    <span class="hljs-keyword">int</span> index1 = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">int</span> index2 = <span class="hljs-number">0</span>;
-    <span class="hljs-built_in">stringstream</span> steps;
-    <span class="hljs-built_in">stringstream</span> currentString;
+<pre><code class="language-cpp hljs"><span class="hljs-function">string <span class="hljs-title">cEditDistance::GetSteps</span><span class="hljs-params">(<span class="hljs-type">const</span> std::string&amp; first, <span class="hljs-type">const</span> std::string&amp; second, <span class="hljs-type">int</span> numberOfOperations)</span>
+</span>{
+    <span class="hljs-type">int</span> index1 = <span class="hljs-number">0</span>;
+    <span class="hljs-type">int</span> index2 = <span class="hljs-number">0</span>;
+    stringstream steps;
+    stringstream currentString;
 
-    steps &lt;&lt; &quot;Number Of Operations : &quot; &lt;&lt; numberOfOperations &lt;&lt; <span class="hljs-built_in">endl</span>;
+    steps &lt;&lt; &quot;Number Of Operations : &quot; &lt;&lt; numberOfOperations &lt;&lt; endl;
 
     <span class="hljs-keyword">if</span> (numberOfOperations == <span class="hljs-number">0</span>)
     {
-        <span class="hljs-keyword">return</span> steps.str();
+        <span class="hljs-keyword">return</span> steps.<span class="hljs-built_in">str</span>();
     }
 
-    steps &lt;&lt; &quot;Starting String : &quot; &lt;&lt; first &lt;&lt; <span class="hljs-built_in">endl</span>;
+    steps &lt;&lt; &quot;Starting String : &quot; &lt;&lt; first &lt;&lt; endl;
 
-    <span class="hljs-keyword">while</span> (index1 &lt; first.length() &amp;&amp; index2 &lt; second.length())
+    <span class="hljs-keyword">while</span> (index1 &lt; first.<span class="hljs-built_in">length</span>() &amp;&amp; index2 &lt; second.<span class="hljs-built_in">length</span>())
     {
-        <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">0</span>)  <span class="hljs-comment">// match</span>
+        <span class="hljs-keyword">if</span> (m_Operations.<span class="hljs-built_in">GetElement</span>(index1, index2) == <span class="hljs-number">0</span>)  <span class="hljs-comment">// match</span>
         {
             currentString &lt;&lt; first[index1];
             index1 = index1 + <span class="hljs-number">1</span>;
             index2 = index2 + <span class="hljs-number">1</span>;
         }
-        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">1</span>)  <span class="hljs-comment">// insert</span>
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.<span class="hljs-built_in">GetElement</span>(index1, index2) == <span class="hljs-number">1</span>)  <span class="hljs-comment">// insert</span>
         {
-            steps &lt;&lt; &quot;Insert character &quot; &lt;&lt; second[index2] &lt;&lt; &quot; : Current String &quot; &lt;&lt; currentString.str();
+            steps &lt;&lt; &quot;Insert character &quot; &lt;&lt; second[index2] &lt;&lt; &quot; : Current String &quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>();
             currentString &lt;&lt; second[index2];
-            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>() &lt;&lt; endl;
             index2 = index2 + <span class="hljs-number">1</span>;
         }
-        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">2</span>)  <span class="hljs-comment">// delete</span>
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.<span class="hljs-built_in">GetElement</span>(index1, index2) == <span class="hljs-number">2</span>)  <span class="hljs-comment">// delete</span>
         {
             currentString &lt;&lt; first[index1];
-            steps &lt;&lt; &quot;Delete character &quot; &lt;&lt; first[index1] &lt;&lt; &quot; : Current String &quot; &lt;&lt; currentString.str();
-            currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
+            steps &lt;&lt; &quot;Delete character &quot; &lt;&lt; first[index1] &lt;&lt; &quot; : Current String &quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>();
+            currentString.<span class="hljs-built_in">seekp</span>(<span class="hljs-number">-1</span>, ios_base::end);
             currentString &lt;&lt; &quot; &quot;;
-            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
-            currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
+            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>() &lt;&lt; endl;
+            currentString.<span class="hljs-built_in">seekp</span>(<span class="hljs-number">-1</span>, ios_base::end);
             index1 = index1 + <span class="hljs-number">1</span>;
         }
-        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.GetElement(index1, index2) == <span class="hljs-number">3</span>)  <span class="hljs-comment">// replace</span>
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (m_Operations.<span class="hljs-built_in">GetElement</span>(index1, index2) == <span class="hljs-number">3</span>)  <span class="hljs-comment">// replace</span>
         {
             steps &lt;&lt; &quot;Replace character &quot; &lt;&lt; first[index1] &lt;&lt; &quot; with character &quot; &lt;&lt; second[index2] &lt;&lt; &quot; : Current String &quot;;
             currentString &lt;&lt; first[index1];
-            steps &lt;&lt; currentString.str();
-            currentString.seekp(<span class="hljs-number">-1</span>, ios_base::end);
+            steps &lt;&lt; currentString.<span class="hljs-built_in">str</span>();
+            currentString.<span class="hljs-built_in">seekp</span>(<span class="hljs-number">-1</span>, ios_base::end);
             currentString &lt;&lt; second[index2];
-            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.str() &lt;&lt; <span class="hljs-built_in">endl</span>;
+            steps &lt;&lt; &quot; : Updated String &quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>() &lt;&lt; endl;
             index1 = index1 + <span class="hljs-number">1</span>;
             index2 = index2 + <span class="hljs-number">1</span>;
         }
     }
-    <span class="hljs-keyword">if</span> (second.length() - index2 &gt; <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">if</span> (second.<span class="hljs-built_in">length</span>() - index2 &gt; <span class="hljs-number">0</span>)
     {
-        steps &lt;&lt; &quot;Current String \&quot;&quot; &lt;&lt; currentString.str() &lt;&lt; &quot;\&quot; : Insert remaining &quot; &lt;&lt; second.length() - index2 &lt;&lt; &quot; characters from the second <span class="hljs-built_in">string</span> at position &quot; &lt;&lt; index2 &lt;&lt; <span class="hljs-built_in">endl</span>;
+        steps &lt;&lt; &quot;Current String \&quot;&quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>() &lt;&lt; &quot;\&quot; : Insert remaining &quot; &lt;&lt; second.<span class="hljs-built_in">length</span>() - index2 &lt;&lt; &quot; characters from the second string at position &quot; &lt;&lt; index2 &lt;&lt; endl;
     }
-    <span class="hljs-keyword">if</span> (first.length() - index1 &gt; <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">if</span> (first.<span class="hljs-built_in">length</span>() - index1 &gt; <span class="hljs-number">0</span>)
     {
         <span class="hljs-keyword">if</span> (index1 == <span class="hljs-number">0</span>)
         {
             currentString &lt;&lt; first;
         }
-        steps &lt;&lt; &quot;Current String \&quot;&quot; &lt;&lt; currentString.str() &lt;&lt; &quot;\&quot; : Delete remaining &quot; &lt;&lt; first.length() - index1 &lt;&lt; &quot; characters from position &quot; &lt;&lt; index1 &lt;&lt; <span class="hljs-built_in">endl</span>;
+        steps &lt;&lt; &quot;Current String \&quot;&quot; &lt;&lt; currentString.<span class="hljs-built_in">str</span>() &lt;&lt; &quot;\&quot; : Delete remaining &quot; &lt;&lt; first.<span class="hljs-built_in">length</span>() - index1 &lt;&lt; &quot; characters from position &quot; &lt;&lt; index1 &lt;&lt; endl;
     }
-    steps &lt;&lt; &quot;Final String : &quot; &lt;&lt; second &lt;&lt; <span class="hljs-built_in">endl</span>;
-    <span class="hljs-keyword">return</span> steps.str();
+    steps &lt;&lt; &quot;Final String : &quot; &lt;&lt; second &lt;&lt; endl;
+    <span class="hljs-keyword">return</span> steps.<span class="hljs-built_in">str</span>();
 }
 </code></pre>
 <p>To find the operations, we traverse through <strong>m_operations</strong> till either <strong><em>index1 &gt;= first.length</em></strong> or <strong><em>index2 &gt;= second.length</em></strong> as at that point either all the remaining characters need to be inserted or deleted.</p>
@@ -358,58 +358,58 @@ EditDistance(i, j) = 1 + min (
 <p>Continuing in this way, we can get the operations.</p>
 <h3 id="bottom-up-approach-with-dynamic-programming">Bottom-Up Approach with Dynamic Programming</h3>
 <p>To develop a DP approach, we just flip the way we are storing the results by traversing the strings backwards.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-built_in">string</span> cEditDistance::DP(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; first, <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; second)
-{
-    <span class="hljs-keyword">int</span> length1 = first.length();
-    <span class="hljs-keyword">int</span> length2 = second.length();
+<pre><code class="language-cpp hljs"><span class="hljs-function">string <span class="hljs-title">cEditDistance::DP</span><span class="hljs-params">(<span class="hljs-type">const</span> std::string&amp; first, <span class="hljs-type">const</span> std::string&amp; second)</span>
+</span>{
+    <span class="hljs-type">int</span> length1 = first.<span class="hljs-built_in">length</span>();
+    <span class="hljs-type">int</span> length2 = second.<span class="hljs-built_in">length</span>();
 
-    m_results.Init(length1 + <span class="hljs-number">1</span>, length2 + <span class="hljs-number">1</span>);
+    m_results.<span class="hljs-built_in">Init</span>(length1 + <span class="hljs-number">1</span>, length2 + <span class="hljs-number">1</span>);
 
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> index1 = length1; index1 &gt;= <span class="hljs-number">0</span>; index1--)
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> index1 = length1; index1 &gt;= <span class="hljs-number">0</span>; index1--)
     {
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> index2 = length2; index2 &gt;= <span class="hljs-number">0</span>; index2--)
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> index2 = length2; index2 &gt;= <span class="hljs-number">0</span>; index2--)
         {
             <span class="hljs-keyword">if</span> (index1 == length1)
             {
-                m_results.SetElement(index1, index2, length2 - index2);
+                m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, length2 - index2);
             }
             <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (index2 == length2)
             {
-                m_results.SetElement(index1, index2, length1 - index1);
+                m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, length1 - index1);
             }
             <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (first[index1] == second[index2])
             {
-                m_results.SetElement(index1, index2, m_results.GetElement(index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>));
-                m_Operations.SetElement(index1, index2, <span class="hljs-number">0</span>);
+                m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, m_results.<span class="hljs-built_in">GetElement</span>(index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>));
+                m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">0</span>);
             }
             <span class="hljs-keyword">else</span>
             {
-                <span class="hljs-keyword">int</span> insertCost = m_results.GetElement(index1, index2 + <span class="hljs-number">1</span>);
-                <span class="hljs-keyword">int</span> deleteCost = m_results.GetElement(index1 + <span class="hljs-number">1</span>, index2);
-                <span class="hljs-keyword">int</span> replaceCost = m_results.GetElement(index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
+                <span class="hljs-type">int</span> insertCost = m_results.<span class="hljs-built_in">GetElement</span>(index1, index2 + <span class="hljs-number">1</span>);
+                <span class="hljs-type">int</span> deleteCost = m_results.<span class="hljs-built_in">GetElement</span>(index1 + <span class="hljs-number">1</span>, index2);
+                <span class="hljs-type">int</span> replaceCost = m_results.<span class="hljs-built_in">GetElement</span>(index1 + <span class="hljs-number">1</span>, index2 + <span class="hljs-number">1</span>);
 
-                <span class="hljs-keyword">int</span> minCost = insertCost;
-                m_Operations.SetElement(index1, index2, <span class="hljs-number">1</span>);
+                <span class="hljs-type">int</span> minCost = insertCost;
+                m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">1</span>);
 
                 <span class="hljs-keyword">if</span> (deleteCost &lt; minCost)
                 {
                     minCost = deleteCost;
-                    m_Operations.SetElement(index1, index2, <span class="hljs-number">2</span>);
+                    m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">2</span>);
                 }
 
                 <span class="hljs-keyword">if</span> (replaceCost &lt; minCost)
                 {
                     minCost = replaceCost;
-                    m_Operations.SetElement(index1, index2, <span class="hljs-number">3</span>);
+                    m_Operations.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">3</span>);
                 }
 
-                m_results.SetElement(index1, index2, <span class="hljs-number">1</span> + minCost);
+                m_results.<span class="hljs-built_in">SetElement</span>(index1, index2, <span class="hljs-number">1</span> + minCost);
             }
         }
     }
 
-    <span class="hljs-keyword">int</span> operations = m_results.GetElement(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
-    <span class="hljs-keyword">return</span> GetSteps(first, second, operations);
+    <span class="hljs-type">int</span> operations = m_results.<span class="hljs-built_in">GetElement</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">GetSteps</span>(first, second, operations);
 }
 </code></pre>
 <p>The disadvantage of the bottom-up approach over memoizing is that this fills in the entire array even if the problem could be solved by computing a fraction of the array.</p>

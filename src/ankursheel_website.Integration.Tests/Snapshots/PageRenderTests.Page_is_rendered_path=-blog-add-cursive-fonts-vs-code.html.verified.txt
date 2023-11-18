@@ -134,22 +134,22 @@
 <h2 id="updating-vs-codes-settings">Updating VS Code's settings</h2>
 <p>My search for a font that encapsulates ligatures and Cursive fonts led me to <a href="https://github.com/kencrocken/FiraCodeiScript">Fira Code iScript</a> made by Ken Krocken. It combines 2 fonts - Fira Code as the regular font and Script12 as the italic font.</p>
 <p>After installing the font on my system, I changed the editor settings to use <em>Fira Code iScript</em> as the first option for <em>font family</em>.</p>
-<pre><code class="language-json hljs">&quot;editor.fontLigatures&quot;: true,
-&quot;editor.fontFamily&quot;: &quot;'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace&quot;,
+<pre><code class="language-json hljs">&quot;editor.fontLigatures&quot;<span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+&quot;editor.fontFamily&quot;<span class="hljs-punctuation">:</span> &quot;'Fira Code iScript'<span class="hljs-punctuation">,</span> 'Fira Code'<span class="hljs-punctuation">,</span> Consolas<span class="hljs-punctuation">,</span> 'Courier New'<span class="hljs-punctuation">,</span> monospace&quot;<span class="hljs-punctuation">,</span>
 </code></pre>
 <p>VS Code uses the TextMate grammar syntax to define how it needs to render code. You can read more in the <a href="https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide">official documentation</a>. In VS Code <em>settings.json</em>, you can override the font style for the current theme by modifying the <em>textMateRules</em> under <em>editor.tokenColorCustomizations</em>.</p>
-<pre><code class="language-json hljs">{
-    &quot;editor.tokenColorCustomizations&quot;: {
-        &quot;textMateRules&quot;: [
-            {
-                &quot;scope&quot;: [], // array of Scopes to which the style should be applied to
-                &quot;settings&quot;: {
-                    &quot;fontStyle&quot;: &quot;italic&quot; // the font style that should be applied
-                }
-            }
-        ]
-    }
-}
+<pre><code class="language-json hljs"><span class="hljs-punctuation">{</span>
+    &quot;editor.tokenColorCustomizations&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+        &quot;textMateRules&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+            <span class="hljs-punctuation">{</span>
+                &quot;scope&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// array of Scopes to which the style should be applied to</span>
+                &quot;settings&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                    &quot;fontStyle&quot;<span class="hljs-punctuation">:</span> &quot;italic&quot; <span class="hljs-comment">// the font style that should be applied</span>
+                <span class="hljs-punctuation">}</span>
+            <span class="hljs-punctuation">}</span>
+        <span class="hljs-punctuation">]</span>
+    <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
 </code></pre>
 <p>You might be wondering how to get the scope to put in the above JSON. Luckily, VS code has a command to help us with this - <strong>Developer: Inspect Editor Tokens and Scopes</strong>. You can trigger this by using the Command Palette (Ctrl + Shift + P) after ensuring that the active cursor is on the token you want to inspect.</p>
 <p>The scope inspector displays the following information:</p>
@@ -162,30 +162,30 @@
 <p>The one that we will use is <em>scope list</em>. Whichever token you want to make italic, add it to the scopes in the <em>scopes</em> array.</p>
 <p>You can see my current config for an example.</p>
 <h2 id="my-current-config">My current config</h2>
-<pre><code class="language-json hljs">&quot;editor.tokenColorCustomizations&quot;: {
-    &quot;textMateRules&quot;: [
-        {
-            &quot;scope&quot;: [
-            //following will be in italic (=FlottFlott)
-                &quot;comment&quot;,
-                &quot;entity.name.type.class&quot;, //class names
-                &quot;keyword&quot;, //import, export, return…
-                &quot;storage.modifier&quot;, //static keyword
-                &quot;storage.type&quot;, //class keyword
-                &quot;support.class.builtin&quot;,
-                &quot;keyword.control&quot;,
-                &quot;constant.language&quot;,
-                &quot;entity.other.attribute-name&quot;,
-                &quot;string.quoted.single&quot;,
-                &quot;entity.name.method&quot;,
+<pre><code class="language-json hljs">&quot;editor.tokenColorCustomizations&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    &quot;textMateRules&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+        <span class="hljs-punctuation">{</span>
+            &quot;scope&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+            <span class="hljs-comment">//following will be in italic (=FlottFlott)</span>
+                &quot;comment&quot;<span class="hljs-punctuation">,</span>
+                &quot;entity.name.type.class&quot;<span class="hljs-punctuation">,</span> <span class="hljs-comment">//class names</span>
+                &quot;keyword&quot;<span class="hljs-punctuation">,</span> <span class="hljs-comment">//import, export, return…</span>
+                &quot;storage.modifier&quot;<span class="hljs-punctuation">,</span> <span class="hljs-comment">//static keyword</span>
+                &quot;storage.type&quot;<span class="hljs-punctuation">,</span> <span class="hljs-comment">//class keyword</span>
+                &quot;support.class.builtin&quot;<span class="hljs-punctuation">,</span>
+                &quot;keyword.control&quot;<span class="hljs-punctuation">,</span>
+                &quot;constant.language&quot;<span class="hljs-punctuation">,</span>
+                &quot;entity.other.attribute-name&quot;<span class="hljs-punctuation">,</span>
+                &quot;string.quoted.single&quot;<span class="hljs-punctuation">,</span>
+                &quot;entity.name.method&quot;<span class="hljs-punctuation">,</span>
                 &quot;entity.name.tag&quot;
-            ],
-            &quot;settings&quot;: {
-                &quot;fontStyle&quot;: &quot;italic&quot;,
-            }
-        }
-    ]
-}
+            <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+            &quot;settings&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+                &quot;fontStyle&quot;<span class="hljs-punctuation">:</span> &quot;italic&quot;<span class="hljs-punctuation">,</span>
+            <span class="hljs-punctuation">}</span>
+        <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>After these steps, I have both ligatures and cursive fonts in my editor.</p>

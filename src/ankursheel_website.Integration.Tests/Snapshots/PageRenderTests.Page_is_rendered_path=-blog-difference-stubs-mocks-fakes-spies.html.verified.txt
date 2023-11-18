@@ -131,15 +131,15 @@
 <p>Before we look at all the different test doubles, let's look at the interface we are mocking for the examples.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IRepository</span>
 {
-     <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)</span>;
-     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)</span>;
+     <span class="hljs-function"><span class="hljs-built_in">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> id</span>)</span>;
+     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> id, <span class="hljs-built_in">bool</span> valid</span>)</span>;
 }
 </code></pre>
 <h2 id="stub">Stub</h2>
 <p>A stub is an object that provides (canned) hardcoded values to method calls. It always returns the same output regardless of the input.</p>
 <p>Below is the stubbed version using Moq of a service where the OnPing() function always returns &quot;pong&quot; regardless of the input.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;IRepository&gt;();
-mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())).Returns(<span class="hljs-literal">true</span>);
+mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-built_in">int</span>&gt;())).Returns(<span class="hljs-literal">true</span>);
 </code></pre>
 <p>An example can be an object that needs to grab some data from the database to respond to a method call. Instead of the actual object, we can introduce a stub and define what data should be returned.</p>
 <h2 id="spy">Spy</h2>
@@ -149,8 +149,8 @@ mock.Setup(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&g
 {
     <span class="hljs-keyword">public</span> boolean IsValidWasCalled = <span class="hljs-literal">false</span>;
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
-    </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-built_in">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> id</span>)</span>
+    {
         IsValidWasCalled = <span class="hljs-literal">true</span>;
         <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
     }
@@ -170,7 +170,7 @@ Assert.True(spy.IsValidWasCalled);
 mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">1</span>)).Returns(<span class="hljs-literal">true</span>);
 mock.Setup(x =&gt; x.IsValid(<span class="hljs-number">2</span>)).Returns(<span class="hljs-literal">false</span>);
 mock.Verify(x =&gt; x.Add(<span class="hljs-number">1</span>), Times.Once);
-mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&gt;())), Times(<span class="hljs-number">2</span>));
+mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-built_in">int</span>&gt;())), Times(<span class="hljs-number">2</span>));
 </code></pre>
 <p>A mock can be used anywhere we use a stub, but we need to verify multiple more specific behaviours.</p>
 <h2 id="fake">Fake</h2>
@@ -179,15 +179,15 @@ mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-keyword">int</span>&
 <p>Below is an implementation of a Fake repository</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FakeRepository</span> : <span class="hljs-title">IRepository</span>
 {
-    <span class="hljs-keyword">private</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt; _values = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">bool</span>&gt;();
+    <span class="hljs-keyword">private</span> Dictionary&lt;<span class="hljs-built_in">int</span>, <span class="hljs-built_in">bool</span>&gt; _values = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-built_in">int</span>, <span class="hljs-built_in">bool</span>&gt;();
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
-    </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-built_in">bool</span> <span class="hljs-title">IsValid</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> id</span>)</span>
+    {
         <span class="hljs-keyword">return</span> _values[id];
     }
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id, <span class="hljs-keyword">bool</span> valid</span>)
-    </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Add</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> id, <span class="hljs-built_in">bool</span> valid</span>)</span>
+    {
         _values.Add(id, open);
     }
 }

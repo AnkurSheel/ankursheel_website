@@ -4,3 +4,5 @@ variables:
       value: '$(Pipeline.Workspace)/.yarn'
     - name: 'PROJECT_FOLDER'
       value: 'ankursheel_website'
+    - name: 'NETLIFY_PREVIEW_SUFFIX'
+      value: '--ankursheel.netlify.app'

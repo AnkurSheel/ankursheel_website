@@ -133,13 +133,13 @@
 <pre><code class="language-yaml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">'3.8'</span>
 
 <span class="hljs-attr">services:</span>
-<span class="hljs-attr">    db:</span>
-<span class="hljs-attr">        container_name:</span> sql_server_db
-<span class="hljs-attr">        build:</span>
-<span class="hljs-attr">            context:</span> ./../
-<span class="hljs-attr">            dockerfile:</span> ./build/mssqlserver.Dockerfile
-<span class="hljs-attr">        ports:</span>
-<span class="hljs-bullet">            -</span> <span class="hljs-string">'1433:1433'</span>
+    <span class="hljs-attr">db:</span>
+        <span class="hljs-attr">container_name:</span> <span class="hljs-string">sql_server_db</span>
+        <span class="hljs-attr">build:</span>
+            <span class="hljs-attr">context:</span> <span class="hljs-string">./../</span>
+            <span class="hljs-attr">dockerfile:</span> <span class="hljs-string">./build/mssqlserver.Dockerfile</span>
+        <span class="hljs-attr">ports:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-string">'1433:1433'</span>
 </code></pre>
 <ul>
 <li><strong>Line #1</strong>: This denotes that we are using version 3.8 of Docker compose so that Docker can provide the appropriate features.</li>
@@ -153,13 +153,13 @@
 </ul>
 <h3 id="docker-file-for-sql-server">Docker file for SQL Server</h3>
 <p>We can start by adding the base image and environment variables to the docker file.</p>
-<pre><code class="language-docker hljs"><span class="hljs-keyword">FROM</span> mcr.microsoft.com/mssql/server:<span class="hljs-number">2017</span>-latest
+<pre><code class="language-docker">FROM mcr.microsoft.com/mssql/server:2017-latest
 
 ARG SA_PASSWORD=&quot;Password1!&quot;
-<span class="hljs-keyword">ENV</span> SA_PASSWORD=$SA_PASSWORD
-<span class="hljs-keyword">ENV</span> ACCEPT_EULA=&quot;Y&quot;
+ENV SA_PASSWORD=$SA_PASSWORD
+ENV ACCEPT_EULA=&quot;Y&quot;
 
-<span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">1433</span>
+EXPOSE 1433
 </code></pre>
 <ul>
 <li><strong>Line #1</strong>: Pull down the SQL Server 2017 container image.</li>
@@ -170,16 +170,16 @@ ARG SA_PASSWORD=&quot;Password1!&quot;
 </ul>
 <h3 id="initialize-sql-server-in-docker-container">Initialize SQL server in Docker container</h3>
 <p>Add the following lines to the docker file to initialize SQL Server.</p>
-<pre><code class="language-docker hljs"><span class="hljs-keyword">RUN</span><span class="bash"> mkdir -p /usr/work
-</span><span class="hljs-keyword">COPY</span><span class="bash"> ./build/*.sql /usr/work/
-</span>
-<span class="hljs-keyword">WORKDIR</span><span class="bash"> /usr/work
-</span>
-<span class="hljs-keyword">RUN</span><span class="bash"> ( /opt/mssql/bin/sqlservr &amp; ) \
+<pre><code class="language-docker">RUN mkdir -p /usr/work
+COPY ./build/*.sql /usr/work/
+
+WORKDIR /usr/work
+
+RUN ( /opt/mssql/bin/sqlservr &amp; ) \
     | grep -q &quot;Service Broker manager has started&quot; \
-    &amp;&amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P <span class="hljs-variable">$SA_PASSWORD</span> -i create-db.sql \
+    &amp;&amp; /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P $SA_PASSWORD -i create-db.sql \
     &amp;&amp; pkill sqlservr
-</span></code></pre>
+</code></pre>
 <ul>
 <li><strong>Line #1</strong>: Run a command to create a new directory creating all the directories in the path.</li>
 <li><strong>Line #2</strong>: Copy all the SQL files into the created directory.</li>
@@ -191,22 +191,22 @@ ARG SA_PASSWORD=&quot;Password1!&quot;
 </ul>
 <h3 id="script-to-scaffold-our-database">Script to scaffold our database</h3>
 <p>In our SQL script, we can do whatever we need to do at startup. In this demo, we will just create a database with a schema.</p>
-<pre><code class="language-sql hljs"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> DemoDb;
+<pre><code class="language-sql hljs"><span class="hljs-keyword">CREATE</span> DATABASE DemoDb;
 GO
-<span class="hljs-keyword">USE</span> DemoDb;
+USE DemoDb;
 GO
 
 <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> [dbo].[Table1]
 (
-    [<span class="hljs-keyword">Id</span>] <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> PRIMARY <span class="hljs-keyword">KEY</span> <span class="hljs-keyword">IDENTITY</span>,
-    [<span class="hljs-keyword">Name</span>] <span class="hljs-keyword">NVARCHAR</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    [Id] <span class="hljs-type">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">NULL</span> <span class="hljs-keyword">PRIMARY</span> KEY <span class="hljs-keyword">IDENTITY</span>,
+    [Name] NVARCHAR(<span class="hljs-number">200</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">NULL</span>,
 )
 
-<span class="hljs-keyword">GO</span>
+GO
 </code></pre>
 <h3 id="running-the-container">Running the container</h3>
 <p>We can use the following command to run start the DB using from the root folder.</p>
-<pre><code class="language-bash hljs">docker-compose <span class="hljs-_">-f</span> ./build/docker-compose.yml up <span class="hljs-_">-d</span> --force-recreate --build db
+<pre><code class="language-bash hljs">docker-compose -f ./build/docker-compose.yml up -d --force-recreate --build db
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>Starting a new Docker container with Microsoft SQL Server is really simple. However, there are a few hoops to jump through. I hope that it’s easy to understand how it works after reading this article.</p>

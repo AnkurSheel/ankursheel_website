@@ -139,7 +139,7 @@
 <li><strong><em>--quiet</em></strong>: Silence is golden, as this flag suppresses output unless there is an error.</li>
 </ul>
 <p>When executed, the command will produce an output similar to this:</p>
-<pre><code class="language-text">3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
+<pre><code class="language-text hljs">3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3
 </code></pre>

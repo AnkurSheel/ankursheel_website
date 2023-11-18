@@ -135,9 +135,9 @@
 <p><img src="/assets/images/posts/override-netlify-build-config/cover.png" alt="Build Setting UI"></p>
 <p>In the above screenshot, my branch for the migration is named <em>statiq</em>.</p>
 <p>To override the build settings set in the Netlify UI, we can add the following snippet to <em>netlify.toml</em></p>
-<pre><code class="language-toml hljs">[build]
-  command = &quot;dotnet run --project ./subDir/&quot;
-  publish = &quot;./subDir/output&quot;
+<pre><code class="language-toml hljs"><span class="hljs-section">[build]</span>
+  <span class="hljs-attr">command</span> = &quot<span class="hljs-comment">;dotnet run --project ./subDir/&quot;</span>
+  <span class="hljs-attr">publish</span> = &quot<span class="hljs-comment">;./subDir/output&quot;</span>
 </code></pre>
 <p>So, what's happening here?</p>
 <ul>

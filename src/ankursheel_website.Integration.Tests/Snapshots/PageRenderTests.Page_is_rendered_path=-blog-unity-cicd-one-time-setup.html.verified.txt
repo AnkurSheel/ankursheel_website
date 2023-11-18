@@ -137,24 +137,24 @@
 <ol>
 <li>Create a file named <code>.github/workflows/activation.yml</code> and add the following workflow definition:</li>
 </ol>
-<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> Acquire activation file  
+<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">Acquire</span> <span class="hljs-string">activation</span> <span class="hljs-string">file</span>  
 <span class="hljs-attr">on:</span>  
-<span class="hljs-attr">  workflow_dispatch:</span> {}  
+  <span class="hljs-attr">workflow_dispatch:</span> {}  
 <span class="hljs-attr">jobs:</span>  
-<span class="hljs-attr">  activation:</span>  
-<span class="hljs-attr">    name:</span> Request manual activation file 🔑  
-<span class="hljs-attr">    runs-on:</span> ubuntu-latest  
-<span class="hljs-attr">    steps:</span>  
+  <span class="hljs-attr">activation:</span>  
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Request</span> <span class="hljs-string">manual</span> <span class="hljs-string">activation</span> <span class="hljs-string">file</span> <span class="hljs-string">🔑</span>  
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>  
+    <span class="hljs-attr">steps:</span>  
       <span class="hljs-comment"># Request manual activation file  </span>
-<span class="hljs-attr">      - name:</span> Unity - Request Activation File  
-<span class="hljs-attr">        id:</span> getManualLicenseFile  
-<span class="hljs-attr">        uses:</span> game-ci/unity-request-activation-file&<span class="hljs-comment">#64;v2.0.0  </span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Unity</span> <span class="hljs-bullet">-</span> <span class="hljs-string">Request</span> <span class="hljs-string">Activation</span> <span class="hljs-string">File</span>  
+        <span class="hljs-attr">id:</span> <span class="hljs-string">getManualLicenseFile</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">game-ci/unity-request-activation-file&#64;v2.0.0</span>  
       <span class="hljs-comment"># Upload artifact (Unity_v20XX.X.XXXX.alf)  </span>
-<span class="hljs-attr">      - name:</span> Expose as artifact  
-<span class="hljs-attr">        uses:</span> actions/upload-artifact&<span class="hljs-comment">#64;v3</span>
-<span class="hljs-attr">        with:</span>  
-<span class="hljs-attr">          name:</span> ${{ steps.getManualLicenseFile.outputs.filePath }}  
-<span class="hljs-attr">          path:</span> ${{ steps.getManualLicenseFile.outputs.filePath }}
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Expose</span> <span class="hljs-string">as</span> <span class="hljs-string">artifact</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/upload-artifact&#64;v3</span>
+        <span class="hljs-attr">with:</span>  
+          <span class="hljs-attr">name:</span> <span class="hljs-string">${{</span> <span class="hljs-string">steps.getManualLicenseFile.outputs.filePath</span> <span class="hljs-string">}}</span>  
+          <span class="hljs-attr">path:</span> <span class="hljs-string">${{</span> <span class="hljs-string">steps.getManualLicenseFile.outputs.filePath</span> <span class="hljs-string">}}</span>
 </code></pre>
 <p>In this workflow, we use GameCI to request the activation file and upload it as an artifact. The <strong>workflow_dispatch</strong> event enables manual triggering of this workflow.</p>
 <ol start="2">

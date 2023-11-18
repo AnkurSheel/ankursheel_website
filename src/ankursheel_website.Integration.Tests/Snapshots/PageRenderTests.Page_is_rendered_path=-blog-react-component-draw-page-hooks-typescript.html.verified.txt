@@ -136,27 +136,27 @@
 <p>The first thing we need to do is to create a <strong>Canvas</strong> component.</p>
 <p>The canvas needs to take up some space that we will want any parent component to override, so we will add <code>width</code> and <code>height</code> as props.</p>
 <p>But, we want sensible defaults so that we don't have to add these props every time we want to use this component. So, we will add some <em>defaultProps</em> to set these values to <em>window.innerWidth</em> and <em>window.innerHeight</em> respectively.</p>
-<pre><code class="language-typescript hljs"><span class="hljs-keyword">import</span> React from <span class="hljs-string">'react'</span>;
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 
-<span class="hljs-keyword">interface</span> CanvasProps {
-    width: <span class="hljs-built_in">number</span>;
-    height: <span class="hljs-built_in">number</span>;
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">CanvasProps</span> {
+    <span class="hljs-attr">width</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>;
 }
 
-<span class="hljs-keyword">const</span> Canvas = ({ width, height }: CanvasProps) =&gt; {
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Canvas</span> = ({ width, height }: <span class="hljs-title class_">CanvasProps</span>) =&gt; {
     <span class="hljs-keyword">return</span> &lt;canvas height={height} width={width} /&gt;;
 };
 
-Canvas.defaultProps = {
-    width: <span class="hljs-built_in">window</span>.innerWidth,
-    height: <span class="hljs-built_in">window</span>.innerHeight,
+<span class="hljs-title class_">Canvas</span>.<span class="hljs-property">defaultProps</span> = {
+    <span class="hljs-attr">width</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerWidth</span>,
+    <span class="hljs-attr">height</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerHeight</span>,
 };
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Canvas;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">Canvas</span>;
 </code></pre>
 <h2 id="lets-draw">Lets Draw</h2>
 <p>Since we need to modify the canvas element, we will need to add a ref to it. We can do this using the <code>useRef</code> hook and changing our <em>canvas</em> element to set the ref.</p>
-<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> canvasRef = useRef &lt; HTMLCanvasElement &gt; <span class="hljs-literal">null</span>;
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> canvasRef = useRef &lt; <span class="hljs-title class_">HTMLCanvasElement</span> &gt; <span class="hljs-literal">null</span>;
 <span class="hljs-keyword">return</span> &lt;canvas ref={canvasRef} height={height} width={width} /&gt;;
 </code></pre>
 <h3 id="set-state">Set state</h3>
@@ -166,59 +166,59 @@ Canvas.defaultProps = {
 <li>whether we are painting or not.</li>
 </ul>
 <p>We can do this by adding the <code>useState</code> hook. We will also create a <code>Coordinate</code> type to help with keeping track of mouse positions.</p>
-<pre><code class="language-typescript hljs"><span class="hljs-keyword">type</span> Coordinate = {
-    x: <span class="hljs-built_in">number</span>;
-    y: <span class="hljs-built_in">number</span>;
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">type</span> <span class="hljs-title class_">Coordinate</span> = {
+    <span class="hljs-attr">x</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">y</span>: <span class="hljs-built_in">number</span>;
 };
 
-<span class="hljs-keyword">const</span> Canvas = ({ width, height }: CanvasProps) =&gt; {
-<span class="hljs-keyword">const</span> [isPainting, setIsPainting] = useState(<span class="hljs-literal">false</span>);
-<span class="hljs-keyword">const</span> [mousePosition, setMousePosition] = useState&lt;Coordinate | <span class="hljs-literal">undefined</span>&gt;(<span class="hljs-literal">undefined</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Canvas</span> = ({ width, height }: <span class="hljs-title class_">CanvasProps</span>) =&gt; {
+<span class="hljs-keyword">const</span> [isPainting, setIsPainting] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+<span class="hljs-keyword">const</span> [mousePosition, setMousePosition] = useState&lt;<span class="hljs-title class_">Coordinate</span> | <span class="hljs-literal">undefined</span>&gt;(<span class="hljs-literal">undefined</span>);
 <span class="hljs-comment">// ... other stuff here</span>
 </code></pre>
 <h3 id="start-drawing-when-the-mouse-is-pressed">Start drawing when the mouse is pressed.</h3>
 <p>We will add the event listener in the <code>useEffect</code> hook. If we have a valid reference to the canvas, we add an event listener to the <em>mouseDown</em> event. We also remove the event listener when we unmount.</p>
-<pre><code class="language-typescript hljs">useEffect(() =&gt; {
-    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+<pre><code class="language-typescript hljs"><span class="hljs-title function_">useEffect</span>(() =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.<span class="hljs-property">current</span>) {
         <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
-    canvas.addEventListener(<span class="hljs-string">'mousedown'</span>, startPaint);
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">canvas</span>: <span class="hljs-title class_">HTMLCanvasElement</span> = canvasRef.<span class="hljs-property">current</span>;
+    canvas.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'mousedown'</span>, startPaint);
     <span class="hljs-keyword">return</span> () =&gt; {
-        canvas.removeEventListener(<span class="hljs-string">'mousedown'</span>, startPaint);
+        canvas.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'mousedown'</span>, startPaint);
     };
 }, [startPaint]);
 </code></pre>
 <p><em>startPaint</em> needs to get the current coordinates of the mouse and set <code>isPainting</code> to true. We will also wrap it in a <code>useCallback</code> hook to use it inside the <code>useEffect</code> hook.</p>
-<pre><code class="language-typescript hljs"> <span class="hljs-keyword">const</span> startPaint = useCallback((event: MouseEvent) =&gt; {
-        <span class="hljs-keyword">const</span> coordinates = getCoordinates(event);
+<pre><code class="language-typescript hljs"> <span class="hljs-keyword">const</span> startPaint = <span class="hljs-title function_">useCallback</span>((<span class="hljs-attr">event</span>: <span class="hljs-title class_">MouseEvent</span>) =&gt; {
+        <span class="hljs-keyword">const</span> coordinates = <span class="hljs-title function_">getCoordinates</span>(event);
         <span class="hljs-keyword">if</span> (coordinates) {
-            setIsPainting(<span class="hljs-literal">true</span>);
-            setMousePosition(coordinates);
+            <span class="hljs-title function_">setIsPainting</span>(<span class="hljs-literal">true</span>);
+            <span class="hljs-title function_">setMousePosition</span>(coordinates);
         }
     }, []);
 
 <span class="hljs-comment">// ...other stuff here</span>
 
-<span class="hljs-keyword">const</span> getCoordinates = (event: MouseEvent): Coordinate | <span class="hljs-literal">undefined</span> =&gt; {
-    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+<span class="hljs-keyword">const</span> getCoordinates = (<span class="hljs-attr">event</span>: <span class="hljs-title class_">MouseEvent</span>): <span class="hljs-title class_">Coordinate</span> | <span class="hljs-literal">undefined</span> =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.<span class="hljs-property">current</span>) {
         <span class="hljs-keyword">return</span>;
     }
 
-    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
-    <span class="hljs-keyword">return</span> {event.pageX - canvas.offsetLeft, event.pageY - canvas.offsetTop};
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">canvas</span>: <span class="hljs-title class_">HTMLCanvasElement</span> = canvasRef.<span class="hljs-property">current</span>;
+    <span class="hljs-keyword">return</span> {event.<span class="hljs-property">pageX</span> - canvas.<span class="hljs-property">offsetLeft</span>, event.<span class="hljs-property">pageY</span> - canvas.<span class="hljs-property">offsetTop</span>};
 };
 </code></pre>
 <h3 id="draw-the-line-on-mouse-move">Draw the line on mouse move</h3>
 <p>Like the <em>mouseDown</em> event listener, we will use the _ useEffect` hook to add the _mousemove_ event.</p>
-<pre><code class="language-typescript hljs">useEffect(() =&gt; {
-    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+<pre><code class="language-typescript hljs"><span class="hljs-title function_">useEffect</span>(() =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.<span class="hljs-property">current</span>) {
         <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
-    canvas.addEventListener(<span class="hljs-string">'mousemove'</span>, paint);
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">canvas</span>: <span class="hljs-title class_">HTMLCanvasElement</span> = canvasRef.<span class="hljs-property">current</span>;
+    canvas.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'mousemove'</span>, paint);
     <span class="hljs-keyword">return</span> () =&gt; {
-        canvas.removeEventListener(<span class="hljs-string">'mousemove'</span>, paint);
+        canvas.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'mousemove'</span>, paint);
     };
 }, [paint]);
 </code></pre>
@@ -229,13 +229,13 @@ Canvas.defaultProps = {
 <li>Draw a line from the old coordinates to the new one by getting the rendering context from the canvas.</li>
 <li>Update the old coordinates.</li>
 </ul>
-<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> paint = useCallback(
-    (event: MouseEvent) =&gt; {
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> paint = <span class="hljs-title function_">useCallback</span>(
+    (<span class="hljs-attr">event</span>: <span class="hljs-title class_">MouseEvent</span>) =&gt; {
         <span class="hljs-keyword">if</span> (isPainting) {
-            <span class="hljs-keyword">const</span> newMousePosition = getCoordinates(event);
+            <span class="hljs-keyword">const</span> newMousePosition = <span class="hljs-title function_">getCoordinates</span>(event);
             <span class="hljs-keyword">if</span> (mousePosition &amp;&amp; newMousePosition) {
-                drawLine(mousePosition, newMousePosition);
-                setMousePosition(newMousePosition);
+                <span class="hljs-title function_">drawLine</span>(mousePosition, newMousePosition);
+                <span class="hljs-title function_">setMousePosition</span>(newMousePosition);
             }
         }
     },
@@ -244,44 +244,44 @@ Canvas.defaultProps = {
 
 <span class="hljs-comment">// ...other stuff here</span>
 
-<span class="hljs-keyword">const</span> drawLine = (originalMousePosition: Coordinate, newMousePosition: Coordinate) =&gt; {
-    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+<span class="hljs-keyword">const</span> drawLine = (<span class="hljs-attr">originalMousePosition</span>: <span class="hljs-title class_">Coordinate</span>, <span class="hljs-attr">newMousePosition</span>: <span class="hljs-title class_">Coordinate</span>) =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.<span class="hljs-property">current</span>) {
         <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
-    <span class="hljs-keyword">const</span> context = canvas.getContext(<span class="hljs-string">'2d'</span>);
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">canvas</span>: <span class="hljs-title class_">HTMLCanvasElement</span> = canvasRef.<span class="hljs-property">current</span>;
+    <span class="hljs-keyword">const</span> context = canvas.<span class="hljs-title function_">getContext</span>(<span class="hljs-string">'2d'</span>);
     <span class="hljs-keyword">if</span> (context) {
-        context.strokeStyle = <span class="hljs-string">'red'</span>;
-        context.lineJoin = <span class="hljs-string">'round'</span>;
-        context.lineWidth = <span class="hljs-number">5</span>;
+        context.<span class="hljs-property">strokeStyle</span> = <span class="hljs-string">'red'</span>;
+        context.<span class="hljs-property">lineJoin</span> = <span class="hljs-string">'round'</span>;
+        context.<span class="hljs-property">lineWidth</span> = <span class="hljs-number">5</span>;
 
-        context.beginPath();
-        context.moveTo(originalMousePosition.x, originalMousePosition.y);
-        context.lineTo(newMousePosition.x, newMousePosition.y);
-        context.closePath();
+        context.<span class="hljs-title function_">beginPath</span>();
+        context.<span class="hljs-title function_">moveTo</span>(originalMousePosition.<span class="hljs-property">x</span>, originalMousePosition.<span class="hljs-property">y</span>);
+        context.<span class="hljs-title function_">lineTo</span>(newMousePosition.<span class="hljs-property">x</span>, newMousePosition.<span class="hljs-property">y</span>);
+        context.<span class="hljs-title function_">closePath</span>();
 
-        context.stroke();
+        context.<span class="hljs-title function_">stroke</span>();
     }
 };
 </code></pre>
 <h3 id="stop-drawing-on-mouse-release">Stop drawing on mouse release</h3>
 <p>We want to stop drawing when either the user releases the mouse or moves the mouse out of the canvas area.</p>
-<pre><code class="language-typescript hljs">useEffect(() =&gt; {
-    <span class="hljs-keyword">if</span> (!canvasRef.current) {
+<pre><code class="language-typescript hljs"><span class="hljs-title function_">useEffect</span>(() =&gt; {
+    <span class="hljs-keyword">if</span> (!canvasRef.<span class="hljs-property">current</span>) {
         <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">const</span> canvas: HTMLCanvasElement = canvasRef.current;
-    canvas.addEventListener(<span class="hljs-string">'mouseup'</span>, exitPaint);
-    canvas.addEventListener(<span class="hljs-string">'mouseleave'</span>, exitPaint);
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">canvas</span>: <span class="hljs-title class_">HTMLCanvasElement</span> = canvasRef.<span class="hljs-property">current</span>;
+    canvas.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'mouseup'</span>, exitPaint);
+    canvas.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'mouseleave'</span>, exitPaint);
     <span class="hljs-keyword">return</span> () =&gt; {
-        canvas.removeEventListener(<span class="hljs-string">'mouseup'</span>, exitPaint);
-        canvas.removeEventListener(<span class="hljs-string">'mouseleave'</span>, exitPaint);
+        canvas.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'mouseup'</span>, exitPaint);
+        canvas.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'mouseleave'</span>, exitPaint);
     };
 }, [exitPaint]);
 </code></pre>
 <p>In <em>exitPaint</em>, we just set the <code>isPainting</code> to <code>false</code>.</p>
-<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> exitPaint = useCallback(() =&gt; {
-    setIsPainting(<span class="hljs-literal">false</span>);
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">const</span> exitPaint = <span class="hljs-title function_">useCallback</span>(() =&gt; {
+    <span class="hljs-title function_">setIsPainting</span>(<span class="hljs-literal">false</span>);
 }, []);
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>

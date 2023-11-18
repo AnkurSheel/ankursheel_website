@@ -139,17 +139,17 @@
 <p>If a class derives from the non-copyable base class, it too will be non-copyable. This is because the copy of an object of a derived class must necessarily invoke the copy constructor or the copy assignment operator of its base class.</p>
 <pre><code class="language-cpp hljs"><span class="hljs-keyword">namespace</span> Base
 {
-  <span class="hljs-keyword">class</span> cNonCopyable
+  <span class="hljs-keyword">class</span> <span class="hljs-title class_">cNonCopyable</span>
   {
   <span class="hljs-keyword">public</span>:
-    <span class="hljs-keyword">virtual</span> ~cNonCopyable(){}
+    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">cNonCopyable</span>(){}
 
   <span class="hljs-keyword">protected</span>:
-    cNonCopyable(){}
+    <span class="hljs-built_in">cNonCopyable</span>(){}
 
   <span class="hljs-keyword">private</span>:
-    cNonCopyable(<span class="hljs-keyword">const</span> cNonCopyable&amp;);
-    cNonCopyable&amp; <span class="hljs-keyword">operator</span> =(<span class="hljs-keyword">const</span> cNonCopyable&amp;);
+    <span class="hljs-built_in">cNonCopyable</span>(<span class="hljs-type">const</span> cNonCopyable&amp;);
+    cNonCopyable&amp; <span class="hljs-keyword">operator</span> =(<span class="hljs-type">const</span> cNonCopyable&amp;);
   };
 }
 </code></pre>

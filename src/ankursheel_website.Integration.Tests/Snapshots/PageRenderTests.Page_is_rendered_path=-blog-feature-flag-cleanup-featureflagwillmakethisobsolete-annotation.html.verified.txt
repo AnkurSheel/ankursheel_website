@@ -145,21 +145,21 @@
 </blockquote>
 <h2 id="introducing-the-featureflagwillmakethisobsolete-annotation">Introducing the FeatureFlagWillMakeThisObsolete Annotation</h2>
 <p>We can create a new annotation, <code>FeatureFlagWillMakeThisObsolete</code>, that makes the compiler complain if an unused method is not deleted. This annotation can be added to the code using a string argument corresponding to the feature flag name.</p>
-<pre><code class="language-java hljs">&#64;Retention(RetentionPolicy.SOURCE)  
-public &#64;interface FeatureFlagWillMakeThisObsolete {
-    String value();  
+<pre><code class="language-java hljs">&#<span class="hljs-number">64</span>;Retention(RetentionPolicy.SOURCE)  
+<span class="hljs-keyword">public</span> &#<span class="hljs-number">64</span>;<span class="hljs-keyword">interface</span> <span class="hljs-title class_">FeatureFlagWillMakeThisObsolete</span> {
+    String <span class="hljs-title function_">value</span><span class="hljs-params">()</span>;  
 }
 </code></pre>
 <p>Since we don't need the annotation at runtime, we can add the retention policy as Source. We also want to be able to annotate anything so we do not add the <code>&#64;Target</code> meta-annotation.</p>
 <p>Since we still have to pass in a constant string, you might think this is no better than the comment workaround above, and you would be correct.</p>
 <p>But if we refactor the flag name into a static final field, you can pass it into the annotation.</p>
 <p>Example</p>
-<pre><code class="language-java hljs">static final String MyFeatureFlagKey = &quot;feature.key&quot;;`
+<pre><code class="language-java hljs"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">String</span> <span class="hljs-variable">MyFeatureFlagKey</span> <span class="hljs-operator">=</span> &quot;feature.key&quot;;`
 
-&#64;FeatureFlagWillMakeThisObsolete(MyFeatureFlagKey)
-void deleteMe()
+&#<span class="hljs-number">64</span>;FeatureFlagWillMakeThisObsolete(MyFeatureFlagKey)
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">deleteMe</span><span class="hljs-params">()</span>
 {
-    // old code
+    <span class="hljs-comment">// old code</span>
 }
 </code></pre>
 <p>Now, at cleanup time, all we have to do is remove <code>MyFeatureFlagKey</code>, and the compiler will complain until we remove all instances where it was being used.</p>

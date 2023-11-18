@@ -132,18 +132,18 @@
 <p>In this tutorial, we will add subscriptions to our graphql server. We will create an <code>onPing</code> event that will send notifications whenever we ping the server with an input string.</p>
 <p>We will also use Redis that runs in a docker container, and see how we can listen to the events in a Redis command shell.</p>
 <h2 id="running-redis-using-docker">Running Redis using docker</h2>
-<pre><code class="language-bash hljs">docker run <span class="hljs-_">-d</span> --name=redis-graphql -p 6379:6379 redis:6.0-alpine
+<pre><code class="language-bash hljs">docker run -d --name=redis-graphql -p 6379:6379 redis:6.0-alpine
 </code></pre>
 <h2 id="adding-a-subscription">Adding a Subscription</h2>
 <p>We will add a new class Subscription which will have our <code>onPing</code> event.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Subscription</span> : <span class="hljs-title">ObjectType</span>
 {
-    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IObjectTypeDescriptor descriptor</span>)
-    </span>{
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IObjectTypeDescriptor descriptor</span>)</span>
+    {
         descriptor.Field(&quot;onPing&quot;)
             .Type&lt;NonNullType&lt;StringType&gt;&gt;()
-            .Resolve(ctx =&gt; ctx.GetEventMessage&lt;<span class="hljs-keyword">string</span>&gt;())
-            .Subscribe(<span class="hljs-keyword">async</span> ctx =&gt; <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventReceiver&gt;().SubscribeAsync&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">string</span>&gt;(&quot;onPing&quot;, ctx.RequestAborted));
+            .Resolve(ctx =&gt; ctx.GetEventMessage&lt;<span class="hljs-built_in">string</span>&gt;())
+            .Subscribe(<span class="hljs-keyword">async</span> ctx =&gt; <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventReceiver&gt;().SubscribeAsync&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">string</span>&gt;(&quot;onPing&quot;, ctx.RequestAborted));
     }
 }
 </code></pre>
@@ -154,15 +154,15 @@
 </ul>
 <p>To use subscriptions, we need to add the WebSockets middleware to our request pipeline.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-comment">// Startup.cs</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IApplicationBuilder app, IWebHostEnvironment env</span>)
-</span>{
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IApplicationBuilder app, IWebHostEnvironment env</span>)</span>
+{
     app.UseWebSockets();
 }
 </code></pre>
 <p><em>Note: Middleware order is important with .NET Core, so this middleware needs to come before the GraphQL middleware.</em></p>
 <p>Next, We need to register our subscriptions and set up the Redis subscription provider in the Startup class.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ConfigureServices</span>(<span class="hljs-params">IServiceCollection services</span>)
-</span>{
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ConfigureServices</span>(<span class="hljs-params">IServiceCollection services</span>)</span>
+{
     <span class="hljs-keyword">var</span> options = <span class="hljs-keyword">new</span> ConfigurationOptions
     {
         EndPoints = { &quot;localhost:<span class="hljs-number">6379</span>&quot; },
@@ -178,15 +178,15 @@
 <p>Our mutation needs to use <code>ITopicEventSender</code> to send messages to the underlying pub/sub system.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Mutation</span> : <span class="hljs-title">ObjectType</span>
 {
-    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IObjectTypeDescriptor descriptor</span>)
-    </span>{
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IObjectTypeDescriptor descriptor</span>)</span>
+    {
         descriptor.Field(&quot;ping&quot;)
             .Type&lt;NonNullType&lt;StringType&gt;&gt;()
             .Argument(&quot;payload&quot;, des =&gt; des.Type&lt;NonNullType&lt;StringType&gt;&gt;())
             .Resolve(
                 <span class="hljs-keyword">async</span> ctx =&gt;
                 {
-                    <span class="hljs-keyword">var</span> input = ctx.ArgumentValue&lt;<span class="hljs-keyword">string</span>&gt;(&quot;payload&quot;);
+                    <span class="hljs-keyword">var</span> input = ctx.ArgumentValue&lt;<span class="hljs-built_in">string</span>&gt;(&quot;payload&quot;);
 
                     <span class="hljs-keyword">await</span> ctx.Service&lt;ITopicEventSender&gt;().SendAsync(&quot;onPing&quot;, input);
                     <span class="hljs-keyword">return</span> input;
@@ -206,9 +206,9 @@
 </code></pre>
 <p><img src="/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/redis_docker_interactive_shell.png" alt="Subscribing to the topic in an interactive shell for redis"></p>
 <p>In Insomnia (or your IDE of choice), add the following mutation.</p>
-<pre><code class="language-graphql">mutation {
-    ping(payload: &quot;hello&quot;)
-}
+<pre><code class="language-graphql hljs"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
+    ping<span class="hljs-punctuation">(</span><span class="hljs-symbol">payload</span><span class="hljs-punctuation">:</span> &quot;hello&quot;<span class="hljs-punctuation">)</span>
+<span class="hljs-punctuation">}</span>
 </code></pre>
 <p>On execution, we should see the following responses.</p>
 <p><img src="/assets/images/posts/implement-graqhql-subscriptions-hotchocolate-redis/mutation.png" alt="Mutation and response"></p>

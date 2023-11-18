@@ -156,9 +156,9 @@
 <li>Copy the <em>wp-config-sample.php</em> to <em>wp-config.php</em>.</li>
 <li>Open <em>wp-config.php</em> for editing and update the following settings.</li>
 </ul>
-<pre><code class="language-php hljs">define(<span class="hljs-string">'DB_NAME'</span>, <span class="hljs-string">'database_name_here'</span>);
-define(<span class="hljs-string">'DB_USER'</span>, <span class="hljs-string">'username_here'</span>);.
-define(<span class="hljs-string">'DB_PASSWORD'</span>, <span class="hljs-string">'password_here'</span>);.
+<pre><code class="language-php hljs"><span class="hljs-title function_ invoke__">define</span>(<span class="hljs-string">'DB_NAME'</span>, <span class="hljs-string">'database_name_here'</span>);
+<span class="hljs-title function_ invoke__">define</span>(<span class="hljs-string">'DB_USER'</span>, <span class="hljs-string">'username_here'</span>);.
+<span class="hljs-title function_ invoke__">define</span>(<span class="hljs-string">'DB_PASSWORD'</span>, <span class="hljs-string">'password_here'</span>);.
 </code></pre>
 <ul>
 <li>In the browser, navigate to <em>http://localhost:8080/wordpress</em>.</li>

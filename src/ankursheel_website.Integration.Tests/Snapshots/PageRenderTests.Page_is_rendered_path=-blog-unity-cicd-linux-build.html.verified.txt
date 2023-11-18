@@ -135,23 +135,23 @@
 <p>Why Linux? Its the cheapest box. As we will see in later posts, different platforms need different VM for deployment. I am looking at you iOS.</p>
 <p>Let's kick things off with creating a new workflow definition <code>.github/workflows/buildWithLinux.yml</code>:</p>
 <h2 id="defining-the-workflow">Defining the Workflow</h2>
-<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> Build with Linux  
+<pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">with</span> <span class="hljs-string">Linux</span>  
 <span class="hljs-attr">on:</span>  
-<span class="hljs-attr">  workflow_call:</span>   
-<span class="hljs-attr">    inputs:</span>   
-<span class="hljs-attr">      platform:</span>  
-<span class="hljs-attr">        required:</span> <span class="hljs-literal">true</span>  
-<span class="hljs-attr">        type:</span> string  
-<span class="hljs-attr">      secrets:</span>  
-<span class="hljs-attr">        UNITY_EMAIL:</span>  
-<span class="hljs-attr">          required:</span> <span class="hljs-literal">true</span>  
-<span class="hljs-attr">        UNITY_PASSWORD:</span>  
-<span class="hljs-attr">          required:</span> <span class="hljs-literal">true</span>  
-<span class="hljs-attr">        UNITY_LICENSE:</span>  
-<span class="hljs-attr">          required:</span> <span class="hljs-literal">true</span>  
-<span class="hljs-attr">    outputs:</span>  
-<span class="hljs-attr">      buildVersion:</span>  
-<span class="hljs-attr">        value:</span> ${{ jobs.buildWithLinux.outputs.buildVersion }} 
+  <span class="hljs-attr">workflow_call:</span>   
+    <span class="hljs-attr">inputs:</span>   
+      <span class="hljs-attr">platform:</span>  
+        <span class="hljs-attr">required:</span> <span class="hljs-literal">true</span>  
+        <span class="hljs-attr">type:</span> <span class="hljs-string">string</span>  
+      <span class="hljs-attr">secrets:</span>  
+        <span class="hljs-attr">UNITY_EMAIL:</span>  
+          <span class="hljs-attr">required:</span> <span class="hljs-literal">true</span>  
+        <span class="hljs-attr">UNITY_PASSWORD:</span>  
+          <span class="hljs-attr">required:</span> <span class="hljs-literal">true</span>  
+        <span class="hljs-attr">UNITY_LICENSE:</span>  
+          <span class="hljs-attr">required:</span> <span class="hljs-literal">true</span>  
+    <span class="hljs-attr">outputs:</span>  
+      <span class="hljs-attr">buildVersion:</span>  
+        <span class="hljs-attr">value:</span> <span class="hljs-string">${{</span> <span class="hljs-string">jobs.buildWithLinux.outputs.buildVersion</span> <span class="hljs-string">}}</span> 
 </code></pre>
 <ul>
 <li><strong>on</strong>: In this section, we specify the events that trigger our CI/CD workflow.
@@ -174,41 +174,41 @@
 <h2 id="inside-the-linux-build-job">Inside the Linux Build Job</h2>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">jobs:</span>  
   
-<span class="hljs-attr">  buildWithLinux:</span>  
-<span class="hljs-attr">    name:</span> Build in Linux for ${{ inputs.platform }}  
-<span class="hljs-attr">    runs-on:</span> ubuntu-latest  
-<span class="hljs-attr">    outputs:</span>  
-<span class="hljs-attr">      buildVersion:</span> ${{ steps.build.outputs.buildVersion }}  
-<span class="hljs-attr">      steps:</span>  
-<span class="hljs-attr">      - name:</span> Checkout Repository  
-<span class="hljs-attr">        uses:</span> actions/checkout&<span class="hljs-comment">#64;v3  </span>
-<span class="hljs-attr">        with:</span>  
-<span class="hljs-attr">          fetch-depth:</span> <span class="hljs-number">0</span>  
-<span class="hljs-attr">          lfs:</span> <span class="hljs-literal">true</span>  
+  <span class="hljs-attr">buildWithLinux:</span>  
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">in</span> <span class="hljs-string">Linux</span> <span class="hljs-string">for</span> <span class="hljs-string">${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>  
+    <span class="hljs-attr">outputs:</span>  
+      <span class="hljs-attr">buildVersion:</span> <span class="hljs-string">${{</span> <span class="hljs-string">steps.build.outputs.buildVersion</span> <span class="hljs-string">}}</span>  
+      <span class="hljs-attr">steps:</span>  
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">Repository</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout&#64;v3</span>  
+        <span class="hljs-attr">with:</span>  
+          <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span>  
+          <span class="hljs-attr">lfs:</span> <span class="hljs-literal">true</span>  
   
-<span class="hljs-attr">      - name:</span> Cache Library  
-<span class="hljs-attr">        uses:</span> actions/cache&<span class="hljs-comment">#64;v3  </span>
-<span class="hljs-attr">        with:</span>  
-<span class="hljs-attr">          path:</span> Library  
-<span class="hljs-attr">          key:</span> Library-build-${{ inputs.platform }}  
-<span class="hljs-attr">          restore-keys:</span> <span class="hljs-string">|  
-            Library-build- $<span class="hljs-template-variable">{{ inputs.platform }}</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Cache</span> <span class="hljs-string">Library</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/cache&#64;v3</span>  
+        <span class="hljs-attr">with:</span>  
+          <span class="hljs-attr">path:</span> <span class="hljs-string">Library</span>  
+          <span class="hljs-attr">key:</span> <span class="hljs-string">Library-build-${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
+          <span class="hljs-attr">restore-keys:</span> <span class="hljs-string">|  
+            Library-build- ${{ inputs.platform }}
             Library-    
-</span><span class="hljs-attr">      - name:</span> Build Unity Project  
-<span class="hljs-attr">        id:</span> build  
-<span class="hljs-attr">        uses:</span> game-ci/unity-builder&<span class="hljs-comment">#64;v3  </span>
-<span class="hljs-attr">        env:</span>  
-<span class="hljs-attr">          UNITY_EMAIL:</span> ${{ secrets.UNITY_EMAIL }}  
-<span class="hljs-attr">          UNITY_PASSWORD:</span> ${{ secrets.UNITY_PASSWORD }}  
-<span class="hljs-attr">          UNITY_LICENSE:</span> ${{ secrets.UNITY_LICENSE }}  
-<span class="hljs-attr">        with:</span>  
-<span class="hljs-attr">          targetPlatform:</span> ${{ inputs.platform }}  
+</span>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">Unity</span> <span class="hljs-string">Project</span>  
+        <span class="hljs-attr">id:</span> <span class="hljs-string">build</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">game-ci/unity-builder&#64;v3</span>  
+        <span class="hljs-attr">env:</span>  
+          <span class="hljs-attr">UNITY_EMAIL:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_EMAIL</span> <span class="hljs-string">}}</span>  
+          <span class="hljs-attr">UNITY_PASSWORD:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_PASSWORD</span> <span class="hljs-string">}}</span>  
+          <span class="hljs-attr">UNITY_LICENSE:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_LICENSE</span> <span class="hljs-string">}}</span>  
+        <span class="hljs-attr">with:</span>  
+          <span class="hljs-attr">targetPlatform:</span> <span class="hljs-string">${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
   
-<span class="hljs-attr">      - name:</span> Upload Build  
-<span class="hljs-attr">        uses:</span> actions/upload-artifact&<span class="hljs-comment">#64;v3  </span>
-<span class="hljs-attr">        with:</span>  
-<span class="hljs-attr">          name:</span> build-${{ inputs.platform }}  
-<span class="hljs-attr">          path:</span> build/${{ inputs.platform }}
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Upload</span> <span class="hljs-string">Build</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/upload-artifact&#64;v3</span>  
+        <span class="hljs-attr">with:</span>  
+          <span class="hljs-attr">name:</span> <span class="hljs-string">build-${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
+          <span class="hljs-attr">path:</span> <span class="hljs-string">build/${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>
 </code></pre>
 <p>Here's a breakdown of what's happening in this job:</p>
 <ul>

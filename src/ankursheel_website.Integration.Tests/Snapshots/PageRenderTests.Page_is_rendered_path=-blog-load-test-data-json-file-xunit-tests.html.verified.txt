@@ -148,17 +148,17 @@
 <p>For the Advent of Code test input, we would have to have a lot of parameters. We could reduce the number of parameters required to just one as it's just a single(albeit large) list of the same type. However, I could not figure out how to structure my JSON so that it could be parsed easily.</p>
 <h2 id="improvements">Improvements</h2>
 <p>Let us start by creating a new generic class that takes 2 different underlying types - 1 for the Data and 1 for the Result class. This class will be used to deserialize the JSON data.</p>
-<pre><code class="language-csharp hljs">class TestObject&lt;T1, T2&gt;
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">class</span> <span class="hljs-title">TestObject</span>&<span class="hljs-title">lt</span>;T1, T2&gt;
 {
-    public List&lt;T1&gt; Data { get; set; }
+    <span class="hljs-keyword">public</span> List&lt;T1&gt; Data { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
 
-    public T2 Result { get; set; }
+    <span class="hljs-keyword">public</span> T2 Result { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
 }
 </code></pre>
 <p>Now, let's modify our attribute class. <em>For brevity, I am just showing the relevant code here. For the whole file, please see <a href="https://github.com/AnkurSheel/xUnitHelpers/blob/master/xUnitHelpers/JsonFileDataAttribute.cs">here</a></em>.</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">JsonFileDataAttribute</span> : <span class="hljs-title">DataAttribute</span>
 {
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> IEnumerable&lt;<span class="hljs-keyword">object</span>[]&gt; GetData(MethodInfo testMethod)
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> IEnumerable&lt;<span class="hljs-built_in">object</span>[]&gt; GetData(MethodInfo testMethod)
     {
         <span class="hljs-comment">// fileData is the raw file data</span>
         <span class="hljs-comment">// _dataType and _resultType are set in the constructor and are the types for the input data and the result</span>
@@ -167,11 +167,11 @@
         <span class="hljs-keyword">var</span> generic = <span class="hljs-keyword">typeof</span>(List&lt;&gt;).MakeGenericType(specific);
 
         <span class="hljs-keyword">var</span> jsonData = JObject.Parse(fileData);
-        <span class="hljs-keyword">dynamic</span> datalist = JsonConvert.DeserializeObject(jsonData, generic);
-        <span class="hljs-keyword">var</span> objectList = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">object</span>[]&gt;();
+        <span class="hljs-built_in">dynamic</span> datalist = JsonConvert.DeserializeObject(jsonData, generic);
+        <span class="hljs-keyword">var</span> objectList = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">object</span>[]&gt;();
         <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> data <span class="hljs-keyword">in</span> datalist)
         {
-            objectList.Add(<span class="hljs-keyword">new</span> <span class="hljs-keyword">object</span>[] {data.Data, data.Result});
+            objectList.Add(<span class="hljs-keyword">new</span> <span class="hljs-built_in">object</span>[] {data.Data, data.Result});
         }
         <span class="hljs-keyword">return</span> objectList;
     }
@@ -186,10 +186,10 @@
 <li>Add all the data into a list of objects and return it</li>
 </ol>
 <p>This allows us to write our tests in the following manner.</p>
-<pre><code class="language-csharp hljs">[Theory]
-[JsonFileData(&quot;testData.json&quot;, &quot;Part1&quot;, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span>), <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">int</span>))]
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params">List&lt;<span class="hljs-keyword">string</span>&gt; data, <span class="hljs-keyword">int</span> expectedResult</span>)
-</span>{
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">Theory</span>]
+[<span class="hljs-meta">JsonFileData(&quot;testData.json&quot;, &quot;Part1&quot;, typeof(string), typeof(int))</span>]
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params">List&lt;<span class="hljs-built_in">string</span>&gt; data, <span class="hljs-built_in">int</span> expectedResult</span>)</span>
+{
     <span class="hljs-keyword">var</span> result = TestThisMethod(data);
     Assert.Equal(expectedResult, result);
 }

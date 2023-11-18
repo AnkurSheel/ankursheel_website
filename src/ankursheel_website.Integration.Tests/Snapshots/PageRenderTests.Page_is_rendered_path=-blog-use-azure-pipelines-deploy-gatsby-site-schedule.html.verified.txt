@@ -143,31 +143,31 @@
 <pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">'Daily Release'</span>
 
 <span class="hljs-attr">schedules:</span>
-<span class="hljs-attr">    - cron:</span> <span class="hljs-string">'0 14 * * *'</span>
-<span class="hljs-attr">      displayName:</span> Daily build
-<span class="hljs-attr">      branches:</span>
-<span class="hljs-attr">          include:</span>
-<span class="hljs-bullet">              -</span> master
-<span class="hljs-attr">      always:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">cron:</span> <span class="hljs-string">'0 14 * * *'</span>
+      <span class="hljs-attr">displayName:</span> <span class="hljs-string">Daily</span> <span class="hljs-string">build</span>
+      <span class="hljs-attr">branches:</span>
+          <span class="hljs-attr">include:</span>
+              <span class="hljs-bullet">-</span> <span class="hljs-string">master</span>
+      <span class="hljs-attr">always:</span> <span class="hljs-literal">true</span>
 
 <span class="hljs-attr">trigger:</span>
-<span class="hljs-attr">    batch:</span> <span class="hljs-literal">false</span>
-<span class="hljs-attr">    branches:</span>
-<span class="hljs-attr">        exclude:</span>
-<span class="hljs-bullet">            -</span> <span class="hljs-string">'*'</span>
+    <span class="hljs-attr">batch:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-attr">branches:</span>
+        <span class="hljs-attr">exclude:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-string">'*'</span>
 
-<span class="hljs-attr">pr:</span> none
+<span class="hljs-attr">pr:</span> <span class="hljs-string">none</span>
 
 <span class="hljs-attr">variables:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.vars.yml
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.vars.yml</span>
 
 <span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
-<span class="hljs-attr">      parameters:</span>
-<span class="hljs-attr">          deployScriptParams:</span> <span class="hljs-string">'--prod'</span>
-<span class="hljs-attr">          netlifySiteId:</span> $(netlify.siteId)
-<span class="hljs-attr">          netlifyToken:</span> $(netlify.token)
-<span class="hljs-attr">          message:</span> <span class="hljs-string">'Daily build'</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.common.yml</span>
+      <span class="hljs-attr">parameters:</span>
+          <span class="hljs-attr">deployScriptParams:</span> <span class="hljs-string">'--prod'</span>
+          <span class="hljs-attr">netlifySiteId:</span> <span class="hljs-string">$(netlify.siteId)</span>
+          <span class="hljs-attr">netlifyToken:</span> <span class="hljs-string">$(netlify.token)</span>
+          <span class="hljs-attr">message:</span> <span class="hljs-string">'Daily build'</span>
 </code></pre>
 <ol>
 <li><strong><em>name</em></strong>: The name for this pipeline.</li>

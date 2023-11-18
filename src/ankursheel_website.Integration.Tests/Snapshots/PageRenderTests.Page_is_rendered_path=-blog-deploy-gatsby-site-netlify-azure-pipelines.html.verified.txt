@@ -152,25 +152,25 @@
 <h3 id="common-job-to-build-gatsby-site">Common Job to Build Gatsby Site</h3>
 <p>In <em>azure-pipelines.common.yaml</em>, we create the job to build the gatsby site.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - job:</span> Build
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">job:</span> <span class="hljs-string">Build</span>
 
-<span class="hljs-attr">      pool:</span>
-<span class="hljs-attr">          vmImage:</span> <span class="hljs-string">'ubuntu-latest'</span>
+      <span class="hljs-attr">pool:</span>
+          <span class="hljs-attr">vmImage:</span> <span class="hljs-string">'ubuntu-latest'</span>
 
-<span class="hljs-attr">      steps:</span>
-<span class="hljs-attr">          - checkout:</span> self
-<span class="hljs-attr">            lfs:</span> <span class="hljs-literal">true</span>
+      <span class="hljs-attr">steps:</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-attr">checkout:</span> <span class="hljs-string">self</span>
+            <span class="hljs-attr">lfs:</span> <span class="hljs-literal">true</span>
 
-<span class="hljs-attr">          - task:</span> NodeTool&<span class="hljs-comment">#64;&#64;0</span>
-<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Install Node.js'</span>
-<span class="hljs-attr">            inputs:</span>
-<span class="hljs-attr">                versionSpec:</span> <span class="hljs-string">'10.x'</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-attr">task:</span> <span class="hljs-string">NodeTool&#64;&#64;0</span>
+            <span class="hljs-attr">displayName:</span> <span class="hljs-string">'Install Node.js'</span>
+            <span class="hljs-attr">inputs:</span>
+                <span class="hljs-attr">versionSpec:</span> <span class="hljs-string">'10.x'</span>
 
-<span class="hljs-attr">          - script:</span> yarn install
-<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Install dependencies'</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-attr">script:</span> <span class="hljs-string">yarn</span> <span class="hljs-string">install</span>
+            <span class="hljs-attr">displayName:</span> <span class="hljs-string">'Install dependencies'</span>
 
-<span class="hljs-attr">          - script:</span> yarn build
-<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Build Gatsby'</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-attr">script:</span> <span class="hljs-string">yarn</span> <span class="hljs-string">build</span>
+            <span class="hljs-attr">displayName:</span> <span class="hljs-string">'Build Gatsby'</span>
 </code></pre>
 <p>We name the job as <em>Build</em> and use the default <em>ubuntu-latest</em> image. This is followed by a series of steps.</p>
 <ol>
@@ -184,15 +184,15 @@
 <pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">'Live'</span>
 
 <span class="hljs-attr">trigger:</span>
-<span class="hljs-attr">    batch:</span> <span class="hljs-literal">false</span>
-<span class="hljs-attr">    branches:</span>
-<span class="hljs-attr">        include:</span>
-<span class="hljs-bullet">            -</span> master
+    <span class="hljs-attr">batch:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-attr">branches:</span>
+        <span class="hljs-attr">include:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-string">master</span>
 
-<span class="hljs-attr">pr:</span> none
+<span class="hljs-attr">pr:</span> <span class="hljs-string">none</span>
 
 <span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.common.yml</span>
 </code></pre>
 <ol>
 <li><strong><em>name</em></strong>: The name for this pipeline.</li>
@@ -214,16 +214,16 @@
 <pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">'PR $(System.PullRequest.PullRequestId)'</span>
 
 <span class="hljs-attr">trigger:</span>
-<span class="hljs-attr">    branches:</span>
-<span class="hljs-attr">        exclude:</span>
-<span class="hljs-bullet">            -</span> <span class="hljs-string">'*'</span>
+    <span class="hljs-attr">branches:</span>
+        <span class="hljs-attr">exclude:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-string">'*'</span>
 <span class="hljs-attr">pr:</span>
-<span class="hljs-attr">    autoCancel:</span> <span class="hljs-literal">false</span>
-<span class="hljs-attr">    branches:</span>
-<span class="hljs-attr">        include:</span>
-<span class="hljs-bullet">            -</span> master
+    <span class="hljs-attr">autoCancel:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-attr">branches:</span>
+        <span class="hljs-attr">include:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-string">master</span>
 
-<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.common.yml</span>
 </code></pre>
 <ol>
 <li><strong><em>name</em></strong>: The name for this pipeline.</li>
@@ -249,26 +249,26 @@
 <p>To deploy to Netlify, we need a few variables passed to the template as parameters and then passed as flags to the Netlify deploy command.</p>
 <p>First, let's see what changes we need to make to the template <em>azure-pipelines.common.yml</em>. The updated lines are highlighted.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">parameters:</span>
-<span class="hljs-attr">    deployScriptParams:</span> <span class="hljs-string">''</span> <span class="hljs-comment"># defaults for any parameters that aren't specified</span>
-<span class="hljs-attr">    netlifySiteId:</span> <span class="hljs-string">'defaultID'</span>
-<span class="hljs-attr">    netlifyToken:</span> <span class="hljs-string">'defaultToken'</span>
-<span class="hljs-attr">    message:</span> <span class="hljs-string">''</span>
+    <span class="hljs-attr">deployScriptParams:</span> <span class="hljs-string">''</span> <span class="hljs-comment"># defaults for any parameters that aren't specified</span>
+    <span class="hljs-attr">netlifySiteId:</span> <span class="hljs-string">'defaultID'</span>
+    <span class="hljs-attr">netlifyToken:</span> <span class="hljs-string">'defaultToken'</span>
+    <span class="hljs-attr">message:</span> <span class="hljs-string">''</span>
 
 <span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - job:</span> Build_And_Deploy
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">job:</span> <span class="hljs-string">Build_And_Deploy</span>
 
-<span class="hljs-attr">      pool:</span>
-<span class="hljs-attr">          vmImage:</span> <span class="hljs-string">'ubuntu-latest'</span>
+      <span class="hljs-attr">pool:</span>
+          <span class="hljs-attr">vmImage:</span> <span class="hljs-string">'ubuntu-latest'</span>
 
-<span class="hljs-attr">      steps:</span>
+      <span class="hljs-attr">steps:</span>
           <span class="hljs-comment">#unchanged from before</span>
 
-<span class="hljs-attr">          - script:</span> yarn build
-<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Build Gatsby'</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-attr">script:</span> <span class="hljs-string">yarn</span> <span class="hljs-string">build</span>
+            <span class="hljs-attr">displayName:</span> <span class="hljs-string">'Build Gatsby'</span>
 
           <span class="hljs-comment"># prettier-ignore</span>
-<span class="hljs-attr">          - script:</span> yarn netlify deploy --site ${{ parameters.netlifySiteId }} --auth ${{ parameters.netlifyToken }} --message <span class="hljs-string">'$<span class="hljs-template-variable">{{ parameters.message }}</span>'</span> ${{ parameters.deployScriptParams }} --dir=public
-<span class="hljs-attr">            displayName:</span> <span class="hljs-string">'Deploy to Netlify'</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-attr">script:</span> <span class="hljs-string">yarn</span> <span class="hljs-string">netlify</span> <span class="hljs-string">deploy</span> <span class="hljs-string">--site</span> <span class="hljs-string">${{</span> <span class="hljs-string">parameters.netlifySiteId</span> <span class="hljs-string">}}</span> <span class="hljs-string">--auth</span> <span class="hljs-string">${{</span> <span class="hljs-string">parameters.netlifyToken</span> <span class="hljs-string">}}</span> <span class="hljs-string">--message</span> <span class="hljs-string">'$<span class="hljs-template-variable">{{ parameters.message }}</span>'</span> <span class="hljs-string">${{</span> <span class="hljs-string">parameters.deployScriptParams</span> <span class="hljs-string">}}</span> <span class="hljs-string">--dir=public</span>
+            <span class="hljs-attr">displayName:</span> <span class="hljs-string">'Deploy to Netlify'</span>
 </code></pre>
 <ol>
 <li><strong><em>parameters</em></strong>: The environment variables to pass as flags to the Netlify deploy command.
@@ -288,15 +288,15 @@
 <p>Now we update <em>azure-piplelines.ci.yaml</em> for the live build.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-comment"># unchanged from before</span>
 <span class="hljs-attr">variables:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.vars.yml
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.vars.yml</span>
 
 <span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
-<span class="hljs-attr">      parameters:</span>
-<span class="hljs-attr">          deployScriptParams:</span> <span class="hljs-string">'--prod'</span>
-<span class="hljs-attr">          netlifySiteId:</span> $(netlify.siteId)
-<span class="hljs-attr">          netlifyToken:</span> $(netlify.token)
-<span class="hljs-attr">          message:</span> <span class="hljs-string">'Live $(Build.SourceVersion) $(Build.SourceVersionMessage)'</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.common.yml</span>
+      <span class="hljs-attr">parameters:</span>
+          <span class="hljs-attr">deployScriptParams:</span> <span class="hljs-string">'--prod'</span>
+          <span class="hljs-attr">netlifySiteId:</span> <span class="hljs-string">$(netlify.siteId)</span>
+          <span class="hljs-attr">netlifyToken:</span> <span class="hljs-string">$(netlify.token)</span>
+          <span class="hljs-attr">message:</span> <span class="hljs-string">'Live $(Build.SourceVersion) $(Build.SourceVersionMessage)'</span>
 </code></pre>
 <ol>
 <li><strong><em>variables</em></strong>: We set a template file to get the environment variables.</li>
@@ -312,14 +312,14 @@
 <p>Next <em>azure-piplelines.pr.yaml</em> for the PR builds.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-comment"># unchanged from before</span>
 <span class="hljs-attr">variables:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.vars.yml
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.vars.yml</span>
 
 <span class="hljs-attr">jobs:</span>
-<span class="hljs-attr">    - template:</span> azure-pipelines.common.yml
-<span class="hljs-attr">      parameters:</span>
-<span class="hljs-attr">          netlifySiteId:</span> $(netlify.siteId)
-<span class="hljs-attr">          netlifyToken:</span> $(netlify.token)
-<span class="hljs-attr">          message:</span> <span class="hljs-string">'PR $(System.PullRequest.PullRequestNumber) $(System.PullRequest.SourceBranch) $(Build.SourceVersionMessage)'</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">template:</span> <span class="hljs-string">azure-pipelines.common.yml</span>
+      <span class="hljs-attr">parameters:</span>
+          <span class="hljs-attr">netlifySiteId:</span> <span class="hljs-string">$(netlify.siteId)</span>
+          <span class="hljs-attr">netlifyToken:</span> <span class="hljs-string">$(netlify.token)</span>
+          <span class="hljs-attr">message:</span> <span class="hljs-string">'PR $(System.PullRequest.PullRequestNumber) $(System.PullRequest.SourceBranch) $(Build.SourceVersionMessage)'</span>
 </code></pre>
 <ol>
 <li><strong><em>variables</em></strong>: We set a template file to get the environment variables.</li>

@@ -131,7 +131,7 @@
 <h2 id="solution">Solution</h2>
 <p>This happens because <code>.gitignore</code> prevents files from being added but does not actively remove the ones already tracked.</p>
 <p>To stop tracking a file (but not delete it), you need to remove it from the index. This can be achieved with this command.</p>
-<pre><code class="language-bash hljs">git rm -r --cached &lt;filename&gt;
+<pre><code class="language-bash hljs">git <span class="hljs-built_in">rm</span> -r --cached &lt;filename&gt;
 </code></pre>
 <ul>
 <li><strong><em>git rm</em></strong>: the command that lets us remove tracked changes.</li>

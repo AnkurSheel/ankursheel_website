@@ -131,7 +131,7 @@
 <p>This post will show how we can update the author after making a few commits with incorrect details.</p>
 <h2 id="solution">Solution</h2>
 <p>First, we need to update our gitconfig with the author details.</p>
-<pre><code class="language-txt">[user]
+<pre><code class="language-txt hljs">[user]
 name = author_name
 email = author_email
 </code></pre>

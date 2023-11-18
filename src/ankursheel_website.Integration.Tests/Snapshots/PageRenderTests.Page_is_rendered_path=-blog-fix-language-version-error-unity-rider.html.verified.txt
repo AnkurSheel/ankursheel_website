@@ -129,7 +129,7 @@
 
 <h2 id="problem">Problem</h2>
 <p>On building a project created with Unity 2021.3 in Rider, you get a language version error which looks similar to</p>
-<pre><code class="language-lsl hljs">Invalid option '<span class="hljs-number">9.0</span>' for /langversion; must be ISO<span class="hljs-number">-1</span>, ISO<span class="hljs-number">-2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> or Default
+<pre><code class="language-bash hljs">Invalid option <span class="hljs-string">'9.0'</span> <span class="hljs-keyword">for</span> /langversion; must be ISO-1, ISO-2, 3, 4, 5 or Default
 </code></pre>
 <p>However, you don't see any errors when building inside the unity editor.</p>
 <h2 id="solution">Solution</h2>
