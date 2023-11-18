@@ -129,22 +129,22 @@
 
 <p>In this snippet, I will be showing how to calculate the reading time for a given string.</p>
 <p>First, we will create a new data structure to hold the reading time. It contains the number of words and the minutes and seconds to read the post.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> record ReadingTimeData
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title">ReadingTimeData</span>
 {
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ReadingTimeData</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> minutes, <span class="hljs-keyword">int</span> seconds, <span class="hljs-keyword">int</span> words</span>)
-    </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ReadingTimeData</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> minutes, <span class="hljs-built_in">int</span> seconds, <span class="hljs-built_in">int</span> words</span>)</span>
+    {
         Minutes = minutes;
         Seconds = seconds;
         Words = words;
     }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Minutes { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> Minutes { <span class="hljs-keyword">get</span>; }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Seconds { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> Seconds { <span class="hljs-keyword">get</span>; }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Words { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> Words { <span class="hljs-keyword">get</span>; }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> RoundedMinutes
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> RoundedMinutes
         =&gt; Seconds &lt; <span class="hljs-number">30</span>
             ? Minutes
             : Minutes + <span class="hljs-number">1</span>;
@@ -154,8 +154,8 @@
 <li><strong><em>RoundedMinutes</em></strong> is the rounded time to make things simpler for a reader. Anything less than 30 seconds gets ignored, and anything more than 30 seconds gets rounded up to the next minute.</li>
 </ul>
 <p>Now, we can calculate the reading time and fill in the ReadingTimeData.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> ReadingTimeData <span class="hljs-title">GetReadingTime</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> content, <span class="hljs-keyword">int</span> wordsPerMinute</span>)
-</span>{
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> ReadingTimeData <span class="hljs-title">GetReadingTime</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> content, <span class="hljs-built_in">int</span> wordsPerMinute</span>)</span>
+{
     <span class="hljs-keyword">const</span> Regex SpacesRegex = <span class="hljs-keyword">new</span> Regex(&quot;\S+&quot;, RegexOptions.Multiline);
     <span class="hljs-keyword">var</span> words = SpacesRegex.Matches(content).Count;
 

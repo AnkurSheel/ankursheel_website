@@ -150,23 +150,23 @@
 <li>Use the <strong>Insert Headers and Footers plugin</strong> and add it under the <strong>Scripts in header</strong> tab.</li>
 <li>Modify functions.php in your <strong>child theme</strong> and paste the following code.</li>
 </ol>
-<pre><code class="language-php hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sp_google_analytics_tracking_code</span><span class="hljs-params">()</span> </span>{
+<pre><code class="language-php hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sp_google_analytics_tracking_code</span>(<span class="hljs-params"></span>) </span>{
     ?&gt;
     &lt;script type=&quot;text/javascript&quot;&gt;
         <span class="hljs-keyword">var</span> _gaq = _gaq || [];
-        _gaq.push([<span class="hljs-string">'_setAccount'</span>, <span class="hljs-string">'UA-45876690-1'</span>]);
-        _gaq.push([<span class="hljs-string">'_trackPageview'</span>]);
-            (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">var</span> ga = document.createElement(<span class="hljs-string">'script'</span>); ga.type = <span class="hljs-string">'text/javascript'</span>; ga.async = <span class="hljs-keyword">true</span>;
+        _gaq.<span class="hljs-title function_ invoke__">push</span>([<span class="hljs-string">'_setAccount'</span>, <span class="hljs-string">'UA-45876690-1'</span>]);
+        _gaq.<span class="hljs-title function_ invoke__">push</span>([<span class="hljs-string">'_trackPageview'</span>]);
+            (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> ga = document.<span class="hljs-title function_ invoke__">createElement</span>(<span class="hljs-string">'script'</span>); ga.type = <span class="hljs-string">'text/javascript'</span>; ga.async = <span class="hljs-literal">true</span>;
         ga.src = (<span class="hljs-string">'https:'</span> == document.location.protocol ? <span class="hljs-string">'https://ssl'</span> : <span class="hljs-string">'http://www'</span>) + <span class="hljs-string">'.google-analytics.com/ga.js'</span>;
-        <span class="hljs-keyword">var</span> s = document.getElementsByTagName(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>]; s.parentNode.insertBefore(ga, s);
+        <span class="hljs-keyword">var</span> s = document.<span class="hljs-title function_ invoke__">getElementsByTagName</span>(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>]; s.parentNode.<span class="hljs-title function_ invoke__">insertBefore</span>(ga, s);
         })();
     &lt;/script&gt;
     &lt;?php
 }
 
 <span class="hljs-comment">// include GA tracking code before the closing head tag</span>
-add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string">'sp_google_analytics_tracking_code'</span>);
+<span class="hljs-title function_ invoke__">add_action</span>(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string">'sp_google_analytics_tracking_code'</span>);
 </code></pre>
 </li>
 </ol>
@@ -187,13 +187,13 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
 </ol>
 <h2 id="create-an-html-page-to-create-a-cookie-excluder">Create an Html page to create a cookie excluder</h2>
 <p>Create a new Html file and paste the following code.</p>
-<pre><code class="language-html hljs">&lt;meta http-equiv=&quot;”Content-Type”&quot; content=&quot;”text/html;&quot; charset=&quot;iso-8859-1?&quot; /&gt;google analytics cookie excluder
-&lt;!-- prevents indexing of this page by search engines --&gt;&lt;meta name=&quot;ROBOTS&quot; content=&quot;NOINDEX,NOFOLLOW&quot; /&gt;&lt;script
-    type=&quot;text/javascript&quot;
-&gt;
-    // &lt;![CDATA[
+<pre><code class="language-html hljs"><span class="hljs-symbol">&lt;</span>meta http-equiv=<span class="hljs-symbol">&quot;</span>”Content-Type”<span class="hljs-symbol">&quot;</span> content=<span class="hljs-symbol">&quot;</span>”text/html;<span class="hljs-symbol">&quot;</span> charset=<span class="hljs-symbol">&quot;</span>iso-8859-1?<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>google analytics cookie excluder
+<span class="hljs-symbol">&lt;</span>!-- prevents indexing of this page by search engines --<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>meta name=<span class="hljs-symbol">&quot;</span>ROBOTS<span class="hljs-symbol">&quot;</span> content=<span class="hljs-symbol">&quot;</span>NOINDEX,NOFOLLOW<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>script
+    type=<span class="hljs-symbol">&quot;</span>text/javascript<span class="hljs-symbol">&quot;</span>
+<span class="hljs-symbol">&gt;</span>
+    // <span class="hljs-symbol">&lt;</span>![CDATA[
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '&lt;em&gt;&lt;strong&gt;UA-XXXXXXXX-X&lt;/strong&gt;&lt;/em&gt;']);
+    _gaq.push(['_setAccount', '<span class="hljs-symbol">&lt;</span>em<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>strong<span class="hljs-symbol">&gt;</span>UA-XXXXXXXX-X<span class="hljs-symbol">&lt;</span>/strong<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>/em<span class="hljs-symbol">&gt;</span>']);
     _gaq.push(['_setVar', 'no_report']);
     _gaq.push(['_trackPageview']);
     (function() {
@@ -204,24 +204,24 @@ add_action(<span class="hljs-string">'wp_head'</span>, <span class="hljs-string"
             ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
-    })();&lt;/script
-    // ]]&gt;
-&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;
-&lt;div align=&quot;center&quot;&gt;
-    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
-        &lt;tbody&gt;
-            &lt;tr&gt;
-                &lt;td&gt;
-                    &lt;div align=&quot;center&quot;&gt;
-                        &lt;span style=&quot;font-size: xx-large;&quot;
-                            &gt;&lt;span style=&quot;color: #ff6600;&quot;&gt;google analytics cookie excluder&lt;/span&gt;&lt;/span
-                        &gt;
-                    &lt;/div&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/div&gt;
+    })();<span class="hljs-symbol">&lt;</span>/script
+    // ]]<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>meta name=<span class="hljs-symbol">&quot;</span>robots<span class="hljs-symbol">&quot;</span> content=<span class="hljs-symbol">&quot;</span>noindex<span class="hljs-symbol">&quot;</span> /<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>div align=<span class="hljs-symbol">&quot;</span>center<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>table width=<span class="hljs-symbol">&quot;</span>100%<span class="hljs-symbol">&quot;</span> border=<span class="hljs-symbol">&quot;</span>0<span class="hljs-symbol">&quot;</span> cellspacing=<span class="hljs-symbol">&quot;</span>0<span class="hljs-symbol">&quot;</span> cellpadding=<span class="hljs-symbol">&quot;</span>0<span class="hljs-symbol">&quot;</span> align=<span class="hljs-symbol">&quot;</span>center<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>
+        <span class="hljs-symbol">&lt;</span>tbody<span class="hljs-symbol">&gt;</span>
+            <span class="hljs-symbol">&lt;</span>tr<span class="hljs-symbol">&gt;</span>
+                <span class="hljs-symbol">&lt;</span>td<span class="hljs-symbol">&gt;</span>
+                    <span class="hljs-symbol">&lt;</span>div align=<span class="hljs-symbol">&quot;</span>center<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>
+                        <span class="hljs-symbol">&lt;</span>span style=<span class="hljs-symbol">&quot;</span>font-size: xx-large;<span class="hljs-symbol">&quot;</span>
+                            <span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>span style=<span class="hljs-symbol">&quot;</span>color: #ff6600;<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>google analytics cookie excluder<span class="hljs-symbol">&lt;</span>/span<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>/span
+                        <span class="hljs-symbol">&gt;</span>
+                    <span class="hljs-symbol">&lt;</span>/div<span class="hljs-symbol">&gt;</span>
+                <span class="hljs-symbol">&lt;</span>/td<span class="hljs-symbol">&gt;</span>
+            <span class="hljs-symbol">&lt;</span>/tr<span class="hljs-symbol">&gt;</span>
+        <span class="hljs-symbol">&lt;</span>/tbody<span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>/table<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/div<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <ol>
 <li>In the above code, change _UA-XXXXXXXX-X _to the tracking id.</li>

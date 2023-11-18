@@ -151,29 +151,29 @@
 </ul>
 <p>You need to set the <strong>Content-Encoding</strong> header for each file extension to <strong>br</strong> so that the browser knows how to decompress the files.</p>
 <p>You can do this by creating a <strong>netlify.toml</strong> file at the root if you don't have one already and adding the following snippet to it.</p>
-<pre><code class="language-toml hljs">[[headers]]
-  for = &quot;/Build/*.data.br&quot;
-  [headers.values]
-    Content-Encoding = &quot;br&quot;
-    Content-Type = &quot;application/octet-stream&quot;
+<pre><code class="language-toml hljs"><span class="hljs-section">[[headers]]</span>
+  <span class="hljs-attr">for</span> = &quot<span class="hljs-comment">;/Build/*.data.br&quot;</span>
+  <span class="hljs-section">[headers.values]</span>
+    <span class="hljs-attr">Content-Encoding</span> = &quot<span class="hljs-comment">;br&quot;</span>
+    <span class="hljs-attr">Content-Type</span> = &quot<span class="hljs-comment">;application/octet-stream&quot;</span>
 
-[[headers]]
-  for = &quot;/Build/*.wasm.br&quot;
-  [headers.values]
-    Content-Encoding = &quot;br&quot;
-    Content-Type = &quot;application/wasm&quot;
+<span class="hljs-section">[[headers]]</span>
+  <span class="hljs-attr">for</span> = &quot<span class="hljs-comment">;/Build/*.wasm.br&quot;</span>
+  <span class="hljs-section">[headers.values]</span>
+    <span class="hljs-attr">Content-Encoding</span> = &quot<span class="hljs-comment">;br&quot;</span>
+    <span class="hljs-attr">Content-Type</span> = &quot<span class="hljs-comment">;application/wasm&quot;</span>
 
-[[headers]]
-  for = &quot;/Build/*.js&quot;
-  [headers.values]
-    Content-Encoding = &quot;js&quot;
-    Content-Type = &quot;application/javascript&quot;
+<span class="hljs-section">[[headers]]</span>
+  <span class="hljs-attr">for</span> = &quot<span class="hljs-comment">;/Build/*.js&quot;</span>
+  <span class="hljs-section">[headers.values]</span>
+    <span class="hljs-attr">Content-Encoding</span> = &quot<span class="hljs-comment">;js&quot;</span>
+    <span class="hljs-attr">Content-Type</span> = &quot<span class="hljs-comment">;application/javascript&quot;</span>
 
-[[headers]]
-  for = &quot;/Build/*.js.br&quot;
-  [headers.values]
-    Content-Encoding = &quot;br&quot;
-    Content-Type = &quot;application/javascript&quot;
+<span class="hljs-section">[[headers]]</span>
+  <span class="hljs-attr">for</span> = &quot<span class="hljs-comment">;/Build/*.js.br&quot;</span>
+  <span class="hljs-section">[headers.values]</span>
+    <span class="hljs-attr">Content-Encoding</span> = &quot<span class="hljs-comment">;br&quot;</span>
+    <span class="hljs-attr">Content-Type</span> = &quot<span class="hljs-comment">;application/javascript&quot;</span>
 </code></pre>
 <ul>
 <li><strong>for</strong>: The path where the headers will be added.</li>

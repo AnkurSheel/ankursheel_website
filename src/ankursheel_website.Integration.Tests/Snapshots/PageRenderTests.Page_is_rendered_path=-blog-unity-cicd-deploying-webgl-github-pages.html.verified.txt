@@ -140,16 +140,16 @@
 <h2 id="job-1-building-for-webgl">Job 1: Building for WebGL</h2>
 <p>This job uses our reusable workflow to generate the files needed for hosting the game on a web server.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">buildForWebGL:</span>
-<span class="hljs-attr">  name:</span> Build for WebGL
-<span class="hljs-attr">  needs:</span> test
-<span class="hljs-attr">  if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span> || github.event.action == <span class="hljs-string">'published'</span> || (contains(github.event.inputs.release_platform, <span class="hljs-string">'release'</span>) &amp;&amp; contains(github.event.inputs.release_platform, <span class="hljs-string">'WebGL'</span>))
-<span class="hljs-attr">  uses:</span> ./.github/workflows/buildWithLinux.yml
-<span class="hljs-attr">  with:</span>
-<span class="hljs-attr">    platform:</span> WebGL
-<span class="hljs-attr">    secrets:</span>
-<span class="hljs-attr">      UNITY_EMAIL:</span> ${{ secrets.UNITY_EMAIL }}
-<span class="hljs-attr">      UNITY_PASSWORD:</span> ${{ secrets.UNITY_PASSWORD }}
-<span class="hljs-attr">      UNITY_LICENSE:</span> ${{ secrets.UNITY_LICENSE }}
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">for</span> <span class="hljs-string">WebGL</span>
+  <span class="hljs-attr">needs:</span> <span class="hljs-string">test</span>
+  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span> <span class="hljs-string">||</span> <span class="hljs-string">github.event.action</span> <span class="hljs-string">==</span> <span class="hljs-string">'published'</span> <span class="hljs-string">||</span> <span class="hljs-string">(contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'release'</span><span class="hljs-string">)</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'WebGL'</span><span class="hljs-string">))</span>
+  <span class="hljs-attr">uses:</span> <span class="hljs-string">./.github/workflows/buildWithLinux.yml</span>
+  <span class="hljs-attr">with:</span>
+    <span class="hljs-attr">platform:</span> <span class="hljs-string">WebGL</span>
+    <span class="hljs-attr">secrets:</span>
+      <span class="hljs-attr">UNITY_EMAIL:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_EMAIL</span> <span class="hljs-string">}}</span>
+      <span class="hljs-attr">UNITY_PASSWORD:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_PASSWORD</span> <span class="hljs-string">}}</span>
+      <span class="hljs-attr">UNITY_LICENSE:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_LICENSE</span> <span class="hljs-string">}}</span>
 </code></pre>
 <ul>
 <li><strong>needs</strong>: This step relies on the successful completion of the <code>test</code> job, introduced back in Part 2.</li>
@@ -169,49 +169,49 @@
 <h2 id="job-2-deploying-to-github-pages">Job 2: Deploying to GitHub Pages</h2>
 <p>This job copies the WebGL artifact to the correct location for <a href="https://pages.github.com/">GitHub Pages</a>. Once copied, it triggers a GitHub Pages deployment.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">buildForWebGL:</span>
-<span class="hljs-attr">  name:</span> Build for WebGL
-<span class="hljs-attr">  needs:</span> test
-<span class="hljs-attr">  if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span> || github.event.action == <span class="hljs-string">'published'</span> || (contains(github.event.inputs.release_platform, <span class="hljs-string">'release'</span>) &amp;&amp; contains(github.event.inputs.release_platform, <span class="hljs-string">'WebGL'</span>))
-<span class="hljs-attr">  uses:</span> ./.github/workflows/buildWithLinux.yml
-<span class="hljs-attr">  with:</span>
-<span class="hljs-attr">    platform:</span> WebGL
-<span class="hljs-attr">  secrets:</span>
-<span class="hljs-attr">    UNITY_EMAIL:</span> ${{ secrets.UNITY_EMAIL }}
-<span class="hljs-attr">    UNITY_PASSWORD:</span> ${{ secrets.UNITY_PASSWORD }}
-<span class="hljs-attr">    UNITY_LICENSE:</span> ${{ secrets.UNITY_LICENSE }}
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">for</span> <span class="hljs-string">WebGL</span>
+  <span class="hljs-attr">needs:</span> <span class="hljs-string">test</span>
+  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span> <span class="hljs-string">||</span> <span class="hljs-string">github.event.action</span> <span class="hljs-string">==</span> <span class="hljs-string">'published'</span> <span class="hljs-string">||</span> <span class="hljs-string">(contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'release'</span><span class="hljs-string">)</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'WebGL'</span><span class="hljs-string">))</span>
+  <span class="hljs-attr">uses:</span> <span class="hljs-string">./.github/workflows/buildWithLinux.yml</span>
+  <span class="hljs-attr">with:</span>
+    <span class="hljs-attr">platform:</span> <span class="hljs-string">WebGL</span>
+  <span class="hljs-attr">secrets:</span>
+    <span class="hljs-attr">UNITY_EMAIL:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_EMAIL</span> <span class="hljs-string">}}</span>
+    <span class="hljs-attr">UNITY_PASSWORD:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_PASSWORD</span> <span class="hljs-string">}}</span>
+    <span class="hljs-attr">UNITY_LICENSE:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_LICENSE</span> <span class="hljs-string">}}</span>
 
 <span class="hljs-attr">deployToGitHubPages:</span>
-<span class="hljs-attr">  name:</span> Deploy to GitHub Pages
-<span class="hljs-attr">  runs-on:</span> ubuntu-latest
-<span class="hljs-attr">  needs:</span> buildForWebGL
-<span class="hljs-attr">  if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span> || github.event.action == <span class="hljs-string">'published'</span> || (contains(github.event.inputs.release_platform, <span class="hljs-string">'release'</span>) &amp;&amp; contains(github.event.inputs.release_platform, <span class="hljs-string">'WebGL'</span>))
-<span class="hljs-attr">  steps:</span>
-<span class="hljs-attr">    - name:</span> Echo Build Version
-<span class="hljs-attr">      run:</span> echo ${{ needs.buildForWebGL.outputs.buildVersion }}
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
+  <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+  <span class="hljs-attr">needs:</span> <span class="hljs-string">buildForWebGL</span>
+  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span> <span class="hljs-string">||</span> <span class="hljs-string">github.event.action</span> <span class="hljs-string">==</span> <span class="hljs-string">'published'</span> <span class="hljs-string">||</span> <span class="hljs-string">(contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'release'</span><span class="hljs-string">)</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'WebGL'</span><span class="hljs-string">))</span>
+  <span class="hljs-attr">steps:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Echo</span> <span class="hljs-string">Build</span> <span class="hljs-string">Version</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">echo</span> <span class="hljs-string">${{</span> <span class="hljs-string">needs.buildForWebGL.outputs.buildVersion</span> <span class="hljs-string">}}</span>
 
-<span class="hljs-attr">    - name:</span> Checkout Repository
-<span class="hljs-attr">      uses:</span> actions/checkout&<span class="hljs-comment">#64;v3</span>
-<span class="hljs-attr">      with:</span>
-<span class="hljs-attr">        fetch-depth:</span> <span class="hljs-number">0</span>
-<span class="hljs-attr">        lfs:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">Repository</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout&#64;v3</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span>
+        <span class="hljs-attr">lfs:</span> <span class="hljs-literal">false</span>
 
-<span class="hljs-attr">    - name:</span> Download WebGL Artifact
-<span class="hljs-attr">      uses:</span> actions/download-artifact&<span class="hljs-comment">#64;v3</span>
-<span class="hljs-attr">      with:</span>
-<span class="hljs-attr">        name:</span> build-WebGL
-<span class="hljs-attr">        path:</span> build/WebGL
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Download</span> <span class="hljs-string">WebGL</span> <span class="hljs-string">Artifact</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/download-artifact&#64;v3</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">name:</span> <span class="hljs-string">build-WebGL</span>
+        <span class="hljs-attr">path:</span> <span class="hljs-string">build/WebGL</span>
 
-<span class="hljs-attr">    - name:</span> Deploy to GitHub Pages
-<span class="hljs-attr">      uses:</span> JamesIves/github-pages-deploy-action&<span class="hljs-comment">#64;v4</span>
-<span class="hljs-attr">      with:</span>
-<span class="hljs-attr">        folder:</span> build/WebGL/WebGL
-<span class="hljs-attr">        commit-message:</span> Deploy
-<span class="hljs-attr">        single-commit:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">JamesIves/github-pages-deploy-action&#64;v4</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">folder:</span> <span class="hljs-string">build/WebGL/WebGL</span>
+        <span class="hljs-attr">commit-message:</span> <span class="hljs-string">Deploy</span>
+        <span class="hljs-attr">single-commit:</span> <span class="hljs-literal">true</span>
 
-<span class="hljs-attr">    - name:</span> Cleanup to avoid storage limit
-<span class="hljs-attr">      uses:</span> geekyeggo/delete-artifact&<span class="hljs-comment">#64;v2</span>
-<span class="hljs-attr">      with:</span>
-<span class="hljs-attr">        name:</span> build-WebGL
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Cleanup</span> <span class="hljs-string">to</span> <span class="hljs-string">avoid</span> <span class="hljs-string">storage</span> <span class="hljs-string">limit</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">geekyeggo/delete-artifact&#64;v2</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">name:</span> <span class="hljs-string">build-WebGL</span>
 </code></pre>
 <ul>
 <li><strong>needs</strong>: This job depends on the successful completion of the <code>buildForWebGL</code> job.</li>

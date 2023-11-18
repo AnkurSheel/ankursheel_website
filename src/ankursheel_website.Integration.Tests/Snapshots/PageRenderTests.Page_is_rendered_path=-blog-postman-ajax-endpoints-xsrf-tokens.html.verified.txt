@@ -159,11 +159,11 @@
 </ol>
 <h2 id="what-does-the-application-look-like">What does the application look like?</h2>
 <p>Our application is built in ASP.NET and uses Razor pages. One of the ways that we can add an anti-forgery token to a Razor page is by using the <code>&#64;&#64;Html.AntiForgeryToken()</code> helper function inside a form. All this does is add a hidden form field containing the token. The form field that is added is similar to</p>
-<pre><code class="language-html hljs">&lt;input
-    name=&quot;__RequestVerificationToken&quot;
-    type=&quot;hidden&quot;
-    value=&quot;HCT7cStZ5BVk3sFWdlYRsaPN2K2xUHwRc-AAEn1tIq02yWO1QSUuAiNuH4pCg6M7JgV3xZjysixJHhkqoGhOTTG8bgk0H3VWi5XpJgntnt2uc-xXwXwSOta9hBNMJQxo5JznbmiBtxPkwSx-GqxXsw2&quot;
-/&gt;
+<pre><code class="language-html hljs"><span class="hljs-symbol">&lt;</span>input
+    name=<span class="hljs-symbol">&quot;</span>__RequestVerificationToken<span class="hljs-symbol">&quot;</span>
+    type=<span class="hljs-symbol">&quot;</span>hidden<span class="hljs-symbol">&quot;</span>
+    value=<span class="hljs-symbol">&quot;</span>HCT7cStZ5BVk3sFWdlYRsaPN2K2xUHwRc-AAEn1tIq02yWO1QSUuAiNuH4pCg6M7JgV3xZjysixJHhkqoGhOTTG8bgk0H3VWi5XpJgntnt2uc-xXwXwSOta9hBNMJQxo5JznbmiBtxPkwSx-GqxXsw2<span class="hljs-symbol">&quot;</span>
+/<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <p>Note the name of the hidden input - <strong><em>__RequestVerificationToken</em></strong>. We will need it later.</p>
 <p>We are also going to assume that the URL with the form is <em>http://localhost/page</em>. When the user presses the submit button, it posts to <em>http://localhost/page-ajax-action</em>. The form on the page itself has two fields <em>FirstName</em> and <em>LastName</em></p>
@@ -177,17 +177,17 @@
 <h3 id="set-the-anti-forgery-token-variable">Set the anti-forgery token variable</h3>
 <p>Now since the anti-forgery token is generated for every request, we can use a Pre-request script to set the value of the <em>xsrf-token</em> environment variable every time we want to hit the ajax endpoint.</p>
 <p>This is what our pre-request script will look like</p>
-<pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> url = pm.environment.get(<span class="hljs-string">'baseurl'</span>);
-pm.sendRequest(<span class="hljs-string">`<span class="hljs-subst">${url}</span>/login`</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, response</span>) </span>{
+<pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> url = pm.<span class="hljs-property">environment</span>.<span class="hljs-title function_">get</span>(<span class="hljs-string">'baseurl'</span>);
+pm.<span class="hljs-title function_">sendRequest</span>(<span class="hljs-string">`<span class="hljs-subst">${url}</span>/login`</span>, <span class="hljs-keyword">function</span> (<span class="hljs-params">err, response</span>) {
     <span class="hljs-keyword">if</span> (err) {
-        <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.error(err);
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err);
     } <span class="hljs-keyword">else</span> {
-        <span class="hljs-keyword">var</span> body = response.text();
-        <span class="hljs-keyword">const</span> html = cheerio(body);
-        <span class="hljs-keyword">var</span> allInputs = html.find(<span class="hljs-string">'input[name=&quot;__RequestVerificationToken&quot;]'</span>);
-        <span class="hljs-keyword">var</span> input = allInputs.first();
-        <span class="hljs-keyword">var</span> token = input.val();
-        pm.environment.set(<span class="hljs-string">'xsrf-token'</span>, token);
+        <span class="hljs-keyword">var</span> body = response.<span class="hljs-title function_">text</span>();
+        <span class="hljs-keyword">const</span> html = <span class="hljs-title function_">cheerio</span>(body);
+        <span class="hljs-keyword">var</span> allInputs = html.<span class="hljs-title function_">find</span>(<span class="hljs-string">'input[name=&quot;__RequestVerificationToken&quot;]'</span>);
+        <span class="hljs-keyword">var</span> input = allInputs.<span class="hljs-title function_">first</span>();
+        <span class="hljs-keyword">var</span> token = input.<span class="hljs-title function_">val</span>();
+        pm.<span class="hljs-property">environment</span>.<span class="hljs-title function_">set</span>(<span class="hljs-string">'xsrf-token'</span>, token);
     }
 });
 </code></pre>

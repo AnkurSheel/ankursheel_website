@@ -128,7 +128,7 @@
 </div>
 
 <p>If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Seasons
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">public</span> <span class="hljs-built_in">enum</span> Seasons
 {
     Unknown,
     Spring,

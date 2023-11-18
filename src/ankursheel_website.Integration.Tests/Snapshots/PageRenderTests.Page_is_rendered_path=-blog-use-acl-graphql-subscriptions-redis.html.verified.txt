@@ -165,8 +165,8 @@
 <p>This tells Redis that we want to use an external aclfile found at <em>/usr/local/etc/redis/</em>.</p>
 <h2 id="updating-hot-chocolate-to-use-a-custom-user">Updating Hot Chocolate to use a custom user</h2>
 <p>In our <em>Startup.cs</em> class, we need to update the configuration options to set the user for the Redis server. We also set the channelPrefix as the graphpqlSubscriptionUser only has access to <em>graphql_subscriptions</em> channel.</p>
-<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ConfigureServices</span>(<span class="hljs-params">IServiceCollection services</span>)
-</span>{
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ConfigureServices</span>(<span class="hljs-params">IServiceCollection services</span>)</span>
+{
     <span class="hljs-keyword">var</span> options = <span class="hljs-keyword">new</span> ConfigurationOptions
             {
                 EndPoints = { &quot;localhost:<span class="hljs-number">6379</span>&quot; },
@@ -182,12 +182,12 @@
 }
 </code></pre>
 <h2 id="adding-a-docker-compose-file">Adding a docker compose file</h2>
-<pre><code class="language-dockerfile hljs">version: <span class="hljs-string">'3'</span>
+<pre><code class="language-dockerfile">version: '3'
 services:
   redis:
-    image: redis:<span class="hljs-number">6.2</span>-alpine
+    image: redis:6.2-alpine
     ports:
-      - &quot;<span class="hljs-number">6379</span>:<span class="hljs-number">6379</span>&quot;
+      - &quot;6379:6379&quot;
     volumes:
       - ./redis.conf:/usr/local/etc/redis/redis.conf
       - ./users.acl:/usr/local/etc/redis/users.acl

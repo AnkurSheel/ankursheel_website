@@ -129,16 +129,16 @@
 <!-- https://unsplash.com/s/photos/ubuntu -->
 <p>It is helpful to log the shell commands being executed when running a bash script (especially when debugging it).</p>
 <p>As an example, we will use this bash file.</p>
-<pre><code class="language-bash hljs"><span class="hljs-meta">#!/bin/bash  
-  </span>
+<pre><code class="language-bash hljs"><span class="hljs-meta">#!/bin/bash  </span>
+  
 Name=&quot;Ankur&quot;  
   
 <span class="hljs-built_in">echo</span> <span class="hljs-variable">$Name</span>  
-ls | wc <span class="hljs-_">-l</span>
+<span class="hljs-built_in">ls</span> | <span class="hljs-built_in">wc</span> -l
 </code></pre>
 <p>When we execute this script, we can see this as the output.</p>
-<pre><code class="language-lsl hljs">Ankur
-<span class="hljs-number">10</span>
+<pre><code class="language-undefined hljs">Ankur
+10
 </code></pre>
 <h2 id="solution-1">Solution 1</h2>
 <p>You can use <code>set -v</code> in the shell script.</p>
@@ -148,14 +148,14 @@ ls | wc <span class="hljs-_">-l</span>
 Name=&quot;Ankur&quot;  
   
 <span class="hljs-built_in">echo</span> <span class="hljs-variable">$Name</span>  
-ls | wc <span class="hljs-_">-l</span>
+<span class="hljs-built_in">ls</span> | <span class="hljs-built_in">wc</span> -l
 </code></pre>
 <p>On running this script, we can see</p>
 <pre><code class="language-bash hljs">Name=&quot;Ankur&quot;  
 
 <span class="hljs-built_in">echo</span> <span class="hljs-variable">$Name</span>
 Ankur
-ls | wc <span class="hljs-_">-l</span>
+<span class="hljs-built_in">ls</span> | <span class="hljs-built_in">wc</span> -l
 10
 </code></pre>
 <p><em>Note: You can turn off this behaviour by using <code>set +v</code>.</em></p>
@@ -168,14 +168,14 @@ ls | wc <span class="hljs-_">-l</span>
 Name=&quot;Ankur&quot;  
   
 <span class="hljs-built_in">echo</span> <span class="hljs-variable">$Name</span>  
-ls | wc <span class="hljs-_">-l</span>
+<span class="hljs-built_in">ls</span> | <span class="hljs-built_in">wc</span> -l
 </code></pre>
 <p>On running this script, we can see</p>
-<pre><code class="language-markdown hljs"><span class="hljs-bullet">+ </span>Name=Ankur
-<span class="hljs-bullet">+ </span>echo Ankur
+<pre><code class="language-diff hljs"><span class="hljs-addition">+ Name=Ankur</span>
+<span class="hljs-addition">+ echo Ankur</span>
 Ankur
-<span class="hljs-bullet">+ </span>ls
-<span class="hljs-bullet">+ </span>wc -l
+<span class="hljs-addition">+ ls</span>
+<span class="hljs-addition">+ wc -l</span>
 10
 </code></pre>
 <p><em>Note: To turn off this behaviour, you can use <code>set +x</code>.</em></p>

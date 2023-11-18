@@ -136,27 +136,27 @@
 <h2 id="steps">Steps</h2>
 <p>Let's use CSS to display an iframe with 100% width and 16:9 aspect ratio.</p>
 <p>When embedding a video from YouTube, we get a snippet of code similar to</p>
-<pre><code class="language-html hljs">&lt;iframe
-    width=&quot;560&quot;
-    height=&quot;315&quot;
-    src=&quot;https://www.youtube.com/embed/RcnksOUugcA&quot;
-    frameborder=&quot;0&quot;
-    allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot;
+<pre><code class="language-html hljs"><span class="hljs-symbol">&lt;</span>iframe
+    width=<span class="hljs-symbol">&quot;</span>560<span class="hljs-symbol">&quot;</span>
+    height=<span class="hljs-symbol">&quot;</span>315<span class="hljs-symbol">&quot;</span>
+    src=<span class="hljs-symbol">&quot;</span>https://www.youtube.com/embed/RcnksOUugcA<span class="hljs-symbol">&quot;</span>
+    frameborder=<span class="hljs-symbol">&quot;</span>0<span class="hljs-symbol">&quot;</span>
+    allow=<span class="hljs-symbol">&quot;</span>accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture<span class="hljs-symbol">&quot;</span>
     allowfullscreen
-&gt;&lt;/iframe&gt;
+<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>/iframe<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h3 id="step-1">Step 1</h3>
 <p>Remove all unnecessary properties, including <em><strong>width</strong></em> and <em><strong>height</strong></em>. Our snippet now becomes</p>
-<pre><code class="language-html hljs">&lt;iframe src=&quot;https://www.youtube.com/embed/RcnksOUugcA&quot; allowfullscreen&gt;&lt;/iframe&gt;
+<pre><code class="language-html hljs"><span class="hljs-symbol">&lt;</span>iframe src=<span class="hljs-symbol">&quot;</span>https://www.youtube.com/embed/RcnksOUugcA<span class="hljs-symbol">&quot;</span> allowfullscreen<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>/iframe<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h3 id="step-2">Step 2</h3>
 <ol>
 <li>Add a container with a CSS class around the iframe.</li>
 <li>Add a CSS class to the iframe.</li>
 </ol>
-<pre><code class="language-html hljs">&lt;div class=&quot;video-container&quot;&gt;
-    &lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/RcnksOUugcA&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+<pre><code class="language-html hljs"><span class="hljs-symbol">&lt;</span>div class=<span class="hljs-symbol">&quot;</span>video-container<span class="hljs-symbol">&quot;</span><span class="hljs-symbol">&gt;</span>
+    <span class="hljs-symbol">&lt;</span>iframe class=<span class="hljs-symbol">&quot;</span>video<span class="hljs-symbol">&quot;</span> src=<span class="hljs-symbol">&quot;</span>https://www.youtube.com/embed/RcnksOUugcA<span class="hljs-symbol">&quot;</span> allowfullscreen<span class="hljs-symbol">&gt;</span><span class="hljs-symbol">&lt;</span>/iframe<span class="hljs-symbol">&gt;</span>
+<span class="hljs-symbol">&lt;</span>/div<span class="hljs-symbol">&gt;</span>
 </code></pre>
 <h3 id="step-3">Step 3</h3>
 <p>Add CSS to the container.</p>

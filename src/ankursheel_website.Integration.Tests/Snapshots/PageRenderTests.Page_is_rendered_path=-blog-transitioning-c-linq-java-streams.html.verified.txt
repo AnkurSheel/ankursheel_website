@@ -134,7 +134,7 @@ While the core concepts bear similarities, unravelling the nuances of syntax and
 <h2 id="select-map">Select / map</h2>
 <p>Transforms each element of a sequence based on a given function.</p>
 <h3 id="c">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> squaredNumbers = numbers.Select(x =&gt; x * x).ToList();
 </code></pre>
 <h3 id="java">Java</h3>
@@ -144,12 +144,12 @@ List&lt;Integer&gt; squaredNumbers = numbers.stream()
                                       .collect(Collectors.toList());
 </code></pre>
 <h3 id="output">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 4, 9, 16, 25</span>]
 </code></pre>
 <h2 id="where-filter">Where / filter</h2>
 <p>Filters a sequence based on a specified condition.</p>
 <h3 id="c-1">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> evenNumbers = numbers.Where(x =&gt; x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>).ToList();
 </code></pre>
 <h3 id="java-1">Java</h3>
@@ -159,12 +159,12 @@ List&lt;Integer&gt; evenNumbers = numbers.stream()
                                    .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-1">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">2</span>, <span class="hljs-number">4</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">2, 4</span>]
 </code></pre>
 <h2 id="orderby-sorted">OrderBy / sorted</h2>
 <p>Sorts the elements of a sequence in ascending order based on a specified key.</p>
 <h3 id="c-2">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> sortedNumbers = numbers.OrderBy(x =&gt; x).ToList();
 </code></pre>
 <h3 id="java-2">Java</h3>
@@ -174,12 +174,12 @@ List&lt;Integer&gt; sortedNumbers = numbers.stream()
                                      .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-2">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3, 4, 5</span>]
 </code></pre>
 <h2 id="orderbydescending-sorted">OrderByDescending / sorted</h2>
 <p>Sorts the elements of a sequence in descending order based on a specified key.</p>
 <h3 id="c-3">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span> };
 <span class="hljs-keyword">var</span> sortedNumbers = numbers.OrderByDescending(n =&gt; n);
 </code></pre>
 <h3 id="java-3">Java</h3>
@@ -190,7 +190,7 @@ List&lt;Integer&gt; sortedNumbers = numbers.stream()
                                      .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-3">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">9</span>, <span class="hljs-number">7</span>, <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">9, 7, 5, 2, 1</span>]
 </code></pre>
 <h2 id="groupby-groupingby">GroupBy / groupingBy</h2>
 <p>Groups the elements of a sequence based on a specified key.</p>
@@ -205,15 +205,15 @@ List&lt;Integer&gt; sortedNumbers = numbers.stream()
 </code></pre>
 <h3 id="java-4">Java</h3>
 <pre><code class="language-java hljs">List&lt;Person&gt; people = Arrays.asList(
-        <span class="hljs-keyword">new</span> Person(&quot;Alice&quot;, <span class="hljs-number">25</span>),
-        <span class="hljs-keyword">new</span> Person(&quot;Bob&quot;, <span class="hljs-number">30</span>),
-        <span class="hljs-keyword">new</span> Person(&quot;Charlie&quot;, <span class="hljs-number">25</span>)
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(&quot;Alice&quot;, <span class="hljs-number">25</span>),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(&quot;Bob&quot;, <span class="hljs-number">30</span>),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(&quot;Charlie&quot;, <span class="hljs-number">25</span>)
 );
 Map&lt;Integer, List&lt;Person&gt;&gt; peopleByAge = people.stream()
                                                .collect(Collectors.groupingBy(Person::getAge));
 </code></pre>
 <h3 id="output-4">Output</h3>
-<pre><code class="language-clojure hljs">{
+<pre><code class="language-css hljs">{
     <span class="hljs-number">25</span>: [{ Name: &quot;Alice&quot;, Age: <span class="hljs-number">25</span> }, { Name: &quot;Charlie&quot;, Age: <span class="hljs-number">25</span> }],
     <span class="hljs-number">30</span>: [{ Name: &quot;Bob&quot;, Age: <span class="hljs-number">30</span> }]
 }
@@ -242,150 +242,150 @@ Map&lt;Integer, List&lt;Person&gt;&gt; peopleByAge = people.stream()
 </code></pre>
 <h3 id="java-5">Java</h3>
 <pre><code class="language-java hljs">List&lt;Person&gt; persons = List.of(
-        <span class="hljs-keyword">new</span> Person(<span class="hljs-number">1</span>, &quot;John&quot;),
-        <span class="hljs-keyword">new</span> Person(<span class="hljs-number">2</span>, &quot;Jane&quot;),
-        <span class="hljs-keyword">new</span> Person(<span class="hljs-number">3</span>, &quot;Alice&quot;)
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">1</span>, &quot;John&quot;),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">2</span>, &quot;Jane&quot;),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">3</span>, &quot;Alice&quot;)
 );
 
 List&lt;Address&gt; addresses = List.of(
-        <span class="hljs-keyword">new</span> Address(<span class="hljs-number">1</span>, &quot;New York&quot;),
-        <span class="hljs-keyword">new</span> Address(<span class="hljs-number">2</span>, &quot;London&quot;),
-        <span class="hljs-keyword">new</span> Address(<span class="hljs-number">3</span>, &quot;Paris&quot;)
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Address</span>(<span class="hljs-number">1</span>, &quot;New York&quot;),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Address</span>(<span class="hljs-number">2</span>, &quot;London&quot;),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Address</span>(<span class="hljs-number">3</span>, &quot;Paris&quot;)
 );
 
 List&lt;JoinedData&gt; joinedData = persons.stream()
                                      .join(addresses.stream(),
                                            person -&gt; person.getId(),
                                            address -&gt; address.getId(),
-                                           (person, address) -&gt; <span class="hljs-keyword">new</span> JoinedData(person.getName(), address.getCity()))
+                                           (person, address) -&gt; <span class="hljs-keyword">new</span> <span class="hljs-title class_">JoinedData</span>(person.getName(), address.getCity()))
                                      .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-5">Output</h3>
-<pre><code class="language-dts hljs">[{ PersonName = <span class="hljs-variable">&quot</span>;John<span class="hljs-variable">&quot</span>;, City = <span class="hljs-variable">&quot</span>;New York<span class="hljs-variable">&quot</span>; },
- { PersonName = <span class="hljs-variable">&quot</span>;Jane<span class="hljs-variable">&quot</span>;, City = <span class="hljs-variable">&quot</span>;London<span class="hljs-variable">&quot</span>; },
- { PersonName = <span class="hljs-variable">&quot</span>;Alice<span class="hljs-variable">&quot</span>;, City = <span class="hljs-variable">&quot</span>;Paris<span class="hljs-variable">&quot</span>; }]
+<pre><code class="language-xml hljs">[{ PersonName = <span class="hljs-symbol">&quot;</span>John<span class="hljs-symbol">&quot;</span>, City = <span class="hljs-symbol">&quot;</span>New York<span class="hljs-symbol">&quot;</span> },
+ { PersonName = <span class="hljs-symbol">&quot;</span>Jane<span class="hljs-symbol">&quot;</span>, City = <span class="hljs-symbol">&quot;</span>London<span class="hljs-symbol">&quot;</span> },
+ { PersonName = <span class="hljs-symbol">&quot;</span>Alice<span class="hljs-symbol">&quot;</span>, City = <span class="hljs-symbol">&quot;</span>Paris<span class="hljs-symbol">&quot;</span> }]
 </code></pre>
 <h2 id="any-anymatch">Any / AnyMatch</h2>
 <p>Checks if any element in the sequence satisfies a specified condition.</p>
 <h3 id="c-6">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> anyEven = numbers.Any(n =&gt; n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="java-6">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">boolean</span> anyEven = numbers.stream()
+<span class="hljs-type">boolean</span> <span class="hljs-variable">anyEven</span> <span class="hljs-operator">=</span> numbers.stream()
                          .anyMatch(n -&gt; n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="output-6">Output</h3>
-<pre><code class="language-actionscript hljs"><span class="hljs-literal">true</span>
+<pre><code class="language-bash hljs"><span class="hljs-literal">true</span>
 </code></pre>
 <h2 id="all-allmatch">All / AllMatch</h2>
 <p>Checks if all elements in the sequence satisfy a specified condition.</p>
 <h3 id="c-7">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> allPositive = numbers.All(n =&gt; n &gt; <span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="java-7">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
 
-<span class="hljs-keyword">boolean</span> allPositive = numbers.stream()
+<span class="hljs-type">boolean</span> <span class="hljs-variable">allPositive</span> <span class="hljs-operator">=</span> numbers.stream()
                              .allMatch(n -&gt; n &gt; <span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="output-7">Output</h3>
-<pre><code class="language-actionscript hljs"><span class="hljs-literal">true</span>
+<pre><code class="language-bash hljs"><span class="hljs-literal">true</span>
 </code></pre>
 <h2 id="contains-contains">Contains / contains</h2>
 <p>Checks if a sequence contains a specific element.</p>
 <h3 id="c-8">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot; };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot; };
 <span class="hljs-keyword">var</span> containsBanana = fruits.Contains(&quot;banana&quot;);
 </code></pre>
 <h3 id="java-8">Java</h3>
 <pre><code class="language-java hljs">List&lt;String&gt; fruits = Arrays.asList(&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;);
-<span class="hljs-keyword">boolean</span> containsBanana = fruits.contains(&quot;banana&quot;);
+<span class="hljs-type">boolean</span> <span class="hljs-variable">containsBanana</span> <span class="hljs-operator">=</span> fruits.contains(&quot;banana&quot;);
 </code></pre>
 <h3 id="output-8">Output</h3>
-<pre><code class="language-actionscript hljs"><span class="hljs-literal">true</span>
+<pre><code class="language-bash hljs"><span class="hljs-literal">true</span>
 </code></pre>
 <h2 id="count-count">Count / count</h2>
 <p>Returns the number of elements in a sequence.</p>
 <h3 id="c-9">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> count = numbers.Count();
 </code></pre>
 <h3 id="java-9">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">long</span> count = numbers.stream()
+<span class="hljs-type">long</span> <span class="hljs-variable">count</span> <span class="hljs-operator">=</span> numbers.stream()
                     .count();
 </code></pre>
 <h3 id="output-9">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">5</span>
+<pre><code class="language-undefined hljs">5
 </code></pre>
 <h2 id="first-findfirst">First / findFirst</h2>
 <p>Returns the first element from a sequence, or throws an exception if the sequence is empty.</p>
 <h3 id="c-10">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> firstNumber = numbers.First();
 </code></pre>
 <h3 id="java-10">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">int</span> firstNumber = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">firstNumber</span> <span class="hljs-operator">=</span> numbers.stream()
                          .findFirst()
                          .orElseThrow(NoSuchElementException::<span class="hljs-keyword">new</span>);
 </code></pre>
 <h3 id="output-10">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">1</span>
+<pre><code class="language-undefined hljs">1
 </code></pre>
 <h2 id="firstordefault-findfirst">FirstOrDefault / findFirst</h2>
 <p>Returns the first element from a sequence, or returns the default value for the element type if the sequence is empty.</p>
 <h3 id="c-11">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt;();
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt;();
 <span class="hljs-keyword">var</span> firstOrDefaultNumber = numbers.FirstOrDefault();
 </code></pre>
 <h3 id="java-11">Java</h3>
-<pre><code class="language-java hljs">List&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
-<span class="hljs-keyword">int</span> firstOrDefaultNumber = numbers.stream()
+<pre><code class="language-java hljs">List&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+<span class="hljs-type">int</span> <span class="hljs-variable">firstOrDefaultNumber</span> <span class="hljs-operator">=</span> numbers.stream()
                                   .findFirst()
                                   .orElse(<span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="output-11">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">0</span>
+<pre><code class="language-undefined hljs">0
 </code></pre>
 <h2 id="last-reduce">Last / reduce</h2>
 <p>Returns the last element from a sequence, or throws an exception if the sequence is empty.</p>
 <h3 id="c-12">C#</h3>
-<pre><code class="language-csharp hljs">List&lt;<span class="hljs-keyword">int</span>&gt; numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs">List&lt;<span class="hljs-built_in">int</span>&gt; numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 
-<span class="hljs-keyword">int</span> lastNumber = numbers.Last();
+<span class="hljs-built_in">int</span> lastNumber = numbers.Last();
 </code></pre>
 <h3 id="java-12">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">int</span> lastNumber = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">lastNumber</span> <span class="hljs-operator">=</span> numbers.stream()
                 .reduce((a, b) -&gt; b)
                 .orElseThrow(NoSuchElementException::<span class="hljs-keyword">new</span>);
 </code></pre>
 <h3 id="output-12">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">5</span>
+<pre><code class="language-undefined hljs">5
 </code></pre>
 <h2 id="lastordefault-reduce">LastOrDefault / reduce</h2>
 <p>Returns the last element from a sequence, or returns the default value for the element type if the sequence is empty.</p>
 <h3 id="c-13">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt;();
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt;();
 <span class="hljs-keyword">var</span> lastOrDefaultNumber = numbers.LastOrDefault();
 </code></pre>
 <h3 id="java-13">Java</h3>
-<pre><code class="language-java hljs">List&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
-<span class="hljs-keyword">int</span> lastOrDefaultNumber = numbers.stream()
+<pre><code class="language-java hljs">List&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+<span class="hljs-type">int</span> <span class="hljs-variable">lastOrDefaultNumber</span> <span class="hljs-operator">=</span> numbers.stream()
                                  .reduce((a, b) -&gt; b)
                                  .orElse(<span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="output-13">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">0</span>
+<pre><code class="language-undefined hljs">0
 </code></pre>
 <h2 id="skip-skip">Skip / skip</h2>
 <p>Skips a specified number of elements from the start of a sequence.</p>
 <h3 id="c-14">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> skippedNumbers = numbers.Skip(<span class="hljs-number">2</span>);
 </code></pre>
 <h3 id="java-14">Java</h3>
@@ -395,12 +395,12 @@ List&lt;Integer&gt; skippedNumbers = numbers.stream()
                                       .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-14">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">3, 4, 5</span>]
 </code></pre>
 <h2 id="skipwhile-dropwhile">SkipWhile / dropWhile</h2>
 <p>Skips elements in a sequence until a specified condition is no longer satisfied, and includes all the remaining elements.</p>
 <h3 id="c-15">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> skippedNumbers = numbers.SkipWhile(n =&gt; n &lt; <span class="hljs-number">3</span>);
 </code></pre>
 <h3 id="java-15">Java</h3>
@@ -410,12 +410,12 @@ List&lt;Integer&gt; skippedNumbers = numbers.stream()
                                       .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-15">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">3, 4, 5</span>]
 </code></pre>
 <h2 id="take-limit">Take / limit</h2>
 <p>Returns a specified number of contiguous elements from the start of a sequence.</p>
 <h3 id="c-16">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> takenNumbers = numbers.Take(<span class="hljs-number">3</span>);
 </code></pre>
 <h3 id="java-16">Java</h3>
@@ -426,12 +426,12 @@ List&lt;Integer&gt; takenNumbers = numbers.stream()
 
 </code></pre>
 <h3 id="output-16">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3</span>]
 </code></pre>
 <h2 id="takewhile-takewhile">TakeWhile / takeWhile</h2>
 <p>takes elements from a sequence as long as a specified condition is true.</p>
 <h3 id="c-17">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> takenNumbers = numbers.TakeWhile(n =&gt; n &lt; <span class="hljs-number">4</span>);
 </code></pre>
 <h3 id="java-17">Java</h3>
@@ -441,87 +441,87 @@ List&lt;Integer&gt; takenNumbers = numbers.stream()
                                     .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-17">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3</span>]
 </code></pre>
 <h2 id="sum-sum">Sum / Sum</h2>
 <p>Calculates the sum of a sequence of numeric values.</p>
 <h3 id="c-18">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> sum = numbers.Sum();
 </code></pre>
 <h3 id="java-18">Java</h3>
-<pre><code class="language-java hljs">List&lt;<span class="hljs-keyword">int</span>&gt; numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
-<span class="hljs-keyword">int</span> sum = numbers.Sum();
+<pre><code class="language-java hljs">List&lt;<span class="hljs-type">int</span>&gt; numbers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">List</span>&lt;<span class="hljs-type">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> numbers.Sum();
 </code></pre>
 <h3 id="output-18">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">15</span>
+<pre><code class="language-undefined hljs">15
 </code></pre>
 <h2 id="average-average">Average / average</h2>
 <p>Calculates the average of a sequence of numeric values.</p>
 <h3 id="c-19">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> average = numbers.Average();
 </code></pre>
 <h3 id="java-19">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">double</span> average = numbers.stream()
+<span class="hljs-type">double</span> <span class="hljs-variable">average</span> <span class="hljs-operator">=</span> numbers.stream()
                         .mapToInt(Integer::intValue)
                         .average()
                         .orElseThrow(NoSuchElementException::<span class="hljs-keyword">new</span>);
 </code></pre>
 <h3 id="output-19">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">3</span>
+<pre><code class="language-undefined hljs">3
 </code></pre>
 <h2 id="min-min">Min / min</h2>
 <p>Returns the minimum value from a sequence of comparable elements.</p>
 <h3 id="c-20">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span> };
 <span class="hljs-keyword">var</span> min = numbers.Min();
 </code></pre>
 <h3 id="java-20">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>);
-<span class="hljs-keyword">int</span> min = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">min</span> <span class="hljs-operator">=</span> numbers.stream()
                  .mapToInt(Integer::intValue)
                  .min()
                  .orElseThrow(NoSuchElementException::<span class="hljs-keyword">new</span>);
 </code></pre>
 <h3 id="output-20">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">1</span>
+<pre><code class="language-undefined hljs">1
 </code></pre>
 <h2 id="max-max">Max / max</h2>
 <p>Returns the maximum value from a sequence of comparable elements.</p>
 <h3 id="c-21">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span> };
 <span class="hljs-keyword">var</span> max = numbers.Max();
 </code></pre>
 <h3 id="java-21">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>);
-<span class="hljs-keyword">int</span> max = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">max</span> <span class="hljs-operator">=</span> numbers.stream()
                  .mapToInt(Integer::intValue)
                  .max()
                  .orElseThrow(NoSuchElementException::<span class="hljs-keyword">new</span>);
 </code></pre>
 <h3 id="output-21">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">9</span>
+<pre><code class="language-undefined hljs">9
 </code></pre>
 <h2 id="aggregate-reduce">Aggregate / reduce</h2>
 <p>Performs a custom aggregation operation on the elements of a sequence, combining them iteratively based on a specified lambda expression.</p>
 <h3 id="c-22">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> sum = numbers.Aggregate((acc, num) =&gt; acc + num);
 </code></pre>
 <h3 id="java-22">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">int</span> sum = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> numbers.stream()
                  .reduce(<span class="hljs-number">0</span>, (acc, num) -&gt; acc + num);
 </code></pre>
 <h3 id="output-22">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">15</span>
+<pre><code class="language-undefined hljs">15
 </code></pre>
 <h2 id="distinct-distinct">Distinct / distinct</h2>
 <p>Returns a sequence with distinct elements.</p>
 <h3 id="c-23">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> distinctNumbers = numbers.Distinct();
 </code></pre>
 <h3 id="java-23">Java</h3>
@@ -531,13 +531,13 @@ List&lt;Integer&gt; distinctNumbers = numbers.stream()
                                        .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-23">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3, 4, 5</span>]
 </code></pre>
 <h2 id="union-concat">Union / concat</h2>
 <p>Combines two sequences, returning a sequence that contains distinct elements from both sequences.</p>
 <h3 id="c-24">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
-<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> unionNumbers = numbers1.Union(numbers2);
 </code></pre>
 <h3 id="java-24">Java</h3>
@@ -548,13 +548,13 @@ List&lt;Integer&gt; unionNumbers = Stream.concat(numbers1.stream(), numbers2.str
                                    .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-24">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3, 4, 5</span>]
 </code></pre>
 <h2 id="intersect-filter">Intersect / filter</h2>
 <p>Returns the common elements between two sequences.</p>
 <h3 id="c-25">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
-<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
+<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> intersectNumbers = numbers1.Intersect(numbers2);
 </code></pre>
 <h3 id="java-25">Java</h3>
@@ -565,13 +565,13 @@ List&lt;Integer&gt; intersectNumbers = numbers1.stream()
                                          .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-25">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">3, 4</span>]
 </code></pre>
 <h2 id="except-filter">Except / filter</h2>
 <p>Returns the elements from the first sequence that are not present in the second sequence.</p>
 <h3 id="c-26">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
-<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
+<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> exceptNumbers = numbers1.Except(numbers2);
 </code></pre>
 <h3 id="java-26">Java</h3>
@@ -582,13 +582,13 @@ List&lt;Integer&gt; exceptNumbers = numbers1.stream()
                                       .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-26">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2</span>]
 </code></pre>
 <h2 id="concat-concat">Concat / concat</h2>
 <p>Concatenates two sequences into a single sequence.</p>
 <h3 id="c-27">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
-<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 <span class="hljs-keyword">var</span> concatenatedNumbers = numbers1.Concat(numbers2).ToList();
 </code></pre>
 <h3 id="java-27">Java</h3>
@@ -598,12 +598,12 @@ List&lt;Integer&gt; concatenatedNumbers = Stream.concat(numbers1.stream(), numbe
                                           .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-27">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3, 3, 4, 5</span>]
 </code></pre>
 <h2 id="reverse-reverse">Reverse / reverse</h2>
 <p>Reverses the order of the elements in a sequence.</p>
 <h3 id="c-28">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
 numbers.Reverse();
 </code></pre>
 <h3 id="java-28">Java</h3>
@@ -611,13 +611,13 @@ numbers.Reverse();
 Collections.reverse(numbers);
 </code></pre>
 <h3 id="output-28">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">5, 4, 3, 2, 1</span>]
 </code></pre>
 <h2 id="zip-maptoobj">Zip / mapToObj</h2>
 <p>Combines two sequences by merging corresponding elements into a new sequence of tuples.</p>
 <h3 id="c-29">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
-<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
+<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span> };
 
 <span class="hljs-keyword">var</span> zippedNumbers = numbers1.Zip(numbers2, (x, y) =&gt; x + y).ToList();
 </code></pre>
@@ -629,90 +629,90 @@ List&lt;Integer&gt; zippedNumbers = IntStream.range(<span class="hljs-number">0<
                                        .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-29">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">11, 22, 33</span>]
 </code></pre>
 <h2 id="elementat-get">ElementAt / get</h2>
 <p>Returns the element at a specified index in a sequence.</p>
 <h3 id="c-30">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot; };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot; };
 <span class="hljs-keyword">var</span> element = fruits.ElementAt(<span class="hljs-number">1</span>);
 </code></pre>
 <h3 id="java-30">Java</h3>
 <pre><code class="language-java hljs">List&lt;String&gt; fruits = Arrays.asList(&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;);
-String element = fruits.get(<span class="hljs-number">1</span>);
+<span class="hljs-type">String</span> <span class="hljs-variable">element</span> <span class="hljs-operator">=</span> fruits.get(<span class="hljs-number">1</span>);
 </code></pre>
 <h3 id="output-30">Output</h3>
-<pre><code class="language-armasm hljs"><span class="hljs-keyword">banana
-</span></code></pre>
+<pre><code class="language-undefined hljs">banana
+</code></pre>
 <h2 id="single-reduce">Single / reduce</h2>
 <p>Returns a single element from a sequence and throws an exception if the sequence contains zero or more than one element.</p>
 <h3 id="c-31">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span> };
 <span class="hljs-keyword">var</span> singleNumber = numbers.Single();
 </code></pre>
 <h3 id="java-31">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>);
-<span class="hljs-keyword">int</span> singleNumber = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">singleNumber</span> <span class="hljs-operator">=</span> numbers.stream()
                           .reduce((a, b) -&gt; {
-                              <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(&quot;More than one element found&quot;);
+                              <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalStateException</span>(&quot;More than one element found&quot;);
                           })
                           .orElseThrow(NoSuchElementException::<span class="hljs-keyword">new</span>);
 </code></pre>
 <h3 id="output-31">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">1</span>
+<pre><code class="language-undefined hljs">1
 </code></pre>
 <h2 id="singleordefault-reduce">SingleOrDefault / reduce</h2>
 <p>Returns the single element of a sequence, or the default value if the sequence is empty or contains more than one element.</p>
 <h3 id="c-32">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
 <span class="hljs-keyword">var</span> singleOrDefaultNumber = numbers.SingleOrDefault();
 </code></pre>
 <h3 id="java-32">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
-<span class="hljs-keyword">int</span> singleOrDefaultNumber = numbers.stream()
+<span class="hljs-type">int</span> <span class="hljs-variable">singleOrDefaultNumber</span> <span class="hljs-operator">=</span> numbers.stream()
                                    .reduce((a, b) -&gt; { 
-                                        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(&quot;More than one element found&quot;);
+                                        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalStateException</span>(&quot;More than one element found&quot;);
                                    })
                                    .orElse(<span class="hljs-number">0</span>);
 </code></pre>
 <h3 id="output-32">Output</h3>
-<pre><code class="language-lsl hljs"><span class="hljs-number">0</span>
+<pre><code class="language-undefined hljs">0
 </code></pre>
 <h2 id="defaultifempty">DefaultIfEmpty</h2>
 <p>Returns a sequence with a default element if the original sequence is empty.</p>
 <h3 id="c-33">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt;();
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt;();
 <span class="hljs-keyword">var</span> numbersWithDefault = numbers.DefaultIfEmpty(<span class="hljs-number">5</span>);
 </code></pre>
 <h3 id="java-33">Java</h3>
-<pre><code class="language-java hljs">List&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+<pre><code class="language-java hljs">List&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
 Iterable&lt;Integer&gt; numbersWithDefault = numbers.isEmpty() 
                                         ? Collections.singletonList(<span class="hljs-number">5</span>) 
                                         : numbers;
 </code></pre>
 <h3 id="output-33">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">5</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">5</span>]
 </code></pre>
 <h2 id="sequenceequal-sequenceequal">SequenceEqual / sequenceEqual</h2>
 <p>Checks if two sequences are equal by comparing their elements.</p>
 <h3 id="c-34">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
-<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers1 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<span class="hljs-keyword">var</span> numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
 <span class="hljs-keyword">var</span> isEqual = numbers1.SequenceEqual(numbers2);
 </code></pre>
 <h3 id="java-34">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers1 = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
 List&lt;Integer&gt; numbers2 = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
-<span class="hljs-keyword">boolean</span> isEqual = Objects.equals(numbers1, numbers2);
+<span class="hljs-type">boolean</span> <span class="hljs-variable">isEqual</span> <span class="hljs-operator">=</span> Objects.equals(numbers1, numbers2);
 </code></pre>
 <h3 id="output-34">Output</h3>
-<pre><code class="language-actionscript hljs"><span class="hljs-literal">true</span>
+<pre><code class="language-bash hljs"><span class="hljs-literal">true</span>
 </code></pre>
 <h2 id="cast-map-with-explicit-casting">Cast / map (with explicit casting)</h2>
 <p>Converts the elements of a sequence to a specified type or throws an exception if any element in the sequence cannot be cast to that type.</p>
 <h3 id="c-35">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">object</span>[] objects = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
-IEnumerable&lt;<span class="hljs-keyword">int</span>&gt; numbers = objects.Cast&lt;<span class="hljs-keyword">int</span>&gt;();
+<pre><code class="language-csharp hljs"><span class="hljs-built_in">object</span>[] objects = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+IEnumerable&lt;<span class="hljs-built_in">int</span>&gt; numbers = objects.Cast&lt;<span class="hljs-built_in">int</span>&gt;();
 </code></pre>
 <h3 id="java-35">Java</h3>
 <pre><code class="language-java hljs">Object[] objects = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
@@ -722,51 +722,51 @@ List&lt;Integer&gt; numbers = Arrays.stream(objects)
 
 </code></pre>
 <h3 id="output-35">Output</h3>
-<pre><code class="language-json hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">1, 2, 3</span>]
 </code></pre>
 <h2 id="oftype-filter-with-type-check">OfType / filter (with type check)</h2>
 <p>Filters the elements of a sequence based on a specified type.</p>
 <h3 id="c-36">C#</h3>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> mixedList = <span class="hljs-keyword">new</span> ArrayList { <span class="hljs-number">1</span>, &quot;hello&quot;, <span class="hljs-number">3.14</span>, <span class="hljs-literal">true</span> };
-IEnumerable&lt;<span class="hljs-keyword">string</span>&gt; strings = mixedList.OfType&lt;<span class="hljs-keyword">string</span>&gt;();
+IEnumerable&lt;<span class="hljs-built_in">string</span>&gt; strings = mixedList.OfType&lt;<span class="hljs-built_in">string</span>&gt;();
 </code></pre>
 <h3 id="java-36">Java</h3>
-<pre><code class="language-java hljs">List&lt;Object&gt; mixedList = Arrays.asList(<span class="hljs-number">1</span>, &quot;hello&quot;, <span class="hljs-number">3.14</span>, <span class="hljs-keyword">true</span>);
+<pre><code class="language-java hljs">List&lt;Object&gt; mixedList = Arrays.asList(<span class="hljs-number">1</span>, &quot;hello&quot;, <span class="hljs-number">3.14</span>, <span class="hljs-literal">true</span>);
 List&lt;String&gt; strings = mixedList.stream()
                                 .filter(obj -&gt; obj <span class="hljs-keyword">instanceof</span> String)
                                 .map(obj -&gt; (String) obj)
                                 .collect(Collectors.toList());
 </code></pre>
 <h3 id="output-36">Output</h3>
-<pre><code class="language-dts hljs">[<span class="hljs-variable">&quot</span>;hello<span class="hljs-variable">&quot</span>;]
+<pre><code class="language-xml hljs">[<span class="hljs-symbol">&quot;</span>hello<span class="hljs-symbol">&quot;</span>]
 </code></pre>
 <h2 id="toarray-toarray">ToArray / toArray</h2>
 <p>Converts a sequence to an array.</p>
 <h3 id="c-37">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
-<span class="hljs-keyword">int</span>[] numberArray = numbers.ToArray();
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<span class="hljs-built_in">int</span>[] numberArray = numbers.ToArray();
 </code></pre>
 <h3 id="java-37">Java</h3>
 <pre><code class="language-java hljs">List&lt;Integer&gt; numbers = Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
-<span class="hljs-keyword">int</span>[] numberArray = numbers.stream()
+<span class="hljs-type">int</span>[] numberArray = numbers.stream()
                            .mapToInt(Integer::intValue)
                            .toArray();
 </code></pre>
 <h2 id="tolist-aslist">ToList / asList</h2>
 <p>Converts a sequence to a list.</p>
 <h3 id="c-38">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">int</span>[] numbers = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+<pre><code class="language-csharp hljs"><span class="hljs-built_in">int</span>[] numbers = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
 <span class="hljs-keyword">var</span> numberList = numbers.ToList();
 </code></pre>
 <h3 id="java-38">Java</h3>
-<pre><code class="language-java hljs"><span class="hljs-keyword">int</span>[] numbers = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
-List&lt;Integer&gt; numberList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(Arrays.asList(numbers));
+<pre><code class="language-java hljs"><span class="hljs-type">int</span>[] numbers = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> };
+List&lt;Integer&gt; numberList = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;(Arrays.asList(numbers));
 </code></pre>
 <h2 id="todictionary-tomap">ToDictionary / toMap</h2>
 <p>Converts a sequence to a dictionary based on a specified key and value selector.</p>
 <h3 id="c-39">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot; };
-Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">int</span>&gt; fruitLengths = fruits.ToDictionary(fruit =&gt; fruit, fruit =&gt; fruit.Length);
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot; };
+Dictionary&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">int</span>&gt; fruitLengths = fruits.ToDictionary(fruit =&gt; fruit, fruit =&gt; fruit.Length);
 </code></pre>
 <h3 id="java-39">Java</h3>
 <pre><code class="language-java hljs">List&lt;String&gt; fruits = Arrays.asList(&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;);
@@ -774,17 +774,17 @@ Map&lt;String, Integer&gt; fruitMap = fruits.stream()
                                       .collect(Collectors.toMap(fruit -&gt; fruit, fruit -&gt; fruit.length()));
 </code></pre>
 <h3 id="output-37">Output</h3>
-<pre><code class="language-css hljs">{
-    <span class="hljs-attribute">apple</span>: <span class="hljs-number">5</span>,
-    banana: <span class="hljs-number">6</span>,
-    cherry: <span class="hljs-number">6</span>
+<pre><code class="language-yaml hljs">{
+    <span class="hljs-attr">apple:</span> <span class="hljs-number">5</span>,
+    <span class="hljs-attr">banana:</span> <span class="hljs-number">6</span>,
+    <span class="hljs-attr">cherry:</span> <span class="hljs-number">6</span>
 }
 </code></pre>
 <h2 id="tolookup-groupingby">ToLookup / groupingBy</h2>
 <p>Converts a sequence to a lookup based on a specified key selector.</p>
 <h3 id="c-40">C#</h3>
-<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;avocado&quot;, &quot;blueberry&quot; };
-ILookup&lt;<span class="hljs-keyword">char</span>, <span class="hljs-keyword">string</span>&gt; fruitsByFirstLetter = fruits.ToLookup(fruit =&gt; fruit[<span class="hljs-number">0</span>]);
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">var</span> fruits = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">string</span>&gt; { &quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;avocado&quot;, &quot;blueberry&quot; };
+ILookup&lt;<span class="hljs-built_in">char</span>, <span class="hljs-built_in">string</span>&gt; fruitsByFirstLetter = fruits.ToLookup(fruit =&gt; fruit[<span class="hljs-number">0</span>]);
 </code></pre>
 <h3 id="java-40">Java</h3>
 <pre><code class="language-java hljs">List&lt;String&gt; fruits = Arrays.asList(&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;avocado&quot;, &quot;blueberry&quot;);
@@ -792,12 +792,12 @@ Map&lt;Character, List&lt;String&gt;&gt; fruitsByFirstLetter = fruits.stream()
                                                         .collect(Collectors.groupingBy(fruit -&gt; fruit.charAt(<span class="hljs-number">0</span>)));
 </code></pre>
 <h3 id="output-38">Output</h3>
-<pre><code class="language-clojure hljs">{
-    a = [apple, avocado],
+<pre><code class="language-markdown hljs">{
+<span class="hljs-code">    a = [apple, avocado],
     b = [banana, blueberry],
     c = [cherry]
 }
-</code></pre>
+</span></code></pre>
 <hr>
 <h2 id="conclusion">Conclusion</h2>
 <p>By grasping the mapping of C# LINQ functions to their Java equivalents, we can confidently navigate the transition between these languages.</p>

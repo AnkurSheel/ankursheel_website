@@ -131,15 +131,15 @@
 <p>Since we will be using DLL's to have 1 single copy of our engine code, let's understand the basics of DLL's. For those of you who are on the fence about whether to use a DLL or not. <a href="http://msdn.microsoft.com/en-us/library/dtba4t8b(v=VS.90).aspx">Here</a> are some of the advantages of using a dll as per MSDN</p>
 <p>We will be using <strong><em>__declspec(dllexport)</em></strong> and <strong><em>__declspec(dllimport)</em></strong> to export and import functions, data and objects to and from a DLL. We will mainly be using it to export/import functions or interface declarations and not member variables.</p>
 <p>I prefer to have a header file that can encapsulate the above function calls. I will explain it with an example.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> project_EXPORTS</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> project_API __declspec(dllexport)</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">else</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> project_API __declspec(dllimport)</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-keyword">ifdef</span> project_EXPORTS</span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> project_API __declspec(dllexport)</span>
+<span class="hljs-meta">#<span class="hljs-keyword">else</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> project_API __declspec(dllimport)</span>
+<span class="hljs-meta">#<span class="hljs-keyword">endif</span></span>
 </code></pre>
 <p>For the project from which we want to export functions, <em>project</em>_<em>EXPORTS</em> macro will be defined so that <em>project</em>_<em>API</em> automatically map to <em>__declspec(dllexport)</em>. For all other projects, <em>project</em>_<em>API</em> will map to <em>__declspec(dllimport)</em></p>
 <p>Now for whichever interface we need to export all/the functions, all we need to do is include the above header and add the following code.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-keyword">class</span> project_API className
+<pre><code class="language-cpp hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">project_API</span> className
 {
 };
 </code></pre>

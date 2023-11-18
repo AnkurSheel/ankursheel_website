@@ -130,8 +130,8 @@
 <p>In C#, you can use the [Flags] attribute to create an enum type as bit flags, allowing you to use Bitwise operations.</p>
 <p>Let's take an example of Seasons</p>
 <pre><code class="language-csharp hljs">
-[Flags]
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Seasons
+[<span class="hljs-meta">Flags</span>]
+<span class="hljs-keyword">public</span> <span class="hljs-built_in">enum</span> Seasons
 {
     None = <span class="hljs-number">0</span>,
     Spring = <span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">0</span>,
@@ -141,8 +141,8 @@
 }
 </code></pre>
 <p>Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum by manually combining all the bits yourself.</p>
-<pre><code class="language-csharp hljs">[Flags]
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Seasons
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">Flags</span>]
+<span class="hljs-keyword">public</span> <span class="hljs-built_in">enum</span> Seasons
 {
     ... <span class="hljs-comment">// omitted for brevity</span>
     All = Spring | Winter | Autumn | Summer
@@ -150,7 +150,7 @@
 </code></pre>
 <p>But, this has a small problem. Every time we add a new value to the enum, we must update the <code>All</code> value.</p>
 <p>Here is a simple trick to get a variable with all the bits set.</p>
-<pre><code class="language-csharp hljs"> <span class="hljs-keyword">var</span> AllSeasons = (Seasons)Enum.GetValues&lt;Seasons&gt;().Cast&lt;<span class="hljs-keyword">int</span>&gt;().Sum();
+<pre><code class="language-csharp hljs"> <span class="hljs-keyword">var</span> AllSeasons = (Seasons)Enum.GetValues&lt;Seasons&gt;().Cast&lt;<span class="hljs-built_in">int</span>&gt;().Sum();
 </code></pre>
 <p>Let's see what's happening in the above snippet.</p>
 <p><strong>Enum.GetValues<mydays>()</mydays></strong> returns an array of the enums values.</p>

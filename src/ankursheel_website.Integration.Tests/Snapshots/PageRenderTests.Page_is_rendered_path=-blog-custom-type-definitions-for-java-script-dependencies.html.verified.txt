@@ -144,22 +144,22 @@
 <li>Create a <strong><em>types</em></strong> folder.</li>
 <li>Edit tsconfig.json to use the typeRoots property so that the compiler can find the local declaration files. You will need it to include both your local folder as well as <em>node</em>_<em>modules/&#64;&#64;types</em>. You will also want to check the local folder before the <em>node</em>_<em>modules</em> folder.</li>
 </ul>
-<pre><code class="language-json hljs">&quot;compilerOptions&quot;: {
+<pre><code class="language-json hljs">&quot;compilerOptions&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
  ...
- &quot;typeRoots&quot;: [&quot;./types&quot;, &quot;node_modules/&#64;&#64;types&quot;]
-    }
+ &quot;typeRoots&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>&quot;./types&quot;<span class="hljs-punctuation">,</span> &quot;node_modules/&#<span class="hljs-number">64</span>;&#<span class="hljs-number">64</span>;types&quot;<span class="hljs-punctuation">]</span>
+    <span class="hljs-punctuation">}</span>
 </code></pre>
 <ul>
 <li>Add the property to exclude property in tsconfig so that it does not get compiled.</li>
 </ul>
-<pre><code class="language-json hljs">&quot;exclude&quot;: [..., &quot;types&quot;]
+<pre><code class="language-json hljs">&quot;exclude&quot;<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>...<span class="hljs-punctuation">,</span> &quot;types&quot;<span class="hljs-punctuation">]</span>
 </code></pre>
 <ul>
 <li>Add a <strong><em>third-party-library-name</em></strong> folder in the <em>types</em> directory.</li>
 <li>Add an <em>index.d.ts</em> in that folder.</li>
 <li>Add your TypeDefinitions. But if, like me, you want to prototype things or do not want to write a full custom type, you can declare the module by adding this to the <em>index.d.ts</em> file.</li>
 </ul>
-<pre><code class="language-typescript hljs"><span class="hljs-keyword">declare</span> <span class="hljs-keyword">module</span> 'third-party-library-name';
+<pre><code class="language-typescript hljs"><span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">'third-party-library-name'</span>;
 </code></pre>
 <p>The only caveat is that you don't get any IntelliSense.</p>
 <h2 id="conclusion">Conclusion</h2>

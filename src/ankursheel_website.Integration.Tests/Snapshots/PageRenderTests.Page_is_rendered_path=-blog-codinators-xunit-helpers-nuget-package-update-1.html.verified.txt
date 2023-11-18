@@ -138,11 +138,11 @@
 <pre><code class="language-bash hljs">dotnet add package Codinators.XunitHelpers
 </code></pre>
 <h2 id="usage">Usage</h2>
-<pre><code class="language-csharp hljs">[Fact]
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">MultiAssertTest</span>(<span class="hljs-params"></span>)
-</span>{
+<pre><code class="language-csharp hljs">[<span class="hljs-meta">Fact</span>]
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">MultiAssertTest</span>()</span>
+{
     <span class="hljs-keyword">var</span> result = <span class="hljs-number">2</span> + <span class="hljs-number">2</span>;
-    AssertHelper.AssertMultiple(() =&gt; Assert.IsType&lt;<span class="hljs-keyword">double</span>&gt;(result),
+    AssertHelper.AssertMultiple(() =&gt; Assert.IsType&lt;<span class="hljs-built_in">double</span>&gt;(result),
                                 () =&gt; Assert.Equal(<span class="hljs-number">5</span>, result),
                                 () =&gt; Assert.Equal(<span class="hljs-number">4</span>, result));
 }

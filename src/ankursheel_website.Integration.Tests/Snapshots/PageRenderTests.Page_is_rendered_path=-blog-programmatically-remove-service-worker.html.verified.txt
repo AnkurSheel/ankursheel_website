@@ -133,23 +133,23 @@
 <h2 id="solution">Solution</h2>
 <p>To remove a service worker entirely, you can replace the code with code to unregister the service worker.
 Replace the following snippets in the service worker file.</p>
-<pre><code class="language-javascript hljs">self.addEventListener(<span class="hljs-string">'install'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
-    self.skipWaiting();
+<pre><code class="language-javascript hljs">self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'install'</span>, <span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) {
+    self.<span class="hljs-title function_">skipWaiting</span>();
 });
 </code></pre>
 <p>The install event is triggered when the browser sees the service worker for the first time.</p>
 <p>The <code>skipWaiting()</code> method tells the service worker to skip the waiting state and move directly to activate (once it has been installed). Otherwise, the service worker will become active once the currently active service worker is released and becomes redundant.</p>
 <pre><code class="language-javascript hljs">
-self.addEventListener(<span class="hljs-string">'activate'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Unregistering service worker`</span>)
-    self.registration.unregister()
-        .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-            <span class="hljs-keyword">return</span> self.clients.matchAll();
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'activate'</span>, <span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Unregistering service worker`</span>)
+    self.<span class="hljs-property">registration</span>.<span class="hljs-title function_">unregister</span>()
+        .<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">return</span> self.<span class="hljs-property">clients</span>.<span class="hljs-title function_">matchAll</span>();
         })
-        .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">clients</span>) </span>{
-            clients.forEach(client =&gt; {
-                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Navigating <span class="hljs-subst">${client.url}</span>`</span>)
-                client.navigate(client.url)
+        .<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">clients</span>) {
+            clients.<span class="hljs-title function_">forEach</span>(client =&gt; {
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Navigating <span class="hljs-subst">${client.url}</span>`</span>)
+                client.<span class="hljs-title function_">navigate</span>(client.<span class="hljs-property">url</span>)
             })
         });
 });

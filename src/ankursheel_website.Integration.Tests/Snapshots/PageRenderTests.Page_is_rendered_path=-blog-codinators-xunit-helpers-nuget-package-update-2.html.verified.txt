@@ -151,7 +151,7 @@ close the diff window or reject the approval file and close all the windows.</p>
 <p>In <code>ApprovalTestConfig.cs</code> add the following snippet</p>
 <pre><code class="language-csharp hljs"><span class="hljs-keyword">using</span> xUnitHelpers;
 
-[assembly: UseReporter(<span class="hljs-keyword">typeof</span>(AutoApprover))]
+[<span class="hljs-meta">assembly: UseReporter(typeof(AutoApprover))</span>]
 </code></pre>
 <h2 id="result">Result</h2>
 <p>It will automatically update the approval file. But in the test runner, it will show up as a failing test so that we

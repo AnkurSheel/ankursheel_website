@@ -132,11 +132,11 @@
 <p>If you are not a big company, chances are you cannot afford the commercial programs to check for memory leaks in your program. This tutorial will give you a free alternative that you can add to your projects. The 1st thing that we need to do is to include <em>crtdbg.h</em>.</p>
 <p><strong>Note:</strong> <em>crtdbg.h</em> should be added after all the other header files.</p>
 <p>It would be nice to get the file and the line number that is causing the leak, To make debugging easier. Luckily, this can easily be done with some macro trickery.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> _DEBUG</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DEBUG_NEW new( _NORMAL_BLOCK, __FILE__, __LINE__)</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">else</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DEBUG_NEW new</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-keyword">ifdef</span> _DEBUG</span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> DEBUG_NEW new( _NORMAL_BLOCK, __FILE__, __LINE__)</span>
+<span class="hljs-meta">#<span class="hljs-keyword">else</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> DEBUG_NEW new</span>
+<span class="hljs-meta">#<span class="hljs-keyword">endif</span></span>
 </code></pre>
 <p>The <em><em>DEBUG</em></em> macro is defined only for <strong>Debug</strong> builds, ensuring that we don't get sub-par code by encasing the code in <em>#ifdef/#endif</em> quotes code in our <strong>Release</strong> builds.</p>
 <p><strong>NORMAL_BLOCK</strong> is the ordinary memory allocated by our program. Alternatively, we can use <strong>CLIENT_BLOCK</strong>, a special type of memory block (typically used by MFC programs) for objects requiring a destructor.</p>
@@ -144,18 +144,18 @@
 <p>Now, whenever we allocate memory using <strong>DEBUG_NEW</strong> (in Debug mode ), the <strong>_<em>FILE</em>_</strong> and <strong>_<em>LINE</em>_</strong> is automatically inserted by the pre-compiler into the <em>new operator</em> call.</p>
 <p><strong><em>Note: We can override the new and delete functions to add our custom tracking methods. We just need to make sure they do what the old new/delete operator functions did.</em></strong></p>
 <p>The only thing remaining is to set the debug flags to enable memory leak detection. Make sure you call this function at the start of your program.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">CheckForMemoryLeaks</span><span class="hljs-params">()</span>
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">CheckForMemoryLeaks</span><span class="hljs-params">()</span>
 </span>{
-<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> _DEBUG</span>
+<span class="hljs-meta">#<span class="hljs-keyword">ifdef</span> _DEBUG</span>
     <span class="hljs-comment">// Get Current flag</span>
-    <span class="hljs-keyword">int</span> flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG) ;
+    <span class="hljs-type">int</span> flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG) ;
 
     <span class="hljs-comment">// Turn on leak-checking bit</span>
     flag |= (_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF) ;
 
     <span class="hljs-comment">// Set flag to the new value</span>
     _CrtSetDbgFlag(flag) ;
-<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span> _DEBUG</span>
+<span class="hljs-meta">#<span class="hljs-keyword">endif</span> _DEBUG</span>
 }
 </code></pre>
 <p>The <em>_CrtSetDbgFlag</em> function allows the application to control how the debug heap manager tracks memory allocations. It does this by modifying the bit fields of the __crtDbgFlag* flag.</p>

@@ -137,35 +137,35 @@
 </ul>
 <p>Let us start modifying the options once we have the base from the gatsby article.</p>
 <h2 id="getting-the-data">Getting the data</h2>
-<pre><code class="language-graphql">query `
-{
-    site {
-        siteMetadata {
+<pre><code class="language-graphql hljs"><span class="hljs-keyword">query</span> `
+<span class="hljs-punctuation">{</span>
+    site <span class="hljs-punctuation">{</span>
+        siteMetadata <span class="hljs-punctuation">{</span>
             siteUrl
-        }
-    }
+        <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
 
-    allMdx(
-        limit: 1000
-        filter: { fileAbsolutePath: { regex: &quot;//content/posts//&quot; } }
-        sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-        edges {
-            node {
-                excerpt(pruneLength: 140)
+    allMdx<span class="hljs-punctuation">(</span>
+        <span class="hljs-symbol">limit</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1000</span>
+        <span class="hljs-symbol">filter</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">fileAbsolutePath</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">regex</span><span class="hljs-punctuation">:</span> &quot;//content/posts//&quot; <span class="hljs-punctuation">}</span> <span class="hljs-punctuation">}</span>
+        <span class="hljs-symbol">sort</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">order</span><span class="hljs-punctuation">:</span> DESC, <span class="hljs-symbol">fields</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>frontmatter___date<span class="hljs-punctuation">]</span> <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+        edges <span class="hljs-punctuation">{</span>
+            node <span class="hljs-punctuation">{</span>
+                excerpt<span class="hljs-punctuation">(</span><span class="hljs-symbol">pruneLength</span><span class="hljs-punctuation">:</span> <span class="hljs-number">140</span><span class="hljs-punctuation">)</span>
                 html
-                frontmatter {
+                frontmatter <span class="hljs-punctuation">{</span>
                     slug
                     title
                     date
-                    featuredImage {
+                    featuredImage <span class="hljs-punctuation">{</span>
                         publicURL
-                    }
-                }
-            }
-        }
-    }
-}
+                    <span class="hljs-punctuation">}</span>
+                <span class="hljs-punctuation">}</span>
+            <span class="hljs-punctuation">}</span>
+        <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
 `;
 </code></pre>
 <p>So what am I doing here?</p>
@@ -182,43 +182,43 @@
 </ul>
 <h2 id="build-the-feed-object">Build the feed object</h2>
 <p>The documentation states that every feed must include <em>option</em>, <em>query</em> and <em>title</em>. It also recommends passing a serialize function to customize the feed structure. This is what the final <em>feeds</em> array looks like</p>
-<pre><code class="language-javascript hljs">feeds: [
+<pre><code class="language-javascript hljs"><span class="hljs-attr">feeds</span>: [
     {
-        serialize: ({ query: { site, allMdx } }) =&gt; {
-            const {
-                siteMetadata: { siteUrl },
+        <span class="hljs-attr">serialize</span>: ({ <span class="hljs-attr">query</span>: { site, allMdx } }) =&gt; {
+            <span class="hljs-keyword">const</span> {
+                <span class="hljs-attr">siteMetadata</span>: { siteUrl },
             } = site;
 
-            return allMdx.edges.map(edge =&gt; {
-                const {
-                    node: {
-                        frontmatter: { title, date, slug, featuredImage },
+            <span class="hljs-keyword">return</span> allMdx.<span class="hljs-property">edges</span>.<span class="hljs-title function_">map</span>(edge =&gt; {
+                <span class="hljs-keyword">const</span> {
+                    <span class="hljs-attr">node</span>: {
+                        <span class="hljs-attr">frontmatter</span>: { title, date, slug, featuredImage },
                         excerpt,
                         html,
                     },
                 } = edge;
 
-                const blogUrl = `${siteUrl}/blog/${slug}`;
+                <span class="hljs-keyword">const</span> blogUrl = <span class="hljs-string">`<span class="hljs-subst">${siteUrl}</span>/blog/<span class="hljs-subst">${slug}</span>`</span>;
 
-                return Object.assign({}, edge.node.frontmatter, {
+                <span class="hljs-keyword">return</span> <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">assign</span>({}, edge.<span class="hljs-property">node</span>.<span class="hljs-property">frontmatter</span>, {
                     title,
-                    description: excerpt,
+                    <span class="hljs-attr">description</span>: excerpt,
                     date,
-                    url: blogUrl,
-                    guid: blogUrl,
-                    enclosure: featuredImage &amp;&amp; {
-                        url: siteUrl + featuredImage.publicURL,
+                    <span class="hljs-attr">url</span>: blogUrl,
+                    <span class="hljs-attr">guid</span>: blogUrl,
+                    <span class="hljs-attr">enclosure</span>: featuredImage &amp;&amp; {
+                        <span class="hljs-attr">url</span>: siteUrl + featuredImage.<span class="hljs-property">publicURL</span>,
                     },
-                    custom_elements: [{ 'content:encoded': html }],
+                    <span class="hljs-attr">custom_elements</span>: [{ <span class="hljs-string">'content:encoded'</span>: html }],
                 });
             });
         },
 
-        output: '/blog/rss.xml',
-        title: &quot;Ankur Sheel's Ramblings&quot;,
+        <span class="hljs-attr">output</span>: <span class="hljs-string">'/blog/rss.xml'</span>,
+        <span class="hljs-attr">title</span>: &quot;<span class="hljs-title class_">Ankur</span> <span class="hljs-title class_">Sheel</span><span class="hljs-string">'s Ramblings&quot;,
     },
 ],
-</code></pre>
+</span></code></pre>
 <p>Let's break this down.</p>
 <ul>
 <li><strong><em>Line 3</em></strong>: Create the serialize function which destructures <em>site</em> and <em>allMdx</em> from the query object.</li>

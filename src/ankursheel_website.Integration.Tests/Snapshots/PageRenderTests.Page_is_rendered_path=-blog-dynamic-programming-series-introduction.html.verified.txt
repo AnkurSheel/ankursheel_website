@@ -150,13 +150,13 @@ Benchmark Name   Running Time   Iterations/sec        Items/sec
 <p>While 2 and 3 will indicate the time complexity of the function, 4 will provide us with the space complexity.</p>
 <h2 id="example-fibonacci-series">Example: Fibonacci Series</h2>
 <p>The classic example to explain dynamic programming is the <a href="https://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci computation</a> which can be formalised as follows</p>
-<pre><code class="language-ini hljs">Fibonacci(n) = 0; if n = 0
-Fibonacci(n) = 1; if n = 1
-Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2) ; if n &gt;=2
+<pre><code class="language-ini hljs">Fibonacci(n) = 0<span class="hljs-comment">; if n = 0</span>
+Fibonacci(n) = 1<span class="hljs-comment">; if n = 1</span>
+Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2) <span class="hljs-comment">; if n &gt;=2</span>
 </code></pre>
 <h3 id="naive-recursive-approach">Naive Recursive Approach</h3>
 <p>The Fibonacci sequence can easily be solved by the following recursive method:</p>
-<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">Fibonacci</span><span class="hljs-params">(<span class="hljs-keyword">long</span> n)</span>
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-type">long</span> <span class="hljs-title">Fibonacci</span><span class="hljs-params">(<span class="hljs-type">long</span> n)</span>
 </span>{
     <span class="hljs-keyword">if</span> (n == <span class="hljs-number">0</span>)
     {
@@ -166,7 +166,7 @@ Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2) ; if n &gt;=2
     {
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
     }
-    <span class="hljs-keyword">return</span> Fibonacci(n - <span class="hljs-number">2</span>) + Fibonacci(n - <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Fibonacci</span>(n - <span class="hljs-number">2</span>) + <span class="hljs-built_in">Fibonacci</span>(n - <span class="hljs-number">1</span>);
 }
 </code></pre>
 <p>On running the above code and profiling it on my machine, I get:</p>
@@ -194,24 +194,24 @@ FibonacciRecursive/50            124510 ms               1           0.40282
 <p>You must have realised that this solution is not at all scalable. If you are thinking that there has to be a better way, you are correct.</p>
 <h3 id="top-down-recursive-approach-with-memoization">Top-Down Recursive approach with Memoization</h3>
 <p>The 1st step to improving the above solution is to add memoization, i.e. to store the previously computed values in a data structure. Although you can use any data structure that you like, I will use a map for the purposes of this example.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MOD 1000000007</span>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-keyword">define</span> MOD 1000000007</span>
 
-<span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">FibonacciMemonized</span><span class="hljs-params">(<span class="hljs-keyword">long</span> n)</span>
+<span class="hljs-function"><span class="hljs-type">long</span> <span class="hljs-title">FibonacciMemonized</span><span class="hljs-params">(<span class="hljs-type">long</span> n)</span>
 </span>{
-    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">map</span>&lt;<span class="hljs-keyword">long</span>, <span class="hljs-keyword">long</span>&gt; computedValues;
-    computedValues.insert(make_pair(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>));
-    computedValues.insert(make_pair(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>));
-    <span class="hljs-keyword">return</span> FibonacciMemonized(n, computedValues);
+    std::map&lt;<span class="hljs-type">long</span>, <span class="hljs-type">long</span>&gt; computedValues;
+    computedValues.<span class="hljs-built_in">insert</span>(<span class="hljs-built_in">make_pair</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>));
+    computedValues.<span class="hljs-built_in">insert</span>(<span class="hljs-built_in">make_pair</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">FibonacciMemonized</span>(n, computedValues);
 }
 
-<span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">FibonacciMemonized</span><span class="hljs-params">(<span class="hljs-keyword">long</span> n, <span class="hljs-built_in">std</span>::<span class="hljs-built_in">map</span>&lt;<span class="hljs-keyword">long</span>, <span class="hljs-keyword">long</span>&gt;&amp; computedValues)</span>
+<span class="hljs-function"><span class="hljs-type">long</span> <span class="hljs-title">FibonacciMemonized</span><span class="hljs-params">(<span class="hljs-type">long</span> n, std::map&lt;<span class="hljs-type">long</span>, <span class="hljs-type">long</span>&gt;&amp; computedValues)</span>
 </span>{
-    <span class="hljs-keyword">if</span> (computedValues.find(n) != computedValues.end())
+    <span class="hljs-keyword">if</span> (computedValues.<span class="hljs-built_in">find</span>(n) != computedValues.<span class="hljs-built_in">end</span>())
     {
         <span class="hljs-keyword">return</span> computedValues[n];
     }
-    <span class="hljs-keyword">long</span> newValue = (FibonacciMemonized(n - <span class="hljs-number">1</span>, computedValues) + FibonacciMemonized(n - <span class="hljs-number">2</span>, computedValues)) % MOD;
-    computedValues.insert(make_pair(n, newValue));
+    <span class="hljs-type">long</span> newValue = (<span class="hljs-built_in">FibonacciMemonized</span>(n - <span class="hljs-number">1</span>, computedValues) + <span class="hljs-built_in">FibonacciMemonized</span>(n - <span class="hljs-number">2</span>, computedValues)) % MOD;
+    computedValues.<span class="hljs-built_in">insert</span>(<span class="hljs-built_in">make_pair</span>(n, newValue));
     <span class="hljs-keyword">return</span> newValue;
 }
 </code></pre>
@@ -238,9 +238,9 @@ FibonacciMemonized/20000              7 ms             187          2.65432M
 <h3 id="bottom-up-approach-with-dynamic-programming">Bottom-Up Approach with Dynamic Programming</h3>
 <p>In the previous approach, our main problem was the recursive nature of our algorithm. Let's see if we can get rid of it by using an iterative approach.</p>
 <p>How do we do this? Instead of starting from the final value, we will begin with the smallest value of <strong>n</strong> and build up the results.</p>
-<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MOD 1000000007</span>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-keyword">define</span> MOD 1000000007</span>
 
-<span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">FibonacciDP</span><span class="hljs-params">(<span class="hljs-keyword">long</span> n)</span>
+<span class="hljs-function"><span class="hljs-type">long</span> <span class="hljs-title">FibonacciDP</span><span class="hljs-params">(<span class="hljs-type">long</span> n)</span>
 </span>{
     <span class="hljs-keyword">if</span> (n == <span class="hljs-number">0</span>)
     {
@@ -250,14 +250,14 @@ FibonacciMemonized/20000              7 ms             187          2.65432M
     {
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
     }
-    <span class="hljs-keyword">long</span>* results = <span class="hljs-keyword">new</span> <span class="hljs-keyword">long</span>[n + <span class="hljs-number">1</span>];
+    <span class="hljs-type">long</span>* results = <span class="hljs-keyword">new</span> <span class="hljs-type">long</span>[n + <span class="hljs-number">1</span>];
     results[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
     results[<span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++)
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++)
     {
         results[i] = (results[i - <span class="hljs-number">1</span>] + results[i - <span class="hljs-number">2</span>]) % MOD;
     }
-    <span class="hljs-keyword">long</span> value = results[n];
+    <span class="hljs-type">long</span> value = results[n];
     <span class="hljs-keyword">delete</span>[] results;
     <span class="hljs-keyword">return</span> value;
 }
@@ -279,9 +279,9 @@ FibonacciDP/2100000                  18 ms              81          110.448M
 <h3 id="bottom-up-approach-with-dynamic-programming-optimised">Bottom-Up Approach with Dynamic Programming (Optimised)</h3>
 <p>In the last algorithm, the amount of space required is proportional to <strong>n</strong>. This is because we are storing all the results. But, we don't need to keep all of them.</p>
 <p>Let's eliminate the array by using just 3 variables - 2 to store the previous results and 1 to store the current result.</p>
-<pre><code class="language-cpp hljs">    <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MOD 1000000007</span>
+<pre><code class="language-cpp hljs">    <span class="hljs-meta">#<span class="hljs-keyword">define</span> MOD 1000000007</span>
 
-<span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">FibonacciDPOptimized</span><span class="hljs-params">(<span class="hljs-keyword">long</span> n)</span>
+<span class="hljs-function"><span class="hljs-type">long</span> <span class="hljs-title">FibonacciDPOptimized</span><span class="hljs-params">(<span class="hljs-type">long</span> n)</span>
 </span>{
     <span class="hljs-keyword">if</span> (n == <span class="hljs-number">0</span>)
     {
@@ -291,10 +291,10 @@ FibonacciDP/2100000                  18 ms              81          110.448M
     {
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
     }
-    <span class="hljs-keyword">long</span> n1 = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">long</span> n2 = <span class="hljs-number">1</span>;
-    <span class="hljs-keyword">long</span> current = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++)
+    <span class="hljs-type">long</span> n1 = <span class="hljs-number">0</span>;
+    <span class="hljs-type">long</span> n2 = <span class="hljs-number">1</span>;
+    <span class="hljs-type">long</span> current = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++)
     {
         current = (n1 + n2) % MOD;
         n1 = n2;
