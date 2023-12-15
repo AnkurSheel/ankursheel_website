@@ -27,6 +27,7 @@ To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 | [Asteroid clone](/blog/postmortem-asteroids)                                                                 |   Game   | Inactive | C++, DirectX 9             |
 | [Pong clone](/blog/postmortem-mpong)                                                                         |   Game   | Inactive | C++, DirectX 9             |
 | [Procedural Minecraft terrain generator](./personal-projects/procedural-minecraft-terrain-generator)         |    AI    | Inactive | Python                     |
+| [Route Planner using Genetic Algorithms](./personal-projects/route-planner-travelling-salesman-problem)      |    AI    | Inactive | Python, C++, HTML          |
 | NegaMax Algorithm with and w/o Alpha-Beta Pruning                                                            |    AI    | Inactive | C++                        |
 | Sudoku Generator and Solver                                                                                  |   Game   | Inactive | C++                        |
 | Autonomous robot using an ultrasonic sensor to navigate a maze and blob recognition find an object in a maze |    AI    | Inactive | C++                        |
