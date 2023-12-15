@@ -122,7 +122,7 @@
 <li>South America</li>
 <li><a href="/tags/europe"><del>Europe</del></a></li>
 <li><del>Asia</del></li>
-<li>Australia</li>
+<li><del>Australia</del></li>
 <li>Antarctica</li>
 <li>Africa</li>
 </ul>

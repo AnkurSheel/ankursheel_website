@@ -11,7 +11,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   South America
     -   [~~Europe~~](/tags/europe)
     -   ~~Asia~~
-    -   Australia
+    - ~~Australia~~
     -   Antarctica
     -   Africa
 -   ~~Travel For 1 month straight~~ (May - July 2010)
