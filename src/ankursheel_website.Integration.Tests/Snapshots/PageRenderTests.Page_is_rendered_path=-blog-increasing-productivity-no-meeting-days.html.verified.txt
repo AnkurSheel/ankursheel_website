@@ -218,13 +218,13 @@
                 <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
             </li>
             <li>
+                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
+            </li>
+            <li>
                 <a href="team-name">What&#x27;s in a team name</a>
             </li>
             <li>
                 <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
-            </li>
-            <li>
-                <a href="problem-without-solution-harmful">Do not come with a problem without a solution is harmful</a>
             </li>
     </ul>
 </aside>

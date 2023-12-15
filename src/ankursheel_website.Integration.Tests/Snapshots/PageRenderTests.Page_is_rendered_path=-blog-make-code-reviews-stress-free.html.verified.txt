@@ -206,6 +206,9 @@
 
     <ul>
             <li>
+                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
+            </li>
+            <li>
                 <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
             </li>
             <li>
@@ -213,9 +216,6 @@
             </li>
             <li>
                 <a href="team-name">What&#x27;s in a team name</a>
-            </li>
-            <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
             </li>
     </ul>
 </aside>

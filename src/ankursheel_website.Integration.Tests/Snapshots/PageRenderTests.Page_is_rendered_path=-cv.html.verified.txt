@@ -185,6 +185,12 @@
 <td>Python</td>
 </tr>
 <tr>
+<td><a href="personal-projects/route-planner-travelling-salesman-problem">Route Planner using Genetic Algorithms</a></td>
+<td style="text-align: center;">AI</td>
+<td>Inactive</td>
+<td>Python, C++, HTML</td>
+</tr>
+<tr>
 <td>NegaMax Algorithm with and w/o Alpha-Beta Pruning</td>
 <td style="text-align: center;">AI</td>
 <td>Inactive</td>

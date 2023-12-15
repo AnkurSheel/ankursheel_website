@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Unlock your career&#x27;s potential with effective 1:1 meetings</title>
+<title>Level Up Your Pull Requests: The Value of Individual Commits</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
+<meta name="description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings"/>   
-<meta itemProp="name" content="Unlock your career&#x27;s potential with effective 1:1 meetings"/>
-<meta itemProp="description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits"/>   
+<meta itemProp="name" content="Level Up Your Pull Requests: The Value of Individual Commits"/>
+<meta itemProp="description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Unlock your career&#x27;s potential with effective 1:1 meetings"/>
-<meta property="og:description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-facebook.png"/>
+<meta property="og:title" content="Level Up Your Pull Requests: The Value of Individual Commits"/>
+<meta property="og:description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Unlock your career&#x27;s potential with effective 1:1 meetings"/>
-<meta name="twitter:description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-twitter.png"/>
+<meta name="twitter:title" content="Level Up Your Pull Requests: The Value of Individual Commits"/>
+<meta name="twitter:description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,93 +110,183 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Unlock your career&#x27;s potential with effective 1:1 meetings</h1>
+    <h1 class="text-center">Level Up Your Pull Requests: The Value of Individual Commits</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2023-09-13">Sep 13, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-09-13">Sep 13, 2023</time></p>
+        <p class="mr-4">Published on <time datetime="2023-11-27">Nov 27, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2023-11-27">Nov 27, 2023</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">3 min</span>
+            Estimated Reading Time: <span  class="font-bold">9 min</span>
         </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
-            <a href="/tags/career" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">career</a>
+            <a href="/tags/process" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">process</a>
+            <a href="/tags/opinion" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">opinion</a>
     </div>
 </div>
 
-<p>When it comes to professional growth, one question often looms large</p>
+<p><em>This is an edited version of an article I originally wrote for the internal blog at Atlassian.</em></p>
+<p>As a Pull Request(PR) reviewer, my main goal is to be as confident as possible about the outcomes once the PR gets merged. To accomplish this, I want to be able to answer 3 questions:</p>
+<ol>
+<li>Do these changes fulfil the requirements?</li>
+<li>Do these changes improve the current state?</li>
+<li>Could these changes potentially lead to an incident?</li>
+</ol>
+<p>Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.</p>
+<p>If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.</p>
+<img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480" />
+<p>What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?</p>
+<p>Split the commit into <strong>small</strong> <strong>individual</strong> commits that make <strong>logical sense</strong>.</p>
 <blockquote>
-<p>What should I discuss in my 1:1 meetings? I often have nothing beyond project updates.</p>
+<p>The key is to ensure that each commit makes sense on its own and represents a single logical change.</p>
 </blockquote>
-<p>This is a common concern, and it's crucial to recognise that a 1:1 meeting is more than just a status update session. It's an opportunity to connect with your supervisor, discuss your progress, and express your thoughts and concerns.</p>
-<h2 id="how-to-effectively-prepare-for-a-11">How to Effectively Prepare for a 1:1</h2>
-<p>Preparation is key to making the most of your 1:1 meetings. Not only does it demonstrate professionalism, but it also maximises the value of your time.</p>
-<p>Taking notes during(or just after) the 1:1 is pivotal for several reasons. It demonstrates active engagement, aids in retaining essential points, and serves as a reference for future discussions. You can easily look at your notes and if for example, you havent spoken about professional growth for a while, you can focus on those questions in the next 1:1.</p>
-<p>I like to have at least 3-5 prepared topics using the questions below as prompts.</p>
-<h3 id="review-previous-meeting">Review Previous Meeting</h3>
+<h2 id="why-should-you-opt-for-multiple-commits-instead-of-a-single-large-commit">Why should you opt for multiple commits instead of a single large commit?</h2>
+<p>Some might argue that they review all PRs as one comprehensive diff; therefore, spending time creating smaller commits is a waste of time.</p>
+<p>Leaving apart the fact that having smaller commits does not preclude reviewing a PR as a single diff, breaking down even a small PR into multiple, well-structured commits is still beneficial.</p>
+<h3 id="clear-and-understandable-history">Clear and Understandable History</h3>
+<p>Multiple small commits create a clear and understandable history.</p>
+<blockquote>
+<p>Just as we aim to follow the single responsibility principle in programming, we should also apply it to our commits.</p>
+</blockquote>
+<p>Each commit should represent a single logical change. This makes it easier for any team member to understand the thought process and the steps taken to arrive at the final code.</p>
+<p>It's similar to reading a well-structured book versus a convoluted, rambling essay.</p>
+<p><em>See “What to Split into its own commit” below.</em></p>
+<h3 id="improve-debugging-and-trouble-shooting-efficiency">Improve Debugging and Trouble-shooting Efficiency</h3>
+<p>Small commits come to the rescue when bugs creep into the system.</p>
+<p>With large commits, finding the issue is like searching for a needle in a haystack. However, with small commits, since each commit represents a single logical change, it's much easier to pinpoint the offending code.</p>
+<p>Small commits also work well with tools like <code>git-bisect</code>, making the debugging process more efficient and less time-consuming.</p>
+<h3 id="increase-code-review-efficiency">Increase Code Review Efficiency</h3>
+<p>Multiple commits make code review more manageable and effective.</p>
+<p><img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/review-twitter.jpg" alt="Twitter screenshot" /></p>
+<p>Reviewers can focus on a single small change at a time, ensuring a more thorough review and reducing the likelihood of overlooking potential issues. It also eases the cognitive load on the reviewer, as they don't have to grasp many changes at once, enabling them to provide more insightful feedback.</p>
+<h3 id="faster-reviews">Faster Reviews</h3>
+<p>Well-structured commits provide reviewers with natural stopping points.</p>
+<p>If it's a large PR, the reviewer will have to block a chunk of time to review it. But, with individual commits, they might be able to look at the PR in shorter blocks, leading to a faster turnaround time.</p>
+<h3 id="promote-work-transparency">Promote Work Transparency</h3>
+<p>Multiple commits offer a transparent view of the work progress. Each commit denotes a step forward, indicating productivity and makes it easy to get preliminary reviews on WIPs.</p>
+<p>This ability to get feedback early means that you spend less time going in the wrong direction for too long and avoid expensive rewrites.</p>
+<h3 id="minimises-risk">Minimises Risk</h3>
+<p>Multiple commits help minimise the risk associated with losing work.</p>
+<p>You always have a saved version to revert to if something goes awry. This is particularly helpful when introducing new features or making significant changes.</p>
+<h3 id="enable-pr-splitting">Enable PR Splitting</h3>
+<p>Having individual (logical unit) commits will naturally contribute to the ability to split PRs.</p>
+<h3 id="reduce-annotation-needs">Reduce Annotation Needs</h3>
+<p>Smaller, well-structured commits also diminish the necessity for annotating a PR with comments to help reviewers understand it better.</p>
+<p>Once you have commits that are logical units, it becomes easier to write commit messages that are clear and specific. This allows the reviewer to understand the progression of the changes and sometimes can offer clarity as to why certain changes in the PR were made.</p>
+<h2 id="example">Example</h2>
+<p><em><strong>Note:</strong> I have blurred out the images since the code and the commit messages itself are not important.</em></p>
+<p><strong>First</strong>, Which is more straightforward to understand - A single commit message saying &quot;<em><strong>fixed XYZ errors&quot;</strong></em> or this commit history?</p>
+<p><img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/commit-history.png" alt="commit history" /></p>
+<p>Unsurprisingly, I prefer the split commit history.</p>
+<p><strong>Next</strong>, compare and see which diff is simpler to review.</p>
+<p><em><strong>Note:</strong> Its the same block of code seen as combined diff view vs commit view.</em></p>
+<p><img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/all-changes-1-commit.png" alt="all changes in 1 commit" />
+vs
+<img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/separate-duplication-and-code-changes.png" alt="separate duplication and code changes" /></p>
+<p>Personally, even with the code blurred, I can sense that the 2nd diff is going to be easy to reason about.</p>
+<p>It's also easy to see that although the PR might have a large diff, the actual change is relatively small.</p>
+<h2 id="what-to-split-into-its-own-commit">What to Split into its own commit</h2>
+<p>Hopefully, by now, you are convinced that individual commits are beneficial.</p>
+<p>But you might be wondering how to split a single giant commit into smaller ones.</p>
+<p>Many types of changes should be split into separate commits. Dare I say that some of them should be their own PR?</p>
+<p>In general, changes belong to two different types of classes:</p>
 <ul>
-<li>Have I made any progress on the action items from the last 1:1?</li>
-<li>Are there any action items from the last 1:1 that I need to follow up with my supervisor?</li>
-</ul>
-<h3 id="brief-project-updates">Brief Project Updates</h3>
-<p><em>Limit project updates to 1 or 2 minutes unless it's the primary focus. Remember, 1:1s aren't project status meetings.</em></p>
+<li><strong>Refactoring</strong>
 <ul>
-<li>Is the project status on or off track?</li>
-<li>Are there any noteworthy highlights or progress updates (that were not already covered in standups or elsewhere)?</li>
+<li>These changes are very low risk especially since most IDE’s come with automated refactoring tools.</li>
 </ul>
-<h3 id="share-wins">Share Wins</h3>
+</li>
+<li><strong>Behavioural</strong>
 <ul>
-<li>What were my key achievements since the last 1:1? <em>Highlight accomplishments that have moved me or the team forward.</em></li>
-<li>What went exceptionally well?</li>
+<li>These changes require more careful reviews.</li>
 </ul>
-<h3 id="identify-challenges">Identify Challenges</h3>
-<ul>
-<li>Are there any decisions I can't make independently and require input?</li>
-<li>Are there current issues I want to see resolved in the coming months?</li>
-<li>Are there any interpersonal tensions with colleagues that I would like to address proactively?</li>
-<li>Are there aspects of team dynamics that concern me?</li>
-<li>What could have gone better?</li>
+</li>
 </ul>
-<h3 id="discuss-career-growth-and-professional-development">Discuss Career Growth and Professional Development</h3>
-<ul>
-<li>Share any feedback I have received from colleagues or clients.</li>
-<li>Are there any opportunities I am interested in?</li>
-<li>Am I happy with my current project?</li>
-<li>Do I feel like I’m learning? Are there things I feel like I’m not learning that I would like to?</li>
-<li>Request feedback on recent projects or tasks and inquire about areas for improvement. (<em>Note: It's often better to ask for feedback immediately after an event, as waiting until the 1:1 might be too late.)</em></li>
-<li>Explore which skills I should focus on developing for my current role and future roles.</li>
-<li>Ask what I could do differently or what behaviours my supervisor doesn't appreciate.</li>
-<li>Inquire about anything I should start doing or stop doing.</li>
-</ul>
-<h3 id="flip-the-conversation">Flip the Conversation</h3>
-<ul>
-<li>Find out my supervisor's top priorities.</li>
-<li>Ask about any concerns or worries regarding the team.</li>
-<li>Explore how I can better support my supervisor.</li>
-</ul>
-<h3 id="backup-questions">Backup Questions</h3>
-<p><em>Use this section only when there's nothing else to discuss, and there's time.</em></p>
-<ul>
-<li>Share any interesting updates, lessons, or personal achievements.</li>
-</ul>
-<h2 id="share-your-11-experiences-and-tips">Share Your 1:1 Experiences and Tips</h2>
-<p>Navigating 1:1 meetings might seem daunting initially, but you'll soon become a pro with effective preparation, thoughtful questions, and diligent follow-ups. Remember, there's no such thing as a perfect 1:1 meeting.</p>
-<p>We're all on a learning journey, and your experiences and tips are invaluable. Have you discovered other effective ways to prepare for 1:1s? Are there additional questions that have proven helpful for you? How do you ensure you follow up on action items?</p>
-<p>Share your experiences and insights in the comments below. Your wisdom could be just what I or another reader needs to excel in their 1:1 meetings!</p>
+<p>The key to breaking up a single commit into smaller commits is identifying the parts needed to deliver a ticket. Some of the more common ones include:</p>
+<ol>
+<li>Refactoring</li>
+<li>Reformatting</li>
+<li>Deleting unused code</li>
+<li>Test improvements</li>
+<li>Introduction of feature flags</li>
+<li>Functional changes</li>
+<li>Adding Observability</li>
+</ol>
+<p>Let's focus on the &quot;<em>Introduction of Feature Flags</em>&quot; as an example.</p>
+<blockquote>
+<p>First make the change easy, then make the easy change</p>
+<p><cite>Kent Beck</cite></p>
+</blockquote>
+<p>When working on a ticket, the first step usually involves duplicating existing code and placing it behind a feature flag. This duplication should be its own commit, allowing the reviewer to focus on what has changed in the subsequent commits.</p>
+<p>Remember, you can always squash/reorder commits using interactive rebase (<code>git rebase -i</code>) or cherry pick
+(<code>git cherry-pick</code>) to make a cohesive story <strong>before</strong> putting up your changes for review.</p>
+<h2 id="questions">Questions</h2>
+<h3 id="q-shouldnt-the-refactorings-be-their-own-pr">Q: Shouldn't the refactorings be their own PR?</h3>
+<p>Ideally, Yes. But, it might not be possible if you work on a legacy monolith with a considerable build time. It becomes essential to balance complexity and speed.</p>
+<p>In this case, combining the refactoring commits into the PR made more sense. If the refactorings were more complex or had a lot of changes, it would be better to split them into their own PR.</p>
+<h3 id="q-is-fix-typo-in-variable-name-too-granular">Q: Is <code>fix typo in variable name</code> too granular?</h3>
+<p>In the above screenshot, some might argue that the &quot;<em>fix typo in variable name</em>&quot; commit should be grouped into another commit as it is too granular.</p>
+<p>However, having it as a separate commit is valuable as it is a refactoring rather than a functional change. It allows the reviewer to quickly identify this as just a typo fix.</p>
+<p>If it was in response to a PR review comment, having it as its own commit makes it easier for the reviewer to check that their comment has been addressed.</p>
+<h3 id="q-what-can-you-understand-from-fix-typo-in-variable-name-or-rename-variable-and-add-some-comments">Q: What can you understand from “fix typo in variable name” or “rename variable and add some comments”?</h3>
+<p>Both these commits signal to the reviewer that these are not behavioural changes.</p>
+<p>This does not mean that the reviewer should not review these commits, but it lets the reviewer know that it should not take too much cognitive load to review.</p>
+<h2 id="shouldnt-we-have-smaller-prs-not-smaller-commits">Shouldn't we have smaller PR's not smaller commits?</h2>
+<p>Yes, it would be better to have smaller PRs.</p>
+<p>But, if your team is used to reviewing everything as 1 giant diff, it can be hard to get approval if you split a PR into smaller PRs. It can be hard for people to accept that a lot of those PRs on their own probably wont provide value but also won’t break things due to being disabled through feature flags or for other reasons.</p>
+<p>Breaking a PR with one large commit into smaller individual commits that make logical sense provides a nice stepping stone to be able to split into smaller PR's. It is an relatively easier way to build that muscle.</p>
+<h3 id="q-isnt-the-pr-the-smallest-unit-to-understand-why-a-change-is-being-made-so-individual-commits-are-useless">Q: Isn't the PR the smallest unit to understand why a change is being made, so individual commits are useless?</h3>
+<p>In an ideal world, yes. But, it's easy to fall into the trap of making multiple changes in the same PR because it takes so much time to deploy a PR to production. Having individual commits gives us a nice balance between complexity and speed.</p>
+<p>Taking the analogy of an article, it's like saying we don't need to have sub-headings because the essay must be consumed as one unit. The subheadings/commits make it easier to consume.</p>
+<p>If you want your PRs to be one single commit on merge, it can be achieved by enabling squash commits on merge. After getting approval, you can also use interactive rebase to squash the commits manually.</p>
+<p>I would still strongly suggest that there is value in keeping the individual commits (as long as each commit is a logical unit) so that you can use tools like <code>git bisect</code> or even eyeball the commit messages to make it easier to find the underlying culprit. Alternatively, you can merge each commit as an individual PR.</p>
+<h3 id="q-is-there-a-middle-ground-between-having-a-single-commit-and-too-many-small-ones">Q: Is there a middle ground between having a single commit and “too many” small ones?</h3>
+<p>Yes. You can go overboard with too many small commits, and a balance needs to be achieved.</p>
+<p>Having smaller commits doesn't mean that you show every step or that the commits should reflect the edit history. Each commit should make logical sense on its own.</p>
+<p>I have addressed this with the “What to split” section.</p>
+<h3 id="q-isnt-it-problematic-to-review-individual-commits-given-they-can-often-be-part-of-the-developers-journey-of-changing-their-mind-refactoring-and-gaining-insights">Q: Isn't it problematic to review individual commits, given they can often be part of the developer's journey of changing their mind, refactoring, and gaining insights?</h3>
+<p>Smaller commits doesn't mean you show every step; each commit should be a logical unit that provides value in production. Otherwise, it's just cruft.</p>
+<blockquote>
+<p>Drop it or Squash it.</p>
+</blockquote>
+<p>If the author changes their mind, how does that commit provide value to the reviewer or the system in production? The author should be using interactive rebase to squash or drop those commits before putting them up for review.</p>
+<h3 id="q-do-you-have-any-suggestions-for-preparing-atomic-commits">Q: Do you have any suggestions for preparing atomic commits?</h3>
+<p>Proper planning and upfront thinking of how to break the PR helps, but it is not always possible. I use interactive rebase, cherry-picking and changesets in IntelliJ liberally.</p>
+<p><strong><em>If this is something you are interested in knowing more about, let me know in the comments.</em></strong></p>
+<h3 id="q-what-about-making-changes-based-on-review-comments">Q: What about making changes based on review comments?</h3>
+<blockquote>
+<p>Every review should be a snapshot.</p>
+</blockquote>
+<p>Once a reviewer has reviewed your PR, you should not be making changes to commits that have been reviewed.</p>
+<p>The (new) commits that you make to address the review comments should follow the same rules as above.</p>
+<p>Writing a commit message like &quot;<em>address PR feedback</em>&quot; and then dumping all the requested changes in 1 commit is not helpful. TBH, even I have been guilty of doing this at times.</p>
+<p>You dont want the reviewer to have to revisit the commits that they have already reviewed but you also want to make it easy for them to ensure that their comments have been addressed correctly.</p>
+<p>I prefer to prefix such commits with <strong>CR:</strong>.</p>
+<h2 id="in-conclusion">In Conclusion</h2>
+<blockquote>
+<p>It’s the author’s responsibility to make the code review easy for the reviewer.</p>
+</blockquote>
+<p>While it may seem tedious to make frequent small commits and tempting to wait until all the work is completed, the advantages of small commits are significant.</p>
+<p>However, remember that the size of a commit will depend on the context and the nature of the change.</p>
+<blockquote>
+<p>The key is to ensure that each commit makes sense on its own and represents a single logical change.</p>
+</blockquote>
+<p>Breaking a PR with one large commit into smaller individual commits that make logical sense provides a nice stepping stone to be able to split into smaller PR's.</p>
+<p>Is there any reason why we <strong>shouldn't</strong> be putting in the effort to make smaller commits and writing better commit messages?</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings&text=Unlock%20your%20career%27s%20potential%20with%20effective%201%3A1%20meetings via @ankur_sheel.&#xD;&#xA;Navigating%201%3A1%20meetings%20might%20seem%20daunting%20initially%2C%20but%20you%27ll%20soon%20become%20a%20pro%20with%20effective%20preparation%20and%20thoughtful%20questions" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits&text=Level%20Up%20Your%20Pull%20Requests%3A%20The%20Value%20of%20Individual%20Commits via @ankur_sheel.&#xD;&#xA;Uncover%20the%20secrets%20to%20effective%20pull%20requests.%20From%20clear%20histories%20to%20efficient%20reviews%2C%20find%20out%20why%20this%20is%20a%20must%20for%20every%20developer." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -231,16 +321,16 @@
 
     <ul>
             <li>
-                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
-            </li>
-            <li>
-                <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
-            </li>
-            <li>
                 <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
+                <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
+            </li>
+            <li>
+                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+            </li>
+            <li>
+                <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
     </ul>
 </aside>

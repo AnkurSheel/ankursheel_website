@@ -8,6 +8,164 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Level Up Your Pull Requests: The Value of Individual Commits</title>
+      <link>https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits</link>
+      <description>Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/images/commit-history.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits</guid>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the internal blog at Atlassian.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As a Pull Request(PR) reviewer, my main goal is to be as confident as possible about the outcomes once the PR gets merged. To accomplish this, I want to be able to answer 3 questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do these changes fulfil the requirements?&lt;/li&gt;
+&lt;li&gt;Do these changes improve the current state?&lt;/li&gt;
+&lt;li&gt;Could these changes potentially lead to an incident?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
+&lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
+&lt;img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
+&lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The key is to ensure that each commit makes sense on its own and represents a single logical change.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="why-should-you-opt-for-multiple-commits-instead-of-a-single-large-commit"&gt;Why should you opt for multiple commits instead of a single large commit?&lt;/h2&gt;
+&lt;p&gt;Some might argue that they review all PRs as one comprehensive diff; therefore, spending time creating smaller commits is a waste of time.&lt;/p&gt;
+&lt;p&gt;Leaving apart the fact that having smaller commits does not preclude reviewing a PR as a single diff, breaking down even a small PR into multiple, well-structured commits is still beneficial.&lt;/p&gt;
+&lt;h3 id="clear-and-understandable-history"&gt;Clear and Understandable History&lt;/h3&gt;
+&lt;p&gt;Multiple small commits create a clear and understandable history.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Just as we aim to follow the single responsibility principle in programming, we should also apply it to our commits.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Each commit should represent a single logical change. This makes it easier for any team member to understand the thought process and the steps taken to arrive at the final code.&lt;/p&gt;
+&lt;p&gt;It's similar to reading a well-structured book versus a convoluted, rambling essay.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;See “What to Split into its own commit” below.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="improve-debugging-and-trouble-shooting-efficiency"&gt;Improve Debugging and Trouble-shooting Efficiency&lt;/h3&gt;
+&lt;p&gt;Small commits come to the rescue when bugs creep into the system.&lt;/p&gt;
+&lt;p&gt;With large commits, finding the issue is like searching for a needle in a haystack. However, with small commits, since each commit represents a single logical change, it's much easier to pinpoint the offending code.&lt;/p&gt;
+&lt;p&gt;Small commits also work well with tools like &lt;code&gt;git-bisect&lt;/code&gt;, making the debugging process more efficient and less time-consuming.&lt;/p&gt;
+&lt;h3 id="increase-code-review-efficiency"&gt;Increase Code Review Efficiency&lt;/h3&gt;
+&lt;p&gt;Multiple commits make code review more manageable and effective.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/review-twitter.jpg" alt="Twitter screenshot"&gt;&lt;/p&gt;
+&lt;p&gt;Reviewers can focus on a single small change at a time, ensuring a more thorough review and reducing the likelihood of overlooking potential issues. It also eases the cognitive load on the reviewer, as they don't have to grasp many changes at once, enabling them to provide more insightful feedback.&lt;/p&gt;
+&lt;h3 id="faster-reviews"&gt;Faster Reviews&lt;/h3&gt;
+&lt;p&gt;Well-structured commits provide reviewers with natural stopping points.&lt;/p&gt;
+&lt;p&gt;If it's a large PR, the reviewer will have to block a chunk of time to review it. But, with individual commits, they might be able to look at the PR in shorter blocks, leading to a faster turnaround time.&lt;/p&gt;
+&lt;h3 id="promote-work-transparency"&gt;Promote Work Transparency&lt;/h3&gt;
+&lt;p&gt;Multiple commits offer a transparent view of the work progress. Each commit denotes a step forward, indicating productivity and makes it easy to get preliminary reviews on WIPs.&lt;/p&gt;
+&lt;p&gt;This ability to get feedback early means that you spend less time going in the wrong direction for too long and avoid expensive rewrites.&lt;/p&gt;
+&lt;h3 id="minimises-risk"&gt;Minimises Risk&lt;/h3&gt;
+&lt;p&gt;Multiple commits help minimise the risk associated with losing work.&lt;/p&gt;
+&lt;p&gt;You always have a saved version to revert to if something goes awry. This is particularly helpful when introducing new features or making significant changes.&lt;/p&gt;
+&lt;h3 id="enable-pr-splitting"&gt;Enable PR Splitting&lt;/h3&gt;
+&lt;p&gt;Having individual (logical unit) commits will naturally contribute to the ability to split PRs.&lt;/p&gt;
+&lt;h3 id="reduce-annotation-needs"&gt;Reduce Annotation Needs&lt;/h3&gt;
+&lt;p&gt;Smaller, well-structured commits also diminish the necessity for annotating a PR with comments to help reviewers understand it better.&lt;/p&gt;
+&lt;p&gt;Once you have commits that are logical units, it becomes easier to write commit messages that are clear and specific. This allows the reviewer to understand the progression of the changes and sometimes can offer clarity as to why certain changes in the PR were made.&lt;/p&gt;
+&lt;h2 id="example"&gt;Example&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; I have blurred out the images since the code and the commit messages itself are not important.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;, Which is more straightforward to understand - A single commit message saying "&lt;em&gt;&lt;strong&gt;fixed XYZ errors"&lt;/strong&gt;&lt;/em&gt; or this commit history?&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/commit-history.png" alt="commit history"&gt;&lt;/p&gt;
+&lt;p&gt;Unsurprisingly, I prefer the split commit history.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Next&lt;/strong&gt;, compare and see which diff is simpler to review.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; Its the same block of code seen as combined diff view vs commit view.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/all-changes-1-commit.png" alt="all changes in 1 commit"&gt;
+vs
+&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/separate-duplication-and-code-changes.png" alt="separate duplication and code changes"&gt;&lt;/p&gt;
+&lt;p&gt;Personally, even with the code blurred, I can sense that the 2nd diff is going to be easy to reason about.&lt;/p&gt;
+&lt;p&gt;It's also easy to see that although the PR might have a large diff, the actual change is relatively small.&lt;/p&gt;
+&lt;h2 id="what-to-split-into-its-own-commit"&gt;What to Split into its own commit&lt;/h2&gt;
+&lt;p&gt;Hopefully, by now, you are convinced that individual commits are beneficial.&lt;/p&gt;
+&lt;p&gt;But you might be wondering how to split a single giant commit into smaller ones.&lt;/p&gt;
+&lt;p&gt;Many types of changes should be split into separate commits. Dare I say that some of them should be their own PR?&lt;/p&gt;
+&lt;p&gt;In general, changes belong to two different types of classes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;These changes are very low risk especially since most IDE’s come with automated refactoring tools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Behavioural&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;These changes require more careful reviews.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key to breaking up a single commit into smaller commits is identifying the parts needed to deliver a ticket. Some of the more common ones include:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Refactoring&lt;/li&gt;
+&lt;li&gt;Reformatting&lt;/li&gt;
+&lt;li&gt;Deleting unused code&lt;/li&gt;
+&lt;li&gt;Test improvements&lt;/li&gt;
+&lt;li&gt;Introduction of feature flags&lt;/li&gt;
+&lt;li&gt;Functional changes&lt;/li&gt;
+&lt;li&gt;Adding Observability&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let's focus on the "&lt;em&gt;Introduction of Feature Flags&lt;/em&gt;" as an example.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;First make the change easy, then make the easy change&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Kent Beck&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When working on a ticket, the first step usually involves duplicating existing code and placing it behind a feature flag. This duplication should be its own commit, allowing the reviewer to focus on what has changed in the subsequent commits.&lt;/p&gt;
+&lt;p&gt;Remember, you can always squash/reorder commits using interactive rebase (&lt;code&gt;git rebase -i&lt;/code&gt;) or cherry pick
+(&lt;code&gt;git cherry-pick&lt;/code&gt;) to make a cohesive story &lt;strong&gt;before&lt;/strong&gt; putting up your changes for review.&lt;/p&gt;
+&lt;h2 id="questions"&gt;Questions&lt;/h2&gt;
+&lt;h3 id="q-shouldnt-the-refactorings-be-their-own-pr"&gt;Q: Shouldn't the refactorings be their own PR?&lt;/h3&gt;
+&lt;p&gt;Ideally, Yes. But, it might not be possible if you work on a legacy monolith with a considerable build time. It becomes essential to balance complexity and speed.&lt;/p&gt;
+&lt;p&gt;In this case, combining the refactoring commits into the PR made more sense. If the refactorings were more complex or had a lot of changes, it would be better to split them into their own PR.&lt;/p&gt;
+&lt;h3 id="q-is-fix-typo-in-variable-name-too-granular"&gt;Q: Is &lt;code&gt;fix typo in variable name&lt;/code&gt; too granular?&lt;/h3&gt;
+&lt;p&gt;In the above screenshot, some might argue that the "&lt;em&gt;fix typo in variable name&lt;/em&gt;" commit should be grouped into another commit as it is too granular.&lt;/p&gt;
+&lt;p&gt;However, having it as a separate commit is valuable as it is a refactoring rather than a functional change. It allows the reviewer to quickly identify this as just a typo fix.&lt;/p&gt;
+&lt;p&gt;If it was in response to a PR review comment, having it as its own commit makes it easier for the reviewer to check that their comment has been addressed.&lt;/p&gt;
+&lt;h3 id="q-what-can-you-understand-from-fix-typo-in-variable-name-or-rename-variable-and-add-some-comments"&gt;Q: What can you understand from “fix typo in variable name” or “rename variable and add some comments”?&lt;/h3&gt;
+&lt;p&gt;Both these commits signal to the reviewer that these are not behavioural changes.&lt;/p&gt;
+&lt;p&gt;This does not mean that the reviewer should not review these commits, but it lets the reviewer know that it should not take too much cognitive load to review.&lt;/p&gt;
+&lt;h2 id="shouldnt-we-have-smaller-prs-not-smaller-commits"&gt;Shouldn't we have smaller PR's not smaller commits?&lt;/h2&gt;
+&lt;p&gt;Yes, it would be better to have smaller PRs.&lt;/p&gt;
+&lt;p&gt;But, if your team is used to reviewing everything as 1 giant diff, it can be hard to get approval if you split a PR into smaller PRs. It can be hard for people to accept that a lot of those PRs on their own probably wont provide value but also won’t break things due to being disabled through feature flags or for other reasons.&lt;/p&gt;
+&lt;p&gt;Breaking a PR with one large commit into smaller individual commits that make logical sense provides a nice stepping stone to be able to split into smaller PR's. It is an relatively easier way to build that muscle.&lt;/p&gt;
+&lt;h3 id="q-isnt-the-pr-the-smallest-unit-to-understand-why-a-change-is-being-made-so-individual-commits-are-useless"&gt;Q: Isn't the PR the smallest unit to understand why a change is being made, so individual commits are useless?&lt;/h3&gt;
+&lt;p&gt;In an ideal world, yes. But, it's easy to fall into the trap of making multiple changes in the same PR because it takes so much time to deploy a PR to production. Having individual commits gives us a nice balance between complexity and speed.&lt;/p&gt;
+&lt;p&gt;Taking the analogy of an article, it's like saying we don't need to have sub-headings because the essay must be consumed as one unit. The subheadings/commits make it easier to consume.&lt;/p&gt;
+&lt;p&gt;If you want your PRs to be one single commit on merge, it can be achieved by enabling squash commits on merge. After getting approval, you can also use interactive rebase to squash the commits manually.&lt;/p&gt;
+&lt;p&gt;I would still strongly suggest that there is value in keeping the individual commits (as long as each commit is a logical unit) so that you can use tools like &lt;code&gt;git bisect&lt;/code&gt; or even eyeball the commit messages to make it easier to find the underlying culprit. Alternatively, you can merge each commit as an individual PR.&lt;/p&gt;
+&lt;h3 id="q-is-there-a-middle-ground-between-having-a-single-commit-and-too-many-small-ones"&gt;Q: Is there a middle ground between having a single commit and “too many” small ones?&lt;/h3&gt;
+&lt;p&gt;Yes. You can go overboard with too many small commits, and a balance needs to be achieved.&lt;/p&gt;
+&lt;p&gt;Having smaller commits doesn't mean that you show every step or that the commits should reflect the edit history. Each commit should make logical sense on its own.&lt;/p&gt;
+&lt;p&gt;I have addressed this with the “What to split” section.&lt;/p&gt;
+&lt;h3 id="q-isnt-it-problematic-to-review-individual-commits-given-they-can-often-be-part-of-the-developers-journey-of-changing-their-mind-refactoring-and-gaining-insights"&gt;Q: Isn't it problematic to review individual commits, given they can often be part of the developer's journey of changing their mind, refactoring, and gaining insights?&lt;/h3&gt;
+&lt;p&gt;Smaller commits doesn't mean you show every step; each commit should be a logical unit that provides value in production. Otherwise, it's just cruft.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Drop it or Squash it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If the author changes their mind, how does that commit provide value to the reviewer or the system in production? The author should be using interactive rebase to squash or drop those commits before putting them up for review.&lt;/p&gt;
+&lt;h3 id="q-do-you-have-any-suggestions-for-preparing-atomic-commits"&gt;Q: Do you have any suggestions for preparing atomic commits?&lt;/h3&gt;
+&lt;p&gt;Proper planning and upfront thinking of how to break the PR helps, but it is not always possible. I use interactive rebase, cherry-picking and changesets in IntelliJ liberally.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;If this is something you are interested in knowing more about, let me know in the comments.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="q-what-about-making-changes-based-on-review-comments"&gt;Q: What about making changes based on review comments?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Every review should be a snapshot.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once a reviewer has reviewed your PR, you should not be making changes to commits that have been reviewed.&lt;/p&gt;
+&lt;p&gt;The (new) commits that you make to address the review comments should follow the same rules as above.&lt;/p&gt;
+&lt;p&gt;Writing a commit message like "&lt;em&gt;address PR feedback&lt;/em&gt;" and then dumping all the requested changes in 1 commit is not helpful. TBH, even I have been guilty of doing this at times.&lt;/p&gt;
+&lt;p&gt;You dont want the reviewer to have to revisit the commits that they have already reviewed but you also want to make it easy for them to ensure that their comments have been addressed correctly.&lt;/p&gt;
+&lt;p&gt;I prefer to prefix such commits with &lt;strong&gt;CR:&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="in-conclusion"&gt;In Conclusion&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s the author’s responsibility to make the code review easy for the reviewer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While it may seem tedious to make frequent small commits and tempting to wait until all the work is completed, the advantages of small commits are significant.&lt;/p&gt;
+&lt;p&gt;However, remember that the size of a commit will depend on the context and the nature of the change.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The key is to ensure that each commit makes sense on its own and represents a single logical change.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Breaking a PR with one large commit into smaller individual commits that make logical sense provides a nice stepping stone to be able to split into smaller PR's.&lt;/p&gt;
+&lt;p&gt;Is there any reason why we &lt;strong&gt;shouldn't&lt;/strong&gt; be putting in the effort to make smaller commits and writing better commit messages?&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</link>
       <description>Welcome back to our Unity CI/CD adventure! In Part 4, we'll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.</description>
@@ -1973,56 +2131,6 @@ Ankur
 &lt;p&gt;After using NDepend for a few weeks, I am using the Dependency Graph and Rules Explorer the most. A Lite/Community version with just these features and a lower price point would be helpful for smaller projects/teams. I would have also preferred a per-user licensing model rather than a per-machine license to be able to install it on both my desktop and laptop.&lt;/p&gt;
 &lt;p&gt;However, if you work in a larger organisation with a fair amount of legacy code and struggle to get your tech debt in control. In that case, this just might be the right tool for you. The graphs and metrics can probably help make a business case for upper management to invest in improving code quality. Almost everything is customisable, so you can update the values and thresholds to what makes sense for your business.&lt;/p&gt;
 &lt;p&gt;You can get a free trial from the &lt;a href="https://www.ndepend.com/download"&gt;NDepend download page&lt;/a&gt;.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Installing NuGet packages in Unity 2021</title>
-      <link>https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021</link>
-      <description>NuGet is indispensable for working in .NET. Unfortunately, it does not work out of the box in Unity. Let us see how we can install a NuGet package in Unity 2021</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/moq-error.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021</guid>
-      <pubDate>Tue, 06 Sep 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;NuGet is indispensable for working in .NET. Unfortunately, it takes a bit of work to get it working with Unity.&lt;/p&gt;
-&lt;p&gt;Unity only recognizes DLLs placed under the &lt;em&gt;Assets&lt;/em&gt; folder, so we need a way to get the DLLs into the Assets folder. We cannot add the Nuget packages to the project files as we would for other .NET projects because Unity generates the sln and project files. This means that any NuGet packages that we have installed using the IDE will get wiped out by Unity.&lt;/p&gt;
-&lt;p&gt;There is an &lt;a href="https://www.what-could-possibly-go-wrong.com/unity-and-nuget/"&gt;older guide&lt;/a&gt; that I found, which helped me figure out how to add NuGet packages into Unity. But, it had many steps that were irrelevant to Unity 2021.&lt;/p&gt;
-&lt;p&gt;As an example, we will look at installing Installing &lt;em&gt;Microsoft.Extensions.DependencyInjection&lt;/em&gt; into an assembly definition.&lt;/p&gt;
-&lt;h2 id="step-1-install-nuget-package"&gt;Step 1: Install Nuget Package&lt;/h2&gt;
-&lt;p&gt;Select the  &lt;em&gt;Manage NuGet Packages for Solution&lt;/em&gt; in your IDE.&lt;/p&gt;
-&lt;p&gt;Search and install the &lt;em&gt;Microsoft.Extensions.DependencyInjection&lt;/em&gt; package&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/installing-nuget-package-window.png" alt="Installing Nuget Package Window"&gt;&lt;/p&gt;
-&lt;p&gt;This will do a few things.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create an &lt;code&gt;app.config&lt;/code&gt; file. This file can be deleted.&lt;/li&gt;
-&lt;li&gt;Create a packages.config file. This file can be committed&lt;/li&gt;
-&lt;li&gt;Download the Nuget package and its dependencies to the &lt;code&gt;$(Solutiondir)/packages&lt;/code&gt; folder. This folder should be added to .gitignore&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/packages-folder.png" alt="Packages Folder"&gt;&lt;/p&gt;
-&lt;h2 id="step-2-make-the-dll-available-to-unity"&gt;Step 2: Make the DLL available to Unity&lt;/h2&gt;
-&lt;p&gt;In the &lt;em&gt;packages\Microsoft.Extensions.DependencyInjection.6.0.0/lib&lt;/em&gt; folder, you might see folders for different targets.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/target-frameworks.png" alt="Target Frameworks"&gt;&lt;/p&gt;
-&lt;p&gt;Copy the DLL from the &lt;em&gt;netstandard2.1&lt;/em&gt; folder into the &lt;em&gt;Assets/Plugin/DI&lt;/em&gt; folder. Remember how Unity needs DLLs to be inside the Assets folder. I prefer to put the DLL into nested folders under &lt;em&gt;Assets&lt;/em&gt;, so it's easier to manage multiple DLLs.&lt;/p&gt;
-&lt;h2 id="step-3-turn-off-auto-reference"&gt;Step 3:  Turn off  Auto reference&lt;/h2&gt;
-&lt;p&gt;By default, all predefined assemblies and assembly definitions can automatically reference the DLL. In most cases, we want a DLL to be exposed only to specific assembly definitions.&lt;/p&gt;
-&lt;p&gt;Turn off Auto reference in the import settings for the DLL and click Apply.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/turn-off-auto-reference.png" alt="Turn Off Auto Reference"&gt;&lt;/p&gt;
-&lt;h2 id="step-4-add-the-dll-as-a-reference-to-the-assembly-definition"&gt;Step 4: Add the DLL as a reference to the assembly definition&lt;/h2&gt;
-&lt;p&gt;Select override references in the assemblies that need this package and add the DLLs to the assembly references.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/add-reference-to-dll.png" alt="Add Reference To DLL"&gt;&lt;/p&gt;
-&lt;h2 id="troubleshooting"&gt;TroubleShooting&lt;/h2&gt;
-&lt;h3 id="error-unloading-broken-assembly-assetspluginsdimicrosoft.extensions.dependencyinjection.dll-this-assembly-can-cause-crashes-in-the-runtime"&gt;Error: Unloading broken assembly Assets/Plugins/DI/Microsoft.Extensions.DependencyInjection.dll, this assembly can cause crashes in the runtime&lt;/h3&gt;
-&lt;p&gt;Copy the DLL from &lt;em&gt;packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\netstandard2.1&lt;/em&gt; to the &lt;em&gt;Assets/Plugin/DI&lt;/em&gt; folder. It is because Unity needs the &lt;em&gt;Microsoft.Extensions.DependencyInjection.Abstractions.dll&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="bonus-installing-moq-into-an-assembly-definition-for-tests"&gt;Bonus: Installing &lt;em&gt;Moq&lt;/em&gt; into an assembly definition for Tests&lt;/h2&gt;
-&lt;p&gt;Repeat the steps for Moq and make the appropriate changes&lt;/p&gt;
-&lt;p&gt;After Unity recompiling, you will see an error in the unity console.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/installing-nuget-packages-unity-2021/moq-error.png" alt="Mog Error"&gt;&lt;/p&gt;
-&lt;p&gt;To fix this, copy the Castle.Core.dll from the packages folder and put it in the same folder as Moq.dll.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;NuGet allows us to install useful DLLs. I have shown how you can install NuGet packages into Unity 2021.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.unity3d.com/Manual/PluginInspector.html"&gt;Configuring plugins in Unity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

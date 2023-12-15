@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (206)</h2>
+<h2>All Categories (207)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -138,13 +141,13 @@
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordwhiz-update-2">WordWhiz Update #2</a>
         </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
-        </li>
 </ul>
 
-    <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (10)</h3>
+    <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (11)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a> - <time class="prose-sm" datetime="23-11-27">November 27, 2023</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a> - <time class="prose-sm" datetime="23-09-13">September 13, 2023</time>
             </li>
