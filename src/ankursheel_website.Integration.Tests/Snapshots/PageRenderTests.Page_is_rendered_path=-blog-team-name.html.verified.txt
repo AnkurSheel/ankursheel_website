@@ -238,10 +238,10 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
                 <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
             </li>
             <li>
-                <a href="dream-job">What is my idea of a dream job</a>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+                <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
             </li>
     </ul>
 </aside>
@@ -329,7 +329,7 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

@@ -146,6 +146,9 @@
     <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (11)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/dream-job">What is my idea of a dream job</a> - <time class="prose-sm" datetime="24-02-08">February 08, 2024</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a> - <time class="prose-sm" datetime="23-11-27">November 27, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
@@ -162,9 +165,6 @@
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a> - <time class="prose-sm" datetime="22-10-06">October 06, 2022</time>
-            </li>
-            <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/dream-job">What is my idea of a dream job</a> - <time class="prose-sm" datetime="22-10-03">October 03, 2022</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/need-mentor-coach">Do you need a mentor or a coach?</a> - <time class="prose-sm" datetime="22-09-27">September 27, 2022</time>
@@ -828,7 +828,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

@@ -415,7 +415,7 @@ fs.<span class="hljs-title function_">writeFileSync</span>(path.<span class="hlj
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

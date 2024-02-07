@@ -259,10 +259,10 @@
                 <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
             </li>
             <li>
-                <a href="dream-job">What is my idea of a dream job</a>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
             </li>
     </ul>
 </aside>
@@ -350,7 +350,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

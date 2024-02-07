@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2017-02-17">Feb 17, 2017</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2022-10-03">Oct 03, 2022</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-02-08">Feb 08, 2024</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">4 min</span>
         </p>
@@ -315,7 +315,7 @@
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>That's a total of 100 points. Maybe no job ticks all the boxes, but then again, perhaps there are.</p>
-<p>My current job at First AML scores <strong><em>42/100</em></strong> 😢. <em>The last time I did this exercise in 2020 after a few months at First Aml, it was <strong><em>79/100</em></strong></em>.</p>
+<p>My current job at Atlassian scores <strong><em>82/100</em></strong>.</p>
 <p>This is a very opinionated list, and what is vital for me might not be essential for you even if you are at the same stage in life.</p>
 <p>Remember that the point breakup and the list change over time. It will also likely change in the next 5-10 years. After all, the things that were important to me in my early twenties are very different from those that are important now.</p>
 <p>How does your company rate on my dream job scale? Let me know.</p>
@@ -361,16 +361,16 @@
 
     <ul>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
-            </li>
-            <li>
-                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
             <li>
                 <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
             <li>
-                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
+            </li>
+            <li>
+                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
     </ul>
 </aside>
@@ -458,7 +458,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

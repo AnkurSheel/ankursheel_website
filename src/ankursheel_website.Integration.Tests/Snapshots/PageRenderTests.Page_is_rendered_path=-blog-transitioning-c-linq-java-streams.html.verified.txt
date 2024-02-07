@@ -926,7 +926,7 @@ Map&lt;Character, List&lt;String&gt;&gt; fruitsByFirstLetter = fruits.stream()
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

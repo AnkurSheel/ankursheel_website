@@ -303,7 +303,7 @@ resource &quot;aws_sns_topic&quot; &quot;example-topic&quot; {
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

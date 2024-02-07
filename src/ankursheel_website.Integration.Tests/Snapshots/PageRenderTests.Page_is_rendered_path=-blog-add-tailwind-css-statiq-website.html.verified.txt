@@ -360,7 +360,7 @@ npm install -D tailwindcss&<span class="hljs-comment">#64;latest postcss&#64;lat
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 

@@ -294,7 +294,7 @@ Discord. Because in the world of tech, teamwork makes the magic happen.</p>
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2023
+        © AnkurSheel 2024
     </div>
 </div>
 
