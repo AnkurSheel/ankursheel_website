@@ -2,7 +2,7 @@
 title: "What is my idea of a dream job"
 excerpt: "An opinionated breakdown for deciding whether a job is the dream job you are after. It can also help you compare different opportunities."
 coverImage: "./cover.jpg"
-updatedOnDate: "2022-10-03"
+updatedOnDate: "2024-02-08"
 category: "career / work"
 tags:
 
@@ -106,7 +106,7 @@ Not only should I be passionate about my work, but I also want to be around peop
 
 That's a total of 100 points. Maybe no job ticks all the boxes, but then again, perhaps there are.
 
-My current job at First AML scores **_42/100_** 😢. _The last time I did this exercise in 2020 after a few months at First Aml, it was **_79/100_**_.
+My current job at Atlassian scores **_82/100_**.
 
 This is a very opinionated list, and what is vital for me might not be essential for you even if you are at the same stage in life.
 
