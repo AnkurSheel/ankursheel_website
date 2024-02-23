@@ -1,0 +1,34 @@
+---
+title: "WordWhiz Update #3"
+excerpt: "WordWhiz Update 3 adds a help button and 100 words"
+category: "project updates"
+tags:
+  - "project updates"
+  - "wordwhiz"
+coverImage: "./help-button.jpg"
+
+---
+
+You can see all the related updates [here](/tags/wordwhiz)
+
+Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉
+
+## 🚀 More Words, More Fun
+
+I am thrilled to announce that the game now boasts a whopping 100 words! 📬
+
+## 📜 Introducing the Help Button
+
+Say goodbye to confusion! Explore the newly added Help Button right on the game screen. No need to restart the app — clarify the colour's meanings and game rules instantly
+
+<?# ResponsiveYouTube X71OQlezrpE Title="WordWhiz Help Button" /?>
+
+## 📬 Public Roadmap Unveiled
+
+Your voice matters! Check out the new [public roadmap](https://changemap.co/transient-toys/wordwhiz/), your hub for suggesting and voting on new features.
+
+## 🔮 What's Next
+
+- This marks the final free version. We will soon be on the app store as a paid game. If there is someone you know who would love to try the game before that, please share the link to the [form](https://tally.so/r/wverVQ) ✨
+
+Does your child have a favorite word they would like to see in the game? Let me know
