@@ -258,7 +258,7 @@
                 <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>
             </li>
             <li>
-                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
             </li>
     </ul>
 </aside>

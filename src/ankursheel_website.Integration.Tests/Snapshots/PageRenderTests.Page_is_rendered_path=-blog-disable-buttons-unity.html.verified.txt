@@ -196,7 +196,7 @@
                 <a href="host-compressed-unity-webgl-game-on-netlify">How to host a compressed Unity WebGL game on Netlify</a>
             </li>
             <li>
-                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
             </li>
     </ul>
 </aside>

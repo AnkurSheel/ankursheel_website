@@ -506,6 +506,7 @@
   /assets/images/posts/unity-cicd-one-time-setup/run-workflow.png,
   /assets/images/posts/unity-cicd-one-time-setup/token_scopes.png,
   /assets/images/posts/unity-cicd-one-time-setup/upload-alf.png,
+  /assets/images/posts/unity-cicd-trigger-events-tests/workflow_permissions.png,
   /assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png,
   /assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png,
   /assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png,
