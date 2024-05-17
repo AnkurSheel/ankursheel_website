@@ -1,10 +1,9 @@
 ---
 title: "Verifying Method Calls within a class using Mockito Spies"
-excerpt: "How to reduce the redundancy in test scenarios when one one method calls another within the same class using Mockito spies"
+excerpt: "How to reduce the redundancy in test scenarios when one method calls another within the same class using Mockito spies"
 category: "programming"
 tags:
   - "testing"
-  - "junit"
   - "mockito"
   - "snippet"
 
