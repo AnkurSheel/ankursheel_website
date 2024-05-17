@@ -8,6 +8,32 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>WordWhiz Update #3</title>
+      <link>https://www.ankursheel.com/blog/wordhwhiz-update-3</link>
+      <description>WordWhiz Update 3 adds a help button and 100 words</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordhwhiz-update-3/help-button.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordhwhiz-update-3</guid>
+      <pubDate>Sat, 03 Feb 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉&lt;/p&gt;
+&lt;h2 id="more-words-more-fun"&gt;🚀 More Words, More Fun&lt;/h2&gt;
+&lt;p&gt;I am thrilled to announce that the game now boasts a whopping 100 words! 📬&lt;/p&gt;
+&lt;h2 id="introducing-the-help-button"&gt;📜 Introducing the Help Button&lt;/h2&gt;
+&lt;p&gt;Say goodbye to confusion! Explore the newly added Help Button right on the game screen. No need to restart the app — clarify the colour's meanings and game rules instantly&lt;/p&gt;
+&lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
+  &lt;iframe src="https://www.youtube.com/embed/X71OQlezrpE" title="WordWhiz Help Button" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="public-roadmap-unveiled"&gt;📬 Public Roadmap Unveiled&lt;/h2&gt;
+&lt;p&gt;Your voice matters! Check out the new &lt;a href="https://changemap.co/transient-toys/wordwhiz/"&gt;public roadmap&lt;/a&gt;, your hub for suggesting and voting on new features.&lt;/p&gt;
+&lt;h2 id="whats-next"&gt;🔮 What's Next&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This marks the final free version. We will soon be on the app store as a paid game. If there is someone you know who would love to try the game before that, please share the link to the &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; ✨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Does your child have a favorite word they would like to see in the game? Let me know&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Level Up Your Pull Requests: The Value of Individual Commits</title>
       <link>https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits</link>
       <description>Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer.</description>
@@ -607,50 +633,15 @@ jobs:
       <description>Adding CI/CD to Unity projects is a game-changer even if you're not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-cicd-one-time-setup</guid>
-      <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;Adding CI/CD to Unity projects is a game-changer, even if you're not a CI/CD enthusiast.&lt;/p&gt;
 &lt;p&gt;In this series, I'll guide you through setting up a robust CI/CD pipeline for Unity projects using &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt; and &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Part 1 of this series covers the essential one-time setup for a successful CI/CD pipeline.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: These setup steps can be skipped if you've already performed them for a previous project.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="acquire-an-activation-file-for-github-runners"&gt;Acquire an Activation File for GitHub Runners&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note: The activation file uses machine identifiers, so we need to generate a license for GitHub runners.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Create a file named &lt;code&gt;.github/workflows/activation.yml&lt;/code&gt; and add the following workflow definition:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;name: Acquire activation file  
-on:  
-  workflow_dispatch: {}  
-jobs:  
-  activation:  
-    name: Request manual activation file 🔑  
-    runs-on: ubuntu-latest  
-    steps:  
-      # Request manual activation file  
-      - name: Unity - Request Activation File  
-        id: getManualLicenseFile  
-        uses: game-ci/unity-request-activation-file@v2.0.0  
-      # Upload artifact (Unity_v20XX.X.XXXX.alf)  
-      - name: Expose as artifact  
-        uses: actions/upload-artifact@v3
-        with:  
-          name: ${{ steps.getManualLicenseFile.outputs.filePath }}  
-          path: ${{ steps.getManualLicenseFile.outputs.filePath }}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In this workflow, we use GameCI to request the activation file and upload it as an artifact. The &lt;strong&gt;workflow_dispatch&lt;/strong&gt; event enables manual triggering of this workflow.&lt;/p&gt;
-&lt;ol start="2"&gt;
-&lt;li&gt;&lt;p&gt;Manually run the above workflow&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/run-workflow.png" alt="Run workflow manually"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Download the manual activation file that appears as an artifact and extract the .alf file from the zip&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/download-artifact.png" alt="Download Artifact"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Visit &lt;a href="https://license.unity3d.com/manual"&gt;license.unity3d.com&lt;/a&gt; and upload the &lt;em&gt;alf&lt;/em&gt; file.&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/upload-alf.png" alt="Upload Alf file.png"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;em&gt;Note: If you don't see the option for activating a "Unity Personal license", follow the steps at &lt;a href="https://www.ankursheel.com/unity-personal-license-manual-activation-workaround"&gt;Workaround for Unity Personal License Manual Activation Not Supported&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;ol start="5"&gt;
-&lt;li&gt;Download the &lt;em&gt;ulf&lt;/em&gt; file. &lt;em&gt;The numbers don't have to match the Unity version exactly.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Log into Unity Hub&lt;/li&gt;
+&lt;li&gt;If we havent already created a licence, we need to get a licence by going to &lt;em&gt;Unity Hub&lt;/em&gt; &amp;gt; &lt;em&gt;Manage Licenses&lt;/em&gt; &amp;gt; &lt;em&gt;Add&lt;/em&gt; &amp;gt; &lt;em&gt;Get a free personal license&lt;/em&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="install-ruby"&gt;Install Ruby&lt;/h2&gt;
 &lt;ul&gt;
@@ -666,7 +657,7 @@ jobs:
 &lt;li&gt;Generate an SSH key. We can use 1Password or use the &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
 &lt;li&gt;Paste the public key (starting with ssh) into the "Key" field.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;&lt;em&gt;Allow write access&lt;/em&gt;&lt;/strong&gt; to enable pushing certificates to the repository.&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"&gt;&lt;/li&gt;
+&lt;img src="https://www.ankursheel.com/add_key.png" alt="Add key"&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="generate-a-github-personal-access-token"&gt;Generate a GitHub Personal Access Token&lt;/h3&gt;
 &lt;p&gt;We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.&lt;/p&gt;
@@ -685,7 +676,7 @@ jobs:
 &lt;p&gt;Create the following secrets&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;UNITY_EMAIL&lt;/strong&gt;: Your Unity login email address.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: The contents of the &lt;em&gt;.ulf&lt;/em&gt; file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: The contents of the &lt;em&gt;.ulf&lt;/em&gt; file which can found at &lt;em&gt;&lt;strong&gt;C:\ProgramData\Unity\Unity_lic.ulf&lt;/strong&gt;&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;UNITY_PASSWORD&lt;/strong&gt;: Your Unity login password.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GH_PAT&lt;/strong&gt;: The Personal Access Token we generated. Make sure that there is an empty newline at the end.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MATCH_PASSWORD&lt;/strong&gt;: This is an additional layer of security required for encrypting/decrypting certificates.&lt;/li&gt;
@@ -2080,57 +2071,6 @@ Ankur
 &lt;p&gt;It's also worth figuring out if you need a mentor or a coach to help you. Both are valuable in their own ways.&lt;/p&gt;
 &lt;p&gt;What are your experiences with mentoring? Have you ever had a senior individual or anyone you looked up to as your role model?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Thanks to the &lt;a href="http://bloggingfordevs.com/"&gt;Blogging for Devs community&lt;/a&gt; for providing feedback on this post.&lt;/em&gt;&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Product Review: NDepend</title>
-      <link>https://www.ankursheel.com/blog/product-review-ndepend</link>
-      <description>NDepend is a static code analyser for .Net developers. Let's find out if it's worth adding to your toolbelt.</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/product-review-ndepend/dashboard.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/product-review-ndepend</guid>
-      <pubDate>Tue, 13 Sep 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;&lt;a href="http://www.ndepend.com/"&gt;NDepend&lt;/a&gt; is a static code analyser for .Net developers. It is billed as a "Swiss Army knife for developers" on its feature page, and I agree it comes with a chockful of features.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Disclaimer: I was given a year-long license to evaluate NDepend by Patrick Smacchia, the creator and lead dev. I agreed to write an article on the condition that the article would be an honest opinion of the software.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;But is it worth adding to your tool belt? Let's find out.&lt;/p&gt;
-&lt;h2 id="impressions"&gt;Impressions&lt;/h2&gt;
-&lt;p&gt;The installation process is a little clunky. I downloaded a zip file and had to extract the contents into a folder. I received the license file in a separate email and was able to register the product with a single command.&lt;/p&gt;
-&lt;h3 id="installation-and-getting-started"&gt;Installation and Getting Started&lt;/h3&gt;
-&lt;p&gt;You can use NDepend as a Visual Studio extension or a standalone application. Since I use Rider as my IDE and there is no support for Rider (yet), I used the standalone application. This makes it harder to integrate into your daily workflow as it's not integrated with the IDE.&lt;/p&gt;
-&lt;p&gt;It's pretty easy to get started. You pick a solution to analyse and let NDepend do its thing. Once the analysis is completed, it will generate a summary report and populate the different views in the application. The HTML reports are more accessible, but the application's views are more interactive.&lt;/p&gt;
-&lt;h3 id="dashboard"&gt;Dashboard&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/product-review-ndepend/dashboard.png" alt="Dashboard"&gt;&lt;/p&gt;
-&lt;p&gt;NDepend gives an incredibly informative overview of the application in a dashboard containing key metrics, rule violations and the evolution over time of some metrics. To see coverage results, you can provide a directory with the coverage file, and NDepend will find it automatically.&lt;/p&gt;
-&lt;h3 id="dependency-graph-view"&gt;Dependency Graph View&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/product-review-ndepend/dependency-graph.png" alt="Dependency Graph"&gt;&lt;/p&gt;
-&lt;p&gt;The dependency graph view is exceptionally detailed. Besides providing a simple-to-read view of the dependencies in your project and .Net assemblies, it's interactive. It lets you drill down to the method and field. The graph is coloured, which makes it easy to see what is happening. The searching capabilities are great as well.&lt;/p&gt;
-&lt;p&gt;You also get a related view with a table-based dependency matrix, but I found it hard to understand and use.&lt;/p&gt;
-&lt;h3 id="abstractness-vs-instability"&gt;Abstractness vs Instability&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/product-review-ndepend/abstractness-Instability.png" alt="Abstractness vs Instability"&gt;&lt;/p&gt;
-&lt;p&gt;NDepend also creates an interesting graph which plots Abstractness vs Instability. It can indicate which assemblies are painful to use because they are used by many other types but lack abstractness. An assembly is painful to use if it is used by many different types but lacks abstractness. An assembly is useless if it has a lot of abstractions but is used by no one. I can see this being useful on larger projects to find non-modular and over-engineered code.&lt;/p&gt;
-&lt;h3 id="baseline-and-trend-metrics"&gt;Baseline and Trend Metrics&lt;/h3&gt;
-&lt;p&gt;One feature I am excited to use is Trend Metrics. Trend metrics, in theory, allow you to compare the code evolution over time. It will do this by plotting standard and custom metrics over time.&lt;/p&gt;
-&lt;p&gt;By setting a baseline, you can detect if you are introducing debt or reducing it. It will show the new/fixed issues etc., since the last baseline. You can also set the baseline for the comparison, so it does not have to be the 1st time you ran the analysis on your project.&lt;/p&gt;
-&lt;h3 id="rules"&gt;Rules&lt;/h3&gt;
-&lt;p&gt;NDepend has a lot of default rules(which can be edited) used to analyse the project. Each rule has a description that helps you understand why you should fix it and how to fix it. However, it can't fix your code automatically, which is a shame because some of the rules, especially around naming, feel as if they could be handled by the tool.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/product-review-ndepend/rules.png" alt="Rules"&gt;&lt;/p&gt;
-&lt;p&gt;I found the default ruleset to be a little too generalised. The 1st time you run the tool, chances are you will get a lot of warnings to the point of it being overwhelming. In the screenshot above, you can see that even for a small project like this website, it detected 125 issues. Although, the tool does indicate that only 10 of them are high severity and the rest are medium or low severity. Once you have a baseline, you can see how many new issues were introduced (on a subsequent analysis). You can then fix just the latest issues, which should be much easier to handle.&lt;/p&gt;
-&lt;p&gt;You can manually disable the rule to match your coding style. Alternatively, you can suppress an issue by using an attribute. I am not a big fan of littering my code with "suppress " attributes, so being able to do that using a global suppression file was a pleasant surprise. However, I stumbled on it by chance as it was hidden in a context menu and not shown as part of the message.&lt;/p&gt;
-&lt;p&gt;You can also navigate from rule violations to your code. This felt a little inconsistent in that sometimes it took me to the line causing the breach of the rule, but other times it took me to the top of the file. Sometimes it just errored out, and I had to manually go to the file.&lt;/p&gt;
-&lt;p&gt;It also kept trying to open Visual Studio for me. I was eventually able to configure it to open Rider. It would have been nice if it had asked me to select my IDE of choice on startup.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;I sent an early draft of this article to Patrick, who, after reading this suggestion, implemented it within a few days. It will be available in version 2022.2, to be released next month. Here is a sneak peek just for you.&lt;/em&gt; :)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/product-review-ndepend/ide-selector.png" alt="IDE Selector"&gt;&lt;/p&gt;
-&lt;p&gt;Even though it has its quirks, this feature is powerful because you can add custom rules. It uses a variation of LINQ called CQLinq(Code Query over LINQ), which should be easy for a C# developer to pick up.&lt;/p&gt;
-&lt;h3 id="misc"&gt;Misc&lt;/h3&gt;
-&lt;p&gt;I quite liked that everything is customisable. If you want to, you can precisely define heuristics for your organisation which is a shortcoming in many tools. You can also share your rules &amp;amp; settings across your NDepend projects with rule files.&lt;/p&gt;
-&lt;p&gt;I found the learning curve for NDepend quite steep. The UI is a bit confusing and cluttered - it requires significant amounts of screen space to work comfortably. However, almost everything has a tooltip, and the documentation on the website is top-notch.&lt;/p&gt;
-&lt;h2 id="final-thoughts"&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;NDepend is a great product, and it's fast, a must for a tool you expect to use regularly.&lt;/p&gt;
-&lt;p&gt;Like with any similar tool, it's easy to fall into the trap of getting the perfect metrics. We need to be careful - after all, is there any point in refactoring a method rarely touched when you could be shipping more valuable features?&lt;/p&gt;
-&lt;p&gt;Although it's a powerful analysis tool, I am not sure how valuable it is for smaller teams and projects. The licensing cost is a decent chunk of change.&lt;/p&gt;
-&lt;p&gt;After using NDepend for a few weeks, I am using the Dependency Graph and Rules Explorer the most. A Lite/Community version with just these features and a lower price point would be helpful for smaller projects/teams. I would have also preferred a per-user licensing model rather than a per-machine license to be able to install it on both my desktop and laptop.&lt;/p&gt;
-&lt;p&gt;However, if you work in a larger organisation with a fair amount of legacy code and struggle to get your tech debt in control. In that case, this just might be the right tool for you. The graphs and metrics can probably help make a business case for upper management to invest in improving code quality. Almost everything is customisable, so you can update the values and thresholds to what makes sense for your business.&lt;/p&gt;
-&lt;p&gt;You can get a free trial from the &lt;a href="https://www.ndepend.com/download"&gt;NDepend download page&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

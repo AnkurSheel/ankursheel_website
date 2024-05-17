@@ -197,7 +197,7 @@
                 <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
             </li>
             <li>
-                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
+                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
             </li>
     </ul>
 </aside>

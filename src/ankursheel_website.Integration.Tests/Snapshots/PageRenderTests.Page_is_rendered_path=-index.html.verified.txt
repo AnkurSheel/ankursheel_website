@@ -115,19 +115,19 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a> - <time class="prose-sm" datetime="24-04-02">April 02, 2024</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/dream-job">What is my idea of a dream job</a> - <time class="prose-sm" datetime="24-02-08">February 08, 2024</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordhwhiz-update-3">WordWhiz Update #3</a> - <time class="prose-sm" datetime="24-02-03">February 03, 2024</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a> - <time class="prose-sm" datetime="23-11-27">November 27, 2023</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a> - <time class="prose-sm" datetime="23-11-13">November 13, 2023</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/2023-q3-retrospective">2023 - Q3 Retrospective</a> - <time class="prose-sm" datetime="23-10-30">October 30, 2023</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a> - <time class="prose-sm" datetime="23-10-23">October 23, 2023</time>
         </li>
 </ul>
 

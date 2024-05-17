@@ -191,13 +191,13 @@
                 <a href="wordwhiz-update-1">WordWhiz Update #1</a>
             </li>
             <li>
+                <a href="wordhwhiz-update-3">WordWhiz Update #3</a>
+            </li>
+            <li>
                 <a href="codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a>
             </li>
             <li>
                 <a href="codinators-xunit-helpers-nuget-package-update-1">Codinators.XunitHelpers Nuget Package: Update 1</a>
-            </li>
-            <li>
-                <a href="new-release-codinators-xunit-helpers-nuget-package">New Release: Codinators.XunitHelpers Nuget Package</a>
             </li>
     </ul>
 </aside>

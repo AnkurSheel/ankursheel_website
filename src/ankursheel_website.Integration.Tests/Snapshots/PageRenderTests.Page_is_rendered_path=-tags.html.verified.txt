@@ -123,6 +123,9 @@
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (14)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -130,9 +133,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/oceania" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Oceania (13)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/productivity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> productivity (11)</a>
@@ -234,6 +234,9 @@
             <a role="button" href="/tags/united-kingdom" class="capitalize badge text-gray-900 bg-grey-light no-underline"> United Kingdom (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/wordwhiz" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordwhiz (3)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/xunithelpers" class="capitalize badge text-gray-900 bg-grey-light no-underline"> xUnitHelpers (3)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -277,9 +280,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/sql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordwhiz" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordwhiz (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/code-quality" class="capitalize badge text-gray-900 bg-grey-light no-underline"> code quality (1)</a>
