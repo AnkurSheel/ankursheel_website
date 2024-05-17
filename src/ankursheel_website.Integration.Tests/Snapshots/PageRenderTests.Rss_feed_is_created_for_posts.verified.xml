@@ -8,6 +8,61 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Verifying Method Calls within a class using Mockito Spies</title>
+      <link>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</link>
+      <description>How to reduce the redundancy in test scenarios when one method calls another within the same class using Mockito spies</description>
+      <guid>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</guid>
+      <pubDate>Fri, 17 May 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Among the many challenges we face when writing tests is the scenario where we find ourselves testing classes that are not just a collection of independent methods but a mesh of interconnected functionalities. Specifically, when one method calls another within the same class, the redundancy in testing scenarios can become a nuisance and a significant drain on our time and resources.&lt;/p&gt;
+&lt;p&gt;However, the world of testing has a solution up its sleeve: &lt;strong&gt;&lt;em&gt;Mockito spies&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Consider the following scenario:&lt;/p&gt;
+&lt;p&gt;You want to write tests for a class that contains two public methods. After looking at the code, you realise one method is essentially overloading the other and calling it without adding any additional logic.&lt;/p&gt;
+&lt;p&gt;Here's a simplified example to illustrate this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;public class Service {
+    public int getTotalPrice(int quantity) {
+        // some other code like error checking, etc
+        return 5 * quantity;
+        
+    }
+
+    public int getTotalPrice() {
+        return getTotalPrice(1);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above example, the &lt;code&gt;getTotalPrice()&lt;/code&gt; method without parameters calls the overloaded &lt;code&gt;getTotalPrice(int quantity)&lt;/code&gt; method, supplying a default value.&lt;/p&gt;
+&lt;p&gt;In such cases, testing both methods independently for all possible scenarios would result in adding a lot of duplicated tests, leading to a cluttered test suite.&lt;/p&gt;
+&lt;h2 id="enter-the-world-of-spies"&gt;Enter the World of Spies&lt;/h2&gt;
+&lt;p&gt;Here's where Mockito spies come into the picture.&lt;/p&gt;
+&lt;p&gt;A spy acts as a wrapper around a real object, allowing us to override specific methods with mock behaviour while leaving others intact. This functionality proves invaluable when we need to verify the invocation of an actual method on an object.&lt;/p&gt;
+&lt;p&gt;Let's use Mockito spies to test our class and see how we can simplify our tests&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;public class MyTests {
+    &amp;#64;Test
+    public void test() {
+        Service spy = Mockito.spy(new Service());
+        spy.getTotalPrice();
+        verify(spy).getTotalPrice(1);
+    }
+
+    // more tests that test `getTotalPrice(int quantity)`
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let's break this down:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Service spy = Mockito.spy(new Service())&lt;/code&gt;:  We create a spy object by wrapping a new &lt;code&gt;Service&lt;/code&gt; instance with Mockito's spy functionality. This spy object will delegate all method calls to the actual &lt;code&gt;Service&lt;/code&gt; instance, except for those methods we explicitly mock.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spy.getTotalPrice()&lt;/code&gt;: We invoke the &lt;code&gt;getTotalPrice&lt;/code&gt; method on the spy object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;verify(spy).getTotalPrice(1)&lt;/code&gt;: Using Mockito's &lt;code&gt;verify()&lt;/code&gt; method, we ensure that the &lt;code&gt;getTotalPrice(int quantity)&lt;/code&gt; method is invoked on the spy object with the argument &lt;code&gt;1&lt;/code&gt;. If this method call did not happen as expected, the test would fail, alerting us to a potential issue in our method interaction.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Testing every possible combination of method calls, not only consumes valuable time but also clutters your test suite with redundant tests.&lt;/p&gt;
+&lt;p&gt;Mockito spies offer a neat solution to this problem, allowing you to verify method interactions directly, thus focusing on the behavior rather than the implementation.&lt;/p&gt;
+&lt;p&gt;However, it's essential to use Mockito spies judiciously. Spies should primarily be used when you're testing a class's external behavior and its interactions with other classes or methods within itself. Overusing spies can lead to tests that are overly focused on the internal workings of a class, potentially making your tests brittle and less focused on the actual outcomes.&lt;/p&gt;
+&lt;p&gt;Happy testing, and may your code always perform as intended, both now and in the future.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordWhiz Update #3</title>
       <link>https://www.ankursheel.com/blog/wordhwhiz-update-3</link>
       <description>WordWhiz Update 3 adds a help button and 100 words</description>
@@ -1974,107 +2029,6 @@ Ankur
 &lt;p&gt;I like using The American Express Airpoints Platinum card as my primary card. It has the best value. If you are spending less than NZD 11,000, then the American Express Airpoints Card is the next best card to get.&lt;/p&gt;
 &lt;p&gt;Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.&lt;/p&gt;
 &lt;p&gt;Is there a card you would like me to evaluate? Let me know in the comments.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Do you need a mentor or a coach?</title>
-      <link>https://www.ankursheel.com/blog/need-mentor-coach</link>
-      <description>This article highlights the importance of having a mentor or coach. It also explores the differences between mentors and coaches and offers insights on finding the right one.</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/need-mentor-coach/cover.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/need-mentor-coach</guid>
-      <pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;!-- https://unsplash.com/photos/z7oytXGI6VI --&gt;
-&lt;p&gt;The mentor-mentee relationship is one of the most important relationships you will develop during your career.&lt;/p&gt;
-&lt;p&gt;I have been fortunate to have been on both sides of the table. I have also seen people mix mentoring and coaching as they are closely related.&lt;/p&gt;
-&lt;p&gt;This article will outline what mentoring is and how it differs from coaching (even though they are closely related). It's a 2-way street, so you will also learn what mentors and mentees can do to make it a successful relationship.&lt;/p&gt;
-&lt;p&gt;And the question on everyone's mind - How can you find the right mentor for you?&lt;/p&gt;
-&lt;h2 id="what-is-mentoring"&gt;What is mentoring&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Communication and long-term focus is key&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Mentorship is a relationship between a more experienced person (Mentor) and a less experienced person (Mentee). It involves the mentee getting guidance from the mentor based on their knowledge and experiences.&lt;/p&gt;
-&lt;p&gt;It generally focuses on long-term development and takes a more holistic approach.&lt;/p&gt;
-&lt;p&gt;It involves making a safe space for a mentee to discuss ideas and ask questions without the fear of pressure or judgement.&lt;/p&gt;
-&lt;h3 id="what-is-a-mentor"&gt;What is a mentor?&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/need-mentor-coach/cover.jpg" alt="quote I feel like making dreams come true"&gt;&lt;/p&gt;
-&lt;p&gt;A mentor is someone who has been in your shoes. They can share their knowledge, skills and/or experience. They can, therefore, provide you with strategies and offer advice on what they did and what worked for them. They can help navigate complex social situations.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A helpful mentor to have is someone who is two or three levels above you but doesn't work directly with you&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;Mary Grace Gardner&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A mentor is generally not someone you report to. This allows them to give you unbiased feedback that won't be coloured by past work. Since your work doesn't directly impact them, a mentor is someone you can bounce ideas off, and they can offer a different perspective on things.&lt;/p&gt;
-&lt;p&gt;Most importantly, a mentor will focus on self-empowerment. They will answer tough questions and raise questions you hadn't considered.&lt;/p&gt;
-&lt;p&gt;A mentor isn't there to tell you what to do. It's up to you to either heed their advice and take action on it or decide to go your own way.&lt;/p&gt;
-&lt;h2 id="how-is-coaching-different-from-mentoring"&gt;How is coaching different from mentoring?&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;They are similar on the surface, but they are not the same&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Coaching is a more focused approach to learning. It is usually for a shorter term and is primarily focused on assisting people with their current performance.&lt;/p&gt;
-&lt;p&gt;It is most beneficial when there is a well-defined goal based on improving skills and performance.&lt;/p&gt;
-&lt;h3 id="how-is-a-mentor-different-from-a-coach"&gt;How is a mentor different from a coach?&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It helps if you are intentional about whether you want a coach vs a mentor, and it's more challenging if you don't know the difference.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A coach can address your needs and goals rather than provide general guidance. They can guide you with practical steps towards sharpening your existing skillset and learning new skills.&lt;/p&gt;
-&lt;p&gt;A coach tends to focus more on goals and measurable progress. They will devise a plan and run you through a series of practices and lessons to help you achieve it. They will provide specific feedback to ensure you stay on track with the plan to reach the goals set.&lt;/p&gt;
-&lt;p&gt;A good coach would work closely with you on a weekly, if not daily, basis.&lt;/p&gt;
-&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
-&lt;h3 id="a-sport-analogy"&gt;A Sport analogy&lt;/h3&gt;
-&lt;p&gt;Taking the sport of cricket as an example&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A mentor&lt;/strong&gt; would be someone with a lot of experience playing a sport. They are not necessarily experts in any specific area of cricket. In fact, they may not even be a cricketer. They know what it takes to become a team captain (and probably have been one themselves).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A coach&lt;/strong&gt; is an expert. They train the cricketer and help them prepare for specific skills such as batting. They focus on upcoming matches and get the cricketer to a certain performance level.&lt;/p&gt;
-&lt;h3 id="some-real-life-examples"&gt;Some Real Life examples&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Examples of mentoring&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Guidance on career progression&lt;/li&gt;
-&lt;li&gt;Dealing with managers&lt;/li&gt;
-&lt;li&gt;actionable tips and tricks to ace projects&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Examples of coaching&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Passing a certification/exam&lt;/li&gt;
-&lt;li&gt;Learning the fundamentals behind a field or topics like automated testing or building APIs&lt;/li&gt;
-&lt;li&gt;Reviewing code&lt;/li&gt;
-&lt;li&gt;Improve your networking skills&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="advice-for-mentors"&gt;Advice for Mentors&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Mentorship is not a one-size fits all model&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It is essential to spend the first conversation getting to know each other and setting expectations. You should also understand the mentee's motivations, so you can tailor the advice you provide.&lt;/p&gt;
-&lt;p&gt;You must have the bandwidth and provide adequate time for the mentoring relationship. You should meet with the mentee regularly (at least once a month) and give your uninterrupted attention.&lt;/p&gt;
-&lt;p&gt;It's essential to be available for your mentee without being overbearing. You should check in with them regularly to see how they are doing but give them space to grow and learn independently.&lt;/p&gt;
-&lt;p&gt;Remember to support and encourage your mentee as they advance their knowledge.&lt;/p&gt;
-&lt;p&gt;Be honest if you aren't familiar with an area the mentee asks about and try to seek out the answer or connect the mentee with someone else who can help.&lt;/p&gt;
-&lt;p&gt;You should also be ready to offer your honest opinion even if it might be hard for the other person to hear. However, you need to show empathy when giving this kind of feedback.&lt;/p&gt;
-&lt;p&gt;Your main goal should be to get your mentees to a point where they don't necessarily need you anymore.&lt;/p&gt;
-&lt;h2 id="advice-for-mentees"&gt;Advice for Mentees&lt;/h2&gt;
-&lt;p&gt;Find a mentor you can work with, someone you admire, and someone who can help you grow. &lt;em&gt;See the following section for advice on how to do that.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Remember to communicate regularly with your mentor but be mindful of not overwhelming your mentor. If something can wait till the next scheduled meeting, batch it up.&lt;/p&gt;
-&lt;p&gt;Bring topics to discuss. You can set an agenda if you want, but don't be afraid of free-wheeling as long you discuss whatever is on your mind. You can think of this as "work therapy".&lt;/p&gt;
-&lt;p&gt;Try to find ways you can provide value to your mentor. e.g. sharing valuable links and resources.&lt;/p&gt;
-&lt;p&gt;Most importantly, put your ego aside, and be able to take advice, even criticism.&lt;/p&gt;
-&lt;h3 id="how-do-you-figure-out-who-will-be-a-good-mentor-for-you"&gt;How do you figure out who will be a good mentor for you?&lt;/h3&gt;
-&lt;p&gt;Remember, mentorship doesn't have to be a formal relationship. Anyone can be your mentor (even if they don't know about it 😀). You can ask yourself these questions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What will I gain by working with this person as a mentor?&lt;/li&gt;
-&lt;li&gt;Does their style and values align with mine?&lt;/li&gt;
-&lt;li&gt;Have they shared a similar career path, or do they have a career path I seek to follow?&lt;/li&gt;
-&lt;li&gt;Does this mentor have a skill set that will complement my weaknesses?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are looking for a mentor to satisfy one of the following reasons, you are looking for a sponsor, not a mentor.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What steps can I skip by having this person as my mentor?&lt;/li&gt;
-&lt;li&gt;Who else can this person introduce me to in the next month?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="parting-thoughts"&gt;Parting Thoughts&lt;/h2&gt;
-&lt;p&gt;Everyone can use a mentor, and anyone can be a mentor. Both are rewarding in their own ways. You have probably had at least one mentor in your journey (even if unintentionally). Then you reach a point in your life where you have a chance to be one for someone else.&lt;/p&gt;
-&lt;p&gt;The success of a mentoring relationship depends on transparency, honesty and mutual trust, so it's essential to find the right person.&lt;/p&gt;
-&lt;p&gt;Don't be afraid to part ways if the relationship is not providing value to both of you.&lt;/p&gt;
-&lt;p&gt;It's also worth figuring out if you need a mentor or a coach to help you. Both are valuable in their own ways.&lt;/p&gt;
-&lt;p&gt;What are your experiences with mentoring? Have you ever had a senior individual or anyone you looked up to as your role model?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thanks to the &lt;a href="http://bloggingfordevs.com/"&gt;Blogging for Devs community&lt;/a&gt; for providing feedback on this post.&lt;/em&gt;&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

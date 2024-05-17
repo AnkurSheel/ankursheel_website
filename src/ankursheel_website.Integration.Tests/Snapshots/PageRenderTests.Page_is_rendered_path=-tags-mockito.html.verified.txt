@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;snippet&quot;</title>
+<title>Posts tagged as &quot;mockito&quot;</title>
 <meta charset="utf-8"/>
 
 
@@ -12,17 +12,17 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/snippet"/>   
-<meta itemProp="name" content="Posts tagged as &quot;snippet&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/mockito"/>   
+<meta itemProp="name" content="Posts tagged as &quot;mockito&quot;"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/snippet"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/mockito"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;snippet&quot;"/>
+<meta property="og:title" content="Posts tagged as &quot;mockito&quot;"/>
 <meta property="og:description"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;snippet&quot;"/>
+<meta name="twitter:title" content="Posts tagged as &quot;mockito&quot;"/>
 <meta name="twitter:description"/>
 
 </head>
@@ -105,7 +105,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;snippet&quot;</h1>
+    <h1 class="text-center">Posts tagged as &quot;mockito&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -118,281 +118,6 @@
             How to reduce the redundancy in test scenarios when one method calls another within the same class using Mockito spies
         </p>
             <a href="/blog/verifying-method-calls-class-mockito-spies" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center prose-2xl mb-4">Feature Flags: Removing Unused Methods on Cleanup</a>
-        <div class="font-semibold text-center">3 min</div>
-        <p>
-            Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt
-        </p>
-            <a href="/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/echo-commands-they-are-executed-shell-script" class="text-center prose-2xl mb-4">How to echo commands as they are executed in a shell script</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            It is helpful to log the shell commands being executed when running a bash script (especially when debugging it). Let see what commands we can use to log the commands
-        </p>
-            <a href="/blog/echo-commands-they-are-executed-shell-script" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/add-estimated-reading-time-posts-statiq" class="text-center prose-2xl mb-4">How to add estimated Reading Time to Posts in Statiq</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A guide to creating a module to add estimated reading time as metadata for posts in websites created with Statiq
-        </p>
-            <a href="/blog/add-estimated-reading-time-posts-statiq" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/fix-language-version-error-unity-rider" class="text-center prose-2xl mb-4">Fix the Language version error for Unity projects in Rider</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            How to fix the language version compiler error on building a project in rider created with Unity.
-        </p>
-            <a href="/blog/fix-language-version-error-unity-rider" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/host-compressed-unity-webgl-game-on-netlify" class="text-center prose-2xl mb-4">How to host a compressed Unity WebGL game on Netlify</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            In this article, I will be showing how to serve a unity game compressed with Brotli compression to Netlify
-        </p>
-            <a href="/blog/host-compressed-unity-webgl-game-on-netlify" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt" class="text-center prose-2xl mb-4">How to batch rename multiple files in subfolders in Windows</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A single command to update the file extensions for files in all the subfolders using a single command in Windows command prompt
-        </p>
-            <a href="/blog/rename-multiple-files-subfolders-windows-command-prompt" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/serializing-enums-strings-net-core" class="text-center prose-2xl mb-4">How to Serialize enums as strings in .Net Core</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            If you try to serialize an enum to Json using System.Text.Json in .Net Core, it converts it into an integer by default. This is not very readable. How can we have a more readable enum value in the JSON output?
-        </p>
-            <a href="/blog/serializing-enums-strings-net-core" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/set-all-bits-enum-flag-c" class="text-center prose-2xl mb-4">How to set all bits of an enum flag in C#</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            Sometimes, we want to set all the bits on a flag. The easiest way to do this is by adding another value to the enum. But there is a more elegant way using LinQ which does not require updating the flag.
-        </p>
-            <a href="/blog/set-all-bits-enum-flag-c" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/replace-word-string-csharp" class="text-center prose-2xl mb-4">How to replace a word in a string in C#</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            There is no way to replace just whole words using string.Replace. Let&#x27;s see how we can replace whole words in string using Regex
-        </p>
-            <a href="/blog/replace-word-string-csharp" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/programmatically-remove-service-worker" class="text-center prose-2xl mb-4">How to programmatically unregister a service worker</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            Sometimes you just want to remove a service worker either because something is wrong with it or you don&#x27;t need it anymore. Lets see how we can do it programmatically
-        </p>
-            <a href="/blog/programmatically-remove-service-worker" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/calculate-reading-time" class="text-center prose-2xl mb-4">How to calculate reading time</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A guide to calculating the reading time for a given document
-        </p>
-            <a href="/blog/calculate-reading-time" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/upload-multiple-files-aws-s3-terraform" class="text-center prose-2xl mb-4">How to Upload Multiple Files to AWS S3 using Terraform</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A snippet to upload multiples files from a specific folder (recursively) to AWS S3 using terraform
-        </p>
-            <a href="/blog/upload-multiple-files-aws-s3-terraform" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/replace-pipeline-statiq" class="text-center prose-2xl mb-4">How to replace a pipeline in Statiq</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A guide to replacing a pipeline in Statiq
-        </p>
-            <a href="/blog/replace-pipeline-statiq" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/override-netlify-build-config" class="text-center prose-2xl mb-4">How to override the netlify build config</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A way to override the netlify build settings so that we can override the build commands for a branch
-        </p>
-            <a href="/blog/override-netlify-build-config" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/run-sql-server-docker-container" class="text-center prose-2xl mb-4">How to run SQL Server in a Docker container</a>
-        <div class="font-semibold text-center">3 min</div>
-        <p>
-            In this post, we will see how we can run SQL Server on Docker using docker-compose and managing the image and environment variables in a docker file
-        </p>
-            <a href="/blog/run-sql-server-docker-container" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/setup-project-properties-source-generators" class="text-center prose-2xl mb-4">How to set up the project properties for Source Generators</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            A guide to setting up the project properties that we need to create and use source generators
-        </p>
-            <a href="/blog/setup-project-properties-source-generators" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/reset-primary-key-sequence-out-sync-postgres" class="text-center prose-2xl mb-4">How to reset the primary key sequence in Postgres</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            How can we fix the &quot;duplicate key value violates unique constraint&quot; error because the primary key sequence is out of sync from the records in the table
-        </p>
-            <a href="/blog/reset-primary-key-sequence-out-sync-postgres" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/upload-pdf-received-api-aws-s3" class="text-center prose-2xl mb-4">How do you upload a PDF received from an API to AWS S3?</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            A code snippet to encrypt and upload a PDF file to an AWS S3 bucket received as a Stream from an external API
-        </p>
-            <a href="/blog/upload-pdf-received-api-aws-s3" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/stop-remove-all-docker-containers" class="text-center prose-2xl mb-4">How to stop and remove all Docker containers</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            Occasionally, I have needed to stop and remove all the docker containers I am running locally. Let&#x27;s see how we can do it easily.
-        </p>
-            <a href="/blog/stop-remove-all-docker-containers" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/get-time-zone-info-windows-linux" class="text-center prose-2xl mb-4">How to get TimeZoneInfo on Windows and Linux</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            Lets see how we can get the TimeZoneInfo regardless of whether the code is running on Windows or Linux
-        </p>
-            <a href="/blog/get-time-zone-info-windows-linux" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/approval-tests-xunit-theory-tests" class="text-center prose-2xl mb-4">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            The approval test filename for Theory-based tests is not unique by default. How can we get generate unique filenames for theory-based approval tests.
-        </p>
-            <a href="/blog/approval-tests-xunit-theory-tests" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/query-clause-dapper-npgsql" class="text-center prose-2xl mb-4">Dapper and NPGSql : Write a query with the IN operator</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            In this post, I look at what changes need to be made to write a query with the IN operator in a WHERE clause using Dapper and NPGSql
-        </p>
-            <a href="/blog/query-clause-dapper-npgsql" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/noncopyable-objects" class="text-center prose-2xl mb-4">How to prevent the compiler from copying an object in cpp</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            In this C&#x2B;&#x2B; tutorial, we see an easy way to prevent the compiler from making objects, i.e. non-copyable objects.
-        </p>
-            <a href="/blog/noncopyable-objects" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/memory-leak-woes" class="text-center prose-2xl mb-4">A guide to finding memory leaks using macros in C&#x2B;&#x2B;</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            Macro trickery to find the offending file(s) and line(s) causing Memory Leak(s) without using a commercial program.
-        </p>
-            <a href="/blog/memory-leak-woes" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/dll-basics" class="text-center prose-2xl mb-4">How to start using Dynamic-link libraries (DLL)</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            This post deals with the basic information you need to know to begin using DLL&#x27;s.
-        </p>
-            <a href="/blog/dll-basics" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

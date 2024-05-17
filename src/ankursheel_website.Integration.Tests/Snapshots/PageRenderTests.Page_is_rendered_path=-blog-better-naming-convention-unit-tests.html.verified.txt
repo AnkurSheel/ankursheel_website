@@ -207,7 +207,7 @@
                 <a href="automatically-set-access-token-authenticated-requests-insomnia">How to automatically set the access token in Insomnia</a>
             </li>
             <li>
-                <a href="approval-tests-xunit-theory-tests">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a>
+                <a href="verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
             </li>
     </ul>
 </aside>

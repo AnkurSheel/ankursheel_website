@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (208)</h2>
+<h2>All Categories (209)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordhwhiz-update-3">WordWhiz Update #3</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -137,9 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/2023-q3-retrospective">2023 - Q3 Retrospective</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
         </li>
 </ul>
 
@@ -236,8 +236,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (72)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (73)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a> - <time class="prose-sm" datetime="24-05-17">May 17, 2024</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a> - <time class="prose-sm" datetime="24-04-09">April 09, 2024</time>
             </li>

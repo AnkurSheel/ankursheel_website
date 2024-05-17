@@ -115,6 +115,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a> - <time class="prose-sm" datetime="24-05-17">May 17, 2024</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a> - <time class="prose-sm" datetime="24-04-09">April 09, 2024</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -125,9 +128,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordhwhiz-update-3">WordWhiz Update #3</a> - <time class="prose-sm" datetime="24-02-03">February 03, 2024</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a> - <time class="prose-sm" datetime="23-11-27">November 27, 2023</time>
         </li>
 </ul>
 
