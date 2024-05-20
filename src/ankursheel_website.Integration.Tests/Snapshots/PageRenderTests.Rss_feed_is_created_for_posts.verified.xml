@@ -104,7 +104,7 @@
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -716,7 +716,7 @@ jobs:
 &lt;li&gt;Generate an SSH key. We can use 1Password or use the &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
 &lt;li&gt;Paste the public key (starting with ssh) into the "Key" field.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;&lt;em&gt;Allow write access&lt;/em&gt;&lt;/strong&gt; to enable pushing certificates to the repository.&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/add_key.png" alt="Add key"&gt;&lt;/li&gt;
+&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="generate-a-github-personal-access-token"&gt;Generate a GitHub Personal Access Token&lt;/h3&gt;
 &lt;p&gt;We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.&lt;/p&gt;

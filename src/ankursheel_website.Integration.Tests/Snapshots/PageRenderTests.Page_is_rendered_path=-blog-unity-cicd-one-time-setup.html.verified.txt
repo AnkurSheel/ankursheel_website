@@ -154,7 +154,7 @@
 <li>Generate an SSH key. We can use 1Password or use the <code>ssh-keygen</code> utility.</li>
 <li>Paste the public key (starting with ssh) into the &quot;Key&quot; field.</li>
 <li>Select <strong><em>Allow write access</em></strong> to enable pushing certificates to the repository.<br />
-<img src="add_key.png" alt="Add key" /></li>
+<img src="/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key" /></li>
 </ul>
 <h3 id="generate-a-github-personal-access-token">Generate a GitHub Personal Access Token</h3>
 <p>We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.</p>

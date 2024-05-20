@@ -37,7 +37,7 @@ Part 1 of this series covers the essential one-time setup for a successful CI/CD
 - Generate an SSH key. We can use 1Password or use the `ssh-keygen` utility.
 - Paste the public key (starting with ssh) into the "Key" field.
 - Select **_Allow write access_** to enable pushing certificates to the repository.  
-  ![Add key]( ./add_key.png)
+  ![Add key](./add_key.png)
 
 ### Generate a GitHub Personal Access Token
 
