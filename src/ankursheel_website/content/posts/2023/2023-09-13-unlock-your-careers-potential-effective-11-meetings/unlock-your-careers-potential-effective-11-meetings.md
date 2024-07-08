@@ -13,7 +13,7 @@ When it comes to professional growth, one question often looms large
 
 > What should I discuss in my 1:1 meetings? I often have nothing beyond project updates.
 
-This is a common concern, and it's crucial to recognise that a 1:1 meeting is more than just a status update session. It's an opportunity to connect with your supervisor, discuss your progress, and express your thoughts and concerns.
+This is a common concern, and it's crucial to recognise that a 1:1 meeting is more than just a status update session. It's an opportunity to connect with your manager, discuss your progress, and express your thoughts and concerns.
 
 ## How to Effectively Prepare for a 1:1
 
@@ -73,7 +73,7 @@ _Limit project updates to 1 or 2 minutes unless it's the primary focus. Remember
 
 ## Share Your 1:1 Experiences and Tips
 
-Navigating 1:1 meetings might seem daunting initially, but you'll soon become a pro with effective preparation, thoughtful questions, and diligent follow-ups. Remember, there's no such thing as a perfect 1:1 meeting.
+Navigating 1:1 meetings might seem daunting initially, but effective preparation, thoughtful questions, and diligent follow-ups can help make it easier. Remember, there's no such thing as a perfect 1:1 meeting.
 
 We're all on a learning journey, and your experiences and tips are invaluable. Have you discovered other effective ways to prepare for 1:1s? Are there additional questions that have proven helpful for you? How do you ensure you follow up on action items?
 

@@ -10,14 +10,13 @@
     <item>
       <title>Verifying Method Calls within a class using Mockito Spies</title>
       <link>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</link>
-      <description>How to reduce the redundancy in test scenarios when one method calls another within the same class using Mockito spies</description>
+      <description>How to remove the duplication of test scenarios when one method calls another within the same class</description>
       <guid>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</guid>
-      <pubDate>Fri, 17 May 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Among the many challenges we face when writing tests is the scenario where we find ourselves testing classes that are not just a collection of independent methods but a mesh of interconnected functionalities. Specifically, when one method calls another within the same class, the redundancy in testing scenarios can become a nuisance and a significant drain on our time and resources.&lt;/p&gt;
-&lt;p&gt;However, the world of testing has a solution up its sleeve: &lt;strong&gt;&lt;em&gt;Mockito spies&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-&lt;p&gt;Consider the following scenario:&lt;/p&gt;
-&lt;p&gt;You want to write tests for a class that contains two public methods. After looking at the code, you realise one method is essentially overloading the other and calling it without adding any additional logic.&lt;/p&gt;
+      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;in order to get confidence, when one method calls another within the same class with just 1 or more additional parameters, we could write the same test for both the methods. This would lead to a lot of duplicated tests and a cluttered test suite.&lt;/p&gt;
+&lt;p&gt;However, Mockito spies can help us in this scenario.&lt;/p&gt;
+&lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
+&lt;p&gt;You want to write tests for a class that contains two public methods, one of which is essentially overloading the other and calling it without adding any additional logic.&lt;/p&gt;
 &lt;p&gt;Here's a simplified example to illustrate this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;public class Service {
     public int getTotalPrice(int quantity) {
@@ -32,11 +31,10 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In the above example, the &lt;code&gt;getTotalPrice()&lt;/code&gt; method without parameters calls the overloaded &lt;code&gt;getTotalPrice(int quantity)&lt;/code&gt; method, supplying a default value.&lt;/p&gt;
-&lt;p&gt;In such cases, testing both methods independently for all possible scenarios would result in adding a lot of duplicated tests, leading to a cluttered test suite.&lt;/p&gt;
 &lt;h2 id="enter-the-world-of-spies"&gt;Enter the World of Spies&lt;/h2&gt;
 &lt;p&gt;Here's where Mockito spies come into the picture.&lt;/p&gt;
-&lt;p&gt;A spy acts as a wrapper around a real object, allowing us to override specific methods with mock behaviour while leaving others intact. This functionality proves invaluable when we need to verify the invocation of an actual method on an object.&lt;/p&gt;
-&lt;p&gt;Let's use Mockito spies to test our class and see how we can simplify our tests&lt;/p&gt;
+&lt;p&gt;A spy acts as a wrapper around a real object, allowing us to override specific methods with mock behaviour while leaving others intact. You can use this functionality to verify the invocation of an actual method on an object.&lt;/p&gt;
+&lt;p&gt;Let's see how you can simplify your tests by using Mockito spies&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;public class MyTests {
     &amp;#64;Test
     public void test() {
@@ -50,13 +48,14 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let's break this down:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Service spy = Mockito.spy(new Service())&lt;/code&gt;:  We create a spy object by wrapping a new &lt;code&gt;Service&lt;/code&gt; instance with Mockito's spy functionality. This spy object will delegate all method calls to the actual &lt;code&gt;Service&lt;/code&gt; instance, except for those methods we explicitly mock.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;spy.getTotalPrice()&lt;/code&gt;: We invoke the &lt;code&gt;getTotalPrice&lt;/code&gt; method on the spy object.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;verify(spy).getTotalPrice(1)&lt;/code&gt;: Using Mockito's &lt;code&gt;verify()&lt;/code&gt; method, we ensure that the &lt;code&gt;getTotalPrice(int quantity)&lt;/code&gt; method is invoked on the spy object with the argument &lt;code&gt;1&lt;/code&gt;. If this method call did not happen as expected, the test would fail, alerting us to a potential issue in our method interaction.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Service spy = Mockito.spy(new Service())&lt;/code&gt;:  Create a spy object for &lt;code&gt;Service&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spy.getTotalPrice()&lt;/code&gt;: Invoke the &lt;code&gt;getTotalPrice&lt;/code&gt; method on the spy object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;verify(spy).getTotalPrice(1)&lt;/code&gt;: Verify that the overloaded method is invoked on the spy object.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;If the overloaded method is not called, then the test would fail, alerting us to a potential issue.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Testing every possible combination of method calls, not only consumes valuable time but also clutters your test suite with redundant tests.&lt;/p&gt;
-&lt;p&gt;Mockito spies offer a neat solution to this problem, allowing you to verify method interactions directly, thus focusing on the behavior rather than the implementation.&lt;/p&gt;
+&lt;p&gt;Mockito spies offer a solution to this problem, allowing you to verify method interactions directly, thus focusing on the behavior rather than the implementation.&lt;/p&gt;
 &lt;p&gt;However, it's essential to use Mockito spies judiciously. Spies should primarily be used when you're testing a class's external behavior and its interactions with other classes or methods within itself. Overusing spies can lead to tests that are overly focused on the internal workings of a class, potentially making your tests brittle and less focused on the actual outcomes.&lt;/p&gt;
 &lt;p&gt;Happy testing, and may your code always perform as intended, both now and in the future.&lt;/p&gt;
 </content:encoded>
@@ -249,25 +248,25 @@ vs
     <item>
       <title>Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</link>
-      <description>Welcome back to our Unity CI/CD adventure! In Part 4, we'll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.</description>
+      <description>In Part 4, I show how to deploy a Unity projects to GitHub Pages</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</guid>
-      <pubDate>Mon, 13 Nov 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Welcome back to our Unity CI/CD journey!&lt;/p&gt;
-&lt;p&gt;Recapping our previous chapters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In Part 1 we nailed down the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;one time setup&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Part 2 saw us setting up the &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;trigger events and running the automated tests&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Part 3 was all about &lt;a href="https://www.ankursheel.com/unity-cicd-linux-build"&gt;creating a reusable workflow&lt;/a&gt;  to build the Unity project for various platforms.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now, we're all set for Part 4, where we take full advantage of our reusable workflow to deploy a WebGL build to GitHub Pages.&lt;/p&gt;
-&lt;p&gt;Our journey begins by updating our &lt;code&gt;.github/workflows/main.yml&lt;/code&gt; file.&lt;/p&gt;
+      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;In Part 1, we finished the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;setup to start creating our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Part 2, we created a workflow to run our &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;automated tests based on some trigger events&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Part 3, we created a &lt;a href="https://www.ankursheel.com/unity-cicd-linux-build"&gt;reusable workflow to build the Unity project&lt;/a&gt; for various platforms.&lt;/p&gt;
+&lt;p&gt;In part 4, we will use our reusable workflow to deploy a WebGL build to GitHub Pages.&lt;/p&gt;
+&lt;p&gt;Start by updating your &lt;code&gt;.github/workflows/main.yml&lt;/code&gt; file.&lt;/p&gt;
 &lt;h2 id="job-1-building-for-webgl"&gt;Job 1: Building for WebGL&lt;/h2&gt;
 &lt;p&gt;This job uses our reusable workflow to generate the files needed for hosting the game on a web server.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-yaml"&gt;buildForWebGL:
   name: Build for WebGL
   needs: test
-  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'WebGL'))
+  if: |
+    github.event_name == 'pull_request' 
+    || github.event.action == 'published' 
+    || (contains(github.event.inputs.release_platform, 'release') 
+          &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'web'))
   uses: ./.github/workflows/buildWithLinux.yml
   with:
     platform: WebGL
@@ -277,51 +276,39 @@ vs
       UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This step relies on the successful completion of the &lt;code&gt;test&lt;/code&gt; job, introduced back in Part 2.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;: Defines the conditions for this job to run. It kicks into action when:
+&lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This step depends on the successful completion of the &lt;code&gt;test&lt;/code&gt; job, added in Part 2.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;: Defines the conditions for this job to run.
 &lt;ul&gt;
-&lt;li&gt;We're either pushing changes to the main branch or creating a pull request against it.&lt;/li&gt;
-&lt;li&gt;Initiate a GitHub release.&lt;/li&gt;
-&lt;li&gt;We manually trigger the workflow with the '&lt;strong&gt;&lt;em&gt;release&lt;/em&gt;&lt;/strong&gt;' and '&lt;strong&gt;&lt;em&gt;WebGL&lt;/em&gt;&lt;/strong&gt;' parameters in the &lt;code&gt;release_platform&lt;/code&gt; field.&lt;/li&gt;
+&lt;li&gt;push to the main branch or creating a pull request against it.&lt;/li&gt;
+&lt;li&gt;GitHub release.&lt;/li&gt;
+&lt;li&gt;Manually trigger the workflow with the '&lt;strong&gt;&lt;em&gt;release&lt;/em&gt;&lt;/strong&gt;' and '&lt;strong&gt;&lt;em&gt;web&lt;/em&gt;&lt;/strong&gt;' parameters in the &lt;code&gt;release_platform&lt;/code&gt; field.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;uses&lt;/strong&gt;: We're calling the reusable workflow from Part 3.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;with&lt;/strong&gt;: We're providing the necessary parameters, setting the &lt;code&gt;platform&lt;/code&gt; to &lt;strong&gt;&lt;em&gt;WebGL&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;uses&lt;/strong&gt;:Call the reusable workflow from Part 3 with the necessary parameters, setting the &lt;code&gt;platform&lt;/code&gt; to &lt;strong&gt;&lt;em&gt;WebGL&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="job-2-deploying-to-github-pages"&gt;Job 2: Deploying to GitHub Pages&lt;/h2&gt;
 &lt;p&gt;This job copies the WebGL artifact to the correct location for &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;. Once copied, it triggers a GitHub Pages deployment.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;buildForWebGL:
-  name: Build for WebGL
-  needs: test
-  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'WebGL'))
-  uses: ./.github/workflows/buildWithLinux.yml
-  with:
-    platform: WebGL
-  secrets:
-    UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-    UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-
-deployToGitHubPages:
+&lt;pre&gt;&lt;code class="language-yaml"&gt;deployToGitHubPages:
   name: Deploy to GitHub Pages
   runs-on: ubuntu-latest
   needs: buildForWebGL
-  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'WebGL'))
+  if: |
+    github.event_name == 'pull_request' 
+    || github.event.action == 'published' 
+    || (contains(github.event.inputs.release_platform, 'release') 
+          &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'web'))
   steps:
     - name: Echo Build Version
       run: echo ${{ needs.buildForWebGL.outputs.buildVersion }}
 
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        fetch-depth: 1
         lfs: false
 
     - name: Download WebGL Artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: build-WebGL
         path: build/WebGL
@@ -334,29 +321,31 @@ deployToGitHubPages:
         single-commit: true
 
     - name: Cleanup to avoid storage limit
-      uses: geekyeggo/delete-artifact@v2
+      uses: geekyeggo/delete-artifact@v5
+      if: always()
       with:
         name: build-WebGL
+        failOnError: false
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This job depends on the successful completion of the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;:  It follows the same conditions as the buildForWebGL job.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;:  It follows the same conditions as the &lt;em&gt;buildForWebGL&lt;/em&gt; job.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Next, we have a series of steps:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Echo Build Version&lt;/strong&gt;: Prints the build version generated by the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Checkout Repository&lt;/strong&gt;: Checks out the code repository.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Download WebGL Artifact&lt;/strong&gt;: This action fetches the &lt;strong&gt;_build-WebGL&lt;/strong&gt;_ artifact produced by the &lt;code&gt;buildForWebGL&lt;/code&gt; job and places it into the &lt;strong&gt;_build/WebGL&lt;/strong&gt;_ directory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deploy to GitHub Pages&lt;/strong&gt;: We deploy the contents of the &lt;strong&gt;_build/WebGL/WebGL&lt;/strong&gt;_ folder to GitHub Pages.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cleanup to avoid storage limit&lt;/strong&gt;: Lastly, we clean up by deleting the &lt;strong&gt;_build-WebGL-&lt;/strong&gt; artifact, ensuring we don't hog unnecessary storage space.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Download WebGL Artifact&lt;/strong&gt;: Get the &lt;strong&gt;_build-WebGL&lt;/strong&gt;_ artifact produced by the &lt;code&gt;buildForWebGL&lt;/code&gt; job and put it into the &lt;strong&gt;_build/WebGL&lt;/strong&gt;_ directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy to GitHub Pages&lt;/strong&gt;: Deploy the contents of the &lt;strong&gt;_build/WebGL/WebGL&lt;/strong&gt;_ folder to GitHub Pages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cleanup to avoid storage limit&lt;/strong&gt;: Delete the &lt;strong&gt;_build-WebGL-&lt;/strong&gt; artifact.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="setting-up-github-pages"&gt;Setting up Github Pages&lt;/h2&gt;
-&lt;p&gt;Once the workflow for a WebGL build is triggered, a gh_pages branch will be created. Now we can setup Github pages to showcase our game.&lt;/p&gt;
+&lt;p&gt;Once the workflow for a WebGL build is triggered, a &lt;em&gt;&lt;strong&gt;gh_pages&lt;/strong&gt;&lt;/em&gt; branch will be created. Now you can setup Github pages to showcase your game.&lt;/p&gt;
 &lt;p&gt;In the repository on GitHub, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Pages&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Set the source to &lt;strong&gt;&lt;em&gt;Deploy from a branch&lt;/em&gt;&lt;/strong&gt; and set the branch to &lt;code&gt;gh-pages&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" alt="Repository Settings"&gt;&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Stay tuned for Part 5, where we'll cover how to generate certificates for iOS deployments.&lt;/p&gt;
+&lt;p&gt;In this part, we deployed our Unity Project to Github pages. Next, we will generate certificates for iOS deployments.&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow"&gt;Calling a reusable workflow&lt;/a&gt;&lt;/li&gt;
@@ -412,15 +401,16 @@ deployToGitHubPages:
     <item>
       <title>Unity CI/CD Demystified: Part 3: Build with Linux</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-linux-build</link>
-      <description>In Part 3 of our Unity CI/CD series, we delve into creating a reusable workflow to build Unity projects for different platforms.</description>
+      <description>In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.</description>
       <guid>https://www.ankursheel.com/blog/unity-cicd-linux-build</guid>
-      <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Welcome back to our Unity CI/CD journey.&lt;/p&gt;
-&lt;p&gt;In Part 1, we nailed down the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;One-Time Setup for Unity CD&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In Part 2, we set the &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;Trigger Events and Automation Testing for Unity CD&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It's time for Part 3, where we will create a reusable workflow to build the Unity project for various platforms. The jobs in this workflow will run on a Linux VM.&lt;/p&gt;
-&lt;p&gt;Why Linux? Its the cheapest box. As we will see in later posts, different platforms need different VM for deployment. I am looking at you iOS.&lt;/p&gt;
-&lt;p&gt;Let's kick things off with creating a new workflow definition &lt;code&gt;.github/workflows/buildWithLinux.yml&lt;/code&gt;:&lt;/p&gt;
+      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;In Part 1, we finished the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;setup to start creating our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Part 2, we created a workflow to run our &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;automated tests based on some trigger events&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Part 3, we will create a reusable workflow to build the Unity project for various platforms.&lt;/p&gt;
+&lt;p&gt;The jobs in this workflow will run on a Linux VM.&lt;/p&gt;
+&lt;p&gt;Why Linux?&lt;/p&gt;
+&lt;p&gt;Its the cheapest box. As we will see in later posts, different platforms need a different OS for deployment. I am looking at you iOS.&lt;/p&gt;
+&lt;p&gt;Creating a new workflow definition &lt;code&gt;.github/workflows/buildWithLinux.yml&lt;/code&gt;:&lt;/p&gt;
 &lt;h2 id="defining-the-workflow"&gt;Defining the Workflow&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-yaml"&gt;name: Build with Linux  
 on:  
@@ -441,16 +431,16 @@ on:
         value: ${{ jobs.buildWithLinux.outputs.buildVersion }} 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: In this section, we specify the events that trigger our CI/CD workflow.
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: ISpecify the events that trigger the workflow.
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;workflow_call&lt;/strong&gt;: This lets the runner know that this workflow is reusable and can be called from other workflows.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;inputs&lt;/strong&gt;: These are the values passed in from the caller workflow and referenced in the job.
+&lt;li&gt;&lt;strong&gt;workflow_call&lt;/strong&gt;: Set the workflow to be called from other workflows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;inputs&lt;/strong&gt;: Values passed in from the caller workflow .
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;platform&lt;/strong&gt;: Specifies the platform for which the Unity project should be built. This is crucial because Unity optimizes the build for the target platform and creates the appropriate files.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;platform&lt;/strong&gt;: Platform for which the Unity project should be built.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;secrets&lt;/strong&gt;: These are the secrets passed in from the caller workflow and used in the job.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;outputs&lt;/strong&gt;: Data that we want to pass back to the caller workflow.
+&lt;li&gt;&lt;strong&gt;secrets&lt;/strong&gt;: Secrets passed in from the caller workflow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;outputs&lt;/strong&gt;: Data to pass back to the caller workflow.
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;buildVersion&lt;/strong&gt;: The version generated by the job.&lt;/li&gt;
 &lt;/ul&gt;
@@ -458,7 +448,7 @@ on:
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="inside-the-linux-build-job"&gt;Inside the Linux Build Job&lt;/h2&gt;
+&lt;h2 id="the-linux-build-job"&gt;The Linux Build Job&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-yaml"&gt;jobs:  
   
   buildWithLinux:  
@@ -468,22 +458,22 @@ on:
       buildVersion: ${{ steps.build.outputs.buildVersion }}  
       steps:  
       - name: Checkout Repository  
-        uses: actions/checkout@v3  
+        uses: actions/checkout@v4  
         with:  
           fetch-depth: 0  
           lfs: true  
   
       - name: Cache Library  
-        uses: actions/cache@v3  
+        uses: actions/cache@v4 
         with:  
           path: Library  
           key: Library-build-${{ inputs.platform }}  
           restore-keys: |  
-            Library-build- ${{ inputs.platform }}
+            Library-build-${{ inputs.platform }}
             Library-    
       - name: Build Unity Project  
         id: build  
-        uses: game-ci/unity-builder@v3  
+        uses: game-ci/unity-builder@v4  
         env:  
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}  
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}  
@@ -492,29 +482,34 @@ on:
           targetPlatform: ${{ inputs.platform }}  
   
       - name: Upload Build  
-        uses: actions/upload-artifact@v3  
+        uses: actions/upload-artifact@v4  
         with:  
           name: build-${{ inputs.platform }}  
           path: build/${{ inputs.platform }}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here's a breakdown of what's happening in this job:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;outputs&lt;/strong&gt;: Data we want to use in the caller workflow.
+&lt;li&gt;&lt;strong&gt;outputs&lt;/strong&gt;: Data we want to return back to the caller workflow.
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;buildVersion&lt;/strong&gt;: The version generated by the Builder in the &lt;code&gt;build&lt;/code&gt; step below.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;buildVersion&lt;/strong&gt;: Version generated by the Builder in the &lt;code&gt;build&lt;/code&gt; step below.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;steps:&lt;/strong&gt; This section contains a series of steps to be executed for this job.
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Checkout Repository:&lt;/strong&gt; This step checks out our code repository. We're diving deep into the Git history with a fetch depth of 0 and grabbing those Git Large File Storage (LFS) files with the &lt;code&gt;lfs: true&lt;/code&gt; flag.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cache Library:&lt;/strong&gt; This step caches the "Library" directory, making subsequent runs faster. We specify the directory path, a key for the cache, and the keys to look for when restoring the cache.  We ensure that the &lt;code&gt;key&lt;/code&gt; is unique to each platform, allowing the job to retrieve the correct cache.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build Unity Project&lt;/strong&gt;: In this step, we build the Unity project and set the variables that have been passed in from the caller workflow&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload Build&lt;/strong&gt;: Upload the built Unity project as an artifact so it can be downloaded in later jobs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Checkout Repository:&lt;/strong&gt; Check out the code
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;fetch-depth&lt;/strong&gt;: Get only the last commit of the branch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;lfs&lt;/strong&gt;: Download files tracked by LFS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cache Library&lt;/strong&gt;: Cache the "Library" directory, to make subsequent runs faster. The &lt;code&gt;key&lt;/code&gt; is unique to each platform.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build Unity Project&lt;/strong&gt;: Build the Unity project for the target platform.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload Build&lt;/strong&gt;: Upload the built Unity project as an artifact so that it can be downloaded in later jobs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;With this workflow in place, we're one step closer to mastering CI/CD for Unity. Stay tuned for Part 4, where we'll cover using this workflow to build and deploy the WebGL build on GitHub pages.&lt;/p&gt;
+&lt;p&gt;In this part, we created a reusable workflow to build the Unity project for different platforms. Next, we will use this workflow to build and deploy a WebGL build to GitHub pages.&lt;/p&gt;
 &lt;p&gt;Happy building!&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
@@ -555,20 +550,19 @@ on:
     <item>
       <title>Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-trigger-events-tests</link>
-      <description>Adding CI/CD to Unity projects is a game-changer even if you're not a CI/CD enthusiast. Part 2 focuses on workflow triggers and running automated tests.</description>
+      <description>In Part 2,  I show how to create a workflow to run our automated tests based on some trigger events</description>
       <guid>https://www.ankursheel.com/blog/unity-cicd-trigger-events-tests</guid>
-      <pubDate>Tue, 09 Apr 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Welcome back to our Unity CI/CD journey. In Part 1, we nailed down the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;one-time setup to kickstart our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It's time for Part 2, where we'll delve into the nitty-gritty of the events to trigger our workflow and running our automated tests.&lt;/p&gt;
-&lt;p&gt;Let's dive in!&lt;/p&gt;
+      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;In Part 1, we finished the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;setup to start creating our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Part 2, we will create a workflow to run our automated tests based on some trigger events.&lt;/p&gt;
 &lt;h2 id="update.gitignore"&gt;Update .gitignore&lt;/h2&gt;
-&lt;p&gt;Before we create our workflow, we need to ignore the files generated by GameCI. Update the &lt;code&gt;.gitignore&lt;/code&gt; file with these lines:&lt;/p&gt;
+&lt;p&gt;Before you create your workflow, you need to ignore the files generated by GameCI. Update the &lt;code&gt;.gitignore&lt;/code&gt; file with these lines:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/[Aa]rtifacts/
 /[Cc]odeCoverage/
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="setting-the-trigger-events"&gt;Setting the Trigger Events&lt;/h2&gt;
-&lt;p&gt;First, we need to define when our CI/CD pipeline should kick into action.&lt;/p&gt;
-&lt;p&gt;We'll do this in a file named &lt;code&gt;.github/workflows/main.yml&lt;/code&gt;. with the following workflow definition:&lt;/p&gt;
+&lt;p&gt;Now, you need to define when your pipeline should trigger.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;.github/workflows/main.yml&lt;/code&gt; and add the following workflow definition:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-yaml"&gt;name: Test, Build, and Deploy with GameCI
 on:
   push:
@@ -588,84 +582,101 @@ on:
       - 'Assets/**'
       - 'Packages/**'
       - 'ProjectSettings/**'
+      - '.github/workflows/**'
   release:
     types:
       — published
   workflow_dispatch:
     inputs:
       release_platform:
-        description: 'Release to [iOS, WebGL, testFlight]'
+        description: 'release [ios, web, testflight]'
         required: false
-        default: ''
+        default: 'release '
 jobs:
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;A lot is going on here, but let's break it down:&lt;/p&gt;
+&lt;p&gt;A lot is going on here, so let's break it down:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: This section is where we specify the events that trigger our CI/CD workflow.
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: Specify the events that trigger the workflow.
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;push&lt;/strong&gt;: Our workflow will fire up when there's a push event to the "main" branch. We are also filtering this down to specific paths within our repo. We're only interested if changes happen in the actual Unity project. Anything else, and our CI/CD pipeline ignores them.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;pull_request&lt;/strong&gt;: Our workflow also triggers when a pull request is opened or synchronized (updated) in the "main" branch. And yes, we're narrowing it down to those same paths.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;release&lt;/strong&gt;: The workflow is also triggered when we publish a release.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;workflow_dispatch&lt;/strong&gt; lets us manually trigger our workflow through the GitHub Actions interface. We have an input field named **release_platform
-**, which allows us to specify where to release our project. This input will help us run only the necessary jobs. Perfect for testing intermediate builds that aren't meant for customer's eyes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;push&lt;/strong&gt; -&amp;gt; &lt;strong&gt;branches&lt;/strong&gt; : push event to the "main" branch
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;paths&lt;/strong&gt;: filter to only changes that happen in the Unity project or the workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pull_request&lt;/strong&gt; -&amp;gt; &lt;strong&gt;types&lt;/strong&gt;: pull request is opened or updated against the "main" branch.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;paths&lt;/strong&gt;: filter to only changes that happen in the Unity project or the workflows. &lt;em&gt;(Same as the push event).&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;release&lt;/strong&gt; -&amp;gt; &lt;strong&gt;publish&lt;/strong&gt;: publish a release.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;workflow_dispatch&lt;/strong&gt;: manually trigger the workflow using the GitHub Actions interface.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;input&lt;/strong&gt; -&amp;gt; &lt;strong&gt;release_platform&lt;/strong&gt;: input to specify the platform. Add the default text to "release" so that there is less typing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="building-and-running-tests"&gt;Building and Running Tests&lt;/h2&gt;
-&lt;p&gt;With the stage set, let's get to the real action - building and running our Unity project tests.&lt;/p&gt;
-&lt;p&gt;This job is the most important one, as it is responsible for running the &lt;a href="https://docs.unity3d.com/Manual/testing-editortestsrunner.html"&gt;unit tests&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;test:
-  name: Build and Run Tests
-  runs-on: ubuntu-latest
-  steps:
-    # Checkout with lfs
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        lfs: true
+&lt;p&gt;Next, add a new job to build and run the &lt;a href="https://docs.unity3d.com/Manual/testing-editortestsrunner.html"&gt;Unity project tests&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml"&gt;jobs:
 
-    - name: Cache Library
-      uses: actions/cache@v3
-      with:
-        path: Library
-        key: Library-test
-        restore-keys: |
-          Library-test
-  
-    - name: Run Tests
-      uses: game-ci/unity-test-runner@v2
-      env:
-        UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-      with:
-        githubToken: ${{ secrets.GITHUB_TOKEN }}
+  test:
+    name: Build and Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout with lfs
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: true
+
+      - name: Cache Library
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-test-${{ hashFiles('Assets/**') }}
+          restore-keys: |
+            Library-test-${{ hashFiles('Assets/**') }}
+            Library-test
+
+      - name: Run Tests
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, let's dissect this job:&lt;/p&gt;
+&lt;p&gt;Now, let's look at whats happening in this job:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;runs-on:&lt;/strong&gt; We specify that this job should run on an Ubuntu-based runner using the latest available version.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;steps:&lt;/strong&gt; This section contains a series of steps to be executed for this job.
+&lt;li&gt;&lt;strong&gt;runs-on:&lt;/strong&gt; The job should run on an lates Ubuntu-based runner.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;steps:&lt;/strong&gt; The steps to execute for this job.
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Checkout Repository:&lt;/strong&gt; This step checks out our code repository. We're diving deep into the Git history with a fetch depth of 0 and grabbing those Git Large File Storage (LFS) files with the &lt;code&gt;lfs: true&lt;/code&gt; flag.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cache Library:&lt;/strong&gt; This step caches the "Library" directory, making subsequent runs faster. We specify the directory path, a key for the cache, and the keys to look for when restoring the cache.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Run Tests:&lt;/strong&gt; This step runs our Unity tests.
+&lt;li&gt;&lt;strong&gt;Checkout Repository:&lt;/strong&gt; Check out the code
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;env&lt;/strong&gt;:  Used to set the environment variables
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: It sets the Unity license environment variable to the value stored securely in secrets.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;githubToken&lt;/strong&gt;: Since this action needs GitHub access to report the test results, it uses the GitHub token stored in secrets.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fetch-depth&lt;/strong&gt;: Get only the last commit of the branch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;lfs&lt;/strong&gt;: Download files tracked by LFS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cache Library&lt;/strong&gt;: Cache the "Library" directory, to make subsequent runs faster.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run Tests:&lt;/strong&gt; Runs the Unity tests.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;env&lt;/strong&gt;:  Set the environment variables&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;with&lt;/strong&gt; -&amp;gt; &lt;strong&gt;githubToken&lt;/strong&gt;: Set the GITHUB_TOKEN from the secrets to report the test results.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="set-workflow-permissions"&gt;Set Workflow Permissions&lt;/h2&gt;
-&lt;p&gt;To view test results as part of the Github Status check, we need to provide write permissions for our workflow&lt;/p&gt;
-&lt;p&gt;Go to &lt;em&gt;Settings&lt;/em&gt; &amp;gt; &lt;em&gt;Actions&lt;/em&gt; &amp;gt; &lt;em&gt;General&lt;/em&gt; &amp;gt; &lt;em&gt;Workflow permissions&lt;/em&gt; and choose &lt;em&gt;Read and write permissions&lt;/em&gt;. By default it is set to &lt;em&gt;Read repository content and packages permissions&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To view test results as part of the Github Status check, you need to provide write permissions to the workflow&lt;/p&gt;
+&lt;p&gt;Go to &lt;em&gt;Settings&lt;/em&gt; &amp;gt; &lt;em&gt;Actions&lt;/em&gt; &amp;gt; &lt;em&gt;General&lt;/em&gt; &amp;gt; &lt;em&gt;Workflow permissions&lt;/em&gt; and choose &lt;em&gt;Read and write permissions&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-trigger-events-tests/workflow_permissions.png" alt="Workflow Permission"&gt;&lt;/p&gt;
 &lt;h2 id="preparing-the-project"&gt;Preparing the Project&lt;/h2&gt;
-&lt;p&gt;If the project builds in the editor but fails when we run the workflow, its likely because of missing packages.&lt;/p&gt;
+&lt;p&gt;If the project builds in the editor but fails when you run the workflow, its likely because of missing packages.&lt;/p&gt;
 &lt;p&gt;Luckily, its a simple fix.&lt;/p&gt;
 &lt;h3 id="verify-packages"&gt;Verify Packages&lt;/h3&gt;
 &lt;p&gt;Ensure that these entries are present in &lt;code&gt;packages/manifest.json&lt;/code&gt;:&lt;/p&gt;
@@ -677,7 +688,7 @@ jobs:
 &lt;/ul&gt;
 &lt;p&gt;If any of these packages are missing, add them using the Unity Package Manager. Remember to commit the changes in &lt;code&gt;packages/manifest.json&lt;/code&gt; and &lt;code&gt;packages/package-lock.json&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Stay tuned for Part 3, where I'll cover building the project to target different platforms.&lt;/p&gt;
+&lt;p&gt;In this part, we set up the trigger events for the workflow and added a job to build and run tests. Next, we will add a job to build the project for different platforms.&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows"&gt;Events that trigger workflows&lt;/a&gt;&lt;/li&gt;
@@ -689,18 +700,17 @@ jobs:
     <item>
       <title>Unity CI/CD Demystified: Part 1: One-Time Setup</title>
       <link>https://www.ankursheel.com/blog/unity-cicd-one-time-setup</link>
-      <description>Adding CI/CD to Unity projects is a game-changer even if you're not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline</description>
+      <description>Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-cicd-one-time-setup</guid>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Adding CI/CD to Unity projects is a game-changer, even if you're not a CI/CD enthusiast.&lt;/p&gt;
-&lt;p&gt;In this series, I'll guide you through setting up a robust CI/CD pipeline for Unity projects using &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt; and &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Part 1 of this series covers the essential one-time setup for a successful CI/CD pipeline.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: These setup steps can be skipped if you've already performed them for a previous project.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;In this series, I'll guide you through setting up a CI/CD pipeline for Unity projects using &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt; and &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Part 1 of this series covers the one-time setup that you need for setting up the pipeline.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: Some of these setup steps can be skipped if you've already performed them for a previous project.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="acquire-an-activation-file-for-github-runners"&gt;Acquire an Activation File for GitHub Runners&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Log into Unity Hub&lt;/li&gt;
-&lt;li&gt;If we havent already created a licence, we need to get a licence by going to &lt;em&gt;Unity Hub&lt;/em&gt; &amp;gt; &lt;em&gt;Manage Licenses&lt;/em&gt; &amp;gt; &lt;em&gt;Add&lt;/em&gt; &amp;gt; &lt;em&gt;Get a free personal license&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;If you havent already created a licence, you need to get a licence by going to &lt;em&gt;Unity Hub&lt;/em&gt; &amp;gt; &lt;em&gt;Manage Licenses&lt;/em&gt; &amp;gt; &lt;em&gt;Add&lt;/em&gt; &amp;gt; &lt;em&gt;Get a free personal license&lt;/em&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="install-ruby"&gt;Install Ruby&lt;/h2&gt;
 &lt;ul&gt;
@@ -713,22 +723,11 @@ jobs:
 &lt;li&gt;Create a private GitHub repository to store the certificates and code-signing identities we generate.&lt;/li&gt;
 &lt;li&gt;In the private repository, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Deploy Keys&lt;/em&gt; -&amp;gt; &lt;em&gt;Add Deploy Key&lt;/em&gt;&lt;br&gt;
 &lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/deploy_key.png" alt="Add a new deploy key"&gt;&lt;/li&gt;
-&lt;li&gt;Generate an SSH key. We can use 1Password or use the &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
+&lt;li&gt;Generate an SSH key. You can use 1Password or use the &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
 &lt;li&gt;Paste the public key (starting with ssh) into the "Key" field.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;&lt;em&gt;Allow write access&lt;/em&gt;&lt;/strong&gt; to enable pushing certificates to the repository.&lt;br&gt;
 &lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="generate-a-github-personal-access-token"&gt;Generate a GitHub Personal Access Token&lt;/h3&gt;
-&lt;p&gt;We need a Personal Access Token to enable our GitHub Actions to access the private GitHub repository where we'll store our certificates.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Go to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Developer Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Personal Access Tokens&lt;/em&gt; -&amp;gt; &lt;em&gt;Tokens (classic)&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;Generate Token&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/generate_personal_access_token.png" alt="Generate Personal Access Token"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Give the token all &lt;strong&gt;&lt;em&gt;repo&lt;/em&gt;&lt;/strong&gt; permissions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/token_scopes.png" alt="Token Scopes"&gt;&lt;/p&gt;
 &lt;h2 id="setting-up-secrets-for-github-actions"&gt;Setting up Secrets for GitHub Actions&lt;/h2&gt;
 &lt;p&gt;On GitHub, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Secrets and Variables&lt;/em&gt; -&amp;gt; &lt;em&gt;Actions&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" alt="Adding secrets"&gt;&lt;/p&gt;
@@ -737,14 +736,13 @@ jobs:
 &lt;li&gt;&lt;strong&gt;UNITY_EMAIL&lt;/strong&gt;: Your Unity login email address.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: The contents of the &lt;em&gt;.ulf&lt;/em&gt; file which can found at &lt;em&gt;&lt;strong&gt;C:\ProgramData\Unity\Unity_lic.ulf&lt;/strong&gt;&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;UNITY_PASSWORD&lt;/strong&gt;: Your Unity login password.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GH_PAT&lt;/strong&gt;: The Personal Access Token we generated. Make sure that there is an empty newline at the end.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATCH_PASSWORD&lt;/strong&gt;: This is an additional layer of security required for encrypting/decrypting certificates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATCH_PASSWORD&lt;/strong&gt;: This is required for encrypting/decrypting certificates.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MATCH_REPOSITORY&lt;/strong&gt;: The name of the private GitHub repository that will store our certificates in the format &lt;code&gt;organization/repository&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATCH_DEPLOY_KEY&lt;/strong&gt;: This is the private part of the SSH key we created in the private repository to store our certificates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATCH_DEPLOY_KEY&lt;/strong&gt;: This is the private part of the SSH key we created in the private repository to store our certificates. &lt;em&gt;If using 1Password makes sure the key is unencrypted.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I recommend adding these secrets at the organisation level so that we can reuse them across multiple projects. We can then selectively grant access to each secret for specific repositories.&lt;/p&gt;
+&lt;p&gt;If you can, I recommend adding these secrets at the organisation level so that you can reuse them across multiple projects. You can then selectively grant access to each secret for specific repositories.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;This one-time setup paves the way for a streamlined Unity CI/CD pipeline. Stay tuned for the next steps in our journey. Happy coding!!&lt;/p&gt;
+&lt;p&gt;We are now finished with the one time setup that we need to add CI/CD to our Unity projects. In the next part, we will set up the GitHub Actions workflow to build and deploy our Unity project.&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions"&gt;Workflow syntax&lt;/a&gt;&lt;/li&gt;
@@ -766,7 +764,7 @@ jobs:
 &lt;blockquote&gt;
 &lt;p&gt;What should I discuss in my 1:1 meetings? I often have nothing beyond project updates.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;This is a common concern, and it's crucial to recognise that a 1:1 meeting is more than just a status update session. It's an opportunity to connect with your supervisor, discuss your progress, and express your thoughts and concerns.&lt;/p&gt;
+&lt;p&gt;This is a common concern, and it's crucial to recognise that a 1:1 meeting is more than just a status update session. It's an opportunity to connect with your manager, discuss your progress, and express your thoughts and concerns.&lt;/p&gt;
 &lt;h2 id="how-to-effectively-prepare-for-a-11"&gt;How to Effectively Prepare for a 1:1&lt;/h2&gt;
 &lt;p&gt;Preparation is key to making the most of your 1:1 meetings. Not only does it demonstrate professionalism, but it also maximises the value of your time.&lt;/p&gt;
 &lt;p&gt;Taking notes during(or just after) the 1:1 is pivotal for several reasons. It demonstrates active engagement, aids in retaining essential points, and serves as a reference for future discussions. You can easily look at your notes and if for example, you havent spoken about professional growth for a while, you can focus on those questions in the next 1:1.&lt;/p&gt;
@@ -818,7 +816,7 @@ jobs:
 &lt;li&gt;Share any interesting updates, lessons, or personal achievements.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="share-your-11-experiences-and-tips"&gt;Share Your 1:1 Experiences and Tips&lt;/h2&gt;
-&lt;p&gt;Navigating 1:1 meetings might seem daunting initially, but you'll soon become a pro with effective preparation, thoughtful questions, and diligent follow-ups. Remember, there's no such thing as a perfect 1:1 meeting.&lt;/p&gt;
+&lt;p&gt;Navigating 1:1 meetings might seem daunting initially, but effective preparation, thoughtful questions, and diligent follow-ups can help make it easier. Remember, there's no such thing as a perfect 1:1 meeting.&lt;/p&gt;
 &lt;p&gt;We're all on a learning journey, and your experiences and tips are invaluable. Have you discovered other effective ways to prepare for 1:1s? Are there additional questions that have proven helpful for you? How do you ensure you follow up on action items?&lt;/p&gt;
 &lt;p&gt;Share your experiences and insights in the comments below. Your wisdom could be just what I or another reader needs to excel in their 1:1 meetings!&lt;/p&gt;
 </content:encoded>
@@ -827,42 +825,44 @@ jobs:
     <item>
       <title>Cleaning Up Unnecessary Remote-Tracking References</title>
       <link>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</link>
-      <description>git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating git repositories</description>
+      <description>git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository</description>
       <guid>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</guid>
-      <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;If your work involves collaborating on a monolithic project with multiple teams, you might find yourself in a situation where you're tracking numerous branches. However, you might soon realise that most of these branches are unnecessary for your specific work. This situation can lead to an avoidable increase in the time you spend updating your project, especially if you're habitually using &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;To streamline our Git workflow and save those precious seconds(or minutes), we should clean up those remote-tracking references.&lt;/p&gt;
+      <pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;If your work involves collaborating on a monolithic project with multiple teams, you might find that your &lt;code&gt;git pull&lt;/code&gt; has started taking a long time. One of the reasons for this is that you are tracking multiple branches most of which are unnecessary for your specific work.&lt;/p&gt;
+&lt;p&gt;In order to make updating fast again, you need to clean up those remote-tracking references.&lt;/p&gt;
 &lt;h2 id="identifying-the-branches-to-keep"&gt;Identifying the Branches to Keep&lt;/h2&gt;
-&lt;p&gt;Before we start removing stuff, we should identify the branches that we want to keep. Typically, these would include the &lt;em&gt;main (or master)&lt;/em&gt; branch and a few select branches we actively work on.&lt;/p&gt;
-&lt;p&gt;To get their unique commit hashes, execute the following command, ensuring to replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt; with the actual branch names.&lt;/p&gt;
+&lt;p&gt;Before you start deleting branches, you should identify the branches that you want to keep. Typically, these would include the &lt;em&gt;main (or master)&lt;/em&gt; branch and a few select branches you actively work on.&lt;/p&gt;
+&lt;p&gt;To get the unique commit hashes of those branches, execute the following command.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Note: I’m assuming the &lt;em&gt;&lt;strong&gt;origin&lt;/strong&gt;&lt;/em&gt; is the name of the upstream&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;git rev-parse&lt;/code&gt; command translates human-readable branch names into cryptic yet significant SHA-1 hashes, which are essentially commit identifiers.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note 1: I’m assuming the &lt;strong&gt;origin&lt;/strong&gt; is the name of the upstream&lt;/em&gt;
+&lt;em&gt;Note 2: Replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt; with the actual branch names&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;git rev-parse&lt;/code&gt; command translates human-readable branch names into SHA-1 hashes which are the commit identifiers.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;--quiet&lt;/em&gt;&lt;/strong&gt;: Silence is golden, as this flag suppresses output unless there is an error.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;--quiet&lt;/em&gt;&lt;/strong&gt;: This flag suppresses output unless there is an error.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When executed, the command will produce an output similar to this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-text"&gt;3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;These are the commit hashes associated with the branches we wish to retain.&lt;/p&gt;
+&lt;p&gt;These are the commit hashes associated with the branches you wish to keep.&lt;/p&gt;
 &lt;h2 id="cleaning-up-unnecessary-local-references"&gt;Cleaning Up Unnecessary Local References&lt;/h2&gt;
-&lt;p&gt;Now that we have the commit hashes, we can tidy up our local references to remote branches.&lt;/p&gt;
-&lt;p&gt;This can be done by using a combination of 2 commands - &lt;code&gt;git branch&lt;/code&gt; and &lt;code&gt;xargs&lt;/code&gt;. &lt;code&gt;xargs&lt;/code&gt; is a command-line tool that helps build argument lists for other commands.&lt;/p&gt;
+&lt;p&gt;Now that you have the commit hashes, you can remove the local references to remote branches.&lt;/p&gt;
+&lt;p&gt;This can be done by using a combination of 2 commands - &lt;code&gt;git branch&lt;/code&gt; and &lt;code&gt;xargs&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;git branch -r \ 
 --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
 --no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
 --no-contains 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3 \
 | xargs -I{} git branch -rd &amp;quot;{}&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let's look at the options for the &lt;code&gt;git branch&lt;/code&gt; command&lt;/p&gt;
+&lt;p&gt;Let's first look at the options for the &lt;code&gt;git branch&lt;/code&gt; command&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;-r&lt;/em&gt;&lt;/strong&gt;: Lists the remote-tracking branches.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;--no-contains&lt;/em&gt;&lt;/strong&gt;: Filters the list of remote branches to include only branches that don't contain the specified commits (our identified hashes).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;--no-contains&lt;/em&gt;&lt;/strong&gt;: Filters the list of remote branches to include only branches that don't contain the specified commit hashes.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The output of this filtered list is then passed to &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt;. &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt; is a command that allows us to construct argument lists for other commands using input from standard input (stdin).&lt;/p&gt;
+&lt;p&gt;The filtered list from the &lt;code&gt;git branch&lt;/code&gt; command is passed to &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt; is a command-line tool that helps build argument lists for other commands using input from standard input (stdin). Lets look at the options for the &lt;code&gt;xargs&lt;/code&gt; command.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;-I&lt;/em&gt;&lt;/strong&gt;:  This option tells &lt;code&gt;xargs&lt;/code&gt; to replace every occurrence of &lt;code&gt;{}&lt;/code&gt; with the input elements pulled from standard input (stdin).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;git branch -rd&lt;/em&gt;&lt;/strong&gt;: Deletes a remote branch.
@@ -871,7 +871,7 @@ jobs:
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="preventing-this-buildup-in-the-future"&gt;Preventing this buildup in the future&lt;/h2&gt;
+&lt;h2 id="how-to-track-only-branches-you-need"&gt;How to track only branches you need?&lt;/h2&gt;
 &lt;p&gt;Instead of calling &lt;code&gt;git pull&lt;/code&gt;, use &lt;code&gt;git fetch&lt;/code&gt;  and &lt;code&gt;git rebase&lt;/code&gt; instead.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;git fetch origin main --prune --prune-tags
 git rebase origin/main
@@ -881,7 +881,7 @@ git rebase origin/main
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;--prune-tags&lt;/em&gt;&lt;/strong&gt;: Before fetching, remove any local tags that no longer exist on the remote if --prune is enabled.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Following these steps, we can declutter our Git workflow and keep only the relevant references.&lt;/p&gt;
+&lt;p&gt;Following these steps, you can remove any remote tracking references that you dont need.&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-branch"&gt;git branch&lt;/a&gt;&lt;/li&gt;
@@ -898,32 +898,8 @@ git rebase origin/main
       <description>A workaround for Unity no longer supporting manual activation of Personal licenses.</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</guid>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You decided to add a CI/CD pipeline to your Unity Project using &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;. You are all pumped up and
-ready to start.&lt;/p&gt;
-&lt;p&gt;What's the 1st step? Activating Unity! No biggie, right?&lt;/p&gt;
-&lt;p&gt;Well, hold on a sec. You generate the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file after creating the github action. You carry on with the list and
-head to &lt;a href="https://license.unity3d.com/manual"&gt;https://license.unity3d.com/manual&lt;/a&gt;, all set to create that &lt;strong&gt;&lt;em&gt;ulf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
-&lt;h2 id="plot-twist"&gt;Plot Twist&lt;/h2&gt;
-&lt;p&gt;But hold your horses because here comes the twist.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" alt="Unity no longer supports manual activation of Personal licenses"&gt;&lt;/p&gt;
-&lt;p&gt;Unity dropped a bombshell: "Unity no longer supports manual activation of Personal licenses."&lt;/p&gt;
-&lt;p&gt;Manual activation of Personal licenses? Nope, not happening anymore. Cue the dramatic music. 🎵&lt;/p&gt;
-&lt;p&gt;But we are not giving up that easily. We disregard the message and upload the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
-&lt;p&gt;Something's fishy. The option to generate an ulf for a personal license? Poof, it's vanished. Instead, it asks us to
-type in a serial number.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/serial_number.png" alt="Activate your license using serial number"&gt;&lt;/p&gt;
-&lt;h2 id="time-for-a-bit-of-trickery"&gt;Time for a bit of trickery&lt;/h2&gt;
-&lt;p&gt;Right-click and inspect the serial number box&lt;/p&gt;
-&lt;p&gt;Now, hunt down the &lt;code&gt;&amp;lt;div class="option option-personal clear" style="display: none;"&amp;gt;&lt;/code&gt; section&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png" alt="Html Source"&gt;&lt;/p&gt;
-&lt;p&gt;Guess what? We're deleting that pesky &lt;code&gt;"display: none;"&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Boom! Like magic, the Unity Personal Edition option reappears. 🎉&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png" alt="Page With Personal License"&gt;&lt;/p&gt;
-&lt;p&gt;Hopefully, before this hack stops working, GameCI will have an official workaround :)&lt;/p&gt;
-&lt;h3 id="shoutout"&gt;Shoutout&lt;/h3&gt;
-&lt;p&gt;And here's a shoutout to &lt;a href="https://reallpepe.itch.io/defendron"&gt;realpepe&lt;/a&gt;, who cracked the code and shared the wisdom on
-Discord. Because in the world of tech, teamwork makes the magic happen.&lt;/p&gt;
+      <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;This is not needed anymore with game-ci/unity-builder&amp;#64;v4. If you still need this for some reason, let me know and I can resurrect thi.&lt;/strong&gt;&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

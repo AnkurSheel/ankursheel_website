@@ -4,31 +4,31 @@
 <head>
     
 
-<title>Unity CI/CD Demystified: Part 1: One-Time Setup</title>
+<title>Merchant using Stripe Declined credit Card: What to Do</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects"/>
+<meta name="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/unity-cicd-one-time-setup"/>   
-<meta itemProp="name" content="Unity CI/CD Demystified: Part 1: One-Time Setup"/>
-<meta itemProp="description" content="Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/unity-cicd-one-time-setup"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/merchants-stripe-decline-credit-cards"/>   
+<meta itemProp="name" content="Merchant using Stripe Declined credit Card: What to Do"/>
+<meta itemProp="description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/merchants-stripe-decline-credit-cards-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/merchants-stripe-decline-credit-cards"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Unity CI/CD Demystified: Part 1: One-Time Setup"/>
-<meta property="og:description" content="Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png"/>
+<meta property="og:title" content="Merchant using Stripe Declined credit Card: What to Do"/>
+<meta property="og:description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/merchants-stripe-decline-credit-cards-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/merchants-stripe-decline-credit-cards-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Unity CI/CD Demystified: Part 1: One-Time Setup"/>
-<meta name="twitter:description" content="Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-twitter.png"/>
+<meta name="twitter:title" content="Merchant using Stripe Declined credit Card: What to Do"/>
+<meta name="twitter:description" content="My ongoing saga with Stripe support as an end-user to get them to stop blocking my card. A workaround while they try to resolve the issue"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/merchants-stripe-decline-credit-cards-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/merchants-stripe-decline-credit-cards-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,81 +110,62 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Unity CI/CD Demystified: Part 1: One-Time Setup</h1>
+    <h1 class="text-center">Merchant using Stripe Declined credit Card: What to Do</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2023-09-25">Sep 25, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-08-07">Aug 07, 2024</time></p>
+        <p class="mr-4">Published on <time datetime="2021-12-29">Dec 29, 2021</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2021-12-31">Dec 31, 2021</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">2 min</span>
+            Estimated Reading Time: <span  class="font-bold">3 min</span>
         </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
-            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
-            <a href="/tags/devops" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">devops</a>
+            <a href="/tags/finance" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">finance</a>
     </div>
 </div>
 
-<p>In this series, I'll guide you through setting up a CI/CD pipeline for Unity projects using <a href="https://github.com/features/actions">GitHub Actions</a> and <a href="https://game.ci/">GameCI</a>.</p>
-<p>Part 1 of this series covers the one-time setup that you need for setting up the pipeline.</p>
-<p><strong><em>Note: Some of these setup steps can be skipped if you've already performed them for a previous project.</em></strong></p>
-<h2 id="acquire-an-activation-file-for-github-runners">Acquire an Activation File for GitHub Runners</h2>
-<ol>
-<li>Log into Unity Hub</li>
-<li>If you havent already created a licence, you need to get a licence by going to <em>Unity Hub</em> &gt; <em>Manage Licenses</em> &gt; <em>Add</em> &gt; <em>Get a free personal license</em>.</li>
-</ol>
-<h2 id="install-ruby">Install Ruby</h2>
+<p>For a long time, merchants using Stripe to process payments have declined my cards. It took me a long time to figure out what was happening.</p>
+<p><img src="/assets/images/posts/merchants-stripe-decline-credit-cards/cover.jpg" alt="A woman who enters her bank details while shopping online" /></p>
+<h2 id="what-i-tried-unsuccessfully">What I  tried (unsuccessfully)</h2>
 <ul>
-<li>Install Ruby from <a href="https://rubyinstaller.org/downloads/">here</a></li>
-<li>Verify the installation by running <code>ruby -v</code>.</li>
-<li>Install <em>Bundler</em> by running <code>gem install bundler</code></li>
+<li>I tried to use various cards, all of which work elsewhere (including overseas transactions).</li>
+<li>I tried to use cards in my wife's name, which also work elsewhere (including overseas transactions).</li>
+<li>I used both debit and credit cards.</li>
+<li>I spoke with my bank as suggested by various merchants. They confirmed there was no security holds on my account. They don't even see the failed transaction on their end.</li>
 </ul>
-<h2 id="setup-codesigning-with-github-actions">Setup Codesigning with GitHub Actions</h2>
+<h2 id="a-light-bulb-goes-on">A light bulb goes on</h2>
+<p>Recently, I tried to place an order on a merchant using Stripe. As always, it got declined. On a whim, I decided to delete my account and recreate it in my wife's name. On placing an order using her account, the payment immediately went through. Remember, this is on the same merchant who had declined the payment from my account for the same card just a few minutes earlier.</p>
+<p>This led me to conclude that Stripe is blocking the payments based on my email.</p>
+<h2 id="so-what-can-you-do">So what can you do?</h2>
+<p>If you are using Gmail as an email provider, you can just add <em><strong>+merchant&#64;gmail.com</strong></em> to the email address, which will create an alias for your Gmail account. This means that as far as Stripe is concerned, it's a different address from the one they blocked, but the emails from the merchant will still come to your email address.</p>
+<p>If it's so simple to bypass the decline, you would think getting Stripe to take the email off the blocklist would be easy. You can read about the ongoing saga below.</p>
+<h2 id="the-stripe-saga-my-attempt-to-resolve-this-with-stripe-support">The Stripe Saga: My Attempt to resolve this with Stripe support</h2>
+<p>With this new insight, I reached out to Stripe. I told them about the payments failing and my suspicion that the failure was because of my email and asked if there was some way to get my email off the blocklist. Unfortunately, Stripe needs a merchant to contact them to look at the issue. I haven't had much luck getting merchants to email stripe. Most merchants suggest talking to the bank, which does not help when the bank does not even see the transaction.</p>
+<p>Over 3 months and in multiple emails, I communicated to Stripe that merchants are not contacting them because they either don't understand that the email is an issue or they have better things to do with their time. Each time it was a (semi?)canned reply, &quot;please reach out to a merchant and ask them to contact us&quot;.</p>
+<p>Finally, I sent them a screenshot showing Stripe's decline code as <em>&quot;fraudulent&quot;</em>. I also sent them the response from a merchant clearly stating that they(merchant) think I should reach out to Stripe as they don't think they(Stripe) would give them the information. I also told them I bypassed the fraudulent decline code by providing an alternate email address.</p>
+<p>I was hoping that this would get Stripe to resolve the issue. But alas, I got the same canned reply.</p>
+<p>After telling them I was getting tired of this chicken and egg problem, they linked some text to send to the merchant. I have sent this to the merchant, but I don't think the merchant has much incentive to prioritise this.</p>
+<p>I will update this section with any more progress.</p>
+<h2 id="updates">Updates</h2>
+<p>Immediately after posting this article, the people at Stripe reached out to me on Twitter. Two days later, they resolved the issue- the issue being that the email had previously been flagged. Unfortunately, they could not share any more information with me. But the good news is that this issue is now sorted.</p>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Create a private GitHub repository to store the certificates and code-signing identities we generate.</li>
-<li>In the private repository, navigate to <em>Settings</em> -&gt; <em>Deploy Keys</em> -&gt; <em>Add Deploy Key</em><br />
-<img src="/assets/images/posts/unity-cicd-one-time-setup/deploy_key.png" alt="Add a new deploy key" /></li>
-<li>Generate an SSH key. You can use 1Password or use the <code>ssh-keygen</code> utility.</li>
-<li>Paste the public key (starting with ssh) into the &quot;Key&quot; field.</li>
-<li>Select <strong><em>Allow write access</em></strong> to enable pushing certificates to the repository.<br />
-<img src="/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key" /></li>
+<li><a href="https://support.google.com/a/users/answer/9308648?hl=en">Creating alias email addresses on gmail</a></li>
 </ul>
-<h2 id="setting-up-secrets-for-github-actions">Setting up Secrets for GitHub Actions</h2>
-<p>On GitHub, navigate to <em>Settings</em> -&gt; <em>Secrets and Variables</em> -&gt; <em>Actions</em>.</p>
-<p><img src="/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" alt="Adding secrets" /></p>
-<p>Create the following secrets</p>
-<ul>
-<li><strong>UNITY_EMAIL</strong>: Your Unity login email address.</li>
-<li><strong>UNITY_LICENSE</strong>: The contents of the <em>.ulf</em> file which can found at <em><strong>C:\ProgramData\Unity\Unity_lic.ulf</strong></em>.</li>
-<li><strong>UNITY_PASSWORD</strong>: Your Unity login password.</li>
-<li><strong>MATCH_PASSWORD</strong>: This is required for encrypting/decrypting certificates.</li>
-<li><strong>MATCH_REPOSITORY</strong>: The name of the private GitHub repository that will store our certificates in the format <code>organization/repository</code>.</li>
-<li><strong>MATCH_DEPLOY_KEY</strong>: This is the private part of the SSH key we created in the private repository to store our certificates. <em>If using 1Password makes sure the key is unencrypted.</em></li>
-</ul>
-<p>If you can, I recommend adding these secrets at the organisation level so that you can reuse them across multiple projects. You can then selectively grant access to each secret for specific repositories.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>We are now finished with the one time setup that we need to add CI/CD to our Unity projects. In the next part, we will set up the GitHub Actions workflow to build and deploy our Unity project.</p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions">Workflow syntax</a></li>
-<li><a href="https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch">Workflow dispatch</a></li>
-<li><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions">Using secrets in GitHub Actions</a></li>
-<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#set-up-deploy-keys">Setup deploy keys on Github</a></li>
-</ul>
+<p><em>Cover Photo from <a href="https://unsplash.com/photos/gf8e6XvG_3E">Unsplash</a></em></p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-one-time-setup&text=Unity%20CI%2FCD%20Demystified%3A%20Part%201%3A%20One-Time%20Setup via @ankur_sheel.&#xD;&#xA;Part%201%20covers%20the%20one-time%20setup%20needed%20for%20setting%20up%20a%20CI%2FCD%20pipeline%20for%20Unity%20projects" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-cicd-one-time-setup" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/merchants-stripe-decline-credit-cards&text=Merchant%20using%20Stripe%20Declined%20credit%20Card%3A%20What%20to%20Do via @ankur_sheel.&#xD;&#xA;My%20ongoing%20saga%20with%20Stripe%20support%20as%20an%20end-user%20to%20get%20them%20to%20stop%20blocking%20my%20card.%20A%20workaround%20while%20they%20try%20to%20resolve%20the%20issue" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/merchants-stripe-decline-credit-cards" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -219,16 +200,16 @@
 
     <ul>
             <li>
-                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
             </li>
             <li>
-                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
+                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
             </li>
             <li>
-                <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
+                <a href="migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a>
             </li>
             <li>
-                <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>
+                <a href="reader-question-apply-storybrand-communicate-work">How can we apply Storybrand to how we communicate at work</a>
             </li>
     </ul>
 </aside>

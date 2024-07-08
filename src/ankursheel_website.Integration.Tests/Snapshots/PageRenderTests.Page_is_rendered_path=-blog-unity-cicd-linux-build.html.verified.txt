@@ -6,24 +6,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="In Part 3 of our Unity CI/CD series, we delve into creating a reusable workflow to build Unity projects for different platforms.">
+<meta name="description" content="In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
     <link rel="canonical" href="https://www.ankursheel.com/blog/unity-cicd-linux-build">   
 <meta itemprop="name" content="Unity CI/CD Demystified: Part 3: Build with Linux">
-<meta itemprop="description" content="In Part 3 of our Unity CI/CD series, we delve into creating a reusable workflow to build Unity projects for different platforms.">
+<meta itemprop="description" content="In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.">
     <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-linux-build-facebook.png">
 <meta property="og:url" content="https://www.ankursheel.com/blog/unity-cicd-linux-build">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity CI/CD Demystified: Part 3: Build with Linux">
-<meta property="og:description" content="In Part 3 of our Unity CI/CD series, we delve into creating a reusable workflow to build Unity projects for different platforms.">
+<meta property="og:description" content="In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.">
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-linux-build-facebook.png">
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-linux-build-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
 <meta name="twitter:title" content="Unity CI/CD Demystified: Part 3: Build with Linux">
-<meta name="twitter:description" content="In Part 3 of our Unity CI/CD series, we delve into creating a reusable workflow to build Unity projects for different platforms.">
+<meta name="twitter:description" content="In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.">
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-linux-build-twitter.png">
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-linux-build-twitter.png">
 
@@ -115,7 +115,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2023-10-23">Oct 23, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-10-23">Oct 23, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-08-07">Aug 07, 2024</time></p>
         <p>
             Estimated Reading Time: <span class="font-bold">2 min</span>
         </p>
@@ -128,12 +128,13 @@
     </div>
 </div>
 
-<p>Welcome back to our Unity CI/CD journey.</p>
-<p>In Part 1, we nailed down the <a href="unity-cicd-one-time-setup">One-Time Setup for Unity CD</a>.</p>
-<p>In Part 2, we set the <a href="unity-cicd-trigger-events-tests">Trigger Events and Automation Testing for Unity CD</a></p>
-<p>It's time for Part 3, where we will create a reusable workflow to build the Unity project for various platforms. The jobs in this workflow will run on a Linux VM.</p>
-<p>Why Linux? Its the cheapest box. As we will see in later posts, different platforms need different VM for deployment. I am looking at you iOS.</p>
-<p>Let's kick things off with creating a new workflow definition <code>.github/workflows/buildWithLinux.yml</code>:</p>
+<p>In Part 1, we finished the <a href="unity-cicd-one-time-setup">setup to start creating our CI/CD pipeline</a>.</p>
+<p>In Part 2, we created a workflow to run our <a href="unity-cicd-trigger-events-tests">automated tests based on some trigger events</a>.</p>
+<p>In Part 3, we will create a reusable workflow to build the Unity project for various platforms.</p>
+<p>The jobs in this workflow will run on a Linux VM.</p>
+<p>Why Linux?</p>
+<p>Its the cheapest box. As we will see in later posts, different platforms need a different OS for deployment. I am looking at you iOS.</p>
+<p>Creating a new workflow definition <code>.github/workflows/buildWithLinux.yml</code>:</p>
 <h2 id="defining-the-workflow">Defining the Workflow</h2>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">with</span> <span class="hljs-string">Linux</span>  
 <span class="hljs-attr">on:</span>  
@@ -154,16 +155,16 @@
         <span class="hljs-attr">value:</span> <span class="hljs-string">${{</span> <span class="hljs-string">jobs.buildWithLinux.outputs.buildVersion</span> <span class="hljs-string">}}</span> 
 </code></pre>
 <ul>
-<li><strong>on</strong>: In this section, we specify the events that trigger our CI/CD workflow.
+<li><strong>on</strong>: ISpecify the events that trigger the workflow.
 <ul>
-<li><strong>workflow_call</strong>: This lets the runner know that this workflow is reusable and can be called from other workflows.</li>
-<li><strong>inputs</strong>: These are the values passed in from the caller workflow and referenced in the job.
+<li><strong>workflow_call</strong>: Set the workflow to be called from other workflows.</li>
+<li><strong>inputs</strong>: Values passed in from the caller workflow .
 <ul>
-<li><strong>platform</strong>: Specifies the platform for which the Unity project should be built. This is crucial because Unity optimizes the build for the target platform and creates the appropriate files.</li>
+<li><strong>platform</strong>: Platform for which the Unity project should be built.</li>
 </ul>
 </li>
-<li><strong>secrets</strong>: These are the secrets passed in from the caller workflow and used in the job.</li>
-<li><strong>outputs</strong>: Data that we want to pass back to the caller workflow.
+<li><strong>secrets</strong>: Secrets passed in from the caller workflow.</li>
+<li><strong>outputs</strong>: Data to pass back to the caller workflow.
 <ul>
 <li><strong>buildVersion</strong>: The version generated by the job.</li>
 </ul>
@@ -171,7 +172,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="inside-the-linux-build-job">Inside the Linux Build Job</h2>
+<h2 id="the-linux-build-job">The Linux Build Job</h2>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">jobs:</span>  
   
   <span class="hljs-attr">buildWithLinux:</span>  
@@ -181,22 +182,22 @@
       <span class="hljs-attr">buildVersion:</span> <span class="hljs-string">${{</span> <span class="hljs-string">steps.build.outputs.buildVersion</span> <span class="hljs-string">}}</span>  
       <span class="hljs-attr">steps:</span>  
       <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">Repository</span>  
-        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout&#64;v3</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout&#64;v4</span>  
         <span class="hljs-attr">with:</span>  
           <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span>  
           <span class="hljs-attr">lfs:</span> <span class="hljs-literal">true</span>  
   
       <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Cache</span> <span class="hljs-string">Library</span>  
-        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/cache&#64;v3</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/cache&#64;v4</span> 
         <span class="hljs-attr">with:</span>  
           <span class="hljs-attr">path:</span> <span class="hljs-string">Library</span>  
           <span class="hljs-attr">key:</span> <span class="hljs-string">Library-build-${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
           <span class="hljs-attr">restore-keys:</span> <span class="hljs-string">|  
-            Library-build- ${{ inputs.platform }}
+            Library-build-${{ inputs.platform }}
             Library-    
 </span>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">Unity</span> <span class="hljs-string">Project</span>  
         <span class="hljs-attr">id:</span> <span class="hljs-string">build</span>  
-        <span class="hljs-attr">uses:</span> <span class="hljs-string">game-ci/unity-builder&#64;v3</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">game-ci/unity-builder&#64;v4</span>  
         <span class="hljs-attr">env:</span>  
           <span class="hljs-attr">UNITY_EMAIL:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_EMAIL</span> <span class="hljs-string">}}</span>  
           <span class="hljs-attr">UNITY_PASSWORD:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_PASSWORD</span> <span class="hljs-string">}}</span>  
@@ -205,29 +206,34 @@
           <span class="hljs-attr">targetPlatform:</span> <span class="hljs-string">${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
   
       <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Upload</span> <span class="hljs-string">Build</span>  
-        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/upload-artifact&#64;v3</span>  
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/upload-artifact&#64;v4</span>  
         <span class="hljs-attr">with:</span>  
           <span class="hljs-attr">name:</span> <span class="hljs-string">build-${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>  
           <span class="hljs-attr">path:</span> <span class="hljs-string">build/${{</span> <span class="hljs-string">inputs.platform</span> <span class="hljs-string">}}</span>
 </code></pre>
 <p>Here's a breakdown of what's happening in this job:</p>
 <ul>
-<li><strong>outputs</strong>: Data we want to use in the caller workflow.
+<li><strong>outputs</strong>: Data we want to return back to the caller workflow.
 <ul>
-<li><strong>buildVersion</strong>: The version generated by the Builder in the <code>build</code> step below.</li>
+<li><strong>buildVersion</strong>: Version generated by the Builder in the <code>build</code> step below.</li>
 </ul>
 </li>
 <li><strong>steps:</strong> This section contains a series of steps to be executed for this job.
 <ul>
-<li><strong>Checkout Repository:</strong> This step checks out our code repository. We're diving deep into the Git history with a fetch depth of 0 and grabbing those Git Large File Storage (LFS) files with the <code>lfs: true</code> flag.</li>
-<li><strong>Cache Library:</strong> This step caches the &quot;Library&quot; directory, making subsequent runs faster. We specify the directory path, a key for the cache, and the keys to look for when restoring the cache.  We ensure that the <code>key</code> is unique to each platform, allowing the job to retrieve the correct cache.</li>
-<li><strong>Build Unity Project</strong>: In this step, we build the Unity project and set the variables that have been passed in from the caller workflow</li>
-<li><strong>Upload Build</strong>: Upload the built Unity project as an artifact so it can be downloaded in later jobs.</li>
+<li><strong>Checkout Repository:</strong> Check out the code
+<ul>
+<li><strong>fetch-depth</strong>: Get only the last commit of the branch.</li>
+<li><strong>lfs</strong>: Download files tracked by LFS.</li>
+</ul>
+</li>
+<li><strong>Cache Library</strong>: Cache the &quot;Library&quot; directory, to make subsequent runs faster. The <code>key</code> is unique to each platform.</li>
+<li><strong>Build Unity Project</strong>: Build the Unity project for the target platform.</li>
+<li><strong>Upload Build</strong>: Upload the built Unity project as an artifact so that it can be downloaded in later jobs.</li>
 </ul>
 </li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
-<p>With this workflow in place, we're one step closer to mastering CI/CD for Unity. Stay tuned for Part 4, where we'll cover using this workflow to build and deploy the WebGL build on GitHub pages.</p>
+<p>In this part, we created a reusable workflow to build the Unity project for different platforms. Next, we will use this workflow to build and deploy a WebGL build to GitHub pages.</p>
 <p>Happy building!</p>
 <h2 id="references">References</h2>
 <ul>
@@ -242,7 +248,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-linux-build&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%203%3A%20Build%20with%20Linux via @ankur_sheel.&amp;#xD;&amp;#xA;In%20Part%203%20of%20our%20Unity%20CI%2FCD%20series%2C%20we%20delve%20into%20creating%20a%20reusable%20workflow%20to%20build%20Unity%20projects%20for%20different%20platforms." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-linux-build&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%203%3A%20Build%20with%20Linux via @ankur_sheel.&amp;#xD;&amp;#xA;In%20Part%203%20of%20our%20Unity%20CI%2FCD%20series%2C%20I%20show%20how%20to%20create%20a%20reusable%20workflow%20to%20build%20Unity%20projects%20for%20different%20platforms." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-cicd-linux-build" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -278,13 +284,13 @@
 
     <ul>
             <li>
-                <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
-            </li>
-            <li>
                 <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
             <li>
                 <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+            </li>
+            <li>
+                <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
             </li>
             <li>
                 <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>

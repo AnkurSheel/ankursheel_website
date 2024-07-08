@@ -1,31 +1,32 @@
 ---
 title: "Cleaning Up Unnecessary Remote-Tracking References"
-excerpt: "git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating git repositories"
+excerpt: "git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository"
 category: "programming"
 tags:
   - "git"
-
+updatedOnDate: "2024-08-06"
 ---
 
-If your work involves collaborating on a monolithic project with multiple teams, you might find yourself in a situation where you're tracking numerous branches. However, you might soon realise that most of these branches are unnecessary for your specific work. This situation can lead to an avoidable increase in the time you spend updating your project, especially if you're habitually using `git pull`.
+If your work involves collaborating on a monolithic project with multiple teams, you might find that your `git pull` has started taking a long time. One of the reasons for this is that you are tracking multiple branches most of which are unnecessary for your specific work.
 
-To streamline our Git workflow and save those precious seconds(or minutes), we should clean up those remote-tracking references.
+In order to make updating fast again, you need to clean up those remote-tracking references.
 
 ## Identifying the Branches to Keep
 
-Before we start removing stuff, we should identify the branches that we want to keep. Typically, these would include the _main (or master)_ branch and a few select branches we actively work on.
+Before you start deleting branches, you should identify the branches that you want to keep. Typically, these would include the _main (or master)_ branch and a few select branches you actively work on.
 
-To get their unique commit hashes, execute the following command, ensuring to replace **_origin/main_**, **_origin/my-branch-1_**, and **_origin/my-branch-2_** with the actual branch names.
+To get the unique commit hashes of those branches, execute the following command.
 
 ```bash
 git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
 ```
 
-*Note: I’m assuming the ***origin*** is the name of the upstream*
+_Note 1: I’m assuming the **origin** is the name of the upstream_
+_Note 2: Replace **_origin/main_**, **_origin/my-branch-1_**, and **_origin/my-branch-2_** with the actual branch names_
 
-The `git rev-parse` command translates human-readable branch names into cryptic yet significant SHA-1 hashes, which are essentially commit identifiers.
+The `git rev-parse` command translates human-readable branch names into SHA-1 hashes which are the commit identifiers.
 
-- **_--quiet_**: Silence is golden, as this flag suppresses output unless there is an error.
+- **_--quiet_**: This flag suppresses output unless there is an error.
 
 When executed, the command will produce an output similar to this:
 
@@ -35,13 +36,13 @@ When executed, the command will produce an output similar to this:
 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3
 ```
 
-These are the commit hashes associated with the branches we wish to retain.
+These are the commit hashes associated with the branches you wish to keep.
 
 ## Cleaning Up Unnecessary Local References
 
-Now that we have the commit hashes, we can tidy up our local references to remote branches.
+Now that you have the commit hashes, you can remove the local references to remote branches.
 
-This can be done by using a combination of 2 commands - `git branch` and `xargs`. `xargs` is a command-line tool that helps build argument lists for other commands.
+This can be done by using a combination of 2 commands - `git branch` and `xargs`.
 
 ```bash
 git branch -r \ 
@@ -51,18 +52,20 @@ git branch -r \
 | xargs -I{} git branch -rd "{}"
 ```
 
-Let's look at the options for the `git branch` command
+Let's first look at the options for the `git branch` command
 
 - **_-r_**: Lists the remote-tracking branches.
-- **_--no-contains_**: Filters the list of remote branches to include only branches that don't contain the specified commits (our identified hashes).
+- **_--no-contains_**: Filters the list of remote branches to include only branches that don't contain the specified commit hashes.
 
-The output of this filtered list is then passed to **_xargs_**. **_xargs_** is a command that allows us to construct argument lists for other commands using input from standard input (stdin).
+The filtered list from the `git branch` command is passed to **_xargs_**.
+
+**_xargs_** is a command-line tool that helps build argument lists for other commands using input from standard input (stdin). Lets look at the options for the `xargs` command.
 
 - **_-I{}_**:  This option tells `xargs` to replace every occurrence of `{}` with the input elements pulled from standard input (stdin).
 - **_git branch -rd_**: Deletes a remote branch.
   - **_"{}"_**: This is the placeholder, which gets replaced by the specific input item read from stdin.
 
-## Preventing this buildup in the future
+## How to track only branches you need?
 
 Instead of calling `git pull`, use `git fetch`  and `git rebase` instead.
 
@@ -76,7 +79,7 @@ git rebase origin/main
 
 ## Conclusion
 
-Following these steps, we can declutter our Git workflow and keep only the relevant references.
+Following these steps, you can remove any remote tracking references that you dont need.
 
 ## References
 

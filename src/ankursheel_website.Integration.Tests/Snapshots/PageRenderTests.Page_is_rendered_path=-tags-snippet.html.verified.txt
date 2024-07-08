@@ -115,7 +115,7 @@
         <a href="/blog/verifying-method-calls-class-mockito-spies" class="text-center prose-2xl mb-4">Verifying Method Calls within a class using Mockito Spies</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            How to reduce the redundancy in test scenarios when one method calls another within the same class using Mockito spies
+            How to remove the duplication of test scenarios when one method calls another within the same class
         </p>
             <a href="/blog/verifying-method-calls-class-mockito-spies" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

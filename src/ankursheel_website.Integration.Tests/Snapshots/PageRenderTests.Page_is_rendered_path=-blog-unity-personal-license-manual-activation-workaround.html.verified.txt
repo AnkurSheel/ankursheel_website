@@ -118,9 +118,9 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2023-08-20">Aug 20, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-08-20">Aug 20, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-05-07">May 07, 2024</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">1 min</span>
+            Estimated Reading Time: <span  class="font-bold">0 min</span>
         </p>
     </div>
 
@@ -130,31 +130,7 @@
     </div>
 </div>
 
-<p>You decided to add a CI/CD pipeline to your Unity Project using <a href="https://game.ci/">GameCI</a>. You are all pumped up and
-ready to start.</p>
-<p>What's the 1st step? Activating Unity! No biggie, right?</p>
-<p>Well, hold on a sec. You generate the <strong><em>alf</em></strong> file after creating the github action. You carry on with the list and
-head to <a href="https://license.unity3d.com/manual">https://license.unity3d.com/manual</a>, all set to create that <strong><em>ulf</em></strong> file.</p>
-<h2 id="plot-twist">Plot Twist</h2>
-<p>But hold your horses because here comes the twist.</p>
-<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" alt="Unity no longer supports manual activation of Personal licenses" /></p>
-<p>Unity dropped a bombshell: &quot;Unity no longer supports manual activation of Personal licenses.&quot;</p>
-<p>Manual activation of Personal licenses? Nope, not happening anymore. Cue the dramatic music. 🎵</p>
-<p>But we are not giving up that easily. We disregard the message and upload the <strong><em>alf</em></strong> file.</p>
-<p>Something's fishy. The option to generate an ulf for a personal license? Poof, it's vanished. Instead, it asks us to
-type in a serial number.</p>
-<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/serial_number.png" alt="Activate your license using serial number" /></p>
-<h2 id="time-for-a-bit-of-trickery">Time for a bit of trickery</h2>
-<p>Right-click and inspect the serial number box</p>
-<p>Now, hunt down the <code>&lt;div class=&quot;option option-personal clear&quot; style=&quot;display: none;&quot;&gt;</code> section</p>
-<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png" alt="Html Source" /></p>
-<p>Guess what? We're deleting that pesky <code>&quot;display: none;&quot;</code>.</p>
-<p>Boom! Like magic, the Unity Personal Edition option reappears. 🎉</p>
-<p><img src="/assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png" alt="Page With Personal License" /></p>
-<p>Hopefully, before this hack stops working, GameCI will have an official workaround :)</p>
-<h3 id="shoutout">Shoutout</h3>
-<p>And here's a shoutout to <a href="https://reallpepe.itch.io/defendron">realpepe</a>, who cracked the code and shared the wisdom on
-Discord. Because in the world of tech, teamwork makes the magic happen.</p>
+<p><strong>This is not needed anymore with game-ci/unity-builder&#64;v4. If you still need this for some reason, let me know and I can resurrect thi.</strong></p>
 
 
 
@@ -197,16 +173,16 @@ Discord. Because in the world of tech, teamwork makes the magic happen.</p>
 
     <ul>
             <li>
-                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
-            </li>
-            <li>
                 <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
             </li>
             <li>
-                <a href="disable-buttons-unity">How To Disable Buttons In Unity</a>
+                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
             <li>
-                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
+                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+            </li>
+            <li>
+                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
             </li>
     </ul>
 </aside>

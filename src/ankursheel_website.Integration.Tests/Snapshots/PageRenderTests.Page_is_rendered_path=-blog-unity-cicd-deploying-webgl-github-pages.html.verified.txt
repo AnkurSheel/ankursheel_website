@@ -6,24 +6,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+<meta name="description" content="In Part 4, I show how to deploy a Unity projects to GitHub Pages">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
     <link rel="canonical" href="https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages">   
 <meta itemprop="name" content="Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages">
-<meta itemprop="description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+<meta itemprop="description" content="In Part 4, I show how to deploy a Unity projects to GitHub Pages">
     <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png">
 <meta property="og:url" content="https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages">
-<meta property="og:description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+<meta property="og:description" content="In Part 4, I show how to deploy a Unity projects to GitHub Pages">
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png">
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
 <meta name="twitter:title" content="Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages">
-<meta name="twitter:description" content="Welcome back to our Unity CI/CD adventure! In Part 4, we&amp;#x27;ll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before.">
+<meta name="twitter:description" content="In Part 4, I show how to deploy a Unity projects to GitHub Pages">
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-twitter.png">
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-twitter.png">
 
@@ -115,9 +115,9 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2023-11-13">Nov 13, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-11-13">Nov 13, 2023</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-08-05">Aug 05, 2024</time></p>
         <p>
-            Estimated Reading Time: <span class="font-bold">3 min</span>
+            Estimated Reading Time: <span class="font-bold">2 min</span>
         </p>
     </div>
 
@@ -128,22 +128,22 @@
     </div>
 </div>
 
-<p>Welcome back to our Unity CI/CD journey!</p>
-<p>Recapping our previous chapters:</p>
-<ul>
-<li>In Part 1 we nailed down the <a href="unity-cicd-one-time-setup">one time setup</a>.</li>
-<li>Part 2 saw us setting up the <a href="unity-cicd-trigger-events-tests">trigger events and running the automated tests</a>.</li>
-<li>Part 3 was all about <a href="unity-cicd-linux-build">creating a reusable workflow</a>  to build the Unity project for various platforms.</li>
-</ul>
-<p>Now, we're all set for Part 4, where we take full advantage of our reusable workflow to deploy a WebGL build to GitHub Pages.</p>
-<p>Our journey begins by updating our <code>.github/workflows/main.yml</code> file.</p>
+<p>In Part 1, we finished the <a href="unity-cicd-one-time-setup">setup to start creating our CI/CD pipeline</a>.</p>
+<p>In Part 2, we created a workflow to run our <a href="unity-cicd-trigger-events-tests">automated tests based on some trigger events</a>.</p>
+<p>In Part 3, we created a <a href="unity-cicd-linux-build">reusable workflow to build the Unity project</a> for various platforms.</p>
+<p>In part 4, we will use our reusable workflow to deploy a WebGL build to GitHub Pages.</p>
+<p>Start by updating your <code>.github/workflows/main.yml</code> file.</p>
 <h2 id="job-1-building-for-webgl">Job 1: Building for WebGL</h2>
 <p>This job uses our reusable workflow to generate the files needed for hosting the game on a web server.</p>
 <pre><code class="language-yaml hljs"><span class="hljs-attr">buildForWebGL:</span>
   <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">for</span> <span class="hljs-string">WebGL</span>
   <span class="hljs-attr">needs:</span> <span class="hljs-string">test</span>
-  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span> <span class="hljs-string">||</span> <span class="hljs-string">github.event.action</span> <span class="hljs-string">==</span> <span class="hljs-string">'published'</span> <span class="hljs-string">||</span> <span class="hljs-string">(contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'release'</span><span class="hljs-string">)</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'WebGL'</span><span class="hljs-string">))</span>
-  <span class="hljs-attr">uses:</span> <span class="hljs-string">./.github/workflows/buildWithLinux.yml</span>
+  <span class="hljs-attr">if:</span> <span class="hljs-string">|
+    github.event_name == 'pull_request' 
+    || github.event.action == 'published' 
+    || (contains(github.event.inputs.release_platform, 'release') 
+          &amp;&amp; contains(github.event.inputs.release_platform, 'web'))
+</span>  <span class="hljs-attr">uses:</span> <span class="hljs-string">./.github/workflows/buildWithLinux.yml</span>
   <span class="hljs-attr">with:</span>
     <span class="hljs-attr">platform:</span> <span class="hljs-string">WebGL</span>
     <span class="hljs-attr">secrets:</span>
@@ -152,51 +152,39 @@
       <span class="hljs-attr">UNITY_LICENSE:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_LICENSE</span> <span class="hljs-string">}}</span>
 </code></pre>
 <ul>
-<li><strong>needs</strong>: This step relies on the successful completion of the <code>test</code> job, introduced back in Part 2.</li>
-<li><strong>if</strong>: Defines the conditions for this job to run. It kicks into action when:
+<li><strong>needs</strong>: This step depends on the successful completion of the <code>test</code> job, added in Part 2.</li>
+<li><strong>if</strong>: Defines the conditions for this job to run.
 <ul>
-<li>We're either pushing changes to the main branch or creating a pull request against it.</li>
-<li>Initiate a GitHub release.</li>
-<li>We manually trigger the workflow with the '<strong><em>release</em></strong>' and '<strong><em>WebGL</em></strong>' parameters in the <code>release_platform</code> field.</li>
+<li>push to the main branch or creating a pull request against it.</li>
+<li>GitHub release.</li>
+<li>Manually trigger the workflow with the '<strong><em>release</em></strong>' and '<strong><em>web</em></strong>' parameters in the <code>release_platform</code> field.</li>
 </ul>
 </li>
-<li><strong>uses</strong>: We're calling the reusable workflow from Part 3.
-<ul>
-<li><strong>with</strong>: We're providing the necessary parameters, setting the <code>platform</code> to <strong><em>WebGL</em></strong>.</li>
-</ul>
-</li>
+<li><strong>uses</strong>:Call the reusable workflow from Part 3 with the necessary parameters, setting the <code>platform</code> to <strong><em>WebGL</em></strong>.</li>
 </ul>
 <h2 id="job-2-deploying-to-github-pages">Job 2: Deploying to GitHub Pages</h2>
 <p>This job copies the WebGL artifact to the correct location for <a href="https://pages.github.com/">GitHub Pages</a>. Once copied, it triggers a GitHub Pages deployment.</p>
-<pre><code class="language-yaml hljs"><span class="hljs-attr">buildForWebGL:</span>
-  <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">for</span> <span class="hljs-string">WebGL</span>
-  <span class="hljs-attr">needs:</span> <span class="hljs-string">test</span>
-  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span> <span class="hljs-string">||</span> <span class="hljs-string">github.event.action</span> <span class="hljs-string">==</span> <span class="hljs-string">'published'</span> <span class="hljs-string">||</span> <span class="hljs-string">(contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'release'</span><span class="hljs-string">)</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'WebGL'</span><span class="hljs-string">))</span>
-  <span class="hljs-attr">uses:</span> <span class="hljs-string">./.github/workflows/buildWithLinux.yml</span>
-  <span class="hljs-attr">with:</span>
-    <span class="hljs-attr">platform:</span> <span class="hljs-string">WebGL</span>
-  <span class="hljs-attr">secrets:</span>
-    <span class="hljs-attr">UNITY_EMAIL:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_EMAIL</span> <span class="hljs-string">}}</span>
-    <span class="hljs-attr">UNITY_PASSWORD:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_PASSWORD</span> <span class="hljs-string">}}</span>
-    <span class="hljs-attr">UNITY_LICENSE:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.UNITY_LICENSE</span> <span class="hljs-string">}}</span>
-
-<span class="hljs-attr">deployToGitHubPages:</span>
+<pre><code class="language-yaml hljs"><span class="hljs-attr">deployToGitHubPages:</span>
   <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
   <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
   <span class="hljs-attr">needs:</span> <span class="hljs-string">buildForWebGL</span>
-  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span> <span class="hljs-string">||</span> <span class="hljs-string">github.event.action</span> <span class="hljs-string">==</span> <span class="hljs-string">'published'</span> <span class="hljs-string">||</span> <span class="hljs-string">(contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'release'</span><span class="hljs-string">)</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">contains(github.event.inputs.release_platform,</span> <span class="hljs-string">'WebGL'</span><span class="hljs-string">))</span>
-  <span class="hljs-attr">steps:</span>
+  <span class="hljs-attr">if:</span> <span class="hljs-string">|
+    github.event_name == 'pull_request' 
+    || github.event.action == 'published' 
+    || (contains(github.event.inputs.release_platform, 'release') 
+          &amp;&amp; contains(github.event.inputs.release_platform, 'web'))
+</span>  <span class="hljs-attr">steps:</span>
     <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Echo</span> <span class="hljs-string">Build</span> <span class="hljs-string">Version</span>
       <span class="hljs-attr">run:</span> <span class="hljs-string">echo</span> <span class="hljs-string">${{</span> <span class="hljs-string">needs.buildForWebGL.outputs.buildVersion</span> <span class="hljs-string">}}</span>
 
     <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">Repository</span>
-      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout&#64;v3</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout&#64;v4</span>
       <span class="hljs-attr">with:</span>
-        <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span>
+        <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">1</span>
         <span class="hljs-attr">lfs:</span> <span class="hljs-literal">false</span>
 
     <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Download</span> <span class="hljs-string">WebGL</span> <span class="hljs-string">Artifact</span>
-      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/download-artifact&#64;v3</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/download-artifact&#64;v4</span>
       <span class="hljs-attr">with:</span>
         <span class="hljs-attr">name:</span> <span class="hljs-string">build-WebGL</span>
         <span class="hljs-attr">path:</span> <span class="hljs-string">build/WebGL</span>
@@ -209,29 +197,31 @@
         <span class="hljs-attr">single-commit:</span> <span class="hljs-literal">true</span>
 
     <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Cleanup</span> <span class="hljs-string">to</span> <span class="hljs-string">avoid</span> <span class="hljs-string">storage</span> <span class="hljs-string">limit</span>
-      <span class="hljs-attr">uses:</span> <span class="hljs-string">geekyeggo/delete-artifact&#64;v2</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">geekyeggo/delete-artifact&#64;v5</span>
+      <span class="hljs-attr">if:</span> <span class="hljs-string">always()</span>
       <span class="hljs-attr">with:</span>
         <span class="hljs-attr">name:</span> <span class="hljs-string">build-WebGL</span>
+        <span class="hljs-attr">failOnError:</span> <span class="hljs-literal">false</span>
 </code></pre>
 <ul>
 <li><strong>needs</strong>: This job depends on the successful completion of the <code>buildForWebGL</code> job.</li>
-<li><strong>if</strong>:  It follows the same conditions as the buildForWebGL job.</li>
+<li><strong>if</strong>:  It follows the same conditions as the <em>buildForWebGL</em> job.</li>
 </ul>
 <p>Next, we have a series of steps:</p>
 <ol>
 <li><strong>Echo Build Version</strong>: Prints the build version generated by the <code>buildForWebGL</code> job.</li>
 <li><strong>Checkout Repository</strong>: Checks out the code repository.</li>
-<li><strong>Download WebGL Artifact</strong>: This action fetches the <strong>_build-WebGL</strong>_ artifact produced by the <code>buildForWebGL</code> job and places it into the <strong>_build/WebGL</strong>_ directory.</li>
-<li><strong>Deploy to GitHub Pages</strong>: We deploy the contents of the <strong>_build/WebGL/WebGL</strong>_ folder to GitHub Pages.</li>
-<li><strong>Cleanup to avoid storage limit</strong>: Lastly, we clean up by deleting the <strong>_build-WebGL-</strong> artifact, ensuring we don't hog unnecessary storage space.</li>
+<li><strong>Download WebGL Artifact</strong>: Get the <strong>_build-WebGL</strong>_ artifact produced by the <code>buildForWebGL</code> job and put it into the <strong>_build/WebGL</strong>_ directory.</li>
+<li><strong>Deploy to GitHub Pages</strong>: Deploy the contents of the <strong>_build/WebGL/WebGL</strong>_ folder to GitHub Pages.</li>
+<li><strong>Cleanup to avoid storage limit</strong>: Delete the <strong>_build-WebGL-</strong> artifact.</li>
 </ol>
 <h2 id="setting-up-github-pages">Setting up Github Pages</h2>
-<p>Once the workflow for a WebGL build is triggered, a gh_pages branch will be created. Now we can setup Github pages to showcase our game.</p>
+<p>Once the workflow for a WebGL build is triggered, a <em><strong>gh_pages</strong></em> branch will be created. Now you can setup Github pages to showcase your game.</p>
 <p>In the repository on GitHub, navigate to <em>Settings</em> -&gt; <em>Pages</em>.</p>
 <p>Set the source to <strong><em>Deploy from a branch</em></strong> and set the branch to <code>gh-pages</code></p>
 <p><img src="/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" alt="Repository Settings"></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Stay tuned for Part 5, where we'll cover how to generate certificates for iOS deployments.</p>
+<p>In this part, we deployed our Unity Project to Github pages. Next, we will generate certificates for iOS deployments.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow">Calling a reusable workflow</a></li>
@@ -244,7 +234,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%204%3A%20Deploying%20WebGL%20Builds%20to%20GitHub%20Pages via @ankur_sheel.&amp;#xD;&amp;#xA;Welcome%20back%20to%20our%20Unity%20CI%2FCD%20adventure%21%20In%20Part%204%2C%20we%27ll%20explore%20deploying%20Unity%20projects%20to%20GitHub%20Pages%2C%20making%20web-based%20Unity%20releases%20easier%20than%20ever%20before." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages&amp;text=Unity%20CI%2FCD%20Demystified%3A%20Part%204%3A%20Deploying%20WebGL%20Builds%20to%20GitHub%20Pages via @ankur_sheel.&amp;#xD;&amp;#xA;In%20Part%204%2C%20I%20show%20how%20to%20deploy%20a%20Unity%20projects%20to%20GitHub%20Pages" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -280,13 +270,13 @@
 
     <ul>
             <li>
-                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
-            </li>
-            <li>
                 <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
             <li>
                 <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+            </li>
+            <li>
+                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
             </li>
             <li>
                 <a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a>

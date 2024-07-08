@@ -1,5 +1,6 @@
+---
 title: "Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages"
-excerpt: "Welcome back to our Unity CI/CD adventure! In Part 4, we'll explore deploying Unity projects to GitHub Pages, making web-based Unity releases easier than ever before."
+excerpt: "In Part 4, I show how to deploy a Unity projects to GitHub Pages"
 category: "programming"
 coverImage: "./repository-settings.png"
 tags:
@@ -7,20 +8,19 @@ tags:
 - "unity"
 - "tutorial"
 - "devops"
+updatedOnDate: "2024-08-05"
 
 ---
 
-Welcome back to our Unity CI/CD journey!
+In Part 1, we finished the [setup to start creating our CI/CD pipeline](./unity-cicd-one-time-setup).
 
-Recapping our previous chapters:
+In Part 2, we created a workflow to run our [automated tests based on some trigger events](./unity-cicd-trigger-events-tests).
 
-- In Part 1 we nailed down the [one time setup](./unity-cicd-one-time-setup).
-- Part 2 saw us setting up the [trigger events and running the automated tests](./unity-cicd-trigger-events-tests).
-- Part 3 was all about [creating a reusable workflow](./unity-cicd-linux-build)  to build the Unity project for various platforms.
+In Part 3, we created a [reusable workflow to build the Unity project](./unity-cicd-linux-build) for various platforms.
 
-Now, we're all set for Part 4, where we take full advantage of our reusable workflow to deploy a WebGL build to GitHub Pages.
+In part 4, we will use our reusable workflow to deploy a WebGL build to GitHub Pages.
 
-Our journey begins by updating our `.github/workflows/main.yml` file.
+Start by updating your `.github/workflows/main.yml` file.
 
 ## Job 1: Building for WebGL
 
@@ -30,7 +30,11 @@ This job uses our reusable workflow to generate the files needed for hosting the
 buildForWebGL:
   name: Build for WebGL
   needs: test
-  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') && contains(github.event.inputs.release_platform, 'WebGL'))
+  if: |
+    github.event_name == 'pull_request' 
+    || github.event.action == 'published' 
+    || (contains(github.event.inputs.release_platform, 'release') 
+          && contains(github.event.inputs.release_platform, 'web'))
   uses: ./.github/workflows/buildWithLinux.yml
   with:
     platform: WebGL
@@ -40,48 +44,39 @@ buildForWebGL:
       UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 ```
 
-- **needs**: This step relies on the successful completion of the `test` job, introduced back in Part 2.
-- **if**: Defines the conditions for this job to run. It kicks into action when:
-  - We're either pushing changes to the main branch or creating a pull request against it.
-  - Initiate a GitHub release.
-  - We manually trigger the workflow with the '**_release_**' and '**_WebGL_**' parameters in the `release_platform` field.
-- **uses**: We're calling the reusable workflow from Part 3.
-  - **with**: We're providing the necessary parameters, setting the `platform` to **_WebGL_**.
+- **needs**: This step depends on the successful completion of the `test` job, added in Part 2.
+- **if**: Defines the conditions for this job to run.
+  - push to the main branch or creating a pull request against it.
+  - GitHub release.
+  - Manually trigger the workflow with the '**_release_**' and '**_web_**' parameters in the `release_platform` field.
+- **uses**:Call the reusable workflow from Part 3 with the necessary parameters, setting the `platform` to **_WebGL_**.
 
 ## Job 2: Deploying to GitHub Pages
 
 This job copies the WebGL artifact to the correct location for [GitHub Pages](https://pages.github.com/). Once copied, it triggers a GitHub Pages deployment.
 
 ```yaml
-buildForWebGL:
-  name: Build for WebGL
-  needs: test
-  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') && contains(github.event.inputs.release_platform, 'WebGL'))
-  uses: ./.github/workflows/buildWithLinux.yml
-  with:
-    platform: WebGL
-  secrets:
-    UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-    UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-
 deployToGitHubPages:
   name: Deploy to GitHub Pages
   runs-on: ubuntu-latest
   needs: buildForWebGL
-  if: github.ref == 'refs/heads/main' || github.event.action == 'published' || (contains(github.event.inputs.release_platform, 'release') && contains(github.event.inputs.release_platform, 'WebGL'))
+  if: |
+    github.event_name == 'pull_request' 
+    || github.event.action == 'published' 
+    || (contains(github.event.inputs.release_platform, 'release') 
+          && contains(github.event.inputs.release_platform, 'web'))
   steps:
     - name: Echo Build Version
       run: echo ${{ needs.buildForWebGL.outputs.buildVersion }}
 
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        fetch-depth: 1
         lfs: false
 
     - name: Download WebGL Artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: build-WebGL
         path: build/WebGL
@@ -94,25 +89,27 @@ deployToGitHubPages:
         single-commit: true
 
     - name: Cleanup to avoid storage limit
-      uses: geekyeggo/delete-artifact@v2
+      uses: geekyeggo/delete-artifact@v5
+      if: always()
       with:
         name: build-WebGL
+        failOnError: false
 ```
 
 - **needs**: This job depends on the successful completion of the `buildForWebGL` job.
-- **if**:  It follows the same conditions as the buildForWebGL job.
+- **if**:  It follows the same conditions as the _buildForWebGL_ job.
 
 Next, we have a series of steps:
 
 1. **Echo Build Version**: Prints the build version generated by the `buildForWebGL` job.
 2. **Checkout Repository**: Checks out the code repository.
-3. **Download WebGL Artifact**: This action fetches the **_build-WebGL**_ artifact produced by the `buildForWebGL` job and places it into the **_build/WebGL**_ directory.
-4. **Deploy to GitHub Pages**: We deploy the contents of the **_build/WebGL/WebGL**_ folder to GitHub Pages.
-5. **Cleanup to avoid storage limit**: Lastly, we clean up by deleting the **_build-WebGL-** artifact, ensuring we don't hog unnecessary storage space.
+3. **Download WebGL Artifact**: Get the **_build-WebGL**_ artifact produced by the `buildForWebGL` job and put it into the **_build/WebGL**_ directory.
+4. **Deploy to GitHub Pages**: Deploy the contents of the **_build/WebGL/WebGL**_ folder to GitHub Pages.
+5. **Cleanup to avoid storage limit**: Delete the **_build-WebGL-** artifact.
 
 ## Setting up Github Pages
 
-Once the workflow for a WebGL build is triggered, a gh_pages branch will be created. Now we can setup Github pages to showcase our game.
+Once the workflow for a WebGL build is triggered, a _**gh_pages**_ branch will be created. Now you can setup Github pages to showcase your game.
 
 In the repository on GitHub, navigate to _Settings_ -> _Pages_.
 
@@ -122,7 +119,7 @@ Set the source to **_Deploy from a branch_** and set the branch to `gh-pages`
 
 ## Conclusion
 
-Stay tuned for Part 5, where we'll cover how to generate certificates for iOS deployments.
+In this part, we deployed our Unity Project to Github pages. Next, we will generate certificates for iOS deployments.
 
 ## References
 

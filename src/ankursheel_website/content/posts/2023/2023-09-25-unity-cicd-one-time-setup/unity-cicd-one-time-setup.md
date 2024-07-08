@@ -1,22 +1,20 @@
 ---
 title: "Unity CI/CD Demystified: Part 1: One-Time Setup"
-excerpt: "Adding CI/CD to Unity projects is a game-changer even if you're not a CI/CD enthusiast. Part 1 covers the one-time setup for a successful CI/CD pipeline"
+excerpt: "Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects"
 category: "programming"
 coverImage: "./adding_secrets.png"
 tags:
 - "unity"
 - "tutorial"
 - "devops"
-updatedOnDate: "2024-06-24"
+updatedOnDate: "2024-08-07"
 ---
 
-Adding CI/CD to Unity projects is a game-changer, even if you're not a CI/CD enthusiast.
+In this series, I'll guide you through setting up a CI/CD pipeline for Unity projects using [GitHub Actions](https://github.com/features/actions) and [GameCI](https://game.ci/).
 
-In this series, I'll guide you through setting up a robust CI/CD pipeline for Unity projects using [GitHub Actions](https://github.com/features/actions) and [GameCI](https://game.ci/).
+Part 1 of this series covers the one-time setup that you need for setting up the pipeline.
 
-Part 1 of this series covers the essential one-time setup for a successful CI/CD pipeline.
-
-**_Note: These setup steps can be skipped if you've already performed them for a previous project._**
+**_Note: Some of these setup steps can be skipped if you've already performed them for a previous project._**
 
 ## Acquire an Activation File for GitHub Runners
 
@@ -50,15 +48,15 @@ Create the following secrets
 - **UNITY_EMAIL**: Your Unity login email address.
 - **UNITY_LICENSE**: The contents of the _.ulf_ file which can found at _**C:\ProgramData\Unity\Unity_lic.ulf**_.
 - **UNITY_PASSWORD**: Your Unity login password.
-- **MATCH_PASSWORD**: This is an additional layer of security required for encrypting/decrypting certificates.
+- **MATCH_PASSWORD**: This is required for encrypting/decrypting certificates.
 - **MATCH_REPOSITORY**: The name of the private GitHub repository that will store our certificates in the format `organization/repository`.
 - **MATCH_DEPLOY_KEY**: This is the private part of the SSH key we created in the private repository to store our certificates. _If using 1Password makes sure the key is unencrypted._
 
-I recommend adding these secrets at the organisation level so that we can reuse them across multiple projects. We can then selectively grant access to each secret for specific repositories.
+If you can, I recommend adding these secrets at the organisation level so that you can reuse them across multiple projects. You can then selectively grant access to each secret for specific repositories.
 
 ## Conclusion
 
-This one-time setup paves the way for a streamlined Unity CI/CD pipeline. Stay tuned for the next steps in our journey. Happy coding!!
+We are now finished with the one time setup that we need to add CI/CD to our Unity projects. In the next part, we will set up the GitHub Actions workflow to build and deploy our Unity project.
 
 ## References
 
