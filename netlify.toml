@@ -237,3 +237,9 @@ from = "/cv/ai-projects/"
 to = "/personal-projects/"
 status = 301
 force = false
+
+[[redirects]]
+from = "/blog/merchants-using-stripe-decline-credit-cards"
+to = "/blog/merchants-stripe-decline-credit-cards"
+status = 301
+force = false

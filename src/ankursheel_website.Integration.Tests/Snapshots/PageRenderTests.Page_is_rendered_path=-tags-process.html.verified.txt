@@ -123,7 +123,7 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/make-code-reviews-stress-free" class="text-center prose-2xl mb-4">Adaption of the code reviews Feedback Ladders from Netlify</a>
+        <a href="/blog/make-code-reviews-stress-free" class="text-center prose-2xl mb-4">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
             Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free.

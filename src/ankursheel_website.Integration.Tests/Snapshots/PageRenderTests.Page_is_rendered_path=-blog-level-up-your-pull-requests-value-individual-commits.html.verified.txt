@@ -140,7 +140,7 @@
 </ol>
 <p>Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.</p>
 <p>If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.</p>
-<img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480" />
+<img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480" />
 <p>What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?</p>
 <p>Split the commit into <strong>small</strong> <strong>individual</strong> commits that make <strong>logical sense</strong>.</p>
 <blockquote>
@@ -321,7 +321,7 @@ vs
 
     <ul>
             <li>
-                <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
+                <a href="make-code-reviews-stress-free">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
             </li>
             <li>
                 <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>

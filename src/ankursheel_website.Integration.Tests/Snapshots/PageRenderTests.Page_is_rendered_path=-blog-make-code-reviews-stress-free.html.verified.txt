@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Adaption of the code reviews Feedback Ladders from Netlify</title>
+<title>Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/make-code-reviews-stress-free"/>   
-<meta itemProp="name" content="Adaption of the code reviews Feedback Ladders from Netlify"/>
+<meta itemProp="name" content="Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders"/>
 <meta itemProp="description" content="Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/make-code-reviews-stress-free"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Adaption of the code reviews Feedback Ladders from Netlify"/>
+<meta property="og:title" content="Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders"/>
 <meta property="og:description" content="Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Adaption of the code reviews Feedback Ladders from Netlify"/>
+<meta name="twitter:title" content="Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders"/>
 <meta name="twitter:description" content="Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/make-code-reviews-stress-free-twitter.png"/>
@@ -110,7 +110,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Adaption of the code reviews Feedback Ladders from Netlify</h1>
+    <h1 class="text-center">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -170,7 +170,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-code-reviews-stress-free&text=Adaption%20of%20the%20code%20reviews%20Feedback%20Ladders%20from%20Netlify via @ankur_sheel.&#xD;&#xA;Code%20reviews%20can%20be%20stressful%20for%20both%20parties.%20An%20opinionated%20adaption%20of%20the%20Feedback%20Ladders%20from%20Netlify%20to%20make%20reviews%20code%20stress%20free." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/make-code-reviews-stress-free&text=Making%20Code%20Reviews%20Stress%20free%20by%20adapting%20Netlify%27s%20feedback%20ladders via @ankur_sheel.&#xD;&#xA;Code%20reviews%20can%20be%20stressful%20for%20both%20parties.%20An%20opinionated%20adaption%20of%20the%20Feedback%20Ladders%20from%20Netlify%20to%20make%20reviews%20code%20stress%20free." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/make-code-reviews-stress-free" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             

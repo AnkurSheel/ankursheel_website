@@ -112,12 +112,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/unity-cicd-one-time-setup" class="text-center prose-2xl mb-4">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
+        <a href="/blog/unity-cicd-linux-build" class="text-center prose-2xl mb-4">Unity CI/CD Demystified: Part 3: Build with Linux</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects
+            In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.
         </p>
-            <a href="/blog/unity-cicd-one-time-setup" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/unity-cicd-linux-build" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 
@@ -134,12 +134,12 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/unity-cicd-linux-build" class="text-center prose-2xl mb-4">Unity CI/CD Demystified: Part 3: Build with Linux</a>
+        <a href="/blog/unity-cicd-one-time-setup" class="text-center prose-2xl mb-4">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.
+            Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects
         </p>
-            <a href="/blog/unity-cicd-linux-build" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+            <a href="/blog/unity-cicd-one-time-setup" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
 </div>
 

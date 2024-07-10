@@ -241,7 +241,7 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
                 <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
+                <a href="make-code-reviews-stress-free">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
             </li>
     </ul>
 </aside>

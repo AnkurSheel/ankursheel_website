@@ -259,7 +259,7 @@
 
     <ul>
             <li>
-                <a href="merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
+                <a href="merchants-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
             </li>
             <li>
                 <a href="rent-buy-house">Should I Rent Or Buy a House?</a>

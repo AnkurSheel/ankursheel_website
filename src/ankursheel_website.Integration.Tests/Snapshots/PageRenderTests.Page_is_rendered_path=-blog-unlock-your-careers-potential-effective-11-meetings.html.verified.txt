@@ -240,7 +240,7 @@
                 <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
             <li>
-                <a href="make-code-reviews-stress-free">Adaption of the code reviews Feedback Ladders from Netlify</a>
+                <a href="make-code-reviews-stress-free">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
             </li>
     </ul>
 </aside>

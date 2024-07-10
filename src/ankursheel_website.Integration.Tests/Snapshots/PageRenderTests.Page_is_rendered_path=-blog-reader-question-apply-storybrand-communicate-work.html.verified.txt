@@ -200,7 +200,7 @@
                 <a href="migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a>
             </li>
             <li>
-                <a href="merchants-using-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
+                <a href="merchants-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
             </li>
             <li>
                 <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
