@@ -1,5 +1,5 @@
 ---
-title: "Adaption of the code reviews Feedback Ladders from Netlify"
+title: "Making Code Reviews Stress free by adapting Netlify's feedback ladders"
 excerpt: "Code reviews can be stressful for both parties. An opinionated adaption of the Feedback Ladders from Netlify to make reviews code stress free."
 coverImage: "./cover.jpg"
 category: "career / work"
