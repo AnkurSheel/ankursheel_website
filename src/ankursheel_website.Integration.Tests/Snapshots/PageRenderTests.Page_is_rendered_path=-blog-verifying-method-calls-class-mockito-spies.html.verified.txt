@@ -115,7 +115,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2024-05-17">May 17, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-08-07">Aug 07, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-08-05">Aug 05, 2024</time></p>
         <p>
             Estimated Reading Time: <span class="font-bold">2 min</span>
         </p>

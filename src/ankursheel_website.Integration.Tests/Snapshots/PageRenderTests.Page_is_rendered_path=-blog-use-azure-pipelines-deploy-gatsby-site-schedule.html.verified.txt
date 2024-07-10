@@ -258,7 +258,7 @@
                 <a href="adding-rss-feed-images-gatsby-site">How to add an RSS feed with images to a Gatsby site</a>
             </li>
             <li>
-                <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
+                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
             </li>
     </ul>
 </aside>

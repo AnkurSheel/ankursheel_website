@@ -12,7 +12,7 @@
       <link>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</link>
       <description>How to remove the duplication of test scenarios when one method calls another within the same class</description>
       <guid>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</guid>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;in order to get confidence, when one method calls another within the same class with just 1 or more additional parameters, we could write the same test for both the methods. This would lead to a lot of duplicated tests and a cluttered test suite.&lt;/p&gt;
 &lt;p&gt;However, Mockito spies can help us in this scenario.&lt;/p&gt;
 &lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
@@ -251,7 +251,7 @@ vs
       <description>In Part 4, I show how to deploy a Unity projects to GitHub Pages</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</guid>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;In Part 1, we finished the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;setup to start creating our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In Part 2, we created a workflow to run our &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;automated tests based on some trigger events&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In Part 3, we created a &lt;a href="https://www.ankursheel.com/unity-cicd-linux-build"&gt;reusable workflow to build the Unity project&lt;/a&gt; for various platforms.&lt;/p&gt;
