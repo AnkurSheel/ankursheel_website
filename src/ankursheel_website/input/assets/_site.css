@@ -44,7 +44,7 @@
     }
 
     article img {
-        @apply rounded border-4 border-gray-600 border-double;
+        @apply rounded border-4 border-gray-600 border-double mx-auto;
     }
 
     a {
