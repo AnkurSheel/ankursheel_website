@@ -23,7 +23,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
 -   Do a roadtrip across Australia
 -   Do a round the world trip
 -   ~~Visit atleast 10 countries.~~ (2014)
-    - Visit atleast 15 countries. _Current Progress_: 13. See [List here](/impossible-list/country-visit-list)
+    - Visit atleast 15 countries. _Current Progress_: 14. See [List here](/impossible-list/country-visit-list)
 -   Cool Things to See
     -   Africa
         -   Pyramids of Giza, Egypt

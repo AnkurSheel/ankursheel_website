@@ -12,17 +12,19 @@ title: "Country Visit List"
 
 1. [England](/tags/united-kingdom) (August 2008, January 2009)
 
+1. Fiji (July 2024)
+
 1. Germany (August 2016)
 
 1. India (till 2014)
 
-1. Indonesia (January 2010)
+1. Indonesia (January 2012)
 
 1. Malaysia (December 2004)
 
 1. [New Zealand](/tags/new-zealand) (Jun 2014 - Present)
 
-1. Singapore (December 2004, August 2007, January 2010)
+1. Singapore (December 2004, August 2007, January 2012)
 
 1. Scotland (August 2008)
 
@@ -99,7 +101,6 @@ title: "Country Visit List"
 1. Ethiopia
 1. Falkland Islands
 1. Faroe Islands
-1. Fiji
 1. Finland
 1. France
 1. French Guiana
