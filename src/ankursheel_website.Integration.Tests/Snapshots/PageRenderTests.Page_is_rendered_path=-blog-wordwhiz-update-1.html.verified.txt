@@ -190,10 +190,10 @@
                 <a href="wordhwhiz-update-3">WordWhiz Update #3</a>
             </li>
             <li>
-                <a href="codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a>
+                <a href="wordwhiz-update-4">WordWhiz Update #4</a>
             </li>
             <li>
-                <a href="codinators-xunit-helpers-nuget-package-update-1">Codinators.XunitHelpers Nuget Package: Update 1</a>
+                <a href="codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a>
             </li>
     </ul>
 </aside>

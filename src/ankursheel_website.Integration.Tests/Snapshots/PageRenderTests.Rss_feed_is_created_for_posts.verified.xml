@@ -8,6 +8,55 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>WordWhiz Update #4</title>
+      <link>https://www.ankursheel.com/blog/wordwhiz-update-4</link>
+      <description>WordWhiz Update 4 adds deterministic levels and fireworks</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/new_game_screen.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordwhiz-update-4</guid>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.&lt;/p&gt;
+&lt;h2 id="what-happened"&gt;What happened&lt;/h2&gt;
+&lt;p&gt;The partnership that I had for the first game ended. This meant I had to setup new accounts for various third-party services and redo some of the infrastructural work, which took some time.&lt;/p&gt;
+&lt;p&gt;After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for WordWhiz. Thankfully, my cousin Manjari stepped in to help with the creative side of things.&lt;/p&gt;
+&lt;h2 id="whats-new"&gt;What's New&lt;/h2&gt;
+&lt;h3 id="color-matters"&gt;Color Matters&lt;/h3&gt;
+&lt;p&gt;Let's face it: The original colours weren't very appealing. The first thing Manjari changed after joining was updating the colours. But don't take my word for it, see for yourself:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Before&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;After&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/old_instructions.jpg" alt="Old Instructions Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/new_instructions.jpg" alt="New Instructions Screen"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/old_game_screen.jpg" alt="Old Game Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/new_game_screen.jpg" alt="New Game Screen"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="fireworks"&gt;Fireworks&lt;/h3&gt;
+&lt;p&gt;Previously, when you found the right word, there was no celebration - just a plain popup that quickly disappeared. Now, there are fireworks and explosions to celebrate your victory.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/fireworks.gif" alt="Fireworks"&gt;&lt;/p&gt;
+&lt;h3 id="deterministic-levels"&gt;Deterministic Levels&lt;/h3&gt;
+&lt;p&gt;The random word selection felt like playing the lottery. Now, there are levels and they are locked! After you complete one, the next one is unlocked, providing a sense of progress. Plus, your progress is saved, so you don’t have to start from Level 1 every time.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/level_screen.jpg" alt="Level Selection Screen"&gt;&lt;/p&gt;
+&lt;h3 id="web-build"&gt;Web Build&lt;/h3&gt;
+&lt;p&gt;For those who didn’t want to install TestFlight or were not on an Apple device, you can now try the game on your browser. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think about the game so far.&lt;/p&gt;
+&lt;p&gt;Do you know someone who would love to try the game before its official release? Share this &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; with them! ✨&lt;/p&gt;
+&lt;p&gt;Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!&lt;/p&gt;
+&lt;p&gt;Thank you all for your support and patience. Stay tuned for more updates!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Verifying Method Calls within a class using Mockito Spies</title>
       <link>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</link>
       <description>How to remove the duplication of test scenarios when one method calls another within the same class</description>
@@ -103,7 +152,7 @@
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media4.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1907,104 +1956,6 @@ Ankur
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Now the image will show as the background.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/add-image-camera-background-unity/after.png" alt="Camera with background image"&gt;&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Finding the best credit card in New Zealand</title>
-      <link>https://www.ankursheel.com/blog/best-credit-card-new-zealand</link>
-      <description>This article compares a few credit cards offered in New Zealand. It looks at how much you need to spend in a year to maximize the value of each card</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/best-credit-card-new-zealand/cover.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/best-credit-card-new-zealand</guid>
-      <pubDate>Sun, 06 Nov 2022 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;!-- https://unsplash.com/photos/RJQE64NmC_o --&gt;
-&lt;p&gt;Credit cards are a tool. If you can pay your cards off in full every month, they can help you build wealth. If not, they can trap you in a cycle of debt that's very difficult to break.&lt;/p&gt;
-&lt;p&gt;However, with so many credit card options, finding the one that maximizes the value based on your spending can take time and effort. Each credit card comes with its own benefits and features, so it can feel like you're comparing apples to oranges.&lt;/p&gt;
-&lt;h2 id="comparison"&gt;Comparison&lt;/h2&gt;
-&lt;p&gt;In this post, I compare the value of some of the cards offered by ANZ and American Express in New Zealand.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Credit Card&lt;/th&gt;
-&lt;th&gt;Annual fee (NZD)&lt;/th&gt;
-&lt;th&gt;Rebate&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;American Express Airpoints&lt;/td&gt;
-&lt;td&gt;$0&lt;/td&gt;
-&lt;td&gt;1.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ANZ Cashback Visa&lt;/td&gt;
-&lt;td&gt;$45&lt;/td&gt;
-&lt;td&gt;0.67%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ANZ Airpoints Visa&lt;/td&gt;
-&lt;td&gt;$65&lt;/td&gt;
-&lt;td&gt;0.77%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ANZ Cashback Visa Platinum&lt;/td&gt;
-&lt;td&gt;$85&lt;/td&gt;
-&lt;td&gt;0.83%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ANZ Airpoints Visa Platinum&lt;/td&gt;
-&lt;td&gt;$150&lt;/td&gt;
-&lt;td&gt;1.18%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;American Express Airpoints Platinum&lt;/td&gt;
-&lt;td&gt;$195&lt;/td&gt;
-&lt;td&gt;1.69%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;American Express Gold Card&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;0.75%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;American Express Platinum Card&lt;/td&gt;
-&lt;td&gt;$1250&lt;/td&gt;
-&lt;td&gt;1.33%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="american-express-airpoints"&gt;American Express Airpoints&lt;/h3&gt;
-&lt;p&gt;Since there is no &lt;em&gt;Annual fee&lt;/em&gt;, you don't need to spend a minimum amount in a year.&lt;/p&gt;
-&lt;p&gt;You will get back 1 cent for every additional dollar you spend.&lt;/p&gt;
-&lt;h3 id="anz-cashback-visa"&gt;ANZ Cashback Visa&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 6,750 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 0.67 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;h3 id="anz-airpoints-visa"&gt;ANZ Airpoints Visa&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 8,450 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 0.77 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;h3 id="anz-cashback-visa-platinum"&gt;ANZ Cashback Visa Platinum&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 10,200 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 0.83 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The cashback visa is a better option unless you spend more than NZD 24000 in a year.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="anz-airpoints-visa-platinum"&gt;ANZ Airpoints Visa Platinum&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 12,750 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 1.18 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The Airpoints visa is a better option unless you spend more than NZD 21000 in a year.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="american-express-airpoints-platinum"&gt;American Express Airpoints Platinum&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 11,505 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 1.69 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The Airpoints visa is a better option unless you spend more than NZD 28000 in a year. However, you get travel insurance and lounge visits which might make up the difference.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="american-express-gold-card"&gt;American Express Gold Card&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 26,600 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 0.75 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;h3 id="american-express-platinum-card"&gt;American Express Platinum Card&lt;/h3&gt;
-&lt;p&gt;You must spend at least NZD 93,750 annually to cover the card fee.&lt;/p&gt;
-&lt;p&gt;You will get back 1.33 cents for every additional dollar you spend.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="my-recommendation"&gt;My Recommendation&lt;/h2&gt;
-&lt;p&gt;I like using The American Express Airpoints Platinum card as my primary card. It has the best value. If you are spending less than NZD 11,000, then the American Express Airpoints Card is the next best card to get.&lt;/p&gt;
-&lt;p&gt;Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.&lt;/p&gt;
-&lt;p&gt;Is there a card you would like me to evaluate? Let me know in the comments.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
