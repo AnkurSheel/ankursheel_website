@@ -37,7 +37,7 @@ Last time, I added support for fireworks, but they were a bit hard to see. Now, 
 
 ## Privacy Policy
 
-To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out [here](assets/downloads/Privacy_Policy_WordXplore.pdf){target="\_blank"}
+To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out [here](/assets/downloads/Privacy_Policy_WordXplore.pdf){target="\_blank"}
 
 ---
 
