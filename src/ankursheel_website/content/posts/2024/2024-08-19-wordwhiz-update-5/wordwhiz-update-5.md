@@ -1,6 +1,6 @@
 ---
 title: "WordWhiz Update #5"
-excerpt: "WordWhiz Update 4 tweaks the UI to make for a better experience"
+excerpt: "WordWhiz Update 5 tweaks the UI to make for a better experience"
 coverImage: "./new_game_screen.jpg"
 category: "project updates"
 tags:
