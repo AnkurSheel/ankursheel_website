@@ -211,6 +211,9 @@
 
     <ul>
             <li>
+                <a href="wordwhiz-update-5">WordWhiz Update #5</a>
+            </li>
+            <li>
                 <a href="wordhwhiz-update-3">WordWhiz Update #3</a>
             </li>
             <li>
@@ -218,9 +221,6 @@
             </li>
             <li>
                 <a href="wordwhiz-update-1">WordWhiz Update #1</a>
-            </li>
-            <li>
-                <a href="codinators-xunit-helpers-nuget-package-update-2">&#x27;Codinators.XunitHelpers Nuget Package: Update 2</a>
             </li>
     </ul>
 </aside>
