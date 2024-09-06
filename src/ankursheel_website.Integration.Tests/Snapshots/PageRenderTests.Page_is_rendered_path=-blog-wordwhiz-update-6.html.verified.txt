@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordWhiz Update #4</title>
+<title>WordWhiz Update #6</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="WordWhiz Update 4 adds deterministic levels and fireworks"/>
+<meta name="description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordwhiz-update-4"/>   
-<meta itemProp="name" content="WordWhiz Update #4"/>
-<meta itemProp="description" content="WordWhiz Update 4 adds deterministic levels and fireworks"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-4-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordwhiz-update-4"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordwhiz-update-6"/>   
+<meta itemProp="name" content="WordWhiz Update #6"/>
+<meta itemProp="description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordwhiz-update-6"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordWhiz Update #4"/>
-<meta property="og:description" content="WordWhiz Update 4 adds deterministic levels and fireworks"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-4-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-4-facebook.png"/>
+<meta property="og:title" content="WordWhiz Update #6"/>
+<meta property="og:description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordWhiz Update #4"/>
-<meta name="twitter:description" content="WordWhiz Update 4 adds deterministic levels and fireworks"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-4-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-4-twitter.png"/>
+<meta name="twitter:title" content="WordWhiz Update #6"/>
+<meta name="twitter:description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,17 +110,17 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordWhiz Update #4</h1>
+    <h1 class="text-center">WordWhiz Update #6</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2024-08-05">Aug 05, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-08-05">Aug 05, 2024</time></p>
+        <p class="mr-4">Published on <time datetime="2024-09-02">Sep 02, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-09-02">Sep 02, 2024</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">2 min</span>
+            Estimated Reading Time: <span  class="font-bold">4 min</span>
         </p>
     </div>
 
@@ -131,52 +131,69 @@
 </div>
 
 <p>You can see all the related updates <a href="/tags/wordwhiz">here</a></p>
-<p>It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.</p>
-<h2 id="what-happened">What happened</h2>
-<p>The partnership that I had for the first game ended. This meant I had to setup new accounts for various third-party services and redo some of the infrastructural work, which took some time.</p>
-<p>After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for WordWhiz. Thankfully, my cousin Manjari stepped in to help with the creative side of things.</p>
-<h2 id="whats-new">What's New</h2>
-<h3 id="color-matters">Color Matters</h3>
-<p>Let's face it: The original colours weren't very appealing. The first thing Manjari changed after joining was updating the colours. But don't take my word for it, see for yourself:</p>
+<p>Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!&quot;</p>
+<h2 id="new-name-and-icon">New Name and Icon</h2>
+<p>The name of the game has been updated from WordWhiz to WordExplorer.</p>
+<p>We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.</p>
+<p><img src="/assets/images/posts/wordwhiz-update-6/app_icon.png" alt="App_Icon" /></p>
+<h2 id="bugfixes">Bugfixes</h2>
+<p>Kids are great testers; they always manage to do things you’d never expect. So, what did they discover this time?</p>
+<ul>
+<li>Previously, pressing keyboard keys while a popup was displayed could cause issues, as you couldn’t see the word you were entering. We’ve now disabled the keyboard when a popup is shown to prevent this.</li>
+<li>You could also press keyboard keys after completing a level, but before starting the next. This led to unintended effects, like having a prefilled row when the new level started. The keyboard is now disabled when the level is complete.</li>
+<li>That was not the only problem when a level ended. Did you know, you could press the Next Level button before the popup finished? Unsurprisingly, this caused issues. Now, the next level button only appears after the popup has fully disappeared. It also lets the kids enjoy the fireworks for a tad more time.</li>
+</ul>
+<p>We also fixed feedback about the Next Level button not being centered on the iPad.</p>
+<p>These fixes ensure that your gameplay is smooth and frustration-free, with no more accidental key presses or misaligned buttons on the iPad, making your experience more enjoyable.</p>
+<h2 id="infrastructural-changes">Infrastructural changes</h2>
+<p>To generate TestFlight and web builds, I have been using a combination of GitHub Actions, GameCI, and Fastlane.</p>
+<p>I’m excited to share that we’re now able to create builds ready for the App Store release. We’re making solid progress and are committed to delivering the final version of the game soon.</p>
+<p>Fastlane can update the App Store metadata, but I haven’t managed to get it working yet. It’s on my list to figure out. For now, we are manually updating the metadata in the portal. This isn’t ideal, but it is a minor issue that won’t affect our overall progress.</p>
+<h2 id="updating-metadata-for-the-app-store">Updating Metadata for the App Store</h2>
+<p>To get the game ready for the App Store, a lot of metadata needs to be added. This includes the app name, subtitle, and a description.</p>
+<p>We also need to upload at least three screenshots for various device form factors.</p>
+<p>Here's a sneak preview</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Before</th>
-<th style="text-align: center;">After</th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordwhiz-update-4/old_instructions.jpg" alt="Old Instructions Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordwhiz-update-4/new_instructions.jpg" alt="New Instructions Screen" /></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordwhiz-update-4/old_game_screen.jpg" alt="Old Game Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordwhiz-update-4/new_game_screen.jpg" alt="New Game Screen" /></td>
+<td><img src="/assets/images/posts/wordwhiz-update-6/screenshot_1.png" alt="Screenshot 1" /></td>
+<td><img src="/assets/images/posts/wordwhiz-update-6/screenshot_2.png" alt="Screenshot 2" /></td>
+<td><img src="/assets/images/posts/wordwhiz-update-6/screenshot_3.png" alt="Screenshot 3" /></td>
 </tr>
 </tbody>
 </table>
-<h3 id="fireworks">Fireworks</h3>
-<p>Previously, when you found the right word, there was no celebration - just a plain popup that quickly disappeared. Now, there are fireworks and explosions to celebrate your victory.</p>
-<p><img src="/assets/images/posts/wordwhiz-update-4/fireworks.gif" alt="Fireworks" /></p>
-<h3 id="deterministic-levels">Deterministic Levels</h3>
-<p>The random word selection felt like playing the lottery. Now, there are levels and they are locked! After you complete one, the next one is unlocked, providing a sense of progress. Plus, your progress is saved, so you don’t have to start from Level 1 every time.</p>
-<p><img src="/assets/images/posts/wordwhiz-update-4/level_screen.jpg" alt="Level Selection Screen" /></p>
-<h3 id="web-build">Web Build</h3>
-<p>For those who didn’t want to install TestFlight or were not on an Apple device, you can now try the game on your browser. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊</p>
+<p>These may end up in the final version, but we are not sure yet.</p>
+<h2 id="submitting-for-review">Submitting for review</h2>
+<p>Once we updated all the metadata, we decided to submit the game for an App Store review. The intention was not to get the current version released but to ensure we can go through the approval process and be ready when the final version is prepared.</p>
+<p>We’ve encountered some challenges with Apple's approval process, but we're addressing them head-on.</p>
+<p>The 1st hurdle was related to analytics and data capturing. This has been easy enough to address as we are not capturing any PII, and the data that we capture for analytics is aggregated so we don't know anything about any specific individual.</p>
+<p>The next challenge we’re facing is Apple’s concern with our use of &quot;Wordle&quot; in the metadata and screenshots. Apple has guidelines to prevent copycat games and apparently using the Wordle goes against it. This was unexpected as we could see other games in the app store using Wordle. The plan is to resolve this by updating the metadata to remove any references to &quot;Wordle&quot; and providing a small blurb of why it's not just a copy.</p>
+<p>Hopefully, with the changes we’re making, Apple will see that our game is unique and far from a copycat.</p>
+<h2 id="whats-next">What's Next</h2>
+<p>Aside from getting a build that adheres to Apple’s guidelines and squashing bugs, we’re working on determining the price point and considering the option of preorders.</p>
+<p>Based on survey feedback, we’re leaning towards a price point of NZD 5.99 / USD 2.99 / INR 299 for approximately 20-25 levels.</p>
+<p>We’re also contemplating theming the words in the game. Two themes we’re considering are food and animals. If we proceed with this, we plan to release one theme now and the other later. Do you have a preference for which theme we should choose first?</p>
 <hr />
-<p>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think about the game so far.</p>
-<p>Do you know someone who would love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them! ✨</p>
-<p>Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!</p>
-<p>Thank you all for your support and patience. Stay tuned for more updates!</p>
+<h2 id="playable-build">Playable Build</h2>
+<p>We’re excited for you to test out the <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a>. Share your feedback, and if you want the full experience, just ask for a TestFlight invite—I’ll send it over right away!. 😊</p>
+<p>Know someone who’d love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them—they’ll thank you!! ✨</p>
+<p>Does your child have a favourite word they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!</p>
+<p>Thank you for being a part of this journey with me! I’m eager to hear your thoughts and feedback. Stay tuned for more updates!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordwhiz-update-4&text=WordWhiz%20Update%20%234 via @ankur_sheel.&#xD;&#xA;WordWhiz%20Update%204%20adds%20deterministic%20levels%20and%20fireworks" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordwhiz-update-4" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordwhiz-update-6&text=WordWhiz%20Update%20%236 via @ankur_sheel.&#xD;&#xA;New%20name%20%26%20icon%2C%20major%20bug%20fixes%2C%20and%20upcoming%20App%20Store%20release.%20Test%20the%20latest%20build%20and%20give%20your%20feedback%21" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordwhiz-update-6" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -214,7 +231,7 @@
                 <a href="wordwhiz-update-5">WordWhiz Update #5</a>
             </li>
             <li>
-                <a href="wordwhiz-update-6">WordWhiz Update #6</a>
+                <a href="wordwhiz-update-4">WordWhiz Update #4</a>
             </li>
             <li>
                 <a href="wordhwhiz-update-3">WordWhiz Update #3</a>

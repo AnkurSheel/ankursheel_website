@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (211)</h2>
+<h2>All Categories (213)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,12 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordwhiz-update-6">WordWhiz Update #6</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordwhiz-update-5">WordWhiz Update #5</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -134,12 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordhwhiz-update-3">WordWhiz Update #3</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
         </li>
 </ul>
 
@@ -236,8 +236,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (73)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (74)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a> - <time class="prose-sm" datetime="24-09-06">September 06, 2024</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a> - <time class="prose-sm" datetime="24-08-07">August 07, 2024</time>
             </li>
@@ -458,8 +461,11 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (17)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (18)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordwhiz-update-6">WordWhiz Update #6</a> - <time class="prose-sm" datetime="24-09-02">September 02, 2024</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/wordwhiz-update-5">WordWhiz Update #5</a> - <time class="prose-sm" datetime="24-08-19">August 19, 2024</time>
             </li>

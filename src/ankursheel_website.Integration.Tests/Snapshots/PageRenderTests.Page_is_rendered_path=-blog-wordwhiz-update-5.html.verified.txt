@@ -220,13 +220,13 @@
                 <a href="wordwhiz-update-4">WordWhiz Update #4</a>
             </li>
             <li>
+                <a href="wordwhiz-update-6">WordWhiz Update #6</a>
+            </li>
+            <li>
                 <a href="wordhwhiz-update-3">WordWhiz Update #3</a>
             </li>
             <li>
                 <a href="wordwhiz-update-2">WordWhiz Update #2</a>
-            </li>
-            <li>
-                <a href="wordwhiz-update-1">WordWhiz Update #1</a>
             </li>
     </ul>
 </aside>

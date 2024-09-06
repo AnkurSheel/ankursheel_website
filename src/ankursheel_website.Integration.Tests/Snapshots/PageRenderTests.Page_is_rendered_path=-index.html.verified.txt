@@ -115,6 +115,12 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a> - <time class="prose-sm" datetime="24-09-06">September 06, 2024</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordwhiz-update-6">WordWhiz Update #6</a> - <time class="prose-sm" datetime="24-09-02">September 02, 2024</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordwhiz-update-5">WordWhiz Update #5</a> - <time class="prose-sm" datetime="24-08-19">August 19, 2024</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -122,12 +128,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a> - <time class="prose-sm" datetime="24-08-07">August 07, 2024</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a> - <time class="prose-sm" datetime="24-08-07">August 07, 2024</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a> - <time class="prose-sm" datetime="24-08-07">August 07, 2024</time>
         </li>
 </ul>
 

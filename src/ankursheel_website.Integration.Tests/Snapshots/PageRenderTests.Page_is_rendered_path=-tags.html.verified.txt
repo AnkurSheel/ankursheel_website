@@ -123,7 +123,7 @@
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (16)</a>
+            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (17)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (13)</a>
@@ -171,6 +171,9 @@
             <a role="button" href="/tags/gatsby" class="capitalize badge text-gray-900 bg-grey-light no-underline"> gatsby (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/opinion" class="capitalize badge text-gray-900 bg-grey-light no-underline"> opinion (7)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/website-migration" class="capitalize badge text-gray-900 bg-grey-light no-underline"> website migration (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -186,7 +189,7 @@
             <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/opinion" class="capitalize badge text-gray-900 bg-grey-light no-underline"> opinion (6)</a>
+            <a role="button" href="/tags/wordwhiz" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordwhiz (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dev-tools" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>
@@ -199,9 +202,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/web-development" class="capitalize badge text-gray-900 bg-grey-light no-underline"> web development (5)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordwhiz" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordwhiz (5)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/docker" class="capitalize badge text-gray-900 bg-grey-light no-underline"> docker (4)</a>
@@ -246,6 +246,9 @@
             <a role="button" href="/tags/azure-pipelines" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Azure pipelines (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/code-quality" class="capitalize badge text-gray-900 bg-grey-light no-underline"> code quality (2)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/company-culture" class="capitalize badge text-gray-900 bg-grey-light no-underline"> company culture (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -280,9 +283,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/sql" class="capitalize badge text-gray-900 bg-grey-light no-underline"> sql (2)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/code-quality" class="capitalize badge text-gray-900 bg-grey-light no-underline"> code quality (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dapper" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dapper (1)</a>
