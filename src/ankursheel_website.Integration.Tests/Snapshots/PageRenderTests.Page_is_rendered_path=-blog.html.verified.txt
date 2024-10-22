@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (213)</h2>
+<h2>All Categories (214)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-7">WordXplorer Update #7</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -137,9 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-4">WordXplorer Update #4</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
         </li>
 </ul>
 
@@ -461,8 +461,11 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (18)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (19)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordxplorer-update-7">WordXplorer Update #7</a> - <time class="prose-sm" datetime="24-10-22">October 22, 2024</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/wordxplorer-update-6">WordXplorer Update #6</a> - <time class="prose-sm" datetime="24-09-02">September 02, 2024</time>
             </li>

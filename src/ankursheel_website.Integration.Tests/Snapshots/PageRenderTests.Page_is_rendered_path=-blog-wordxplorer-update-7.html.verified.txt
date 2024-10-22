@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordXplorer Update #6</title>
+<title>WordXplorer Update #7</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
+<meta name="description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-6"/>   
-<meta itemProp="name" content="WordXplorer Update #6"/>
-<meta itemProp="description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-6"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-7"/>   
+<meta itemProp="name" content="WordXplorer Update #7"/>
+<meta itemProp="description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-7"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update #6"/>
-<meta property="og:description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-facebook.png"/>
+<meta property="og:title" content="WordXplorer Update #7"/>
+<meta property="og:description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update #6"/>
-<meta name="twitter:description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-twitter.png"/>
+<meta name="twitter:title" content="WordXplorer Update #7"/>
+<meta name="twitter:description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,17 +110,17 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update #6</h1>
+    <h1 class="text-center">WordXplorer Update #7</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2024-09-02">Sep 02, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-09-02">Sep 02, 2024</time></p>
+        <p class="mr-4">Published on <time datetime="2024-10-22">Oct 22, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-10-22">Oct 22, 2024</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">4 min</span>
+            Estimated Reading Time: <span  class="font-bold">3 min</span>
         </p>
     </div>
 
@@ -131,69 +131,54 @@
 </div>
 
 <p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
-<p>Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!&quot;</p>
-<h2 id="new-name-and-icon">New Name and Icon</h2>
-<p>The name of the game has been updated from wordxplorer to WordExplorer.</p>
-<p>We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.</p>
-<p><img src="/assets/images/posts/wordxplorer-update-6/app_icon.png" alt="App_Icon" /></p>
-<h2 id="bugfixes">Bugfixes</h2>
-<p>Kids are great testers; they always manage to do things you’d never expect. So, what did they discover this time?</p>
+<p>I hope you’re having an awesome day! Since the last post, we’ve been hard at work, appeasing the Apple gods to ensure our game is ready for the App Store.</p>
+<p>And guess what? I’m thrilled to announce that our game has been approved.</p>
+<p><a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="\_blank"><img src="/assets/images/preorder-appstore-badge.png" alt="Preorder WordXplorer" /></a></p>
+<h2 id="new-video-alert">🎥 New Video Alert!</h2>
+<p>I am excited to share a sneak preview of our brand-new video. You can catch this exclusive glimpse on our product page. It’s a taste of the adventure that awaits!</p>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/bAtj9bAYVS0/0" title="WordXplorer Preview Video" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>
+<h2 id="exciting-new-theme">🎨 Exciting New Theme</h2>
+<p>To make things fun and engaging for kids, we’ve decided to theme the words around “Food Items.” There are a few reasons we have chosen this theme as the first one.</p>
 <ul>
-<li>Previously, pressing keyboard keys while a popup was displayed could cause issues, as you couldn’t see the word you were entering. We’ve now disabled the keyboard when a popup is shown to prevent this.</li>
-<li>You could also press keyboard keys after completing a level, but before starting the next. This led to unintended effects, like having a prefilled row when the new level started. The keyboard is now disabled when the level is complete.</li>
-<li>That was not the only problem when a level ended. Did you know, you could press the Next Level button before the popup finished? Unsurprisingly, this caused issues. Now, the next level button only appears after the popup has fully disappeared. It also lets the kids enjoy the fireworks for a tad more time.</li>
+<li>We can easily create 25-30 exciting levels for launch.</li>
+<li>Kids are familiar with food items and having all words around this central theme should make it easy for them to get started.</li>
+<li>Most importantly, we believe this theme will be a hit with children.</li>
 </ul>
-<p>We also fixed feedback about the Next Level button not being centered on the iPad.</p>
-<p>These fixes ensure that your gameplay is smooth and frustration-free, with no more accidental key presses or misaligned buttons on the iPad, making your experience more enjoyable.</p>
-<h2 id="infrastructural-changes">Infrastructural changes</h2>
-<p>To generate TestFlight and web builds, I have been using a combination of GitHub Actions, GameCI, and Fastlane.</p>
-<p>I’m excited to share that we’re now able to create builds ready for the App Store release. We’re making solid progress and are committed to delivering the final version of the game soon.</p>
-<p>Fastlane can update the App Store metadata, but I haven’t managed to get it working yet. It’s on my list to figure out. For now, we are manually updating the metadata in the portal. This isn’t ideal, but it is a minor issue that won’t affect our overall progress.</p>
-<h2 id="updating-metadata-for-the-app-store">Updating Metadata for the App Store</h2>
-<p>To get the game ready for the App Store, a lot of metadata needs to be added. This includes the app name, subtitle, and a description.</p>
-<p>We also need to upload at least three screenshots for various device form factors.</p>
-<p>Here's a sneak preview</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="/assets/images/posts/wordxplorer-update-6/screenshot_1.png" alt="Screenshot 1" /></td>
-<td><img src="/assets/images/posts/wordxplorer-update-6/screenshot_2.png" alt="Screenshot 2" /></td>
-<td><img src="/assets/images/posts/wordxplorer-update-6/screenshot_3.png" alt="Screenshot 3" /></td>
-</tr>
-</tbody>
-</table>
-<p>These may end up in the final version, but we are not sure yet.</p>
-<h2 id="submitting-for-review">Submitting for review</h2>
-<p>Once we updated all the metadata, we decided to submit the game for an App Store review. The intention was not to get the current version released but to ensure we can go through the approval process and be ready when the final version is prepared.</p>
-<p>We’ve encountered some challenges with Apple's approval process, but we're addressing them head-on.</p>
-<p>The 1st hurdle was related to analytics and data capturing. This has been easy enough to address as we are not capturing any PII, and the data that we capture for analytics is aggregated so we don't know anything about any specific individual.</p>
-<p>The next challenge we’re facing is Apple’s concern with our use of &quot;Wordle&quot; in the metadata and screenshots. Apple has guidelines to prevent copycat games and apparently using the Wordle goes against it. This was unexpected as we could see other games in the app store using Wordle. The plan is to resolve this by updating the metadata to remove any references to &quot;Wordle&quot; and providing a small blurb of why it's not just a copy.</p>
-<p>Hopefully, with the changes we’re making, Apple will see that our game is unique and far from a copycat.</p>
-<h2 id="whats-next">What's Next</h2>
-<p>Aside from getting a build that adheres to Apple’s guidelines and squashing bugs, we’re working on determining the price point and considering the option of preorders.</p>
-<p>Based on survey feedback, we’re leaning towards a price point of NZD 5.99 / USD 2.99 / INR 299 for approximately 20-25 levels.</p>
-<p>We’re also contemplating theming the words in the game. Two themes we’re considering are food and animals. If we proceed with this, we plan to release one theme now and the other later. Do you have a preference for which theme we should choose first?</p>
+<h2 id="special-preorder-pricing">💰 Special Preorder Pricing</h2>
+<p>You can preorder the game for just USD 3.99. Apple will use this base price and adjust it for your region.</p>
+<p>Remember, once we launch on December 1st, the price will increase to USD 4.99. So, why wait? Secure your copy now!</p>
+<h2 id="how-to-preorder">🛒 How to Preorder</h2>
+<p>Pre-ordering is simple and ensures you’re among the first to experience the game:</p>
+<ol>
+<li>Visit the <a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783">game’s product page on the App Store</a>.</li>
+<li>Click on the “Preorder” button.</li>
+<li>Follow the prompts to complete your preorder. By pre-ordering, you lock in the special price and guarantee immediate access on launch day!</li>
+</ol>
+<p>Rest assured, you will only be charged once the game officially launches on December 1st. And if you change your mind(I hope you don’t), you can cancel your preorder anytime before launch without penalty.</p>
+<p>For more details, feel free to check out <a href="https://support.apple.com/en-nz/118414">Apple’s Preorder documentation</a>.</p>
+<h2 id="google-play-progress">📱 Google Play Progress</h2>
+<p>Exciting news for our Android fans! I have a working proof of concept for the game on Android devices.</p>
+<p>While bringing the game to Google Play is definitely on our radar, our primary focus is ensuring a smooth and successful launch on the App Store.</p>
+<p>Rest assured, expanding to Android is part of our plans. We appreciate your patience and support as we prioritise the App Store release. Stay tuned for more updates!</p>
 <hr />
-<h2 id="playable-build">Playable Build</h2>
-<p>We’re excited for you to test out the <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a>. Share your feedback, and if you want the full experience, just ask for a TestFlight invite—I’ll send it over right away!. 😊</p>
-<p>Know someone who’d love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them—they’ll thank you!! ✨</p>
-<p>Does your child have a favourite word they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!</p>
-<p>Thank you for being a part of this journey with me! I’m eager to hear your thoughts and feedback. Stay tuned for more updates!</p>
+<h2 id="last-chance-for-playable-build">🕹️ Last Chance for Playable Build</h2>
+<p>This is your final opportunity to check out the latest update to our <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> or TestFlight build. Your feedback would mean the world to us! If you’re eager to have the full experience, just let me know, and I’ll send you a TestFlight invite immediately. 😊</p>
+<h2 id="whats-next">🚀 What’s Next</h2>
+<p>With a hard deadline in sight, we’re focused on adding those final touches to the game. We’re also building out the concept of theming levels into the gameplay to ensure a smooth experience for launch day. I am also trying to get in the Apple Small Business program to reduce the percentage of commission that they charge.</p>
+<hr />
+<p>Do you know someone who’d love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them—they’ll thank you!! ✨</p>
+<p>Does your child have a favourite four-letter food they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!</p>
+<p>Thank you for joining us on this journey. I can’t wait for you to dive into the game and share your thoughts!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-6&text=WordXplorer%20Update%20%236 via @ankur_sheel.&#xD;&#xA;New%20name%20%26%20icon%2C%20major%20bug%20fixes%2C%20and%20upcoming%20App%20Store%20release.%20Test%20the%20latest%20build%20and%20give%20your%20feedback%21" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-6" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-7&text=WordXplorer%20Update%20%237 via @ankur_sheel.&#xD;&#xA;WordXplorer%20is%20now%20available%20for%20preorder%20on%20the%20App%20Store%20with%20special%20pricing%20before%20its%20December%201st%20launch.%20This%20updates%20also%20features%20a%20preview%20video%20and%20plans%20for%20an%20Android%20release." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-7" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -228,13 +213,13 @@
 
     <ul>
             <li>
+                <a href="wordxplorer-update-6">WordXplorer Update #6</a>
+            </li>
+            <li>
                 <a href="wordxplorer-update-5">WordXplorer Update #5</a>
             </li>
             <li>
                 <a href="wordxplorer-update-4">WordXplorer Update #4</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-7">WordXplorer Update #7</a>
             </li>
             <li>
                 <a href="wordxplorer-update-3">WordXplorer Update #3</a>

@@ -115,6 +115,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-7">WordXplorer Update #7</a> - <time class="prose-sm" datetime="24-10-22">October 22, 2024</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a> - <time class="prose-sm" datetime="24-09-06">September 06, 2024</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -125,9 +128,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a> - <time class="prose-sm" datetime="24-08-07">August 07, 2024</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a> - <time class="prose-sm" datetime="24-08-07">August 07, 2024</time>
         </li>
 </ul>
 

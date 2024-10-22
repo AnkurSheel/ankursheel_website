@@ -217,10 +217,10 @@
                 <a href="wordxplorer-update-6">WordXplorer Update #6</a>
             </li>
             <li>
-                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
+                <a href="wordxplorer-update-7">WordXplorer Update #7</a>
             </li>
             <li>
-                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
+                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
             </li>
     </ul>
 </aside>
