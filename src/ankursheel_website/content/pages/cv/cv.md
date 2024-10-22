@@ -10,7 +10,7 @@ To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 
 ### [Download CV](/assets/downloads/CV_Ankur_Sheel.pdf){target="\_blank"})
 
-**_Last Updated: 05 Jan 2024_**
+**_Last Updated: 22 October 2024_**
 
 [![CV](/assets/images/pdficon_large.png){width=64 height=64}](assets/downloads/CV_Ankur_Sheel.pdf){target="\_blank"}
 
