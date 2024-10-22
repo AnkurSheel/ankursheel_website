@@ -15,9 +15,9 @@ Since we last spoke, it’s been full steam ahead with bug fixes and getting the
 
 ## New Name and Icon
 
-The name of the game has been updated from wordxplorer to WordExplorer.
+The name of the game has been updated from wordwhiz to WordXplorer.
 
-We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.
+We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordXplorer.
 
 ![App_Icon](./app_icon.png)
 
@@ -83,6 +83,6 @@ We’re excited for you to test out the [Playable Web Build](https://golden-pony
 
 Know someone who’d love to try the game before its official release? Share this [form](https://tally.so/r/wverVQ) with them—they’ll thank you!! ✨
 
-Does your child have a favourite word they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!
+Does your child have a favourite word they’d love to see in WordXplorer? Let me know, and I’ll do my best to add it to the game!
 
 Thank you for being a part of this journey with me! I’m eager to hear your thoughts and feedback. Stay tuned for more updates!

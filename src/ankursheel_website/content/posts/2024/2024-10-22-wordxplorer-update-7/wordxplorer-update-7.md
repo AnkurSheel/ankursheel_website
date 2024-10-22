@@ -71,6 +71,6 @@ With a hard deadline in sight, we’re focused on adding those final touches to 
 
 Do you know someone who’d love to try the game before its official release? Share this [form](https://tally.so/r/wverVQ) with them—they’ll thank you!! ✨
 
-Does your child have a favourite four-letter food they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!
+Does your child have a favourite four-letter food they’d love to see in WordXplorer? Let me know, and I’ll do my best to add it to the game!
 
 Thank you for joining us on this journey. I can’t wait for you to dive into the game and share your thoughts!
