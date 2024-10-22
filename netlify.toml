@@ -246,7 +246,7 @@ force = false
 
 [[redirects]]
 from = "/blog/wordwhiz-*"
-to = "/blog/wordexplorer-:splat"
+to = "/blog/wordxplorer-:splat"
 status = 301
 force = false
 
