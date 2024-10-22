@@ -19,9 +19,9 @@ To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 | Name                                                                                                         | Category | Status   | Technology                 |
 |--------------------------------------------------------------------------------------------------------------|:--------:|----------|----------------------------|
 | [WordWhiz: Wordle for Kids](./personal-projects/word-whiz)                                                   |   Game   | Active   | C#, Unity3D                |
-| [Match 'N Spell Magic: A memory matching game](./personal-projects/match-spell-magic)                        |   Game   | Active   | C#, Unity3D                |
 | [StatiqHelpers Nuget Package](./personal-projects/statiqhelpers)                                             |   Tool   | Active   | C#                         |
 | [xUnitHelpers Nuget Package](./personal-projects/xunithelpers)                                               |   Tool   | Active   | C#                         |
+| [Match 'N Spell Magic: A memory matching game](./personal-projects/match-spell-magic)                        |   Game   | Inactive | C#, Unity3D                |
 | [Breakout clone](/blog/breakout-clone-v1-0)                                                                  |   Game   | Inactive | C++, DirectX 11.0, premake |
 | [Demo to showcase behavior of different easing functions](./personal-projects/easing-function-demo)          |  Other   | Inactive | C++                        |
 | [Asteroid clone](/blog/postmortem-asteroids)                                                                 |   Game   | Inactive | C++, DirectX 9             |
