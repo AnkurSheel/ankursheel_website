@@ -189,7 +189,7 @@
             <a role="button" href="/tags/git" class="capitalize badge text-gray-900 bg-grey-light no-underline"> git (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordwhiz" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordwhiz (6)</a>
+            <a role="button" href="/tags/wordxplorer" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordxplorer (6)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/dev-tools" class="capitalize badge text-gray-900 bg-grey-light no-underline"> dev tools (5)</a>

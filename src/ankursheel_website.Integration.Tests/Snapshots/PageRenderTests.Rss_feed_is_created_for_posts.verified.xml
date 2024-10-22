@@ -17,6 +17,7 @@
       <content:encoded>&lt;p&gt;Feature flags give developers the ability to turn features on or off without deploying new code. This flexibility is key for managing the release of new features while allowing for controlled and incremental deployments.&lt;/p&gt;
 &lt;p&gt;I still have conversations with several teams that are using development methods that don’t include feature flags. Some of them want to move to feature flags but are unsure how to start while others have never heard of them or don't think it's worth adopting.&lt;/p&gt;
 &lt;p&gt;Let’s explore how feature flags work, and their pros and cons compared to some other approaches.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: This is loosely based on a presentation I had given at FirstAML.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/fun-feature-flags/fun-with-flags.jpg" alt="Flags"&gt;&lt;/p&gt;
 &lt;h2 id="other-approaches"&gt;Other Approaches&lt;/h2&gt;
 &lt;p&gt;Before diving into feature flags, let’s look at some &lt;del&gt;traditional&lt;/del&gt; ahem alternative approaches I’ve seen teams use.&lt;/p&gt;
@@ -187,18 +188,18 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update #6</title>
-      <link>https://www.ankursheel.com/blog/wordwhiz-update-6</link>
+      <title>WordXplorer Update #6</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-6</link>
       <description>New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-6/app_icon.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordwhiz-update-6</guid>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/app_icon.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-6</guid>
       <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!"&lt;/p&gt;
 &lt;h2 id="new-name-and-icon"&gt;New Name and Icon&lt;/h2&gt;
-&lt;p&gt;The name of the game has been updated from WordWhiz to WordExplorer.&lt;/p&gt;
+&lt;p&gt;The name of the game has been updated from wordxplorer to WordExplorer.&lt;/p&gt;
 &lt;p&gt;We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-6/app_icon.png" alt="App_Icon"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/app_icon.png" alt="App_Icon"&gt;&lt;/p&gt;
 &lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
 &lt;p&gt;Kids are great testers; they always manage to do things you’d never expect. So, what did they discover this time?&lt;/p&gt;
 &lt;ul&gt;
@@ -226,9 +227,9 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-6/screenshot_1.png" alt="Screenshot 1"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-6/screenshot_2.png" alt="Screenshot 2"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-6/screenshot_3.png" alt="Screenshot 3"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/screenshot_1.png" alt="Screenshot 1"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/screenshot_2.png" alt="Screenshot 2"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/screenshot_3.png" alt="Screenshot 3"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -253,13 +254,13 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update #5</title>
-      <link>https://www.ankursheel.com/blog/wordwhiz-update-5</link>
-      <description>WordWhiz Update 5 tweaks the UI to make for a better experience</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-5/new_game_screen.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordwhiz-update-5</guid>
+      <title>WordXplorer Update #5</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-5</link>
+      <description>WordXplorer Update 5 tweaks the UI to make for a better experience</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-5</guid>
       <pubDate>Mon, 19 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here's whats new since the last update&lt;/p&gt;
 &lt;h2 id="updated-game-screen"&gt;Updated game screen&lt;/h2&gt;
 &lt;p&gt;The main game screen now has more negative space, giving it a cleaner look. However, this change means the keyboard buttons are smaller. Give it a try and let me know how it feels!&lt;/p&gt;
@@ -272,14 +273,14 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-5/old_game_screen.jpg" alt="Old Game Screen"&gt;&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-5/new_game_screen.jpg" alt="New Game Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/old_game_screen.jpg" alt="Old Game Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" alt="New Game Screen"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="improved-popups"&gt;Improved Popups&lt;/h2&gt;
 &lt;p&gt;Popups are no longer boring grey rectangles. They now match the color scheme of the rest of the game, making everything look more cohesive.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-5/popups.jpg" alt="Popups"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/popups.jpg" alt="Popups"&gt;&lt;/p&gt;
 &lt;h2 id="enhanced-fireworks"&gt;Enhanced Fireworks&lt;/h2&gt;
 &lt;p&gt;Last time, I added support for fireworks, but they were a bit hard to see. Now, the screen dims after you complete a level, so the fireworks really stand out. With explosive sound effects, it creates a much better experience!&lt;/p&gt;
 &lt;table&gt;
@@ -291,8 +292,8 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-5/old_fireworks.gif" alt="Old Fireworks"&gt;&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-5/new_fireworks.gif" alt="New Fireworks"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/old_fireworks.gif" alt="Old Fireworks"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/new_fireworks.gif" alt="New Fireworks"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -308,17 +309,17 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update #4</title>
-      <link>https://www.ankursheel.com/blog/wordwhiz-update-4</link>
-      <description>WordWhiz Update 4 adds deterministic levels and fireworks</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/new_game_screen.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordwhiz-update-4</guid>
+      <title>WordXplorer Update #4</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-4</link>
+      <description>WordXplorer Update 4 adds deterministic levels and fireworks</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_game_screen.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-4</guid>
       <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.&lt;/p&gt;
 &lt;h2 id="what-happened"&gt;What happened&lt;/h2&gt;
 &lt;p&gt;The partnership that I had for the first game ended. This meant I had to setup new accounts for various third-party services and redo some of the infrastructural work, which took some time.&lt;/p&gt;
-&lt;p&gt;After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for WordWhiz. Thankfully, my cousin Manjari stepped in to help with the creative side of things.&lt;/p&gt;
+&lt;p&gt;After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for wordxplorer. Thankfully, my cousin Manjari stepped in to help with the creative side of things.&lt;/p&gt;
 &lt;h2 id="whats-new"&gt;What's New&lt;/h2&gt;
 &lt;h3 id="color-matters"&gt;Color Matters&lt;/h3&gt;
 &lt;p&gt;Let's face it: The original colours weren't very appealing. The first thing Manjari changed after joining was updating the colours. But don't take my word for it, see for yourself:&lt;/p&gt;
@@ -331,21 +332,21 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/old_instructions.jpg" alt="Old Instructions Screen"&gt;&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/new_instructions.jpg" alt="New Instructions Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/old_instructions.jpg" alt="Old Instructions Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_instructions.jpg" alt="New Instructions Screen"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/old_game_screen.jpg" alt="Old Game Screen"&gt;&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/new_game_screen.jpg" alt="New Game Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/old_game_screen.jpg" alt="Old Game Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_game_screen.jpg" alt="New Game Screen"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="fireworks"&gt;Fireworks&lt;/h3&gt;
 &lt;p&gt;Previously, when you found the right word, there was no celebration - just a plain popup that quickly disappeared. Now, there are fireworks and explosions to celebrate your victory.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/fireworks.gif" alt="Fireworks"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/fireworks.gif" alt="Fireworks"&gt;&lt;/p&gt;
 &lt;h3 id="deterministic-levels"&gt;Deterministic Levels&lt;/h3&gt;
 &lt;p&gt;The random word selection felt like playing the lottery. Now, there are levels and they are locked! After you complete one, the next one is unlocked, providing a sense of progress. Plus, your progress is saved, so you don’t have to start from Level 1 every time.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-4/level_screen.jpg" alt="Level Selection Screen"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/level_screen.jpg" alt="Level Selection Screen"&gt;&lt;/p&gt;
 &lt;h3 id="web-build"&gt;Web Build&lt;/h3&gt;
 &lt;p&gt;For those who didn’t want to install TestFlight or were not on an Apple device, you can now try the game on your browser. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊&lt;/p&gt;
 &lt;hr&gt;
@@ -411,23 +412,23 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update #3</title>
-      <link>https://www.ankursheel.com/blog/wordhwhiz-update-3</link>
-      <description>WordWhiz Update 3 adds a help button and 100 words</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordhwhiz-update-3/help-button.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordhwhiz-update-3</guid>
+      <title>WordXplorer Update #3</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-3</link>
+      <description>WordXplorer Update 3 adds a help button and 100 words</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-3/help-button.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-3</guid>
       <pubDate>Sat, 03 Feb 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉&lt;/p&gt;
 &lt;h2 id="more-words-more-fun"&gt;🚀 More Words, More Fun&lt;/h2&gt;
 &lt;p&gt;I am thrilled to announce that the game now boasts a whopping 100 words! 📬&lt;/p&gt;
 &lt;h2 id="introducing-the-help-button"&gt;📜 Introducing the Help Button&lt;/h2&gt;
 &lt;p&gt;Say goodbye to confusion! Explore the newly added Help Button right on the game screen. No need to restart the app — clarify the colour's meanings and game rules instantly&lt;/p&gt;
 &lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
-  &lt;iframe src="https://www.youtube.com/embed/X71OQlezrpE" title="WordWhiz Help Button" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
+  &lt;iframe src="https://www.youtube.com/embed/X71OQlezrpE" title="wordxplorer Help Button" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;h2 id="public-roadmap-unveiled"&gt;📬 Public Roadmap Unveiled&lt;/h2&gt;
-&lt;p&gt;Your voice matters! Check out the new &lt;a href="https://changemap.co/transient-toys/wordwhiz/"&gt;public roadmap&lt;/a&gt;, your hub for suggesting and voting on new features.&lt;/p&gt;
+&lt;p&gt;Your voice matters! Check out the new &lt;a href="https://changemap.co/transient-toys/wordxplorer/"&gt;public roadmap&lt;/a&gt;, your hub for suggesting and voting on new features.&lt;/p&gt;
 &lt;h2 id="whats-next"&gt;🔮 What's Next&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;This marks the final free version. We will soon be on the app store as a paid game. If there is someone you know who would love to try the game before that, please share the link to the &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; ✨&lt;/li&gt;
@@ -452,7 +453,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media4.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media1.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -738,8 +739,8 @@ vs
 &lt;ul&gt;
 &lt;li&gt;Publish 3 blog posts on ankursheel.com&lt;/li&gt;
 &lt;li&gt;Publish 3 book summaries on discoveriesinbookland.com&lt;/li&gt;
-&lt;li&gt;Get WordWhiz in the hands of beta testers and get the 1st release out&lt;/li&gt;
-&lt;li&gt;Get 10 more responses to the WordWhiz form&lt;/li&gt;
+&lt;li&gt;Get WordXplorer in the hands of beta testers and get the 1st release out&lt;/li&gt;
+&lt;li&gt;Get 10 more responses to the WordXplorer form&lt;/li&gt;
 &lt;li&gt;Lose 5 kgs&lt;/li&gt;
 &lt;li&gt;25 consecutive pushups&lt;/li&gt;
 &lt;li&gt;50 consecutive squats&lt;/li&gt;
@@ -871,22 +872,22 @@ on:
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update #2</title>
-      <link>https://www.ankursheel.com/blog/wordwhiz-update-2</link>
-      <description>WordWhiz Update 2 updates the colors and adds a new instruction page</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-2/instructions.jpg" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordwhiz-update-2</guid>
+      <title>WordXplorer Update #2</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-2</link>
+      <description>WordXplorer Update 2 updates the colors and adds a new instruction page</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/instructions.jpg" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-2</guid>
       <pubDate>Mon, 16 Oct 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am thrilled to share some updates for the WordWhiz game! 🎉&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am thrilled to share some updates for the wordxplorer game! 🎉&lt;/p&gt;
 &lt;h2 id="testflight-approval"&gt;🚀 Testflight Approval&lt;/h2&gt;
 &lt;p&gt;The first version with around 25 words has received the green light for TestFlight! If you registered as beta tester for iOS, watch your inbox for those invites - they're coming soon! 📬 . If you didnt, you can register by filling &lt;a href="https://tally.so/r/wverVQ"&gt;the form&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="updated-colors"&gt;🌈 Updated Colors&lt;/h2&gt;
 &lt;p&gt;I have revamped the colors! Let me know if you have any suggestions on better colors. Share your ideas with me! 🎨&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-2/updated_colors.jpg" alt="Updated Colors"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/updated_colors.jpg" alt="Updated Colors"&gt;&lt;/p&gt;
 &lt;h2 id="instructions-page"&gt;📜 Instructions Page&lt;/h2&gt;
 &lt;p&gt;I have added a new instructions page at the start of the game for people who are new to Wordle.📘&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-2/instructions.jpg" alt="Instructions"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/instructions.jpg" alt="Instructions"&gt;&lt;/p&gt;
 &lt;h2 id="whats-next"&gt;🔮 What's Next&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;A public Trello board for the roadmap, so beta testers can vote on what they would like to see next.&lt;/li&gt;
@@ -1253,23 +1254,23 @@ git rebase origin/main
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update #1</title>
-      <link>https://www.ankursheel.com/blog/wordwhiz-update-1</link>
-      <description>WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion</description>
-      <guid>https://www.ankursheel.com/blog/wordwhiz-update-1</guid>
+      <title>WordXplorer Update #1</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-1</link>
+      <description>WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion</description>
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-1</guid>
       <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordwhiz"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The latest WordWhiz game update, has some great additions.&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The latest WordXplorer game update, has some great additions.&lt;/p&gt;
 &lt;h2 id="new-words"&gt;20 New Words&lt;/h2&gt;
 &lt;p&gt;I have curated 20 new words to keep young minds engaged and entertained.&lt;/p&gt;
 &lt;h2 id="play-a-new-game-with-randomly-selected-words"&gt;Play a New Game with Randomly Selected Words&lt;/h2&gt;
 &lt;p&gt;After completing a level, you can play another level with a randomly selected word&lt;/p&gt;
 &lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
-  &lt;iframe src="https://www.youtube.com/embed/_mw6u4SIGWk" title="WordWhiz Next Level" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
+  &lt;iframe src="https://www.youtube.com/embed/_mw6u4SIGWk" title="wordxplorer Next Level" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;h2 id="next-up"&gt;Next Up&lt;/h2&gt;
 &lt;p&gt;Add to TestFlight for iPhone Beta Users&lt;/p&gt;
-&lt;p&gt;I encourage you to spread the word and share the excitement with fellow parents and educators. They can join the WordWhiz magic by filling out this &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I encourage you to spread the word and share the excitement with fellow parents and educators. They can join the wordxplorer magic by filling out this &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

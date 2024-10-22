@@ -131,13 +131,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="personal-projects/word-whiz">WordWhiz: Wordle for Kids</a></td>
-<td style="text-align: center;">Game</td>
-<td>Active</td>
-<td>C#, Unity3D</td>
-</tr>
-<tr>
-<td><a href="personal-projects/match-spell-magic">Match 'N Spell Magic: A memory matching game</a></td>
+<td><a href="personal-projects/wordxplorer">WordXplorer: Guess the Word</a></td>
 <td style="text-align: center;">Game</td>
 <td>Active</td>
 <td>C#, Unity3D</td>
@@ -153,6 +147,12 @@
 <td style="text-align: center;">Tool</td>
 <td>Active</td>
 <td>C#</td>
+</tr>
+<tr>
+<td><a href="personal-projects/match-spell-magic">Match 'N Spell Magic: A memory matching game</a></td>
+<td style="text-align: center;">Game</td>
+<td>Inactive</td>
+<td>C#, Unity3D</td>
 </tr>
 <tr>
 <td><a href="/blog/breakout-clone-v1-0">Breakout clone</a></td>

@@ -156,8 +156,8 @@
 <ul>
 <li>Publish 3 blog posts on ankursheel.com</li>
 <li>Publish 3 book summaries on discoveriesinbookland.com</li>
-<li>Get WordWhiz in the hands of beta testers and get the 1st release out</li>
-<li>Get 10 more responses to the WordWhiz form</li>
+<li>Get WordXplorer in the hands of beta testers and get the 1st release out</li>
+<li>Get 10 more responses to the WordXplorer form</li>
 <li>Lose 5 kgs</li>
 <li>25 consecutive pushups</li>
 <li>50 consecutive squats</li>

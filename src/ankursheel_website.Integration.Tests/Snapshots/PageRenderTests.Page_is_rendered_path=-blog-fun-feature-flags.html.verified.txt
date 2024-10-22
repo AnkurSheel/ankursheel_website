@@ -130,6 +130,7 @@
 <p>Feature flags give developers the ability to turn features on or off without deploying new code. This flexibility is key for managing the release of new features while allowing for controlled and incremental deployments.</p>
 <p>I still have conversations with several teams that are using development methods that don’t include feature flags. Some of them want to move to feature flags but are unsure how to start while others have never heard of them or don't think it's worth adopting.</p>
 <p>Let’s explore how feature flags work, and their pros and cons compared to some other approaches.</p>
+<p><em><strong>Note</strong>: This is loosely based on a presentation I had given at FirstAML.</em></p>
 <p><img src="/assets/images/posts/fun-feature-flags/fun-with-flags.jpg" alt="Flags"></p>
 <h2 id="other-approaches">Other Approaches</h2>
 <p>Before diving into feature flags, let’s look at some <del>traditional</del> ahem alternative approaches I’ve seen teams use.</p>

@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordWhiz Update #1</title>
+<title>WordXplorer Update #5</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion"/>
+<meta name="description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordwhiz-update-1"/>   
-<meta itemProp="name" content="WordWhiz Update #1"/>
-<meta itemProp="description" content="WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-1-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordwhiz-update-1"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-5"/>   
+<meta itemProp="name" content="WordXplorer Update #5"/>
+<meta itemProp="description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-5"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordWhiz Update #1"/>
-<meta property="og:description" content="WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-1-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-1-facebook.png"/>
+<meta property="og:title" content="WordXplorer Update #5"/>
+<meta property="og:description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordWhiz Update #1"/>
-<meta name="twitter:description" content="WordWhiz Update 1 adds 20 new words and the ability to play a new level on completion"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-1-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-1-twitter.png"/>
+<meta name="twitter:title" content="WordXplorer Update #5"/>
+<meta name="twitter:description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,46 +110,79 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordWhiz Update #1</h1>
+    <h1 class="text-center">WordXplorer Update #5</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2023-08-07">Aug 07, 2023</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2023-08-07">Aug 07, 2023</time></p>
+        <p class="mr-4">Published on <time datetime="2024-08-19">Aug 19, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-08-19">Aug 19, 2024</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">0 min</span>
+            Estimated Reading Time: <span  class="font-bold">1 min</span>
         </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
-            <a href="/tags/wordwhiz" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordwhiz</a>
+            <a href="/tags/wordxplorer" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordxplorer</a>
     </div>
 </div>
 
-<p>You can see all the related updates <a href="/tags/wordwhiz">here</a></p>
-<p>The latest WordWhiz game update, has some great additions.</p>
-<h2 id="new-words">20 New Words</h2>
-<p>I have curated 20 new words to keep young minds engaged and entertained.</p>
-<h2 id="play-a-new-game-with-randomly-selected-words">Play a New Game with Randomly Selected Words</h2>
-<p>After completing a level, you can play another level with a randomly selected word</p>
-<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
-  <iframe src="https://www.youtube.com/embed/_mw6u4SIGWk" title="WordWhiz Next Level" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
-</div>
-<h2 id="next-up">Next Up</h2>
-<p>Add to TestFlight for iPhone Beta Users</p>
-<p>I encourage you to spread the word and share the excitement with fellow parents and educators. They can join the WordWhiz magic by filling out this <a href="https://tally.so/r/wverVQ">form</a>.</p>
+<p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
+<p>Here's whats new since the last update</p>
+<h2 id="updated-game-screen">Updated game screen</h2>
+<p>The main game screen now has more negative space, giving it a cleaner look. However, this change means the keyboard buttons are smaller. Give it a try and let me know how it feels!</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Before</th>
+<th style="text-align: center;">After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/old_game_screen.jpg" alt="Old Game Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" alt="New Game Screen" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="improved-popups">Improved Popups</h2>
+<p>Popups are no longer boring grey rectangles. They now match the color scheme of the rest of the game, making everything look more cohesive.</p>
+<p><img src="/assets/images/posts/wordxplorer-update-5/popups.jpg" alt="Popups" /></p>
+<h2 id="enhanced-fireworks">Enhanced Fireworks</h2>
+<p>Last time, I added support for fireworks, but they were a bit hard to see. Now, the screen dims after you complete a level, so the fireworks really stand out. With explosive sound effects, it creates a much better experience!</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Before</th>
+<th style="text-align: center;">After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/old_fireworks.gif" alt="Old Fireworks" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/new_fireworks.gif" alt="New Fireworks" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="privacy-policy">Privacy Policy</h2>
+<p>To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out <a href="/assets/downloads/Privacy_Policy_WordXplore.pdf" target="\_blank">here</a></p>
+<hr />
+<h2 id="playable-build">Playable Build</h2>
+<p>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊</p>
+<p>Do you know someone who would love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them! ✨</p>
+<p>Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!</p>
+<p>Thank you all for your support and patience. Stay tuned for more updates!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordwhiz-update-1&text=WordWhiz%20Update%20%231 via @ankur_sheel.&#xD;&#xA;WordWhiz%20Update%201%20adds%2020%20new%20words%20and%20the%20ability%20to%20play%20a%20new%20level%20on%20completion" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordwhiz-update-1" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-5&text=WordXplorer%20Update%20%235 via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%205%20tweaks%20the%20UI%20to%20make%20for%20a%20better%20experience" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-5" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -184,16 +217,16 @@
 
     <ul>
             <li>
-                <a href="wordwhiz-update-2">WordWhiz Update #2</a>
+                <a href="wordxplorer-update-4">WordXplorer Update #4</a>
             </li>
             <li>
-                <a href="wordhwhiz-update-3">WordWhiz Update #3</a>
+                <a href="wordxplorer-update-6">WordXplorer Update #6</a>
             </li>
             <li>
-                <a href="wordwhiz-update-4">WordWhiz Update #4</a>
+                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
             </li>
             <li>
-                <a href="wordwhiz-update-5">WordWhiz Update #5</a>
+                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
             </li>
     </ul>
 </aside>

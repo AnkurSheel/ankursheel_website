@@ -4,7 +4,7 @@
 <head>
     
 
-<title>WordWhiz Update #6</title>
+<title>WordXplorer Update #6</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordwhiz-update-6"/>   
-<meta itemProp="name" content="WordWhiz Update #6"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-6"/>   
+<meta itemProp="name" content="WordXplorer Update #6"/>
 <meta itemProp="description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordwhiz-update-6"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-6"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordWhiz Update #6"/>
+<meta property="og:title" content="WordXplorer Update #6"/>
 <meta property="og:description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordWhiz Update #6"/>
+<meta name="twitter:title" content="WordXplorer Update #6"/>
 <meta name="twitter:description" content="New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-6-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-6-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -110,7 +110,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordWhiz Update #6</h1>
+    <h1 class="text-center">WordXplorer Update #6</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -126,16 +126,16 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
-            <a href="/tags/wordwhiz" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordwhiz</a>
+            <a href="/tags/wordxplorer" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordxplorer</a>
     </div>
 </div>
 
-<p>You can see all the related updates <a href="/tags/wordwhiz">here</a></p>
+<p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
 <p>Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!&quot;</p>
 <h2 id="new-name-and-icon">New Name and Icon</h2>
-<p>The name of the game has been updated from WordWhiz to WordExplorer.</p>
+<p>The name of the game has been updated from wordxplorer to WordExplorer.</p>
 <p>We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.</p>
-<p><img src="/assets/images/posts/wordwhiz-update-6/app_icon.png" alt="App_Icon" /></p>
+<p><img src="/assets/images/posts/wordxplorer-update-6/app_icon.png" alt="App_Icon" /></p>
 <h2 id="bugfixes">Bugfixes</h2>
 <p>Kids are great testers; they always manage to do things you’d never expect. So, what did they discover this time?</p>
 <ul>
@@ -163,9 +163,9 @@
 </thead>
 <tbody>
 <tr>
-<td><img src="/assets/images/posts/wordwhiz-update-6/screenshot_1.png" alt="Screenshot 1" /></td>
-<td><img src="/assets/images/posts/wordwhiz-update-6/screenshot_2.png" alt="Screenshot 2" /></td>
-<td><img src="/assets/images/posts/wordwhiz-update-6/screenshot_3.png" alt="Screenshot 3" /></td>
+<td><img src="/assets/images/posts/wordxplorer-update-6/screenshot_1.png" alt="Screenshot 1" /></td>
+<td><img src="/assets/images/posts/wordxplorer-update-6/screenshot_2.png" alt="Screenshot 2" /></td>
+<td><img src="/assets/images/posts/wordxplorer-update-6/screenshot_3.png" alt="Screenshot 3" /></td>
 </tr>
 </tbody>
 </table>
@@ -192,8 +192,8 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordwhiz-update-6&text=WordWhiz%20Update%20%236 via @ankur_sheel.&#xD;&#xA;New%20name%20%26%20icon%2C%20major%20bug%20fixes%2C%20and%20upcoming%20App%20Store%20release.%20Test%20the%20latest%20build%20and%20give%20your%20feedback%21" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordwhiz-update-6" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-6&text=WordXplorer%20Update%20%236 via @ankur_sheel.&#xD;&#xA;New%20name%20%26%20icon%2C%20major%20bug%20fixes%2C%20and%20upcoming%20App%20Store%20release.%20Test%20the%20latest%20build%20and%20give%20your%20feedback%21" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-6" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -228,16 +228,16 @@
 
     <ul>
             <li>
-                <a href="wordwhiz-update-5">WordWhiz Update #5</a>
+                <a href="wordxplorer-update-5">WordXplorer Update #5</a>
             </li>
             <li>
-                <a href="wordwhiz-update-4">WordWhiz Update #4</a>
+                <a href="wordxplorer-update-4">WordXplorer Update #4</a>
             </li>
             <li>
-                <a href="wordhwhiz-update-3">WordWhiz Update #3</a>
+                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
             </li>
             <li>
-                <a href="wordwhiz-update-2">WordWhiz Update #2</a>
+                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
             </li>
     </ul>
 </aside>
