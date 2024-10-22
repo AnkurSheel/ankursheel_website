@@ -15,7 +15,10 @@ I still have conversations with several teams that are using development methods
 
 Let’s explore how feature flags work, and their pros and cons compared to some other approaches.
 
+_**Note**: This is loosely based on a presentation I had given at FirstAML._
+
 ![Flags](./fun-with-flags.jpg)
+
 
 ## Other Approaches
 
@@ -201,8 +204,8 @@ In our example, you would create a feature flag for the new title feature. Each 
 - Allow turning flags on/off using a FE widget tied to a user.
 - Consider creating tools to manage feature flags effectively. Automation can help with flag updates and removal.
     - A widget that allows a developer/QA to toggle flags on/off just for themselves in dev/test environments is immensely useful.
-    - _At FirstAML, I developed an
-      open-source [helper app that simplified updating feature flag files from the console](https://github.com/AnkurSheel/FeatureFlagHelper)._
+  - _At FirstAML, I developed an
+    open-source [helper app that simplified updating feature flag files from the console](https://github.com/AnkurSheel/FeatureFlagHelper)._
 - Abstract the feature flag logic from the rest of the codebase to simplify future changes
 
 ### Removal Strategies
