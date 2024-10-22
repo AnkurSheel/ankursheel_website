@@ -1,15 +1,15 @@
 ---
-title: "WordWhiz Update #3"
-excerpt: "WordWhiz Update 3 adds a help button and 100 words"
+title: "WordXplorer Update #3"
+excerpt: "WordXplorer Update 3 adds a help button and 100 words"
 category: "project updates"
 tags:
   - "project updates"
-  - "wordwhiz"
+  - "wordxplorer"
 coverImage: "./help-button.jpg"
 
 ---
 
-You can see all the related updates [here](/tags/wordwhiz)
+You can see all the related updates [here](/tags/wordxplorer)
 
 Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉
 
@@ -21,11 +21,11 @@ I am thrilled to announce that the game now boasts a whopping 100 words! 📬
 
 Say goodbye to confusion! Explore the newly added Help Button right on the game screen. No need to restart the app — clarify the colour's meanings and game rules instantly
 
-<?# ResponsiveYouTube X71OQlezrpE Title="WordWhiz Help Button" /?>
+<?# ResponsiveYouTube X71OQlezrpE Title="wordxplorer Help Button" /?>
 
 ## 📬 Public Roadmap Unveiled
 
-Your voice matters! Check out the new [public roadmap](https://changemap.co/transient-toys/wordwhiz/), your hub for suggesting and voting on new features.
+Your voice matters! Check out the new [public roadmap](https://changemap.co/transient-toys/wordxplorer/), your hub for suggesting and voting on new features.
 
 ## 🔮 What's Next
 

@@ -1,17 +1,17 @@
 ---
-title: "WordWhiz Update #2"
-excerpt: "WordWhiz Update 2 updates the colors and adds a new instruction page"
+title: "WordXplorer Update #2"
+excerpt: "WordXplorer Update 2 updates the colors and adds a new instruction page"
 coverImage: "./instructions.jpg"
 category: "project updates"
 tags:
   - "project updates"
-  - "wordwhiz"
+  - "wordxplorer"
 
 ---
 
-You can see all the related updates [here](/tags/wordwhiz)
+You can see all the related updates [here](/tags/wordxplorer)
 
-I am thrilled to share some updates for the WordWhiz game! 🎉
+I am thrilled to share some updates for the wordxplorer game! 🎉
 
 ## 🚀 Testflight Approval
 

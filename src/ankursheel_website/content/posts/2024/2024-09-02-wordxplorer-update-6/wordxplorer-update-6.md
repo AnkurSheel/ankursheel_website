@@ -1,21 +1,21 @@
 ---
-title: "WordWhiz Update #6"
+title: "WordXplorer Update #6"
 excerpt: "New name & icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"
 coverImage: "./app_icon.png"
 category: "project updates"
 tags:
   - "project updates"
-  - "wordwhiz"
+  - "wordxplorer"
 
 ---
 
-You can see all the related updates [here](/tags/wordwhiz)
+You can see all the related updates [here](/tags/wordxplorer)
 
 Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!"
 
 ## New Name and Icon
 
-The name of the game has been updated from WordWhiz to WordExplorer.
+The name of the game has been updated from wordxplorer to WordExplorer.
 
 We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.
 

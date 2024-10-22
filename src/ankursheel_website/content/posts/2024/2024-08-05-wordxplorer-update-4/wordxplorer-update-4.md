@@ -1,15 +1,15 @@
 ---
-title: "WordWhiz Update #4"
-excerpt: "WordWhiz Update 4 adds deterministic levels and fireworks"
+title: "WordXplorer Update #4"
+excerpt: "WordXplorer Update 4 adds deterministic levels and fireworks"
 coverImage: "./new_game_screen.jpg"
 category: "project updates"
 tags:
   - "project updates"
-  - "wordwhiz"
+  - "wordxplorer"
 
 ---
 
-You can see all the related updates [here](/tags/wordwhiz)
+You can see all the related updates [here](/tags/wordxplorer)
 
 It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.
 
@@ -17,7 +17,7 @@ It's been a while since the last update, and I wanted to tell you what's been ha
 
 The partnership that I had for the first game ended. This meant I had to setup new accounts for various third-party services and redo some of the infrastructural work, which took some time.
 
-After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for WordWhiz. Thankfully, my cousin Manjari stepped in to help with the creative side of things.
+After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for wordxplorer. Thankfully, my cousin Manjari stepped in to help with the creative side of things.
 
 ## What's New
 

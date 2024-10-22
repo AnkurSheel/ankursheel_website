@@ -18,7 +18,7 @@ To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 
 | Name                                                                                                         | Category | Status   | Technology                 |
 |--------------------------------------------------------------------------------------------------------------|:--------:|----------|----------------------------|
-| [WordWhiz: Wordle for Kids](./personal-projects/word-whiz)                                                   |   Game   | Active   | C#, Unity3D                |
+| [WordXplorer: Guess the Word](./personal-projects/wordxplorer)                                               |   Game   | Active   | C#, Unity3D                |
 | [StatiqHelpers Nuget Package](./personal-projects/statiqhelpers)                                             |   Tool   | Active   | C#                         |
 | [xUnitHelpers Nuget Package](./personal-projects/xunithelpers)                                               |   Tool   | Active   | C#                         |
 | [Match 'N Spell Magic: A memory matching game](./personal-projects/match-spell-magic)                        |   Game   | Inactive | C#, Unity3D                |

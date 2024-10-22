@@ -47,8 +47,8 @@ I created a MVP for a 4 letter wordle clone. I shared a [form](https://tally.so/
 
 - Publish 3 blog posts on ankursheel.com
 - Publish 3 book summaries on discoveriesinbookland.com
-- Get WordWhiz in the hands of beta testers and get the 1st release out
-- Get 10 more responses to the WordWhiz form
+- Get WordXplorer in the hands of beta testers and get the 1st release out
+- Get 10 more responses to the WordXplorer form
 - Lose 5 kgs
 - 25 consecutive pushups
 - 50 consecutive squats

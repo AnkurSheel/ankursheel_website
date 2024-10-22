@@ -243,3 +243,15 @@ from = "/blog/merchants-using-stripe-decline-credit-cards"
 to = "/blog/merchants-stripe-decline-credit-cards"
 status = 301
 force = false
+
+[[redirects]]
+from = "/blog/wordwhiz-*"
+to = "/blog/wordexplorer-:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/tags/wordwhiz/"
+to = "/tags/wordxplorer/"
+status = 301
+force = false

@@ -1,15 +1,15 @@
 ---
-title: "WordWhiz Update #5"
-excerpt: "WordWhiz Update 5 tweaks the UI to make for a better experience"
+title: "WordXplorer Update #5"
+excerpt: "WordXplorer Update 5 tweaks the UI to make for a better experience"
 coverImage: "./new_game_screen.jpg"
 category: "project updates"
 tags:
   - "project updates"
-  - "wordwhiz"
+  - "wordxplorer"
 
 ---
 
-You can see all the related updates [here](/tags/wordwhiz)
+You can see all the related updates [here](/tags/wordxplorer)
 
 Here's whats new since the last update
 
