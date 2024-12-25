@@ -133,8 +133,8 @@
 <p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
 <p>Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!&quot;</p>
 <h2 id="new-name-and-icon">New Name and Icon</h2>
-<p>The name of the game has been updated from wordxplorer to WordExplorer.</p>
-<p>We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordExplorer.</p>
+<p>The name of the game has been updated from wordwhiz to WordXplorer.</p>
+<p>We’ve replaced the generic grey boxes with a vibrant, colorful icon that better reflects the fun and educational nature of WordXplorer.</p>
 <p><img src="/assets/images/posts/wordxplorer-update-6/app_icon.png" alt="App_Icon" /></p>
 <h2 id="bugfixes">Bugfixes</h2>
 <p>Kids are great testers; they always manage to do things you’d never expect. So, what did they discover this time?</p>
@@ -183,8 +183,10 @@
 <hr />
 <h2 id="playable-build">Playable Build</h2>
 <p>We’re excited for you to test out the <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a>. Share your feedback, and if you want the full experience, just ask for a TestFlight invite—I’ll send it over right away!. 😊</p>
-<p>Know someone who’d love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them—they’ll thank you!! ✨</p>
-<p>Does your child have a favourite word they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!</p>
+<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
+</a>
+<p>Does your child have a favourite word they’d love to see in WordXplorer? Let me know, and I’ll do my best to add it to the game!</p>
 <p>Thank you for being a part of this journey with me! I’m eager to hear your thoughts and feedback. Stay tuned for more updates!</p>
 
 

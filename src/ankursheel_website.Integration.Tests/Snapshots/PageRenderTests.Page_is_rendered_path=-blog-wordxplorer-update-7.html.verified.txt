@@ -120,7 +120,7 @@
         <p class="mr-4">Published on <time datetime="2024-10-22">Oct 22, 2024</time></p>
         <p class="mr-4">Last Updated on <time datetime="2024-10-22">Oct 22, 2024</time></p>
         <p>
-            Estimated Reading Time: <span  class="font-bold">3 min</span>
+            Estimated Reading Time: <span  class="font-bold">2 min</span>
         </p>
     </div>
 
@@ -168,8 +168,10 @@
 <h2 id="whats-next">🚀 What’s Next</h2>
 <p>With a hard deadline in sight, we’re focused on adding those final touches to the game. We’re also building out the concept of theming levels into the gameplay to ensure a smooth experience for launch day. I am also trying to get in the Apple Small Business program to reduce the percentage of commission that they charge.</p>
 <hr />
-<p>Do you know someone who’d love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them—they’ll thank you!! ✨</p>
-<p>Does your child have a favourite four-letter food they’d love to see in WordExplorer? Let me know, and I’ll do my best to add it to the game!</p>
+<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
+</a>
+<p>Does your child have a favourite four-letter food they’d love to see in WordXplorer? Let me know, and I’ll do my best to add it to the game!</p>
 <p>Thank you for joining us on this journey. I can’t wait for you to dive into the game and share your thoughts!</p>
 
 

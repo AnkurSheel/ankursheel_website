@@ -141,7 +141,9 @@
 </div>
 <h2 id="next-up">Next Up</h2>
 <p>Add to TestFlight for iPhone Beta Users</p>
-<p>I encourage you to spread the word and share the excitement with fellow parents and educators. They can join the wordxplorer magic by filling out this <a href="https://tally.so/r/wverVQ">form</a>.</p>
+<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
+</a>
 
 
 

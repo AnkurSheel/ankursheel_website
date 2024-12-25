@@ -171,8 +171,10 @@
 <p>To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out <a href="/assets/downloads/Privacy_Policy_WordXplore.pdf" target="\_blank">here</a></p>
 <hr />
 <h2 id="playable-build">Playable Build</h2>
-<p>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊</p>
-<p>Do you know someone who would love to try the game before its official release? Share this <a href="https://tally.so/r/wverVQ">form</a> with them! ✨</p>
+<p>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊</p>
+<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
+</a>
 <p>Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!</p>
 <p>Thank you all for your support and patience. Stay tuned for more updates!</p>
 

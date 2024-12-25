@@ -113,7 +113,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/wordxplorer-update-7" class="text-center prose-2xl mb-4">WordXplorer Update #7</a>
-        <div class="font-semibold text-center">3 min</div>
+        <div class="font-semibold text-center">2 min</div>
         <p>
             WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.
         </p>

@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;wordxplorer&quot;</title>
+<title>Ankur Sheel</title>
 <meta charset="utf-8"/>
 
 
@@ -12,18 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/wordxplorer"/>   
-<meta itemProp="name" content="Posts tagged as &quot;wordxplorer&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/wordxplorer"/>   
+<meta itemProp="name" content="Ankur Sheel"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/wordxplorer"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/wordxplorer"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;wordxplorer&quot;"/>
+<meta property="og:title" content="Ankur Sheel"/>
 <meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;wordxplorer&quot;"/>
+<meta name="twitter:title" content="Ankur Sheel"/>
 <meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -105,87 +110,24 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;wordxplorer&quot;</h1>
+    <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-7" class="text-center prose-2xl mb-4">WordXplorer Update #7</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.
-        </p>
-            <a href="/blog/wordxplorer-update-7" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
+            <p>WordXplorer is an exciting word puzzle game designed to helps kids(aged 5 and up) develop early literacy skills and encourage critical thinking through a wordle like game.</p>
+<ul>
+<li>Kids have seven chances per level to guess the right four-letter word. This provides ample opportunities to learn from mistakes, reinforcing word recognition and problem-solving skills while keeping the game fun and engaging.</li>
+<li>All words and levels are carefully selected to be age-appropriate and beneficial, ensuring a safe and enriching experience for your child.</li>
+<li>The game is designed to be played offline, making it perfect for long car rides, waiting rooms, or any time your child needs a quiet activity.</li>
+</ul>
+<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
+</a>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/bAtj9bAYVS0" title="Gameplay Video" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
 </div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-6" class="text-center prose-2xl mb-4">WordXplorer Update #6</a>
-        <div class="font-semibold text-center">4 min</div>
-        <p>
-            New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!
-        </p>
-            <a href="/blog/wordxplorer-update-6" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-5" class="text-center prose-2xl mb-4">WordXplorer Update #5</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 5 tweaks the UI to make for a better experience
-        </p>
-            <a href="/blog/wordxplorer-update-5" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-4" class="text-center prose-2xl mb-4">WordXplorer Update #4</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            WordXplorer Update 4 adds deterministic levels and fireworks
-        </p>
-            <a href="/blog/wordxplorer-update-4" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-3" class="text-center prose-2xl mb-4">WordXplorer Update #3</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 3 adds a help button and 100 words
-        </p>
-            <a href="/blog/wordxplorer-update-3" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-2" class="text-center prose-2xl mb-4">WordXplorer Update #2</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 2 updates the colors and adds a new instruction page
-        </p>
-            <a href="/blog/wordxplorer-update-2" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-1" class="text-center prose-2xl mb-4">WordXplorer Update #1</a>
-        <div class="font-semibold text-center">0 min</div>
-        <p>
-            WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion
-        </p>
-            <a href="/blog/wordxplorer-update-1" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
+<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
+</a>
 
         </article>
     </div>
