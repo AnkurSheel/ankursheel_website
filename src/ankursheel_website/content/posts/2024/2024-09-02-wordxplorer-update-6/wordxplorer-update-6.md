@@ -81,7 +81,7 @@ We’re also contemplating theming the words in the game. Two themes we’re con
 
 We’re excited for you to test out the [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/). Share your feedback, and if you want the full experience, just ask for a TestFlight invite—I’ll send it over right away!. 😊
 
-Know someone who’d love to try the game before its official release? Share this [form](https://tally.so/r/wverVQ) with them—they’ll thank you!! ✨
+<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 
 Does your child have a favourite word they’d love to see in WordXplorer? Let me know, and I’ll do my best to add it to the game!
 

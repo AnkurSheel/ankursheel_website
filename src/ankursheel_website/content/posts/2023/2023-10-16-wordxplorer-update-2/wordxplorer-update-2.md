@@ -34,4 +34,4 @@ I have added a new instructions page at the start of the game for people who are
 - A public Trello board for the roadmap, so beta testers can vote on what they would like to see next.
 - More Words
 
-I encourage you to spread the word and share the excitement with fellow parents and educators who would love to join in on the magic. Please share the [link to the form](https://tally.so/r/wverVQ) ✨
+<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>

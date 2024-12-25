@@ -50,7 +50,7 @@ For those who didn’t want to install TestFlight or were not on an Apple device
 
 Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think about the game so far.
 
-Do you know someone who would love to try the game before its official release? Share this [form](https://tally.so/r/wverVQ) with them! ✨
+<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 
 Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!
 

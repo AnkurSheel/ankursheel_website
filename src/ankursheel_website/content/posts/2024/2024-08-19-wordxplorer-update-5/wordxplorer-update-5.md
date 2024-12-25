@@ -43,9 +43,9 @@ To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m
 
 ## Playable Build
 
-Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊
+Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊
 
-Do you know someone who would love to try the game before its official release? Share this [form](https://tally.so/r/wverVQ) with them! ✨
+<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 
 Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!
 

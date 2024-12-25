@@ -26,4 +26,4 @@ After completing a level, you can play another level with a randomly selected wo
 
 Add to TestFlight for iPhone Beta Users
 
-I encourage you to spread the word and share the excitement with fellow parents and educators. They can join the wordxplorer magic by filling out this [form](https://tally.so/r/wverVQ).
+<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>

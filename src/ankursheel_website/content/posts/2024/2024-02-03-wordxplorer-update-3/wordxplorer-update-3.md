@@ -29,6 +29,8 @@ Your voice matters! Check out the new [public roadmap](https://changemap.co/tran
 
 ## 🔮 What's Next
 
-- This marks the final free version. We will soon be on the app store as a paid game. If there is someone you know who would love to try the game before that, please share the link to the [form](https://tally.so/r/wverVQ) ✨
+- This marks the final free version. We will soon be on the app store as a paid game.
+
+<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 
 Does your child have a favorite word they would like to see in the game? Let me know
