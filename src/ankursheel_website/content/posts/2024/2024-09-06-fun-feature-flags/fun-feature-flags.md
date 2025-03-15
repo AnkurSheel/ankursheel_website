@@ -19,7 +19,6 @@ _**Note**: This is loosely based on a presentation I had given at FirstAML._
 
 ![Flags](./fun-with-flags.jpg)
 
-
 ## Other Approaches
 
 Before diving into feature flags, let’s look at some ~~traditional~~ ahem alternative approaches I’ve seen teams use.
@@ -34,15 +33,13 @@ This feature requires changes to the frontend, backend, and database and can be 
 4. Add an audit trail for the updates.
 5. Update the backend to return the new title.
 6. Update the frontend to display the new title.
-7. Update the FE to allow users to edit the title.
+7. Update the frontend to allow users to edit the title.
 8. Add validation to the backend to ensure the new title is valid.
 9. Add validation to the frontend to ensure the new title is valid.
 
 ### Approach 1: Feature Branches
 
-A long, long time ago, when SVN was a thing (and even much later) most teams used **Feature Branches
-** to manage new features. Typically, each feature would be developed on a separate branch, tested, and then merged into the
-`main` branch.
+A long, long time ago, when SVN was a thing (and even much later) most teams used **Feature Branches** to manage new features. Typically, each feature would be developed on a separate branch, tested, and then merged into the `main` branch.
 
 In our example, you would create a branch for the new title feature, and each task would be developed on this branch. Once all tasks are complete, the branch would be merged into
 `main`.
@@ -51,7 +48,7 @@ In our example, you would create a branch for the new title feature, and each ta
 
 Feature branches were popular because they were straightforward to use and possibly because that was the best we had at that time. They still work well for small-scale projects.
 
-However, in larger teams, feature branches can create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.
+However, in larger teams, feature branches create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.
 
 Here are some other downsides:
 
@@ -69,29 +66,23 @@ Most teams I know start by using feature branches when they are just 1 or 2 deve
 
 An evolution of feature branches is **Git Flow**, a branching model I’ve also used with success for certain projects.
 
-Git Flow uses two main branches (`main` and `develop`). Feature branches are created off
-`develop`, and once a feature is stable, it is merged into `develop`. When `develop` is stable, it is merged into
-`main`, which is always production-ready. A `release` branch is created from `main` for each release and
-`hotfix` branches are created to fix production issues.
+Git Flow uses two main branches (`main` and `develop`). Feature branches are created off `develop`, and once a feature is stable, it is merged into `develop`. When `develop` is stable, it is merged into `main`, which is always production-ready. A `release` branch is created from `main` for each release and `hotfix` branches are created to fix production issues.
 
-In our example, you would create one or more feature branches off
-`develop` for the new title feature. Once the feature is complete, it would be merged into `develop`. When
-`develop` is stable, it would be merged into `main`.
+In our example, you would create one or more feature branches off `develop` for the new title feature. Once the feature is complete, it would be merged into `develop`. When `develop` is stable and we would want a new release, it would be merged into `main`.
 
 ![Git Flow](./git-flow.jpg)
 
 Git Flow offers several advantages compared to Feature Branches.
 
 - It ensures the main branch remains stable and production-ready, aiding in scheduled release cycles.
-- It supports different versions, useful for desktop and mobile apps requiring hotfixes or patches
+- It supports different versions, useful for desktop and mobile apps requiring hotfixes or patches.
 - It works well for Waterfall or Waterfall-Pretending-to-be-Agile methodologies.
 
 But it’s not without its downsides.
 
 - Merge conflicts can still occur in the `develop` branch.
 - Multiple features might be coupled together, preventing the release of any feature until all are complete.
-- Continuous Deployment (CD) becomes challenging as it requires all features in the
-  `develop` branch to be stable before merging into `main`.
+- Continuous Deployment (CD) becomes challenging as it requires all features in the `develop` branch to be stable before merging into `main`.
 
 In my experience, Git Flow is less effective for SaaS and applications where supporting older versions isn’t necessary.
 
@@ -164,8 +155,7 @@ Here’s a basic config example in JSON:
 }
 ```
 
-Having a JSON configuration file per environment, allows you to define and manage feature flags across different environments. By toggling the
-`enabled` status, you can control feature visibility and rollout without redeploying code.
+Having a JSON configuration file per environment, allows you to define and manage feature flags across different environments. By toggling the `enabled` status, you can control feature visibility and rollout without redeploying code.
 
 Initially, the flag would be off in all environments - dev, QA and prod. This allows you to develop the feature in isolation.
 
@@ -191,8 +181,7 @@ After thorough testing, you can activate the feature flag in production. The fea
 
 Finally, after the feature has been successfully deployed, and you’re confident it’s stable, it’s important to remove the feature flag and any associated code to prevent technical debt.
 
-In our example, you would create a feature flag for the new title feature. Each task would be developed behind a feature flag in isolated branches. As each task is completed, it would be merged into the
-`main` branch. Once all tasks are complete, the feature flag would be turned on in the test environment for QA testing. After thorough testing, the feature flag would be activated in production, making the feature live.
+In our example, you would create a feature flag for the new title feature. Each task would be developed behind a feature flag in isolated branches. As each task is completed, it would be merged into the `main` branch. Once all tasks are complete, the feature flag would be turned on in the test environment for QA testing. After thorough testing, the feature flag would be activated in production, making the feature live.
 
 ### Best Practices with Feature Flags
 
@@ -204,8 +193,7 @@ In our example, you would create a feature flag for the new title feature. Each 
 - Allow turning flags on/off using a FE widget tied to a user.
 - Consider creating tools to manage feature flags effectively. Automation can help with flag updates and removal.
     - A widget that allows a developer/QA to toggle flags on/off just for themselves in dev/test environments is immensely useful.
-  - _At FirstAML, I developed an
-    open-source [helper app that simplified updating feature flag files from the console](https://github.com/AnkurSheel/FeatureFlagHelper)._
+    - _At FirstAML, I developed an open-source [helper app that simplified updating feature flag files from the console](https://github.com/AnkurSheel/FeatureFlagHelper)._
 - Abstract the feature flag logic from the rest of the codebase to simplify future changes
 
 ### Removal Strategies

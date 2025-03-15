@@ -1,6 +1,6 @@
 ---
 title: "Cleaning Up Unnecessary Remote-Tracking References"
-excerpt: "git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository"
+excerpt: "git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository"
 category: "programming"
 tags:
   - "git"
@@ -21,8 +21,8 @@ To get the unique commit hashes of those branches, execute the following command
 git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
 ```
 
-_Note 1: I’m assuming the **origin** is the name of the upstream_
-_Note 2: Replace **_origin/main_**, **_origin/my-branch-1_**, and **_origin/my-branch-2_** with the actual branch names_
+_Note 1: I’m assuming the **origin** is the name of the upstream_.
+_Note 2: Replace **_origin/main_**, **_origin/my-branch-1_**, and **_origin/my-branch-2_** with the actual branch names_.
 
 The `git rev-parse` command translates human-readable branch names into SHA-1 hashes which are the commit identifiers.
 

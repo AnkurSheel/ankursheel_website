@@ -23,9 +23,9 @@ Part 1 of this series covers the one-time setup that you need for setting up the
 
 ## Install Ruby
 
-- Install Ruby from [here](https://rubyinstaller.org/downloads/)
+- Install [Ruby](https://rubyinstaller.org/downloads/)
 - Verify the installation by running `ruby -v`.
-- Install _Bundler_ by running `gem install bundler`
+- Install _Bundler_ by running `gem install bundler`.
 
 ## Setup Codesigning with GitHub Actions
 

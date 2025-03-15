@@ -17,7 +17,7 @@ In Part 3, we will create a reusable workflow to build the Unity project for var
 
 The jobs in this workflow will run on a Linux VM.
 
-Why Linux?
+**Why Linux?**
 
 Its the cheapest box. As we will see in later posts, different platforms need a different OS for deployment. I am looking at you iOS.
 
@@ -45,7 +45,7 @@ on:
         value: ${{ jobs.buildWithLinux.outputs.buildVersion }} 
 ```
 
-- **on**: ISpecify the events that trigger the workflow.
+- **on**: Specify the events that trigger the workflow.
     - **workflow_call**: Set the workflow to be called from other workflows.
     - **inputs**: Values passed in from the caller workflow .
         - **platform**: Platform for which the Unity project should be built.
@@ -78,6 +78,7 @@ jobs:
           restore-keys: |  
             Library-build-${{ inputs.platform }}
             Library-    
+
       - name: Build Unity Project  
         id: build  
         uses: game-ci/unity-builder@v4  

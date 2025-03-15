@@ -77,4 +77,4 @@ Navigating 1:1 meetings might seem daunting initially, but effective preparation
 
 We're all on a learning journey, and your experiences and tips are invaluable. Have you discovered other effective ways to prepare for 1:1s? Are there additional questions that have proven helpful for you? How do you ensure you follow up on action items?
 
-Share your experiences and insights in the comments below. Your wisdom could be just what I or another reader needs to excel in their 1:1 meetings!
+Share your experiences and insights in the comments below.
