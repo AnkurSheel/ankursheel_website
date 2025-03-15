@@ -105,7 +105,7 @@ Next, we have a series of steps:
 2. **Checkout Repository**: Checks out the code repository.
 3. **Download WebGL Artifact**: Get the **_build-WebGL_** artifact produced by the `buildForWebGL` job and put it into the **_build/WebGL_** directory.
 4. **Deploy to GitHub Pages**: Deploy the contents of the **_build/WebGL/WebGL_** folder to GitHub Pages.
-5. **Cleanup to avoid storage limit**: Delete the **_build-WebGL-** artifact.
+5. **Cleanup to avoid storage limit**: Delete the **_build-WebGL_** artifact.
 
 ## Setting up Github Pages
 
