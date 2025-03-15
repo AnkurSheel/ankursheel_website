@@ -6,7 +6,7 @@ tags:
   - "project updates"
   - "wordxplorer"
 coverImage: "./help-button.jpg"
-
+updatedOnDate: 2024-12-26
 ---
 
 You can see all the related updates [here](/tags/wordxplorer)
@@ -30,6 +30,8 @@ Your voice matters! Check out the new [public roadmap](https://changemap.co/tran
 ## 🔮 What's Next
 
 - This marks the final free version. We will soon be on the app store as a paid game.
+
+**_Update 26th December 2024:_** You can now download the game.
 
 <?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 

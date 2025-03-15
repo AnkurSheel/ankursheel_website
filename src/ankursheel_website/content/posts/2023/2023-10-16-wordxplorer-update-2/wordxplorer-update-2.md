@@ -6,6 +6,7 @@ category: "project updates"
 tags:
   - "project updates"
   - "wordxplorer"
+updatedOnDate: 2024-12-26
 
 ---
 
@@ -33,5 +34,7 @@ I have added a new instructions page at the start of the game for people who are
 
 - A public Trello board for the roadmap, so beta testers can vote on what they would like to see next.
 - More Words
+
+**_Update 26th December 2024:_** You can now download the game.
 
 <?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>

@@ -5,6 +5,7 @@ category: "project updates"
 tags:
   - "project updates"
   - "wordxplorer"
+updatedOnDate: 2024-12-26
 
 ---
 
@@ -25,5 +26,8 @@ After completing a level, you can play another level with a randomly selected wo
 ## Next Up
 
 Add to TestFlight for iPhone Beta Users
+
+**_Update 26th December 2024:_** You can now download the game.
+
 
 <?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>

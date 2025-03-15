@@ -6,6 +6,7 @@ category: "project updates"
 tags:
   - "project updates"
   - "wordxplorer"
+updatedOnDate: 2024-12-26
 
 ---
 
@@ -68,6 +69,11 @@ This is your final opportunity to check out the latest update to our [Playable W
 With a hard deadline in sight, we’re focused on adding those final touches to the game. We’re also building out the concept of theming levels into the gameplay to ensure a smooth experience for launch day. I am also trying to get in the Apple Small Business program to reduce the percentage of commission that they charge.
 
 ---
+
+Know someone who’d love to try the game before its official release? ~~Share this [form](https://tally.so/r/wverVQ) with
+them—they’ll thank you!! ✨~~
+
+**_Update 26th December 2024:_** You can now download the game.
 
 <?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 

@@ -6,6 +6,7 @@ category: "project updates"
 tags:
   - "project updates"
   - "wordxplorer"
+updatedOnDate: 2024-12-26
 
 ---
 
@@ -43,7 +44,10 @@ To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m
 
 ## Playable Build
 
-Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊
+~~Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think
+about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊~~
+
+**_Update 26th December 2024:_** You can now download the game.
 
 <?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 

@@ -6,6 +6,7 @@ category: "project updates"
 tags:
   - "project updates"
   - "wordxplorer"
+updatedOnDate: 2024-12-26
 
 ---
 
@@ -48,7 +49,10 @@ For those who didn’t want to install TestFlight or were not on an Apple device
 
 ---
 
-Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think about the game so far.
+~~Test it out by going to [Playable Web Build](https://golden-pony-d2c3f0.netlify.app/) and let me know what you think
+about the game so far.~~
+
+**_Update 26th December 2024:_** You can now download the game.
 
 <?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
 
