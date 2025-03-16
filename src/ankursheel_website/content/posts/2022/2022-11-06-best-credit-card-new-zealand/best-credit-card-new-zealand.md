@@ -6,7 +6,7 @@ category: "opinion"
 tags:
 
   - "finance"
-
+updatedOnDate: "2025-01-05" 
 ---
 
 <!-- https://unsplash.com/photos/RJQE64NmC_o -->
@@ -78,13 +78,15 @@ You must spend at least NZD 26,600 annually to cover the card fee.
 
 You will get back 0.75 cents for every additional dollar you spend.
 
-### American Express Platinum Card
+### American Express Platinum Card~~
 
-You must spend at least NZD 93,750 annually to cover the card fee.
+~~You must spend at least NZD 93,750 annually to cover the card fee.~~
 
-You will get back 1.33 cents for every additional dollar you spend.
+~~You will get back 1.33 cents for every additional dollar you spend.~~
 
-_However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee._
+~~_However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee._~~
+
+**_Note:_** The American Express Platinum Card is no longer available in New Zealand.
 
 ## My Recommendation
 
