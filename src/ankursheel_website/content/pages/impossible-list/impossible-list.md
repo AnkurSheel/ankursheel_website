@@ -106,7 +106,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   Go Para Gliding
     -   Go Snorkeling
     -   Go Scuba Diving
-    -   Go Sky Diving
+    -   ~~Go Sky Diving~~ (Queenstown, New Zealand, 2024)
     -   ~~Go white water rafting~~ (Rishikesh, 2008)
     -   Go Zorbing
     -   Go ZipLining in a cave
@@ -129,7 +129,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     -   Drive the Great Ocean Road, Australia
     -   Scuba Dive in the Great Barrier Reef, Australia
     -   Snorkel in the Great Barrier Reef, Australia
-    -   Sky Dive in New Zealand
+    -   ~~Sky Dive in New Zealand~~ (Queenstown, New Zealand, 2024)
     -   Zorbing in New Zealand
 -   South America
 
@@ -183,7 +183,7 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
 -   Write one blog post every week for ~~1~~ 3 years
 -   Write three blog post every week for ~~1~~ 3 years
 -   Blog 365 days in a row
--   Start a news letter
+-   Start a newsletter
 -   ~~Write 5 books summaries.~~
     -   ~~Write 10 books summaries.~~
     -   Write 20 books summaries. **Current Progress: 12**. Check out the summaries at [Discoveries in bookland](https://www.discoveriesinbookland.com/)
@@ -196,12 +196,13 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     - ~~Get 100 visits in a day.~~ (March 2020)
     - ~~Get 200 visits in a day.~~ (February 2022)
     - Get 500 visits in a day.
--   ~~Make my first dollar online.~~
-    -   ~~Make 10 dollars online.~~
+-   ~~Make my first dollar online.~~ (December 2024)
+    -   ~~Make 10 dollars online.~~ (January 2025)
     -   Make 100 dollars online.
 -   Start my own company
     -   Game company
 - ~~Build an application~~ [Match 'N Spell Magic on AppStore](https://apps.apple.com/app/match-n-spell-magic/id1661527186)(June 2023)
-    - that someone pays for
+    - ~~that someone pays for~~ [WordXplorer: Guess the Word](https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783) (November 2024)
+    -  that has 100 downloads
 
 What is on your bucket/impossible list?
