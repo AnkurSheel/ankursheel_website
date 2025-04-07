@@ -31,13 +31,13 @@ SELECT *
 FROM product        
 WHERE category = 1        
 ORDER BY id         
-LIMIT @pageSize         
-OFFSET @Offset;        
+LIMIT $pageSize         
+OFFSET $offset;        
 ```
 
 The `LIMIT` clause defines how many rows to return, while `OFFSET` skips a specified number of rows. `ORDER BY` ensures results are consistent.
 
-Typically, `@pageSize` and `@Offset` are set based on user input or application logic to control pagination dynamically. For example, if `@pageSize` is 100 and `@Offset` is 200, the query retrieves rows 200-300.
+Typically, `pageSize` and `offset` are set based on user input or application logic to control pagination dynamically. For example, if `pageSize` is 100 and `offset` is 200, the query retrieves rows 200-300.
 
 ### Advantages
 
@@ -64,10 +64,10 @@ Here's how you might implement cursor-based pagination:
 ```sql
 SELECT *         
 FROM product         
-WHERE id > @lastId        
+WHERE id > $lastId        
     AND category = 1        
 ORDER BY id         
-LIMIT @pageSize;        
+LIMIT $pageSize;        
 ```
 
 Notice that, unlike the previous example, this query doesn't use `OFFSET`. Instead, we keep track of the `id` of the last record retrieved from the previous page and use it in the `WHERE` clause to fetch the next set of records.
@@ -107,16 +107,16 @@ Here's an updated query:
 ```sql
 SELECT *         
 FROM product         
-WHERE id > @lastId        
-    AND id <= @clampId        
+WHERE id > $lastId        
+    AND id <= $clampId        
     AND category = 1        
 ORDER BY id         
-LIMIT @pageSize;        
+LIMIT $pageSize;        
 ```
 
 The `clampId` serves as an upper boundary, calculated as `lastId` plus a predefined range, to limit the number of rows scanned per query execution.
 
-For instance, if `@lastId` is 1000 and the scan limit is 10,000 rows, set `@clampId` to 11,000. The `LIMIT` remains 1,000, ensuring immediate return if 1,000 matches are found or scanning at most 10,000 rows.
+For instance, if `lastId` is 1000 and the scan limit is 10,000 rows, set `clampId` to 11,000. The `LIMIT` remains 1,000, ensuring immediate return if 1,000 matches are found or scanning at most 10,000 rows.
 
 By clamping the range, we can significantly reduce query execution time, making it feasible to handle large datasets without overwhelming the system.
 
@@ -127,10 +127,10 @@ While in the examples, the `id` is assumed to be numeric and sequential, it does
 ```sql
 SELECT *       
 FROM product      
-WHERE (last_updated_at < @lastUpdatedAt)      
- OR (last_updated_at = @lastUpdatedAt AND last_id > @lastId)      
+WHERE (last_updated_at < $lastUpdatedAt)      
+ OR (last_updated_at = $lastUpdatedAt AND last_id > $lastId)      
 ORDER BY last_updated_at DESC, last_id      
-LIMIT @pageSize;      
+LIMIT $pageSize;      
 ```
 
 ## Conclusion
