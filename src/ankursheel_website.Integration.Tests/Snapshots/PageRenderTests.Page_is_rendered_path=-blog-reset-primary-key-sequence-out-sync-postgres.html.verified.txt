@@ -209,13 +209,13 @@
                 <a href="query-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a>
             </li>
             <li>
+                <a href="offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a>
+            </li>
+            <li>
                 <a href="setup-project-properties-source-generators">How to set up the project properties for Source Generators</a>
             </li>
             <li>
                 <a href="run-sql-server-docker-container">How to run SQL Server in a Docker container</a>
-            </li>
-            <li>
-                <a href="override-netlify-build-config">How to override the netlify build config</a>
             </li>
     </ul>
 </aside>

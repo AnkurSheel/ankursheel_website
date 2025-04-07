@@ -111,7 +111,7 @@
             
 
 
-<h2>All Categories (214)</h2>
+<h2>All Categories (215)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -127,6 +127,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-7">WordXplorer Update #7</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -137,9 +140,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-5">WordXplorer Update #5</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-4">WordXplorer Update #4</a>
         </li>
 </ul>
 
@@ -236,8 +236,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (74)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (75)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a> - <time class="prose-sm" datetime="25-04-07">April 07, 2025</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a> - <time class="prose-sm" datetime="24-09-06">September 06, 2024</time>
             </li>

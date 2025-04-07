@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html><html lang="en" class="min-h-screen"><head>
     
 
-<title>Verifying Method Calls within a class using Mockito Spies</title>
+<title>Offset vs Cursor Based Pagination</title>
 <meta charset="utf-8">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="How to remove the duplication of test scenarios when one method calls another within the same class">
+<meta name="description" content="Understand SQL pagination with practical examples, comparing offset and cursor methods to manage datasets efficiently.">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies">   
-<meta itemprop="name" content="Verifying Method Calls within a class using Mockito Spies">
-<meta itemprop="description" content="How to remove the duplication of test scenarios when one method calls another within the same class">
-    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/verifying-method-calls-class-mockito-spies-facebook.png">
-<meta property="og:url" content="https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies">
+    <link rel="canonical" href="https://www.ankursheel.com/blog/offset-vs-cursor-based-pagination">   
+<meta itemprop="name" content="Offset vs Cursor Based Pagination">
+<meta itemprop="description" content="Understand SQL pagination with practical examples, comparing offset and cursor methods to manage datasets efficiently.">
+    <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/offset-vs-cursor-based-pagination-facebook.png">
+<meta property="og:url" content="https://www.ankursheel.com/blog/offset-vs-cursor-based-pagination">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Verifying Method Calls within a class using Mockito Spies">
-<meta property="og:description" content="How to remove the duplication of test scenarios when one method calls another within the same class">
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/verifying-method-calls-class-mockito-spies-facebook.png">
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/verifying-method-calls-class-mockito-spies-facebook.png">
+<meta property="og:title" content="Offset vs Cursor Based Pagination">
+<meta property="og:description" content="Understand SQL pagination with practical examples, comparing offset and cursor methods to manage datasets efficiently.">
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/offset-vs-cursor-based-pagination-facebook.png">
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/offset-vs-cursor-based-pagination-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
-<meta name="twitter:title" content="Verifying Method Calls within a class using Mockito Spies">
-<meta name="twitter:description" content="How to remove the duplication of test scenarios when one method calls another within the same class">
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/verifying-method-calls-class-mockito-spies-twitter.png">
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/verifying-method-calls-class-mockito-spies-twitter.png">
+<meta name="twitter:title" content="Offset vs Cursor Based Pagination">
+<meta name="twitter:description" content="Understand SQL pagination with practical examples, comparing offset and cursor methods to manage datasets efficiently.">
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/offset-vs-cursor-based-pagination-twitter.png">
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/offset-vs-cursor-based-pagination-twitter.png">
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -107,80 +107,111 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Verifying Method Calls within a class using Mockito Spies</h1>
+    <h1 class="text-center">Offset vs Cursor Based Pagination</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
 
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2024-05-17">May 17, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-08-05">Aug 05, 2024</time></p>
+        <p class="mr-4">Published on <time datetime="2025-04-07">Apr 07, 2025</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2025-04-07">Apr 07, 2025</time></p>
         <p>
-            Estimated Reading Time: <span class="font-bold">2 min</span>
+            Estimated Reading Time: <span class="font-bold">5 min</span>
         </p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/testing" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">testing</a>
-            <a href="/tags/mockito" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">mockito</a>
+            <a href="/tags/sql" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">sql</a>
             <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
     </div>
 </div>
 
-<p>in order to get confidence, when one method calls another within the same class with just 1 or more additional parameters, we could write the same test for both the methods. This would lead to a lot of duplicated tests and a cluttered test suite.</p>
-<p>However, Mockito spies can help us in this scenario.</p>
-<h2 id="scenario">Scenario</h2>
-<p>You want to write tests for a class that contains two public methods, one of which is essentially overloading the other and calling it without adding any additional logic.</p>
-<p>Here's a simplified example to illustrate this:</p>
-<pre><code class="language-java hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Service</span> {
-    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getTotalPrice</span><span class="hljs-params">(<span class="hljs-type">int</span> quantity)</span> {
-        <span class="hljs-comment">// some other code like error checking, etc</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-number">5</span> * quantity;
-        
-    }
-
-    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getTotalPrice</span><span class="hljs-params">()</span> {
-        <span class="hljs-keyword">return</span> getTotalPrice(<span class="hljs-number">1</span>);
-    }
-}
+<h2 id="introduction">Introduction</h2>
+<p>SQL pagination helps manage large datasets by breaking them into smaller, more manageable chunks called 'pages.' It prevents overwhelming applications by retrieving data one page at a time, ensuring smoother performance and a better user experience.</p>
+<p>In this article, I'll discuss two primary SQL pagination methods—offset and cursor-based—and explore an advanced technique for efficiently handling large datasets, highlighting their specific use cases and benefits.</p>
+<p><img src="/assets/images/posts/offset-vs-cursor-based-pagination/cover.png" width="300" alt="A robot holding a book with turning pages, trying to find a specific page"></p>
+<h2 id="offset-pagination">Offset Pagination</h2>
+<p>Offset pagination involves skipping a specified number of rows and then taking a fixed number of rows, allowing for flexible data retrieval.</p>
+<h3 id="example">Example</h3>
+<p>Here's a typical query using offset pagination:</p>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>         
+<span class="hljs-keyword">FROM</span> product        
+<span class="hljs-keyword">WHERE</span> category <span class="hljs-operator">=</span> <span class="hljs-number">1</span>        
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> id         
+LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize         
+<span class="hljs-keyword">OFFSET</span> <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;<span class="hljs-keyword">Offset</span>;        
 </code></pre>
-<p>In the above example, the <code>getTotalPrice()</code> method without parameters calls the overloaded <code>getTotalPrice(int quantity)</code> method, supplying a default value.</p>
-<h2 id="enter-the-world-of-spies">Enter the World of Spies</h2>
-<p>Here's where Mockito spies come into the picture.</p>
-<p>A spy acts as a wrapper around a real object, allowing us to override specific methods with mock behaviour while leaving others intact. You can use this functionality to verify the invocation of an actual method on an object.</p>
-<p>Let's see how you can simplify your tests by using Mockito spies</p>
-<pre><code class="language-java hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyTests</span> {
-    &#<span class="hljs-number">64</span>;Test
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test</span><span class="hljs-params">()</span> {
-        <span class="hljs-type">Service</span> <span class="hljs-variable">spy</span> <span class="hljs-operator">=</span> Mockito.spy(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Service</span>());
-        spy.getTotalPrice();
-        verify(spy).getTotalPrice(<span class="hljs-number">1</span>);
-    }
-
-    <span class="hljs-comment">// more tests that test `getTotalPrice(int quantity)`</span>
-}
+<p>The <code>LIMIT</code> clause defines how many rows to return, while <code>OFFSET</code> skips a specified number of rows. <code>ORDER BY</code> ensures results are consistent.</p>
+<p>Typically, <code>&#64;pageSize</code> and <code>&#64;Offset</code> are set based on user input or application logic to control pagination dynamically. For example, if <code>&#64;pageSize</code> is 100 and <code>&#64;Offset</code> is 200, the query retrieves rows 200-300.</p>
+<h3 id="advantages">Advantages</h3>
+<p>Offset pagination allows you to jump directly to a specific set of records, which is useful for applications requiring quick access to specific data or &quot;go to page X&quot; functionality. For instance, you can easily access a specific range like 3000-3100.</p>
+<p>It is easier to implement, making it useful for smaller systems or static datasets like blog archives or product lists.</p>
+<h3 id="disadvantages">Disadvantages</h3>
+<p>Offset pagination requires scanning all preceding rows to find the starting point. This can be inefficient and slow as the dataset grows. Performance degrades with larger datasets, as scanning more rows leads to slower response times.</p>
+<p>For example, in a query like <code>SELECT * FROM product ORDER BY id LIMIT 100 OFFSET 100000</code>, Postgres scans and discards 100,000 rows even though only 100 are needed.</p>
+<p>While offset-based pagination is common in legacy systems, its utility in modern systems may be limited compared to cursor-based pagination.</p>
+<h2 id="cursor-based-pagination">Cursor-based Pagination</h2>
+<p>Unlike offset pagination, cursor-based pagination fetches results using a unique identifier (or a combination of columns), avoiding the need to skip rows.</p>
+<h3 id="example-1">Example</h3>
+<p>Here's how you might implement cursor-based pagination:</p>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>         
+<span class="hljs-keyword">FROM</span> product         
+<span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">&</span>gt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastId        
+    <span class="hljs-keyword">AND</span> category <span class="hljs-operator">=</span> <span class="hljs-number">1</span>        
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> id         
+LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize;        
 </code></pre>
-<p>Let's break this down:</p>
-<ol>
-<li><code>Service spy = Mockito.spy(new Service())</code>:  Create a spy object for <code>Service</code>.</li>
-<li><code>spy.getTotalPrice()</code>: Invoke the <code>getTotalPrice</code> method on the spy object.</li>
-<li><code>verify(spy).getTotalPrice(1)</code>: Verify that the overloaded method is invoked on the spy object.</li>
-</ol>
-<p>If the overloaded method is not called, then the test would fail, alerting us to a potential issue.</p>
+<p>Notice that, unlike the previous example, this query doesn't use <code>OFFSET</code>. Instead, we keep track of the <code>id</code> of the last record retrieved from the previous page and use it in the <code>WHERE</code> clause to fetch the next set of records.</p>
+<p>To maintain reliable pagination, it's essential to ensure the cursor column is unique and immutable, as changes could disrupt the order of results. A good candidate is a primary key ID or a <code>CreatedTimestamp</code> column.</p>
+<h3 id="advantages-1">Advantages</h3>
+<p>Cursor-based pagination is generally more efficient, as it avoids scanning and discarding rows. Instead, it directly jumps to records based on the cursor value. This approach remains efficient even for large offsets because the database can quickly use an index on the cursor column to find the starting point.</p>
+<p>Cursor-based pagination provides stable results even if new records are inserted or deleted between page requests. Each page contains the expected set of records based on the cursor value.</p>
+<h3 id="disadvantages-1">Disadvantages</h3>
+<p>Cursor-based pagination requires sequential page traversal and is more complex to implement because you must track the cursor value in your application code. This might be less convenient for users who want to navigate directly to a specific page.</p>
+<p><em><strong>Note:</strong> However, we can avoid the need for sequential page traversal by using PageInfo/PageCursor in GraphQL.</em></p>
+<p>We need to be mindful of <a href="https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html">IDOR (Insecure Direct Object References)</a>. If IDs are sensitive, we should encrypt cursor values with a random salt.</p>
+<p>It can become quite complex if you need extra features like sorting on multiple columns, etc.</p>
+<h2 id="advanced-cursor-pagination-techniques">Advanced Cursor Pagination Techniques</h2>
+<p>When dealing with extremely large datasets, an advanced cursor-based technique can further optimise performance.</p>
+<p>In my experience using the basic cursor-based example on a table with 163 million rows, where only 300K rows met the <code>WHERE</code> clause criteria, the query timed out even with a <code>LIMIT</code> of 1000. This occurred because the query had to scan too many rows before finding 1000 that matched the criteria.</p>
+<p>Now, you might wonder why it would need to scan so many rows if you have an index. The index's benefit is that it lets the database quickly locate the starting point. Imagine that the first record is in row 1. Now, the second record is after 1 million rows. To reach the limit of 1000, at least 1 million rows will need to be scanned. Even though there is an index, it can (and probably will) result in a timeout because it requires scanning many non-matching rows to find the ones that match.</p>
+<p>In such scenarios, it's crucial to limit the number of rows scanned during each query execution. This can be achieved by adding a constraint that ensures efficient data retrieval, even if the <code>LIMIT</code> is not fully met.</p>
+<h3 id="example-2">Example</h3>
+<p>Here's an updated query:</p>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>         
+<span class="hljs-keyword">FROM</span> product         
+<span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">&</span>gt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastId        
+    <span class="hljs-keyword">AND</span> id <span class="hljs-operator">&</span>lt;<span class="hljs-operator">=</span> <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;clampId        
+    <span class="hljs-keyword">AND</span> category <span class="hljs-operator">=</span> <span class="hljs-number">1</span>        
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> id         
+LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize;        
+</code></pre>
+<p>The <code>clampId</code> serves as an upper boundary, calculated as <code>lastId</code> plus a predefined range, to limit the number of rows scanned per query execution.</p>
+<p>For instance, if <code>&#64;lastId</code> is 1000 and the scan limit is 10,000 rows, set <code>&#64;clampId</code> to 11,000. The <code>LIMIT</code> remains 1,000, ensuring immediate return if 1,000 matches are found or scanning at most 10,000 rows.</p>
+<p>By clamping the range, we can significantly reduce query execution time, making it feasible to handle large datasets without overwhelming the system.</p>
+<h3 id="using-non-sequential-identifiers">Using Non-sequential Identifiers</h3>
+<p>While in the examples, the <code>id</code> is assumed to be numeric and sequential, it doesn't need to be to implement cursor-based pagination. We can, for instance, combine multiple fields, e.g., <code>&lt;last_updated_at&gt;</code> for sorting and <code>&lt;last_id&gt;</code> as a UUID to get the last item on the current page.</p>
+<pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>       
+<span class="hljs-keyword">FROM</span> product      
+<span class="hljs-keyword">WHERE</span> (last_updated_at <span class="hljs-operator">&</span>lt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastUpdatedAt)      
+ <span class="hljs-keyword">OR</span> (last_updated_at <span class="hljs-operator">=</span> <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastUpdatedAt <span class="hljs-keyword">AND</span> last_id <span class="hljs-operator">&</span>gt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastId)      
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> last_updated_at <span class="hljs-keyword">DESC</span>, last_id      
+LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize;      
+</code></pre>
 <h2 id="conclusion">Conclusion</h2>
-<p>Testing every possible combination of method calls, not only consumes valuable time but also clutters your test suite with redundant tests.</p>
-<p>Mockito spies offer a solution to this problem, allowing you to verify method interactions directly, thus focusing on the behavior rather than the implementation.</p>
-<p>However, it's essential to use Mockito spies judiciously. Spies should primarily be used when you're testing a class's external behavior and its interactions with other classes or methods within itself. Overusing spies can lead to tests that are overly focused on the internal workings of a class, potentially making your tests brittle and less focused on the actual outcomes.</p>
-<p>Happy testing, and may your code always perform as intended, both now and in the future.</p>
+<p>Choosing the right pagination approach ensures optimal application performance and user satisfaction, regardless of dataset size.</p>
+<p>While offset pagination is simpler to implement, it suffers from significant performance degradation at scale. In contrast, cursor pagination maintains consistent performance regardless of page depth.</p>
+<p>However, offset-based pagination allows us to arbitrarily jump to any page. With cursor pagination, we have to traverse pages sequentially or use more complex techniques.</p>
+<p>The choice between these two approaches ultimately depends on your use case. Choose cursor pagination for high-performance needs with large datasets. Opt for offset pagination when dataset size is manageable, and random page navigation is required.</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies&amp;text=Verifying%20Method%20Calls%20within%20a%20class%20using%20Mockito%20Spies via @ankur_sheel.&amp;#xD;&amp;#xA;How%20to%20remove%20the%20duplication%20of%20test%20scenarios%20when%20one%20method%20calls%20another%20within%20the%20same%20class" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/offset-vs-cursor-based-pagination&amp;text=Offset%20vs%20Cursor%20Based%20Pagination via @ankur_sheel.&amp;#xD;&amp;#xA;Understand%20SQL%20pagination%20with%20practical%20examples%2C%20comparing%20offset%20and%20cursor%20methods%20to%20manage%20datasets%20efficiently." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/offset-vs-cursor-based-pagination" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
 <a class="inline-flex items-center flex-nowrap social-button bg-green-400" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel">
@@ -215,16 +246,16 @@
 
     <ul>
             <li>
-                <a href="approval-tests-xunit-theory-tests">How to use ApprovalTests with xUnit&#x27;s Theory attribute</a>
+                <a href="reset-primary-key-sequence-out-sync-postgres">How to reset the primary key sequence in Postgres</a>
             </li>
             <li>
-                <a href="offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a>
+                <a href="query-clause-dapper-npgsql">Dapper and NPGSql : Write a query with the IN operator</a>
+            </li>
+            <li>
+                <a href="verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
             </li>
             <li>
                 <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
-            </li>
-            <li>
-                <a href="echo-commands-they-are-executed-shell-script">How to echo commands as they are executed in a shell script</a>
             </li>
     </ul>
 </aside>

@@ -8,6 +8,93 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Offset vs Cursor Based Pagination</title>
+      <link>https://www.ankursheel.com/blog/offset-vs-cursor-based-pagination</link>
+      <description>Understand SQL pagination with practical examples, comparing offset and cursor methods to manage datasets efficiently.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/posts/offset-vs-cursor-based-pagination/cover.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/offset-vs-cursor-based-pagination</guid>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;SQL pagination helps manage large datasets by breaking them into smaller, more manageable chunks called 'pages.' It prevents overwhelming applications by retrieving data one page at a time, ensuring smoother performance and a better user experience.&lt;/p&gt;
+&lt;p&gt;In this article, I'll discuss two primary SQL pagination methods—offset and cursor-based—and explore an advanced technique for efficiently handling large datasets, highlighting their specific use cases and benefits.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/offset-vs-cursor-based-pagination/cover.png" width="300" alt="A robot holding a book with turning pages, trying to find a specific page"&gt;&lt;/p&gt;
+&lt;h2 id="offset-pagination"&gt;Offset Pagination&lt;/h2&gt;
+&lt;p&gt;Offset pagination involves skipping a specified number of rows and then taking a fixed number of rows, allowing for flexible data retrieval.&lt;/p&gt;
+&lt;h3 id="example"&gt;Example&lt;/h3&gt;
+&lt;p&gt;Here's a typical query using offset pagination:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sql"&gt;SELECT *         
+FROM product        
+WHERE category = 1        
+ORDER BY id         
+LIMIT @pageSize         
+OFFSET @Offset;        
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;LIMIT&lt;/code&gt; clause defines how many rows to return, while &lt;code&gt;OFFSET&lt;/code&gt; skips a specified number of rows. &lt;code&gt;ORDER BY&lt;/code&gt; ensures results are consistent.&lt;/p&gt;
+&lt;p&gt;Typically, &lt;code&gt;@pageSize&lt;/code&gt; and &lt;code&gt;@Offset&lt;/code&gt; are set based on user input or application logic to control pagination dynamically. For example, if &lt;code&gt;@pageSize&lt;/code&gt; is 100 and &lt;code&gt;@Offset&lt;/code&gt; is 200, the query retrieves rows 200-300.&lt;/p&gt;
+&lt;h3 id="advantages"&gt;Advantages&lt;/h3&gt;
+&lt;p&gt;Offset pagination allows you to jump directly to a specific set of records, which is useful for applications requiring quick access to specific data or "go to page X" functionality. For instance, you can easily access a specific range like 3000-3100.&lt;/p&gt;
+&lt;p&gt;It is easier to implement, making it useful for smaller systems or static datasets like blog archives or product lists.&lt;/p&gt;
+&lt;h3 id="disadvantages"&gt;Disadvantages&lt;/h3&gt;
+&lt;p&gt;Offset pagination requires scanning all preceding rows to find the starting point. This can be inefficient and slow as the dataset grows. Performance degrades with larger datasets, as scanning more rows leads to slower response times.&lt;/p&gt;
+&lt;p&gt;For example, in a query like &lt;code&gt;SELECT * FROM product ORDER BY id LIMIT 100 OFFSET 100000&lt;/code&gt;, Postgres scans and discards 100,000 rows even though only 100 are needed.&lt;/p&gt;
+&lt;p&gt;While offset-based pagination is common in legacy systems, its utility in modern systems may be limited compared to cursor-based pagination.&lt;/p&gt;
+&lt;h2 id="cursor-based-pagination"&gt;Cursor-based Pagination&lt;/h2&gt;
+&lt;p&gt;Unlike offset pagination, cursor-based pagination fetches results using a unique identifier (or a combination of columns), avoiding the need to skip rows.&lt;/p&gt;
+&lt;h3 id="example-1"&gt;Example&lt;/h3&gt;
+&lt;p&gt;Here's how you might implement cursor-based pagination:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sql"&gt;SELECT *         
+FROM product         
+WHERE id &amp;gt; @lastId        
+    AND category = 1        
+ORDER BY id         
+LIMIT @pageSize;        
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice that, unlike the previous example, this query doesn't use &lt;code&gt;OFFSET&lt;/code&gt;. Instead, we keep track of the &lt;code&gt;id&lt;/code&gt; of the last record retrieved from the previous page and use it in the &lt;code&gt;WHERE&lt;/code&gt; clause to fetch the next set of records.&lt;/p&gt;
+&lt;p&gt;To maintain reliable pagination, it's essential to ensure the cursor column is unique and immutable, as changes could disrupt the order of results. A good candidate is a primary key ID or a &lt;code&gt;CreatedTimestamp&lt;/code&gt; column.&lt;/p&gt;
+&lt;h3 id="advantages-1"&gt;Advantages&lt;/h3&gt;
+&lt;p&gt;Cursor-based pagination is generally more efficient, as it avoids scanning and discarding rows. Instead, it directly jumps to records based on the cursor value. This approach remains efficient even for large offsets because the database can quickly use an index on the cursor column to find the starting point.&lt;/p&gt;
+&lt;p&gt;Cursor-based pagination provides stable results even if new records are inserted or deleted between page requests. Each page contains the expected set of records based on the cursor value.&lt;/p&gt;
+&lt;h3 id="disadvantages-1"&gt;Disadvantages&lt;/h3&gt;
+&lt;p&gt;Cursor-based pagination requires sequential page traversal and is more complex to implement because you must track the cursor value in your application code. This might be less convenient for users who want to navigate directly to a specific page.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; However, we can avoid the need for sequential page traversal by using PageInfo/PageCursor in GraphQL.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We need to be mindful of &lt;a href="https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html"&gt;IDOR (Insecure Direct Object References)&lt;/a&gt;. If IDs are sensitive, we should encrypt cursor values with a random salt.&lt;/p&gt;
+&lt;p&gt;It can become quite complex if you need extra features like sorting on multiple columns, etc.&lt;/p&gt;
+&lt;h2 id="advanced-cursor-pagination-techniques"&gt;Advanced Cursor Pagination Techniques&lt;/h2&gt;
+&lt;p&gt;When dealing with extremely large datasets, an advanced cursor-based technique can further optimise performance.&lt;/p&gt;
+&lt;p&gt;In my experience using the basic cursor-based example on a table with 163 million rows, where only 300K rows met the &lt;code&gt;WHERE&lt;/code&gt; clause criteria, the query timed out even with a &lt;code&gt;LIMIT&lt;/code&gt; of 1000. This occurred because the query had to scan too many rows before finding 1000 that matched the criteria.&lt;/p&gt;
+&lt;p&gt;Now, you might wonder why it would need to scan so many rows if you have an index. The index's benefit is that it lets the database quickly locate the starting point. Imagine that the first record is in row 1. Now, the second record is after 1 million rows. To reach the limit of 1000, at least 1 million rows will need to be scanned. Even though there is an index, it can (and probably will) result in a timeout because it requires scanning many non-matching rows to find the ones that match.&lt;/p&gt;
+&lt;p&gt;In such scenarios, it's crucial to limit the number of rows scanned during each query execution. This can be achieved by adding a constraint that ensures efficient data retrieval, even if the &lt;code&gt;LIMIT&lt;/code&gt; is not fully met.&lt;/p&gt;
+&lt;h3 id="example-2"&gt;Example&lt;/h3&gt;
+&lt;p&gt;Here's an updated query:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sql"&gt;SELECT *         
+FROM product         
+WHERE id &amp;gt; @lastId        
+    AND id &amp;lt;= @clampId        
+    AND category = 1        
+ORDER BY id         
+LIMIT @pageSize;        
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;clampId&lt;/code&gt; serves as an upper boundary, calculated as &lt;code&gt;lastId&lt;/code&gt; plus a predefined range, to limit the number of rows scanned per query execution.&lt;/p&gt;
+&lt;p&gt;For instance, if &lt;code&gt;@lastId&lt;/code&gt; is 1000 and the scan limit is 10,000 rows, set &lt;code&gt;@clampId&lt;/code&gt; to 11,000. The &lt;code&gt;LIMIT&lt;/code&gt; remains 1,000, ensuring immediate return if 1,000 matches are found or scanning at most 10,000 rows.&lt;/p&gt;
+&lt;p&gt;By clamping the range, we can significantly reduce query execution time, making it feasible to handle large datasets without overwhelming the system.&lt;/p&gt;
+&lt;h3 id="using-non-sequential-identifiers"&gt;Using Non-sequential Identifiers&lt;/h3&gt;
+&lt;p&gt;While in the examples, the &lt;code&gt;id&lt;/code&gt; is assumed to be numeric and sequential, it doesn't need to be to implement cursor-based pagination. We can, for instance, combine multiple fields, e.g., &lt;code&gt;&amp;lt;last_updated_at&amp;gt;&lt;/code&gt; for sorting and &lt;code&gt;&amp;lt;last_id&amp;gt;&lt;/code&gt; as a UUID to get the last item on the current page.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sql"&gt;SELECT *       
+FROM product      
+WHERE (last_updated_at &amp;lt; @lastUpdatedAt)      
+ OR (last_updated_at = @lastUpdatedAt AND last_id &amp;gt; @lastId)      
+ORDER BY last_updated_at DESC, last_id      
+LIMIT @pageSize;      
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Choosing the right pagination approach ensures optimal application performance and user satisfaction, regardless of dataset size.&lt;/p&gt;
+&lt;p&gt;While offset pagination is simpler to implement, it suffers from significant performance degradation at scale. In contrast, cursor pagination maintains consistent performance regardless of page depth.&lt;/p&gt;
+&lt;p&gt;However, offset-based pagination allows us to arbitrarily jump to any page. With cursor pagination, we have to traverse pages sequentially or use more complex techniques.&lt;/p&gt;
+&lt;p&gt;The choice between these two approaches ultimately depends on your use case. Choose cursor pagination for high-performance needs with large datasets. Opt for offset pagination when dataset size is manageable, and random page navigation is required.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordXplorer Update #7</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-7</link>
       <description>WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.</description>
@@ -2044,65 +2131,6 @@ Map&amp;lt;Character, List&amp;lt;String&amp;gt;&amp;gt; fruitsByFirstLetter = f
 &lt;hr /&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;By grasping the mapping of C# LINQ functions to their Java equivalents, we can confidently navigate the transition between these languages.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Feature Flags: Removing Unused Methods on Cleanup</title>
-      <link>https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation</link>
-      <description>Keep your codebase clean and organized with the FeatureFlagWillMakeThisObsolete annotation. Mark unused methods that can be safely deleted on feature flag cleanup a breeze. Say goodbye to clunky workarounds and technical debt</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/posts/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation/cover.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation</guid>
-      <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;As part of introducing code behind Feature Flags, we sometimes refactor the old code into methods so that it's easier to consume. So far, so good.&lt;/p&gt;
-&lt;p&gt;However, when cleaning up the flag, there is a possibility of forgetting to delete this now-unused method (s). For me, it happens a lot more than I would like to admit. This results in unused code just lying around adding to the cruft.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; We might also want to delete whole classes or just a field on cleanup, but for brevity, I am using "methods" in the article.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/feature-flag-cleanup-featureflagwillmakethisobsolete-annotation/cover.png" alt="obscure code with a X"&gt;&lt;/p&gt;
-&lt;h2 id="clunky-workarounds"&gt;Clunky Workarounds&lt;/h2&gt;
-&lt;h3 id="clunky-workaround-1"&gt;Clunky Workaround #1&lt;/h3&gt;
-&lt;p&gt;We can use tools to automatically check for unused code in our code base and complain if any instances are found.&lt;/p&gt;
-&lt;p&gt;In my experience, such tools are slightly clunky in scenarios where nested methods must be removed. We need to manually check and delete other methods calling the original function or run multiple passes to make the check green.&lt;/p&gt;
-&lt;p&gt;It can also create friction if people are used to writing the methods first and then wiring them up later.&lt;/p&gt;
-&lt;h3 id="clunky-workaround-2"&gt;Clunky Workaround #2&lt;/h3&gt;
-&lt;p&gt;A potential step up is adding a comment inside the methods telling us to delete it when the flag is removed. But what if we don't search with the feature key at the time of cleanup or have a typo in the feature key inside the comment?&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;What if we could make the compiler complain if we forgot to delete the unused method?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="introducing-the-featureflagwillmakethisobsolete-annotation"&gt;Introducing the FeatureFlagWillMakeThisObsolete Annotation&lt;/h2&gt;
-&lt;p&gt;We can create a new annotation, &lt;code&gt;FeatureFlagWillMakeThisObsolete&lt;/code&gt;, that makes the compiler complain if an unused method is not deleted. This annotation can be added to the code using a string argument corresponding to the feature flag name.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;@Retention(RetentionPolicy.SOURCE)  
-public @interface FeatureFlagWillMakeThisObsolete {
-    String value();  
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Since we don't need the annotation at runtime, we can add the retention policy as Source. We also want to be able to annotate anything so we do not add the &lt;code&gt;@Target&lt;/code&gt; meta-annotation.&lt;/p&gt;
-&lt;p&gt;Since we still have to pass in a constant string, you might think this is no better than the comment workaround above, and you would be correct.&lt;/p&gt;
-&lt;p&gt;But if we refactor the flag name into a static final field, you can pass it into the annotation.&lt;/p&gt;
-&lt;p&gt;Example&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;static final String MyFeatureFlagKey = "feature.key";`
-
-@FeatureFlagWillMakeThisObsolete(MyFeatureFlagKey)
-void deleteMe()
-{
-    // old code
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, at cleanup time, all we have to do is remove &lt;code&gt;MyFeatureFlagKey&lt;/code&gt;, and the compiler will complain until we remove all instances where it was being used.&lt;/p&gt;
-&lt;h2 id="advantages-of-the-featureflagwillmakethisobsolete-annotation"&gt;Advantages of the FeatureFlagWillMakeThisObsolete Annotation&lt;/h2&gt;
-&lt;p&gt;The most significant advantage of this approach is that you can mark even the nested functions that should be deleted on cleanup. No looking in the IDE to find the unused functions one by one.&lt;/p&gt;
-&lt;p&gt;It centralizes where the raw string for the feature flag name is defined in the code base.&lt;/p&gt;
-&lt;p&gt;We also don't have to stop and look at the code at the cleanup time to decide whether it can be deleted or not. We had already made that decision when we were writing the code. It allows us (and the reviewer) to optimize for simple cleanup reviews.&lt;/p&gt;
-&lt;p&gt;We could also create custom plugins for our IDE(like IntelliJ) to automatically nuke the annotated methods.&lt;/p&gt;
-&lt;h2 id="caveats"&gt;Caveats&lt;/h2&gt;
-&lt;p&gt;It's not all a bed of roses, though. There are some things to keep in mind while using this annotation.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The developer must remember to add the annotation when writing the code.&lt;/li&gt;
-&lt;li&gt;Other developers need to treat this annotation similarly to &lt;code&gt;@Deprecated&lt;/code&gt;. This requires education or making the developers add the &lt;code&gt;@Deprecated&lt;/code&gt; annotation along with this.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;In conclusion, the &lt;code&gt;FeatureFlagWillMakeThisObsolete&lt;/code&gt; annotation provides a practical solution for ensuring cleaner Feature Flags cleanup by marking unused methods that can be safely deleted.&lt;/p&gt;
-&lt;p&gt;This annotation has several advantages over the existing workarounds, including the ability to mark even nested functions and optimize for simple cleanups.&lt;/p&gt;
-&lt;p&gt;While it is important to remember to add the annotation when writing the code and ensure that other developers treat it similarly to &lt;code&gt;@Deprecated&lt;/code&gt;, by implementing the &lt;code&gt;FeatureFlagWillMakeThisObsolete&lt;/code&gt; annotation in our codebase, we can improve code quality, reduce technical debt, and make Feature Flag cleanup a breeze.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
