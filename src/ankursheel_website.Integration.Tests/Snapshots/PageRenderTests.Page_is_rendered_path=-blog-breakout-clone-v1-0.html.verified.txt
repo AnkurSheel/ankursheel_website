@@ -275,7 +275,7 @@ However, you can still download the <a href="https://github.com/AnkurSheel/Break
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

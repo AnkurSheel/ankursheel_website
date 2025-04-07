@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2024-08-05">Aug 05, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-08-05">Aug 05, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-12-26">Dec 26, 2024</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">2 min</span>
         </p>
@@ -165,7 +165,9 @@
 <h3 id="web-build">Web Build</h3>
 <p>For those who didn’t want to install TestFlight or were not on an Apple device, you can now try the game on your browser. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊</p>
 <hr />
-<p>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think about the game so far.</p>
+<p><del>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think
+about the game so far.</del></p>
+<p><strong><em>Update 26th December 2024:</em></strong> You can now download the game.</p>
 <a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
   <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
 </a>
@@ -213,16 +215,16 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-5">WordXplorer Update #5</a>
+                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
             </li>
             <li>
-                <a href="wordxplorer-update-6">WordXplorer Update #6</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-7">WordXplorer Update #7</a>
+                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
             </li>
             <li>
                 <a href="wordxplorer-update-3">WordXplorer Update #3</a>
+            </li>
+            <li>
+                <a href="wordxplorer-update-5">WordXplorer Update #5</a>
             </li>
     </ul>
 </aside>
@@ -310,7 +312,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

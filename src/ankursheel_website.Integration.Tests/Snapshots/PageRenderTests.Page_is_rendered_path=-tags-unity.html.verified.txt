@@ -157,7 +157,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/unity-personal-license-manual-activation-workaround" class="text-center prose-2xl mb-4">Workaround for Unity Personal License Manual Activation Not Supported</a>
-        <div class="font-semibold text-center">0 min</div>
+        <div class="font-semibold text-center">1 min</div>
         <p>
             A workaround for Unity no longer supporting manual activation of Personal licenses.
         </p>
@@ -270,7 +270,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

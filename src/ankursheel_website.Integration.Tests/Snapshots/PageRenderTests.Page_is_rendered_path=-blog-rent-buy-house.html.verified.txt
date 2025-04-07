@@ -230,10 +230,10 @@
 
     <ul>
             <li>
-                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
+                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
             </li>
             <li>
-                <a href="kobo-vs-kindle">Kobo vs Kindle: Which e-reader to buy?</a>
+                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
             </li>
             <li>
                 <a href="merchants-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
@@ -327,7 +327,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

@@ -200,10 +200,10 @@
 
     <ul>
             <li>
-                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
+                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
             </li>
             <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+                <a href="best-credit-card-new-zealand">Finding the best credit card in New Zealand</a>
             </li>
             <li>
                 <a href="migrating-gatsby-statiq">Migrating from Gatsby to Statiq</a>
@@ -297,7 +297,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

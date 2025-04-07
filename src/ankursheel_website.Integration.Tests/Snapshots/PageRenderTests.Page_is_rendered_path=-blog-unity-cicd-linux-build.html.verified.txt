@@ -132,7 +132,7 @@
 <p>In Part 2, we created a workflow to run our <a href="unity-cicd-trigger-events-tests">automated tests based on some trigger events</a>.</p>
 <p>In Part 3, we will create a reusable workflow to build the Unity project for various platforms.</p>
 <p>The jobs in this workflow will run on a Linux VM.</p>
-<p>Why Linux?</p>
+<p><strong>Why Linux?</strong></p>
 <p>Its the cheapest box. As we will see in later posts, different platforms need a different OS for deployment. I am looking at you iOS.</p>
 <p>Creating a new workflow definition <code>.github/workflows/buildWithLinux.yml</code>:</p>
 <h2 id="defining-the-workflow">Defining the Workflow</h2>
@@ -155,7 +155,7 @@
         <span class="hljs-attr">value:</span> <span class="hljs-string">${{</span> <span class="hljs-string">jobs.buildWithLinux.outputs.buildVersion</span> <span class="hljs-string">}}</span> 
 </code></pre>
 <ul>
-<li><strong>on</strong>: ISpecify the events that trigger the workflow.
+<li><strong>on</strong>: Specify the events that trigger the workflow.
 <ul>
 <li><strong>workflow_call</strong>: Set the workflow to be called from other workflows.</li>
 <li><strong>inputs</strong>: Values passed in from the caller workflow .
@@ -195,7 +195,8 @@
           <span class="hljs-attr">restore-keys:</span> <span class="hljs-string">|  
             Library-build-${{ inputs.platform }}
             Library-    
-</span>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">Unity</span> <span class="hljs-string">Project</span>  
+</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">Unity</span> <span class="hljs-string">Project</span>  
         <span class="hljs-attr">id:</span> <span class="hljs-string">build</span>  
         <span class="hljs-attr">uses:</span> <span class="hljs-string">game-ci/unity-builder&#64;v4</span>  
         <span class="hljs-attr">env:</span>  
@@ -367,7 +368,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

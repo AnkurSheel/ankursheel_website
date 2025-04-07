@@ -141,9 +141,9 @@
 </ol>
 <h2 id="install-ruby">Install Ruby</h2>
 <ul>
-<li>Install Ruby from <a href="https://rubyinstaller.org/downloads/">here</a></li>
+<li>Install <a href="https://rubyinstaller.org/downloads/">Ruby</a></li>
 <li>Verify the installation by running <code>ruby -v</code>.</li>
-<li>Install <em>Bundler</em> by running <code>gem install bundler</code></li>
+<li>Install <em>Bundler</em> by running <code>gem install bundler</code>.</li>
 </ul>
 <h2 id="setup-codesigning-with-github-actions">Setup Codesigning with GitHub Actions</h2>
 <ul>
@@ -316,7 +316,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

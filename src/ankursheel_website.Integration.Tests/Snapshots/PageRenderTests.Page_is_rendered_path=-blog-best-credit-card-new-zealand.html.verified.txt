@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2022-11-06">Nov 06, 2022</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2022-11-06">Nov 06, 2022</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2025-01-05">Jan 05, 2025</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">3 min</span>
         </p>
@@ -209,10 +209,11 @@
 <h3 id="american-express-gold-card">American Express Gold Card</h3>
 <p>You must spend at least NZD 26,600 annually to cover the card fee.</p>
 <p>You will get back 0.75 cents for every additional dollar you spend.</p>
-<h3 id="american-express-platinum-card">American Express Platinum Card</h3>
-<p>You must spend at least NZD 93,750 annually to cover the card fee.</p>
-<p>You will get back 1.33 cents for every additional dollar you spend.</p>
-<p><em>However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee.</em></p>
+<h3 id="american-express-platinum-card">American Express Platinum Card~~</h3>
+<p><del>You must spend at least NZD 93,750 annually to cover the card fee.</del></p>
+<p><del>You will get back 1.33 cents for every additional dollar you spend.</del></p>
+<p><del><em>However, suppose you use the additional benefits like the Accor membership, the 300-dollar dining credit and the 200-dollar travel credit. In that case, you have to spend only 30,825 dollars a year to cover the card fee.</em></del></p>
+<p><strong><em>Note:</em></strong> The American Express Platinum Card is no longer available in New Zealand.</p>
 <h2 id="my-recommendation">My Recommendation</h2>
 <p>I like using The American Express Airpoints Platinum card as my primary card. It has the best value. If you are spending less than NZD 11,000, then the American Express Airpoints Card is the next best card to get.</p>
 <p>Since Amex is accepted at most places but not everywhere, I like the ANZ cashback visa as my backup card.</p>
@@ -259,10 +260,10 @@
 
     <ul>
             <li>
-                <a href="merchants-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
+                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
             </li>
             <li>
-                <a href="rent-buy-house">Should I Rent Or Buy a House?</a>
+                <a href="merchants-stripe-decline-credit-cards">Merchant using Stripe Declined credit Card: What to Do</a>
             </li>
             <li>
                 <a href="product-review-ndepend">Product Review: NDepend</a>
@@ -356,7 +357,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

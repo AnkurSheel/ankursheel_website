@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2024-09-02">Sep 02, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-09-02">Sep 02, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-12-26">Dec 26, 2024</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">4 min</span>
         </p>
@@ -183,6 +183,9 @@
 <hr />
 <h2 id="playable-build">Playable Build</h2>
 <p>We’re excited for you to test out the <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a>. Share your feedback, and if you want the full experience, just ask for a TestFlight invite—I’ll send it over right away!. 😊</p>
+<p>Know someone who’d love to try the game before its official release? <del>Share this <a href="https://tally.so/r/wverVQ">form</a> with
+them—they’ll thank you!! ✨</del></p>
+<p><strong><em>Update 26th December 2024:</em></strong> You can now download the game.</p>
 <a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
   <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
 </a>
@@ -230,16 +233,16 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-5">WordXplorer Update #5</a>
+                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
             </li>
             <li>
-                <a href="wordxplorer-update-4">WordXplorer Update #4</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-7">WordXplorer Update #7</a>
+                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
             </li>
             <li>
                 <a href="wordxplorer-update-3">WordXplorer Update #3</a>
+            </li>
+            <li>
+                <a href="wordxplorer-update-4">WordXplorer Update #4</a>
             </li>
     </ul>
 </aside>
@@ -327,7 +330,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

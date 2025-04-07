@@ -4,7 +4,7 @@
     <title>Ankur Sheel</title>
     <link>https://www.ankursheel.com/</link>
     <description>I go down rabbit holes and blog about them</description>
-    <copyright>2024</copyright>
+    <copyright>2025</copyright>
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
@@ -13,7 +13,7 @@
       <description>WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.</description>
       <enclosure url="https://www.ankursheel.com/assets/images/preorder-appstore-badge.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-7</guid>
-      <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I hope you’re having an awesome day! Since the last post, we’ve been hard at work, appeasing the Apple gods to ensure our game is ready for the App Store.&lt;/p&gt;
 &lt;p&gt;And guess what? I’m thrilled to announce that our game has been approved.&lt;/p&gt;
@@ -52,6 +52,9 @@
 &lt;h2 id="whats-next"&gt;🚀 What’s Next&lt;/h2&gt;
 &lt;p&gt;With a hard deadline in sight, we’re focused on adding those final touches to the game. We’re also building out the concept of theming levels into the gameplay to ensure a smooth experience for launch day. I am also trying to get in the Apple Small Business program to reduce the percentage of commission that they charge.&lt;/p&gt;
 &lt;hr&gt;
+&lt;p&gt;Know someone who’d love to try the game before its official release? &lt;del&gt;Share this &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; with
+them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;
@@ -83,19 +86,17 @@
 &lt;li&gt;Add an audit trail for the updates.&lt;/li&gt;
 &lt;li&gt;Update the backend to return the new title.&lt;/li&gt;
 &lt;li&gt;Update the frontend to display the new title.&lt;/li&gt;
-&lt;li&gt;Update the FE to allow users to edit the title.&lt;/li&gt;
+&lt;li&gt;Update the frontend to allow users to edit the title.&lt;/li&gt;
 &lt;li&gt;Add validation to the backend to ensure the new title is valid.&lt;/li&gt;
 &lt;li&gt;Add validation to the frontend to ensure the new title is valid.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="approach-1-feature-branches"&gt;Approach 1: Feature Branches&lt;/h3&gt;
-&lt;p&gt;A long, long time ago, when SVN was a thing (and even much later) most teams used **Feature Branches
-** to manage new features. Typically, each feature would be developed on a separate branch, tested, and then merged into the
-&lt;code&gt;main&lt;/code&gt; branch.&lt;/p&gt;
+&lt;p&gt;A long, long time ago, when SVN was a thing (and even much later) most teams used &lt;strong&gt;Feature Branches&lt;/strong&gt; to manage new features. Typically, each feature would be developed on a separate branch, tested, and then merged into the &lt;code&gt;main&lt;/code&gt; branch.&lt;/p&gt;
 &lt;p&gt;In our example, you would create a branch for the new title feature, and each task would be developed on this branch. Once all tasks are complete, the branch would be merged into
 &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/fun-feature-flags/branch-hell.jpg" alt="Feature Branch Complexity.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Feature branches were popular because they were straightforward to use and possibly because that was the best we had at that time. They still work well for small-scale projects.&lt;/p&gt;
-&lt;p&gt;However, in larger teams, feature branches can create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.&lt;/p&gt;
+&lt;p&gt;However, in larger teams, feature branches create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.&lt;/p&gt;
 &lt;p&gt;Here are some other downsides:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Since code in feature branches must be fully completed before merging, it often leads to large, complex pull requests with significant changes.&lt;/li&gt;
@@ -109,26 +110,20 @@
 &lt;p&gt;Most teams I know start by using feature branches when they are just 1 or 2 developers. But as the team grows, managing multiple branches becomes increasingly complex, leading to merge conflicts and lower productivity.&lt;/p&gt;
 &lt;h3 id="alternative-2-git-flow"&gt;Alternative 2: Git Flow&lt;/h3&gt;
 &lt;p&gt;An evolution of feature branches is &lt;strong&gt;Git Flow&lt;/strong&gt;, a branching model I’ve also used with success for certain projects.&lt;/p&gt;
-&lt;p&gt;Git Flow uses two main branches (&lt;code&gt;main&lt;/code&gt; and &lt;code&gt;develop&lt;/code&gt;). Feature branches are created off
-&lt;code&gt;develop&lt;/code&gt;, and once a feature is stable, it is merged into &lt;code&gt;develop&lt;/code&gt;. When &lt;code&gt;develop&lt;/code&gt; is stable, it is merged into
-&lt;code&gt;main&lt;/code&gt;, which is always production-ready. A &lt;code&gt;release&lt;/code&gt; branch is created from &lt;code&gt;main&lt;/code&gt; for each release and
-&lt;code&gt;hotfix&lt;/code&gt; branches are created to fix production issues.&lt;/p&gt;
-&lt;p&gt;In our example, you would create one or more feature branches off
-&lt;code&gt;develop&lt;/code&gt; for the new title feature. Once the feature is complete, it would be merged into &lt;code&gt;develop&lt;/code&gt;. When
-&lt;code&gt;develop&lt;/code&gt; is stable, it would be merged into &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Git Flow uses two main branches (&lt;code&gt;main&lt;/code&gt; and &lt;code&gt;develop&lt;/code&gt;). Feature branches are created off &lt;code&gt;develop&lt;/code&gt;, and once a feature is stable, it is merged into &lt;code&gt;develop&lt;/code&gt;. When &lt;code&gt;develop&lt;/code&gt; is stable, it is merged into &lt;code&gt;main&lt;/code&gt;, which is always production-ready. A &lt;code&gt;release&lt;/code&gt; branch is created from &lt;code&gt;main&lt;/code&gt; for each release and &lt;code&gt;hotfix&lt;/code&gt; branches are created to fix production issues.&lt;/p&gt;
+&lt;p&gt;In our example, you would create one or more feature branches off &lt;code&gt;develop&lt;/code&gt; for the new title feature. Once the feature is complete, it would be merged into &lt;code&gt;develop&lt;/code&gt;. When &lt;code&gt;develop&lt;/code&gt; is stable and we would want a new release, it would be merged into &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/fun-feature-flags/git-flow.jpg" alt="Git Flow"&gt;&lt;/p&gt;
 &lt;p&gt;Git Flow offers several advantages compared to Feature Branches.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;It ensures the main branch remains stable and production-ready, aiding in scheduled release cycles.&lt;/li&gt;
-&lt;li&gt;It supports different versions, useful for desktop and mobile apps requiring hotfixes or patches&lt;/li&gt;
+&lt;li&gt;It supports different versions, useful for desktop and mobile apps requiring hotfixes or patches.&lt;/li&gt;
 &lt;li&gt;It works well for Waterfall or Waterfall-Pretending-to-be-Agile methodologies.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;But it’s not without its downsides.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Merge conflicts can still occur in the &lt;code&gt;develop&lt;/code&gt; branch.&lt;/li&gt;
 &lt;li&gt;Multiple features might be coupled together, preventing the release of any feature until all are complete.&lt;/li&gt;
-&lt;li&gt;Continuous Deployment (CD) becomes challenging as it requires all features in the
-&lt;code&gt;develop&lt;/code&gt; branch to be stable before merging into &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Continuous Deployment (CD) becomes challenging as it requires all features in the &lt;code&gt;develop&lt;/code&gt; branch to be stable before merging into &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In my experience, Git Flow is less effective for SaaS and applications where supporting older versions isn’t necessary.&lt;/p&gt;
 &lt;h2 id="feature-flags"&gt;Feature Flags&lt;/h2&gt;
@@ -186,8 +181,7 @@
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Having a JSON configuration file per environment, allows you to define and manage feature flags across different environments. By toggling the
-&lt;code&gt;enabled&lt;/code&gt; status, you can control feature visibility and rollout without redeploying code.&lt;/p&gt;
+&lt;p&gt;Having a JSON configuration file per environment, allows you to define and manage feature flags across different environments. By toggling the &lt;code&gt;enabled&lt;/code&gt; status, you can control feature visibility and rollout without redeploying code.&lt;/p&gt;
 &lt;p&gt;Initially, the flag would be off in all environments - dev, QA and prod. This allows you to develop the feature in isolation.&lt;/p&gt;
 &lt;p&gt;The code has &lt;code&gt;if-else&lt;/code&gt; statements to check if the feature is enabled or not.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-csharp"&gt;// Check if the feature flag is enabled before executing new logic
@@ -204,8 +198,7 @@ else
 &lt;p&gt;Once the feature is ready, you can turn the flag on in the dev and test environment for QA testing without exposing it to end users.&lt;/p&gt;
 &lt;p&gt;After thorough testing, you can activate the feature flag in production. The feature is now live, but since it was already tested in a controlled environment, the risk is minimal.&lt;/p&gt;
 &lt;p&gt;Finally, after the feature has been successfully deployed, and you’re confident it’s stable, it’s important to remove the feature flag and any associated code to prevent technical debt.&lt;/p&gt;
-&lt;p&gt;In our example, you would create a feature flag for the new title feature. Each task would be developed behind a feature flag in isolated branches. As each task is completed, it would be merged into the
-&lt;code&gt;main&lt;/code&gt; branch. Once all tasks are complete, the feature flag would be turned on in the test environment for QA testing. After thorough testing, the feature flag would be activated in production, making the feature live.&lt;/p&gt;
+&lt;p&gt;In our example, you would create a feature flag for the new title feature. Each task would be developed behind a feature flag in isolated branches. As each task is completed, it would be merged into the &lt;code&gt;main&lt;/code&gt; branch. Once all tasks are complete, the feature flag would be turned on in the test environment for QA testing. After thorough testing, the feature flag would be activated in production, making the feature live.&lt;/p&gt;
 &lt;h3 id="best-practices-with-feature-flags"&gt;Best Practices with Feature Flags&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;While embracing duplication might seem counterintuitive, it’s crucial for managing feature flags effectively. This is not the time to worry about keeping your code DRY. Duplication makes it easier to remove flags later.&lt;/li&gt;
@@ -217,8 +210,7 @@ else
 &lt;li&gt;Consider creating tools to manage feature flags effectively. Automation can help with flag updates and removal.
 &lt;ul&gt;
 &lt;li&gt;A widget that allows a developer/QA to toggle flags on/off just for themselves in dev/test environments is immensely useful.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;At FirstAML, I developed an
-open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;helper app that simplified updating feature flag files from the console&lt;/a&gt;.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;At FirstAML, I developed an open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;helper app that simplified updating feature flag files from the console&lt;/a&gt;.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Abstract the feature flag logic from the rest of the codebase to simplify future changes&lt;/li&gt;
@@ -246,7 +238,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <description>New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/app_icon.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-6</guid>
-      <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!"&lt;/p&gt;
 &lt;h2 id="new-name-and-icon"&gt;New Name and Icon&lt;/h2&gt;
@@ -300,6 +292,9 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;hr&gt;
 &lt;h2 id="playable-build"&gt;Playable Build&lt;/h2&gt;
 &lt;p&gt;We’re excited for you to test out the &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt;. Share your feedback, and if you want the full experience, just ask for a TestFlight invite—I’ll send it over right away!. 😊&lt;/p&gt;
+&lt;p&gt;Know someone who’d love to try the game before its official release? &lt;del&gt;Share this &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; with
+them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;
@@ -314,7 +309,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <description>WordXplorer Update 5 tweaks the UI to make for a better experience</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-5</guid>
-      <pubDate>Mon, 19 Aug 2024 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here's whats new since the last update&lt;/p&gt;
 &lt;h2 id="updated-game-screen"&gt;Updated game screen&lt;/h2&gt;
@@ -356,7 +351,9 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;p&gt;To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out &lt;a href="https://www.ankursheel.com/assets/downloads/Privacy_Policy_WordXplore.pdf" target="\_blank"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="playable-build"&gt;Playable Build&lt;/h2&gt;
-&lt;p&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think
+about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;
@@ -371,7 +368,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <description>WordXplorer Update 4 adds deterministic levels and fireworks</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_game_screen.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-4</guid>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.&lt;/p&gt;
 &lt;h2 id="what-happened"&gt;What happened&lt;/h2&gt;
@@ -407,7 +404,9 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;h3 id="web-build"&gt;Web Build&lt;/h3&gt;
 &lt;p&gt;For those who didn’t want to install TestFlight or were not on an Apple device, you can now try the game on your browser. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think about the game so far.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think
+about the game so far.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;
@@ -476,7 +475,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
       <description>WordXplorer Update 3 adds a help button and 100 words</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-3/help-button.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-3</guid>
-      <pubDate>Sat, 03 Feb 2024 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉&lt;/p&gt;
 &lt;h2 id="more-words-more-fun"&gt;🚀 More Words, More Fun&lt;/h2&gt;
@@ -492,6 +491,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;ul&gt;
 &lt;li&gt;This marks the final free version. We will soon be on the app store as a paid game.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;
@@ -515,7 +515,7 @@ open-source &lt;a href="https://github.com/AnkurSheel/FeatureFlagHelper"&gt;help
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media1.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -747,9 +747,9 @@ vs
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Echo Build Version&lt;/strong&gt;: Prints the build version generated by the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Checkout Repository&lt;/strong&gt;: Checks out the code repository.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Download WebGL Artifact&lt;/strong&gt;: Get the &lt;strong&gt;_build-WebGL&lt;/strong&gt;_ artifact produced by the &lt;code&gt;buildForWebGL&lt;/code&gt; job and put it into the &lt;strong&gt;_build/WebGL&lt;/strong&gt;_ directory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deploy to GitHub Pages&lt;/strong&gt;: Deploy the contents of the &lt;strong&gt;_build/WebGL/WebGL&lt;/strong&gt;_ folder to GitHub Pages.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cleanup to avoid storage limit&lt;/strong&gt;: Delete the &lt;strong&gt;_build-WebGL-&lt;/strong&gt; artifact.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Download WebGL Artifact&lt;/strong&gt;: Get the &lt;strong&gt;&lt;em&gt;build-WebGL&lt;/em&gt;&lt;/strong&gt; artifact produced by the &lt;code&gt;buildForWebGL&lt;/code&gt; job and put it into the &lt;strong&gt;&lt;em&gt;build/WebGL&lt;/em&gt;&lt;/strong&gt; directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy to GitHub Pages&lt;/strong&gt;: Deploy the contents of the &lt;strong&gt;&lt;em&gt;build/WebGL/WebGL&lt;/em&gt;&lt;/strong&gt; folder to GitHub Pages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cleanup to avoid storage limit&lt;/strong&gt;: Delete the &lt;strong&gt;&lt;em&gt;build-WebGL&lt;/em&gt;&lt;/strong&gt; artifact.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="setting-up-github-pages"&gt;Setting up Github Pages&lt;/h2&gt;
 &lt;p&gt;Once the workflow for a WebGL build is triggered, a &lt;em&gt;&lt;strong&gt;gh_pages&lt;/strong&gt;&lt;/em&gt; branch will be created. Now you can setup Github pages to showcase your game.&lt;/p&gt;
@@ -820,7 +820,7 @@ vs
 &lt;p&gt;In Part 2, we created a workflow to run our &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;automated tests based on some trigger events&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In Part 3, we will create a reusable workflow to build the Unity project for various platforms.&lt;/p&gt;
 &lt;p&gt;The jobs in this workflow will run on a Linux VM.&lt;/p&gt;
-&lt;p&gt;Why Linux?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why Linux?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Its the cheapest box. As we will see in later posts, different platforms need a different OS for deployment. I am looking at you iOS.&lt;/p&gt;
 &lt;p&gt;Creating a new workflow definition &lt;code&gt;.github/workflows/buildWithLinux.yml&lt;/code&gt;:&lt;/p&gt;
 &lt;h2 id="defining-the-workflow"&gt;Defining the Workflow&lt;/h2&gt;
@@ -843,7 +843,7 @@ on:
         value: ${{ jobs.buildWithLinux.outputs.buildVersion }} 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: ISpecify the events that trigger the workflow.
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: Specify the events that trigger the workflow.
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;workflow_call&lt;/strong&gt;: Set the workflow to be called from other workflows.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;inputs&lt;/strong&gt;: Values passed in from the caller workflow .
@@ -883,6 +883,7 @@ on:
           restore-keys: |  
             Library-build-${{ inputs.platform }}
             Library-    
+
       - name: Build Unity Project  
         id: build  
         uses: game-ci/unity-builder@v4  
@@ -939,7 +940,7 @@ on:
       <description>WordXplorer Update 2 updates the colors and adds a new instruction page</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/instructions.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-2</guid>
-      <pubDate>Mon, 16 Oct 2023 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I am thrilled to share some updates for the wordxplorer game! 🎉&lt;/p&gt;
 &lt;h2 id="testflight-approval"&gt;🚀 Testflight Approval&lt;/h2&gt;
@@ -955,6 +956,7 @@ on:
 &lt;li&gt;A public Trello board for the roadmap, so beta testers can vote on what they would like to see next.&lt;/li&gt;
 &lt;li&gt;More Words&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;
@@ -1128,9 +1130,9 @@ jobs:
 &lt;/ol&gt;
 &lt;h2 id="install-ruby"&gt;Install Ruby&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Install Ruby from &lt;a href="https://rubyinstaller.org/downloads/"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href="https://rubyinstaller.org/downloads/"&gt;Ruby&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Verify the installation by running &lt;code&gt;ruby -v&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Install &lt;em&gt;Bundler&lt;/em&gt; by running &lt;code&gt;gem install bundler&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;em&gt;Bundler&lt;/em&gt; by running &lt;code&gt;gem install bundler&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="setup-codesigning-with-github-actions"&gt;Setup Codesigning with GitHub Actions&lt;/h2&gt;
 &lt;ul&gt;
@@ -1232,14 +1234,14 @@ jobs:
 &lt;h2 id="share-your-11-experiences-and-tips"&gt;Share Your 1:1 Experiences and Tips&lt;/h2&gt;
 &lt;p&gt;Navigating 1:1 meetings might seem daunting initially, but effective preparation, thoughtful questions, and diligent follow-ups can help make it easier. Remember, there's no such thing as a perfect 1:1 meeting.&lt;/p&gt;
 &lt;p&gt;We're all on a learning journey, and your experiences and tips are invaluable. Have you discovered other effective ways to prepare for 1:1s? Are there additional questions that have proven helpful for you? How do you ensure you follow up on action items?&lt;/p&gt;
-&lt;p&gt;Share your experiences and insights in the comments below. Your wisdom could be just what I or another reader needs to excel in their 1:1 meetings!&lt;/p&gt;
+&lt;p&gt;Share your experiences and insights in the comments below.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
       <title>Cleaning Up Unnecessary Remote-Tracking References</title>
       <link>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</link>
-      <description>git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository</description>
+      <description>git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository</description>
       <guid>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</guid>
       <pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;If your work involves collaborating on a monolithic project with multiple teams, you might find that your &lt;code&gt;git pull&lt;/code&gt; has started taking a long time. One of the reasons for this is that you are tracking multiple branches most of which are unnecessary for your specific work.&lt;/p&gt;
@@ -1249,8 +1251,8 @@ jobs:
 &lt;p&gt;To get the unique commit hashes of those branches, execute the following command.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Note 1: I’m assuming the &lt;strong&gt;origin&lt;/strong&gt; is the name of the upstream&lt;/em&gt;
-&lt;em&gt;Note 2: Replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt; with the actual branch names&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note 1: I’m assuming the &lt;strong&gt;origin&lt;/strong&gt; is the name of the upstream&lt;/em&gt;.
+&lt;em&gt;Note 2: Replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt; with the actual branch names&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;git rev-parse&lt;/code&gt; command translates human-readable branch names into SHA-1 hashes which are the commit identifiers.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;--quiet&lt;/em&gt;&lt;/strong&gt;: This flag suppresses output unless there is an error.&lt;/li&gt;
@@ -1313,7 +1315,27 @@ git rebase origin/main
       <enclosure url="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</guid>
       <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;This is not needed anymore with game-ci/unity-builder&amp;#64;v4. If you still need this for some reason, let me know and I can resurrect thi.&lt;/strong&gt;&lt;/p&gt;
+      <content:encoded>&lt;p&gt;&lt;strong&gt;This is not needed anymore with game-ci/unity-builder@v4. &lt;del&gt;If you still need this for some reason, let me know and I can resurrect this&lt;/del&gt;  I have resurrected it after some people asked for it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You decided to add a CI/CD pipeline to your Unity Project using &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What's the 1st step? Activating Unity! Easy, right?&lt;/p&gt;
+&lt;p&gt;You generate the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file after creating the github action. You carry on with the list and head to &lt;a href="https://license.unity3d.com/manual"&gt;https://license.unity3d.com/manual&lt;/a&gt;, all set to create that &lt;strong&gt;&lt;em&gt;ulf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
+&lt;h2 id="plot-twist"&gt;Plot Twist&lt;/h2&gt;
+&lt;p&gt;But wait a second. There is an error - "Unity no longer supports manual activation of Personal licenses."&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" alt="Unity no longer supports manual activation of Personal licenses"&gt;&lt;/p&gt;
+&lt;p&gt;You disregard the message and upload the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
+&lt;p&gt;But, the option to generate an ulf for a personal license? Poof, it's vanished. Instead, Unity asks us to type in a serial number.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/serial_number.png" alt="Activate your license using serial number"&gt;&lt;/p&gt;
+&lt;h2 id="time-for-a-bit-of-trickery"&gt;Time for a bit of trickery&lt;/h2&gt;
+&lt;p&gt;Right-click and inspect the serial number box.&lt;/p&gt;
+&lt;p&gt;Find the &lt;code&gt;&amp;lt;div class="option option-personal clear" style="display: none;"&amp;gt;&lt;/code&gt; code;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png" alt="Html Source"&gt;&lt;/p&gt;
+&lt;p&gt;And delete &lt;code&gt;"display: none;"&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Boom! The Unity Personal Edition option reappears. 🎉&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png" alt="Page With Personal License"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Hopefully, before this hack stops working, GameCI will have an official workaround :)&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Updated 05 July 2024:&lt;/strong&gt; This is not needed anymore with game-ci/unity-builder@v4.&lt;/p&gt;
+&lt;h3 id="shoutout"&gt;Shoutout&lt;/h3&gt;
+&lt;p&gt;And here's a shoutout to &lt;a href="https://reallpepe.itch.io/defendron"&gt;realpepe&lt;/a&gt;, who shared this hack Discord.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
@@ -1322,7 +1344,7 @@ git rebase origin/main
       <link>https://www.ankursheel.com/blog/wordxplorer-update-1</link>
       <description>WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion</description>
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-1</guid>
-      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The latest WordXplorer game update, has some great additions.&lt;/p&gt;
 &lt;h2 id="new-words"&gt;20 New Words&lt;/h2&gt;
@@ -1334,6 +1356,7 @@ git rebase origin/main
 &lt;/div&gt;
 &lt;h2 id="next-up"&gt;Next Up&lt;/h2&gt;
 &lt;p&gt;Add to TestFlight for iPhone Beta Users&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
 &lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
   &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
 &lt;/a&gt;

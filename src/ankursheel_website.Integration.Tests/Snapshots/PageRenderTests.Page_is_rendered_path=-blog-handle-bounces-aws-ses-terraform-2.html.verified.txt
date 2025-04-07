@@ -338,7 +338,7 @@ resource &quot;aws_iam_role&quot; &quot;ses_bounces_lambda_role&quot; {
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

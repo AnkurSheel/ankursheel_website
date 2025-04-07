@@ -6,24 +6,24 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository">
+<meta name="description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository">
 <link href="/assets/styles.css" rel="stylesheet">
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet">
     <link rel="canonical" href="https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references">   
 <meta itemprop="name" content="Cleaning Up Unnecessary Remote-Tracking References">
-<meta itemprop="description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository">
+<meta itemprop="description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository">
     <meta itemprop="image" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-facebook.png">
 <meta property="og:url" content="https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cleaning Up Unnecessary Remote-Tracking References">
-<meta property="og:description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository">
+<meta property="og:description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository">
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-facebook.png">
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-facebook.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="ankur_sheel">
 <meta name="twitter:creator" content="ankur_sheel">
 <meta name="twitter:title" content="Cleaning Up Unnecessary Remote-Tracking References">
-<meta name="twitter:description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository">
+<meta name="twitter:description" content="git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository">
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-twitter.png">
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/cleaning-up-unnecessary-remote-tracking-references-twitter.png">
 
@@ -133,8 +133,8 @@
 <p>To get the unique commit hashes of those branches, execute the following command.</p>
 <pre><code class="language-bash hljs">git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
 </code></pre>
-<p><em>Note 1: I’m assuming the <strong>origin</strong> is the name of the upstream</em>
-<em>Note 2: Replace <strong><em>origin/main</em></strong>, <strong><em>origin/my-branch-1</em></strong>, and <strong><em>origin/my-branch-2</em></strong> with the actual branch names</em></p>
+<p><em>Note 1: I’m assuming the <strong>origin</strong> is the name of the upstream</em>.
+<em>Note 2: Replace <strong><em>origin/main</em></strong>, <strong><em>origin/my-branch-1</em></strong>, and <strong><em>origin/my-branch-2</em></strong> with the actual branch names</em>.</p>
 <p>The <code>git rev-parse</code> command translates human-readable branch names into SHA-1 hashes which are the commit identifiers.</p>
 <ul>
 <li><strong><em>--quiet</em></strong>: This flag suppresses output unless there is an error.</li>
@@ -193,7 +193,7 @@ git rebase origin/main
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references&amp;text=Cleaning%20Up%20Unnecessary%20Remote-Tracking%20References via @ankur_sheel.&amp;#xD;&amp;#xA;git%20pull%20can%20be%20slow%20if%20you%20have%20a%20lot%20of%20remote%20branches.%20Remove%20unnecessary%20tracking%20of%20remote%20branches%20to%20reduce%20the%20amount%20of%20time%20spent%20updating%20the%20%20repository" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references&amp;text=Cleaning%20Up%20Unnecessary%20Remote-Tracking%20References via @ankur_sheel.&amp;#xD;&amp;#xA;git%20pull%20can%20be%20slow%20if%20you%20have%20a%20lot%20of%20remote%20branches.%20Remove%20unnecessary%20tracking%20of%20remote%20branches%20to%20reduce%20the%20amount%20of%20time%20spent%20updating%20the%20repository" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -312,7 +312,7 @@ git rebase origin/main
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

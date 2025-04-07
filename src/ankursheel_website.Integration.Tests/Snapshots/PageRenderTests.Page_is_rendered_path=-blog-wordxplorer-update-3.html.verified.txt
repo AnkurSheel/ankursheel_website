@@ -118,7 +118,7 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
         <p class="mr-4">Published on <time datetime="2024-02-03">Feb 03, 2024</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2024-02-03">Feb 03, 2024</time></p>
+        <p class="mr-4">Last Updated on <time datetime="2024-12-26">Dec 26, 2024</time></p>
         <p>
             Estimated Reading Time: <span  class="font-bold">1 min</span>
         </p>
@@ -145,6 +145,7 @@
 <ul>
 <li>This marks the final free version. We will soon be on the app store as a paid game.</li>
 </ul>
+<p><strong><em>Update 26th December 2024:</em></strong> You can now download the game.</p>
 <a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
   <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
 </a>
@@ -191,10 +192,10 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
+                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
             </li>
             <li>
-                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
+                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
             </li>
             <li>
                 <a href="wordxplorer-update-4">WordXplorer Update #4</a>
@@ -288,7 +289,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

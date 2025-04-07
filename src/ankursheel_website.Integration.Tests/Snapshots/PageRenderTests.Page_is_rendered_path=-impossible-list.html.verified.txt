@@ -247,7 +247,7 @@
 <li>Go Para Gliding</li>
 <li>Go Snorkeling</li>
 <li>Go Scuba Diving</li>
-<li>Go Sky Diving</li>
+<li><del>Go Sky Diving</del> (Queenstown, New Zealand, 2024)</li>
 <li><del>Go white water rafting</del> (Rishikesh, 2008)</li>
 <li>Go Zorbing</li>
 <li>Go ZipLining in a cave</li>
@@ -279,7 +279,7 @@
 <li>Drive the Great Ocean Road, Australia</li>
 <li>Scuba Dive in the Great Barrier Reef, Australia</li>
 <li>Snorkel in the Great Barrier Reef, Australia</li>
-<li>Sky Dive in New Zealand</li>
+<li><del>Sky Dive in New Zealand</del> (Queenstown, New Zealand, 2024)</li>
 <li>Zorbing in New Zealand</li>
 </ul>
 </li>
@@ -344,7 +344,7 @@
 <li>Write one blog post every week for <del>1</del> 3 years</li>
 <li>Write three blog post every week for <del>1</del> 3 years</li>
 <li>Blog 365 days in a row</li>
-<li>Start a news letter</li>
+<li>Start a newsletter</li>
 <li><del>Write 5 books summaries.</del>
 <ul>
 <li><del>Write 10 books summaries.</del></li>
@@ -366,9 +366,9 @@
 <li>Get 500 visits in a day.</li>
 </ul>
 </li>
-<li><del>Make my first dollar online.</del>
+<li><del>Make my first dollar online.</del> (December 2024)
 <ul>
-<li><del>Make 10 dollars online.</del></li>
+<li><del>Make 10 dollars online.</del> (January 2025)</li>
 <li>Make 100 dollars online.</li>
 </ul>
 </li>
@@ -379,7 +379,8 @@
 </li>
 <li><del>Build an application</del> <a href="https://apps.apple.com/app/match-n-spell-magic/id1661527186">Match 'N Spell Magic on AppStore</a>(June 2023)
 <ul>
-<li>that someone pays for</li>
+<li><del>that someone pays for</del> <a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783">WordXplorer: Guess the Word</a> (November 2024)</li>
+<li>that has 100 downloads</li>
 </ul>
 </li>
 </ul>
@@ -424,7 +425,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 

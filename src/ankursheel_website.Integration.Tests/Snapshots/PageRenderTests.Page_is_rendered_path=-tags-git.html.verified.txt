@@ -115,7 +115,7 @@
         <a href="/blog/cleaning-up-unnecessary-remote-tracking-references" class="text-center prose-2xl mb-4">Cleaning Up Unnecessary Remote-Tracking References</a>
         <div class="font-semibold text-center">2 min</div>
         <p>
-            git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the  repository
+            git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository
         </p>
             <a href="/blog/cleaning-up-unnecessary-remote-tracking-references" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>
@@ -215,7 +215,7 @@
         </a>
     </div>
     <div class="copy">
-        © AnkurSheel 2024
+        © AnkurSheel 2025
     </div>
 </div>
 
