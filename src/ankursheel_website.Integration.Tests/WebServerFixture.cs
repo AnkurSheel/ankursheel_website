@@ -3,7 +3,7 @@ using System.Net.Sockets;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.FileProviders;
-using PlaywrightSharp;
+using Microsoft.Playwright;
 
 namespace ankursheel_website.Integration.Tests
 {
@@ -54,10 +54,11 @@ namespace ankursheel_website.Integration.Tests
             await PlaywrightHelpers.InstallAsync();
             _playwright = await Playwright.CreateAsync();
             Browser = await _playwright.Chromium.LaunchAsync(
-                new LaunchOptions
+                new BrowserTypeLaunchOptions // Updated to use the correct type
                 {
                     // Headless = false,
-                    IgnoreHTTPSErrors = true,
+                    // IgnoreHTTPSErrors = true,
+                    
                 });
 
             await host.StartAsync();

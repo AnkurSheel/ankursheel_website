@@ -14,13 +14,15 @@
         public async Task ScreenshotPage(string path)
         {
             // Navigate to the home page
-            await _fixture.Page.GoToAsync($"{_fixture.BaseUrl}{path}");
+            await _fixture.Page.GotoAsync($"{_fixture.BaseUrl}{path}");
 
             path = path.Replace("/", "-");
 
-            await _fixture.Page.ScreenshotAsync(
-                Path.Combine(TestHelpers.GetProjectDirectory() ?? string.Empty, "Screenshots", $"{nameof(ScreenshotPage)}{path}.png"),
-                true);
+            await _fixture.Page.ScreenshotAsync(new()
+            {
+                Path = Path.Combine(TestHelpers.GetProjectDirectory() ?? string.Empty, "Screenshots", $"{nameof(ScreenshotPage)}{path}.png"),
+                FullPage = true
+            });
         }
 
         public static IEnumerable<object[]> GetData()
