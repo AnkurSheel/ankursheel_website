@@ -140,10 +140,10 @@
 <span class="hljs-keyword">WHERE</span> category <span class="hljs-operator">=</span> <span class="hljs-number">1</span>        
 <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> id         
 LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize         
-<span class="hljs-keyword">OFFSET</span> <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;<span class="hljs-keyword">Offset</span>;        
+<span class="hljs-keyword">OFFSET</span> $<span class="hljs-keyword">offset</span>;        
 </code></pre>
 <p>The <code>LIMIT</code> clause defines how many rows to return, while <code>OFFSET</code> skips a specified number of rows. <code>ORDER BY</code> ensures results are consistent.</p>
-<p>Typically, <code>&#64;pageSize</code> and <code>&#64;Offset</code> are set based on user input or application logic to control pagination dynamically. For example, if <code>&#64;pageSize</code> is 100 and <code>&#64;Offset</code> is 200, the query retrieves rows 200-300.</p>
+<p>Typically, <code>pageSize</code> and <code>offset</code> are set based on user input or application logic to control pagination dynamically. For example, if <code>pageSize</code> is 100 and <code>offset</code> is 200, the query retrieves rows 200-300.</p>
 <h3 id="advantages">Advantages</h3>
 <p>Offset pagination allows you to jump directly to a specific set of records, which is useful for applications requiring quick access to specific data or &quot;go to page X&quot; functionality. For instance, you can easily access a specific range like 3000-3100.</p>
 <p>It is easier to implement, making it useful for smaller systems or static datasets like blog archives or product lists.</p>
@@ -157,10 +157,10 @@ LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;p
 <p>Here's how you might implement cursor-based pagination:</p>
 <pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>         
 <span class="hljs-keyword">FROM</span> product         
-<span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">&</span>gt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastId        
+<span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">&</span>gt; $lastId        
     <span class="hljs-keyword">AND</span> category <span class="hljs-operator">=</span> <span class="hljs-number">1</span>        
 <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> id         
-LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize;        
+LIMIT $pageSize;        
 </code></pre>
 <p>Notice that, unlike the previous example, this query doesn't use <code>OFFSET</code>. Instead, we keep track of the <code>id</code> of the last record retrieved from the previous page and use it in the <code>WHERE</code> clause to fetch the next set of records.</p>
 <p>To maintain reliable pagination, it's essential to ensure the cursor column is unique and immutable, as changes could disrupt the order of results. A good candidate is a primary key ID or a <code>CreatedTimestamp</code> column.</p>
@@ -181,23 +181,23 @@ LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;p
 <p>Here's an updated query:</p>
 <pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>         
 <span class="hljs-keyword">FROM</span> product         
-<span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">&</span>gt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastId        
-    <span class="hljs-keyword">AND</span> id <span class="hljs-operator">&</span>lt;<span class="hljs-operator">=</span> <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;clampId        
+<span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">&</span>gt; $lastId        
+    <span class="hljs-keyword">AND</span> id <span class="hljs-operator">&</span>lt;<span class="hljs-operator">=</span> $clampId        
     <span class="hljs-keyword">AND</span> category <span class="hljs-operator">=</span> <span class="hljs-number">1</span>        
 <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> id         
-LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize;        
+LIMIT $pageSize;        
 </code></pre>
 <p>The <code>clampId</code> serves as an upper boundary, calculated as <code>lastId</code> plus a predefined range, to limit the number of rows scanned per query execution.</p>
-<p>For instance, if <code>&#64;lastId</code> is 1000 and the scan limit is 10,000 rows, set <code>&#64;clampId</code> to 11,000. The <code>LIMIT</code> remains 1,000, ensuring immediate return if 1,000 matches are found or scanning at most 10,000 rows.</p>
+<p>For instance, if <code>lastId</code> is 1000 and the scan limit is 10,000 rows, set <code>clampId</code> to 11,000. The <code>LIMIT</code> remains 1,000, ensuring immediate return if 1,000 matches are found or scanning at most 10,000 rows.</p>
 <p>By clamping the range, we can significantly reduce query execution time, making it feasible to handle large datasets without overwhelming the system.</p>
 <h3 id="using-non-sequential-identifiers">Using Non-sequential Identifiers</h3>
 <p>While in the examples, the <code>id</code> is assumed to be numeric and sequential, it doesn't need to be to implement cursor-based pagination. We can, for instance, combine multiple fields, e.g., <code>&lt;last_updated_at&gt;</code> for sorting and <code>&lt;last_id&gt;</code> as a UUID to get the last item on the current page.</p>
 <pre><code class="language-sql hljs"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span>       
 <span class="hljs-keyword">FROM</span> product      
-<span class="hljs-keyword">WHERE</span> (last_updated_at <span class="hljs-operator">&</span>lt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastUpdatedAt)      
- <span class="hljs-keyword">OR</span> (last_updated_at <span class="hljs-operator">=</span> <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastUpdatedAt <span class="hljs-keyword">AND</span> last_id <span class="hljs-operator">&</span>gt; <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;lastId)      
+<span class="hljs-keyword">WHERE</span> (last_updated_at <span class="hljs-operator">&</span>lt; $lastUpdatedAt)      
+ <span class="hljs-keyword">OR</span> (last_updated_at <span class="hljs-operator">=</span> $lastUpdatedAt <span class="hljs-keyword">AND</span> last_id <span class="hljs-operator">&</span>gt; $lastId)      
 <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> last_updated_at <span class="hljs-keyword">DESC</span>, last_id      
-LIMIT <span class="hljs-operator">&</span>#<span class="hljs-number">64</span>;pageSize;      
+LIMIT $pageSize;      
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <p>Choosing the right pagination approach ensures optimal application performance and user satisfaction, regardless of dataset size.</p>
