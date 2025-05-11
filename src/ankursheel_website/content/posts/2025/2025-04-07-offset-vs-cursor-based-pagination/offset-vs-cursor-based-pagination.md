@@ -31,7 +31,7 @@ SELECT *
 FROM product        
 WHERE category = 1        
 ORDER BY id         
-LIMIT $pageSize         
+LIMIT @pageSize         
 OFFSET $offset;        
 ```
 
