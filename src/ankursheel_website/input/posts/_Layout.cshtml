@@ -36,13 +36,9 @@
     @await Html.PartialAsync("../partials/_Comments.cshtml")
 </footer>
 @section Scripts{
-    @* <div class="flex items-center space-x-3 flex-col mt-8 pt-4 border-2"> *@
-    @*     <h2>Did you learn something or find this summary interesting?</h2> *@
-    @*     <a role="button" class="p-2 m-2 inline-flex items-center bg-green-400 text-white rounded-md text-2xl drop-shadow-lg transition duration-500 ease-in-out hover:bg-green-800 transform hover:scale-110 flex-grow" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/ankursheel"> *@
-    @*         <img class="h-8 mr-2 border-none" src="/assets/bmc-logo.svg" alt="Buy Me A Coffee"> *@
-    @*         Buy me a book *@
-    @*     </a> *@
-    @* </div> *@
-
-    @* <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="@Model.Context.GetBuyMeACoffeeUsername()" data-description="Support me on Buy me a coffee!" data-message="Did you learn something or find this summary interesting? Buy me a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script> *@
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="@Model.Context.GetBuyMeACoffeeUsername()" data-description="Support me on Buy me a coffee!"
+        data-message="Did you learn something? Buy me a coffee" data-color="#FF813F"
+        data-position="Right" data-x_margin="18" data-y_margin="18" defer>
+</script>
 }

@@ -10,9 +10,9 @@
     <div class="my-6 flex justify-center gap-5 flex-wrap">
         <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=@url&text=@text" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=@url" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
-        <div class="md:hidden">        
+        @* <div class="md:hidden">        
             @await Html.PartialAsync("_BuyMeACoffeButton.cshtml", Model)
-        </div>
+        </div> *@ 
     </div>
     @* <div class="flex justify-center gap-x-5"> *@
     @* <a href="https://twitter.com/search?q=@url" target="_blank" rel="noreferrer noopener">Discuss on Twitter</a> *@
