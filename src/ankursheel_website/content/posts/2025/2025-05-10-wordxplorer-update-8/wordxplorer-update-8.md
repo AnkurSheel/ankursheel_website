@@ -24,7 +24,7 @@ Here's how the hints look when locked and unlocked:
 
 And here's how it works in action:
 
-![Hint System Demo](./hints.gif)
+<?# ResponsiveYouTube RBW15-Eg97E title="Watch the hint system in action" /?>
 
 These clues help kids think about the word in a different way, making the game both educational and fun. They can use them strategically to learn and improve their word-solving skills.
 

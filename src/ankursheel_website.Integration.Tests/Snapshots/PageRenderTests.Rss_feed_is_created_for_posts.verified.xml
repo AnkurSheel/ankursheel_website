@@ -34,7 +34,9 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;And here's how it works in action:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-8/hints.gif" alt="Hint System Demo"&gt;&lt;/p&gt;
+&lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
+  &lt;iframe src="https://www.youtube.com/embed/RBW15-Eg97E" title="Watch the hint system in action" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;These clues help kids think about the word in a different way, making the game both educational and fun. They can use them strategically to learn and improve their word-solving skills.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="get-wordxplorer"&gt;Get WordXplorer&lt;/h2&gt;

@@ -559,7 +559,6 @@
   /assets/images/posts/wordxplorer-update-6/screenshot_1.png,
   /assets/images/posts/wordxplorer-update-6/screenshot_2.png,
   /assets/images/posts/wordxplorer-update-6/screenshot_3.png,
-  /assets/images/posts/wordxplorer-update-8/hints.gif,
   /assets/images/posts/wordxplorer-update-8/locked_hints.jpg,
   /assets/images/posts/wordxplorer-update-8/unlocked_hints.jpg,
   /assets/images/preorder-appstore-badge.png,
