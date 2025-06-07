@@ -5,12 +5,14 @@
 }
 
 <div class="prose-sm italic">
-    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="@Model.Document.GetPublishedDate().ToString("yyyy-MM-dd")">@Model.Document.GetPublishedDate().ToString("MMM dd, yyyy")</time></p>
-        <p class="mr-4">Last Updated on <time datetime="@Model.Document.GetLastUpdatedDate().ToString("yyyy-MM-dd")">@Model.Document.GetLastUpdatedDate().ToString("MMM dd, yyyy")</time></p>
-        <p>
-            Estimated Reading Time: <span  class="font-bold">@Model.Document.GetReadingTime().RoundedMinutes min</span>
-        </p>
+    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
+        <span class="mr-4 sm:py-0 py-1">Published on <time
+                datetime="@Model.Document.GetPublishedDate().ToString("yyyy-MM-dd")">@Model.Document.GetPublishedDate().ToString("MMM dd, yyyy")</time></span>
+        <span class="mr-4 sm:py-0 py-1">Last Updated on <time
+                datetime="@Model.Document.GetLastUpdatedDate().ToString("yyyy-MM-dd")">@Model.Document.GetLastUpdatedDate().ToString("MMM dd, yyyy")</time></span>
+        <span class="sm:py-0 py-1">
+            Estimated Reading Time: <span class="font-bold">@Model.Document.GetReadingTime().RoundedMinutes min</span>
+        </span>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">

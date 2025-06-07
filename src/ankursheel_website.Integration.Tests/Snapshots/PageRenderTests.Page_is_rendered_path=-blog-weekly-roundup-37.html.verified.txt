@@ -169,12 +169,14 @@
             
 
 <div class="prose-sm italic">
-    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm">
-        <p class="mr-4">Published on <time datetime="2020-09-23">Sep 23, 2020</time></p>
-        <p class="mr-4">Last Updated on <time datetime="2020-09-23">Sep 23, 2020</time></p>
-        <p>
-            Estimated Reading Time: <span  class="font-bold">1 min</span>
-        </p>
+    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
+        <span class="mr-4 sm:py-0 py-1">Published on <time
+                datetime="2020-09-23">Sep 23, 2020</time></span>
+        <span class="mr-4 sm:py-0 py-1">Last Updated on <time
+                datetime="2020-09-23">Sep 23, 2020</time></span>
+        <span class="sm:py-0 py-1">
+            Estimated Reading Time: <span class="font-bold">1 min</span>
+        </span>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
