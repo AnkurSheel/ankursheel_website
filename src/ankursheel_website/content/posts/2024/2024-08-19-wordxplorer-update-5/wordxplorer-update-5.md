@@ -6,7 +6,6 @@ category: "project updates"
 tags:
   - "project updates"
   - "wordxplorer"
-updatedOnDate: 2024-12-26
 
 ---
 

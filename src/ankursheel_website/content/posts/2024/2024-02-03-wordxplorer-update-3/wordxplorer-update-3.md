@@ -6,7 +6,6 @@ tags:
   - "project updates"
   - "wordxplorer"
 coverImage: "./help-button.jpg"
-updatedOnDate: 2024-12-26
 ---
 
 You can see all the related updates [here](/tags/wordxplorer)

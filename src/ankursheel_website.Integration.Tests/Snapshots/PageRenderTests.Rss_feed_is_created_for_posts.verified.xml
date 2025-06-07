@@ -142,7 +142,7 @@ LIMIT $pageSize;
       <description>WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.</description>
       <enclosure url="https://www.ankursheel.com/assets/images/preorder-appstore-badge.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-7</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I hope you’re having an awesome day! Since the last post, we’ve been hard at work, appeasing the Apple gods to ensure our game is ready for the App Store.&lt;/p&gt;
 &lt;p&gt;And guess what? I’m thrilled to announce that our game has been approved.&lt;/p&gt;
@@ -367,7 +367,7 @@ else
       <description>New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/app_icon.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-6</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Since we last spoke, it’s been full steam ahead with bug fixes and getting the game ready for the App Store! We’re thrilled to be just around the corner from giving your kids a fun and educational experience they’ll love!"&lt;/p&gt;
 &lt;h2 id="new-name-and-icon"&gt;New Name and Icon&lt;/h2&gt;
@@ -438,7 +438,7 @@ them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
       <description>WordXplorer Update 5 tweaks the UI to make for a better experience</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-5</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here's whats new since the last update&lt;/p&gt;
 &lt;h2 id="updated-game-screen"&gt;Updated game screen&lt;/h2&gt;
@@ -497,7 +497,7 @@ about the game so far. The TestFlight app is still the best way to play, so let 
       <description>WordXplorer Update 4 adds deterministic levels and fireworks</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_game_screen.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-4</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.&lt;/p&gt;
 &lt;h2 id="what-happened"&gt;What happened&lt;/h2&gt;
@@ -604,7 +604,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
       <description>WordXplorer Update 3 adds a help button and 100 words</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-3/help-button.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-3</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 03 Feb 2024 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉&lt;/p&gt;
 &lt;h2 id="more-words-more-fun"&gt;🚀 More Words, More Fun&lt;/h2&gt;
@@ -1069,7 +1069,7 @@ on:
       <description>WordXplorer Update 2 updates the colors and adds a new instruction page</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/instructions.jpg" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-2</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I am thrilled to share some updates for the wordxplorer game! 🎉&lt;/p&gt;
 &lt;h2 id="testflight-approval"&gt;🚀 Testflight Approval&lt;/h2&gt;
@@ -1473,7 +1473,7 @@ git rebase origin/main
       <link>https://www.ankursheel.com/blog/wordxplorer-update-1</link>
       <description>WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion</description>
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-1</guid>
-      <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The latest WordXplorer game update, has some great additions.&lt;/p&gt;
 &lt;h2 id="new-words"&gt;20 New Words&lt;/h2&gt;

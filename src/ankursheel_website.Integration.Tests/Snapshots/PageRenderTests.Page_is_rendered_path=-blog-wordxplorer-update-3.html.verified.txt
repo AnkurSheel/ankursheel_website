@@ -143,7 +143,7 @@
         <span class="mr-4 sm:py-0 py-1">Published on <time
                 datetime="2024-02-03">Feb 03, 2024</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2024-12-26">Dec 26, 2024</time></span>
+                datetime="2024-02-03">Feb 03, 2024</time></span>
         <span class="sm:py-0 py-1">
             Estimated Reading Time: <span class="font-bold">1 min</span>
         </span>
@@ -194,10 +194,10 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
+                <a href="wordxplorer-update-2">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a>
             </li>
             <li>
-                <a href="wordxplorer-update-2">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a>
+                <a href="wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
             </li>
             <li>
                 <a href="wordxplorer-update-4">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</a>

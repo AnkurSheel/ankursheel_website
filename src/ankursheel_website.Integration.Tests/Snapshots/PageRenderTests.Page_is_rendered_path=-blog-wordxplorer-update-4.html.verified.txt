@@ -143,7 +143,7 @@
         <span class="mr-4 sm:py-0 py-1">Published on <time
                 datetime="2024-08-05">Aug 05, 2024</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2024-12-26">Dec 26, 2024</time></span>
+                datetime="2024-08-05">Aug 05, 2024</time></span>
         <span class="sm:py-0 py-1">
             Estimated Reading Time: <span class="font-bold">2 min</span>
         </span>
@@ -217,16 +217,16 @@ about the game so far.</del></p>
 
     <ul>
             <li>
-                <a href="wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
+                <a href="wordxplorer-update-5">WordXplorer #5: UI Refresh</a>
             </li>
             <li>
-                <a href="wordxplorer-update-2">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a>
+                <a href="wordxplorer-update-6">WordXplorer #6: New Look, Major Fixes &amp; App Store News</a>
+            </li>
+            <li>
+                <a href="wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>
             </li>
             <li>
                 <a href="wordxplorer-update-3">WordXplorer #3: 100 Words, Help Button &amp; Roadmap</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-5">WordXplorer #5: UI Refresh</a>
             </li>
     </ul>
 </aside>
