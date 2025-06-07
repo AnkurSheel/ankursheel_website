@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #7"
+title: "WordXplorer #7: New Video & Food Theme"
 excerpt: "WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."
 coverImage: "/assets/images/preorder-appstore-badge.png"
 category: "project updates"

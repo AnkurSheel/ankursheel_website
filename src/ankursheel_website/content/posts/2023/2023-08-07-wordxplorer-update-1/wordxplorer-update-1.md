@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #1"
+title: "WordXplorer #1: 20 Words & Play Again With Random Levels"
 excerpt: "WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion"
 category: "project updates"
 tags:

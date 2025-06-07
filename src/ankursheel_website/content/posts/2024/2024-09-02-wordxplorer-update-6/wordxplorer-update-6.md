@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #6"
+title: "WordXplorer #6: New Look, Major Fixes & App Store News"
 excerpt: "New name & icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!"
 coverImage: "./app_icon.png"
 category: "project updates"

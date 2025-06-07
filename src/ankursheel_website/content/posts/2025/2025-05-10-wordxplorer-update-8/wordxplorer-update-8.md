@@ -1,4 +1,4 @@
-title: "WordXplorer Update #8"
+title: "WordXplorer #8: New Hint System"
 excerpt: "WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively"
 coverImage: "./unlocked_hints.jpg"
 category: "project updates"

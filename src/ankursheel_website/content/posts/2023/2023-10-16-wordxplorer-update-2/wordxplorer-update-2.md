@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #2"
+title: "WordXplorer #2: TestFlight Approved, New Colors & Instructions"
 excerpt: "WordXplorer Update 2 updates the colors and adds a new instruction page"
 coverImage: "./instructions.jpg"
 category: "project updates"

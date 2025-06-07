@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #4"
+title: "WordXplorer #4: Levels, Fireworks & Fresh New Look"
 excerpt: "WordXplorer Update 4 adds deterministic levels and fireworks"
 coverImage: "./new_game_screen.jpg"
 category: "project updates"

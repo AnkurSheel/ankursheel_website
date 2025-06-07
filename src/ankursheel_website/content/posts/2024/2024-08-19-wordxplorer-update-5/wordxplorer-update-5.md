@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #5"
+title: "WordXplorer #5: UI Refresh"
 excerpt: "WordXplorer Update 5 tweaks the UI to make for a better experience"
 coverImage: "./new_game_screen.jpg"
 category: "project updates"

@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update #3"
+title: "WordXplorer #3: 100 Words, Help Button & Roadmap"
 excerpt: "WordXplorer Update 3 adds a help button and 100 words"
 category: "project updates"
 tags:
