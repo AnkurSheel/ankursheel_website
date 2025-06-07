@@ -317,9 +317,6 @@ about the game so far. The TestFlight app is still the best way to play, so let 
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

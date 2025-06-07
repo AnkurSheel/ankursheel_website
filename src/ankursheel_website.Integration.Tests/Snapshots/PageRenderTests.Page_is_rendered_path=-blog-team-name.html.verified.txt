@@ -328,9 +328,6 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

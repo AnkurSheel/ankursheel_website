@@ -421,9 +421,6 @@ LCS(i,j) = max(LCS(i+1, j), LCS(i, j+1) if X<span class="hljs-section">[i]</span
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

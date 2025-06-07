@@ -282,9 +282,6 @@ have a clear indication of which tests failed.</p>
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

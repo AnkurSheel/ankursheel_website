@@ -323,9 +323,6 @@ mock.Verify(x =&gt; x.IsValid(It.IsAny&lt;<span class="hljs-built_in">int</span>
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

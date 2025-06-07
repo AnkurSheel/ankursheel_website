@@ -328,9 +328,6 @@ LIMIT $pageSize;
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

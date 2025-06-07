@@ -333,9 +333,6 @@ pm.<span class="hljs-title function_">sendRequest</span>(<span class="hljs-strin
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

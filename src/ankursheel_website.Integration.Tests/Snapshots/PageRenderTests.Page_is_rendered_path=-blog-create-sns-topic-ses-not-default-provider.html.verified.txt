@@ -302,9 +302,6 @@ resource &quot;aws_sns_topic&quot; &quot;example-topic&quot; {
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>

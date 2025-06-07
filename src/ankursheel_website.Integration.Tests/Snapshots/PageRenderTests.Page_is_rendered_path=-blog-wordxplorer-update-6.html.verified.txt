@@ -329,9 +329,6 @@ them—they’ll thank you!! ✨</del></p>
             </svg>
         </a>
     </div>
-    <div class="copy">
-        © AnkurSheel 2025
-    </div>
 </div>
 
 </footer>
