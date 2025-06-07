@@ -4,7 +4,7 @@
 <head>
     
 
-<title>WordXplorer Update #7</title>
+<title>WordXplorer #7: New Video &amp; Food Theme</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-7"/>   
-<meta itemProp="name" content="WordXplorer Update #7"/>
+<meta itemProp="name" content="WordXplorer #7: New Video &amp; Food Theme"/>
 <meta itemProp="description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-7"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update #7"/>
+<meta property="og:title" content="WordXplorer #7: New Video &amp; Food Theme"/>
 <meta property="og:description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update #7"/>
+<meta name="twitter:title" content="WordXplorer #7: New Video &amp; Food Theme"/>
 <meta name="twitter:description" content="WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release."/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-7-twitter.png"/>
@@ -110,7 +110,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update #7</h1>
+    <h1 class="text-center">WordXplorer #7: New Video &amp; Food Theme</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -182,7 +182,7 @@ them—they’ll thank you!! ✨</del></p>
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-7&text=WordXplorer%20Update%20%237 via @ankur_sheel.&#xD;&#xA;WordXplorer%20is%20now%20available%20for%20preorder%20on%20the%20App%20Store%20with%20special%20pricing%20before%20its%20December%201st%20launch.%20This%20updates%20also%20features%20a%20preview%20video%20and%20plans%20for%20an%20Android%20release." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-7&text=WordXplorer%20%237%3A%20New%20Video%20%26%20Food%20Theme via @ankur_sheel.&#xD;&#xA;WordXplorer%20is%20now%20available%20for%20preorder%20on%20the%20App%20Store%20with%20special%20pricing%20before%20its%20December%201st%20launch.%20This%20updates%20also%20features%20a%20preview%20video%20and%20plans%20for%20an%20Android%20release." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-7" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -218,16 +218,16 @@ them—they’ll thank you!! ✨</del></p>
 
     <ul>
             <li>
-                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
+                <a href="wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
             </li>
             <li>
-                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
+                <a href="wordxplorer-update-2">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a>
             </li>
             <li>
-                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
+                <a href="wordxplorer-update-3">WordXplorer #3: 100 Words, Help Button &amp; Roadmap</a>
             </li>
             <li>
-                <a href="wordxplorer-update-4">WordXplorer Update #4</a>
+                <a href="wordxplorer-update-4">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</a>
             </li>
     </ul>
 </aside>

@@ -115,7 +115,7 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-8">WordXplorer Update #8</a> - <time class="prose-sm" datetime="25-05-10">May 10, 2025</time>
+            <a href="/blog/wordxplorer-update-8">WordXplorer #8: New Hint System</a> - <time class="prose-sm" datetime="25-05-10">May 10, 2025</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a> - <time class="prose-sm" datetime="25-04-07">April 07, 2025</time>
@@ -124,10 +124,10 @@
             <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a> - <time class="prose-sm" datetime="25-01-05">January 05, 2025</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-1">WordXplorer Update #1</a> - <time class="prose-sm" datetime="24-12-26">December 26, 2024</time>
+            <a href="/blog/wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a> - <time class="prose-sm" datetime="24-12-26">December 26, 2024</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-2">WordXplorer Update #2</a> - <time class="prose-sm" datetime="24-12-26">December 26, 2024</time>
+            <a href="/blog/wordxplorer-update-2">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a> - <time class="prose-sm" datetime="24-12-26">December 26, 2024</time>
         </li>
 </ul>
 

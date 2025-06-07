@@ -4,7 +4,7 @@
 <head>
     
 
-<title>WordXplorer Update #4</title>
+<title>WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-4"/>   
-<meta itemProp="name" content="WordXplorer Update #4"/>
+<meta itemProp="name" content="WordXplorer #4: Levels, Fireworks &amp; Fresh New Look"/>
 <meta itemProp="description" content="WordXplorer Update 4 adds deterministic levels and fireworks"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-4-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-4"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update #4"/>
+<meta property="og:title" content="WordXplorer #4: Levels, Fireworks &amp; Fresh New Look"/>
 <meta property="og:description" content="WordXplorer Update 4 adds deterministic levels and fireworks"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-4-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-4-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update #4"/>
+<meta name="twitter:title" content="WordXplorer #4: Levels, Fireworks &amp; Fresh New Look"/>
 <meta name="twitter:description" content="WordXplorer Update 4 adds deterministic levels and fireworks"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-4-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-4-twitter.png"/>
@@ -110,7 +110,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update #4</h1>
+    <h1 class="text-center">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -179,7 +179,7 @@ about the game so far.</del></p>
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-4&text=WordXplorer%20Update%20%234 via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%204%20adds%20deterministic%20levels%20and%20fireworks" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-4&text=WordXplorer%20%234%3A%20Levels%2C%20Fireworks%20%26%20Fresh%20New%20Look via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%204%20adds%20deterministic%20levels%20and%20fireworks" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-4" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -215,16 +215,16 @@ about the game so far.</del></p>
 
     <ul>
             <li>
-                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
+                <a href="wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
             </li>
             <li>
-                <a href="wordxplorer-update-2">WordXplorer Update #2</a>
+                <a href="wordxplorer-update-2">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a>
             </li>
             <li>
-                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
+                <a href="wordxplorer-update-3">WordXplorer #3: 100 Words, Help Button &amp; Roadmap</a>
             </li>
             <li>
-                <a href="wordxplorer-update-5">WordXplorer Update #5</a>
+                <a href="wordxplorer-update-5">WordXplorer #5: UI Refresh</a>
             </li>
     </ul>
 </aside>

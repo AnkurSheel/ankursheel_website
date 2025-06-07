@@ -4,7 +4,7 @@
 <head>
     
 
-<title>WordXplorer Update #2</title>
+<title>WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-2"/>   
-<meta itemProp="name" content="WordXplorer Update #2"/>
+<meta itemProp="name" content="WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions"/>
 <meta itemProp="description" content="WordXplorer Update 2 updates the colors and adds a new instruction page"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-2-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-2"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update #2"/>
+<meta property="og:title" content="WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions"/>
 <meta property="og:description" content="WordXplorer Update 2 updates the colors and adds a new instruction page"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-2-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-2-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update #2"/>
+<meta name="twitter:title" content="WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions"/>
 <meta name="twitter:description" content="WordXplorer Update 2 updates the colors and adds a new instruction page"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-2-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-2-twitter.png"/>
@@ -110,7 +110,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update #2</h1>
+    <h1 class="text-center">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -155,7 +155,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-2&text=WordXplorer%20Update%20%232 via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%202%20updates%20the%20colors%20and%20adds%20a%20new%20instruction%20page" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-2&text=WordXplorer%20%232%3A%20TestFlight%20Approved%2C%20New%20Colors%20%26%20Instructions via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%202%20updates%20the%20colors%20and%20adds%20a%20new%20instruction%20page" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-2" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
         <div class="md:hidden">        
             
@@ -191,16 +191,16 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-1">WordXplorer Update #1</a>
+                <a href="wordxplorer-update-1">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
             </li>
             <li>
-                <a href="wordxplorer-update-3">WordXplorer Update #3</a>
+                <a href="wordxplorer-update-3">WordXplorer #3: 100 Words, Help Button &amp; Roadmap</a>
             </li>
             <li>
-                <a href="wordxplorer-update-4">WordXplorer Update #4</a>
+                <a href="wordxplorer-update-4">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</a>
             </li>
             <li>
-                <a href="wordxplorer-update-5">WordXplorer Update #5</a>
+                <a href="wordxplorer-update-5">WordXplorer #5: UI Refresh</a>
             </li>
     </ul>
 </aside>

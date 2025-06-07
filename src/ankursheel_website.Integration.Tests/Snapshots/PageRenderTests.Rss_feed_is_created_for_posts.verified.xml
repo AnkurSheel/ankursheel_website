@@ -8,7 +8,7 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
-      <title>WordXplorer Update #8</title>
+      <title>WordXplorer #8: New Hint System</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-8</link>
       <description>WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-8/unlocked_hints.jpg" length="0" type="image" />
@@ -135,7 +135,7 @@ LIMIT $pageSize;
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #7</title>
+      <title>WordXplorer #7: New Video &amp; Food Theme</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-7</link>
       <description>WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.</description>
       <enclosure url="https://www.ankursheel.com/assets/images/preorder-appstore-badge.png" length="0" type="image" />
@@ -360,7 +360,7 @@ else
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #6</title>
+      <title>WordXplorer #6: New Look, Major Fixes &amp; App Store News</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-6</link>
       <description>New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-6/app_icon.png" length="0" type="image" />
@@ -431,7 +431,7 @@ them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #5</title>
+      <title>WordXplorer #5: UI Refresh</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-5</link>
       <description>WordXplorer Update 5 tweaks the UI to make for a better experience</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" length="0" type="image" />
@@ -490,7 +490,7 @@ about the game so far. The TestFlight app is still the best way to play, so let 
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #4</title>
+      <title>WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-4</link>
       <description>WordXplorer Update 4 adds deterministic levels and fireworks</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_game_screen.jpg" length="0" type="image" />
@@ -597,7 +597,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #3</title>
+      <title>WordXplorer #3: 100 Words, Help Button &amp; Roadmap</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-3</link>
       <description>WordXplorer Update 3 adds a help button and 100 words</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-3/help-button.jpg" length="0" type="image" />
@@ -1062,7 +1062,7 @@ on:
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #2</title>
+      <title>WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-2</link>
       <description>WordXplorer Update 2 updates the colors and adds a new instruction page</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/instructions.jpg" length="0" type="image" />
@@ -1467,7 +1467,7 @@ git rebase origin/main
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordXplorer Update #1</title>
+      <title>WordXplorer #1: 20 Words &amp; Play Again With Random Levels</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-1</link>
       <description>WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion</description>
       <guid>https://www.ankursheel.com/blog/wordxplorer-update-1</guid>
