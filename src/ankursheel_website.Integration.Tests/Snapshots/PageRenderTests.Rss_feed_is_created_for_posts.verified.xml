@@ -8,7 +8,37 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
-      <title>WordXplorer #8: New Hint System</title>
+      <title>WordXplorer Update #9: Save your guesses</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-9</link>
+      <description>WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively</description>
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-9</guid>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="save-your-guesses"&gt;Save your guesses&lt;/h2&gt;
+&lt;p&gt;Your guesses are now saved, letting you take as long as you need to solve each level without starting over.&lt;/p&gt;
+&lt;p&gt;When you return to a level, you’ll see all your previous guesses, allowing you to continue right where you left off. Once you successfully complete a level, all your guesses for that puzzle will be cleared, giving you a fresh start when you decide to replay it.&lt;/p&gt;
+&lt;p&gt;Here's how it works in action:&lt;/p&gt;
+&lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
+  &lt;iframe src="https://www.youtube.com/embed/R5ZXlpfyUZY" title="Watch the Save State in action" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/div&gt;  
+&lt;h2 id="bug-fixes"&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I've resolved the issue where the keyboard colour changed to white after moving to the next level.&lt;/li&gt;
+&lt;li&gt;I've also fixed the problem where the latest level showed up as locked when you went back to the level selection screen after finishing a level.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="get-wordxplorer"&gt;Get WordXplorer&lt;/h2&gt;
+&lt;p&gt;WordXplorer is available on the iOS App Store&lt;/p&gt;
+&lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
+  &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
+&lt;/a&gt;
+&lt;p&gt;Want to try before you buy? Check out our &lt;a href="https://wordxplorer.ankursheel.com/"&gt;web demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thank you for being a part of this journey with me! I'm eager to hear your thoughts and feedback. Stay tuned for more updates!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>WordXplorer Update #8: New Hint System</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-8</link>
       <description>WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively</description>
       <enclosure url="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-8/unlocked_hints.jpg" length="0" type="image" />
@@ -1465,30 +1495,6 @@ git rebase origin/main
 &lt;p&gt;&lt;strong&gt;Updated 05 July 2024:&lt;/strong&gt; This is not needed anymore with game-ci/unity-builder@v4.&lt;/p&gt;
 &lt;h3 id="shoutout"&gt;Shoutout&lt;/h3&gt;
 &lt;p&gt;And here's a shoutout to &lt;a href="https://reallpepe.itch.io/defendron"&gt;realpepe&lt;/a&gt;, who shared this hack Discord.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>WordXplorer #1: 20 Words &amp; Play Again With Random Levels</title>
-      <link>https://www.ankursheel.com/blog/wordxplorer-update-1</link>
-      <description>WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion</description>
-      <guid>https://www.ankursheel.com/blog/wordxplorer-update-1</guid>
-      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The latest WordXplorer game update, has some great additions.&lt;/p&gt;
-&lt;h2 id="new-words"&gt;20 New Words&lt;/h2&gt;
-&lt;p&gt;I have curated 20 new words to keep young minds engaged and entertained.&lt;/p&gt;
-&lt;h2 id="play-a-new-game-with-randomly-selected-words"&gt;Play a New Game with Randomly Selected Words&lt;/h2&gt;
-&lt;p&gt;After completing a level, you can play another level with a randomly selected word&lt;/p&gt;
-&lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
-  &lt;iframe src="https://www.youtube.com/embed/_mw6u4SIGWk" title="wordxplorer Next Level" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;h2 id="next-up"&gt;Next Up&lt;/h2&gt;
-&lt;p&gt;Add to TestFlight for iPhone Beta Users&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
-&lt;a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
-  &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer"&gt;
-&lt;/a&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (216)</h2>
+<h2>All Categories (217)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,7 +150,10 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-8">WordXplorer #8: New Hint System</a>
+            <a href="/blog/wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a>
@@ -160,9 +163,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-6">WordXplorer #6: New Look, Major Fixes &amp; App Store News</a>
         </li>
 </ul>
 
@@ -487,10 +487,13 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (20)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (21)</h3>
     <ul class="p-0">
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/wordxplorer-update-8">WordXplorer #8: New Hint System</a> - <time class="prose-sm" datetime="25-05-10">May 10, 2025</time>
+                <a href="/blog/wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a> - <time class="prose-sm" datetime="25-06-08">June 08, 2025</time>
+            </li>
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordxplorer-update-8">WordXplorer Update #8: New Hint System</a> - <time class="prose-sm" datetime="25-05-10">May 10, 2025</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a> - <time class="prose-sm" datetime="24-10-22">October 22, 2024</time>

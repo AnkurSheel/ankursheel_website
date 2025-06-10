@@ -4,7 +4,7 @@
 <head>
     
 
-<title>WordXplorer Update #8: New Hint System</title>
+<title>WordXplorer Update #9: Save your guesses</title>
 <meta charset="utf-8"/>
 
 
@@ -12,23 +12,23 @@
 <meta name="description" content="WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-8"/>   
-<meta itemProp="name" content="WordXplorer Update #8: New Hint System"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-9"/>   
+<meta itemProp="name" content="WordXplorer Update #9: Save your guesses"/>
 <meta itemProp="description" content="WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-8-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-8"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-9"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update #8: New Hint System"/>
+<meta property="og:title" content="WordXplorer Update #9: Save your guesses"/>
 <meta property="og:description" content="WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-8-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-8-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update #8: New Hint System"/>
+<meta name="twitter:title" content="WordXplorer Update #9: Save your guesses"/>
 <meta name="twitter:description" content="WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-8-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-8-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update #8: New Hint System</h1>
+    <h1 class="text-center">WordXplorer Update #9: Save your guesses</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
             
@@ -141,9 +141,9 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2025-05-10">May 10, 2025</time></span>
+                datetime="2025-06-08">Jun 08, 2025</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2025-05-10">May 10, 2025</time></span>
+                datetime="2025-06-08">Jun 08, 2025</time></span>
         <span class="sm:py-0 py-1">
             Estimated Reading Time: <span class="font-bold">1 min</span>
         </span>
@@ -156,29 +156,18 @@
 </div>
 
 <p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
-<h2 id="new-hint-system">New Hint System</h2>
-<p>We're excited to introduce our new hint system! This feature helps players when they're stuck, making the game more accessible while still maintaining the challenge.</p>
-<p>The hint system provides contextual clues about the word.</p>
-<p>Here's how the hints look when locked and unlocked:</p>
-<table>
-<thead>
-<tr>
-<th>The hint popup at the start of the game, showing all hints are locked</th>
-<th>The hint popup after 2 hints have been unlocked, showing the available clues</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="/assets/images/posts/wordxplorer-update-8/locked_hints.jpg" alt="Locked Hints" /></td>
-<td><img src="/assets/images/posts/wordxplorer-update-8/unlocked_hints.jpg" alt="Unlocked Hints" /></td>
-</tr>
-</tbody>
-</table>
-<p>And here's how it works in action:</p>
+<h2 id="save-your-guesses">Save your guesses</h2>
+<p>Your guesses are now saved, letting you take as long as you need to solve each level without starting over.</p>
+<p>When you return to a level, you’ll see all your previous guesses, allowing you to continue right where you left off. Once you successfully complete a level, all your guesses for that puzzle will be cleared, giving you a fresh start when you decide to replay it.</p>
+<p>Here's how it works in action:</p>
 <div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
-  <iframe src="https://www.youtube.com/embed/RBW15-Eg97E" title="Watch the hint system in action" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
-</div>
-<p>These clues help kids think about the word in a different way, making the game both educational and fun. They can use them strategically to learn and improve their word-solving skills.</p>
+  <iframe src="https://www.youtube.com/embed/R5ZXlpfyUZY" title="Watch the Save State in action" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>  
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>I've resolved the issue where the keyboard colour changed to white after moving to the next level.</li>
+<li>I've also fixed the problem where the latest level showed up as locked when you went back to the level selection screen after finishing a level.</li>
+</ul>
 <hr />
 <h2 id="get-wordxplorer">Get WordXplorer</h2>
 <p>WordXplorer is available on the iOS App Store</p>
@@ -193,8 +182,8 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-8&text=WordXplorer%20Update%20%238%3A%20New%20Hint%20System via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%208%20introduces%20a%20new%20hint%20system%20with%20contextual%20clues%20to%20help%20kids%20learn%20and%20solve%20words%20more%20effectively" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-8" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-9&text=WordXplorer%20Update%20%239%3A%20Save%20your%20guesses via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%208%20introduces%20a%20new%20hint%20system%20with%20contextual%20clues%20to%20help%20kids%20learn%20and%20solve%20words%20more%20effectively" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-9" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -206,7 +195,7 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
+                <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
             </li>
             <li>
                 <a href="wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>

@@ -229,7 +229,7 @@ them—they’ll thank you!! ✨</del></p>
                 <a href="wordxplorer-update-4">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</a>
             </li>
             <li>
-                <a href="wordxplorer-update-8">WordXplorer #8: New Hint System</a>
+                <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
             </li>
     </ul>
 </aside>
