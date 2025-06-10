@@ -1,6 +1,6 @@
 ---
 title: "WordXplorer Update #9: Save your guesses"
-excerpt: "WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively"
+excerpt: "WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay."
 category: "project updates"
 tags:
 - "project updates"
