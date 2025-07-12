@@ -4,7 +4,7 @@
 <head>
     
 
-<title>Posts tagged as &quot;wordxplorer&quot;</title>
+<title>Privacy Policy for WordXplorer</title>
 <meta charset="utf-8"/>
 
 
@@ -12,18 +12,23 @@
 <meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/tags/wordxplorer"/>   
-<meta itemProp="name" content="Posts tagged as &quot;wordxplorer&quot;"/>
+    <link rel="canonical" href="https://www.ankursheel.com/personal-projects/wordxplorer/privacy-policy-wordxplorer"/>   
+<meta itemProp="name" content="Privacy Policy for WordXplorer"/>
 <meta itemProp="description"/>
-<meta property="og:url" content="https://www.ankursheel.com/tags/wordxplorer"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer/privacy-policy-wordxplorer-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/personal-projects/wordxplorer/privacy-policy-wordxplorer"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Posts tagged as &quot;wordxplorer&quot;"/>
+<meta property="og:title" content="Privacy Policy for WordXplorer"/>
 <meta property="og:description"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer/privacy-policy-wordxplorer-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer/privacy-policy-wordxplorer-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Posts tagged as &quot;wordxplorer&quot;"/>
+<meta name="twitter:title" content="Privacy Policy for WordXplorer"/>
 <meta name="twitter:description"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer/privacy-policy-wordxplorer-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/personal-projects/wordxplorer/privacy-policy-wordxplorer-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -128,109 +133,72 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Posts tagged as &quot;wordxplorer&quot;</h1>
+    <h1 class="text-center">Privacy Policy for WordXplorer</h1>
     <div class="flex flex-col min-h-screen">
         <article class="prose-code:bg-slate-400">
-            
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-9" class="text-center prose-2xl mb-4">WordXplorer Update #9: Save your guesses</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay.
-        </p>
-            <a href="/blog/wordxplorer-update-9" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-8" class="text-center prose-2xl mb-4">WordXplorer Update #8: New Hint System</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 8 introduces a new hint system with contextual clues to help kids learn and solve words more effectively
-        </p>
-            <a href="/blog/wordxplorer-update-8" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-7" class="text-center prose-2xl mb-4">WordXplorer #7: New Video &amp; Food Theme</a>
-        <div class="font-semibold text-center">3 min</div>
-        <p>
-            WordXplorer is now available for preorder on the App Store with special pricing before its December 1st launch. This updates also features a preview video and plans for an Android release.
-        </p>
-            <a href="/blog/wordxplorer-update-7" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-6" class="text-center prose-2xl mb-4">WordXplorer #6: New Look, Major Fixes &amp; App Store News</a>
-        <div class="font-semibold text-center">4 min</div>
-        <p>
-            New name &amp; icon, major bug fixes, and upcoming App Store release. Test the latest build and give your feedback!
-        </p>
-            <a href="/blog/wordxplorer-update-6" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-5" class="text-center prose-2xl mb-4">WordXplorer #5: UI Refresh</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 5 tweaks the UI to make for a better experience
-        </p>
-            <a href="/blog/wordxplorer-update-5" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-4" class="text-center prose-2xl mb-4">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</a>
-        <div class="font-semibold text-center">2 min</div>
-        <p>
-            WordXplorer Update 4 adds deterministic levels and fireworks
-        </p>
-            <a href="/blog/wordxplorer-update-4" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-3" class="text-center prose-2xl mb-4">WordXplorer #3: 100 Words, Help Button &amp; Roadmap</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 3 adds a help button and 100 words
-        </p>
-            <a href="/blog/wordxplorer-update-3" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-2" class="text-center prose-2xl mb-4">WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</a>
-        <div class="font-semibold text-center">1 min</div>
-        <p>
-            WordXplorer Update 2 updates the colors and adds a new instruction page
-        </p>
-            <a href="/blog/wordxplorer-update-2" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
-
-<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
-    <div class="mx-4 flex flex-col my-4 p-8">
-        <a href="/blog/wordxplorer-update-1" class="text-center prose-2xl mb-4">WordXplorer #1: 20 Words &amp; Play Again With Random Levels</a>
-        <div class="font-semibold text-center">0 min</div>
-        <p>
-            WordXplorer Update 1 adds 20 new words and the ability to play a new level on completion
-        </p>
-            <a href="/blog/wordxplorer-update-1" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
-    </div>
-</div>
+            <p><strong>Effective Date:</strong> 01 August 2024</p>
+<p>Ankur Sheel (“we”, “us”, or “our”) is committed to protecting your privacy. This Privacy Policy explains our practices regarding the collection, use, and disclosure of information through WordXplorer (the “Game”) on any device. We do <strong>not</strong> collect, store, or process any personal data or ask our users to enter personal information.</p>
+<hr />
+<h2 id="childrens-privacy">Children’s Privacy</h2>
+<p>We are committed to protecting the privacy of children. The Game is designed for fun and is available to users of all ages, including children under 13. Consistent with COPPA and other privacy laws, we do <strong>not</strong> knowingly collect any personal information from children under 13.</p>
+<hr />
+<h2 id="information-we-collect">Information We Collect</h2>
+<ul>
+<li>We collect <strong>no personal data</strong> from our users.</li>
+<li>We use <strong>GameAnalytics</strong> to track gameplay and progression <strong>anonymously</strong>, which may include:
+<ul>
+<li>Gameplay and progression data (to understand engagement)</li>
+<li>Device type and operating system (for optimization)</li>
+<li>Anonymized IP addresses (for trend analysis)</li>
+</ul>
+</li>
+<li>We use <strong>Sentry</strong> to track <strong>errors and crashes</strong>, collecting:
+<ul>
+<li>Error reports (type, location, technical context)</li>
+<li>Technical info: device type, OS version, and similar non-personal data<br />
+No personally identifiable information (PII) is ever captured.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="use-of-your-information">Use of Your Information</h2>
+<p>The anonymous data collected is used only to:</p>
+<ul>
+<li><strong>GameAnalytics</strong>: Analyze gameplay and progression to improve features</li>
+<li><strong>Sentry</strong>: Diagnose and fix errors or crashes to maintain app stability</li>
+</ul>
+<hr />
+<h2 id="disclosure-of-your-information">Disclosure of Your Information</h2>
+<ul>
+<li>We do <strong>not</strong> sell, trade, rent, or share your information for marketing.</li>
+<li>We may share <strong>anonymous, aggregated data</strong> with trusted partners <strong>solely</strong> for functional improvements or analytics.</li>
+<li>Under no circumstances is personal data disclosed.</li>
+</ul>
+<hr />
+<h2 id="data-security">Data Security</h2>
+<p>We implement reasonable, commercially accepted measures to protect the anonymous data we collect. While absolute security cannot be guaranteed, we integrate GameAnalytics and Sentry with strong safeguards to ensure only non-personal data is captured.</p>
+<hr />
+<h2 id="your-rights">Your Rights</h2>
+<ul>
+<li>Since we collect <strong>no personal information</strong>, typical privacy rights (like access, correction, deletion) do not apply.</li>
+<li>We are committed to transparency and safeguarding your experience.</li>
+<li>For any concerns or questions, please get in touch.</li>
+</ul>
+<hr />
+<h2 id="changes-to-this-privacy-policy">Changes to This Privacy Policy</h2>
+<ul>
+<li>We may update this policy periodically.</li>
+<li>Updated versions will include a new “Effective Date” and be posted here.</li>
+<li>Please review this policy regularly when accessing the Game.</li>
+</ul>
+<hr />
+<h2 id="contact-us">Contact Us</h2>
+<p>If you have any questions or comments about this Privacy Policy, contact:</p>
+<p><strong>Ankur Sheel</strong></p>
+<ul>
+<li>Email: ankur.sheel&#64;gmail.com</li>
+</ul>
+<hr />
 
         </article>
     </div>

@@ -1233,6 +1233,7 @@
   /personal-projects/route-planner-travelling-salesman-problem/us-landmarks-waypoints/,
   /personal-projects/statiqhelpers/,
   /personal-projects/wordxplorer/,
+  /personal-projects/wordxplorer/privacy-policy-wordxplorer/,
   /personal-projects/xunithelpers/,
   /rss.xml,
   /sitemap.xml,
