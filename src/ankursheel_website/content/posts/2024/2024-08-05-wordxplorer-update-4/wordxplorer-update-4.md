@@ -53,7 +53,7 @@ about the game so far.~~
 
 **_Update 26th December 2024:_** You can now download the game.
 
-<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
+<?# AppStoreBadges AppStoreLinkText="Get WordXplorer on App Store" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" GooglePlayLinkText="Get WordXplorer on Play Store" GooglePlayLinkUrl="com.glhf.wordleforkids"/?>
 
 Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!
 

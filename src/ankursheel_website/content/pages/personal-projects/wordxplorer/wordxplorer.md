@@ -4,8 +4,8 @@ WordXplorer is an exciting word puzzle game designed to helps kids(aged 5 and up
 - All words and levels are carefully selected to be age-appropriate and beneficial, ensuring a safe and enriching experience for your child.
 - The game is designed to be played offline, making it perfect for long car rides, waiting rooms, or any time your child needs a quiet activity.
 
-<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
+<?# AppStoreBadges AppStoreLinkText="Get WordXplorer on App Store" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" GooglePlayLinkText="Get WordXplorer on Play Store" GooglePlayLinkUrl="com.glhf.wordleforkids"/?>
 
 <?# ResponsiveYouTube bAtj9bAYVS0 Title="Gameplay Video" /?>
 
-<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
+<?# AppStoreBadges AppStoreLinkText="Get WordXplorer on App Store" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" GooglePlayLinkText="Get WordXplorer on Play Store" GooglePlayLinkUrl="com.glhf.wordleforkids"/?>
