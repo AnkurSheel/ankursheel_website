@@ -179,7 +179,7 @@ status = 301
 force = false
 
 [[redirects]]
-from = "/blog/reset-primary-key-sequence-out-sync-postgres"
+from = "/blog/exporting-highlights-and-annotations-from-a-kobo-aura"
 to = "/blog/exporting-highlights-annotations-kobo-aura"
 status = 301
 force = false
