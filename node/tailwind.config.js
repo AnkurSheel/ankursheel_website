@@ -1,7 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    content: ['../**/input/**/*.cshtml'],
+    content: [
+        '../**/input/**/*.cshtml',
+    ],
+    safelist: [
+        'appstore-badges-container'
+    ],
     theme: {
         extend: {
             fontFamily: {
