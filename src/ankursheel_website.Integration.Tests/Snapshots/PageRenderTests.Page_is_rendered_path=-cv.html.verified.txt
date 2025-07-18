@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">CV</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <h2 id="summary">Summary</h2>
 <p>I am a software developer who strives to help people become more efficient and productive. I take an active interest in improving processes to benefit my team members. I enjoy building tools that help reduce the time taken by my team members to complete tasks. I specialize in making code maintainable by using refactoring techniques and adding unit and system test coverage. I have often been brought into different projects because of my debugging skills. I also enjoy extending my technical skillset by indulging in side-projects.</p>
 <p>To see what I look for in a company, please visit: <a href="/blog/dream-job">Dream Job</a></p>

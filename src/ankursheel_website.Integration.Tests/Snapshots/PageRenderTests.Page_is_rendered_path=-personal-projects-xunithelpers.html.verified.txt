@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p>Helpers that come in handy when writing tests with Xunit.</p>
 <p>Helpers Include</p>
 <ul>

@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p>WordXplorer is an exciting word puzzle game designed to helps kids(aged 5 and up) develop early literacy skills and encourage critical thinking through a wordle like game.</p>
 <ul>
 <li>Kids have seven chances per level to guess the right four-letter word. This provides ample opportunities to learn from mistakes, reinforcing word recognition and problem-solving skills while keeping the game fun and engaging.</li>

@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Get in Touch</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             
 <form method="post" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true" name="contact">
     <input type="hidden" name="bot-field"/>

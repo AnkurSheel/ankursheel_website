@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Ankur Sheel&#x27;s Rants and Ramblings</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p>I am a programmer, an avid traveller and a complete foodie.</p>
 <p>I write software to solve problems. In an erstwhile life, I used to make games for a living. Now I strive to help people become more efficient and productive. I also dabble in a bit of photography. I’m addicted to travel. I try to get out of the city regularly with a yearly overseas trip. I am also a complete foodie and am continuously trying out new places to eat.</p>
 <p>Feel free to follow the links to my <a href="/blog">blog</a>, <a href="/cv">cv</a> or other projects I do in my free time.</p>

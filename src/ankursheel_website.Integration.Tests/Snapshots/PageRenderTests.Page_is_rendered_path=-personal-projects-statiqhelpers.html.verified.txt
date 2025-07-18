@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p>An opinionated wrapper around Statiq.Web</p>
 <p><a href="https://github.com/AnkurSheel/StatiqHelpers">Source code</a></p>
 <p><a href="https://www.nuget.org/packages/Codinators.StatiqHelpers/">Nuget Package</a></p>
