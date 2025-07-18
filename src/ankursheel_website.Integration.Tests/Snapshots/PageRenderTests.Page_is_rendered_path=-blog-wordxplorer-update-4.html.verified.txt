@@ -193,9 +193,14 @@
 <p><del>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think
 about the game so far.</del></p>
 <p><strong><em>Update 26th December 2024:</em></strong> You can now download the game.</p>
-<a href="https://apps.apple.com/us/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
-  <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer" />
-</a>
+<div class="appstore-badges-container">
+  <a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+    <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store" />
+  </a>
+  <a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank">
+    <img src="/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store" />
+  </a>
+</div>
 <p>Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!</p>
 <p>Thank you all for your support and patience. Stay tuned for more updates!</p>
 

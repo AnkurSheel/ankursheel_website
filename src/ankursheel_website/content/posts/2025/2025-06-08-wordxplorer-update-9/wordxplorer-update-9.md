@@ -31,7 +31,7 @@ Here's how it works in action:
   
 WordXplorer is available on the iOS App Store 
 
-<?# AppStoreBadges LinkText="Get WordXplorer" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" /?>
+<?# AppStoreBadges AppStoreLinkText="Get WordXplorer on App Store" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" GooglePlayLinkText="Get WordXplorer on Play Store" GooglePlayLinkUrl="com.glhf.wordleforkids"/?>
 
 Want to try before you buy? Check out our [web demo](https://wordxplorer.ankursheel.com/)
 

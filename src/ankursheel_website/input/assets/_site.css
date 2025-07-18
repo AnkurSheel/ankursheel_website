@@ -108,6 +108,10 @@
         --tw-bg-opacity: 1;
         background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
     }
+
+    .appstore-badges-container {
+        @apply flex flex-row items-center justify-center gap-4;
+    }
 }
 
 @tailwind utilities;
