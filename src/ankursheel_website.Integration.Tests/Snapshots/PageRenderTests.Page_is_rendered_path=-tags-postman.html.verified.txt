@@ -130,7 +130,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Posts tagged as &quot;Postman&quot;</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">

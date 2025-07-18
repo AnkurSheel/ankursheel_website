@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Privacy Policy for WordXplorer</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p><strong>Effective Date:</strong> 01 August 2024</p>
 <p>Ankur Sheel (“we”, “us”, or “our”) is committed to protecting your privacy. This Privacy Policy explains our practices regarding the collection, use, and disclosure of information through WordXplorer (the “Game”) on any device. We do <strong>not</strong> collect, store, or process any personal data or ask our users to enter personal information.</p>
 <hr />

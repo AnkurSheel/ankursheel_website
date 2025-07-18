@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Ankur Sheel</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p>I created this to see how different easing functions behave</p>
 <p>Easing Functions Showcased: <em>Linear</em>, <em>Sine</em>, <em>Quadratic</em>, <em>Cubic</em>, <em>Quartic</em>, <em>Quintic</em>, <em>Exponential</em>, <em>Circular</em>, <em>Elastic</em>, <em>Back</em> and <em>Bounce</em>.</p>
 <p>Easing Types supported : <em>EaseIn</em>, <em>EaseOut</em>, <em>EaseInOut</em> and <em>EaseOutIn</em>.</p>

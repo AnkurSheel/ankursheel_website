@@ -135,7 +135,7 @@
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
     <h1 class="text-center">Route Planner: US Cities Waypoints</h1>
     <div class="flex flex-col min-h-screen">
-        <article class="prose-code:bg-slate-400">
+        <article>
             <p>List of waypoints for the USA Cities Route planner</p>
 <ul>
 <li><p>Oklahoma City, Oklahoma</p>
