@@ -86,6 +86,10 @@
     td {
         @apply border
     }
+    
+    code:not(pre code) {
+        @apply bg-gray-300;
+    }
 }
 
 @tailwind components;
