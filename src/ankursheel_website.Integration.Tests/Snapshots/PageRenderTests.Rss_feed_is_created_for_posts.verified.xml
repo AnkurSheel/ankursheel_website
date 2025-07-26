@@ -8,6 +8,108 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Story Points Aren't the Problem</title>
+      <link>https://www.ankursheel.com/blog/story-points-arent-problem</link>
+      <description>Sprint planning shouldn’t be a time suck. Learn how story points get misused—and how to fix the process for good.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/story-points-arent-problem</guid>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Like many developers, I hate story pointing. Non-devs? They’re silently counting the minutes till the (pointless) debates stop and the meeting’s over.&lt;/p&gt;
+&lt;p&gt;It feels like I’ve wasted &lt;em&gt;years&lt;/em&gt; of my life in sprint planning sessions that spiral into arguments over whether something is a 2 or a 3. I’ve also sat through too many sprint planning sessions watching teams treat story points as time estimates, and walk away with no more clarity than when they started.&lt;/p&gt;
+&lt;p&gt;It all feels likes a performance that gives &lt;del&gt;management&lt;/del&gt; everyone a false sense of control.&lt;/p&gt;
+&lt;p&gt;But here’s the thing: I have come to realize that&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;story points aren't the problem.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I’ve noticed three common mistakes that make story points and the whole sprint planning exercise useless. The good news? These are all fixable. In fact, I will show you how to make them not suck.&lt;/p&gt;
+&lt;h2 id="mistake-1-treating-story-points-as-a-proxy-for-time"&gt;Mistake #1: Treating Story Points as a proxy for Time&lt;/h2&gt;
+&lt;p&gt;How often have you heard this in a sprint planning session -&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This should take 1 week, so… five story points?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That’s not how story points work. They’re not about time.&lt;/p&gt;
+&lt;p&gt;A 3-point story might take one day or more than a week. It doesn't matter.&lt;/p&gt;
+&lt;p&gt;Story points should reflect the &lt;strong&gt;complexity&lt;/strong&gt; of the task.&lt;/p&gt;
+&lt;p&gt;Here’s a better way to think about them:&lt;/p&gt;
+&lt;h3 id="point-no-brainer-tasks"&gt;1 Point: "No-Brainer" Tasks&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Potential Traits:&lt;/strong&gt; No unknowns, low risk, minimal code changes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding logs to existing code&lt;/li&gt;
+&lt;li&gt;Trivial changes behind a feature flag&lt;/li&gt;
+&lt;li&gt;Cleaning up a simple feature flag&lt;/li&gt;
+&lt;li&gt;Mechanical refactoring across multiple files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="points-straightforward-work"&gt;2 Points: "Straightforward" Work&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Potential Traits:&lt;/strong&gt; Low risk, some minor unknowns, small test updates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple UI changes that don't require new components&lt;/li&gt;
+&lt;li&gt;Creating a new dashboard with existing data&lt;/li&gt;
+&lt;li&gt;Cleaning up a complex feature flag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="points-reasonably-challenging"&gt;3 Points: "Reasonably Challenging"&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Potential Traits:&lt;/strong&gt; Some unknowns, moderate risk, might require coordination with others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixing a bug with a known root cause&lt;/li&gt;
+&lt;li&gt;New functionality that can be feature flagged cleanly&lt;/li&gt;
+&lt;li&gt;Work that involves coordination with another developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="points-investigation-required"&gt;5 Points: "Investigation Required"&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Potential traits:&lt;/strong&gt; Some unknowns, large code changes, lots of new tests, external dependencies&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical investigation for new features&lt;/li&gt;
+&lt;li&gt;Work that's difficult to feature flag&lt;/li&gt;
+&lt;li&gt;Cross-team coordination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are good candidates to split into smaller tickets once the investigation is done.&lt;/p&gt;
+&lt;h3 id="points-spike-territory"&gt;8 Points: "Spike Territory"&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Potential traits:&lt;/strong&gt; Many unknowns, risky changes, hard to estimate confidently.&lt;/p&gt;
+&lt;p&gt;If you’re estimating something at 8 points, you probably need a spike first. Timebox it, then use what you’ve learned to create smaller, pointable stories.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/story-points-arent-problem/infographic.png" alt="Storypoint Infographic"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: You can download the full sized infographic from &lt;a href="https://www.ankursheel.com/assets/images/posts/story-points-arent-problem/infographic_original.png"&gt;Printable Infographic&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="mistake-2-estimating-in-isolation"&gt;Mistake #2: Estimating in Isolation&lt;/h2&gt;
+&lt;p&gt;Ever had a product owner or tech lead show up to planning with stories already estimated?&lt;/p&gt;
+&lt;p&gt;Estimation is a team sport. Different people catch different risks, assumptions, and edge cases. Getting everyone involved builds shared understanding and better team cohesion.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The number matters less than the conversation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here’s what to do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The feature lead fleshes out the ticket ahead of planning.&lt;/li&gt;
+&lt;li&gt;They give a 30-second overview during the session and answer questions.
+&lt;ul&gt;
+&lt;li&gt;No need to dive into every detail - but enough for the team to understand the &lt;strong&gt;why&lt;/strong&gt;, the &lt;strong&gt;approach&lt;/strong&gt;, and have the &lt;strong&gt;confidence&lt;/strong&gt; to estimate complexity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Then use Planning Poker to uncover different perspectives.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="mistake-3-arguing-over-2-vs-3-points"&gt;Mistake #3: Arguing Over 2 vs 3 Points&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/story-points-arent-problem/two_vs_three.png" alt="two vs three"&gt;&lt;/p&gt;
+&lt;p&gt;You know the moment. One person says it’s a 2. Another insists it’s a 3. Suddenly, you’re 20 minutes deep into a conversation that doesn’t matter.&lt;/p&gt;
+&lt;p&gt;Here’s the truth:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You’re optimizing for precision in a system designed for approximation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That’s not just inefficient — it completely misses the point (pun unintended).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Timebox these debates.&lt;/strong&gt; If you can't agree in 1-2 minutes, pick the higher number and move on. It's not worth derailing the whole session.&lt;/p&gt;
+&lt;p&gt;However, if there’s a big delta—say, someone thinks it’s a 2 and someone else thinks it’s a 5 — that is worth unpacking. Someone’s probably missing something.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="final-thoughts"&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;Story points aren't about precision. They're about shared clarity. Used well, they spark the right conversations. Used poorly, they fuel endless debates and planning theater.&lt;/p&gt;
+&lt;p&gt;So next time you're estimating, skip the time math and ask:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do we actually understand the scope, complexity, and purpose of this work?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If the answer’s yes, the number doesn't matter.&lt;/p&gt;
+&lt;p&gt;You’ve heard my take. Now I’m curious: &lt;strong&gt;What’s your biggest frustration with story points — and how have you worked around it?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Drop a comment and send this to someone who’s still fighting over 2 vs 3.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordXplorer Update #9: Save your guesses</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-9</link>
       <description>WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay.</description>
@@ -527,7 +629,7 @@ them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="privacy-policy"&gt;Privacy Policy&lt;/h2&gt;
-&lt;p&gt;To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out &lt;a href="https://www.ankursheel.com/assets/downloads/Privacy_Policy_WordXplore.pdf" target="\_blank"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out &lt;a href="https://www.ankursheel.com/personal-projects/wordxplorer/privacy-policy-wordxplorer" target="\_blank"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="playable-build"&gt;Playable Build&lt;/h2&gt;
 &lt;p&gt;&lt;del&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think
@@ -1504,37 +1606,6 @@ git rebase origin/main
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-fetch"&gt;git fetch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rebase"&gt;git rebase&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Workaround for Unity Personal License Manual Activation Not Supported</title>
-      <link>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</link>
-      <description>A workaround for Unity no longer supporting manual activation of Personal licenses.</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/unity-personal-license-manual-activation-workaround-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/unity-personal-license-manual-activation-workaround</guid>
-      <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;This is not needed anymore with game-ci/unity-builder@v4. &lt;del&gt;If you still need this for some reason, let me know and I can resurrect this&lt;/del&gt;  I have resurrected it after some people asked for it.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;You decided to add a CI/CD pipeline to your Unity Project using &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;What's the 1st step? Activating Unity! Easy, right?&lt;/p&gt;
-&lt;p&gt;You generate the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file after creating the github action. You carry on with the list and head to &lt;a href="https://license.unity3d.com/manual"&gt;https://license.unity3d.com/manual&lt;/a&gt;, all set to create that &lt;strong&gt;&lt;em&gt;ulf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
-&lt;h2 id="plot-twist"&gt;Plot Twist&lt;/h2&gt;
-&lt;p&gt;But wait a second. There is an error - "Unity no longer supports manual activation of Personal licenses."&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/no_longer_supported.png" alt="Unity no longer supports manual activation of Personal licenses"&gt;&lt;/p&gt;
-&lt;p&gt;You disregard the message and upload the &lt;strong&gt;&lt;em&gt;alf&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
-&lt;p&gt;But, the option to generate an ulf for a personal license? Poof, it's vanished. Instead, Unity asks us to type in a serial number.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/serial_number.png" alt="Activate your license using serial number"&gt;&lt;/p&gt;
-&lt;h2 id="time-for-a-bit-of-trickery"&gt;Time for a bit of trickery&lt;/h2&gt;
-&lt;p&gt;Right-click and inspect the serial number box.&lt;/p&gt;
-&lt;p&gt;Find the &lt;code&gt;&amp;lt;div class="option option-personal clear" style="display: none;"&amp;gt;&lt;/code&gt; code;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/html_source.png" alt="Html Source"&gt;&lt;/p&gt;
-&lt;p&gt;And delete &lt;code&gt;"display: none;"&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Boom! The Unity Personal Edition option reappears. 🎉&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-personal-license-manual-activation-workaround/page_with_personal_license.png" alt="Page With Personal License"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;Hopefully, before this hack stops working, GameCI will have an official workaround :)&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Updated 05 July 2024:&lt;/strong&gt; This is not needed anymore with game-ci/unity-builder@v4.&lt;/p&gt;
-&lt;h3 id="shoutout"&gt;Shoutout&lt;/h3&gt;
-&lt;p&gt;And here's a shoutout to &lt;a href="https://reallpepe.itch.io/defendron"&gt;realpepe&lt;/a&gt;, who shared this hack Discord.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

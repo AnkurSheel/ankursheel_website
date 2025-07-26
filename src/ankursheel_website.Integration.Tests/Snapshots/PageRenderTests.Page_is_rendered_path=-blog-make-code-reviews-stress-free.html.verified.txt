@@ -214,10 +214,10 @@
                 <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
             </li>
             <li>
-                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+                <a href="story-points-arent-problem">Story Points Aren&#x27;t the Problem</a>
             </li>
             <li>
-                <a href="team-name">What&#x27;s in a team name</a>
+                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
     </ul>
 </aside>

@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (217)</h2>
+<h2>All Categories (218)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,6 +150,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/story-points-arent-problem">Story Points Aren&#x27;t the Problem</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -161,13 +164,13 @@
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>
         </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/fun-feature-flags">Fun with (Feature) Flags</a>
-        </li>
 </ul>
 
-    <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (11)</h3>
+    <h3 id="career-work" class="py-4 border-b border-grey-lighter capitalize">career / work (12)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/story-points-arent-problem">Story Points Aren&#x27;t the Problem</a> - <time class="prose-sm" datetime="25-07-26">July 26, 2025</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/dream-job">What is my idea of a dream job</a> - <time class="prose-sm" datetime="24-02-08">February 08, 2024</time>
             </li>

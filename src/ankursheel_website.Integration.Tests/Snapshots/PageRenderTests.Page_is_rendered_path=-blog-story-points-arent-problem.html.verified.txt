@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordXplorer #5: UI Refresh</title>
+<title>Story Points Aren&#x27;t the Problem</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
+<meta name="description" content="Sprint planning shouldn&#x2019;t be a time suck. Learn how story points get misused&#x2014;and how to fix the process for good."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-5"/>   
-<meta itemProp="name" content="WordXplorer #5: UI Refresh"/>
-<meta itemProp="description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-5"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/story-points-arent-problem"/>   
+<meta itemProp="name" content="Story Points Aren&#x27;t the Problem"/>
+<meta itemProp="description" content="Sprint planning shouldn&#x2019;t be a time suck. Learn how story points get misused&#x2014;and how to fix the process for good."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/story-points-arent-problem"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer #5: UI Refresh"/>
-<meta property="og:description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-facebook.png"/>
+<meta property="og:title" content="Story Points Aren&#x27;t the Problem"/>
+<meta property="og:description" content="Sprint planning shouldn&#x2019;t be a time suck. Learn how story points get misused&#x2014;and how to fix the process for good."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer #5: UI Refresh"/>
-<meta name="twitter:description" content="WordXplorer Update 5 tweaks the UI to make for a better experience"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-5-twitter.png"/>
+<meta name="twitter:title" content="Story Points Aren&#x27;t the Problem"/>
+<meta name="twitter:description" content="Sprint planning shouldn&#x2019;t be a time suck. Learn how story points get misused&#x2014;and how to fix the process for good."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer #5: UI Refresh</h1>
+    <h1 class="text-center">Story Points Aren&#x27;t the Problem</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -141,82 +141,120 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2024-08-19">Aug 19, 2024</time></span>
+                datetime="2025-07-26">Jul 26, 2025</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2024-08-19">Aug 19, 2024</time></span>
+                datetime="2025-07-26">Jul 26, 2025</time></span>
         <span class="sm:py-0 py-1">
-            Estimated Reading Time: <span class="font-bold">1 min</span>
+            Estimated Reading Time: <span class="font-bold">3 min</span>
         </span>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
-            <a href="/tags/wordxplorer" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordxplorer</a>
+            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
+            <a href="/tags/process" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">process</a>
     </div>
 </div>
 
-<p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
-<p>Here's whats new since the last update</p>
-<h2 id="updated-game-screen">Updated game screen</h2>
-<p>The main game screen now has more negative space, giving it a cleaner look. However, this change means the keyboard buttons are smaller. Give it a try and let me know how it feels!</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Before</th>
-<th style="text-align: center;">After</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/old_game_screen.jpg" alt="Old Game Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/new_game_screen.jpg" alt="New Game Screen" /></td>
-</tr>
-</tbody>
-</table>
-<h2 id="improved-popups">Improved Popups</h2>
-<p>Popups are no longer boring grey rectangles. They now match the color scheme of the rest of the game, making everything look more cohesive.</p>
-<p><img src="/assets/images/posts/wordxplorer-update-5/popups.jpg" alt="Popups" /></p>
-<h2 id="enhanced-fireworks">Enhanced Fireworks</h2>
-<p>Last time, I added support for fireworks, but they were a bit hard to see. Now, the screen dims after you complete a level, so the fireworks really stand out. With explosive sound effects, it creates a much better experience!</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Before</th>
-<th style="text-align: center;">After</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/old_fireworks.gif" alt="Old Fireworks" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-5/new_fireworks.gif" alt="New Fireworks" /></td>
-</tr>
-</tbody>
-</table>
-<h2 id="privacy-policy">Privacy Policy</h2>
-<p>To prepare the game for the App Store, I needed a privacy policy. Luckily, I’m not capturing any personal information, so it was easy to create one using ChatGPT. If you’re interested, you can check it out <a href="/personal-projects/wordxplorer/privacy-policy-wordxplorer" target="\_blank">here</a></p>
+<p>Like many developers, I hate story pointing. Non-devs? They’re silently counting the minutes till the (pointless) debates stop and the meeting’s over.</p>
+<p>It feels like I’ve wasted <em>years</em> of my life in sprint planning sessions that spiral into arguments over whether something is a 2 or a 3. I’ve also sat through too many sprint planning sessions watching teams treat story points as time estimates, and walk away with no more clarity than when they started.</p>
+<p>It all feels likes a performance that gives <del>management</del> everyone a false sense of control.</p>
+<p>But here’s the thing: I have come to realize that</p>
+<blockquote>
+<p>story points aren't the problem.</p>
+</blockquote>
+<p>I’ve noticed three common mistakes that make story points and the whole sprint planning exercise useless. The good news? These are all fixable. In fact, I will show you how to make them not suck.</p>
+<h2 id="mistake-1-treating-story-points-as-a-proxy-for-time">Mistake #1: Treating Story Points as a proxy for Time</h2>
+<p>How often have you heard this in a sprint planning session -</p>
+<blockquote>
+<p>This should take 1 week, so… five story points?</p>
+</blockquote>
+<p>That’s not how story points work. They’re not about time.</p>
+<p>A 3-point story might take one day or more than a week. It doesn't matter.</p>
+<p>Story points should reflect the <strong>complexity</strong> of the task.</p>
+<p>Here’s a better way to think about them:</p>
+<h3 id="point-no-brainer-tasks">1 Point: &quot;No-Brainer&quot; Tasks</h3>
+<p><strong>Potential Traits:</strong> No unknowns, low risk, minimal code changes.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Adding logs to existing code</li>
+<li>Trivial changes behind a feature flag</li>
+<li>Cleaning up a simple feature flag</li>
+<li>Mechanical refactoring across multiple files</li>
+</ul>
+<h3 id="points-straightforward-work">2 Points: &quot;Straightforward&quot; Work</h3>
+<p><strong>Potential Traits:</strong> Low risk, some minor unknowns, small test updates.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Simple UI changes that don't require new components</li>
+<li>Creating a new dashboard with existing data</li>
+<li>Cleaning up a complex feature flag</li>
+</ul>
+<h3 id="points-reasonably-challenging">3 Points: &quot;Reasonably Challenging&quot;</h3>
+<p><strong>Potential Traits:</strong> Some unknowns, moderate risk, might require coordination with others.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Fixing a bug with a known root cause</li>
+<li>New functionality that can be feature flagged cleanly</li>
+<li>Work that involves coordination with another developer</li>
+</ul>
+<h3 id="points-investigation-required">5 Points: &quot;Investigation Required&quot;</h3>
+<p><strong>Potential traits:</strong> Some unknowns, large code changes, lots of new tests, external dependencies</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Technical investigation for new features</li>
+<li>Work that's difficult to feature flag</li>
+<li>Cross-team coordination</li>
+</ul>
+<p>These are good candidates to split into smaller tickets once the investigation is done.</p>
+<h3 id="points-spike-territory">8 Points: &quot;Spike Territory&quot;</h3>
+<p><strong>Potential traits:</strong> Many unknowns, risky changes, hard to estimate confidently.</p>
+<p>If you’re estimating something at 8 points, you probably need a spike first. Timebox it, then use what you’ve learned to create smaller, pointable stories.</p>
+<p><img src="/assets/images/posts/story-points-arent-problem/infographic.png" alt="Storypoint Infographic" /></p>
+<p><em>Note: You can download the full sized infographic from <a href="/assets/images/posts/story-points-arent-problem/infographic_original.png">Printable Infographic</a></em></p>
+<h2 id="mistake-2-estimating-in-isolation">Mistake #2: Estimating in Isolation</h2>
+<p>Ever had a product owner or tech lead show up to planning with stories already estimated?</p>
+<p>Estimation is a team sport. Different people catch different risks, assumptions, and edge cases. Getting everyone involved builds shared understanding and better team cohesion.</p>
+<blockquote>
+<p>The number matters less than the conversation.</p>
+</blockquote>
+<p>Here’s what to do:</p>
+<ul>
+<li>The feature lead fleshes out the ticket ahead of planning.</li>
+<li>They give a 30-second overview during the session and answer questions.
+<ul>
+<li>No need to dive into every detail - but enough for the team to understand the <strong>why</strong>, the <strong>approach</strong>, and have the <strong>confidence</strong> to estimate complexity.</li>
+</ul>
+</li>
+<li>Then use Planning Poker to uncover different perspectives.</li>
+</ul>
+<h2 id="mistake-3-arguing-over-2-vs-3-points">Mistake #3: Arguing Over 2 vs 3 Points</h2>
+<p><img src="/assets/images/posts/story-points-arent-problem/two_vs_three.png" alt="two vs three" /></p>
+<p>You know the moment. One person says it’s a 2. Another insists it’s a 3. Suddenly, you’re 20 minutes deep into a conversation that doesn’t matter.</p>
+<p>Here’s the truth:</p>
+<blockquote>
+<p>You’re optimizing for precision in a system designed for approximation.</p>
+</blockquote>
+<p>That’s not just inefficient — it completely misses the point (pun unintended).</p>
+<p><strong>Timebox these debates.</strong> If you can't agree in 1-2 minutes, pick the higher number and move on. It's not worth derailing the whole session.</p>
+<p>However, if there’s a big delta—say, someone thinks it’s a 2 and someone else thinks it’s a 5 — that is worth unpacking. Someone’s probably missing something.</p>
 <hr />
-<h2 id="playable-build">Playable Build</h2>
-<p><del>Test it out by going to <a href="https://golden-pony-d2c3f0.netlify.app/">Playable Web Build</a> and let me know what you think
-about the game so far. The TestFlight app is still the best way to play, so let me know if you want an invitation. 😊</del></p>
-<p><strong><em>Update 26th December 2024:</em></strong> You can now download the game.</p>
-<div class="appstore-badges-container">
-  <a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
-    <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store" />
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank">
-    <img src="/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store" />
-  </a>
-</div>
-<p>Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!</p>
-<p>Thank you all for your support and patience. Stay tuned for more updates!</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Story points aren't about precision. They're about shared clarity. Used well, they spark the right conversations. Used poorly, they fuel endless debates and planning theater.</p>
+<p>So next time you're estimating, skip the time math and ask:</p>
+<blockquote>
+<p>Do we actually understand the scope, complexity, and purpose of this work?</p>
+</blockquote>
+<p>If the answer’s yes, the number doesn't matter.</p>
+<p>You’ve heard my take. Now I’m curious: <strong>What’s your biggest frustration with story points — and how have you worked around it?</strong></p>
+<p>Drop a comment and send this to someone who’s still fighting over 2 vs 3.</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-5&text=WordXplorer%20%235%3A%20UI%20Refresh via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%205%20tweaks%20the%20UI%20to%20make%20for%20a%20better%20experience" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-5" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/story-points-arent-problem&text=Story%20Points%20Aren%27t%20the%20Problem via @ankur_sheel.&#xD;&#xA;Sprint%20planning%20shouldn%E2%80%99t%20be%20a%20time%20suck.%20Learn%20how%20story%20points%20get%20misused%E2%80%94and%20how%20to%20fix%20the%20process%20for%20good." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/story-points-arent-problem" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -228,16 +266,16 @@ about the game so far. The TestFlight app is still the best way to play, so let 
 
     <ul>
             <li>
-                <a href="wordxplorer-update-4">WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</a>
+                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
             </li>
             <li>
-                <a href="wordxplorer-update-6">WordXplorer #6: New Look, Major Fixes &amp; App Store News</a>
+                <a href="make-code-reviews-stress-free">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
             </li>
             <li>
-                <a href="wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>
+                <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
             </li>
             <li>
-                <a href="wordxplorer-update-3">WordXplorer #3: 100 Words, Help Button &amp; Roadmap</a>
+                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
     </ul>
 </aside>
