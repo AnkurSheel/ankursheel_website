@@ -9,19 +9,21 @@ tags:
 
 ---
 
-Like many developers, I hate story pointing. Non-devs? They’re silently counting the minutes till the (pointless) debates stop and the meeting’s over.
+Like many developers, I hate story pointing.
 
 It feels like I’ve wasted _years_ of my life in sprint planning sessions that spiral into arguments over whether something is a 2 or a 3. I’ve also sat through too many sprint planning sessions watching teams treat story points as time estimates, and walk away with no more clarity than when they started. 
 
-It all feels likes a performance that gives ~~management~~ everyone a false sense of control.
+It all feels likes a performance that gives ~~management~~ everyone a false sense of control. 
+
+In fact, some people just do away with story points altogether, and I get it. I was once in that camp too.
 
 But here’s the thing: I have come to realize that
 
 > story points aren't the problem.
 
-I’ve noticed three common mistakes that make story points and the whole sprint planning exercise useless. The good news? These are all fixable. In fact, I will show you how to make them not suck.
+I’ve noticed three common mistakes that make story points and the whole sprint planning exercise useless. The good news? These are all fixable. Lets see what they are and how to make story pointing not suck.
 
-## Mistake #1: Treating Story Points as a proxy for Time
+## Mistake #1: Treating Story Points as a Proxy for Time
 
 How often have you heard this in a sprint planning session -
 
@@ -29,7 +31,7 @@ How often have you heard this in a sprint planning session -
 
 That’s not how story points work. They’re not about time.
 
-A 3-point story might take one day or more than a week. It doesn't matter.
+A 3-point story might take one day or more than a week. I know you dont want to hear it but It doesn't matter.
 
 Story points should reflect the **complexity** of the task.
 
@@ -44,7 +46,7 @@ Here’s a better way to think about them:
 - Adding logs to existing code
 - Trivial changes behind a feature flag
 - Cleaning up a simple feature flag
-- Mechanical refactoring across multiple files
+- Mechanical refactoring
 
 ### 2 Points: "Straightforward" Work
 
@@ -52,7 +54,7 @@ Here’s a better way to think about them:
 
 **Examples**
 
-- Simple UI changes that don't require new components
+- Simple changes behind a feature flag
 - Creating a new dashboard with existing data
 - Cleaning up a complex feature flag
 
@@ -72,7 +74,7 @@ Here’s a better way to think about them:
 
 **Examples**
 
-- Technical investigation for new features
+- Technical investigation for new features or bugs
 - Work that's difficult to feature flag
 - Cross-team coordination
 
@@ -117,13 +119,15 @@ That’s not just inefficient — it completely misses the point (pun unintended
 
 **Timebox these debates.** If you can't agree in 1-2 minutes, pick the higher number and move on. It's not worth derailing the whole session.
 
-However, if there’s a big delta—say, someone thinks it’s a 2 and someone else thinks it’s a 5 — that is worth unpacking. Someone’s probably missing something.
+However, if there’s a big delta — say, someone thinks it’s a 2 and someone else thinks it’s a 5 — that is worth unpacking. Someone’s probably missing something.
   
 ---  
 
 ## Final Thoughts
 
-Story points aren't about precision. They're about shared clarity. Used well, they spark the right conversations. Used poorly, they fuel endless debates and planning theater. 
+Story points aren't about precision. They're about shared clarity. 
+
+Used well, they spark the right conversations. Used poorly, they fuel endless debates and planning theater. 
 
 So next time you're estimating, skip the time math and ask:
 
