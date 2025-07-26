@@ -21,7 +21,7 @@ But here’s the thing: I have come to realize that
 
 > story points aren't the problem.
 
-I’ve noticed three common mistakes that make story points and the whole sprint planning exercise useless. The good news? These are all fixable. Lets see what they are and how to make story pointing not suck.
+I’ve noticed three common mistakes that make story points and the whole sprint planning exercise feel like a giant waste of time. The good news? These are all fixable. Lets see what they are and how to make story pointing not suck.
 
 ## Mistake #1: Treating Story Points as a Proxy for Time
 
