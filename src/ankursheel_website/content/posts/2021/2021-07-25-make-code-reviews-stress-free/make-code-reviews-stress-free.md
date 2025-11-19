@@ -11,13 +11,13 @@ tags:
 
 ---
 
-_This is an edited version of an article I originally wrote for the First AML Product & Engineering blog. You can read the [original version here](https://firstaml.dev/blog/how-we-made-our-code-reviews-stress-free)_.
+_This is an edited version of an article I originally wrote for the First AML Product & Engineering blog. ~~You can read the [original version here](https://firstaml.dev/blog/how-we-made-our-code-reviews-stress-free)_.~~
 
-Code reviews can be stressful for both parties. The person being reviewed puts their code for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.
+Code reviews can be stressful for both parties. The person being reviewed puts their code out there for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.
 
-There is a lot of advice on the interwebs about conducting effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.
+There is a lot of advice on the interwebs about how to conduct effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.
 
-However, computers are still not good at some things, like suggesting good variable names. We can lose out on some good suggestions by only talking about blockers in a code review. It's a classic case of throwing out the baby with the bathwater.
+However, computers are still not good at some things, like suggesting good variable names. By only talking about blockers in a code review, we can lose out on some good suggestions. It's a classic case of throwing out the baby with the bathwater.
 
 ## Inspiration
 
@@ -27,9 +27,9 @@ The gist of the article is that Nelify uses metaphorical names describing the in
 
 ## Let's start adapting
 
-Netlify has 5 levels - mountain, boulder, pebble, sand and dust.
+Netlify has 5 different levels - mountain, boulder, pebble, sand and dust.
 
-This is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. It's also worth adding one more level to indicate that it's a clarifying question asked by the reviewer.
+I think this is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. I feel it's worth adding one more to indicate that it's a clarifying question asked by the reviewer.
 
 This is an improvement over the traditional review, but there is still a problem. Text is difficult to parse.
 
@@ -57,7 +57,7 @@ The Pull Request can be merged, but the comment should be addressed in a future 
 
 ### 🚲 Take it or leave it
 
-All those other suggestions or personal opinions that might be considered as nitpicking. Examples of this would be suggesting a different variable name.
+All those other things that are suggestions or a personal opinion and might be considered nitpicking. Examples of this would be suggesting a different variable name.
 
 ### ⛽ A clarifying question
 
@@ -67,7 +67,7 @@ It can be used to get more context on the pull request changes or understand the
 
 Code reviews can incite endless debates between developers. Using emojis to encode the severity of the feedback can help avoid this problem.
 
-As a reviewer, you can give suggestions without feeling as if you are being harsh. As the person whose code is being reviewed, you can concentrate on the feedback that matters.
+As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.
 
 If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.
 

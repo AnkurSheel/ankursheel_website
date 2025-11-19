@@ -17,11 +17,11 @@ It all feels likes a performance that gives ~~management~~ everyone a false sens
 
 In fact, some people just do away with story points altogether, and I get it. I was once in that camp too.
 
-But here’s the thing: I have come to realize that
+But, what I if told you
 
 > story points aren't the problem.
 
-I’ve noticed three common mistakes that make story points and the whole sprint planning exercise feel like a giant waste of time. The good news? These are all fixable. Lets see what they are and how to make story pointing not suck.
+I’ve noticed three common mistakes that make story points and the whole sprint planning exercise feel like a giant waste of time. Let's see what they are and how we can fix them to make story-pointing not suck.
 
 ## Mistake #1: Treating Story Points as a Proxy for Time
 
@@ -31,13 +31,13 @@ How often have you heard this in a sprint planning session -
 
 That’s not how story points work. They’re not about time.
 
-A 3-point story might take one day or more than a week. I know you dont want to hear it but It doesn't matter.
+A 3-point story might take one day or more than a week. I know you dont want to hear it but it doesn't matter.
 
 Story points should reflect the **complexity** of the task.
 
 Here’s a better way to think about them:
 
-### 1 Point: "No-Brainer" Tasks
+### 1 Point
 
 **Potential Traits:** No unknowns, low risk, minimal code changes.
 
@@ -48,7 +48,7 @@ Here’s a better way to think about them:
 - Cleaning up a simple feature flag
 - Mechanical refactoring
 
-### 2 Points: "Straightforward" Work
+### 2 Points
 
 **Potential Traits:** Low risk, some minor unknowns, small test updates.
 
@@ -58,7 +58,7 @@ Here’s a better way to think about them:
 - Creating a new dashboard with existing data
 - Cleaning up a complex feature flag
 
-### 3 Points: "Reasonably Challenging"
+### 3 Points
 
 **Potential Traits:** Some unknowns, moderate risk, might require coordination with others.
 
@@ -68,7 +68,7 @@ Here’s a better way to think about them:
 - New functionality that can be feature flagged cleanly
 - Work that involves coordination with another developer
 
-### 5 Points: "Investigation Required"
+### 5 Points
 
 **Potential traits:** Some unknowns, large code changes, lots of new tests, external dependencies
 
@@ -80,7 +80,7 @@ Here’s a better way to think about them:
 
 These are good candidates to split into smaller tickets once the investigation is done.
 
-### 8 Points: "Spike Territory"
+### 8 Points
 
 **Potential traits:** Many unknowns, risky changes, hard to estimate confidently.
 
@@ -92,7 +92,7 @@ _Note: You can download the full sized infographic from [Printable Infographic](
 
 ## Mistake #2: Estimating in Isolation
 
-Ever had a product owner or tech lead show up to planning with stories already estimated?
+Ever had a product owner or a tech lead show up to planning with stories already estimated?
 
 Estimation is a team sport. Different people catch different risks, assumptions, and edge cases. Getting everyone involved builds shared understanding and better team cohesion.
 
@@ -111,11 +111,9 @@ Here’s what to do:
 
 You know the moment. One person says it’s a 2. Another insists it’s a 3. Suddenly, you’re 20 minutes deep into a conversation that doesn’t matter.
 
-Here’s the truth:
-
 > You’re optimizing for precision in a system designed for approximation.
 
-That’s not just inefficient — it completely misses the point (pun unintended).
+That’s not just wasteful — it completely misses the point (pun unintended).
 
 **Timebox these debates.** If you can't agree in 1-2 minutes, pick the higher number and move on. It's not worth derailing the whole session.
 
@@ -127,15 +125,14 @@ However, if there’s a big delta — say, someone thinks it’s a 2 and someone
 
 Story points aren't about precision. They're about shared clarity. 
 
-Used well, they spark the right conversations. Used poorly, they fuel endless debates and planning theater. 
+Used well, they build shared context. Used poorly, they fuel endless debates. 
 
-So next time you're estimating, skip the time math and ask:
+So next time you're estimating ask yourself:
 
 > Do we actually understand the scope, complexity, and purpose of this work?
 
 If the answer’s yes, the number doesn't matter. 
 
-
-You’ve heard my take. Now I’m curious: **What’s your biggest frustration with story points — and how have you worked around it?** 
+**What’s your biggest frustration with story points — and how have you worked around it?** 
 
 Drop a comment and send this to someone who’s still fighting over 2 vs 3.

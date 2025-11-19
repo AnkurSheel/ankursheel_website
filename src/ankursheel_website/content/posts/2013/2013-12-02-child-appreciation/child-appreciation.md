@@ -1,6 +1,6 @@
 ---
-title: "Why being an only child is awesome"
-excerpt: "Gain personal insights into the advantages and unique benefits of being an only child"
+title: Why being an only child is awesome
+excerpt: Due to my parent's steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child.
 category: "opinion"
 tags:
 

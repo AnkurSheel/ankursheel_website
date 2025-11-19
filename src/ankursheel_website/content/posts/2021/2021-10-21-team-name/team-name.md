@@ -58,7 +58,7 @@ If you want to have team names with no connection to the product, I have a contr
 >
 >  ""Peopleware""
 
-A team name based on an inside joke gives it a unique identity. The uniqueness between the names and what that difference signifies binds one identity to it.
+Having a team name based on an inside joke gives it a unique identity. It's the uniqueness between the names that binds one identity to it.
 
 It gives this feeling of being a part of an elite entity.
 
@@ -70,7 +70,7 @@ Now, before you go all up in arms and say,
 
 I kinda agree.
 
-A team name based on an inside joke is not naturally inclusive to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.
+A team name based on an inside joke is by nature not inclusive to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.
 
 Whether it's easier to remember or not, that's debatable. But it can certainly be more memorable, and memorable things get remembered faster. After all, would you be able to forget a name like [The Applesauce Top Hat Brigade](https://twitter.com/catswetel/status/1440039225156538374)? It's a name I am not going to forget anytime soon.
 
@@ -78,9 +78,9 @@ Team names based on an inside joke are not only more fun but have a few addition
 
 As the old guard moves on, the team members change, and the inside joke becomes stale/politically incorrect; it makes it much easier to retire the team name and spin up a new one based on a new inside joke.
 
-As the number of teams increases, each new team could think of an inside joke to rally around for their team name. It could be a great morale booster besides being a fun bonding exercise.
+As the number of teams increases, each new team could think of their inside joke to rally around for their team name. Apart from a fun bonding exercise, it could be a great morale booster.
 
-Merch/swag also feels cooler when associated with an inside joke. Remember, it is a potential ice-breaker.
+Merch/swag also feels cooler when it's associated with an inside joke. Remember, it is a potential ice-breaker.
 
 ## My favourite team name
 
@@ -88,24 +88,23 @@ One of my favourite team names was based on an inside joke at FirstAml. We were 
 
 You can see how this can be construed as offensive because it sounds like a cuss word. I rarely cuss, and this gave me a laugh every time I said Team 4Q (which was one of the reasons to go with it).
 
-It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not a problem. In any case, you could say it was a valid concern because it could be a problem when communicating verbally with external parties.
+In any case, people had a valid concern. It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not so much of a problem.
+
+But, it could be a problem when communicating verbally with external parties.
+
 
 _Although Atlassian has one of their values as Don't @$/# with the customer, and they are not shy of using the word in interviews so it was probably an overreaction by the leaders at First AML._
 
-There was a simple fix - to use the name "Team 4 Questions" when talking externally or to enunciate the name so that it doesn't sound like a cuss word.
-
-The other team was made primarily of Front end engineers who named their team **_XXM_**. If you are wondering what that stands for, it's nothing offensive. It's **Extra Extra Medium**, an allusion to the breakpoints (screen sizes) that Front End Engineers have to deal with when building out pages.
-
-Changing their name was a classic case of throwing the baby out with the bathwater.
+Changing the name in this scenario was a classic case of throwing the baby out with the bathwater.
 
 ## Caveats
 
-It's possible to have stories to share, even if you are operating under a common theme. My team at FirstAMl was later renamed to [kārearea](https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/), and it appealed to me (more than the other birds) because it's fast and can bring down prey larger than itself.
+It's possible to have stories to share, even if you are operating under a common theme. My team at FirstAMl was later renamed to [kārearea](https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/). To be fair, they did allow us to choose the name but the theme was already chosen so it  was like "who cares".
 
-_But I doubt new people will care about the reasoning behind choosing it as the team name. Sadly, it's not a conversation starter when all the other teams are named after NZ birds. It will always feel like we randomly chose it because we had to choose something._
+_I doubt anyone cares about the reasoning behind choosing it as the team name. Sadly, it's not a conversation starter when all the other teams are named after NZ birds. It will always feel like we randomly chose it because we had to choose something._
 
 ## Conclusion
 
 It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.
 
-Having said that, you should probably have some guidelines to weed out the genuinely offensive.
+Having said that, you should probably have some guidelines to weed out the truly offensive.

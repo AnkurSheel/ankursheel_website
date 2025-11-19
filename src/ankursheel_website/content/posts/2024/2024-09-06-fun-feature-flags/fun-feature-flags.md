@@ -48,7 +48,7 @@ In our example, you would create a branch for the new title feature, and each ta
 
 Feature branches were popular because they were straightforward to use and possibly because that was the best we had at that time. They still work well for small-scale projects.
 
-However, in larger teams, feature branches create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.
+However, in larger teams, feature branches can create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.
 
 Here are some other downsides:
 
@@ -68,7 +68,7 @@ An evolution of feature branches is **Git Flow**, a branching model I’ve also 
 
 Git Flow uses two main branches (`main` and `develop`). Feature branches are created off `develop`, and once a feature is stable, it is merged into `develop`. When `develop` is stable, it is merged into `main`, which is always production-ready. A `release` branch is created from `main` for each release and `hotfix` branches are created to fix production issues.
 
-In our example, you would create one or more feature branches off `develop` for the new title feature. Once the feature is complete, it would be merged into `develop`. When `develop` is stable and we would want a new release, it would be merged into `main`.
+In our example, you would create one or more feature branches off `develop` for the new title feature. Once the feature is complete, it would be merged into `develop`. When `develop` is stable, it would be merged into `main`.
 
 ![Git Flow](./git-flow.jpg)
 
