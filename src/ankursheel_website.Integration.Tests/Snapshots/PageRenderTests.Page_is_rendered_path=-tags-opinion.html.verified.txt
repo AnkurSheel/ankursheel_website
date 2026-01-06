@@ -193,7 +193,7 @@
         <a href="/blog/child-appreciation" class="text-center prose-2xl mb-4">Why being an only child is awesome</a>
         <div class="font-semibold text-center">5 min</div>
         <p>
-            Gain personal insights into the advantages and unique benefits of being an only child
+            Due to my parent&#x27;s steadfast refusal to give me a sibling, I have been an only child for almost 30 years. This post talks about the pros of being an only child.
         </p>
             <a href="/blog/child-appreciation" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
     </div>

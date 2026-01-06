@@ -181,7 +181,7 @@
 <code>main</code>.</p>
 <p><img src="/assets/images/posts/fun-feature-flags/branch-hell.jpg" alt="Feature Branch Complexity.jpg" /></p>
 <p>Feature branches were popular because they were straightforward to use and possibly because that was the best we had at that time. They still work well for small-scale projects.</p>
-<p>However, in larger teams, feature branches create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.</p>
+<p>However, in larger teams, feature branches can create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.</p>
 <p>Here are some other downsides:</p>
 <ul>
 <li>Since code in feature branches must be fully completed before merging, it often leads to large, complex pull requests with significant changes.</li>
@@ -196,7 +196,7 @@
 <h3 id="alternative-2-git-flow">Alternative 2: Git Flow</h3>
 <p>An evolution of feature branches is <strong>Git Flow</strong>, a branching model I’ve also used with success for certain projects.</p>
 <p>Git Flow uses two main branches (<code>main</code> and <code>develop</code>). Feature branches are created off <code>develop</code>, and once a feature is stable, it is merged into <code>develop</code>. When <code>develop</code> is stable, it is merged into <code>main</code>, which is always production-ready. A <code>release</code> branch is created from <code>main</code> for each release and <code>hotfix</code> branches are created to fix production issues.</p>
-<p>In our example, you would create one or more feature branches off <code>develop</code> for the new title feature. Once the feature is complete, it would be merged into <code>develop</code>. When <code>develop</code> is stable and we would want a new release, it would be merged into <code>main</code>.</p>
+<p>In our example, you would create one or more feature branches off <code>develop</code> for the new title feature. Once the feature is complete, it would be merged into <code>develop</code>. When <code>develop</code> is stable, it would be merged into <code>main</code>.</p>
 <p><img src="/assets/images/posts/fun-feature-flags/git-flow.jpg" alt="Git Flow" /></p>
 <p>Git Flow offers several advantages compared to Feature Branches.</p>
 <ul>

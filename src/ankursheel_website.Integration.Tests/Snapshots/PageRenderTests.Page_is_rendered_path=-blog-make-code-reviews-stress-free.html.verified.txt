@@ -155,16 +155,16 @@
     </div>
 </div>
 
-<p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. You can read the <a href="https://firstaml.dev/blog/how-we-made-our-code-reviews-stress-free">original version here</a></em>.</p>
-<p>Code reviews can be stressful for both parties. The person being reviewed puts their code for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.</p>
-<p>There is a lot of advice on the interwebs about conducting effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.</p>
-<p>However, computers are still not good at some things, like suggesting good variable names. We can lose out on some good suggestions by only talking about blockers in a code review. It's a classic case of throwing out the baby with the bathwater.</p>
+<p><em>This is an edited version of an article I originally wrote for the First AML Product &amp; Engineering blog. ~~You can read the <a href="https://firstaml.dev/blog/how-we-made-our-code-reviews-stress-free">original version here</a></em>.~~</p>
+<p>Code reviews can be stressful for both parties. The person being reviewed puts their code out there for everyone to see and potentially judge. In contrast, the person reviewing feels the pressure to maintain quality without coming across as harsh.</p>
+<p>There is a lot of advice on the interwebs about how to conduct effective code reviews. A lot of it is focused on avoiding nitpicking. It's good advice and has resulted in a cottage industry of automated tools to enforce code standards.</p>
+<p>However, computers are still not good at some things, like suggesting good variable names. By only talking about blockers in a code review, we can lose out on some good suggestions. It's a classic case of throwing out the baby with the bathwater.</p>
 <h2 id="inspiration">Inspiration</h2>
 <p>I thought there was no good solution to this problem for a long time, but then I came across an article on <a href="https://www.netlify.com/blog/2020/03/05/feedback-ladders-how-we-encode-code-reviews-at-netlify/">Feedback Ladders</a> by the team at Netlify.</p>
 <p>The gist of the article is that Nelify uses metaphorical names describing the inconveniences of living in a house still being built in their code reviews. This encodes the severity of the feedback.</p>
 <h2 id="lets-start-adapting">Let's start adapting</h2>
-<p>Netlify has 5 levels - mountain, boulder, pebble, sand and dust.</p>
-<p>This is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. It's also worth adding one more level to indicate that it's a clarifying question asked by the reviewer.</p>
+<p>Netlify has 5 different levels - mountain, boulder, pebble, sand and dust.</p>
+<p>I think this is overkill, and we can get away with just three - [boulder], [pebble] and [dust]. I feel it's worth adding one more to indicate that it's a clarifying question asked by the reviewer.</p>
 <p>This is an improvement over the traditional review, but there is still a problem. Text is difficult to parse.</p>
 <p>The solution is easy — Let's use emojis.</p>
 <p><em>We can use whatever emojis we like, but our platform of choice must support the emojis that we decide to use.</em></p>
@@ -181,12 +181,12 @@
 <h3 id="non-blocking-but-essential">🚗 Non-Blocking but essential</h3>
 <p>The Pull Request can be merged, but the comment should be addressed in a future PR. Examples of this would be addressing tech debt or enhancements.</p>
 <h3 id="take-it-or-leave-it">🚲 Take it or leave it</h3>
-<p>All those other suggestions or personal opinions that might be considered as nitpicking. Examples of this would be suggesting a different variable name.</p>
+<p>All those other things that are suggestions or a personal opinion and might be considered nitpicking. Examples of this would be suggesting a different variable name.</p>
 <h3 id="a-clarifying-question">⛽ A clarifying question</h3>
 <p>It can be used to get more context on the pull request changes or understand the domain.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Code reviews can incite endless debates between developers. Using emojis to encode the severity of the feedback can help avoid this problem.</p>
-<p>As a reviewer, you can give suggestions without feeling as if you are being harsh. As the person whose code is being reviewed, you can concentrate on the feedback that matters.</p>
+<p>As a reviewer, we can give suggestions without feeling as if we are being harsh. As the person whose code is being reviewed, we can concentrate on the feedback that matters.</p>
 <p>If you plan to use this approach, make sure to add your personality to it. Remember, there is no such thing as the only way.</p>
 <p>I am always curious to know how other people have adapted this in their workflow so let me know what you did :)</p>
 

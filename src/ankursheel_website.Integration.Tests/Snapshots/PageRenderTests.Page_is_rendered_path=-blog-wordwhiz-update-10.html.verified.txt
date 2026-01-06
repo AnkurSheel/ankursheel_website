@@ -4,31 +4,31 @@
 <head>
     
 
-<title>What&#x27;s in a team name</title>
+<title>WordWhiz Update 10 : Fireworks, Levels, Polish</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names."/>
+<meta name="description" content="Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/team-name"/>   
-<meta itemProp="name" content="What&#x27;s in a team name"/>
-<meta itemProp="description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/team-name"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordwhiz-update-10"/>   
+<meta itemProp="name" content="WordWhiz Update 10 : Fireworks, Levels, Polish"/>
+<meta itemProp="description" content="Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-10-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordwhiz-update-10"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="What&#x27;s in a team name"/>
-<meta property="og:description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/team-name-facebook.png"/>
+<meta property="og:title" content="WordWhiz Update 10 : Fireworks, Levels, Polish"/>
+<meta property="og:description" content="Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-10-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-10-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="What&#x27;s in a team name"/>
-<meta name="twitter:description" content="Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/team-name-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/team-name-twitter.png"/>
+<meta name="twitter:title" content="WordWhiz Update 10 : Fireworks, Levels, Polish"/>
+<meta name="twitter:description" content="Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-10-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordwhiz-update-10-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">What&#x27;s in a team name</h1>
+    <h1 class="text-center">WordWhiz Update 10 : Fireworks, Levels, Polish</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -141,87 +141,64 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2021-10-21">Oct 21, 2021</time></span>
+                datetime="2026-01-06">Jan 06, 2026</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2022-10-06">Oct 06, 2022</time></span>
+                datetime="2026-01-06">Jan 06, 2026</time></span>
         <span class="sm:py-0 py-1">
-            Estimated Reading Time: <span class="font-bold">4 min</span>
+            Estimated Reading Time: <span class="font-bold">2 min</span>
         </span>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/company-culture" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">company culture</a>
+            <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
+            <a href="/tags/wordxplorer" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordxplorer</a>
     </div>
 </div>
 
-<!-- https://unsplash.com/photos/ocAo7MwGfHY -->
-<p>Most people would agree that having a team name is one of the easiest ways to give everyone an identity to rally around. And they would start by mandating that all team names should be pulled from an overarching theme.</p>
-<p>This will be a controversial opinion, but I think this is possibly the worst way to decide team names.</p>
-<h2 id="a-common-theme">A common theme</h2>
-<p>A popular reason that people think using a common theme for all team names is a good idea is that they feel it's inclusive.</p>
-<p>But it's tough to find a genuinely inclusive theme. Even something innocuous like superheroes can make someone feel excluded if they haven't grown up watching superhero cartoons.</p>
-<p>So you decide to go with something <del>boring</del> simple like colours.</p>
-<blockquote>
-<p>Surely, no one can take offence to that, right?</p>
-</blockquote>
-<p>Not so fast, my young padawan. You forgot to consider colour-blind people.</p>
-<p>The other reason that frequently comes up is that a common theme makes it easier for people to remember. For the sake of this discussion, let's assume that either colours or superheroes are an inclusive-enough theme for you, and you have two teams. But do the people in your organization know whether they need to talk to the <strong>Superman/Pink</strong> team or the <strong>WonderWoman/Blue</strong> team. More likely, they are saying.</p>
-<blockquote>
-<p>I need to talk to <strong>Harry/Jane</strong>. What is the name of the team? - Ah, who cares?</p>
-</blockquote>
-<p>Or worse, they are mixing it up, talking to the wrong team, and then getting redirected.</p>
-<p>What if you have ten teams? No common theme can save you.</p>
-<p>I think this tweet sums it up nicely.</p>
-<!-- 
-> I worked in the company where teams were named after superheroes in Marvel universe. I missed the whole hype around superheroes, so I had to learn it. Like there weren't enough other things to learn."
->
-> ""Vladimir Sapronov""
- 
-_[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
--->
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I worked in the company where teams where named after superheroes in Marvel universe. I missed the whole hype around superheros (my childhood was in USSR-Russia), so I had to learn it. Like there weren&#39;t enough other things to learn. I got frustrated and named my library Vertigo.</p>&mdash; Vladimir Sapronov (&#64;v_sapronov) <a href="https://twitter.com/v_sapronov/status/1440147633155166210?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>If you want to have team names with no connection to the product, I have a controversial recommendation for you. Let them come from an inside joke, conversation or a common identity to which the team members can ascribe.</p>
-<h2 id="an-inside-joke">An inside joke</h2>
-<blockquote>
-<p>Jelled teams are usually marked by a strong sense of identity</p>
-<p><cite>Peopleware</cite></p>
-</blockquote>
-<p>Having a team name based on an inside joke gives it a unique identity. It's the uniqueness between the names that binds one identity to it.</p>
-<p>It gives this feeling of being a part of an elite entity.</p>
-<p>In his similarly titled post <a href="https://critter.blog/2020/09/02/whats-in-a-team-name/">What's in a team name?</a>, Mike gives an excellent example of how hard it would be to rally around &quot;the Vikings&quot; if they were called the &quot;The Minnesota NFL Team&quot;.</p>
-<p>Now, before you go all up in arms and say,</p>
-<blockquote>
-<p>But, Ankur, having an inside joke for a team name doesn't solve any of the problems you highlighted before</p>
-</blockquote>
-<p>I kinda agree.</p>
-<p>A team name based on an inside joke is by nature not inclusive to new people. But, every time a new member gets added, there is room for sharing stories around the team name and introducing that meaning to the new people. It can be a great ice-breaker.</p>
-<p>Whether it's easier to remember or not, that's debatable. But it can certainly be more memorable, and memorable things get remembered faster. After all, would you be able to forget a name like <a href="https://twitter.com/catswetel/status/1440039225156538374">The Applesauce Top Hat Brigade</a>? It's a name I am not going to forget anytime soon.</p>
-<p>Team names based on an inside joke are not only more fun but have a few additional advantages.</p>
-<p>As the old guard moves on, the team members change, and the inside joke becomes stale/politically incorrect; it makes it much easier to retire the team name and spin up a new one based on a new inside joke.</p>
-<p>As the number of teams increases, each new team could think of their inside joke to rally around for their team name. Apart from a fun bonding exercise, it could be a great morale booster.</p>
-<p>Merch/swag also feels cooler when it's associated with an inside joke. Remember, it is a potential ice-breaker.</p>
-<h2 id="my-favourite-team-name">My favourite team name</h2>
-<p>One of my favourite team names was based on an inside joke at FirstAml. We were supposed to come up with a name for our team and forgot to submit it in time. In the slide deck for the company meeting, we were introduced as ???. This struck us as extremely funny, and combined with other reasons, we decided to call our team 4Q.</p>
-<p>You can see how this can be construed as offensive because it sounds like a cuss word. I rarely cuss, and this gave me a laugh every time I said Team 4Q (which was one of the reasons to go with it).</p>
-<p>In any case, people had a valid concern. It sounds like a cuss word. Considering that cuss words are used regularly during internal conversations, it's not so much of a problem.</p>
-<p>But, it could be a problem when communicating verbally with external parties.</p>
-<p><em>Although Atlassian has one of their values as Don't &#64;$/# with the customer, and they are not shy of using the word in interviews so it was probably an overreaction by the leaders at First AML.</em></p>
-<p>Changing the name in this scenario was a classic case of throwing the baby out with the bathwater.</p>
-<h2 id="caveats">Caveats</h2>
-<p>It's possible to have stories to share, even if you are operating under a common theme. My team at FirstAMl was later renamed to <a href="https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-falcon-karearea/">kārearea</a>. To be fair, they did allow us to choose the name but the theme was already chosen so it  was like &quot;who cares&quot;.</p>
-<p><em>I doubt anyone cares about the reasoning behind choosing it as the team name. Sadly, it's not a conversation starter when all the other teams are named after NZ birds. It will always feel like we randomly chose it because we had to choose something.</em></p>
-<h2 id="conclusion">Conclusion</h2>
-<p>It's safe to say that good team names are essential. But, it's more valuable to make them memorable and have a unique individuality rather than force them into conformity.</p>
-<p>Having said that, you should probably have some guidelines to weed out the truly offensive.</p>
+<p>It’s been a while since I wrote an update on this blog.</p>
+<p>Not because there were no update. Well, for some time that was true. You know work and life and all that. But the good news is that I have finally figured out a sustainable schedule, and updates have been going out in the app/Play Store. However, they didn't feel &quot;blog-worthy.&quot; And let's be honest: once you miss one update, it’s surprisingly easy to miss the next one too.</p>
+<p>Anyway, here’s what’s changed.</p>
+<h2 id="more-fireworks">More fireworks</h2>
+<p>I added more fireworks on level completion.</p>
+<p>It sounds trivial when I write it out like that. But you can never have too many fireworks.</p>
+<p><img src="/assets/images/posts/wordwhiz-update-10/fireworks.gif" alt="fireworks" /></p>
+<h2 id="scene-transitions">Scene transitions</h2>
+<p>I also added scene transitions between screens.</p>
+<p>This is another one of those trivial changes. But, it makes the game feel less like a collection of screens and more like... well, a game.</p>
+<p><img src="/assets/images/posts/wordwhiz-update-10/scene_transitioner.gif" alt="scene transitioner" /></p>
+<h2 id="level-select-now-opens-at-your-highest-unlocked-level">Level select now opens at your highest unlocked level</h2>
+<p>The level selection screen now opens on the page with your highest unlocked level.</p>
+<p>This is mostly just convenience (less clicking is always a win). This wasnt so much of an issue when it was just 3 screens but as I add themes and more levels to the game, this will make it much easier to navigate.</p>
+<h2 id="more-levels">6 more levels</h2>
+<p>Since there are 12 levels on the level selection screen, ensuring each theme has a multiple of 12 levels makes the transitions much smoother. It's a little design hack that's going to make it much easier to add themes. But, you get 6 more levels while you wait for the next update.</p>
+<h2 id="behind-the-scenes-refactoring-automated-tests">Behind the scenes: refactoring + automated tests</h2>
+<p>Alongside the visible changes, I’ve been refactoring the code and adding automated tests to make themes possible without turning every future change into a risky one.</p>
+<p>There was a point where I realised I was spending more time manually clicking through the app to make sure I hadn't broken anything than I was actually building new features. You know the drill: change one line of code, spend 20 minutes tapping screens to ensure everything still works.</p>
+<p>It was exhausting. And frankly, it was boring. And worst of all, it was leading me to procrastinate.</p>
+<p>Automated tests give me the confidence to move fast without that constant fear that I'm breaking something. If you’ve ever maintained a side project alone, you probably know exactly what I mean.</p>
+<h2 id="what-theme-should-i-build-next">What theme should I build next?</h2>
+<p>I’ve been promising this for a while, and it’s finally (almost) here. I’ve made nearly all the changes needed to support more themes. I am just testing it out before I release it to everyone.</p>
+<p>The frontrunner for me right now is <strong>body parts</strong>. It feels like a good “kid vocabulary” theme, and I think it could lead to levels that are fun without being too hard.</p>
+<p>But, I need your help. If you were picking a theme, what would you want to see?</p>
+<ul>
+<li>Body parts</li>
+<li>Animals</li>
+<li>Nature</li>
+<li>Sports</li>
+<li>Transportation</li>
+<li>In the house</li>
+<li>Action words</li>
+<li>Something else</li>
+</ul>
+<p>What would you pick (and why)?</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/team-name&text=What%27s%20in%20a%20team%20name via @ankur_sheel.&#xD;&#xA;Having%20a%20team%20name%20is%20one%20of%20the%20easiest%20ways%20to%20give%20everyone%20an%20identity%20to%20rally%20around.%20A%20controversial%20opinion%20on%20how%20to%20decide%20team%20names." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/team-name" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordwhiz-update-10&text=WordWhiz%20Update%2010%20%3A%20Fireworks%2C%20Levels%2C%20Polish via @ankur_sheel.&#xD;&#xA;Wordle%20for%20Kids%20update%20-%206%20new%20levels%2C%20more%20fireworks%2C%20and%20smoother%20transitions.%20Plus%3A%20why%20I%20finally%20added%20automated%20tests." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordwhiz-update-10" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -233,16 +210,16 @@ _[Tweet link](https://twitter.com/v_sapronov/status/1440147633155166210)_
 
     <ul>
             <li>
-                <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
+                <a href="wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
             </li>
             <li>
-                <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
+                <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
             </li>
             <li>
-                <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
+                <a href="wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>
             </li>
             <li>
-                <a href="make-code-reviews-stress-free">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
+                <a href="wordxplorer-update-6">WordXplorer #6: New Look, Major Fixes &amp; App Store News</a>
             </li>
     </ul>
 </aside>

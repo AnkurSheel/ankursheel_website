@@ -138,6 +138,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordwhiz-update-10">WordWhiz Update 10 : Fireworks, Levels, Polish</a> - <time class="prose-sm" datetime="26-01-06">January 06, 2026</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/story-points-arent-problem">Story Points Aren&#x27;t the Problem</a> - <time class="prose-sm" datetime="25-07-26">July 26, 2025</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -148,9 +151,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a> - <time class="prose-sm" datetime="25-04-07">April 07, 2025</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/best-credit-card-new-zealand">Finding the best credit card in New Zealand</a> - <time class="prose-sm" datetime="25-01-05">January 05, 2025</time>
         </li>
 </ul>
 

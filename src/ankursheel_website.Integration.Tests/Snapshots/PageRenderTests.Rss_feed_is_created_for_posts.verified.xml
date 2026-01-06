@@ -4,9 +4,54 @@
     <title>Ankur Sheel</title>
     <link>https://www.ankursheel.com/</link>
     <description>I go down rabbit holes and blog about them</description>
-    <copyright>2025</copyright>
+    <copyright>2026</copyright>
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
+    <item>
+      <title>WordWhiz Update 10 : Fireworks, Levels, Polish</title>
+      <link>https://www.ankursheel.com/blog/wordwhiz-update-10</link>
+      <description>Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests.</description>
+      <guid>https://www.ankursheel.com/blog/wordwhiz-update-10</guid>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;It’s been a while since I wrote an update on this blog.&lt;/p&gt;
+&lt;p&gt;Not because there were no update. Well, for some time that was true. You know work and life and all that. But the good news is that I have finally figured out a sustainable schedule, and updates have been going out in the app/Play Store. However, they didn't feel "blog-worthy." And let's be honest: once you miss one update, it’s surprisingly easy to miss the next one too.&lt;/p&gt;
+&lt;p&gt;Anyway, here’s what’s changed.&lt;/p&gt;
+&lt;h2 id="more-fireworks"&gt;More fireworks&lt;/h2&gt;
+&lt;p&gt;I added more fireworks on level completion.&lt;/p&gt;
+&lt;p&gt;It sounds trivial when I write it out like that. But you can never have too many fireworks.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-10/fireworks.gif" alt="fireworks"&gt;&lt;/p&gt;
+&lt;h2 id="scene-transitions"&gt;Scene transitions&lt;/h2&gt;
+&lt;p&gt;I also added scene transitions between screens.&lt;/p&gt;
+&lt;p&gt;This is another one of those trivial changes. But, it makes the game feel less like a collection of screens and more like... well, a game.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-10/scene_transitioner.gif" alt="scene transitioner"&gt;&lt;/p&gt;
+&lt;h2 id="level-select-now-opens-at-your-highest-unlocked-level"&gt;Level select now opens at your highest unlocked level&lt;/h2&gt;
+&lt;p&gt;The level selection screen now opens on the page with your highest unlocked level.&lt;/p&gt;
+&lt;p&gt;This is mostly just convenience (less clicking is always a win). This wasnt so much of an issue when it was just 3 screens but as I add themes and more levels to the game, this will make it much easier to navigate.&lt;/p&gt;
+&lt;h2 id="more-levels"&gt;6 more levels&lt;/h2&gt;
+&lt;p&gt;Since there are 12 levels on the level selection screen, ensuring each theme has a multiple of 12 levels makes the transitions much smoother. It's a little design hack that's going to make it much easier to add themes. But, you get 6 more levels while you wait for the next update.&lt;/p&gt;
+&lt;h2 id="behind-the-scenes-refactoring-automated-tests"&gt;Behind the scenes: refactoring + automated tests&lt;/h2&gt;
+&lt;p&gt;Alongside the visible changes, I’ve been refactoring the code and adding automated tests to make themes possible without turning every future change into a risky one.&lt;/p&gt;
+&lt;p&gt;There was a point where I realised I was spending more time manually clicking through the app to make sure I hadn't broken anything than I was actually building new features. You know the drill: change one line of code, spend 20 minutes tapping screens to ensure everything still works.&lt;/p&gt;
+&lt;p&gt;It was exhausting. And frankly, it was boring. And worst of all, it was leading me to procrastinate.&lt;/p&gt;
+&lt;p&gt;Automated tests give me the confidence to move fast without that constant fear that I'm breaking something. If you’ve ever maintained a side project alone, you probably know exactly what I mean.&lt;/p&gt;
+&lt;h2 id="what-theme-should-i-build-next"&gt;What theme should I build next?&lt;/h2&gt;
+&lt;p&gt;I’ve been promising this for a while, and it’s finally (almost) here. I’ve made nearly all the changes needed to support more themes. I am just testing it out before I release it to everyone.&lt;/p&gt;
+&lt;p&gt;The frontrunner for me right now is &lt;strong&gt;body parts&lt;/strong&gt;. It feels like a good “kid vocabulary” theme, and I think it could lead to levels that are fun without being too hard.&lt;/p&gt;
+&lt;p&gt;But, I need your help. If you were picking a theme, what would you want to see?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Body parts&lt;/li&gt;
+&lt;li&gt;Animals&lt;/li&gt;
+&lt;li&gt;Nature&lt;/li&gt;
+&lt;li&gt;Sports&lt;/li&gt;
+&lt;li&gt;Transportation&lt;/li&gt;
+&lt;li&gt;In the house&lt;/li&gt;
+&lt;li&gt;Action words&lt;/li&gt;
+&lt;li&gt;Something else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What would you pick (and why)?&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
     <item>
       <title>Story Points Aren't the Problem</title>
       <link>https://www.ankursheel.com/blog/story-points-arent-problem</link>
@@ -14,41 +59,42 @@
       <enclosure url="https://www.ankursheel.com/assets/images/social/story-points-arent-problem-facebook.png" length="0" type="image" />
       <guid>https://www.ankursheel.com/blog/story-points-arent-problem</guid>
       <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;Like many developers, I hate story pointing. Non-devs? They’re silently counting the minutes till the (pointless) debates stop and the meeting’s over.&lt;/p&gt;
+      <content:encoded>&lt;p&gt;Like many developers, I hate story pointing.&lt;/p&gt;
 &lt;p&gt;It feels like I’ve wasted &lt;em&gt;years&lt;/em&gt; of my life in sprint planning sessions that spiral into arguments over whether something is a 2 or a 3. I’ve also sat through too many sprint planning sessions watching teams treat story points as time estimates, and walk away with no more clarity than when they started.&lt;/p&gt;
 &lt;p&gt;It all feels likes a performance that gives &lt;del&gt;management&lt;/del&gt; everyone a false sense of control.&lt;/p&gt;
-&lt;p&gt;But here’s the thing: I have come to realize that&lt;/p&gt;
+&lt;p&gt;In fact, some people just do away with story points altogether, and I get it. I was once in that camp too.&lt;/p&gt;
+&lt;p&gt;But, what I if told you&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;story points aren't the problem.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I’ve noticed three common mistakes that make story points and the whole sprint planning exercise useless. The good news? These are all fixable. In fact, I will show you how to make them not suck.&lt;/p&gt;
-&lt;h2 id="mistake-1-treating-story-points-as-a-proxy-for-time"&gt;Mistake #1: Treating Story Points as a proxy for Time&lt;/h2&gt;
+&lt;p&gt;I’ve noticed three common mistakes that make story points and the whole sprint planning exercise feel like a giant waste of time. Let's see what they are and how we can fix them to make story-pointing not suck.&lt;/p&gt;
+&lt;h2 id="mistake-1-treating-story-points-as-a-proxy-for-time"&gt;Mistake #1: Treating Story Points as a Proxy for Time&lt;/h2&gt;
 &lt;p&gt;How often have you heard this in a sprint planning session -&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This should take 1 week, so… five story points?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;That’s not how story points work. They’re not about time.&lt;/p&gt;
-&lt;p&gt;A 3-point story might take one day or more than a week. It doesn't matter.&lt;/p&gt;
+&lt;p&gt;A 3-point story might take one day or more than a week. I know you dont want to hear it but it doesn't matter.&lt;/p&gt;
 &lt;p&gt;Story points should reflect the &lt;strong&gt;complexity&lt;/strong&gt; of the task.&lt;/p&gt;
 &lt;p&gt;Here’s a better way to think about them:&lt;/p&gt;
-&lt;h3 id="point-no-brainer-tasks"&gt;1 Point: "No-Brainer" Tasks&lt;/h3&gt;
+&lt;h3 id="point"&gt;1 Point&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Potential Traits:&lt;/strong&gt; No unknowns, low risk, minimal code changes.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Adding logs to existing code&lt;/li&gt;
 &lt;li&gt;Trivial changes behind a feature flag&lt;/li&gt;
 &lt;li&gt;Cleaning up a simple feature flag&lt;/li&gt;
-&lt;li&gt;Mechanical refactoring across multiple files&lt;/li&gt;
+&lt;li&gt;Mechanical refactoring&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="points-straightforward-work"&gt;2 Points: "Straightforward" Work&lt;/h3&gt;
+&lt;h3 id="points"&gt;2 Points&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Potential Traits:&lt;/strong&gt; Low risk, some minor unknowns, small test updates.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Simple UI changes that don't require new components&lt;/li&gt;
+&lt;li&gt;Simple changes behind a feature flag&lt;/li&gt;
 &lt;li&gt;Creating a new dashboard with existing data&lt;/li&gt;
 &lt;li&gt;Cleaning up a complex feature flag&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="points-reasonably-challenging"&gt;3 Points: "Reasonably Challenging"&lt;/h3&gt;
+&lt;h3 id="points-1"&gt;3 Points&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Potential Traits:&lt;/strong&gt; Some unknowns, moderate risk, might require coordination with others.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -56,22 +102,22 @@
 &lt;li&gt;New functionality that can be feature flagged cleanly&lt;/li&gt;
 &lt;li&gt;Work that involves coordination with another developer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="points-investigation-required"&gt;5 Points: "Investigation Required"&lt;/h3&gt;
+&lt;h3 id="points-2"&gt;5 Points&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Potential traits:&lt;/strong&gt; Some unknowns, large code changes, lots of new tests, external dependencies&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Technical investigation for new features&lt;/li&gt;
+&lt;li&gt;Technical investigation for new features or bugs&lt;/li&gt;
 &lt;li&gt;Work that's difficult to feature flag&lt;/li&gt;
 &lt;li&gt;Cross-team coordination&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These are good candidates to split into smaller tickets once the investigation is done.&lt;/p&gt;
-&lt;h3 id="points-spike-territory"&gt;8 Points: "Spike Territory"&lt;/h3&gt;
+&lt;h3 id="points-3"&gt;8 Points&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Potential traits:&lt;/strong&gt; Many unknowns, risky changes, hard to estimate confidently.&lt;/p&gt;
 &lt;p&gt;If you’re estimating something at 8 points, you probably need a spike first. Timebox it, then use what you’ve learned to create smaller, pointable stories.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/story-points-arent-problem/infographic.png" alt="Storypoint Infographic"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: You can download the full sized infographic from &lt;a href="https://www.ankursheel.com/assets/images/posts/story-points-arent-problem/infographic_original.png"&gt;Printable Infographic&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="mistake-2-estimating-in-isolation"&gt;Mistake #2: Estimating in Isolation&lt;/h2&gt;
-&lt;p&gt;Ever had a product owner or tech lead show up to planning with stories already estimated?&lt;/p&gt;
+&lt;p&gt;Ever had a product owner or a tech lead show up to planning with stories already estimated?&lt;/p&gt;
 &lt;p&gt;Estimation is a team sport. Different people catch different risks, assumptions, and edge cases. Getting everyone involved builds shared understanding and better team cohesion.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The number matters less than the conversation.&lt;/p&gt;
@@ -89,22 +135,22 @@
 &lt;h2 id="mistake-3-arguing-over-2-vs-3-points"&gt;Mistake #3: Arguing Over 2 vs 3 Points&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/story-points-arent-problem/two_vs_three.png" alt="two vs three"&gt;&lt;/p&gt;
 &lt;p&gt;You know the moment. One person says it’s a 2. Another insists it’s a 3. Suddenly, you’re 20 minutes deep into a conversation that doesn’t matter.&lt;/p&gt;
-&lt;p&gt;Here’s the truth:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You’re optimizing for precision in a system designed for approximation.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;That’s not just inefficient — it completely misses the point (pun unintended).&lt;/p&gt;
+&lt;p&gt;That’s not just wasteful — it completely misses the point (pun unintended).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Timebox these debates.&lt;/strong&gt; If you can't agree in 1-2 minutes, pick the higher number and move on. It's not worth derailing the whole session.&lt;/p&gt;
-&lt;p&gt;However, if there’s a big delta—say, someone thinks it’s a 2 and someone else thinks it’s a 5 — that is worth unpacking. Someone’s probably missing something.&lt;/p&gt;
+&lt;p&gt;However, if there’s a big delta — say, someone thinks it’s a 2 and someone else thinks it’s a 5 — that is worth unpacking. Someone’s probably missing something.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="final-thoughts"&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;Story points aren't about precision. They're about shared clarity. Used well, they spark the right conversations. Used poorly, they fuel endless debates and planning theater.&lt;/p&gt;
-&lt;p&gt;So next time you're estimating, skip the time math and ask:&lt;/p&gt;
+&lt;p&gt;Story points aren't about precision. They're about shared clarity.&lt;/p&gt;
+&lt;p&gt;Used well, they build shared context. Used poorly, they fuel endless debates.&lt;/p&gt;
+&lt;p&gt;So next time you're estimating ask yourself:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Do we actually understand the scope, complexity, and purpose of this work?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;If the answer’s yes, the number doesn't matter.&lt;/p&gt;
-&lt;p&gt;You’ve heard my take. Now I’m curious: &lt;strong&gt;What’s your biggest frustration with story points — and how have you worked around it?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What’s your biggest frustration with story points — and how have you worked around it?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Drop a comment and send this to someone who’s still fighting over 2 vs 3.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -372,7 +418,7 @@ them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
 &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/fun-feature-flags/branch-hell.jpg" alt="Feature Branch Complexity.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Feature branches were popular because they were straightforward to use and possibly because that was the best we had at that time. They still work well for small-scale projects.&lt;/p&gt;
-&lt;p&gt;However, in larger teams, feature branches create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.&lt;/p&gt;
+&lt;p&gt;However, in larger teams, feature branches can create technical debt. Tasks may overlap, and keeping branches in sync becomes more challenging, slowing down the development process.&lt;/p&gt;
 &lt;p&gt;Here are some other downsides:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Since code in feature branches must be fully completed before merging, it often leads to large, complex pull requests with significant changes.&lt;/li&gt;
@@ -387,7 +433,7 @@ them—they’ll thank you!! ✨&lt;/del&gt;&lt;/p&gt;
 &lt;h3 id="alternative-2-git-flow"&gt;Alternative 2: Git Flow&lt;/h3&gt;
 &lt;p&gt;An evolution of feature branches is &lt;strong&gt;Git Flow&lt;/strong&gt;, a branching model I’ve also used with success for certain projects.&lt;/p&gt;
 &lt;p&gt;Git Flow uses two main branches (&lt;code&gt;main&lt;/code&gt; and &lt;code&gt;develop&lt;/code&gt;). Feature branches are created off &lt;code&gt;develop&lt;/code&gt;, and once a feature is stable, it is merged into &lt;code&gt;develop&lt;/code&gt;. When &lt;code&gt;develop&lt;/code&gt; is stable, it is merged into &lt;code&gt;main&lt;/code&gt;, which is always production-ready. A &lt;code&gt;release&lt;/code&gt; branch is created from &lt;code&gt;main&lt;/code&gt; for each release and &lt;code&gt;hotfix&lt;/code&gt; branches are created to fix production issues.&lt;/p&gt;
-&lt;p&gt;In our example, you would create one or more feature branches off &lt;code&gt;develop&lt;/code&gt; for the new title feature. Once the feature is complete, it would be merged into &lt;code&gt;develop&lt;/code&gt;. When &lt;code&gt;develop&lt;/code&gt; is stable and we would want a new release, it would be merged into &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In our example, you would create one or more feature branches off &lt;code&gt;develop&lt;/code&gt; for the new title feature. Once the feature is complete, it would be merged into &lt;code&gt;develop&lt;/code&gt;. When &lt;code&gt;develop&lt;/code&gt; is stable, it would be merged into &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/fun-feature-flags/git-flow.jpg" alt="Git Flow"&gt;&lt;/p&gt;
 &lt;p&gt;Git Flow offers several advantages compared to Feature Branches.&lt;/p&gt;
 &lt;ul&gt;
@@ -811,7 +857,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media2.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1536,76 +1582,6 @@ jobs:
 &lt;p&gt;Navigating 1:1 meetings might seem daunting initially, but effective preparation, thoughtful questions, and diligent follow-ups can help make it easier. Remember, there's no such thing as a perfect 1:1 meeting.&lt;/p&gt;
 &lt;p&gt;We're all on a learning journey, and your experiences and tips are invaluable. Have you discovered other effective ways to prepare for 1:1s? Are there additional questions that have proven helpful for you? How do you ensure you follow up on action items?&lt;/p&gt;
 &lt;p&gt;Share your experiences and insights in the comments below.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Cleaning Up Unnecessary Remote-Tracking References</title>
-      <link>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</link>
-      <description>git pull can be slow if you have a lot of remote branches. Remove unnecessary tracking of remote branches to reduce the amount of time spent updating the repository</description>
-      <guid>https://www.ankursheel.com/blog/cleaning-up-unnecessary-remote-tracking-references</guid>
-      <pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;If your work involves collaborating on a monolithic project with multiple teams, you might find that your &lt;code&gt;git pull&lt;/code&gt; has started taking a long time. One of the reasons for this is that you are tracking multiple branches most of which are unnecessary for your specific work.&lt;/p&gt;
-&lt;p&gt;In order to make updating fast again, you need to clean up those remote-tracking references.&lt;/p&gt;
-&lt;h2 id="identifying-the-branches-to-keep"&gt;Identifying the Branches to Keep&lt;/h2&gt;
-&lt;p&gt;Before you start deleting branches, you should identify the branches that you want to keep. Typically, these would include the &lt;em&gt;main (or master)&lt;/em&gt; branch and a few select branches you actively work on.&lt;/p&gt;
-&lt;p&gt;To get the unique commit hashes of those branches, execute the following command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;git rev-parse --quiet origin/main origin/my-branch-1 origin/my-branch-2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Note 1: I’m assuming the &lt;strong&gt;origin&lt;/strong&gt; is the name of the upstream&lt;/em&gt;.
-&lt;em&gt;Note 2: Replace &lt;strong&gt;&lt;em&gt;origin/main&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;origin/my-branch-1&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;origin/my-branch-2&lt;/em&gt;&lt;/strong&gt; with the actual branch names&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;git rev-parse&lt;/code&gt; command translates human-readable branch names into SHA-1 hashes which are the commit identifiers.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;--quiet&lt;/em&gt;&lt;/strong&gt;: This flag suppresses output unless there is an error.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When executed, the command will produce an output similar to this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
-3896d7ba4b5549e8a362bc5e300a0dd8082f9e94
-64abe6831bf1cb04396d1df02dd7c2ad6d999ab3
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;These are the commit hashes associated with the branches you wish to keep.&lt;/p&gt;
-&lt;h2 id="cleaning-up-unnecessary-local-references"&gt;Cleaning Up Unnecessary Local References&lt;/h2&gt;
-&lt;p&gt;Now that you have the commit hashes, you can remove the local references to remote branches.&lt;/p&gt;
-&lt;p&gt;This can be done by using a combination of 2 commands - &lt;code&gt;git branch&lt;/code&gt; and &lt;code&gt;xargs&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;git branch -r \ 
---no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
---no-contains 3896d7ba4b5549e8a362bc5e300a0dd8082f9e94 \
---no-contains 64abe6831bf1cb04396d1df02dd7c2ad6d999ab3 \
-| xargs -I{} git branch -rd &amp;quot;{}&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let's first look at the options for the &lt;code&gt;git branch&lt;/code&gt; command&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;-r&lt;/em&gt;&lt;/strong&gt;: Lists the remote-tracking branches.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;--no-contains&lt;/em&gt;&lt;/strong&gt;: Filters the list of remote branches to include only branches that don't contain the specified commit hashes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The filtered list from the &lt;code&gt;git branch&lt;/code&gt; command is passed to &lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;xargs&lt;/em&gt;&lt;/strong&gt; is a command-line tool that helps build argument lists for other commands using input from standard input (stdin). Lets look at the options for the &lt;code&gt;xargs&lt;/code&gt; command.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;-I&lt;/em&gt;&lt;/strong&gt;:  This option tells &lt;code&gt;xargs&lt;/code&gt; to replace every occurrence of &lt;code&gt;{}&lt;/code&gt; with the input elements pulled from standard input (stdin).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;git branch -rd&lt;/em&gt;&lt;/strong&gt;: Deletes a remote branch.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;&amp;quot;&amp;quot;&lt;/em&gt;&lt;/strong&gt;: This is the placeholder, which gets replaced by the specific input item read from stdin.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="how-to-track-only-branches-you-need"&gt;How to track only branches you need?&lt;/h2&gt;
-&lt;p&gt;Instead of calling &lt;code&gt;git pull&lt;/code&gt;, use &lt;code&gt;git fetch&lt;/code&gt;  and &lt;code&gt;git rebase&lt;/code&gt; instead.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;git fetch origin main --prune --prune-tags
-git rebase origin/main
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;--prune&lt;/em&gt;&lt;/strong&gt;: Before fetching, remove any remote-tracking references that no longer exist on the remote.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;--prune-tags&lt;/em&gt;&lt;/strong&gt;: Before fetching, remove any local tags that no longer exist on the remote if --prune is enabled.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Following these steps, you can remove any remote tracking references that you dont need.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-branch"&gt;git branch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://man7.org/linux/man-pages/man1/xargs.1.html"&gt;xargs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-fetch"&gt;git fetch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/docs/git-rebase"&gt;git rebase&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

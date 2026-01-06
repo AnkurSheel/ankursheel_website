@@ -136,7 +136,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/team-name" class="text-center prose-2xl mb-4">What&#x27;s in a team name</a>
-        <div class="font-semibold text-center">5 min</div>
+        <div class="font-semibold text-center">4 min</div>
         <p>
             Having a team name is one of the easiest ways to give everyone an identity to rally around. A controversial opinion on how to decide team names.
         </p>

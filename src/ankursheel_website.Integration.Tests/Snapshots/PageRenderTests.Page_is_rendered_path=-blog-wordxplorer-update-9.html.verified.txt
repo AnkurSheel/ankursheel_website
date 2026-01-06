@@ -203,13 +203,13 @@
                 <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
             </li>
             <li>
+                <a href="wordwhiz-update-10">WordWhiz Update 10 : Fireworks, Levels, Polish</a>
+            </li>
+            <li>
                 <a href="wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>
             </li>
             <li>
                 <a href="wordxplorer-update-6">WordXplorer #6: New Look, Major Fixes &amp; App Store News</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-5">WordXplorer #5: UI Refresh</a>
             </li>
     </ul>
 </aside>
