@@ -7,12 +7,6 @@ on:
         required: false
         type: string
         default: ''
-      netlify_site_id:
-        required: true
-        type: string
-      netlify_token:
-        required: true
-        type: string
       message:
         required: false
         type: string
@@ -66,8 +60,8 @@ jobs:
         id: deploy
         working-directory: ./node
         env:
-          NETLIFY_SITE_ID: ${{ inputs.netlify_site_id }}
-          NETLIFY_TOKEN: ${{ inputs.netlify_token }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
           DEPLOY_PARAMS: ${{ inputs.deploy_script_params }}
         run: |
           DEPLOY_OUTPUT=$(yarn netlify deploy --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_TOKEN" $DEPLOY_PARAMS --dir=../output --json)

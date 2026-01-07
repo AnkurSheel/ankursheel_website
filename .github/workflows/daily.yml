@@ -12,7 +12,5 @@ jobs:
     secrets: inherit
     with:
       deploy_script_params: '--prod'
-      netlify_site_id: ${{ secrets.NETLIFY_SITE_ID }}
-      netlify_token: ${{ secrets.NETLIFY_TOKEN }}
       message: 'Daily build'
 
