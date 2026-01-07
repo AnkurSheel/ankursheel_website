@@ -1,0 +1,77 @@
+name: Build and Deploy
+
+on:
+  workflow_call:
+    inputs:
+      deploy_script_params:
+        required: false
+        type: string
+        default: ''
+      netlify_site_id:
+        required: true
+        type: string
+      netlify_token:
+        required: true
+        type: string
+      message:
+        required: false
+        type: string
+        default: 'Build'
+    outputs:
+      deploy_url:
+        description: "The Netlify deploy URL"
+        value: ${{ jobs.build-and-deploy.outputs.deploy_url }}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy_url: ${{ steps.deploy.outputs.deploy_url }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache Yarn packages
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('node/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        working-directory: ./node
+        run: yarn install --frozen-lockfile
+
+      - name: Compile Tailwind
+        working-directory: ./node
+        run: npx tailwind build -c ./tailwind.config.js -i ../src/ankursheel_website/input/assets/_site.css -o ../src/ankursheel_website/input/assets/styles.css --minify
+
+      - name: Build
+        run: dotnet run --project ./src/ankursheel_website/ --configuration Release
+
+      - name: Deploy to Netlify
+        id: deploy
+        working-directory: ./node
+        env:
+          NETLIFY_SITE_ID: ${{ inputs.netlify_site_id }}
+          NETLIFY_TOKEN: ${{ inputs.netlify_token }}
+          DEPLOY_PARAMS: ${{ inputs.deploy_script_params }}
+        run: |
+          DEPLOY_OUTPUT=$(yarn netlify deploy --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_TOKEN" $DEPLOY_PARAMS --dir=../output --json)
+          DEPLOY_URL=$(echo "$DEPLOY_OUTPUT" | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]')
+          echo "deploy_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOY_URL"
+

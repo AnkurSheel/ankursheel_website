@@ -1,0 +1,18 @@
+name: Daily Release
+
+on:
+  schedule:
+    # Daily at 1:00 UTC (ensuring posts scheduled for today in UTC are published early)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  build-and-deploy:
+    uses: ./.github/workflows/build-and-deploy.yml
+    secrets: inherit
+    with:
+      deploy_script_params: '--prod'
+      netlify_site_id: ${{ secrets.NETLIFY_SITE_ID }}
+      netlify_token: ${{ secrets.NETLIFY_TOKEN }}
+      message: 'Daily build'
+

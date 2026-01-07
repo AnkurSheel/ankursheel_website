@@ -1,0 +1,21 @@
+name: Live
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'content/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    uses: ./.github/workflows/build-and-deploy.yml
+    secrets: inherit
+    with:
+      deploy_script_params: '--prod'
+      netlify_site_id: ${{ secrets.NETLIFY_SITE_ID }}
+      netlify_token: ${{ secrets.NETLIFY_TOKEN }}
+      message: 'Release'
+
