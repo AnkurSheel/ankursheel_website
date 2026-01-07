@@ -1,0 +1,48 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - master
+    paths-ignore:
+      - 'content/**'
+      - 'ci/**'
+      - 'scripts/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build-and-deploy:
+    uses: ./.github/workflows/build-and-deploy.yml
+    secrets: inherit
+    with:
+      message: 'PR ${{ github.event.pull_request.number }} ${{ github.head_ref }}'
+
+  comment:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      - name: Comment Netlify Preview Url
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const deployUrl = '${{ needs.build-and-deploy.outputs.deploy_url }}';
+            const previewSuffix = '--ankursheel.netlify.app';
+            const previewUrl = `https://${deployUrl}${previewSuffix}`;
+            
+            const comment = `Netlify Preview Url: ${previewUrl}`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
