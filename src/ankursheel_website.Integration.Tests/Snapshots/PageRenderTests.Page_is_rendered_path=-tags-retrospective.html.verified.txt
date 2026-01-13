@@ -135,6 +135,17 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/wordxplorer-one-year-am-millionaire-yet" class="text-center prose-2xl mb-4">WordXplorer One Year In: Am I a Millionaire Yet?</a>
+        <div class="font-semibold text-center">11 min</div>
+        <p>
+            Am I Millionaire yet? A retrospective and some numbers one year after the launch of WordXplorer
+        </p>
+            <a href="/blog/wordxplorer-one-year-am-millionaire-yet" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/2023-q3-retrospective" class="text-center prose-2xl mb-4">2023 - Q3 Retrospective</a>
         <div class="font-semibold text-center">1 min</div>
         <p>

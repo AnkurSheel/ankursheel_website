@@ -206,6 +206,9 @@
 
     <ul>
             <li>
+                <a href="wordxplorer-one-year-am-millionaire-yet">WordXplorer One Year In: Am I a Millionaire Yet?</a>
+            </li>
+            <li>
                 <a href="postmortem-spring-challenge-2020-codingame-ai-contest">Postmortem for Spring Challenge 2020 (Codingame AI Contest)</a>
             </li>
             <li>
@@ -213,9 +216,6 @@
             </li>
             <li>
                 <a href="coders-carribean-codingame-ai-contest-postmortem">PostMortem for Codingame AI Contest: Coders of the Caribbean</a>
-            </li>
-            <li>
-                <a href="fantastic-bits-codingame-ai-contest-postmortem">A postmortem for Fantastic Bits (Codingame AI Contest)</a>
             </li>
     </ul>
 </aside>

@@ -164,10 +164,10 @@
             <a role="button" href="/tags/unity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> unity (11)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/testing" class="capitalize badge text-gray-900 bg-grey-light no-underline"> testing (10)</a>
+            <a role="button" href="/tags/wordxplorer" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordxplorer (11)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordxplorer" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordxplorer (10)</a>
+            <a role="button" href="/tags/testing" class="capitalize badge text-gray-900 bg-grey-light no-underline"> testing (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (9)</a>
@@ -305,6 +305,9 @@
             <a role="button" href="/tags/reader-question" class="capitalize badge text-gray-900 bg-grey-light no-underline"> reader question (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/retrospective" class="capitalize badge text-gray-900 bg-grey-light no-underline"> retrospective (2)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/s3" class="capitalize badge text-gray-900 bg-grey-light no-underline"> S3 (2)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
@@ -324,9 +327,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/postman" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Postman (1)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/retrospective" class="capitalize badge text-gray-900 bg-grey-light no-underline"> retrospective (1)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/rider" class="capitalize badge text-gray-900 bg-grey-light no-underline"> rider (1)</a>

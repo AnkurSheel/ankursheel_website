@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (219)</h2>
+<h2>All Categories (220)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,6 +150,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-one-year-am-millionaire-yet">WordXplorer One Year In: Am I a Millionaire Yet?</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordwhiz-update-10">WordWhiz Update 10 : Fireworks, Levels, Polish</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -160,9 +163,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a>
         </li>
 </ul>
 
@@ -559,8 +559,11 @@
                 <a href="/blog/new-side-project-jah">New Side Project: JAH</a> - <time class="prose-sm" datetime="17-12-13">December 13, 2017</time>
             </li>
     </ul>
-    <h3 id="retrospective" class="py-4 border-b border-grey-lighter capitalize">retrospective (9)</h3>
+    <h3 id="retrospective" class="py-4 border-b border-grey-lighter capitalize">retrospective (10)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordxplorer-one-year-am-millionaire-yet">WordXplorer One Year In: Am I a Millionaire Yet?</a> - <time class="prose-sm" datetime="26-01-13">January 13, 2026</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/2023-q3-retrospective">2023 - Q3 Retrospective</a> - <time class="prose-sm" datetime="23-10-30">October 30, 2023</time>
             </li>
