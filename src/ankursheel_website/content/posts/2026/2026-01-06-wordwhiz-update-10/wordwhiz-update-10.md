@@ -68,3 +68,13 @@ But, I need your help. If you were picking a theme, what would you want to see?
 - Something else  
   
 What would you pick (and why)?
+
+## Get WordXplorer  
+  
+WordXplorer is available on the iOS App Store 
+
+<?# AppStoreBadges AppStoreLinkText="Get WordXplorer on App Store" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" GooglePlayLinkText="Get WordXplorer on Play Store" GooglePlayLinkUrl="com.glhf.wordleforkids"/?>
+
+Want to try before you buy? Check out our [web demo](https://wordxplorer.ankursheel.com/)
+
+Thank you for being a part of this journey with me! I'm eager to hear your thoughts and feedback. Stay tuned for more updates!
