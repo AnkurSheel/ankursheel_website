@@ -1,5 +1,5 @@
 ---
-title: "WordWhiz Update 10 : Fireworks, Levels, Polish"
+title: "WordXplorer Update 10 : Fireworks, Levels, Polish"
 excerpt: "Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests."
 category: "project updates"
 tags:
@@ -7,6 +7,8 @@ tags:
 - "wordxplorer"
 
 ---
+
+You can see all the related updates [here](/tags/wordxplorer)
 
 It’s been a while since I wrote an update on this blog.  
   
