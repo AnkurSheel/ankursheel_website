@@ -136,7 +136,7 @@
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/wordxplorer-one-year-am-millionaire-yet" class="text-center prose-2xl mb-4">WordXplorer One Year In: Am I a Millionaire Yet?</a>
-        <div class="font-semibold text-center">11 min</div>
+        <div class="font-semibold text-center">10 min</div>
         <p>
             Am I Millionaire yet? A retrospective and some numbers one year after the launch of WordXplorer
         </p>

@@ -8,6 +8,101 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>WordXplorer Update 11</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-11</link>
+      <description>New theme, smarter background</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-11-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-11</guid>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;h2 id="new-theme"&gt;New Theme&lt;/h2&gt;
+&lt;p&gt;Remember when I asked you which theme should come next?&lt;/p&gt;
+&lt;p&gt;Well, you voted. And here it is.&lt;/p&gt;
+&lt;p&gt;I've added a brand-new theme with 24 levels focusing on &lt;strong&gt;body parts&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Hands, feet, eyes – the classics and a few tricky ones. It's the kind of vocabulary that actually helps kids describe their world.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Level Selection Screen&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Game Screen&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/body_part_level_selection_screen.png" width="200" alt="Body Part Level Selection Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/body_part_game_screen.png" width="200" alt="Body Part Game Screen.png"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="dynamic-backgrounds"&gt;Dynamic Backgrounds&lt;/h2&gt;
+&lt;p&gt;Some of the more eagle eyed readers might have noticed that the background is a little different in the above 2 screen shots.&lt;/p&gt;
+&lt;p&gt;There are no more generic bubbles. No more one-size-fits-all backgrounds. The backgrounds now change based on the theme.&lt;/p&gt;
+&lt;p&gt;If you're playing the &lt;em&gt;Things We Eat&lt;/em&gt; theme, you see food. If you're in &lt;em&gt;Body Parts&lt;/em&gt;, you see... well, you know. It sounds simple, and it is. But, it gives kids an instant visual clue about what the theme is.&lt;/p&gt;
+&lt;p&gt;To be honest, this works best on a tablet where you can really see the new elements.&lt;/p&gt;
+&lt;p&gt;On a phone? It's more subtle – due to the lack of screen space. But if kids need a reminder of the theme, the hint screen has them covered.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Before&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;After&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/before_splash_screen.png" width="200" alt="Before Splash Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/after_splash_screen.png" width="200" alt="After Splash Screen"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/before_level_selection_screen.png" width="200" alt="Before Level Selection Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/after_level_selection_screen.png" width="200" alt="After Level Selection Screen"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/before_game_screen.png" width="200" alt="Before Game Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/after_game_screen.png" width="200" alt="After Game Screen"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="beta-testers-save-the-day"&gt;Beta Testers Save the Day&lt;/h2&gt;
+&lt;p&gt;Before I released this update to everyone, the beta testers found a couple of nasty bugs.&lt;/p&gt;
+&lt;p&gt;One was particularly gnarly: if you completed the last level and then tried to click "next level," the game would crash. When you reopened it, the level selection screen would be completely borked.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I'm so glad we caught it before release.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If that had made it to a paying user? Ooof. That would have sucked.&lt;/p&gt;
+&lt;h3 id="want-to-be-a-beta-tester"&gt;Want to Be a Beta Tester?&lt;/h3&gt;
+&lt;p&gt;If you're interested in helping me catch bugs before they reach everyone else, I'd love to have you on board. All you need to do is send me a screenshot of a review (to prove you've got the app). That's it.  As an added bonus, I will give you a free copy of the app to give to your friends.&lt;/p&gt;
+&lt;h2 id="level-button-updates"&gt;Level Button Updates&lt;/h2&gt;
+&lt;p&gt;Before the level selection screen, the level buttons were just random colors. They looked colorful but didn't give a clear indication of what level is completed and which one is newly unlocked. Now the level buttons can only have 1 of 3 colors - depending on the level status.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Before&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;After&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/before_level_selection_screen.png" width="200" alt="Before Level Selection Screen"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-11/body_part_level_selection_screen.png" width="200" alt="After Level Selection Screen"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="whats-next"&gt;What's Next?&lt;/h2&gt;
+&lt;p&gt;I'm adding a proper menu screen. It's not flashy – just polish and table stakes. Things that I had cut for the intial release.&lt;/p&gt;
+&lt;p&gt;More updates coming soon. Can't wait to share what's next.&lt;/p&gt;
+&lt;h2 id="get-wordxplorer"&gt;Get WordXplorer&lt;/h2&gt;
+&lt;p&gt;WordXplorer is available on the iOS App Store and Google Play store.&lt;/p&gt;
+&lt;div class="appstore-badges-container"&gt;
+  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Want to try before you buy? Check out our &lt;a href="https://wordxplorer.ankursheel.com/"&gt;web demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thank you for being a part of this journey with me! I'm eager to hear your thoughts and feedback. Stay tuned for more updates!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordXplorer One Year In: Am I a Millionaire Yet?</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-one-year-am-millionaire-yet</link>
       <description>Am I Millionaire yet? A retrospective and some numbers one year after the launch of WordXplorer</description>
@@ -87,8 +182,9 @@
 &lt;p&gt;Not just install it - actively play it for 10 days. I didn't know what would happen if someone quit after 2 days or didn't play every day, so I added 15 people to be safe. Getting friends and family to commit to playing for 10 days straight was challenging.&lt;/p&gt;
 &lt;p&gt;It's a significant hurdle that slowed down the Android launch. It also meant people who otherwise might have bought the game got it for free.&lt;/p&gt;
 &lt;h3 id="promo-codes"&gt;Promo codes&lt;/h3&gt;
-&lt;p&gt;Between iOS and Android, I gave the game for free to 23 people - 8 promo codes on iOS as a thank you for providing early feedback and 15 people downloaded it during the free week so that I could fulfill Google's requirement.&lt;/p&gt;
-&lt;p&gt;The kicker: &lt;strong&gt;promo code users can't leave reviews on the App Store.&lt;/strong&gt; These were my most supportive users - the ones who would have left positive reviews - and the platform prevented them from doing so. Even though I didnt know this at the time, I would have still given the promo codes.&lt;/p&gt;
+&lt;p&gt;I gave 12 promo codes on iOS as a thank you for providing early feedback.&lt;/p&gt;
+&lt;p&gt;The kicker: promo code users can't leave reviews on the App Store. These were my most supportive users - the ones who would have left positive reviews - and the platform prevented them from doing so.&lt;/p&gt;
+&lt;p&gt;Even though I didnt know this at the time, I would have still given the promo codes.&lt;/p&gt;
 &lt;h3 id="android-refunds"&gt;Android refunds&lt;/h3&gt;
 &lt;p&gt;Android allows refunds within 2 hours of purchase, no questions asked. Out of the 20 orders I got, I had &lt;strong&gt;17 refunds&lt;/strong&gt;. Ouch.&lt;/p&gt;
 &lt;p&gt;When I first saw them, I was confused. The game wasn't broken, so what went wrong?&lt;/p&gt;
@@ -244,7 +340,7 @@
 &lt;/ul&gt;
 &lt;h2 id="whats-next"&gt;What's Next?&lt;/h2&gt;
 &lt;p&gt;Now that I've refactored some of the code, I can actually add content without spending hours clicking through the screens. I still need to refactor the main game screen though :(&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;New theme dropping in February - body parts.&lt;/strong&gt; It's already in active testing and I'm working out the kinks.&lt;/p&gt;
+&lt;p&gt;New theme dropping in February - &lt;strong&gt;body parts&lt;/strong&gt;. It's already in active testing and I'm working out the kinks.&lt;/p&gt;
 &lt;p&gt;I'm also going to be adding the things that make it feel like a complete game, not just a prototype that shipped: proper menus, settings, polish. The stuff I cut to hit that December 1st deadline.&lt;/p&gt;
 &lt;p&gt;I've figured out a sustainable schedule with a plan to write an update post every month. In fact, one has already gone out in January.&lt;/p&gt;
 &lt;h2 id="so.was-it-worth-it"&gt;So… Was It Worth It?&lt;/h2&gt;
@@ -269,22 +365,23 @@
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
     <item>
-      <title>WordWhiz Update 10 : Fireworks, Levels, Polish</title>
-      <link>https://www.ankursheel.com/blog/wordwhiz-update-10</link>
+      <title>WordXplorer Update 10 : Fireworks, Levels, Polish</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-10</link>
       <description>Wordle for Kids update - 6 new levels, more fireworks, and smoother transitions. Plus: why I finally added automated tests.</description>
-      <guid>https://www.ankursheel.com/blog/wordwhiz-update-10</guid>
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-10</guid>
       <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;It’s been a while since I wrote an update on this blog.&lt;/p&gt;
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It’s been a while since I wrote an update on this blog.&lt;/p&gt;
 &lt;p&gt;Not because there were no update. Well, for some time that was true. You know work and life and all that. But the good news is that I have finally figured out a sustainable schedule, and updates have been going out in the app/Play Store. However, they didn't feel "blog-worthy." And let's be honest: once you miss one update, it’s surprisingly easy to miss the next one too.&lt;/p&gt;
 &lt;p&gt;Anyway, here’s what’s changed.&lt;/p&gt;
 &lt;h2 id="more-fireworks"&gt;More fireworks&lt;/h2&gt;
 &lt;p&gt;I added more fireworks on level completion.&lt;/p&gt;
 &lt;p&gt;It sounds trivial when I write it out like that. But you can never have too many fireworks.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-10/fireworks.gif" alt="fireworks"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-10/fireworks.gif" alt="fireworks"&gt;&lt;/p&gt;
 &lt;h2 id="scene-transitions"&gt;Scene transitions&lt;/h2&gt;
 &lt;p&gt;I also added scene transitions between screens.&lt;/p&gt;
 &lt;p&gt;This is another one of those trivial changes. But, it makes the game feel less like a collection of screens and more like... well, a game.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordwhiz-update-10/scene_transitioner.gif" alt="scene transitioner"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-10/scene_transitioner.gif" alt="scene transitioner"&gt;&lt;/p&gt;
 &lt;h2 id="level-select-now-opens-at-your-highest-unlocked-level"&gt;Level select now opens at your highest unlocked level&lt;/h2&gt;
 &lt;p&gt;The level selection screen now opens on the page with your highest unlocked level.&lt;/p&gt;
 &lt;p&gt;This is mostly just convenience (less clicking is always a win). This wasnt so much of an issue when it was just 3 screens but as I add themes and more levels to the game, this will make it much easier to navigate.&lt;/p&gt;
@@ -1130,7 +1227,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1729,62 +1826,6 @@ jobs:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows"&gt;Events that trigger workflows&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://game.ci/docs/github/test-runner"&gt;GameCI TestRunner docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Unity CI/CD Demystified: Part 1: One-Time Setup</title>
-      <link>https://www.ankursheel.com/blog/unity-cicd-one-time-setup</link>
-      <description>Part 1 covers the one-time setup needed for setting up a CI/CD pipeline for Unity projects</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/unity-cicd-one-time-setup-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/unity-cicd-one-time-setup</guid>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;In this series, I'll guide you through setting up a CI/CD pipeline for Unity projects using &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt; and &lt;a href="https://game.ci/"&gt;GameCI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Part 1 of this series covers the one-time setup that you need for setting up the pipeline.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: Some of these setup steps can be skipped if you've already performed them for a previous project.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id="acquire-an-activation-file-for-github-runners"&gt;Acquire an Activation File for GitHub Runners&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Log into Unity Hub&lt;/li&gt;
-&lt;li&gt;If you havent already created a licence, you need to get a licence by going to &lt;em&gt;Unity Hub&lt;/em&gt; &amp;gt; &lt;em&gt;Manage Licenses&lt;/em&gt; &amp;gt; &lt;em&gt;Add&lt;/em&gt; &amp;gt; &lt;em&gt;Get a free personal license&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="install-ruby"&gt;Install Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Install &lt;a href="https://rubyinstaller.org/downloads/"&gt;Ruby&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Verify the installation by running &lt;code&gt;ruby -v&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Install &lt;em&gt;Bundler&lt;/em&gt; by running &lt;code&gt;gem install bundler&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="setup-codesigning-with-github-actions"&gt;Setup Codesigning with GitHub Actions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a private GitHub repository to store the certificates and code-signing identities we generate.&lt;/li&gt;
-&lt;li&gt;In the private repository, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Deploy Keys&lt;/em&gt; -&amp;gt; &lt;em&gt;Add Deploy Key&lt;/em&gt;&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/deploy_key.png" alt="Add a new deploy key"&gt;&lt;/li&gt;
-&lt;li&gt;Generate an SSH key. You can use 1Password or use the &lt;code&gt;ssh-keygen&lt;/code&gt; utility.&lt;/li&gt;
-&lt;li&gt;Paste the public key (starting with ssh) into the "Key" field.&lt;/li&gt;
-&lt;li&gt;Select &lt;strong&gt;&lt;em&gt;Allow write access&lt;/em&gt;&lt;/strong&gt; to enable pushing certificates to the repository.&lt;br&gt;
-&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/add_key.png" alt="Add key"&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="setting-up-secrets-for-github-actions"&gt;Setting up Secrets for GitHub Actions&lt;/h2&gt;
-&lt;p&gt;On GitHub, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Secrets and Variables&lt;/em&gt; -&amp;gt; &lt;em&gt;Actions&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-one-time-setup/adding_secrets.png" alt="Adding secrets"&gt;&lt;/p&gt;
-&lt;p&gt;Create the following secrets&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;UNITY_EMAIL&lt;/strong&gt;: Your Unity login email address.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;UNITY_LICENSE&lt;/strong&gt;: The contents of the &lt;em&gt;.ulf&lt;/em&gt; file which can found at &lt;em&gt;&lt;strong&gt;C:\ProgramData\Unity\Unity_lic.ulf&lt;/strong&gt;&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;UNITY_PASSWORD&lt;/strong&gt;: Your Unity login password.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATCH_PASSWORD&lt;/strong&gt;: This is required for encrypting/decrypting certificates.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATCH_REPOSITORY&lt;/strong&gt;: The name of the private GitHub repository that will store our certificates in the format &lt;code&gt;organization/repository&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATCH_DEPLOY_KEY&lt;/strong&gt;: This is the private part of the SSH key we created in the private repository to store our certificates. &lt;em&gt;If using 1Password makes sure the key is unencrypted.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you can, I recommend adding these secrets at the organisation level so that you can reuse them across multiple projects. You can then selectively grant access to each secret for specific repositories.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;We are now finished with the one time setup that we need to add CI/CD to our Unity projects. In the next part, we will set up the GitHub Actions workflow to build and deploy our Unity project.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions"&gt;Workflow syntax&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch"&gt;Workflow dispatch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions"&gt;Using secrets in GitHub Actions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#set-up-deploy-keys"&gt;Setup deploy keys on Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

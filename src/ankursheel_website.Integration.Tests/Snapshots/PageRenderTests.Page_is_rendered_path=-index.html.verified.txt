@@ -138,19 +138,19 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-11">WordXplorer Update 11</a> - <time class="prose-sm" datetime="26-02-05">February 05, 2026</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-one-year-am-millionaire-yet">WordXplorer One Year In: Am I a Millionaire Yet?</a> - <time class="prose-sm" datetime="26-01-13">January 13, 2026</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordwhiz-update-10">WordWhiz Update 10 : Fireworks, Levels, Polish</a> - <time class="prose-sm" datetime="26-01-06">January 06, 2026</time>
+            <a href="/blog/wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a> - <time class="prose-sm" datetime="26-01-06">January 06, 2026</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/story-points-arent-problem">Story Points Aren&#x27;t the Problem</a> - <time class="prose-sm" datetime="25-07-26">July 26, 2025</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a> - <time class="prose-sm" datetime="25-06-08">June 08, 2025</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-8">WordXplorer Update #8: New Hint System</a> - <time class="prose-sm" datetime="25-05-10">May 10, 2025</time>
         </li>
 </ul>
 

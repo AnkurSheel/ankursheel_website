@@ -145,7 +145,7 @@
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
                 datetime="2026-01-13">Jan 13, 2026</time></span>
         <span class="sm:py-0 py-1">
-            Estimated Reading Time: <span class="font-bold">11 min</span>
+            Estimated Reading Time: <span class="font-bold">10 min</span>
         </span>
     </div>
 
@@ -228,8 +228,9 @@
 <p>Not just install it - actively play it for 10 days. I didn't know what would happen if someone quit after 2 days or didn't play every day, so I added 15 people to be safe. Getting friends and family to commit to playing for 10 days straight was challenging.</p>
 <p>It's a significant hurdle that slowed down the Android launch. It also meant people who otherwise might have bought the game got it for free.</p>
 <h3 id="promo-codes">Promo codes</h3>
-<p>Between iOS and Android, I gave the game for free to 23 people - 8 promo codes on iOS as a thank you for providing early feedback and 15 people downloaded it during the free week so that I could fulfill Google's requirement.</p>
-<p>The kicker: <strong>promo code users can't leave reviews on the App Store.</strong> These were my most supportive users - the ones who would have left positive reviews - and the platform prevented them from doing so. Even though I didnt know this at the time, I would have still given the promo codes.</p>
+<p>I gave 12 promo codes on iOS as a thank you for providing early feedback.</p>
+<p>The kicker: promo code users can't leave reviews on the App Store. These were my most supportive users - the ones who would have left positive reviews - and the platform prevented them from doing so.</p>
+<p>Even though I didnt know this at the time, I would have still given the promo codes.</p>
 <h3 id="android-refunds">Android refunds</h3>
 <p>Android allows refunds within 2 hours of purchase, no questions asked. Out of the 20 orders I got, I had <strong>17 refunds</strong>. Ouch.</p>
 <p>When I first saw them, I was confused. The game wasn't broken, so what went wrong?</p>
@@ -385,7 +386,7 @@
 </ul>
 <h2 id="whats-next">What's Next?</h2>
 <p>Now that I've refactored some of the code, I can actually add content without spending hours clicking through the screens. I still need to refactor the main game screen though :(</p>
-<p><strong>New theme dropping in February - body parts.</strong> It's already in active testing and I'm working out the kinks.</p>
+<p>New theme dropping in February - <strong>body parts</strong>. It's already in active testing and I'm working out the kinks.</p>
 <p>I'm also going to be adding the things that make it feel like a complete game, not just a prototype that shipped: proper menus, settings, polish. The stuff I cut to hit that December 1st deadline.</p>
 <p>I've figured out a sustainable schedule with a plan to write an update post every month. In fact, one has already gone out in January.</p>
 <h2 id="so.was-it-worth-it">So… Was It Worth It?</h2>
