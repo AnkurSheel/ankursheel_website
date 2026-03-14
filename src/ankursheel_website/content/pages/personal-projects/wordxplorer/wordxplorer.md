@@ -1,8 +1,8 @@
-WordXplorer is an exciting word puzzle game designed to helps kids(aged 5 and up) develop early literacy skills and encourage critical thinking through a wordle like game.
+WordXplorer is an ad‑free, one-time-purchase spelling game designed for early readers. Kids learn 4‑letter words through fun themed puzzles — like food, body parts, and more — building confidence with spelling in a safe, independent, and engaging way. Each puzzle gives seven chances to guess, with helpful hints that keep the challenge fun without frustration.
 
-- Kids have seven chances per level to guess the right four-letter word. This provides ample opportunities to learn from mistakes, reinforcing word recognition and problem-solving skills while keeping the game fun and engaging.
-- All words and levels are carefully selected to be age-appropriate and beneficial, ensuring a safe and enriching experience for your child.
-- The game is designed to be played offline, making it perfect for long car rides, waiting rooms, or any time your child needs a quiet activity.
+Perfect for short 3–10 minute sessions during car rides, waiting rooms, or quiet time, WordXplorer has calm visuals, no ads or tracking, and works offline. Buy once and unlock all current and future themed word packs forever.
+
+Try the free demo: https://wordxplorer.ankursheel.com/
 
 <?# AppStoreBadges AppStoreLinkText="Get WordXplorer on App Store" AppStoreLinkUrl="wordxplorer-guess-the-word/id6504664783" GooglePlayLinkText="Get WordXplorer on Play Store" GooglePlayLinkUrl="com.glhf.wordleforkids"/?>
 

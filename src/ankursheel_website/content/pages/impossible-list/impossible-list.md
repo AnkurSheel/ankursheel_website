@@ -198,7 +198,8 @@ See the reason behind creating this list [here](/blog/impossible-list-bucket-lis
     - Get 500 visits in a day.
 -   ~~Make my first dollar online.~~ (December 2024)
     -   ~~Make 10 dollars online.~~ (January 2025)
-    -   Make 100 dollars online.
+    -   ~~Make 100 dollars online.~~ (January 2026)
+    - Make 1000 dollars online. 
 -   Start my own company
     -   Game company
 - ~~Build an application~~ [Match 'N Spell Magic on AppStore](https://apps.apple.com/app/match-n-spell-magic/id1661527186)(June 2023)
