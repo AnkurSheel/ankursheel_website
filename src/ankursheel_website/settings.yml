@@ -27,6 +27,7 @@ HeaderLinks:
       Url: '/contact'
 #GoogleTagManagerId: GTM-MG9PGWH
 GoatCounterCode: ankursheel
+SocialImageFont: './input/assets/fonts/Inter-VariableFont.ttf'
 #icon: 'content/images/avatar.png',
 #headerTitle: 'Home',
 #webMonetization: '$ilp.uphold.com/FpRgJHkQhkhb',

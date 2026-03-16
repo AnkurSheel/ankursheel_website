@@ -392,7 +392,8 @@
 <li><del>Make my first dollar online.</del> (December 2024)
 <ul>
 <li><del>Make 10 dollars online.</del> (January 2025)</li>
-<li>Make 100 dollars online.</li>
+<li><del>Make 100 dollars online.</del> (January 2026)</li>
+<li>Make 1000 dollars online.</li>
 </ul>
 </li>
 <li>Start my own company
