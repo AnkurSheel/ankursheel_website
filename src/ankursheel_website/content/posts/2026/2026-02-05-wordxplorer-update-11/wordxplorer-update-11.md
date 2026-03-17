@@ -1,5 +1,5 @@
 ﻿---
-title: "WordXplorer Update 11"
+title: "WordXplorer Update 11: New Theme"
 excerpt: "New theme, smarter background"
 coverImage: "./body_part_level_selection_screen.png"
 category: "project updates"
@@ -9,6 +9,7 @@ tags:
 
 ---
 
+You can see all the related updates [here](/tags/wordxplorer)
 
 ## New Theme
 
@@ -20,9 +21,9 @@ I've added a brand-new theme with 24 levels focusing on **body parts**.
 
 Hands, feet, eyes – the classics and a few tricky ones. It's the kind of vocabulary that actually helps kids describe their world.  
  
-|                                  Level Selection Screen                                  |                              Game Screen                               |
-|:----------------------------------------------------------------------------------------:|:----------------------------------------------------------------------:|  
-| ![Body Part Level Selection Screen](./body_part_level_selection_screen.png){ width=200 } | ![Body Part Game Screen.png](./body_part_game_screen.png){ width=200 } |
+|                                  Level Selection Screen                                  |                            Game Screen                             |
+|:----------------------------------------------------------------------------------------:|:------------------------------------------------------------------:|  
+| ![Body Part Level Selection Screen](./body_part_level_selection_screen.png){ width=200 } | ![Body Part Game Screen](./body_part_game_screen.png){ width=200 } |
 
 ## Dynamic Backgrounds   
   
