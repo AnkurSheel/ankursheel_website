@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordXplorer Update #9: Save your guesses</title>
+<title>WordXplorer Update 12: Demo Build &amp; Teacher Feedback</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay."/>
+<meta name="description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-9"/>   
-<meta itemProp="name" content="WordXplorer Update #9: Save your guesses"/>
-<meta itemProp="description" content="WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-9"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-12"/>   
+<meta itemProp="name" content="WordXplorer Update 12: Demo Build &amp; Teacher Feedback"/>
+<meta itemProp="description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-12"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update #9: Save your guesses"/>
-<meta property="og:description" content="WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-facebook.png"/>
+<meta property="og:title" content="WordXplorer Update 12: Demo Build &amp; Teacher Feedback"/>
+<meta property="og:description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update #9: Save your guesses"/>
-<meta name="twitter:description" content="WordXplorer Update #9 introduces a convenient save feature that remembers your guessed words when you exit a level, allowing you to pick up right where you left off for uninterrupted gameplay."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-9-twitter.png"/>
+<meta name="twitter:title" content="WordXplorer Update 12: Demo Build &amp; Teacher Feedback"/>
+<meta name="twitter:description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update #9: Save your guesses</h1>
+    <h1 class="text-center">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -141,11 +141,11 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2025-06-08">Jun 08, 2025</time></span>
+                datetime="2026-03-17">Mar 17, 2026</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2025-06-08">Jun 08, 2025</time></span>
+                datetime="2026-03-17">Mar 17, 2026</time></span>
         <span class="sm:py-0 py-1">
-            Estimated Reading Time: <span class="font-bold">1 min</span>
+            Estimated Reading Time: <span class="font-bold">2 min</span>
         </span>
     </div>
 
@@ -156,21 +156,33 @@
 </div>
 
 <p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
-<h2 id="save-your-guesses">Save your guesses</h2>
-<p>Your guesses are now saved, letting you take as long as you need to solve each level without starting over.</p>
-<p>When you return to a level, you’ll see all your previous guesses, allowing you to continue right where you left off. Once you successfully complete a level, all your guesses for that puzzle will be cleared, giving you a fresh start when you decide to replay it.</p>
-<p>Here's how it works in action:</p>
-<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
-  <iframe src="https://www.youtube.com/embed/R5ZXlpfyUZY" title="Watch the Save State in action" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
-</div>  
-<h2 id="bug-fixes">Bug Fixes</h2>
-<ul>
-<li>I've resolved the issue where the keyboard colour changed to white after moving to the next level.</li>
-<li>I've also fixed the problem where the latest level showed up as locked when you went back to the level selection screen after finishing a level.</li>
-</ul>
-<hr />
+<h2 id="automated-screenshot-capture">Automated Screenshot Capture</h2>
+<p>Updating the WordXplorer store listings has been a tedious affair. Previously, I had to manually capture screenshots for every device size, which made it difficult to keep visuals up to date as the game improved.</p>
+<p>To solve this, I wrote a series of custom <strong>Unity Editor scripts</strong> to automate the process. These scripts programmatically trigger high-resolution renders for every required form factor and automatically apply a branded banner to each shot.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Before</th>
+<th style="text-align: center;">After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-12/old_screenshot.png" width="200" alt="Old Screenshot" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-12/new_screenshot.png" width="200" alt="New Screenshot" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="teacher-approved-feedback">Teacher Approved Feedback</h2>
+<p>I’ve been working toward getting the &quot;Teacher Approved&quot; badge on the Google Play Store. While the app was previously approved, Google has identified two specific areas I need to address to maintain that status: <strong>Text Volume</strong> and <strong>Replayability</strong>.</p>
+<p>I'm currently brainstorming ideas to address these two concerns and ensure the game gets approved again.</p>
+<h2 id="demo-build-updates">Demo Build Updates</h2>
+<p>I’ve updated the <a href="https://wordxplorer.ankursheel.com/">web demo</a> to include all themes and levels available in the paid version. While active play is still limited to the first six levels, users can now browse the full library of content.</p>
+<p>My goal is to ensure players see the full scope of the game before purchasing, so they know exactly how much content they are getting in the full version.</p>
+<h2 id="whats-next">What's Next?</h2>
+<p>I’m currently prioritizing which features to add next - there were quite a few that were cut from the initial release to get the game into your hands faster. I'm looking forward to bringing those back into the roadmap.</p>
 <h2 id="get-wordxplorer">Get WordXplorer</h2>
-<p>WordXplorer is available on the iOS App Store</p>
+<p>WordXplorer is available on the iOS App Store and Google Play Store.</p>
 <div class="appstore-badges-container">
   <a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
     <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store" />
@@ -179,16 +191,19 @@
     <img src="/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store" />
   </a>
 </div>
-<p>Want to try before you buy? Check out our <a href="https://wordxplorer.ankursheel.com/">web demo</a></p>
-<p>Thank you for being a part of this journey with me! I'm eager to hear your thoughts and feedback. Stay tuned for more updates!</p>
+<h3 id="become-a-beta-tester">Become a Beta Tester</h3>
+<p>Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a <strong>free copy of the app</strong> to share with a friend!</p>
+<h3 id="try-the-demo">Try the Demo</h3>
+<p>Want to try before you buy? Check out the <a href="https://wordxplorer.ankursheel.com/">web demo here</a>.</p>
+<p>Thank you for being part of this journey. Stay tuned for more updates!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-9&text=WordXplorer%20Update%20%239%3A%20Save%20your%20guesses via @ankur_sheel.&#xD;&#xA;WordXplorer%20Update%20%239%20introduces%20a%20convenient%20save%20feature%20that%20remembers%20your%20guessed%20words%20when%20you%20exit%20a%20level%2C%20allowing%20you%20to%20pick%20up%20right%20where%20you%20left%20off%20for%20uninterrupted%20gameplay." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-9" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-12&text=WordXplorer%20Update%2012%3A%20Demo%20Build%20%26%20Teacher%20Feedback via @ankur_sheel.&#xD;&#xA;Automated%20screenshots%2C%20addressing%20%27Teacher%20Approved%27%20feedback%2C%20and%20expanding%20the%20demo%20build." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-12" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -200,16 +215,16 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
+                <a href="wordxplorer-update-11">WordXplorer Update 11: New Theme</a>
             </li>
             <li>
                 <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
             </li>
             <li>
-                <a href="wordxplorer-update-7">WordXplorer #7: New Video &amp; Food Theme</a>
+                <a href="wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
             </li>
             <li>
-                <a href="wordxplorer-update-11">WordXplorer Update 11: New Theme</a>
+                <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
             </li>
     </ul>
 </aside>
