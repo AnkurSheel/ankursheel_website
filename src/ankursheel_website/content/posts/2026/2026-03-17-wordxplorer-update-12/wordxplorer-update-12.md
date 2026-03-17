@@ -1,7 +1,6 @@
 ---
 title: "WordXplorer Update 12: Demo Build & Teacher Feedback"
 excerpt: "Automated screenshots, addressing 'Teacher Approved' feedback, and expanding the demo build."
-coverImage: "./new_screenshot.png"
 category: "project updates"
 tags:
 - "project updates"
