@@ -4,7 +4,7 @@ title: CV
 
 ## Summary
 
-I am a software developer who strives to help people become more efficient and productive. I take an active interest in improving processes to benefit my team members. I enjoy building tools that help reduce the time taken by my team members to complete tasks. I specialize in making code maintainable by using refactoring techniques and adding unit and system test coverage. I have often been brought into different projects because of my debugging skills. I also enjoy extending my technical skillset by indulging in side-projects.
+I’m a backend engineer who genuinely cares about making things run better. My background is a mix of fast-paced startup environments and the structured complexity of mid to large-scale enterprises. I love building tools that save my teammates time. I’m the person you bring in when a project is stuck in a debugging nightmare or needs a serious refactor to stay maintainable. When I'm not writing unit tests or fixing backend logic, I’m usually building my own side projects and blogging about whatever new tech I've picked up.
 
 To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 
