@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,1015 @@
             <a href="/tags/java" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">java</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#operations" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Operations</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#select--map" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Select / map</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#where--filter" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Where / filter</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#orderby--sorted" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">OrderBy / sorted</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-2" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-2" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-2" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#orderbydescending--sorted" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">OrderByDescending / sorted</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-3" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-3" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-3" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#groupby--groupingby" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">GroupBy / groupingBy</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-4" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-4" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-4" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#join--join" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Join / join</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-5" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-5" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-5" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#any--anymatch" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Any / AnyMatch</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-6" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-6" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-6" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#all--allmatch" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">All / AllMatch</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-7" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-7" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-7" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#contains--contains" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Contains / contains</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-8" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-8" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-8" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#count--count" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Count / count</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-9" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-9" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-9" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#first--findfirst" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">First / findFirst</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-10" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-10" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-10" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#firstordefault--findfirst" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">FirstOrDefault / findFirst</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-11" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-11" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-11" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#last--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Last / reduce</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-12" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-12" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-12" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#lastordefault--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">LastOrDefault / reduce</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-13" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-13" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-13" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#skip--skip" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Skip / skip</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-14" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-14" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-14" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#skipwhile--dropwhile" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">SkipWhile / dropWhile</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-15" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-15" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-15" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#take--limit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Take / limit</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-16" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-16" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-16" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#takewhile--takewhile" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">TakeWhile / takeWhile</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-17" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-17" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-17" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#sum--sum" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Sum / Sum</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-18" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-18" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-18" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#average--average" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Average / average</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-19" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-19" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-19" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#min--min" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Min / min</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-20" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-20" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-20" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#max--max" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Max / max</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-21" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-21" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-21" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#aggregate--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Aggregate / reduce</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-22" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-22" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-22" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#distinct--distinct" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Distinct / distinct</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-23" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-23" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-23" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#union--concat" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Union / concat</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-24" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-24" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-24" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#intersect--filter" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Intersect / filter</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-25" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-25" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-25" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#except--filter" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Except / filter</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-26" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-26" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-26" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#concat--concat" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Concat / concat</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-27" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-27" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-27" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#reverse--reverse" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reverse / reverse</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-28" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-28" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-28" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#zip--maptoobj" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Zip / mapToObj</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-29" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-29" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-29" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#elementat--get" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ElementAt / get</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-30" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-30" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-30" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#single--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Single / reduce</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-31" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-31" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-31" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#singleordefault--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">SingleOrDefault / reduce</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-32" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-32" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-32" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#defaultifempty" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">DefaultIfEmpty</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-33" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-33" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-33" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#sequenceequal--sequenceequal" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">SequenceEqual / sequenceEqual</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-34" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-34" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-34" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#cast--map-with-explicit-casting" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Cast / map (with explicit casting)</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-35" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-35" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-35" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#oftype--filter-with-type-check" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">OfType / filter (with type check)</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-36" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-36" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-36" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#toarray--toarray" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToArray / toArray</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-37" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-37" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#tolist--aslist" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToList / asList</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-38" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-38" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#todictionary--tomap" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToDictionary / toMap</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-39" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-39" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-37" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#tolookup--groupingby" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToLookup / groupingBy</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#c-40" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#java-40" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#output-38" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#operations" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Operations</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#select--map" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Select / map</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#where--filter" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Where / filter</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#orderby--sorted" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">OrderBy / sorted</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-2" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-2" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-2" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#orderbydescending--sorted" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">OrderByDescending / sorted</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-3" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-3" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-3" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#groupby--groupingby" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">GroupBy / groupingBy</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-4" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-4" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-4" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#join--join" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Join / join</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-5" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-5" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-5" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#any--anymatch" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Any / AnyMatch</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-6" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-6" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-6" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#all--allmatch" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">All / AllMatch</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-7" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-7" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-7" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#contains--contains" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Contains / contains</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-8" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-8" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-8" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#count--count" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Count / count</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-9" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-9" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-9" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#first--findfirst" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">First / findFirst</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-10" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-10" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-10" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#firstordefault--findfirst" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">FirstOrDefault / findFirst</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-11" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-11" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-11" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#last--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Last / reduce</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-12" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-12" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-12" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#lastordefault--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">LastOrDefault / reduce</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-13" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-13" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-13" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#skip--skip" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Skip / skip</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-14" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-14" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-14" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#skipwhile--dropwhile" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">SkipWhile / dropWhile</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-15" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-15" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-15" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#take--limit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Take / limit</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-16" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-16" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-16" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#takewhile--takewhile" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">TakeWhile / takeWhile</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-17" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-17" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-17" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#sum--sum" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Sum / Sum</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-18" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-18" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-18" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#average--average" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Average / average</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-19" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-19" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-19" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#min--min" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Min / min</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-20" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-20" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-20" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#max--max" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Max / max</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-21" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-21" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-21" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#aggregate--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Aggregate / reduce</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-22" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-22" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-22" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#distinct--distinct" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Distinct / distinct</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-23" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-23" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-23" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#union--concat" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Union / concat</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-24" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-24" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-24" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#intersect--filter" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Intersect / filter</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-25" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-25" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-25" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#except--filter" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Except / filter</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-26" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-26" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-26" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#concat--concat" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Concat / concat</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-27" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-27" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-27" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#reverse--reverse" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reverse / reverse</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-28" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-28" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-28" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#zip--maptoobj" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Zip / mapToObj</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-29" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-29" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-29" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#elementat--get" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ElementAt / get</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-30" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-30" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-30" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#single--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Single / reduce</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-31" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-31" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-31" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#singleordefault--reduce" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">SingleOrDefault / reduce</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-32" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-32" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-32" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#defaultifempty" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">DefaultIfEmpty</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-33" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-33" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-33" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#sequenceequal--sequenceequal" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">SequenceEqual / sequenceEqual</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-34" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-34" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-34" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#cast--map-with-explicit-casting" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Cast / map (with explicit casting)</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-35" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-35" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-35" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#oftype--filter-with-type-check" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">OfType / filter (with type check)</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-36" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-36" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-36" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#toarray--toarray" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToArray / toArray</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-37" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-37" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#tolist--aslist" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToList / asList</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-38" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-38" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#todictionary--tomap" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToDictionary / toMap</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-39" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-39" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-37" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#tolookup--groupingby" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">ToLookup / groupingBy</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#c-40" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">C#</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#java-40" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Java</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#output-38" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>If you're transitioning from C# to Java, the task of mapping C# LINQ functions to Java Streams can seem challenging
 While the core concepts bear similarities, unravelling the nuances of syntax and functionality is crucial for success.</p>

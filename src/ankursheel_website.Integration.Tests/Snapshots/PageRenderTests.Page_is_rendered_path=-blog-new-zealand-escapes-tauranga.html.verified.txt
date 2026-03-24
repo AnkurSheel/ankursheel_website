@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/travel" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">travel</a>
     </div>
 </div>
+
+
+
+
 
 <p>Tauranga is New Zealand's fifth-largest city has been a popular lifestyle location. There are quite a few things to do here over a weekend, including several waterfalls, walks, cruises and watersports.</p>
 <p><img src="/assets/images/posts/new-zealand-escapes-tauranga/Tauranga-1.jpg" alt="" /></p>

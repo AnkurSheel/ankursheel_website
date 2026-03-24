@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/uae" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">UAE</a>
     </div>
 </div>
+
+
+
+
 
 <p><img src="/assets/images/posts/wafi-mall/Wafi-mall-2.jpg" alt="Wafi Mall" /></p>
 <p>After the Dolphinarium, Gunjan and I decided to head to the Wafi Mall, about 2 kilometres away from the creek park.</p>

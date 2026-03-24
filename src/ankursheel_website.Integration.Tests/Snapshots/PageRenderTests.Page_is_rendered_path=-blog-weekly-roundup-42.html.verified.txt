@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,10 @@
             <a href="/tags/weekly-roundup" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">weekly roundup</a>
     </div>
 </div>
+
+
+
+
 
 <p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Copywriting is an art form in itself. These <a href="https://marketingexamples.com/copywriting/tips/">17 copywriting tips</a> from <strong>Harry Dry</strong> can help take your message to the next level.</p>

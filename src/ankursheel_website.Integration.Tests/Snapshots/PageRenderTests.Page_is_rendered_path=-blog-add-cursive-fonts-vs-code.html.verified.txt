@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,61 @@
             <a href="/tags/dev-tools" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dev tools</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#final-output" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Output</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#updating-vs-codes-settings" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Updating VS Code&#x27;s settings</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#my-current-config" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">My current config</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#thanks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Thanks</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#final-output" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Output</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#updating-vs-codes-settings" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Updating VS Code&#x27;s settings</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#my-current-config" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">My current config</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#thanks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Thanks</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>I have been using FiraCode as my font of choice in VS Code since I found about it. The use of ligatures while typing code is handy and has been a game-changer. However, lately, I have seen some VS code screenshots with cursive fonts in the text editor, and I wanted some of that. But, I also wanted to keep the ligatures that FiraCode has already spoiled me with.</p>
 <p>Using my googling skills, I found a few articles, and it seemed the most straightforward way was to install a theme with a cursive font already built in such as <a href="https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic">this</a>. However, I like the flexibility of changing themes, so this was not a viable option for me.</p>

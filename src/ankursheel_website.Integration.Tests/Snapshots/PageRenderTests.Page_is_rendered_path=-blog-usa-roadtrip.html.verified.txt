@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/usa" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">USA</a>
     </div>
 </div>
+
+
+
+
 
 <p>An itinerary of a road trip I took with my parents across the USA after graduating in May 2010.</p>
 <p><img src="/assets/images/posts/usa-roadtrip/map.jpg" alt="Map of the road trip" /></p>

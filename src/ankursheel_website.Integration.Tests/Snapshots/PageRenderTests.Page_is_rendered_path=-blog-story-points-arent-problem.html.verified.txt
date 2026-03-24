@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,85 @@
             <a href="/tags/process" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">process</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#mistake-1-treating-story-points-as-a-proxy-for-time" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mistake #1: Treating Story Points as a Proxy for Time</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#1-point" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">1 Point</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#2-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">2 Points</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#3-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">3 Points</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#5-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">5 Points</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#8-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">8 Points</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#mistake-2-estimating-in-isolation" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mistake #2: Estimating in Isolation</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#mistake-3-arguing-over-2-vs-3-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mistake #3: Arguing Over 2 vs 3 Points</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#mistake-1-treating-story-points-as-a-proxy-for-time" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mistake #1: Treating Story Points as a Proxy for Time</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#1-point" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">1 Point</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#2-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">2 Points</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#3-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">3 Points</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#5-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">5 Points</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#8-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">8 Points</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#mistake-2-estimating-in-isolation" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mistake #2: Estimating in Isolation</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#mistake-3-arguing-over-2-vs-3-points" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mistake #3: Arguing Over 2 vs 3 Points</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Like many developers, I hate story pointing.</p>
 <p>It feels like I’ve wasted <em>years</em> of my life in sprint planning sessions that spiral into arguments over whether something is a 2 or a 3. I’ve also sat through too many sprint planning sessions watching teams treat story points as time estimates, and walk away with no more clarity than when they started.</p>

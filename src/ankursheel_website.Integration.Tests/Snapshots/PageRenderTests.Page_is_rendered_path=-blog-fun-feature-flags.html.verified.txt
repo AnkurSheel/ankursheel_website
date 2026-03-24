@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,97 @@
             <a href="/tags/opinion" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">opinion</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#other-approaches" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Other Approaches</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#approach-1-feature-branches" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 1: Feature Branches</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#alternative-2-git-flow" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Alternative 2: Git Flow</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Feature Flags</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#pros-of-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Pros of Feature Flags</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#cons-of-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Cons of Feature Flags</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#when-to-use-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">When to Use Feature Flags</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#feature-flags-in-practice" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Feature Flags in Practice</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#best-practices-with-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Best Practices with Feature Flags</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#removal-strategies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Removal Strategies</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion-are-feature-flags-right-for-you" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion: Are Feature Flags Right for You?</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#other-approaches" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Other Approaches</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#approach-1-feature-branches" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 1: Feature Branches</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#alternative-2-git-flow" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Alternative 2: Git Flow</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Feature Flags</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#pros-of-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Pros of Feature Flags</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#cons-of-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Cons of Feature Flags</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#when-to-use-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">When to Use Feature Flags</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#feature-flags-in-practice" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Feature Flags in Practice</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#best-practices-with-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Best Practices with Feature Flags</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#removal-strategies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Removal Strategies</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion-are-feature-flags-right-for-you" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion: Are Feature Flags Right for You?</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Feature flags give developers the ability to turn features on or off without deploying new code. This flexibility is key for managing the release of new features while allowing for controlled and incremental deployments.</p>
 <p>I still have conversations with several teams that are using development methods that don’t include feature flags. Some of them want to move to feature flags but are unsure how to start while others have never heard of them or don't think it's worth adopting.</p>

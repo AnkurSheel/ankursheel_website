@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/united-kingdom" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">United Kingdom</a>
     </div>
 </div>
+
+
+
+
 
 <p>After a bit of walking from the tube station to the Tower of London, I reached a long line of other tourists. Don't people have anything better to do than make me stand in long lines? Well, after standing for an hour in the line in which, by the way, I heard a lot of gibberish because nobody was speaking in Hindi or English ( at least nothing I could understand) and paying about 17 pounds for all that fun, I finally got my ticket.</p>
 <p><img src="/assets/images/posts/walking-around-london/London-2.jpg" alt="Front View of Tower Of London" /></p>

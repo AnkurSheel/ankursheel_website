@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,73 @@
             <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#adding-analytics" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Adding Analytics</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#creating-the-filter-in-google-analytics" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Creating the Filter in Google Analytics</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#get-your-google-analytics-account-id" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get your Google Analytics Account ID</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#create-an-html-page-to-create-a-cookie-excluder" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Create an Html page to create a cookie excluder</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#excluding-yourself" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Excluding yourself</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#optional-test" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Optional Test</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#adding-analytics" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Adding Analytics</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#creating-the-filter-in-google-analytics" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Creating the Filter in Google Analytics</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#get-your-google-analytics-account-id" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get your Google Analytics Account ID</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#create-an-html-page-to-create-a-cookie-excluder" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Create an Html page to create a cookie excluder</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#excluding-yourself" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Excluding yourself</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#optional-test" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Optional Test</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Google Analytics is a powerful and useful tool for anybody with any website who wants to track their traffic.</p>
 <p>I will attempt to show exactly how to add analytics and filter yourself from the data if you have a self-hosted blog using WordPress.</p>

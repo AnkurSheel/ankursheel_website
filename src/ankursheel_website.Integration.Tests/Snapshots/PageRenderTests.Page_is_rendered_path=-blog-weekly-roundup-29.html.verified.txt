@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,10 @@
             <a href="/tags/weekly-roundup" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">weekly roundup</a>
     </div>
 </div>
+
+
+
+
 
 <p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p>Wondering if <a href="rent-buy-house">you should buy or rent</a>? Luckily there is a tool that can help answer such questions for you. <a href="https://www.causal.app/">Casual</a> by <strong>Taimur Abdaal</strong> and <strong>Lukas Koebis</strong> is a tool that allows accounting for uncertainty when building models and forecasts.</p>

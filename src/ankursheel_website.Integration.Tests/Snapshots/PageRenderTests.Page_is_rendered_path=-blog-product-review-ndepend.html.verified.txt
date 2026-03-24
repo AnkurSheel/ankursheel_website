@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,85 @@
             <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#impressions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Impressions</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#installation-and-getting-started" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Installation and Getting Started</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#dashboard" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dashboard</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#dependency-graph-view" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dependency Graph View</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#abstractness-vs-instability" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Abstractness vs Instability</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#baseline-and-trend-metrics" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Baseline and Trend Metrics</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#rules" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Rules</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#misc" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Misc</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#impressions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Impressions</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#installation-and-getting-started" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Installation and Getting Started</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#dashboard" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dashboard</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#dependency-graph-view" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dependency Graph View</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#abstractness-vs-instability" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Abstractness vs Instability</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#baseline-and-trend-metrics" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Baseline and Trend Metrics</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#rules" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Rules</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#misc" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Misc</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p><a href="http://www.ndepend.com/">NDepend</a> is a static code analyser for .Net developers. It is billed as a &quot;Swiss Army knife for developers&quot; on its feature page, and I agree it comes with a chockful of features.</p>
 <p><em>Disclaimer: I was given a year-long license to evaluate NDepend by Patrick Smacchia, the creator and lead dev. I agreed to write an article on the condition that the article would be an honest opinion of the software.</em></p>

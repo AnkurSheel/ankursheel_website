@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/travel" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">travel</a>
     </div>
 </div>
+
+
+
+
 
 <p>A bit late, but Happy Diwali.</p>
 <p>This is a series of photographs taken at the Diwali Festival organised by the Auckland Council.</p>

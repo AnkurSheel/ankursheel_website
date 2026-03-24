@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/cpp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">cpp</a>
     </div>
 </div>
+
+
+
+
 
 <p>Sometimes, you want to prevent the compiler from making objects. However, in C++, a copy of an object can be made in many situations. The most obvious is a direct assignment. Less obvious but equally valid is a function call using pass-by-value.</p>
 <p>Copying in C++ is handled in two ways.</p>

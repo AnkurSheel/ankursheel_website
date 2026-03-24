@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,55 @@
             <a href="/tags/game-engine" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">game engine</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#setting-up-the-main-exe-project" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Setting up the Main Exe Project</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#setting-up-the-dlls" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Setting up the DLL&#x27;s</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#notes" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Notes</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#setting-up-the-main-exe-project" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Setting up the Main Exe Project</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#setting-up-the-dlls" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Setting up the DLL&#x27;s</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#notes" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Notes</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Now that we have decided on the basic directory structure and dependencies that each project will have, we will set the project properties. I prefer to do this at the project level so that the properties are persistent, and I don't have to set them every time I download the project. The steps are based on Visual Studio 2010, but you should be able to adapt them to a different IDE.</p>
 <h2 id="setting-up-the-main-exe-project">Setting up the Main Exe Project</h2>

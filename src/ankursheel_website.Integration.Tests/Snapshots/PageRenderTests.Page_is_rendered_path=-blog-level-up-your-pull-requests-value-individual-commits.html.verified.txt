@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -156,6 +156,163 @@
     </div>
 </div>
 
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#why-should-you-opt-for-multiple-commits-instead-of-a-single-large-commit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Why should you opt for multiple commits instead of a single large commit?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#clear-and-understandable-history" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Clear and Understandable History</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#improve-debugging-and-trouble-shooting-efficiency" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Improve Debugging and Trouble-shooting Efficiency</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#increase-code-review-efficiency" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Increase Code Review Efficiency</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#faster-reviews" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Faster Reviews</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#promote-work-transparency" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Promote Work Transparency</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#minimises-risk" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Minimises Risk</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#enable-pr-splitting" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Enable PR Splitting</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#reduce-annotation-needs" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reduce Annotation Needs</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#example" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Example</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#what-to-split-into-its-own-commit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What to Split into its own commit</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#questions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Questions</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-shouldnt-the-refactorings-be-their-own-pr" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Shouldn&#x27;t the refactorings be their own PR?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-is-fix-typo-in-variable-name-too-granular" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Is  too granular?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-what-can-you-understand-from-fix-typo-in-variable-name-or-rename-variable-and-add-some-comments" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: What can you understand from &#x201C;fix typo in variable name&#x201D; or &#x201C;rename variable and add some comments&#x201D;?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#shouldnt-we-have-smaller-prs-not-smaller-commits" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Shouldn&#x27;t we have smaller PR&#x27;s not smaller commits?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-isnt-the-pr-the-smallest-unit-to-understand-why-a-change-is-being-made-so-individual-commits-are-useless" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Isn&#x27;t the PR the smallest unit to understand why a change is being made, so individual commits are useless?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-is-there-a-middle-ground-between-having-a-single-commit-and-too-many-small-ones" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Is there a middle ground between having a single commit and &#x201C;too many&#x201D; small ones?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-isnt-it-problematic-to-review-individual-commits-given-they-can-often-be-part-of-the-developers-journey-of-changing-their-mind-refactoring-and-gaining-insights" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Isn&#x27;t it problematic to review individual commits, given they can often be part of the developer&#x27;s journey of changing their mind, refactoring, and gaining insights?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-do-you-have-any-suggestions-for-preparing-atomic-commits" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Do you have any suggestions for preparing atomic commits?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#q-what-about-making-changes-based-on-review-comments" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: What about making changes based on review comments?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#in-conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">In Conclusion</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#why-should-you-opt-for-multiple-commits-instead-of-a-single-large-commit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Why should you opt for multiple commits instead of a single large commit?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#clear-and-understandable-history" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Clear and Understandable History</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#improve-debugging-and-trouble-shooting-efficiency" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Improve Debugging and Trouble-shooting Efficiency</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#increase-code-review-efficiency" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Increase Code Review Efficiency</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#faster-reviews" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Faster Reviews</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#promote-work-transparency" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Promote Work Transparency</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#minimises-risk" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Minimises Risk</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#enable-pr-splitting" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Enable PR Splitting</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#reduce-annotation-needs" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reduce Annotation Needs</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#example" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Example</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#what-to-split-into-its-own-commit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What to Split into its own commit</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#questions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Questions</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-shouldnt-the-refactorings-be-their-own-pr" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Shouldn&#x27;t the refactorings be their own PR?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-is-fix-typo-in-variable-name-too-granular" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Is  too granular?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-what-can-you-understand-from-fix-typo-in-variable-name-or-rename-variable-and-add-some-comments" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: What can you understand from &#x201C;fix typo in variable name&#x201D; or &#x201C;rename variable and add some comments&#x201D;?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#shouldnt-we-have-smaller-prs-not-smaller-commits" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Shouldn&#x27;t we have smaller PR&#x27;s not smaller commits?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-isnt-the-pr-the-smallest-unit-to-understand-why-a-change-is-being-made-so-individual-commits-are-useless" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Isn&#x27;t the PR the smallest unit to understand why a change is being made, so individual commits are useless?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-is-there-a-middle-ground-between-having-a-single-commit-and-too-many-small-ones" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Is there a middle ground between having a single commit and &#x201C;too many&#x201D; small ones?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-isnt-it-problematic-to-review-individual-commits-given-they-can-often-be-part-of-the-developers-journey-of-changing-their-mind-refactoring-and-gaining-insights" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Isn&#x27;t it problematic to review individual commits, given they can often be part of the developer&#x27;s journey of changing their mind, refactoring, and gaining insights?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-do-you-have-any-suggestions-for-preparing-atomic-commits" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: Do you have any suggestions for preparing atomic commits?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#q-what-about-making-changes-based-on-review-comments" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Q: What about making changes based on review comments?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#in-conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">In Conclusion</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
+
 <p><em>This is an edited version of an article I originally wrote for the internal blog at Atlassian.</em></p>
 <p>As a Pull Request(PR) reviewer, my main goal is to be as confident as possible about the outcomes once the PR gets merged. To accomplish this, I want to be able to answer 3 questions:</p>
 <ol>
@@ -165,7 +322,7 @@
 </ol>
 <p>Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.</p>
 <p>If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.</p>
-<img src="https://media3.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480" />
+<img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480" />
 <p>What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?</p>
 <p>Split the commit into <strong>small</strong> <strong>individual</strong> commits that make <strong>logical sense</strong>.</p>
 <blockquote>
