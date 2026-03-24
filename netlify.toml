@@ -255,3 +255,16 @@ from = "/tags/wordwhiz/"
 to = "/tags/wordxplorer/"
 status = 301
 force = false
+
+[[redirects]]
+from = "/blog/level-up-your-pull-requests-value-individual-commits/"
+to = "/blog/level-up-pull-requests-value-individual-commits/"
+status = 301
+force = false
+
+
+[[redirects]]
+from = "/blog/unlock-your-careers-potential-effective-11-meetings/"
+to = "/blog/unlock-careers-potential-effective-11-meetings/"
+status = 301
+force = false

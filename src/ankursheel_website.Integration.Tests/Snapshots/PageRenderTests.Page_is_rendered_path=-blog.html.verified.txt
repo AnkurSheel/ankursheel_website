@@ -175,10 +175,10 @@
                 <a href="/blog/dream-job">What is my idea of a dream job</a> - <time class="prose-sm" datetime="24-02-08">February 08, 2024</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a> - <time class="prose-sm" datetime="23-11-27">November 27, 2023</time>
+                <a href="/blog/level-up-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a> - <time class="prose-sm" datetime="23-11-27">November 27, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
-                <a href="/blog/unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a> - <time class="prose-sm" datetime="23-09-13">September 13, 2023</time>
+                <a href="/blog/unlock-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a> - <time class="prose-sm" datetime="23-09-13">September 13, 2023</time>
             </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a> - <time class="prose-sm" datetime="23-03-30">March 30, 2023</time>

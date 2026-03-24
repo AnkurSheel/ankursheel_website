@@ -12,23 +12,23 @@
 <meta name="description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits"/>   
+    <link rel="canonical" href="https://www.ankursheel.com/blog/level-up-pull-requests-value-individual-commits"/>   
 <meta itemProp="name" content="Level Up Your Pull Requests: The Value of Individual Commits"/>
 <meta itemProp="description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/level-up-pull-requests-value-individual-commits-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/level-up-pull-requests-value-individual-commits"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Level Up Your Pull Requests: The Value of Individual Commits"/>
 <meta property="og:description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/level-up-pull-requests-value-individual-commits-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/level-up-pull-requests-value-individual-commits-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Level Up Your Pull Requests: The Value of Individual Commits"/>
 <meta name="twitter:description" content="Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/level-up-pull-requests-value-individual-commits-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/level-up-pull-requests-value-individual-commits-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -345,7 +345,7 @@
 <p>Small commits also work well with tools like <code>git-bisect</code>, making the debugging process more efficient and less time-consuming.</p>
 <h3 id="increase-code-review-efficiency">Increase Code Review Efficiency</h3>
 <p>Multiple commits make code review more manageable and effective.</p>
-<p><img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/review-twitter.jpg" alt="Twitter screenshot" /></p>
+<p><img src="/assets/images/posts/level-up-pull-requests-value-individual-commits/review-twitter.jpg" alt="Twitter screenshot" /></p>
 <p>Reviewers can focus on a single small change at a time, ensuring a more thorough review and reducing the likelihood of overlooking potential issues. It also eases the cognitive load on the reviewer, as they don't have to grasp many changes at once, enabling them to provide more insightful feedback.</p>
 <h3 id="faster-reviews">Faster Reviews</h3>
 <p>Well-structured commits provide reviewers with natural stopping points.</p>
@@ -364,13 +364,13 @@
 <h2 id="example">Example</h2>
 <p><em><strong>Note:</strong> I have blurred out the images since the code and the commit messages itself are not important.</em></p>
 <p><strong>First</strong>, Which is more straightforward to understand - A single commit message saying &quot;<em><strong>fixed XYZ errors&quot;</strong></em> or this commit history?</p>
-<p><img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/commit-history.png" alt="commit history" /></p>
+<p><img src="/assets/images/posts/level-up-pull-requests-value-individual-commits/commit-history.png" alt="commit history" /></p>
 <p>Unsurprisingly, I prefer the split commit history.</p>
 <p><strong>Next</strong>, compare and see which diff is simpler to review.</p>
 <p><em><strong>Note:</strong> Its the same block of code seen as combined diff view vs commit view.</em></p>
-<p><img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/all-changes-1-commit.png" alt="all changes in 1 commit" />
+<p><img src="/assets/images/posts/level-up-pull-requests-value-individual-commits/all-changes-1-commit.png" alt="all changes in 1 commit" />
 vs
-<img src="/assets/images/posts/level-up-your-pull-requests-value-individual-commits/separate-duplication-and-code-changes.png" alt="separate duplication and code changes" /></p>
+<img src="/assets/images/posts/level-up-pull-requests-value-individual-commits/separate-duplication-and-code-changes.png" alt="separate duplication and code changes" /></p>
 <p>Personally, even with the code blurred, I can sense that the 2nd diff is going to be easy to reason about.</p>
 <p>It's also easy to see that although the PR might have a large diff, the actual change is relatively small.</p>
 <h2 id="what-to-split-into-its-own-commit">What to Split into its own commit</h2>
@@ -467,8 +467,8 @@ vs
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits&text=Level%20Up%20Your%20Pull%20Requests%3A%20The%20Value%20of%20Individual%20Commits via @ankur_sheel.&#xD;&#xA;Uncover%20the%20secrets%20to%20effective%20pull%20requests.%20From%20clear%20histories%20to%20efficient%20reviews%2C%20find%20out%20why%20this%20is%20a%20must%20for%20every%20developer." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/level-up-pull-requests-value-individual-commits&text=Level%20Up%20Your%20Pull%20Requests%3A%20The%20Value%20of%20Individual%20Commits via @ankur_sheel.&#xD;&#xA;Uncover%20the%20secrets%20to%20effective%20pull%20requests.%20From%20clear%20histories%20to%20efficient%20reviews%2C%20find%20out%20why%20this%20is%20a%20must%20for%20every%20developer." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/level-up-pull-requests-value-individual-commits" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -489,7 +489,7 @@ vs
                 <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
             </li>
             <li>
-                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+                <a href="unlock-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
     </ul>
 </aside>

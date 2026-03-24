@@ -12,23 +12,23 @@
 <meta name="description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings"/>   
+    <link rel="canonical" href="https://www.ankursheel.com/blog/unlock-careers-potential-effective-11-meetings"/>   
 <meta itemProp="name" content="Unlock your career&#x27;s potential with effective 1:1 meetings"/>
 <meta itemProp="description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/unlock-careers-potential-effective-11-meetings-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/unlock-careers-potential-effective-11-meetings"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Unlock your career&#x27;s potential with effective 1:1 meetings"/>
 <meta property="og:description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-facebook.png"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/unlock-careers-potential-effective-11-meetings-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unlock-careers-potential-effective-11-meetings-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
 <meta name="twitter:title" content="Unlock your career&#x27;s potential with effective 1:1 meetings"/>
 <meta name="twitter:description" content="Navigating 1:1 meetings might seem daunting initially, but you&#x27;ll soon become a pro with effective preparation and thoughtful questions"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unlock-your-careers-potential-effective-11-meetings-twitter.png"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/unlock-careers-potential-effective-11-meetings-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/unlock-careers-potential-effective-11-meetings-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -299,8 +299,8 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings&text=Unlock%20your%20career%27s%20potential%20with%20effective%201%3A1%20meetings via @ankur_sheel.&#xD;&#xA;Navigating%201%3A1%20meetings%20might%20seem%20daunting%20initially%2C%20but%20you%27ll%20soon%20become%20a%20pro%20with%20effective%20preparation%20and%20thoughtful%20questions" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unlock-your-careers-potential-effective-11-meetings" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/unlock-careers-potential-effective-11-meetings&text=Unlock%20your%20career%27s%20potential%20with%20effective%201%3A1%20meetings via @ankur_sheel.&#xD;&#xA;Navigating%201%3A1%20meetings%20might%20seem%20daunting%20initially%2C%20but%20you%27ll%20soon%20become%20a%20pro%20with%20effective%20preparation%20and%20thoughtful%20questions" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/unlock-careers-potential-effective-11-meetings" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -312,7 +312,7 @@
 
     <ul>
             <li>
-                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
+                <a href="level-up-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
             </li>
             <li>
                 <a href="dream-job">What is my idea of a dream job</a>

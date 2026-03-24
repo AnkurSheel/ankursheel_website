@@ -351,7 +351,7 @@
                 <a href="laid-off-reflections-lessons-learned">Laid off: Reflections and Lessons learned</a>
             </li>
             <li>
-                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+                <a href="unlock-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
             <li>
                 <a href="dream-job">What is my idea of a dream job</a>

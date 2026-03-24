@@ -346,7 +346,7 @@
 
     <ul>
             <li>
-                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
+                <a href="level-up-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
             </li>
             <li>
                 <a href="make-code-reviews-stress-free">Making Code Reviews Stress free by adapting Netlify&#x27;s feedback ladders</a>
@@ -355,7 +355,7 @@
                 <a href="increasing-productivity-no-meeting-days">Increasing Productivity with No-Meeting Days</a>
             </li>
             <li>
-                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+                <a href="unlock-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
     </ul>
 </aside>

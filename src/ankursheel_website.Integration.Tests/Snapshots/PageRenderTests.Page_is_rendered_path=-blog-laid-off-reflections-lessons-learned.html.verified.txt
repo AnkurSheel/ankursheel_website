@@ -322,7 +322,7 @@
 
     <ul>
             <li>
-                <a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
+                <a href="unlock-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
             <li>
                 <a href="interview-interviewers-must-have-deal-breaker-list">Interviewing interviewers: Must-haves and deal-breakers list</a>
@@ -331,7 +331,7 @@
                 <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
             </li>
             <li>
-                <a href="level-up-your-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
+                <a href="level-up-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
             </li>
     </ul>
 </aside>

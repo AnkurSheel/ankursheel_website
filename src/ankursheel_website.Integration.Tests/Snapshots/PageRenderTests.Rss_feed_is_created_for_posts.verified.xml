@@ -1264,10 +1264,10 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
     </item>
     <item>
       <title>Level Up Your Pull Requests: The Value of Individual Commits</title>
-      <link>https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits</link>
+      <link>https://www.ankursheel.com/blog/level-up-pull-requests-value-individual-commits</link>
       <description>Uncover the secrets to effective pull requests. From clear histories to efficient reviews, find out why this is a must for every developer.</description>
       <enclosure url="https://www.ankursheel.com/assets/images/social/level-up-your-pull-requests-value-individual-commits-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/level-up-your-pull-requests-value-individual-commits</guid>
+      <guid>https://www.ankursheel.com/blog/level-up-pull-requests-value-individual-commits</guid>
       <pubDate>Mon, 27 Nov 2023 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;&lt;em&gt;This is an edited version of an article I originally wrote for the internal blog at Atlassian.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;As a Pull Request(PR) reviewer, my main goal is to be as confident as possible about the outcomes once the PR gets merged. To accomplish this, I want to be able to answer 3 questions:&lt;/p&gt;
@@ -1301,7 +1301,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;Small commits also work well with tools like &lt;code&gt;git-bisect&lt;/code&gt;, making the debugging process more efficient and less time-consuming.&lt;/p&gt;
 &lt;h3 id="increase-code-review-efficiency"&gt;Increase Code Review Efficiency&lt;/h3&gt;
 &lt;p&gt;Multiple commits make code review more manageable and effective.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/review-twitter.jpg" alt="Twitter screenshot"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-pull-requests-value-individual-commits/review-twitter.jpg" alt="Twitter screenshot"&gt;&lt;/p&gt;
 &lt;p&gt;Reviewers can focus on a single small change at a time, ensuring a more thorough review and reducing the likelihood of overlooking potential issues. It also eases the cognitive load on the reviewer, as they don't have to grasp many changes at once, enabling them to provide more insightful feedback.&lt;/p&gt;
 &lt;h3 id="faster-reviews"&gt;Faster Reviews&lt;/h3&gt;
 &lt;p&gt;Well-structured commits provide reviewers with natural stopping points.&lt;/p&gt;
@@ -1320,13 +1320,13 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id="example"&gt;Example&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; I have blurred out the images since the code and the commit messages itself are not important.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;, Which is more straightforward to understand - A single commit message saying "&lt;em&gt;&lt;strong&gt;fixed XYZ errors"&lt;/strong&gt;&lt;/em&gt; or this commit history?&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/commit-history.png" alt="commit history"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-pull-requests-value-individual-commits/commit-history.png" alt="commit history"&gt;&lt;/p&gt;
 &lt;p&gt;Unsurprisingly, I prefer the split commit history.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Next&lt;/strong&gt;, compare and see which diff is simpler to review.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt; Its the same block of code seen as combined diff view vs commit view.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/all-changes-1-commit.png" alt="all changes in 1 commit"&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-pull-requests-value-individual-commits/all-changes-1-commit.png" alt="all changes in 1 commit"&gt;
 vs
-&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-your-pull-requests-value-individual-commits/separate-duplication-and-code-changes.png" alt="separate duplication and code changes"&gt;&lt;/p&gt;
+&lt;img src="https://www.ankursheel.com/assets/images/posts/level-up-pull-requests-value-individual-commits/separate-duplication-and-code-changes.png" alt="separate duplication and code changes"&gt;&lt;/p&gt;
 &lt;p&gt;Personally, even with the code blurred, I can sense that the 2nd diff is going to be easy to reason about.&lt;/p&gt;
 &lt;p&gt;It's also easy to see that although the PR might have a large diff, the actual change is relatively small.&lt;/p&gt;
 &lt;h2 id="what-to-split-into-its-own-commit"&gt;What to Split into its own commit&lt;/h2&gt;
