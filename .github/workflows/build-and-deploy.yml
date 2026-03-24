@@ -12,15 +12,15 @@ on:
         type: string
         default: 'Build'
     outputs:
-      deploy_url:
+      deploy_id:
         description: "The Netlify deploy URL"
-        value: ${{ jobs.build-and-deploy.outputs.deploy_url }}
+        value: ${{ jobs.build-and-deploy.outputs.deploy_id }}
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     outputs:
-      deploy_url: ${{ steps.deploy.outputs.deploy_url }}
+      deploy_id: ${{ steps.deploy.outputs.deploy_id }}
     
     steps:
       - name: Checkout
@@ -64,8 +64,8 @@ jobs:
           NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
           DEPLOY_PARAMS: ${{ inputs.deploy_script_params }}
         run: |
-          DEPLOY_OUTPUT=$(yarn netlify deploy --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_TOKEN" $DEPLOY_PARAMS --dir=../output --json)
-          DEPLOY_URL=$(echo "$DEPLOY_OUTPUT" | jq --slurp --raw-input --raw-output 'split("\n") | .[5] | split("\"") | .[3]')
-          echo "deploy_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
-          echo "Deployed to: $DEPLOY_URL"
+          DEPLOY_OUTPUT=$(yarn --silent netlify deploy --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_TOKEN" $DEPLOY_PARAMS --dir=../output --no-build --json)
+          DEPLOY_ID=$(echo "$DEPLOY_OUTPUT" | jq -r '.deploy_id')
+          echo "deploy_id=$DEPLOY_ID" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOY_ID"
 

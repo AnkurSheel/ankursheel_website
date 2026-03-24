@@ -32,9 +32,9 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const deployUrl = '${{ needs.build-and-deploy.outputs.deploy_url }}';
+            const deploy_id = '${{ needs.build-and-deploy.outputs.deploy_id }}';
             const previewSuffix = '--ankursheel.netlify.app';
-            const previewUrl = `https://${deployUrl}${previewSuffix}`;
+            const previewUrl = `https://${deploy_id}${previewSuffix}`;
             
             const comment = `Netlify Preview Url: ${previewUrl}`;
             
