@@ -20,7 +20,7 @@ I published 4 posts.
 
 - [Workaround for Unity Personal License Manual Activation Not Supported](./unity-personal-license-manual-activation-workaround)
 - [Cleaning Up Unnecessary Remote-Tracking References](./cleaning-up-unnecessary-remote-tracking-references)
-- [Unlock your career's potential with effective 1:1 meetings](./unlock-your-careers-potential-effective-11-meetings)
+- [Unlock your career's potential with effective 1:1 meetings](./unlock-careers-potential-effective-11-meetings)
 - [Unity CI/CD Demystified: Part 1: One-Time Setup](./unity-cicd-one-time-setup)
 
 I also refreshed an old post
