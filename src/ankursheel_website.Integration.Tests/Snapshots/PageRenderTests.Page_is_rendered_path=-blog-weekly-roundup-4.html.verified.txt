@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,10 @@
             <a href="/tags/weekly-roundup" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">weekly roundup</a>
     </div>
 </div>
+
+
+
+
 
 <p>Every week I come across some great articles. Here are some of the posts I feel you will enjoy reading as much as I did.</p>
 <p><strong>Caz</strong> from <strong>YTravelblog</strong> has a <a href="http://www.ytravelblog.com/life-hacks-living-expenses/">list of hacks to optimize your everyday spending</a> so that you can save more money to spend on travel and experiences.</p>

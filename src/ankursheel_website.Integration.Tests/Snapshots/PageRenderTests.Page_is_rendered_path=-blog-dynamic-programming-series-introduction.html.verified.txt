@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,79 @@
             <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#what-is-dynamic-programming" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What is Dynamic Programming?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#profiling" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Profiling</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#example-fibonacci-series" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Example: Fibonacci Series</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#naive-recursive-approach" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Naive Recursive Approach</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#top-down-recursive-approach-with-memoization" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Top-Down Recursive approach with Memoization</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#bottom-up-approach-with-dynamic-programming" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Bottom-Up Approach with Dynamic Programming</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#bottom-up-approach-with-dynamic-programming-optimised" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Bottom-Up Approach with Dynamic Programming (Optimised)</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#what-is-dynamic-programming" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What is Dynamic Programming?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#profiling" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Profiling</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#example-fibonacci-series" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Example: Fibonacci Series</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#naive-recursive-approach" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Naive Recursive Approach</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#top-down-recursive-approach-with-memoization" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Top-Down Recursive approach with Memoization</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#bottom-up-approach-with-dynamic-programming" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Bottom-Up Approach with Dynamic Programming</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#bottom-up-approach-with-dynamic-programming-optimised" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Bottom-Up Approach with Dynamic Programming (Optimised)</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Dynamic Programming is one of those techniques that every programmer should have in their toolbox. But, it is also confusing for a lot of people.</p>
 <p>For a long time, I struggled to grasp how to apply Dynamic Programming to problems. Most articles that I could find on the internet gave the final dynamic programming solution without actually showing the approach taken to arrive at the final solution.</p>

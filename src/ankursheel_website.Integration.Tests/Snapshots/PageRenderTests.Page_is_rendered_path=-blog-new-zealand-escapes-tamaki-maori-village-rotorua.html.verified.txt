@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/travel" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">travel</a>
     </div>
 </div>
+
+
+
+
 
 <p>There is much more to Maori culture than watching the All Blacks do the Haka before a rugby match. Maori's are the original natives of New Zealand, or as they call it, Aotearoa.</p>
 <p>What better way to get an understanding of the Maori Culture than at a traditional Maori Village. The one we decided to go to was the Tamaki Maori Village in Rotorua.</p>

@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -157,6 +157,85 @@
             <a href="/tags/dev-tools" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dev tools</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#source-generator-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Source Generator Project Properties</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#create-a-new-solution-and-a-library-project" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Create a new solution and a library project</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#add-the-required-packages" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Add the required packages</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#consumer-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Consumer Project Properties</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#reference-the-project-in-debug-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the project in Debug mode</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#reference-the-nuget-package-in-release-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the NuGet package in Release mode</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#writing-the-generated-code-to-disk" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Writing the generated code to disk</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#excluding-the-generated-folder" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Excluding the generated folder</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#source-generator-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Source Generator Project Properties</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#create-a-new-solution-and-a-library-project" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Create a new solution and a library project</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#add-the-required-packages" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Add the required packages</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#consumer-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Consumer Project Properties</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#reference-the-project-in-debug-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the project in Debug mode</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#reference-the-nuget-package-in-release-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the NuGet package in Release mode</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#writing-the-generated-code-to-disk" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Writing the generated code to disk</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#excluding-the-generated-folder" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Excluding the generated folder</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. This post will look at the project properties we need to set on both the source generator and consumer projects.</p>
 <h2 id="source-generator-project-properties">Source Generator Project Properties</h2>

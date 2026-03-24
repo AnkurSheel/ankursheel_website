@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,10 @@
             <a href="/tags/reviews" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">reviews</a>
     </div>
 </div>
+
+
+
+
 
 <p>Since its inception in Bangalore, we had been planning to go to Smoke House Deli but did not get a chance until recently.</p>
 <p>We had already been left high and dry a few days back because we forgot to make the reservations in time. This time around, Gunjan decided not to take any chances. Armed with a reservation(for four), we headed to Smoke House Deli for dinner at the start of the week.</p>

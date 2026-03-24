@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/travel" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">travel</a>
     </div>
 </div>
+
+
+
+
 
 <p>There's more than one way to see the glowworms in New Zealand's Waitomo Caves, everything from completely sedate to incredibly adventurous.</p>
 <p>However, when you are in New Zealand, sedate is a word that should not be in your dictionary. The easiest way to experience these caves is on a leisurely walking tour or a boat cruise beneath the ground. Several different adventurous trips are offered, a three hour wet or a dry option and a five hour wet &amp; dry option.</p>

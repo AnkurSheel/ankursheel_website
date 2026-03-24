@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/uae" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">UAE</a>
     </div>
 </div>
+
+
+
+
 
 <p>Dubai has been a trading hub since the 19th century, and various merchants have set up their first shops here. Gunjan wanted to visit the local Indian/Pakistani market for shopping, and we soon found ourselves at the Textile Souq/Meena Bazar.</p>
 <p>This is an open Souq, close to the Dubai Museum. Contrary to the shopping malls, Meena Bazaar has a different charm altogether. You will feel as if you are back in India since it's probably one of the few places you can hear the blaring horns of cars stuck in traffic and walk in the narrow by-lanes and a busy main road.</p>

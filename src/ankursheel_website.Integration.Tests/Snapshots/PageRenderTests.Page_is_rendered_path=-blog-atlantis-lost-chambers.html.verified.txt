@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/uae" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">UAE</a>
     </div>
 </div>
+
+
+
+
 
 <p>Dubai is one city that probably has everything that money can buy. One of the biggest examples of this is the artificial islands of Palm Jumeirah. The Palm Jumeirah is an artificial cluster of islands created and arranged in the form of a giant palm tree. After the visit to the mosque, we took a taxi to the Dubai Marina metro station.</p>
 <p><img src="/assets/images/posts/atlantis-lost-chambers/Atlantis-2.jpg" alt="View from the Monorail" /></p>

@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/cpp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">cpp</a>
     </div>
 </div>
+
+
+
+
 
 <p>Since we will be using DLL's to have 1 single copy of our engine code, let's understand the basics of DLL's. For those of you who are on the fence about whether to use a DLL or not. <a href="http://msdn.microsoft.com/en-us/library/dtba4t8b(v=VS.90).aspx">Here</a> are some of the advantages of using a dll as per MSDN</p>
 <p>We will be using <strong><em>__declspec(dllexport)</em></strong> and <strong><em>__declspec(dllimport)</em></strong> to export and import functions, data and objects to and from a DLL. We will mainly be using it to export/import functions or interface declarations and not member variables.</p>

@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -153,6 +153,145 @@
             <a href="/tags/career" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">career</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#humble-beginnings" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Humble Beginnings</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#additional-benefits" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Additional Benefits</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#tweak-my-interviewing-style" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Tweak my interviewing style</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#am-i-fairly-compensated" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Am I fairly compensated?</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#practice-makes-perfect" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Practice makes Perfect</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#talk-about-what-you-love" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Talk about what you love</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#find-the-gaps" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Find the gaps</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#confidence-booster" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Confidence Booster</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#network" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Network</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#killer-offers" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Killer Offers</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#insider-information" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Insider Information</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#is-it-a-good-fit-or-a-mismatch" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Is it a good fit or a mismatch</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#killer-offers-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Killer Offers</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#life-was-good-but-i-got-to-move-to-a-new-country" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Life was good but I got to move to a new country</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#living-the-dream" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Living the dream</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#autonomy-and-a-healthy-culture" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Autonomy and a Healthy Culture</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#an-offer-that-i-just-could-not-refuse" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">An offer that I just could not refuse</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#mismatch-in-style" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mismatch in Style</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#am-i-wasting-other-peoples-time-when-i-have-no-plans-to-quit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Am I wasting other peoples time when I have no plans to quit?</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#humble-beginnings" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Humble Beginnings</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#additional-benefits" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Additional Benefits</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#tweak-my-interviewing-style" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Tweak my interviewing style</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#am-i-fairly-compensated" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Am I fairly compensated?</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#practice-makes-perfect" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Practice makes Perfect</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#talk-about-what-you-love" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Talk about what you love</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#find-the-gaps" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Find the gaps</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#confidence-booster" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Confidence Booster</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#network" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Network</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#killer-offers" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Killer Offers</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#insider-information" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Insider Information</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#is-it-a-good-fit-or-a-mismatch" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Is it a good fit or a mismatch</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#killer-offers-1" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Killer Offers</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#life-was-good-but-i-got-to-move-to-a-new-country" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Life was good but I got to move to a new country</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#living-the-dream" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Living the dream</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#autonomy-and-a-healthy-culture" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Autonomy and a Healthy Culture</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#an-offer-that-i-just-could-not-refuse" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">An offer that I just could not refuse</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#mismatch-in-style" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Mismatch in Style</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#am-i-wasting-other-peoples-time-when-i-have-no-plans-to-quit" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Am I wasting other peoples time when I have no plans to quit?</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Every year I dust off my resume and apply for a couple of jobs that look interesting.</p>
 <p>Do I do that because conventional wisdom in the tech industry says that if you don't change jobs every 1-2 years, you lose money or is it because I am not happy at my current job? Sometimes that has been true, but most of the time, I have interviewed with other companies regardless.</p>

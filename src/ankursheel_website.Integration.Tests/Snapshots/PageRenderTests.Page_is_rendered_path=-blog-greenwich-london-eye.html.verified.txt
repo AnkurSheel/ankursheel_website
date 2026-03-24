@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/united-kingdom" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">United Kingdom</a>
     </div>
 </div>
+
+
+
+
 
 <p><img src="/assets/images/posts/greenwich-london-eye/greenwich-london-eye-1.jpg" alt="Tower of London Bridge" /></p>
 <p>By about 1030, I got ready and started off to the end of the world, i.e. Greenwich. It seemed like a sunny day, so I decided to lessen my load by leaving my jacket at home this time.</p>

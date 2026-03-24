@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/uae" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">UAE</a>
     </div>
 </div>
+
+
+
+
 
 <p>At The Top' experience or scaling the world's tallest building (standing at 829.8 meters) is a must. Even though we had booked our tickets about 2 weeks in advance, we could not get the timings we wanted and had to settle for an afternoon slot instead of being there around sunset. Well, you roll with the punches, and so we planned our day as follows.</p>
 <ul>

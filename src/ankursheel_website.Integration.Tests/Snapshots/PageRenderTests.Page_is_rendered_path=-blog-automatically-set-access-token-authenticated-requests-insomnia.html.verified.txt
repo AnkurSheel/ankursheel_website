@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -156,6 +156,49 @@
             <a href="/tags/security" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">security</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#problem" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Problem</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#solution" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Solution</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#problem" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Problem</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#solution" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Solution</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <h2 id="problem">Problem</h2>
 <p>The Graphql endpoint for the API is accessible only to authorised users. Although it is required from a security perspective, it makes testing the API through <a href="https://insomnia.rest/">Insomnia</a> a little tedious. What if we could automatically insert the bearer token every time we made a request using Insomnia?</p>

@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,73 @@
             <a href="/tags/opinion" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">opinion</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#what-would-i-change-about-my-layoff-experience" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What would I change about my layoff experience</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#relationships-with-co-workers" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Relationships with co-workers</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#thoughts-about-the-reason-for-laying-me-off" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Thoughts about the reason for laying me off</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#speaking-up-is-risky-so-why-do-it" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Speaking up is risky, so why do it?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#it-worked-out-in-the-end" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">It worked out in the end</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#some-unsolicited-advice" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Some unsolicited advice</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#what-would-i-change-about-my-layoff-experience" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What would I change about my layoff experience</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#relationships-with-co-workers" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Relationships with co-workers</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#thoughts-about-the-reason-for-laying-me-off" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Thoughts about the reason for laying me off</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#speaking-up-is-risky-so-why-do-it" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Speaking up is risky, so why do it?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#it-worked-out-in-the-end" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">It worked out in the end</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#some-unsolicited-advice" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Some unsolicited advice</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#final-thoughts" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Final Thoughts</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p><em>When I wrote this, I didn't think I would ever publish any part of it. It was a way to process my feelings after getting laid off. But, there are a few factors which changed my mind. I was inspired to clean it up and post it after reading <a href="https://angelariggs.github.io/articles/thirty-five-days">The Future of Quality at Instrument was 35 Days Long</a>. Enough time has passed that I am comfortable publishing this, even though there might still be repercussions. And lastly, some more of my friends have been laid off and after chatting with them I thought this could be helpful to others.</em></p>
 <p><em><strong>Disclaimer: The facts are from my point of view and and the interpretation is educated guesses.</strong></em></p>

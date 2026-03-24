@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,10 @@
             <a href="/tags/travel" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">travel</a>
     </div>
 </div>
+
+
+
+
 
 <p>The views from the Mount Maunganui summit tends to leave one breathless. Or is it just because of the exertion of walking along a 3.4 km steep track :) See the gallery and decide for yourself.</p>
 <p><img src="/assets/images/posts/new-zealand-escapes-photo-essay-mount-maunganui/Mount_Maunganui-1.jpg" alt="" /></p>

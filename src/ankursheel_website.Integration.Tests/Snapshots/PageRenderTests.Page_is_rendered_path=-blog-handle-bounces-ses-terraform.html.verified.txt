@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -155,6 +155,67 @@
             <a href="/tags/aws" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">AWS</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#step-1-create-an-amazon-sqs-queue" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Create an Amazon SQS queue</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-2-create-an-amazon-sns-topic_arn" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: Create an Amazon SNS topic_arn</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-3-configure-the-amazon-sns-topic-to-publish-to-the-sqs-queue" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3: Configure the Amazon SNS topic to publish to the SQS queue</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-4-configure-amazon-ses-to-publish-bounce-notifications-using-ses-bounces-topic-to-ses-bounces-queue" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: Configure Amazon SES to publish bounce notifications using ses-bounces-topic to ses-bounces-queue</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-5-ensure-that-iam-policies-are-in-place-so-that-amazon-sns-has-access-to-publish-to-the-appropriate-sqs-queues" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 5: Ensure that IAM policies are in place so that Amazon SNS has access to publish to the appropriate SQS queues</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#next-steps" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Next Steps</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#step-1-create-an-amazon-sqs-queue" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Create an Amazon SQS queue</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-2-create-an-amazon-sns-topic_arn" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: Create an Amazon SNS topic_arn</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-3-configure-the-amazon-sns-topic-to-publish-to-the-sqs-queue" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3: Configure the Amazon SNS topic to publish to the SQS queue</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-4-configure-amazon-ses-to-publish-bounce-notifications-using-ses-bounces-topic-to-ses-bounces-queue" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: Configure Amazon SES to publish bounce notifications using ses-bounces-topic to ses-bounces-queue</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-5-ensure-that-iam-policies-are-in-place-so-that-amazon-sns-has-access-to-publish-to-the-appropriate-sqs-queues" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 5: Ensure that IAM policies are in place so that Amazon SNS has access to publish to the appropriate SQS queues</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#next-steps" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Next Steps</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>Recently, I had to work on a task to notify us in slack whenever an email sent through Amazon Simple Email Service(SES) bounced. <strong>Rohan Deshpande</strong> has a great <a href="https://aws.amazon.com/blogs/messaging-and-targeting/handling-bounces-and-complaints/">article which shows how to handle bounces and complaints</a>. Since this article leans heavily on his approach, I recommend reading that first.</p>
 <p>Go on, I will wait.</p>

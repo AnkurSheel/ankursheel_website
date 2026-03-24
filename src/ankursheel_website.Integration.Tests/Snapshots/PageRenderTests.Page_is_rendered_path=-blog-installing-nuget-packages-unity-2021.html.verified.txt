@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen">
+<html lang="en" class="min-h-screen scroll-pt-24">
 <head>
     
 
@@ -154,6 +154,85 @@
             <a href="/tags/nuget" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">nuget</a>
     </div>
 </div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#step-1-install-nuget-package" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Install Nuget Package</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-2-make-the-dll-available-to-unity" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: Make the DLL available to Unity</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-3--turn-off--auto-reference" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3:  Turn off  Auto reference</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#step-4-add-the-dll-as-a-reference-to-the-assembly-definition" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: Add the DLL as a reference to the assembly definition</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#troubleshooting" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">TroubleShooting</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#error-unloading-broken-assembly-assetspluginsdimicrosoftextensionsdependencyinjectiondll-this-assembly-can-cause-crashes-in-the-runtime" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Error: Unloading broken assembly Assets/Plugins/DI/Microsoft.Extensions.DependencyInjection.dll, this assembly can cause crashes in the runtime</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#bonus-installing-moq-into-an-assembly-definition-for-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Bonus: Installing Moq into an assembly definition for Tests</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#references" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">References</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#step-1-install-nuget-package" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Install Nuget Package</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-2-make-the-dll-available-to-unity" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: Make the DLL available to Unity</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-3--turn-off--auto-reference" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3:  Turn off  Auto reference</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#step-4-add-the-dll-as-a-reference-to-the-assembly-definition" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: Add the DLL as a reference to the assembly definition</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#troubleshooting" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">TroubleShooting</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#error-unloading-broken-assembly-assetspluginsdimicrosoftextensionsdependencyinjectiondll-this-assembly-can-cause-crashes-in-the-runtime" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Error: Unloading broken assembly Assets/Plugins/DI/Microsoft.Extensions.DependencyInjection.dll, this assembly can cause crashes in the runtime</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#bonus-installing-moq-into-an-assembly-definition-for-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Bonus: Installing Moq into an assembly definition for Tests</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#references" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">References</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
 
 <p>NuGet is indispensable for working in .NET. Unfortunately, it takes a bit of work to get it working with Unity.</p>
 <p>Unity only recognizes DLLs placed under the <em>Assets</em> folder, so we need a way to get the DLLs into the Assets folder. We cannot add the Nuget packages to the project files as we would for other .NET projects because Unity generates the sln and project files. This means that any NuGet packages that we have installed using the IDE will get wiped out by Unity.</p>
