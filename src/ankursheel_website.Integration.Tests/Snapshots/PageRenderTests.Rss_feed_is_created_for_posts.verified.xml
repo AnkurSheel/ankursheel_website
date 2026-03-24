@@ -8,6 +8,164 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Rolling Your Own Dependency Injection in Unity</title>
+      <link>https://www.ankursheel.com/blog/rolling-dependency-injection-unity</link>
+      <description>Unity has no DI story out of the box and the existing frameworks felt too heavy. So I rolled my own using Microsoft.Extensions.DependencyInjection.</description>
+      <guid>https://www.ankursheel.com/blog/rolling-dependency-injection-unity</guid>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Unity codebases have a way of turning into spaghetti. Every system talks to every other system through singletons and magic strings, and it never gets better with time. When I came back to Unity to build WordXplorer, I knew what I wanted: clean dependency injection, testable classes, no hidden dependencies. The problem was that while I'd used DI in .NET Core apps, I'd never seen it in a Unity project.&lt;/p&gt;
+&lt;p&gt;By the end of this, you'll have a setup where plain C# classes get proper constructor injection, MonoBehaviours register themselves automatically, and the whole thing initialises lazily without a bootstrapper. It ends up feeling a lot like any other .NET Core app which is exactly the point.&lt;/p&gt;
+&lt;h2 id="the-alternatives-and-why-they-fall-short"&gt;The Alternatives (And Why They Fall Short)&lt;/h2&gt;
+&lt;p&gt;Before getting into the solution, it’s worth looking at what most Unity developers do instead. Spoilers: it’s not great.&lt;/p&gt;
+&lt;h3 id="drag-and-drop-in-the-editor"&gt;Drag-and-Drop in the Editor&lt;/h3&gt;
+&lt;p&gt;The simplest way to connect objects is to expose a private serialised field and drag the reference in the Inspector. This is convenient, especially for artists and designers who can wire up behaviours without touching code. But it's a lot of manual effort and doesn't scale. And none of it is easily testable because you can't run a unit test against a scene.&lt;/p&gt;
+&lt;h3 id="querying-the-scene"&gt;Querying the Scene&lt;/h3&gt;
+&lt;p&gt;You can find objects at runtime in a few ways: by name, by tag, or by type.&lt;/p&gt;
+&lt;p&gt;Finding by name or tag relies on magic strings. Rename something in the hierarchy and the code breaks. The worst part is you only find out at runtime.&lt;/p&gt;
+&lt;p&gt;Finding by type is better because it's at least type-safe. But it's still a global scene query, it's slow, and it gives you no way to swap in a different implementation for testing.&lt;/p&gt;
+&lt;h3 id="singletons"&gt;Singletons&lt;/h3&gt;
+&lt;p&gt;Most Unity tutorials reach for singletons, and they are better than the two options above. But in practice, singletons cause three problems that compound as the project grows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global state&lt;/strong&gt;: Every singleton is effectively a global variable. Any class can reach in and modify it at any time, from anywhere. Reasoning about what changed, and when, becomes increasingly difficult. You can manage this if you're diligent — but diligence has a way of slipping when you're in a rush and just need to ship.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hidden dependencies&lt;/strong&gt;: When a class accesses a singleton directly, that dependency is invisible from the outside. You can't tell what a class needs just by looking at its constructor or its interface. The only way to find out is to read the implementation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(Un)testability&lt;/strong&gt;: Singeltons make writing automated tests hard. If a class depends on a concrete singleton, you can't swap it out for a fake in a test. You could test with the real thing, but only if it has no side effects and doesn't depend on other singletons. In practice, it usually does.&lt;/p&gt;
+&lt;h3 id="unity-specific-di-frameworks"&gt;Unity-Specific DI Frameworks&lt;/h3&gt;
+&lt;p&gt;There are frameworks built specifically for Unity DI like &lt;a href="https://github.com/modesttree/Zenject"&gt;Zenject&lt;/a&gt; and &lt;a href="https://vcontainer.hadashikick.jp/"&gt;VContainer&lt;/a&gt;. Both are heavy frameworks with their own learning curve. I find them too bloated for my purposes, but they might be a viable option.&lt;/p&gt;
+&lt;p&gt;To be honest, I really didnt look too much into them. I might just be reinventing the wheel here.&lt;/p&gt;
+&lt;h2 id="what-is-dependency-injection"&gt;What is Dependency Injection?&lt;/h2&gt;
+&lt;p&gt;DI (Dependency Injection) is a technique in OOP where instead of a class creating its own dependencies, you pass them in from the outside.&lt;/p&gt;
+&lt;p&gt;So instead of this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public class GameManager
+{
+    private AudioManager _audio = new AudioManager();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You do this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public class GameManager
+{
+    private IAudioManager _audio;
+
+    public GameManager(IAudioManager audio)
+    {
+        _audio = audio;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now &lt;code&gt;GameManager&lt;/code&gt; doesn’t care if it gets a real &lt;code&gt;AudioManager&lt;/code&gt; or a mock for testing. A DI container automates the wiring and  resolves them wherever they're needed.&lt;/p&gt;
+&lt;h2 id="why-does-unity-make-di-awkward"&gt;Why Does Unity Make DI Awkward?&lt;/h2&gt;
+&lt;p&gt;Two things get in the way in Unity.&lt;/p&gt;
+&lt;p&gt;First, MonoBehaviours can't be newed up. Unity owns their lifecycle by calling &lt;code&gt;Awake&lt;/code&gt;, &lt;code&gt;Start&lt;/code&gt;, &lt;code&gt;Update&lt;/code&gt;, and so on. You can't pass dependencies through a constructor the normal way.&lt;/p&gt;
+&lt;p&gt;Second, there's no single entry point. A .NET console app has &lt;code&gt;Main&lt;/code&gt;. An ASP.NET app has &lt;code&gt;Program.cs&lt;/code&gt;. But Unity has scenes, objects, and an initialization order you don't fully control. Scenes can also be loaded and unloaded, which means objects might not always be present when the container is first created, or might be destroyed after they've already been registered.&lt;/p&gt;
+&lt;p&gt;You might think these two constraints would be a showstopper. They're not. But they do require a slightly different approach.&lt;/p&gt;
+&lt;h2 id="the-solution"&gt;The Solution&lt;/h2&gt;
+&lt;h3 id="step-1-add-the-nuget-packages"&gt;Step 1: Add the NuGet Packages&lt;/h3&gt;
+&lt;p&gt;Download the following DLLs from &lt;a href="https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection/"&gt;NuGet&lt;/a&gt; and drop them into your &lt;code&gt;Assets/Plugins&lt;/code&gt; folder:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Extensions.DependencyInjection.dll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Extensions.DependencyInjection.Abstractions.dll&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I've written about &lt;a href="https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021"&gt;how to install NuGet packages in Unity&lt;/a&gt; in more detail. If you use assembly definitions, add references to these DLLs in the relevant assembly definition file.&lt;/p&gt;
+&lt;h3 id="step-2-the-dependencyhelper"&gt;Step 2: The DependencyHelper&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;DependencyHelper&lt;/code&gt; owns the DI container and acts as the resolution point for both plain C# services and MonoBehaviours.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public sealed class DependencyHelper
+{
+    private static readonly Dictionary&amp;lt;Type, object&amp;gt; _injectedMonoBehaviours = new();
+    private static readonly Lazy&amp;lt;DependencyHelper&amp;gt; _lazy =
+        new(() =&amp;gt; _instance ?? new DependencyHelper());
+    private static DependencyHelper _instance;
+    private static ServiceProvider _serviceProvider;
+
+    private DependencyHelper()
+    {
+        var serviceCollection = new ServiceCollection();
+        ServiceRegistry.RegisterServices(serviceCollection);
+        _serviceProvider = serviceCollection.BuildServiceProvider();
+        _instance = this;
+    }
+
+    public static void Register(object instance)
+    {
+        _injectedMonoBehaviours[instance.GetType()] = instance;
+    }
+
+    public static T GetInjectedMonoBehaviour&amp;lt;T&amp;gt;() where T : class
+        =&amp;gt; _injectedMonoBehaviours[typeof(T)] as T;
+
+    public static T GetRequiredService&amp;lt;T&amp;gt;() where T : class
+    {
+        _ = _lazy.Value; // ensures the container is built on first call
+        return _serviceProvider.GetRequiredService&amp;lt;T&amp;gt;();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Register&lt;/code&gt;: called automatically by &lt;code&gt;InjectableMonoBehaviour.Awake&lt;/code&gt; to store the live MonoBehaviour instance.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetInjectedMonoBehaviour&lt;/code&gt;: used inside &lt;code&gt;ServiceRegistry&lt;/code&gt; to wire a MonoBehaviour into the container by fetching the stored instance.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetRequiredService&lt;/code&gt;: how everything else resolves dependencies. Throws if the service isn't registered.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;Lazy&lt;/code&gt; factory ensures the container is built exactly once, on the first call to &lt;code&gt;GetRequiredService&lt;/code&gt;. The &lt;code&gt;_instance&lt;/code&gt; check means there is only ever one container instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="step-3-inherit-from-injectablemonobehaviour"&gt;Step 3: Inherit from InjectableMonoBehaviour&lt;/h3&gt;
+&lt;p&gt;Next, we need a way to add MonoBehaviours to the DI container&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;InjectableMonoBehaviour&lt;/code&gt; is a base class that MonoBehaviours inherit from, which registers them with the container when they wake up.&lt;/p&gt;
+&lt;p&gt;Any MonoBehaviour that needs to be resolvable by the container should extend this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public class InjectableMonoBehaviour : MonoBehaviour
+{
+    protected virtual void Awake()
+    {
+        DependencyHelper.Register(this);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When Unity calls &lt;code&gt;Awake&lt;/code&gt;, the MonoBehaviour registers itself by type. That's it. The container can now hand out a reference to this instance when something asks for it.&lt;/p&gt;
+&lt;h3 id="step-4-the-service-registry"&gt;Step 4: The Service Registry&lt;/h3&gt;
+&lt;p&gt;This is where you tell the container what goes where.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public static class ServiceRegistry
+{
+    public static void RegisterServices(IServiceCollection serviceCollection)
+    {
+        // Plain C# service
+        serviceCollection.AddTransient&amp;lt;ILevelSaveDataService, LevelSaveDataService&amp;gt;();
+
+        // MonoBehaviour
+        serviceCollection.AddTransient&amp;lt;IAudioManager&amp;gt;(
+            _ =&amp;gt; DependencyHelper.GetInjectedMonoBehaviour&amp;lt;AudioManager&amp;gt;());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plain C# services register normally. MonoBehaviours are different - they use a lambda to defer the lookup until the instance is actually needed, by which point Unity will have called &lt;code&gt;Awake&lt;/code&gt; on the MonoBehaviour and registered it.&lt;/p&gt;
+&lt;h3 id="step-5-watch-the-lifecycle-order"&gt;Step 5: Watch the Lifecycle Order&lt;/h3&gt;
+&lt;p&gt;This is the part that will bite you if you're not paying attention.&lt;/p&gt;
+&lt;p&gt;Unity calls &lt;code&gt;Awake&lt;/code&gt; on scripts in an arbitrary order. If you try to resolve a dependency in &lt;code&gt;Awake&lt;/code&gt;, you might run before that dependency has even registered itself. If that happens, you will get a &lt;code&gt;KeyNotFoundException&lt;/code&gt; at runtime.&lt;/p&gt;
+&lt;p&gt;We know that &lt;code&gt;Start&lt;/code&gt; is called after &lt;code&gt;Awake&lt;/code&gt;, so the rule is simple:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Always resolve and use dependencies in &lt;code&gt;Start&lt;/code&gt;, not &lt;code&gt;Awake&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This also has the added benefit of resolving the dependency only once.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public class LevelSaveDataManager : MonoBehaviour
+{
+    private ILevelSaveDataService _levelSaveDataService;
+
+    private void Start()
+    {
+        _levelSaveDataService = DependencyHelper.GetRequiredService&amp;lt;ILevelSaveDataService&amp;gt;();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The same caveat applies across scenes. If a scene transition destroys and recreates MonoBehaviours, they re-register themselves in their new &lt;code&gt;Awake&lt;/code&gt;. The container's service registrations stay intact - those lambdas always pull the current live instance. But if you're holding a cached reference somewhere and the MonoBehaviour was destroyed, that reference is stale. Be deliberate about when you resolve.&lt;/p&gt;
+&lt;h2 id="isnt-this-the-service-locator-anti-pattern"&gt;Isn't This the Service Locator Anti-Pattern?&lt;/h2&gt;
+&lt;p&gt;Yes. I know. I'm not thrilled about it either.&lt;/p&gt;
+&lt;p&gt;The criticism is legitimate: when a class calls &lt;code&gt;DependencyHelper.GetRequiredService&amp;lt;T&amp;gt;()&lt;/code&gt; directly, its dependencies are hidden. You can't tell from the constructor what it needs. Testing becomes harder because you have to know to configure the locator before running any test.&lt;/p&gt;
+&lt;p&gt;But Unity’s lifecycle leaves us with very few &amp;quot;clean&amp;quot; options.&lt;/p&gt;
+&lt;p&gt;Constructor injection requires that you control object creation.&lt;/p&gt;
+&lt;p&gt;In Unity, you don't. MonoBehaviours are created by the engine, attached to GameObjects, and initialised through &lt;code&gt;Awake&lt;/code&gt; and &lt;code&gt;Start&lt;/code&gt;. There's no constructor call you can intercept to inject dependencies the clean way.&lt;/p&gt;
+&lt;p&gt;I think the Service Locator is a small price to pay given all the other alternatives. We can minimize the damage by treating MonoBehaviours as a &amp;quot;thin&amp;quot; layer. They handle the Unity stuff (input, rendering), and delegate all the actual logic to injected plain C# classes.&lt;/p&gt;
+&lt;p&gt;As you saw in Step 5, &lt;code&gt;LevelSaveDataManager&lt;/code&gt; is the thin MonoBehaviour — it knows &lt;em&gt;when&lt;/em&gt; to load. &lt;code&gt;ILevelSaveDataService&lt;/code&gt; is the plain C# class where all the loading logic lives, fully testable without a running scene.&lt;/p&gt;
+&lt;h2 id="was-it-worth-it"&gt;Was It Worth It?&lt;/h2&gt;
+&lt;p&gt;If you've worked on .NET Core apps, you already know most of what's here. Unity just requires a small amount of extra wiring to account for its lifecycle. Once that's in place, you can mostly forget it's there.&lt;/p&gt;
+&lt;p&gt;What are your experiences with DI in Unity? Have you gone the Zenject route, or are you still living with singletons? I'm curious what you are doing? Let me know in the comments.&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordXplorer Update 12: Demo Build &amp; Teacher Feedback</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-12</link>
       <description>Automated screenshots, addressing 'Teacher Approved' feedback, and expanding the demo build.</description>
@@ -1545,7 +1703,7 @@ vs
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.ankursheel.com/unity-personal-license-manual-activation-workaround"&gt;Workaround for Unity Personal License Manual Activation Not Supported&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ankursheel.com/cleaning-up-unnecessary-remote-tracking-references"&gt;Cleaning Up Unnecessary Remote-Tracking References&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/unlock-your-careers-potential-effective-11-meetings"&gt;Unlock your career's potential with effective 1:1 meetings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ankursheel.com/unlock-careers-potential-effective-11-meetings"&gt;Unlock your career's potential with effective 1:1 meetings&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;Unity CI/CD Demystified: Part 1: One-Time Setup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I also refreshed an old post&lt;/p&gt;
@@ -1694,40 +1852,6 @@ on:
 &lt;li&gt;&lt;a href="https://game.ci/docs/github/builder#configuration-options"&gt;GameCI builder Configuration&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://game.ci/docs/github/builder#outputs"&gt;GameCI builder Output&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>WordXplorer #2: TestFlight Approved, New Colors &amp; Instructions</title>
-      <link>https://www.ankursheel.com/blog/wordxplorer-update-2</link>
-      <description>WordXplorer Update 2 updates the colors and adds a new instruction page</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-2-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordxplorer-update-2</guid>
-      <pubDate>Mon, 16 Oct 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am thrilled to share some updates for the wordxplorer game! 🎉&lt;/p&gt;
-&lt;h2 id="testflight-approval"&gt;🚀 Testflight Approval&lt;/h2&gt;
-&lt;p&gt;The first version with around 25 words has received the green light for TestFlight! If you registered as beta tester for iOS, watch your inbox for those invites - they're coming soon! 📬 . If you didnt, you can register by filling &lt;a href="https://tally.so/r/wverVQ"&gt;the form&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="updated-colors"&gt;🌈 Updated Colors&lt;/h2&gt;
-&lt;p&gt;I have revamped the colors! Let me know if you have any suggestions on better colors. Share your ideas with me! 🎨&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/updated_colors.jpg" alt="Updated Colors"&gt;&lt;/p&gt;
-&lt;h2 id="instructions-page"&gt;📜 Instructions Page&lt;/h2&gt;
-&lt;p&gt;I have added a new instructions page at the start of the game for people who are new to Wordle.📘&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-2/instructions.jpg" alt="Instructions"&gt;&lt;/p&gt;
-&lt;h2 id="whats-next"&gt;🔮 What's Next&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A public Trello board for the roadmap, so beta testers can vote on what they would like to see next.&lt;/li&gt;
-&lt;li&gt;More Words&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
-&lt;div class="appstore-badges-container"&gt;
-  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
-    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
-    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

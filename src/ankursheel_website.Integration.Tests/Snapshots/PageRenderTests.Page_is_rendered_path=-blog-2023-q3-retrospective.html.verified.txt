@@ -211,7 +211,7 @@
 <ul>
 <li><a href="unity-personal-license-manual-activation-workaround">Workaround for Unity Personal License Manual Activation Not Supported</a></li>
 <li><a href="cleaning-up-unnecessary-remote-tracking-references">Cleaning Up Unnecessary Remote-Tracking References</a></li>
-<li><a href="unlock-your-careers-potential-effective-11-meetings">Unlock your career's potential with effective 1:1 meetings</a></li>
+<li><a href="unlock-careers-potential-effective-11-meetings">Unlock your career's potential with effective 1:1 meetings</a></li>
 <li><a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a></li>
 </ul>
 <p>I also refreshed an old post</p>

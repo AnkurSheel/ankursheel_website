@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (222)</h2>
+<h2>All Categories (223)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,6 +150,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/rolling-dependency-injection-unity">Rolling Your Own Dependency Injection in Unity</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -160,9 +163,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/story-points-arent-problem">Story Points Aren&#x27;t the Problem</a>
         </li>
 </ul>
 
@@ -262,8 +262,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (75)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (76)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/rolling-dependency-injection-unity">Rolling Your Own Dependency Injection in Unity</a> - <time class="prose-sm" datetime="26-03-24">March 24, 2026</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/offset-vs-cursor-based-pagination">Offset vs Cursor Based Pagination</a> - <time class="prose-sm" datetime="25-04-07">April 07, 2025</time>
             </li>

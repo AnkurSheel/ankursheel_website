@@ -1,0 +1,518 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen scroll-pt-24">
+<head>
+    
+
+<title>Rolling Your Own Dependency Injection in Unity</title>
+<meta charset="utf-8"/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Unity has no DI story out of the box and the existing frameworks felt too heavy. So I rolled my own using Microsoft.Extensions.DependencyInjection."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/rolling-dependency-injection-unity"/>   
+<meta itemProp="name" content="Rolling Your Own Dependency Injection in Unity"/>
+<meta itemProp="description" content="Unity has no DI story out of the box and the existing frameworks felt too heavy. So I rolled my own using Microsoft.Extensions.DependencyInjection."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/rolling-dependency-injection-unity-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/rolling-dependency-injection-unity"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Rolling Your Own Dependency Injection in Unity"/>
+<meta property="og:description" content="Unity has no DI story out of the box and the existing frameworks felt too heavy. So I rolled my own using Microsoft.Extensions.DependencyInjection."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/rolling-dependency-injection-unity-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rolling-dependency-injection-unity-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Rolling Your Own Dependency Injection in Unity"/>
+<meta name="twitter:description" content="Unity has no DI story out of the box and the existing frameworks felt too heavy. So I rolled my own using Microsoft.Extensions.DependencyInjection."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/rolling-dependency-injection-unity-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/rolling-dependency-injection-unity-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
+<header class="sticky top-0 bg-white shadow-lg z-10 w-full">
+    
+<nav x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 md:px-8">
+    <div class="flex flex-col items-start">
+        <div class="flex flex-row items-center justify-between font-semibold w-full">
+            <a href="/"
+               class="navigation-link text-lg hover:invert-0 text-gray-900 uppercase rounded-lg focus:outline-none">Ankur Sheel</a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" x-on:click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="pb-4 flex items-center">
+            
+<div class="flex">
+    <a class="" href="https://twitter.com/ankur_sheel" title="Connect on Twitter"
+       target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15" class="h-4">
+            <path fill="currentColor" fill-rule="evenodd"
+                  d="M7.233 4.696c0-1.727 1.4-3.127 3.127-3.127 1.014 0 1.823.479 2.365 1.175a5.246 5.246 0 0 0 1.626-.629 2.634 2.634 0 0 1-1.148 1.45l.002.003a5.26 5.26 0 0 0 1.5-.413l-.001.002c-.337.505-.76.95-1.248 1.313.026.177.04.354.04.53 0 3.687-2.809 7.975-7.975 7.975a7.93 7.93 0 0 1-4.296-1.26.5.5 0 0 1-.108-.748.45.45 0 0 1 .438-.215c.916.108 1.83-.004 2.637-.356a3.086 3.086 0 0 1-1.69-1.876.45.45 0 0 1 .103-.448 3.07 3.07 0 0 1-1.045-2.31v-.034a.45.45 0 0 1 .365-.442 3.068 3.068 0 0 1-.344-1.416c0-.468.003-1.058.332-1.59a.45.45 0 0 1 .323-.208.5.5 0 0 1 .538.161 6.964 6.964 0 0 0 4.46 2.507v-.044Zm-1.712 7.279a6.936 6.936 0 0 1-2.249-.373 5.318 5.318 0 0 0 2.39-1.042.45.45 0 0 0-.27-.804 2.174 2.174 0 0 1-1.714-.888c.19-.015.376-.048.556-.096a.45.45 0 0 0-.028-.876 2.18 2.18 0 0 1-1.644-1.474c.2.048.409.077.623.084a.45.45 0 0 0 .265-.824 2.177 2.177 0 0 1-.97-1.812c0-.168.003-.317.013-.453a7.95 7.95 0 0 0 5.282 2.376.5.5 0 0 0 .513-.61 2.127 2.127 0 0 1 2.071-2.614c1.234 0 2.136 1.143 2.136 2.432 0 3.256-2.476 6.974-6.975 6.974Z"
+                  clip-rule="evenodd"/>
+        </svg>
+    </a>
+    <a class="ml-4" href="https://www.linkedin.com/in/ankursheel"
+       title="View my LinkedIn profile" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-4">
+            <path fill="currentColor"
+                  d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/>
+        </svg>
+    </a>
+
+    <a class="ml-4" href="https://github.com/AnkurSheel" title="Check out my work on Github"
+       target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15" class="h-4">
+            <path fill="currentColor" fill-rule="evenodd"
+                  d="M7.5.85a6.65 6.65 0 0 0-2.102 12.96c.332.061.454-.144.454-.32 0-.159-.006-.576-.01-1.131-1.849.401-2.24-.892-2.24-.892-.302-.768-.738-.973-.738-.973-.604-.412.046-.404.046-.404.667.047 1.018.685 1.018.685.594 1.017 1.557.723 1.936.553.06-.43.232-.723.422-.889-1.477-.168-3.029-.738-3.029-3.287 0-.726.26-1.319.685-1.784-.069-.168-.297-.844.065-1.76 0 0 .558-.179 1.828.681A6.41 6.41 0 0 1 7.5 4.066a6.394 6.394 0 0 1 1.665.223c1.27-.86 1.827-.68 1.827-.68.363.915.135 1.59.066 1.759.427.465.684 1.058.684 1.784 0 2.555-1.555 3.117-3.036 3.282.238.205.45.611.45 1.232 0 .888-.007 1.605-.007 1.823 0 .178.12.385.457.32A6.652 6.652 0 0 0 7.499.85Z"
+                  clip-rule="evenodd"/>
+        </svg>
+    </a>
+
+
+    <a class="ml-4" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-4">
+            <path
+                d="M6.503 20.752A3.25 3.25 0 0 1 3.252 24 3.25 3.25 0 0 1 0 20.752a3.25 3.25 0 0 1 3.252-3.248 3.25 3.25 0 0 1 3.251 3.248zM0 8.18v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817C15.777 15.29 8.721 8.242 0 8.18zm0-3.368C10.58 4.858 19.152 13.406 19.183 24H24C23.97 10.769 13.245.046 0 0v4.812z"
+                fill="currentColor"/>
+        </svg>
+    </a>
+</div>
+
+        </div>
+    </div>
+    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 items-center md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        
+
+    <li class="navigation-link">
+            <div x-on:click.away="open = false" class="relative" x-data="{ open: false }">
+                <button x-on:click="open = !open" class="flex flex-row items-center w-full text-left bg-transparent font-semibold md:w-auto md:inline md:ml-4 hover:text-gray-900">
+                    <span>About</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                    <div class="px-2 py-2 bg-white rounded-md shadow">
+                                    <a class="block hover:invert-0 navigation-link" href="/about">About</a>
+                                    <a class="block hover:invert-0 navigation-link" href="/impossible-list">Impossible List</a>
+                                    <a class="block hover:invert-0 navigation-link" href="https://www.discoveriesinbookland.com/" target="_blank">Book Summaries</a>
+                    </div>
+                </div>
+            </div>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/blog">Blog</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/tags">Tags</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/cv">CV</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/contact">Contact</a>
+    </li>
+
+    </ul>
+</nav>
+
+</header>
+
+<main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
+    <h1 class="text-center">Rolling Your Own Dependency Injection in Unity</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="prose-sm italic">
+    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
+        <span class="mr-4 sm:py-0 py-1">Published on <time
+                datetime="2026-03-24">Mar 24, 2026</time></span>
+        <span class="mr-4 sm:py-0 py-1">Last Updated on <time
+                datetime="2026-03-24">Mar 24, 2026</time></span>
+        <span class="sm:py-0 py-1">
+            Estimated Reading Time: <span class="font-bold">7 min</span>
+        </span>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <a href="/tags/unity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">unity</a>
+            <a href="/tags/tutorial" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">tutorial</a>
+    </div>
+</div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#the-alternatives-and-why-they-fall-short" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">The Alternatives (And Why They Fall Short)</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#drag-and-drop-in-the-editor" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Drag-and-Drop in the Editor</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#querying-the-scene" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Querying the Scene</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#singletons" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Singletons</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#unity-specific-di-frameworks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unity-Specific DI Frameworks</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#what-is-dependency-injection" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What is Dependency Injection?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#why-does-unity-make-di-awkward" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Why Does Unity Make DI Awkward?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#the-solution" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">The Solution</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-1-add-the-nuget-packages" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Add the NuGet Packages</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-2-the-dependencyhelper" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: The DependencyHelper</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-3-inherit-from-injectablemonobehaviour" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3: Inherit from InjectableMonoBehaviour</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-4-the-service-registry" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: The Service Registry</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-5-watch-the-lifecycle-order" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 5: Watch the Lifecycle Order</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#isnt-this-the-service-locator-anti-pattern" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Isn&#x27;t This the Service Locator Anti-Pattern?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#was-it-worth-it" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Was It Worth It?</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#the-alternatives-and-why-they-fall-short" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">The Alternatives (And Why They Fall Short)</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#drag-and-drop-in-the-editor" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Drag-and-Drop in the Editor</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#querying-the-scene" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Querying the Scene</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#singletons" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Singletons</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#unity-specific-di-frameworks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unity-Specific DI Frameworks</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#what-is-dependency-injection" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What is Dependency Injection?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#why-does-unity-make-di-awkward" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Why Does Unity Make DI Awkward?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#the-solution" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">The Solution</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-1-add-the-nuget-packages" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Add the NuGet Packages</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-2-the-dependencyhelper" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: The DependencyHelper</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-3-inherit-from-injectablemonobehaviour" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3: Inherit from InjectableMonoBehaviour</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-4-the-service-registry" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: The Service Registry</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-5-watch-the-lifecycle-order" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 5: Watch the Lifecycle Order</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#isnt-this-the-service-locator-anti-pattern" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Isn&#x27;t This the Service Locator Anti-Pattern?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#was-it-worth-it" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Was It Worth It?</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+<p>Unity codebases have a way of turning into spaghetti. Every system talks to every other system through singletons and magic strings, and it never gets better with time. When I came back to Unity to build WordXplorer, I knew what I wanted: clean dependency injection, testable classes, no hidden dependencies. The problem was that while I'd used DI in .NET Core apps, I'd never seen it in a Unity project.</p>
+<p>By the end of this, you'll have a setup where plain C# classes get proper constructor injection, MonoBehaviours register themselves automatically, and the whole thing initialises lazily without a bootstrapper. It ends up feeling a lot like any other .NET Core app which is exactly the point.</p>
+<h2 id="the-alternatives-and-why-they-fall-short">The Alternatives (And Why They Fall Short)</h2>
+<p>Before getting into the solution, it’s worth looking at what most Unity developers do instead. Spoilers: it’s not great.</p>
+<h3 id="drag-and-drop-in-the-editor">Drag-and-Drop in the Editor</h3>
+<p>The simplest way to connect objects is to expose a private serialised field and drag the reference in the Inspector. This is convenient, especially for artists and designers who can wire up behaviours without touching code. But it's a lot of manual effort and doesn't scale. And none of it is easily testable because you can't run a unit test against a scene.</p>
+<h3 id="querying-the-scene">Querying the Scene</h3>
+<p>You can find objects at runtime in a few ways: by name, by tag, or by type.</p>
+<p>Finding by name or tag relies on magic strings. Rename something in the hierarchy and the code breaks. The worst part is you only find out at runtime.</p>
+<p>Finding by type is better because it's at least type-safe. But it's still a global scene query, it's slow, and it gives you no way to swap in a different implementation for testing.</p>
+<h3 id="singletons">Singletons</h3>
+<p>Most Unity tutorials reach for singletons, and they are better than the two options above. But in practice, singletons cause three problems that compound as the project grows.</p>
+<p><strong>Global state</strong>: Every singleton is effectively a global variable. Any class can reach in and modify it at any time, from anywhere. Reasoning about what changed, and when, becomes increasingly difficult. You can manage this if you're diligent — but diligence has a way of slipping when you're in a rush and just need to ship.</p>
+<p><strong>Hidden dependencies</strong>: When a class accesses a singleton directly, that dependency is invisible from the outside. You can't tell what a class needs just by looking at its constructor or its interface. The only way to find out is to read the implementation.</p>
+<p><strong>(Un)testability</strong>: Singeltons make writing automated tests hard. If a class depends on a concrete singleton, you can't swap it out for a fake in a test. You could test with the real thing, but only if it has no side effects and doesn't depend on other singletons. In practice, it usually does.</p>
+<h3 id="unity-specific-di-frameworks">Unity-Specific DI Frameworks</h3>
+<p>There are frameworks built specifically for Unity DI like <a href="https://github.com/modesttree/Zenject">Zenject</a> and <a href="https://vcontainer.hadashikick.jp/">VContainer</a>. Both are heavy frameworks with their own learning curve. I find them too bloated for my purposes, but they might be a viable option.</p>
+<p>To be honest, I really didnt look too much into them. I might just be reinventing the wheel here.</p>
+<h2 id="what-is-dependency-injection">What is Dependency Injection?</h2>
+<p>DI (Dependency Injection) is a technique in OOP where instead of a class creating its own dependencies, you pass them in from the outside.</p>
+<p>So instead of this:</p>
+<pre><code class="language-csharp">public class GameManager
+{
+    private AudioManager _audio = new AudioManager();
+}
+</code></pre>
+<p>You do this:</p>
+<pre><code class="language-csharp">public class GameManager
+{
+    private IAudioManager _audio;
+
+    public GameManager(IAudioManager audio)
+    {
+        _audio = audio;
+    }
+}
+</code></pre>
+<p>Now <code>GameManager</code> doesn’t care if it gets a real <code>AudioManager</code> or a mock for testing. A DI container automates the wiring and  resolves them wherever they're needed.</p>
+<h2 id="why-does-unity-make-di-awkward">Why Does Unity Make DI Awkward?</h2>
+<p>Two things get in the way in Unity.</p>
+<p>First, MonoBehaviours can't be newed up. Unity owns their lifecycle by calling <code>Awake</code>, <code>Start</code>, <code>Update</code>, and so on. You can't pass dependencies through a constructor the normal way.</p>
+<p>Second, there's no single entry point. A .NET console app has <code>Main</code>. An ASP.NET app has <code>Program.cs</code>. But Unity has scenes, objects, and an initialization order you don't fully control. Scenes can also be loaded and unloaded, which means objects might not always be present when the container is first created, or might be destroyed after they've already been registered.</p>
+<p>You might think these two constraints would be a showstopper. They're not. But they do require a slightly different approach.</p>
+<h2 id="the-solution">The Solution</h2>
+<h3 id="step-1-add-the-nuget-packages">Step 1: Add the NuGet Packages</h3>
+<p>Download the following DLLs from <a href="https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection/">NuGet</a> and drop them into your <code>Assets/Plugins</code> folder:</p>
+<ul>
+<li><code>Microsoft.Extensions.DependencyInjection.dll</code></li>
+<li><code>Microsoft.Extensions.DependencyInjection.Abstractions.dll</code></li>
+</ul>
+<p>I've written about <a href="https://www.ankursheel.com/blog/installing-nuget-packages-unity-2021">how to install NuGet packages in Unity</a> in more detail. If you use assembly definitions, add references to these DLLs in the relevant assembly definition file.</p>
+<h3 id="step-2-the-dependencyhelper">Step 2: The DependencyHelper</h3>
+<p><code>DependencyHelper</code> owns the DI container and acts as the resolution point for both plain C# services and MonoBehaviours.</p>
+<pre><code class="language-csharp">public sealed class DependencyHelper
+{
+    private static readonly Dictionary&lt;Type, object&gt; _injectedMonoBehaviours = new();
+    private static readonly Lazy&lt;DependencyHelper&gt; _lazy =
+        new(() =&gt; _instance ?? new DependencyHelper());
+    private static DependencyHelper _instance;
+    private static ServiceProvider _serviceProvider;
+
+    private DependencyHelper()
+    {
+        var serviceCollection = new ServiceCollection();
+        ServiceRegistry.RegisterServices(serviceCollection);
+        _serviceProvider = serviceCollection.BuildServiceProvider();
+        _instance = this;
+    }
+
+    public static void Register(object instance)
+    {
+        _injectedMonoBehaviours[instance.GetType()] = instance;
+    }
+
+    public static T GetInjectedMonoBehaviour&lt;T&gt;() where T : class
+        =&gt; _injectedMonoBehaviours[typeof(T)] as T;
+
+    public static T GetRequiredService&lt;T&gt;() where T : class
+    {
+        _ = _lazy.Value; // ensures the container is built on first call
+        return _serviceProvider.GetRequiredService&lt;T&gt;();
+    }
+}
+</code></pre>
+<ul>
+<li><code>Register</code>: called automatically by <code>InjectableMonoBehaviour.Awake</code> to store the live MonoBehaviour instance.</li>
+<li><code>GetInjectedMonoBehaviour</code>: used inside <code>ServiceRegistry</code> to wire a MonoBehaviour into the container by fetching the stored instance.</li>
+<li><code>GetRequiredService</code>: how everything else resolves dependencies. Throws if the service isn't registered.</li>
+<li>The <code>Lazy</code> factory ensures the container is built exactly once, on the first call to <code>GetRequiredService</code>. The <code>_instance</code> check means there is only ever one container instance.</li>
+</ul>
+<h3 id="step-3-inherit-from-injectablemonobehaviour">Step 3: Inherit from InjectableMonoBehaviour</h3>
+<p>Next, we need a way to add MonoBehaviours to the DI container</p>
+<p><code>InjectableMonoBehaviour</code> is a base class that MonoBehaviours inherit from, which registers them with the container when they wake up.</p>
+<p>Any MonoBehaviour that needs to be resolvable by the container should extend this:</p>
+<pre><code class="language-csharp">public class InjectableMonoBehaviour : MonoBehaviour
+{
+    protected virtual void Awake()
+    {
+        DependencyHelper.Register(this);
+    }
+}
+</code></pre>
+<p>When Unity calls <code>Awake</code>, the MonoBehaviour registers itself by type. That's it. The container can now hand out a reference to this instance when something asks for it.</p>
+<h3 id="step-4-the-service-registry">Step 4: The Service Registry</h3>
+<p>This is where you tell the container what goes where.</p>
+<pre><code class="language-csharp">public static class ServiceRegistry
+{
+    public static void RegisterServices(IServiceCollection serviceCollection)
+    {
+        // Plain C# service
+        serviceCollection.AddTransient&lt;ILevelSaveDataService, LevelSaveDataService&gt;();
+
+        // MonoBehaviour
+        serviceCollection.AddTransient&lt;IAudioManager&gt;(
+            _ =&gt; DependencyHelper.GetInjectedMonoBehaviour&lt;AudioManager&gt;());
+    }
+}
+</code></pre>
+<p>Plain C# services register normally. MonoBehaviours are different - they use a lambda to defer the lookup until the instance is actually needed, by which point Unity will have called <code>Awake</code> on the MonoBehaviour and registered it.</p>
+<h3 id="step-5-watch-the-lifecycle-order">Step 5: Watch the Lifecycle Order</h3>
+<p>This is the part that will bite you if you're not paying attention.</p>
+<p>Unity calls <code>Awake</code> on scripts in an arbitrary order. If you try to resolve a dependency in <code>Awake</code>, you might run before that dependency has even registered itself. If that happens, you will get a <code>KeyNotFoundException</code> at runtime.</p>
+<p>We know that <code>Start</code> is called after <code>Awake</code>, so the rule is simple:</p>
+<blockquote>
+<p>Always resolve and use dependencies in <code>Start</code>, not <code>Awake</code>.</p>
+</blockquote>
+<p>This also has the added benefit of resolving the dependency only once.</p>
+<pre><code class="language-csharp">public class LevelSaveDataManager : MonoBehaviour
+{
+    private ILevelSaveDataService _levelSaveDataService;
+
+    private void Start()
+    {
+        _levelSaveDataService = DependencyHelper.GetRequiredService&lt;ILevelSaveDataService&gt;();
+    }
+}
+</code></pre>
+<p>The same caveat applies across scenes. If a scene transition destroys and recreates MonoBehaviours, they re-register themselves in their new <code>Awake</code>. The container's service registrations stay intact - those lambdas always pull the current live instance. But if you're holding a cached reference somewhere and the MonoBehaviour was destroyed, that reference is stale. Be deliberate about when you resolve.</p>
+<h2 id="isnt-this-the-service-locator-anti-pattern">Isn't This the Service Locator Anti-Pattern?</h2>
+<p>Yes. I know. I'm not thrilled about it either.</p>
+<p>The criticism is legitimate: when a class calls <code>DependencyHelper.GetRequiredService&lt;T&gt;()</code> directly, its dependencies are hidden. You can't tell from the constructor what it needs. Testing becomes harder because you have to know to configure the locator before running any test.</p>
+<p>But Unity’s lifecycle leaves us with very few &quot;clean&quot; options.</p>
+<p>Constructor injection requires that you control object creation.</p>
+<p>In Unity, you don't. MonoBehaviours are created by the engine, attached to GameObjects, and initialised through <code>Awake</code> and <code>Start</code>. There's no constructor call you can intercept to inject dependencies the clean way.</p>
+<p>I think the Service Locator is a small price to pay given all the other alternatives. We can minimize the damage by treating MonoBehaviours as a &quot;thin&quot; layer. They handle the Unity stuff (input, rendering), and delegate all the actual logic to injected plain C# classes.</p>
+<p>As you saw in Step 5, <code>LevelSaveDataManager</code> is the thin MonoBehaviour — it knows <em>when</em> to load. <code>ILevelSaveDataService</code> is the plain C# class where all the loading logic lives, fully testable without a running scene.</p>
+<h2 id="was-it-worth-it">Was It Worth It?</h2>
+<p>If you've worked on .NET Core apps, you already know most of what's here. Unity just requires a small amount of extra wiring to account for its lifecycle. Once that's in place, you can mostly forget it's there.</p>
+<p>What are your experiences with DI in Unity? Have you gone the Zenject route, or are you still living with singletons? I'm curious what you are doing? Let me know in the comments.</p>
+
+
+
+
+<aside class="m-2">
+    <div class="my-6 flex justify-center gap-5 flex-wrap">
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/rolling-dependency-injection-unity&text=Rolling%20Your%20Own%20Dependency%20Injection%20in%20Unity via @ankur_sheel.&#xD;&#xA;Unity%20has%20no%20DI%20story%20out%20of%20the%20box%20and%20the%20existing%20frameworks%20felt%20too%20heavy.%20So%20I%20rolled%20my%20own%20using%20Microsoft.Extensions.DependencyInjection." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/rolling-dependency-injection-unity" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+    </div>
+</aside>
+
+
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">You might also like</h2>
+
+    <ul>
+            <li>
+                <a href="unity-cicd-one-time-setup">Unity CI/CD Demystified: Part 1: One-Time Setup</a>
+            </li>
+            <li>
+                <a href="unity-cicd-trigger-events-tests">Unity CI/CD Demystified: Part 2: Trigger Events and Running Tests</a>
+            </li>
+            <li>
+                <a href="unity-cicd-linux-build">Unity CI/CD Demystified: Part 3: Build with Linux</a>
+            </li>
+            <li>
+                <a href="unity-cicd-deploying-webgl-github-pages">Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+            <p class="mt-2 text-2xl font-bold text-center">Want to know when a new post comes out?</p>
+            <div class="flex gap-4 items-center justify-center flex-wrap">
+                <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0 required" aria-label="First Name" name="FNAME" required="" placeholder="First Name" type="text" id="mce-FNAME"/>
+                <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0 required email" name="EMAIL" aria-label="Email Address" placeholder="Email Address" required="" type="email" id="mce-EMAIL"/>
+                <button class="px-3 py-2 text-white bg-green-400 rounded-md focus:bg-indigo-600 focus:outline-none flex-none" type="submit">Subscribe</button>
+                <input type="checkbox" class="hidden" value="1" name="group[52461][1]" id="mce-group[52461]-52461-0" checked>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_d88459c290a1a8d98ad780bbc_31e4ebb75b" tabindex="-1" value="">
+                </div>
+                <div >
+                    <a href="http://eepurl.com/hRcTAL" title="Mailchimp - email marketing made easy and fun">
+                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</aside>
+
+
+<footer>
+    <script src="https://giscus.app/client.js"
+        data-repo="AnkurSheel/blog-comments"
+        data-repo-id="R_kgDOIAUZqA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIAUZqM4CRdIF"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+
+</footer>
+
+        </article>
+    </div>
+</main>
+
+
+
+<script src="/assets/js/blog.js" defer></script>
+<script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
+
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="ankursheel" data-description="Support me on Buy me a coffee!"
+        data-message="Did you learn something? Buy me a coffee" data-color="#FF813F"
+        data-position="Right" data-x_margin="18" data-y_margin="18" defer>
+</script>
+
+
+</body>
+</html>
