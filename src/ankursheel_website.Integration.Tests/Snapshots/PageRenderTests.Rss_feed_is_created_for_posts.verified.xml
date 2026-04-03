@@ -8,6 +8,51 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>WordXplorer Update 13: Updated Flip Animation</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-13</link>
+      <description>Updated Flip Animation and some code cleanup.</description>
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-13</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="flip-animation-overhaul"&gt;Flip Animation Overhaul&lt;/h2&gt;
+&lt;p&gt;I updated the flip animation to make it a pop a bit more. You can see for yourself and tell me waht you think.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Before&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;After&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-13/old_flip_animation.gif" width="200" alt="Old Flip Animation"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-13/new_flip_animation.gif" width="200" alt="New Flip Animation"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="code-cleanup-and-unity-upgrade"&gt;Code Cleanup and Unity Upgrade&lt;/h2&gt;
+&lt;p&gt;I upgraded to Unity 6.3 to keep the engine current and to get the free AI credits. I am not sure what I did wrong but I was unable to get the AI credits to work.&lt;/p&gt;
+&lt;p&gt;I also removed some tech debt to make it easier to add tests and updated Github Actions to use macos-26 to stop a Apple warning related to Xcode.&lt;/p&gt;
+&lt;h2 id="whats-next"&gt;What's Next&lt;/h2&gt;
+&lt;p&gt;I had some UX and copy improvements ready to go but ran out of free GitHub Actions minutes before I could ship them. They'll be in the April update.&lt;/p&gt;
+&lt;h2 id="become-a-beta-tester"&gt;Become a Beta Tester&lt;/h2&gt;
+&lt;p&gt;Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a &lt;strong&gt;free copy of the app&lt;/strong&gt; to share with a friend!&lt;/p&gt;
+&lt;h2 id="get-wordxplorer"&gt;Get WordXplorer&lt;/h2&gt;
+&lt;p&gt;WordXplorer is available on the iOS App Store and Google Play Store.&lt;/p&gt;
+&lt;div class="appstore-badges-container"&gt;
+  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Want to try before you buy? Check out the &lt;a href="https://wordxplorer.ankursheel.com/"&gt;web demo here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you for being part of this journey. Stay tuned for more updates!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Rolling Your Own Dependency Injection in Unity</title>
       <link>https://www.ankursheel.com/blog/rolling-dependency-injection-unity</link>
       <description>Unity has no DI story out of the box and the existing frameworks felt too heavy. So I rolled my own using Microsoft.Extensions.DependencyInjection.</description>
@@ -1436,7 +1481,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media2.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1727,130 +1772,6 @@ vs
 &lt;li&gt;Lose 5 kgs&lt;/li&gt;
 &lt;li&gt;25 consecutive pushups&lt;/li&gt;
 &lt;li&gt;50 consecutive squats&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Unity CI/CD Demystified: Part 3: Build with Linux</title>
-      <link>https://www.ankursheel.com/blog/unity-cicd-linux-build</link>
-      <description>In Part 3 of our Unity CI/CD series, I show how to create a reusable workflow to build Unity projects for different platforms.</description>
-      <guid>https://www.ankursheel.com/blog/unity-cicd-linux-build</guid>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;In Part 1, we finished the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;setup to start creating our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In Part 2, we created a workflow to run our &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;automated tests based on some trigger events&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In Part 3, we will create a reusable workflow to build the Unity project for various platforms.&lt;/p&gt;
-&lt;p&gt;The jobs in this workflow will run on a Linux VM.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Why Linux?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Its the cheapest box. As we will see in later posts, different platforms need a different OS for deployment. I am looking at you iOS.&lt;/p&gt;
-&lt;p&gt;Creating a new workflow definition &lt;code&gt;.github/workflows/buildWithLinux.yml&lt;/code&gt;:&lt;/p&gt;
-&lt;h2 id="defining-the-workflow"&gt;Defining the Workflow&lt;/h2&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;name: Build with Linux  
-on:  
-  workflow_call:   
-    inputs:   
-      platform:  
-        required: true  
-        type: string  
-      secrets:  
-        UNITY_EMAIL:  
-          required: true  
-        UNITY_PASSWORD:  
-          required: true  
-        UNITY_LICENSE:  
-          required: true  
-    outputs:  
-      buildVersion:  
-        value: ${{ jobs.buildWithLinux.outputs.buildVersion }} 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt;: Specify the events that trigger the workflow.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;workflow_call&lt;/strong&gt;: Set the workflow to be called from other workflows.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;inputs&lt;/strong&gt;: Values passed in from the caller workflow .
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;platform&lt;/strong&gt;: Platform for which the Unity project should be built.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;secrets&lt;/strong&gt;: Secrets passed in from the caller workflow.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;outputs&lt;/strong&gt;: Data to pass back to the caller workflow.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;buildVersion&lt;/strong&gt;: The version generated by the job.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="the-linux-build-job"&gt;The Linux Build Job&lt;/h2&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;jobs:  
-  
-  buildWithLinux:  
-    name: Build in Linux for ${{ inputs.platform }}  
-    runs-on: ubuntu-latest  
-    outputs:  
-      buildVersion: ${{ steps.build.outputs.buildVersion }}  
-      steps:  
-      - name: Checkout Repository  
-        uses: actions/checkout@v4  
-        with:  
-          fetch-depth: 0  
-          lfs: true  
-  
-      - name: Cache Library  
-        uses: actions/cache@v4 
-        with:  
-          path: Library  
-          key: Library-build-${{ inputs.platform }}  
-          restore-keys: |  
-            Library-build-${{ inputs.platform }}
-            Library-    
-
-      - name: Build Unity Project  
-        id: build  
-        uses: game-ci/unity-builder@v4  
-        env:  
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}  
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}  
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}  
-        with:  
-          targetPlatform: ${{ inputs.platform }}  
-  
-      - name: Upload Build  
-        uses: actions/upload-artifact@v4  
-        with:  
-          name: build-${{ inputs.platform }}  
-          path: build/${{ inputs.platform }}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here's a breakdown of what's happening in this job:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;outputs&lt;/strong&gt;: Data we want to return back to the caller workflow.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;buildVersion&lt;/strong&gt;: Version generated by the Builder in the &lt;code&gt;build&lt;/code&gt; step below.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;steps:&lt;/strong&gt; This section contains a series of steps to be executed for this job.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Checkout Repository:&lt;/strong&gt; Check out the code
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;fetch-depth&lt;/strong&gt;: Get only the last commit of the branch.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;lfs&lt;/strong&gt;: Download files tracked by LFS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cache Library&lt;/strong&gt;: Cache the "Library" directory, to make subsequent runs faster. The &lt;code&gt;key&lt;/code&gt; is unique to each platform.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build Unity Project&lt;/strong&gt;: Build the Unity project for the target platform.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload Build&lt;/strong&gt;: Upload the built Unity project as an artifact so that it can be downloaded in later jobs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;In this part, we created a reusable workflow to build the Unity project for different platforms. Next, we will use this workflow to build and deploy a WebGL build to GitHub pages.&lt;/p&gt;
-&lt;p&gt;Happy building!&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow"&gt;Creating a reusable workflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-jobs/defining-outputs-for-jobs"&gt;Defining Outputs for a job&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://game.ci/docs/github/builder#configuration-options"&gt;GameCI builder Configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://game.ci/docs/github/builder#outputs"&gt;GameCI builder Output&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

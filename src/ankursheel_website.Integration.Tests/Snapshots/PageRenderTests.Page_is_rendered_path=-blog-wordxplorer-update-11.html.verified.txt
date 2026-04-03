@@ -333,10 +333,10 @@
                 <a href="wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
             </li>
             <li>
-                <a href="wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
+                <a href="wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
             </li>
             <li>
-                <a href="wordxplorer-update-8">WordXplorer Update #8: New Hint System</a>
+                <a href="wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
             </li>
     </ul>
 </aside>

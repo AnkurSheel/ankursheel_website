@@ -146,7 +146,10 @@
             <a role="button" href="/tags/travel" class="capitalize badge text-gray-900 bg-grey-light no-underline"> travel (25)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (23)</a>
+            <a role="button" href="/tags/project-updates" class="capitalize badge text-gray-900 bg-grey-light no-underline"> project updates (24)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/wordxplorer" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordxplorer (14)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/devops" class="capitalize badge text-gray-900 bg-grey-light no-underline"> devops (13)</a>
@@ -156,9 +159,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/oceania" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Oceania (13)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/wordxplorer" class="capitalize badge text-gray-900 bg-grey-light no-underline"> wordxplorer (13)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/productivity" class="capitalize badge text-gray-900 bg-grey-light no-underline"> productivity (12)</a>
