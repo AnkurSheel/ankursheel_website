@@ -29,7 +29,7 @@ Let us tackle the makeup of my dream job and see what it looks like.
 
 > Culture trumps everything else, every single time
 
-After working with some terrible and great companies, I realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy?
+After working with some terrible and some great companies, I have realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy?
 
 So what does the perfect culture look like?
 
@@ -41,6 +41,8 @@ So what does the perfect culture look like?
 | Open communication with management and Human Resources.                             | 7      |
 | The ability to move horizontally or vertically throughout the company.              | 5      | 
 | Internally Visible Compensation Matrix                                              | 2      |
+
+_**Note 1:** Since I prefer working remotely. remove 1 point for each day in office. If times are flexible (or you can be in only for meetings/half day), remove 0.5 point for each day._
 
 ## Compensation and Benefits (35 points)
 
@@ -88,7 +90,7 @@ The perfect company would invest in their employees. The way I see it, this is a
 
 Not only should I be passionate about my work, but I also want to be around people passionate about it.
 
-| Breakdown for Learning                            | Points |
+| Breakdown for Passion                             | Points |
 |---------------------------------------------------|--------|
 | I am passionate about the work.                   | 3      |
 | People around me are passionate about their work. | 2      |
@@ -97,7 +99,6 @@ Not only should I be passionate about my work, but I also want to be around peop
 
 - No relocation (if moving to a new city/country)
 - Initial Low-ball Offer.
-- Mandatory in-office days.
 - Micro Management.
 - No Ability to work on side projects after work.
 - I don't work with people who have ego trips or feel that others need to cater to their every whim and demand because they are more knowledgeable or in a higher position.
