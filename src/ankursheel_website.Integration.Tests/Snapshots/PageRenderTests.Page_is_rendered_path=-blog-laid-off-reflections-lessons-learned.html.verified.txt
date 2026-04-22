@@ -322,6 +322,9 @@
 
     <ul>
             <li>
+                <a href="startup-versus-big-tech-good-bad-ugly">Startup versus Big Tech: The Good, the Bad, and the Ugly</a>
+            </li>
+            <li>
                 <a href="unlock-careers-potential-effective-11-meetings">Unlock your career&#x27;s potential with effective 1:1 meetings</a>
             </li>
             <li>
@@ -329,9 +332,6 @@
             </li>
             <li>
                 <a href="need-mentor-coach">Do you need a mentor or a coach?</a>
-            </li>
-            <li>
-                <a href="level-up-pull-requests-value-individual-commits">Level Up Your Pull Requests: The Value of Individual Commits</a>
             </li>
     </ul>
 </aside>

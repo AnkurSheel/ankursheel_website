@@ -8,6 +8,92 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Startup versus Big Tech: The Good, the Bad, and the Ugly</title>
+      <link>https://www.ankursheel.com/blog/startup-versus-big-tech-good-bad-ugly</link>
+      <description>Startup or Big Tech? Which should you choose? Here’s my honest take on the good, the bad, and the ugly of both.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/startup-versus-big-tech-good-bad-ugly-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/startup-versus-big-tech-good-bad-ugly</guid>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;I’ve spent about two decades bouncing between startups, Big Tech, and everything in between. Recently, someone early in their engineering career asked me which path they should take.&lt;/p&gt;
+&lt;p&gt;My answer was the same as it is for most engineering questions: &lt;strong&gt;it depends but this is what I would do&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Both environments have completely different dynamics. They reward different styles and need different skills to be successful. Here’s my honest take on the good, the bad, and the &amp;quot;ugly&amp;quot; of both.&lt;/p&gt;
+&lt;p&gt;And if you just want to know what I’d personally do, you can scroll to the end. But I'd urge you to actually figure out what works for you.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The stage of business determines what game you are playing in the first place: what the job will be like, who will be successful in it, and the mix of risk and reward you are accepting. So start there.&lt;/p&gt;
+&lt;p&gt;Dan Hock&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="startups-the-good"&gt;Startups: The Good&lt;/h2&gt;
+&lt;h3 id="ready-or-not-you-learn-fast"&gt;Ready or Not: You learn fast&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no - I don't know how to to do that.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to. You jump in where needed, even when you don't have a clue what you're doing.&lt;/p&gt;
+&lt;p&gt;At First AML, I touched everything: backend systems, developer tooling, processes, just whatever needed to be done. That kind of environment broadens your expertise incredibly fast.&lt;/p&gt;
+&lt;h3 id="visible-impact"&gt;Visible Impact&lt;/h3&gt;
+&lt;p&gt;Startups are flat. You can influence the direction of the product, push back on decisions, and see the result of your work in the hands of real users quickly.&lt;/p&gt;
+&lt;h3 id="you-know-everyone"&gt;You know everyone.&lt;/h3&gt;
+&lt;p&gt;Startups are tight-knit in a way that larger organisations can't replicate. It’s easier to feel a personal connection when you aren't just Employee #10,402.&lt;/p&gt;
+&lt;h2 id="startups-the-bad"&gt;Startups: The Bad&lt;/h2&gt;
+&lt;h3 id="learning-is-self-directed"&gt;Learning is Self Directed&lt;/h3&gt;
+&lt;p&gt;The flip side of &amp;quot;you learn fast&amp;quot; is that there's often nobody to learn from. When you're stuck, you're mostly stuck alone. No senior engineer who's solved this exact problem before, no internal documentation, no established way of doing things. No mentors. You can pick up bad habits without realizing it.&lt;/p&gt;
+&lt;h3 id="compensation-is.aspirational"&gt;Compensation is… aspirational&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Startup Equity is Monopoly Money&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it. Most exercise windows are short enough that leaving early means walking away from everything that you are &amp;quot;promised&amp;quot;. You have no control over dilution or what kind of exit the company pursues.&lt;/p&gt;
+&lt;h2 id="startups-the-ugly"&gt;Startups: The Ugly&lt;/h2&gt;
+&lt;h3 id="money-problems"&gt;Money Problems&lt;/h3&gt;
+&lt;p&gt;Several startups I worked at had payroll problems. Salaries were delayed for months on end. Holidays cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.&lt;/p&gt;
+&lt;h3 id="most-of-them-fail"&gt;Most of them fail&lt;/h3&gt;
+&lt;p&gt;This is not a hot take. Startups fail. The earlier they are in the lifescycle, higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.&lt;/p&gt;
+&lt;p&gt;You might have little to show when the company folds.&lt;/p&gt;
+&lt;h2 id="big-tech-the-good"&gt;Big Tech: The good&lt;/h2&gt;
+&lt;h3 id="career-rocket-fuel"&gt;Career rocket fuel&lt;/h3&gt;
+&lt;p&gt;Having a big name on your CV opens doors before a recruiter even looks at your skills. Your skills and expertise is assumed.&lt;/p&gt;
+&lt;h3 id="you-learn-a-different-kind-of-discipline"&gt;You learn a different kind of discipline&lt;/h3&gt;
+&lt;p&gt;Big Tech teaches a different kind of engineering: depth, rigor, and long‑term thinking.&lt;/p&gt;
+&lt;p&gt;At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before. I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.&lt;/p&gt;
+&lt;h3 id="the-money"&gt;The money&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Money is not the limiting factor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal. If financial independence or having shiny things is a goal, this environment makes it a lot easier.&lt;/p&gt;
+&lt;h3 id="big-tech-the-bad"&gt;Big Tech: The Bad&lt;/h3&gt;
+&lt;h3 id="a-small-cog-in-a-big-machine"&gt;A small cog in a big machine&lt;/h3&gt;
+&lt;p&gt;It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didnt move the needle.&lt;/p&gt;
+&lt;h3 id="everything-takes-longer"&gt;Everything takes longer&lt;/h3&gt;
+&lt;p&gt;A straightforward change can take days. Stakeholder approvals, code reviews, teams in different time zones who own different parts of the system all contribute. You will spend a non-trivial amount of your career waiting.&lt;/p&gt;
+&lt;h3 id="growth-can-plateau"&gt;Growth can plateau&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Progress isn’t always tied to ability.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can be the best engineer on your team and still find that the path forward is unclear.&lt;/p&gt;
+&lt;h3 id="big-tech-the-ugly"&gt;Big Tech: The Ugly&lt;/h3&gt;
+&lt;h3 id="performance-reviews-create-strange-incentive"&gt;Performance reviews create strange incentive&lt;/h3&gt;
+&lt;p&gt;Doing work that results in a great performance review is not always the same as doing work that best helps the company. Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally. Doing great work that benefits the company but doesn't &amp;quot;look&amp;quot; like a big individual win can actually hurt your career.&lt;/p&gt;
+&lt;p&gt;In the most pathalogical companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.&lt;/p&gt;
+&lt;h3 id="switching-directions"&gt;Switching Directions&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The pay cut might be hard, but the loss of structure is harder.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The common path is startup to Big Tech, not the other way around. Big Tech teaches you how to build at scale with lots of support. Startups need scrappiness, breadth, and comfort with chaos. Big tech skills don’t always transfer cleanly.&lt;/p&gt;
+&lt;h2 id="what-would-i-do"&gt;What would I do?&lt;/h2&gt;
+&lt;p&gt;If I were early in my career and had both options, I would take Big Tech.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can always leave for a startup later. You can't go back and add the name to your CV.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While it wasn't exactly &amp;quot;Big Tech&amp;quot;, this is why I joined Perot Systems after graduating. It signaled to future employers that I had the skills to be hired by a recognizable company. It was a stamp of approval.&lt;/p&gt;
+&lt;p&gt;A year later, I left to follow my passion - make games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues.  I could take that risk because I had Perot Systems on my CV. It provided me with a saery net and derisked that decision for me.&lt;/p&gt;
+&lt;h2 id="so-which-should-you-choose"&gt;So which should you choose?&lt;/h2&gt;
+&lt;p&gt;If you're early in your career and havent worked for a recognizable company yet, take the opportunity when it comes.  It makes every future job hunt easier.&lt;/p&gt;
+&lt;p&gt;But don't stay so long that you forget how to hustle. They are called &lt;strong&gt;golden handcuffs&lt;/strong&gt; for a reason. I know people who stayed so long they now struggle to move anywhere else except for maybe another big company.&lt;/p&gt;
+&lt;p&gt;Once you have some experience, optimize for learning over compensation. The environments where you're slightly out of your depth are usually the ones that move your career forward fastest. I grew more and learnt more things at First AML than anywhere else.&lt;/p&gt;
+&lt;p&gt;The sweet spot is somewhere between understanding the discipline of a large organisation and still being able to build something from scratch.&lt;/p&gt;
+&lt;p&gt;Where are you in your journey — and which way are you leaning right now? Do you prefer the statbility of a big company or the excitement of wearing ten different hats at a startup?&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordXplorer Update 13: Updated Flip Animation</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-13</link>
       <description>Updated Flip Animation and some code cleanup.</description>
@@ -1729,49 +1815,6 @@ vs
 &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow"&gt;Calling a reusable workflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/marketplace/actions/github-pages-deploy-action"&gt;Github Pages Deploy Action&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/marketplace/actions/delete-artifact"&gt;Delete Artifact Github Action&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>2023 - Q3 Retrospective</title>
-      <link>https://www.ankursheel.com/blog/2023-q3-retrospective</link>
-      <description>At the start of the quarter, I laid out some high-level goals. Here’s how I did against those goals.</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/2023-q3-retrospective-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/2023-q3-retrospective</guid>
-      <pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;At the start of the quarter, I laid out some high-level personal goals. Here’s how I did against those goals.&lt;/p&gt;
-&lt;h4 id="goal-publish-3-blog-posts"&gt;Goal: Publish 3 blog posts&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: I published 4 posts&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How it went&lt;/strong&gt;: &lt;span style="color: green;"&gt;SUCCESS&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I published 4 posts.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/unity-personal-license-manual-activation-workaround"&gt;Workaround for Unity Personal License Manual Activation Not Supported&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/cleaning-up-unnecessary-remote-tracking-references"&gt;Cleaning Up Unnecessary Remote-Tracking References&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/unlock-careers-potential-effective-11-meetings"&gt;Unlock your career's potential with effective 1:1 meetings&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;Unity CI/CD Demystified: Part 1: One-Time Setup&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I also refreshed an old post&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.ankursheel.com/rent-buy-house"&gt;Should I Rent Or Buy a House?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="goal-publish-3-book-summaries"&gt;Goal: Publish 3 book summaries&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: I didnt finish even a single book summary&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How it went&lt;/strong&gt;: &lt;span style="color: red;"&gt;FAILURE&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I need to take out time to write a book summary a month. Maybe I should have spent some time on book summaries instead of the 4th post.&lt;/p&gt;
-&lt;h3 id="goal-explore-ideas-for-a-new-game"&gt;Goal: Explore ideas for a new game&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: I settled on creating a Wordle for Kids and reached out to a few people to gauge interest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How it went&lt;/strong&gt;: &lt;span style="color: orange;"&gt;MEH&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I created a MVP for a 4 letter wordle clone. I shared a &lt;a href="https://tally.so/r/wverVQ"&gt;form&lt;/a&gt; on social media to gauge interest for a Wordle for Kids game. Although, I did not get as many responses as I would have liked, it was enough to validate that people are interested in having an app that has kid appropriate 4 letter words.&lt;/p&gt;
-&lt;h2 id="goals-for-next-month"&gt;Goals for next month&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Publish 3 blog posts on ankursheel.com&lt;/li&gt;
-&lt;li&gt;Publish 3 book summaries on discoveriesinbookland.com&lt;/li&gt;
-&lt;li&gt;Get WordXplorer in the hands of beta testers and get the 1st release out&lt;/li&gt;
-&lt;li&gt;Get 10 more responses to the WordXplorer form&lt;/li&gt;
-&lt;li&gt;Lose 5 kgs&lt;/li&gt;
-&lt;li&gt;25 consecutive pushups&lt;/li&gt;
-&lt;li&gt;50 consecutive squats&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

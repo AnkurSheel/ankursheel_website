@@ -170,16 +170,19 @@
             <a role="button" href="/tags/testing" class="capitalize badge text-gray-900 bg-grey-light no-underline"> testing (10)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (9)</a>
+            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (9)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/career" class="capitalize badge text-gray-900 bg-grey-light no-underline"> career (8)</a>
+            <a role="button" href="/tags/csharp" class="capitalize badge text-gray-900 bg-grey-light no-underline"> csharp (9)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/jah" class="capitalize badge text-gray-900 bg-grey-light no-underline"> JAH (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/middle-east" class="capitalize badge text-gray-900 bg-grey-light no-underline"> Middle East (8)</a>
+        </div>
+        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
+            <a role="button" href="/tags/opinion" class="capitalize badge text-gray-900 bg-grey-light no-underline"> opinion (8)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/postmortem" class="capitalize badge text-gray-900 bg-grey-light no-underline"> postmortem (8)</a>
@@ -195,9 +198,6 @@
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/gatsby" class="capitalize badge text-gray-900 bg-grey-light no-underline"> gatsby (7)</a>
-        </div>
-        <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
-            <a role="button" href="/tags/opinion" class="capitalize badge text-gray-900 bg-grey-light no-underline"> opinion (7)</a>
         </div>
         <div class="flex-initial border-2 border-black p-2 m-2 rounded-xl text">
             <a role="button" href="/tags/website-migration" class="capitalize badge text-gray-900 bg-grey-light no-underline"> website migration (7)</a>

@@ -145,7 +145,7 @@
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
                 datetime="2024-02-08">Feb 08, 2024</time></span>
         <span class="sm:py-0 py-1">
-            Estimated Reading Time: <span class="font-bold">4 min</span>
+            Estimated Reading Time: <span class="font-bold">5 min</span>
         </span>
     </div>
 
@@ -261,7 +261,7 @@
 <blockquote>
 <p>Culture trumps everything else, every single time</p>
 </blockquote>
-<p>After working with some terrible and great companies, I realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy?</p>
+<p>After working with some terrible and some great companies, I have realized that the company culture trumps everything else. After all, I will be spending a giant chunk of my time at the company and no matter how attractive the work is, if I don't like being there, how can I be happy?</p>
 <p>So what does the perfect culture look like?</p>
 <table>
 <thead>
@@ -297,6 +297,7 @@
 </tr>
 </tbody>
 </table>
+<p><em><strong>Note 1:</strong> Since I prefer working remotely. remove 1 point for each day in office. If times are flexible (or you can be in only for meetings/half day), remove 0.5 point for each day.</em></p>
 <h2 id="compensation-and-benefits-35-points">Compensation and Benefits (35 points)</h2>
 <p>I would be lying if I said that money is not important to me. I need to feel that I am fairly compensated for my skills. It's also a good confidence booster to make an above-market-rate salary. Benefits and perks are nice, but they don't pay the bills.</p>
 <p>Unfortunately, many companies feel they can afford to pay less because they work on exciting challenges. This is especially prevalent in the games industry. The ideal company would not give a lowball offer when trying to hire me.</p>
@@ -387,7 +388,7 @@
 <table>
 <thead>
 <tr>
-<th>Breakdown for Learning</th>
+<th>Breakdown for Passion</th>
 <th>Points</th>
 </tr>
 </thead>
@@ -406,7 +407,6 @@
 <ul>
 <li>No relocation (if moving to a new city/country)</li>
 <li>Initial Low-ball Offer.</li>
-<li>Mandatory in-office days.</li>
 <li>Micro Management.</li>
 <li>No Ability to work on side projects after work.</li>
 <li>I don't work with people who have ego trips or feel that others need to cater to their every whim and demand because they are more knowledgeable or in a higher position.</li>

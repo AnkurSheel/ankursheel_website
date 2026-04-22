@@ -135,6 +135,17 @@
 
 <div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
     <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/startup-versus-big-tech-good-bad-ugly" class="text-center prose-2xl mb-4">Startup versus Big Tech: The Good, the Bad, and the Ugly</a>
+        <div class="font-semibold text-center">5 min</div>
+        <p>
+            Startup or Big Tech? Which should you choose? Here&#x2019;s my honest take on the good, the bad, and the ugly of both.
+        </p>
+            <a href="/blog/startup-versus-big-tech-good-bad-ugly" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
+
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
         <a href="/blog/fun-feature-flags" class="text-center prose-2xl mb-4">Fun with (Feature) Flags</a>
         <div class="font-semibold text-center">9 min</div>
         <p>
