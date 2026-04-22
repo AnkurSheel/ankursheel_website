@@ -13,7 +13,9 @@ I’ve spent about two decades bouncing between startups, Big Tech, and everythi
 
 My answer was the same as it is for most engineering questions: **it depends but this is what I would do**.
 
-Both environments have completely different dynamics. They reward different styles and need different skills to be successful. Here’s my honest take on the good, the bad, and the "ugly" of both. 
+Both environments have completely different dynamics. They reward different styles and need different skills to be successful. 
+
+Here’s my honest take on the good, the bad, and the "ugly" of both. 
 
 And if you just want to know what I’d personally do, you can scroll to the end. But I'd urge you to actually figure out what works for you.
 
@@ -26,9 +28,11 @@ And if you just want to know what I’d personally do, you can scroll to the end
 
 ### Ready or Not: You learn fast
 
-> There is no - I don't know how to to do that. 
+> There is no - I don't know how to do that. 
 
-Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to. You jump in where needed, even when you don't have a clue what you're doing.
+Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to. 
+
+You jump in where needed, even when you don't have a clue what you're doing.
 
 At First AML, I touched everything: backend systems, developer tooling, processes, just whatever needed to be done. That kind of environment broadens your expertise incredibly fast.
 
@@ -50,17 +54,21 @@ The flip side of "you learn fast" is that there's often nobody to learn from. Wh
 
 > Startup Equity is Monopoly Money
 
-Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it. Most exercise windows are short enough that leaving early means walking away from everything that you are "promised". You have no control over dilution or what kind of exit the company pursues.
+Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it. 
+
+Most exercise windows are short enough that leaving early means walking away from everything that you are "promised". You have no control over dilution or what kind of exit the company pursues.
 
 ## Startups: The Ugly
 
 ### Money Problems
 
-Several startups I worked at had payroll problems. Salaries were delayed for months on end. Holidays cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.
+Several startups I worked at had payroll problems. Salaries were delayed for months on end. 
+
+Holidays were cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.
 
 ### Most of them fail
 
-This is not a hot take. Startups fail. The earlier they are in the lifescycle, higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.
+This is not a hot take. Startups fail. The earlier they are in the lifecycle, the higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.
  
 You might have little to show when the company folds.
 
@@ -74,19 +82,23 @@ Having a big name on your CV opens doors before a recruiter even looks at your s
 
 Big Tech teaches a different kind of engineering: depth, rigor, and long‑term thinking.
 
-At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before. I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.
+At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before. 
+
+I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.
 
 ### The money
 
 > Money is not the limiting factor.
 
-Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal. If financial independence or having shiny things is a goal, this environment makes it a lot easier.
+Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal. 
+
+If financial independence or having shiny things is a goal, this environment makes it a lot easier.
 
 ### Big Tech: The Bad  
 
 ###  A small cog in a big machine
 
-It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didnt move the needle.
+It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didn't move the needle.
 
 ### Everything takes longer
 
@@ -102,9 +114,13 @@ You can be the best engineer on your team and still find that the path forward i
 
 ### Performance reviews create strange incentive
 
-Doing work that results in a great performance review is not always the same as doing work that best helps the company. Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally. Doing great work that benefits the company but doesn't "look" like a big individual win can actually hurt your career.
+> Doing work that results in a great performance review is not always the same as doing work that best helps the company. 
 
-In the most pathalogical companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.
+Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally. 
+
+Doing great work that benefits the company but doesn't "look" like a big individual win can actually hurt your career.
+
+In the most pathological companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.
 
 ### Switching Directions
 
@@ -120,7 +136,9 @@ If I were early in my career and had both options, I would take Big Tech.
 
 While it wasn't exactly "Big Tech", this is why I joined Perot Systems after graduating. It signaled to future employers that I had the skills to be hired by a recognizable company. It was a stamp of approval.
 
-A year later, I left to follow my passion - make games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues.  I could take that risk because I had Perot Systems on my CV. It provided me with a saery net and derisked that decision for me.
+A year later, I left to follow my passion - making games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues. 
+
+I could take that risk because I had Perot Systems on my CV. It provided me with a safety net and derisked that decision for me.
 
 ## So which should you choose?
 
@@ -128,8 +146,14 @@ If you're early in your career and havent worked for a recognizable company yet,
 
 But don't stay so long that you forget how to hustle. They are called **golden handcuffs** for a reason. I know people who stayed so long they now struggle to move anywhere else except for maybe another big company. 
 
-Once you have some experience, optimize for learning over compensation. The environments where you're slightly out of your depth are usually the ones that move your career forward fastest. I grew more and learnt more things at First AML than anywhere else. 
+Once you have some experience, optimize for learning over compensation. 
+
+The environments where you're slightly out of your depth are usually the ones that move your career forward fastest.
+
+I grew more and learnt more things at First AML than anywhere else. 
+
+## Conclusion
 
 The sweet spot is somewhere between understanding the discipline of a large organisation and still being able to build something from scratch.
 
-Where are you in your journey — and which way are you leaning right now? Do you prefer the statbility of a big company or the excitement of wearing ten different hats at a startup?
+Where are you in your journey, and which way are you leaning right now? Do you prefer the stability of a big company or the excitement of wearing ten different hats at a startup? Or are you just there for the free snacks?
