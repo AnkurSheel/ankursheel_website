@@ -1,0 +1,499 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen scroll-pt-24">
+<head>
+    
+
+<title>Defining Good: Why Your Engineering Team Needs Testing Guidelines</title>
+<meta charset="utf-8"/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="It&#x2019;s not that engineers don&#x2019;t know how to write tests. It&#x2019;s that they&#x2019;ve never actually agreed on what &#x27;good&#x27; means for their team. Here are some guidelines I try to follow in every project."/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/defining-good-engineering-team-needs-testing-guidelines"/>   
+<meta itemProp="name" content="Defining Good: Why Your Engineering Team Needs Testing Guidelines"/>
+<meta itemProp="description" content="It&#x2019;s not that engineers don&#x2019;t know how to write tests. It&#x2019;s that they&#x2019;ve never actually agreed on what &#x27;good&#x27; means for their team. Here are some guidelines I try to follow in every project."/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/defining-good-engineering-team-needs-testing-guidelines-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/defining-good-engineering-team-needs-testing-guidelines"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Defining Good: Why Your Engineering Team Needs Testing Guidelines"/>
+<meta property="og:description" content="It&#x2019;s not that engineers don&#x2019;t know how to write tests. It&#x2019;s that they&#x2019;ve never actually agreed on what &#x27;good&#x27; means for their team. Here are some guidelines I try to follow in every project."/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/defining-good-engineering-team-needs-testing-guidelines-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/defining-good-engineering-team-needs-testing-guidelines-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="Defining Good: Why Your Engineering Team Needs Testing Guidelines"/>
+<meta name="twitter:description" content="It&#x2019;s not that engineers don&#x2019;t know how to write tests. It&#x2019;s that they&#x2019;ve never actually agreed on what &#x27;good&#x27; means for their team. Here are some guidelines I try to follow in every project."/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/defining-good-engineering-team-needs-testing-guidelines-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/defining-good-engineering-team-needs-testing-guidelines-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
+<header class="sticky top-0 bg-white shadow-lg z-10 w-full">
+    
+<nav x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 md:px-8">
+    <div class="flex flex-col items-start">
+        <div class="flex flex-row items-center justify-between font-semibold w-full">
+            <a href="/"
+               class="navigation-link text-lg hover:invert-0 text-gray-900 uppercase rounded-lg focus:outline-none">Ankur Sheel</a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" x-on:click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="pb-4 flex items-center">
+            
+<div class="flex">
+    <a class="" href="https://twitter.com/ankur_sheel" title="Connect on Twitter"
+       target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15" class="h-4">
+            <path fill="currentColor" fill-rule="evenodd"
+                  d="M7.233 4.696c0-1.727 1.4-3.127 3.127-3.127 1.014 0 1.823.479 2.365 1.175a5.246 5.246 0 0 0 1.626-.629 2.634 2.634 0 0 1-1.148 1.45l.002.003a5.26 5.26 0 0 0 1.5-.413l-.001.002c-.337.505-.76.95-1.248 1.313.026.177.04.354.04.53 0 3.687-2.809 7.975-7.975 7.975a7.93 7.93 0 0 1-4.296-1.26.5.5 0 0 1-.108-.748.45.45 0 0 1 .438-.215c.916.108 1.83-.004 2.637-.356a3.086 3.086 0 0 1-1.69-1.876.45.45 0 0 1 .103-.448 3.07 3.07 0 0 1-1.045-2.31v-.034a.45.45 0 0 1 .365-.442 3.068 3.068 0 0 1-.344-1.416c0-.468.003-1.058.332-1.59a.45.45 0 0 1 .323-.208.5.5 0 0 1 .538.161 6.964 6.964 0 0 0 4.46 2.507v-.044Zm-1.712 7.279a6.936 6.936 0 0 1-2.249-.373 5.318 5.318 0 0 0 2.39-1.042.45.45 0 0 0-.27-.804 2.174 2.174 0 0 1-1.714-.888c.19-.015.376-.048.556-.096a.45.45 0 0 0-.028-.876 2.18 2.18 0 0 1-1.644-1.474c.2.048.409.077.623.084a.45.45 0 0 0 .265-.824 2.177 2.177 0 0 1-.97-1.812c0-.168.003-.317.013-.453a7.95 7.95 0 0 0 5.282 2.376.5.5 0 0 0 .513-.61 2.127 2.127 0 0 1 2.071-2.614c1.234 0 2.136 1.143 2.136 2.432 0 3.256-2.476 6.974-6.975 6.974Z"
+                  clip-rule="evenodd"/>
+        </svg>
+    </a>
+    <a class="ml-4" href="https://www.linkedin.com/in/ankursheel"
+       title="View my LinkedIn profile" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-4">
+            <path fill="currentColor"
+                  d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/>
+        </svg>
+    </a>
+
+    <a class="ml-4" href="https://github.com/AnkurSheel" title="Check out my work on Github"
+       target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15" class="h-4">
+            <path fill="currentColor" fill-rule="evenodd"
+                  d="M7.5.85a6.65 6.65 0 0 0-2.102 12.96c.332.061.454-.144.454-.32 0-.159-.006-.576-.01-1.131-1.849.401-2.24-.892-2.24-.892-.302-.768-.738-.973-.738-.973-.604-.412.046-.404.046-.404.667.047 1.018.685 1.018.685.594 1.017 1.557.723 1.936.553.06-.43.232-.723.422-.889-1.477-.168-3.029-.738-3.029-3.287 0-.726.26-1.319.685-1.784-.069-.168-.297-.844.065-1.76 0 0 .558-.179 1.828.681A6.41 6.41 0 0 1 7.5 4.066a6.394 6.394 0 0 1 1.665.223c1.27-.86 1.827-.68 1.827-.68.363.915.135 1.59.066 1.759.427.465.684 1.058.684 1.784 0 2.555-1.555 3.117-3.036 3.282.238.205.45.611.45 1.232 0 .888-.007 1.605-.007 1.823 0 .178.12.385.457.32A6.652 6.652 0 0 0 7.499.85Z"
+                  clip-rule="evenodd"/>
+        </svg>
+    </a>
+
+
+    <a class="ml-4" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-4">
+            <path
+                d="M6.503 20.752A3.25 3.25 0 0 1 3.252 24 3.25 3.25 0 0 1 0 20.752a3.25 3.25 0 0 1 3.252-3.248 3.25 3.25 0 0 1 3.251 3.248zM0 8.18v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817C15.777 15.29 8.721 8.242 0 8.18zm0-3.368C10.58 4.858 19.152 13.406 19.183 24H24C23.97 10.769 13.245.046 0 0v4.812z"
+                fill="currentColor"/>
+        </svg>
+    </a>
+</div>
+
+        </div>
+    </div>
+    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 items-center md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        
+
+    <li class="navigation-link">
+            <div x-on:click.away="open = false" class="relative" x-data="{ open: false }">
+                <button x-on:click="open = !open" class="flex flex-row items-center w-full text-left bg-transparent font-semibold md:w-auto md:inline md:ml-4 hover:text-gray-900">
+                    <span>About</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                    <div class="px-2 py-2 bg-white rounded-md shadow">
+                                    <a class="block hover:invert-0 navigation-link" href="/about">About</a>
+                                    <a class="block hover:invert-0 navigation-link" href="/impossible-list">Impossible List</a>
+                                    <a class="block hover:invert-0 navigation-link" href="https://www.discoveriesinbookland.com/" target="_blank">Book Summaries</a>
+                    </div>
+                </div>
+            </div>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/blog">Blog</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/tags">Tags</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/cv">CV</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/contact">Contact</a>
+    </li>
+
+    </ul>
+</nav>
+
+</header>
+
+<main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
+    <h1 class="text-center">Defining Good: Why Your Engineering Team Needs Testing Guidelines</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="prose-sm italic">
+    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
+        <span class="mr-4 sm:py-0 py-1">Published on <time
+                datetime="2026-06-09">Jun 09, 2026</time></span>
+        <span class="mr-4 sm:py-0 py-1">Last Updated on <time
+                datetime="2026-06-09">Jun 09, 2026</time></span>
+        <span class="sm:py-0 py-1">
+            Estimated Reading Time: <span class="font-bold">6 min</span>
+        </span>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <a href="/tags/testing" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">testing</a>
+    </div>
+</div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#core-testing-philosophies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Core Testing Philosophies</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#test-both-sides-of-your-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Test Both Sides of Your Feature Flags</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#optimize-for-readability-over-dry" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Optimize for Readability over DRY</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#test-names-should-convey-the-behaviour" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Test names should convey the behaviour</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#keep-flag-logic-out-of-parameterized-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Keep Flag Logic Out of Parameterized Tests</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#structure-every-test-as-arrange--act--assert" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Structure every test as Arrange &#x2192; Act &#x2192; Assert</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#leave-private-methods-alone" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Leave Private Methods Alone</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#no-branching-in-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">No branching in tests</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#avoid-spies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Avoid spies</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#use-test-doubles-in-integration-tests-not-mocks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Use test doubles in integration tests, not mocks</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#setup" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Setup</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#keep-setup-code-relevant-to-the-assertion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Keep Setup Code Relevant to the Assertion</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#start-from-the-minimum-for-database-dependent-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Start from the minimum for database-dependent tests</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#assertions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Assertions</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#assert-one-concept-per-test" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Assert one concept per test</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#assert-on-properties-not-object-equality" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Assert on properties, not object equality</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#use-assertmultiple-for-multiple-assertions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Use  for multiple assertions</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#verify-what-matters-ignore-what-doesnt" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Verify what matters, ignore what doesn&#x27;t</a>
+                        </li>
+                        <li class="ml-8">
+                            <a href="#a-starting-point-not-a-finish-line" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">A starting point, not a finish line</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#core-testing-philosophies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Core Testing Philosophies</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#test-both-sides-of-your-feature-flags" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Test Both Sides of Your Feature Flags</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#optimize-for-readability-over-dry" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Optimize for Readability over DRY</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#test-names-should-convey-the-behaviour" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Test names should convey the behaviour</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#keep-flag-logic-out-of-parameterized-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Keep Flag Logic Out of Parameterized Tests</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#structure-every-test-as-arrange--act--assert" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Structure every test as Arrange &#x2192; Act &#x2192; Assert</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#leave-private-methods-alone" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Leave Private Methods Alone</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#no-branching-in-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">No branching in tests</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#avoid-spies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Avoid spies</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#use-test-doubles-in-integration-tests-not-mocks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Use test doubles in integration tests, not mocks</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#setup" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Setup</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#keep-setup-code-relevant-to-the-assertion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Keep Setup Code Relevant to the Assertion</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#start-from-the-minimum-for-database-dependent-tests" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Start from the minimum for database-dependent tests</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#assertions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Assertions</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#assert-one-concept-per-test" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Assert one concept per test</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#assert-on-properties-not-object-equality" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Assert on properties, not object equality</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#use-assertmultiple-for-multiple-assertions" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Use  for multiple assertions</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#verify-what-matters-ignore-what-doesnt" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Verify what matters, ignore what doesn&#x27;t</a>
+                    </li>
+                    <li class="ml-8">
+                        <a href="#a-starting-point-not-a-finish-line" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">A starting point, not a finish line</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+<p>Whenever I join a new team, unless there are written guidelines, every person has a different opinion on what good tests look like. The codebase ends up inconsistent and the same debates cycle endlessly till everyone gives up.</p>
+<p>And lets be honest, some engineers still write tests just to tick a checkbox and meet a requirement.</p>
+<blockquote>
+<p>It’s not that we don't know how to write tests. It's that we’ve never actually agreed on what <strong>good</strong> means for our team.</p>
+</blockquote>
+<p>While guidelines might sound like unnecessary bureaucracy, in practice they offer a lot of advantages:</p>
+<ul>
+<li>They reduce cognitive load for both authors and reviewers by providing a clear set of standards to lean on and reference.</li>
+<li>They ensure long-term readability, making it easy to pick up a test someone else wrote six months ago and actually understand what it's doing.</li>
+<li>They speed up writing by eliminating the endless micro-decisions that don’t actually add value.</li>
+<li>They make your codebase AI-friendly. Hand these guidelines over to an AI coding agent, and it will write tests exactly how you expect them.</li>
+</ul>
+<p>I highly recommend every team come up with their own. These are mine. While they have been sourced from the many companies I have worked at, I have also adapted them heavily for my personal projects. Feel free to use them as a starting point or adopt them wholesale.</p>
+<p><em>Disclaimer: No mock objects or QA engineers were harmed in the making of these guidelines. If you are deeply emotionally attached to <code>HappyPath</code> as a test name, please consult your local reviewer before reading further.</em></p>
+<p><img src="/assets/images/posts/defining-good-engineering-team-needs-testing-guidelines/testing_guidelines.png" alt="Chaos to Organised" /></p>
+<h2 id="core-testing-philosophies">Core Testing Philosophies</h2>
+<h3 id="test-both-sides-of-your-feature-flags">Test Both Sides of Your Feature Flags</h3>
+<p>Always write tests for both the flag-off path and the flag-on path. If testing the flag off scenario is too difficult, document exactly why, note what is missing, and make sure to manually test the scenario.</p>
+<h3 id="optimize-for-readability-over-dry">Optimize for Readability over DRY</h3>
+<blockquote>
+<p>A good test suite should read like a <strong>Lego instruction manual</strong>. Every step is laid out sequentially, is self-contained, and is completely obvious.</p>
+</blockquote>
+<p>When someone navigates to a test to understand how a piece of code is supposed to behave, they should be able to figure it out quickly. A little duplication in tests is a small price to pay  if it makes the intention obvious.</p>
+<p>Think of your test suite as executable documentation.</p>
+<h3 id="test-names-should-convey-the-behaviour">Test names should convey the behaviour</h3>
+<p>A test name like <code>GetUser_HappyPath</code> tells me nothing. What is the happy path? What does success look like? Unless I look at the test body and the underlying implementation, I have no idea what it is doing.</p>
+<p>Better names express the <em>state</em> and the <em>expected outcome</em>:</p>
+<ul>
+<li><code>GetUser_HappyPath</code> → <code>CanRetrieveUserById</code></li>
+<li><code>GetUser_ReturnsError</code> → <code>WhenUserNotFoundReturnsNotFoundError</code></li>
+</ul>
+<p>I have written about this in more detail at <a href="https://www.ankursheel.com/blog/better-naming-convention-unit-tests">A better naming convention for unit tests</a></p>
+<h3 id="keep-flag-logic-out-of-parameterized-tests">Keep Flag Logic Out of Parameterized Tests</h3>
+<p>It is incredibly difficult to convey what a test is actually doing when you rely on boolean parameters to toggle flags inside the test cases. Keep flag paths in separate, explicitly named tests instead.</p>
+<p>Since you will eventually delete the flag-off path, it is perfectly fine to add a <code>_FlagOff</code> suffix to the test that will eventually be removed.</p>
+<h3 id="structure-every-test-as-arrange-act-assert">Structure every test as Arrange → Act → Assert</h3>
+<p>Each test should have one setup phase, one action, and one set of assertions. If you find yourself doing Arrange → Act → Assert → Act → Assert, you have two tests trying to live inside one. Split them up.</p>
+<h3 id="leave-private-methods-alone">Leave Private Methods Alone</h3>
+<p>Private methods are implementation details. You should test the public methods that call them.</p>
+<p>The rare exception to this rule is when testing a highly specific, complex internal behaviour. An example of this is when I wanted to test batching logic for a SQL query with pagination. Since the batch was a constant of 10,000, testing it via the public method would have been extremely painful.</p>
+<h3 id="no-branching-in-tests">No branching in tests</h3>
+<p>An <code>if</code> statement inside a test makes it harder to understand and significantly harder to debug when it fails. Instead, pull the shared code into a helper method and write two separate, clean tests.</p>
+<h3 id="avoid-spies">Avoid spies</h3>
+<blockquote>
+<p>Needing a spy is usually a design smell.</p>
+</blockquote>
+<p>A spy wraps a real object and lets you verify which calls were made on it. Using one suggests your code is doing something internally that isn't represented by a clean interface.</p>
+<p>The right fix is almost always to extract that dependency and inject it as a mock or test double instead. However, if you are working in a legacy codebase and can't easily restructure the code, use the spy but leave a comment explaining why. This forces you to articulate why there was no better option and saves the next developer from wondering why it's there.</p>
+<h3 id="use-test-doubles-in-integration-tests-not-mocks">Use test doubles in integration tests, not mocks</h3>
+<p>Integration tests verify that your components work together correctly. When you mock a dependency, you replace real behaviour with a scripted response. If your assumptions about how that dependency behaves are wrong, your tests will pass while production breaks.</p>
+<p>Fakes and stubs actually implement the behaviour, just in a simpler way. For example, a fake email service that stores sent emails in memory still behaves like an actual email service.</p>
+<p>I have written about the different options at <a href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies">Stubs vs Mocks vs Fakes vs Spy</a>.</p>
+<h2 id="setup">Setup</h2>
+<h3 id="keep-setup-code-relevant-to-the-assertion">Keep Setup Code Relevant to the Assertion</h3>
+<p>If setup code is unrelated to what you are asserting in a specific test, move it into a helper method. Parameterise your helper methods so it is immediately clear what is unique about the current test.</p>
+<p>However, if removing the setup from the test body altogether makes the test harder to follow, keep it inline.</p>
+<pre><code class="language-csharp">var user = CreateValidUser(id: &quot;invalidId&quot;);
+
+userService.Validate(user);
+</code></pre>
+<h3 id="start-from-the-minimum-for-database-dependent-tests">Start from the minimum for database-dependent tests</h3>
+<p>For tests that rely on the database being in a specific state, start from the minimum setup required for the application to run, and build up the state directly inside the test.  This keeps dependencies explicit and prevents a change in shared test data from breaking tests.</p>
+<h2 id="assertions">Assertions</h2>
+<h3 id="assert-one-concept-per-test">Assert one concept per test</h3>
+<p>Asserting one concept does not mean you are restricted to a single assertion line. A test called <code>CanRetrieveUserById</code> can comfortably assert on multiple returned fields:</p>
+<pre><code class="language-csharp">var user = userService.GetUser();
+
+Assert.Equal(&quot;id&quot;, user.Id);
+Assert.Equal(&quot;name&quot;, user.Name);
+</code></pre>
+<p>What it <em>shouldn't</em> do is also verify that an underlying analytics service was called during the retrieval. That is a separate concept and should live in its own test.</p>
+<h3 id="assert-on-properties-not-object-equality">Assert on properties, not object equality</h3>
+<p>When you assert on object equality, you are at the mercy of how <code>Equals</code> is overridden on that class.. You're trusting that whoever wrote it checked every field you care about.</p>
+<p>Asserting on properties directly means your test is explicit about what it actually cares about. When it fails, you know exactly which field is wrong.</p>
+<p>Avoid this:</p>
+<pre><code class="language-csharp">var expected = new User
+{
+    Id = &quot;id&quot;,
+    Name = &quot;name&quot;
+};
+
+var user = userService.GetUser();
+
+Assert.Equal(expected, response);
+</code></pre>
+<p>Do this instead:</p>
+<p>csharp</p>
+<pre><code class="language-csharp">var user = userService.GetUser();
+
+Assert.Equal(&quot;id&quot;, user.Id);
+Assert.Equal(&quot;name&quot;, user.Name);
+</code></pre>
+<p><em><strong>Exception</strong></em>: If you want to catch the case where someone adds a new field and forgets to handle it, create an explicit <code>AllFieldsAreSetCorrectly</code> test and use object equality there intentionally.</p>
+<h3 id="use-assert.multiple-for-multiple-assertions">Use <code>Assert.Multiple</code> for multiple assertions</h3>
+<p>If a test has multiple assertions and fails, you want to see all the failures at once, not just the first one that blocked the run.</p>
+<p>xUnit 3 has <code>Assert.Multiple</code> and <code>Assert.MultipleAsync</code> built in for this. For older versions, I put together <a href="https://github.com/AnkurSheel/xUnitHelpers">xUnitHelpers</a>, a small NuGet package with helpers I  I found myself writing from scratch on almost every project.</p>
+<h3 id="verify-what-matters-ignore-what-doesnt">Verify what matters, ignore what doesn't</h3>
+<p>If your code delegates an important, state-changing call to a mocked dependency, verify it explicitly. But avoid verifying every single interaction or assertion on unrelated dependencies. It only makes your tests brittle.</p>
+<h1 id="a-starting-point-not-a-finish-line">A starting point, not a finish line</h1>
+<p>I'm not suggesting you adopt these exact guidelines wholesale. Every team has different constraints, languages, and codebases.</p>
+<p>But next time a code review devolves into a circular argument about test names or assertion styles, ask yourself:</p>
+<blockquote>
+<p>Is the real problem just that nobody ever wrote the expectations down?</p>
+</blockquote>
+<p>Pick a starting point, document it, and iterate. The goal isn’t a perfect document on day one. It’s simply having a shared standard to point to.</p>
+<p>Note that these are guidelines, not rigid rules. Treat your guidelines as a living document, and update them as your team learns and evolves.</p>
+<p>What is one rule on this list you disagree with, or one guideline your team swears by that I missed? Let's discuss in the comments below!</p>
+
+
+
+
+<aside class="m-2">
+    <div class="my-6 flex justify-center gap-5 flex-wrap">
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/defining-good-engineering-team-needs-testing-guidelines&text=Defining%20Good%3A%20Why%20Your%20Engineering%20Team%20Needs%20Testing%20Guidelines via @ankur_sheel.&#xD;&#xA;It%E2%80%99s%20not%20that%20engineers%20don%E2%80%99t%20know%20how%20to%20write%20tests.%20It%E2%80%99s%20that%20they%E2%80%99ve%20never%20actually%20agreed%20on%20what%20%27good%27%20means%20for%20their%20team.%20Here%20are%20some%20guidelines%20I%20try%20to%20follow%20in%20every%20project." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/defining-good-engineering-team-needs-testing-guidelines" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+    </div>
+</aside>
+
+
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">You might also like</h2>
+
+    <ul>
+            <li>
+                <a href="verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
+            </li>
+            <li>
+                <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
+            </li>
+            <li>
+                <a href="difference-stubs-mocks-fakes-spies">Stubs vs Mocks vs Fakes vs Spy</a>
+            </li>
+            <li>
+                <a href="better-naming-convention-unit-tests">A better naming convention for unit tests</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+            <p class="mt-2 text-2xl font-bold text-center">Want to know when a new post comes out?</p>
+            <div class="flex gap-4 items-center justify-center flex-wrap">
+                <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0 required" aria-label="First Name" name="FNAME" required="" placeholder="First Name" type="text" id="mce-FNAME"/>
+                <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0 required email" name="EMAIL" aria-label="Email Address" placeholder="Email Address" required="" type="email" id="mce-EMAIL"/>
+                <button class="px-3 py-2 text-white bg-green-400 rounded-md focus:bg-indigo-600 focus:outline-none flex-none" type="submit">Subscribe</button>
+                <input type="checkbox" class="hidden" value="1" name="group[52461][1]" id="mce-group[52461]-52461-0" checked>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_d88459c290a1a8d98ad780bbc_31e4ebb75b" tabindex="-1" value="">
+                </div>
+                <div >
+                    <a href="http://eepurl.com/hRcTAL" title="Mailchimp - email marketing made easy and fun">
+                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</aside>
+
+
+<footer>
+    <script src="https://giscus.app/client.js"
+        data-repo="AnkurSheel/blog-comments"
+        data-repo-id="R_kgDOIAUZqA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIAUZqM4CRdIF"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+
+</footer>
+
+        </article>
+    </div>
+</main>
+
+
+
+<script src="/assets/js/blog.js" defer></script>
+<script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
+
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="ankursheel" data-description="Support me on Buy me a coffee!"
+        data-message="Did you learn something? Buy me a coffee" data-color="#FF813F"
+        data-position="Right" data-x_margin="18" data-y_margin="18" defer>
+</script>
+
+
+</body>
+</html>

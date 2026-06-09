@@ -8,6 +8,123 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>Defining Good: Why Your Engineering Team Needs Testing Guidelines</title>
+      <link>https://www.ankursheel.com/blog/defining-good-engineering-team-needs-testing-guidelines</link>
+      <description>It’s not that engineers don’t know how to write tests. It’s that they’ve never actually agreed on what 'good' means for their team. Here are some guidelines I try to follow in every project.</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/defining-good-engineering-team-needs-testing-guidelines-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/defining-good-engineering-team-needs-testing-guidelines</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Whenever I join a new team, unless there are written guidelines, every person has a different opinion on what good tests look like. The codebase ends up inconsistent and the same debates cycle endlessly till everyone gives up.&lt;/p&gt;
+&lt;p&gt;And lets be honest, some engineers still write tests just to tick a checkbox and meet a requirement.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s not that we don't know how to write tests. It's that we’ve never actually agreed on what &lt;strong&gt;good&lt;/strong&gt; means for our team.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While guidelines might sound like unnecessary bureaucracy, in practice they offer a lot of advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They reduce cognitive load for both authors and reviewers by providing a clear set of standards to lean on and reference.&lt;/li&gt;
+&lt;li&gt;They ensure long-term readability, making it easy to pick up a test someone else wrote six months ago and actually understand what it's doing.&lt;/li&gt;
+&lt;li&gt;They speed up writing by eliminating the endless micro-decisions that don’t actually add value.&lt;/li&gt;
+&lt;li&gt;They make your codebase AI-friendly. Hand these guidelines over to an AI coding agent, and it will write tests exactly how you expect them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I highly recommend every team come up with their own. These are mine. While they have been sourced from the many companies I have worked at, I have also adapted them heavily for my personal projects. Feel free to use them as a starting point or adopt them wholesale.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer: No mock objects or QA engineers were harmed in the making of these guidelines. If you are deeply emotionally attached to &lt;code&gt;HappyPath&lt;/code&gt; as a test name, please consult your local reviewer before reading further.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/defining-good-engineering-team-needs-testing-guidelines/testing_guidelines.png" alt="Chaos to Organised"&gt;&lt;/p&gt;
+&lt;h2 id="core-testing-philosophies"&gt;Core Testing Philosophies&lt;/h2&gt;
+&lt;h3 id="test-both-sides-of-your-feature-flags"&gt;Test Both Sides of Your Feature Flags&lt;/h3&gt;
+&lt;p&gt;Always write tests for both the flag-off path and the flag-on path. If testing the flag off scenario is too difficult, document exactly why, note what is missing, and make sure to manually test the scenario.&lt;/p&gt;
+&lt;h3 id="optimize-for-readability-over-dry"&gt;Optimize for Readability over DRY&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A good test suite should read like a &lt;strong&gt;Lego instruction manual&lt;/strong&gt;. Every step is laid out sequentially, is self-contained, and is completely obvious.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When someone navigates to a test to understand how a piece of code is supposed to behave, they should be able to figure it out quickly. A little duplication in tests is a small price to pay  if it makes the intention obvious.&lt;/p&gt;
+&lt;p&gt;Think of your test suite as executable documentation.&lt;/p&gt;
+&lt;h3 id="test-names-should-convey-the-behaviour"&gt;Test names should convey the behaviour&lt;/h3&gt;
+&lt;p&gt;A test name like &lt;code&gt;GetUser_HappyPath&lt;/code&gt; tells me nothing. What is the happy path? What does success look like? Unless I look at the test body and the underlying implementation, I have no idea what it is doing.&lt;/p&gt;
+&lt;p&gt;Better names express the &lt;em&gt;state&lt;/em&gt; and the &lt;em&gt;expected outcome&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GetUser_HappyPath&lt;/code&gt; → &lt;code&gt;CanRetrieveUserById&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetUser_ReturnsError&lt;/code&gt; → &lt;code&gt;WhenUserNotFoundReturnsNotFoundError&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have written about this in more detail at &lt;a href="https://www.ankursheel.com/blog/better-naming-convention-unit-tests"&gt;A better naming convention for unit tests&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="keep-flag-logic-out-of-parameterized-tests"&gt;Keep Flag Logic Out of Parameterized Tests&lt;/h3&gt;
+&lt;p&gt;It is incredibly difficult to convey what a test is actually doing when you rely on boolean parameters to toggle flags inside the test cases. Keep flag paths in separate, explicitly named tests instead.&lt;/p&gt;
+&lt;p&gt;Since you will eventually delete the flag-off path, it is perfectly fine to add a &lt;code&gt;_FlagOff&lt;/code&gt; suffix to the test that will eventually be removed.&lt;/p&gt;
+&lt;h3 id="structure-every-test-as-arrange-act-assert"&gt;Structure every test as Arrange → Act → Assert&lt;/h3&gt;
+&lt;p&gt;Each test should have one setup phase, one action, and one set of assertions. If you find yourself doing Arrange → Act → Assert → Act → Assert, you have two tests trying to live inside one. Split them up.&lt;/p&gt;
+&lt;h3 id="leave-private-methods-alone"&gt;Leave Private Methods Alone&lt;/h3&gt;
+&lt;p&gt;Private methods are implementation details. You should test the public methods that call them.&lt;/p&gt;
+&lt;p&gt;The rare exception to this rule is when testing a highly specific, complex internal behaviour. An example of this is when I wanted to test batching logic for a SQL query with pagination. Since the batch was a constant of 10,000, testing it via the public method would have been extremely painful.&lt;/p&gt;
+&lt;h3 id="no-branching-in-tests"&gt;No branching in tests&lt;/h3&gt;
+&lt;p&gt;An &lt;code&gt;if&lt;/code&gt; statement inside a test makes it harder to understand and significantly harder to debug when it fails. Instead, pull the shared code into a helper method and write two separate, clean tests.&lt;/p&gt;
+&lt;h3 id="avoid-spies"&gt;Avoid spies&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Needing a spy is usually a design smell.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A spy wraps a real object and lets you verify which calls were made on it. Using one suggests your code is doing something internally that isn't represented by a clean interface.&lt;/p&gt;
+&lt;p&gt;The right fix is almost always to extract that dependency and inject it as a mock or test double instead. However, if you are working in a legacy codebase and can't easily restructure the code, use the spy but leave a comment explaining why. This forces you to articulate why there was no better option and saves the next developer from wondering why it's there.&lt;/p&gt;
+&lt;h3 id="use-test-doubles-in-integration-tests-not-mocks"&gt;Use test doubles in integration tests, not mocks&lt;/h3&gt;
+&lt;p&gt;Integration tests verify that your components work together correctly. When you mock a dependency, you replace real behaviour with a scripted response. If your assumptions about how that dependency behaves are wrong, your tests will pass while production breaks.&lt;/p&gt;
+&lt;p&gt;Fakes and stubs actually implement the behaviour, just in a simpler way. For example, a fake email service that stores sent emails in memory still behaves like an actual email service.&lt;/p&gt;
+&lt;p&gt;I have written about the different options at &lt;a href="https://www.ankursheel.com/blog/difference-stubs-mocks-fakes-spies"&gt;Stubs vs Mocks vs Fakes vs Spy&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;h3 id="keep-setup-code-relevant-to-the-assertion"&gt;Keep Setup Code Relevant to the Assertion&lt;/h3&gt;
+&lt;p&gt;If setup code is unrelated to what you are asserting in a specific test, move it into a helper method. Parameterise your helper methods so it is immediately clear what is unique about the current test.&lt;/p&gt;
+&lt;p&gt;However, if removing the setup from the test body altogether makes the test harder to follow, keep it inline.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var user = CreateValidUser(id: "invalidId");
+
+userService.Validate(user);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="start-from-the-minimum-for-database-dependent-tests"&gt;Start from the minimum for database-dependent tests&lt;/h3&gt;
+&lt;p&gt;For tests that rely on the database being in a specific state, start from the minimum setup required for the application to run, and build up the state directly inside the test.  This keeps dependencies explicit and prevents a change in shared test data from breaking tests.&lt;/p&gt;
+&lt;h2 id="assertions"&gt;Assertions&lt;/h2&gt;
+&lt;h3 id="assert-one-concept-per-test"&gt;Assert one concept per test&lt;/h3&gt;
+&lt;p&gt;Asserting one concept does not mean you are restricted to a single assertion line. A test called &lt;code&gt;CanRetrieveUserById&lt;/code&gt; can comfortably assert on multiple returned fields:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var user = userService.GetUser();
+
+Assert.Equal("id", user.Id);
+Assert.Equal("name", user.Name);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What it &lt;em&gt;shouldn't&lt;/em&gt; do is also verify that an underlying analytics service was called during the retrieval. That is a separate concept and should live in its own test.&lt;/p&gt;
+&lt;h3 id="assert-on-properties-not-object-equality"&gt;Assert on properties, not object equality&lt;/h3&gt;
+&lt;p&gt;When you assert on object equality, you are at the mercy of how &lt;code&gt;Equals&lt;/code&gt; is overridden on that class.. You're trusting that whoever wrote it checked every field you care about.&lt;/p&gt;
+&lt;p&gt;Asserting on properties directly means your test is explicit about what it actually cares about. When it fails, you know exactly which field is wrong.&lt;/p&gt;
+&lt;p&gt;Avoid this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var expected = new User
+{
+    Id = "id",
+    Name = "name"
+};
+
+var user = userService.GetUser();
+
+Assert.Equal(expected, response);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Do this instead:&lt;/p&gt;
+&lt;p&gt;csharp&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var user = userService.GetUser();
+
+Assert.Equal("id", user.Id);
+Assert.Equal("name", user.Name);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Exception&lt;/strong&gt;&lt;/em&gt;: If you want to catch the case where someone adds a new field and forgets to handle it, create an explicit &lt;code&gt;AllFieldsAreSetCorrectly&lt;/code&gt; test and use object equality there intentionally.&lt;/p&gt;
+&lt;h3 id="use-assert.multiple-for-multiple-assertions"&gt;Use &lt;code&gt;Assert.Multiple&lt;/code&gt; for multiple assertions&lt;/h3&gt;
+&lt;p&gt;If a test has multiple assertions and fails, you want to see all the failures at once, not just the first one that blocked the run.&lt;/p&gt;
+&lt;p&gt;xUnit 3 has &lt;code&gt;Assert.Multiple&lt;/code&gt; and &lt;code&gt;Assert.MultipleAsync&lt;/code&gt; built in for this. For older versions, I put together &lt;a href="https://github.com/AnkurSheel/xUnitHelpers"&gt;xUnitHelpers&lt;/a&gt;, a small NuGet package with helpers I  I found myself writing from scratch on almost every project.&lt;/p&gt;
+&lt;h3 id="verify-what-matters-ignore-what-doesnt"&gt;Verify what matters, ignore what doesn't&lt;/h3&gt;
+&lt;p&gt;If your code delegates an important, state-changing call to a mocked dependency, verify it explicitly. But avoid verifying every single interaction or assertion on unrelated dependencies. It only makes your tests brittle.&lt;/p&gt;
+&lt;h1 id="a-starting-point-not-a-finish-line"&gt;A starting point, not a finish line&lt;/h1&gt;
+&lt;p&gt;I'm not suggesting you adopt these exact guidelines wholesale. Every team has different constraints, languages, and codebases.&lt;/p&gt;
+&lt;p&gt;But next time a code review devolves into a circular argument about test names or assertion styles, ask yourself:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is the real problem just that nobody ever wrote the expectations down?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pick a starting point, document it, and iterate. The goal isn’t a perfect document on day one. It’s simply having a shared standard to point to.&lt;/p&gt;
+&lt;p&gt;Note that these are guidelines, not rigid rules. Treat your guidelines as a living document, and update them as your team learns and evolves.&lt;/p&gt;
+&lt;p&gt;What is one rule on this list you disagree with, or one guideline your team swears by that I missed? Let's discuss in the comments below!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>Startup versus Big Tech: The Good, the Bad, and the Ugly</title>
       <link>https://www.ankursheel.com/blog/startup-versus-big-tech-good-bad-ugly</link>
       <description>Startup or Big Tech? Which should you choose? Here’s my honest take on the good, the bad, and the ugly of both.</description>
@@ -16,7 +133,8 @@
       <pubDate>Wed, 22 Apr 2026 00:00:00 GMT</pubDate>
       <content:encoded>&lt;p&gt;I’ve spent about two decades bouncing between startups, Big Tech, and everything in between. Recently, someone early in their engineering career asked me which path they should take.&lt;/p&gt;
 &lt;p&gt;My answer was the same as it is for most engineering questions: &lt;strong&gt;it depends but this is what I would do&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Both environments have completely different dynamics. They reward different styles and need different skills to be successful. Here’s my honest take on the good, the bad, and the &amp;quot;ugly&amp;quot; of both.&lt;/p&gt;
+&lt;p&gt;Both environments have completely different dynamics. They reward different styles and need different skills to be successful.&lt;/p&gt;
+&lt;p&gt;Here’s my honest take on the good, the bad, and the &amp;quot;ugly&amp;quot; of both.&lt;/p&gt;
 &lt;p&gt;And if you just want to know what I’d personally do, you can scroll to the end. But I'd urge you to actually figure out what works for you.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The stage of business determines what game you are playing in the first place: what the job will be like, who will be successful in it, and the mix of risk and reward you are accepting. So start there.&lt;/p&gt;
@@ -25,9 +143,10 @@
 &lt;h2 id="startups-the-good"&gt;Startups: The Good&lt;/h2&gt;
 &lt;h3 id="ready-or-not-you-learn-fast"&gt;Ready or Not: You learn fast&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;There is no - I don't know how to to do that.&lt;/p&gt;
+&lt;p&gt;There is no - I don't know how to do that.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to. You jump in where needed, even when you don't have a clue what you're doing.&lt;/p&gt;
+&lt;p&gt;Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to.&lt;/p&gt;
+&lt;p&gt;You jump in where needed, even when you don't have a clue what you're doing.&lt;/p&gt;
 &lt;p&gt;At First AML, I touched everything: backend systems, developer tooling, processes, just whatever needed to be done. That kind of environment broadens your expertise incredibly fast.&lt;/p&gt;
 &lt;h3 id="visible-impact"&gt;Visible Impact&lt;/h3&gt;
 &lt;p&gt;Startups are flat. You can influence the direction of the product, push back on decisions, and see the result of your work in the hands of real users quickly.&lt;/p&gt;
@@ -40,27 +159,31 @@
 &lt;blockquote&gt;
 &lt;p&gt;Startup Equity is Monopoly Money&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it. Most exercise windows are short enough that leaving early means walking away from everything that you are &amp;quot;promised&amp;quot;. You have no control over dilution or what kind of exit the company pursues.&lt;/p&gt;
+&lt;p&gt;Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it.&lt;/p&gt;
+&lt;p&gt;Most exercise windows are short enough that leaving early means walking away from everything that you are &amp;quot;promised&amp;quot;. You have no control over dilution or what kind of exit the company pursues.&lt;/p&gt;
 &lt;h2 id="startups-the-ugly"&gt;Startups: The Ugly&lt;/h2&gt;
 &lt;h3 id="money-problems"&gt;Money Problems&lt;/h3&gt;
-&lt;p&gt;Several startups I worked at had payroll problems. Salaries were delayed for months on end. Holidays cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.&lt;/p&gt;
+&lt;p&gt;Several startups I worked at had payroll problems. Salaries were delayed for months on end.&lt;/p&gt;
+&lt;p&gt;Holidays were cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.&lt;/p&gt;
 &lt;h3 id="most-of-them-fail"&gt;Most of them fail&lt;/h3&gt;
-&lt;p&gt;This is not a hot take. Startups fail. The earlier they are in the lifescycle, higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.&lt;/p&gt;
+&lt;p&gt;This is not a hot take. Startups fail. The earlier they are in the lifecycle, the higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.&lt;/p&gt;
 &lt;p&gt;You might have little to show when the company folds.&lt;/p&gt;
 &lt;h2 id="big-tech-the-good"&gt;Big Tech: The good&lt;/h2&gt;
 &lt;h3 id="career-rocket-fuel"&gt;Career rocket fuel&lt;/h3&gt;
 &lt;p&gt;Having a big name on your CV opens doors before a recruiter even looks at your skills. Your skills and expertise is assumed.&lt;/p&gt;
 &lt;h3 id="you-learn-a-different-kind-of-discipline"&gt;You learn a different kind of discipline&lt;/h3&gt;
 &lt;p&gt;Big Tech teaches a different kind of engineering: depth, rigor, and long‑term thinking.&lt;/p&gt;
-&lt;p&gt;At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before. I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.&lt;/p&gt;
+&lt;p&gt;At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before.&lt;/p&gt;
+&lt;p&gt;I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.&lt;/p&gt;
 &lt;h3 id="the-money"&gt;The money&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Money is not the limiting factor.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal. If financial independence or having shiny things is a goal, this environment makes it a lot easier.&lt;/p&gt;
+&lt;p&gt;Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal.&lt;/p&gt;
+&lt;p&gt;If financial independence or having shiny things is a goal, this environment makes it a lot easier.&lt;/p&gt;
 &lt;h3 id="big-tech-the-bad"&gt;Big Tech: The Bad&lt;/h3&gt;
 &lt;h3 id="a-small-cog-in-a-big-machine"&gt;A small cog in a big machine&lt;/h3&gt;
-&lt;p&gt;It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didnt move the needle.&lt;/p&gt;
+&lt;p&gt;It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didn't move the needle.&lt;/p&gt;
 &lt;h3 id="everything-takes-longer"&gt;Everything takes longer&lt;/h3&gt;
 &lt;p&gt;A straightforward change can take days. Stakeholder approvals, code reviews, teams in different time zones who own different parts of the system all contribute. You will spend a non-trivial amount of your career waiting.&lt;/p&gt;
 &lt;h3 id="growth-can-plateau"&gt;Growth can plateau&lt;/h3&gt;
@@ -70,8 +193,12 @@
 &lt;p&gt;You can be the best engineer on your team and still find that the path forward is unclear.&lt;/p&gt;
 &lt;h3 id="big-tech-the-ugly"&gt;Big Tech: The Ugly&lt;/h3&gt;
 &lt;h3 id="performance-reviews-create-strange-incentive"&gt;Performance reviews create strange incentive&lt;/h3&gt;
-&lt;p&gt;Doing work that results in a great performance review is not always the same as doing work that best helps the company. Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally. Doing great work that benefits the company but doesn't &amp;quot;look&amp;quot; like a big individual win can actually hurt your career.&lt;/p&gt;
-&lt;p&gt;In the most pathalogical companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Doing work that results in a great performance review is not always the same as doing work that best helps the company.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally.&lt;/p&gt;
+&lt;p&gt;Doing great work that benefits the company but doesn't &amp;quot;look&amp;quot; like a big individual win can actually hurt your career.&lt;/p&gt;
+&lt;p&gt;In the most pathological companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.&lt;/p&gt;
 &lt;h3 id="switching-directions"&gt;Switching Directions&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The pay cut might be hard, but the loss of structure is harder.&lt;/p&gt;
@@ -83,13 +210,17 @@
 &lt;p&gt;You can always leave for a startup later. You can't go back and add the name to your CV.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;While it wasn't exactly &amp;quot;Big Tech&amp;quot;, this is why I joined Perot Systems after graduating. It signaled to future employers that I had the skills to be hired by a recognizable company. It was a stamp of approval.&lt;/p&gt;
-&lt;p&gt;A year later, I left to follow my passion - make games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues.  I could take that risk because I had Perot Systems on my CV. It provided me with a saery net and derisked that decision for me.&lt;/p&gt;
+&lt;p&gt;A year later, I left to follow my passion - making games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues.&lt;/p&gt;
+&lt;p&gt;I could take that risk because I had Perot Systems on my CV. It provided me with a safety net and derisked that decision for me.&lt;/p&gt;
 &lt;h2 id="so-which-should-you-choose"&gt;So which should you choose?&lt;/h2&gt;
 &lt;p&gt;If you're early in your career and havent worked for a recognizable company yet, take the opportunity when it comes.  It makes every future job hunt easier.&lt;/p&gt;
 &lt;p&gt;But don't stay so long that you forget how to hustle. They are called &lt;strong&gt;golden handcuffs&lt;/strong&gt; for a reason. I know people who stayed so long they now struggle to move anywhere else except for maybe another big company.&lt;/p&gt;
-&lt;p&gt;Once you have some experience, optimize for learning over compensation. The environments where you're slightly out of your depth are usually the ones that move your career forward fastest. I grew more and learnt more things at First AML than anywhere else.&lt;/p&gt;
+&lt;p&gt;Once you have some experience, optimize for learning over compensation.&lt;/p&gt;
+&lt;p&gt;The environments where you're slightly out of your depth are usually the ones that move your career forward fastest.&lt;/p&gt;
+&lt;p&gt;I grew more and learnt more things at First AML than anywhere else.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;The sweet spot is somewhere between understanding the discipline of a large organisation and still being able to build something from scratch.&lt;/p&gt;
-&lt;p&gt;Where are you in your journey — and which way are you leaning right now? Do you prefer the statbility of a big company or the excitement of wearing ten different hats at a startup?&lt;/p&gt;
+&lt;p&gt;Where are you in your journey, and which way are you leaning right now? Do you prefer the stability of a big company or the excitement of wearing ten different hats at a startup? Or are you just there for the free snacks?&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
@@ -1567,7 +1698,7 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Achieving a high level of confidence often proves challenging when dealing with a PR that consists of a single commit with a large diff.&lt;/p&gt;
 &lt;p&gt;If you've ever received such a PR, you've likely stared at it, wondering where to begin. This confusion is often followed by your decision to set it aside for later, only to be reminded by the author again.&lt;/p&gt;
-&lt;img src="https://media2.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
+&lt;img src="https://media1.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" width="480" height="480"&gt;
 &lt;p&gt;What if I told you that this issue could be resolved with a minor adjustment in the way we create a PR?&lt;/p&gt;
 &lt;p&gt;Split the commit into &lt;strong&gt;small&lt;/strong&gt; &lt;strong&gt;individual&lt;/strong&gt; commits that make &lt;strong&gt;logical sense&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1706,116 +1837,6 @@ vs
 &lt;/blockquote&gt;
 &lt;p&gt;Breaking a PR with one large commit into smaller individual commits that make logical sense provides a nice stepping stone to be able to split into smaller PR's.&lt;/p&gt;
 &lt;p&gt;Is there any reason why we &lt;strong&gt;shouldn't&lt;/strong&gt; be putting in the effort to make smaller commits and writing better commit messages?&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Unity CI/CD Demystified: Part 4: Deploying WebGL Builds to GitHub Pages</title>
-      <link>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</link>
-      <description>In Part 4, I show how to deploy a Unity projects to GitHub Pages</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/unity-cicd-deploying-webgl-github-pages-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/unity-cicd-deploying-webgl-github-pages</guid>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;In Part 1, we finished the &lt;a href="https://www.ankursheel.com/unity-cicd-one-time-setup"&gt;setup to start creating our CI/CD pipeline&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In Part 2, we created a workflow to run our &lt;a href="https://www.ankursheel.com/unity-cicd-trigger-events-tests"&gt;automated tests based on some trigger events&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In Part 3, we created a &lt;a href="https://www.ankursheel.com/unity-cicd-linux-build"&gt;reusable workflow to build the Unity project&lt;/a&gt; for various platforms.&lt;/p&gt;
-&lt;p&gt;In part 4, we will use our reusable workflow to deploy a WebGL build to GitHub Pages.&lt;/p&gt;
-&lt;p&gt;Start by updating your &lt;code&gt;.github/workflows/main.yml&lt;/code&gt; file.&lt;/p&gt;
-&lt;h2 id="job-1-building-for-webgl"&gt;Job 1: Building for WebGL&lt;/h2&gt;
-&lt;p&gt;This job uses our reusable workflow to generate the files needed for hosting the game on a web server.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;buildForWebGL:
-  name: Build for WebGL
-  needs: test
-  if: |
-    github.event_name == 'pull_request' 
-    || github.event.action == 'published' 
-    || (contains(github.event.inputs.release_platform, 'release') 
-          &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'web'))
-  uses: ./.github/workflows/buildWithLinux.yml
-  with:
-    platform: WebGL
-    secrets:
-      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This step depends on the successful completion of the &lt;code&gt;test&lt;/code&gt; job, added in Part 2.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;: Defines the conditions for this job to run.
-&lt;ul&gt;
-&lt;li&gt;push to the main branch or creating a pull request against it.&lt;/li&gt;
-&lt;li&gt;GitHub release.&lt;/li&gt;
-&lt;li&gt;Manually trigger the workflow with the '&lt;strong&gt;&lt;em&gt;release&lt;/em&gt;&lt;/strong&gt;' and '&lt;strong&gt;&lt;em&gt;web&lt;/em&gt;&lt;/strong&gt;' parameters in the &lt;code&gt;release_platform&lt;/code&gt; field.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;uses&lt;/strong&gt;:Call the reusable workflow from Part 3 with the necessary parameters, setting the &lt;code&gt;platform&lt;/code&gt; to &lt;strong&gt;&lt;em&gt;WebGL&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="job-2-deploying-to-github-pages"&gt;Job 2: Deploying to GitHub Pages&lt;/h2&gt;
-&lt;p&gt;This job copies the WebGL artifact to the correct location for &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;. Once copied, it triggers a GitHub Pages deployment.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;deployToGitHubPages:
-  name: Deploy to GitHub Pages
-  runs-on: ubuntu-latest
-  needs: buildForWebGL
-  if: |
-    github.event_name == 'pull_request' 
-    || github.event.action == 'published' 
-    || (contains(github.event.inputs.release_platform, 'release') 
-          &amp;amp;&amp;amp; contains(github.event.inputs.release_platform, 'web'))
-  steps:
-    - name: Echo Build Version
-      run: echo ${{ needs.buildForWebGL.outputs.buildVersion }}
-
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 1
-        lfs: false
-
-    - name: Download WebGL Artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: build-WebGL
-        path: build/WebGL
-
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: build/WebGL/WebGL
-        commit-message: Deploy
-        single-commit: true
-
-    - name: Cleanup to avoid storage limit
-      uses: geekyeggo/delete-artifact@v5
-      if: always()
-      with:
-        name: build-WebGL
-        failOnError: false
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;needs&lt;/strong&gt;: This job depends on the successful completion of the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;:  It follows the same conditions as the &lt;em&gt;buildForWebGL&lt;/em&gt; job.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Next, we have a series of steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Echo Build Version&lt;/strong&gt;: Prints the build version generated by the &lt;code&gt;buildForWebGL&lt;/code&gt; job.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Checkout Repository&lt;/strong&gt;: Checks out the code repository.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Download WebGL Artifact&lt;/strong&gt;: Get the &lt;strong&gt;&lt;em&gt;build-WebGL&lt;/em&gt;&lt;/strong&gt; artifact produced by the &lt;code&gt;buildForWebGL&lt;/code&gt; job and put it into the &lt;strong&gt;&lt;em&gt;build/WebGL&lt;/em&gt;&lt;/strong&gt; directory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deploy to GitHub Pages&lt;/strong&gt;: Deploy the contents of the &lt;strong&gt;&lt;em&gt;build/WebGL/WebGL&lt;/em&gt;&lt;/strong&gt; folder to GitHub Pages.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cleanup to avoid storage limit&lt;/strong&gt;: Delete the &lt;strong&gt;&lt;em&gt;build-WebGL&lt;/em&gt;&lt;/strong&gt; artifact.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="setting-up-github-pages"&gt;Setting up Github Pages&lt;/h2&gt;
-&lt;p&gt;Once the workflow for a WebGL build is triggered, a &lt;em&gt;&lt;strong&gt;gh_pages&lt;/strong&gt;&lt;/em&gt; branch will be created. Now you can setup Github pages to showcase your game.&lt;/p&gt;
-&lt;p&gt;In the repository on GitHub, navigate to &lt;em&gt;Settings&lt;/em&gt; -&amp;gt; &lt;em&gt;Pages&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Set the source to &lt;strong&gt;&lt;em&gt;Deploy from a branch&lt;/em&gt;&lt;/strong&gt; and set the branch to &lt;code&gt;gh-pages&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/unity-cicd-deploying-webgl-github-pages/repository-settings.png" alt="Repository Settings"&gt;&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;In this part, we deployed our Unity Project to Github pages. Next, we will generate certificates for iOS deployments.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow"&gt;Calling a reusable workflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/github-pages-deploy-action"&gt;Github Pages Deploy Action&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/delete-artifact"&gt;Delete Artifact Github Action&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

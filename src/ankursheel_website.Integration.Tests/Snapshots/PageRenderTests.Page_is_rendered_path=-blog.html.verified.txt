@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (225)</h2>
+<h2>All Categories (226)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,6 +150,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/startup-versus-big-tech-good-bad-ugly">Startup versus Big Tech: The Good, the Bad, and the Ugly</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -160,9 +163,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-11">WordXplorer Update 11: New Theme</a>
         </li>
 </ul>
 
@@ -265,8 +265,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (76)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (77)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a> - <time class="prose-sm" datetime="26-06-09">June 09, 2026</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/rolling-dependency-injection-unity">Rolling Your Own Dependency Injection in Unity</a> - <time class="prose-sm" datetime="26-03-24">March 24, 2026</time>
             </li>

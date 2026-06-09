@@ -236,6 +236,9 @@
                         <li class="font-semibold">
                             <a href="#so-which-should-you-choose" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">So which should you choose?</a>
                         </li>
+                        <li class="font-semibold">
+                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        </li>
                 </ul>
             </div>
         </details>
@@ -313,6 +316,9 @@
                     <li class="font-semibold">
                         <a href="#so-which-should-you-choose" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">So which should you choose?</a>
                     </li>
+                    <li class="font-semibold">
+                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                    </li>
             </ul>
         </nav>
     </aside>
@@ -320,7 +326,8 @@
 
 <p>I’ve spent about two decades bouncing between startups, Big Tech, and everything in between. Recently, someone early in their engineering career asked me which path they should take.</p>
 <p>My answer was the same as it is for most engineering questions: <strong>it depends but this is what I would do</strong>.</p>
-<p>Both environments have completely different dynamics. They reward different styles and need different skills to be successful. Here’s my honest take on the good, the bad, and the &quot;ugly&quot; of both.</p>
+<p>Both environments have completely different dynamics. They reward different styles and need different skills to be successful.</p>
+<p>Here’s my honest take on the good, the bad, and the &quot;ugly&quot; of both.</p>
 <p>And if you just want to know what I’d personally do, you can scroll to the end. But I'd urge you to actually figure out what works for you.</p>
 <blockquote>
 <p>The stage of business determines what game you are playing in the first place: what the job will be like, who will be successful in it, and the mix of risk and reward you are accepting. So start there.</p>
@@ -329,9 +336,10 @@
 <h2 id="startups-the-good">Startups: The Good</h2>
 <h3 id="ready-or-not-you-learn-fast">Ready or Not: You learn fast</h3>
 <blockquote>
-<p>There is no - I don't know how to to do that.</p>
+<p>There is no - I don't know how to do that.</p>
 </blockquote>
-<p>Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to. You jump in where needed, even when you don't have a clue what you're doing.</p>
+<p>Startups are amazing places to learn a lot of different things quickly. Because the company is small, there usually aren't specialized teams to hand things off to.</p>
+<p>You jump in where needed, even when you don't have a clue what you're doing.</p>
 <p>At First AML, I touched everything: backend systems, developer tooling, processes, just whatever needed to be done. That kind of environment broadens your expertise incredibly fast.</p>
 <h3 id="visible-impact">Visible Impact</h3>
 <p>Startups are flat. You can influence the direction of the product, push back on decisions, and see the result of your work in the hands of real users quickly.</p>
@@ -344,27 +352,31 @@
 <blockquote>
 <p>Startup Equity is Monopoly Money</p>
 </blockquote>
-<p>Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it. Most exercise windows are short enough that leaving early means walking away from everything that you are &quot;promised&quot;. You have no control over dilution or what kind of exit the company pursues.</p>
+<p>Base salaries are lower. Bonuses are rare. Stock options sound exciting until you realise that you need an IPO to see any of it.</p>
+<p>Most exercise windows are short enough that leaving early means walking away from everything that you are &quot;promised&quot;. You have no control over dilution or what kind of exit the company pursues.</p>
 <h2 id="startups-the-ugly">Startups: The Ugly</h2>
 <h3 id="money-problems">Money Problems</h3>
-<p>Several startups I worked at had payroll problems. Salaries were delayed for months on end. Holidays cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.</p>
+<p>Several startups I worked at had payroll problems. Salaries were delayed for months on end.</p>
+<p>Holidays were cancelled because of a deadline that had to be met or the company would fold. It wasn't pretty.</p>
 <h3 id="most-of-them-fail">Most of them fail</h3>
-<p>This is not a hot take. Startups fail. The earlier they are in the lifescycle, higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.</p>
+<p>This is not a hot take. Startups fail. The earlier they are in the lifecycle, the higher the risk. You can do everything right and still find yourself out of a job because the runway ran out.</p>
 <p>You might have little to show when the company folds.</p>
 <h2 id="big-tech-the-good">Big Tech: The good</h2>
 <h3 id="career-rocket-fuel">Career rocket fuel</h3>
 <p>Having a big name on your CV opens doors before a recruiter even looks at your skills. Your skills and expertise is assumed.</p>
 <h3 id="you-learn-a-different-kind-of-discipline">You learn a different kind of discipline</h3>
 <p>Big Tech teaches a different kind of engineering: depth, rigor, and long‑term thinking.</p>
-<p>At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before. I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.</p>
+<p>At Atlassian, the scale alone was an education. Established practices, specialized teams, engineers who’d solved hard problems before.</p>
+<p>I learnt how to build systems that survive millions of users and thousands of edge cases. You learn how to plan and how to operate inside a complex ecosystem where different teams have their own roadmaps and commitments.</p>
 <h3 id="the-money">The money</h3>
 <blockquote>
 <p>Money is not the limiting factor.</p>
 </blockquote>
-<p>Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal. If financial independence or having shiny things is a goal, this environment makes it a lot easier.</p>
+<p>Big Tech pays pays extremely well. Base salaries are high, bonuses are common, and equity is actually worth something. Perks feel unreal.</p>
+<p>If financial independence or having shiny things is a goal, this environment makes it a lot easier.</p>
 <h3 id="big-tech-the-bad">Big Tech: The Bad</h3>
 <h3 id="a-small-cog-in-a-big-machine">A small cog in a big machine</h3>
-<p>It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didnt move the needle.</p>
+<p>It can be genuinely hard to see how your work connects to anything that matters. You can ship something used by millions and still feel that you didn't move the needle.</p>
 <h3 id="everything-takes-longer">Everything takes longer</h3>
 <p>A straightforward change can take days. Stakeholder approvals, code reviews, teams in different time zones who own different parts of the system all contribute. You will spend a non-trivial amount of your career waiting.</p>
 <h3 id="growth-can-plateau">Growth can plateau</h3>
@@ -374,8 +386,12 @@
 <p>You can be the best engineer on your team and still find that the path forward is unclear.</p>
 <h3 id="big-tech-the-ugly">Big Tech: The Ugly</h3>
 <h3 id="performance-reviews-create-strange-incentive">Performance reviews create strange incentive</h3>
-<p>Doing work that results in a great performance review is not always the same as doing work that best helps the company. Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally. Doing great work that benefits the company but doesn't &quot;look&quot; like a big individual win can actually hurt your career.</p>
-<p>In the most pathalogical companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.</p>
+<blockquote>
+<p>Doing work that results in a great performance review is not always the same as doing work that best helps the company.</p>
+</blockquote>
+<p>Individual impact is what gets measured, which makes it genuinely difficult to do work that benefits the broader organisation without also making sure it's visible enough to count for you personally.</p>
+<p>Doing great work that benefits the company but doesn't &quot;look&quot; like a big individual win can actually hurt your career.</p>
+<p>In the most pathological companies, work is created primarily so that someone more senior can demonstrate impact and get promoted, not because it's the right thing to build.</p>
 <h3 id="switching-directions">Switching Directions</h3>
 <blockquote>
 <p>The pay cut might be hard, but the loss of structure is harder.</p>
@@ -387,13 +403,17 @@
 <p>You can always leave for a startup later. You can't go back and add the name to your CV.</p>
 </blockquote>
 <p>While it wasn't exactly &quot;Big Tech&quot;, this is why I joined Perot Systems after graduating. It signaled to future employers that I had the skills to be hired by a recognizable company. It was a stamp of approval.</p>
-<p>A year later, I left to follow my passion - make games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues.  I could take that risk because I had Perot Systems on my CV. It provided me with a saery net and derisked that decision for me.</p>
+<p>A year later, I left to follow my passion - making games. I took a massive pay cut and joined a games company. Not a startup in the purest sense, but it had all the same problems: a tiny engineering team and constant payroll issues.</p>
+<p>I could take that risk because I had Perot Systems on my CV. It provided me with a safety net and derisked that decision for me.</p>
 <h2 id="so-which-should-you-choose">So which should you choose?</h2>
 <p>If you're early in your career and havent worked for a recognizable company yet, take the opportunity when it comes.  It makes every future job hunt easier.</p>
 <p>But don't stay so long that you forget how to hustle. They are called <strong>golden handcuffs</strong> for a reason. I know people who stayed so long they now struggle to move anywhere else except for maybe another big company.</p>
-<p>Once you have some experience, optimize for learning over compensation. The environments where you're slightly out of your depth are usually the ones that move your career forward fastest. I grew more and learnt more things at First AML than anywhere else.</p>
+<p>Once you have some experience, optimize for learning over compensation.</p>
+<p>The environments where you're slightly out of your depth are usually the ones that move your career forward fastest.</p>
+<p>I grew more and learnt more things at First AML than anywhere else.</p>
+<h2 id="conclusion">Conclusion</h2>
 <p>The sweet spot is somewhere between understanding the discipline of a large organisation and still being able to build something from scratch.</p>
-<p>Where are you in your journey — and which way are you leaning right now? Do you prefer the statbility of a big company or the excitement of wearing ten different hats at a startup?</p>
+<p>Where are you in your journey, and which way are you leaning right now? Do you prefer the stability of a big company or the excitement of wearing ten different hats at a startup? Or are you just there for the free snacks?</p>
 
 
 

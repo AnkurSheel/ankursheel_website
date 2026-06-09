@@ -4,26 +4,26 @@
 <head>
     
 
-<title>Ankur Sheel</title>
+<title>Posts tagged as &quot;asa&quot;</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="I go down rabbit holes and blog about them"/>
+<meta name="description"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/"/>   
-<meta itemProp="name" content="Ankur Sheel"/>
-<meta itemProp="description" content="I go down rabbit holes and blog about them"/>
-<meta property="og:url" content="https://www.ankursheel.com/"/>
+    <link rel="canonical" href="https://www.ankursheel.com/tags/asa"/>   
+<meta itemProp="name" content="Posts tagged as &quot;asa&quot;"/>
+<meta itemProp="description"/>
+<meta property="og:url" content="https://www.ankursheel.com/tags/asa"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Ankur Sheel"/>
-<meta property="og:description" content="I go down rabbit holes and blog about them"/>
+<meta property="og:title" content="Posts tagged as &quot;asa&quot;"/>
+<meta property="og:description"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="Ankur Sheel"/>
-<meta name="twitter:description" content="I go down rabbit holes and blog about them"/>
+<meta name="twitter:title" content="Posts tagged as &quot;asa&quot;"/>
+<meta name="twitter:description"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -128,50 +128,21 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">Ankur Sheel</h1>
+    <h1 class="text-center">Posts tagged as &quot;asa&quot;</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
 
-<p>I go down rabbit holes and blog about them.</p>
-
-<h2> 5 Most Recently Updated Posts</h2>
-<ul class="p-0">
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a> - <time class="prose-sm" datetime="26-06-09">June 09, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/startup-versus-big-tech-good-bad-ugly">Startup versus Big Tech: The Good, the Bad, and the Ugly</a> - <time class="prose-sm" datetime="26-04-22">April 22, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a> - <time class="prose-sm" datetime="26-04-02">April 02, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/rolling-dependency-injection-unity">Rolling Your Own Dependency Injection in Unity</a> - <time class="prose-sm" datetime="26-03-24">March 24, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a> - <time class="prose-sm" datetime="26-03-17">March 17, 2026</time>
-        </li>
-</ul>
-
-<h2>My favourites</h2>
-<ul class="p-0">
-    <li class="list-none mt-6 md:mt-1 p-0">
-        <a href="/blog/child-appreciation">Why being an only child is awesome?</a>
-    </li>
-    <li class="list-none mt-6 md:mt-1 p-0">
-        <a href="/blog/dream-job">What is my idea of a dream job?</a>
-    </li>
-    <li class="list-none mt-6 md:mt-1 p-0">
-        <a href="/blog/impossible-list-bucket-list">Should you make an Impossible List or a Bucket List?</a>
-    </li>
-    <li class="list-none mt-6 md:mt-1 p-0">
-        <a href="/blog/make-code-reviews-stress-free">How to make code reviews stress free?</a>
-    </li>
-    <li class="list-none mt-6 md:mt-1 p-0">
-        <a href="/blog/rent-buy-house">Should I Rent Or Buy a House?</a>
-    </li>
-</ul>
+<div class="shadow-md mb-10 bg-gray-200 rounded-3xl">
+    <div class="mx-4 flex flex-col my-4 p-8">
+        <a href="/blog/defining-good-engineering-team-needs-testing-guidelines" class="text-center prose-2xl mb-4">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a>
+        <div class="font-semibold text-center">6 min</div>
+        <p>
+            It&#x2019;s not that engineers don&#x2019;t know how to write tests. It&#x2019;s that they&#x2019;ve never actually agreed on what &#x27;good&#x27; means for their team. Here are some guidelines I try to follow in every project.
+        </p>
+            <a href="/blog/defining-good-engineering-team-needs-testing-guidelines" class="text-center hover:no-underline mt-2 hover:text-gray-200 hover:bg-purple-600">Read post ›</a>
+    </div>
+</div>
 
         </article>
     </div>
