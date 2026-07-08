@@ -138,6 +138,9 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-14">WordXplorer Update 14</a> - <time class="prose-sm" datetime="26-07-03">July 03, 2026</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a> - <time class="prose-sm" datetime="26-06-09">June 09, 2026</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -148,9 +151,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/rolling-dependency-injection-unity">Rolling Your Own Dependency Injection in Unity</a> - <time class="prose-sm" datetime="26-03-24">March 24, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a> - <time class="prose-sm" datetime="26-03-17">March 17, 2026</time>
         </li>
 </ul>
 

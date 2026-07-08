@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (226)</h2>
+<h2>All Categories (227)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,6 +150,9 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-14">WordXplorer Update 14</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -160,9 +163,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/rolling-dependency-injection-unity">Rolling Your Own Dependency Injection in Unity</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
         </li>
 </ul>
 
@@ -499,8 +499,11 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (25)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (26)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordxplorer-update-14">WordXplorer Update 14</a> - <time class="prose-sm" datetime="26-07-03">July 03, 2026</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a> - <time class="prose-sm" datetime="26-04-02">April 02, 2026</time>
             </li>

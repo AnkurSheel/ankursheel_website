@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordXplorer Update 11: New Theme</title>
+<title>WordXplorer Update 14</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="New theme, smarter background"/>
+<meta name="description" content="New Theme and Cleaner UI"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-11"/>   
-<meta itemProp="name" content="WordXplorer Update 11: New Theme"/>
-<meta itemProp="description" content="New theme, smarter background"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-11-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-11"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-14"/>   
+<meta itemProp="name" content="WordXplorer Update 14"/>
+<meta itemProp="description" content="New Theme and Cleaner UI"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-14"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update 11: New Theme"/>
-<meta property="og:description" content="New theme, smarter background"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-11-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-11-facebook.png"/>
+<meta property="og:title" content="WordXplorer Update 14"/>
+<meta property="og:description" content="New Theme and Cleaner UI"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update 11: New Theme"/>
-<meta name="twitter:description" content="New theme, smarter background"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-11-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-11-twitter.png"/>
+<meta name="twitter:title" content="WordXplorer Update 14"/>
+<meta name="twitter:description" content="New Theme and Cleaner UI"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update 11: New Theme</h1>
+    <h1 class="text-center">WordXplorer Update 14</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -141,9 +141,9 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2026-02-05">Feb 05, 2026</time></span>
+                datetime="2026-07-03">Jul 03, 2026</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2026-02-05">Feb 05, 2026</time></span>
+                datetime="2026-07-03">Jul 03, 2026</time></span>
         <span class="sm:py-0 py-1">
             Estimated Reading Time: <span class="font-bold">2 min</span>
         </span>
@@ -168,22 +168,19 @@
             <div class="mt-4">
                 <ul class="list-none space-y-2">
                         <li class="font-semibold">
-                            <a href="#new-theme" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">New Theme</a>
+                            <a href="#new-theme-animals---24-new-levels" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">New Theme: Animals - 24 New Levels</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#dynamic-backgrounds" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dynamic Backgrounds</a>
+                            <a href="#clearer-ui-and-friendlier-copy" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Clearer UI and Friendlier Copy</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#beta-testers-save-the-day" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Beta Testers Save the Day</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#want-to-be-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Want to Be a Beta Tester?</a>
+                            <a href="#cleaner-monobehaviours" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Cleaner MonoBehaviours</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#level-button-updates" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Level Button Updates</a>
+                            <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next?</a>
+                            <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
                         </li>
                         <li class="font-semibold">
                             <a href="#get-wordxplorer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get WordXplorer</a>
@@ -197,22 +194,19 @@
             <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
             <ul class="m-0 list-none space-y-2">
                     <li class="font-semibold">
-                        <a href="#new-theme" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">New Theme</a>
+                        <a href="#new-theme-animals---24-new-levels" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">New Theme: Animals - 24 New Levels</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#dynamic-backgrounds" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dynamic Backgrounds</a>
+                        <a href="#clearer-ui-and-friendlier-copy" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Clearer UI and Friendlier Copy</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#beta-testers-save-the-day" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Beta Testers Save the Day</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#want-to-be-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Want to Be a Beta Tester?</a>
+                        <a href="#cleaner-monobehaviours" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Cleaner MonoBehaviours</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#level-button-updates" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Level Button Updates</a>
+                        <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next?</a>
+                        <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
                     </li>
                     <li class="font-semibold">
                         <a href="#get-wordxplorer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get WordXplorer</a>
@@ -223,11 +217,9 @@
 
 
 <p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
-<h2 id="new-theme">New Theme</h2>
-<p>Remember when I asked you which theme should come next?</p>
-<p>Well, you voted. And here it is.</p>
-<p>I've added a brand-new theme with 24 levels focusing on <strong>body parts</strong>.</p>
-<p>Hands, feet, eyes – the classics and a few tricky ones. It's the kind of vocabulary that actually helps kids describe their world.</p>
+<h2 id="new-theme-animals-24-new-levels">New Theme: Animals - 24 New Levels</h2>
+<p>The biggest change is a brand-new theme with 24 new levels.</p>
+<p>I wanted the game to keep growing in a way that still feels approachable for kids, so this update adds a fresh set of words themed around animals.</p>
 <table>
 <thead>
 <tr>
@@ -237,17 +229,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/body_part_level_selection_screen.png" width="200" alt="Body Part Level Selection Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/body_part_game_screen.png" width="200" alt="Body Part Game Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/animal_level_selection_screen.png" width="200" alt="Animals Level Selection Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/animal_game_screen.png" width="200" alt="Animals Game Screen" /></td>
 </tr>
 </tbody>
 </table>
-<h2 id="dynamic-backgrounds">Dynamic Backgrounds</h2>
-<p>Some of the more eagle eyed readers might have noticed that the background is a little different in the above 2 screen shots.</p>
-<p>There are no more generic bubbles. No more one-size-fits-all backgrounds. The backgrounds now change based on the theme.</p>
-<p>If you're playing the <em>Things We Eat</em> theme, you see food. If you're in <em>Body Parts</em>, you see... well, you know. It sounds simple, and it is. But, it gives kids an instant visual clue about what the theme is.</p>
-<p>To be honest, this works best on a tablet where you can really see the new elements.</p>
-<p>On a phone? It's more subtle – due to the lack of screen space. But if kids need a reminder of the theme, the hint screen has them covered.</p>
+<h2 id="clearer-ui-and-friendlier-copy">Clearer UI and Friendlier Copy</h2>
+<p>I also updated some of the text and buttons in the game.</p>
+<p>The old text just felt way too verbose. The instructions, notifications, and hint copy should now be clearer and easier to understand. Since WordXplorer is aimed at younger players, I want the wording to be simple, helpful, and friendly.</p>
+<p>I also updated buttons like Submit and Delete so the main actions are easier to understand at a glance.</p>
 <table>
 <thead>
 <tr>
@@ -257,47 +247,33 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/before_splash_screen.png" width="200" alt="Before Splash Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/after_splash_screen.png" width="200" alt="After Splash Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/old_instructions.png" width="200" alt="Old Instructions" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/new_instructions.png" width="200" alt="New Instructions" /></td>
 </tr>
 <tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/before_level_selection_screen.png" width="200" alt="Before Level Selection Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/after_level_selection_screen.png" width="200" alt="After Level Selection Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/old_hint.png" width="200" alt="Old Hint" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/new_hint.png" width="200" alt="New Hint" /></td>
 </tr>
 <tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/before_game_screen.png" width="200" alt="Before Game Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/after_game_screen.png" width="200" alt="After Game Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/old_gamescreen.png" width="200" alt="Old Game Screen" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/new_gamescreen.png" width="200" alt="New Game Screen" /></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/old_notification.png" width="200" alt="Old Notification" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-14/new_notification.png" width="200" alt="New Notification" /></td>
 </tr>
 </tbody>
 </table>
-<h2 id="beta-testers-save-the-day">Beta Testers Save the Day</h2>
-<p>Before I released this update to everyone, the beta testers found a couple of nasty bugs.</p>
-<p>One was particularly gnarly: if you completed the last level and then tried to click &quot;next level,&quot; the game would crash. When you reopened it, the level selection screen would be completely borked.</p>
-<p><strong>I'm so glad we caught it before release.</strong></p>
-<p>If that had made it to a paying user? Ooof. That would have sucked.</p>
-<h3 id="want-to-be-a-beta-tester">Want to Be a Beta Tester?</h3>
-<p>If you're interested in helping me catch bugs before they reach everyone else, I'd love to have you on board. All you need to do is send me a screenshot of a review (to prove you've got the app). That's it.  As an added bonus, I will give you a free copy of the app to give to your friends.</p>
-<h2 id="level-button-updates">Level Button Updates</h2>
-<p>Before the level selection screen, the level buttons were just random colors. They looked colorful but didn't give a clear indication of what level is completed and which one is newly unlocked. Now the level buttons can only have 1 of 3 colors - depending on the level status.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Before</th>
-<th style="text-align: center;">After</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/before_level_selection_screen.png" width="200" alt="Before Level Selection Screen" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-11/body_part_level_selection_screen.png" width="200" alt="After Level Selection Screen" /></td>
-</tr>
-</tbody>
-</table>
-<h2 id="whats-next">What's Next?</h2>
-<p>I'm adding a proper menu screen. It's not flashy – just polish and table stakes. Things that I had cut for the intial release.</p>
-<p>More updates coming soon. Can't wait to share what's next.</p>
+<h2 id="cleaner-monobehaviours">Cleaner MonoBehaviours</h2>
+<p>Behind the scenes, I spent most of my time making the Unity MonoBehaviour classes leaner and moving the actual logic into plain C# classes.</p>
+<p>By decoupling the game's core rules from Unity's engine architecture, I was finally able to write proper unit tests for the logic.</p>
+<p>This was a calulated trade-off. I could have worked on some more features that would be more visible. But having tests gives me immense confidence when making future updates, knowing a tiny change won't accidentally break three other things in the process.</p>
+<h2 id="whats-next">What's Next</h2>
+<p>Next up is adding a menu screen to the game and possibly some more sound effects. If you have any suggestions for features or improvements that you would like to see immediately, please let me know.</p>
+<h2 id="become-a-beta-tester">Become a Beta Tester</h2>
+<p>Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a <strong>free copy of the app</strong> to share with a friend!</p>
 <h2 id="get-wordxplorer">Get WordXplorer</h2>
-<p>WordXplorer is available on the iOS App Store and Google Play store.</p>
+<p>WordXplorer is available on the iOS App Store and Google Play Store.</p>
 <div class="appstore-badges-container">
   <a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
     <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store" />
@@ -306,16 +282,16 @@
     <img src="/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store" />
   </a>
 </div>
-<p>Want to try before you buy? Check out our <a href="https://wordxplorer.ankursheel.com/">web demo</a></p>
-<p>Thank you for being a part of this journey with me! I'm eager to hear your thoughts and feedback. Stay tuned for more updates!</p>
+<p>Want to try before you buy? Check out the <a href="https://wordxplorer.ankursheel.com/">web demo here</a>.</p>
+<p>Thank you for being part of this journey. Stay tuned for more updates!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-11&text=WordXplorer%20Update%2011%3A%20New%20Theme via @ankur_sheel.&#xD;&#xA;New%20theme%2C%20smarter%20background" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-11" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-14&text=WordXplorer%20Update%2014 via @ankur_sheel.&#xD;&#xA;New%20Theme%20and%20Cleaner%20UI" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-14" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -327,16 +303,16 @@
 
     <ul>
             <li>
-                <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
+                <a href="wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
             </li>
             <li>
                 <a href="wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
             </li>
             <li>
-                <a href="wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
+                <a href="wordxplorer-update-11">WordXplorer Update 11: New Theme</a>
             </li>
             <li>
-                <a href="wordxplorer-update-14">WordXplorer Update 14</a>
+                <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
             </li>
     </ul>
 </aside>

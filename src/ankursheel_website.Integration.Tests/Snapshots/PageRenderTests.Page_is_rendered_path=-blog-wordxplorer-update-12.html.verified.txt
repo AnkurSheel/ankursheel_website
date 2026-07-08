@@ -291,7 +291,7 @@
                 <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
             </li>
             <li>
-                <a href="wordxplorer-update-9">WordXplorer Update #9: Save your guesses</a>
+                <a href="wordxplorer-update-14">WordXplorer Update 14</a>
             </li>
     </ul>
 </aside>
