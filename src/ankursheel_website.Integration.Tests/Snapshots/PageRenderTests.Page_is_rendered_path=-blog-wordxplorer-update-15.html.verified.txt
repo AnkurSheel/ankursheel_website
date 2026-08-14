@@ -4,31 +4,31 @@
 <head>
     
 
-<title>WordXplorer Update 12: Demo Build &amp; Teacher Feedback</title>
+<title>WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
+<meta name="description" content="Alphabetic keyboard layout, updated notification texts and Teacher Approved again"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-12"/>   
-<meta itemProp="name" content="WordXplorer Update 12: Demo Build &amp; Teacher Feedback"/>
-<meta itemProp="description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-12"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-15"/>   
+<meta itemProp="name" content="WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts"/>
+<meta itemProp="description" content="Alphabetic keyboard layout, updated notification texts and Teacher Approved again"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-15-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-15"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update 12: Demo Build &amp; Teacher Feedback"/>
-<meta property="og:description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-facebook.png"/>
+<meta property="og:title" content="WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts"/>
+<meta property="og:description" content="Alphabetic keyboard layout, updated notification texts and Teacher Approved again"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-15-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-15-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update 12: Demo Build &amp; Teacher Feedback"/>
-<meta name="twitter:description" content="Automated screenshots, addressing &#x27;Teacher Approved&#x27; feedback, and expanding the demo build."/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-12-twitter.png"/>
+<meta name="twitter:title" content="WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts"/>
+<meta name="twitter:description" content="Alphabetic keyboard layout, updated notification texts and Teacher Approved again"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-15-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-15-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</h1>
+    <h1 class="text-center">WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -141,9 +141,9 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2026-03-17">Mar 17, 2026</time></span>
+                datetime="2026-08-02">Aug 02, 2026</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2026-03-17">Mar 17, 2026</time></span>
+                datetime="2026-08-02">Aug 02, 2026</time></span>
         <span class="sm:py-0 py-1">
             Estimated Reading Time: <span class="font-bold">2 min</span>
         </span>
@@ -168,25 +168,25 @@
             <div class="mt-4">
                 <ul class="list-none space-y-2">
                         <li class="font-semibold">
-                            <a href="#automated-screenshot-capture" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Automated Screenshot Capture</a>
+                            <a href="#ditching-qwerty-for-an-alphabetic-keyboard" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Ditching QWERTY for an Alphabetic Keyboard</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#teacher-approved-feedback" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Teacher Approved Feedback</a>
+                            <a href="#dynamic--theme-specific-notifications" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dynamic &amp; Theme-Specific Notifications</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#demo-build-updates" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Demo Build Updates</a>
+                            <a href="#teacher-approved-again" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Teacher Approved Again</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next?</a>
+                            <a href="#store-listing-refresh" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Store Listing Refresh</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
                         </li>
                         <li class="font-semibold">
                             <a href="#get-wordxplorer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get WordXplorer</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#try-the-demo" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Try the Demo</a>
                         </li>
                 </ul>
             </div>
@@ -197,25 +197,25 @@
             <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
             <ul class="m-0 list-none space-y-2">
                     <li class="font-semibold">
-                        <a href="#automated-screenshot-capture" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Automated Screenshot Capture</a>
+                        <a href="#ditching-qwerty-for-an-alphabetic-keyboard" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Ditching QWERTY for an Alphabetic Keyboard</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#teacher-approved-feedback" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Teacher Approved Feedback</a>
+                        <a href="#dynamic--theme-specific-notifications" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Dynamic &amp; Theme-Specific Notifications</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#demo-build-updates" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Demo Build Updates</a>
+                        <a href="#teacher-approved-again" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Teacher Approved Again</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next?</a>
+                        <a href="#store-listing-refresh" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Store Listing Refresh</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
                     </li>
                     <li class="font-semibold">
                         <a href="#get-wordxplorer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get WordXplorer</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#try-the-demo" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Try the Demo</a>
                     </li>
             </ul>
         </nav>
@@ -223,31 +223,84 @@
 
 
 <p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
-<h2 id="automated-screenshot-capture">Automated Screenshot Capture</h2>
-<p>Updating the WordXplorer store listings has been a tedious affair. Previously, I had to manually capture screenshots for every device size, which made it difficult to keep visuals up to date as the game improved.</p>
-<p>To solve this, I wrote a series of custom <strong>Unity Editor scripts</strong> to automate the process. These scripts programmatically trigger high-resolution renders for every required form factor and automatically apply a branded banner to each shot.</p>
+<p>The main focus of this update was making WordXplorer much more intuitive and approachable for kids.</p>
+<h2 id="ditching-qwerty-for-an-alphabetic-keyboard">Ditching QWERTY for an Alphabetic Keyboard</h2>
+<p>Based on feedback, I made a major change to the in-game keyboard.</p>
+<p>Adults are deeply conditioned to type on QWERTY layouts, but younger kids are still learning the alphabet sequentially. For a child trying to spot letters, a scattered QWERTY board just adds unnecessary cognitive load.</p>
+<p>I updated the keyboard to follow a simple alphabetic layout (A–Z).</p>
+<p>In the previous design, action keys were too close to the letter tiles. Now, the main actions are clear, separated, and much easier to hit on small screens.</p>
+<p>I also pulled the <strong>Check</strong> and <strong>Erase</strong> buttons out of the main keyboard and made them larger.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Before</th>
-<th style="text-align: center;">After</th>
+<th style="text-align: center;">Old Keyboard Layout</th>
+<th style="text-align: center;">New Keyboard Layout</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-12/old_screenshot.png" width="200" alt="Old Screenshot" /></td>
-<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-12/new_screenshot.png" width="200" alt="New Screenshot" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/old_keyboard_layout.png" alt="Old Keyboard Layout" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/new_keyboard_layout.png" alt="New Keyboard Layout" /></td>
 </tr>
 </tbody>
 </table>
-<h2 id="teacher-approved-feedback">Teacher Approved Feedback</h2>
-<p>I’ve been working toward getting the &quot;Teacher Approved&quot; badge on the Google Play Store. While the app was previously approved, Google has identified two specific areas I need to address to maintain that status: <strong>Text Volume</strong> and <strong>Replayability</strong>.</p>
-<p>I'm currently brainstorming ideas to address these two concerns and ensure the game gets approved again.</p>
-<h2 id="demo-build-updates">Demo Build Updates</h2>
-<p>I’ve updated the <a href="https://wordxplorer.ankursheel.com/">web demo</a> to include all themes and levels available in the paid version. While active play is still limited to the first six levels, users can now browse the full library of content.</p>
-<p>My goal is to ensure players see the full scope of the game before purchasing, so they know exactly how much content they are getting in the full version.</p>
-<h2 id="whats-next">What's Next?</h2>
-<p>I’m currently prioritizing which features to add next - there were quite a few that were cut from the initial release to get the game into your hands faster. I'm looking forward to bringing those back into the roadmap.</p>
+<h2 id="dynamic-theme-specific-notifications">Dynamic &amp; Theme-Specific Notifications</h2>
+<p>Until now, every notification in WordXplorer said the same thing, regardless of which theme you were playing or how many guesses you had left. Won on your first try or scraped through on your last chance, you got identical text.</p>
+<p>This was again based on direct feedback.</p>
+<p>So now the notification text is custom per theme and depends on how many chances were taken.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Old Not Enough Letters</th>
+<th style="text-align: center;">New Not Enough Letters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/old_need_more_letters.png" alt="Old Need more letters" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/new_need_more_letters.png" alt="New Need more letters" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Old theme 1 guess 1</th>
+<th style="text-align: center;">New theme 1 guess 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/old_theme1_guess1.png" alt="Old theme 1 guess 1" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/new_theme1_guess1.png" alt="New theme 1 guess 1" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Old theme 2 guess 2</th>
+<th style="text-align: center;">New theme 2 guess 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/old_theme2_guess2.png" alt="Old theme 2 guess 2" /></td>
+<td style="text-align: center;"><img src="/assets/images/posts/wordxplorer-update-15/new_theme2_guess2.png" alt="New theme 2 guess 2" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="teacher-approved-again">Teacher Approved Again</h2>
+<p>Google Play has a pretty thorough review process for apps aimed at children, where teachers and educational specialists evaluate apps on design, usability, and learning value. WordXplorer had the Teacher Approved badge on Google Play once before. Then, at some point, it disappeared.</p>
+<p>WordXplorer was reviewed again recently and received the official <strong>Teacher Approved</strong> badge on the Google Play Store!
+<img src="/assets/images/posts/wordxplorer-update-15/feedback.png" alt="Feedback from Teachers" /></p>
+<p>It's always reassuring to get validation from educators that the updates and design decisions are hitting the mark.</p>
+<h2 id="store-listing-refresh">Store Listing Refresh</h2>
+<p>I also gave the store listing a refresh  and updated the description and screenshots on both the App Store and Google Play. I am hoping it reduces the amount of refunds on Google Play and gives a better idea of what the game is about. Let me know what you think!</p>
+<h2 id="whats-next">What's Next</h2>
+<p>Next up is adding a menu screen to the game and possibly some more sound effects. If you have any suggestions for features or improvements that you would like to see immediately, please let me know.</p>
+<h2 id="become-a-beta-tester">Become a Beta Tester</h2>
+<p>Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a <strong>free copy of the app</strong> to share with a friend!</p>
 <h2 id="get-wordxplorer">Get WordXplorer</h2>
 <p>WordXplorer is available on the iOS App Store and Google Play Store.</p>
 <div class="appstore-badges-container">
@@ -258,9 +311,6 @@
     <img src="/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store" />
   </a>
 </div>
-<h3 id="become-a-beta-tester">Become a Beta Tester</h3>
-<p>Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a <strong>free copy of the app</strong> to share with a friend!</p>
-<h3 id="try-the-demo">Try the Demo</h3>
 <p>Want to try before you buy? Check out the <a href="https://wordxplorer.ankursheel.com/">web demo here</a>.</p>
 <p>Thank you for being part of this journey. Stay tuned for more updates!</p>
 
@@ -269,8 +319,8 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-12&text=WordXplorer%20Update%2012%3A%20Demo%20Build%20%26%20Teacher%20Feedback via @ankur_sheel.&#xD;&#xA;Automated%20screenshots%2C%20addressing%20%27Teacher%20Approved%27%20feedback%2C%20and%20expanding%20the%20demo%20build." onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-12" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-15&text=WordXplorer%20Update%2015%3A%20%2C%20Alphabetic%20Keyboard%20Layout%20and%20updated%20Notification%20Texts via @ankur_sheel.&#xD;&#xA;Alphabetic%20keyboard%20layout%2C%20updated%20notification%20texts%20and%20Teacher%20Approved%20again" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-15" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -282,16 +332,16 @@
 
     <ul>
             <li>
+                <a href="wordxplorer-update-14">WordXplorer Update 14: New Theme and Cleaner UI</a>
+            </li>
+            <li>
                 <a href="wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
             </li>
             <li>
+                <a href="wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
+            </li>
+            <li>
                 <a href="wordxplorer-update-11">WordXplorer Update 11: New Theme</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-14">WordXplorer Update 14: New Theme and Cleaner UI</a>
             </li>
     </ul>
 </aside>

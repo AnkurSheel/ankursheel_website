@@ -274,7 +274,7 @@
                 <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
             </li>
             <li>
-                <a href="wordxplorer-update-14">WordXplorer Update 14</a>
+                <a href="wordxplorer-update-14">WordXplorer Update 14: New Theme and Cleaner UI</a>
             </li>
     </ul>
 </aside>

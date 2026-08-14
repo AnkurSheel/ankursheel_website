@@ -4,7 +4,7 @@
 <head>
     
 
-<title>WordXplorer Update 14</title>
+<title>WordXplorer Update 14: New Theme and Cleaner UI</title>
 <meta charset="utf-8"/>
 
 
@@ -13,19 +13,19 @@
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-14"/>   
-<meta itemProp="name" content="WordXplorer Update 14"/>
+<meta itemProp="name" content="WordXplorer Update 14: New Theme and Cleaner UI"/>
 <meta itemProp="description" content="New Theme and Cleaner UI"/>
     <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png"/>
 <meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-14"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="WordXplorer Update 14"/>
+<meta property="og:title" content="WordXplorer Update 14: New Theme and Cleaner UI"/>
 <meta property="og:description" content="New Theme and Cleaner UI"/>
     <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png"/>
     <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="WordXplorer Update 14"/>
+<meta name="twitter:title" content="WordXplorer Update 14: New Theme and Cleaner UI"/>
 <meta name="twitter:description" content="New Theme and Cleaner UI"/>
     <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-twitter.png"/>
     <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-twitter.png"/>
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">WordXplorer Update 14</h1>
+    <h1 class="text-center">WordXplorer Update 14: New Theme and Cleaner UI</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -290,7 +290,7 @@
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-14&text=WordXplorer%20Update%2014 via @ankur_sheel.&#xD;&#xA;New%20Theme%20and%20Cleaner%20UI" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-14&text=WordXplorer%20Update%2014%3A%20New%20Theme%20and%20Cleaner%20UI via @ankur_sheel.&#xD;&#xA;New%20Theme%20and%20Cleaner%20UI" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
         <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-14" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
@@ -303,6 +303,9 @@
 
     <ul>
             <li>
+                <a href="wordxplorer-update-15">WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</a>
+            </li>
+            <li>
                 <a href="wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
             </li>
             <li>
@@ -310,9 +313,6 @@
             </li>
             <li>
                 <a href="wordxplorer-update-11">WordXplorer Update 11: New Theme</a>
-            </li>
-            <li>
-                <a href="wordxplorer-update-10">WordXplorer Update 10 : Fireworks, Levels, Polish</a>
             </li>
     </ul>
 </aside>

@@ -8,7 +8,108 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
-      <title>WordXplorer Update 14</title>
+      <title>WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-15</link>
+      <description>Alphabetic keyboard layout, updated notification texts and Teacher Approved again</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-15-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-15</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The main focus of this update was making WordXplorer much more intuitive and approachable for kids.&lt;/p&gt;
+&lt;h2 id="ditching-qwerty-for-an-alphabetic-keyboard"&gt;Ditching QWERTY for an Alphabetic Keyboard&lt;/h2&gt;
+&lt;p&gt;Based on feedback, I made a major change to the in-game keyboard.&lt;/p&gt;
+&lt;p&gt;Adults are deeply conditioned to type on QWERTY layouts, but younger kids are still learning the alphabet sequentially. For a child trying to spot letters, a scattered QWERTY board just adds unnecessary cognitive load.&lt;/p&gt;
+&lt;p&gt;I updated the keyboard to follow a simple alphabetic layout (A–Z).&lt;/p&gt;
+&lt;p&gt;In the previous design, action keys were too close to the letter tiles. Now, the main actions are clear, separated, and much easier to hit on small screens.&lt;/p&gt;
+&lt;p&gt;I also pulled the &lt;strong&gt;Check&lt;/strong&gt; and &lt;strong&gt;Erase&lt;/strong&gt; buttons out of the main keyboard and made them larger.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Old Keyboard Layout&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;New Keyboard Layout&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/old_keyboard_layout.png" alt="Old Keyboard Layout"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/new_keyboard_layout.png" alt="New Keyboard Layout"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="dynamic-theme-specific-notifications"&gt;Dynamic &amp;amp; Theme-Specific Notifications&lt;/h2&gt;
+&lt;p&gt;Until now, every notification in WordXplorer said the same thing, regardless of which theme you were playing or how many guesses you had left. Won on your first try or scraped through on your last chance, you got identical text.&lt;/p&gt;
+&lt;p&gt;This was again based on direct feedback.&lt;/p&gt;
+&lt;p&gt;So now the notification text is custom per theme and depends on how many chances were taken.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Old Not Enough Letters&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;New Not Enough Letters&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/old_need_more_letters.png" alt="Old Need more letters"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/new_need_more_letters.png" alt="New Need more letters"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Old theme 1 guess 1&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;New theme 1 guess 1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/old_theme1_guess1.png" alt="Old theme 1 guess 1"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/new_theme1_guess1.png" alt="New theme 1 guess 1"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Old theme 2 guess 2&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;New theme 2 guess 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/old_theme2_guess2.png" alt="Old theme 2 guess 2"&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/new_theme2_guess2.png" alt="New theme 2 guess 2"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="teacher-approved-again"&gt;Teacher Approved Again&lt;/h2&gt;
+&lt;p&gt;Google Play has a pretty thorough review process for apps aimed at children, where teachers and educational specialists evaluate apps on design, usability, and learning value. WordXplorer had the Teacher Approved badge on Google Play once before. Then, at some point, it disappeared.&lt;/p&gt;
+&lt;p&gt;WordXplorer was reviewed again recently and received the official &lt;strong&gt;Teacher Approved&lt;/strong&gt; badge on the Google Play Store!
+&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-15/feedback.png" alt="Feedback from Teachers"&gt;&lt;/p&gt;
+&lt;p&gt;It's always reassuring to get validation from educators that the updates and design decisions are hitting the mark.&lt;/p&gt;
+&lt;h2 id="store-listing-refresh"&gt;Store Listing Refresh&lt;/h2&gt;
+&lt;p&gt;I also gave the store listing a refresh  and updated the description and screenshots on both the App Store and Google Play. I am hoping it reduces the amount of refunds on Google Play and gives a better idea of what the game is about. Let me know what you think!&lt;/p&gt;
+&lt;h2 id="whats-next"&gt;What's Next&lt;/h2&gt;
+&lt;p&gt;Next up is adding a menu screen to the game and possibly some more sound effects. If you have any suggestions for features or improvements that you would like to see immediately, please let me know.&lt;/p&gt;
+&lt;h2 id="become-a-beta-tester"&gt;Become a Beta Tester&lt;/h2&gt;
+&lt;p&gt;Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a &lt;strong&gt;free copy of the app&lt;/strong&gt; to share with a friend!&lt;/p&gt;
+&lt;h2 id="get-wordxplorer"&gt;Get WordXplorer&lt;/h2&gt;
+&lt;p&gt;WordXplorer is available on the iOS App Store and Google Play Store.&lt;/p&gt;
+&lt;div class="appstore-badges-container"&gt;
+  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Want to try before you buy? Check out the &lt;a href="https://wordxplorer.ankursheel.com/"&gt;web demo here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you for being part of this journey. Stay tuned for more updates!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>WordXplorer Update 14: New Theme and Cleaner UI</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-14</link>
       <description>New Theme and Cleaner UI</description>
       <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-14-facebook.png" length="0" type="image" />
@@ -1722,41 +1823,6 @@ about the game so far.&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;Mockito spies offer a solution to this problem, allowing you to verify method interactions directly, thus focusing on the behavior rather than the implementation.&lt;/p&gt;
 &lt;p&gt;However, it's essential to use Mockito spies judiciously. Spies should primarily be used when you're testing a class's external behavior and its interactions with other classes or methods within itself. Overusing spies can lead to tests that are overly focused on the internal workings of a class, potentially making your tests brittle and less focused on the actual outcomes.&lt;/p&gt;
 &lt;p&gt;Happy testing, and may your code always perform as intended, both now and in the future.&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>WordXplorer #3: 100 Words, Help Button &amp; Roadmap</title>
-      <link>https://www.ankursheel.com/blog/wordxplorer-update-3</link>
-      <description>WordXplorer Update 3 adds a help button and 100 words</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-3-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordxplorer-update-3</guid>
-      <pubDate>Sat, 03 Feb 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Those of you who downloaded the 1st early access version might have noticed an update in the test flight app over the holidays 🎉&lt;/p&gt;
-&lt;h2 id="more-words-more-fun"&gt;🚀 More Words, More Fun&lt;/h2&gt;
-&lt;p&gt;I am thrilled to announce that the game now boasts a whopping 100 words! 📬&lt;/p&gt;
-&lt;h2 id="introducing-the-help-button"&gt;📜 Introducing the Help Button&lt;/h2&gt;
-&lt;p&gt;Say goodbye to confusion! Explore the newly added Help Button right on the game screen. No need to restart the app — clarify the colour's meanings and game rules instantly&lt;/p&gt;
-&lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
-  &lt;iframe src="https://www.youtube.com/embed/X71OQlezrpE" title="wordxplorer Help Button" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;h2 id="public-roadmap-unveiled"&gt;📬 Public Roadmap Unveiled&lt;/h2&gt;
-&lt;p&gt;Your voice matters! Check out the new &lt;a href="https://changemap.co/transient-toys/wordxplorer/"&gt;public roadmap&lt;/a&gt;, your hub for suggesting and voting on new features.&lt;/p&gt;
-&lt;h2 id="whats-next"&gt;🔮 What's Next&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;This marks the final free version. We will soon be on the app store as a paid game.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
-&lt;div class="appstore-badges-container"&gt;
-  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
-    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
-    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;Does your child have a favorite word they would like to see in the game? Let me know&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>
