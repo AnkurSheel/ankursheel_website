@@ -1,5 +1,5 @@
 ---
-title: "WordXplorer Update 14"
+title: "WordXplorer Update 14: New Theme and Cleaner UI"
 excerpt: "New Theme and Cleaner UI"
 coverImage: "./cover_image.png"
 category: "project updates"
