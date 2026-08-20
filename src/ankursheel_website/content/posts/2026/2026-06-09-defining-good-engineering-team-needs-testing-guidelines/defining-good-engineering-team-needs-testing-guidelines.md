@@ -5,6 +5,7 @@ coverImage: "./testing_guidelines.png"
 category: "programming"
 tags:
 - "testing"
+- "opinion"
 
 ---
 
