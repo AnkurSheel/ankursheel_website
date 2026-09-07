@@ -8,6 +8,202 @@
 <pubDate>pubDate</pubDate>
 <lastBuildDate>lastBuildDate</lastBuildDate>
     <item>
+      <title>WordXplorer Update 16</title>
+      <link>https://www.ankursheel.com/blog/wordxplorer-update-16</link>
+      <description>A brand-new main menu built with Unity's UI Toolkit</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-16-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/wordxplorer-update-16</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The main focus of this update was making WordXplorer much more intuitive and approachable for kids.&lt;/p&gt;
+&lt;h2 id="building-a-main-menu"&gt;Building a Main Menu&lt;/h2&gt;
+&lt;p&gt;Until now, there simply wasn't a main menu. You opened the app and you were already in the game.&lt;/p&gt;
+&lt;p&gt;That's fine when you're testing your own build over and over, but it's not how a real game should feel. So this update adds a main menu. You can finally quit the game — no more force-closing the game.&lt;/p&gt;
+&lt;div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;"&gt;
+  &lt;iframe src="https://www.youtube.com/embed/hXNdodt3M34" title="Main Menu Video" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;I also used this as an excuse to experiment with Unity's UI Toolkit instead of the old uGUI setup. It lays things out with flexbox under the hood, which is a lot more intuitive for me than wrangling anchors and pivots. If you've done any web dev, it'll feel familiar. Styling works through USS, which is basically CSS with a different name, and layout is defined in UXML instead of hand-placed RectTransforms.&lt;/p&gt;
+&lt;p&gt;It's also supposed to have other benefits so I guess thats nice too.&lt;/p&gt;
+&lt;h2 id="whats-next"&gt;What's Next&lt;/h2&gt;
+&lt;p&gt;Next up is a settings menu so that you can actually turn off the sound or maybe even change the keyboard layout. If you have any suggestions for features or improvements that you would like to see immediately, please let me know.&lt;/p&gt;
+&lt;h2 id="become-a-beta-tester"&gt;Become a Beta Tester&lt;/h2&gt;
+&lt;p&gt;Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a &lt;strong&gt;free copy of the app&lt;/strong&gt; to share with a friend!&lt;/p&gt;
+&lt;h2 id="get-wordxplorer"&gt;Get WordXplorer&lt;/h2&gt;
+&lt;p&gt;WordXplorer is available on the iOS App Store and Google Play Store.&lt;/p&gt;
+&lt;div class="appstore-badges-container"&gt;
+  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
+    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Want to try before you buy? Check out the &lt;a href="https://wordxplorer.ankursheel.com/"&gt;web demo here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you for being part of this journey. Stay tuned for more updates!&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
+      <title>A Clean Way to Mock Upstream APIs Inside Your BFF Service</title>
+      <link>https://www.ankursheel.com/blog/clean-way-mock-upstream-apis-inside-bff-service</link>
+      <description>When developing against a Backend-For-Frontend (BFF), stale or filtered upstream data can halt frontend progress. This post explores three approaches to mocking data that allows developers to swap real API clients for deterministic local JSON fixtures</description>
+      <enclosure url="https://www.ankursheel.com/assets/images/social/clean-way-mock-upstream-apis-inside-bff-service-facebook.png" length="0" type="image" />
+      <guid>https://www.ankursheel.com/blog/clean-way-mock-upstream-apis-inside-bff-service</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+      <content:encoded>&lt;p&gt;Recently, I was working on a frontend feature that depended on transaction data from a Backend-For-Frontend (BFF) service. The upstream service filtered out any transaction older than X days, leaving my dataset empty and useless for development.&lt;/p&gt;
+&lt;p&gt;I didn't have write access to the upstream database, so seeding real data against a local database wasn't an option. And asking the upstream team to add some test data would have turned a two-hour task into a multi‑day dependency.&lt;/p&gt;
+&lt;p&gt;This post shows how to solve that friction inside the BFF itself using a single running example: an endpoint returning a customer’s order history by merging an &lt;code&gt;OrdersApi&lt;/code&gt; and a &lt;code&gt;RefundsApi&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="approach-1-comment-toggling"&gt;Approach 1: Comment-Toggling&lt;/h2&gt;
+&lt;p&gt;The quickest dirty fix is reading data from a JSON file and leaving it commented out right next to the real HTTP call.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public async Task&amp;lt;IEnumerable&amp;lt;OrderSummary&amp;gt;&amp;gt; GetOrderHistory(Guid customerId, CancellationToken ct)
+{
+    var orders = await _ordersApi.GetOrders(customerId, ct);
+    var refunds = await _refundsApi.GetRefunds(customerId, ct);
+    return Combine(orders, refunds);
+ 
+    // Uncomment below to test locally against fixture data:
+	// var orders = await LocalJsonHelper.ReadAsync&amp;lt;OrdersResponse&amp;gt;("./Fixtures/orders.json");
+	// var refunds = await LocalJsonHelper.ReadAsync&amp;lt;RefundsResponse&amp;gt;("./Fixtures/refunds.json");
+	// return Combine(orders, refunds);}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We’ve all seen this in pull requests, and it relies entirely on developer discipline.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is fine for a spike&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You have to remember to revert the file before committing, and hope a reviewer catches it if you don't. Worse, that commented-out block isn't compiled, so as the surrounding method signature changes, those lines rot silently until someone tries to uncomment them and gets a wall of compiler errors instead of test data.&lt;/p&gt;
+&lt;h2 id="approach-2-a-per-endpoint-config-check"&gt;Approach 2: A Per-Endpoint Config Check&lt;/h2&gt;
+&lt;p&gt;A step up is gating the data source behind a runtime flag like &lt;code&gt;UseLocalJsonData&lt;/code&gt; in your &lt;code&gt;appsettings.json&lt;/code&gt; and injecting it via &lt;code&gt;IOptions&amp;lt;LocalDataSettings&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public async Task&amp;lt;IEnumerable&amp;lt;OrderSummary&amp;gt;&amp;gt; GetOrderHistory(Guid customerId, CancellationToken ct)
+{
+    OrdersResponse orders;
+	RefundsResponse refunds;
+
+    if (_localDataSettings.UseLocalJsonData)
+    {
+	    orders = await LocalJsonHelper.ReadAsync&amp;lt;OrdersResponse&amp;gt;("./Fixtures/orders.json", ct);
+	    refunds = await LocalJsonHelper.ReadAsync&amp;lt;RefundsResponse&amp;gt;("./Fixtures/refunds.json", ct);
+	}
+	else
+	{
+		orders = await _ordersApi.GetOrders(customerId, ct);
+	    refunds = await _refundsApi.GetRefunds(customerId, ct);
+	}  
+    return Combine(orders, refunds);
+}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a genuine improvement. Both branches compile, and the fixture data actually flows through the real &lt;code&gt;Combine()&lt;/code&gt; logic instead of sitting in a comment.&lt;/p&gt;
+&lt;p&gt;The problem is that your core business handlers are now littered with &lt;code&gt;if/else&lt;/code&gt; branching that exists purely for local convenience. You've mixed two responsibilities into one method, added cognitive load to every code review, and introduced control paths that will never run in production.&lt;/p&gt;
+&lt;h2 id="approach-3-push-the-switch-into-dependency-injection"&gt;Approach 3: Push the Switch into Dependency Injection&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/clean-way-mock-upstream-apis-inside-bff-service/cover_image.png" alt="Cover Image"&gt;&lt;/p&gt;
+&lt;p&gt;Instead of branching inside the handlers, we can push the switch out to the dependency injection container. The orchestrating services, mappers, and controllers stay clean. They have no idea whether the payload came from disk or over the wire.&lt;/p&gt;
+&lt;h3 id="step-1-target-the-api-client-boundary"&gt;Step 1: Target the API Client Boundary&lt;/h3&gt;
+&lt;p&gt;Ensure every upstream service dependency is hidden behind an interface.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public interface IOrdersApi  
+{  
+    Task&amp;lt;OrdersResponse&amp;gt; GetOrders(Guid customerId, CancellationToken ct);}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-2-implement-the-local-client"&gt;Step 2: Implement the Local Client&lt;/h3&gt;
+&lt;p&gt;Implement a local version of the client that reads raw upstream JSON payloads from disk.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public class LocalOrdersApi : IOrdersApi  
+{  
+    public async Task&amp;lt;OrdersResponse&amp;gt; GetOrders(Guid customerId, CancellationToken ct)
+	{
+		return await LocalJsonHelper.ReadAsync&amp;lt;OrdersResponse&amp;gt;("./Fixtures/RawUpstream/orders.json", ct);
+	} 
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-3-conditionally-register-in-the-di-container"&gt;Step 3: Conditionally Register in the DI Container&lt;/h3&gt;
+&lt;p&gt;Register your production HTTP clients by default, then conditionally overwrite them in development.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;// 1. Register the real API clients
+services.AddScoped&amp;lt;IOrdersApi, OrdersApi&amp;gt;();
+services.AddScoped&amp;lt;IRefundsApi, RefundsApi&amp;gt;();
+  
+// 2. Conditionally overwrite them for local development
+if (ShouldUseLocalData(environment, configuration))
+{
+	services.AddScoped&amp;lt;IOrdersApi, LocalOrdersApi&amp;gt;();
+	services.AddScoped&amp;lt;IRefundsApi, LocalRefundsApi&amp;gt;();
+}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;What are we doing here?&lt;/strong&gt; The registration order matters. ASP.NET Core's container resolves the last registration for a given interface, so the local clients silently take over without either registration knowing the other exists. Nothing in &lt;code&gt;OrderHistoryService&lt;/code&gt; or its callers changes at all.&lt;/p&gt;
+&lt;p&gt;Notice the check is &lt;code&gt;ShouldUseLocalData(environment, configuration)&lt;/code&gt; rather than a bare config lookup. That's deliberate. It adds an independent environment check on top of the config flag, so even if someone misconfigures &lt;code&gt;appsettings.json&lt;/code&gt; in a shared environment, fixture data still can't leak into production.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;private bool ShouldUseLocalData(IWebHostEnvironment environment, IConfiguration configuration)
+{
+	var localDataSettings = configuration.GetSection(LocalDataSettings.SectionName).Get&amp;lt;LocalDataSettings&amp;gt;();
+	return localDataSettings.UseLocalJsonData &amp;amp;&amp;amp; environment.IsDevelopment();
+}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="step-4-isolate-local-code-from-production-assemblies"&gt;Step 4: Isolate Local Code from Production Assemblies&lt;/h3&gt;
+&lt;p&gt;If you want absolute isolation, move the &lt;code&gt;Local*Api&lt;/code&gt; classes into a separate project, &lt;code&gt;Bff.LocalDevelopment&lt;/code&gt;, and reference it conditionally&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;ItemGroup Condition="'$(IncludeLocalDevelopmentAssembly)' == 'true'"&amp;gt;  
+  &amp;lt;ProjectReference Include="..\Bff.LocalDevelopment\Bff.LocalDevelopment.csproj" /&amp;gt;&amp;lt;/ItemGroup&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can pass &lt;code&gt;IncludeLocalDevelopmentAssembly&lt;/code&gt; via &lt;code&gt;-p&lt;/code&gt; on the command line, but a more durable option is setting it in &lt;code&gt;Directory.Build.props&lt;/code&gt; and forcing it off on CI agents:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;Project&amp;gt;
+  &amp;lt;PropertyGroup&amp;gt;
+    &amp;lt;IncludeLocalDevelopmentAssembly Condition="'$(IncludeLocalDevelopmentAssembly)' == ''"&amp;gt;true&amp;lt;/IncludeLocalDevelopmentAssembly&amp;gt;
+  &amp;lt;/PropertyGroup&amp;gt;
+
+  &amp;lt;!-- Force false on CI build agents --&amp;gt;
+  &amp;lt;PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'"&amp;gt;
+    &amp;lt;IncludeLocalDevelopmentAssembly&amp;gt;false&amp;lt;/IncludeLocalDevelopmentAssembly&amp;gt;
+  &amp;lt;/PropertyGroup&amp;gt;
+&amp;lt;/Project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first &lt;code&gt;PropertyGroup&lt;/code&gt; defaults the property to &lt;code&gt;true&lt;/code&gt; only if nothing has set it already, so a plain local build gets the assembly with no extra flags needed. The second &lt;code&gt;PropertyGroup&lt;/code&gt; only matches on GitHub Actions runners, which set &lt;code&gt;$(GITHUB_ACTIONS)&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; automatically, and forces the value back to &lt;code&gt;false&lt;/code&gt; there. Nobody on the team has to remember to opt out locally, and CI can't opt in by accident.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why not just check &lt;code&gt;$(Configuration) == 'Debug'&lt;/code&gt;?&lt;/strong&gt; Build configuration and runtime environment are different concepts. It's far too easy for a developer to run &lt;code&gt;dotnet build -c Release&lt;/code&gt; locally, or for a pipeline step to compile in Debug mode on a wrong assumption. An explicit MSBuild property removes that guesswork.&lt;/p&gt;
+&lt;h3 id="is-this-overengineering"&gt;Is This Overengineering?&lt;/h3&gt;
+&lt;p&gt;Fair question. That's four steps, an interface per client, a &lt;code&gt;ShouldUseLocalData&lt;/code&gt; guard, and possibly a whole separate assembly for what's ultimately a way to read a JSON file instead of calling an API.&lt;/p&gt;
+&lt;p&gt;If you need this for a single one-off bug, it probably is overkill. Approach 1's commented-out block is faster to write, and you'll delete it in twenty minutes anyway.&lt;/p&gt;
+&lt;p&gt;It stops being overengineering the moment the local codepath needs to be kept for a longer time, which in my experience happens quickly. The interface boundary that lets you swap in fixture data is the same boundary you'd want for testing your code, so you're not adding an abstraction so much as formalising a seam that probably should have existed already. Once that's in place, Steps 3 and 4 are a few lines of DI registration and an MSBuild condition, not a new layer to maintain.&lt;/p&gt;
+&lt;p&gt;However, if you're only doing this for a handful of endpoints, Step 4 is probably overkill and you can skip it.&lt;/p&gt;
+&lt;h2 id="what-this-unlocks"&gt;What This Unlocks&lt;/h2&gt;
+&lt;h3 id="unlock-1-preventing-drift-with-snapshot-testing"&gt;Unlock 1: Preventing Drift with Snapshot Testing&lt;/h3&gt;
+&lt;p&gt;Because a fixture-backed client is deterministic, you can run it through your production &lt;code&gt;OrderHistoryService&lt;/code&gt; in a unit test and assert the output with a snapshot tool.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;[Fact]
+public async Task GetOrderHistory_MatchesSnapshot()
+{
+    var localOrdersApi = new LocalOrdersApi(Options.Create(new LocalDataSettings()));
+    var service = new OrderHistoryService(localOrdersApi, new OrderMapper());
+
+    var result = await service.GetOrderHistory(Guid.Empty, CancellationToken.None);
+
+    await Verify(result);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If someone renames a property or breaks a mapping rule, the snapshot test fails instantly in CI with a visual diff and helps you catch breaking changes much faster.&lt;/p&gt;
+&lt;h3 id="unlock-2-automating-frontend-mocks"&gt;Unlock 2: Automating Frontend Mocks&lt;/h3&gt;
+&lt;p&gt;Instead of frontend teams maintaining separate hand-written stubs that drift over time, you can pipe your verified &lt;code&gt;.verified.json&lt;/code&gt; snapshots directly into WireMock stubs, Storybook fixtures, or TypeScript type generators. Your frontend mocks are now guaranteed to match true backend execution output.&lt;/p&gt;
+&lt;h3 id="unlock-3-simulating-upstream-failures-and-edge-cases"&gt;Unlock 3: Simulating Upstream Failures and Edge Cases&lt;/h3&gt;
+&lt;p&gt;Happy-path testing is straightforward, but add a failure flag to the local client and you can simulate an upstream outage without touching the network at all.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;public class LocalOrdersApi : IOrdersApi
+{
+    private readonly LocalDataSettings _settings;
+
+    public LocalOrdersApi(IOptions&amp;lt;LocalDataSettings&amp;gt; settings)
+    {
+        _settings = settings.Value;
+    }
+
+    public async Task&amp;lt;OrdersResponse&amp;gt; GetOrders(Guid customerId, CancellationToken ct)
+    {
+        if (_settings.SimulateOrdersApiError)
+        {
+            throw new HttpRequestException("Simulated upstream 503 Service Unavailable");
+        }
+
+        return await LocalJsonHelper.ReadAsync&amp;lt;OrdersResponse&amp;gt;("./Fixtures/RawUpstream/orders.json", ct);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Toggle &lt;code&gt;"SimulateOrdersApiError": true&lt;/code&gt; locally to check your fallback and retry logic actually does what you think it does.&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The extra interface and DI wiring cost a little upfront, but you get deterministic data for local devving. The edge case you couldn't get an upstream service to return becomes a JSON file away.&lt;/p&gt;
+&lt;p&gt;What's your team doing to fake upstream data locally, and where has it broken down for you?&lt;/p&gt;
+</content:encoded>
+      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+    </item>
+    <item>
       <title>WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</title>
       <link>https://www.ankursheel.com/blog/wordxplorer-update-15</link>
       <description>Alphabetic keyboard layout, updated notification texts and Teacher Approved again</description>
@@ -1711,118 +1907,6 @@ about the game so far. The TestFlight app is still the best way to play, so let 
 &lt;/div&gt;
 &lt;p&gt;Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!&lt;/p&gt;
 &lt;p&gt;Thank you all for your support and patience. Stay tuned for more updates!&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>WordXplorer #4: Levels, Fireworks &amp; Fresh New Look</title>
-      <link>https://www.ankursheel.com/blog/wordxplorer-update-4</link>
-      <description>WordXplorer Update 4 adds deterministic levels and fireworks</description>
-      <enclosure url="https://www.ankursheel.com/assets/images/social/wordxplorer-update-4-facebook.png" length="0" type="image" />
-      <guid>https://www.ankursheel.com/blog/wordxplorer-update-4</guid>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;You can see all the related updates &lt;a href="https://www.ankursheel.com/tags/wordxplorer"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It's been a while since the last update, and I wanted to tell you what's been happening. I wanted to get this game out by now, but life events got in the way.&lt;/p&gt;
-&lt;h2 id="what-happened"&gt;What happened&lt;/h2&gt;
-&lt;p&gt;The partnership that I had for the first game ended. This meant I had to setup new accounts for various third-party services and redo some of the infrastructural work, which took some time.&lt;/p&gt;
-&lt;p&gt;After your feedback and some live playtests, it was clear that the game needed something more. Without someone else to help, I was getting overwhelmed with my day job and all the things that needed to be done for wordxplorer. Thankfully, my cousin Manjari stepped in to help with the creative side of things.&lt;/p&gt;
-&lt;h2 id="whats-new"&gt;What's New&lt;/h2&gt;
-&lt;h3 id="color-matters"&gt;Color Matters&lt;/h3&gt;
-&lt;p&gt;Let's face it: The original colours weren't very appealing. The first thing Manjari changed after joining was updating the colours. But don't take my word for it, see for yourself:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: center;"&gt;Before&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;After&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/old_instructions.jpg" alt="Old Instructions Screen"&gt;&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_instructions.jpg" alt="New Instructions Screen"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/old_game_screen.jpg" alt="Old Game Screen"&gt;&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/new_game_screen.jpg" alt="New Game Screen"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="fireworks"&gt;Fireworks&lt;/h3&gt;
-&lt;p&gt;Previously, when you found the right word, there was no celebration - just a plain popup that quickly disappeared. Now, there are fireworks and explosions to celebrate your victory.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/fireworks.gif" alt="Fireworks"&gt;&lt;/p&gt;
-&lt;h3 id="deterministic-levels"&gt;Deterministic Levels&lt;/h3&gt;
-&lt;p&gt;The random word selection felt like playing the lottery. Now, there are levels and they are locked! After you complete one, the next one is unlocked, providing a sense of progress. Plus, your progress is saved, so you don’t have to start from Level 1 every time.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ankursheel.com/assets/images/posts/wordxplorer-update-4/level_screen.jpg" alt="Level Selection Screen"&gt;&lt;/p&gt;
-&lt;h3 id="web-build"&gt;Web Build&lt;/h3&gt;
-&lt;p&gt;For those who didn’t want to install TestFlight or were not on an Apple device, you can now try the game on your browser. The TestFlight app is still the best way to play, so let me know if you want an invite. 😊&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;del&gt;Test it out by going to &lt;a href="https://golden-pony-d2c3f0.netlify.app/"&gt;Playable Web Build&lt;/a&gt; and let me know what you think
-about the game so far.&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update 26th December 2024:&lt;/em&gt;&lt;/strong&gt; You can now download the game.&lt;/p&gt;
-&lt;div class="appstore-badges-container"&gt;
-  &lt;a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank"&gt;
-    &lt;img src="https://www.ankursheel.com/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank"&gt;
-    &lt;img src="https://www.ankursheel.com/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store"&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;Does your child have a favourite word they’d love to see in the game? Let me know, and I might add it!&lt;/p&gt;
-&lt;p&gt;Thank you all for your support and patience. Stay tuned for more updates!&lt;/p&gt;
-</content:encoded>
-      <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-    </item>
-    <item>
-      <title>Verifying Method Calls within a class using Mockito Spies</title>
-      <link>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</link>
-      <description>How to remove the duplication of test scenarios when one method calls another within the same class</description>
-      <guid>https://www.ankursheel.com/blog/verifying-method-calls-class-mockito-spies</guid>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
-      <content:encoded>&lt;p&gt;in order to get confidence, when one method calls another within the same class with just 1 or more additional parameters, we could write the same test for both the methods. This would lead to a lot of duplicated tests and a cluttered test suite.&lt;/p&gt;
-&lt;p&gt;However, Mockito spies can help us in this scenario.&lt;/p&gt;
-&lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
-&lt;p&gt;You want to write tests for a class that contains two public methods, one of which is essentially overloading the other and calling it without adding any additional logic.&lt;/p&gt;
-&lt;p&gt;Here's a simplified example to illustrate this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;public class Service {
-    public int getTotalPrice(int quantity) {
-        // some other code like error checking, etc
-        return 5 * quantity;
-        
-    }
-
-    public int getTotalPrice() {
-        return getTotalPrice(1);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In the above example, the &lt;code&gt;getTotalPrice()&lt;/code&gt; method without parameters calls the overloaded &lt;code&gt;getTotalPrice(int quantity)&lt;/code&gt; method, supplying a default value.&lt;/p&gt;
-&lt;h2 id="enter-the-world-of-spies"&gt;Enter the World of Spies&lt;/h2&gt;
-&lt;p&gt;Here's where Mockito spies come into the picture.&lt;/p&gt;
-&lt;p&gt;A spy acts as a wrapper around a real object, allowing us to override specific methods with mock behaviour while leaving others intact. You can use this functionality to verify the invocation of an actual method on an object.&lt;/p&gt;
-&lt;p&gt;Let's see how you can simplify your tests by using Mockito spies&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-java"&gt;public class MyTests {
-    &amp;#64;Test
-    public void test() {
-        Service spy = Mockito.spy(new Service());
-        spy.getTotalPrice();
-        verify(spy).getTotalPrice(1);
-    }
-
-    // more tests that test `getTotalPrice(int quantity)`
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let's break this down:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Service spy = Mockito.spy(new Service())&lt;/code&gt;:  Create a spy object for &lt;code&gt;Service&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;spy.getTotalPrice()&lt;/code&gt;: Invoke the &lt;code&gt;getTotalPrice&lt;/code&gt; method on the spy object.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;verify(spy).getTotalPrice(1)&lt;/code&gt;: Verify that the overloaded method is invoked on the spy object.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;If the overloaded method is not called, then the test would fail, alerting us to a potential issue.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Testing every possible combination of method calls, not only consumes valuable time but also clutters your test suite with redundant tests.&lt;/p&gt;
-&lt;p&gt;Mockito spies offer a solution to this problem, allowing you to verify method interactions directly, thus focusing on the behavior rather than the implementation.&lt;/p&gt;
-&lt;p&gt;However, it's essential to use Mockito spies judiciously. Spies should primarily be used when you're testing a class's external behavior and its interactions with other classes or methods within itself. Overusing spies can lead to tests that are overly focused on the internal workings of a class, potentially making your tests brittle and less focused on the actual outcomes.&lt;/p&gt;
-&lt;p&gt;Happy testing, and may your code always perform as intended, both now and in the future.&lt;/p&gt;
 </content:encoded>
       <comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
     </item>

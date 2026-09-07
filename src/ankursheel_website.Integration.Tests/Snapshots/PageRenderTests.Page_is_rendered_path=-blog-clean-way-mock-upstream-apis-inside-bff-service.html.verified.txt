@@ -1,0 +1,509 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen scroll-pt-24">
+<head>
+    
+
+<title>A Clean Way to Mock Upstream APIs Inside Your BFF Service</title>
+<meta charset="utf-8"/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="When developing against a Backend-For-Frontend (BFF), stale or filtered upstream data can halt frontend progress. This post explores three approaches to mocking data that allows developers to swap real API clients for deterministic local JSON fixtures"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/clean-way-mock-upstream-apis-inside-bff-service"/>   
+<meta itemProp="name" content="A Clean Way to Mock Upstream APIs Inside Your BFF Service"/>
+<meta itemProp="description" content="When developing against a Backend-For-Frontend (BFF), stale or filtered upstream data can halt frontend progress. This post explores three approaches to mocking data that allows developers to swap real API clients for deterministic local JSON fixtures"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/clean-way-mock-upstream-apis-inside-bff-service-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/clean-way-mock-upstream-apis-inside-bff-service"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="A Clean Way to Mock Upstream APIs Inside Your BFF Service"/>
+<meta property="og:description" content="When developing against a Backend-For-Frontend (BFF), stale or filtered upstream data can halt frontend progress. This post explores three approaches to mocking data that allows developers to swap real API clients for deterministic local JSON fixtures"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/clean-way-mock-upstream-apis-inside-bff-service-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/clean-way-mock-upstream-apis-inside-bff-service-facebook.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="ankur_sheel"/>
+<meta name="twitter:creator" content="ankur_sheel"/>
+<meta name="twitter:title" content="A Clean Way to Mock Upstream APIs Inside Your BFF Service"/>
+<meta name="twitter:description" content="When developing against a Backend-For-Frontend (BFF), stale or filtered upstream data can halt frontend progress. This post explores three approaches to mocking data that allows developers to swap real API clients for deterministic local JSON fixtures"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/clean-way-mock-upstream-apis-inside-bff-service-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/clean-way-mock-upstream-apis-inside-bff-service-twitter.png"/>
+
+</head>
+<body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
+<noscript>
+        <img src="https://ankursheel.goatcounter.com/count?p=/test-noscript">
+</noscript>
+
+<header class="sticky top-0 bg-white shadow-lg z-10 w-full">
+    
+<nav x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 md:px-8">
+    <div class="flex flex-col items-start">
+        <div class="flex flex-row items-center justify-between font-semibold w-full">
+            <a href="/"
+               class="navigation-link text-lg hover:invert-0 text-gray-900 uppercase rounded-lg focus:outline-none">Ankur Sheel</a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" x-on:click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="pb-4 flex items-center">
+            
+<div class="flex">
+    <a class="" href="https://twitter.com/ankur_sheel" title="Connect on Twitter"
+       target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15" class="h-4">
+            <path fill="currentColor" fill-rule="evenodd"
+                  d="M7.233 4.696c0-1.727 1.4-3.127 3.127-3.127 1.014 0 1.823.479 2.365 1.175a5.246 5.246 0 0 0 1.626-.629 2.634 2.634 0 0 1-1.148 1.45l.002.003a5.26 5.26 0 0 0 1.5-.413l-.001.002c-.337.505-.76.95-1.248 1.313.026.177.04.354.04.53 0 3.687-2.809 7.975-7.975 7.975a7.93 7.93 0 0 1-4.296-1.26.5.5 0 0 1-.108-.748.45.45 0 0 1 .438-.215c.916.108 1.83-.004 2.637-.356a3.086 3.086 0 0 1-1.69-1.876.45.45 0 0 1 .103-.448 3.07 3.07 0 0 1-1.045-2.31v-.034a.45.45 0 0 1 .365-.442 3.068 3.068 0 0 1-.344-1.416c0-.468.003-1.058.332-1.59a.45.45 0 0 1 .323-.208.5.5 0 0 1 .538.161 6.964 6.964 0 0 0 4.46 2.507v-.044Zm-1.712 7.279a6.936 6.936 0 0 1-2.249-.373 5.318 5.318 0 0 0 2.39-1.042.45.45 0 0 0-.27-.804 2.174 2.174 0 0 1-1.714-.888c.19-.015.376-.048.556-.096a.45.45 0 0 0-.028-.876 2.18 2.18 0 0 1-1.644-1.474c.2.048.409.077.623.084a.45.45 0 0 0 .265-.824 2.177 2.177 0 0 1-.97-1.812c0-.168.003-.317.013-.453a7.95 7.95 0 0 0 5.282 2.376.5.5 0 0 0 .513-.61 2.127 2.127 0 0 1 2.071-2.614c1.234 0 2.136 1.143 2.136 2.432 0 3.256-2.476 6.974-6.975 6.974Z"
+                  clip-rule="evenodd"/>
+        </svg>
+    </a>
+    <a class="ml-4" href="https://www.linkedin.com/in/ankursheel"
+       title="View my LinkedIn profile" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-4">
+            <path fill="currentColor"
+                  d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/>
+        </svg>
+    </a>
+
+    <a class="ml-4" href="https://github.com/AnkurSheel" title="Check out my work on Github"
+       target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15" class="h-4">
+            <path fill="currentColor" fill-rule="evenodd"
+                  d="M7.5.85a6.65 6.65 0 0 0-2.102 12.96c.332.061.454-.144.454-.32 0-.159-.006-.576-.01-1.131-1.849.401-2.24-.892-2.24-.892-.302-.768-.738-.973-.738-.973-.604-.412.046-.404.046-.404.667.047 1.018.685 1.018.685.594 1.017 1.557.723 1.936.553.06-.43.232-.723.422-.889-1.477-.168-3.029-.738-3.029-3.287 0-.726.26-1.319.685-1.784-.069-.168-.297-.844.065-1.76 0 0 .558-.179 1.828.681A6.41 6.41 0 0 1 7.5 4.066a6.394 6.394 0 0 1 1.665.223c1.27-.86 1.827-.68 1.827-.68.363.915.135 1.59.066 1.759.427.465.684 1.058.684 1.784 0 2.555-1.555 3.117-3.036 3.282.238.205.45.611.45 1.232 0 .888-.007 1.605-.007 1.823 0 .178.12.385.457.32A6.652 6.652 0 0 0 7.499.85Z"
+                  clip-rule="evenodd"/>
+        </svg>
+    </a>
+
+
+    <a class="ml-4" target="_blank" rel="noopener noreferrer" href="/rss.xml" title="RSS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-4">
+            <path
+                d="M6.503 20.752A3.25 3.25 0 0 1 3.252 24 3.25 3.25 0 0 1 0 20.752a3.25 3.25 0 0 1 3.252-3.248 3.25 3.25 0 0 1 3.251 3.248zM0 8.18v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817C15.777 15.29 8.721 8.242 0 8.18zm0-3.368C10.58 4.858 19.152 13.406 19.183 24H24C23.97 10.769 13.245.046 0 0v4.812z"
+                fill="currentColor"/>
+        </svg>
+    </a>
+</div>
+
+        </div>
+    </div>
+    <ul :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 items-center md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        
+
+    <li class="navigation-link">
+            <div x-on:click.away="open = false" class="relative" x-data="{ open: false }">
+                <button x-on:click="open = !open" class="flex flex-row items-center w-full text-left bg-transparent font-semibold md:w-auto md:inline md:ml-4 hover:text-gray-900">
+                    <span>About</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                    <div class="px-2 py-2 bg-white rounded-md shadow">
+                                    <a class="block hover:invert-0 navigation-link" href="/about">About</a>
+                                    <a class="block hover:invert-0 navigation-link" href="/impossible-list">Impossible List</a>
+                                    <a class="block hover:invert-0 navigation-link" href="https://www.discoveriesinbookland.com/" target="_blank">Book Summaries</a>
+                    </div>
+                </div>
+            </div>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/blog">Blog</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/tags">Tags</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/cv">CV</a>
+    </li>
+    <li class="navigation-link">
+                <a class="hover:invert-0" href="/contact">Contact</a>
+    </li>
+
+    </ul>
+</nav>
+
+</header>
+
+<main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
+    <h1 class="text-center">A Clean Way to Mock Upstream APIs Inside Your BFF Service</h1>
+    <div class="flex flex-col min-h-screen">
+        <article>
+            
+
+<div class="prose-sm italic">
+    <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
+        <span class="mr-4 sm:py-0 py-1">Published on <time
+                datetime="2026-08-20">Aug 20, 2026</time></span>
+        <span class="mr-4 sm:py-0 py-1">Last Updated on <time
+                datetime="2026-08-20">Aug 20, 2026</time></span>
+        <span class="sm:py-0 py-1">
+            Estimated Reading Time: <span class="font-bold">6 min</span>
+        </span>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-1 place-content-center">
+            <a href="/tags/opinion" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">opinion</a>
+            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
+            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
+            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
+    </div>
+</div>
+
+
+
+    <div class="lg:hidden not-prose">
+        <details class="mb-8 p-4 bg-gray-100 rounded-lg shadow-inner group">
+            <summary class="flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span class="text-lg font-bold">Table of Contents</span>
+                <svg class="w-6 h-6 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+            <div class="mt-4">
+                <ul class="list-none space-y-2">
+                        <li class="font-semibold">
+                            <a href="#approach-1-comment-toggling" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 1: Comment-Toggling</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#approach-2-a-per-endpoint-config-check" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 2: A Per-Endpoint Config Check</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#approach-3-push-the-switch-into-dependency-injection" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 3: Push the Switch into Dependency Injection</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-1-target-the-api-client-boundary" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Target the API Client Boundary</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-2-implement-the-local-client" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: Implement the Local Client</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-3-conditionally-register-in-the-di-container" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3: Conditionally Register in the DI Container</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#step-4-isolate-local-code-from-production-assemblies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: Isolate Local Code from Production Assemblies</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#is-this-overengineering" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Is This Overengineering?</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#what-this-unlocks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What This Unlocks</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#unlock-1-preventing-drift-with-snapshot-testing" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unlock 1: Preventing Drift with Snapshot Testing</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#unlock-2-automating-frontend-mocks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unlock 2: Automating Frontend Mocks</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#unlock-3-simulating-upstream-failures-and-edge-cases" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unlock 3: Simulating Upstream Failures and Edge Cases</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#summary" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Summary</a>
+                        </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <aside class="hidden lg:block fixed left-6 top-0 h-screen w-64 overflow-y-auto pt-28 pb-4">
+        <nav class="p-4 bg-gray-100 rounded-lg shadow-inner prose-sm not-prose">
+            <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
+            <ul class="m-0 list-none space-y-2">
+                    <li class="font-semibold">
+                        <a href="#approach-1-comment-toggling" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 1: Comment-Toggling</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#approach-2-a-per-endpoint-config-check" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 2: A Per-Endpoint Config Check</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#approach-3-push-the-switch-into-dependency-injection" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Approach 3: Push the Switch into Dependency Injection</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-1-target-the-api-client-boundary" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 1: Target the API Client Boundary</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-2-implement-the-local-client" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 2: Implement the Local Client</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-3-conditionally-register-in-the-di-container" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 3: Conditionally Register in the DI Container</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#step-4-isolate-local-code-from-production-assemblies" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Step 4: Isolate Local Code from Production Assemblies</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#is-this-overengineering" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Is This Overengineering?</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#what-this-unlocks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What This Unlocks</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#unlock-1-preventing-drift-with-snapshot-testing" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unlock 1: Preventing Drift with Snapshot Testing</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#unlock-2-automating-frontend-mocks" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unlock 2: Automating Frontend Mocks</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="#unlock-3-simulating-upstream-failures-and-edge-cases" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Unlock 3: Simulating Upstream Failures and Edge Cases</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#summary" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Summary</a>
+                    </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+<p>Recently, I was working on a frontend feature that depended on transaction data from a Backend-For-Frontend (BFF) service. The upstream service filtered out any transaction older than X days, leaving my dataset empty and useless for development.</p>
+<p>I didn't have write access to the upstream database, so seeding real data against a local database wasn't an option. And asking the upstream team to add some test data would have turned a two-hour task into a multi‑day dependency.</p>
+<p>This post shows how to solve that friction inside the BFF itself using a single running example: an endpoint returning a customer’s order history by merging an <code>OrdersApi</code> and a <code>RefundsApi</code>.</p>
+<h2 id="approach-1-comment-toggling">Approach 1: Comment-Toggling</h2>
+<p>The quickest dirty fix is reading data from a JSON file and leaving it commented out right next to the real HTTP call.</p>
+<pre><code class="language-csharp">public async Task&lt;IEnumerable&lt;OrderSummary&gt;&gt; GetOrderHistory(Guid customerId, CancellationToken ct)
+{
+    var orders = await _ordersApi.GetOrders(customerId, ct);
+    var refunds = await _refundsApi.GetRefunds(customerId, ct);
+    return Combine(orders, refunds);
+ 
+    // Uncomment below to test locally against fixture data:
+	// var orders = await LocalJsonHelper.ReadAsync&lt;OrdersResponse&gt;(&quot;./Fixtures/orders.json&quot;);
+	// var refunds = await LocalJsonHelper.ReadAsync&lt;RefundsResponse&gt;(&quot;./Fixtures/refunds.json&quot;);
+	// return Combine(orders, refunds);}  
+</code></pre>
+<p>We’ve all seen this in pull requests, and it relies entirely on developer discipline.</p>
+<blockquote>
+<p>This is fine for a spike</p>
+</blockquote>
+<p>You have to remember to revert the file before committing, and hope a reviewer catches it if you don't. Worse, that commented-out block isn't compiled, so as the surrounding method signature changes, those lines rot silently until someone tries to uncomment them and gets a wall of compiler errors instead of test data.</p>
+<h2 id="approach-2-a-per-endpoint-config-check">Approach 2: A Per-Endpoint Config Check</h2>
+<p>A step up is gating the data source behind a runtime flag like <code>UseLocalJsonData</code> in your <code>appsettings.json</code> and injecting it via <code>IOptions&lt;LocalDataSettings&gt;</code></p>
+<pre><code class="language-csharp">public async Task&lt;IEnumerable&lt;OrderSummary&gt;&gt; GetOrderHistory(Guid customerId, CancellationToken ct)
+{
+    OrdersResponse orders;
+	RefundsResponse refunds;
+
+    if (_localDataSettings.UseLocalJsonData)
+    {
+	    orders = await LocalJsonHelper.ReadAsync&lt;OrdersResponse&gt;(&quot;./Fixtures/orders.json&quot;, ct);
+	    refunds = await LocalJsonHelper.ReadAsync&lt;RefundsResponse&gt;(&quot;./Fixtures/refunds.json&quot;, ct);
+	}
+	else
+	{
+		orders = await _ordersApi.GetOrders(customerId, ct);
+	    refunds = await _refundsApi.GetRefunds(customerId, ct);
+	}  
+    return Combine(orders, refunds);
+}  
+</code></pre>
+<p>This is a genuine improvement. Both branches compile, and the fixture data actually flows through the real <code>Combine()</code> logic instead of sitting in a comment.</p>
+<p>The problem is that your core business handlers are now littered with <code>if/else</code> branching that exists purely for local convenience. You've mixed two responsibilities into one method, added cognitive load to every code review, and introduced control paths that will never run in production.</p>
+<h2 id="approach-3-push-the-switch-into-dependency-injection">Approach 3: Push the Switch into Dependency Injection</h2>
+<p><img src="/assets/images/posts/clean-way-mock-upstream-apis-inside-bff-service/cover_image.png" alt="Cover Image" /></p>
+<p>Instead of branching inside the handlers, we can push the switch out to the dependency injection container. The orchestrating services, mappers, and controllers stay clean. They have no idea whether the payload came from disk or over the wire.</p>
+<h3 id="step-1-target-the-api-client-boundary">Step 1: Target the API Client Boundary</h3>
+<p>Ensure every upstream service dependency is hidden behind an interface.</p>
+<pre><code class="language-csharp">public interface IOrdersApi  
+{  
+    Task&lt;OrdersResponse&gt; GetOrders(Guid customerId, CancellationToken ct);}  
+</code></pre>
+<h3 id="step-2-implement-the-local-client">Step 2: Implement the Local Client</h3>
+<p>Implement a local version of the client that reads raw upstream JSON payloads from disk.</p>
+<pre><code class="language-csharp">public class LocalOrdersApi : IOrdersApi  
+{  
+    public async Task&lt;OrdersResponse&gt; GetOrders(Guid customerId, CancellationToken ct)
+	{
+		return await LocalJsonHelper.ReadAsync&lt;OrdersResponse&gt;(&quot;./Fixtures/RawUpstream/orders.json&quot;, ct);
+	} 
+ }
+</code></pre>
+<h3 id="step-3-conditionally-register-in-the-di-container">Step 3: Conditionally Register in the DI Container</h3>
+<p>Register your production HTTP clients by default, then conditionally overwrite them in development.</p>
+<pre><code class="language-csharp">// 1. Register the real API clients
+services.AddScoped&lt;IOrdersApi, OrdersApi&gt;();
+services.AddScoped&lt;IRefundsApi, RefundsApi&gt;();
+  
+// 2. Conditionally overwrite them for local development
+if (ShouldUseLocalData(environment, configuration))
+{
+	services.AddScoped&lt;IOrdersApi, LocalOrdersApi&gt;();
+	services.AddScoped&lt;IRefundsApi, LocalRefundsApi&gt;();
+}  
+</code></pre>
+<p><strong>What are we doing here?</strong> The registration order matters. ASP.NET Core's container resolves the last registration for a given interface, so the local clients silently take over without either registration knowing the other exists. Nothing in <code>OrderHistoryService</code> or its callers changes at all.</p>
+<p>Notice the check is <code>ShouldUseLocalData(environment, configuration)</code> rather than a bare config lookup. That's deliberate. It adds an independent environment check on top of the config flag, so even if someone misconfigures <code>appsettings.json</code> in a shared environment, fixture data still can't leak into production.</p>
+<pre><code class="language-csharp">private bool ShouldUseLocalData(IWebHostEnvironment environment, IConfiguration configuration)
+{
+	var localDataSettings = configuration.GetSection(LocalDataSettings.SectionName).Get&lt;LocalDataSettings&gt;();
+	return localDataSettings.UseLocalJsonData &amp;&amp; environment.IsDevelopment();
+}  
+</code></pre>
+<h3 id="step-4-isolate-local-code-from-production-assemblies">Step 4: Isolate Local Code from Production Assemblies</h3>
+<p>If you want absolute isolation, move the <code>Local*Api</code> classes into a separate project, <code>Bff.LocalDevelopment</code>, and reference it conditionally</p>
+<pre><code class="language-xml">&lt;ItemGroup Condition=&quot;'$(IncludeLocalDevelopmentAssembly)' == 'true'&quot;&gt;  
+  &lt;ProjectReference Include=&quot;..\Bff.LocalDevelopment\Bff.LocalDevelopment.csproj&quot; /&gt;&lt;/ItemGroup&gt;  
+</code></pre>
+<p>You can pass <code>IncludeLocalDevelopmentAssembly</code> via <code>-p</code> on the command line, but a more durable option is setting it in <code>Directory.Build.props</code> and forcing it off on CI agents:</p>
+<pre><code class="language-xml">&lt;Project&gt;
+  &lt;PropertyGroup&gt;
+    &lt;IncludeLocalDevelopmentAssembly Condition=&quot;'$(IncludeLocalDevelopmentAssembly)' == ''&quot;&gt;true&lt;/IncludeLocalDevelopmentAssembly&gt;
+  &lt;/PropertyGroup&gt;
+
+  &lt;!-- Force false on CI build agents --&gt;
+  &lt;PropertyGroup Condition=&quot;'$(GITHUB_ACTIONS)' == 'true'&quot;&gt;
+    &lt;IncludeLocalDevelopmentAssembly&gt;false&lt;/IncludeLocalDevelopmentAssembly&gt;
+  &lt;/PropertyGroup&gt;
+&lt;/Project&gt;
+</code></pre>
+<p>The first <code>PropertyGroup</code> defaults the property to <code>true</code> only if nothing has set it already, so a plain local build gets the assembly with no extra flags needed. The second <code>PropertyGroup</code> only matches on GitHub Actions runners, which set <code>$(GITHUB_ACTIONS)</code> to <code>true</code> automatically, and forces the value back to <code>false</code> there. Nobody on the team has to remember to opt out locally, and CI can't opt in by accident.</p>
+<p><strong>Why not just check <code>$(Configuration) == 'Debug'</code>?</strong> Build configuration and runtime environment are different concepts. It's far too easy for a developer to run <code>dotnet build -c Release</code> locally, or for a pipeline step to compile in Debug mode on a wrong assumption. An explicit MSBuild property removes that guesswork.</p>
+<h3 id="is-this-overengineering">Is This Overengineering?</h3>
+<p>Fair question. That's four steps, an interface per client, a <code>ShouldUseLocalData</code> guard, and possibly a whole separate assembly for what's ultimately a way to read a JSON file instead of calling an API.</p>
+<p>If you need this for a single one-off bug, it probably is overkill. Approach 1's commented-out block is faster to write, and you'll delete it in twenty minutes anyway.</p>
+<p>It stops being overengineering the moment the local codepath needs to be kept for a longer time, which in my experience happens quickly. The interface boundary that lets you swap in fixture data is the same boundary you'd want for testing your code, so you're not adding an abstraction so much as formalising a seam that probably should have existed already. Once that's in place, Steps 3 and 4 are a few lines of DI registration and an MSBuild condition, not a new layer to maintain.</p>
+<p>However, if you're only doing this for a handful of endpoints, Step 4 is probably overkill and you can skip it.</p>
+<h2 id="what-this-unlocks">What This Unlocks</h2>
+<h3 id="unlock-1-preventing-drift-with-snapshot-testing">Unlock 1: Preventing Drift with Snapshot Testing</h3>
+<p>Because a fixture-backed client is deterministic, you can run it through your production <code>OrderHistoryService</code> in a unit test and assert the output with a snapshot tool.</p>
+<pre><code class="language-csharp">[Fact]
+public async Task GetOrderHistory_MatchesSnapshot()
+{
+    var localOrdersApi = new LocalOrdersApi(Options.Create(new LocalDataSettings()));
+    var service = new OrderHistoryService(localOrdersApi, new OrderMapper());
+
+    var result = await service.GetOrderHistory(Guid.Empty, CancellationToken.None);
+
+    await Verify(result);
+}
+</code></pre>
+<p>If someone renames a property or breaks a mapping rule, the snapshot test fails instantly in CI with a visual diff and helps you catch breaking changes much faster.</p>
+<h3 id="unlock-2-automating-frontend-mocks">Unlock 2: Automating Frontend Mocks</h3>
+<p>Instead of frontend teams maintaining separate hand-written stubs that drift over time, you can pipe your verified <code>.verified.json</code> snapshots directly into WireMock stubs, Storybook fixtures, or TypeScript type generators. Your frontend mocks are now guaranteed to match true backend execution output.</p>
+<h3 id="unlock-3-simulating-upstream-failures-and-edge-cases">Unlock 3: Simulating Upstream Failures and Edge Cases</h3>
+<p>Happy-path testing is straightforward, but add a failure flag to the local client and you can simulate an upstream outage without touching the network at all.</p>
+<pre><code class="language-csharp">public class LocalOrdersApi : IOrdersApi
+{
+    private readonly LocalDataSettings _settings;
+
+    public LocalOrdersApi(IOptions&lt;LocalDataSettings&gt; settings)
+    {
+        _settings = settings.Value;
+    }
+
+    public async Task&lt;OrdersResponse&gt; GetOrders(Guid customerId, CancellationToken ct)
+    {
+        if (_settings.SimulateOrdersApiError)
+        {
+            throw new HttpRequestException(&quot;Simulated upstream 503 Service Unavailable&quot;);
+        }
+
+        return await LocalJsonHelper.ReadAsync&lt;OrdersResponse&gt;(&quot;./Fixtures/RawUpstream/orders.json&quot;, ct);
+    }
+}
+</code></pre>
+<p>Toggle <code>&quot;SimulateOrdersApiError&quot;: true</code> locally to check your fallback and retry logic actually does what you think it does.</p>
+<h2 id="summary">Summary</h2>
+<p>The extra interface and DI wiring cost a little upfront, but you get deterministic data for local devving. The edge case you couldn't get an upstream service to return becomes a JSON file away.</p>
+<p>What's your team doing to fake upstream data locally, and where has it broken down for you?</p>
+
+
+
+
+<aside class="m-2">
+    <div class="my-6 flex justify-center gap-5 flex-wrap">
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/clean-way-mock-upstream-apis-inside-bff-service&text=A%20Clean%20Way%20to%20Mock%20Upstream%20APIs%20Inside%20Your%20BFF%20Service via @ankur_sheel.&#xD;&#xA;When%20developing%20against%20a%20Backend-For-Frontend%20%28BFF%29%2C%20stale%20or%20filtered%20upstream%20data%20can%20halt%20frontend%20progress.%20This%20post%20explores%20three%20approaches%20to%20mocking%20data%20that%20allows%20developers%20to%20swap%20real%20API%20clients%20for%20deterministic%20local%20JSON%20fixtures" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/clean-way-mock-upstream-apis-inside-bff-service" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+    </div>
+</aside>
+
+
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <h2 class="mt-2 text-center">You might also like</h2>
+
+    <ul>
+            <li>
+                <a href="setup-project-properties-source-generators">How to set up the project properties for Source Generators</a>
+            </li>
+            <li>
+                <a href="serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
+            </li>
+            <li>
+                <a href="set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
+            </li>
+            <li>
+                <a href="get-time-zone-info-windows-linux">How to get TimeZoneInfo on Windows and Linux</a>
+            </li>
+    </ul>
+</aside>
+
+
+<aside class="border-t-2 mt-2 p-4 rounded-lg shadow-sm">
+    <form action="https://ankursheel.us12.list-manage.com/subscribe/post?u=d88459c290a1a8d98ad780bbc&amp;id=31e4ebb75b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+            <p class="mt-2 text-2xl font-bold text-center">Want to know when a new post comes out?</p>
+            <div class="flex gap-4 items-center justify-center flex-wrap">
+                <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0 required" aria-label="First Name" name="FNAME" required="" placeholder="First Name" type="text" id="mce-FNAME"/>
+                <input class="rounded-md border-gray-300 focus:border-gray-500 focus:ring-0 required email" name="EMAIL" aria-label="Email Address" placeholder="Email Address" required="" type="email" id="mce-EMAIL"/>
+                <button class="px-3 py-2 text-white bg-green-400 rounded-md focus:bg-indigo-600 focus:outline-none flex-none" type="submit">Subscribe</button>
+                <input type="checkbox" class="hidden" value="1" name="group[52461][1]" id="mce-group[52461]-52461-0" checked>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_d88459c290a1a8d98ad780bbc_31e4ebb75b" tabindex="-1" value="">
+                </div>
+                <div >
+                    <a href="http://eepurl.com/hRcTAL" title="Mailchimp - email marketing made easy and fun">
+                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</aside>
+
+
+<footer>
+    <script src="https://giscus.app/client.js"
+        data-repo="AnkurSheel/blog-comments"
+        data-repo-id="R_kgDOIAUZqA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIAUZqM4CRdIF"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+
+</footer>
+
+        </article>
+    </div>
+</main>
+
+
+
+<script src="/assets/js/blog.js" defer></script>
+<script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
+    <script data-goatcounter="https://ankursheel.goatcounter.com/count" src="/assets/js/gc-count.js"></script>
+
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="ankursheel" data-description="Support me on Buy me a coffee!"
+        data-message="Did you learn something? Buy me a coffee" data-color="#FF813F"
+        data-position="Right" data-x_margin="18" data-y_margin="18" defer>
+</script>
+
+
+</body>
+</html>

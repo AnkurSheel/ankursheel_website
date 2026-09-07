@@ -134,7 +134,7 @@
             
 
 
-<h2>All Categories (228)</h2>
+<h2>All Categories (230)</h2>
 
 <div class="flex flex-wrap gap-x-6 capitalize">
         <a href="#career-work">career / work</a>
@@ -150,6 +150,12 @@
 <h2> 5 Most Recent Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-16">WordXplorer Update 16</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/clean-way-mock-upstream-apis-inside-bff-service">A Clean Way to Mock Upstream APIs Inside Your BFF Service</a>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-15">WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</a>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -157,12 +163,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/startup-versus-big-tech-good-bad-ugly">Startup versus Big Tech: The Good, the Bad, and the Ugly</a>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
         </li>
 </ul>
 
@@ -265,8 +265,11 @@
                 <a href="/blog/smokehouse-deli-bangalore">A review of SmokeHouse Deli, Bangalore</a> - <time class="prose-sm" datetime="13-11-25">November 25, 2013</time>
             </li>
     </ul>
-    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (77)</h3>
+    <h3 id="programming" class="py-4 border-b border-grey-lighter capitalize">programming (78)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/clean-way-mock-upstream-apis-inside-bff-service">A Clean Way to Mock Upstream APIs Inside Your BFF Service</a> - <time class="prose-sm" datetime="26-08-20">August 20, 2026</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a> - <time class="prose-sm" datetime="26-06-09">June 09, 2026</time>
             </li>
@@ -499,8 +502,11 @@
                 <a href="/blog/setting-project-directory-structure">How I structure my Game Engine project</a> - <time class="prose-sm" datetime="13-11-20">November 20, 2013</time>
             </li>
     </ul>
-    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (27)</h3>
+    <h3 id="project-updates" class="py-4 border-b border-grey-lighter capitalize">project updates (28)</h3>
     <ul class="p-0">
+            <li class="list-none mt-6 md:mt-1 p-0">
+                <a href="/blog/wordxplorer-update-16">WordXplorer Update 16</a> - <time class="prose-sm" datetime="26-09-07">September 07, 2026</time>
+            </li>
             <li class="list-none mt-6 md:mt-1 p-0">
                 <a href="/blog/wordxplorer-update-15">WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</a> - <time class="prose-sm" datetime="26-08-02">August 02, 2026</time>
             </li>

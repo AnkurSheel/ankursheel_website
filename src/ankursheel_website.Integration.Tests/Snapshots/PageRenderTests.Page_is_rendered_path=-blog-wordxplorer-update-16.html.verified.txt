@@ -4,31 +4,31 @@
 <head>
     
 
-<title>How to set up the project properties for Source Generators</title>
+<title>WordXplorer Update 16</title>
 <meta charset="utf-8"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="A guide to setting up the project properties that we need to create and use source generators"/>
+<meta name="description" content="A brand-new main menu built with Unity&#x27;s UI Toolkit"/>
 <link href="/assets/styles.css" rel="stylesheet"/>
 <link href="/assets/code-styles/obsidian.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://www.ankursheel.com/blog/setup-project-properties-source-generators"/>   
-<meta itemProp="name" content="How to set up the project properties for Source Generators"/>
-<meta itemProp="description" content="A guide to setting up the project properties that we need to create and use source generators"/>
-    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/setup-project-properties-source-generators-facebook.png"/>
-<meta property="og:url" content="https://www.ankursheel.com/blog/setup-project-properties-source-generators"/>
+    <link rel="canonical" href="https://www.ankursheel.com/blog/wordxplorer-update-16"/>   
+<meta itemProp="name" content="WordXplorer Update 16"/>
+<meta itemProp="description" content="A brand-new main menu built with Unity&#x27;s UI Toolkit"/>
+    <meta itemProp="image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-16-facebook.png"/>
+<meta property="og:url" content="https://www.ankursheel.com/blog/wordxplorer-update-16"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="How to set up the project properties for Source Generators"/>
-<meta property="og:description" content="A guide to setting up the project properties that we need to create and use source generators"/>
-    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/setup-project-properties-source-generators-facebook.png"/>
-    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/setup-project-properties-source-generators-facebook.png"/>
+<meta property="og:title" content="WordXplorer Update 16"/>
+<meta property="og:description" content="A brand-new main menu built with Unity&#x27;s UI Toolkit"/>
+    <meta property="og:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-16-facebook.png"/>
+    <meta property="og:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-16-facebook.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="ankur_sheel"/>
 <meta name="twitter:creator" content="ankur_sheel"/>
-<meta name="twitter:title" content="How to set up the project properties for Source Generators"/>
-<meta name="twitter:description" content="A guide to setting up the project properties that we need to create and use source generators"/>
-    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/setup-project-properties-source-generators-twitter.png"/>
-    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/setup-project-properties-source-generators-twitter.png"/>
+<meta name="twitter:title" content="WordXplorer Update 16"/>
+<meta name="twitter:description" content="A brand-new main menu built with Unity&#x27;s UI Toolkit"/>
+    <meta name="twitter:image" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-16-twitter.png"/>
+    <meta name="twitter:image:secure_url" content="https://www.ankursheel.com/assets/images/social/wordxplorer-update-16-twitter.png"/>
 
 </head>
 <body class="font-sans font-normal leading-relaxed font-base text-gray-800 min-h-screen bg-gray-100">
@@ -133,7 +133,7 @@
 </header>
 
 <main class="mx-auto max-w-prose p-4 prose prose-xl prose-purple">
-    <h1 class="text-center">How to set up the project properties for Source Generators</h1>
+    <h1 class="text-center">WordXplorer Update 16</h1>
     <div class="flex flex-col min-h-screen">
         <article>
             
@@ -141,20 +141,17 @@
 <div class="prose-sm italic">
     <div class="flex flex-col sm:flex-row justify-evenly items-center text-sm gap-y-1">
         <span class="mr-4 sm:py-0 py-1">Published on <time
-                datetime="2021-06-23">Jun 23, 2021</time></span>
+                datetime="2026-09-07">Sep 07, 2026</time></span>
         <span class="mr-4 sm:py-0 py-1">Last Updated on <time
-                datetime="2021-06-23">Jun 23, 2021</time></span>
+                datetime="2026-09-07">Sep 07, 2026</time></span>
         <span class="sm:py-0 py-1">
-            Estimated Reading Time: <span class="font-bold">2 min</span>
+            Estimated Reading Time: <span class="font-bold">1 min</span>
         </span>
     </div>
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
-            <a href="/tags/csharp" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">csharp</a>
-            <a href="/tags/productivity" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">productivity</a>
-            <a href="/tags/snippet" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">snippet</a>
-            <a href="/tags/source-generator" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">source generator</a>
-            <a href="/tags/dev-tools" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">dev tools</a>
+            <a href="/tags/project-updates" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">project updates</a>
+            <a href="/tags/wordxplorer" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">wordxplorer</a>
     </div>
 </div>
 
@@ -171,31 +168,16 @@
             <div class="mt-4">
                 <ul class="list-none space-y-2">
                         <li class="font-semibold">
-                            <a href="#source-generator-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Source Generator Project Properties</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#create-a-new-solution-and-a-library-project" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Create a new solution and a library project</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#add-the-required-packages" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Add the required packages</a>
+                            <a href="#building-a-main-menu" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Building a Main Menu</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#consumer-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Consumer Project Properties</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#reference-the-project-in-debug-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the project in Debug mode</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#reference-the-nuget-package-in-release-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the NuGet package in Release mode</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#writing-the-generated-code-to-disk" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Writing the generated code to disk</a>
-                        </li>
-                        <li class="ml-4">
-                            <a href="#excluding-the-generated-folder" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Excluding the generated folder</a>
+                            <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next</a>
                         </li>
                         <li class="font-semibold">
-                            <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                            <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
+                        </li>
+                        <li class="font-semibold">
+                            <a href="#get-wordxplorer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get WordXplorer</a>
                         </li>
                 </ul>
             </div>
@@ -206,101 +188,56 @@
             <h2 class="m-0 mb-3 text-lg font-bold">Table of Contents</h2>
             <ul class="m-0 list-none space-y-2">
                     <li class="font-semibold">
-                        <a href="#source-generator-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Source Generator Project Properties</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#create-a-new-solution-and-a-library-project" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Create a new solution and a library project</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#add-the-required-packages" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Add the required packages</a>
+                        <a href="#building-a-main-menu" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Building a Main Menu</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#consumer-project-properties" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Consumer Project Properties</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#reference-the-project-in-debug-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the project in Debug mode</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#reference-the-nuget-package-in-release-mode" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Reference the NuGet package in Release mode</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#writing-the-generated-code-to-disk" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Writing the generated code to disk</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#excluding-the-generated-folder" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Excluding the generated folder</a>
+                        <a href="#whats-next" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">What&#x27;s Next</a>
                     </li>
                     <li class="font-semibold">
-                        <a href="#conclusion" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Conclusion</a>
+                        <a href="#become-a-beta-tester" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Become a Beta Tester</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#get-wordxplorer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200">Get WordXplorer</a>
                     </li>
             </ul>
         </nav>
     </aside>
 
 
-<p>Source Generators are an excellent way to reduce boilerplate and repetitive code that we have to write. This post will look at the project properties we need to set on both the source generator and consumer projects.</p>
-<h2 id="source-generator-project-properties">Source Generator Project Properties</h2>
-<p>A source generator is a .Net class.</p>
-<h3 id="create-a-new-solution-and-a-library-project">Create a new solution and a library project</h3>
-<p>The empty project is targeting Net5.0. I have also enabled nullables.</p>
-<pre><code class="language-xml">&lt;PropertyGroup&gt;
-    &lt;TargetFramework&gt;net5.0&lt;/TargetFramework&gt;
-    &lt;Nullable&gt;enable&lt;/Nullable&gt;
-    &lt;WarningsAsErrors&gt;true&lt;/WarningsAsErrors&gt;
-&lt;/PropertyGroup&gt;
-</code></pre>
-<h3 id="add-the-required-packages">Add the required packages</h3>
-<p>Next, we will add the CodeAnalysis libraries from NuGet.</p>
-<pre><code class="language-xml">&lt;ItemGroup&gt;
-    &lt;PackageReference Include=&quot;Microsoft.CodeAnalysis.Analyzers&quot; Version=&quot;3.3.2&quot; /&gt;
-    &lt;PackageReference Include=&quot;Microsoft.CodeAnalysis.CSharp.Workspaces&quot; Version=&quot;3.8.0&quot; /&gt;
-&lt;/ItemGroup&gt;
-</code></pre>
-<h2 id="consumer-project-properties">Consumer Project Properties</h2>
-<p>In the consumer project, we need to add a reference to the source generator. This can be done as either a project reference or a NuGet package.</p>
-<h3 id="reference-the-project-in-debug-mode">Reference the project in Debug mode</h3>
-<p>In Debug mode, we reference the project directly so that it's easier for development.</p>
-<pre><code class="language-xml">&lt;ItemGroup Condition=&quot;'$(Configuration)'=='Debug'&quot;&gt;
-    &lt;ProjectReference Include=&quot;..\\SourceGenerator\\SourceGenerator.csproj&quot; OutputItemType=&quot;Analyzer&quot; ReferenceOutputAssembly=&quot;false&quot; /&gt;
-&lt;/ItemGroup&gt;
-</code></pre>
-<ul>
-<li><strong><em>OutputItemType</em></strong>: Source generators as packaged and deployed the same way as Roslyn Analysers, so we need to tell the compiler that it is not a standard project reference.</li>
-<li><strong><em>ReferenceOutputAssembly</em></strong>: Tells the compiler not to include the source generator project in the published output, i.e. the bin folder.</li>
-</ul>
-<h3 id="reference-the-nuget-package-in-release-mode">Reference the NuGet package in Release mode</h3>
-<p>In Release mode, we reference the NuGet package so that we can test the package.</p>
-<pre><code class="language-xml">&lt;ItemGroup Condition=&quot;'$(Configuration)'=='Release'&quot;&gt;
-    &lt;PackageReference Include=&quot;SourceGenerator&quot; Version=&quot;x.y.z&quot; /&gt;
-&lt;/ItemGroup&gt;
-</code></pre>
-<h3 id="writing-the-generated-code-to-disk">Writing the generated code to disk</h3>
-<p>By default, the generated code is not written to disk. However, when writing a source generator, looking at the generated code can be helpful.</p>
-<pre><code class="language-xml">&lt;PropertyGroup&gt;
-    &lt;EmitCompilerGeneratedFiles&gt;true&lt;/EmitCompilerGeneratedFiles&gt;
-    &lt;CompilerGeneratedFilesOutputPath&gt;GeneratedFiles&lt;/CompilerGeneratedFilesOutputPath&gt;
-&lt;/PropertyGroup&gt;
-</code></pre>
-<ul>
-<li><strong><em>EmitCompilerGeneratedFiles</em></strong>: This flag tells the compiler to write the generated files to disk</li>
-<li><strong><em>CompilerGeneratedFilesOutputPath</em></strong>: By default, the generated code is written to the <strong><em>obj/generated</em></strong> folder. This property allows us to override the folder. In this case, I am writing them to a GeneratedFiles folder</li>
-</ul>
-<h3 id="excluding-the-generated-folder">Excluding the generated folder</h3>
-<p>We will need to exclude the generated folder, or the compiler will try to add the same file twice - one from disk and one from the code generator.</p>
-<pre><code class="language-xml">&lt;ItemGroup&gt;
-    &lt;Compile Remove=&quot;$(CompilerGeneratedFilesOutputPath)/*/**/*.cs&quot; /&gt;
-&lt;/ItemGroup&gt;
-</code></pre>
-<h2 id="conclusion">Conclusion</h2>
-<p>Now, we have our projects set up to start creating source generators and consuming the generated code.</p>
-<p>If you want to look at the code, you can find it <a href="https://github.com/AnkurSheel/CSharpSourceGenerators">here</a></p>
+<p>You can see all the related updates <a href="/tags/wordxplorer">here</a></p>
+<p>The main focus of this update was making WordXplorer much more intuitive and approachable for kids.</p>
+<h2 id="building-a-main-menu">Building a Main Menu</h2>
+<p>Until now, there simply wasn't a main menu. You opened the app and you were already in the game.</p>
+<p>That's fine when you're testing your own build over and over, but it's not how a real game should feel. So this update adds a main menu. You can finally quit the game — no more force-closing the game.</p>
+<div style="position: relative;width: 100%;padding-bottom: 56.25%;margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/hXNdodt3M34" title="Main Menu Video" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;right: 0;" allowfullscreen=""></iframe>
+</div>
+<p>I also used this as an excuse to experiment with Unity's UI Toolkit instead of the old uGUI setup. It lays things out with flexbox under the hood, which is a lot more intuitive for me than wrangling anchors and pivots. If you've done any web dev, it'll feel familiar. Styling works through USS, which is basically CSS with a different name, and layout is defined in UXML instead of hand-placed RectTransforms.</p>
+<p>It's also supposed to have other benefits so I guess thats nice too.</p>
+<h2 id="whats-next">What's Next</h2>
+<p>Next up is a settings menu so that you can actually turn off the sound or maybe even change the keyboard layout. If you have any suggestions for features or improvements that you would like to see immediately, please let me know.</p>
+<h2 id="become-a-beta-tester">Become a Beta Tester</h2>
+<p>Want to help catch bugs before they reach the public? I’d love your help. Simply send me a screenshot of your app review, and I’ll add you to the beta team. As a thank you, I’ll also give you a <strong>free copy of the app</strong> to share with a friend!</p>
+<h2 id="get-wordxplorer">Get WordXplorer</h2>
+<p>WordXplorer is available on the iOS App Store and Google Play Store.</p>
+<div class="appstore-badges-container">
+  <a href="https://apps.apple.com/in/app/wordxplorer-guess-the-word/id6504664783" target="_blank">
+    <img src="/assets/images/download-app-store-badge.png" alt="Get WordXplorer on App Store" />
+  </a>
+  <a href="https://play.google.com/store/apps/details?id=com.glhf.wordleforkids" target="_blank">
+    <img src="/assets/images/download-play-store-badge.png" alt="Get WordXplorer on Play Store" />
+  </a>
+</div>
+<p>Want to try before you buy? Check out the <a href="https://wordxplorer.ankursheel.com/">web demo here</a>.</p>
+<p>Thank you for being part of this journey. Stay tuned for more updates!</p>
 
 
 
 
 <aside class="m-2">
     <div class="my-6 flex justify-center gap-5 flex-wrap">
-        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/setup-project-properties-source-generators&text=How%20to%20set%20up%20the%20project%20properties%20for%20Source%20Generators via @ankur_sheel.&#xD;&#xA;A%20guide%20to%20setting%20up%20the%20project%20properties%20that%20we%20need%20to%20create%20and%20use%20source%20generators" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
-        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/setup-project-properties-source-generators" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
+        <a class="bg-social-twitter social-button" href="https://twitter.com/intent/tweet?url=https://www.ankursheel.com/blog/wordxplorer-update-16&text=WordXplorer%20Update%2016 via @ankur_sheel.&#xD;&#xA;A%20brand-new%20main%20menu%20built%20with%20Unity%27s%20UI%20Toolkit" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">Share on Twitter</a>
+        <a class="bg-social-linkedin social-button" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.ankursheel.com/blog/wordxplorer-update-16" target="_blank" rel="noopener noreferrer">Share on Linkedin</a>
     </div>
 </aside>
 
@@ -312,16 +249,16 @@
 
     <ul>
             <li>
-                <a href="clean-way-mock-upstream-apis-inside-bff-service">A Clean Way to Mock Upstream APIs Inside Your BFF Service</a>
+                <a href="wordxplorer-update-15">WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</a>
             </li>
             <li>
-                <a href="set-all-bits-enum-flag-c">How to set all bits of an enum flag in C#</a>
+                <a href="wordxplorer-update-14">WordXplorer Update 14: New Theme and Cleaner UI</a>
             </li>
             <li>
-                <a href="serializing-enums-strings-net-core">How to Serialize enums as strings in .Net Core</a>
+                <a href="wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a>
             </li>
             <li>
-                <a href="get-time-zone-info-windows-linux">How to get TimeZoneInfo on Windows and Linux</a>
+                <a href="wordxplorer-update-12">WordXplorer Update 12: Demo Build &amp; Teacher Feedback</a>
             </li>
     </ul>
 </aside>

@@ -138,6 +138,12 @@
 <h2> 5 Most Recently Updated Posts</h2>
 <ul class="p-0">
         <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/wordxplorer-update-16">WordXplorer Update 16</a> - <time class="prose-sm" datetime="26-09-07">September 07, 2026</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
+            <a href="/blog/clean-way-mock-upstream-apis-inside-bff-service">A Clean Way to Mock Upstream APIs Inside Your BFF Service</a> - <time class="prose-sm" datetime="26-08-20">August 20, 2026</time>
+        </li>
+        <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/wordxplorer-update-15">WordXplorer Update 15: , Alphabetic Keyboard Layout and updated Notification Texts</a> - <time class="prose-sm" datetime="26-08-02">August 02, 2026</time>
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
@@ -145,12 +151,6 @@
         </li>
         <li class="list-none mt-6 md:mt-1 p-0">
             <a href="/blog/defining-good-engineering-team-needs-testing-guidelines">Defining Good: Why Your Engineering Team Needs Testing Guidelines</a> - <time class="prose-sm" datetime="26-06-09">June 09, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/startup-versus-big-tech-good-bad-ugly">Startup versus Big Tech: The Good, the Bad, and the Ugly</a> - <time class="prose-sm" datetime="26-04-22">April 22, 2026</time>
-        </li>
-        <li class="list-none mt-6 md:mt-1 p-0">
-            <a href="/blog/wordxplorer-update-13">WordXplorer Update 13: Updated Flip Animation</a> - <time class="prose-sm" datetime="26-04-02">April 02, 2026</time>
         </li>
 </ul>
 

@@ -151,6 +151,7 @@
 
     <div class="flex flex-row flex-wrap gap-1 place-content-center">
             <a href="/tags/testing" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">testing</a>
+            <a href="/tags/opinion" class="block flex-initial border-2 border-black m-2 rounded-xl p-2 bg-gray-200 shadow-md">opinion</a>
     </div>
 </div>
 
@@ -419,16 +420,16 @@ Assert.Equal(&quot;name&quot;, user.Name);
 
     <ul>
             <li>
+                <a href="clean-way-mock-upstream-apis-inside-bff-service">A Clean Way to Mock Upstream APIs Inside Your BFF Service</a>
+            </li>
+            <li>
+                <a href="fun-feature-flags">Fun with (Feature) Flags</a>
+            </li>
+            <li>
                 <a href="verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
             </li>
             <li>
                 <a href="load-test-data-json-file-xunit-tests">How to load test data from a JSON file for xUnit tests</a>
-            </li>
-            <li>
-                <a href="difference-stubs-mocks-fakes-spies">Stubs vs Mocks vs Fakes vs Spy</a>
-            </li>
-            <li>
-                <a href="better-naming-convention-unit-tests">A better naming convention for unit tests</a>
             </li>
     </ul>
 </aside>

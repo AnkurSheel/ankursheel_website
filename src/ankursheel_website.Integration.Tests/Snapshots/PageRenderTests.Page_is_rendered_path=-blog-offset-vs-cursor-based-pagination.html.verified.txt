@@ -363,7 +363,7 @@ LIMIT $pageSize;
                 <a href="verifying-method-calls-class-mockito-spies">Verifying Method Calls within a class using Mockito Spies</a>
             </li>
             <li>
-                <a href="feature-flag-cleanup-featureflagwillmakethisobsolete-annotation">Feature Flags: Removing Unused Methods on Cleanup</a>
+                <a href="clean-way-mock-upstream-apis-inside-bff-service">A Clean Way to Mock Upstream APIs Inside Your BFF Service</a>
             </li>
     </ul>
 </aside>
