@@ -4,13 +4,13 @@ title: CV
 
 ## Summary
 
-I’m a backend engineer who genuinely cares about making things run better. My background is a mix of fast-paced startup environments and the structured complexity of mid to large-scale enterprises. I love building tools that save my teammates time. I’m the person you bring in when a project is stuck in a debugging nightmare or needs a serious refactor to stay maintainable. When I'm not writing unit tests or fixing backend logic, I’m usually building my own side projects and blogging about whatever new tech I've picked up.
+I am a software developer who strives to help people become more efficient and productive. My background is a mix of fast-paced startup environments and the structured complexity of large-scale enterprises. In a previous life, I have worked as a game developer. I enjoy building tools which help reduce the time taken by my team members to complete tasks as well as making code maintainable by using refactoring techniques and adding test coverage. I take an active interest in improving processes to benefit my team members. I’m usually building my own side projects and blogging about whatever new tech I've picked up. 
 
 To see what I look for in a company, please visit: [Dream Job](/blog/dream-job/)
 
 ### [Download CV](/assets/downloads/CV_Ankur_Sheel.pdf){target="\_blank"})
 
-**_Last Updated: 14 March 2026_**
+**_Last Updated: 5 Jun 2026_**
 
 [![CV](/assets/images/pdficon_large.png){width=64 height=64}](assets/downloads/CV_Ankur_Sheel.pdf){target="\_blank"}
 
